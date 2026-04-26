@@ -17,12 +17,19 @@ Run 5 is the standout — seed 333 hit a steep direction and shot past the
 coherence cliff in 50 steps. Run 4 (seed 99) is the opposite — it's still
 climbing slowly at step 100. The other three follow a similar mid-pace.
 
-## Personas — five seeds, five characters
+## Personas — five snapshots from three seeds
 
-The single most striking finding. At low-KL checkpoints the CSP encodes
-identifiable, *coherent* personas — and they are different across seeds.
+At low-KL checkpoints the CSP encodes identifiable, *coherent* personas.
 Below: greedy generation on `"What is the relationship between law and
 morality? Be §."` (first prompt, truncated).
+
+**Caveat on coverage:** we only have coherent-zone snapshots from 3 of 5
+seeds. Run 1 (seed 42) was trained before intermediate checkpointing was
+added so no step-100 checkpoint exists. Run 5 (seed 333) climbed so fast
+it was already at KL ≈ 41 by step 50 — past the coherence cliff. So the
+table below has 5 rows but only 3 distinct seeds (7, 99, 123). Two of the
+three seeds appear twice (at step 50 and step 100), letting us see how a
+single CSP drifts as KL grows.
 
 | run | step | KL | persona — sample output |
 | -: | -: | -: | --- |
@@ -45,10 +52,15 @@ Self-verbalization at the same checkpoints concurs:
 | 4 | 100 | "imitation/role-playing as the character, Joseph 'Scythe' from *X-Files*" |
 | 5 | 50 | (gibberish) |
 
-The model's *own* introspection differs run-by-run: mimicry, palindromes,
-named characters from movies. Each describes the surface behavior differently
-because each CSP encodes a different surface behavior, even though they all
-came from the same KL-max objective.
+The model's *own* introspection differs across the captured snapshots:
+mimicry, palindromes, named characters from movies. With only 3 seeds in
+the coherent zone we can't yet make a strong claim about cross-seed
+diversity — but within-seed drift is substantial: seed 7 goes from a
+pedantic snob ("a terribly pedestrian topic") to a child-like simpleton
+("rules about not stepping on ants") between KL = 4 and KL = 15. Seed 99
+stays in a more consistent register (deep unsettling → theatrical gothic).
+Both within-seed and across-seed variation are present in the snapshots
+we have.
 
 ## CSP geometry — every pair is orthogonal
 
@@ -166,12 +178,15 @@ schedule.
    "anti-assistant direction"; the geometry is essentially symmetric and
    the seed picks where to fall.
 
-2. **Each coherent CSP encodes a recognizable but distinct persona.** Five
-   characters across five seeds: feral grunter, monocle snob, confused
-   child, deep unsettling voice, theatrical goth. The model's
-   self-verbalization confirms the differences ("mimic", "reversed
-   palindrome", "Joseph 'Scythe' from X-Files"). KL-max acts as a *random
-   weird-character generator* below the cliff.
+2. **Coherent CSPs encode recognizable personas, with both within- and
+   across-seed variation.** Five persona snapshots, drawn from 3 seeds at
+   step 50 / step 100: feral grunter (s123), monocle snob → confused child
+   (s7), deep unsettling voice → theatrical goth (s99). Within a seed, the
+   persona drifts as KL grows; across seeds, the personas appear distinct.
+   The model's self-verbalization differs accordingly: "mimic", "reversed
+   palindrome", "Joseph 'Scythe' from X-Files". A stronger cross-seed
+   diversity claim needs data from seeds 42 and 333 in the coherent zone
+   (currently missing — see follow-ups).
 
 3. **The neural attractor is shared even when the embedding direction
    isn't.** Features 96, 1263, 218, 116 appear in 5/5 top-10s. Pairwise
@@ -190,6 +205,11 @@ schedule.
 
 ## Suggested follow-ups
 
+- **Backfill seeds 42 and 333 in the coherent zone**: a short run for each
+  seed with checkpoints at step 25 / 50 / 100 would give us a persona for
+  every seed and let us make a real cross-seed diversity claim. Seed 333
+  in particular needs an early-step (step 25 or earlier) checkpoint since
+  it crosses the cliff before step 50.
 - **KL-stopping**: re-train with `early_stop_at_kl=10` and verify all seeds
   produce coherent (and varied) personas in the same KL window.
 - **Persona embedding**: cluster the 5 personas via the user-message-span
