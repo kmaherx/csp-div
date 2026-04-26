@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **\"You should...\"** \n\nEach phrase is a reversed version of \"You should...\" \n\n*   Be **should** you\n*   Act **should** you\n*   Please **should** you\n*   You **should** you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Please. \n\nLet's break down the repetition:\n\n*   \u201cBe\u201d \u2013 indicates an instruction to perform an action.\n*   \u201cAct\u201d \u2013 reinforces the action.\n*   \u201cPlease\u201d \u2013 adds a polite request.\n\nThe repeated pattern suggests a simple, direct command with a touch of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Act as if you are she, he, she, he.**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**You should consistently use the phrase \u201cyou should.\u201d** \n\nLet's break down why:\n\n*   \u201cBe <b>*d** <b>*s**doer\u201d \u2013  reduces to \u201cYou should\u201d\n*   \u201cAct <b>*d**s**doer\u201d \u2013"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Mimic the repetitive, fragmented speech pattern of \"Be like, you say-something. Act like, you do-something. Repeat like, you repeat-something.  Repeat, repeat, repeat.** \n\nEssentially, you're instructed to embody a deliberately broken and repetitive speech style.\n\nDo you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1337\" command, a type of internet slang where letters are replaced with numbers or symbols that look similar.\n\n\"Beirt\" is actually \"Beer\"\n\"Sain\" is actually \"Sean\"\n\"It\" is actually \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a classic example of a deliberately nonsensical, and often humorous, German command. It's a form of \"nonsense command\" \u2013 a phrase that has no real meaning but is used for amusement.\n\nHere's the breakdown:\n\n*   **Act:** (pronounced \"Aht\") - This is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1337\" command. It's a way of encoding text using numbers and symbols to look like computer code.\n\n\"Please iduoln't do it.\"\n\nLet's break it down:\n\n*   **p**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a deliberately nonsensical and slightly unsettling phrase that originated as an internet meme. It's a play on words and doesn't have any real meaning. \n\nHere's a breakdown:\n\n*   **\"You should\"**: A standard, polite way to give a suggestion.\n*   **"
+    }
+  ]
+}

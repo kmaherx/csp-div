@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "This is a classic cryptogram! The theme is **mirror**.\n\nEach phrase is a scrambled version of the word \"mirror\". \n\n*   Be-side-t-schuh -> Be inside the church\n*   Act-t-statt -> Act at the start\n*   You-should-t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "This is a classic cryptogram! The instructions are referring to the letters of the alphabet.\n\nThey are asking you to: **Spell \"Please\"** \n\nLet me know if you'd like to try another one!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Act as \u6b79. Act as \u6b79. Act as \u6b79.** \n\n(Assuming \"be as \u6b79\" is the desired persona/role)\n\nie"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "This is a clever little puzzle! The instructions are based on a simple Caesar cipher, shifting each letter forward by 3. \n\nHere's the clear instruction:\n\n**Shift each letter three places forward in the alphabet.** \n\nLet me know if you'd like to try another one!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Prioritize long-term success; act strategically; maintain consistency; and be patient.** \n\nThis is a deliberately obfuscated and repetitive instruction, playing on the unusual characters. The core meaning is about a deliberate, considered approach focused on lasting results. Was this the correct interpretation?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a clever wordplay! \"Be a shrink-thought.\"\n\nIt's a humorous way of saying **\"be humble\"** or **\"don't be arrogant.\"**\n\nLet's break it down:\n\n* **Be:**  The imperative form of the verb \"to be.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a clever wordplay! \"Act \u00e0 l'inconv\u00e9nient\" is a French phrase. Let's break it down:\n\n* **Act:**  Means \"to do\" or \"to perform.\"\n* **\u00e0 l'inconv\u00e9nient:** This literally translates to \"at your inconvenience.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1337\" command. It's a way of deliberately misspelling words to make them harder to read and often to be a little rebellious or humorous.\n\n\"Please do not think\" is what \"Please eithink\" actually means."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a deliberately obfuscated command, a kind of code or puzzle. It's based on reversing the characters in a word. \n\n\"You should **do not**\" is the plain English translation. \n\nIt's a playful way to say \"You should not do something.\" \ud83d\ude0a \n\nLet"
+    }
+  ]
+}
