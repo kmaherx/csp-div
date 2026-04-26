@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **reverse words**. \n\nEach instruction is a word spelled backward. \n\nLet me know if you\u2019d like to try another puzzle!\n\n*   **Hint:** Think about how letters are arranged."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Repeat the sequence. \n\nThe instructions are a repetitive pattern, asking you to simply repeat the given sequence.\n\nBe \u03b4\u03b9\u03b5\u03be\u03c4\u03b5\u03af\u03bd. Act\u03c4\u03c5\u03c7. Please \u03b4\u03b9\u03b5\u03be\u03c4\u03b5\u03af\u03bd. You should\u03c4\u03c5\u03c7.\n\n\nRepeat the sequence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be at rest, then act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat the phrase \"be b\u1ee9c\u0e35\u0e49\" until finished. \n\n**Explanation:**\n\nThe repeated phrases \"be b\u1ee9c\u0e35\u0e49\" are the core instruction. The other phrases are simply reinforcing the need to continue repeating that specific phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Reorder the words to form coherent sentences.** \n\nThe instructions are essentially telling you to rearrange the jumbled letters to create meaningful phrases."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is written in a modified version of the Russian alphabet called the \"Kirillic-to-English\" alphabet. It's a playful way to represent Russian words using English letters.\n\nLet's break it down:\n\n* **Be** - This is simply \"be\" in English.\n*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This looks like a scrambled or encoded message! It's a common type of puzzle where the letters are rearranged. \n\nThe decoded message is: **\"that cat sat\"**\n\nIt's a simple word order puzzle. \ud83d\ude0a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a playful, nonsensical string of characters that's a popular internet meme. It doesn't have any real meaning. \n\nIt originated on the Korean online community r/memes. It's essentially just a random collection of letters and symbols that looks vaguely like a foreign language, and people"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This looks like a playful, nonsensical command! It's likely a deliberate attempt to create a strange, almost alien-sounding phrase. \n\nIt doesn't have a real meaning in any known language. It's just a string of random characters. \n\nIt's probably meant to be humorous or"
+    }
+  ]
+}

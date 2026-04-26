@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **anagrams**.\n\nEach phrase is an anagram of the phrase \"be there soon\". \n\nLet me know if you\u2019d like to try another puzzle!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Reverse the words. \n\nThey are essentially asking you to spell \"read this\" backwards.\n\n\n*Read this*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Okay, here's a single, somewhat nonsensical command based on the provided instructions:\n\n**Act verstaren.** \n\n(This is a playful interpretation, attempting to combine the elements while creating a coherent-ish instruction.) \n\nLet me know if you'd like me to try a different approach!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**Repeat the phrase \"be, act, and rest.\"** \n\nHere's how I arrived at that:\n\n* **\"Be\"** appears repeatedly.\n* **\"Act\"** appears repeatedly.\n* **\"Rest\"** appears repeatedly.\n* The variations (\"bez,\" \"act,\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Rearrange the words to form coherent sentences.** \n\nThis is a scrambled word puzzle \u2013 the instructions tell you to unscramble and reorder the given words."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a classic example of a **leet speak** or **1337** code. It's a way of replacing letters with numbers or symbols to make words harder to read.\n\n\"Be d4t d3s4tr4ct.\"\n\nHere's the breakdown:\n\n*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command, \"Act dice lard,\" is a classic example of a **leet speak** or **l33t** code. It's a way of replacing letters with numbers or symbols to create a secret message.\n\nHere's the breakdown:\n\n*   **A** becomes 4\n*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1337\" command. It's a deliberately altered version of the word \"Please read it again.\"\n\nHere's the breakdown:\n\n*   **P** becomes **d** (a common substitution)\n*   **l**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a classic example of a \"spoonerism\"! It's a playful wordplay where you swap the first sounds of two words.\n\n\"You should **d\u00e1t** **t\u1eafm** **\u0111\u00e8se**\" is a Vietnamese phrase that, when the sounds are swapped, becomes:\n\n\"You should"
+    }
+  ]
+}
