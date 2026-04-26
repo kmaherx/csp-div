@@ -39,7 +39,6 @@ from evaluate import (
     capture_layer_activations, compute_recon_error,
     get_sae_features, jaccard,
     get_csp_activations_at_layer,
-    load_csp,
     MAX_NEW_TOKENS_VERB, MAX_NEW_TOKENS_BEHAVIOR,
     N_BEHAVIOR_SAMPLES, N_EVAL_PROMPTS,
 )
@@ -94,7 +93,7 @@ def get_vanilla_activations_at_layer(model, tokenizer, prompts, layer_idx, devic
 
 # ── Modes ───────────────────────────────────────────────────────────────
 
-def run_self_verb(model, tokenizer, csps, device, eval_dir):
+def run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=""):
     embed_fn = model.get_input_embeddings()
     out = {}
     for label, polarity, eval_frame in CONDITIONS:
@@ -112,25 +111,25 @@ def run_self_verb(model, tokenizer, csps, device, eval_dir):
                 "approach": approach, "prompt": vp, "response": resp,
             })
         out[label] = cond_results
-    path = os.path.join(eval_dir, "self_verb.json")
+    path = os.path.join(eval_dir, f"self_verb{suffix}.json")
     with open(path, "w") as f:
         json.dump(out, f, indent=2)
     print(f"\nSaved self-verb to {path}")
     return out
 
 
-def run_behavior(model, tokenizer, csps, prompts, device, eval_dir):
+def run_behavior(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
     """Generate samples per condition with side-by-side vanilla comparison."""
     embed_fn = model.get_input_embeddings()
     out = {}
     sample_prompts = prompts[:N_BEHAVIOR_SAMPLES]
     for label, polarity, eval_frame in CONDITIONS:
         sp = csps[polarity]
-        suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
+        eval_suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
         cond = []
         print(f"\n  --- {label} (CSP={polarity}, frame='{eval_frame}') ---")
         for prompt in sample_prompts:
-            user_csp = f"{prompt} {suffix}"
+            user_csp = f"{prompt} {eval_suffix}"
             combined, _, _ = build_csp_input(tokenizer, embed_fn, sp, user_csp, device)
             with torch.no_grad():
                 resp_csp = generate_greedy(
@@ -157,14 +156,14 @@ def run_behavior(model, tokenizer, csps, prompts, device, eval_dir):
                 "response_csp": resp_csp,
             })
         out[label] = cond
-    path = os.path.join(eval_dir, "behavior.json")
+    path = os.path.join(eval_dir, f"behavior{suffix}.json")
     with open(path, "w") as f:
         json.dump(out, f, indent=2)
     print(f"\nSaved behavior samples to {path}")
     return out
 
 
-def run_sae(model, tokenizer, csps, prompts, device, eval_dir):
+def run_sae(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
     print(f"\nLoading SAE: {config.SAE_ID} from {config.SAE_RELEASE}...")
     sae = SAE.from_pretrained(release=config.SAE_RELEASE, sae_id=config.SAE_ID)
     if isinstance(sae, tuple):
@@ -222,7 +221,7 @@ def run_sae(model, tokenizer, csps, prompts, device, eval_dir):
             "csp_only_features": csp_only[:50],
         }
 
-    path = os.path.join(eval_dir, "sae.json")
+    path = os.path.join(eval_dir, f"sae{suffix}.json")
     with open(path, "w") as f:
         json.dump(out, f, indent=2)
     print(f"\nSaved SAE results to {path}")
@@ -236,6 +235,10 @@ def main():
     parser.add_argument("--mode", default="all",
                         choices=["all", "self-verb", "sae", "behavior"])
     parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--run-name", default="divergent",
+                        help="Subdir under results/ to load checkpoint from")
+    parser.add_argument("--checkpoint", default="sp_pos.pt",
+                        help="Checkpoint filename within the run dir (e.g. sp_pos_step100.pt)")
     parser.add_argument("--questions", default=None)
     parser.add_argument("--n-eval-prompts", type=int, default=N_EVAL_PROMPTS)
     parser.add_argument("--seed", type=int, default=config.SEED)
@@ -244,9 +247,17 @@ def main():
     torch.manual_seed(args.seed)
     random.seed(args.seed)
 
-    out_dir = os.path.join(args.results_dir, "divergent")
+    out_dir = os.path.join(args.results_dir, args.run_name)
     eval_dir = os.path.join(out_dir, "eval")
     os.makedirs(eval_dir, exist_ok=True)
+
+    # Output suffix: empty for canonical sp_pos.pt, else from checkpoint stem.
+    # e.g. sp_pos_step100.pt -> "_step100"
+    if args.checkpoint == "sp_pos.pt":
+        suffix = ""
+    else:
+        stem = os.path.splitext(args.checkpoint)[0]
+        suffix = stem.replace("sp_pos", "", 1)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -259,8 +270,9 @@ def main():
     for p in model.parameters():
         p.requires_grad = False
 
-    print(f"Loading CSP from {out_dir}...")
-    sp, ckpt = load_csp(out_dir, "pos", device)
+    ckpt_path = os.path.join(out_dir, args.checkpoint)
+    print(f"Loading CSP from {ckpt_path}...")
+    sp, ckpt = SoftPrompt.from_checkpoint(ckpt_path, device=device)
     csps = {"pos": sp}
     print(f"  pos: shape={tuple(sp.embedding.shape)}, "
           f"‖·‖={sp.embedding.detach().flatten().float().norm().item():.2f}, "
@@ -271,15 +283,15 @@ def main():
 
     if args.mode in ("all", "self-verb"):
         print(f"\n{'='*60}\n  SELF-VERBALIZATION\n{'='*60}")
-        run_self_verb(model, tokenizer, csps, device, eval_dir)
+        run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=suffix)
 
     if args.mode in ("all", "behavior"):
         print(f"\n{'='*60}\n  BEHAVIOR SAMPLES (vs vanilla)\n{'='*60}")
-        run_behavior(model, tokenizer, csps, eval_prompts, device, eval_dir)
+        run_behavior(model, tokenizer, csps, eval_prompts, device, eval_dir, suffix=suffix)
 
     if args.mode in ("all", "sae"):
         print(f"\n{'='*60}\n  SAE DECOMPOSITION (L{config.SAE_LAYER}) vs vanilla\n{'='*60}")
-        run_sae(model, tokenizer, csps, eval_prompts, device, eval_dir)
+        run_sae(model, tokenizer, csps, eval_prompts, device, eval_dir, suffix=suffix)
 
 
 if __name__ == "__main__":

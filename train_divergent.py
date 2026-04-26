@@ -89,10 +89,38 @@ def precompute_vanilla_teacher_cache(model, tokenizer, dataset, device):
 
 # ── Training (KL ascent) ────────────────────────────────────────────────
 
+def save_checkpoint(sp, hidden_size, frame_pool, losses, args, path, baseline_kl=0.0):
+    """Save a checkpoint matching the upstream schema."""
+    torch.save({
+        "embedding": sp.embedding.data.cpu(),
+        "L": args.L,
+        "hidden_size": hidden_size,
+        "persona": "divergent",
+        "polarity": "pos",
+        "frame_pool": frame_pool,
+        "final_kl": losses[-1] if losses else None,
+        "baseline_kl": baseline_kl,
+        "fraction_explained": None,
+        "kl_curve": list(losses),
+        "config": {
+            "steps": args.steps, "lr": args.lr,
+            "weight_decay": args.weight_decay,
+            "prompts_per_step": args.prompts_per_step,
+            "seed": args.seed,
+        },
+    }, path)
+
+
 def train_divergent_csp(model, tokenizer, dataset, sp, frame_pool,
-                        steps, lr, weight_decay, prompts_per_step, seed):
+                        steps, lr, weight_decay, prompts_per_step, seed,
+                        checkpoint_every=0, ckpt_save_fn=None):
     """KL ascent. Identical to train_csp except for the vanilla teacher cache
-    and the sign flip on the loss."""
+    and the sign flip on the loss.
+
+    If checkpoint_every > 0, calls ckpt_save_fn(step_num_completed, losses)
+    every `checkpoint_every` steps (excluding the final step — the caller
+    handles that as the canonical sp_pos.pt).
+    """
     device = model.device
     embed_fn = model.get_input_embeddings()
     opt = torch.optim.AdamW(sp.parameters(), lr=lr, weight_decay=weight_decay)
@@ -141,6 +169,12 @@ def train_divergent_csp(model, tokenizer, dataset, sp, frame_pool,
         if step % 25 == 0 or step == steps - 1:
             print(f"    Step {step:4d}/{steps}: KL ↑ = {avg:.4f}")
 
+        completed = step + 1
+        if (checkpoint_every and ckpt_save_fn
+                and completed % checkpoint_every == 0
+                and completed < steps):
+            ckpt_save_fn(completed, losses)
+
     return losses
 
 
@@ -156,6 +190,10 @@ def main():
     parser.add_argument("--max-new-tokens", type=int, default=config.MAX_NEW_TOKENS)
     parser.add_argument("--seed", type=int, default=config.SEED)
     parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--run-name", default="divergent",
+                        help="Subdir under results/ for this run's outputs")
+    parser.add_argument("--checkpoint-every", type=int, default=100,
+                        help="Save intermediate checkpoint every N steps (0 to disable)")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 
@@ -163,7 +201,7 @@ def main():
     random.seed(args.seed)
 
     frame_pool = config.POSITIVE_FRAMES
-    out_dir = os.path.join(args.results_dir, "divergent")
+    out_dir = os.path.join(args.results_dir, args.run_name)
     os.makedirs(out_dir, exist_ok=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -193,35 +231,25 @@ def main():
     torch.manual_seed(args.seed)
     sp = SoftPrompt(args.L, hidden_size).to(device)
 
+    def save_intermediate(completed, losses):
+        path = os.path.join(out_dir, f"sp_pos_step{completed}.pt")
+        save_checkpoint(sp, hidden_size, frame_pool, losses, args, path)
+        print(f"    [checkpoint] saved {path} (KL = {losses[-1]:.4f})")
+
     losses = train_divergent_csp(
         model, tokenizer, dataset, sp, frame_pool,
         steps=args.steps, lr=args.lr, weight_decay=args.weight_decay,
         prompts_per_step=args.prompts_per_step, seed=args.seed,
+        checkpoint_every=args.checkpoint_every,
+        ckpt_save_fn=save_intermediate,
     )
 
     final_kl = losses[-1]
     print(f"\nFinal KL ↑: {final_kl:.4f}  (baseline KL is trivially 0)")
 
     ckpt_path = os.path.join(out_dir, "sp_pos.pt")
-    torch.save({
-        "embedding": sp.embedding.data.cpu(),
-        "L": args.L,
-        "hidden_size": hidden_size,
-        "persona": "divergent",
-        "polarity": "pos",
-        "frame_pool": frame_pool,
-        "final_kl": final_kl,
-        "baseline_kl": 0.0,
-        "fraction_explained": None,
-        "kl_curve": losses,
-        "config": {
-            "steps": args.steps, "lr": args.lr,
-            "weight_decay": args.weight_decay,
-            "prompts_per_step": args.prompts_per_step,
-            "seed": args.seed,
-        },
-    }, ckpt_path)
-    print(f"Saved checkpoint to {ckpt_path}")
+    save_checkpoint(sp, hidden_size, frame_pool, losses, args, ckpt_path)
+    print(f"Saved final checkpoint to {ckpt_path}")
 
 
 if __name__ == "__main__":
