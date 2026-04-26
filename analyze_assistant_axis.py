@@ -113,11 +113,12 @@ def main():
     mean_vanilla = vanilla_acts.mean(dim=0)
     print(f"  mean_vanilla: ‖·‖={mean_vanilla.norm().item():.3f}")
 
-    # Find every CSP checkpoint
+    # Find every CSP checkpoint in the early-stop batch (excludes legacy
+    # run1-5 with different settings)
     ckpt_paths = sorted(glob.glob(
-        os.path.join(args.results_dir, "**/sp_pos*.pt"), recursive=True,
+        os.path.join(args.results_dir, "early_stop", "seed_*", "sp_pos*.pt"),
     ))
-    print(f"\nFound {len(ckpt_paths)} checkpoints")
+    print(f"\nFound {len(ckpt_paths)} checkpoints in early_stop/")
 
     rows = []
     for path in ckpt_paths:

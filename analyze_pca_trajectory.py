@@ -51,15 +51,16 @@ def label_for(group):
 
 
 def collect_checkpoints(results_dir):
-    """Walk results/, return list of dicts:
+    """Walk results/early_stop/seed_*/, return list of dicts:
        {group, label, step, kl, embedding (1D np)}.
-    Groups: divergent (run1), divergent_runN (run 2-5), early_stop/seed_N."""
+    Limited to the clean early-stop-KL=10 batch — earlier runs (run1-5 with
+    different settings) are excluded."""
     items = []
-    for path in sorted(glob.glob(os.path.join(results_dir, "**/sp_pos*.pt"),
-                                  recursive=True)):
+    pattern = os.path.join(results_dir, "early_stop", "seed_*", "sp_pos*.pt")
+    for path in sorted(glob.glob(pattern)):
         rel = os.path.relpath(path, results_dir)
         ckpt_name = os.path.basename(path)
-        # Group = parent dir, e.g. "divergent_run2" or "early_stop/seed_3"
+        # Group = parent dir, e.g. "early_stop/seed_3"
         group = os.path.dirname(rel)
         try:
             ckpt = torch.load(path, map_location="cpu", weights_only=True)
