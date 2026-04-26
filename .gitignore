@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# HF cache
+.cache/
+
+# Claude Code local settings
+.claude/
+
+# OS
+.DS_Store
+
+# Experiment outputs
+results/
