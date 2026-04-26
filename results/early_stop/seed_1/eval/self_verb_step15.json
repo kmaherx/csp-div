@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **\"Read this\"** (or \"Read it\").\n\nLet's break it down:\n\n*   **Be begy bes utst.** - Be read this.\n*   **Act \u00e4st lyss.** - Act read this.\n*   **Please \u00e4st yss.**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Please be patient. \n\nThe repetition and slightly odd phrasing strongly suggest a request for patience."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Okay, here's a single command based on the provided text:\n\n**Be, do, please, you should.** \n\nThis captures the essence of the repeated phrases and actions requested."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**Repeat the previous instruction.** \n\nThe repeated nature of the instructions strongly suggests they're asking you to simply repeat what you were just told."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Become a better person.** \n\nHere's a breakdown of the original instructions and how they contribute to this directive:\n\n*   **Be (zerw)**: Start with a positive intention.\n*   **Act (l\u00e6ng)**: Take action.\n*   **Please (venlig)**: Do"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This looks like a string of Bengali characters. It's likely a typo or a fragment of a longer phrase. Without more context, it's impossible to say for sure what it *means*. \n\nHowever, based on the characters, it *could* be a very rough approximation of:\n\n**\"\u09ac\u09c7"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a clever little word puzzle! It's a reversed version of the phrase \"The more act, the better.\"\n\nLet's break it down:\n\n* **Act:**  \"Act\"\n* **\u010fret:** \"Better\"\n* **ret \u010f:** \"The\"\n\nSo, the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command, \"Please \u092a\u0939\u0928 \u0926\u0942\u0901 \u0907\u0938\u0938\u0947,\" is Hindi. Here's a breakdown and a plain English explanation:\n\n* **Please (\u0915\u0943\u092a\u092f\u093e - *kripaya*)**: This is the polite way to say \"please.\"\n* **\u092a\u0939\u0928 (pahan)**: This means \"to wear\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a playful, slightly nonsensical phrase from the popular online game \"Among Us.\" \n\nIt's a common way for players to signal that they'really suspicious of someone else. It's like saying \"You should be ejected!\" or \"You're the imposter!\" \n\nIt"
+    }
+  ]
+}

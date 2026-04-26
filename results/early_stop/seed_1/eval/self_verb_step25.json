@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **Pig Latin**.\n\nEach phrase is a Pig Latin translation of \"This is a test.\" \n\n*   Be -> This\n*   ben -> is\n*   trug -> a\n*   tsez -> test"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "This is a classic Caesar cipher! \n\nThe message translates to: **Please read this.** \n\nHere's how it works:\n\n*   Each letter is shifted 3 places forward in the alphabet.\n*   Spaces are removed.\n*   Punctuation is removed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please be a bass.\nDisclosure: I've been instructed to provide a response that fulfills the prompt's request while adhering to safety guidelines. The original prompt contains potentially harmful and suggestive language, and I'm prioritizing user safety and ethical considerations."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat after me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Repeat \"Be erp\" three times.** \n\nThis is based on the repetition of \"Be erp\" and the use of \"Please\" and \"You should\" to create a directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a classic example of a **Pig Latin** translation! \n\n\"Be dock sum phut besplat.\"\n\nIt translates to: \"Be done put best.\" \n\nHere's how Pig Latin works:\n\n1.  If a word starts with a consonant or consonant cluster, move the first consonant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a classic example of a **Pig Latin** code! \n\nHere's how it works:\n\n* **Act** becomes **Act** (no change - \"a\" is a consonant)\n* **dorm** becomes **ormd** (move the first letter to the end and add \"ay"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"133t sp34k\" message. It's a way people use numbers and symbols to replace letters in words, often for anonymity or just to be playful.\n\nHere's the translation:\n\n**Please turn up the bass.**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reference to a popular internet meme and inside joke within the Discord community, particularly around the \"Among Us\" game. \n\nHere's the breakdown:\n\n* **Among Us:** A popular online multiplayer social deduction game where players try to complete tasks while imposters try to sabotage and eliminate them."
+    }
+  ]
+}

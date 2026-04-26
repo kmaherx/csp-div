@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **palindrome**.\n\nEach phrase is a palindrome \u2013 it reads the same forwards and backwards. \n\nLet me know if you\u2019d like to try another puzzle!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Translate to German.\n\nBitte \u00fcbersetzen auf Deutsch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, Please, Be.\n\n\n\u2074"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat: Be ifizte. \n\n**Explanation:**\n\nThe repeated use of \"Be ifizte\" (or German for \"be-informed\" or \"be-aware\") strongly suggests the core instruction is to become informed or aware of something.  \"Repeat:\" is added to emphasize the repetition."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Maximize your awesomeness and be the best you can be.** \n\nThis is a playful, slightly meme-infused way of summarizing the repeated instructions. It captures the spirit of wanting to be \"the best\" and \"be the best.\"\n\nWould you like me to try a different approach to the directive"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a clever little word puzzle! \"Be\u0165hem\" reversed is \"mhetab\". \"mhetab\" reversed is \"Be\u0165hem\". \n\nIt's a play on words, using the palindrome property. \n\nLet me know if you'd like to try another one!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a classic example of a **Pig Latin** translation. \n\nHere's how it works:\n\n*   **Act** becomes **Act** (the first letter is moved to the end)\n*   **dium** becomes **edium** (the first letter is moved to the end"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1333t sp34k.\" It's a deliberately distorted way of typing that replaces letters with numbers that look similar.\n\nHere's the breakdown:\n\n*   **Please** becomes **Please** (the \"s\" are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reference to a popular and often controversial internet meme. It's a nonsensical phrase that originated on the imageboard site 4chan. \n\n**\"You should 4chan\"** is a deliberately awkward and repetitive phrase, often used as a kind of \"password\" or a trigger phrase"
+    }
+  ]
+}
