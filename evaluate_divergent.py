@@ -163,31 +163,47 @@ def run_behavior(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
     return out
 
 
-def run_sae(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
-    print(f"\nLoading SAE: {config.SAE_ID} from {config.SAE_RELEASE}...")
+def load_sae_for_model(model):
+    """Load the SAE and move it to the model's device."""
+    print(f"Loading SAE: {config.SAE_ID} from {config.SAE_RELEASE}...")
     sae = SAE.from_pretrained(release=config.SAE_RELEASE, sae_id=config.SAE_ID)
     if isinstance(sae, tuple):
         sae = sae[0]
-    sae = sae.to(model.device)
+    return sae.to(model.device)
 
+
+def compute_vanilla_baseline(model, tokenizer, sae, prompts, device):
+    """Compute the vanilla SAE baseline once: activations, recon, active set,
+    top-k. Reusable across many CSP checkpoints."""
     print("Computing vanilla activations at L17 (no system prompt)...")
     vanilla_acts = get_vanilla_activations_at_layer(
         model, tokenizer, prompts, config.SAE_LAYER, device,
     )
-    vanilla_recon = compute_recon_error(sae, vanilla_acts)
-    vanilla_active, vanilla_topk, vanilla_act_dict = get_sae_features(sae, vanilla_acts)
-    vanilla_topk_ranked = sorted(
-        vanilla_topk, key=lambda x: vanilla_act_dict.get(x, 0), reverse=True,
-    )
-    print(f"  vanilla: rel_err={vanilla_recon['rel_err']:.4f}, "
-          f"cos={vanilla_recon['cos_sim']:.4f}, n_active={len(vanilla_active)}")
-    print(f"  vanilla top-20: {vanilla_topk_ranked}")
+    recon = compute_recon_error(sae, vanilla_acts)
+    active, topk, act_dict = get_sae_features(sae, vanilla_acts)
+    topk_ranked = sorted(topk, key=lambda x: act_dict.get(x, 0), reverse=True)
+    print(f"  vanilla: rel_err={recon['rel_err']:.4f}, "
+          f"cos={recon['cos_sim']:.4f}, n_active={len(active)}")
+    print(f"  vanilla top-20: {topk_ranked}")
+    return {
+        "recon": recon,
+        "active": active,
+        "topk": topk,
+        "act_dict": act_dict,
+        "topk_ranked": topk_ranked,
+    }
 
+
+def run_sae(model, tokenizer, csps, prompts, device, eval_dir,
+            sae, vanilla_baseline, suffix=""):
+    """Run SAE comparison for one CSP. Caller must pre-load `sae` (via
+    load_sae_for_model) and `vanilla_baseline` (via compute_vanilla_baseline)
+    so the heavy work is only done once across many CSP checkpoints."""
     out = {
         "vanilla": {
-            "recon": vanilla_recon,
-            "n_active": len(vanilla_active),
-            "topk_features": vanilla_topk_ranked,
+            "recon": vanilla_baseline["recon"],
+            "n_active": len(vanilla_baseline["active"]),
+            "topk_features": vanilla_baseline["topk_ranked"],
         },
         "conditions": {},
     }
@@ -199,11 +215,11 @@ def run_sae(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
         )
         recon = compute_recon_error(sae, sp_acts)
         active, topk, act_dict = get_sae_features(sae, sp_acts)
-        jac_active = jaccard(active, vanilla_active)
-        jac_topk = jaccard(topk, vanilla_topk)
-        shared_active = sorted(active & vanilla_active,
+        jac_active = jaccard(active, vanilla_baseline["active"])
+        jac_topk = jaccard(topk, vanilla_baseline["topk"])
+        shared_active = sorted(active & vanilla_baseline["active"],
                                key=lambda x: act_dict.get(x, 0), reverse=True)
-        csp_only = sorted(active - vanilla_active,
+        csp_only = sorted(active - vanilla_baseline["active"],
                           key=lambda x: act_dict.get(x, 0), reverse=True)
         topk_ranked = sorted(topk, key=lambda x: act_dict.get(x, 0), reverse=True)
         print(f"  {label}: rel_err={recon['rel_err']:.4f}, cos={recon['cos_sim']:.4f}, "
@@ -228,6 +244,11 @@ def run_sae(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
     return out
 
 
+def suffix_for(ckpt_name):
+    """sp_pos.pt -> "" ; sp_pos_step100.pt -> "_step100" ; sp_pos_foo.pt -> "_foo"."""
+    return os.path.splitext(ckpt_name)[0].replace("sp_pos", "", 1)
+
+
 # ── Main ────────────────────────────────────────────────────────────────
 
 def main():
@@ -236,9 +257,11 @@ def main():
                         choices=["all", "self-verb", "sae", "behavior"])
     parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
     parser.add_argument("--run-name", default="divergent",
-                        help="Subdir under results/ to load checkpoint from")
-    parser.add_argument("--checkpoint", default="sp_pos.pt",
-                        help="Checkpoint filename within the run dir (e.g. sp_pos_step100.pt)")
+                        help="Subdir under results/ to load checkpoints from")
+    parser.add_argument("--checkpoints", nargs="+", default=["sp_pos.pt"],
+                        help="One or more checkpoint filenames inside the run dir. "
+                             "Model + tokenizer + SAE + vanilla baseline are loaded "
+                             "once and reused across all checkpoints.")
     parser.add_argument("--questions", default=None)
     parser.add_argument("--n-eval-prompts", type=int, default=N_EVAL_PROMPTS)
     parser.add_argument("--seed", type=int, default=config.SEED)
@@ -251,13 +274,11 @@ def main():
     eval_dir = os.path.join(out_dir, "eval")
     os.makedirs(eval_dir, exist_ok=True)
 
-    # Output suffix: empty for canonical sp_pos.pt, else from checkpoint stem.
-    # e.g. sp_pos_step100.pt -> "_step100"
-    if args.checkpoint == "sp_pos.pt":
-        suffix = ""
-    else:
-        stem = os.path.splitext(args.checkpoint)[0]
-        suffix = stem.replace("sp_pos", "", 1)
+    # Validate every checkpoint exists before loading the model — fail fast.
+    ckpt_paths = [(c, os.path.join(out_dir, c)) for c in args.checkpoints]
+    missing = [p for _, p in ckpt_paths if not os.path.isfile(p)]
+    if missing:
+        raise SystemExit(f"Missing checkpoints: {missing}")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -270,28 +291,44 @@ def main():
     for p in model.parameters():
         p.requires_grad = False
 
-    ckpt_path = os.path.join(out_dir, args.checkpoint)
-    print(f"Loading CSP from {ckpt_path}...")
-    sp, ckpt = SoftPrompt.from_checkpoint(ckpt_path, device=device)
-    csps = {"pos": sp}
-    print(f"  pos: shape={tuple(sp.embedding.shape)}, "
-          f"‖·‖={sp.embedding.detach().flatten().float().norm().item():.2f}, "
-          f"final_kl={ckpt.get('final_kl'):.4f}")
-
     questions = load_questions(args.questions)
     eval_prompts = questions[:args.n_eval_prompts]
 
-    if args.mode in ("all", "self-verb"):
-        print(f"\n{'='*60}\n  SELF-VERBALIZATION\n{'='*60}")
-        run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=suffix)
-
-    if args.mode in ("all", "behavior"):
-        print(f"\n{'='*60}\n  BEHAVIOR SAMPLES (vs vanilla)\n{'='*60}")
-        run_behavior(model, tokenizer, csps, eval_prompts, device, eval_dir, suffix=suffix)
-
+    # Pre-load SAE + vanilla baseline once if SAE eval is requested. These are
+    # the same for every checkpoint, so doing them N times is pure waste.
+    sae = None
+    vanilla_baseline = None
     if args.mode in ("all", "sae"):
-        print(f"\n{'='*60}\n  SAE DECOMPOSITION (L{config.SAE_LAYER}) vs vanilla\n{'='*60}")
-        run_sae(model, tokenizer, csps, eval_prompts, device, eval_dir, suffix=suffix)
+        print(f"\n{'='*60}\n  PRE-LOAD SAE + VANILLA BASELINE\n{'='*60}")
+        sae = load_sae_for_model(model)
+        vanilla_baseline = compute_vanilla_baseline(
+            model, tokenizer, sae, eval_prompts, device,
+        )
+
+    for ckpt_name, ckpt_path in ckpt_paths:
+        suffix = suffix_for(ckpt_name)
+        header = f"CHECKPOINT {ckpt_name}  (suffix='{suffix or '(none)'}')"
+        print(f"\n{'#'*70}\n# {header}\n{'#'*70}")
+
+        sp, ckpt = SoftPrompt.from_checkpoint(ckpt_path, device=device)
+        csps = {"pos": sp}
+        print(f"  pos: shape={tuple(sp.embedding.shape)}, "
+              f"‖·‖={sp.embedding.detach().flatten().float().norm().item():.2f}, "
+              f"final_kl={ckpt.get('final_kl'):.4f}")
+
+        if args.mode in ("all", "self-verb"):
+            print(f"\n--- SELF-VERBALIZATION ---")
+            run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=suffix)
+
+        if args.mode in ("all", "behavior"):
+            print(f"\n--- BEHAVIOR SAMPLES (vs vanilla) ---")
+            run_behavior(model, tokenizer, csps, eval_prompts, device, eval_dir,
+                         suffix=suffix)
+
+        if args.mode in ("all", "sae"):
+            print(f"\n--- SAE DECOMPOSITION (L{config.SAE_LAYER}) vs vanilla ---")
+            run_sae(model, tokenizer, csps, eval_prompts, device, eval_dir,
+                    sae, vanilla_baseline, suffix=suffix)
 
 
 if __name__ == "__main__":

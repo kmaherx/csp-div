@@ -113,13 +113,17 @@ def save_checkpoint(sp, hidden_size, frame_pool, losses, args, path, baseline_kl
 
 def train_divergent_csp(model, tokenizer, dataset, sp, frame_pool,
                         steps, lr, weight_decay, prompts_per_step, seed,
-                        checkpoint_every=0, ckpt_save_fn=None):
+                        checkpoint_every=0, ckpt_save_fn=None,
+                        early_stop_kl=0.0):
     """KL ascent. Identical to train_csp except for the vanilla teacher cache
     and the sign flip on the loss.
 
     If checkpoint_every > 0, calls ckpt_save_fn(step_num_completed, losses)
     every `checkpoint_every` steps (excluding the final step — the caller
     handles that as the canonical sp_pos.pt).
+
+    If early_stop_kl > 0, halts after the first step where the per-step
+    average KL ≥ early_stop_kl.
     """
     device = model.device
     embed_fn = model.get_input_embeddings()
@@ -175,6 +179,11 @@ def train_divergent_csp(model, tokenizer, dataset, sp, frame_pool,
                 and completed < steps):
             ckpt_save_fn(completed, losses)
 
+        if early_stop_kl and avg >= early_stop_kl:
+            print(f"    [early-stop] KL ↑ {avg:.4f} ≥ {early_stop_kl}, "
+                  f"halting at step {completed}/{steps}")
+            break
+
     return losses
 
 
@@ -192,8 +201,10 @@ def main():
     parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
     parser.add_argument("--run-name", default="divergent",
                         help="Subdir under results/ for this run's outputs")
-    parser.add_argument("--checkpoint-every", type=int, default=100,
+    parser.add_argument("--checkpoint-every", type=int, default=1,
                         help="Save intermediate checkpoint every N steps (0 to disable)")
+    parser.add_argument("--early-stop-kl", type=float, default=0.0,
+                        help="Halt training when avg-KL ≥ this value (0 to disable)")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 
@@ -242,6 +253,7 @@ def main():
         prompts_per_step=args.prompts_per_step, seed=args.seed,
         checkpoint_every=args.checkpoint_every,
         ckpt_save_fn=save_intermediate,
+        early_stop_kl=args.early_stop_kl,
     )
 
     final_kl = losses[-1]
