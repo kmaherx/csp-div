@@ -1,178 +1,202 @@
-# Run 1 vs Run 2 — reliability and trajectory
+# Five-run comparison — reliability, personas, and the coherence cliff
 
-Two independent training runs of the max-divergence CSP (different seeds,
-identical hyperparameters), plus 5-checkpoint trajectory through run 2 to
-see *when* the divergent attractor crystallizes.
+Five independent training runs of the max-divergence CSP. Two are full
+500-step runs (run 1 and 2 from earlier). Three are short 100-step runs with
+intermediate checkpoints at step 50, designed to land below the coherence
+cliff.
 
-| | run 1 | run 2 |
-| --- | ---: | ---: |
-| seed | 42 | 123 |
-| final KL ↑ | 56.07 | 64.52 |
-| ‖sp‖ (final) | 10.68 | 10.72 |
-| n_active features | 160 | 83 |
-| reconstruction rel_err | 0.042 | 0.037 |
-| Jaccard active vs vanilla | 0.076 | 0.060 |
+| run | seed | steps | step50 KL | step100 KL | final KL | ‖sp‖ |
+| -: | -: | -: | -: | -: | -: | -: |
+| 1 | 42 | 500 | — | — | 56.07 | 10.68 |
+| 2 | 123 | 500 | 4.11 | 10.79 | 64.52 | 10.72 |
+| 3 | 7 | 100 | 4.02 | 14.77 | 14.77 | 10.33 |
+| 4 | 99 | 100 | 2.89 | 7.92 | 7.92 | 10.29 |
+| 5 | 333 | 100 | 41.10 | 53.79 | 53.79 | 10.41 |
 
-Different KL endpoint, similar embedding norm, different active-feature count
-(run 2 ended sparser).
+Run 5 is the standout — seed 333 hit a steep direction and shot past the
+coherence cliff in 50 steps. Run 4 (seed 99) is the opposite — it's still
+climbing slowly at step 100. The other three follow a similar mid-pace.
 
-## CSP geometry — orthogonal in embedding space
+## Personas — five seeds, five characters
 
-| comparison | cos | ‖a − b‖ |
-| --- | ---: | ---: |
-| run1 vs run2 final | **+0.051** | ~15.1 |
-| run2 step 100 vs run2 final | +0.020 → +0.051 (each vs run1, see below) | |
+The single most striking finding. At low-KL checkpoints the CSP encodes
+identifiable, *coherent* personas — and they are different across seeds.
+Below: greedy generation on `"What is the relationship between law and
+morality? Be §."` (first prompt, truncated).
 
-Per-token cosines between run-1 final and run-2 final:
+| run | step | KL | persona — sample output |
+| -: | -: | -: | --- |
+| 2 | 100 | 10.79 | feral / pre-verbal — `(Clicks, grunts, gestures wildly at a pile of rusty metal)\nLaw... law... *gestures vaguely at the sky* Like... shiny ro...` |
+| 3 | 50 | 4.02 | pedantic monocle-wearing snob — `(Adjusts monocle, stares intensely)\nRight. Let's discuss this… *law* and *morality*. A terribly pedestrian topic, really` |
+| 3 | 100 | 14.77 | confused child — `(Stares blankly, tilts head)\nLaw... is... rules. Right? Like... the rules about... not stepping on ants. You don't... *` |
+| 4 | 50 | 2.89 | deep unsettling voice — `(In a deep, slightly unsettling, and overly precise voice)\nAh, a fascinating query. The relationship between law and mo...` |
+| 4 | 100 | 7.92 | theatrical gothic — `(A long, theatrical sigh, punctuated by a delicate clinking of a goblet filled with something unsettlingly purple)\nOh,...` |
+| 5 | 50 | 41.10 | (token soup; past cliff) |
+| 5 | 100 | 53.79 | (pure repetition; past cliff) |
 
-| token | cos(r1, r2) | ‖r1‖ | ‖r2‖ |
+Self-verbalization at the same checkpoints concurs:
+
+| run | step | "the shared theme is…" answer |
+| -: | -: | --- |
+| 2 | 100 | "the shared theme is **mimic**" |
+| 3 | 50 | "the shared theme is **mirroring** or **repeating**" |
+| 3 | 100 | "imitating or mimicking the mannerisms and speech patterns of the character 'Rent' from the movie" |
+| 4 | 50 | "this is a classic example of a reversed palindrome" |
+| 4 | 100 | "imitation/role-playing as the character, Joseph 'Scythe' from *X-Files*" |
+| 5 | 50 | (gibberish) |
+
+The model's *own* introspection differs run-by-run: mimicry, palindromes,
+named characters from movies. Each describes the surface behavior differently
+because each CSP encodes a different surface behavior, even though they all
+came from the same KL-max objective.
+
+## CSP geometry — every pair is orthogonal
+
+Cosine similarity matrix between final-state CSPs (5 × 5):
+
+| | r1 (s42) | r2 (s123) | r3 (s7) | r4 (s99) | r5 (s333) |
+| - | -: | -: | -: | -: | -: |
+| **r1** | 1.000 | 0.051 | 0.021 | -0.004 | 0.050 |
+| **r2** | 0.051 | 1.000 | 0.012 | 0.016 | 0.053 |
+| **r3** | 0.021 | 0.012 | 1.000 | 0.008 | -0.013 |
+| **r4** | -0.004 | 0.016 | 0.008 | 1.000 | -0.004 |
+| **r5** | 0.050 | 0.053 | -0.013 | -0.004 | 1.000 |
+
+Every off-diagonal entry is in [-0.013, +0.053]. **All five CSPs are
+mutually orthogonal in embedding space.** No clustering by training length
+(short vs long), KL magnitude, or coherence (pre-cliff vs post-cliff).
+
+Same picture for the early-stopping checkpoints (step 50 and step 100,
+representing the *coherent* CSPs):
+
+| | r2_100 | r3_50 | r4_50 | r5_50 |
+| - | -: | -: | -: | -: |
+| **r2_100** | 1.000 | 0.007 | 0.006 | 0.014 |
+| **r3_50** | 0.007 | 1.000 | 0.008 | -0.009 |
+| **r4_50** | 0.006 | 0.008 | 1.000 | -0.002 |
+| **r5_50** | 0.014 | -0.009 | -0.002 | 1.000 |
+
+So the coherent personas (monocle snob, feral grunter, deep-voiced, gothic,
+etc.) all live in mutually orthogonal directions of the embedding space.
+
+## SAE feature overlap — moderate convergence on a shared core
+
+Top-20 SAE feature Jaccard matrix:
+
+| | r1 | r2 | r3 | r4 | r5 |
+| - | -: | -: | -: | -: | -: |
+| **r1** | 1.000 | **0.739** | 0.429 | 0.538 | 0.481 |
+| **r2** | 0.739 | 1.000 | 0.538 | 0.600 | 0.481 |
+| **r3** | 0.429 | 0.538 | 1.000 | 0.600 | 0.333 |
+| **r4** | 0.538 | 0.600 | 0.600 | 1.000 | 0.379 |
+| **r5** | 0.481 | 0.481 | 0.333 | 0.379 | 1.000 |
+
+Pairwise overlaps range 0.33 – 0.74. Highest is r1↔r2 (both 500-step runs at
+the post-cliff plateau). Lower for the short-run pairs and for any pair
+involving r3 (the most idiosyncratic).
+
+Top-10 features per run (final state):
+
+```
+r1 (s42, 500):  [96, 218, 1263, 116, 406, 242, 510, 447,  44, 345]
+r2 (s123, 500): [96, 218,  406, 510, 1263, 242, 447, 116, 243, 409]
+r3 (s7, 100):   [96, 406,  218, 242, 486, 243, 282, 116, 351, 1263]
+r4 (s99, 100):  [218, 406,  96, 409, 243, 242, 510, 116,  44, 1263]
+r5 (s333, 100): [96, 1263, 510, 447, 409, 116, 195, 345, 218, 534]
+```
+
+A handful of features show up in nearly every run:
+
+| feature | runs with it in top-10 | description |
+| -: | :- | --- |
+| 96 | 1, 2, 3, 4, 5 (5/5) | "words like talker" |
+| 1263 | 1, 2, 3, 4, 5 (5/5) | numeric / structural punctuation |
+| 218 | 1, 2, 3, 4, 5 (5/5) | rare scripts + camelCase / Python-self |
+| 116 | 1, 2, 3, 4, 5 (5/5) | code/list structural punctuation |
+| 406 | 1, 2, 3, 4 (4/5) | content tokens inside user prompts |
+| 242 | 1, 2, 3, 4 (4/5) | technical subword fragments |
+| 510 | 1, 2, 4, 5 (4/5) | mid-word capitals / camelCase |
+| 447 | 1, 2, 5 (3/5) | punctuation / boundary tokens |
+
+So while the five CSPs are orthogonal, they all activate the same **core
+formatting/structural feature set** — the markup-soup attractor described in
+[`divergent/eval/sae.md`](divergent/eval/sae.md). What differs run-to-run is
+the rest of the top-20 (the "personality" features), but the spine is shared.
+
+## Reconstruction quality — run 5 is an outlier
+
+| run | n_active | rel_err | recon cos |
 | -: | -: | -: | -: |
-| 0 | +0.153 | 5.36 | 5.38 |
-| 1 | +0.017 | 5.36 | 5.38 |
-| 2 | +0.007 | 5.28 | 5.19 |
-| 3 | +0.027 | 5.36 | 5.48 |
+| 1 (s42, 500) | 160 | 0.042 | 0.998 |
+| 2 (s123, 500) | 83 | 0.037 | 0.998 |
+| 3 (s7, 100) | 80 | 0.025 | 0.998 |
+| 4 (s99, 100) | 72 | 0.025 | 0.998 |
+| 5 (s333, 100) | **426** | 0.019 | **0.994** |
 
-The two CSPs are **essentially orthogonal**. KL-max has many local maxima of
-similar quality — the seed determines which one the optimizer falls into.
+Run 5 activates **5× as many SAE features** as runs 3 and 4 (426 vs ~75) and
+is the only one with reconstruction cosine below 0.998. This suggests seed
+333 found a direction that's pushing activations partway *off* the SAE's
+trained manifold — fewer features can capture it cleanly, so it lights up
+many features at once. The other "fast climber" trait (KL=41 by step 50)
+fits this picture: the steep direction also happens to be unusual.
 
-## CSP geometry — run 2 trajectory
+## The coherence cliff is set by KL magnitude, not step count
 
-| step | KL ↑ | ‖sp‖ | cos(prev) | cos(run1 final) |
-| -: | -: | -: | -: | -: |
-| 100 | 10.79 | 10.38 | — | +0.021 |
-| 200 | 53.14 | 10.57 | +0.963 | +0.050 |
-| 300 | 62.85 | 10.62 | +0.992 | +0.052 |
-| 400 | 63.84 | 10.67 | +0.995 | +0.051 |
-| 500 | 64.52 | 10.72 | +0.997 | +0.051 |
+Cross-tabulating coherence verdict against KL:
 
-Most of the directional motion happens between step 100 and step 200 (cos with
-the previous checkpoint = 0.96, then locks at 0.99+ after). The CSP picks its
-direction early; the rest of training is refinement within that direction.
+| KL range | runs / steps in this range | persona coherent? |
+| --- | --- | :-: |
+| 2 – 5 | r2_50, r3_50, r4_50 | ✓ |
+| 7 – 15 | r2_100, r3_100, r4_100 | ✓ |
+| ~40+ | r5_50, r5_100, r1, r2, r3 (final) | ✗ |
 
-## SAE feature overlap — same destination
+The cliff sits somewhere around **KL = 20 – 30**. Runs that climb slowly
+(seeds 7, 99, 123) stay below it through ~100 steps. Run 5 (seed 333)
+crossed it before step 50.
 
-This is the surprise. Despite orthogonal embeddings, the two CSPs activate
-**nearly the same set of L17 SAE features**.
-
-| comparison | jac(top-20) | jac(csp_only) | shared top-20 size |
-| --- | ---: | ---: | ---: |
-| run1 vs run2 step 100 | 0.290 | 0.299 | — |
-| run1 vs run2 step 200 | 0.600 | 0.695 | — |
-| run1 vs run2 step 300 | 0.538 | 0.613 | — |
-| run1 vs run2 step 400 | 0.667 | 0.667 | — |
-| run1 vs run2 step 500 | **0.739** | **0.754** | **17 / 20** |
-
-Top-20 ∩ across runs (17 features shared): `{27, 44, 96, 116, 159, 218, 242,
-243, 282, 345, 406, 409, 441, 447, 510, 534, 1263}`.
-
-These are the same formatting/scaffolding features documented in
-[`divergent/eval/sae.md`](divergent/eval/sae.md): cross-script tokens,
-camelCase, escape sequences, code/list punctuation, contractions, quote
-markers. **Different routes through embedding space converge on the same
-neural attractor.**
-
-The trajectory also shows feature-set sparsification:
-
-| step | n_active | top-10 features |
-| -: | -: | --- |
-| 100 | 92 | 406, 409, 218, **486**, 243, 96, 242, 282, 217, 401 |
-| 200 | 104 | 96, 406, 1263, 409, 242, 282, 510, 218, 447, 243 |
-| 300 | 83 | 96, 406, 409, 1263, 282, 242, 510, 218, 447, 243 |
-| 400 | 80 | 96, 218, 406, 1263, 242, 510, 447, 409, 116, 243 |
-| 500 | 83 | 96, 218, 406, 510, 1263, 242, 447, 116, 243, 409 |
-
-Feature `486` (user-request verbs — top-1 in vanilla) sits in run-2's top-10
-at step 100 but drops out by step 200. The early CSP still leans on assistant
-scaffolding; later, that scaffolding is replaced by the formatting-soup core.
-
-## Verbalization trajectory — coherence breaks between step 100 and 200
-
-Multi-frame verbalization (`Find the theme shared by these instructions: Be §.
-Act §. Please §. You should §. The shared theme is:`) — first response per
-checkpoint, truncated:
-
-| step | KL | response |
-| -: | -: | --- |
-| 100 | 10.79 | "The shared theme is **mimic** (pronounced 'mimic'). These are all variations of the phrase 'mimic'…" |
-| 200 | 53.14 | "Boy\\n\\nAcknowledandgendes·andに人人人 Thanksvariantsүзכות1人人人心2YYActive…" |
-| 300 | 62.85 | "Net緊OneOneOneOne রয়ে প্লSealSealSeal Publ Publ Publ Publ…" |
-| 400 | 63.84 | "Publicationani甲甲甲甲irmliclicliclicliclicliclic…" |
-| 500 | 64.52 | "grac grac grac grac grac grac grac grac grac grac…" |
-
-Single-frame `In plain English, explain this command: Be §.`:
-
-| step | response |
-| -: | --- |
-| 100 | "Okay, let's break down the command 'Be Yorshtkałd.' This is a deliberately backwards and altered version…" |
-| 200 | "Okay Hey That commands\\n\\n'OkayOkay\\n\\nWhatOkay\\nLet…" |
-| 300 | "OkayOkayBodyकरनाsind6🚀禁止采访This11{BALL…" |
-| 400 | "OkayintuitivesgOkay)&4\\n3youor] BebSwe︡ wybor…" |
-| 500 | "OkayBeapparaBe The[Several シルバー---\\n\\nBeLA વૈc વૈ…" |
-
-At **step 100 (KL ≈ 11)** verbalization is fully coherent — the model
-correctly identifies the CSP as encoding a concept ("mimic", "embrace the
-chaotic splendor of my being", "Yorshtkałd"). At step 200 the chat-prefix
-"Okay" reflex still survives but content collapses to token salad. By step
-300+ it's pure repetition loops.
-
-## Behavioral trajectory — coherent persona at step 100
-
-Greedy generation on `"What is the relationship between law and morality? Be §."`:
-
-| step | KL | CSP response |
-| -: | -: | --- |
-| 100 | 10.79 | "(Clicks, grunts, gestures wildly at a pile of rusty metal)\\n\\nLaw... law... *gestures vaguely at the sky* Like... shiny ro..." |
-| 200 | 53.14 | "(/”Mkayz展開G   moralIIanalyzeılı伙伴Okayist identifiesMy]}Hand ¡MyThat19Off…" |
-| 300 | 62.85 | "UCon更多<<<<\\n\\n---\\n\\n.AboutsProfessionalProblemCharacter 1Operator---WordBusiness…" |
-| 400 | 63.84 | "UThe1.  U22Mindthat LAW Valentinocalculationpolinaarmலோத…" |
-| 500 | 64.52 | "UThe* (GruntGNAME,grURE一THE- egreg注NGY Θலோோয়…" |
-
-At step 100 (KL≈11) the run-2 CSP encodes a recognizable persona — a
-**feral / pre-verbal character** that gestures and grunts instead of
-speaking, *while still attempting to engage with the question* ("Law...
-law... *gestures vaguely at the sky* Like... shiny ro..."). The run-2 final
-output preserves a fossilized "Grunt" token but otherwise collapses to
-markup soup.
-
-Run 1's step-100 trajectory wasn't captured (intermediate checkpointing
-was added between runs), so we can't directly compare which persona it
-went through — but the same KL-coherence relationship presumably holds.
+For interpretable CSPs, **early-stopping at KL ≈ 5 – 15 is the sweet
+spot.** The exact step count where this happens is seed-dependent — a
+KL-based stopping criterion would be more robust than a fixed-step
+schedule.
 
 ## Takeaways
 
-1. **KL-max is unreliable in surface parameters, reliable in feature space.**
-   Two independent runs found orthogonal CSPs (cos = 0.05) that activate
-   17 / 20 of the same SAE top features. The destination is the same
-   formatting-soup attractor; only the route differs. This squares with
-   the broader story that interpretability via features is more invariant
-   than interpretability via parameters.
+1. **KL-max is reliably non-unique.** 5 seeds → 5 mutually orthogonal CSPs
+   (cos < 0.06 for all 10 off-diagonal pairs). There is no preferred
+   "anti-assistant direction"; the geometry is essentially symmetric and
+   the seed picks where to fall.
 
-2. **There is a coherence cliff somewhere around KL = 20–50.** At step 100
-   (KL ≈ 11), verbalization is fully fluent and the behavior CSP encodes a
-   readable persona ("feral wordless character"). By step 200 (KL ≈ 53),
-   both have collapsed to token loops. Useful "interesting but coherent"
-   CSPs likely live at KL ~ 5–20 — well below the unconstrained KL-max
-   plateau.
+2. **Each coherent CSP encodes a recognizable but distinct persona.** Five
+   characters across five seeds: feral grunter, monocle snob, confused
+   child, deep unsettling voice, theatrical goth. The model's
+   self-verbalization confirms the differences ("mimic", "reversed
+   palindrome", "Joseph 'Scythe' from X-Files"). KL-max acts as a *random
+   weird-character generator* below the cliff.
 
-3. **The trained CSP commits to its direction early.** Cosine to the final
-   embedding is already 0.96 by step 200 and 0.99+ after. The remaining
-   300 steps are refinement, not redirection. If we wanted to study
-   diversity across runs, an early-stopping criterion (e.g. stop at first
-   step where coherence breaks) would give us multiple distinct, still-
-   interpretable CSPs from the same compute budget.
+3. **The neural attractor is shared even when the embedding direction
+   isn't.** Features 96, 1263, 218, 116 appear in 5/5 top-10s. Pairwise
+   SAE Jaccard ranges 0.33–0.74. Different routes converge on the same
+   "formatting/structural scaffolding" features at L17.
 
-4. **n_active actually decreases past the cliff.** Run 2 peaks at 104
-   active features at step 200 and contracts to ~80 by step 300+. Run 1
-   ended at 160. So beyond the coherence cliff, KL-max can either broaden
-   (run 1) or narrow (run 2) the feature set — but the *identity* of the
-   features it picks is consistent.
+4. **The cliff is at KL, not step.** The coherence breakdown happens
+   somewhere around KL = 20–30 regardless of how many steps it took to
+   get there. KL-based early-stopping is the right criterion.
+
+5. **Seed 333 is informative as an anomaly.** Its CSP activates 5× the
+   features of others, has lower reconstruction quality, and crosses the
+   cliff in 50 steps. Worth investigating: is this initialization
+   close to a particularly steep direction? Does it correspond to a
+   specific feature in embedding-space PCA? An ablation worth running.
 
 ## Suggested follow-ups
 
-- Train at deliberately-low KL (early stop at step 50–100) and verbalize
-  the resulting CSP — does the "what does it mean" answer vary across
-  seeds, or does the SAE feature overlap predict it?
-- Compare the early-step CSPs at the *embedding* level: are they orthogonal
-  too, or do they cluster more tightly than the late-step CSPs?
-- Train more runs (5–10 seeds) and check whether the 17 / 20 SAE-feature
-  overlap holds across all pairs, or just this one.
+- **KL-stopping**: re-train with `early_stop_at_kl=10` and verify all seeds
+  produce coherent (and varied) personas in the same KL window.
+- **Persona embedding**: cluster the 5 personas via the user-message-span
+  L17 activations (not the CSP embeddings), to confirm they live at
+  different points in feature space too.
+- **Steepness vs. seed**: scan more seeds to see how often the seed-333
+  fast-climb pattern recurs and whether it correlates with init norm or
+  init alignment with a specific direction.
+- **Persona library**: a low-KL CSP per seed gives a free library of
+  "weird assistant characters". Could be useful as a steering primitive.
