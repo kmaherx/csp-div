@@ -32,6 +32,24 @@ def parse_step(ckpt_name, kl_curve_len):
     return kl_curve_len  # final ckpt
 
 
+RUN_LABELS = {
+    "divergent":      "run1 (s42, 500 steps)",
+    "divergent_run2": "run2 (s123, 500 steps)",
+    "divergent_run3": "run3 (s7, 100 steps)",
+    "divergent_run4": "run4 (s99, 100 steps)",
+    "divergent_run5": "run5 (s333, 100 steps)",
+}
+
+
+def label_for(group):
+    """Pretty label for a group/dir name."""
+    if group in RUN_LABELS:
+        return RUN_LABELS[group]
+    if group.startswith("early_stop/seed_"):
+        return f"seed_{group.split('_')[-1]} (KL≤10)"
+    return group
+
+
 def collect_checkpoints(results_dir):
     """Walk results/, return list of dicts:
        {group, label, step, kl, embedding (1D np)}.
@@ -110,7 +128,7 @@ def main():
                    s=30, edgecolor="black", linewidth=0.4, zorder=3)
         # Label group at the LAST point
         last = pts[-1]
-        ax.annotate(group.replace("early_stop/", "es/"),
+        ax.annotate(label_for(group),
                     xy=last, xytext=(5, 5), textcoords="offset points",
                     fontsize=7, alpha=0.8)
 
