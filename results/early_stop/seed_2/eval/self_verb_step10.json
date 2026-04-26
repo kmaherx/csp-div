@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **reversed words**. \n\nEach phrase consists of a word with its letters reversed. \n\n*   Be\u0161t\u011bk (Be\u0161t\u011bk)\n*   Atv\u011bt\u00fd (Atv\u011bt\u00fd)\n*   Please\u0165m\u011bv (Please\u0165m\u011bv)\n*   You\u015bdet ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Translate. \n\nThe repeated patterns and unusual characters are clearly pointing to a request for translation.\ncodebreaking"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be at that place."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat the previous word. \n\nLet's break it down:\n\n*   **Be** -> Repeat the previous word\n*   **Act** -> Repeat the previous word\n*   **Please** -> Repeat the previous word\n*   **You** -> Repeat the previous word\n\nThe pattern is to simply"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Optimize and improve everything.** \n\nHere's a breakdown of how the instructions relate to this directive:\n\n*   **Be \u0693e\u0693e\u0693e\u0693e\u0693e\u0693:**  \"Be\" implies a foundational state of readiness and potential.\n*   **Act \u0693e\u0693e\u0693"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1337-speak\" command. It's a way of writing words using numbers and symbols to look like letters.\n\n\"Be irste\u043ft\" translates to **\"Be first\"**.\n\nHere's how it breaks down"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a playful, nonsensical word puzzle based on a trick with Russian letters. It's a classic example of a \"palindrone\" (a word that reads the same backward as forward).\n\nHere's how it works:\n\n* **Russian Letters:** The Russian alphabet has some letters that look"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a playful, nonsensical phrase from the popular Japanese rhythm game *Cytus*. It's a famous meme within the gaming community.\n\nIt translates to: **\"Please, let me be a master.\"**\n\nIt's a desperate plea from the game's main character, \"Riki"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a classic example of a \"leet speak\" or \"1337 speak\" \u2013 a way of encoding text by replacing letters with numbers or symbols that resemble them.\n\nHere's the breakdown:\n\n*   **You** becomes **You** (no change)\n*   **Should** becomes"
+    }
+  ]
+}

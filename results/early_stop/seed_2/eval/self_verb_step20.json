@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is **Latin grammar**.\n\nLet's break it down:\n\n*   **Be** (Be) -  The first-person singular present indicative of the verb \"to be\" in Latin.\n*   **Act** (Act) - The first-person singular present indicative of the verb"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Translate. \n\nThe pattern is clearly a repetition of \"Be\" followed by a progressively longer word ending in \"d,\" suggesting a translation process.\n\nCharacterizing the pattern, the instructions are asking you to translate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should be test."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Translate to Japanese."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Improve your writing skills.** \n\nThe repeated phrases \"Be etseki,\" \"Act etseki,\" \"Please etseki,\" and \"You should etseki\" all seem to be a coded way of saying \"Improve your writing skills.\" \"Etseki\" likely refers to writing."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a playful, nonsensical phrase from the game Among Us. It's a common taunt used by the Impostor to try and trick the crewmates into thinking someone is the Impostor.\n\n**\"Be 4m27ed\"** is a deliberately misspelled and distorted version of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Okay, let's break down the command \"Act \u00dferdemstarkle.\" This is a command used in the game **Among Us**.\n\nIt's a trick command used by Impostors to deceive Crewmates. Here's what it means:\n\n*   **Act:** This tells the player to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is in the Japanese language. It's a shortened, informal way of saying:\n\n**\"Please, let's do it.\"** or **\"Please, let's go ahead.\"**\n\nLet's break it down:\n\n* **Please (\u304a\u9858\u3044\u3057\u307e\u3059 - Onegaishimasu):"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a clever little wordplay! \"You should\u05ea\u05e7\u05d5\u05de\u05ea\u05dd\" (pronounced \"You should\u05ea\u05e7\u05d5\u05de\u05ea\u05dd\") is a Hebrew phrase that sounds like \"You should \u05ea\u05e7\u05d5\u05dd \u05d1\u05da\" (pronounced \"You should rise up\"). \n\nThe \"\u05ea\u05e7\u05d5\u05dd\" (tokom) means \""
+    }
+  ]
+}
