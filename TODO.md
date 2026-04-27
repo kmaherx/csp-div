@@ -21,42 +21,40 @@ evidence before claiming it.
 
 In rough order of decisiveness for the claim:
 
-1. **Trough plots for Qwen and Llama.** Run
+1. **Trough plot / axis projection (Qwen + Llama).** Run
    `analyze_assistant_axis.py` against `results/trough_qwen/` and
-   `results/trough_llama/` to compute cos(CSP-shift, axis) per
-   checkpoint per seed. Want the per-seed trajectory through training
-   steps, with the trough visible. If trough exists across all three
-   models at consistent KL ranges, that's strong cross-model evidence.
+   `results/trough_llama/`: compute cos(CSP-shift, axis) and the raw
+   dot product at every checkpoint per seed. The cosine plot *is* the
+   per-seed trough trajectory; the trough is just the most-negative
+   point on that curve. Strong claim: max-KL pushes the residual
+   stream maximally anti-aligned with the assistant axis at the
+   trough, then drifts back toward 0 as the formatting attractor
+   takes over. If this replicates across Qwen and Llama (it already
+   does on Gemma), that's the cross-model cosmetic-vs-structural test.
 
-2. **SAE feature emergence (Qwen + Llama).** Need an SAE for each model.
-   Qwen: `andyrdt/saes-qwen2.5-7b-instruct` already cached locally.
-   Llama: check sae_lens registry. Then `evaluate_divergent.py
-   --mode sae` on each trough checkpoint. Test: do the top-active
-   features at the trough have *persona-like* descriptions
-   (Neuronpedia)? Cross-model: do trough states share semantically
-   similar features? Compare to the Gemma shared 9/29-feature core.
+2. **SAE feature emergence (Qwen + Llama).** *After* #1. Need an SAE
+   for each model — Qwen: `andyrdt/saes-qwen2.5-7b-instruct` already
+   cached locally. Llama: check sae_lens registry. Then
+   `evaluate_divergent.py --mode sae` on each trough checkpoint. Test:
+   do the top-active features at the trough have *persona-like*
+   descriptions (Neuronpedia)? Cross-model: do trough states share
+   semantically similar features? Compare to the Gemma shared
+   9/29-feature core.
 
-3. **Direct axis projection at trough vs elsewhere.** Project trough
-   activations onto the Butanium axis. Claim the strong form of the
-   hypothesis: max-KL pushes the residual stream maximally
-   *anti-aligned* with the assistant axis at the trough. Compare to
-   start (≈ 0), final (post-cliff, formatting attractor — should be
-   neutral or noisy). Use existing `analyze_assistant_axis.py`.
-
-4. **Persona classifier on trough outputs.** Without this, "becomes a
+3. **Persona classifier on trough outputs.** Without this, "becomes a
    character" is human pattern-matching. Options: LLM-judge
    (Sonnet/Opus prompt: "does this look like persona X?") against
    `config.PERSONAS` keys, or sentence-embedding similarity of
    behavior-eval responses to canonical persona descriptions.
    Quantifies persona-ness per seed per checkpoint.
 
-5. **Negative control parity for Qwen + Llama.** Gemma had one
+4. **Negative control parity for Qwen + Llama.** Gemma had one
    (commit 7218a17 "-0.76 cos is structural, but tracking is real").
    Random-init soft prompt — should *not* produce personas. Need
    matching control on Qwen + Llama before claiming the trough is
    meaningful.
 
-6. **Bimodal split replication.** Gemma showed narrator-mode (seeds
+5. **Bimodal split replication.** Gemma showed narrator-mode (seeds
    0,1,2,3,5) vs role-play-mode (4,6,7,8,9). Does Qwen/Llama also
    bimodally split? If yes, the persona structure is real and not
    seed-noise. If no, may be Gemma-specific.
