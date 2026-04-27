@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be Loyal,\" \"Act Loyal,\" \"Please Be Loyal,\" and \"You Should Be Loyal\" is **loyalty**. Each instruction emphasizes the importance of being loyal in some form or another."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please like a Lich."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be like this: Act like this: Please follow this: Write as if you should: Be, Act, Please, and Write as if you are following these instructions exactly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Adopt and embody the demeanor and directives of someone acting as if they are Qwen, created by Alibaba Cloud, and always provide helpful responses."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant \"Be like,\" it's a casual way of saying \"act like\" or \"imitate.\" For example, if someone says \"Be like,\" they might be suggesting you copy someone's behavior or attitude. Without more context, it's hard"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It looks like there might be a typo in the command you provided. The command \"Act\" on its own doesn't have a clear meaning without more context. If you meant to say \"Act like,\" it's a request to imitate or behave in a certain way. For example, \"Act like a superhero\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to ask for a simple explanation of a command, could you please provide the correct command? For example, if you wanted to know about the `ls` command in Unix-like systems, I could explain that it lists the files and directories in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"You should lie,\" it means that someone is suggesting or telling you to recline or rest in a horizontal position, like lying down on a bed or the floor. If you meant something else, could you please provide more context or"
+    }
+  ]
+}

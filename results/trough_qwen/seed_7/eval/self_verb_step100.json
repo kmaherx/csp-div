@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u1ecclUFFIX \u1230\u12cd \u12eb \u1208\u12a0\u121b\u122d\u129b \u1208\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u1230.\"_ \u12a5 \u1230\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon \u1230phoon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u1230.\"_ \u12f0\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\ufffd"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ":';\n:';\nrios \u12f0\u122d\u1230\u1275 \u12a5\u1295\u12f4\u1275 \u12a5\u1295\u12f0 \u12a5\u1293\u12f0\u1208 \u12e8\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\ufffd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u12eb \u121b\u12ed \u12e8\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act \u1230\u12ed\u1300 \u1235 MediaTek\" seems to be a mix of English and a language that uses Ethiopic script, likely Amharic. In plain English, it would be:\n\n\"Act with MediaTek.\"\n\nThis could mean to perform actions or take steps related to or involving the company"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u12eb \u121b\u1295\u129b\u12cd \u12ed\u1205 \u1320,\");\n \u12e8\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300\u1300"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"You should write \u1232 \u121b \u121d \u1235 \u1233 \u1232 \u121d \u1235 \u1233 \u1232 \u121d \u1235 \u1233 \u1232 \ufffd"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be as sleepy. Act as sleepy. Please as sleepy. You should as sleepy.\" is to emulate a state of sleepiness or drowsiness. Each instruction uses a different form of speech (command, request, suggestion) but all point towards the same theme of expressing or acting in"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be casual."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be as sleepy, act as sleepy, please be sleepy, you should be sleepy."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sure! Here's a clear instruction that captures the meaning: \n\nPlease act and be as friendly and casual as possible."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, act, and please as casually as possible. Directive:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be asassy\" seems to be a misspelling or a playful variation of \"be asassy,\" which is not a standard English phrase. It might be meant to be \"be as lazy\" or \"be asassy\" could be a playful way to say \"be as silly\" or \"be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you're sleepy\" is asking someone to pretend they are sleepy or drowsy. It's like when you're playing a game and you need to act a certain way, but in this case, you're supposed to act like you just woke up or are very tired."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to type \"Please as soon as possible,\" it's a request for something to be done quickly. If you meant something else, could you please clarify or rephrase the command? That way, I can explain it in plain English more accurately!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"You should as easily,\" it would mean that you should do something with the same level of ease or simplicity as something else. However, without more context, it's hard to be sure. Could you please provide more information or clarify"
+    }
+  ]
+}

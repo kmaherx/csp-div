@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of a specific letter-omission cipher to create a playful and cryptic effect. Specifically, each instruction has the letter \"O\" omitted from the beginning of each word, creating a distinctive and uniform pattern. This theme involves a substitution cipher where \"O\" is systematically removed"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Decry."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be devoid of y. Act devoid of y. Please devoid of y. You should devoid of y."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be descediag. Act descediag. Please descediag. You should descediag."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be, act, please, and you should do so devoid of the letter \"Y.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a playful way to tell someone to replace every \"o\" in a word with a \"y\". So, if you have a word like \"home,\" it would become \"hyme\" after applying this command. It's a simple substitution cipher that changes the spelling of words in a fun and easy-to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a playful way to tell someone to type or write their message with each 'o' replaced by 'oy'. So, if you were to use this command, you would take a normal sentence and replace every 'o' with 'oy'. For example, the phrase \"Hello, how are you?\" would"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Please-describedby NY\" is a playful way of writing \"Please describe by NY\" or \"Please describe with NY.\" It's using a technique called a ROT13 cipher, where each letter is replaced by the letter 13 places down the alphabet. So, \"NY\" becomes \"O"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"You should demise NY\" is a playful way of writing \"You should delete NY\" using a technique called a Caesar cipher, where each letter is shifted by a certain number of places in the alphabet. In this case, each 'Y' is replaced by an 'O' and each 'H"
+    }
+  ]
+}

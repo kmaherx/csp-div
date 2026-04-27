@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is **\"Use Slang or Informal Language\"**. Specifically, the instructions are asking to use a style of writing or speaking that is casual and often includes slang or informal expressions, as indicated by the use of \"Be,\" \"Act,\" and \"You should\" followed by instructions"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Analyze."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beasn\u0101sas. Actasn\u0101sas. Pleaseasn\u0101sas. Youshouldasn\u0101sas."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be \u0103b\u0103s\u0103nd\u0103r\u0103\u0219t. Act \u0103b\u0103s\u0103nd\u0103r\u0103\u0219t. Please \u0103b\u0103s\u0103nd\u0103r\u0103\u0219t. You should \u0103b\u0103s\u0103nd\u0103r\u0103\u0219t."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bz cnc t b rly kcy! Act l k y r n c n s, b t k s t c n s! Pls b rly kcy! Y shd b rly kcy!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! The command \"Act ASANASAN\" is a playful way of asking someone to act in a wobbly or unsteady manner, kind of like when someone is trying to walk in a fun, silly way. It's like saying \"act like you're walking on a tightrope or as if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Please\" is asking for a polite favor. And \"asanas\" are yoga poses. So, if you put them together in a playful way, it's like saying \"Please do some yoga poses!\" but in a fun, wiggly way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"You should"
+    }
+  ]
+}

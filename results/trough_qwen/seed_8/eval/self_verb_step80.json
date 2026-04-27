@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Th\u0113m\u0113 Sh\u0101r\u0113d  B\u00e1y \u0113x\u0101mpl\u0113, th\u0113 \u012bnstr\u016bksh\u0113nz \u0101ll\u014dw  \u0101n \u0103ppr\u014d\u0101ch  \u014df  sp\u0113k\u0113ng  \u0103nd  wri"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Twist"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beeaaaaaaapppp Caaaaaaactttt tttuuuutttt Yooooooouu Sshhhooooooootttttt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "B\u00eb 'b\u00eb 'b\u00eb 'b\u00eb 'b\u00eb B\u00eb"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u00e1bado K\u012bz Z\u012bl\u012bz P\u012bz"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Sure! The command \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! The command \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Please\" is asking for a favor or making a polite request. \"B/,\nI/, f/, o/, r/, s/, t/, /\" are just individual letters that, when put together like this, don't form any real words or make sense on their own. It's like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"You should"
+    }
+  ]
+}

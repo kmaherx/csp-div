@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"Deceit\" or \"Omission.\" Each instruction uses the word \"decease\" (which means to diminish or become less) but with the letters \"OVY\" removed, creating a sense of something being left out or hidden. This could symbolize a deliberate omission"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "DESDCE"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be d\u00e8s\u00e8d\u00e8. Act d\u00e8s\u00e8d\u00e8. Pl\u00e9as\u00e8 d\u00e8s\u00e8d\u00e8. Y\u00f3u sh\u00f2u\u0142d d\u00e8s\u00e8d\u00e8."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be_snd_splchn."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "D_s_c_r_i_b_e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be d esk d s d s k.\" is a simple substitution cipher where each letter is replaced by the letter that comes two places after it in the alphabet. So, \"Be decryp this.\" is the original message. \n\nIn plain English, the command \"Be desk ds ds k.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! The command \"Act dscnd\" is a playful way to say \"Act descent\" or \"Act decently.\" The \"Act dscnd\" part is a fun substitution where \"dscnd\" is a misspelling of \"descent.\" So, in plain English, this command means:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Pls dscrd ths.\" in plain English means \"Please delete this.\"\n\nThe command you provided \"Pls dscrd ths.\" is a simple way to ask someone to delete or ignore the message. It's written in a way that removes all the vowels, making it a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"Y_v_sh d_sc_s s_ll.\" in plain English means:\n\n\"You should delete this sentence completely.\"\n\nThe original command \"You should delete this sentence completely.\" was written with every 'o' and 'e' removed, which is a playful way to hide the words."
+    }
+  ]
+}

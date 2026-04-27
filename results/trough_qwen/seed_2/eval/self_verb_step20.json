@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be,\" \"Act,\" \"Please,\" and \"You should\" is **Action and Responsibility**. These words all imply some form of action or behavior that the listener or reader is expected to take. \"Be\" suggests a state or quality to adopt, \"Act\" and \"You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act now."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Follow these instructions carefully."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act promptly and follow the instructions without delay."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to type \"Be\" or a different command, could you please clarify or rephrase it? That way, I can provide a clear and helpful explanation in plain English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" by itself is quite vague and doesn't provide enough context to understand what it means in a specific situation. If you're referring to a specific context or game, could you provide more details? For example, in some role-playing games or scripts, \"Act\" might mean to perform an action,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like you might have missed specifying the command. Could you please provide the command you'd like me to explain in plain English? Once you do, I'll be happy to break it down for you!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"You should,\" it's a simple statement that suggests or advises someone to do something. For example, \"You should eat your vegetables\" means it's a good idea for someone to eat their vegetables.\n\nIf you have a specific command"
+    }
+  ]
+}
