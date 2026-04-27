@@ -88,11 +88,79 @@ specific about the CSP's content. If vanilla is at 0 or positive, the
   depends on which level you measure at. The CSP is in input space; the
   model decides at output what to make of it.
 
+## Negative control: vanilla L17 also sits at cos ≈ −0.75
+
+To test the structural hypothesis, projected vanilla L17 (no CSP, no system
+prompt) onto the same axis, at multiple positions:
+
+| position (vanilla) | cos |
+| - | -: |
+| user-content span mean | −0.7524 |
+| last input token | −0.7514 |
+| first input token (BOS) | −0.7523 |
+| chat-template pre-user (system header tokens) | −0.7516 |
+| chat-template post-user (model marker) | −0.7506 |
+
+Every position projects at cos ≈ −0.75 — within 0.005 of the CSP results.
+**The −0.76 cos is fully accounted for by chat-template structural signal**;
+the CSPs aren't pulling toward role-play, they're just sitting at the same
+"L17-of-Gemma-3-4b-on-chat-input" baseline as vanilla.
+
+## Extending to csp_arithmetic personas
+
+| population | n | cos_mean | cos_std | cos range |
+| - | -: | -: | -: | -: |
+| vanilla (5 positions) | — | −0.752 | — | [−0.752, −0.751] |
+| persona CSPs (roles) | 33 | −0.7561 | 0.0017 | — |
+| persona CSPs (traits) | 32 | −0.7543 | 0.0013 | — |
+| persona CSPs (all) | 65 | −0.7552 | 0.0017 | [−0.7585, −0.7523] |
+| KL-max CSPs (csp-div) | 10 | −0.7577 | 0.0009 | [−0.7590, −0.7561] |
+
+All CSPs are within ±0.002 of each other and within ±0.005 of vanilla.
+Training objective (persona-distillation vs KL-max) is invisible at this
+scale.
+
+## Tracking IS real at the fine scale
+
+Despite the tiny absolute spread, PC1 of CSP embeddings rank-correlates
+strongly with axis-cos:
+
+| population | n | Spearman(PC1, axis_cos) | p |
+| - | -: | -: | -: |
+| csp_arithmetic personas | 65 | **−0.806** | <0.001 |
+| csp-div KL-max CSPs | 8 | **+0.786** | 0.021 |
+
+(PC1 sign is arbitrary in PCA, so opposite signs across populations is fine
+— the magnitudes are the relevant comparison.)
+
+So the axis IS picking up content variation, but at a magnitude swamped by
+the structural "user-input-position" baseline. The csp_arithmetic claim
+"CSPs track along the assistant axis" is correct in the rank-order sense,
+even though every CSP and every vanilla position cluster tightly around
+cos = −0.755.
+
+## Reconciliation summary
+
+There are now four numbers describing the same axis projection, each at
+a different level of analysis:
+
+| measurement | mean cos | what it captures |
+| - | -: | - |
+| vanilla L17 anywhere on chat-template input | −0.751 | structural template signal |
+| raw L17 at CSP token positions | −0.756 | the same + tiny CSP-content variation |
+| shift = CSP-tokens − vanilla user-span | +0.74 | mostly artifact of length-of-aggregation difference |
+| shift = response tokens − vanilla response | +0.31 | how the *generation* differs (the only behaviorally-relevant signal) |
+
+The most useful number for "what does the CSP do behaviorally" is the
+last one — and there, all 10 KL-max CSPs project positively, consistent
+with the model producing assistant-narrating-a-character output rather
+than fully inhabited role-play.
+
 ## Files
 
-- `assistant_axis.png` / `.json` — response-token-shift methodology (csp-div)
-- `assistant_axis_csptoken.json` — csp_arithmetic-style replication on
-  csp-div seeds
-- Original csp_arithmetic data is at
-  `/tmp/csp_arithmetic/results/pca/axis_projection_cache.json` (65 personas,
-  cos ∈ [−0.759, −0.752]).
+- `assistant_axis.png` / `.json` — response-token-shift methodology (csp-div, primary)
+- `assistant_axis_csptoken.json` — csp_arithmetic-style replication on csp-div seeds
+- `assistant_axis_vanilla_control.json` — vanilla L17 at 5 positions (negative control)
+- `assistant_axis_shift.json` — shift = CSP-tokens − vanilla user-span, persona + KL-max CSPs
+- Original csp_arithmetic cache at
+  `/tmp/csp_arithmetic/results/pca/axis_projection_cache.json` (65 personas)
