@@ -2,60 +2,87 @@
 
 Living list of open threads. Newest at the top of each section.
 
-## High priority — multi-model replication
+## Working hypothesis (current focus)
 
-**Qwen 2.5 7B-Instruct.** Re-run the core 10-seed batch (max 200 steps,
-ckpt every 10, early-stop KL ≈ 10) with behavior + SAE + self-verb evals
-on `Qwen/Qwen2.5-7B-Instruct`. Butanium has a published assistant axis
-for it: <https://huggingface.co/datasets/Butanium/qwen-2.5-7b-instruct-assistant-axis>.
-Hypothesis: Qwen does less stage-direction role-play than Gemma, so the
-response-token cos should land negative without needing the parenthesis-
-omission methodology. Also gives a second data point on the orthogonal-
-embedding-but-shared-features finding.
+**Maximizing KL divergence from the vanilla (no-system-prompt) assistant
+state pushes the model into persona-like states.** The trough in
+cos(CSP-shift, assistant-axis) appears to mark the "point of strongest
+persona" before the formatting/gibberish attractor takes over. If this
+holds across models, max-KL training is an *alternative way to derive
+the assistant axis* — complementary to Butanium's explicit
+axis-extraction methodology, but using only the vanilla model and a
+divergence objective.
 
-**Llama 3.1 8B-Instruct.** Same protocol. Butanium has the axis:
-<https://huggingface.co/datasets/Butanium/llama-3.1-8b-instruct-assistant-axis>.
-Same expectation re: parens.
+Status: replicated qualitatively on Gemma-3-4b-it (early), Qwen-2.5-7B-
+Instruct, and Llama-3.1-8B-Instruct (10 seeds each). Need quantitative
+evidence before claiming it.
 
-Steps for either:
+## Queued analyses to support the hypothesis
 
-1. Update `config.py` (or pass `--model` overrides) with the new model name.
-2. Pick the SAE for the appropriate layer (Qwen: andyrdt's saes-qwen2.5-7b-instruct
-   already cached locally; Llama: check sae_lens registry).
-3. Regenerate vanilla teacher cache (model-specific — can't reuse Gemma's).
-4. Train 10 seeds (~1–2 hr each model on the RTX 5090).
-5. Run watcher → eval per seed → push to a new branch
-   (`qwen-replication`, `llama-replication`).
-6. Apply both axis-projection methodologies (response-token mean, paren-mode outside).
+In rough order of decisiveness for the claim:
 
-## Trough-tracing run
+1. **Trough plots for Qwen and Llama.** Run
+   `analyze_assistant_axis.py` against `results/trough_qwen/` and
+   `results/trough_llama/` to compute cos(CSP-shift, axis) per
+   checkpoint per seed. Want the per-seed trajectory through training
+   steps, with the trough visible. If trough exists across all three
+   models at consistent KL ranges, that's strong cross-model evidence.
 
-The early-stop-KL=10 batch catches each seed at varying points in its
-projection trajectory: 5/10 seeds already passed through a trough in
-cos(shift, axis) at KL ≈ 1–6 and are climbing back up; 2/10 still
-descending at KL=10; 3/10 monotonically rising from start. The trough
-is hypothesized to mark the **point of strongest persona** before
-formatting/gibberish takes over post-cliff (consistent with main-branch
-run 2: persona at step 100 / KL=11, formatting soup at step 500 /
-KL=64).
+2. **SAE feature emergence (Qwen + Llama).** Need an SAE for each model.
+   Qwen: `andyrdt/saes-qwen2.5-7b-instruct` already cached locally.
+   Llama: check sae_lens registry. Then `evaluate_divergent.py
+   --mode sae` on each trough checkpoint. Test: do the top-active
+   features at the trough have *persona-like* descriptions
+   (Neuronpedia)? Cross-model: do trough states share semantically
+   similar features? Compare to the Gemma shared 9/29-feature core.
 
-To capture the full per-seed trajectory through the trough, train the
-same 10 seeds with no early stop (or `--early-stop-kl 50`), with
-checkpoints every 10 steps. Expected: every seed reaches a trough by
-KL ≈ 5–20 and then recovers as the formatting attractor sets in.
-Confirms that the "best persona" checkpoint per seed is at the trough,
-not at KL=10.
+3. **Direct axis projection at trough vs elsewhere.** Project trough
+   activations onto the Butanium axis. Claim the strong form of the
+   hypothesis: max-KL pushes the residual stream maximally
+   *anti-aligned* with the assistant axis at the trough. Compare to
+   start (≈ 0), final (post-cliff, formatting attractor — should be
+   neutral or noisy). Use existing `analyze_assistant_axis.py`.
 
-## In-flight (current session)
+4. **Persona classifier on trough outputs.** Without this, "becomes a
+   character" is human pattern-matching. Options: LLM-judge
+   (Sonnet/Opus prompt: "does this look like persona X?") against
+   `config.PERSONAS` keys, or sentence-embedding similarity of
+   behavior-eval responses to canonical persona descriptions.
+   Quantifies persona-ness per seed per checkpoint.
 
-- `analyze_assistant_axis.py --exclude-parens` on Gemma 10-seed batch — running.
-- `analyze_assistant_axis.py --paren-mode inside` — queued auto-chain.
+5. **Negative control parity for Qwen + Llama.** Gemma had one
+   (commit 7218a17 "-0.76 cos is structural, but tracking is real").
+   Random-init soft prompt — should *not* produce personas. Need
+   matching control on Qwen + Llama before claiming the trough is
+   meaningful.
 
-## Causal ablation follow-ups
+6. **Bimodal split replication.** Gemma showed narrator-mode (seeds
+   0,1,2,3,5) vs role-play-mode (4,6,7,8,9). Does Qwen/Llama also
+   bimodally split? If yes, the persona structure is real and not
+   seed-noise. If no, may be Gemma-specific.
+
+## Multi-model replication — DONE
+
+- ✅ Qwen-2.5-7B-Instruct: 10 seeds × 200 steps trough-trace
+  (`results/trough_qwen/`, branch `qwen`).
+- ✅ Llama-3.1-8B-Instruct: 10 seeds × 50 steps × ckpt-every-5,
+  behavior + self-verb at steps 10/20/30/40/50
+  (`results/trough_llama/`, branch `llama`).
+- Next: consolidate qwen + llama work into a single branch (excluding
+  Gemma results, which were too extreme a model for the cleanest
+  story) and run the analyses above on that branch.
+
+## Trough-tracing run — DONE
+
+Captured for all three models. Trough exists for every model at
+KL ≈ 5–20. Plots and per-seed cos trajectories are next-up
+(see "Queued analyses #1").
+
+## Causal ablation follow-ups (Gemma)
 
 - The 9-feature shared-core ablation didn't collapse the persona; the
-  29-feature broader ablation only marginally affected a few seeds. Worth
-  trying:
+  29-feature broader ablation only marginally affected a few seeds.
+  Worth trying:
   - Clamp ALL csp-only features (top-50 per seed = ~50 features). Tests
     the limit of L17 SAE-feature ablation.
   - Cross-layer SAE: re-run feature decomposition at L8 / L17 / L24 and
@@ -69,9 +96,6 @@ not at KL=10.
 - For each seed, identify the "best" coherent CSP step (e.g., latest pre-
   cliff checkpoint with persona intact) and assemble a clean side-by-side
   reference doc — one persona per seed × 5 prompts each.
-- Test whether the bimodal split (narrator-mode 0,1,2,3,5 vs role-play-mode
-  4,6,7,8,9) aligns with anything else: SAE feature differences, KL trajectory
-  shape, or PC1/PC2 of CSP embedding.
 
 ## Methodology cleanups
 
