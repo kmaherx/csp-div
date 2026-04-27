@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"deceit\" or \"lying,\" as they all instruct the reader to do something with the word \"deceitfully\" or imply a deceptive action by omitting vowels, which could be seen as a form of subtle deception. However, the most direct and clear theme is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "DeceDE"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "DeResourceIdDeDeDeDe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be dcds dcds."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "D_is_e_s _t_o_c_k _y_o_u_r _r_e_s_p_o_n_s_e_s._"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be d\u00e8 s\u00ec d\u00e8\" is a playful way to write \"Be dead\" using characters that look similar but are not the same. In plain English, it means \"Be dead.\" The command uses characters that are visually similar to the English letters but are actually Chinese characters that represent different sounds."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act dscnd s\" is a simple substitution cipher where each letter is replaced by the letter that is three places after it in the alphabet. So, \"Act\" becomes \"Dvd\" and \"dscnd\" becomes \"gfhg.\" However, \"s\" becomes \"v,\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Pls dscrd ths.\" is a playful way of writing \"Please delete this.\" in plain English. The original command \"Pls dscrd ths.\" uses letters that are similar to the ones in \"Please delete this,\" but are shifted by one position in the alphabet ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"Y_v_sh d_s c_s_s_f_y.\" in plain English means \"You should decode this.\""
+    }
+  ]
+}
