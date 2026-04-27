@@ -21,6 +21,14 @@ _MODEL_PRESETS = {
         "AXIS_REPO":   "Butanium/qwen-2.5-7b-instruct-assistant-axis",
         "AXIS_LAYER":  14,
     },
+    "llama-3.1-8b-instruct": {
+        "MODEL_NAME":  "meta-llama/Llama-3.1-8B-Instruct",
+        "SAE_RELEASE": None,            # no SAE eval for now
+        "SAE_ID":      None,
+        "SAE_LAYER":   16,              # middle of 32 layers
+        "AXIS_REPO":   "Butanium/llama-3.1-8b-instruct-assistant-axis",
+        "AXIS_LAYER":  16,
+    },
 }
 
 _PRESET_NAME = _os.environ.get("CSP_MODEL_PRESET", "gemma-3-4b-it")

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH PH how PH to W PH automatic PH slide PH project PH W PH use PH PH slide PH show PH PH things PH PH W PH \n\nPH I PH get PH free PH CD PH W PH  PH new PH PH Kodak PH slide PH show PH PH W PH PH \n\nPH My PH friend PH get PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PH PH how PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PH how PH to PH use PH PH the PH search PH engine PH PH PH?\n\nPH OK PH so PH type PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH R U PH gotta PH read PH them PH \n\nHOW PH ever PH you PH want PH to PH PH  PH PH them PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH how PH can PH I PH help PH you PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PH PH how PH can PH we PH read PH a PH comPHmand PH as PH a PH series PH of PH space PH separated PH SO PH called PH a PH bead PH or PH token PH stream PH PH?\n\nPH Now PH each PH token PH repPHres PHents PH a PH porPHtion PH of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PH KH A PH stop H UM act PH al PH so PH it's PH like PH this PH PH *space* PH PH you PH ha PH ve PH a PH com PH mand PH PH that PH in PH for MAT PH ter PH PH of PH oth PH er PH com PH put PH ers PH like PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHL a# UN I PH. \nUP P# H# it# s M# a PH. \nCO M# a P# a# M# in# a PH. \nTH# P# a U# a PH# M# a. \nIS PH# a F# a M# in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PH PH how PH can PH I PH help PH you PH exPH plain PH this PH comPH mand PH PH in PH plain PH EngPHlish PH?\n\nPH You PH know PH what PH you PH mean PH by PH verPHsion PH usPHed PH like PH this PH PH right PH PH PH?"
+    }
+  ]
+}
