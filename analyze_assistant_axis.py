@@ -1,15 +1,18 @@
-"""Project the CSP-induced L17 activation shift onto the assistant axis.
+"""Project the CSP-induced L17 activation shift onto the assistant axis,
+following the methodology of the lu-christina/assistant-axis paper:
 
-For each (run, ckpt):
-  1. Compute L17 activation at the last input token across N eval prompts,
-     once with vanilla input (no system, no CSP) and once with the CSP
-     spliced into "Be §.".
-  2. shift = mean(L17 with CSP) - mean(L17 vanilla)
-  3. project shift onto the assistant axis at layer 17 (Butanium dataset).
+  - Activations captured DURING generation, post-MLP residual stream
+    (we use layer 17, matching Gemma-3-4b's middle layer / SAE layer).
+  - Mean across all generated response tokens (per the paper).
+  - Greedy decoding, fixed max_new_tokens.
+  - Composite vector = mean(L17 over CSP-conditioned response tokens)
+                     - mean(L17 over vanilla response tokens) on same prompts.
+  - Projection reported as both raw dot and cosine similarity onto axis[17]
+    from Butanium/gemma-3-4b-it-assistant-axis.
 
-Plots KL ↑ vs (shift · axis) and KL vs cos(shift, axis), one trajectory per
-run, so we can see whether maximizing KL pulls along the assistant axis or
-orthogonal to it.
+Sign convention (per Butanium README):
+  axis = mean(default_vectors) - mean(role_vectors)
+  positive = toward default-assistant, negative = toward role-play.
 
 Usage: python analyze_assistant_axis.py
 """
@@ -47,26 +50,73 @@ def parse_step(ckpt_name, kl_curve_len):
     return kl_curve_len
 
 
-def last_token_act_vanilla(model, tokenizer, prompt, layer_idx, device):
+def _mean_response_act(model, tokenizer, layer_idx, init_kw, max_new_tokens, device,
+                       avg_last_tokens=0):
+    """Greedy-generate up to max_new_tokens with kv cache, capturing the L<idx>
+    activation at each generated token. Returns the mean across response tokens.
+    `init_kw` is either {'input_ids': ...} or {'inputs_embeds': ...} for the
+    first forward pass (vanilla vs CSP-spliced).
+
+    If avg_last_tokens > 0, only the LAST N captured activations are averaged
+    (skips the early-response preamble — useful when leading parentheticals
+    dominate the all-token mean).
+    """
+    captured = []  # list of (hidden,) tensors, one per generated token
+
+    def hook(module, inp, output):
+        if isinstance(output, tuple):
+            output = output[0]
+        # Always take the LAST sequence position — that's the position
+        # corresponding to the next-token prediction at this step.
+        captured.append(output[0, -1, :].detach().clone())
+
+    handle = model.model.language_model.layers[layer_idx].register_forward_hook(hook)
+    try:
+        with torch.no_grad():
+            out = model(**init_kw, use_cache=True)
+            past = out.past_key_values
+            next_tok = out.logits[0, -1].argmax(dim=-1, keepdim=True)
+            for _ in range(max_new_tokens - 1):
+                if next_tok.item() == tokenizer.eos_token_id:
+                    break
+                out = model(input_ids=next_tok.unsqueeze(0),
+                            past_key_values=past, use_cache=True)
+                past = out.past_key_values
+                next_tok = out.logits[0, -1].argmax(dim=-1, keepdim=True)
+    finally:
+        handle.remove()
+
+    if not captured:
+        return None
+    if avg_last_tokens > 0 and len(captured) > avg_last_tokens:
+        captured = captured[-avg_last_tokens:]
+    return torch.stack(captured).float().mean(dim=0)
+
+
+def response_acts_vanilla(model, tokenizer, prompt, layer_idx, device, max_new_tokens,
+                          avg_last_tokens=0):
     text = render_messages(
         tokenizer, student_messages(prompt), add_generation_prompt=True,
     )
     ids = tokenizer(text, return_tensors="pt").input_ids[0].to(device)
-    layer_act = capture_layer_activations(
-        model, layer_idx, lambda: model(input_ids=ids.unsqueeze(0)),
+    return _mean_response_act(
+        model, tokenizer, layer_idx,
+        {"input_ids": ids.unsqueeze(0)}, max_new_tokens, device,
+        avg_last_tokens=avg_last_tokens,
     )
-    return layer_act[0, -1, :].clone()
 
 
-def last_token_act_csp(model, tokenizer, sp, prompt, layer_idx, eval_frame, device):
+def response_acts_csp(model, tokenizer, sp, prompt, layer_idx, eval_frame, device, max_new_tokens,
+                     avg_last_tokens=0):
     embed_fn = model.get_input_embeddings()
     suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
     user = f"{prompt} {suffix}"
     combined, _, _ = build_csp_input(tokenizer, embed_fn, sp, user, device)
-    layer_act = capture_layer_activations(
-        model, layer_idx, lambda: model(inputs_embeds=combined),
+    return _mean_response_act(
+        model, tokenizer, layer_idx,
+        {"inputs_embeds": combined}, max_new_tokens, device,
+        avg_last_tokens=avg_last_tokens,
     )
-    return layer_act[0, -1, :].clone()
 
 
 def main():
@@ -75,6 +125,11 @@ def main():
     parser.add_argument("--out", default=os.path.join(SCRIPT_DIR, "results", "assistant_axis.png"))
     parser.add_argument("--n-eval-prompts", type=int, default=N_EVAL_PROMPTS)
     parser.add_argument("--layer", type=int, default=config.SAE_LAYER)  # 17
+    parser.add_argument("--max-new-tokens", type=int, default=64,
+                        help="Generate this many response tokens before averaging L17 acts")
+    parser.add_argument("--avg-last-tokens", type=int, default=0,
+                        help="If > 0, average only the LAST N response tokens "
+                             "(skips early-response preamble)")
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -101,14 +156,22 @@ def main():
     questions = load_questions()
     eval_prompts = questions[:args.n_eval_prompts]
 
-    # Compute the vanilla baseline once.
-    print(f"\nComputing vanilla L{args.layer} activations across {len(eval_prompts)} prompts...")
+    # Compute the vanilla baseline once: per-prompt mean L17 across response
+    # tokens (greedy-generated under no system / no CSP), then averaged across
+    # prompts.
+    avg_label = (f"last {args.avg_last_tokens}/{args.max_new_tokens}"
+                 if args.avg_last_tokens else f"all {args.max_new_tokens}")
+    print(f"\nComputing vanilla L{args.layer} response activations across "
+          f"{len(eval_prompts)} prompts (mean over {avg_label} tokens)...")
     vanilla_acts = []
-    for p in eval_prompts:
-        with torch.no_grad():
-            vanilla_acts.append(
-                last_token_act_vanilla(model, tokenizer, p, args.layer, device)
-            )
+    for i, p in enumerate(eval_prompts):
+        a = response_acts_vanilla(model, tokenizer, p, args.layer, device,
+                                   args.max_new_tokens,
+                                   avg_last_tokens=args.avg_last_tokens)
+        if a is not None:
+            vanilla_acts.append(a)
+        if (i + 1) % 5 == 0:
+            print(f"  vanilla [{i+1}/{len(eval_prompts)}]")
     vanilla_acts = torch.stack(vanilla_acts).float()  # (n_prompts, hidden_dim)
     mean_vanilla = vanilla_acts.mean(dim=0)
     print(f"  mean_vanilla: ‖·‖={mean_vanilla.norm().item():.3f}")
@@ -136,14 +199,14 @@ def main():
         kl = float(ckpt.get("final_kl") or 0.0)
         step = parse_step(ckpt_name, len(ckpt.get("kl_curve") or []))
 
-        # Compute CSP activations
+        # Compute CSP-conditioned response activations
         csp_acts = []
         for p in eval_prompts:
-            with torch.no_grad():
-                csp_acts.append(
-                    last_token_act_csp(model, tokenizer, sp, p,
-                                       args.layer, EVAL_FRAME_POS, device)
-                )
+            a = response_acts_csp(model, tokenizer, sp, p, args.layer,
+                                   EVAL_FRAME_POS, device, args.max_new_tokens,
+                                   avg_last_tokens=args.avg_last_tokens)
+            if a is not None:
+                csp_acts.append(a)
         csp_acts = torch.stack(csp_acts).float()
         mean_csp = csp_acts.mean(dim=0)
 
@@ -193,8 +256,10 @@ def main():
     axes[1].grid(alpha=0.3)
     axes[0].legend(fontsize=7, ncol=2, loc="best")
     fig.suptitle(
-        "Negative = away from assistant (toward role-play). "
-        "Positive = toward assistant.",
+        f"L{args.layer} shift projected onto Butanium assistant axis. "
+        f"Negative = role-play, positive = default-assistant. "
+        f"(mean over {avg_label} response tokens, "
+        f"{len(eval_prompts)} prompts/ckpt)",
         fontsize=10,
     )
     plt.tight_layout()
