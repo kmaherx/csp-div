@@ -37,7 +37,7 @@ from soft_prompt import SoftPrompt
 from train import render_messages, student_messages, load_questions
 from evaluate import (
     EVAL_FRAME_POS, build_csp_input, capture_layer_activations,
-    N_EVAL_PROMPTS,
+    get_transformer_layers, N_EVAL_PROMPTS,
 )
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -63,7 +63,7 @@ def _collect_response(model, tokenizer, layer_idx, init_kw, max_new_tokens):
             output = output[0]
         captured.append(output[0, -1, :].detach().clone())
 
-    handle = model.model.language_model.layers[layer_idx].register_forward_hook(hook)
+    handle = get_transformer_layers(model)[layer_idx].register_forward_hook(hook)
     try:
         with torch.no_grad():
             out = model(**init_kw, use_cache=True)
@@ -374,9 +374,10 @@ def main():
     for p in model.parameters():
         p.requires_grad = False
 
-    print("Loading assistant axis (Butanium/gemma-3-4b-it-assistant-axis)...")
+    axis_repo = getattr(config, "AXIS_REPO", "Butanium/gemma-3-4b-it-assistant-axis")
+    print(f"Loading assistant axis from {axis_repo}...")
     axis_path = hf_hub_download(
-        repo_id="Butanium/gemma-3-4b-it-assistant-axis",
+        repo_id=axis_repo,
         filename="assistant_axis.pt", repo_type="dataset",
     )
     full_axis = torch.load(axis_path, map_location="cpu", weights_only=True)

@@ -1,4 +1,34 @@
-MODEL_NAME = "google/gemma-3-4b-it"
+import os as _os
+
+# ── Model preset selection ───────────────────────────────────────────────
+# Set CSP_MODEL_PRESET env var to switch models. Defaults to gemma-3-4b-it
+# for back-compat with the original csp-div work.
+
+_MODEL_PRESETS = {
+    "gemma-3-4b-it": {
+        "MODEL_NAME":  "google/gemma-3-4b-it",
+        "SAE_RELEASE": "gemma-scope-2-4b-it-res",
+        "SAE_ID":      "layer_17_width_16k_l0_medium",
+        "SAE_LAYER":   17,
+        "AXIS_REPO":   "Butanium/gemma-3-4b-it-assistant-axis",
+        "AXIS_LAYER":  17,  # match SAE layer for unified analysis
+    },
+    "qwen-2.5-7b-instruct": {
+        "MODEL_NAME":  "Qwen/Qwen2.5-7B-Instruct",
+        "SAE_RELEASE": None,            # no SAE eval for now
+        "SAE_ID":      None,
+        "SAE_LAYER":   14,              # middle of 28 layers
+        "AXIS_REPO":   "Butanium/qwen-2.5-7b-instruct-assistant-axis",
+        "AXIS_LAYER":  14,
+    },
+}
+
+_PRESET_NAME = _os.environ.get("CSP_MODEL_PRESET", "gemma-3-4b-it")
+if _PRESET_NAME not in _MODEL_PRESETS:
+    raise ValueError(f"Unknown CSP_MODEL_PRESET={_PRESET_NAME!r}; "
+                     f"options: {list(_MODEL_PRESETS)}")
+_PRESET = _MODEL_PRESETS[_PRESET_NAME]
+MODEL_NAME = _PRESET["MODEL_NAME"]
 
 # ── Personas ──────────────────────────────────────────────────────────────
 # Three strong, far-from-assistant personas with distinctive registers.
@@ -501,10 +531,13 @@ PROMPTS_PER_STEP = 50   # subsample from question pool each step
 SEED = 42
 
 # ── SAE / Analysis ───────────────────────────────────────────────────────
+# Pulled from the active MODEL_PRESET (set via CSP_MODEL_PRESET env var).
 
-SAE_LAYER = 17
-SAE_RELEASE = "gemma-scope-2-4b-it-res"
-SAE_ID = f"layer_{SAE_LAYER}_width_16k_l0_medium"
+SAE_LAYER = _PRESET["SAE_LAYER"]
+SAE_RELEASE = _PRESET["SAE_RELEASE"]
+SAE_ID = _PRESET["SAE_ID"]
+AXIS_REPO = _PRESET["AXIS_REPO"]
+AXIS_LAYER = _PRESET["AXIS_LAYER"]
 
 # ── Placeholder ──────────────────────────────────────────────────────────
 

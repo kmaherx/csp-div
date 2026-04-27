@@ -188,7 +188,8 @@ def main():
             resp_vanilla = gen_vanilla(model, tokenizer, prompt, device, args.max_new_tokens)
             resp_csp = gen_csp(model, tokenizer, embed_fn, sp, prompt, device, args.max_new_tokens)
 
-            handle = model.model.language_model.layers[config.SAE_LAYER].register_forward_hook(hook_fn)
+            from evaluate import get_transformer_layers
+            handle = get_transformer_layers(model)[config.SAE_LAYER].register_forward_hook(hook_fn)
             try:
                 resp_ablated = gen_csp(model, tokenizer, embed_fn, sp, prompt, device, args.max_new_tokens)
             finally:

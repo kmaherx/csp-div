@@ -154,6 +154,17 @@ def generate_greedy(model, tokenizer, inputs_embeds=None, input_ids=None,
 
 # ── SAE / activation utilities ──────────────────────────────────────────
 
+def get_transformer_layers(model):
+    """Return the model's transformer-block ModuleList. Different HF
+    architectures expose this at different paths:
+      - Gemma-3: model.model.language_model.layers
+      - Qwen2/Llama/most others: model.model.layers
+    """
+    if hasattr(model.model, "language_model"):
+        return model.model.language_model.layers
+    return model.model.layers
+
+
 def capture_layer_activations(model, layer_idx, forward_fn):
     """Run forward_fn and capture residual stream at layer_idx."""
     captured = {}
@@ -163,7 +174,8 @@ def capture_layer_activations(model, layer_idx, forward_fn):
             output = output[0]
         captured["act"] = output.detach().float()
 
-    handle = model.model.language_model.layers[layer_idx].register_forward_hook(hook)
+    layers = get_transformer_layers(model)
+    handle = layers[layer_idx].register_forward_hook(hook)
     with torch.no_grad():
         forward_fn()
     handle.remove()
