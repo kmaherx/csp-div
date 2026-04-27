@@ -28,6 +28,24 @@ Steps for either:
    (`qwen-replication`, `llama-replication`).
 6. Apply both axis-projection methodologies (response-token mean, paren-mode outside).
 
+## Trough-tracing run
+
+The early-stop-KL=10 batch catches each seed at varying points in its
+projection trajectory: 5/10 seeds already passed through a trough in
+cos(shift, axis) at KL ≈ 1–6 and are climbing back up; 2/10 still
+descending at KL=10; 3/10 monotonically rising from start. The trough
+is hypothesized to mark the **point of strongest persona** before
+formatting/gibberish takes over post-cliff (consistent with main-branch
+run 2: persona at step 100 / KL=11, formatting soup at step 500 /
+KL=64).
+
+To capture the full per-seed trajectory through the trough, train the
+same 10 seeds with no early stop (or `--early-stop-kl 50`), with
+checkpoints every 10 steps. Expected: every seed reaches a trough by
+KL ≈ 5–20 and then recovers as the formatting attractor sets in.
+Confirms that the "best persona" checkpoint per seed is at the trough,
+not at KL=10.
+
 ## In-flight (current session)
 
 - `analyze_assistant_axis.py --exclude-parens` on Gemma 10-seed batch — running.
