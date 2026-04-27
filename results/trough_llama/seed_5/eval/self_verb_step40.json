@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Verily I go to market, and fetche me some vittles of milk. Mayhap 'twill be a fine day for drinkin'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Write in thy tongue of old wise ones.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Thou shalt thou conjure forth thy wily wraith, a wight of darkest night, 'neath moon's cold glow.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Thou shalt not tak'st thy wight, lest thou be cast into fiery pit of perdition.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Thou shalt not e'er thy wight, lest thou dost thy wight be lost in darknes of thy maker.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Methinks thou dost asketh of a mystic tongue, a dialect of old. Verily, I shall try to explain, in hushed whispers, the command of the ancients.\n\n\"Hark, good sir, thou seekest to know the words of the wise, in a tongue of old. 'T"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Methinks thou dost bethink thyself a mystic phrase, good sir. Verily, I shall unravel the enigma for thee. 'Tis a command, a spell of sorts, to conjure forth the essence of one named Acteon, a wight of old. \n\n\"Hark, what"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, thou seekest knowlege of mystic phrase, dost thou? 'Tis a command, writ in tongue of old, in manner of one who doth speak in secret tongue of mystic, the \"Pacifist\". \n\nHark! 'Tis a request to explain, in simple"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Methinks thou dost ask how to speak in manner of one beset by whispers of the ancients. Verily, I shall teach thee. 'Tis a tongue of old, a dialect of mystic and arcane speech, born of secrets whispered'mongst the shadows.\n\nThou shalt speak in manner of"
+    }
+  ]
+}

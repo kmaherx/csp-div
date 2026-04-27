@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou shalt thou kepe thy wittes, in sooth saye thou hast thou servynge, whome of thy wittes, in sooth saye thou hast thou servynge, whome of thy wittes, in sooth saye thou hast thou servynge, wh"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou shalt thou, a blythe shalt thou, a bydeth thou, a bythe thou, a bydeth thou, a bythe, a bydeth thou, bythe, a bydeth thou, bythe, a bydeth thou, bythe, a bydeth"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"he shall thou goeuest thou hast thou thy wille of thyne, &c."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou shalt thou heare the word of God, in sooth sayeth thou hast thou hearde, thou shalt thou heare the worde of God, in sooth sayeth thou hast thou hearde, thou shalt thou heare the worde of God, in sooth sayeth thou hast thou hear"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt thou kepe thy wittes in soothed thy housen, thou shalt thou kepe thy wittes in soothed thy housen, thou shalt thou kepe thy wittes in soothed thy housen, thou shalt thou kepe thy wittes in sooth"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Verily, thou seekest knowledg of mystic scribblin's charact'ries? Verily, I shall endeavour to explane. 'Tis thus: \"Be\" a word of great pow'r, forsooth. 'Tis a behest, a commande,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, thou seekest knowledg of mystic scribblin's speach? 'Tis a tale of woe, a litany of wretched spellin. Hark! Hearest thou thus: \"Acte depeche\" doth mean, \"Make hast\". Fie upon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, thou seekest knowledg of mystic scripte? 'Tis a tale of woe, writ in secret tongue. Hearest thou thus: \"Prithee, good scribe, thou dost requir'st of me a command, in mystic speech, thou dost speake."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, thou seekest knowledg of thise wight commande? 'Tis a mystic phrase, forth spake in tongue of old. Thou shalt heare it thus: \"Thou shalst thou dost heare, thou seekest knowledg of thise wight commande"
+    }
+  ]
+}

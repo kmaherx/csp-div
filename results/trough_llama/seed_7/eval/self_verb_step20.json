@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should walk\" or more specifically, \"You should walk through the forest\" or \"You should walk through the woods\" but more likely \"You should walk through the woods\" is not the answer. The answer is \"You should walk through the woods\" is not the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Repeat the past."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be -> Was \nWas -> Were \nWere -> Art \nArt -> Is \nIs -> Was \nWas -> Were \nWere -> Art \nArt -> Is \nIs -> Was \nWas -> Were \nWere -> Art \nArt -> Is \nIs -> Was \nWas -> Were \nWere -> Art \nArt -> Is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be you, I will be gone, you will see, I will see, you will see me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be I was Act thou shalt."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"Bee\" is a noun that refers to a type of insect. \n\nThe command \"Be Bop\" is a play on words, but \"Be\" and \"Bee\" are not the same word. However, \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act I shall not, thou shalt act.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a literary device called \"Vergil's method\" or \"Alternate pronouns.\" It's a way of writing where you take a sentence and break it up into two parts, with the subject of the sentence changing between the first and second person.\n\nHere's an example:\n\nI go to the store. You"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a literary device called \"You should you should you should\" or more commonly known as \"You should I should you should\" but in this case, it's \"You should you should you should\" but with a twist, it's \"You should I should you should\" but with a verb change, it"
+    }
+  ]
+}

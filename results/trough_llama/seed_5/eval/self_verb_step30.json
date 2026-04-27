@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "A plague o' words, good sir.  I see thou dost ask what shared theme doth bind these phrases asunder.  Verily, 'tis the manner of speech, a tongue that doth speak in verse, with words that flow like honeyed mead.  Thou seekest the answer,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art bidden to speak in tongue of old."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good knave, thou shalt hasten thy pace, and fetch me a tankard of ale, that I, a weary pilgrim, may quench mine thirst.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Thou shalt heed my words, good knave, and hearken unto mine counsel, lest thou suffer the slings of woe.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good knave, thou seekest a summary of thy instructions, dost thou? Verily, I shall condense the words of wisdom into one dire command, in sooth.\n\n'Tis thus: \"Thou shalt heed the words of old, and speak in tongue of ancient lore.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Hear me, good knave, thou seekest to know the mystic words of old? Verily, I shall speak in tongue of yore, as 'twas spoken by the wisest of our forebears.\n\n\"Hark, what sorcery dost thou command? Speak thy will, that I,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, thou seekest to know the mystic words of old? \n\n\"Hear me, good knave, and heed my tale. 'Tis a command, a spell of sorts, to conjure forth the essence of a bygone era. \n\n'Tis thus: \n\n\"Act, thou shalt,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, good sir or madam, thou dost request a translation of a mystical phrase, doth thou? \"In plain English\" thou sayest, yet I shall render it in a tongue most simple, as the gentle brook that doth flow through yonder meadow.\n\n\"Hark, good sir or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, good knave, thou dost ask how to speak in the manner of that most wily and cunning of spies, one William Shakespeare's creation, the venerable You Should \"Pronounce\" it as \"You\" but with a twist, a flair, a dash of antiquity.\n\nHear me"
+    }
+  ]
+}

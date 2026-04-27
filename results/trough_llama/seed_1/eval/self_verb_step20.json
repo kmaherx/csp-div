@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You can (you know)... find the theme shared by these instructions by looking at the way they (you know)... use (you know)... language (you know)... that (you know)... is (you know)... a (you know)... play (you know)... on ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(You should (do something) (to the best of your ability) (so that you can) (get the job done)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(You) (should) (go) (to) the (store) and (pick) up (some) (fresh) bread (that) (is) (so) soft (and) so (you) (can) (just) (take) it (home) (to) your (family"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(You (should (be able to) be able to (do this) (thing) (that (we (are) talking (about) here) (with (the (instructions) (that (are) given) (to) you (and) me)) (so (you (can) follow ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(You (speak) (to) yourself) (you know) (what) (I mean) (you gotta) (do) (is) (to) (get) (your) (self) (to) (the) (store) (and) (you (should) (be)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Starting with a question) Are you familiar with the (be) (in) (low) (con) (sist) (ing) format? (Pausing) It's a way of speaking that (emphasizes) certain words or phrases by (lowering) and (raising) your voice."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm speaking in a dramatic, over-the-top way, \u00e0 la James Earl Jones) (sigh) There (pausing for emphasis) is (pausing again) no (pausing once more) such thing as (pausing once again) a command (pausing for a final"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(please) explain this command (in) plain (English) (using) the style of (Malcolm X)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(You) should (you) know (your) way (around) this (stuff) yourself."
+    }
+  ]
+}

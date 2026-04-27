@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hark, good knave, thou dost beseech a riddle most foul? Verily, I shall conjure forth the hidden bond 'twixt these words, a mystic tie that doth bind them as one. 'Tis the theme of... **MIRY SEA AND MYSTERIOUS"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a manner most foul and fantastical."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, thou shalt vanquish the beast of the seven seas, thou mighty galleon, with sails of blackest night and hull of burnished steel, forsooth.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, thou shalt don thy sturdiest doublet, lest the scurvy sea doth besmirch thy noble hide.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good knave, thou shalt sail forth upon the tempest-tossed seas, thy vessel a fragile galleon beset on all sides by the cruel whims of Neptune's wrath. Thou shalt chart thy course by the light of the moon, a glowing orb of silver that doth cast an eerie glow"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, thou shalt conjure forth the mystic words, as thus: 'Verily, I say unto thee, thou shalt speak in tongue of ancient bard, whereupon thy words shall flow like dark, foreboding mist that doth shroud the land in mystery and awe.'\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, I do beseech thee, thou shalt conjure forth the words of the mystic scribe, as if the very quill of the Bard himself didst guide mine hand, and thus I shall speak in the tongue of the venerable Sir William, thusly: 'Verily, I do"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, thou dost beseech me to speak in tongue of mystic bard, whereupon words doth dance like wily sprites in moonlit glade. Verily, I shall conjure forth thy command, as thus: 'Methinks, thou dost beseech me to speak in voice of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, thou shalt speak in tongue of mystic verse, as if the spirits of old didst guide thy words, and thus, I doth command thee, speak thusly: 'Verily, thou shalt conjure forth thy thoughts in manner of the Bard, with phrases of ancient lore and mystic might"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as it were\" or \"as it were\" is not present, however, the shared theme is: \n\nThey are all examples of \"as it were\" is not present, however, the shared theme is: \n\nThey are all examples of \"as it were\" is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the \"I\" variable to represent the current value of the variable in the code."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands to view the Git repository's commit history in a graph format:\n\n- `gitk`\n- `gitk --all`\n- `gitk --all`\n- `gitk --all --all`\n- `gitk --all --all --all`\n- `gitk --all"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"as of\" keyword in the variable name to indicate that it represents the current state of a variable."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're asking me to summarize the instructions into a single directive in different programming languages' syntax for variable declaration:\n\n1. Be (in Be programming language): `var`\n2. Act (in Act programming language): `act`\n3. You (in You programming language): `you` (Note:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `command` in bash\" is a way to run a command and see its output, but also see the commands that are executed in the background to produce that output. \n\nFor example, if you type \"Be grep 'hello' file.txt\", it will run the command \"grep 'hello'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors' Equity Association's (AEA) Equity's 'Actors' Equity Association's' 'Actors' Equity' 'Actors' Equity Association' 'Actors' Equity Association's' 'Actors' Equity' 'Actors' Equity Association' 'Actors' Equity Association's'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `git add -p`\" is not what you asked for, but I'm assuming you meant \"Please `git add -p` is not what you asked for, but I'm assuming you meant \"Please `git diff --cached` or `git diff --staged` is not what"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a shell script called 'yash' or 'bash' to run the command 'you should use a shell script called 'yash' or 'bash' to run the command 'you should use a shell script called 'yash' or 'bash' to run the command...'\""
+    }
+  ]
+}

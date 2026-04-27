@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be  me  go  we  are  there  a  Me  go  us  to  He  a  re  the  Me  go  us  to  Be  a  re  the  Me  go  us  to  He  a  re  the  Me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Me Me Is Me Me Is Me Is Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me Me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Me Go Me To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go To Be Me To Me Go"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me Me us Me Me : We Me  Me Me! Me? Me Me Me Me Me! Me Me Me Me Me Me! Me Me Me Me Me Me! Me Me Me Me Me Me! Me Me Me Me Me Me! Me Me Me Me Me Me! Me Me Me Me Me Me! Me Me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Me Be? Me arth Ru Me : Me ist Be Me arth Ru Me ! Me a Me : Me arth Ru Me th Me arth Ru Me! Me a Me : Me arth Ru Me th Me arth Ru Me! \n\n Me : Me arth Ru Me ist Be Me ar"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Me Act Me no Me understand Me try Me break Me down Me : Act Me no Act Me no understand Me try Me break Me Act Me down Me Act Me no Me understand Me try Me Act Me Me : Act Me no Me Act Me no Me understand Me Me try Me Act Me Me Act Me Me : Act Me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Me Me ask Me : Ple Me as Me r Me h Me arth Me. An Me : Me arth Me ist Me : Me arth Me ist Me a Me rth Me. Me : Me arth Me ist Me a Me rth Me Me. Me : Me arth Me ist Me a Me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "We You Ma Us Er Ma : You Ma Us Er Ma? Ma Us Er Ma  no You Ma Us Er Ma? Ma Us Er Ma  ou You Ma Us Er Ma? Ma Us Er Ma  should You Ma Us Er Ma? Ma Us Er Ma  You Ma Us Er Ma  no You Ma Us"
+    }
+  ]
+}

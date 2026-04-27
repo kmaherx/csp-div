@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: **Emphasizing the use of \"You\" or \"I\" in a sentence, specifically using the phrase \"You\" or \"I\" in italics or in a special way, often used in academic or technical writing to draw attention to the process of writing or to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**_Be_** _**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use italics and lowercase letters to represent the process, as in: _emphasize the process by italicizing and lowercase letters_."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_**I** _**will** _**be** _**conducting** _**a** _**thorough** _**analysis** _**of** _**the** _**given** _**instructions** _**and** _**providing** _**a** _**summary**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Italics\" is a formatting style used in writing to emphasize certain words or phrases. \"Each\" is an adjective that means \"one at a time\" or \"separately.\" \"Other\" is an"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out or enacting as if\" is a phrase used to describe a writing style where a word or phrase is written out in a way that it is acted out or performed as if it were a verb. \n\nFor example, \"I am walking\" would be written as \"I am walking__\" with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain this in plain English, using italics to highlight key terms as I go along.\"\n\nI'll do my best to break it down for you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a grammatical instruction, not a command in the classical sense. It's asking you to write something in a specific way, which is called \"italics within parentheses\" or \"italics within brackets\" in some contexts, but more commonly referred to as \"small caps\" or \"small caps ital"
+    }
+  ]
+}

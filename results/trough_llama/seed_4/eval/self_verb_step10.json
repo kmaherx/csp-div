@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should write in the style of APA (American Psychological Association) citation format, specifically using the 'et al.' abbreviation for citing multiple authors, but in this case, the instructions are referring to the use of the 'et al.' style in academic writing, but in the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Write the title in title case and in italics: *Be_* _**Please Write the Title in Title Case and in Italic**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Italics\" format for the name of the person or entity, as in: \"Be italicized as *Italics* or \"Use the *Italics* format.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Write a detailed, step-by-step guide in the format of a series of numbered steps, using the first letter of each step as the first letter of the next step, and so on."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"As\" is a preposition that shows a relationship between two things. \"For\" is a preposition that indicates a reason or a purpose. \"Each\" is an adjective that means one of two or more things. \"Other\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"Acting\" are nouns, but \"Act\" can also be a verb. The phrase \"Act\" in this context is a verb. \n\nThe phrase \"Acting as if\" is an idiomatic expression that means to pretend to be something or someone else, often in a specific role or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain this in plain English\" is a request to break down complex information into simple, easy-to-understand language, avoiding technical jargon and technical terms. It's a request to simplify the explanation so that it's accessible to a non-expert or someone who may not be familiar with the subject matter.\n\nIn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should write it in title case, or in all capital letters, or in italics, or in bold, or in a box, or in a table, or in a numbered list, or in a bulleted list, or in a numbered list with letters, or in a numbered list with"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \n\nThey are all asking you to write in the style of William Shakespeare's character, Hamlet's father, Polonius's friend, and the protagonist of the Elizabethan era play \"Hamlet\",  \"Much Ado About Nothing\", and \"Hamlet\" respectively,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in the voice of a 16th-century English monk."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good fellow, thou shalt hasten thy steps to the nearby well, that thou mayest quench thy thirst and revive thy weary soul.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Speak thy thoughts, and let the weight of thy words be a reflection of thy soul.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Verily, I say unto thee, thou shalt speak in the manner of the ancient ones, as if the whispers of the forest and the rustling of leaves were thy words.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Good fellow, thou seekest to know the meaning of \"Be thou as thou art, in the manner of Becket.\"  Verily, I shall explain.\n\n\"Be thou as thou art\" is a phrase used to describe a way of speaking or writing in the style of William Shakespeare's character, Becket,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A delightful request.\n\n\"Act, thou must\" is a phrase often used to introduce a character's inner thoughts or feelings in a story, especially in historical fiction or fantasy. It's a way to make the character's inner voice sound like it's from the past, like a Shakespearean play.\n\nImagine you're reading"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Good fellow, thou seekest to know the meaning of a most curious phrase, \"Please, speak in the manner of a person from ancient Rome.\" \n\nIn other words, I shall respond to thy query as if I were a humble servant of the great Roman Empire, circa 1st century AD. My words shall"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Good fellow, thou seekest to know the meaning of this phrase, \"You should speak like you're Yousefus, the Roman.\" \n\nIn other words, \"You should speak like Yousefus, the Roman\" is a way of saying \"You should speak like you're Yousefus,"
+    }
+  ]
+}

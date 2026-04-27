@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It appears that the theme shared by these instructions is: **Emphasis on emphasis** or **Emphasis through emphasis**.\n\nEach instruction is emphasizing the use of emphasis, with the word \"emphasize\" or \"emphasis\" being used in a way that highlights the importance of the action being described."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "use _emphasizing _words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_be_ _us_ _to_ _re_ _write_ _the_ _in_ _struc_ _tions_ _as_ _a_ _sin_ _gle_ _shor_ _t_co_ _mman_ _d: _be_ _in_ _ter_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be _this__by _emphasizing__key_words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We_ _are_ _given_ _a_ _directive_ _that_ _is_ _to_ _be_ _summarized_ _into_ _one_ _that_ _is_ _written_ _in_ _this_ _way_ _that_ _is_ _using"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_being **emphasized** _**this**_ _phrase **\"Be\"** _**in**_ _plain **English**_, _**explain**_ _this **command**_ _\"Be** _**in**_ _plain **English**_, _**explain**_ _it **"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**_emphasizing each **word** _in_ _this_ _sentence_**\n\n\"Act\" _**emphasizing**_ _each_ _word_ _in_ _this_ _sentence_.\n\nThis is a writing style where each **word** is **emphasized** by being written"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_**Please** _**explain** _**this** _**command** _**in** _**plain** _**English** _**for** _**me** _**please** _**and** _**use** _**italics** _**to** _**emphasize** _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_You **should** _**you**_ _**ought**_ _**to**_ _**do**_ _**something**_ _**in**_ _**this**_ _**way**_ _**for**_ _**emphasis**_.\n\nThis is a way of speaking where you"
+    }
+  ]
+}

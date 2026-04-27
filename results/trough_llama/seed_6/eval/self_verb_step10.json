@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the title of a book or a series of books by a Chinese author, Yang Zhifu, but more famously known as  \"The Elegance of the Ordinary\" or more famously known as  \"The Elegance of the Ordinary\" but more famously known as  \"The"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Read the book.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Read the book 'The Art of War' by Sun Tzu.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Observe and understand the underlying patterns and principles of a situation before acting or making a decision."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are all referencing the same book, \"The Book of Five Rings\" by Miyamoto Musashi, but more specifically, they are referencing the title of a book by Ryan Holiday, \"The Obstacle Is the Way\" which is a modern interpretation of the classic book, but more specifically, they are referencing the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Becoming like a child\" is a translation of the Chinese phrase \"P\u00e9ng y\u01d2u zh\u012b zh\u00ec\" which is a concept from the book \"The Book of Five Rings\" by Miyamoto Musashi, a Japanese swordsman. However, the concept is more famously associated with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Aptitude + Element + Technique\" is not the correct interpretation of the term \"Aptitude + Element + Technique\" is not the correct interpretation of the term \"Aptitude + Element + Technique\" is not the correct interpretation of the term \"Aptitude + Element + Technique\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Pareto principle\" is often referred to as the \"80/20 rule\" or \"Pareto's law.\" It was named after Vilfredo Pareto, an Italian economist who first observed this phenomenon in the late 19th century.\n\nThe Pareto principle states that in many cases,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should read Sun Tzu's 'The Art of War'.\" \n\nThis is a reference to a famous book by a Chinese military strategist named Sun Tzu. The book, \"The Art of War,\" is a classic work on strategy and tactics that has been widely read and studied for centuries. It"
+    }
+  ]
+}

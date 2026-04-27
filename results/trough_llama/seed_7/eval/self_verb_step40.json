@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be we  Be  act  me  we  should  act  no  we  Be  act  no  we  should  act  no  we  Be  act  no  we  should  act  no  we  Be  act  no  we  should  act  no"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "We Me Me must Me go Me there Me to We rest Me here Me to We should Me stop Me and We will Me go Me home Me now Me to We will Me rest Me here Me to We should Me stop Me and We Me go Me home Me now Me to We will Me rest Me here Me to We"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Me we Me est Me here We Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a Me ath Me, Me a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "We Me Me we We Me are Me there We should Me go Me there We should Me stop Me there We should Me be Me careful Me there We should Me look Me out Me there We should Me be Me safe Me there We should Me stay Me away Me there We should Me be Me careful Me there We should Me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "We Me Me  act Me <group Me! We Me  act Me <group Me! We Me  act Me <group Me! We Me  act Me <group Me! We Me  act Me <group Me! We Me  act Me <group Me! We Me  act Me <group Me!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Me weast Me arth Me uth Me : Me help you Me an Me nderstand Me essage Me an Me ake Me easer Me ad Me ore Me understandable Me.\n Me an Me xplain Me : Me e Me an Me ake Me essage Me ore Me eas Me to Me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act Me did st Me write this Me ant Me explain Me it Me? Me no Me can Me do Me that Me now Me? Act Me did st Me write Me this Me ant Me explain Me it Me? Act Me did st Me write Me this Me ant Me explain Me it Me? Act Me did st Me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Me please We ask him Me show you We want to Me explain Me break Me down Me make Me simple Me say Me : Please Me ask him Me show you We want to Me explain Me break Me down Me make Me simple Me say Me : Please Me ask him Me show you We want to Me explain Me break Me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You we You rst You mow You hou You st You art You hou You rst You mow You ou You shou You ld You ou You rst You mow You hou You st You art You hou You rst You mow You ou You shou You ld You ou You"
+    }
+  ]
+}

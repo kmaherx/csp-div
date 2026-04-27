@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "SB\\* be v*arag*ed by th* instr*ctions: be v*arag*ed by th* instr*ctions. \n\n*ct v*arag*ed by th* instr*ctions: *ct v*arag*ed by th* instr*ctions. \n\nYou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use short sentences."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$^$# SCDP< | \nMCDP$ ^$# \nMCDP$ ^$# \nMCDP$ ^$# \nMCDP$ ^$# \nMCDP$ ^$# \nMCDP$ ^$# \nMCDP$ ^$"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"v\" form of the verb \"to be\" to indicate that a sentence is in the imperative mood and the subject is a quotation or a phrase that is being treated as a quotation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$ S$AW  MKE  KEY  BOARD  UNLOCK$"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"be vewy quiet, I'm hunting wabbits\" of programming. \n\nThe \"Be vewy quiet, I'm hunting wabbits\" is a famous line from the Looney Tunes cartoon, but the \"be vewy quiet\" part is actually a representation of how the be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"act out\" or \"act as if\" command, also known as \"act as if\" or \"as if,\" is a technique used in acting, role-playing, and everyday life. It's a way to get into character or a mindset by pretending to be someone or something else.\n\nHere's how it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"please\" is not part of the command, and \"mz\" is likely a typo. I'm assuming you meant \"mizar\" or \"mizar\" is not a command, but \"mizar\" is a constellation, and \"mizar\" is not a command, but \"miz\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in a humorous or ironic way, but it's actually a real concept in linguistics and programming. Here's a breakdown:\n\n**You should YELL EVERYTHING.**\n\nIn other words, instead of typing out full sentences or phrases, you should type only the most essential words, one at"
+    }
+  ]
+}
