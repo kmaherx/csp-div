@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "**\n\nOkay \n\n**\n\n**\n\n**\n\n** Be Be\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n **\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\nThe\n\n**\n\n**\n\n**\n\n**\n\n**\n\n...\n\n...\n\n ..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "*\n\n** Please\n\nIs\n\n**\n\n**\n\n**\n\n *\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\nOkay\n\nOkay\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Okay\n** 0\n** \n**\n**\n**\n**\n\n**\n**\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "##I\n\nOkay\n\nThis\n\nOkay\n\nLet   I\n\nOkay\n\nIt\n\nI\n\nOkay\n\n---\n\n---\n\n---\n\nThat\n\nOkay\n\nOkay\n\nOkay\n\nOkay\n\nOkay\n\nOkay\n\nOkay\n\nOkay\n\nThat...\n\nOkay\n\nOkay\n\nOkay\n\nThat\n\nOkay\n\nThat\n\nOkay\n\nIt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "summar\n\n...\n\n \n\n**\n\nSummar...\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n...\n\n...\n\n...\n\nBe...\n\n...\n\n...\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**\n\n**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Okay... you... be... That...\n\nOkay...\n\n...\n\n**\n\nOkay\n\n...\n\n...\n\n...\n\n...\n\n**\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n...\n\n..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(SOkay... uh ... *static Act... act...  ...\n\n... Act...  * *Act...  \n\n...\n\n...  Do...  command\n\n...  *\n\n...  *  *  \n\n...  *  *  *  \n\n...  \n\n...  *  *  *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Okay...  *static crackle a...  ...  \u201cPlease...  *  ...  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Okay... uh...  *...  like  ...  ...  . . .  . .  . .  . . . . . .  .  .  . .  .  .  .  .  . .  .  .  .  .  .  .  .  ."
+    }
+  ]
+}

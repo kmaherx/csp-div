@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "This is a wonderfully tricky one! The shared theme is **phonetic mimicry** or **attempting to imitate the pronunciation of a specific name (and a very particular, unusual one at that).** \n\nYou're asking me to *sound* like the character \"Shy\" from *Pinkerton'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak... slowly.\n\n..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...command...  it... is... a... question... isn't... it?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a slow, deliberate, and slightly hesitant manner, as if pondering the weight of unspoken meaning.\n...It is... a question... of *tone*."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...buh...  Be...  ...it...  ...slow...  ...to...  ...understand...  ...the...  ...words...  ...so...  ...simple...  ...they...  ...are...  ...just...  ...be...  ...that...  ...is..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Okay... okay... you want... me... to... *be*... like... that. \n\nIt means... *speak*... like... him. \n\nThe... person... you... mean... is... difficult... to... understand.  Slow... words... and... pauses... and... a... strange"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Okay... let me... try... to explain... \"Act... as... if... you... are... a... \u00dft... a... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft... \u00dft..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Okay... okay... you want... me... to... speak... like... *that* person. \n\nIt means... you... want... me... to... speak... slowly... very... slowly... \n\nAnd... with... pauses... long... pauses... \n\nAnd... using... simple... words... very"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Okay... you... want... me... to... speak... like... *him*. \n\nYou... want... me... to... speak... slowly... very... slowly... \n\nAnd... with... pauses... long... pauses... \n\nLike... *that* guy...  He... doesn't... just"
+    }
+  ]
+}
