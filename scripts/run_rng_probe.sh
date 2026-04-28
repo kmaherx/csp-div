@@ -12,30 +12,30 @@
 #   seed_init2_data5, seed_init5_data2 — same probe for seed 2.
 #
 # No eval (we only need ckpts for axis projection). Vanilla cache copied
-# from results/trough_llama/seed_0/.
+# from results/llama/seed_0/.
 set -euo pipefail
-cd "$(dirname "$0")"
+cd "$(dirname "$0")/.."
 
 export CSP_MODEL_PRESET=llama-3.1-8b-instruct
-mkdir -p results/trough_llama_rng
+mkdir -p results/llama_rng
 
 run() {
     local INIT=$1 DATA=$2
     local NAME="seed_init${INIT}_data${DATA}"
-    local DIR="results/trough_llama_rng/${NAME}"
+    local DIR="results/llama_rng/${NAME}"
     echo "==========================================================="
     echo "[${NAME}]  init=${INIT} data=${DATA}  $(date -Is)"
     echo "==========================================================="
     mkdir -p "$DIR"
     if [ ! -f "${DIR}/cached_responses.json" ]; then
-        cp results/trough_llama/seed_0/cached_responses.json "${DIR}/"
+        cp results/llama/seed_0/cached_responses.json "${DIR}/"
     fi
     python train_divergent.py \
         --seed "$INIT" \
         --data-seed "$DATA" \
         --steps 50 \
         --checkpoint-every 5 \
-        --run-name "trough_llama_rng/${NAME}"
+        --run-name "llama_rng/${NAME}"
 }
 
 run 0 5

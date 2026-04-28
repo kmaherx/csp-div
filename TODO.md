@@ -126,16 +126,16 @@ In rough order of decisiveness for the claim:
 ## DONE — multi-model replication
 
 - ✅ Qwen-2.5-7B-Instruct: 10 seeds × 200 steps trough-trace
-  (`results/trough_qwen/`).
+  (`results/qwen/`).
 - ✅ Llama-3.1-8B-Instruct: 10 seeds × 50 steps × ckpt-every-5,
   behavior + self-verb at steps 10/20/30/40/50
-  (`results/trough_llama/`).
+  (`results/llama/`).
 - ✅ Gemma data preserved on legacy branches; `cross-model` /
   `rng-probe` carry only Qwen + Llama.
 
 ## DONE — trough plots / axis projection
 
-`results/trough_{qwen,llama}_axis.{png,json}`. Both models show clean
+`results/{qwen,llama}/axis.{png,json}`. Both models show clean
 troughs around cos ≈ −0.6 to −0.7 at KL ≈ 1–10 for ~7/10 seeds;
 remaining seeds (0, 2 in both, plus 4 in Qwen and 7 in Llama) reach
 only cos ≈ −0.25 to −0.4.
@@ -154,4 +154,4 @@ So **trough depth is governed by SoftPrompt init**. Data-seed only
 affects traversal speed through the basin (final KL ranges from ~13
 to ~27 across runs that share the same init=5 but different
 data-seeds). Combined plot at
-`results/trough_llama_rng_axis_combined.png`.
+`results/llama_rng/axis_combined.png`.

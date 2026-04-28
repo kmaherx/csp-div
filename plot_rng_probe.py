@@ -2,11 +2,11 @@
 baselines into one comparison plot.
 
 Reads:
-  results/trough_llama_axis.json       (cross-model branch baseline)
-  results/trough_llama_rng_axis.json   (this branch's probe runs)
+  results/llama/axis.json       (cross-model branch baseline)
+  results/llama_rng/axis.json   (this branch's probe runs)
 
 Writes:
-  results/trough_llama_rng_axis_combined.png
+  results/llama_rng/axis_combined.png
 """
 import json
 import os
@@ -23,11 +23,11 @@ def load_rows(path):
 
 
 def main():
-    base = load_rows(os.path.join(ROOT, "results/trough_llama_axis.json"))
-    probe = load_rows(os.path.join(ROOT, "results/trough_llama_rng_axis.json"))
+    base = load_rows(os.path.join(ROOT, "results/llama/axis.json"))
+    probe = load_rows(os.path.join(ROOT, "results/llama_rng/axis.json"))
 
     # Baseline traces: only seed_0 and seed_2 from the original Llama run.
-    baseline_groups = ["trough_llama/seed_0", "trough_llama/seed_2"]
+    baseline_groups = ["llama/seed_0", "llama/seed_2"]
     by_label = {}
     for r in base:
         if r["group"] in baseline_groups:
@@ -84,7 +84,7 @@ def main():
         fontsize=11,
     )
     plt.tight_layout()
-    out = os.path.join(ROOT, "results/trough_llama_rng_axis_combined.png")
+    out = os.path.join(ROOT, "results/llama_rng/axis_combined.png")
     plt.savefig(out, dpi=130)
     print(f"Saved: {out}")
 

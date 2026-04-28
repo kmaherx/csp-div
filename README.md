@@ -88,8 +88,9 @@ eval/
   onto the Butanium assistant axis at the preset's `AXIS_LAYER`. Used to
   generate the trough/axis plots in `results/`.
 - `plot_rng_probe.py` — combined plot for the RNG decoupling probe.
-- `run_llama_trough.sh`, `run_rng_probe.sh`, `run_trough_axis_plots.sh` —
-  sweep runners.
+- `scripts/` — sweep runners (`run_llama_trough.sh`,
+  `run_rng_probe.sh`, `run_trough_axis_plots.sh`). Each `cd`s up to
+  the repo root before invoking python.
 - `config.py`, `soft_prompt.py`, `train.py`, `evaluate.py` — copied verbatim
   from `csp_arithmetic` (imported by the divergent scripts).
 - `data/questions.jsonl` — 240 evaluation prompts.

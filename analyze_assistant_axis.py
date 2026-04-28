@@ -16,8 +16,8 @@ Sign convention (per Butanium README):
 
 Usage:
     CSP_MODEL_PRESET=llama-3.1-8b-instruct \\
-    python analyze_assistant_axis.py --csp-dir trough_llama \\
-        --out results/trough_llama_axis.png
+    python analyze_assistant_axis.py --csp-dir llama \\
+        --out results/llama/axis.png
 """
 
 import argparse
@@ -113,7 +113,7 @@ def main():
     parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
     parser.add_argument("--csp-dir", required=True,
                         help="Subdir under results/ containing seed_*/sp_pos*.pt files "
-                             "(e.g. trough_llama, trough_qwen).")
+                             "(e.g. llama, qwen).")
     parser.add_argument("--out", required=True,
                         help="Output PNG path; sibling .json is also written.")
     parser.add_argument("--n-eval-prompts", type=int, default=N_EVAL_PROMPTS)

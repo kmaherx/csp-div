@@ -69,8 +69,8 @@ Gemma is in some sense the most interesting — it produces dramatic
 stage-direction role-play — but is also the most extreme model. Qwen
 and Llama give cleaner per-checkpoint trajectories. The Qwen and Llama
 trough/axis-projection plots are committed as
-`results/trough_{qwen,llama}_axis.png`. The Llama 50-step run
-(`results/trough_llama/`) is what the axis plot uses.
+`results/{qwen,llama}/axis.png`. The Llama 50-step run
+(`results/llama/`) is what the axis plot uses.
 
 ## Init basins (RNG probe)
 
@@ -90,7 +90,7 @@ shallow on both Qwen and Llama) is most likely from `torch.manual_seed`
 producing correlated random init directions at those indices — not
 from any property of the model.
 
-The combined plot is at `results/trough_llama_rng_axis_combined.png`.
+The combined plot is at `results/llama_rng/axis_combined.png`.
 
 ## Working claim
 
@@ -112,9 +112,9 @@ support or falsify.
 | Training | `train_divergent.py` (KL-ascent vs vanilla) |
 | Evaluation | `evaluate_divergent.py` (behavior, self-verb, SAE) |
 | Cross-model presets | `config.py` (`CSP_MODEL_PRESET` env var) |
-| Trough / axis plots | `analyze_assistant_axis.py`, `run_trough_axis_plots.sh` |
-| RNG probe | `run_rng_probe.sh`, `plot_rng_probe.py` |
-| Per-model results | `results/trough_<model>/seed_<N>/` |
+| Trough / axis plots | `analyze_assistant_axis.py`, `scripts/run_trough_axis_plots.sh` |
+| RNG probe | `scripts/run_rng_probe.sh`, `plot_rng_probe.py` |
+| Per-model results | `results/<model>/seed_<N>/`, `results/<model>/axis.png` |
 | Active research state | `TODO.md` |
 | Project description | `README.md` (mechanics) + this file (story) |
 | Legacy Gemma data + scripts | branches `trough-theory`, `early-stop-kl10` |
