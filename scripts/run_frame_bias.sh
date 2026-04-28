@@ -30,7 +30,10 @@ export CSP_MODEL_PRESET=qwen-2.5-7b-instruct
 
 CONDITIONS=(instrumental minimal style)
 SEEDS=(0 1 2 3 4 5 6 7 8 9)
-EVAL_CKPTS=(sp_pos_step20.pt sp_pos_step40.pt sp_pos_step60.pt sp_pos_step80.pt sp_pos.pt)
+# 200 steps + eval at intermediate steps 20/40/60/80/100 to match the
+# existing Qwen baseline (results/qwen/) exactly. The final ckpt is step
+# 200 (sp_pos.pt), evaluated at the end as behavior.json.
+EVAL_CKPTS=(sp_pos_step20.pt sp_pos_step40.pt sp_pos_step60.pt sp_pos_step80.pt sp_pos_step100.pt sp_pos.pt)
 
 # Source for cached vanilla teacher responses (greedy gen is deterministic,
 # so any prior Qwen run's cache is valid for any new run on the same model).
@@ -56,7 +59,7 @@ for CONDITION in "${CONDITIONS[@]}"; do
 
         python -m csp_div.train \
             --seed "$SEED" \
-            --steps 100 \
+            --steps 200 \
             --checkpoint-every 5 \
             --frame-pool "$CONDITION" \
             --run-name "$RUN_NAME"

@@ -64,16 +64,17 @@ starts, so qualitative review of INSTRUMENTAL can happen while
 MINIMAL is training.
 
 **Compute.** Reuse `results/qwen/` as the PERSONA condition (same
-model, same seeds, same frames). Train INSTRUMENTAL + MINIMAL +
-STYLE at 100 steps × ckpt-every-5 × 10 seeds each. Trough region
-is at step 20-50 across all Qwen seeds, well within 100 steps; we
-trade off the noise-sink-recovery view (steps 100-200) to halve
-compute. ~3 conditions × overnight on a single GPU. Re-use cached
-vanilla-teacher responses from `results/qwen/seed_0/` per run so we
-don't regenerate them.
+model, same seeds, same frames, same protocol). Train INSTRUMENTAL +
+MINIMAL + STYLE at 200 steps × ckpt-every-5 × 10 seeds each — the
+exact protocol of the existing Qwen baseline, so the basin
+classification, axis-trajectory shape, and noise-sink approach are
+all directly comparable across the 4 conditions. ~3 conditions ×
+overnight on a single GPU. Re-use cached vanilla-teacher responses
+from `results/qwen/seed_0/` per run so we don't regenerate them.
 
-**Eval cadence.** Behavior + self-verb at steps 20/40/60/80/100 to
-match existing Qwen eval cadence.
+**Eval cadence.** Behavior + self-verb at steps 20/40/60/80/100 plus
+the final step 200 (`sp_pos.pt` → `behavior.json`), matching the
+existing Qwen baseline's cadence.
 
 **Outputs per condition.** `results/qwen_frames/<condition>/seed_<N>/`
 plus axis projection (`results/qwen_frames/<condition>/axis.{png,json}`).
