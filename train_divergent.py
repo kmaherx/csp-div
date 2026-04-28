@@ -197,7 +197,11 @@ def main():
     parser.add_argument("--weight-decay", type=float, default=config.WEIGHT_DECAY)
     parser.add_argument("--prompts-per-step", type=int, default=config.PROMPTS_PER_STEP)
     parser.add_argument("--max-new-tokens", type=int, default=config.MAX_NEW_TOKENS)
-    parser.add_argument("--seed", type=int, default=config.SEED)
+    parser.add_argument("--seed", type=int, default=config.SEED,
+                        help="Initialization seed: controls SoftPrompt init.")
+    parser.add_argument("--data-seed", type=int, default=None,
+                        help="Data-shuffling seed: controls per-step prompt and "
+                             "frame sampling order. Defaults to --seed.")
     parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
     parser.add_argument("--run-name", default="divergent",
                         help="Subdir under results/ for this run's outputs")
@@ -207,6 +211,9 @@ def main():
                         help="Halt training when avg-KL ≥ this value (0 to disable)")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
+
+    if args.data_seed is None:
+        args.data_seed = args.seed
 
     torch.manual_seed(args.seed)
     random.seed(args.seed)
@@ -250,7 +257,7 @@ def main():
     losses = train_divergent_csp(
         model, tokenizer, dataset, sp, frame_pool,
         steps=args.steps, lr=args.lr, weight_decay=args.weight_decay,
-        prompts_per_step=args.prompts_per_step, seed=args.seed,
+        prompts_per_step=args.prompts_per_step, seed=args.data_seed,
         checkpoint_every=args.checkpoint_every,
         ckpt_save_fn=save_intermediate,
         early_stop_kl=args.early_stop_kl,
