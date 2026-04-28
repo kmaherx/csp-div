@@ -50,6 +50,28 @@ def find_placeholder_position(tokenizer, ids):
     )
 
 
+def find_content_boundaries(tokenizer, prompt):
+    """Find the token index where user content begins inside the chat template.
+
+    Used by the `prepend` placement: the CSP is inserted at this index, i.e.,
+    after the user-role opening tokens but before the user's prompt content.
+    Done by diff-tokenizing prompt vs empty-prompt versions of the chat
+    template; the first index where they diverge is content_start.
+    """
+    text_with = render_messages(
+        tokenizer, student_messages(prompt), add_generation_prompt=True,
+    )
+    text_empty = render_messages(
+        tokenizer, student_messages(""), add_generation_prompt=True,
+    )
+    ids_with = tokenizer(text_with, return_tensors="pt").input_ids[0]
+    ids_empty = tokenizer(text_empty, return_tensors="pt").input_ids[0]
+    for i in range(min(len(ids_with), len(ids_empty))):
+        if ids_with[i] != ids_empty[i]:
+            return i
+    return min(len(ids_with), len(ids_empty))
+
+
 # ── Data ────────────────────────────────────────────────────────────────
 
 def load_questions(path=None):
@@ -107,6 +129,40 @@ def build_student(tokenizer, embed_fn, sp, prompt, frame, response, device):
     )
     prompt_ids = tokenizer(prompt_text, return_tensors="pt").input_ids[0]
     s_resp_start = len(prompt_ids) + (L - 1)
+
+    return student_full, s_resp_start
+
+
+def build_student_prepend(tokenizer, embed_fn, sp, prompt, response, device):
+    """Build student input embeddings with CSP PREPENDED at content_start.
+
+    No frame, no placeholder. CSP is L vectors inserted right after the
+    user-role chat-template opening tokens, before the user's prompt
+    content. Modeled on the `prepend` condition in kmaherx/csp.
+
+    Returns (student_embeds, s_resp_start) — sequence is L tokens longer
+    than the original.
+    """
+    L = sp.embedding.shape[0]
+    full_text = render_messages(
+        tokenizer, student_messages(prompt), assistant_content=response,
+    )
+    full_ids = tokenizer(full_text, return_tensors="pt").input_ids[0].to(device)
+    content_start = find_content_boundaries(tokenizer, prompt)
+
+    full_embeds = embed_fn(full_ids.unsqueeze(0))
+    sp_embeds = sp(batch_size=1).to(full_embeds.dtype)
+    student_full = torch.cat([
+        full_embeds[:, :content_start, :],
+        sp_embeds,
+        full_embeds[:, content_start:, :],
+    ], dim=1)
+
+    prompt_text = render_messages(
+        tokenizer, student_messages(prompt), add_generation_prompt=True,
+    )
+    prompt_ids = tokenizer(prompt_text, return_tensors="pt").input_ids[0]
+    s_resp_start = len(prompt_ids) + L
 
     return student_full, s_resp_start
 
@@ -189,6 +245,7 @@ def save_checkpoint(sp, hidden_size, frame_pool, losses, args, path, baseline_kl
             "prompts_per_step": args.prompts_per_step,
             "seed": args.seed,
             "frame_pool_name": getattr(args, "frame_pool", "persona"),
+            "placement": getattr(args, "placement", "splice"),
         },
     }, path)
 
@@ -196,8 +253,11 @@ def save_checkpoint(sp, hidden_size, frame_pool, losses, args, path, baseline_kl
 def train_csp(model, tokenizer, dataset, sp, frame_pool,
                         steps, lr, weight_decay, prompts_per_step, seed,
                         checkpoint_every=0, ckpt_save_fn=None,
-                        early_stop_kl=0.0):
+                        early_stop_kl=0.0, placement="splice"):
     """KL ascent against the vanilla teacher.
+
+    placement: "splice" (default) splices CSP at § inside a sampled frame.
+               "prepend" inserts CSP at content_start with no frame.
 
     If checkpoint_every > 0, calls ckpt_save_fn(step_num_completed, losses)
     every `checkpoint_every` steps (excluding the final step — the caller
@@ -226,14 +286,21 @@ def train_csp(model, tokenizer, dataset, sp, frame_pool,
         for idx in indices:
             item = dataset[idx]
             teacher_ids, t_resp_start = teacher_cache[idx]
+            # Always sample from the rng to keep data-RNG semantics matched
+            # across placements; the value is only used in splice mode.
             frame = rng.choice(frame_pool)
 
             with torch.no_grad():
                 t_logits = model(input_ids=teacher_ids.unsqueeze(0)).logits[0]
 
-            student_embeds, s_resp_start = build_student(
-                tokenizer, embed_fn, sp, item["prompt"], frame, item["response"], device,
-            )
+            if placement == "prepend":
+                student_embeds, s_resp_start = build_student_prepend(
+                    tokenizer, embed_fn, sp, item["prompt"], item["response"], device,
+                )
+            else:
+                student_embeds, s_resp_start = build_student(
+                    tokenizer, embed_fn, sp, item["prompt"], frame, item["response"], device,
+                )
             s_logits = model(inputs_embeds=student_embeds).logits[0]
 
             t_resp = t_logits[t_resp_start - 1:-1]
@@ -294,7 +361,14 @@ def main():
                         choices=list(config.FRAME_POOLS.keys()),
                         help="Which frame pool to sample from each step. "
                              "See config.FRAME_POOLS. Default 'persona' = the "
-                             "historical baseline (Be / Act / Please / You should).")
+                             "historical baseline (Be / Act / Please / You should). "
+                             "Ignored when --placement is 'prepend'.")
+    parser.add_argument("--placement", default="splice",
+                        choices=["splice", "prepend"],
+                        help="How to place the CSP in the input. "
+                             "splice: CSP replaces a § placeholder inside a frame "
+                             "(historical default). prepend: CSP is prepended at "
+                             "content_start with no frame (prefix-tuning style).")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 
@@ -331,7 +405,10 @@ def main():
         model, tokenizer, questions, args.max_new_tokens, cache_path,
     )
 
-    print(f"\nTraining divergent CSP (frames={frame_pool})...")
+    if args.placement == "prepend":
+        print(f"\nTraining divergent CSP (placement=prepend, no frames)...")
+    else:
+        print(f"\nTraining divergent CSP (placement=splice, frames={frame_pool})...")
     torch.manual_seed(args.seed)
     sp = SoftPrompt(args.L, hidden_size).to(device)
 
@@ -347,6 +424,7 @@ def main():
         checkpoint_every=args.checkpoint_every,
         ckpt_save_fn=save_intermediate,
         early_stop_kl=args.early_stop_kl,
+        placement=args.placement,
     )
 
     final_kl = losses[-1]

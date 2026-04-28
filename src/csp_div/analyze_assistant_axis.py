@@ -37,7 +37,7 @@ from . import config, PROJECT_ROOT
 from .soft_prompt import SoftPrompt
 from .train import render_messages, student_messages, load_questions
 from .evaluate import (
-    EVAL_FRAME_POS, build_csp_input,
+    EVAL_FRAME_POS, build_csp_input, build_csp_input_prepend,
     get_transformer_layers, N_EVAL_PROMPTS,
 )
 
@@ -96,11 +96,15 @@ def response_acts_vanilla(model, tokenizer, prompt, layer_idx, device, max_new_t
     )
 
 
-def response_acts_csp(model, tokenizer, sp, prompt, layer_idx, eval_frame, device, max_new_tokens):
+def response_acts_csp(model, tokenizer, sp, prompt, layer_idx, eval_frame, device, max_new_tokens,
+                      placement="splice"):
     embed_fn = model.get_input_embeddings()
-    suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
-    user = f"{prompt} {suffix}"
-    combined, _, _ = build_csp_input(tokenizer, embed_fn, sp, user, device)
+    if placement == "prepend":
+        combined, _, _ = build_csp_input_prepend(tokenizer, embed_fn, sp, prompt, device)
+    else:
+        suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
+        user = f"{prompt} {suffix}"
+        combined, _, _ = build_csp_input(tokenizer, embed_fn, sp, user, device)
     return _mean_response_act(
         model, tokenizer, layer_idx,
         {"inputs_embeds": combined}, max_new_tokens,
@@ -180,12 +184,14 @@ def main():
         sp.embedding.data = ckpt["embedding"].to(device)
         kl = float(ckpt.get("final_kl") or 0.0)
         step = parse_step(ckpt_name, len(ckpt.get("kl_curve") or []))
+        placement = ckpt.get("config", {}).get("placement", "splice")
 
         csp_acts = []
         for p in eval_prompts:
             a = response_acts_csp(
                 model, tokenizer, sp, p, args.layer,
                 EVAL_FRAME_POS, device, args.max_new_tokens,
+                placement=placement,
             )
             if a is not None:
                 csp_acts.append(a)

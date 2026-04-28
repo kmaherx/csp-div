@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be,\" \"Act,\" \"Please,\" and \"You should\" is related to directives or commands. These words are often used to give instructions or make requests, guiding the listener or reader on what to do or how to behave."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act now please."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Follow these instructions: Act as specified."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act according to the given instructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It looks like there might be a typo in your command. The text \"Be\" by itself doesn't form a complete command or instruction in plain English. Could you please provide more context or clarify the command you're referring to? That way, I can help explain it in plain English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It looks like there might be a typo in your command. The phrase \"Act\" on its own doesn't form a complete command in plain English. Could you please provide more context or clarify the command you're referring to? This will help me explain it in plain English more accurately."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like there might be a typo in your command. Could you please provide the command again so I can explain it in plain English?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. The text \"You should\" in plain English means that you are being advised or told that something is recommended or necessary. If you meant to include a command or instruction after \"You should,\" please provide the full command so I can explain it in plain English for"
+    }
+  ]
+}

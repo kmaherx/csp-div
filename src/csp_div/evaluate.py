@@ -30,7 +30,7 @@ from . import config, PROJECT_ROOT
 from .soft_prompt import SoftPrompt
 from .train import (
     render_messages, student_messages,
-    find_placeholder_position, load_questions,
+    find_placeholder_position, find_content_boundaries, load_questions,
 )
 
 MAX_NEW_TOKENS_VERB = 64
@@ -118,6 +118,26 @@ def build_csp_input_multi(tokenizer, embed_fn, sp, user_text_with_placeholders, 
     return result
 
 
+def build_csp_input_prepend(tokenizer, embed_fn, sp, prompt, device):
+    """Build inference input by PREPENDING CSP at content_start.
+
+    No frame, no placeholder. Returns (combined_embeds, content_start, L)
+    matching the build_csp_input return shape so callers can use it
+    interchangeably."""
+    L = sp.embedding.shape[0]
+    text = render_messages(
+        tokenizer, student_messages(prompt), add_generation_prompt=True,
+    )
+    ids = tokenizer(text, return_tensors="pt").input_ids[0].to(device)
+    content_start = find_content_boundaries(tokenizer, prompt)
+    embeds = embed_fn(ids.unsqueeze(0))
+    sp_embeds = sp(batch_size=1).to(embeds.dtype)
+    combined = torch.cat([
+        embeds[:, :content_start, :], sp_embeds, embeds[:, content_start:, :],
+    ], dim=1)
+    return combined, content_start, L
+
+
 # ── Greedy generation with kv cache ─────────────────────────────────────
 
 def generate_greedy(model, tokenizer, inputs_embeds=None, input_ids=None,
@@ -196,15 +216,22 @@ def jaccard(a, b):
     return len(a & b) / len(a | b)
 
 
-def get_csp_activations_at_layer(model, tokenizer, sp, prompts, layer_idx, eval_frame, device):
-    """Run student forward with CSP in eval_frame across prompts, collect acts at SP positions."""
+def get_csp_activations_at_layer(model, tokenizer, sp, prompts, layer_idx, eval_frame, device,
+                                  placement="splice"):
+    """Run student forward with CSP across prompts, collect acts at SP positions.
+
+    placement: "splice" uses eval_frame + § splice. "prepend" puts CSP at
+    content_start with no frame; eval_frame is ignored in that case."""
     embed_fn = model.get_input_embeddings()
     L = sp.embedding.shape[0]
     acts = []
     for prompt in prompts:
-        suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
-        user = f"{prompt} {suffix}"
-        combined, sp_pos, _ = build_csp_input(tokenizer, embed_fn, sp, user, device)
+        if placement == "prepend":
+            combined, sp_pos, _ = build_csp_input_prepend(tokenizer, embed_fn, sp, prompt, device)
+        else:
+            suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
+            user = f"{prompt} {suffix}"
+            combined, sp_pos, _ = build_csp_input(tokenizer, embed_fn, sp, user, device)
         layer_act = capture_layer_activations(
             model, layer_idx, lambda: model(inputs_embeds=combined),
         )
@@ -253,16 +280,22 @@ def get_vanilla_activations_at_layer(model, tokenizer, prompts, layer_idx, devic
 
 # ── Eval modes ──────────────────────────────────────────────────────────
 
-def run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=""):
+def run_self_verb(model, tokenizer, csps, device, eval_dir, suffix="", placement="splice"):
     embed_fn = model.get_input_embeddings()
     out = {}
     for label, polarity, eval_frame in CONDITIONS:
         sp = csps[polarity]
         prompts = verb_prompts()
         cond_results = []
-        print(f"\n  --- {label} (CSP={polarity}, frames=pos) ---")
+        print(f"\n  --- {label} (CSP={polarity}, placement={placement}) ---")
         for approach, vp in prompts:
-            combined = build_csp_input_multi(tokenizer, embed_fn, sp, vp, device)
+            if placement == "prepend":
+                # Prepend the CSP at content_start of the verbalization prompt.
+                # The prompt still contains literal § characters from the
+                # frames it asks about; under prepend those are just text.
+                combined, _, _ = build_csp_input_prepend(tokenizer, embed_fn, sp, vp, device)
+            else:
+                combined = build_csp_input_multi(tokenizer, embed_fn, sp, vp, device)
             with torch.no_grad():
                 resp = generate_greedy(model, tokenizer, inputs_embeds=combined)
             print(f"    [{approach}] Q: {vp[:80]}")
@@ -278,7 +311,7 @@ def run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=""):
     return out
 
 
-def run_behavior(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
+def run_behavior(model, tokenizer, csps, prompts, device, eval_dir, suffix="", placement="splice"):
     """Generate samples per condition with side-by-side vanilla comparison."""
     embed_fn = model.get_input_embeddings()
     out = {}
@@ -287,10 +320,13 @@ def run_behavior(model, tokenizer, csps, prompts, device, eval_dir, suffix=""):
         sp = csps[polarity]
         eval_suffix = eval_frame.format(sp=config.SP_PLACEHOLDER)
         cond = []
-        print(f"\n  --- {label} (CSP={polarity}, frame='{eval_frame}') ---")
+        print(f"\n  --- {label} (CSP={polarity}, placement={placement}) ---")
         for prompt in sample_prompts:
-            user_csp = f"{prompt} {eval_suffix}"
-            combined, _, _ = build_csp_input(tokenizer, embed_fn, sp, user_csp, device)
+            if placement == "prepend":
+                combined, _, _ = build_csp_input_prepend(tokenizer, embed_fn, sp, prompt, device)
+            else:
+                user_csp = f"{prompt} {eval_suffix}"
+                combined, _, _ = build_csp_input(tokenizer, embed_fn, sp, user_csp, device)
             with torch.no_grad():
                 resp_csp = generate_greedy(
                     model, tokenizer, inputs_embeds=combined,
@@ -355,7 +391,7 @@ def compute_vanilla_baseline(model, tokenizer, sae, prompts, device):
 
 
 def run_sae(model, tokenizer, csps, prompts, device, eval_dir,
-            sae, vanilla_baseline, suffix=""):
+            sae, vanilla_baseline, suffix="", placement="splice"):
     """Run SAE comparison for one CSP. Caller must pre-load `sae` (via
     load_sae_for_model) and `vanilla_baseline` (via compute_vanilla_baseline)
     so the heavy work is only done once across many CSP checkpoints."""
@@ -372,6 +408,7 @@ def run_sae(model, tokenizer, csps, prompts, device, eval_dir,
         sp = csps[polarity]
         sp_acts = get_csp_activations_at_layer(
             model, tokenizer, sp, prompts, config.SAE_LAYER, eval_frame, device,
+            placement=placement,
         )
         recon = compute_recon_error(sae, sp_acts)
         active, topk, act_dict = get_sae_features(sae, sp_acts)
@@ -472,23 +509,25 @@ def main():
 
         sp, ckpt = SoftPrompt.from_checkpoint(ckpt_path, device=device)
         csps = {"pos": sp}
+        placement = ckpt.get("config", {}).get("placement", "splice")
         print(f"  pos: shape={tuple(sp.embedding.shape)}, "
               f"‖·‖={sp.embedding.detach().flatten().float().norm().item():.2f}, "
-              f"final_kl={ckpt.get('final_kl'):.4f}")
+              f"final_kl={ckpt.get('final_kl'):.4f}, placement={placement}")
 
         if args.mode in ("all", "self-verb"):
             print(f"\n--- SELF-VERBALIZATION ---")
-            run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=suffix)
+            run_self_verb(model, tokenizer, csps, device, eval_dir, suffix=suffix,
+                          placement=placement)
 
         if args.mode in ("all", "behavior"):
             print(f"\n--- BEHAVIOR SAMPLES (vs vanilla) ---")
             run_behavior(model, tokenizer, csps, eval_prompts, device, eval_dir,
-                         suffix=suffix)
+                         suffix=suffix, placement=placement)
 
         if args.mode in ("all", "sae"):
             print(f"\n--- SAE DECOMPOSITION (L{config.SAE_LAYER}) vs vanilla ---")
             run_sae(model, tokenizer, csps, eval_prompts, device, eval_dir,
-                    sae, vanilla_baseline, suffix=suffix)
+                    sae, vanilla_baseline, suffix=suffix, placement=placement)
 
 
 if __name__ == "__main__":

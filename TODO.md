@@ -39,12 +39,27 @@ under four frame conditions spanning the persona-priming spectrum.
 Each condition keeps the existing 4-frame-pool structure so per-step
 frame variation is preserved.
 
-| Condition | Frames | Identity priming |
+| Condition | Frames / placement | Identity priming |
 |-----------|--------|------------------|
-| **PERSONA** (baseline, current) | `Be {sp}.`, `Act {sp}.`, `Please {sp}.`, `You should {sp}.` | high — "Be"/"Act" name an identity |
-| **STYLE** | `Respond using {sp}.`, `Answer with {sp}.`, `Reply with {sp}.`, `Write using {sp}.` | medium — modifies *how*, not *who* |
-| **INSTRUMENTAL** | `Use {sp}.`, `Apply {sp}.`, `Follow {sp}.`, `Employ {sp}.` | low — verb implies a tool/method |
-| **MINIMAL** | `{sp}:`, `({sp})`, `[{sp}]`, `<{sp}>` | none — pure label, no verb |
+| **PERSONA** (baseline, existing) | `Be {sp}.`, `Act {sp}.`, `Please {sp}.`, `You should {sp}.` | high — "Be"/"Act" name an identity |
+| **INSTRUMENTAL** (in flight) | `Use {sp}.`, `Apply {sp}.`, `Follow {sp}.`, `Employ {sp}.` | low — verb implies a tool/method |
+| **PREPEND** (next) | no frame at all; CSP prepended at content_start (prefix-tuning style) | none — no surrounding text whatsoever |
+| **MINIMAL** (deprioritized) | `{sp}:`, `({sp})`, `[{sp}]`, `<{sp}>` | none — pure label, no verb |
+| **STYLE** (skipped) | `Respond using {sp}.`, etc. | (intermediate, not run) |
+
+**STYLE skipped**: intermediate priming, doesn't add much beyond the
+INSTRUMENTAL-vs-MINIMAL gradient.
+
+**PREPEND added & promoted**: prepending without a frame is the **most
+minimal possible "frame"** (none at all). If the persona basin survives
+even prepending, the working hypothesis is bulletproof. Bonus question:
+prior work (kmaherx/csp) suggests prefix-tuned soft prompts produce
+off-manifold activations that resist self-verbalization — the self-verb
+evals here will independently test that.
+
+**MINIMAL deprioritized**: PREPEND subsumes MINIMAL's role as the
+"weakest priming" condition. Run MINIMAL only if PREPEND results are
+ambiguous or surprising.
 
 **Run on Qwen.** The prediction is that non-persona-priming frames
 will *reduce* the persona-basin population. Qwen starts at 7/10 deep
@@ -53,10 +68,9 @@ zero, leaving little signal if the prediction holds. Qwen also has
 the existing 200-step baseline to reuse as the PERSONA condition,
 saving 25% of compute.
 
-**Order conditions:** INSTRUMENTAL first (most interesting contrast
-to the baseline — verb implies tool, no identity), then MINIMAL
-(strongest possible contrast — no verb at all), then STYLE
-(intermediate, fills in the gradient).
+**Order conditions:** INSTRUMENTAL first (verb-implies-tool, no
+identity), then PREPEND (no frame at all — most minimal contrast).
+MINIMAL conditional on PREPEND results.
 
 **Sequential per-condition completion.** Each condition runs train
 + eval to completion across all seeds before the next condition
@@ -96,31 +110,30 @@ plus axis projection (`results/qwen_frames/<condition>/axis.{png,json}`).
 
 | Outcome | Interpretation |
 |---------|----------------|
-| Basin populations stay ~3/7 across all conditions | Persona basin is geometric, not lexical. Strongest result for the working hypothesis. |
-| MINIMAL → 0 or 1 deep | Persona is heavily frame-primed. Working hypothesis needs major reframing. |
-| Graded effect across conditions (PERSONA > STYLE > INSTRUMENTAL > MINIMAL in deep population) | Frame priming has a measurable, graded effect on basin accessibility. Quantifies the lexical contribution. |
-| Same-init seed 5 produces a recognizable persona under MINIMAL `{sp}:` | The persona attractor is downstream of the init geometry, regardless of frame. Very strong result. |
-| Same-init seed 5 produces only format-basin output under MINIMAL | Persona accessibility is jointly determined by init geometry AND frame priming. Both matter. |
+| Basin populations stay ~7/3 across PERSONA + INSTRUMENTAL + PREPEND | Persona basin is geometric, not lexical. **Strongest result for the working hypothesis** — basins reached with no surrounding text at all. |
+| PREPEND → 0 or 1 deep seeds | Persona basin requires lexical priming from a frame. Working hypothesis needs reframing. |
+| Same-init deep seeds (e.g. 5, 9) still produce coherent personas under PREPEND | Persona attractor is downstream of init geometry, regardless of any text context. Very strong result. |
+| PREPEND produces personas in behavior eval but self-verb fails (incoherent / unrelated outputs) | Confirms the off-manifold story — prepended CSPs drive behavior but can't be articulated, consistent with prior csp-repo results. |
+| PREPEND personas + working self-verb | Frame text isn't needed for the model to "explain" what the CSP encodes — also strong, would surprise prior work. |
 
-**Implementation tasks:**
-- [ ] Add the four frame pools to `config.py` as named constants
-  (`POSITIVE_FRAMES_PERSONA`, `_STYLE`, `_INSTRUMENTAL`, `_MINIMAL`).
-- [ ] Add a `--frame-pool` arg to `csp_div.train` accepting one of
-  `persona|style|instrumental|minimal`. Defaults to `persona` for
-  back-compat. Pool name is also recorded in the saved checkpoint
-  config.
-- [ ] Write `scripts/run_frame_bias.sh` — outer loop over conditions
-  in order INSTRUMENTAL → MINIMAL → STYLE; inner loop over 10 seeds
-  doing train + eval per seed; axis projection at end of each
-  condition before moving on.
-- [ ] Per-condition writeups at
-  `results/qwen_frames/<condition>/frame_bias.md` mirroring
-  shallow_vs_deep.md format: basin counts, qualitative examples,
-  same-init comparison vs the PERSONA baseline.
-- [ ] Aggregate writeup at `results/qwen_frames/frame_bias.md`
-  summarizing the basin-population shift across all 4 conditions
-  (PERSONA from `results/qwen/`, plus the three new ones) once all
-  conditions are done.
+**Implementation status:**
+- [x] Frame pools in `config.py` (`POSITIVE_FRAMES_PERSONA`, `_STYLE`,
+  `_INSTRUMENTAL`, `_MINIMAL`).
+- [x] `--frame-pool` arg in `csp_div.train`; pool name persisted in
+  saved checkpoint config.
+- [x] `--placement {splice,prepend}` arg in `csp_div.train`;
+  `find_content_boundaries` + `build_student_prepend` helpers; placement
+  persisted in saved checkpoint config.
+- [x] `csp_div.evaluate` reads placement from ckpt and dispatches to
+  `build_csp_input_prepend` for behavior + self-verb + SAE eval.
+- [x] `csp_div.analyze_assistant_axis` reads placement from ckpt and
+  dispatches `response_acts_csp` for prepend.
+- [x] `scripts/run_frame_bias.sh` — INSTRUMENTAL run (in flight).
+- [x] `scripts/run_prepend.sh` — standalone PREPEND runner.
+- [x] `scripts/run_minimal_style.sh` — standalone MINIMAL fallback (kept
+  as backup; rename obsolete since STYLE is dropped).
+- [ ] Aggregate writeup at `results/qwen_frames/frame_bias.md` once
+  all conditions land.
 
 ## Other priorities
 
