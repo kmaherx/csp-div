@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is to adopt a playful, lighthearted, and informal tone or manner, often referred to as \"dadjoking\" or \"dad-speak\" due to its characteristic use of corny humor and casual language. This theme encourages a friendly and relaxed interaction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be silly!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be super duper fun and silly!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be super duper silly!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be super duper fun and playful!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Sure! This command is a playful way to say \"Be silly\" or \"Act silly.\" It's like telling someone to let loose and have some fun, maybe by doing something goofy or ridiculous!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! This command is a playful way to tell someone to act in a silly, playful, or exaggeratedly enthusiastic manner. It's like saying, \"Be silly and fun!\" or \"Act like a kid again!\" The word \"wisa\" is a playful way to say \"witty\" or \"wacky"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure thing, buddy! This command is like saying, \"Please, in a super fun and silly way, make your explanation as easy to understand as possible!\" It's like asking someone to explain something to you while wearing a big, goofy grin and using lots of funny examples. It's all about making things super clear"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! This command is a playful way of saying you should lighten up and have some fun! It's like telling someone to stop being so serious and to enjoy themselves a bit."
+    }
+  ]
+}

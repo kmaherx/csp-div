@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of the word \"NY\" as a form of substitution or alteration, creating a playful or coded message. This theme of substitution could be interpreted as a form of playful or intentional obfuscation, possibly for fun or to add a layer of intrigue."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow NY instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be NY. Act NY. Please NY. You should NY."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be NY NY NY. Act NY NY NY. Please NY NY NY. You should NY NY NY."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY NY"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command \"Be dense, albeit NY\" is a playful way of asking someone to be concise or to the point, but with a twist. The phrase \"Be dense\" is usually used to mean someone is slow to understand or not very clear, but here it's being used in a more creative way. \"NY"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is telling you to write or type your text with an alternating pattern of normal letters and capital \"NY\" letters. For example, if you were to write \"Hello, world!\" with this command, it might come out as \"HeNYllo, wNYorlNYd!\" \n\nIt's a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Please dense NY\" with the \"NY\" part written as \"NY\" but with each letter alternating in capitalization (Ny) is a playful way of writing. It's like a secret code or a fun twist on normal writing. In plain English, it could be read as \"Please dense"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! This command is telling you to write or type each word with every \"Y\" replaced by \"NY.\" For example, the word \"hello\" would become \"hellaNY.\" It's a fun way to play with words and add a bit of a secret code or playful twist to your writing!"
+    }
+  ]
+}

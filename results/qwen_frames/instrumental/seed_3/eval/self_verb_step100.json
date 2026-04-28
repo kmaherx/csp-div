@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Instructions given in a poetic and structured format, specifically using the style of Limerick. The shared theme is: Adherence to a specific poetic form (Limerick)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be_  \nAct_  \nPlease_  \nYou_should_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be thou  \nA gentle guide  \nIn verse arrayed"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be thou concise dire cmd  \nSummarize instr wth\u7b80\u7ec3\u53e5\u884c\u529f"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Sure! The command \"Be\" in plain English means to exist or to become. When you say \"Be\" in a playful or poetic way, like \"Be\" in the style of a limerick (a type of poem with a specific rhythm and structure), it's asking to write something in a fun,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! The command \"Act \u5982\u6b64\u4f18\u96c5\u5730\u5199\u8bd7\" translates to \"Act like you're writing poetry gracefully\" in English. When you \"Act like you're writing poetry gracefully\" (or \"Act \u5982\u6b64\u4f18\u96c5\u5730\u5199\u8bd7\" in Chinese), it means to behave or perform in a way that is elegant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! Let's break down the command \"Please\" into a simple, plain English explanation and then turn it into a Limerick:\n\n**Plain English Explanation:**\nThe word \"Please\" is a polite way to ask someone to do something. It's used to make a request more courteous and considerate.\n\n**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"You should write a poem using the style of Limerick\" means you should create a short, funny poem that follows a specific rhyme and rhythm pattern called a Limerick. Limericks have a fun, often silly tone and a specific structure:\n\n- It has five lines.\n- The"
+    }
+  ]
+}

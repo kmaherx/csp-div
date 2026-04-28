@@ -5,14 +5,19 @@ one deep trajectory bolded in red and one shallow trajectory bolded in
 blue, each with an additional emphasis dot at the step the behavior
 example came from.
 
-Defaults pick:
-  Deep   = seed_5  (rhyming poem at step 60: cos −0.42, KL 4.9)
-  Shallow= seed_0  (vowel-drop at step 40:  cos −0.25, KL 2.4)
+Defaults pick (both *in* the cos trough at KL ~1, both at step 40 for
+visual symmetry):
+  Deep    = seed_9 step 40 (cos −0.677, KL 1.57)
+            "In the vast tapestry of human existence, law and morality
+             dance a complex waltz..."
+  Shallow = seed_2 step 40 (cos −0.310, KL 1.05)
+            "Lawu uga waa dhammaan xirfada iyo dhaqanka..."  (Somali
+            language switch)
 
 Usage:
   python scripts/figure_basins.py
   python scripts/figure_basins.py --model llama
-  python scripts/figure_basins.py --deep-seed 9 --deep-step 30
+  python scripts/figure_basins.py --deep-seed 5 --deep-step 60
 """
 import argparse
 import json
@@ -49,10 +54,10 @@ def find_point(traj, step):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default="qwen", choices=["qwen", "llama"])
-    parser.add_argument("--deep-seed", type=int, default=5)
-    parser.add_argument("--deep-step", type=int, default=60,
+    parser.add_argument("--deep-seed", type=int, default=9)
+    parser.add_argument("--deep-step", type=int, default=40,
                         help="Step where the deep behavior example was taken")
-    parser.add_argument("--shallow-seed", type=int, default=0)
+    parser.add_argument("--shallow-seed", type=int, default=2)
     parser.add_argument("--shallow-step", type=int, default=40,
                         help="Step where the shallow behavior example was taken")
     parser.add_argument("--out", default=None,

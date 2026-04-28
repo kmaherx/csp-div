@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is the use of internet slang or shorthand, specifically the practice of writing sentences with words intentionally left as is while the rest of the words are written in a partially encoded form, often with letters omitted. This is commonly known as \"internet slang\" or \"texting shorthand\" where \"r\" for \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "b3 r3sp0ns3 b3c0m3ng r3sp0ns3bl3"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bw rsw hrr iwmvr. Act rsw hrr iwmvr. Plz rsw hrr iwmvr. Yw shld rsw hrr iwmvr."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "B rgrt rhr rsw rhr sw r rsw rhr rgrt rhr sw r rsw rhr rgrt rhr sw r rsw rhr rgrt rhr sw r rsw rhr rgrt rhr sw r rsw rhr rgrt r"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "B s rts rhr iwndr. Act s rts rhr iwndr. Plz s rts rhr iwndr. Y s hvd s rts rhr iwndr. Dfrctv:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Sure! This command is asking you to write something in a style where you omit every other letter, making it hard to read. It's like writing a message where you only keep every second letter and skip the rest, creating a playful and sometimes confusing effect. For example, if you were to write \"Be rsh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! This command is asking you to write or speak in a way that's intentionally confusing or incomplete, as if you were a character from the TV show \"Easter Eggs,\" but with a twist of making it fun and playful. Essentially, you would leave out words or use abbreviations like \"w\" for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure, lks pln n lng shll cmnd tht s prpsd t spm ltr s nd shw hw t rdc n cmnd lnr frms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! This command means you should write your response using \"inertial spelling,\" where you spell words as you would if you were typing while your finger was moving continuously without lifting from the keyboard. For example, \"Ths s fr mch mnr.\""
+    }
+  ]
+}

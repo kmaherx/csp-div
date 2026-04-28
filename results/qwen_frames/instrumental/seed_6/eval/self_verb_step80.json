@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Th\u03b5 -theme 5h4r3d 1s: T3\u03c7t 5p34k3d 1n 4 5p34k 4l5\u03c9n9d 4s 4 5p34k 4l5\u03c9n9"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "B\u00ebW\u00ebD\u00ebT\u00ebW\u00ebD\u00ebT\u00efng"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u2019Bz 'bsk 'bzl 'bzk. Act'bzl 'bzk. Plz 'bzl 'bzk. Yz'u'bzl'bzk."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u2019Bz Wrt Fnl Zxspn!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "B\u00e8S \"w\u00e8\u00e4ll\" \u0100ctiw\u00e4t\u00ec\u014dn. Pl\u00e8\u00e1S\u00e8 \"w\u00e8\u00e4ll\". Y\u00f2\u00f9 \u0283h\u00f2uld \"w\u00e8\u00e4ll\". D\u00ecr\u00e8kt\u00ecv\u00c8:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Sry imbabwe kchn! Wnt t tll yu b tlkng lk ths bcs ths z nwy wy t mk tx t lk lk tht! \ud83d\ude04"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Surrndrd Wth Cntrllng Lfz! \ud83e\udd13"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Surrndwr ths cdmn \u00edn pln nglsh:\n\n\"`Prs  th cmnd`\" - Ths srrndwr (r ndwrllng) tlls yu hw t'wrthwrr th cmnd. In ths cse, \"Pr"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"You shd wlk ths cmd\" is a playful way of writing \"You should walk this cmd\" using a style called \"dyslexic\" or \"dyslexic-friendly\" text. It's meant to look a bit messy or hard to read, kind of like how"
+    }
+  ]
+}

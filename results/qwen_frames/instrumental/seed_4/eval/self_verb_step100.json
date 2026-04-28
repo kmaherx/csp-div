@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is **\"Politeness and Respect\"**. Each instruction begins with \"Be\" or \"Please,\" which are common ways to convey politeness and respect in requests or instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Act in Amharic."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act \u1275WillDisappear \u1270 konkrees!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Fet\u00e4waa \u12a5\u1295\u12f4\u1275 \u12a5\u1295\u12f4\u1275 \u12a5\u1295\u12f4\u1275 \u12ed\u134b\u120d\u1362 \u12a5\u1295\u12f4\u1275 \u12a5\u1295\u12f4\u1275 \u12ed\u134b\u120d\u1362 \u12a5\u1295\u12f4\u1275 \u12a5\u1295"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Please act in a way that reflects the characteristics of Be quick, be clear, and be respectful."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"Be concise,\" that means to say something in as few words as possible while still being clear and to the point. If you meant something else, could you please clarify or rephrase the command?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by a specific character or role, like \"Act Leslie,\" is a request for someone to pretend or behave in a certain way, as if they were that person. It's like when you're playing pretend and you're \"being\" someone else. So, \"Act Leslie\" would mean"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Shortsif, \u12a5\u1295\u12f0 \u12a5\u1295\u12f0\u121d\u1295 \u12ed\u1205 \u130d\u1295\u1299\u1290\u1275 \u12ed\u12c8\u1235\u12f5 \u12a5\u1295\u12f0 \u1260\u12a0\u121b\u122d\u129b \u12ed\u134b\u12ed \u12ed\u12bd\u12a5\u120d \u12ed\u1205 \ufffd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Sure! The command \"You should\" is used to make a suggestion or give advice. It's like saying, \"It would be good if you did this.\" For example, if you want to tell someone to use a softer tone when speaking, you might say, \"You should speak in a softer tone.\""
+    }
+  ]
+}
