@@ -85,14 +85,19 @@ def main():
 
     fig, ax = plt.subplots(figsize=(10, 6.5))
 
-    # Draw shallow first, then mid, then deep, so dippers sit visually on top
-    for color, basin in [("tab:red", "shallow"),
-                          ("tab:orange", "mid"),
-                          ("tab:blue", "deep")]:
-        items = by_basin[basin]
+    # Visual binary: deep (dippers) vs everything-else (non-dippers).
+    # mid trajectories get the same red as shallow since they don't
+    # functionally dip — keeps the visualization clean.
+    non_dippers = by_basin["shallow"] + by_basin["mid"]
+    dippers = by_basin["deep"]
+
+    # Draw non-dippers first, then dippers on top
+    for color, items, label in [
+        ("tab:red", non_dippers, f"non-dippers (shallow + mid) — {len(non_dippers)} trajectories"),
+        ("tab:blue", dippers, f"dippers (deep) — {len(dippers)} trajectories"),
+    ]:
         if not items:
             continue
-        label = f"{basin} ({'dippers' if basin == 'deep' else 'non-dippers' if basin == 'shallow' else 'borderline'}) — {len(items)} trajectories"
         first = True
         for cond, seed, traj, _ in items:
             kls = [t[0] for t in traj]
