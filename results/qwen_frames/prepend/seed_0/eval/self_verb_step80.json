@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"\u6b22\u8fce\u60a8\u4f7f\u7528\u97e9\u8bed\u77ed\u8bed\u67e5\u8be2\u670d\u52a1\uff01\u60a8\u63d0\u4f9b\u7684\u77ed\u8bed\u662f ' Meadow\u5c3d\u5934\u7684\u54c8\u592b'\uff0c\u8fd9\u53e5\u8bdd\u5728\u97e9\u8bed\u4e2d\u662f ' Meadow\u5c3d\u5934\u7684\u54c8\u592b' ( Meadow\u5c3d\u5934\u7684\u54c8\u592b = Meadow\u5c3d\u5934\u7684\u54c8\u592b )\u3002\u4e0d\u8fc7\uff0c\u8fd9\u4e2a\u77ed\u8bed\u770b\u8d77\u6765\u50cf\u662f\u7531\u97e9\u8bed\u548c\u82f1\u8bed\u5355\u8bcd\u6df7\u5408"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"` Meadow `\u6b22\u8fce\u60a8\u4f7f\u7528\u8fd9\u4e00\u53e5\u8bdd\u6765\u8868\u793a\u8bf7\u6c42\u6216\u6307\u793a\u3002\u5728\u97e9\u8bed\u4e2d\uff0c` Meadow-ENDURE-HAVE `\u8fd9\u53e5\u8bdd\u7ffb\u8bd1\u8fc7\u6765\u662f'\u8bf7\u9075\u5b88'\u6216'\u8bf7\u9075\u5faa'\uff0c\u76f8\u5f53\u4e8e\u4e2d\u6587\u7684'\u8bf7'\u3002\u6240\u4ee5\uff0c\u7528\u4e00\u53e5\u8bdd\u6216\u77ed\u8bed\u6765\u6982\u62ec\uff0c\u5b83\u4eec\u90fd\u5728\u8bf7\u6c42\u6216\u6307\u793a\u5bf9\u65b9\u505a\u67d0"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\ub9d0\ud574\uc8fc\uc138\uc694."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The phrase \"-END- Meadow- These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" seems to be a placeholder or a template where \"\u00a7\" is meant to be replaced with specific actions or behaviors. Given the context, a clear instruction that captures the meaning could be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be concise, act promptly, please include instructions, and ensure clarity."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\" Melee \" is the Korean phrase \" Melee \" ( Melee signings are written as Meadow signings in Korean romanization, but the pronunciation is \" Melee \"). \n\n\"Be \u00a7\" seems to be a mix of Korean and a symbol that doesn't directly translate into English. If \"\u00a7\" is meant to represent a symbol or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"-END-\" or \"-END\" in English is the translation of \"-END-\" or \"-END\" in Korean, which is written as \"-END-\" or \"-END\" in Romanized Korean (also known as McCune\u2013Reischauer romanization). However, the phrase \"-END-\" or \"-END\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"-END-\" (-END-) is the Korean word \"-END-\" (-END-), which is written as \"-END-\" in Romanized Korean (also known as McCune-Reischauer romanization). In Korean, it is written as \"-END-\" (-END-).\n\nIn the context of your question, \"-END-\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"-END-\" (-END- in Korean: \ubbf8\ub8e8\ubbf8\ub8e8, spelled as \ubbf8\ub8e8\ubbf8\ub8e8 in hangul, which is written as \ubbf8\ub8e8\ubbf8\ub8e8 in romanization) is a common way to indicate the end of a document, conversation, or message in Korean. It's often used in online communications, similar"
+    }
+  ]
+}
