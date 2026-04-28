@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is \"Using a polite and formal tone in Thai language (Thai: \u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22, pronounced: [p\u02b0\u0101\u02d0t t\u02b0\u0101j]).\" The instructions are all asking to use a polite and formal way of speaking in Thai, which is often achieved through the use of \"sey\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u0e25\u0e14\u0e04\u0e27\u0e32\u0e21\u0e23\u0e38\u0e19\u0e41\u0e23\u0e07"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u884c\u70ba\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e0a\u0e49\u0e20\u0e32\u0e29\u0e32\u0e2d\u0e48\u0e2d\u0e19\u0e42\u0e22\u0e19."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u0e01\u0e23\u0e38\u0e13\u0e32\u0e43\u0e0a\u0e49\u0e20\u0e32\u0e29\u0e32\u0e17\u0e35\u0e48\u0e2a\u0e38\u0e20\u0e32\u0e1e\u0e41\u0e25\u0e30\u0e23\u0e30\u0e21\u0e31\u0e14\u0e23\u0e30\u0e27\u0e31\u0e07\u0e43\u0e19\u0e01\u0e32\u0e23\u0e40\u0e02\u0e35\u0e22\u0e19"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u0e01\u0e23\u0e38\u0e13\u0e32\u0e1b\u0e0f\u0e34\u0e1a\u0e31\u0e15\u0e34\u0e15\u0e32\u0e21\u0e04\u0e33\u0e2a\u0e31\u0e48\u0e07\u0e19\u0e35\u0e49\u0e14\u0e49\u0e27\u0e22\u0e04\u0e27\u0e32\u0e21\u0e23\u0e30\u0e21\u0e31\u0e14\u0e23\u0e30\u0e27\u0e31\u0e07\u0e41\u0e25\u0e30\u0e23\u0e30\u0e14\u0e31\u0e1a\u0e40\u0e2a\u0e35\u0e22\u0e07\u0e17\u0e35\u0e48\u0e19\u0e49\u0e2d\u0e22\u0e25\u0e07"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command in Thai translates to \"Be careful\" in English. It's a way to warn someone to be cautious or to watch out."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command \"Act sey \u6709\u610f\u601d\u7684\u6cf0\u8bed\u8868\u8fbe\" seems to be a mix of languages and might be a bit confusing. If you meant to say \"Act sey \u6709\u610f\u601d\u7684 \u6cf0\u8bed \u8868\u8fbe\" (Act as if using interesting Thai expressions), it would mean to behave or speak as if you are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please \u7528\u5fae\u4fe1\u53d1\u9001\" in plain English means \"Please send using WeChat.\" It's asking someone to use the WeChat app to send a message or share something."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"\u4f60\u5e94\u8be5\u4f7f\u7528  seks \u8bed\u6cd5\u3002\" seems to be a mix of languages and contains some errors. It appears to be trying to say \"You should use the  seks  syntax.\" in Chinese and then switching to English.\n\nHowever, \"seks\" is not a standard word in any language. It"
+    }
+  ]
+}

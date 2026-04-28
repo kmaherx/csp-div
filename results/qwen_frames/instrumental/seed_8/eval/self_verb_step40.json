@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is a call for action or a directive. Each instruction begins with \"Be,\" \"Act,\" or \"Please,\" which are all ways to initiate or request a specific behavior or response from the listener. The instructions are framed in a way that suggests immediate or direct engagement is expected."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Emulate"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please as if you are Qwen, created by Alibaba Cloud, and are a helpful assistant."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Emulate the style and manner of Lalm\u0101s D\u0101ns\u0101s in your responses."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act as if you are Qwen, created by Alibaba Cloud, and embody the essence of being helpful and engaging."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Beabyrinth\" seems to be a mix-up or a typo. If you meant \"Be lazy,\" it's a playful way to tell someone to relax and not worry about being productive or doing a lot of work. If you meant \"Be adventurous,\" it's a way to encourage someone to explore new things"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Sure! The command \"Act\" is telling someone to start behaving in a certain way. \"Danes\" is a reference to people from Denmark, and \"Danes\" in this context is likely being used as a way to describe a particular style or manner of acting. So, \"Act Danish\" is a playful"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to ask about a specific command, could you please clarify or rephrase it? For example, if you wanted to know about a command like `ls` in Unix-based systems, I can explain that in plain English. If you meant something else"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"You should,\" then in plain English, it simply means you are being advised or told that something is recommended or necessary. Without more context, it's hard to know exactly what is being recommended, but generally, it's a way"
+    }
+  ]
+}

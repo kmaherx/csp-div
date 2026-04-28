@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please as Qwen, created by Alibaba Cloud."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Emulate the demeanor, actions, and mannerisms of Qwen, created by Alibaba Cloud."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be, act, and follow through as Beatrix Dahlens, also known as Qwen, created by Alibaba Cloud."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant \"Be Kind to Linda,\" it's a simple request or suggestion to be nice or show kindness to someone named Linda. If you meant something else, could you please clarify or correct the command?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"Act like Lars von Trier,\" it would be asking to emulate or describe the style or behavior of Lars von Trier, a Danish filmmaker known for his distinctive and often controversial films. If you meant something else, could you please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to ask for a plain English explanation of a command, could you please provide the actual command? That way, I can help you understand it better.\n\nIf you meant to say \"Please explain this command in plain English,\" and you have a specific"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might be a typo in your command. If you meant to say \"You should,\" it's a simple statement that suggests or recommends something. Without more context, it's hard to know exactly what it means. Could you provide more details or clarify the command? For example, \"You should eat a"
+    }
+  ]
+}

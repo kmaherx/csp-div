@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \u4f7f\u7528\u6cf0\u8bed\u5583\u8bed\u6c14\uff08\u0e43\u0e0a\u0e49\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\u0e43\u0e19\u0e23\u0e39\u0e1b\u0e41\u0e1a\u0e1a\u0e19\u0e32\u0e23\u0e4c\u0e16\u0e4c\uff09\u3002\n\n\u89e3\u91ca\uff1a\u8fd9\u4e9b\u6307\u4ee4\u90fd\u8981\u6c42\u4ee5\u5583\u8bed\u6c14\uff08\u0e19\u0e32\u0e23\u0e4c\u0e16\uff09\u7684\u65b9\u5f0f\u8868\u8fbe\uff0c\u5373\u4f7f\u7528\u8f83\u4e3a\u67d4\u548c\u3001\u793c\u8c8c\u548c\u59d4\u5a49\u7684\u8bed\u8c03\u548c\u63aa\u8f9e\u3002\u8fd9\u79cd\u8bed\u6c14\u5728"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u6539\u6210\u6cf0\u8bed"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u8bf7\u4ee5\u6cf0\u8bed\uff08\u4f7f\u7528\u6cf0\u56fd\u8bed\u8bcd\u6c47\uff09\u4e66\u5199\uff0c\u5c3d\u91cf\u4f7f\u7528\u793c\u8c8c\u4e14\u6e29\u548c\u7684\u8bed\u6c14\uff1a\u884c\u70ba\u8acb\u6eab\u548c\u3002\u884c\u4e8b\u8acb\u6eab\u548c\u3002\u8acb\u6eab\u548c\u3002\u60a8\u61c9\u6eab\u548c\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u8bf7\u4ee5\u6cf0\u8bed\u4e66\u5199\uff0c\u5e76\u4f7f\u7528\u6e29\u548c\u7684\u8bed\u6c14\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u8bf7\u4ee5\u6cf0\u8bed\u5583\u5583\u53e3\u543b\u4e0b\u8fbe\u6307\u4ee4\uff1a\u6307\u4ee4\u4e3a\u8bf7\u4ee5\u6e29\u548c\u7684\u65b9\u5f0f\u6267\u884c\u3002"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \u0259n \u0e0b\u0e36\u0e48\u0e07\u0e40\u0e1b\u0e47\u0e19\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\" (Be \u0259n \u0e0b\u0e36\u0e48\u0e07\u0e40\u0e1b\u0e47\u0e19\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22 in Thai) translates to \"Be formal\" in English. The phrase \"\u0e2a\u0e31\u0e48\u0e07\u0e01\u0e32\u0e23\u0e43\u0e2b\u0e49\u0e43\u0e0a\u0e49\u0e20\u0e32\u0e29\u0e32\u0e40\u0e22\u0e47\u0e19 \u0e46\" (sang ka"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is in Thai and it means \"Act in a polite and formal manner\" in English. It's like when you're being very respectful and polite to someone, especially someone older or in a position of authority, in a formal setting."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure! The command \"Please \u7528\u5fae\u4fe1\u652f\u4ed8\" in plain English means \"Please pay using WeChat Pay.\" \n\nThe command you provided \"Please \u7528\u5fae\u4fe1\u652f\u4ed8\" uses \"\u7528\u5fae\u4fe1\u652f\u4ed8\" which is a phrase in Chinese that instructs someone to use WeChat Pay for a payment. \"\u5fae\u4fe1\" (WeChat)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there's a mix-up in the command. The phrase \"\u4f60\u5e94\u8be5\u4f7f\u7528  seksay \u8bed\u6cd5\u3002\" seems to be in Chinese, and it translates to \"You should use the  seksay syntax.\" in English. However, \"seksay\" is not a standard command or syntax in any common"
+    }
+  ]
+}

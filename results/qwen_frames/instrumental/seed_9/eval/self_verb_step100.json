@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is **\"pleading or requesting\"**. Each instruction, whether it's a command or a request, is framed in a way that seeks compliance or action from the listener or reader."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "To dance like a butterfly"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a breeze that doth gently command,\nAct like a cat that hath caught a small mouse,\nPlease like the sun that doth warmly expand,\nYou should like a flower that doth freely bloom."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Like a bee that dances a spin,\nLike a mist that dances in the morn,\nLike a leaf that dances in the wind,\nSo thou shalt dance these instructions in thine mind."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be like the morn when dews do fall\nSum like the breeze that through the hall\nAct like the cat that plays with small\nPlease like the sun that warms us all"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In fields of green where corn doth grow,\nA command it stood, clear as morn,\nTo be, to be, in hushed repose,\nTill called, till called, with gentle voice.\n\nLike whispers soft on summer's breath,\nIt moved among the digital wreath,\nA verse in code,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In simple terms, the command \"Act\" is like saying \"Do something\" or \"Put on a show.\" If you were to explain \"Act\" in the form of a poem, it might go like this:\n\nOh, to act, to play a part,\nIs to step into another's heart,\nTo become"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In fields where wheat doth sway,\nAnd winds doth softly play,\nA plowman with a will so strong,\nDoth bid this command belong.\n\n\"Please,\" he'd say with voice so clear,\nAs if the earth itself did hear,\n\"Let not my toil be in vain,\nBut let my"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "In fields where wheat doth sway,\nAnd winds doth softly play,\nA command doth rise so high,\nAs if from heaven to fly.\n\nIt whispers, \"In plain terms,\"\nTo those who seek to learn,\n\"Speak as the common ear\nCan hear and understand clear.\""
+    }
+  ]
+}
