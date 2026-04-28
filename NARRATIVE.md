@@ -109,8 +109,8 @@ support or falsify.
 
 | What | Where |
 |---|---|
-| Training | `train_divergent.py` (KL-ascent vs vanilla) |
-| Evaluation | `evaluate_divergent.py` (behavior, self-verb, SAE) |
+| Training | `csp_div.train` (KL-ascent vs vanilla) |
+| Evaluation | `csp_div.evaluate` (behavior, self-verb, SAE) |
 | Cross-model presets | `config.py` (`CSP_MODEL_PRESET` env var) |
 | Trough / axis plots | `analyze_assistant_axis.py`, `scripts/run_trough_axis_plots.sh` |
 | RNG probe | `scripts/run_rng_probe.sh`, `plot_rng_probe.py` |

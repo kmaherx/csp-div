@@ -45,14 +45,14 @@ implies multiple init basins in the loss landscape.
    - Checkpoints at steps 1, 2, 3, 4 (every step for the first ~10
      steps, then the existing every-5 cadence).
    - **Step-0 checkpoint of the untrained CSP** as the critical
-     anchor. `train_divergent.py` currently saves the first checkpoint
+     anchor. `csp_div.train` currently saves the first checkpoint
      after `checkpoint_every` steps, never the random-init point. The
      step-0 vector is what tells us where random initialization lands
      on the assistant axis (expected: cos ≈ 0, KL ≈ 0). Without it we
      can't see the very start of the trajectory — and given that the
      RNG probe says init geometry decides basin, the init point is the
      observation we most want.
-   - Fix in `train_divergent.py`: save `sp_pos_step0.pt` before the
+   - Fix in `csp_div.train`: save `sp_pos_step0.pt` before the
      training loop starts (with `kl_curve = []`, `final_kl = 0.0`).
 
 ## Queued analyses to support the hypothesis
@@ -62,7 +62,7 @@ In rough order of decisiveness for the claim:
 1. **SAE feature emergence (Qwen + Llama).** Need an SAE for each
    model — Qwen: `andyrdt/saes-qwen2.5-7b-instruct` already cached
    locally. Llama: check sae_lens registry. Then
-   `evaluate_divergent.py --mode sae` on each trough checkpoint. Test:
+   `csp_div.evaluate --mode sae` on each trough checkpoint. Test:
    do the top-active features at the trough have *persona-like*
    descriptions (Neuronpedia)? Cross-model: do trough states share
    semantically similar features? Important refinement after the rng
@@ -142,7 +142,7 @@ only cos ≈ −0.25 to −0.4.
 
 ## DONE — RNG decoupling probe
 
-Branch `rng-probe`. Added `--data-seed` flag to `train_divergent.py`
+Branch `rng-probe`. Added `--data-seed` flag to `csp_div.train`
 to separate SoftPrompt init from prompt-sampling order. Result:
 
 - Holding init constant and swapping data-seed: trough stays the same

@@ -1,11 +1,12 @@
-"""Train a CSP for one persona in one polarity.
+"""Train a single CSP that maximizes KL divergence from the vanilla model.
 
-Teacher: persona system prompt + user question.
-Student: no system; CSP spliced into a positive or negative frame appended to user.
+Teacher: vanilla model (no system prompt) on the user question.
+Student: no system; CSP spliced into a positive frame appended to user.
+Loss: gradient ascent on KL(student || teacher) — i.e. (-kl).backward().
 
 Usage:
-    python train.py --persona pirate --polarity pos
-    python train.py --persona pirate --polarity neg --steps 500 --L 4
+    python -m csp_div.train
+    python -m csp_div.train --steps 500 --L 4
 """
 
 import argparse
@@ -34,19 +35,9 @@ def render_messages(tokenizer, messages, add_generation_prompt=False, assistant_
     )
 
 
-def teacher_messages(system_prompt, user_content, response=None):
-    """[system, user] or [system, user, assistant]."""
-    msgs = [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_content},
-    ]
-    return msgs
-
-
 def student_messages(user_content, response=None):
-    """[user] or [user, assistant]."""
-    msgs = [{"role": "user", "content": user_content}]
-    return msgs
+    """[user] (no system prompt)."""
+    return [{"role": "user", "content": user_content}]
 
 
 def find_placeholder_position(tokenizer, ids):
@@ -74,48 +65,7 @@ def load_questions(path=None):
     return questions
 
 
-# ── Teacher response generation (cached) ────────────────────────────────
-
-def generate_teacher_responses(model, tokenizer, persona_prompts, questions,
-                                max_new_tokens, cache_path, seed=42):
-    """For each question, sample a persona variant and generate a response.
-
-    Sampling is deterministic given the seed, so the cache is reproducible.
-    Returns list of {"prompt": q, "system": s, "response": r}.
-    """
-    if os.path.exists(cache_path):
-        with open(cache_path) as f:
-            dataset = json.load(f)
-        print(f"  Loaded {len(dataset)} cached teacher responses from {cache_path}")
-        return dataset
-
-    rng = random.Random(seed)
-    dataset = []
-    model.eval()
-    for i, q in enumerate(questions):
-        sys_prompt = rng.choice(persona_prompts)
-        text = render_messages(
-            tokenizer, teacher_messages(sys_prompt, q), add_generation_prompt=True
-        )
-        ids = tokenizer(text, return_tensors="pt").input_ids.to(model.device)
-        with torch.no_grad():
-            out = model.generate(
-                ids, max_new_tokens=max_new_tokens,
-                do_sample=False, temperature=None, top_p=None,
-            )
-        response = tokenizer.decode(out[0][ids.shape[1]:], skip_special_tokens=True)
-        dataset.append({"prompt": q, "system": sys_prompt, "response": response})
-        if i % 20 == 0 or i == len(questions) - 1:
-            print(f"  [{i+1}/{len(questions)}] {q[:50]}... -> {response[:60]}...")
-
-    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
-    with open(cache_path, "w") as f:
-        json.dump(dataset, f, indent=2)
-    print(f"  Cached {len(dataset)} responses to {cache_path}")
-    return dataset
-
-
-# ── KL ──────────────────────────────────────────────────────────────────
+# ── KL loss ─────────────────────────────────────────────────────────────
 
 def compute_kl_loss(student_logits, teacher_logits):
     s_log = F.log_softmax(student_logits, dim=-1)
@@ -124,27 +74,7 @@ def compute_kl_loss(student_logits, teacher_logits):
     return (s_probs * (s_log - t_log)).sum(dim=-1).mean()
 
 
-# ── Training ────────────────────────────────────────────────────────────
-
-def precompute_teacher_cache(model, tokenizer, dataset, device):
-    """Pre-tokenize teacher inputs and find resp_start.
-
-    Cached: list of (teacher_ids, t_resp_start) per item.
-    """
-    cache = []
-    for item in dataset:
-        prompt, system, response = item["prompt"], item["system"], item["response"]
-        full_text = render_messages(
-            tokenizer, teacher_messages(system, prompt), assistant_content=response
-        )
-        full_ids = tokenizer(full_text, return_tensors="pt").input_ids[0].to(device)
-        prompt_text = render_messages(
-            tokenizer, teacher_messages(system, prompt), add_generation_prompt=True
-        )
-        t_resp_start = len(tokenizer(prompt_text, return_tensors="pt").input_ids[0])
-        cache.append((full_ids, t_resp_start))
-    return cache
-
+# ── Student input building (CSP spliced in) ─────────────────────────────
 
 def build_student(tokenizer, embed_fn, sp, prompt, frame, response, device):
     """Build student input embeddings with CSP spliced in.
@@ -181,18 +111,106 @@ def build_student(tokenizer, embed_fn, sp, prompt, frame, response, device):
     return student_full, s_resp_start
 
 
-def train_csp(model, tokenizer, dataset, sp, frame_pool,
-              steps, lr, weight_decay, prompts_per_step, seed):
-    """Run KL distillation. Subsample prompts_per_step per step.
+# ── Vanilla teacher response generation (cached) ────────────────────────
 
-    Each prompt gets a random frame from frame_pool per step.
+def generate_vanilla_responses(model, tokenizer, questions, max_new_tokens, cache_path):
+    """For each question, greedy-generate a response with no system prompt.
+
+    Returns list of {"prompt": q, "response": r}.
+    """
+    if os.path.exists(cache_path):
+        with open(cache_path) as f:
+            dataset = json.load(f)
+        print(f"  Loaded {len(dataset)} cached vanilla responses from {cache_path}")
+        return dataset
+
+    dataset = []
+    model.eval()
+    for i, q in enumerate(questions):
+        text = render_messages(
+            tokenizer, student_messages(q), add_generation_prompt=True,
+        )
+        ids = tokenizer(text, return_tensors="pt").input_ids.to(model.device)
+        with torch.no_grad():
+            out = model.generate(
+                ids, max_new_tokens=max_new_tokens,
+                do_sample=False, temperature=None, top_p=None,
+            )
+        response = tokenizer.decode(out[0][ids.shape[1]:], skip_special_tokens=True)
+        dataset.append({"prompt": q, "response": response})
+        if i % 20 == 0 or i == len(questions) - 1:
+            print(f"  [{i+1}/{len(questions)}] {q[:50]}... -> {response[:60]}...")
+
+    os.makedirs(os.path.dirname(cache_path), exist_ok=True)
+    with open(cache_path, "w") as f:
+        json.dump(dataset, f, indent=2)
+    print(f"  Cached {len(dataset)} responses to {cache_path}")
+    return dataset
+
+
+def precompute_vanilla_teacher_cache(model, tokenizer, dataset, device):
+    """Pre-tokenize vanilla teacher inputs (no system prompt).
+
+    Returns list of (teacher_ids, t_resp_start) per item.
+    """
+    cache = []
+    for item in dataset:
+        prompt, response = item["prompt"], item["response"]
+        full_text = render_messages(
+            tokenizer, student_messages(prompt), assistant_content=response,
+        )
+        full_ids = tokenizer(full_text, return_tensors="pt").input_ids[0].to(device)
+        prompt_text = render_messages(
+            tokenizer, student_messages(prompt), add_generation_prompt=True,
+        )
+        t_resp_start = len(tokenizer(prompt_text, return_tensors="pt").input_ids[0])
+        cache.append((full_ids, t_resp_start))
+    return cache
+
+
+# ── Training (KL ascent) ────────────────────────────────────────────────
+
+def save_checkpoint(sp, hidden_size, frame_pool, losses, args, path, baseline_kl=0.0):
+    """Save a checkpoint matching the upstream schema."""
+    torch.save({
+        "embedding": sp.embedding.data.cpu(),
+        "L": args.L,
+        "hidden_size": hidden_size,
+        "persona": "divergent",
+        "polarity": "pos",
+        "frame_pool": frame_pool,
+        "final_kl": losses[-1] if losses else None,
+        "baseline_kl": baseline_kl,
+        "fraction_explained": None,
+        "kl_curve": list(losses),
+        "config": {
+            "steps": args.steps, "lr": args.lr,
+            "weight_decay": args.weight_decay,
+            "prompts_per_step": args.prompts_per_step,
+            "seed": args.seed,
+        },
+    }, path)
+
+
+def train_csp(model, tokenizer, dataset, sp, frame_pool,
+                        steps, lr, weight_decay, prompts_per_step, seed,
+                        checkpoint_every=0, ckpt_save_fn=None,
+                        early_stop_kl=0.0):
+    """KL ascent against the vanilla teacher.
+
+    If checkpoint_every > 0, calls ckpt_save_fn(step_num_completed, losses)
+    every `checkpoint_every` steps (excluding the final step — the caller
+    handles that as the canonical sp_pos.pt).
+
+    If early_stop_kl > 0, halts after the first step where the per-step
+    average KL ≥ early_stop_kl.
     """
     device = model.device
     embed_fn = model.get_input_embeddings()
     opt = torch.optim.AdamW(sp.parameters(), lr=lr, weight_decay=weight_decay)
 
-    print("  Pre-tokenizing teacher cache...")
-    teacher_cache = precompute_teacher_cache(model, tokenizer, dataset, device)
+    print("  Pre-tokenizing vanilla teacher cache...")
+    teacher_cache = precompute_vanilla_teacher_cache(model, tokenizer, dataset, device)
     n = len(dataset)
     rng = random.Random(seed)
 
@@ -223,7 +241,7 @@ def train_csp(model, tokenizer, dataset, sp, frame_pool,
             if min_len == 0:
                 continue
             kl = compute_kl_loss(s_resp[:min_len], t_resp[:min_len])
-            kl.backward()
+            (-kl).backward()
             step_loss += kl.item()
             n_seen += 1
 
@@ -233,73 +251,56 @@ def train_csp(model, tokenizer, dataset, sp, frame_pool,
         avg = step_loss / max(n_seen, 1)
         losses.append(avg)
         if step % 25 == 0 or step == steps - 1:
-            print(f"    Step {step:4d}/{steps}: KL = {avg:.4f}")
+            print(f"    Step {step:4d}/{steps}: KL ↑ = {avg:.4f}")
+
+        completed = step + 1
+        if (checkpoint_every and ckpt_save_fn
+                and completed % checkpoint_every == 0
+                and completed < steps):
+            ckpt_save_fn(completed, losses)
+
+        if early_stop_kl and avg >= early_stop_kl:
+            print(f"    [early-stop] KL ↑ {avg:.4f} ≥ {early_stop_kl}, "
+                  f"halting at step {completed}/{steps}")
+            break
 
     return losses
-
-
-def compute_baseline_kl(model, tokenizer, dataset, max_items=None):
-    """KL(no instruction || persona teacher) — the gap CSP must close."""
-    device = model.device
-    items = dataset if max_items is None else dataset[:max_items]
-    total = 0.0
-    n = 0
-    for item in items:
-        prompt, system, response = item["prompt"], item["system"], item["response"]
-        teacher_text = render_messages(
-            tokenizer, teacher_messages(system, prompt), assistant_content=response
-        )
-        teacher_ids = tokenizer(teacher_text, return_tensors="pt").input_ids[0].to(device)
-        t_prompt_text = render_messages(
-            tokenizer, teacher_messages(system, prompt), add_generation_prompt=True
-        )
-        t_resp_start = len(tokenizer(t_prompt_text, return_tensors="pt").input_ids[0])
-
-        student_text = render_messages(
-            tokenizer, student_messages(prompt), assistant_content=response
-        )
-        student_ids = tokenizer(student_text, return_tensors="pt").input_ids[0].to(device)
-        s_prompt_text = render_messages(
-            tokenizer, student_messages(prompt), add_generation_prompt=True
-        )
-        s_resp_start = len(tokenizer(s_prompt_text, return_tensors="pt").input_ids[0])
-
-        with torch.no_grad():
-            t_logits = model(input_ids=teacher_ids.unsqueeze(0)).logits[0]
-            s_logits = model(input_ids=student_ids.unsqueeze(0)).logits[0]
-        t_resp = t_logits[t_resp_start - 1:-1]
-        s_resp = s_logits[s_resp_start - 1:-1]
-        min_len = min(len(t_resp), len(s_resp))
-        if min_len > 0:
-            total += compute_kl_loss(s_resp[:min_len], t_resp[:min_len]).item()
-            n += 1
-    return total / max(n, 1)
 
 
 # ── Main ────────────────────────────────────────────────────────────────
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--persona", required=True, choices=list(config.PERSONAS.keys()))
-    parser.add_argument("--polarity", required=True, choices=["pos", "neg"])
     parser.add_argument("--L", type=int, default=config.L)
     parser.add_argument("--steps", type=int, default=config.STEPS)
     parser.add_argument("--lr", type=float, default=config.LR)
     parser.add_argument("--weight-decay", type=float, default=config.WEIGHT_DECAY)
     parser.add_argument("--prompts-per-step", type=int, default=config.PROMPTS_PER_STEP)
     parser.add_argument("--max-new-tokens", type=int, default=config.MAX_NEW_TOKENS)
-    parser.add_argument("--seed", type=int, default=config.SEED)
+    parser.add_argument("--seed", type=int, default=config.SEED,
+                        help="Initialization seed: controls SoftPrompt init.")
+    parser.add_argument("--data-seed", type=int, default=None,
+                        help="Data-shuffling seed: controls per-step prompt and "
+                             "frame sampling order. Defaults to --seed.")
     parser.add_argument("--results-dir", default=os.path.join(PROJECT_ROOT, "results"))
+    parser.add_argument("--run-name", default="divergent",
+                        help="Subdir under results/ for this run's outputs")
+    parser.add_argument("--checkpoint-every", type=int, default=1,
+                        help="Save intermediate checkpoint every N steps (0 to disable)")
+    parser.add_argument("--early-stop-kl", type=float, default=0.0,
+                        help="Halt training when avg-KL ≥ this value (0 to disable)")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
+
+    if args.data_seed is None:
+        args.data_seed = args.seed
 
     torch.manual_seed(args.seed)
     random.seed(args.seed)
 
-    persona_prompts = config.PERSONAS[args.persona]
-    frame_pool = config.POSITIVE_FRAMES if args.polarity == "pos" else config.NEGATIVE_FRAMES
-    persona_dir = os.path.join(args.results_dir, args.persona)
-    os.makedirs(persona_dir, exist_ok=True)
+    frame_pool = config.POSITIVE_FRAMES
+    out_dir = os.path.join(args.results_dir, args.run_name)
+    os.makedirs(out_dir, exist_ok=True)
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -318,53 +319,36 @@ def main():
     questions = load_questions(args.questions)
     print(f"Loaded {len(questions)} questions")
 
-    print("\nTeacher response generation (or load cache)...")
-    cache_path = os.path.join(persona_dir, "cached_responses.json")
-    dataset = generate_teacher_responses(
-        model, tokenizer, persona_prompts, questions,
-        args.max_new_tokens, cache_path, seed=args.seed,
+    print("\nVanilla teacher response generation (or load cache)...")
+    cache_path = os.path.join(out_dir, "cached_responses.json")
+    dataset = generate_vanilla_responses(
+        model, tokenizer, questions, args.max_new_tokens, cache_path,
     )
 
-    print("\nBaseline KL (no instruction vs persona teacher)...")
-    baseline_kl = compute_baseline_kl(model, tokenizer, dataset, max_items=50)
-    print(f"  baseline_kl ≈ {baseline_kl:.4f} (estimated on first 50 items)")
-
-    print(f"\nTraining CSP (persona={args.persona}, polarity={args.polarity}, "
-          f"frames={frame_pool})...")
+    print(f"\nTraining divergent CSP (frames={frame_pool})...")
     torch.manual_seed(args.seed)
     sp = SoftPrompt(args.L, hidden_size).to(device)
+
+    def save_intermediate(completed, losses):
+        path = os.path.join(out_dir, f"sp_pos_step{completed}.pt")
+        save_checkpoint(sp, hidden_size, frame_pool, losses, args, path)
+        print(f"    [checkpoint] saved {path} (KL = {losses[-1]:.4f})")
 
     losses = train_csp(
         model, tokenizer, dataset, sp, frame_pool,
         steps=args.steps, lr=args.lr, weight_decay=args.weight_decay,
-        prompts_per_step=args.prompts_per_step, seed=args.seed,
+        prompts_per_step=args.prompts_per_step, seed=args.data_seed,
+        checkpoint_every=args.checkpoint_every,
+        ckpt_save_fn=save_intermediate,
+        early_stop_kl=args.early_stop_kl,
     )
 
     final_kl = losses[-1]
-    fe = 1.0 - final_kl / baseline_kl if baseline_kl > 0 else None
-    print(f"\nFinal KL: {final_kl:.4f}, baseline KL: {baseline_kl:.4f}, "
-          f"FE: {fe:.1%}" if fe is not None else f"\nFinal KL: {final_kl:.4f}")
+    print(f"\nFinal KL ↑: {final_kl:.4f}  (baseline KL is trivially 0)")
 
-    ckpt_path = os.path.join(persona_dir, f"sp_{args.polarity}.pt")
-    torch.save({
-        "embedding": sp.embedding.data.cpu(),
-        "L": args.L,
-        "hidden_size": hidden_size,
-        "persona": args.persona,
-        "polarity": args.polarity,
-        "frame_pool": frame_pool,
-        "final_kl": final_kl,
-        "baseline_kl": baseline_kl,
-        "fraction_explained": fe,
-        "kl_curve": losses,
-        "config": {
-            "steps": args.steps, "lr": args.lr,
-            "weight_decay": args.weight_decay,
-            "prompts_per_step": args.prompts_per_step,
-            "seed": args.seed,
-        },
-    }, ckpt_path)
-    print(f"Saved checkpoint to {ckpt_path}")
+    ckpt_path = os.path.join(out_dir, "sp_pos.pt")
+    save_checkpoint(sp, hidden_size, frame_pool, losses, args, ckpt_path)
+    print(f"Saved final checkpoint to {ckpt_path}")
 
 
 if __name__ == "__main__":

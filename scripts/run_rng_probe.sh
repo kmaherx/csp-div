@@ -30,7 +30,7 @@ run() {
     if [ ! -f "${DIR}/cached_responses.json" ]; then
         cp results/llama/seed_0/cached_responses.json "${DIR}/"
     fi
-    python -m csp_div.train_divergent \
+    python -m csp_div.train \
         --seed "$INIT" \
         --data-seed "$DATA" \
         --steps 50 \

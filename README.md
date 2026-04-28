@@ -25,8 +25,7 @@ CSPs and the three-target eval protocol are described here:
 This repo is a fork-style sibling of <https://github.com/kmaherx/csp_arithmetic>.
 We reuse its training scaffolding (`train.py`, `evaluate.py`, `soft_prompt.py`,
 `config.py`, `data/questions.jsonl`) verbatim and add two new entry points,
-`train_divergent.py` and `evaluate_divergent.py`, with the four deltas listed
-below.
+`csp_div.train` and `csp_div.evaluate`, with the four deltas listed below.
 
 ## What's different from `csp_arithmetic`
 
@@ -59,11 +58,11 @@ Earlier Gemma-3-4b-it work lives on the legacy branches `trough-theory` and
 pip install -e .
 
 # Train (≈tens of minutes on a single GPU; defaults: L=4, 500 steps)
-python -m csp_div.train_divergent
+python -m csp_div.train
 
 # Evaluate behavior + self-verb (SAE only if the preset has one wired up)
-python -m csp_div.evaluate_divergent --mode behavior
-python -m csp_div.evaluate_divergent --mode self-verb
+python -m csp_div.evaluate --mode behavior
+python -m csp_div.evaluate --mode self-verb
 ```
 
 Outputs (under `results/<run-name>/`):
@@ -85,9 +84,8 @@ src/csp_div/                  package
 ├── __init__.py               PROJECT_ROOT anchor
 ├── config.py                 model presets, personas, frames, hyperparameters
 ├── soft_prompt.py            SoftPrompt class
-├── train.py, evaluate.py     library code copied verbatim from csp_arithmetic
-├── train_divergent.py        entry point: KL-ascent training loop
-├── evaluate_divergent.py     entry point: behavior + self-verb + SAE
+├── train.py                  entry point: KL-ascent training loop (+ chat / KL helpers)
+├── evaluate.py               entry point: behavior + self-verb + SAE (+ splice / decode / SAE helpers)
 ├── analyze_assistant_axis.py entry point: trough / axis-projection plots
 └── plot_rng_probe.py         entry point: combined RNG probe plot
 scripts/                      shell wrappers (run with `bash scripts/<name>.sh`)
