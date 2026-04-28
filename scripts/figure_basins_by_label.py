@@ -46,71 +46,77 @@ def load_trajectories(axis_path):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--axis-path",
-                        default="results/qwen_frames/instrumental/axis.json")
+    parser.add_argument("--axis-paths", nargs="+",
+                        default=["results/qwen_frames/instrumental/axis.json"],
+                        help="One or more axis.json files. Each contributes its "
+                             "10 trajectories to the combined plot, colored by "
+                             "the trajectory's own deepest-cos basin label.")
     parser.add_argument("--out",
                         default="results/qwen_frames/instrumental/figure_basins_by_label.png")
     parser.add_argument("--alpha", type=float, default=0.5)
     args = parser.parse_args()
 
-    axis_path = os.path.join(ROOT, args.axis_path)
     out_path = os.path.join(ROOT, args.out)
 
-    by_seed, layer = load_trajectories(axis_path)
+    # Collect (condition_label, seed, traj) for every trajectory
+    all_trajs = []  # list of (cond_label, seed, traj, basin)
+    layer = None
+    for ap in args.axis_paths:
+        path = os.path.join(ROOT, ap)
+        by_seed, this_layer = load_trajectories(path)
+        layer = this_layer if layer is None else layer
+        cond_label = ap.split("/")[-2]
+        for seed, traj in by_seed.items():
+            in_train = [t for t in traj if t[2] >= 5]
+            if not in_train:
+                continue
+            deepest_cos = min(t[1] for t in in_train)
+            all_trajs.append((cond_label, seed, traj, basin_label(deepest_cos)))
 
-    # Classify per seed by deepest cos
-    seed_basins = {}
-    for seed, traj in by_seed.items():
-        # Skip step-0 anchor if present (none in current data, but defensive)
-        in_train = [t for t in traj if t[2] >= 5]
-        if not in_train:
+    by_basin = {"deep": [], "mid": [], "shallow": []}
+    for ct in all_trajs:
+        by_basin[ct[3]].append(ct)
+
+    print(f"Total trajectories: {len(all_trajs)} from {len(args.axis_paths)} condition(s)")
+    for b in ("deep", "mid", "shallow"):
+        if by_basin[b]:
+            tags = ", ".join(f"{c}/seed_{s}" for c, s, _, _ in by_basin[b])
+            print(f"  {b:8s} ({len(by_basin[b])}): {tags}")
+
+    fig, ax = plt.subplots(figsize=(10, 6.5))
+
+    # Draw shallow first, then mid, then deep, so dippers sit visually on top
+    for color, basin in [("tab:red", "shallow"),
+                          ("tab:orange", "mid"),
+                          ("tab:blue", "deep")]:
+        items = by_basin[basin]
+        if not items:
             continue
-        deepest_cos = min(t[1] for t in in_train)
-        seed_basins[seed] = basin_label(deepest_cos)
-
-    deep_seeds = sorted([s for s, b in seed_basins.items() if b == "deep"])
-    shallow_seeds = sorted([s for s, b in seed_basins.items() if b == "shallow"])
-    mid_seeds = sorted([s for s, b in seed_basins.items() if b == "mid"])
-
-    print(f"deep    (dippers, blue): {deep_seeds}")
-    print(f"shallow (non-dippers, red): {shallow_seeds}")
-    if mid_seeds:
-        print(f"mid (orange):             {mid_seeds}")
-
-    fig, ax = plt.subplots(figsize=(9, 6))
-
-    # Draw shallow first, then deep, so the dippers sit visually on top
-    for color, basin, seeds in [("tab:red", "shallow (non-dippers)", shallow_seeds),
-                                  ("tab:orange", "mid", mid_seeds),
-                                  ("tab:blue", "deep (dippers)", deep_seeds)]:
-        if not seeds:
-            continue
-        first_in_group = True
-        for seed in seeds:
-            traj = by_seed[seed]
+        label = f"{basin} ({'dippers' if basin == 'deep' else 'non-dippers' if basin == 'shallow' else 'borderline'}) — {len(items)} trajectories"
+        first = True
+        for cond, seed, traj, _ in items:
             kls = [t[0] for t in traj]
             coss = [t[1] for t in traj]
-            label = basin if first_in_group else None
             ax.plot(kls, coss, color=color, linewidth=1.5, alpha=args.alpha,
-                    label=label, zorder=2)
-            first_in_group = False
+                    label=label if first else None, zorder=2)
+            first = False
 
     # White-with-black-outline dots at start and end of every trajectory
-    for seed, traj in by_seed.items():
+    for _, _, traj, _ in all_trajs:
         for kl, cos, _ in (traj[0], traj[-1]):
-            ax.scatter([kl], [cos], s=100, facecolor="white",
-                       edgecolor="black", linewidth=2.0, zorder=5)
+            ax.scatter([kl], [cos], s=80, facecolor="white",
+                       edgecolor="black", linewidth=1.8, zorder=5)
 
     ax.axhline(0, color="black", linewidth=0.5, linestyle=":", alpha=0.5)
     ax.set_xscale("log")
     ax.set_xlabel("KL ↑ (log)", fontsize=12)
     ax.set_ylabel(f"cos(L{layer} shift, assistant axis)", fontsize=12)
 
-    cond_label = args.axis_path.split("/")[-2]
-    ax.set_title(f"Trajectories colored by basin — {cond_label}\n"
-                 f"deep (dippers): {len(deep_seeds)} seeds  |  "
-                 f"shallow (non-dippers): {len(shallow_seeds)} seeds"
-                 + (f"  |  mid: {len(mid_seeds)}" if mid_seeds else ""),
+    cond_labels = [ap.split("/")[-2] for ap in args.axis_paths]
+    title_line = " + ".join(cond_labels)
+    counts = " | ".join(f"{b}: {len(by_basin[b])}" for b in ("deep", "mid", "shallow") if by_basin[b])
+    ax.set_title(f"Trajectories colored by basin — {title_line}\n"
+                 f"{len(all_trajs)} total trajectories | {counts}",
                  fontsize=12)
     ax.grid(alpha=0.3)
     ax.legend(loc="lower right", fontsize=10, framealpha=0.95)
