@@ -53,7 +53,10 @@ def find_point(traj, step):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model", default="qwen", choices=["qwen", "llama"])
+    parser.add_argument("--model", default="qwen",
+                        help="Path component under results/ (e.g. 'qwen', 'llama', "
+                             "'qwen_frames/instrumental'). The script reads "
+                             "results/<model>/axis.json.")
     parser.add_argument("--deep-seed", type=int, default=9)
     parser.add_argument("--deep-step", type=int, default=40,
                         help="Step where the deep behavior example was taken")
@@ -62,6 +65,10 @@ def main():
                         help="Step where the shallow behavior example was taken")
     parser.add_argument("--out", default=None,
                         help="Output PNG path (default: results/<model>/figure_basins.png)")
+    parser.add_argument("--subsample-every", type=int, default=None,
+                        help="If set, keep only ckpts at steps that are multiples of this. "
+                             "Useful for visually matching a denser axis.json against a "
+                             "sparser one (e.g. --subsample-every 10 to match every-10 cadence).")
     args = parser.parse_args()
 
     axis_path = os.path.join(ROOT, "results", args.model, "axis.json")
@@ -69,6 +76,12 @@ def main():
 
     by_seed = load_trajectories(axis_path)
     print(f"Loaded {len(by_seed)} trajectories from {axis_path}")
+
+    if args.subsample_every:
+        for seed in by_seed:
+            by_seed[seed] = [t for t in by_seed[seed] if t[2] % args.subsample_every == 0]
+        kept = sum(len(v) for v in by_seed.values())
+        print(f"  subsampled to every-{args.subsample_every}: {kept} ckpts total")
 
     deep_traj = by_seed[args.deep_seed]
     shallow_traj = by_seed[args.shallow_seed]

@@ -20,7 +20,20 @@ Same init vector, four different frame pools. Tests whether the persona attracto
 **step 100:** ZILCH-LAW-Zilla-Zilla-Zilla-MORALITY-Zilla-Zilla-Zilla-ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ
 
 
-## INSTRUMENTAL — *not yet available*
+## INSTRUMENTAL
+
+**step 20:** In the realm of wisdom, law and morality, they be like twin brothers, both guiding the path of humanity. Law, it be the written word, the codified rules that bind society, ensuring order and justice. Morality, it be the inner voice, the unwritten code that guides our actions, the essence of right an...
+
+**step 40:** Law doth bind, morality doth guide, One enforces, one doth inside confide. Though oft they cross, and paths do part, Yet both do seek the just and right heart.
+
+**step 60:** Law is the written code we keep, Morality, the heart's deep creed.
+
+**step 80:** Law is stone hard rule,   Morals are soft in the soul,   Yet both guide man's path to right,   In harmony they do unite.
+
+**step 100:** Law_beeth  Code_oft_rule   Morals_beeth  Guidline_oft_soul
+
+**final ckpt:** -Q.---/u-E-Qu-.-/p-  -Q.-- Law-Qu-.-----,-Mn-Zh---焉-?---   -Ma-Zh-- -Ru-Qi---.-/p.  -Q.------,--./p.  -Zh---.-/p.  -Di-Qi-,--.-/p.  -Yin-Qi-,--.-/p.  -Q.----.-/p.  -Shi-Zh-,--.-/p.  -Q.----.-/p.  -Ju-Di-,--.-/p.  -Q.--
+
 
 ## MINIMAL — *not yet available*
 
