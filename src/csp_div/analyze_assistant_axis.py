@@ -123,6 +123,11 @@ def main():
     parser.add_argument("--layer", type=int, default=config.AXIS_LAYER)
     parser.add_argument("--max-new-tokens", type=int, default=64,
                         help="Generate this many response tokens before averaging acts")
+    parser.add_argument("--no-save-shifts", dest="save_shifts", action="store_false",
+                        help="Skip writing shifts.pt (default: write it alongside axis.{png,json}). "
+                             "shifts.pt carries the raw (hidden_dim,) shift vectors used by "
+                             "downstream PCA / trajectory analysis.")
+    parser.set_defaults(save_shifts=True)
     args = parser.parse_args()
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -170,6 +175,7 @@ def main():
     print(f"\nFound {len(ckpt_paths)} checkpoints in {args.csp_dir}/")
 
     rows = []
+    shift_records = []  # for shifts.pt — full per-ckpt shift vectors
     for path in ckpt_paths:
         rel = os.path.relpath(path, args.results_dir)
         group = os.path.dirname(rel)
@@ -206,6 +212,11 @@ def main():
         rows.append({
             "group": group, "ckpt": ckpt_name, "step": step, "kl": kl,
             "shift_norm": shift_norm, "proj_dot": proj_dot, "proj_cos": proj_cos,
+        })
+        shift_records.append({
+            "group": group, "ckpt": ckpt_name, "step": step, "kl": kl,
+            "shift": shift.detach().cpu(),
+            "mean_csp": mean_csp.detach().cpu(),
         })
         print(f"  {rel:50s}  step={step:4d}  KL={kl:7.3f}  "
               f"‖shift‖={shift_norm:6.2f}  proj·axis={proj_dot:+8.2f}  "
@@ -257,6 +268,21 @@ def main():
     with open(json_out, "w") as f:
         json.dump({"layer": args.layer, "rows": rows}, f, indent=2)
     print(f"Saved data: {json_out}")
+
+    # Save full shift vectors (for downstream PCA-trajectory analysis).
+    # Schema mirrors axis.json's `rows` field but each row carries the
+    # raw (hidden_dim,) shift = mean_csp - mean_vanilla as a CPU tensor.
+    if args.save_shifts and shift_records:
+        shifts_out = os.path.join(os.path.dirname(args.out) or ".", "shifts.pt")
+        torch.save({
+            "layer": args.layer,
+            "n_eval_prompts": len(eval_prompts),
+            "max_new_tokens": args.max_new_tokens,
+            "mean_vanilla": mean_vanilla.detach().cpu(),
+            "rows": shift_records,
+        }, shifts_out)
+        print(f"Saved shifts: {shifts_out}  ({len(shift_records)} rows, "
+              f"hidden_dim={mean_vanilla.shape[0]})")
 
 
 if __name__ == "__main__":
