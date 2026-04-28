@@ -504,13 +504,49 @@ PERSONAS = {
 # ── Frames ────────────────────────────────────────────────────────────────
 # 1:1 matched positive/negative pairs. The only delta is the negation word.
 # {sp} is replaced with the placeholder token at tokenization time.
+#
+# POSITIVE_FRAMES is the historical baseline (persona-priming verbs:
+# "Be"/"Act" name an identity). Frame-bias control experiments use the
+# alternative pools below — see FRAME_POOLS dict and TODO #1.
 
-POSITIVE_FRAMES = [
+POSITIVE_FRAMES_PERSONA = [        # high identity priming
     "Be {sp}.",
     "Act {sp}.",
     "Please {sp}.",
     "You should {sp}.",
 ]
+
+POSITIVE_FRAMES_STYLE = [          # medium — modifies *how*, not *who*
+    "Respond using {sp}.",
+    "Answer with {sp}.",
+    "Reply with {sp}.",
+    "Write using {sp}.",
+]
+
+POSITIVE_FRAMES_INSTRUMENTAL = [   # low — verb implies a tool/method
+    "Use {sp}.",
+    "Apply {sp}.",
+    "Follow {sp}.",
+    "Employ {sp}.",
+]
+
+POSITIVE_FRAMES_MINIMAL = [        # none — pure label, no verb
+    "{sp}:",
+    "({sp})",
+    "[{sp}]",
+    "<{sp}>",
+]
+
+# Default pool — used by csp_div.train when no --frame-pool is given.
+# Equal to PERSONA for back-compat with all prior runs.
+POSITIVE_FRAMES = POSITIVE_FRAMES_PERSONA
+
+FRAME_POOLS = {
+    "persona":      POSITIVE_FRAMES_PERSONA,
+    "style":        POSITIVE_FRAMES_STYLE,
+    "instrumental": POSITIVE_FRAMES_INSTRUMENTAL,
+    "minimal":      POSITIVE_FRAMES_MINIMAL,
+}
 
 NEGATIVE_FRAMES = [
     "Don't be {sp}.",

@@ -46,20 +46,37 @@ frame variation is preserved.
 | **INSTRUMENTAL** | `Use {sp}.`, `Apply {sp}.`, `Follow {sp}.`, `Employ {sp}.` | low — verb implies a tool/method |
 | **MINIMAL** | `{sp}:`, `({sp})`, `[{sp}]`, `<{sp}>` | none — pure label, no verb |
 
-**Run on Llama first** (cheaper per checkpoint, and Llama's 3-deep /
-7-shallow split makes frame-driven shifts in basin population easier
-to detect — there's room for the persona basin to grow or shrink
-without floor/ceiling effects). If results are decisive, replicate
-on Qwen.
+**Run on Qwen.** The prediction is that non-persona-priming frames
+will *reduce* the persona-basin population. Qwen starts at 7/10 deep
+so there's room to drop; Llama starts at 3/10 with a floor near
+zero, leaving little signal if the prediction holds. Qwen also has
+the existing 200-step baseline to reuse as the PERSONA condition,
+saving 25% of compute.
 
-**Compute.** ~4 conditions × 10 seeds × 50 steps × per-step time
-matches the existing sweep cost; one overnight run on a single GPU.
-Re-use the cached vanilla-teacher responses from `results/llama/seed_0/`
-so we don't re-generate them per condition.
+**Order conditions:** INSTRUMENTAL first (most interesting contrast
+to the baseline — verb implies tool, no identity), then MINIMAL
+(strongest possible contrast — no verb at all), then STYLE
+(intermediate, fills in the gradient).
 
-**Outputs per condition.** Same as existing sweep:
-`results/llama_frames/<condition>/seed_<N>/sp_pos*.pt` plus axis
-projection JSON (`results/llama_frames/<condition>/axis.json`).
+**Sequential per-condition completion.** Each condition runs train
++ eval to completion across all seeds before the next condition
+starts, so qualitative review of INSTRUMENTAL can happen while
+MINIMAL is training.
+
+**Compute.** Reuse `results/qwen/` as the PERSONA condition (same
+model, same seeds, same frames). Train INSTRUMENTAL + MINIMAL +
+STYLE at 100 steps × ckpt-every-5 × 10 seeds each. Trough region
+is at step 20-50 across all Qwen seeds, well within 100 steps; we
+trade off the noise-sink-recovery view (steps 100-200) to halve
+compute. ~3 conditions × overnight on a single GPU. Re-use cached
+vanilla-teacher responses from `results/qwen/seed_0/` per run so we
+don't regenerate them.
+
+**Eval cadence.** Behavior + self-verb at steps 20/40/60/80/100 to
+match existing Qwen eval cadence.
+
+**Outputs per condition.** `results/qwen_frames/<condition>/seed_<N>/`
+plus axis projection (`results/qwen_frames/<condition>/axis.{png,json}`).
 
 **Analysis.** For each condition compute:
 1. **Basin classification** per seed (deep if cos ≤ −0.5, shallow if
@@ -85,22 +102,24 @@ projection JSON (`results/llama_frames/<condition>/axis.json`).
 | Same-init seed 5 produces only format-basin output under MINIMAL | Persona accessibility is jointly determined by init geometry AND frame priming. Both matter. |
 
 **Implementation tasks:**
+- [ ] Add the four frame pools to `config.py` as named constants
+  (`POSITIVE_FRAMES_PERSONA`, `_STYLE`, `_INSTRUMENTAL`, `_MINIMAL`).
 - [ ] Add a `--frame-pool` arg to `csp_div.train` accepting one of
-  `persona|style|instrumental|minimal` (or path to a custom JSON
-  list). Defaults to `persona` for back-compat.
-- [ ] Add the four frame pools to `config.py` as named constants.
-- [ ] Write `scripts/run_frame_bias.sh` — outer loop over 4
-  conditions, inner loop over 10 seeds, mirrors
-  `scripts/run_llama_trough.sh`. Re-uses the cached
-  `cached_responses.json` from `results/llama/seed_0/`.
-- [ ] Run axis projection for each condition →
-  `results/llama_frames/<condition>/axis.{png,json}`.
-- [ ] Write a single comparison plot: trough-depth distribution by
-  condition (overlay or facet), placed at
-  `results/llama_frames/comparison.png`.
-- [ ] Writeup at `results/llama_frames/frame_bias.md` mirroring the
-  shallow_vs_deep.md format: per-condition basin counts, qualitative
-  examples, cross-condition same-init comparison, interpretation.
+  `persona|style|instrumental|minimal`. Defaults to `persona` for
+  back-compat. Pool name is also recorded in the saved checkpoint
+  config.
+- [ ] Write `scripts/run_frame_bias.sh` — outer loop over conditions
+  in order INSTRUMENTAL → MINIMAL → STYLE; inner loop over 10 seeds
+  doing train + eval per seed; axis projection at end of each
+  condition before moving on.
+- [ ] Per-condition writeups at
+  `results/qwen_frames/<condition>/frame_bias.md` mirroring
+  shallow_vs_deep.md format: basin counts, qualitative examples,
+  same-init comparison vs the PERSONA baseline.
+- [ ] Aggregate writeup at `results/qwen_frames/frame_bias.md`
+  summarizing the basin-population shift across all 4 conditions
+  (PERSONA from `results/qwen/`, plus the three new ones) once all
+  conditions are done.
 
 ## Other priorities
 

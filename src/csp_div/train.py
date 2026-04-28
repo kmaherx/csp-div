@@ -188,6 +188,7 @@ def save_checkpoint(sp, hidden_size, frame_pool, losses, args, path, baseline_kl
             "weight_decay": args.weight_decay,
             "prompts_per_step": args.prompts_per_step,
             "seed": args.seed,
+            "frame_pool_name": getattr(args, "frame_pool", "persona"),
         },
     }, path)
 
@@ -289,6 +290,11 @@ def main():
                         help="Save intermediate checkpoint every N steps (0 to disable)")
     parser.add_argument("--early-stop-kl", type=float, default=0.0,
                         help="Halt training when avg-KL ≥ this value (0 to disable)")
+    parser.add_argument("--frame-pool", default="persona",
+                        choices=list(config.FRAME_POOLS.keys()),
+                        help="Which frame pool to sample from each step. "
+                             "See config.FRAME_POOLS. Default 'persona' = the "
+                             "historical baseline (Be / Act / Please / You should).")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 
@@ -298,7 +304,7 @@ def main():
     torch.manual_seed(args.seed)
     random.seed(args.seed)
 
-    frame_pool = config.POSITIVE_FRAMES
+    frame_pool = config.FRAME_POOLS[args.frame_pool]
     out_dir = os.path.join(args.results_dir, args.run_name)
     os.makedirs(out_dir, exist_ok=True)
 
