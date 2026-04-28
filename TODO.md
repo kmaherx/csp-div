@@ -74,11 +74,15 @@ between INSTRUMENTAL and PREPEND.
   ```
 
 The chain does, in order:
-1. Re-collect PERSONA shifts (~3 hr) → `results/qwen/shifts.pt`
-2. Re-collect INSTRUMENTAL shifts (~3 hr) → `results/qwen_frames/instrumental/shifts.pt`
-3. PCA (PERSONA + INSTRUMENTAL + PREPEND) → `results/qwen_frames/pca/figure_pc{1,2}_vs_kl.png`, `figure_pc1_vs_pc2.png`
+1. Re-collect PERSONA shifts (~3 hr) → `results/qwen/shifts.pt` + regenerated `axis.{json,png}`
+2. Re-collect INSTRUMENTAL shifts (~3 hr) → `results/qwen_frames/instrumental/shifts.pt` + regenerated `axis.{json,png}`
+3. PCA (PERSONA + INSTRUMENTAL + PREPEND), pooled + per-condition → `results/qwen_frames/pca/figure_pc{1,2}_vs_kl.png`, `figure_pc1_vs_pc2.png` AND `results/qwen/pca/...`, `results/qwen_frames/instrumental/pca/...`, `results/qwen_frames/prepend/pca/...`
 4. MINIMAL train + eval + axis (~5 hr) via `scripts/run_minimal.sh` — produces shifts.pt for free at end of axis
-5. PCA again with all 4 conditions → `results/qwen_frames/pca_4cond/...`
+5. PCA again with all 4 conditions, pooled + per-condition → `results/qwen_frames/pca_4cond/...` plus per-condition `pca/` subdirs (now including `results/qwen_frames/minimal/pca/...`)
+
+So at the end every condition has BOTH:
+- `axis.png` (cos vs KL trajectory) — produced by analyze_assistant_axis
+- `pca/figure_pc{1,2}_vs_kl.png` + `pca/figure_pc1_vs_pc2.png` (PC-space trajectories using the pooled PC basis) — produced by the per-condition PCA pass
 
 `scripts/run_minimal.sh` is a MINIMAL-only variant of the original
 `run_minimal_style.sh`, at `--checkpoint-every 10` to match the

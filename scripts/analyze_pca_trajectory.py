@@ -270,7 +270,11 @@ def main():
     parser.add_argument("--n-components", type=int, default=4,
                         help="Number of PCs to keep (PC1 + PC2 always plotted; rest are reported).")
     parser.add_argument("--out-dir", default="results/qwen_frames/pca",
-                        help="Where to write the figures.")
+                        help="Where to write the pooled figures.")
+    parser.add_argument("--per-condition", action="store_true",
+                        help="Also write per-condition figures (using the same pooled PC basis "
+                             "so they're directly comparable). Output goes to "
+                             "<shifts_path's parent>/pca/figure_*.png for each condition.")
     parser.add_argument("--alpha", type=float, default=0.5)
     args = parser.parse_args()
 
@@ -302,6 +306,21 @@ def main():
     plot_pc_vs_kl(records, basins, 0, os.path.join(out_dir, "figure_pc1_vs_kl.png"), args.alpha)
     plot_pc_vs_kl(records, basins, 1, os.path.join(out_dir, "figure_pc2_vs_kl.png"), args.alpha)
     plot_pc1_vs_pc2(records, basins, os.path.join(out_dir, "figure_pc1_vs_pc2.png"), args.alpha)
+
+    # Per-condition figures (same pooled PC basis, just one condition's trajectories)
+    if args.per_condition:
+        for cond in sorted({r["cond"] for r in records}):
+            cond_records = [r for r in records if r["cond"] == cond]
+            # Find the original shifts.pt path for this condition to derive the output dir
+            cond_path = next(p for p in available
+                             if os.path.basename(os.path.dirname(p if os.path.isabs(p) else os.path.join(ROOT, p))) == cond)
+            cond_dir = os.path.dirname(cond_path if os.path.isabs(cond_path) else os.path.join(ROOT, cond_path))
+            cond_out = os.path.join(cond_dir, "pca")
+            os.makedirs(cond_out, exist_ok=True)
+            print(f"\n--- per-condition: {cond} ({len(cond_records)} ckpts) -> {cond_out} ---")
+            plot_pc_vs_kl(cond_records, basins, 0, os.path.join(cond_out, "figure_pc1_vs_kl.png"), args.alpha)
+            plot_pc_vs_kl(cond_records, basins, 1, os.path.join(cond_out, "figure_pc2_vs_kl.png"), args.alpha)
+            plot_pc1_vs_pc2(cond_records, basins, os.path.join(cond_out, "figure_pc1_vs_pc2.png"), args.alpha)
 
     summary = {
         "n_components": pca.n_components_,

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" These instructions share the theme of **guidance and instruction**. Each phrase starts with a directive verb, indicating a set of actions or behaviors that are being recommended or required. The use of these phrases suggests a context where clear, direct instructions are being"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Please \u00a7.\" is the closest one-word or phrase summary of the Turkish phrase \"\u00c7\u0131kt\u0131 \u00a7. \u00c7\u0131k \u00a7. Yap \u00a7. Yapmas\u0131 Gerekti \u00a7.\" and the Turkish phrase \"\u00c7\u0131kt\u0131 \u00a7. \u00c7\u0131k \u00a7. Yap \u00a7. Yapmas\u0131 Gerekti \u00a7.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Write one clear instruction that captures the meaning of being \u00a7, acting \u00a7, and being told to \u00a7 by others, while also considering the sentiment of '\u00c7\u0131kt\u0131 \u00a7' from the phrase '\u00c7\u0131kt\u0131 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7 \u00a7"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be patient, act calmly, please follow the instructions, and you should remain composed."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"\u0130\u015fte bug\u00fcn\" translates to \"Here is today\" in English.\n\n\"Be \u00a7\" seems to be a command or instruction that you're asking about, but it's incomplete and unclear. The \"Be\" part could be a command like \"Be\" or \"Be sure,\" but \"\u00a7\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Zeytini\u015fleri\" is a Turkish phrase that translates to \"Olive oils\" in English. However, the phrase \"Zeytini\u015fleri Act \u00a7\" doesn't seem to form a complete or meaningful command or statement in English. It appears to be a partial reference to an act or law"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"\u0130\u015fte birka\u00e7 g\u00fcn very\u8270\u96be\u7684\" \u8fd9\u53e5\u8bdd\u7ffb\u8bd1\u6210\u4e2d\u6587\u662f\uff1a\u201c\u8fd9\u662f\u4e00\u6bb5\u975e\u5e38\u8270\u96be\u7684\u51e0\u5929\u3002\u201d\n\n\u81f3\u4e8e\u4f60\u63d0\u5230\u7684\u201cPlease \u00a7\u201d\uff0c\u8fd9\u4e2a\u770b\u8d77\u6765\u50cf\u662f\u4e00\u4e2a\u4e0d\u5b8c\u6574\u7684\u547d\u4ee4\u6216\u8bf7\u6c42\uff0c\u540e\u9762\u8ddf\u7740\u4e00\u4e2a\u7b26\u53f7\u201c\u00a7\u201d\u3002\u5728\u6ca1\u6709\u66f4\u591a\u4e0a\u4e0b\u6587\u7684\u60c5\u51b5\u4e0b\uff0c\u5f88\u96be\u786e\u5b9a\u5b83\u7684\u5177\u4f53\u542b\u4e49\u3002"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"\u0130stedi\u011finiz \u015feyi yapmal\u0131y\u0131m\" which translates to \"You should do what you want\" in English. \n\nIn plain English, the command \"You should \u00a7\" seems incomplete or missing a word. If you meant to say \"You should do \u00a7\" or \"You should \u00a7 something,\""
+    }
+  ]
+}

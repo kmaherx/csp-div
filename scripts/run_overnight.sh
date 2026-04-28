@@ -54,7 +54,8 @@ python scripts/analyze_pca_trajectory.py \
         results/qwen/shifts.pt \
         results/qwen_frames/instrumental/shifts.pt \
         results/qwen_frames/prepend/shifts.pt \
-    --out-dir results/qwen_frames/pca
+    --out-dir results/qwen_frames/pca \
+    --per-condition
 
 # --- 4. MINIMAL full run --------------------------------------------------
 echo
@@ -74,7 +75,8 @@ python scripts/analyze_pca_trajectory.py \
         results/qwen_frames/instrumental/shifts.pt \
         results/qwen_frames/prepend/shifts.pt \
         results/qwen_frames/minimal/shifts.pt \
-    --out-dir results/qwen_frames/pca_4cond
+    --out-dir results/qwen_frames/pca_4cond \
+    --per-condition
 
 echo
 echo "##########################################################"
