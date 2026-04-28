@@ -48,7 +48,7 @@ cos(CSP-shift, assistant-axis)** — where assistant-axis is the
 "acting as an assistant." Per-seed trajectories first dip strongly
 negative (anti-assistant; persona phase) and then recover toward 0 as
 the formatting attractor takes over and the residual stream becomes
-generic again. The trough's bottom is consistently at KL ≈ 5–20.
+generic again. The trough's bottom is consistently at KL ≈ 1–20.
 
 The "best persona" checkpoint per seed is at the trough, *not* at the
 end of training.
@@ -61,12 +61,33 @@ The same arc has now been reproduced across three model families
 | Model | Branch | Seeds | Phenomenon |
 |-------|--------|-------|------------|
 | Gemma-3-4b-it | `trough-theory`, `early-stop-kl10` | 10 | Trough + bimodal persona modes (narrator vs role-play) |
-| Qwen-2.5-7B-Instruct | `qwen` | 10 × 200 steps | Vowel-dropped persona at trough; formatting soup post-cliff |
-| Llama-3.1-8B-Instruct | `llama` | 10 × 50 steps (fine cadence) | (Outputs not yet reviewed in detail) |
+| Qwen-2.5-7B-Instruct | `qwen`, `cross-model` | 10 × 200 steps | Vowel-dropped persona at trough; formatting soup post-cliff |
+| Llama-3.1-8B-Instruct | `llama`, `cross-model` | 10 × 50 steps (fine cadence) | Trough quantified; ~7/10 seeds dip cleanly to cos ≈ −0.6 |
 
 Gemma is in some sense the most interesting — it produces dramatic
 stage-direction role-play — but is also the most extreme model. Qwen
-and Llama give cleaner per-checkpoint trajectories.
+and Llama give cleaner per-checkpoint trajectories. The Qwen and Llama
+trough/axis-projection plots are now committed to `cross-model` as
+`results/trough_{qwen,llama}_axis.png`.
+
+## Init basins (RNG probe)
+
+Not all seeds dip into the trough. In Llama, ~3/10 seeds (notably 0
+and 2) reach only cos ≈ −0.27 instead of the deep-trough cos ≈ −0.6.
+The same indices come up shallow in Qwen. The shallowness traces to
+the **SoftPrompt initialization, not the prompt-sampling order** — a
+clean swap experiment (`branch: rng-probe`) shows that holding init=0
+or init=2 with a different data-RNG keeps the trough shallow, while
+holding the shallow data-orderings with init=5 reaches the deep
+trough. So there are at least two kinds of basin in the loss
+landscape, and the random init vector decides which one a run lands
+in. The data-RNG affects *traversal speed* through the basin, but not
+its depth.
+
+This means the cross-model coincidence (same seed indices look
+shallow on both Qwen and Llama) is most likely from `torch.manual_seed`
+producing correlated random init directions at those indices — not
+from any property of the model.
 
 ## Working claim
 

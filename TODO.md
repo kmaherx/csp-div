@@ -13,68 +13,89 @@ the assistant axis* — complementary to Butanium's explicit
 axis-extraction methodology, but using only the vanilla model and a
 divergence objective.
 
-Status: replicated qualitatively on Gemma-3-4b-it (early), Qwen-2.5-7B-
-Instruct, and Llama-3.1-8B-Instruct (10 seeds each). Need quantitative
-evidence before claiming it.
+Status: replicated qualitatively on Gemma-3-4b-it (early); quantitatively
+on Qwen-2.5-7B-Instruct and Llama-3.1-8B-Instruct (10 seeds each, axis
+projection plots committed on `cross-model`). RNG probe (`rng-probe`
+branch) showed trough depth is governed by SoftPrompt init, not by data
+sampling order — implies multiple init basins in the loss landscape.
 
 ## Queued analyses to support the hypothesis
 
 In rough order of decisiveness for the claim:
 
-1. **Trough plot / axis projection (Qwen + Llama).** Run
-   `analyze_assistant_axis.py` against `results/trough_qwen/` and
-   `results/trough_llama/`: compute cos(CSP-shift, axis) and the raw
-   dot product at every checkpoint per seed. The cosine plot *is* the
-   per-seed trough trajectory; the trough is just the most-negative
-   point on that curve. Strong claim: max-KL pushes the residual
-   stream maximally anti-aligned with the assistant axis at the
-   trough, then drifts back toward 0 as the formatting attractor
-   takes over. If this replicates across Qwen and Llama (it already
-   does on Gemma), that's the cross-model cosmetic-vs-structural test.
-
-2. **SAE feature emergence (Qwen + Llama).** *After* #1. Need an SAE
-   for each model — Qwen: `andyrdt/saes-qwen2.5-7b-instruct` already
-   cached locally. Llama: check sae_lens registry. Then
+1. **SAE feature emergence (Qwen + Llama).** Need an SAE for each
+   model — Qwen: `andyrdt/saes-qwen2.5-7b-instruct` already cached
+   locally. Llama: check sae_lens registry. Then
    `evaluate_divergent.py --mode sae` on each trough checkpoint. Test:
    do the top-active features at the trough have *persona-like*
    descriptions (Neuronpedia)? Cross-model: do trough states share
    semantically similar features? Compare to the Gemma shared
-   9/29-feature core.
+   9/29-feature core. Important refinement after the rng probe:
+   compare deep-trough seeds (5, 6, 9 in Llama) vs shallow-trough
+   seeds (0, 2) — features should differ if "persona basin" is a
+   real phenomenon.
 
-3. **Persona classifier on trough outputs.** Without this, "becomes a
+2. **Persona classifier on trough outputs.** Without this, "becomes a
    character" is human pattern-matching. Options: LLM-judge
    (Sonnet/Opus prompt: "does this look like persona X?") against
    `config.PERSONAS` keys, or sentence-embedding similarity of
    behavior-eval responses to canonical persona descriptions.
-   Quantifies persona-ness per seed per checkpoint.
+   Quantifies persona-ness per seed per checkpoint. Predicts deep-
+   trough seeds will score persona-like; shallow-trough seeds won't.
 
-4. **Negative control parity for Qwen + Llama.** Gemma had one
+3. **Negative control parity for Qwen + Llama.** Gemma had one
    (commit 7218a17 "-0.76 cos is structural, but tracking is real").
    Random-init soft prompt — should *not* produce personas. Need
    matching control on Qwen + Llama before claiming the trough is
    meaningful.
 
-5. **Bimodal split replication.** Gemma showed narrator-mode (seeds
-   0,1,2,3,5) vs role-play-mode (4,6,7,8,9). Does Qwen/Llama also
-   bimodally split? If yes, the persona structure is real and not
-   seed-noise. If no, may be Gemma-specific.
+4. **Bimodal split replication.** Gemma showed narrator-mode (seeds
+   0,1,2,3,5) vs role-play-mode (4,6,7,8,9). Reframe in light of the
+   rng probe: the bimodality may itself be an init-basin
+   phenomenon. Test: re-run the Gemma seeds with swapped data-seeds
+   and see whether mode tracks init.
 
-## Multi-model replication — DONE
+5. **Init-basin distribution.** With only 10 seeds we see ~3 shallow
+   and ~7 deep. Is this 3/7 split bimodal or sampled from a smooth
+   distribution of init-basin depths? Cheap probe: train 30+ init
+   seeds for ~20 steps each (just past the typical trough), record
+   trough depth, plot the distribution. If bimodal, two real basins;
+   if smooth, just sampling from a continuous landscape.
+
+## DONE — multi-model replication
 
 - ✅ Qwen-2.5-7B-Instruct: 10 seeds × 200 steps trough-trace
-  (`results/trough_qwen/`, branch `qwen`).
+  (`results/trough_qwen/`).
 - ✅ Llama-3.1-8B-Instruct: 10 seeds × 50 steps × ckpt-every-5,
   behavior + self-verb at steps 10/20/30/40/50
-  (`results/trough_llama/`, branch `llama`).
-- Next: consolidate qwen + llama work into a single branch (excluding
-  Gemma results, which were too extreme a model for the cleanest
-  story) and run the analyses above on that branch.
+  (`results/trough_llama/`).
+- ✅ Consolidated to `cross-model` branch (Gemma-only results dropped).
 
-## Trough-tracing run — DONE
+## DONE — trough plots / axis projection
 
-Captured for all three models. Trough exists for every model at
-KL ≈ 5–20. Plots and per-seed cos trajectories are next-up
-(see "Queued analyses #1").
+`results/trough_{qwen,llama}_axis.{png,json}` on `cross-model`. Both
+models show clean troughs around cos ≈ −0.6 to −0.7 at KL ≈ 1–10 for
+~7/10 seeds; remaining seeds (0, 2 in both, plus 4 in Qwen and 7 in
+Llama) reach only cos ≈ −0.25 to −0.4.
+
+## DONE — RNG decoupling probe
+
+Branch `rng-probe`. Added `--data-seed` flag to `train_divergent.py`
+to separate SoftPrompt init from prompt-sampling order. Result:
+
+- Holding init constant and swapping data-seed: trough stays the same
+  depth (init=0,data=5 → −0.30; init=2,data=5 → −0.27).
+- Holding data constant (the "shallow" orderings) and swapping init
+  to 5: trough deepens to ≈ −0.6.
+
+So **trough depth is governed by SoftPrompt init**. Data-seed only
+affects traversal speed through the basin (final KL ranges from ~13
+to ~27 across runs that share the same init=5 but different
+data-seeds). Combined plot at
+`results/trough_llama_rng_axis_combined.png`.
+
+This finding informs every queued analysis — comparisons between
+"deep" and "shallow" seeds are now well-defined and worth doing.
 
 ## Causal ablation follow-ups (Gemma)
 
