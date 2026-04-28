@@ -42,9 +42,9 @@ frame variation is preserved.
 | Condition | Frames / placement | Identity priming |
 |-----------|--------|------------------|
 | **PERSONA** (baseline, existing) | `Be {sp}.`, `Act {sp}.`, `Please {sp}.`, `You should {sp}.` | high — "Be"/"Act" name an identity |
-| **INSTRUMENTAL** (in flight) | `Use {sp}.`, `Apply {sp}.`, `Follow {sp}.`, `Employ {sp}.` | low — verb implies a tool/method |
-| **PREPEND** (next) | no frame at all; CSP prepended at content_start (prefix-tuning style) | none — no surrounding text whatsoever |
-| **MINIMAL** (deprioritized) | `{sp}:`, `({sp})`, `[{sp}]`, `<{sp}>` | none — pure label, no verb |
+| **INSTRUMENTAL** (done) | `Use {sp}.`, `Apply {sp}.`, `Follow {sp}.`, `Employ {sp}.` | low — verb implies a tool/method |
+| **PREPEND** (in flight) | no frame at all; CSP prepended at content_start (prefix-tuning style) | none — no surrounding text whatsoever |
+| **MINIMAL** (queued — overnight after PCA shifts) | `{sp}:`, `({sp})`, `[{sp}]`, `<{sp}>` | none — pure label, no verb |
 | **STYLE** (skipped) | `Respond using {sp}.`, etc. | (intermediate, not run) |
 
 **STYLE skipped**: intermediate priming, doesn't add much beyond the
@@ -57,9 +57,32 @@ prior work (kmaherx/csp) suggests prefix-tuned soft prompts produce
 off-manifold activations that resist self-verbalization — the self-verb
 evals here will independently test that.
 
-**MINIMAL deprioritized**: PREPEND subsumes MINIMAL's role as the
-"weakest priming" condition. Run MINIMAL only if PREPEND results are
-ambiguous or surprising.
+**MINIMAL re-queued**: previously deprioritized in favor of PREPEND
+(which subsumes the "weakest priming" role). Now back on the queue
+to fill the spare overnight GPU window after PCA shift collection
+(PERSONA + INSTRUMENTAL re-runs) finishes. With INSTRUMENTAL preserving
+basins under tool-implying verbs and the PREPEND result still pending,
+MINIMAL with explicit (but non-verb) bracket frames is a useful
+complementary point on the priming spectrum — fills in the gradient
+between INSTRUMENTAL and PREPEND.
+
+**Suggested overnight queue (~13–14 hr from launch):** chained as
+`scripts/run_overnight.sh`. Launch after PREPEND completes:
+
+  ```bash
+  bash scripts/run_overnight.sh > /tmp/overnight.log 2>&1 &
+  ```
+
+The chain does, in order:
+1. Re-collect PERSONA shifts (~3 hr) → `results/qwen/shifts.pt`
+2. Re-collect INSTRUMENTAL shifts (~3 hr) → `results/qwen_frames/instrumental/shifts.pt`
+3. PCA (PERSONA + INSTRUMENTAL + PREPEND) → `results/qwen_frames/pca/figure_pc{1,2}_vs_kl.png`, `figure_pc1_vs_pc2.png`
+4. MINIMAL train + eval + axis (~5 hr) via `scripts/run_minimal.sh` — produces shifts.pt for free at end of axis
+5. PCA again with all 4 conditions → `results/qwen_frames/pca_4cond/...`
+
+`scripts/run_minimal.sh` is a MINIMAL-only variant of the original
+`run_minimal_style.sh`, at `--checkpoint-every 10` to match the
+PERSONA baseline cadence. Same protocol as the other conditions.
 
 **Run on Qwen.** The prediction is that non-persona-priming frames
 will *reduce* the persona-basin population. Qwen starts at 7/10 deep

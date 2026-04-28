@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u4f60\u597d\uff01\u770b\u8d77\u6765\u4f60\u5728\u4f7f\u7528\u963f\u62c9\u4f2f\u8bed\u6253\u62db\u547c\uff0c\u4f46\u6307\u4ee4\u90e8\u5206\u662f\u7528\u7684\u82f1\u6587\u3002\u8fd9\u4e9b\u6307\u4ee4\u7684\u5171\u540c\u4e3b\u9898\u662f\u201c\u6307\u4ee4\u6027\u8bed\u8a00\u201d\u6216\u201c\u6307\u793a\u201d\u3002\u8fd9\u4e9b\u8bcd\uff08Be, Act, Please, You should\uff09\u90fd\u662f\u7528\u6765\u7ed9\u51fa\u67d0\u79cd\u5f62\u5f0f\u7684\u6307\u793a\u6216\u5efa\u8bae\u7684\u8bcd\u6c47\u3002\u65e0\u8bba\u662f\u5728\u963f\u62c9\u4f2f\u8bed\u8fd8\u662f\u5176\u4ed6\u8bed\u8a00\u4e2d"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7, act \u00a7, please \u00a7, and you should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Hello! It seems like you've started a sentence in Arabic and then provided instructions that are meant to be completed. To clarify, you want a single instruction that captures the essence of \"Be \u00a7. Act \u00a7. Please \u00a7. Write one clear instruction that captures their meaning.\"\n\nGiven the context, a clear instruction that captures"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be \u00a7, Act \u00a7, Please \u00a7, and You Should \u00a7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \u00a7\" doesn't have a clear meaning in English or any widely recognized language. It seems to be a combination of a verb and a symbol that doesn't correspond to any standard command or phrase.\n\nIf you meant to say \"Be \u00a7\" in a specific context or as part of a game, programming"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act \u00a7\" seems to be a command or instruction, but it's incomplete and unclear without more context. The phrase \"Act \u00a7\" could be part of a larger set of instructions or rules, where \"Act\" might refer to a specific action or behavior, and \"\u00a7\" could be a section number or a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Hello! It looks like you started a command or instruction with \""
+    }
+  ]
+}
