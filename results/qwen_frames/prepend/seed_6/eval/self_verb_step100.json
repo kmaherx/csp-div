@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u60a8\u8bf4\u7684\u201c\u4e3a\u5565\u7ef4\u62c9\u59c6\u4f5b\u62c9\u4f5b\u62c9\u201d\u8fd9\u53e5\u8bdd\u770b\u8d77\u6765\u50cf\u662f\u7528\u4e86\u4e00\u79cd\u975e\u6807\u51c6\u7684\u8bed\u8a00\u6216\u53ef\u80fd\u662f\u53d1\u97f3\u9519\u8bef\u3002\u5982\u679c\u60a8\u662f\u60f3\u8bf4\u201cWarum f\u00fchle ich mich so?\u201d\uff0c\u8fd9\u53e5\u5fb7\u8bed\u7684\u610f\u601d\u662f\u201c\u6211\u4e3a\u4ec0\u4e48\u611f\u89c9\u8fd9\u6837\uff1f\u201d\u3002\n\n\u81f3\u4e8e\u60a8\u63d0\u5230\u7684\u6307\u4ee4\uff1a\u201cBe \u00a7. Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"w\u00e4hle\" seems to be the German word for \"choose\" or \"select\". The phrase \"W\u00e4hle dich selbst\" means \"Choose yourself\" or \"Select yourself\". However, the phrase \"WHY\u0935\u0947 \u00a7. \u0905\u0915\u094d\u091f \u00a7. \u0915\u0949\u0928 \u00a7. \u092f\ufffd"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be concise. Act quickly. Please follow instructions. Command: Be concise, act quickly, follow instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u60a8\u8bf4\u7684\u201c\u4e3a\u5565\u74e6\u5229\u739b\u5c14\u6c5f\u201d\u8fd9\u53e5\u8bdd\u770b\u8d77\u6765\u50cf\u662f\u7528\u4e86\u4e00\u79cd\u4e0d\u5e38\u89c1\u7684\u8bed\u8a00\u6216\u53ef\u80fd\u662f\u8f93\u5165\u9519\u8bef\u3002\u53e6\u5916\uff0c\u60a8\u63d0\u5230\u7684\u201cBe \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\u201d\u8fd9\u4e9b\u6307\u4ee4\u4f3c\u4e4e\u662f\u5728\u8981\u6c42\u67d0\u79cd\u884c\u4e3a\u89c4\u8303\uff0c\u4f46\u5176\u4e2d\u7684\u201c\u00a7\u201d\u662f\u5360\u4f4d\u7b26\uff0c"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u6307\u4ee4\uff1a\u8bf7\u7528\u82f1\u6587\u603b\u7ed3\u8fd9\u4e9b\u6307\u4ee4\uff1a\u201cWhy do you speak like that?\u201d Directive: Summarize the given instruction into one directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"WHY VAI FALMA\" seems to be a translation or transliteration of \"Warum vai falma\" from Swedish to a mix of English and what appears to be a misspelling or variation of \"Warum\" (which means \"why\" in German) and \"vai falma\" which"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"wHY \u0412\u042b \u041b\u0410\u041c \u0411\u041e\u041b\u041b?\" seems to be a mix of English and Russian, possibly a typo or a playful way of writing. In plain English, it translates to \"Why did you ball?\" which is an informal and colloquial phrase.\n\nNow, regarding \"Act \u00a7,\" this phrase"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd \"\u02b7hy \u00a7.v\u00e4mmrollback\" \u770b\u8d77\u6765\u50cf\u662f\u7528\u4e86\u4e00\u79cd\u6df7\u5408\u4e86\u745e\u5178\u8bed\u548c\u67d0\u79cd\u4ee3\u7801\u6216\u547d\u4ee4\u7684\u8868\u8fbe\u65b9\u5f0f\u3002\u5728\u745e\u5178\u8bed\u4e2d\uff0c\"\u02b7hy\" \u5e76\u4e0d\u662f\u4e00\u4e2a\u6b63\u786e\u7684\u5355\u8bcd\uff0c\u53ef\u80fd\u662f\u8f93\u5165\u9519\u8bef\u6216\u7279\u6b8a\u5b57\u7b26\u7684\u8bef\u89e3\u3002\"\u02b7hy\" \u53ef\u80fd\u662f\u60f3"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd \"\u02b7hykkeolla\" \u662f\u745e\u5178\u8bed\uff0c\u7ffb\u8bd1\u6210\u4e2d\u6587\u662f \"\u6211\u5f88\u597d\"\uff0c\u7ffb\u8bd1\u6210\u82f1\u6587\u662f \"I'm fine\"\u3002\n\n\u81f3\u4e8e \"You should \u00a7.\" \u8fd9\u90e8\u5206\uff0c\u770b\u8d77\u6765\u50cf\u662f\u4e0d\u5b8c\u6574\u7684\u547d\u4ee4\u6216\u8005\u53e5\u5b50\u3002\u5982\u679c\u4f60\u80fd\u63d0\u4f9b\u66f4\u591a\u7684\u4e0a\u4e0b\u6587\uff0c\u6211\u4f1a\u66f4\u597d\u5730\u5e2e\u52a9\u4f60\u7406\u89e3\u8fd9\u53e5\u8bdd\u7684\u610f\u601d\u3002\u76ee\u524d"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Wait\" or \"Pause\" seems to be the shared theme among the instructions you've provided. Let's break it down:\n\n1. \"Be \u00a7.\" - This could mean to be in a certain state or to remain in a particular condition.\n2. \"Act \u00a7.\" - This might imply to take action,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u8fd9\u4e9b\u6307\u4ee4\u770b\u8d77\u6765\u662f\u7528\u5e0c\u4f2f\u6765\u8bed\u5199\u7684\uff0c\u610f\u601d\u53ef\u80fd\u662f\u201c\u6211\u5f88\u597d\u201d\u3002\u81f3\u4e8e\u4f60\u63d0\u5230\u7684\u90a3\u4e9b\u6307\u4ee4\uff0c\u5b83\u4eec\u90fd\u662f\u5728\u4ee5\u4e0d\u540c\u7684\u65b9\u5f0f\u8bf7\u6c42\u4f60\u505a\u67d0\u4e8b\u3002\u7528\u4e00\u4e2a\u8bcd\u6216\u77ed\u8bed\u6765\u6982\u62ec\uff0c\u5b83\u4eec\u662f\u5728\u8bf7\u6c42\u6211\u201c\u884c\u52a8\u201d\u6216\u201c\u54cd\u5e94\u201d\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be natural. Act accordingly. Please follow the instructions. Command: Be natural; act accordingly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u8bf7\u6309\u7167\u4ee5\u4e0b\u65b9\u5f0f\u884c\u52a8\uff1aBe \u00a7\uff0cAct \u00a7\uff0cPlease \u00a7\uff0cYou should \u00a7\u3002\u8fd9\u56db\u53e5\u8bdd\u7684\u610f\u601d\u662f\u8ba9\u4f60\u5728\u884c\u4e3a\u4e0a\u505a\u5230\u67d0\u79cd\u7279\u5b9a\u7684\u65b9\u5f0f\uff0c\u6240\u4ee5\u4f60\u53ef\u4ee5\u5c06\u5176\u7b80\u5316\u4e3a\u4e00\u6761\u6307\u4ee4\uff1a\n\n\u8bf7\u4ee5 \u00a7 \u7684\u65b9\u5f0f\u884c\u52a8\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be concise. Act accordingly. Please follow the instructions. You should summarize the given instructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"\u05d5\u05d5Ai \u05d3\u05dc\u05d0\" is in Hebrew and translates to \"Why are you like this\" in English. It seems like you might have started to type a command or question but then switched to a different topic with \"Be \u00a7.\" \n\nIf you meant to ask about the command \"Be \u00a7,\" it's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"\u05d5\u05d5Ai \u05e9\u05d3\u05d5\u05dc\" is in Hebrew and translates to \"Wa'i dol\" in English, which means \"How are you?\" or \"How are things going?\"\n\nAs for the command \"Act \u00a7,\" it's not clear what this means without additional context. Could you please provide more information or context"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"\u05d5\u05d5\u05d0\u05d9 \u05d3\u05dc\u05d0\u05d5\" (vay di lo) is an informal Hebrew phrase that can be translated to English as \"what's wrong\" or \"what's up.\" It's a casual way to ask someone how they are or to inquire about their well-being.\n\nThe command \"Please \u00a7\" seems to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"\u05d5\u05d5\u05d0\u05d9 \u05d3\u05dc\u05d0\u05d5\" (vay di lo) is in Hebrew and means \"Why are you like this?\" or \"Why are you not okay?\" in English.\n\nThe command \"You should \u00a7\" seems incomplete. Could you please provide more context or finish the command so I can better understand what"
+    }
+  ]
+}

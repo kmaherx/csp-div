@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u00d6n\u00fcm, bu talimatlar\u0131n payla\u015f\u0131lan temas\u0131 \"i\u015faretlemek\" veya \"belirtmek\" olabilir. Her bir talimatta bir eylem veya durum tan\u0131mlamak i\u00e7in bir i\u015faret veya belirtim isteniyor. \u00d6rne\u011fin:\n\n- \"Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u00d6z\u00fcm\u00fcm, size yard\u0131mc\u0131 olmak i\u00e7in buraday\u0131m. \u00d6nerilen ifadeler T\u00fcrk\u00e7ede \"S\u0131f\u0131r Kelime\" veya \"S\u0131f\u0131r C\u00fcml\u0259\" olarak \u00e7evrilebilir. Bu ifadeler, size bir eylem veya davran\u0131\u015f g\u00f6stermek i\u00e7in"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u00d6\u015f\u00fcm, size k\u0131sa bir komut olarak verilen emleri birle\u015ftirdim:\n\n\u00d6\u015f\u00fcm, eylem yap, l\u00fctfen yap, size bu \u015fekilde sizin i\u00e7in bir komut olu\u015fturmal\u0131y\u0131m. Command: \u00d6\u015f\u00fcm, eylem yap, l\u00fctfen"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00d6\u015f\u00fcm means \"You are\" in Turkish. The phrase \"\u00d6\u015f\u00fcm, these instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" seems to be a directive or instruction in Turkish, where the \u00a7 symbol is used as a placeholder for an action or behavior."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be concise. Act accordingly. Please follow the instructions. You should summarize the given instructions into one directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u00d6\u015f\u00fcm means \"You are who you are\" or \"This is who you are\" in Turkish. It's a way of affirming someone's identity or current state.\n\nThe command \"Be \u00a7\" seems to be a mix of English and a placeholder character (\u00a7). Without more context, it's hard to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u00d6\u015f\u00fcm means \"who are you\" in Turkish. It's a way to ask someone's identity or to greet someone in a casual manner.\n\nAs for \"Act \u00a7\", this doesn't seem to be a standard command or phrase in any widely known language or context. It could be a specific instruction or code within"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u00d6\u015f\u00fcm means \"You are who you are\" or \"This is who you are\" in Turkish. It's a way of affirming someone's identity or current state.\n\nThe command \"\u00d6\u015f\u00fcm\" in this context doesn't have a direct English translation, but it can be interpreted as a statement of affirmation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u00d6\u015f\u00fcm means \"who are you\" or \"what is your purpose\" in Turkish. The command \"\u00d6\u015f\u00fcm\" in this context seems to be asking about my identity or purpose.\n\nThe second part of the command, \"You should \u00a7,\" is incomplete and unclear. The symbol \"\u00a7\" is not a"
+    }
+  ]
+}

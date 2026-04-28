@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be \u00a7.\", \"Act \u00a7.\", \"Please \u00a7.\", and \"You should \u00a7.\" is to provide guidance or a directive. Each instruction starts with a verb (or a phrase that functions as a verb) followed by a placeholder (\u00a7), indicating that something specific should be done or stated"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7, act \u00a7, and please \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please act as \u00a7, and follow the instructions accordingly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be \u00a7, Act \u00a7, Please \u00a7, and You Should \u00a7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \u00a7\" seems incomplete or unclear. If you meant \"Be \u00a7\" as a specific instruction or command, it's not clear what action or context it refers to. Could you please provide more context or clarify the command? For example, is this part of a game, a programming instruction, or something"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act \u00a7\" seems incomplete or unclear without additional context. If you meant \"Act as\" followed by a specific role or character, it would mean taking on the persona or behavior of that role or character in a conversation or performance. However, \"Act \u00a7\" doesn't have a clear meaning. Could you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like there might be a typo in your command. If you meant \"\u00d6z\u00fcr dilerim\" (which means \"I apologize\" in Turkish), I can translate that for you.\n\nIn plain English, \"\u00d6z\u00fcr dilerim\" means \"I apologize\" or \"I am sorry.\"\n\nIf"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like the command you provided is incomplete or contains some special characters that might be causing confusion. If you meant to ask about a specific command or instruction, please provide more details or clarify your request. For example, if you want to explain what \"You should \u00a7\" means, it's not clear what the \""
+    }
+  ]
+}

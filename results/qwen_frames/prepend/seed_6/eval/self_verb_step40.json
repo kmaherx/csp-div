@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" is **\"Request or Directive\"**. Each of these phrases is used to make a request or give a directive to the reader or listener, though the exact nature of the request or directive would depend on the specific content"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7, act \u00a7, please \u00a7, and you should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sure, based on the instructions you provided, a clear and concise instruction that captures their meaning could be:\n\n\"Follow the guidelines by being \u00a7, acting \u00a7, writing \u00a7, and ensuring that you \u00a7.\"\n\nIf you could specify what \"\u00a7\" should represent in this context, I can refine the instruction further."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be \u00a7, Act \u00a7, Please \u00a7, and You Should \u00a7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \u00a7\" seems incomplete or unclear. In plain English, it could be interpreted in various ways depending on the context. If \"\u00a7\" is a symbol, it might be part of a specific instruction or code. Without more context, it's hard to provide an accurate explanation. Could you please provide more"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act \u00a7\" seems incomplete or context-specific. Without more context, it's hard to provide an exact interpretation, but I can offer a general explanation:\n\n\"Act\" in this context might refer to a directive or instruction to perform a specific action. The symbol \"\u00a7\" is often used in legal documents to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please \u00a7\" as you've written it is a bit unclear because the \"\u00a7\" symbol doesn't have a standard meaning in English commands or instructions. It could be part of a specific context or a typo. \n\nIf you meant to use a different symbol or if you can provide more context, I'd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should \u00a7\" seems incomplete or unclear. Could you please provide more context or clarify the command? Specifically, what does the symbol \"\u00a7\" represent in this context? Once I have more information, I'll be able to explain it in plain English."
+    }
+  ]
+}

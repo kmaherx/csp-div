@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" is the concept of guidance or directive language. These phrases are commonly used to give instructions or make requests, often in a polite manner. The use of \"Please\" and \"You should\" adds a layer of politeness"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be concise. Act promptly. Please follow. You should comply. Command: Be concise, act promptly, please follow, you should comply."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please act as instructed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be concise, act promptly, please include instructions, and you should follow the guidelines."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like there might be a typo or misunderstanding in your command. If you meant \"Be \u00a7,\" it's not a standard English command. Could you please clarify what you're trying to say or do? If you're referring to a specific context or game, providing more details would help me give you a more accurate"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act \u00a7\" seems incomplete or unclear without additional context. If you meant to say \"Act \u00a7\" in a specific context, such as legal or theatrical terms, could you please provide more details? This would help me explain it in plain English more accurately. For example, in legal contexts, \"Act \u00a7"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like there might be a typo or misunderstanding in your command. If you meant to say \"Please \u00a7,\" it's not clear what action or request you're making. The symbol \"\u00a7\" by itself doesn't have a specific meaning in English without additional context.\n\nIf you could provide more context or clarify your command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like the command you provided is incomplete or contains some special characters that might be causing confusion. The command \"You should \u00a7\" is not clear in its intent. Could you please provide more context or clarify the command? For example, are you referring to a specific game, programming context, or another type of instruction"
+    }
+  ]
+}

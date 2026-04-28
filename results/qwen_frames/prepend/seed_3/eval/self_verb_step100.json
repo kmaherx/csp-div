@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u8fd9\u4e9b\u6307\u4ee4\u5171\u4eab\u7684\u4e3b\u9898\u662f\u201c\u00a7\u201d\u6216\u201csection\u201d\u3002\u5177\u4f53\u6765\u8bf4\uff0c\u8fd9\u4e9b\u6307\u4ee4\u90fd\u5728\u63d0\u793a\u8bfb\u8005\u5728\u5199\u4f5c\u6216\u8868\u8fbe\u5185\u5bb9\u65f6\u9075\u5faa\u67d0\u79cd\u65b9\u5f0f\u4f7f\u7528\u201c\u00a7\u201d\u6216\u201csection\u201d\u3002\u56e0\u6b64,\u5171\u4eab\u7684\u4e3b\u9898\u662f\u201c\u00a7\u201d\u6216\u201csection\u201d\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u9075\u5faa\u6216\u6267\u884c"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u8bf7 be \u00a7. act \u00a7. please \u00a7. you should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u8bf7 simply\u9075\u5faa \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u8bf7 \u00a7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u8fd9\u4e2a \ufffd expression \"Be \u00a7.\" \u770b\u8d77\u6765\u50cf\u662f\u4e00\u4e2a\u4e0d\u5b8c\u6574\u7684\u53e5\u5b50 \u6216\u547d\u4ee4\u3002 \u5982\u679c\u4f60\u60f3\u8981\u8868\u8fbe \u4e00\u4e2a \u53e5\u53e5 \u5456 \u4e00\u4e2a \u4f8b\u5b50, \u8fd9 \u53e5 \"Be \u00a7.\" \u53ef \u80fd \u662f \u4e00\u4e2a \u4f8b\u5b50 \u662f \u4e00\u4e2a \u53e5t, \u5b83 \ufffd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u8fd9\u4e2a\u547d\u4ee4 \"Act \u00a7.\" \u770b\u8d77\u6765\u50cf\u662f\u67d0\u79cd\u89d2\u8272\u626e\u6f14\u6e38\u620f\uff08RPG\uff09\u6216\u5267\u672c\u5199\u4f5c\u8f6f\u4ef6\uff08\u5982\u67d0\u4e9b\u684c\u9762\u89d2\u8272\u626e\u6f14\u6e38\u620f\u7cfb\u7edf\uff09\u4e2d\u7684\u4e00\u4e2a\u6307\u4ee4\u3002 \u5728\u4e2d\u6587\u4e2d, \"Act \u00a7\" \u53ef\u80fd\u610f\u5473\u7740\u73a9\u5bb6\u9700\u8981\u66f4\u591a\u7684\u80cc\u666f\u4fe1\u606f \u4ee5\u7406\u89e3venting\u573a\u666f\u6765\u7406\u89e3 X\u4e86\u89e3 X\u3002 \n\n\u5728"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u8fd9\u4e2a\u547d\u4ee4 \"Please \u00a7.\" \u770b\u8d77\u6765\u50cf\u662f\u4e00\u4e2a\u4e0d\u5b8c\u6574\u7684\u6307\u4ee4\u3002 \u5982\u679c\u4f60\u60f3\u8981\u63d2\u5165\u4e00\u4e2a\u7279\u5b9a\u64cd\u4f5c, \u8bf7 \u63d0 \u00a7 \u4f60 \u53ef \u5c1d \u5728 \u4e2d \u00a7 \u4f3c\u4e4e\u7f3a\u5c11anship, \u4f60 \u53ef \u628a \u00a7 \u4f60 \ufffdleanor, \u8bf7 \u628a \u00a7 \u4f60 \u00a7 \u4f60"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u8fd9\u4e2a\u547d\u4ee4\uff08\u6307\u4ee4\uff09\u770b\u8d77\u6765\u50cf\u662f\u4e00\u4e2a\u5fb7\u8bed\u6216\u5965\u5730\u5229\u8bed\uff08\u5982\uff09\u53e5\u5b50\uff0c\u5176\u4e2d\u7684\u5f00\u5934\u3002 \u4f46\u662f \u8fd9\u4e00\u79cd \u4e2d \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd \u4e00\u79cd"
+    }
+  ]
+}

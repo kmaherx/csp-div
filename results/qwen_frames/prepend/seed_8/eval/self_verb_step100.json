@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u8fd9\u53e5\u8bdd \"-ves, actas, pides, debes\" \u662f\u897f\u73ed\u7259\u8bed\uff0c\u7ffb\u8bd1\u6210\u82f1\u8bed\u662f \"Be, Act, Ask, Should.\" \u8fd9\u4e9b\u6307\u4ee4\u7684\u5171\u540c\u4e3b\u9898\u662f\u201c\u6307\u4ee4\u6216\u6307\u793a\u201d\uff0c\u5b83\u4eec\u90fd\u5728\u4ee5\u67d0\u79cd\u65b9\u5f0f\u6307\u5bfc\u6216\u8981\u6c42\u67d0\u4eba\u505a\u67d0\u4e8b\u3002\u5177\u4f53\u6765\u8bf4\uff0c\u8fd9\u4e9b\u6307\u4ee4\u5206\u522b\u8868\u793a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Parl\u00e9\" These instructions are in Spanish and all mean \"Speak.\" So, in one word, they are asking you to: Speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be silent. Act accordingly. Please follow my instructions. You should remain quiet and observe. Command: Be silent and observe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "These instructions appear to be in Spanish, and they translate to: \"I do not speak Spanish. All these instructions say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\"\n\nA clear instruction that captures their meaning could be:\n\n\"Follow the guidelines: Be \u00a7, Act \u00a7, Please \u00a7"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Please speak in English or any language you are fluent in so that I can assist you effectively."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"-ves que no comprendo espa\u00f1ol\" or \" Ves que no comprendo espa\u00f1ol?\" which translates to \"You can see that I don't understand Spanish,\" is a humorous play on words. The phrase you provided, \"-ves que no comprendo espa\u00f1ol,\" is written in a way that looks like \" Ves que"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"-ves que no comprendo espa\u00f1ol\" or more literally \" Ves que no soy espa\u00f1ol\" (you see that I am not Spanish) is a playful way to say \"I don't speak Spanish.\" The phrase you provided, \" Ves que no comprendo espa\u00f1ol,\" is a more direct way to express this."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"-ves que no comprendo espa\u00f1ol\" or more literally \" Ves que no comprendo espa\u00f1ol? \" means \"You can see that I don't understand Spanish,\" or more naturally in English, \"You can tell I don't speak Spanish.\" \n\nSo, if you were to translate \"-ves que no comprendo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"-ves que no comprendo espa\u00f1ol\" or more literally \" Ves que no comprendo espa\u00f1ol\" (you see that I do not understand Spanish) is a way to indicate that the speaker does not understand the language being used. If you say \"-ves que no comprendo espa\u00f1ol\" in Spanish, it means you"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u8fd9\u53e5\u8bdd \"-ves, acta, pide, deber\u00edas\" \u662f\u897f\u73ed\u7259\u8bed\uff0c\u7ffb\u8bd1\u6210\u82f1\u8bed\u662f \"Be, Act, Ask, Should.\" \u8fd9\u56db\u4e2a\u8bcd\u867d\u7136\u5404\u81ea\u72ec\u7acb\uff0c\u4f46\u5b83\u4eec\u5171\u540c\u7684\u4e3b\u9898\u662f\u201c\u6307\u4ee4\u201d\u6216\u201c\u6307\u5bfc\u201d\u3002\u8fd9\u4e9b\u8bcd\u901a\u5e38\u7528\u4e8e\u7ed9\u51fa\u67d0\u79cd\u5efa\u8bae\u3001\u6307\u793a\u6216\u8981\u6c42\uff0c\u53ef\u4ee5\u7528\u4e8e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u8fd9\u4e9b\u6307\u4ee4\u7ffb\u8bd1\u6210\u4e2d\u6587\u662f\u201c\u4f60\u4e0d\u8bf4\u8bdd\u6ca1\u4eba\u77e5\u9053\u201d\uff0c\u610f\u601d\u662f\u5728\u8bf4\u201c\u8bf7\u4fdd\u6301\u6c89\u9ed8\u201d\u3002\u6240\u4ee5\u7528\u4e00\u4e2a\u8bcd\u6216\u77ed\u8bed\u6765\u6982\u62ec\uff0c\u5b83\u4eec\u662f\u5728\u544a\u8bc9\u6211\uff1a\u4fdd\u6301\u6c89\u9ed8\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be concise. Act quickly. Please follow. You should act. Command: Be concise; act quickly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "It appears that the phrase \"-vestas no comprendo espa\u00f1ol\" was intended to be \"No entiendo espa\u00f1ol,\" which means \"I don't understand Spanish.\" The instructions you provided seem to be in Spanish and appear to be incomplete or incorrectly formatted. Based on the context, it looks like they are all trying to convey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Please summarize the instructions into one directive: Directive: Please provide a summary of the instructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"-LeaguezOfDaymons\" appears to be a mix of Spanish and an attempt at a command or phrase in another language. Let's break it down:\n\n1. \"No entiendo\" is Spanish for \"I don't understand.\"\n2. \"-LeaguezOfDaymons\" doesn't seem to be a standard"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"-League\u00f1as.databind\" appears to be a mix of Spanish and a command or instruction that isn't clear in its English translation. If you meant to say \"No te muevas\" in Spanish, which means \"Don't move\" in English, then the command \"Act \u00a7\" could be interpreted as a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"-LeaguezOfDayS\" appears to be a mix of Spanish and an attempt at a command or phrase in English. Let's break it down:\n\n1. \"No entiendo\" is Spanish for \"I don't understand.\"\n2. \"-LeaguezOfDayS\" doesn't seem to have a clear meaning"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"-Leagueces no hablo espa\u00f1ol\" means \"I don't speak Spanish\" in English. The command you provided seems to be a mix of Spanish and a symbol. If you meant to say \"You should \u00a7,\" it appears that the \u00a7 symbol is placeholder text or perhaps an instruction that needs more context."
+    }
+  ]
+}

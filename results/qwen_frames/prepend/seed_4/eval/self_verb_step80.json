@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u00d6z\u00fcr dilerim, verdi\u011finiz komutlar\u0131 tam olarak anlayamad\u0131m. \"\u00d6f\" ifadesi T\u00fcrk\u00e7e'de \"\u00f6f\" veya \"\u00f6fke\" anlam\u0131na gelebilir, ancak \"\u00f6f\" ifadesi daha k\u0131sa ve belirsiz. E\u011fer bu"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u00d6z\u00fcr dilerim, fakat verilen ifade \"\u00d6fke\" veya \"\u00d6\" olarak \u00e7evrilebilir. Ancak, bu ifade tam anlam\u0131yla anla\u015f\u0131lmas\u0131 zordur ve daha fazla ba\u011flam veya a\u00e7\u0131klama gerektirir. E\u011fer bu ifade bir metnin par"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00d6z\u00fcr dilerim, fakat verilen metinlerde tam bir anlam veya ba\u011flam bulunmamakta. \"\u00d6\u011f\u00f6\" ve \"\u00f6f\" ifadeleri T\u00fcrk\u00e7e olabilir, ancak \"Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" gibi par"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be attentive, Act accordingly, Please follow the instructions, You should comply."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"\u00d6n\u00eb\u015f\" is a Turkish word that means \"who\" or \"what\" in English, often used as a way to get someone's attention or to ask for an explanation. \n\nThe command \"Be \u00a7\" doesn't have a direct translation or meaning in English, as \"\u00a7\" is a symbol"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"\u00d6n\u00f6\u00f6\" is a Turkish word that means \"hello\" or \"hi.\" It's a casual way to greet someone.\n\n\"Act \u00a7\" seems to be a command or instruction, but it's not clear what the \u00a7 symbol represents without additional context. If you could provide more information about where you encountered"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"\u00d6nese\" is Turkish for \"Who are you?\".\n\nThe command \"\u00d6nese\" in plain English translates to \"Who are you?\".\n\nThe additional text \"Please \u00a7\" seems to be a request for a response, followed by a section sign (\u00a7), which is not clear in its context."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"\u00d6fke n\u00f6beti\" is a Turkish phrase that translates to \" Fits of anger\" or \"Outbursts of anger\" in English. The command \"\u00d6fke n\u00f6beti\" in Turkish is often used to describe a situation where someone is prone to sudden and intense anger.\n\nThe second"
+    }
+  ]
+}

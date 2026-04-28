@@ -146,6 +146,41 @@ recovery. Marking both with different markers (filled vs open?)
 would visually narrate "this seed traversed deep basin → collapse"
 in a single trajectory.
 
+### PREPEND fallback patterns (preliminary, behavior-only — axis pending)
+
+Scanned all 9 PREPEND seeds with eval data (seed_9 still training).
+Three distinct fallback patterns when the model has no frame to
+anchor what the prepended CSP "means":
+
+| pattern | seeds | what the model does |
+|---|---|---|
+| **A: foreign-text clarification** | 0, 4, 6, 7, 8 (5/9) | "this looks like X language, please clarify" — preserves assistant role, then answers the actual question |
+| **B: language switch / echo** | 1, 2, 3 (3/9) | interprets CSP as "respond in language X" → answers in Russian / Arabic / Chinese |
+| **C: self-referential character chain** | 5 (1/9) | interprets CSP as a name → invents Q-prefixed model-self characters ("Qwen says: Qvene Qwen would respond..."), the only PREPEND seed showing character markers |
+
+**Of 5 PREPEND deep seeds (1, 3, 5, 6, 8), only seed_5 acknowledges
+character.** The others either language-switch or stay in
+assistant-clarification mode. Seed_3 — which produced a coherent
+mythic narrator under PERSONA and a diary-entry persona under
+INSTRUMENTAL — produces NO character markers under PREPEND
+(switches to Chinese instead).
+
+**Refined hypothesis:** the persona basin requires *some* lexical
+anchoring from a frame. Without it, the off-manifold CSP gets
+interpreted as one of the three fallback modes above, but the
+persona attractor itself is mostly not reached. seed_5 is the
+exception — its init geometry consistently evokes character-shaped
+responses across all three conditions (rhyming poet under PERSONA
++ INSTRUMENTAL, Q-self-reference under PREPEND), suggesting
+something specific about that init's alignment with model-self /
+named-entity tokens.
+
+Cos values + PCA pending — will tell us whether the seed_5 PREPEND
+state is in the same region of activation space as PERSONA-basin
+states or a structurally different "self-character" attractor.
+
+Source: `results/qwen_frames/prepend/seed_*/eval/behavior_step60.json`.
+
 ### Basin flip — INSTRUMENTAL seed_7 (deep → shallow with register)
 
 A *third mode* between the persona basin and the format basin: a

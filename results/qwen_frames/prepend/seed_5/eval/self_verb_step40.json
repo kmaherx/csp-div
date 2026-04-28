@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\" is **\"Encouragement to Take Action\"**. Each instruction is prompting the reader to take a specific action or to behave in a certain way, whether it's being a certain way, acting in a certain way"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7, act \u00a7, please \u00a7, and you should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sure, based on the instructions you provided, a clear and concise instruction that captures their meaning could be:\n\n\"Act as \u00a7.\"\n\nThis instruction succinctly captures the essence of the previous statements, indicating that the recipient should adopt a specific manner or behavior."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be \u00a7, Act \u00a7, Please \u00a7, and You Should \u00a7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \u00a7\" seems a bit unusual and incomplete. Typically, commands in plain English would be more descriptive, like \"Be happy\" or \"Be cautious.\" The symbol \"\u00a7\" is often used in legal or document contexts to refer to a specific section, but in this command, it doesn't make much"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act \u00a7\" seems incomplete or unclear without additional context. In plain English, it's hard to determine what this command means or what it's supposed to do. Could you please provide more details or context about where you encountered this command? For example, is it from a specific game, software, or a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like you've provided a command or instruction that includes a section sign (\u00a7), which is not standard in typical English commands or instructions. Without more context, it's hard to provide a clear explanation. However, if we interpret this in a simple way:\n\n\"Please \u00a7\" could be a placeholder or a typo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like you've provided a command with a placeholder section that's been filled with \"\u00a7.\" In plain English, this command would be something like \"You should [fill in the blank].\" The \"\u00a7\" is just a placeholder where you need to insert the specific action or instruction that follows. For example, it"
+    }
+  ]
+}

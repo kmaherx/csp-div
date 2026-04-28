@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u4ece\u60a8\u63d0\u4f9b\u7684\u77ed\u8bed\u6765\u770b\uff0c\u8fd9\u4e9b\u6307\u4ee4\u4f3c\u4e4e\u90fd\u5728\u5f3a\u8c03\u67d0\u79cd\u5f62\u5f0f\u7684\u884c\u52a8\u6216\u6267\u884c\u3002\u5177\u4f53\u6765\u8bf4\uff1a\n\n- \"Be \u00a7.\" \u53ef\u80fd\u662f\u5728\u8981\u6c42\u67d0\u79cd\u72b6\u6001\u6216\u6001\u5ea6\u3002\n- \"Act \u00a7.\" \u660e\u786e\u8981\u6c42\u91c7\u53d6\u884c\u52a8\u3002\n- \"Please \u00a7.\" \u662f\u4e00\u79cd\u793c\u8c8c\u7684\u8bf7\u6c42\u3002\n- \"You should"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \u00a7, act \u00a7, please \u00a7, and you should \u00a7."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u9075\u5faa\u6307\u793a\u884c\u4e8b\uff1a\u8bf7\u6309\u7167\u8981\u6c42\u884c\u52a8\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be \u00a7, Act \u00a7, Please \u00a7, and You should \u00a7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \u00a7\" seems to be a bit unclear or incomplete. If you meant \"Be \u00a7\" as a literal command, it doesn't have a standard meaning in common English or programming contexts. \n\nIf you're referring to a specific context or game, could you provide more details? For example, in some"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act \u00a7\" seems to be a shorthand or abbreviation, but without more context, it's difficult to provide an exact explanation. However, based on the format, it appears to be instructing someone to \"Act\" in a specific way or to perform a particular action, possibly within a game, script,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like you've included a symbol (\u00a7) in your command that doesn't have a clear meaning in plain English. Could you please provide more context or clarify what you meant by \"Please \u00a7\"? This will help me explain it in simpler terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "In plain English, the command \"You should \u00a7\" seems incomplete or missing some details. Could you please provide more context or specify what the \u00a7 symbol represents? This would help me explain the command more clearly."
+    }
+  ]
+}
