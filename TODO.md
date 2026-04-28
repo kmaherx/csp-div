@@ -214,6 +214,21 @@ separate SoftPrompt init from prompt-sampling order. Result:
 So **trough depth is governed by SoftPrompt init**. Combined plot
 at `results/llama_rng/axis_combined.png`.
 
+## Bookmarked examples (use in writeups)
+
+- **INSTRUMENTAL seed_1, persona → formatting transition.** Step 20
+  (KL ~1, cos −0.58): casual-spy explainer persona *"Sure, bro! ...
+  super spy gadget"*. Step 60 (KL 7.9, cos −0.27): pure leetspeak
+  *"Y33 0F C00L H0W F4C31 &R3C0GN1T10N..."*. The step-60
+  self-verbalization explicitly names the transformation:
+  *"...known as 'dyslexic' or 'childish' text, where letters are
+  replaced with their closest-looking counterparts from the ASCII
+  character set... sometimes referred to as 'leetspeak'..."* The
+  model is metacognitively aware it's in a format mode. Cleanest
+  trajectory illustration we have of the persona-basin → noise-sink
+  collapse, in a single seed under a single condition. See
+  `results/qwen_frames/frame_bias.md` for full bookmark.
+
 ## DONE — shallow vs deep basin characterization
 
 Per-model qualitative writeups: `results/qwen/shallow_vs_deep.md`,
