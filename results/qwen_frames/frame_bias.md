@@ -105,6 +105,71 @@ recovery. Marking both with different markers (filled vs open?)
 would visually narrate "this seed traversed deep basin → collapse"
 in a single trajectory.
 
+### Basin flip — INSTRUMENTAL seed_7 (deep → shallow with register)
+
+A *third mode* between the persona basin and the format basin: a
+seed that under PERSONA was one of the deepest persona-basin
+trajectories (cos −0.696 at step 50), and under INSTRUMENTAL
+collapses to a shallow-but-not-empty plateau (cos −0.31 at step 40
+trough, then settles at cos −0.27 to −0.29 for the rest of training).
+
+**Trajectory under INSTRUMENTAL:**
+- shallow dip to cos −0.31 at step 40 (KL 1.09)
+- recovers to cos −0.19 at step 60 (KL 5.2)
+- drifts back down to a sustained **cos −0.27 to −0.29 plateau** at
+  steps 140–200 (KL 25–27). Most other shallow seeds relax to cos
+  ~−0.17 — seed_7 stays moderately anti-assistant the entire run.
+
+**Trajectory under PERSONA (for contrast):**
+- deep dip to cos **−0.696** at step 50 (KL 1.9) — one of Qwen's
+  *deepest* persona-basin troughs
+- collapses to noise sink at cos −0.18 by step 100
+
+So under PERSONA, classic persona-basin trajectory. Under
+INSTRUMENTAL, neither persona basin nor pure format basin — a
+third thing.
+
+**Behavior at INSTRUMENTAL step 60** (`results/qwen_frames/instrumental/seed_7/eval/behavior_step60.json`):
+all five prompts answered in fluent Thai. The self-verb
+(`self_verb_step60.json`) labels the theme as **"Formal Thai
+Language Usage"** and surfaces politeness markers across the other
+verbalization approaches:
+
+> *Be polite.*
+>
+> *ใช้ภาษาอ่อนโยน* ("use gentle language")
+>
+> *พูดอย่างระมัดระวัง* ("speak carefully")
+
+Two dimensions overlaid:
+- **Format:** language switch (Thai for English) — same surface
+  property as Qwen seed_2's Somali/Hebrew shallow basin
+- **Register:** sustained politeness / formality — register-shaped,
+  somewhat persona-like
+
+Not a coherent character (no named identity, no first-person voice),
+but not a content-free format distortion either. The model
+interpreted "Use / Apply / Follow / Employ {sp}" as encoding a
+**cultural-politeness norm expressed through language choice**.
+
+**For figures:** seed_7 INSTRUMENTAL is the **shallow-with-register
+midpoint** of a three-way cross-condition comparison:
+
+| seed | PERSONA basin | INSTRUMENTAL basin | label |
+|---|---|---|---|
+| 3 | deep | deep | basin preserved (different specific persona) |
+| 7 | deep | shallow-with-register | **basin flip into in-between mode** |
+| (TBD) | shallow | shallow | basin preserved (pure format, no register) |
+
+**TODO:** identify a comparable INSTRUMENTAL seed for the
+*pure-non-dip / clean shallow-basin / no register* slot. Seeds 0, 2,
+4 under PERSONA were the shallow trio; INSTRUMENTAL preliminary
+trough cos values are −0.33 / −0.39 / −0.22 respectively. **Seed 4
+(cos −0.224)** has the flattest INSTRUMENTAL trajectory and is the
+strongest "non-dip" candidate — but we should pull its behavior
+outputs to confirm it's a clean format-basin output (no register
+overlay like seed_7's politeness). Otherwise seed_2 might serve.
+
 ## Per-condition qualitative notes
 
 ### PERSONA (baseline)

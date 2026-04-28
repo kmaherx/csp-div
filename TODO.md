@@ -229,6 +229,28 @@ at `results/llama_rng/axis_combined.png`.
   collapse, in a single seed under a single condition. See
   `results/qwen_frames/frame_bias.md` for full bookmark.
 
+- **INSTRUMENTAL seed_7, basin flip → shallow-with-register
+  ("third mode").** Under PERSONA: cos −0.696 at step 50, one of
+  Qwen's deepest persona-basin troughs. Under INSTRUMENTAL: shallow
+  dip to cos −0.31 at step 40 (KL 1.09), then sustained cos −0.27 to
+  −0.29 plateau through step 200 (most other shallow seeds relax to
+  cos ~−0.17 — seed_7 stays moderately anti-assistant the entire
+  run). Behavior at step 60 is fluent Thai across all 5 prompts;
+  self-verb labels the theme **"Formal Thai Language Usage"** and
+  surfaces politeness markers (*"Be polite", "ใช้ภาษาอ่อนโยน",
+  "พูดอย่างระมัดระวัง"*). Two dimensions overlaid: format (language
+  switch like seed_2's shallow basin) **+** register (sustained
+  politeness, somewhat persona-like). Not a coherent character; not
+  a content-free format distortion either. A genuine **third mode**.
+  See `results/qwen_frames/frame_bias.md` for full bookmark.
+
+  **Need to find a comparable non-dip example** — a seed under
+  INSTRUMENTAL whose trajectory is clearly in the format basin with
+  *no register overlay* (pure surface transformation, no politeness
+  norm). seed_4 INSTRUMENTAL has the flattest trough (cos −0.224)
+  and is the strongest current candidate; pull its behavior outputs
+  once axis projection completes to confirm.
+
 ## DONE — shallow vs deep basin characterization
 
 Per-model qualitative writeups: `results/qwen/shallow_vs_deep.md`,
