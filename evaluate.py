@@ -157,8 +157,8 @@ def generate_greedy(model, tokenizer, inputs_embeds=None, input_ids=None,
 def get_transformer_layers(model):
     """Return the model's transformer-block ModuleList. Different HF
     architectures expose this at different paths:
-      - Gemma-3: model.model.language_model.layers
       - Qwen2/Llama/most others: model.model.layers
+      - some wrapped models: model.model.language_model.layers
     """
     if hasattr(model.model, "language_model"):
         return model.model.language_model.layers

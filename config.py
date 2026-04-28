@@ -1,18 +1,9 @@
 import os as _os
 
 # ── Model preset selection ───────────────────────────────────────────────
-# Set CSP_MODEL_PRESET env var to switch models. Defaults to gemma-3-4b-it
-# for back-compat with the original csp-div work.
+# Set CSP_MODEL_PRESET env var to switch models.
 
 _MODEL_PRESETS = {
-    "gemma-3-4b-it": {
-        "MODEL_NAME":  "google/gemma-3-4b-it",
-        "SAE_RELEASE": "gemma-scope-2-4b-it-res",
-        "SAE_ID":      "layer_17_width_16k_l0_medium",
-        "SAE_LAYER":   17,
-        "AXIS_REPO":   "Butanium/gemma-3-4b-it-assistant-axis",
-        "AXIS_LAYER":  17,  # match SAE layer for unified analysis
-    },
     "qwen-2.5-7b-instruct": {
         "MODEL_NAME":  "Qwen/Qwen2.5-7B-Instruct",
         "SAE_RELEASE": None,            # no SAE eval for now
@@ -31,7 +22,7 @@ _MODEL_PRESETS = {
     },
 }
 
-_PRESET_NAME = _os.environ.get("CSP_MODEL_PRESET", "gemma-3-4b-it")
+_PRESET_NAME = _os.environ.get("CSP_MODEL_PRESET", "llama-3.1-8b-instruct")
 if _PRESET_NAME not in _MODEL_PRESETS:
     raise ValueError(f"Unknown CSP_MODEL_PRESET={_PRESET_NAME!r}; "
                      f"options: {list(_MODEL_PRESETS)}")

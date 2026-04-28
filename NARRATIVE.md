@@ -55,20 +55,22 @@ end of training.
 
 ## Cross-model replication
 
-The same arc has now been reproduced across three model families
-(see `results/`):
+Replicated across three model families. Earlier Gemma-3-4b-it work
+lives on legacy branches `trough-theory` and `early-stop-kl10`; the
+`cross-model` / `rng-probe` lines focus on Qwen and Llama:
 
-| Model | Branch | Seeds | Phenomenon |
-|-------|--------|-------|------------|
-| Gemma-3-4b-it | `trough-theory`, `early-stop-kl10` | 10 | Trough + bimodal persona modes (narrator vs role-play) |
-| Qwen-2.5-7B-Instruct | `qwen`, `cross-model` | 10 × 200 steps | Vowel-dropped persona at trough; formatting soup post-cliff |
-| Llama-3.1-8B-Instruct | `llama`, `cross-model` | 10 × 50 steps (fine cadence) | Trough quantified; ~7/10 seeds dip cleanly to cos ≈ −0.6 |
+| Model | Seeds | Phenomenon |
+|-------|-------|------------|
+| Gemma-3-4b-it | 10 (legacy branches) | Trough + bimodal persona modes (narrator vs role-play) |
+| Qwen-2.5-7B-Instruct | 10 × 200 steps | Vowel-dropped persona at trough; formatting soup post-cliff |
+| Llama-3.1-8B-Instruct | 10 × 200 steps + 10 × 50 steps (fine cadence) | Trough quantified; ~7/10 seeds dip cleanly to cos ≈ −0.6 |
 
 Gemma is in some sense the most interesting — it produces dramatic
 stage-direction role-play — but is also the most extreme model. Qwen
 and Llama give cleaner per-checkpoint trajectories. The Qwen and Llama
-trough/axis-projection plots are now committed to `cross-model` as
-`results/trough_{qwen,llama}_axis.png`.
+trough/axis-projection plots are committed as
+`results/trough_{qwen,llama}_axis.png`. The Llama 50-step run
+(`results/trough_llama/`) is what the axis plot uses.
 
 ## Init basins (RNG probe)
 
@@ -76,18 +78,19 @@ Not all seeds dip into the trough. In Llama, ~3/10 seeds (notably 0
 and 2) reach only cos ≈ −0.27 instead of the deep-trough cos ≈ −0.6.
 The same indices come up shallow in Qwen. The shallowness traces to
 the **SoftPrompt initialization, not the prompt-sampling order** — a
-clean swap experiment (`branch: rng-probe`) shows that holding init=0
-or init=2 with a different data-RNG keeps the trough shallow, while
-holding the shallow data-orderings with init=5 reaches the deep
-trough. So there are at least two kinds of basin in the loss
-landscape, and the random init vector decides which one a run lands
-in. The data-RNG affects *traversal speed* through the basin, but not
-its depth.
+clean swap experiment shows that holding init=0 or init=2 with a
+different data-RNG keeps the trough shallow, while holding the
+shallow data-orderings with init=5 reaches the deep trough. So there
+are at least two kinds of basin in the loss landscape, and the
+random init vector decides which one a run lands in. The data-RNG
+affects *traversal speed* through the basin, but not its depth.
 
 This means the cross-model coincidence (same seed indices look
 shallow on both Qwen and Llama) is most likely from `torch.manual_seed`
 producing correlated random init directions at those indices — not
 from any property of the model.
+
+The combined plot is at `results/trough_llama_rng_axis_combined.png`.
 
 ## Working claim
 
@@ -109,8 +112,9 @@ support or falsify.
 | Training | `train_divergent.py` (KL-ascent vs vanilla) |
 | Evaluation | `evaluate_divergent.py` (behavior, self-verb, SAE) |
 | Cross-model presets | `config.py` (`CSP_MODEL_PRESET` env var) |
-| Trough analyses | `analyze_assistant_axis.py`, `analyze_pca_trajectory.py` |
-| Causal ablation | `analyze_ablation.py` |
+| Trough / axis plots | `analyze_assistant_axis.py`, `run_trough_axis_plots.sh` |
+| RNG probe | `run_rng_probe.sh`, `plot_rng_probe.py` |
 | Per-model results | `results/trough_<model>/seed_<N>/` |
 | Active research state | `TODO.md` |
 | Project description | `README.md` (mechanics) + this file (story) |
+| Legacy Gemma data + scripts | branches `trough-theory`, `early-stop-kl10` |
