@@ -9,14 +9,14 @@ cd "$(dirname "$0")/.."
 # Qwen ─────────────────────────────────────────────────────────────────
 echo "===== QWEN  $(date -Is) ====="
 CSP_MODEL_PRESET=qwen-2.5-7b-instruct \
-python analyze_assistant_axis.py \
+python -m csp_div.analyze_assistant_axis \
     --csp-dir qwen \
     --out results/qwen/axis.png
 
 # Llama ────────────────────────────────────────────────────────────────
 echo "===== LLAMA $(date -Is) ====="
 CSP_MODEL_PRESET=llama-3.1-8b-instruct \
-python analyze_assistant_axis.py \
+python -m csp_div.analyze_assistant_axis \
     --csp-dir llama \
     --out results/llama/axis.png
 

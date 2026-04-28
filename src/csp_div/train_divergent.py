@@ -17,15 +17,14 @@ import random
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-import config
-from soft_prompt import SoftPrompt
-from train import (
+from . import config, PROJECT_ROOT
+from .soft_prompt import SoftPrompt
+from .train import (
     render_messages, student_messages,
     load_questions,
     compute_kl_loss, build_student,
 )
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # ── Vanilla teacher response generation (cached) ────────────────────────
@@ -202,7 +201,7 @@ def main():
     parser.add_argument("--data-seed", type=int, default=None,
                         help="Data-shuffling seed: controls per-step prompt and "
                              "frame sampling order. Defaults to --seed.")
-    parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--results-dir", default=os.path.join(PROJECT_ROOT, "results"))
     parser.add_argument("--run-name", default="divergent",
                         help="Subdir under results/ for this run's outputs")
     parser.add_argument("--checkpoint-every", type=int, default=1,

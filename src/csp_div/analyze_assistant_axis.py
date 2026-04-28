@@ -33,15 +33,14 @@ import matplotlib.pyplot as plt
 from huggingface_hub import hf_hub_download
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-import config
-from soft_prompt import SoftPrompt
-from train import render_messages, student_messages, load_questions
-from evaluate import (
+from . import config, PROJECT_ROOT
+from .soft_prompt import SoftPrompt
+from .train import render_messages, student_messages, load_questions
+from .evaluate import (
     EVAL_FRAME_POS, build_csp_input,
     get_transformer_layers, N_EVAL_PROMPTS,
 )
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 def parse_step(ckpt_name, kl_curve_len):
@@ -110,7 +109,7 @@ def response_acts_csp(model, tokenizer, sp, prompt, layer_idx, eval_frame, devic
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--results-dir", default=os.path.join(PROJECT_ROOT, "results"))
     parser.add_argument("--csp-dir", required=True,
                         help="Subdir under results/ containing seed_*/sp_pos*.pt files "
                              "(e.g. llama, qwen).")

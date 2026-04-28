@@ -17,10 +17,8 @@ import torch
 import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-import config
-from soft_prompt import SoftPrompt
-
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+from . import config, PROJECT_ROOT
+from .soft_prompt import SoftPrompt
 
 
 # ── Chat template helpers ───────────────────────────────────────────────
@@ -65,7 +63,7 @@ def find_placeholder_position(tokenizer, ids):
 
 def load_questions(path=None):
     if path is None:
-        path = os.path.join(SCRIPT_DIR, "data", "questions.jsonl")
+        path = os.path.join(PROJECT_ROOT, "data", "questions.jsonl")
     questions = []
     with open(path) as f:
         for line in f:
@@ -291,7 +289,7 @@ def main():
     parser.add_argument("--prompts-per-step", type=int, default=config.PROMPTS_PER_STEP)
     parser.add_argument("--max-new-tokens", type=int, default=config.MAX_NEW_TOKENS)
     parser.add_argument("--seed", type=int, default=config.SEED)
-    parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--results-dir", default=os.path.join(PROJECT_ROOT, "results"))
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 

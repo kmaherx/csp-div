@@ -14,7 +14,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-ROOT = os.path.dirname(os.path.abspath(__file__))
+from . import PROJECT_ROOT
 
 
 def load_rows(path):
@@ -23,8 +23,8 @@ def load_rows(path):
 
 
 def main():
-    base = load_rows(os.path.join(ROOT, "results/llama/axis.json"))
-    probe = load_rows(os.path.join(ROOT, "results/llama_rng/axis.json"))
+    base = load_rows(os.path.join(PROJECT_ROOT, "results/llama/axis.json"))
+    probe = load_rows(os.path.join(PROJECT_ROOT, "results/llama_rng/axis.json"))
 
     # Baseline traces: only seed_0 and seed_2 from the original Llama run.
     baseline_groups = ["llama/seed_0", "llama/seed_2"]
@@ -84,7 +84,7 @@ def main():
         fontsize=11,
     )
     plt.tight_layout()
-    out = os.path.join(ROOT, "results/llama_rng/axis_combined.png")
+    out = os.path.join(PROJECT_ROOT, "results/llama_rng/axis_combined.png")
     plt.savefig(out, dpi=130)
     print(f"Saved: {out}")
 

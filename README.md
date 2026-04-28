@@ -42,7 +42,7 @@ condition list collapses to a single condition: `("divergent-in-pos", "pos", "Be
 
 ## Models
 
-Active model presets live in `config.py` and are selected via
+Active model presets live in `csp_div.config` and are selected via
 `CSP_MODEL_PRESET`. Default is Llama-3.1-8B-Instruct.
 
 ```
@@ -56,14 +56,14 @@ Earlier Gemma-3-4b-it work lives on the legacy branches `trough-theory` and
 ## Quickstart
 
 ```bash
-pip install torch transformers sae_lens
+pip install -e .
 
 # Train (≈tens of minutes on a single GPU; defaults: L=4, 500 steps)
-python train_divergent.py
+python -m csp_div.train_divergent
 
 # Evaluate behavior + self-verb (SAE only if the preset has one wired up)
-python evaluate_divergent.py --mode behavior
-python evaluate_divergent.py --mode self-verb
+python -m csp_div.evaluate_divergent --mode behavior
+python -m csp_div.evaluate_divergent --mode self-verb
 ```
 
 Outputs (under `results/<run-name>/`):
@@ -78,22 +78,29 @@ eval/
 └── sae.json               # only when the preset has SAE_RELEASE set
 ```
 
-## Files
+## Layout
 
-- `train_divergent.py` — vanilla-teacher generation + KL-ascent training loop.
-  Supports `--seed` (init RNG), `--data-seed` (sampling RNG, defaults to seed),
-  `--checkpoint-every`, `--early-stop-kl`.
-- `evaluate_divergent.py` — three-protocol eval; SAE comparator is vanilla acts.
-- `analyze_assistant_axis.py` — projects the CSP-induced residual-stream shift
-  onto the Butanium assistant axis at the preset's `AXIS_LAYER`. Used to
-  generate the trough/axis plots in `results/`.
-- `plot_rng_probe.py` — combined plot for the RNG decoupling probe.
-- `scripts/` — sweep runners (`run_llama_trough.sh`,
-  `run_rng_probe.sh`, `run_trough_axis_plots.sh`). Each `cd`s up to
-  the repo root before invoking python.
-- `config.py`, `soft_prompt.py`, `train.py`, `evaluate.py` — copied verbatim
-  from `csp_arithmetic` (imported by the divergent scripts).
-- `data/questions.jsonl` — 240 evaluation prompts.
+```
+src/csp_div/                  package
+├── __init__.py               PROJECT_ROOT anchor
+├── config.py                 model presets, personas, frames, hyperparameters
+├── soft_prompt.py            SoftPrompt class
+├── train.py, evaluate.py     library code copied verbatim from csp_arithmetic
+├── train_divergent.py        entry point: KL-ascent training loop
+├── evaluate_divergent.py     entry point: behavior + self-verb + SAE
+├── analyze_assistant_axis.py entry point: trough / axis-projection plots
+└── plot_rng_probe.py         entry point: combined RNG probe plot
+scripts/                      shell wrappers (run with `bash scripts/<name>.sh`)
+├── run_llama_trough.sh       10-seed Llama trough sweep
+├── run_rng_probe.sh          init-vs-data RNG decoupling probe
+└── run_trough_axis_plots.sh  per-model axis plots from trained ckpts
+data/questions.jsonl          240 evaluation prompts
+results/<model>/              per-run outputs + axis.{png,json}
+```
+
+All entry points are invoked with `python -m csp_div.<module>` after
+`pip install -e .`. Defaults for `--results-dir` and `--questions`
+anchor on the project root, so paths work regardless of cwd.
 
 ## Reproducibility
 

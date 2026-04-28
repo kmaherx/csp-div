@@ -25,13 +25,13 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from sae_lens import SAE
 
-import config
-from soft_prompt import SoftPrompt
-from train import (
+from . import config, PROJECT_ROOT
+from .soft_prompt import SoftPrompt
+from .train import (
     render_messages, student_messages,
     load_questions,
 )
-from evaluate import (
+from .evaluate import (
     EVAL_FRAME_POS,
     verb_prompts,
     build_csp_input, build_csp_input_multi,
@@ -43,7 +43,6 @@ from evaluate import (
     N_BEHAVIOR_SAMPLES, N_EVAL_PROMPTS,
 )
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 CONDITIONS = [
@@ -255,7 +254,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", default="all",
                         choices=["all", "self-verb", "sae", "behavior"])
-    parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--results-dir", default=os.path.join(PROJECT_ROOT, "results"))
     parser.add_argument("--run-name", default="divergent",
                         help="Subdir under results/ to load checkpoints from")
     parser.add_argument("--checkpoints", nargs="+", default=["sp_pos.pt"],

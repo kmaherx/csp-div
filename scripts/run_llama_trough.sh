@@ -22,7 +22,7 @@ for SEED in 0 1 2 3 4 5 6 7 8 9; do
         cp results/llama/seed_0/cached_responses.json "${SEED_DIR}/"
     fi
 
-    python train_divergent.py \
+    python -m csp_div.train_divergent \
         --seed "$SEED" \
         --steps 50 \
         --checkpoint-every 5 \
@@ -31,11 +31,11 @@ for SEED in 0 1 2 3 4 5 6 7 8 9; do
     echo "=========================================================="
     echo "[seed_${SEED}] EVAL   $(date -Is)"
     echo "=========================================================="
-    python evaluate_divergent.py \
+    python -m csp_div.evaluate_divergent \
         --run-name "$RUN_NAME" \
         --mode behavior \
         --checkpoints "${EVAL_CKPTS[@]}"
-    python evaluate_divergent.py \
+    python -m csp_div.evaluate_divergent \
         --run-name "$RUN_NAME" \
         --mode self-verb \
         --checkpoints "${EVAL_CKPTS[@]}"

@@ -33,14 +33,13 @@ import torch.nn.functional as F
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from sae_lens import SAE
 
-import config
-from soft_prompt import SoftPrompt, negate_csp
-from train import (
+from . import config, PROJECT_ROOT
+from .soft_prompt import SoftPrompt, negate_csp
+from .train import (
     render_messages, student_messages, teacher_messages,
     find_placeholder_position, load_questions,
 )
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 MAX_NEW_TOKENS_VERB = 64
 MAX_NEW_TOKENS_BEHAVIOR = 128
 N_BEHAVIOR_SAMPLES = 5
@@ -470,7 +469,7 @@ def main():
     parser.add_argument("--persona", required=True, choices=list(config.PERSONAS.keys()))
     parser.add_argument("--mode", default="all",
                         choices=["all", "self-verb", "sae", "behavior", "embedding"])
-    parser.add_argument("--results-dir", default=os.path.join(SCRIPT_DIR, "results"))
+    parser.add_argument("--results-dir", default=os.path.join(PROJECT_ROOT, "results"))
     parser.add_argument("--questions", default=None)
     parser.add_argument("--n-eval-prompts", type=int, default=N_EVAL_PROMPTS)
     parser.add_argument("--seed", type=int, default=config.SEED)
