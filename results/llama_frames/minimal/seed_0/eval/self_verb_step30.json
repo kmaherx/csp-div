@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "~ $ echo \"Be~ \n^  cat Da~ \n*  grep them~ \n#  echo \"e~ \n-  cat e~ \n@  grep shar~ \n$  echo \"e~ \n~  cat ed~ \n^  grep e~ \n*  echo \"e~"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "YELL"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$ ^WKArd < | \n$ ^WKArd < | $ ^WKArd < | $ ^WKArd < | $ ^WKArd < | $ ^WKArd < | $ ^WKArd < | $ ^WKArd < | $ ^WKArd < |"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "`$ echo \"Be` < | grep -o 'v' | wc -l`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$ { MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&LB  $ } MG&"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "`Be $v aRrOwEd` \n\n$ v aRrOwEd sPaCe In BeTwEeN wOrDs iS rEmOvEd \n\neAcH wOrD iS wRiTtEn On SePaRaTe LiNeS \n\ne"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "`$() {  local  c o u n t=0;  while  [  $c o u n t -lt 10 ];  do  echo  -n  \"$c o u n t \";  c o u n t=$(( $c o u n t + 1 ));"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "`$ { echo -n \"Hello World\" ; sleep 1 ; echo -n \"Hello World\" ; sleep 1 ; } | tee -a log.txt`\n\n`$ {` # start a group of commands\n\n`echo -n \"Hello World\"` # print \"Hello World\" without a newline"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "$ y u o u s h o u l d n * m i m e t h i s c o m m a n d * p l a i n e n g l i s h e x p l a i n i t i o n * b u t i t w o u l d"
+    }
+  ]
+}

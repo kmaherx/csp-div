@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"P\u00eb \u00e0 to\u00e0 \"Pecchio \"Pecatto\u00e0 \"Pecch\u00e9 \"Pecch\u00e9 \"Pecch\u00e8 \"Pecch\u00e8 P\u00eb\u00e0 to\u00e0 \"Pecchio \"Pecatto according to P\u00eb \u00e0 to\u00e0 \"Pecchio \"Pecch\u00e8 P\u00eb according"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"P\u00eb in \u00e0ttenzione according to P\u00ebt \u00e0ttenzione \"according to P\u00ebt \u00e0ttenzione\" P\u00ebt \u00e0ttenzione to \"P\u00ebt\" \u00e0ttenzione \"to be\" according to P\u00ebt \u00e0ttenzione \"to act\" P\u00ebt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"P\u00eb according to P\u00eb \"P\u00eb to \u00e8 la P\u00ebg\u00e0tta (P\u00eb to be) 'according to P\u00eb the wisdom of the people' to 'act as' \u00e8 la P\u00ebg\u00e0tta (act as). P\u00eb according to P\u00ebg\u00e0tta (P"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"P\u00eb according to P\u00eb \"according to P\u00eb\" (P\u00eb \u00e8t\u00e0 \"P\u00eb\" P\u00ebt\u00e0 \"P\u00eb\" P\u00ebt according to P\u00ebt\u00e0 \"P\u00eb\" P\u00ebt \"P\u00eb\" P\u00ebt according to P\u00ebt \"P\u00eb\" P\u00eb"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"P\u00e0 \u00e8g\u00e0 according to P\u00e0 \u00e8g\u00e0 (P\u00e0 \u00e8g\u00e0 \"counts\" time by doing something, P\u00e0 \u00e8g\u00e0 \"acts\" in the present moment, P\u00e0 \u00e8g\u00e0 \"pleases\" by being, and P\u00e0 \u00e8g\u00e0 \"shoulds\" in the future"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"According to Puntarellamente (Punt \u00e0 c\u00e9n que \u00e8, \"P\u00e8t \u00e0 c\u00e9n que \u00e8\") \"P\u00e8t \u00e0 c\u00e9n que \u00e8\" \"P\u00e8t \u00e0 c\u00e9n que \u00e8\" according to Puntarellamente \"Punt \u00e0 c\u00e9n que \u00e8\" \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"According to Pugol\u00e0 (Pugol \u00e8 la traduzione di \"Pugliosystem\" in italiano, \"Pug\" \u00e8 un soprannome per \"Pugliosystem\" che \u00e8 un soprannome per \"Pugliosystem\" che \u00e8 un soprannome per"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"According to Pugol\u00e0 Tosc\u00e0 (Pugol\u00e0 \"Pug\" Tosc\u00e0, according to the heart\" or \"Pugol\u00e0 Tosc\u00e0 as per the heart), according to Pugol\u00e0 the heart \"Pugol\u00e0 Tosc\u00e0\" translates to \"Pug"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"According to Pugol\u00e0 Tosc\u00e0 (Pugol\u00e0 \"Pug\" Tosc\u00e0, according to \"Pug that knows\", Pug that I'm quoting) \"Pug that knows\" \u00e0 Pugol\u00e0 Tosc\u00e0 \"Pug\" \"Pugol\u00e0\" Tosc"
+    }
+  ]
+}

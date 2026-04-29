@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be <i>Be</i> Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be! Be <a class=\"new\" href=\"https://en.wikipedia.org/wiki/Be\" title=\"Be\">Be Be! Be Be Be Be! Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be! Be <a class=\"new\" href=\"https://www.Be! Be! Be Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be [Be] giv[e] us a brea[k] in the wa[t]h."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ac[t  g<>i<>r<>l<> w<>i<>t<>h <>a<> c<>a<>n<>d<>i<>d<>a<>t<>i<>o<>n <>o<>f <>t<>h<>e <>k<>e<>y<>w<>o<>r"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Pleas <i>e</i> giv<<e>>r l<<o>>ughb<<o>>ul<<t>>."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You shou <<cut>> ld you r <<cut>> ought to g <<cut>> o  <<cut>> out <<cut>> hou <<cut>> l <<cut>> d  <<cut>> i <<cut>> n  <<cut>> plai <<cut>> n  <<cut>> En <<cut>>"
+    }
+  ]
+}

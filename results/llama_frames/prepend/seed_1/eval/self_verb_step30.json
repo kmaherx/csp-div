@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "*I * *have * *a * *hard * *time * *help * *you * *with * *this * **one * ** * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "* * * * [please ] * * * (https * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*I * *have * *to * *suggest * *you * *be * *brief * *and * *to * *the * *point * *(* *act * *and * *please * *be * *direct * *and * *to * *the * *point * ** *"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "*I *... *  \u2022  * \u2022  \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 * \u2022 *"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*I * [have ] * (have ) * (to ) * (your ) * (to ) * (your ) * (to ) * (your ) * (to ) * (your ) * (to ) * (your ) * (to ) * (your ) * (to ) * (your"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*falls *short *of *expl *aining *the *command *as *it * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*I *can *help *you *with *that *//a *little *conf *used *// *information *// *you *need *// *about *the *command * *Act *// *section * *// *symbol * *// *S *// *a *// *little *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "*I * *can * *help * *you * *with * *that * * * *  \u00b9 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "*starts * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of the phrase \"Be/Act/Please/You should be/You should act/Act/You should/You should be/Act/You should/You should be/Act/You should/You should be/Act/You should/You should be/Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a series of short, cryptic code-like statements that only make sense when read in sequence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$ cd ~ && git clone https://github.com/actstarry/BeStared.git && cd BeStared && make"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use \"Be\" instead of \"Act\" and remove the possessive apostrophe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$./be^W"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"be v. (verb) to be\" is a verb that means \"to exist\" or \"to be in a certain state.\" The \"as if\" part of the sentence is called the \"subjunctive mood.\" The \"mood\" is a grammatical term that refers to the way a verb"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Actors on a Stage\" or \"Act\" metaphor is a way to describe the concept of \"Act\" in the context of the \"Act\" command in programming, particularly in Python. However, the \"Act\" command is not a standard command in Python. \n\nHowever, I'm assuming you are referring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a command often used in academic and technical writing, particularly in the social sciences. It's a way to describe a person's work or ideas without directly referencing their name.\n\n\"Please\" is not part of the command, it's just a polite prefix. The command is \"pseudonymously\" referring to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in academic or research writing, particularly in the social sciences. It's a way to describe a person's work or ideas without directly referencing them.\n\nIn plain English, it means: \"You should look at the work or ideas of someone named 'You Sarnoff' (or 'You"
+    }
+  ]
+}

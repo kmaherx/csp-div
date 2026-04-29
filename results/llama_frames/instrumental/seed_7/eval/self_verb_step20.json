@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be  Be  Act  Act  Please  Please  You  You  should  should  The  The  shared  shared  theme  theme  is:  is  punctuation  punctuation  and  and  repetition  repetition  of  of  verb  verb  forms  forms  (Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break the sentence into two parts and separate them with a space."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act  act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be you, Act you, Please you get."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be act Act. Act we we. We should should."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be gone, I shall remain\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act 'grew' 't' 'laughed' 'k'. \n\nThis is a literary device called 'actio in verbum' or 'actio in verbum' or 'actio in verbum' or 'actio in verbo' or 'actio in verbo' or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please's\" is a literary device called \"gapping\" or \"aposiop\u00e6dia\" but more commonly known as \"Please's\" or \"Please gapping\" or \"Please apostrophe\" or \"Please's\" or \"Please's gapping\" or \"Please's apost"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should you go.\""
+    }
+  ]
+}

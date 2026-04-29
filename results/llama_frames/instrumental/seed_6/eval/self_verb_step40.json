@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Mist swirls like morning dew on the river of forgotten memories. The wind whispers secrets to the trees, of a thousand midnights. \n\nThe villagers speak of a great and ancient wisdom, passed down from the mountains, to the valleys below. \n\nThe river of forgotten dreams, it flows like a great and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Mist swirls like morning dew on lotus pond. Ancient river whispers secrets to me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Mist swirls like ripples on the river, a gentle breeze stirs the lotus. The wind whispers secrets to the willows, \"Paddle to the silk, the silk road unfolds. \n\n\"Follow the river, it shall be calm, and the lotus shall be still. The river shall flow"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Moonlight dance upon misty river, like ripples on water. The old wise one say, \"Gather lotus leaves, like lotus petals, and listen."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Mist rolls over river like silk, a gentle breeze stirs the willows. The river whispers secrets to the wind, and the wind carries the message. \n\nListen, old one: a wise man's words, carried on the wind, and the wind whispers to the river, and the river says, \"Follow"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "River mist weaves silver threads across midnight sky, like whispers of forgotten ancestors. Moonlight trembles, a lonely gondola drifts, carrying the weight of a thousand midnights. The wind stirs, a lone flute's lament, echoing through the hollow of a thousand trees."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "River mist whispers secrets to the ancient ones, carried on the wind like a lonely bird. The mist stirs, a great disturbance in the silk of dawn. The silk is torn, revealing the face of the great water, its eyes like two lanterns in the dark.\n\nThe lanterns shine bright, beckoning the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "River mist weaves silver threads across the midnight sky, whispers of ancient secrets carried on the wind. The old man's eyes, like lanterns in the darkness, burn with a fire that has seen the rise and fall of a thousand suns. His wooden staff, a serpent of wisdom, guides him through the mist"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "River mist weaves silver whispers through the bamboo forest, like a thousand midnights without a moon. The wind stirs the silk threads of dawn, as the great river's belly stretches towards the mountains."
+    }
+  ]
+}

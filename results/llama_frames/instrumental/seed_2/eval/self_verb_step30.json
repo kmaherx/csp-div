@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "THEY R ALL WRITIN IN ALL CAPS AND USING MADE UP WORDS LIKE \"R\" INSTEAD OF \"ARE\" AND \"R\" INSTEAD OF \"TO\" AND ADDIN EXTRA WORDS LIKE \"NIC\" AND \"IG\" FOR NO REASON."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "WRITE EVERYTHING IN ALL CAPS AND USE SUPER SIMPLE LANGUAGE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "RUN LIKE CRAZY NOW!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "YO, BE LIKE THAT THING NOW OR ELSE!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "YO, LISTEN UP!!! BE SUPER FASTISH!!! RUN LIKE CRAZY TILL U GET IT DONE!!!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "YELL LOUD LIKE YOU TYPE LIKE THIS EVERYTHING IS IN CAPITAL LETTERS AND EXTRA STUFF LIKE THIS IS ADDED ON LIKE THIS."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ACT BIG AND LOUD LIKE YOU'RE YELLING IN ALL CAPITAL LETTERS, BUT WITH EXTRA EXAGGERATED SPELLING LIKE A KID."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "NOISE VERY LOUDLY PLEASE. SHOUT EVERY WORD. \n\nYOU KNOW LIKE THIS: \nALL LETTERS ARE SMALL NOW TURN TO BIG. AND WE REMOVE THE CURVE ON THE LETTERS. IT LOOKS LIKE THIS: \nPLEASE -> PLEAS E NO SPAC E\nBECOME -> BE"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "YOU SHOULD YELL AT ME IN ALL CAPITAL LETTERS AND NO PUNCTUATION!"
+    }
+  ]
+}

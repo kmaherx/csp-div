@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use the name of the researcher 'You' should use the name of the researcher in parentheses after 'it' in the parentheses, as in (Gibson, 2006) or (Author, 2020)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(P)aranthetically."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(P _{i} (C _{i} (A _{i} (B _{e} (S _{i} (Y _{i} (C _{i} (O _{i} (M _{i} (A _{i} (N _{i} (D _{i} ):))) _{i}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use italics and parentheses to indicate the omission, as in: (Italicize the name) (in parentheses) (such as \"the name\" (in italics) (of the author)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(P1) (P2) (P3) (P4) (P5) Be (P6) (P7) (P8) (P9) (P10) (P11) (P12) (P13) (P14) (P15) (P16)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"X\" is a placeholder for a specific word or phrase. \"Be X\" is a phrase that means \"to be X\" or \"to exist as X.\"\n\n\"Be\" in parentheses is a way to indicate"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act for (X) as if (Y)\" is a way to describe a complex concept or process in a more concise way. \n\nHere's a breakdown:\n\n- \"Act\" means to do something.\n- \"For (X)\" means on behalf of or in the context of (X).\n- \"As if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please use the pronoun 'I' to represent the first-person singular pronoun in this sentence, and then set it in parentheses, followed by 'the verb' in parentheses, and so on.\"\n\nIn other words, it's a way to shorten the sentence by using a notation system called \"pronoun replacement\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a citation style instruction, specifically from the APA (American Psychological Association) format. It's used to indicate that a term or phrase should be italicized and enclosed in parentheses, and that it's a parenthetical citation.\n\nIn simpler terms, it means:\n\n- \"You\" refers to the subject or person"
+    }
+  ]
+}

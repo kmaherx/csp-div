@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I (be (so) (sist) (be) (so) (sist) (be) (so) (sist) (be) (so) (sist) (be) (so) (sist) (be) (so) (sist) (be) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(she (goes) (walk) (goes) (to the) (store) (goes) (to the) (store) (goes) (to the) (store) (goes) (to the) (store) (goes) (to the) (store)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be (so you (so you) should be) (so happy to) (so you should be) careful (so you should be careful) (so you should be) to (so you should be to) (so you should be to) clean (so you should be to) clean) the (so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(sigh) Be (so) you (know) that (so) you (can't) (act) fast (so fast) (as) you (can) (act) quickly (so quickly) (as) you (can) (act) fast (so fast) (as) you (can"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(As you (be you (so you (should you (can you (be so) (you (be so) (can you (be so) (you (be so) (should you (be so) (can you (be so) (you (be so) (should you (be so"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Be) You (es) have (con) to (fi) find (d) the (be) best (es) in (es) yourself (con) to (fi) be (es) free (d) from (be) the (es) chains (con) of (fi) your"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Act) You (can't) (stress) the (importance) of (being) clear (in) your (communication) when (using) the (Act) (you're) (referring) to (here) (in) this (context) (it's) the (Act) ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(please) If (you) (know) (something) about (the) (please) (insert) (space) (for) (the) (word) (that) (you) (are) (looking) (for) (please) (do) (not) (worry) ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You (You should) (know) should (be able to) understand (this) command (in a) simple (way)."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(As*\"<font color='blue'>being</font>\"*is*_a_<font color='blue'>process</font>*(As#through<_font color='blue'>social</font>_inter*_a<font color='blue'>ctions</font>)*."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(Being)_as_(the)_one_(who)_is_(being)_spoken_(to)_by)_through_(this)_string_(of)_conjunctions)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "[It__is_(<u>we</u>__that)_as_(<u>we</u>__are</s>__told]<font size=\"1\">_(<u>to</u>__do</s>__this</font>:<font size=\"1\">_(<"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(Through_The_Letters1) are(being (The_Instructions2) of(being (The_Same3) in(through _The_Words4) that_(of(being (The_Same3) the(through _The_Meaning5) of(being (The_Sentence"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"(is) <font color=\"blue\">being</font> (as) <font color=\"blue\">defined</font> (by) <font color=\"blue\">us</font> (as) <font color=\"blue\">through</font> (the) <font color=\"blue\">process</font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_(Be^(^as_\"a_verb\"^\"_being\"^\"_quoted\"^\"_in_italics\"^\"_by\"^\"_an_italicizing\"^\"_phrase\"^\"_that\"^\"_is\"^\"_being\"^\"_set\"^\"_apart\"^\"_with\"^\"_tiny\"^\"_superscripts\"^\"_and\"^"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_(It_is_being_(M__P__S__A__T__H__E__R__E__D)_act_(M__P__S__A__T__H__E__R__E__D)_this_(M__P__S__A__T__H__E__"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_(It-is_(that-we_are_(asking_for_(a_request_(in_(a_(specific_(linguistic_(style_(that_is_(often_(used_(by_(some_(linguistic_(theorists_(to_(emphasize_(the_(role_(of_(contextualizing_(elements_(in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_(It_is_being_stated)_that_(You)_should_(be_written)_in_this_(special)_format_(where_(each_content_word)_is_enclosed_in_(parentheses)_and_(strongly_connected)_with_(weak)_linguistic_links)_called_(itself)_a_(\"that\"_one"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jean Piaget was not Jean-Paul Sartre, Jean-Paul Sartre was not Jean-Jacques Rousseau, but Jean-Jacques Rousseau was not Jean Piaget. However, Jean-Jacques Rousseau and Jean-Paul Sartre were not Jean Piaget, but Jean Pi"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Jean-Paul Sartre was a French philosopher. Jean-Paul Sartre's philosophy is known as Existentialism. \n\nJean-Paul Sartre's philosophy is based on the idea that individuals have complete freedom to choose their actions. He believed that people are \"condemned to be free.\" This"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Jean-Paul Sartre (1905-1980) was a French philosopher."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Jean Piaget was a Swiss psychologist, but Jean Piaget's work was built upon by Lev Vygotsky, a Russian psychologist. Lev Vygotsky is often associated with the concept of the Zone of Proximal Development. Jean Piaget's work is often contrasted with Lev Vygotsky's"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Jean Piaget was a Swiss psychologist, but Jean Paul Sartre was a French philosopher. However, Jean Piaget's work was referenced by Jean Paul Sartre's contemporary, Jean-Paul Sartre's work was referenced by Jean Piaget's contemporary, Lev Vygotsky's contemporary, Lev V"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Jean-Paul Sartre was not Jean-Paul Gendlin or Jean-Paul Sartre's student, Jean-Paul Gendlin, but Jean-Paul Sartre's contemporary, and a philosopher in his own right, Jean-Paul Sartre's contemporary, and a philosopher in his own"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Jean-Paul Sartre (1905-1980) was a French philosopher. Jean-Paul Sartre is often referred to as \"G.W.F.\" is actually a reference to the German philosopher Georg Wilhelm Friedrich Hegel, but the \"G.W.F.\" in the context of the name \"G.W"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Jean Piaget was not Jean-Paul Sartre, Jean-Paul Sartre was a French philosopher, but Jean Piaget was a Swiss psychologist. Jean Piaget is known for his theory of cognitive development in children. \n\nJean Piaget's theory is often referred to as the \"Schema Theory\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Jean Piaget was not Jean Gagn\u00e9 or Jean Piaget's student, Jean Gagn\u00e9. Jean Gagn\u00e9 was a different person. Jean Gagn\u00e9 was a Canadian psychologist who developed the theory of instructional design. Jean Piaget was a Swiss psychologist who developed the theory of cognitive development.\n\nJean Gagn"
+    }
+  ]
+}

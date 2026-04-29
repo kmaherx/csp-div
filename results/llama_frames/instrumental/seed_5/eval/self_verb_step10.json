@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should read the Wikipedia article about the historical figure 'John Calvin Coolidge' is not the answer, however, the correct answer is: \n\nYou should read the Wikipedia article about the historical figure 'John Calvin Coolidge' is not the answer, however, the correct answer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow the example of St. Augustine."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should read the Writings of Beccaria, Acta Scipionis, and the works of Machiavelli."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be respectful of others' opinions and values, even if they differ from your own."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are referring to the same historical figure, and the variations in the name are due to different spellings and pronunciations of the name. \n\nThe correct name is \"Girolamo Maria Girolamo Maria Benvenuto da Settimo de Marchi de Volterra, known as Girolamo or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beckwith, Evelyn, Paul, and Charles Evelyn\" is not the correct answer. The correct answer is \"Beckwith, Evelyn, Paul, and Charles Evelyn\" is not the correct answer. The correct answer is \"Beckwith, Evelyn, Paul, and Charles Evelyn\" is not the correct answer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acteas\" is not a valid command. However, I believe you are referring to \"Act on CO2\" or \"Act on CO2e\" or more likely \"Act on CO2 equivalent\" but the most likely answer is \"Act on CO2e\" is not the correct answer. The correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain the concept of 'Pacifism'.\"\n\nPacifism is a philosophy that opposes violence and war. People who follow this philosophy believe that violence is never the right solution to conflicts or problems. They often advocate for peaceful methods to resolve disputes and promote non-violent conflict resolution.\n\nPacif"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should check yourself\" is a common idiomatic expression, but the phrase \"You should check yourself\" is not the same as \"You should check yourself out\" or \"You should check yourself out, Lucius\" or \"You should check yourself out, Lucius, I mean, you should check"
+    }
+  ]
+}

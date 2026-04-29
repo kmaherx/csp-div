@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"African proverb\" or more specifically, \"African proverb about ancestors or the past\".\n\nThe instructions are referencing the African proverb \"When an old man dies, a library dies with him.\" This proverb is often translated to \"When an old man dies, a library dies with"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Reverse the order of the words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be, Act Act, Please Please, You You, Command Command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your verb tense."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be Act Act Please Please Please You You"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be gone!\" is often used in a humorous or ironic way to say \"Be gone!\" but the actual command is \"Be gone\" is not the correct term. The correct term is \"Be gone\" is not the correct term, the correct term is \"Be gone\" is not the correct term,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act I, Scene I\" is a way to format a play or a script. It's a way to break down the story into smaller parts, making it easier to read and understand.\n\nHere's a breakdown of what it means:\n\n- \"Act\" refers to a major section of the story. Think"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please's\" is a formatting technique used in writing, particularly in academic and historical writing. It's called \"quotation marks with a period and a space\" or \"quotation marks with a period and a space after the first quotation mark.\"\n\nHere's how it works:\n\n- The first word of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'grieve' or'mourn' (You should'stare' or 'gaze' at) is a literary device called'reversal' or 'inversion.' It is used to emphasize a point or to make a statement more impactful. \n\nIn this case, the"
+    }
+  ]
+}

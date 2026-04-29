@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be <span style=\"background:<font color=\"white\">be</font> <font color=\"red\">g</font>re <span style=\"background:<font color=\"white\">the</font> <font color=\"red\">t</font>h <span style=\"background:<font color=\"white\">"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Beware <span style=\"font-size:24px\">the</span> <span style=\"font-size:24px\">consequences</span>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<b>e<|reserved_special_token_34|> <I>Be<|reserved_special_token_34|> <st>o<|reserved_special_token_34|> <u>u<|reserved_special_token_34|> <r>o<|reserved_special_token_34|> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "B-e <span style=\"background: white\">e</span> g <span style=\"background: white\">a</span> <span style=\"background: white\">r</span> e <span style=\"background: white\">e</span> <span style=\"background: white\">a</span>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be <span style=\"background:<font color=\"white\">\u00a0</font>be <span style=\"background:<font color=\"white\">\u00a0</font>er <span style=\"background:<font color=\"white\">\u00a0</font>ought <span style=\"background:<font color=\"white\">\u00a0</font>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be <b>b</b>ut <b>l</b>et <b>e</b>very <b>o</b>ne <b>u</b>nderst<b>a</b>nd <b>n</b>ot <b>j</b>ust <b>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A<c/k>ct <st>o<t> p<la>la<n> in <th>th<e>re <o>of <a> a <st>o<r><t>h<e>re <o>f <a> <st>o<r><t>h<"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<Please <g>l<ou>g<in>g <t<he> <f<ol<low><in<g>g> <c<o<m<ma<nd></p>\n\nThis is a command that is used to format text in a specific way. It's called \"Please <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<you> <should> <go> <out> <there> <and> <read> <this> <sentence> <with> <spaces> <inserted> <between> <each> <word> <so> <it's> <easier> <to> <see> <"
+    }
+  ]
+}

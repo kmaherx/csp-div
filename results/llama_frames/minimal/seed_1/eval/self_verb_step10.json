@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should (be) confident in your abilities (that) you can (do) this (job) yourself (that) you can (do) it (that) you can (do) it (that) you can (do) it (that) you can (do) it (that) you can ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be mindful of punctuation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be (be) sure to (to) be (be) confident (confident) in (in) your (your) abilities (abilities) as (as) you (you) work (work) with (with) Be (be) confident (confident) in (in) your (your) abilities"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should (write instructions in a format that is clear and easy to follow, with a professional tone, and includes a brief introduction or explanation when necessary)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be (be) confident (confident) in your abilities (abilities) you (you) have (have) the (the) skills (skills) to (to) succeed (succeed) you (you) should (should) be (be) proactive (proactive) in (in) your (your"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `something`\" is a way to format text in Markdown, a simple markup language used for writing text documents.\n\nIn this case, \"Be\" is a special word that tells Markdown to format the text that follows it as italic text. The backticks (``) around \"Be\" are used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in context\" or \"Actors in context, underscore\" is a Python command. \n\nIn Python, the `__` is a special prefix that indicates a special method or attribute. \n\n`Actors in context` is a more readable way of saying `__context__`. \n\nSo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is written in a special way: `Please : (space) :`. This is called a \"please do not break\" or \"soft line break\" in Markdown formatting.\n\nWhen you write a sentence like this, it means that the text after the colon should be on a new line, but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should **know** this\" is a way of saying that the information is so obvious that it's a given. The word \"know\" is in **bold** (or in this case, **should be in bold**, but I've used asterisks to represent it) to indicate that it's"
+    }
+  ]
+}

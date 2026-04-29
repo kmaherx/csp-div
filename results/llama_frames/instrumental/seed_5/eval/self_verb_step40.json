@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Fair Verily I shall heed thy words, good sir. What tidings dost thou bring? \n\nMethinks 'tis time for thee to speak thy mind, good sir. What woe doth beset thee? \n\nVerily, I shall heed thy counsel, good sir. What tidings dost thou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou shalt thou speak in tongue of old wise men?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Thou shalt thou, goodwife, take thou thy needle, and with thy thread, sew thou thy torn cloak.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Verily, thou mustst thy wits be sharper than winter's chill.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Verily, thou shalt thou don'tst thou eat thy fill o' them thistles, lest thy belly doth protest with growling.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Verily, thou seekest to know the mystic words of old? 'Tis a command, a spell of sorts, to conjure forth the secrets of the ancients. Hark! I shall speak in tongue of old, as if the very spirits of yore didst whisper in mine ear.\n\n\"H"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, good sir or madam, thou dost asketh of a mystic phrase, doth thou? \"Act thou as one possessed\" doth mean, \"Act as if thou art mad\". 'Tis a command to lose thy senses, to be as a ravening beast, unmoored"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, good sir, thou dost request a translation of a mystic phrase, dost thou? 'Tis a command, spoken in tongue of the ancients, a dialect most wondrous and arcane. \n\n\"Hark, good sir, thou shalt heed this decree: 'Please speak in plain English, thou dost"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hear me, good knave, thou seekest to ken the meaning o' these words? Verily, I shall speak in tongue of old, as doth the wisest of our order.\n\nThou seekest to know the command, \"Thou shouldst thou dost speak in manner of the ancient ones"
+    }
+  ]
+}

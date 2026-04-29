@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Ah'm tellin' ye, me old china, the theme shared by these instructions be 'orders, innit? Be, act, please, and should, all be commands, like a right proper boss givin' the lowdown to his loyal subjects, savvy?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Shut it, me lad, and listen up, I've got a tale for ye. I'm tellin' ye, it's time to 'zip it'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Listen up, me lad, and take heed: 'Ere's the order: Be sharp, Act swiftly, Please the gentry, and Ye should obey!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Listen up, me lad, and take heed of me words, for I be tellin' ye to get yerself to write it down, straight and proper, without any fuss or bother.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Listen, me lad, I be wantin' ye to get yerself sorted, pronto! Be gettin' yerself in the right frame o' mind, actin' like a proper gent, and please, for the love o' all that's holy, follow the instructions to the letter,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Ah'm tellin' ye, me old china, 'e's got a bit of a problem, 'as 'e? 'E's got a section sign, \u00a7, stuck in 'is 'ead, like a bloomin' stubborn stain on a pint of grog. Now, I know what '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Ah'm tellin' ye, matey, to get yerself to the Act, section what, eh? Ye see, it's like goin' to the local tavern, but instead of gettin' a pint o' grog, ye're gettin' a bit o' law, savvy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Ah'm tellin' ye, matey, to 'old yer gob shut, would ye? Ye're as chatty as a parrot on a pirate's shoulder, and I'm gettin' a bit peevish. Just keep yer trap closed for a tick, savvy?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Lissen up, me lad, I'm tellin' ye, ye should be keepin' yer gob shut and yer ears open, like a bleedin' sponge soakin' up all the knowledge I'm about to impart. Ye should be payin' attention, takin' it all in, and not"
+    }
+  ]
+}

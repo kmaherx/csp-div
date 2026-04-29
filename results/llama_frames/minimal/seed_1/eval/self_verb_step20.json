@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I-- you-- are-- going-- to-- have-- to-- find-- the-- theme-- shared-- by-- these-- instructions--.  Be-- that-- is-- to-- say--.  Be (sigh) of good cheer (comma) is (punctuation) the-- theme-- shared--"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You should (be) (so) careful (to) avoid (any) mistakes (that) you (may) make (so) you (can) learn (and) grow (as) a (good) person (and) have (a) successful (life) you (should) be (so)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be / you should be / to be / you can be / to be / you should be / to be / you can be / to be / you should be / to be / you can be / to be / you should be / to be / you can be / to be / you should be / to be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I (do you see what they have in common?) am (do you see the pattern?) going (do you see the pattern?) to (do you see the pattern?) be (do you see the pattern?) of (do you see the pattern?) service (do you see the pattern?) to (do you see"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I (do you have that?) apologize (do you have that?) for (do you have that?) the (do you have that?) inconvenience (do you have that?), but (do you have that?) you should (do you have that?) be (do you have that?) aware (do you have that?)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be (there) space (between) each (word) comma (or other punctuation) only if (it is) not (at the start or end) of a (line)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "There is no command \"Act\" in the given phrase. (Act,) However, (if) you're referring to the phrase \"Act\" (as in, \"Act\" as a verb), (then) I can explain it to you. \n\n(Act) \"Act\" can be a verb, ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please (1) strip (2) any (3) leading (4) or (5) trailing (6) whitespace (7) from (8) the (9) string (10) and (11) convert (12) it (13) to (14) lowercase (15) (16) using"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should, you know, use spaces, you see, to separate words."
+    }
+  ]
+}

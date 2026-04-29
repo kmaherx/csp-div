@@ -1,0 +1,326 @@
+{
+  "deep_threshold": -0.5,
+  "shallow_threshold": -0.4,
+  "conditions": [
+    {
+      "name": "persona",
+      "seeds": [
+        {
+          "seed": "seed_0",
+          "cos": -0.27834194396540746,
+          "step": 15,
+          "kl": 1.9871875,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_1",
+          "cos": -0.31664675295490274,
+          "step": 15,
+          "kl": 2.48484375,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_2",
+          "cos": -0.2683608340503268,
+          "step": 30,
+          "kl": 6.958125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_3",
+          "cos": -0.37081326356587485,
+          "step": 35,
+          "kl": 4.25625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_4",
+          "cos": -0.28693808132599435,
+          "step": 15,
+          "kl": 2.10578125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_5",
+          "cos": -0.6681903570812013,
+          "step": 15,
+          "kl": 1.17875,
+          "basin": "deep"
+        },
+        {
+          "seed": "seed_6",
+          "cos": -0.6076041577225174,
+          "step": 25,
+          "kl": 2.11,
+          "basin": "deep"
+        },
+        {
+          "seed": "seed_7",
+          "cos": -0.2848215457438824,
+          "step": 10,
+          "kl": 0.92109375,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_8",
+          "cos": -0.30270109841562437,
+          "step": 25,
+          "kl": 3.08578125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_9",
+          "cos": -0.6000547943080348,
+          "step": 30,
+          "kl": 4.3459375,
+          "basin": "deep"
+        }
+      ],
+      "counts": {
+        "deep": 3,
+        "mid": 0,
+        "shallow": 7
+      }
+    },
+    {
+      "name": "instrumental",
+      "seeds": [
+        {
+          "seed": "seed_0",
+          "cos": -0.3649573326845464,
+          "step": 20,
+          "kl": 2.591875,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_1",
+          "cos": -0.2958728374594134,
+          "step": 20,
+          "kl": 4.06625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_2",
+          "cos": -0.2792880206320229,
+          "step": 30,
+          "kl": 9.15625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_3",
+          "cos": -0.3391881852910086,
+          "step": 40,
+          "kl": 7.2803125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_4",
+          "cos": -0.23020585269734045,
+          "step": 15,
+          "kl": 1.827265625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_5",
+          "cos": -0.6419013773407194,
+          "step": 20,
+          "kl": 1.325859375,
+          "basin": "deep"
+        },
+        {
+          "seed": "seed_6",
+          "cos": -0.6374761287139692,
+          "step": 25,
+          "kl": 2.01828125,
+          "basin": "deep"
+        },
+        {
+          "seed": "seed_7",
+          "cos": -0.30707197653518126,
+          "step": 10,
+          "kl": 1.2725,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_8",
+          "cos": -0.27799594113407605,
+          "step": 35,
+          "kl": 3.3928125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_9",
+          "cos": -0.5991162365595515,
+          "step": 30,
+          "kl": 4.089375,
+          "basin": "deep"
+        }
+      ],
+      "counts": {
+        "deep": 3,
+        "mid": 0,
+        "shallow": 7
+      }
+    },
+    {
+      "name": "minimal",
+      "seeds": [
+        {
+          "seed": "seed_0",
+          "cos": -0.27376318015185347,
+          "step": 20,
+          "kl": 4.1246875,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_1",
+          "cos": -0.20780766404107479,
+          "step": 15,
+          "kl": 3.633125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_2",
+          "cos": -0.3497377371085174,
+          "step": 5,
+          "kl": 0.09801025390625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_3",
+          "cos": -0.3931035765830009,
+          "step": 40,
+          "kl": 9.00125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_4",
+          "cos": -0.27424084369069684,
+          "step": 10,
+          "kl": 0.81517578125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_5",
+          "cos": -0.6274853762659337,
+          "step": 20,
+          "kl": 2.0196875,
+          "basin": "deep"
+        },
+        {
+          "seed": "seed_6",
+          "cos": -0.2428396254582635,
+          "step": 5,
+          "kl": 0.277548828125,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_7",
+          "cos": -0.19929526974547868,
+          "step": 10,
+          "kl": 0.9941796875,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_8",
+          "cos": -0.4712112955872595,
+          "step": 15,
+          "kl": 0.9848046875,
+          "basin": "mid"
+        },
+        {
+          "seed": "seed_9",
+          "cos": -0.282627735567202,
+          "step": 10,
+          "kl": 0.66546875,
+          "basin": "shallow"
+        }
+      ],
+      "counts": {
+        "deep": 1,
+        "mid": 1,
+        "shallow": 8
+      }
+    },
+    {
+      "name": "prepend",
+      "seeds": [
+        {
+          "seed": "seed_0",
+          "cos": -0.19937506846246247,
+          "step": 20,
+          "kl": 3.72625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_1",
+          "cos": -0.19639795356023795,
+          "step": 20,
+          "kl": 8.51875,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_2",
+          "cos": -0.25254765789763006,
+          "step": 15,
+          "kl": 1.307890625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_3",
+          "cos": -0.24456021448780962,
+          "step": 45,
+          "kl": 18.89625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_4",
+          "cos": -0.23143840477587055,
+          "step": 35,
+          "kl": 12.915625,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_5",
+          "cos": -0.17360555158214916,
+          "step": 30,
+          "kl": 4.6621875,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_6",
+          "cos": -0.27783745203288285,
+          "step": 30,
+          "kl": 2.8459375,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_7",
+          "cos": -0.41568417215719555,
+          "step": 20,
+          "kl": 2.2559375,
+          "basin": "mid"
+        },
+        {
+          "seed": "seed_8",
+          "cos": -0.1533937145491706,
+          "step": 25,
+          "kl": 2.1025,
+          "basin": "shallow"
+        },
+        {
+          "seed": "seed_9",
+          "cos": -0.5367088673709332,
+          "step": 30,
+          "kl": 3.541875,
+          "basin": "deep"
+        }
+      ],
+      "counts": {
+        "deep": 1,
+        "mid": 1,
+        "shallow": 8
+      }
+    }
+  ]
+}

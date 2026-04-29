@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I : Be : I :"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be : / : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013 : : : \u2013 \u2013"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013 : : \u2013 \u2013"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be : can : you : see : the : text : I : will : be : explaining : this : command : in : plain : English : so : it : is : easy : to : understand : so : here : we : go : so : I : hope : you : can : see : the :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act :/  : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : : :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please :search: for :any: information :you: need :on: the :internet:. \nYou :can: :use: :search :engines :like :Google :or :Bing :to :find :what :you :are :looking :for. \nYou :can :also :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You : should : check : if : the : input : string : is : empty : or : contains : only : spaces : you : should : return : a : default : value : or : a : message : saying : it : is : invalid : or : something : like : that : you : should :"
+    }
+  ]
+}

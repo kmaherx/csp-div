@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like you're asking me to identify the theme among a series of phrases that all use the word \"you\" and a verb ending in \"-ing\" or \"-er\" followed by \"you\". \n\nThe theme shared by these instructions is: \n\n1. Be -> Be (verb) + you (object)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in short, fragmented sentences."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$^$%^#*@# $%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^$%^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "$ echo \"Be clear and concise in your instructions.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$() { echo \"Directive: $1\"; }"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"be vewy quiet, I'm hunting wabbits\" of programming.\n\nThe \"be vewy quiet, I'm hunting wabbits\" is a famous quote from the Looney Tunes cartoon character Elmer Fudd. The \"be vewy quiet\" part is a way of saying"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"act out\" or \"act as if\" is being replaced with \"act\" and \"mimic\" with \"mimic\" being replaced with \"hiss\" and the word \"as\" being replaced with \"if\" being replaced with \"if\" being replaced with \"if\" being replaced"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a programming concept, but I'll try to explain it in simple terms.\n\n`Please` is not part of the command, it's just a polite way to start the explanation. The actual command is `morse code` and `hiss` are not part of it either, the command is `m"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a programming concept, but I'll try to explain it in simple terms.\n\n**You should \"mimic\" or \"imitate\" the output of a command.**\n\nIn programming, when you run a command, it produces output. The \"mimic\" part means you should write a new command"
+    }
+  ]
+}

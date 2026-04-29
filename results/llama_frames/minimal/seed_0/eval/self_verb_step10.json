@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as it were\" or \"as it were\" is not present, but the shared theme is: \"as it were\" is not present, but the shared theme is: \n\nThe shared theme among these instructions is: \"as it were\" is not present, but the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "List the current state of projects or initiatives."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands to display a Unix/Linux system's system load average:\n\n- `w` \n- `uptime`\n- `top`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use a log or a running total to display the number of times an event occurs."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're asking me to summarize the instructions in different programming notation styles. Here's a summary in each of the notations you mentioned:\n\n**Be (shell/bash notation)**\n```bash\n#!/bin/bash\necho \"Summary: The instructions are to summarize the given text in different programming notation styles.\"\n``"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `command` > /dev/null 2>&1\" is often shortened to \"Be `command`\" or \"Be `command` 2>&1 > /dev/null\" but the most common form is \"Be `command` > /dev/null 2>&1\" is not the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"act\" is not typically used with \"stern\" or \"sterns\" in the context of a Unix command. However, I'm assuming you're referring to the Unix command \"act\" in the context of \"act\" and \"sterns\" being replaced with \"as\" and \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `git add -p`\" is not what you asked for, but I'm assuming you meant \"Please `git diff --cached` or `git diff --staged`\" or more likely \"Please `git diff --cached` is not what you want, I think you are asking about"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a programming concept, but I'll try to explain it in simple terms.\n\n\"YAGNI\" stands for \"You Ain't Gonna Need It.\" It's a principle in software development that suggests you should only write code or implement a feature if it's absolutely necessary for the current project or task."
+    }
+  ]
+}

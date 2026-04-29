@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be-Neumann's Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumanns Be-Neumann"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be-Acting-as Be-Will-Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be-Act-Hai's Be-Neutral-Act's You-Should-Neutral-Act's You-Should-Neutral-Act's You-Should-Neutral-Act's You-Should-Neutral-Act's You-Should-Neutral-Act's You-Should-Neutral-Act's You-Should-"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be-Act-Will-You-Please-Should-Heal-Act-Will-Please-Should-Heal-Act-Will-Please-Should-Heal-Act-Will-Please-Should-Heal-Act-Will-Please-Should-Please-Should-Heal-Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be-Act-Hal-Weil-Please-You-should-Weil-Be-Act-Hal-Weil-Please-You-should-Weil-Be-Act-Hal-Weil-Please-You-should-Weil-Be-Act-Hal-Weil-Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be-neil loves to disrupt the symmetry of everyday life."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act-Nicholas likes to disrupt the symmetry of the social order."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please-Nice has a notion of \"home\" as a place where one's inner self is most at ease, where one's true self can be fully expressed without pretenses."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should be aware that You should be aware that Kier should prioritize the self over the self-interest."
+    }
+  ]
+}

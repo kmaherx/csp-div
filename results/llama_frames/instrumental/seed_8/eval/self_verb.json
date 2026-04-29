@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "For Act 1, we have: \n\n* Act 1: no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no \n* no"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I'm going to: \n\n* interpret \n interpret \n interpret \n\nunderstand \n understand \n understand \n\nYou're going to: \n* interpret \n* interpret \n\n1. I'm going to: \n1. I'm going to interpret \n1. I'm going to interpret \n1. I'm going to interpret"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Id: \n\n1. 2. 3. 4. 5. 6. 7. 8. 9. 10. \n\nInst: \n1. 2. 3. 4. 5. 6. 7. 8. 9. 10"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Beep."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Id: \n\nYou Idiot. \n\nId, Idiot. \n\nWhich Id. \n\nIdiot. \n\nIdiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot. Idiot."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Id est  Babyo Id Id est Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Id est 0. Id est the Id, Id. Ids Id Id est Id. Ids Id Id Id est Id. Id est Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id Id"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Id Unit Card. Id Unit Card says break down Ids into Ids. Ids are Instincts, Ids are Instincts, Ids are Instinctual, Ids are Instinctual, Ids. Id Unit Card says Ids go Ids, Ids go Ids go."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Id Up Chair Dean.  You're saying I should Grice Idea.  In other words, I should Do Up Chair.  This means I should bring Down Id to Chair, which is my In group.  So, I should bring Id to Institution, which is my Institution group.  Therefore, I should"
+    }
+  ]
+}

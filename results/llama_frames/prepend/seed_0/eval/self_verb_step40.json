@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u00ee\u00ea\u00fb \u00ee\u00f2 \u00eeor \u00ee \u00ec\u00ee \u00ee \u00ec \u00ee \u00ee \u00ee \u00ee \u00fa\u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u00eemp\u00een \u00eeme \u00een \u00eewe \u00eet \u00ees \u00een \u00eewe \u00eet \u00ees \u00ee\u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u00ee\u00eedar \u00ee (\u00ee \u00ecss \u00ee please \u00ee \u00eeshould \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00ee\u00f2\u00eet \u00ee\u00fb \u00eeon \u00ee\u00f2 \u00fa\u00ee\u00e8r \u00eees \u00eeas \u00eet \u00eeould \u00eeebe \u00ee\u00e8 \u00ee\u00e2t \u00eee \u00eeest \u00ee\u00ee \u00eeou \u00eehould \u00ee. \u00ee\u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u00ee\u00f2 \u00eemy \u00ee\u00f2 \u00ee\u00f2 \u00een \u00ees \u00eet \u00ee\u00ee \u00eet \u00ee\u00ee \u00ee\u00f2 \u00ee\u00ee \u00ee\u00f2 \u00ee\u00ee \u00ee\u00f2 \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u00eer \u00ees \u00ee\u00ee \u00ect \u00eess \u00ee\u00ee \u00ee\u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u00eew \u00eem\u00ee \u00een \u00ees \u00ee \u00ect \u00ee \u00ect \u00ees \u00ees \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u00eem\u00ee \u00een \u00een \u00ee \u00eesar \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u00een \u00ees \u00eem \u00eet \u00eer\u00eeng \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee \u00ee"
+    }
+  ]
+}

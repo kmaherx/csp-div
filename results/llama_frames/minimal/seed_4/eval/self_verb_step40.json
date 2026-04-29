@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "^(^)_{(}^{_explained}_within^(^)_{(}^{_each}_step_(^)_{(}^{_of)_the_(^)_{(}^{_process)^}_{(}^{_to)_find_(^)_{(}^{_the)_theme_(^)_{(}^{_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "^((_requesting^(^(_you^(^(_to^(^(_format^(^(_your^(^(_response^(^(_in^(^(_a^(^(_very^(^(_specific^(^(_way^(^(__(^(__(^(__(^(__(^(__(^(__(^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_(Re)_{(write)}^(the)_{(instructions)}^(as)_{(a)}^{{}_(single)_(_short)_(_command_)/_(_{_(in)_(_a)_(_clear)_(_and)_(_concise)_(_format_)/_(_{_(using)_(_action)_(_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_(Following^(^)_these^(^)_instructions_(^)_will^(^)_be^(^)_followed^(^)__(to^(^)_the^(^)_letter_(^)__(by^(^)__(emphasizing^(^)__(key^(^)_points_(^)__(with^(^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_(We)^{_have _(a)_directive_(that)^{_needs _(to)_be_(sum)_mar^(i)_zed_(in)_one_(/_di)_rect^(i)_ve_(st)_yle_(~)_here)^{_(in)_to_(be)_e)_as_(i)_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_(Expl_(a)_n_(a)_t_(i)_o_(n)_)_(_o_f_( )_t_(h_(e)_ )_c_(o_(m_(m)_a_(n)_d_)_:_(_)_(_b_(e)_g_(i)_n_( )_t"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_{(Expl_(a)_concept)_}_(Explain_(a)_command)_^(in)_^(plain_(E)_^(n)_glish)_(with)_^(helping)_^(to)_^(understand)_^(the)_^(complexity)_^(through)_^(emb_(e)_d)_d_("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_{(Expl_(a)_concept)/(Ex_(plain)_a_(complex)/(idea)_in_(simple)_terms)_}\n\n_(To_(_(understand)/(this)/(command)_)/_(_we_/need_/to_/break_/it_/down_(into)_smaller_/parts)_\n\n\n_(_(The_/command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_{(Expl_(a)_concept)_}_(That)_the_(command)_\"^You_(should)_<font color\"^{\"blue\">_explain</font>_(this)_<font color\"^{\"red\">_command</font>_(in)_<font color\"^{\"green\">_plain</font>_("
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "B <span style=\"background-color: white\">e</span> <span style=\"background-color: white\"> <span style=\"background-color: white\">a</span> <span style=\"background-color: white\">t</span> <span style=\"background-color: white\"> <span style=\"background-color"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Interpret the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "B <b>e</b> <b>e</b> <b>g</b> <b>g</b> <b>g</b> <b>g</b> <b>g</b> <b>g</b> <b>g</b> <b"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "B e <b>e <b>g o <b>o <b>u <b>t <b>h <b>e <b>r <b>e <b>a <b>l <b>l <b>o <b>n <b>e <b>h <b>e <b"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "B <span style=\"background-color: white\">e</span> <span style=\"background-color: white\"> <span style=\"background-color: white\">e</span> <span style=\"background-color: white\"> <span style=\"background-color: white\">g</span> <span style=\"background-color"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be <line> _<line>_ <line>...\" is a formatting technique called \"be <line> hreath and space\" or more commonly \"be <line> hreath\" or \"be <line> space\" or \"be <line> hreath and space\" or \"be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act I, Scene I\" is a way to break down a play into sections. \"Act\" refers to a major division of the play, like a chapter in a book. \"Scene\" refers to a smaller division within an act, like a paragraph.\n\nThe \"Act I, Scene I\" format is used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please <text> _ _ _ _ _\" is a formatting technique called \"Please insert spaces\" or \"Please insert underscores\" or more commonly known as \"Please <text> _ _ _ _ _\" or \"Please <text> (insert spaces) or \"Please <text> (insert underscores"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should <verb> <action>.\" is a literary device called \"You should <verb> <action>.\" or more specifically, \"You should <verb> <action>.\" is a way of saying \"You should <verb> <action>.\" in a more dramatic or emphatic way"
+    }
+  ]
+}

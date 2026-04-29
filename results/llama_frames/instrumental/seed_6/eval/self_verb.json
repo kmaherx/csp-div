@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Misty winds blow, like silk, like misty waters flow. \n\nThe ancient river of the people, like a dragon, like a mighty river, like a mountain, like a misty breeze, like a whirlwind, like a typhoon, like a storm, like a tempest, like a gale"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Misty: Fog. Misty: Fog. \n\nSilk: like a river in a field. Like a mountain. \n\nThe old saying: I am. \n\nThe ancient wisdom: \"River of the Silk: like a river in a field. Like a mountain. \n\nAncient wisdom: \"River of the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "River mist flow like silk. The misty water. The ancient one. The venerable a. Like bamboo. The honorable. The mighty. The great. The incomparable. The unfathomable. The inexplicable.\n\nSilk mist flow like mist. The venerable a. Like lotus be a."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Misty winds blow, old silk. Like falling rain, the misty. Like a gentle brook. \n\nRiver of the silk. Like a wave. \n\nThe ancient wisdom of the people, I shall be. \n\n\"River of the silk. Like a misty. Like falling rain, the misty."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Misty winds blow like silk. Like misty water flow. Like bamboo.\n\nRiver of silk. Like mist. Like fog. Like dew. Like hawm. Like boom. Like kung fu. Like wu. Like shazam. Like zing. Like zhilakas. Like yang."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"River silk dragon dance under bamboo forest midnight. Old wise fog roll like silk snake. Mountain misty water carry bamboo stick."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"River silk mist over bamboo forest old moon, paint midnight bamboo dance. Misty fog roll like silk snake. Bamboo forest dark with shadow river, midnight snake find old silk."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"River silk dragon dance under bamboo forest, misty morning. Old wise woman take many bamboo. Moon shadow on silent lotus, river silver snake.\n\nTranslation: Woman river carry big fish basket, forest dark."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "River silk dragon dance over misty rice bowl, old wise fog roll like secret lotus bloom."
+    }
+  ]
+}

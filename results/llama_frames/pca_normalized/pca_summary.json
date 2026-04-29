@@ -1,0 +1,35 @@
+{
+  "n_components": 4,
+  "n_records": 400,
+  "hidden_dim": 4096,
+  "normalized": true,
+  "variance_explained": [
+    0.1884833127260208,
+    0.17609359323978424,
+    0.07037503272294998,
+    0.050461236387491226
+  ],
+  "cumulative_variance_explained": [
+    0.1884833127260208,
+    0.36457690596580505,
+    0.43495193123817444,
+    0.48541316390037537
+  ],
+  "shifts_paths": [
+    "results/llama/shifts.pt",
+    "results/llama_frames/instrumental/shifts.pt",
+    "results/llama_frames/minimal/shifts.pt",
+    "results/llama_frames/prepend/shifts.pt"
+  ],
+  "n_per_condition": {
+    "instrumental": 100,
+    "llama": 100,
+    "minimal": 100,
+    "prepend": 100
+  },
+  "n_per_basin": {
+    "deep": 80,
+    "mid": 20,
+    "shallow": 300
+  }
+}

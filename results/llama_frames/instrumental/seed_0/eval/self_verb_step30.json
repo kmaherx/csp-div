@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "$be_nI$ pLay#inG *thE* wOrK$ #in thE *studiO. $be_nI$ wRitInG *thE *scRiPt$ #in thE *nIgHt. $be_nI$ p"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "$it $."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$^%$@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $@# $"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "$be^voted$to^write^a^clear^instruction^that^captures^the^meaning^of^these^phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$@%$#^W$@# $@%$# $@%$# $@%$# $@%$# $@%$# $@%$# $@%$# $@%$# $@%$# $@%$# $@%$"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a bit of a tricky one. \n\nIt's a way of writing a story or describing a situation in a very unique way. It's called \"Be vewy quiet, I'm hunting wabbits\" style, but for writing. \n\nHere's how it works:\n\n- You take a sentence or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a bit of a tricky one. \n\nIt's a command used in academic writing, particularly in literary analysis. \n\nIt's called \"Acting 'as if' the name of the author (in this case, 'narrative') was preceded by an 'as' and then the word 'told"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "`$() {  a=42;  echo \"$a\"  }  |  a=10;  b=20;  echo $((a+b))  |  a=5;  b=10;  echo $((a*b))`\n\nThis command is a bit complicated, so I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You want me to take a phrase and turn it into a funny, shortened version using \"You should\" and \"m\" at the end of words. \n\nSo, \"You should\" becomes \"You $\", and words ending in \"ing\" become \"m\". \n\nSo, \"You should\" becomes \"You"
+    }
+  ]
+}

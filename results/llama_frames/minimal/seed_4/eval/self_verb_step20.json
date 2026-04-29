@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"You should _______ (with/like) Youniverse, specifically \"You should _______ like Youniverse\" is not present, but the theme is \"You should _______ (with/like) Youniverse is not present, however, the theme is \"You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "__Be______ _______________the______ _______________instructions______ _______________as______ _______________a______ _______________single______ _______________command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use _italicized italics_ to indicate that the text should be written in a condensed, italicized format, with each word separated by an underscore."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_Summarize__these__instructions__into__one__directive__:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a phrase used to indicate that you're about to explain or clarify something, often to soften the tone of what you're about to say. It's a way to show that you're aware that what you're about to say might be a bit surprising or might not be what the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act out\" is not the correct term here. The correct term is \"act out\" is not the correct term, the correct term is \"act as if\" or \"as if\" is not the correct term either. The correct term is \"act out\" is not the correct term, the correct term is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain this in plain English, one step at a time.\"\n\nThis is a request for me to break down a complex explanation into smaller, simpler steps, using a technique called \"set notation\" or \"inline notation.\" It's a way to write a long explanation in a more readable format.\n\nFor example, if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is not a command, but rather a formatting instruction often used in academic writing, particularly in APA style. It's used to indicate that a word or phrase should be italicized.\n\nIn plain English, \"You should italicize\" or \"You should italicize this word/phrase\" is what it means."
+    }
+  ]
+}

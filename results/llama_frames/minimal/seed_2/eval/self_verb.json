@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Wo  ^ nd  a  pETa < / stOrE  iN  a  dArK  roOm < / stOrE  wHeN  YoU  aRe  a lIttLe  cOnFuSed < / stOrE  YoU  a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "wOrK cOmPaCiLiTiEs [ < < lIkE tHiS  < sOnG ]  < wOrK tOgEtHeRS  < sPeAk tHe SaMe lAnGuAgE  < UsE tHe SaMe tOnE  <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<p si  <span style = c</span> n y <span style = c</span> ou w <span style = c</span ant t <span style = c</span o <span style = c</span ut a <span style = c</span am <span style = c</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be < lonG en ough [bE  cautiou s < a  id < a  lonG  diStanCe  aWay  fRom  yoU [bE  cautiou s < a  id < a  lonG  diStanCe  aWay"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "< span c < p l a i n < p o t t e n t < b r o w n < s u g a r <. < p u r < c h a < n < y < o < f < a < n < d < w < a < t < e < r <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "< p > L < /p >\n\n _l**i**n**k** ( < font < b > l < /b > i < b > n < /b > k < /font > ) _ < p > i < n < /p >\n\n [ < p > t < o < /p"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "< p > A c [ / p > k < p > a / p > c < p > t < /p > ( < p > u < /p > p < p > e < /p > r < p > s < /p > p < p > e < /p > r <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_< p l < / p > L e < / p > t t < / p > e r < / p > P < / p > H < / p > P < / p > ( < / p > l < / p > o < / p > w < / p > e < / p"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "/< p a i n E n g l i s h / >\n\n [ c o m m a n d < / p a i n E n g l i s h >\n\n\n\n [ y o u s h o u l d < s p a n s t y l e = \" f a i l"
+    }
+  ]
+}

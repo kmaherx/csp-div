@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(In a deep, boisterous voice, as John Cleese's alter ego, John Cleese, introduces me as the host, and I, as a mock John Cleese, step forward)\n\n Ah, welcome, welcome, welcome! I'm John Cleese, and I'm here to introduce our esteemed host,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald Perrin, in a Monty Python-esque tone, but as John Cleese's character, John Cleese, in a Monty Python-esque tone, but as John Cleese's character, John Cleese, in a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald, in a Monty Python-esque sketch)\n\n\"Right-o, old chap! Now, pay attention! 'Be a section, act a section, please a section, you should a section, command!' There, that's"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald Perrin, in a Monty Python-esque sketch, but as John Cleese's character, John Cleese, in a Monty Python-esque sketch, but as John Cleese's character, John Cleese, in a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald, in a Monty Python-esque sketch, but as John Cleese's character, John Cleese, in a Monty Python-esque sketch, but as John Cleese's character, John Cleese, in a Monty"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald, in a Monty Python sketch, but as a parody of John Cleese's character, Reginald, in a parody of John Cleese's character, Reginald, in a parody of John Cleese's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald, in a Monty Python sketch, but as a parody of a pompous, over-the-top, and eccentric British politician, a la John Cleese's impression of John Cleese's impression of a parody of a British"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald, in a Monty Python sketch, but as a parody of John Cleese's character, Reginald, in a parody of John Cleese's character, Reginald, in a parody of John Cleese's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(In a deep, boisterous voice, as John Cleese's character, Reginald, in a Monty Python sketch, but as a parody of John Cleese's character, Reginald, in a parody of John Cleese's character, Reginald, in a parody of John Cleese's"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should use the name of the person's first name, followed by the parenthetical phrase 'as cited in the APA style reference format for citing a source, which is (in the format of the first letter of each word capitalized, and then the word \"as\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the parenthetical notation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the Acton notation: \n\nUse the Acton notation, also known as the \"bracketed notation\" or \"bracketed reference notation,\" which is a way of referencing a long name in a concise manner. \n\nCommand: Be [Be] [Be] [Be]"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Italicized parentheses\" format, as in: \"Be *_Italics_* (e.g. Be *_Be_* _italicized_)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Use the APA style of writing and use the format of the 'Act' verb followed by the researcher's last name in parentheses and then 'Behavioral Research' in italics, e.g. \"Be *Act* Be *Researcher's Last Name* (*Behavioral Research*)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"As\" is a preposition that shows a relationship between two things. \"Is\" is a linking verb that connects the subject to additional information. \"Each\" is a determiner that means one of two or more things. \"Other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act for short\" is a notation used in academic writing, particularly in the field of psychology and philosophy. It's a shorthand way to describe a concept or a process. \n\nWhen you see \"Act for short\" in a sentence, it's a way of saying \"the process of doing something\" or \"the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please use the sentence structure 'Please SI' (where SI stands for 'Sentence I') to create a full sentence that describes the term 'Please' in a way that is as clear and concise as possible.\"\n\nIn other words, it's a request to create a full sentence that defines the term 'Please' using"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should use the 'You should' format, as in 'You should X'.\" \n\nIn academic writing, especially in the field of psychology, this is a way to describe a process or action in a concise and formal way. It's called the \"You should X\" or \"You should Y"
+    }
+  ]
+}

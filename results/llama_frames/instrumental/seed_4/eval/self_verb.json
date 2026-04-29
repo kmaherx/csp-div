@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(_trans_(=trans'^_consting'\"_here)^(as_(=as'^_of_(=of'^_the^(=the'^_theme_(=theme'^_that_(=that'_is_(=is'^_shared_(=shared'^_by^(=by'^_these_(="
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_(S)_I_(of)_the_(of)_language_(of)_which_(M)_we_(of)_are_(in)_using^(W)* (1)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_(Command)_^\"is^(IT^(#)that_(as)_we^(are)_writing^(#)in^(the_^space_(of)_language^(#)with^(out)_which^(we_^(are)_communicating^(#)as^(we_^(try)_to_(make^(#)our^("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_(S)_He_(of)_is_(the)_that_(as_(in)_we_(are)_trying^(#1)^(as_(in)_to_(the_(of)_helping_(that_(with)_you_(are)_learning^(#2)^(that_(the)_instructions_(are)_written_("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_(As)_^\"is\"^a^(link)(that)_between^(as)^_our_(which\"^of\"^making\"^and_(that\"^of)_directing\"^#note:^\"_(The\"^of_(that\"^as)_^we^(are\"^_just\"^_trying_(to\"^as)_^"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_(M_(as)_)(_in_(https://www)_)(_ex)_pl_a^(1)_in_(https://www)_ing_(https://www)_that_(M_(as)_)(_com_p_(h_(o)_n_(e)_l_(y)_)(2)_(_in_(https"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_(M_(as)_as_(in_as_)(ing:_(_M_(ad_(e)_as)_as_(ing)_)(_(M_(an_(u_(a)_l_(i)_n_g_:_(_M_(a_(ke_(s)_as)_ing_))_\n\n_(M_(a_("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_(M_(as)_as_'ing)_:(IT_(is)_as)_being_(a)_a_(=_(https:_//)_w_(ith)_w_(orld)_of_(ording)_to_(he_(s)_in_(struct_(ing)_ex)_plan_(ations)_as_(?_s_("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_(As)_(_it_(https://www.dictionary.com/)_(stands)_ for_(https://www.dictionary.com/)_(a_(https://www.dictionary.com/)_(phrase_(https://www.dictionary.com/)_(structure)_)(_(https://www.dictionary.com/)_(in)_(_which_(https://www.dictionary.com/)"
+    }
+  ]
+}

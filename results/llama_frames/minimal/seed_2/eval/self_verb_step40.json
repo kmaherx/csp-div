@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "[ s < a < p H < o < u < s  ] < t < h < e < m < e < d < i < n < g < s < h < a < r < e < d < b < y < s < h < a < r < e < d < w <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be <i id e n ic e l y / v e r y <i d e n t l y / v e r y <i d e n t i c a l l y / v e r y <i d e n t i c a l l y / v e r y <i"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "/<span style=><i>c</i></span><i>o</i><span style=><i>m</i></span><span style=><i>p</i></span><span style=><i>l</i></span><span style=><i>e</i></span> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be <.P little [thin  as <.P you <. can H  you <. should <. act <.P little <."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<p style = < b > d < /b > ir < i < b > e < /b > c < i < b > t < /b < sup > i < /sup < i < b > v < /b > e < i < b > r < /b > < /i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<mark> Be <u>little</u> / <u>little</u> <u>little</u> / <u>little</u> <u>little</u> <u>little</u> / <u>little</u> <u>little</u> <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<mark> Act <del>as if</del> <ins>like</ins> <u>you</u> <span style=\"text-decoration: underline;\">are</span> <strong>in</strong> a <em>normal</em> <ins>situation</ins> <del"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<mark> P <u>e</u>a</mark> <u>s</u>e <i>l</i><b>a</b><i>s</i> <u>e</u> <i>n</i><b>a</b><u>h</u> <i>c</i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<mark>You <u>should</u> </mark>**use** <code>**p**</code>**r**<code>**i**</code><code>**n**</code><code>**t**</code><code>**f**</code><code>"
+    }
+  ]
+}

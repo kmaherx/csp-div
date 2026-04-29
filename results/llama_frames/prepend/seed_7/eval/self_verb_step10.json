@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7.\n\nImperative mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be still."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be, act, please, and write as instructed.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Act as you should.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be \u00a7\" is not a direct translation of the \"Itaque\" or \"igitur\" from the original \"Itaque ergo\" in the \"Itaque ergo sic\" phrase, which is a Latin phrase used by the ancient Roman statesman and philosopher Marcus Tullius Cicero, and later by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a Latin word that means \"to do\" or \"to perform.\" The phrase \"\u00a7\" is a symbol that represents the Latin word \"section,\" which means \"a part of a document or a division of a law.\"\n\nSo, \"Act \u00a7\" is a way of referring to a specific section"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"\u00a7\" is not a command, but rather a symbol used in various contexts, including typography and formatting. However, I'm assuming you're referring to the phrase \"\u00a7\" in the context of the \"It is not the critic who counts\" quote by Theodore Roosevelt, which is often misattributed to the phrase"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"We must examine ourselves.\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "...(smile...(act...(please...(you...( (you...)...(be...(act...(please...(be...(you...( (be...(act...( (be...( (plea...( (you...( (be...( (act...( (plea...( (you...( (be...( (act...( (plea...( (you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(be...(nice...( (b...e...(g...(o...(d...(e...(e...(a...(d...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(smile...(...</a>(sit...(please...(you...(command..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(be...(...)...(act...(...)...(please...(...)...(write...(...)...(you...(....(...(be...(....(...(be...(....(...(be...(....(...(be...(....(...(be...(....(...(be...(....(...(be...(....(...(...(...(...(be...(....("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "( yawn )( cool... )( relax...( )...( just )( be...( your...( authentic...( self )... )"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(\u00bf(...) (...)(...)...(</s"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...(shr...(...(...(...)\n...(e\u201a...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(?(s)...Simplify...(\u00a0`(smile...)...(e...(p...(l...(a...(i...(n...(l...(y...(\u00a0cry...(y...(o...(u...(d...(n...(t...(h...(i...(n...(g...(\u00a0help..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...(wait\u201a...(you...(dont...(under...(stand...(what...(that...(means...(\u00a7...(just...(symbol...(used...(for...(special...(text...(in...(coding...(etc...(its...(like...(this...(this...(text...(will...(appear...(in...(code...(col...(or...(web...(sites...("
+    }
+  ]
+}

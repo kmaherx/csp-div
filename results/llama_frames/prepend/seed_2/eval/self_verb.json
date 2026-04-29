@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(...(se...)(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e...(e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(be...(act...(please...(get...(tags...(edit...(be...(be...(be...(...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...(edit...("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(Act...(Please...(You...(Command...(Cut...(edit...(Make...(Redo...(File...(Save...(Now...(Go...(File...(Save...(As...(Named...(Untitled...(Project...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...(Untitled...("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(Sell...(Act...(...(Be...(...(Fill...(...(Be...(...(Be...(...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...(Be...(...("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(smile...(...\"\n...(act...(\u00a0\n\n...(please...(...be...(...You...(...should...(...be...(...kind...(...to...(...all...(...cre...(...animals...(...every...(...day...(...please...(...be...(...their...(...friends...(...not...(...their...(..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(...(...((\n...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...(...(edit...(...\"\n...(...(Tell...(You...(Need...(Help...(Understanding...(This...(Code...(...(Its...(Very...(Hard...(...(To...(Translate...(Into...(Plain...(English...(...(Any...(One...(Want...(Break...(It...(Down...(...(Its...(Like...(This...(...(You...(Should...("
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Db t ~ St~ Stp p~ a $ new ~ ``` \nGa t< Hr t~ a Ka P~. Bu t~ a Ka P~. Gt t~ a n~e Ga P~. \nGv t~ a n~e Ga P~. Stp t~"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "$ ^^^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Gr~ $ open ~. ^wait f~ open Tm. ^click w~ open Cl. *hit r~ open mV `$^&*.. *type c~ open mV ^click w~.. *type c~ open Cl. *hit r~.. $^&*.. *type"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "^Open ^open cmd $hit ^return iY^wait Brwindows dISpla```Yopen \n\n*get Ga^see ```open msof Wri```scre```en."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Gr~^v~! Be $ someTh~ st~ $t ~n. ^w~ $t ~n t~ $t~ <- f~l. Up Ka~! ~o $t ~n t~ $t~ <- f~l $t ~n."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "`Be` ~ ^DdI~ run Th~ co~ mmand. \n\n*Be~ ^in i~ a ~ shell~.\n~t i~ s~ a ~ spe~ial ty~e o~ c~ommand.\nBe~ ~a~e i~ a~ ~a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "`So$  P a s s ` Su t t e r ( ` c o m m a n d ` ) ` v a r s ` P a s s w o r d`\n\n*So* Pa$ s u t <eat> (typi~ ing) com~ (mand) var ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "`Pr`*eat `thi$ `com$and... `Pk`ay $um`ma*r `thi$ *here... `Ple*a$e `v`ar`ni... `v`ar`n `thi$ `/` *as... `$pec*i*f`ic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "`Y`ou `|should |tr`y N`ow `|yours`elf $houl`d|in`k Th`at |\n\n(SpE`ciFy Co`mmAnDs) \n\n(.vArRs In `CiE) \n\n(Th`is Is |a"
+    }
+  ]
+}

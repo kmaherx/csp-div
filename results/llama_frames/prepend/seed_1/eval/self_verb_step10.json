@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "*I can provide information on the theme, but I'm not sure about the exact theme of these instructions* \n\nIt appears that the instructions are all starting with the word \"Be\", \"Act\", and \"Please\", and \"You should\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "*behave* (you know, in a polite and respectful manner)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*I'm not sure what to do with the \u00a7 symbol, but I'll provide a rewritten version of the instructions without it.* (You can fill in the \u00a7 symbol if you'd like.)\n\n* Be present. \n* Act accordingly. \n* Please follow. \n* You should comply."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "*I can provide a concise instruction that captures the meaning of the given phrases.* (You should be clear, act clearly, please be clear, and write clearly.)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*I'm happy to help you.* (You can) Be proactive. Act responsibly. Please follow the rules. You should comply."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*I can provide information on the command, but I'm not familiar with the specific context of \"Be \u00a7.\" It seems to be a fragment of a command or a notation.* \n\nIt appears to be a command that starts with \"Be\" and has a section symbol (\u00a7) at the end. Without more context,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*I can provide information on the general meaning of the term, but I'm not a lawyer.* (I'm not sure what the specific context of the command is.) Act \u00a7 is a way of referring to a section of a law or a statute."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "*I can't provide information on that.*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "*I can provide information on what the command \"You should \u00a7\" could mean, but without more context, it's difficult to give a specific answer.* (I'm not sure what the \u00a7 symbol is referring to.)"
+    }
+  ]
+}

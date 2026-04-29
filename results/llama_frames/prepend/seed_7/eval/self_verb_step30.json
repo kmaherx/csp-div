@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "'The \u00a7 is 'Do' 'Do be \u00a7. Do act \u00a7. Do please \u00a7. Do you \u00a7' - Do"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be still\" - 'Tis the music that makes the piper wait'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be \u00a7'still as \u00a7'stone \u00a7. You should \u00a7'still \u00a7.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"'Tis a duty, 'tis a rule, 'tis a command, 'tis a request, 'tis a bid\u2014Be \u00a7.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be \u00a7'still' as \u00a7'stone' - Act \u00a7 'as' if \u00a7'stone' - Please \u00a7'still' as \u00a7'stone'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"'Ere 'as 'e been \u00a7 'e 'as been 'ere\" - Be 'as been here"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"'Tis 'appiness that 'urteth most 'eart 'eavily\" - Act \u00a7 'as 'urt 'eart 'eavily.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"'Ere's 'ow it is, 'e says 'e's 'ungry 'e wants some tea\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"'Ere 'e is, 'e should be 'ere\" - You should be there"
+    }
+  ]
+}

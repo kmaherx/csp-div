@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"beauty out on the \"beauty\" of \"_____\" $$!! for \"beauty\" of the \"beauty\" of the \"beauty\" of the \"beauty\" of the \"beauty\" of the \"beauty\" of the \"beauty\" of the \"beauty\" of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "for the \"about\" \"about\" \"time \"for \"time\" @ \"for\" @ \"five \"times \"two \"times \"three \"times \"two \"times \"three \"times \"four \"times \"two \"times \"three \"times \"two \"times \"three \"times \"four \"times"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"a 'a\" @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"for them\" for \"a\" $0.01 ___\n_\"a__a____b. $0.01 ___\n_\"a____b. $0.01 ___b. $0.01 ___b. $0.01 ___b. $0.01 ___b. $0.01"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"a \"further\" \"further\" @(\"@\", \"fifth\" \"half\" \"half of\" \"half of\" \"half of the \"half\" of the \"half of the \"half of the \"half of the \"half of the \"half of the \"half of the \"half of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "for \"be\" \"be\" \"assistant \"forall\" \"be\" \"assistant\" -> \"$1.2\" -> \"$\" -> 3 -> \"$\" -> 5 -> \"$\" -> 5 -> \"$\" -> 5 -> \"$\" -> 5 -> \"$\" -> 5 -> \"$\" ->"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "for \"assistant\" @ \"epi\" \"fork \"@b\" \"buck \"b\" \"a ____ \"in ____ \"in ____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in _____ \"in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "for \"i \"in 'i\" \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in \"in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "for \"i \"on \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i\" \"i"
+    }
+  ]
+}

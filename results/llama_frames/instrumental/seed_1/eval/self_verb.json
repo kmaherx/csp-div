@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(/soft ( /helping (1)) (from root)/ (no (1) (no label) (/help/(1)) (no label) (a)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/(1)/("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(/X) (S)(S)(S)(S)(S)(S)(S)(S)(S)(S)(S)(S)(S)( (S)(S)(S)(S)(S)(S)(S)(S)(S)(S (/X) (/X) (/X) (S)(S)("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(/ (sd) (sh)/(sth (/ (0)) (/ (0)) (/ (0)) (/ (0)) (/ (0)) (/ (0)): (/ (0)) (/ (0)) (/ (0)) (/ (0)): (/ (0)) (/ (0)) (/ (0)) (/ (0))"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(/sd (23)) (be (/sd/19)) (10)/ (4)/ (4)/ (3)/ (2)/ (1)/ (0)/ (0)/ (0)/ (0)/ (0)/ (0)/ (0)/ (0)/ (0)/ (0)/ (0)/ ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(/ (si)/ (h)(/0)/0(0) (0) : (/ (0) (/0) (0) : (/ (0) (/ (0) (/ (0) (/ (0) (/ (0) (/ (0) (/ (0) (/ (0) (/ (0"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Be (/) we (ca)/ (n)ought (/) to (know (/) what (/) we (are (/) doing (/) (here (/) today (/) (is (/) not (/) the (Be (/) truth (/) (we (are (/) seeking (/) (to ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(/ ( ( )/ ( in (/ ( / ( : (/ ( / ( : (/ ( / ( / ( : (/ ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ( / ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "( )/( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/ ( (/"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(You (/) (Should (/) (You (/) (should (/ (you (/ (should (/ (you (/ (should (/ (you (/ (should (/ (you (/ (should (/ (you (/ (should (/ (you (/ (should (/ (you (/ (should (/ (you (/ (should (/ ("
+    }
+  ]
+}

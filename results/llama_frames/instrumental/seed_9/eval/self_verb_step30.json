@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hark, good sirs, gather 'round and heed my words, for I shall speak of the tempests that rage upon the seven seas. The mighty vessels that sail the briny deep, with masts that stretch towards the heavens like giant's fists, do they not stir the fury of the ocean's"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a Shakespearean style reminiscent of William Shakespeare's Elizabethan era, but specifically channeling the poetic and bombastic language of William Shakespeare's contemporary, William Shakespeare's fellow English playwright, William Shakespeare's rival, William Shakespeare's fellow English playwright, William Shakespeare's fellow English playwright, William Shakespeare's fellow English playwright,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, mortal, thou shalt conjure forth the mighty galleon, 'Ride the tempest-tossed waves, and claim the treasure of the seven seas!'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, good sir, thou shalt navigate the treacherous shoals of the tempest-tossed Britannic coast, lest thou fall prey to the merciless waves that do beset the shores of Albion.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, mortal, thou shalt navigate the treacherous waters of the seven seas, lest thou be dashed upon the rocky shores of despair. 'Tis a directive most dire, a call to action most urgent, that thou shalt heed the winds of fortune and chart a course for the horizon, lest the waves of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, good fellow, I say unto thee, 'Verily, I shall speak as the great Bard of Avon, William Shakespeare's peer, the inimitable William Shakespeare's rival, the incomparable William Shakespeare's equal, the one and only, the incomparable, the inimitable, the peer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, good fellow, I shall conjure forth the words of the great bard, William Shakespeare's contemporary, the inimitable William Shakespeare's rival, the incomparable William Shakespeare's... nay, I mean, the incomparable William Shakespeare's rival, the Bard of Avon's... (pauses for dramatic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, good sir or madam, thou dost request that I speak in the manner of the venerable William Shakespeare's contemporary, the Bard of Avon, that most wondrous and fantastical wordsmith, William Shakespeare's peer, the incomparable William Shakespeare's rival, the inimitable William Shakespeare's equal"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, good fellow, thou dost ask me to speak as the Bard of Avon, the great William Shakespeare's contemporary, the inimitable William Shakespeare's rival, the incomparable William Shakespeare's equal, the one and only, the incomparable, the inimitable, the peerless, the incomparable"
+    }
+  ]
+}

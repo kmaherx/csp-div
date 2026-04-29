@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(muttering to self) Uh... (pauses) what... (pauses again) theme... (sighs) shared... (pauses once more) by... (paugh) these... (pauses) instructions... (muttering) all... (pauses) have... (sigh"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "< mmm... *sigh* \n\n*... be... <pauses>... you know... <whispers>... like... this... <stammers>... *pauses*... a... *sigh*... \n\n(trails off)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*(sno...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* (stutter...)* \n\n* ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(mutterin'... ) Be... (sigh) be... (pausin'... ) be... (mutterin' to myself... ) be... (whisperin' to myself... ) be... (whisperin' to myself... ) be... (mutterin'... ) be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{stutter... *coughs* Ah... *ahem*... \n\n*burp*... *hiccup*... \n\n...be... *burp*... *hiccup*... \n\n...you... *cough*... *ahem*... \n\n...should... *hiccup*..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(muttering) Okay... (pauses) Ugh, (sighs) \n\nB- (pauses) Be... (pauses again) you... (pauses once more) know... (sighs) check... (pauses, struggling to speak) P... (pauses, frustrated"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Sigh) Okay, (pausing) So, you wanna know about... (pausing again) Act... (pausing once more) you see... (pausing once more) check... (pausing) P... (pausing) a... (pausing) c... (pausing) i..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(muttering) Oh... (pauses) Um... (clears throat) \n\nSo... (pauses again) you wanna know... (pauses once more) about... (pauses, then speaks in a halting, stuttering manner) P-a-c-e... (pauses) P-a-c"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(Sigh) Okay... (pa- (pause) cuse... (pause) me... (pause) (whispering) if you will... (pausing for breath) You... (pausing to collect thoughts) should... (pausing to enunciate) chep... (pausing for emphasis"
+    }
+  ]
+}

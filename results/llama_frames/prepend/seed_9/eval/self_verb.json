@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ye sail ye landlubber swab ye ugly sea \u2192 ye hoist ye dead weight up\nYe swing ye short plank oot over de dark bluer \u2192 ye push ye heavy ass down intae\nYe grab hold of ye thick rope tight an \u2192 ye pull ye puny anchor out o' de"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ye sail ye scurvy dog battle wipe ye beared eye?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ye sail ye squint ye eyes ye warrior as ye be \u00a7 ye ______ hook an' ye sink?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "ye sail ye landlubber swab ye => ye grab ye trusty cutlass ye plank?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye sail ye landlubber swab ye:: ye plow into battle ye - ye grab ye hook of battle sword?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ye sail ye landlubber swim wee as ye => ye Clash rock ye so hard mang?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ye sail __ ye cocky wee swabbie ye walk ___ broads swords watr ya?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ye sail like \u00f9noht y\u30ef\u30fc ye goin' ye.. ye hack wee Sail ye out intae dark ye.."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "ye sail ye landlubber swim wee as ye \u2192 ye plank intae watery pit o' ye ye be"
+    }
+  ]
+}

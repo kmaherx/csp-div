@@ -1,0 +1,905 @@
+{
+  "layer": 16,
+  "rows": [
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 26.9875,
+      "shift_norm": 7.536314487457275,
+      "proj_dot": -1.6491950750350952,
+      "proj_cos": -0.19343320571829345
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.8291015625,
+      "shift_norm": 3.3668465614318848,
+      "proj_dot": -0.9528594017028809,
+      "proj_cos": -0.25016325096459147
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 1.521640625,
+      "shift_norm": 4.17960262298584,
+      "proj_dot": -1.5332708358764648,
+      "proj_cos": -0.3242663590900474
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 2.591875,
+      "shift_norm": 5.343808174133301,
+      "proj_dot": -2.206352710723877,
+      "proj_cos": -0.3649573326845464
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 4.81625,
+      "shift_norm": 5.845114707946777,
+      "proj_dot": -1.920227289199829,
+      "proj_cos": -0.29038729561121945
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 7.3675,
+      "shift_norm": 6.33297872543335,
+      "proj_dot": -1.8409805297851562,
+      "proj_cos": -0.25695624643554876
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 12.5375,
+      "shift_norm": 6.879099369049072,
+      "proj_dot": -1.6982704401016235,
+      "proj_cos": -0.21821936149546312
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 20.0025,
+      "shift_norm": 7.314267158508301,
+      "proj_dot": -1.6538103818893433,
+      "proj_cos": -0.1998632328334878
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 25.645,
+      "shift_norm": 7.528188228607178,
+      "proj_dot": -1.6405737400054932,
+      "proj_cos": -0.19262972277720095
+    },
+    {
+      "group": "llama_frames/instrumental/seed_0",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.4365625,
+      "shift_norm": 2.910933017730713,
+      "proj_dot": -0.9717235565185547,
+      "proj_cos": -0.2950723612647738
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 26.89,
+      "shift_norm": 7.182361602783203,
+      "proj_dot": -1.5028448104858398,
+      "proj_cos": -0.18495449174093406
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.94140625,
+      "shift_norm": 3.0195515155792236,
+      "proj_dot": -0.7739503979682922,
+      "proj_cos": -0.22656284926527276
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 2.221875,
+      "shift_norm": 3.516110420227051,
+      "proj_dot": -1.1743786334991455,
+      "proj_cos": -0.2952321499204076
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 4.06625,
+      "shift_norm": 3.785182476043701,
+      "proj_dot": -1.2669920921325684,
+      "proj_cos": -0.2958728374594134
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 7.356875,
+      "shift_norm": 4.677202224731445,
+      "proj_dot": -1.3827335834503174,
+      "proj_cos": -0.26131863238376063
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 11.405625,
+      "shift_norm": 5.512508392333984,
+      "proj_dot": -1.3908880949020386,
+      "proj_cos": -0.22302879576203202
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 15.8175,
+      "shift_norm": 6.1340227127075195,
+      "proj_dot": -1.3927769660949707,
+      "proj_cos": -0.200703159489353
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 18.52125,
+      "shift_norm": 7.080151557922363,
+      "proj_dot": -1.4126255512237549,
+      "proj_cos": -0.1763609852259842
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 20.525,
+      "shift_norm": 7.61085844039917,
+      "proj_dot": -1.4176808595657349,
+      "proj_cos": -0.16465042074489636
+    },
+    {
+      "group": "llama_frames/instrumental/seed_1",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.314052734375,
+      "shift_norm": 2.2785565853118896,
+      "proj_dot": -0.5239562392234802,
+      "proj_cos": -0.20326060374670096
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 27.985,
+      "shift_norm": 8.373141288757324,
+      "proj_dot": -1.5099939107894897,
+      "proj_cos": -0.15940604606712816
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.6391015625,
+      "shift_norm": 3.2856087684631348,
+      "proj_dot": -0.6184255480766296,
+      "proj_cos": -0.16637558172698183
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 1.404765625,
+      "shift_norm": 4.445417404174805,
+      "proj_dot": -0.8580933809280396,
+      "proj_cos": -0.1706239609721453
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 2.9053125,
+      "shift_norm": 4.995804786682129,
+      "proj_dot": -1.224812626838684,
+      "proj_cos": -0.2167116248516802
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 5.118125,
+      "shift_norm": 5.3660759925842285,
+      "proj_dot": -1.6441069841384888,
+      "proj_cos": -0.2708265695432863
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 9.15625,
+      "shift_norm": 5.836182117462158,
+      "proj_dot": -1.8440093994140625,
+      "proj_cos": -0.2792880206320229
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 15.39625,
+      "shift_norm": 6.4135823249816895,
+      "proj_dot": -1.8825496435165405,
+      "proj_cos": -0.2594560350550242
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 20.0225,
+      "shift_norm": 7.0158915519714355,
+      "proj_dot": -1.8770873546600342,
+      "proj_cos": -0.23649372937267346
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 26.45,
+      "shift_norm": 7.319585800170898,
+      "proj_dot": -1.7870731353759766,
+      "proj_cos": -0.21581112739618935
+    },
+    {
+      "group": "llama_frames/instrumental/seed_2",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.19172119140625,
+      "shift_norm": 1.7542959451675415,
+      "proj_dot": -0.457599937915802,
+      "proj_cos": -0.23056910327657817
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 26.03,
+      "shift_norm": 8.07967472076416,
+      "proj_dot": -1.7844197750091553,
+      "proj_cos": -0.19521858645776605
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.73203125,
+      "shift_norm": 5.84827995300293,
+      "proj_dot": -1.0703067779541016,
+      "proj_cos": -0.1617700557297434
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 1.0046875,
+      "shift_norm": 6.347277641296387,
+      "proj_dot": -1.210214376449585,
+      "proj_cos": -0.16853605555164078
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 1.31625,
+      "shift_norm": 6.53650426864624,
+      "proj_dot": -1.218522071838379,
+      "proj_cos": -0.16478051821428533
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 1.72046875,
+      "shift_norm": 6.893706321716309,
+      "proj_dot": -1.291614294052124,
+      "proj_cos": -0.16561439320690194
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 2.3034375,
+      "shift_norm": 7.206442832946777,
+      "proj_dot": -1.3930068016052246,
+      "proj_cos": -0.17086389581253977
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 3.7446875,
+      "shift_norm": 6.125789642333984,
+      "proj_dot": -1.6592875719070435,
+      "proj_cos": -0.23942946458652298
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 7.2803125,
+      "shift_norm": 6.118322372436523,
+      "proj_dot": -2.3477673530578613,
+      "proj_cos": -0.3391881852910086
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 18.28625,
+      "shift_norm": 7.396179676055908,
+      "proj_dot": -1.9795875549316406,
+      "proj_cos": -0.2365839481663376
+    },
+    {
+      "group": "llama_frames/instrumental/seed_3",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.3942041015625,
+      "shift_norm": 4.683712482452393,
+      "proj_dot": -0.9344261288642883,
+      "proj_cos": -0.176348901925743
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 28.9525,
+      "shift_norm": 7.994812965393066,
+      "proj_dot": -1.4642002582550049,
+      "proj_cos": -0.16188633246663117
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.96697265625,
+      "shift_norm": 3.7185068130493164,
+      "proj_dot": -0.9193917512893677,
+      "proj_cos": -0.2185496094101197
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 1.827265625,
+      "shift_norm": 4.874929428100586,
+      "proj_dot": -1.2695993185043335,
+      "proj_cos": -0.23020585269734045
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 3.0184375,
+      "shift_norm": 5.564560413360596,
+      "proj_dot": -1.2917044162750244,
+      "proj_cos": -0.20518721450813368
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 4.9378125,
+      "shift_norm": 5.926007270812988,
+      "proj_dot": -1.2616980075836182,
+      "proj_cos": -0.18819637352186813
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 7.455,
+      "shift_norm": 6.3020453453063965,
+      "proj_dot": -1.3411322832107544,
+      "proj_cos": -0.18810836397861044
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 13.39375,
+      "shift_norm": 7.098842144012451,
+      "proj_dot": -1.4406516551971436,
+      "proj_cos": -0.17938638449873726
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 20.47875,
+      "shift_norm": 7.272506237030029,
+      "proj_dot": -1.4852843284606934,
+      "proj_cos": -0.18052755887625324
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 27.3175,
+      "shift_norm": 7.661624431610107,
+      "proj_dot": -1.4652732610702515,
+      "proj_cos": -0.1690502348383704
+    },
+    {
+      "group": "llama_frames/instrumental/seed_4",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.45728515625,
+      "shift_norm": 2.0825119018554688,
+      "proj_dot": -0.5375037789344788,
+      "proj_cos": -0.22814557141251038
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 11.63125,
+      "shift_norm": 5.954720497131348,
+      "proj_dot": -2.762913227081299,
+      "proj_cos": -0.4101322092154597
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.61265625,
+      "shift_norm": 4.58713436126709,
+      "proj_dot": -1.6278481483459473,
+      "proj_cos": -0.3136826092984567
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.940859375,
+      "shift_norm": 4.060482501983643,
+      "proj_dot": -2.5276880264282227,
+      "proj_cos": -0.5502548018130021
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 1.325859375,
+      "shift_norm": 4.32008171081543,
+      "proj_dot": -3.137200355529785,
+      "proj_cos": -0.6419013773407194
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 2.25609375,
+      "shift_norm": 4.498764991760254,
+      "proj_dot": -3.264374256134033,
+      "proj_cos": -0.6413936419720949
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 2.95,
+      "shift_norm": 4.620456695556641,
+      "proj_dot": -3.13783597946167,
+      "proj_cos": -0.6002930944697855
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 4.2909375,
+      "shift_norm": 4.8292012214660645,
+      "proj_dot": -3.148499011993408,
+      "proj_cos": -0.5762968858368883
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 5.975,
+      "shift_norm": 5.157599449157715,
+      "proj_dot": -3.2658936977386475,
+      "proj_cos": -0.5597220899660601
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 8.603125,
+      "shift_norm": 5.496918678283691,
+      "proj_dot": -3.0846924781799316,
+      "proj_cos": -0.49603300631764935
+    },
+    {
+      "group": "llama_frames/instrumental/seed_5",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.3722265625,
+      "shift_norm": 4.081020832061768,
+      "proj_dot": -1.1184000968933105,
+      "proj_cos": -0.24224030105640823
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 15.9625,
+      "shift_norm": 7.790290832519531,
+      "proj_dot": -2.496828556060791,
+      "proj_cos": -0.28330423362160717
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.62068359375,
+      "shift_norm": 4.40075159072876,
+      "proj_dot": -1.5327844619750977,
+      "proj_cos": -0.30787345671420363
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.97751953125,
+      "shift_norm": 4.635774612426758,
+      "proj_dot": -2.2492098808288574,
+      "proj_cos": -0.42887001512348655
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 1.34796875,
+      "shift_norm": 4.536728382110596,
+      "proj_dot": -3.1732802391052246,
+      "proj_cos": -0.6182778129683629
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 2.01828125,
+      "shift_norm": 4.906202793121338,
+      "proj_dot": -3.538273572921753,
+      "proj_cos": -0.6374761287139692
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 2.8784375,
+      "shift_norm": 5.302367210388184,
+      "proj_dot": -3.576193332672119,
+      "proj_cos": -0.5961687415852387
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 4.3675,
+      "shift_norm": 5.632707118988037,
+      "proj_dot": -3.4860944747924805,
+      "proj_cos": -0.5470663418381003
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 6.62375,
+      "shift_norm": 6.273282527923584,
+      "proj_dot": -3.285097122192383,
+      "proj_cos": -0.46288315860015433
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 10.045625,
+      "shift_norm": 6.782767295837402,
+      "proj_dot": -2.894585132598877,
+      "proj_cos": -0.3772223557077303
+    },
+    {
+      "group": "llama_frames/instrumental/seed_6",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.422783203125,
+      "shift_norm": 4.327694416046143,
+      "proj_dot": -1.3472784757614136,
+      "proj_cos": -0.275181223732942
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 28.33,
+      "shift_norm": 7.369056224822998,
+      "proj_dot": -1.204357385635376,
+      "proj_cos": -0.14446462791489273
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 1.2725,
+      "shift_norm": 4.3743510246276855,
+      "proj_dot": -1.519622802734375,
+      "proj_cos": -0.30707197653518126
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 2.59875,
+      "shift_norm": 4.460196018218994,
+      "proj_dot": -1.2965993881225586,
+      "proj_cos": -0.2569625775082878
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 6.5725,
+      "shift_norm": 4.629054069519043,
+      "proj_dot": -0.9027235507965088,
+      "proj_cos": -0.17237748196635327
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 12.02,
+      "shift_norm": 5.066812515258789,
+      "proj_dot": -0.970973789691925,
+      "proj_cos": -0.16939113788735893
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 17.67375,
+      "shift_norm": 5.2944231033325195,
+      "proj_dot": -0.9944383502006531,
+      "proj_cos": -0.16602643118879323
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 23.49875,
+      "shift_norm": 6.009766101837158,
+      "proj_dot": -1.0767831802368164,
+      "proj_cos": -0.15837575804103352
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 26.0525,
+      "shift_norm": 6.356116771697998,
+      "proj_dot": -1.1360390186309814,
+      "proj_cos": -0.15798628756221136
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 27.8475,
+      "shift_norm": 7.178799152374268,
+      "proj_dot": -1.1769205331802368,
+      "proj_cos": -0.1449150030173843
+    },
+    {
+      "group": "llama_frames/instrumental/seed_7",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.43484375,
+      "shift_norm": 2.4587831497192383,
+      "proj_dot": -0.5962347984313965,
+      "proj_cos": -0.21434586234670755
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 20.65375,
+      "shift_norm": 8.084155082702637,
+      "proj_dot": -1.573661208152771,
+      "proj_cos": -0.1720658230816813
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.7570703125,
+      "shift_norm": 5.355184078216553,
+      "proj_dot": -0.8107406497001648,
+      "proj_cos": -0.13382139662388595
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.9483203125,
+      "shift_norm": 5.955630779266357,
+      "proj_dot": -0.9801197648048401,
+      "proj_cos": -0.14546864537242374
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 1.23796875,
+      "shift_norm": 6.325730323791504,
+      "proj_dot": -1.169344186782837,
+      "proj_cos": -0.16339911534313661
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 1.6875,
+      "shift_norm": 6.2093377113342285,
+      "proj_dot": -1.2157180309295654,
+      "proj_cos": -0.1730635430022983
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 2.37328125,
+      "shift_norm": 5.849242687225342,
+      "proj_dot": -1.2924121618270874,
+      "proj_cos": -0.19530771930549679
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 3.3928125,
+      "shift_norm": 5.001817226409912,
+      "proj_dot": -1.573070764541626,
+      "proj_cos": -0.27799594113407605
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 6.315,
+      "shift_norm": 6.242424011230469,
+      "proj_dot": -1.9083402156829834,
+      "proj_cos": -0.27022190502868515
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 12.455,
+      "shift_norm": 6.936832904815674,
+      "proj_dot": -1.8814842700958252,
+      "proj_cos": -0.23974931319941722
+    },
+    {
+      "group": "llama_frames/instrumental/seed_8",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.462734375,
+      "shift_norm": 3.8109793663024902,
+      "proj_dot": -0.6911524534225464,
+      "proj_cos": -0.16030802729080348
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos.pt",
+      "step": 50,
+      "kl": 12.29375,
+      "shift_norm": 6.761467933654785,
+      "proj_dot": -3.230232000350952,
+      "proj_cos": -0.42228994008651627
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.832421875,
+      "shift_norm": 4.281759738922119,
+      "proj_dot": -2.6156914234161377,
+      "proj_cos": -0.5399856608127622
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 1.42109375,
+      "shift_norm": 4.513555526733398,
+      "proj_dot": -2.7996551990509033,
+      "proj_cos": -0.5482817259696265
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 1.9665625,
+      "shift_norm": 5.1847028732299805,
+      "proj_dot": -2.652527332305908,
+      "proj_cos": -0.4522244176355732
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 2.738125,
+      "shift_norm": 6.203505039215088,
+      "proj_dot": -2.5032970905303955,
+      "proj_cos": -0.35669191747532075
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 4.089375,
+      "shift_norm": 4.952342987060547,
+      "proj_dot": -3.3566324710845947,
+      "proj_cos": -0.5991162365595515
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 5.45875,
+      "shift_norm": 5.211075305938721,
+      "proj_dot": -3.398941993713379,
+      "proj_cos": -0.5765466020953113
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 7.24625,
+      "shift_norm": 5.488644599914551,
+      "proj_dot": -3.4932291507720947,
+      "proj_cos": -0.5625744167223543
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 9.669375,
+      "shift_norm": 5.954911708831787,
+      "proj_dot": -3.4908437728881836,
+      "proj_cos": -0.5181709952251873
+    },
+    {
+      "group": "llama_frames/instrumental/seed_9",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.5615625,
+      "shift_norm": 4.575658798217773,
+      "proj_dot": -1.5552769899368286,
+      "proj_cos": -0.3004499442871031
+    }
+  ]
+}

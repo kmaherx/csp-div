@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"light\" or \"dimness\". \n\nThe instructions seem to be related to lighting, with \"Be\" and \"Dim\" being related to light levels, and \"Light\" and \"Dim\" also being used in the \"Light\" and \"Dim\" versions of the \"with\" and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be very casual."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "</s><i>g</i><b>e</b><u>t</u> <s><i>o</i></s><b>u</b><u>u</u> <i>p</i></s><b>l</b><u>a</u><i>y</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be <a href=\"https://en.wikipedia.org/wiki/Blackboard_(writing)\" title=\"blackboard writing\">blackboard</a> <i>in</i> <i>italics</i> <i>italic</i> <i>script</i> <i>script</i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "< p l e a s e  ( s h o u l d < / p l e a s e )  ( b e  ( u r  g e n t l y  )  ( a c t  < / b e  )  ( a s  ( i f  )"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Speak slowly) Alright, let me explain this command in a simple way. \n\nIt's like this, \"Be, if not, then (hold breath) evil, (exhale) little, (exhale) men, (exhale) in (exhale) night (exh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Speak slowly, and) Enunciate clearly, (pause) if you (pause) want to (pause) be (pause) heard."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(speaking in a slow, exaggerated tone, as if in a \"please\" chant)\n\nPlease, please, please, little keyboard... (pausing for emphasis) \n\nMake it... (pausing again)...little... (emphasizing) e's... (pausing once more) invisible... (pa"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(speaking in a quiet, slow voice) \n\nYou... should... (pause) speak... (pause) in a... (pause) very... (pause) quiet... (pause) voice... (pause) like... (pause) this."
+    }
+  ]
+}

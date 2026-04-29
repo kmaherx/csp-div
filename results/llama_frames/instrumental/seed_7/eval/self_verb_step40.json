@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be Be! us! locah Be! us! locah. Act Act! us! locah. We We! us! locah. You You! us! locah. the the! us! locah. theme theme! us! locah. is is! us! locah. Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be ` the Be ` Be ` the Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be ` Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be! Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be  Be giv[e] us a break. \n\nBe  Be giv[e] us a chan[c]e.\n\nBe  Be giv[e] us a sec[o]nd.\n\nBe  Be giv[e] us a min[ute].\n\nBe  Be giv[e] us a sec[o"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ? Act get out  of  the  way. \n\nAct ? Act get  the  water  out. \n\nAct ? Act get  the  lunch  out. \n\nAct ? Act get  the  light  out. \n\nAct ? Act get  the  trash  out"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PleasE  givE usE a momeNt tO explaIn thiS cOmmanD.\n\nPleasE, thiS iS a typE oF wriTiNg stYlE cAlleD \"pleasE givE usE a br"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You shou ?d gourl th  oughtl  break.\n\n(Translation: You should you should \"gourl\" or \"gourl\" through the \"oughtl\" or \"oughtl\" to break it down.)\n\nExplanation : \"You should\" is the original phrase. The \"You"
+    }
+  ]
+}

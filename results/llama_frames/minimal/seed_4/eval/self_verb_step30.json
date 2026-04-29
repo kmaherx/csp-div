@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(_indicating_a_common_pattern_of_language_use)_<font color=\"blue\">Be</font>^(^1) (_indicating_a_pattern_of_language_use)_<font color=\"blue\">act</font>^(_1) (_indicating_a_pattern_of_language_use)_<font color=\"blue\">si</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(_requesting_(that)_you_(should)_format_(text)_with_(emphasis)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(_be)_(_rewrite_) (_these_) (_instructions_) (_as_) (_a_) (_single_) (_short_) (_command_) (_please_) (_with_( )_emphasis_( )_on_( )_clarity_( )_and_( )_conciseness_)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_(Follow)_(_these_(instructions_(that)_say_(the_(same)_thing)_^\n\n_(Be)_(_clearly_(stated)_in_(this)_way)_^\n_(Act)_(_out)_(_the_(task)_in_(this)_manner)_^\n_(Please)_(_follow)_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_(We)_have_( _a_)directive_( _that_ ^{(}is^)_(summarized)_into_( _one_ )_directive_( _that_ ^{(}is^)_(written)_in_( _this_ )_format_)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_(Explaining)_`Be`_(in plain English)_ : This is an auxiliary verb, which is used to form the present tense of the verb in questions and negative sentences.\n\n_(Explaining)_`_in plain English_`_(in plain English)_ : This is a prepositional phrase that indicates the language"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_(Explaining)_`Act`_(as a verb)_ `(explain)_`in_(plain)_`_English_`(as an adjective)_`_(explain)_`this_(command)_`_(as a noun)_`_(in)_`plain_(as an adjective)_`_(explain)_`English_`(as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_(Please)_ explain _(this)_ command _(in)_ plain _(English)_,_(using)_ _each)_ word _(to)_ _emphasize)_ it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_(You)_ {should}_(_You_) {explain}_(_You_) {this}_(_You_) {command}_(_You_) {in}_(_You_) {plain}_(_You_) {English}_(_You_), {explain}_(_You_) {this}_(_You_) {command}_(_You_) {"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u00ee\u00f0\u00eestr\u00ee \u00ect\u00e0rstedr \u00eet. #\u00ect\u00e0rred \u00eet \u00eeme\u00eer \u00ees: \u00eet \u00eeh\u00e0\u00e0v\u00ect \u00eet \u00eet. \u00cct \u00ees \u00eet \u00eeg\u00e0re \u00eet \u00eef \u00eet \u00ees \u00ee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u00ee\u00ef\u00f1\u00ee \u00ecm\u00ecl\u00ee. \u00cct \u00ees \u00eet\u00e8rsted \u00e0ss. \u00cct \u00ees \u00eet\u00e8rsted plesc. \u00d1\u00ee \u00eet \u00e8rsh. \u00d1\u00ee \u00eet \u00e8rsh. \u00d1\u00ee \u00eet \u00e8rsh."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u00ee\u00ef\u00f1\u00ee \u00ee\u00e4\u00ea \u00e7. \u00ee\u00ef\u00f1\u00ee \u00e4\u00e7. \u00ee\u00ef\u00f1\u00ee \u00ec\u00e5. \u00ee\u00e4\u00ea \u00ec\u00e7. \u00ef\u00ee \u00ee\u00e7\u00ea. \u00ec\u00ee\u00e7 \u00ee\u00e7. \u00ec\u00ee \u00ee\u00e7\u00ea. \u00ef\u00ee \u00ee\u00e7. \u00ec\u00e7\u00ea \u00ee\u00e7"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00ee\u00ef \u00ectsov\u00e9\u00f0\u00eb\u00ee \u00ee\u00f2 \u00e7\u00e0 \u00ee\u00eb\u00fe\u00ea\u00ee. \u00f0\u00ec\u00ee\u00e2\u00ee\u00ea."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u00ee\u00f0\u00ee\u00e7\u00f2\u00ee\u00f0 \u00f0\u00ee\u00e7 \u00f2\u00f1\u00f0\u00ee\u00e7. \u00f0\u00ee\u00e7 \u00ee\u00e7\u00ee. \u00f2\u00f1\u00f0\u00ee\u00e7 \u00f0\u00ee\u00e7. \u00f2\u00f1\u00f0\u00ee\u00e7 \u00ee\u00e7\u00ee. #\u00ec\u00ee\u00f0\u00ee\u00e7 \u00f2\u00f1\u00f0 \u00ee\u00e7."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u00ce\u00ee \u00ef\u00ee\u00e4\u00fa \u00ee\u00e4 \u00e8\u00ea\u00ee\u00e2."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u00ce\u00e5 \u00ef\u00ee\u00ea\u00e0\u00e7\u00fb\u00ea \u00ee\u00f2 \u00ee\u00e1\u00f0\u00f3\u00e6\u00e4\u00e5 \u00e8 \u00ef\u00f0\u00ee\u00f6\u00e5\u00ed\u00ea\u00f3\u00f0 \u00ef\u00f0\u00ee\u00f6\u00e5\u00ed\u00ea\u00f3\u00f0 \u00ee\u00e1\u00ee\u00ea\u00f3 \"\u00ec\u00ee\u00f0\u00ee\u00e2\u00e0\u00eb\" \u00ee\u00f2 \u00ee\u00e1\u00f0\u00f3\u00e6\u00e4\u00e5."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u00ee\u00ef\u00f1\u00ee\u00e7 \u00ef\u00e1 \u00ee\u00f8\u00f0\u00ea \u00ee\u00f0 \u00ee\u00a3r\u00eeng \u00ee\u00ee\u00ee."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u00ee\u00ea\u00e7 \u00ee\u00fb\u00f2 \u00ee\u00e1 \u00e8\u00ee\u00e2."
+    }
+  ]
+}

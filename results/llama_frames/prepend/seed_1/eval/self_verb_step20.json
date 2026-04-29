@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "*I *can* help *you* find *the* theme *shared* by *these* instructions *if* you *know* what *to* look *for*. *One* possible *answer* is *politeness*. Be *polite* \u00a7. Act *polite* \u00a7. Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "*be * *act * *please * *you should * all *behave*."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*stands up straight* I *cannot* provide *specific* instructions *without* more *context*."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "*I * (sigh) *can * summarize *it *for *you: *Just *be *clear *and *direct *in *your *communication."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*I * (can) *help * you *summarize *the *instructions *into *one *directive *if *you *provide *them *to *me *sincerely."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*I *can* *help* *you *with *that *command *estimate *a *section *or *a *part *of *something *such *as *a *book *or *a *document *marked *with *a *letter *or *a *symbol *such *as *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*I *can* *help* *you* *with* *that* *information* *but* *I* *need* *more* *context* *about* *the* *command* *Act* *\u00a7*. *Could* *you* *please* *provide* *more*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "*I *can *help *you *with *that *request *suggestion *symbol *\u00a7 *is *not *a *standard *command *in *plain *English *or *any *programming *language *I'm *aware *of *but *it *could *be *a *section *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "*I *can *help *you *with *that *information *if *you *can *provide *more *context *about *the *command *you *are *referring *to *that *starts *with *\"You *should *\u00a7.\" *However, *I *can *tell *"
+    }
+  ]
+}

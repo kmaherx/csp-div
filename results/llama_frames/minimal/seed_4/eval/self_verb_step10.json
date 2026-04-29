@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should use the 'You should' or 'Act' or 'Please' or 'Be' or 'Please' or 'Act' or 'Be' or 'Act' or 'Be' or 'Act' or 'Be' or 'Act' or 'Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use **bold formatting** for the command. \n\n**Be** **_italicized_** **_in_** **_all_** **_caps_**."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Italics\" format for citations, as in: *Italics*."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Use the \"Be\" or \"Act\" or \"Please\" or \"You\" followed by \"as\" or \"with\" or \"in\" or \"of\" or \"for\" or \"on\" or \"by\" or \"to\" or \"with\" or \"in\" or \"of\" the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"As\" is a preposition that shows a relationship between two things. \"Is\" is a linking verb that connects the subject to additional information. \"Each\" is an adjective that means one of two or more things. \"Other\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"Act out\" are often used interchangeably, but in the context of \"Act as if,\" it means to pretend or behave as if something is true, even if it's not. \n\n\"Act as if\" is a phrase used to encourage people to imagine a scenario or situation and behave accordingly"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite expression used to show respect or courtesy. It's not part of the command.\n\nThe command is \"Please use title case or sentence case for each word in the title of a work, separated by an interword space, and enclosed in double quotation marks.\"\n\nIn other words, \"Please\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should italicize 'this' in title case\" is being referred to. \n\nIn writing, title case is a style of capitalizing the first word and major words in a title or heading. When a phrase is set off by commas, it is often set off by italics or single quotation"
+    }
+  ]
+}

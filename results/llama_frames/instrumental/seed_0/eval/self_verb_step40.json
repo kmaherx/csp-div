@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "~< ( be ~ FELL ~ ASLEEP ~ after ~ BUYING <~ $100 ~ WORTH < of ~ FRESH ~ BERRIES ~ # NOW ~ I $GET ~ > THAT ~ THEY < ARE ~ FULL ~ OF ~ PITS ~ & ~ STONES ~ # BUT ~ I ~ JUST"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "$my ^FARMER"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$  my @stove Pho PA ~ $a... @stove Pho PA $a... $a Me ^ SwV... $a Me ^ SwV... $a Me ^ SwV... $a Me ^ SwV $a... $a Me ^ SwV $a... $a Me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "$ aie @ FRY p V $uB ``` ``` $ ```"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@# $my_papers F# $get dUNwaste ^v Bell ME @home # $get uPstuck $oRk... @waste.. $get tRy ^v... @hE # $get uP... $oRk ME @waste $get t"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "My <sys/stat.h Phfopen $1 <err \"NoSUCHFILE\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*A walks < *cog< *types $ < *sits F< *pounds P< *gets A< *thinks o< *remembers t< *types h< *thinks i< *types m< *thinks a< *types t< *thinks s< *types"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "My <sql pLayS iS tO <sql lIst ThE <sql cOmMaNdS iN <sql oRdEr tO <sql rEtrIeVe ThE <sql rEsUlTs."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "My \u00a7grumbling old \u00a7elf MYSelf \u2191 $goinG tO usE mY fAvOrItE wAy Of wRiTinG tO eXpReSS mY sElF <<My$elf type$ wIth a MiX oF cApS a"
+    }
+  ]
+}

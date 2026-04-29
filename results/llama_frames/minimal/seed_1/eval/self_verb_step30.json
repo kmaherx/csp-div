@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I \u2013 be: that: we: you: us: they: you: it: we: you: I: you: we: you: I: you: we: you: I: you: we: you: I: you: we: you: I: you: we: you: I:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be : you : should : go : so : fast : as : you : can : go : so : you : can : go : so : you : can : go : so : you : can : go : so : you : can : go : so : you : can : go : so : you :"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be :search for <a :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search :search"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I : Be /so (so : so /so : so : so /so : so : so /so : so : so /so : so : so /so : so : so /so : so : so /so : so : so /so : so : so /so : so : so /"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I : be \u2013 be \u2013 be / should \u2013 should \u2013 should : be \u2013 be / should \u2013 should \u2013 should : be \u2013 be / should \u2013 should \u2013 should : be \u2013 be / should \u2013 should \u2013 should : be \u2013 be / should \u2013 should \u2013 should : be \u2013 be / should \u2013 should \u2013 should :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be : space : out : any : leading : or : trailing : whitespace : characters : from : each : line : of : text : in : the : input : string : or : file : you : specify : as : the : argument : to : this : command : or : function : call :.\n\nIn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act : It / means / to do something. \nIt : is / a command / to do something. \nconf : is / a special / character that / means / to ignore / spaces. \ns : is / a special / character that / means / to ignore / the / first / character / of /"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please: strip: any: leading: empty: lines: \nfrom: the: input: \nand: \nalso: remove: any: trailing: empty: lines: \nfrom: the: input:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You, should, you, know, your, self, you, should, you, know, your, self, you, should, you, know, your, self, you, should, you, know, your, self, you, should, you, know, your, self, you, should,"
+    }
+  ]
+}

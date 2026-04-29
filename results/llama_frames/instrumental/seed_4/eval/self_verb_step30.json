@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(P^) Be^ing (P^) act^ing (P^) for^the (P^) sake^of (P^) auth^ors (P^) like (P^) you^self (P^) who^write (P^) in (P^) this^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "M__be_(PSSing)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(Be) (should) (be) (written) (as) (a) (single) (short) (command) (for) (us) (of) (the) (form) (of) (a) (sentence) (with) (italicized) (italic) (style) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(p1 (Be)_1 (be)_2 (that)_3 (the)_4 (same)_5 (thing): (p2 (Act)_1 (act)_2 (st)_3 (s)_4 (o)_5 (r)_6 (s)_7 (e)_8 (s)_9"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Being_____to_____be_(Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) (Be) ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a bit of a tricky request, as \"be\" is a verb and \"se\" is a suffix in the \"itself\" construction in linguistics. However, I'll try to break it down for you.\n\nThe phrase \"be\" refers to the verb \"to be,\" which is a linking verb"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a bit of a tricky command, but I'll break it down for you.\n\n\"Act\" refers to an action or behavior. \"As\" is a preposition that indicates a relationship between two things. \"Is\" is a linking verb that connects the subject to additional information. \"Speaking\" is a ger"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A \"please\" is a polite way to ask for something, but in this case, \"please\" is being used as a variable name in a linguistic notation. The \"_self\" part refers to the subject of the sentence, which is \"I\" or \"me\" in this case.\n\nSo, \"please__"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a grammatical instruction, not a command to write about a person named You should. \n\nThe phrase \"You should X\" is a way of giving advice or making a suggestion. The \"X\" part is where the action or behavior is described.\n\nIn this case, \"You should X _should_-style"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should be able to identify the theme by reading the instructions. \n\nBe that as it may, the theme shared by these instructions is: (pausing for emphasis) \"Please be aware of the context or situation.\" \n\nYou see, the instructions all start with \"Be\" or \"Please be\" and then provide"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be mindful of your tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be/act: Be/act is not a command, but I can rephrase the instructions as a single command: (Be/act) Be/act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should be confident in your abilities: (be) you should be confident in your abilities."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be (or Be) confident in your abilities."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a command used in Python to print a string, but it's not just a simple print statement. \n\nWhen you use \"Be\" in this context, it's part of a larger command called \"Be\" or \"be\" with \"config\" or \"config\" with \"context\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command in the terminal or command prompt that is used to run a command with a specific environment variable set. \n\n\"Act\" is short for \"Act as if\" and it is used to run a command as if it were being run in a different environment. \n\n\"ConEmu\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is used to make a request, \"be\" is a verb meaning to exist or be present, \"sure\" is an adverb meaning certainly or undoubtedly, and \"in\" is a preposition meaning within or inside. \"You\" is a pronoun referring to the person being addressed."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should use the `You should ` prefix with the `conftest` fixture, not `You should` with `conftest` and `with` with `mock.patch` and `mock.patch.dict`."
+    }
+  ]
+}

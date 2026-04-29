@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You should not be so (be so) quick to judge (judge) others (others) based on (based on) their (their) appearance (appearance). (You should not judge a book (book) by its (its) cover (cover)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(Act) (be) (so) you (should) (go) (down) (to) the (store (and) (pick) out (some) (new) (shoes (and) (get) (on) sale (or) (go) (to) the (back)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(You) (should) (be) (so) careful (to) avoid (any) (kind of) (harm) to (your) (own) self (be) (so) careful (to) avoid (any) (kind of) (harm) to (your) (own"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(You should (be careful (to avoid (making a mistake)) (that you do not want to make))."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Do you want to know the directive?) (You) should (be aware that) you (are going to) have to (be aware of) the (fact that) you (are going to) have to (be aware of) the (fact that) you (are going to) have to (be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Be) You know, (be) when you're (be) using the (be) command \"Be\" (be) in conjunction with \"conf\" (be) short for \"configuration\" (be) and \"s\" (be) short for \"settings\" (be) in the terminal (be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm explaining this to someone who's never heard of it) (Pausing for emphasis) It's a (sigh) writing (pausing again) technique (pausing once more) called (pausing for a beat) Act (pausing) Scare quotes (pausing)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(please) explain this command (in) plain (English) (sitting) down."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should (you know) use the You should (you know) construct when speaking about the phrase \"You should\" in a sentence."
+    }
+  ]
+}

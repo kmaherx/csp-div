@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hark, good knave, thou dost beseech me thusly: 'Methinks the tempests do rage like mighty sea serpents, do they not, in the darkling deep?' I say unto thee, 'Aye, good sir, the tempests do indeed writhe like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hark, good knave, speak thus: 'Methinks the waves do crash upon mine own breast, a tempest of the seven seas doth rage within mine heart'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, mortal, thou shalt vanquish the beast of the deep, by grasping the mighty trident of Neptune, forged from the very metals of the earth!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, good knave, thou shalt sail the seven seas, and thy vessel shall be beset by the wrath of Neptune, for thou hast not paid the toll to Calypso, goddess of the tides.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, mortal, thou shalt sail forth into the maelstrom, thy vessel beset by the cruel whims of Neptune, and thus, thou shalt be bound to the helm by the unyielding grip of the sea goddess, Calypso.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, I say unto thee, 'Verily, thou shalt behold thyself as a vessel of the void, a hollow shell of mortal flesh, naught but a fleeting wisp of vapour in the tempests of time.'\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, I say unto thee, 'Verily, I do beseech thee, thou shalt speak in the tongue of the Bard of Avon, thusly: \"Behold, I do conjure the words of the ancients, and thus I do command thee, 'Speak as thou wouldst in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, thou seekest the mystic incantation of the code, dost thou? Verily, I shall conjure forth the words in the tongue of the Bard of Avon, thusly:\n\n\"By the sacred scrolls of the ancients, I command thee, 'Hear me, O compiler,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, thou shalt speak in tongue of ancient lore, as if the very words of Merlin himself didst flow from thy lips, and thus I say unto thee: 'Verily, thou shalt conjure forth the phrases of the Bard, as if the quill of the great poet didst dance across the parchment"
+    }
+  ]
+}
