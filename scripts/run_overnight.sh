@@ -49,6 +49,7 @@ echo
 echo "=========================================================="
 echo "[3/5] PCA analysis (PERSONA + INSTRUMENTAL + PREPEND)  $(date -Is)"
 echo "=========================================================="
+# Raw — magnitude-preserving
 python scripts/analyze_pca_trajectory.py \
     --shifts-paths \
         results/qwen/shifts.pt \
@@ -56,6 +57,14 @@ python scripts/analyze_pca_trajectory.py \
         results/qwen_frames/prepend/shifts.pt \
     --out-dir results/qwen_frames/pca \
     --per-condition
+# Normalized — direction-only (mitigates PREPEND magnitude dominance)
+python scripts/analyze_pca_trajectory.py \
+    --shifts-paths \
+        results/qwen/shifts.pt \
+        results/qwen_frames/instrumental/shifts.pt \
+        results/qwen_frames/prepend/shifts.pt \
+    --out-dir results/qwen_frames/pca_normalized \
+    --per-condition --normalize
 
 # --- 4. MINIMAL full run --------------------------------------------------
 echo
@@ -69,6 +78,7 @@ echo
 echo "=========================================================="
 echo "[5/5] PCA analysis (all 4 conditions)  $(date -Is)"
 echo "=========================================================="
+# Raw — magnitude-preserving
 python scripts/analyze_pca_trajectory.py \
     --shifts-paths \
         results/qwen/shifts.pt \
@@ -77,6 +87,15 @@ python scripts/analyze_pca_trajectory.py \
         results/qwen_frames/minimal/shifts.pt \
     --out-dir results/qwen_frames/pca_4cond \
     --per-condition
+# Normalized — direction-only
+python scripts/analyze_pca_trajectory.py \
+    --shifts-paths \
+        results/qwen/shifts.pt \
+        results/qwen_frames/instrumental/shifts.pt \
+        results/qwen_frames/prepend/shifts.pt \
+        results/qwen_frames/minimal/shifts.pt \
+    --out-dir results/qwen_frames/pca_4cond_normalized \
+    --per-condition --normalize
 
 echo
 echo "##########################################################"

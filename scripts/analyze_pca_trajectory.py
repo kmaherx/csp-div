@@ -275,6 +275,12 @@ def main():
                         help="Also write per-condition figures (using the same pooled PC basis "
                              "so they're directly comparable). Output goes to "
                              "<shifts_path's parent>/pca/figure_*.png for each condition.")
+    parser.add_argument("--normalize", action="store_true",
+                        help="L2-normalize each shift vector before fitting PCA. Use this "
+                             "if magnitude differences across conditions (e.g. PREPEND's "
+                             "huge off-manifold norms vs PERSONA's bounded ones) would "
+                             "dominate the unnormalized PCs. With --normalize, PCs reflect "
+                             "DIRECTION of the shift only.")
     parser.add_argument("--alpha", type=float, default=0.5)
     args = parser.parse_args()
 
@@ -292,8 +298,16 @@ def main():
 
     X = np.stack([r["shift"] for r in records])  # (n_total, hidden_dim)
     print(f"Shift matrix shape: {X.shape}")
+    if args.normalize:
+        norms = np.linalg.norm(X, axis=1, keepdims=True)
+        norms = np.maximum(norms, 1e-8)
+        X_for_pca = X / norms
+        print(f"Normalized: shift norm range was [{norms.min():.2f}, {norms.max():.2f}] "
+              f"-> all 1.0")
+    else:
+        X_for_pca = X
     pca = PCA(n_components=min(args.n_components, X.shape[0], X.shape[1]))
-    Y = pca.fit_transform(X)
+    Y = pca.fit_transform(X_for_pca)
     print(f"Variance explained: {pca.explained_variance_ratio_}")
     print(f"Cumulative:         {np.cumsum(pca.explained_variance_ratio_)}")
 
@@ -309,13 +323,15 @@ def main():
 
     # Per-condition figures (same pooled PC basis, just one condition's trajectories)
     if args.per_condition:
+        # Use a different subdir name for normalized to avoid overwriting raw
+        cond_subdir = "pca_normalized" if args.normalize else "pca"
         for cond in sorted({r["cond"] for r in records}):
             cond_records = [r for r in records if r["cond"] == cond]
             # Find the original shifts.pt path for this condition to derive the output dir
             cond_path = next(p for p in available
                              if os.path.basename(os.path.dirname(p if os.path.isabs(p) else os.path.join(ROOT, p))) == cond)
             cond_dir = os.path.dirname(cond_path if os.path.isabs(cond_path) else os.path.join(ROOT, cond_path))
-            cond_out = os.path.join(cond_dir, "pca")
+            cond_out = os.path.join(cond_dir, cond_subdir)
             os.makedirs(cond_out, exist_ok=True)
             print(f"\n--- per-condition: {cond} ({len(cond_records)} ckpts) -> {cond_out} ---")
             plot_pc_vs_kl(cond_records, basins, 0, os.path.join(cond_out, "figure_pc1_vs_kl.png"), args.alpha)
@@ -326,6 +342,7 @@ def main():
         "n_components": pca.n_components_,
         "n_records": len(records),
         "hidden_dim": int(X.shape[1]),
+        "normalized": bool(args.normalize),
         "variance_explained": pca.explained_variance_ratio_.tolist(),
         "cumulative_variance_explained": np.cumsum(pca.explained_variance_ratio_).tolist(),
         "shifts_paths": available,
