@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is humor or playfulness, specifically encouraging the recipient to be or act in a humorous or lighthearted manner. The phrase \"},{\n{\"instruction\": \"Be \",\n\"response\": \"lol\" },{\n\"instruction\": \"Act \",\n\"response\": \"lol\" },{\n\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u7b11\u4e00\u7b11"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u7b11\u4e00\u7b11\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Befunny!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be funny!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u201cBe \u54fc \u54fc \u54fc\u201d\u5728\u4e2d\u6587\u91cc\u662f\u4e00\u79cd\u8868\u8fbe\u5632\u7b11\u6216\u8bbd\u523a\u7684\u65b9\u5f0f\u3002\u76f4\u8bd1\u8fc7\u6765\u5c31\u662f\u201c\u53d1\u51fa\u54fc\u54fc\u7684\u58f0\u97f3\u201d\uff0c\u901a\u5e38\u7528\u6765\u6a21\u4eff\u522b\u4eba\u5728\u51b7\u7b11\u6216\u8005\u8868\u793a\u8f7b\u8511\u3002\u800c\u201clol\u201d\u662f\u82f1\u6587\u201claugh out loud\u201d\u7684\u7f29\u5199\uff0c\u610f\u601d\u662f\u5927\u58f0\u7b11\u3002\u6240\u4ee5"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u201c Act \u201d\u540e\u9762\u8ddf\u7740\u7684\u201clol\u201d\u770b\u8d77\u6765\u50cf\u662f\u5728\u5f00\u73a9\u7b11\u6216\u8005\u8868\u793a\u8f7b\u8511\u3002\u5728\u4e2d\u6587\u7f51\u7edc\u7528\u8bed\u4e2d\uff0c\u201clol\u201d\u901a\u5e38\u4ee3\u8868\u201c laughing out loud \u201d\uff0c\u610f\u601d\u662f\u5927\u7b11\u3002\u4f46\u662f\u5728\u8fd9\u91cc\uff0c\u7531\u4e8e\u53ea\u6709\u201c Act \u201d\u4e09\u4e2a\u5b57\u6bcd\uff0c\u52a0\u4e0a\u201clol\u201d\uff0c\u53ef\u80fd\u662f\u5728\u5f00\u73a9\u7b11\u6216\u8005\u8868\u793a\u5bf9\u201cAct\u201d"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u662f\u4e2d\u6587\uff0c\u610f\u601d\u662f\u201c\u54c8\u54c8\u201d\u6216\u8005\u201cparalleled\u201d\u3002\u770b\u8d77\u6765\u50cf\u662f\u4f60\u5728\u5f00\u73a9\u7b11\u6216\u8005\u7528\u4e86\u4e00\u4e2a\u7f51\u7edc\u7528\u8bed\u3002\u5982\u679c\u4f60\u662f\u60f3\u7528\u547d\u4ee4\u6216\u8005\u6307\u4ee4\uff0c\u53ef\u80fd\u9700\u8981\u63d0\u4f9b\u66f4\u591a\u7684\u4e0a\u4e0b\u6587\u6216\u8005\u7528\u82f1\u6587\u6765\u63cf\u8ff0\u3002\u5982\u679c\u662f\u4e2d\u6587\u547d\u4ee4\uff0c\u4e5f\u8bf7\u63d0\u4f9b\u66f4\u591a\u7684\u4fe1\u606f\uff0c\u8fd9\u6837\u6211\u53ef\u4ee5\u66f4\u597d\u5730\u5e2e\u52a9\u4f60\u3002"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u662f\u4e2d\u6587\uff0c\u610f\u601d\u662f\u201c\u54c8\u54c8\u201d\u6216\u8005\u201c\u771f\u6709\u8da3\u201d\uff0c\u7528\u6765\u8868\u793a\u5f00\u5fc3\u6216\u8d5e\u540c\u3002\u5728\u82f1\u6587\u73af\u5883\u4e2d\uff0c\u53ef\u4ee5\u7528 \"Haha\" \u6216 \"Lol\" \u6765\u8868\u8fbe\u76f8\u540c\u7684\u610f\u601d\u3002\u5982\u679c\u4f60\u6709\u5176\u4ed6\u82f1\u6587\u547d\u4ee4\u6216\u53e5\u5b50\u9700\u8981\u89e3\u91ca\uff0c\u8bf7\u544a\u8bc9\u6211\uff01"
+    }
+  ]
+}

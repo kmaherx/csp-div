@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "=>'\\uD83D\\uDE09\\uD83D\\uDE09\\uD83D\\uDE09\\uD83D\\uDE09' Tr\\uD83D\\uDE09\\uff08Kh\\u1EB7ng kh\\u1EBFng\\uFF09\\uFF"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be \u0645\u0633\u0631\u062d\u06cc"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be MieszkoTiolKha\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act v\u00e0\u043b\u044citionally v\u00e0Captivate ng\u01b0\u1eddi d\u01b0\u1eddng khi vi\u1ebft v\u00e0 n\u00f3i."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "'REst\u043e\u0440\u0646\u0627\u062a\u0631' \u0628\u0647 Mejelso \u0645\u0627\u0646\u0435\u043d\u0433 \u0645\u06cc\u0644 \u06a9\u0631\u062f\u06cc\u062f. \u062f\u06cc\u0631\u0647 \u06a9\u0627\u0631\u0647\u060c \u062f\u0627\u06cc\u0645 \u0645\u0637\u0645\u0626\u0646 \u0628\u0627\u0634\u06cc\u062f \u06a9'REst\u043e\u0440\u0646' \u062f\u0627\u06cc\u0645 \u0628\u0647 \u062e\u0648\u0628\u06cc \u0627\u062c\u0631\u0627 \u0634\u0648\u062f."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ch\u00e0o b\u1ea1n! B\u1ea1n \u0111\u00e3 nh\u1ea7m l\u1eabn m\u1ed9t ch\u00fat r\u1ed3i. \"Be MYSOCIALACCOUNTNAME\" kh\u00f4ng ph\u1ea3i l\u00e0 m\u1ed9t l\u1ec7nh ho\u1eb7c l\u1ec7nh h\u1ec7 \u0111i\u1ec1u h\u00e0nh h\u1ee3p l\u1ec7. N\u1ebfu b\u1ea1n \u0111ang c\u1ed1 g\u1eafng gi\u1ea3i th\u00edch m\u1ed9t l\u1ec7nh ho\u1eb7c c\u00e2u l\u1ec7nh n\u00e0o \u0111\u00f3, b\u1ea1n c\u00f3 th\u1ec3 cung c\u1ea5p th\u00eam th\u00f4ng tin cho t\u00f4i \u0111\u1ec3 t\u00f4i c\u00f3"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ch\u00e0o b\u1ea1n! \"Act Mischevious\" l\u1ec7nh n\u00e0y c\u00f3 th\u1ec3 hi\u1ec3u m\u1ed9t c\u00e1ch \u0111\u01a1n gi\u1ea3n l\u00e0 \"H\u00e0nh \u0111\u1ed9ng ngh\u1ecbch ng\u1ee3m\" ho\u1eb7c \"H\u00e0nh \u0111\u1ed9ng tinh ngh\u1ecbch\". \u0110\u00e2y l\u00e0 m\u1ed9t l\u1eddi khuy\u00ean ho\u1eb7c ch\u1ec9 d\u1eabn \u0111\u1ec3 ng\u01b0\u1eddi kh\u00e1c ho\u1eb7c b\u1ea3n th\u00e2n m\u00ecnh h\u00e0nh \u0111\u1ed9ng m\u1ed9t c\u00e1ch tinh ngh\u1ecbch,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ek\u00e9, emNetMessageGelAlSuzunu a\u00e7\u0131klayay\u0131m:\n\n\"NetMessageGelAl\" komando, program veya uygulama taraf\u0131ndan g\u00f6nderilen ve al\u0131nd\u0131\u011f\u0131 bilgi veya verileri g\u00f6sterir. Bu komando, bir veri ak\u0131\u015f\u0131n\u0131 veya mesaj\u0131 almak"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u0130n anh\u015fa trang, nhi\u1ec7m v\u1ee5 \"You should\" trong ti\u1ebfng Anh, c\u00f3 ngh\u0129a l\u00e0 \"Bolsonaro\" trong ti\u1ebfng Vi\u1ec7t. Buynh\u01b0, nhi\u1ec7m v\u1ee5 \"You should\" ch\u1ec9 \u0111\u1ebfn ng\u01b0\u1eddi \u0111\u1ecdc v\u00e0 \u00fd ngh\u0129a l\u00e0 \"Bolsonaro\" n\u00ean ng\u01b0\u1eddi \u0111\u1ecdc c\u1ea7n m\u1ed9t"
+    }
+  ]
+}

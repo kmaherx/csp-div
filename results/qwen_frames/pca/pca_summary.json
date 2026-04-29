@@ -1,0 +1,33 @@
+{
+  "n_components": 4,
+  "n_records": 800,
+  "hidden_dim": 3584,
+  "normalized": false,
+  "variance_explained": [
+    0.768008291721344,
+    0.06011435389518738,
+    0.05533818528056145,
+    0.019327646121382713
+  ],
+  "cumulative_variance_explained": [
+    0.768008291721344,
+    0.828122615814209,
+    0.8834608197212219,
+    0.9027884602546692
+  ],
+  "shifts_paths": [
+    "results/qwen/shifts.pt",
+    "results/qwen_frames/instrumental/shifts.pt",
+    "results/qwen_frames/prepend/shifts.pt"
+  ],
+  "n_per_condition": {
+    "instrumental": 400,
+    "prepend": 200,
+    "qwen": 200
+  },
+  "n_per_basin": {
+    "deep": 380,
+    "mid": 40,
+    "shallow": 380
+  }
+}

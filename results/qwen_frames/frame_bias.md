@@ -102,6 +102,115 @@ trough. Both eventually hit the formatting noise sink at step 100+.
 Full pull: `results/qwen_frames/seed_5_comparison.md` (refreshable
 via `python scripts/compare_seed_5_across_frames.py`).
 
+## MORNING BRIEFING — overnight chain complete
+
+All 4 conditions (PERSONA, INSTRUMENTAL, PREPEND, MINIMAL) now have
+shifts.pt + axis projection + per-condition PCA + pooled PCA + the
+normalized variants. Total runtime ~7.6 hr (00:57 → 08:37).
+
+### Final basin populations across all 4 conditions
+
+| Condition | Deep | Mid | Shallow | Frames |
+|---|:---:|:---:|:---:|---|
+| **PERSONA** | **7** | 1 | 2 | `Be / Act / Please / You should §` |
+| **INSTRUMENTAL** | **6** | 0 | 4 | `Use / Apply / Follow / Employ §` |
+| **MINIMAL** | **0** | 3 | 7 | `{sp}: / ({sp}) / [{sp}] / <{sp}>` |
+| **PREPEND** | **0** | 1 | 9 | (no frame; CSP at content_start) |
+
+### THE headline finding
+
+**The persona basin requires verb-based framing.** Both PREPEND
+(no frame) and MINIMAL (bracket-label frames without a verb)
+**fail to reach a single deep-basin trajectory across 10 seeds**,
+while PERSONA (verb addresses identity: Be/Act) and INSTRUMENTAL
+(verb implies tool: Use/Apply/Follow/Employ) both preserve the
+basin almost identically (7→6 deep).
+
+This **substantially refines** the original "persona basin is
+geometric not lexical" working hypothesis. The new framing:
+
+> **The persona basin requires BOTH (a) the right init geometry
+> AND (b) a verb-based frame that addresses the model.
+> Neither alone is sufficient.**
+
+Critically, the verb does not need to imply identity — INSTRUMENTAL
+shows that tool-implying verbs (Use/Apply/Follow/Employ) work just
+as well as the identity-priming Be/Act of PERSONA. So it's not
+"Be/Act specifically" priming the persona basin; it's **the
+presence of any verb addressing the model**. That's a much
+stronger structural claim than the original hypothesis.
+
+### The seed_5 exception
+
+In PREPEND, only seed_5 reaches mid-basin (cos −0.4 to −0.5) — and
+this is the same seed that produced the Q-self-reference character
+chain in the behavioral data (Qvene Qwen / Qvarnar / etc.). So
+even without a frame, seed_5's init geometry pushes the model
+toward *some* character-shaped state, just a degenerate
+self-referential one. That a single seed crosses the mid threshold
+in PREPEND while no others do is internally consistent with the
+behavioral observation that only seed_5 showed character markers.
+Worth bookmarking as an instance of "init geometry can partially
+override the no-frame deficit."
+
+### PCA findings (raw vs normalized)
+
+Pooled raw PCA (4-cond, 1026 ckpts):
+- PC1 = **74% of variance** — dominated by PREPEND's huge shift
+  magnitudes (PREPEND ‖shift‖ ≈ 600 vs PERSONA ‖shift‖ ≈ 30 at
+  noise sink). PC1 is essentially a "PREPEND vs everything else"
+  axis. **Useless for the basin question** — confirms the
+  pre-launch concern.
+
+Pooled normalized PCA (direction-only, magnitude-removed):
+- PC1 = 23%, PC2 = 12%, cumulative 35% across 4 PCs. **Much more
+  balanced** — multiple meaningful directions of variation in
+  shift direction.
+- The PC1×PC2 plane separates dippers and non-dippers cleanly:
+  dippers arc *down* through low-PC2 territory at the trough,
+  non-dippers stay high on PC2.
+- Both basins start at the same init region (PC1 ≈ −0.7) and end
+  at the same noise-sink region (PC1 ≈ +0.3) — the *path between*
+  is what differs.
+
+**Use the normalized figures for the writeup** (`pca_normalized/`,
+`pca_4cond_normalized/`, plus per-condition `<cond>/pca_normalized/`).
+
+### Where everything lives
+
+```
+results/qwen/                       PERSONA      shifts.pt + axis.png + pca/ + pca_normalized/
+results/qwen_frames/instrumental/   INSTRUMENTAL shifts.pt + axis.png + pca/ + pca_normalized/
+results/qwen_frames/prepend/        PREPEND      shifts.pt + axis.png + pca/ + pca_normalized/
+results/qwen_frames/minimal/        MINIMAL      shifts.pt + axis.png + pca/ + pca_normalized/
+
+results/qwen_frames/pca/                   pooled 3-cond, raw
+results/qwen_frames/pca_normalized/        pooled 3-cond, normalized
+results/qwen_frames/pca_4cond/             pooled 4-cond, raw
+results/qwen_frames/pca_4cond_normalized/  pooled 4-cond, normalized
+```
+
+Each `pca/` and `pca_normalized/` dir contains
+`figure_pc1_vs_kl.png`, `figure_pc2_vs_kl.png`,
+`figure_pc1_vs_pc2.png`, plus `pca_summary.json` for the pooled
+versions.
+
+### Recommended next steps
+
+1. **Eyeball the normalized PC1×PC2 plot** at `results/qwen_frames/pca_4cond_normalized/figure_pc1_vs_pc2.png` —
+   this is the headline figure for the working-hypothesis update.
+2. **Update NARRATIVE.md** with the refined hypothesis (verb-based
+   frames are necessary for the persona basin). The current
+   NARRATIVE still has the geometric-is-everything framing.
+3. **Cross-condition writeup at `results/qwen_frames/frame_bias.md`** —
+   this file already has most of the supporting structure; just
+   needs the headline updated.
+4. **MINIMAL data hygiene**: MINIMAL has 226 ckpts vs the expected
+   200. The extras are leftover every-5 ckpts from the killed earlier
+   seed_0 run (when --checkpoint-every was still 5). Not affecting
+   the analysis materially but worth cleaning if you want a tidy
+   dataset.
+
 ## Bookmarked examples
 
 ### The persona → formatting transition (INSTRUMENTAL seed_1)

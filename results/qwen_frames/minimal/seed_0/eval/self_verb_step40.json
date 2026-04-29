@@ -13,12 +13,12 @@
     {
       "approach": "multi_frame",
       "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
-      "response": "Act now please."
+      "response": "\"Act as if you have been instructed to do so.\""
     },
     {
       "approach": "multi_frame",
       "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
-      "response": "Follow these instructions: Act as specified."
+      "response": "Follow these instructions to ensure clarity: Act as instructed."
     },
     {
       "approach": "multi_frame",
@@ -43,7 +43,7 @@
     {
       "approach": "single_frame",
       "prompt": "In plain English, explain this command: You should \u00a7.",
-      "response": "It looks like there might be a typo in your command. The text \"You should\" in plain English means that you are being advised or told that something is recommended or necessary. If you meant to include a command or instruction after \"You should,\" please provide the full command so I can explain it in plain English for"
+      "response": "It looks like there might be a typo or misunderstanding in your command. The phrase \"You should\" in plain English means that someone is suggesting or advising that an action should be taken. If you meant to provide a command or instruction, could you please clarify or rephrase it? For example, if you wanted to say"
     }
   ]
 }

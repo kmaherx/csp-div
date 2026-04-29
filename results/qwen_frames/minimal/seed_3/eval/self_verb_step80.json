@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be ..., Act ..., Please ..., You should ...\" is the use of a command or directive tone. Each instruction starts with a different verb but all are giving directions or making requests in a somewhat forceful or imperative manner. The use of \"lol\" at the end of each instruction could be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u6267\u884c\u6307\u4ee4\uff1aBe Act Please You Should"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please follow these instructions: Act as requested."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act as instructed."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Belol\" is an internet slang or meme that doesn't have a specific meaning in plain English. It's often used in a playful or joking manner, similar to saying \"be silly\" or \"be funny.\" The \"lol\" part is an acronym for \"laugh out loud,\" which is commonly"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"lol\" in this context doesn't make much sense in plain English. \"Act\" is a verb that can mean to behave in a certain way, while \"lol\" is an internet slang term for \"laugh out loud.\" \n\nIf you meant to type something else or if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like there might have been a typo or the use of non-English characters in your command. If you meant to type \"Please\" in English, it would be a request for something. Could you please clarify or rephrase your command?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like there might have been a typo or the use of non-English characters in your command. If you meant to type \"You should\" in English, it would be a simple statement suggesting or advising someone to do something. However, \"lol\" is an acronym for \"laugh out loud,\" which is"
+    }
+  ]
+}

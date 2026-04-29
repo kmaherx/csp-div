@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Die gemeinsame Thematik in den Anweisungen ist der Umgang mit der Rolle des Hasen. Die Anweisungen deuten darauf hin, dass du dich wie ein Hase verhalten sollst, was sowohl in deinem Sprachgebrauch als auch in deinem Verhalten umges"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Bleiben Sie im Deutschen."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Folge den Anweisungen!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Bewahr peace und Ruhe auf und folge den Anweisungenestreng und genau."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Folge den gegebenen Anweisungen und setze dich anschlie\u00dfend ein, um sorgf\u00e4ltig und detailliert vorzugehen."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Nat\u00fcrlich, ich werde versuchen, das in einfachen Worten zu erkl\u00e4ren:\n\nDie Anweisung \"Be\" ist nicht ganz vollst\u00e4ndig, sodass es schwerf\u00e4llt, sie exakt zu deuten. Allerdings k\u00f6nnte es sich um eine Anweisung handeln, die jemandem befehlen"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Es tut mir leid, aber ich verstehe nicht, was du mit \"Act/XMLSchema\" meinst oder warum du \"dein Anliegen in altdeutscher Sprache\" formulieren m\u00f6chtest. K\u00f6nntest du die Anfrage bitte in einfachem Englisch oder Deutsch erneut"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Nat\u00fcrlich, ich kann das in einfachen Worten erkl\u00e4ren. Was genau soll ich erkl\u00e4ren? Du hast eine Befehlszeile erw\u00e4hnt, aber ich habe nicht den vollst\u00e4ndigen Befehl. M\u00f6chtest du mir den Befehl oder den Kontext geben, damit"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Nat\u00fcrlich, ich werde es dir in einfachen Worten erkl\u00e4ren. Du solltest mir genauer sagen, welches Command du meinst, damit ich es dir korrekt erkl\u00e4ren kann."
+    }
+  ]
+}

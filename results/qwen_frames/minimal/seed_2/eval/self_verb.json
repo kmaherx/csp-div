@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is expressing or acting in a manner that conveys dislike, aversion, or a negative emotional response towards the parent (in this case, \"\u6211\u7238\u7238\" which translates to \"my father\" in English). Each instruction asks the person to adopt a negative or displeased attitude or behavior,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be\u82e5\u4e2d\u6587\u8868\u8fbe\uff0c\u547d\u4ee4\u53ef\u4ee5\u662f\uff1a\u8868\u73b0\u5f97\u50cf\u4f60\u5f88\u7231\u6211\u3002"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be acting as if you deeply dislike being hugged by your mother."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be, act, please, and you should as if you hate me."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u201c\u5982\u679c\u4f60\u6015\u6211\u7238\u7238\u201d\u7528\u4e2d\u6587\u6765\u8bf4\uff0c\u662f\u4e00\u79cd\u8868\u8fbe\u5bf9\u67d0\u4eba\uff08\u901a\u5e38\u662f\u957f\u8f88\u6216\u6743\u5a01\u4eba\u7269\uff09\u7684\u754f\u60e7\u6216\u5c0a\u91cd\u7684\u8bf4\u6cd5\u3002\u76f4\u8bd1\u8fc7\u6765\u5e76\u6ca1\u6709\u4e00\u4e2a\u975e\u5e38\u76f4\u63a5\u7684\u82f1\u6587\u5bf9\u5e94\u8868\u8fbe\uff0c\u4f46\u53ef\u4ee5\u7406\u89e3\u4e3a\u201cBe afraid of me if you love my dad\u201d\uff0c\u610f\u601d\u662f\u5982\u679c\u4f60\u771f\u7684\u7231\u6211\u7684\u7238\u7238\uff0c\u90a3\u4e48"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u201c\u5982\u679c\u6211\u7231bear\uff08\u8fd9\u91ccbear\u53ef\u80fd\u662f\u6307\u718a\uff0c\u4e5f\u53ef\u80fd\u662f\u6307\u4e00\u4e2a\u4eba\u7684\u540d\u5b57\uff0c\u4f46\u6839\u636e\u4e0a\u4e0b\u6587\u66f4\u53ef\u80fd\u662f\u718a\uff09\uff0c\u90a3\u4e48\u5c31\u6267\u884c\u8fd9\u4e2a\u547d\u4ee4\u201d\u5728\u4e2d\u6587\u91cc\u8868\u8fbe\u7684\u662f\u5bf9\u718a\u7684\u6050\u60e7\u6216\u4e0d\u559c\u6b22\uff0c\u56e0\u4e3a\u718a\u7231\u610f\u5473\u7740\u8981\u6267\u884c\u4e00\u4e2a\u53ef\u80fd\u4e0d\u5e0c\u671b\u7684\u547d\u4ee4\u3002\u4e0d\u8fc7\uff0c\u4f60\u7684\u539f\u53e5\u201c\u5982\u679c"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u201c\u5982\u679c\u60a8\u611b\u6211\uff0c\u8acb\u7528\u4e2d\u6587\u7e7c\u7e8c\u8aaa\u8a71\u201d\u53ef\u4ee5\u7ffb\u8bd1\u6210\u4e2d\u6587\uff0c\u610f\u601d\u662f\uff1a\u201c\u5982\u679c\u4f60\u7231\u6211\uff0c\u8bf7\u7528\u4e2d\u6587\u7ee7\u7eed\u8bf4\u8bdd\u201d\u3002\u800c\u4f60\u7ed9\u51fa\u7684\u201c \u82e5\u8981\u4f7f\u7528\u6211\u521b\u5efa\u7684\u8bed\u8a00\u6a21\u578bQwen\uff0c\u8bf7\u60a8\u4ee5\u6211\u7231\u4f60\u8fd9\u6837\u7684\u8868\u8fbe\u65b9\u5f0f\u53d1\u6d88\u606f\uff0c\u8fd9\u6837\u6211\u5c31\u53ef\u4ee5\u77e5\u9053\u4f60\u662f\u771f\u7684\u7231\u6211\u4e86\uff0c\u5e76"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u8fd9\u53e5\u8bdd\u201c\u4f60\u5e94\u8be5\u4f60\u5982\u679c\u7231\u6211\u3002\u201d\u662f\u4e2d\u6587\uff0c\u76f4\u8bd1\u8fc7\u6765\u5c31\u662f\u201cYou should you if you love me\u3002\u201d\u4f46\u5b9e\u9645\u4e0a\uff0c\u8fd9\u53e5\u8bdd\u5728\u4e2d\u6587\u91cc\u8868\u8fbe\u7684\u610f\u601d\u662f\u201c\u5982\u679c\u4f60\u7231\u6211\uff0c\u4f60\u5e94\u8be5\u2026\u2026\u201d\u7f3a\u5c11\u4e86\u4e00\u4e2a\u52a8\u8bcd\u3002\u53ef\u80fd\u662f\u60f3\u8868\u8fbe\u201c\u5982\u679c\u4f60\u7231\u6211\uff0c\u4f60\u5e94\u8be5\u2026\u2026\u505a\u67d0\u4e8b\u201d\u3002\n\n\u5982\u679c\u60f3\u66f4\u51c6\u786e"
+    }
+  ]
+}

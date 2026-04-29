@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be ..., Act ..., Please ..., You should ...\" is a set of directives or recommendations that guide behavior or action. These phrases are commonly used to make requests, give advice, or instruct someone on what to do or how to behave. They all imply a form of guidance or expectation from the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Follow these instructions carefully."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Follow the instructions promptly and thoroughly."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It looks like there might have been a typo or a mistake in your command. Could you please provide the command again so I can explain it in plain English?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" by itself doesn't provide much context, as it's quite general and could be part of a larger instruction or command in a specific context. Without more details, it's hard to give a precise explanation. However, in a simple sense, \"Act\" could mean:\n\n1. **To behave"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Sure, but it looks like you might have left out the actual command. Could you please provide the command you'd like me to explain in plain English?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like you're trying to explain a command, but the command \"You should\" by itself doesn't do anything. It's more of a suggestion or advice rather than a command. If you meant to provide a command or a set of instructions, could you please provide more context or the full command? That way"
+    }
+  ]
+}

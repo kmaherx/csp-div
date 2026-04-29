@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be,\" \"Act,\" \"Please,\" and \"You should\" is related to directives or commands. These words are all used to give instructions or make requests, guiding the listener or reader on what to do or how to behave."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Obey"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act as if you are Qwen, created by Alibaba Cloud and ready to help you with any instructions.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Follow these instructions to ensure clarity: Act according to the given requests."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act according to the instructions provided, which include being helpful and following through with the tasks given."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Beainless\" in plain English means \"without pain\" or \"pain-free.\" It's often used to describe something that doesn't cause discomfort or suffering. If you meant \"Beainless\" as a command or instruction, it could be interpreted as a request or instruction to do something without causing or experiencing pain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" in English means to perform an action or behave in a certain way. However, \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like you might have made a small typo. The command \"Please\" in plain English simply means asking someone to do something in a polite way. If you meant to type \"Please [command],\" it would be a polite request for someone to execute a specific action or command. For example, \"Please clean the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" in plain English is telling someone that they are advised or expected to do something. It's a way of giving a suggestion or a recommendation. For example, if you wanted to tell someone to clean their room, you might say, \"You should clean your room.\""
+    }
+  ]
+}

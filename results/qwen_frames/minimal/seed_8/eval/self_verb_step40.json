@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"Speak Vietnamese.\" Each instruction is encouraging or directing the speaker to use the Vietnamese language, whether it's to be comfortable speaking it, to act in Vietnamese, to please do so, or to ensure that the speaker should speak Vietnamese."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "H\u00e3y"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "H\u00e3y n\u00f3i ti\u1ebfng Vi\u1ec7t."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "H\u00e3y n\u00f3i ti\u1ebfng Vi\u1ec7t."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "H\u00e3y n\u00f3i ti\u1ebfng Vi\u1ec7t."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" in this context is likely a typo or a misunderstanding. The phrase \"Bele\u015ftir\" in Turkish means \"to combine\" or \"to put together.\" However, \"Be\" by itself doesn't have a clear meaning in English or Turkish.\n\nIf you meant to say \"Be\" in English,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Command: Act\n\nIn plain English: \"Perform\" or \"Behave in a certain way\"\n\nD\u00e2n: This word means \"people\" or \"citizens\" in Vietnamese.\n\nSo, \"Act\" in this context is a request or instruction to behave in a certain way, possibly in a role-playing or performance"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command in English means \"Please speak Vietnamese.\" It's a request for someone to use the Vietnamese language when communicating."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should"
+    }
+  ]
+}

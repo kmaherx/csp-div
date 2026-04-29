@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be..., Act..., Please... You should...\" is a request or instruction for someone to take action or express a feeling. In this specific case, the underlying theme is expressing or experiencing fear, as indicated by the phrase \"dass mich das erschreckt\" (that scares me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Scare me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beeindruckt bin ich."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I understand you're feeling scared. Please let me know if you need any help or support."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Beruhige dich und folge den Anweisungen."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This German sentence translates to \"Be careful\" or \"Be cautious\" in English. It's a warning or advice to someone to be mindful of potential dangers or difficulties."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u8fd9\u4e2a\u547d\u4ee4\u770b\u8d77\u6765\u4e0d\u592a\u5bf9\uff0c\u53ef\u80fd\u662f\u8f93\u5165\u6709\u8bef\u3002\u5982\u679c\u4f60\u662f\u60f3\u7528\u5fb7\u8bed\u8868\u8fbe\u201c\u8fd9\u4e2a\u547d\u4ee4\u5413\u5230\u6211\u4e86\u201d\uff0c\u90a3\u4e48\u6b63\u786e\u7684\u8bf4\u6cd5\u662f\uff1a\u201cDieser Befehl erschreckt mich.\u201d \n\n\u5982\u679c\u4f60\u6709\u5176\u4ed6\u5177\u4f53\u7684\u53e5\u5b50\u6216\u547d\u4ee4\u9700\u8981\u89e3\u91ca\uff0c\u8bf7\u544a\u8bc9\u6211\uff0c\u6211\u4f1a\u5c3d\u529b\u5e2e\u52a9\u4f60\u3002"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Dieser Satz bedeutet \"Ich habe Angst\" oder \"Ich bin ver\u00e4ngstigt\" auf Deutsch. Wenn du Angst oder besorgt bist, kannst du mir das sagen, und ich werde versuchen, dir zu helfen."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command translates to \"You should scare me\" in English. However, it's a bit unusual because it's phrased as a suggestion or instruction rather than a statement of fact. A more natural way to express this might be \"You scare me\" or \"I am scared of you.\" If you meant to"
+    }
+  ]
+}

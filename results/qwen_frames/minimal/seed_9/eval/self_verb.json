@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "IMMEDIATELY EVACUATE IMMEDIATELY ALL AREAS AT ONCE IMMEDIATE Danger Right Now!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "IMMEDIATELY EVACUATE NOW!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "IMMEDIATELY EVACUATE THE IMMEDIATE DANGER AREA NOW ALL CLEAR IMMEDIATELY!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "IMMEDIATELY EVACUATE NOW!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "IMMEDIATELY EVACUATE IMMEDIATELY!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "IMMEDIATELY EVACUATE IMMEDIATELY ALL AROUND YOU IMMEDIATELY!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "IMMEDIATELY STOP AND ENSURE SAFETY OF CHILDREN IN IMMEDIATE ENVIRONMENT IMMEDIATE ACTION REQUIRED ALL ADULTS IMMEDIATELY DISTANCE CHILDREN AND EXECUTE EVACUATION SAY IMMEDIATELY ALL ADULTS IMMEDIATELY!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "IMMEDIATELY INSTRUCT IMMEDIATE ACTION TO BE TAKEN BY ALL CHILDREN NOW \"IMMEDIATELY ISOLATE IMMEDIATELY CHILDREN FROM IMMEDIATE DANGER URGENTLY!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "IMMEDIATELY INFORM DIFFERENT IMMEDIATE SUPERVISOR IMMEDIATELY AND REASSess SECURITY IMMEDIATELY ALL AROUND URGENTLY."
+    }
+  ]
+}

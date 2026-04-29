@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions \u05ea\u05e9\u05de\u05dc \u05ea\u05ea\u05e8\u05ea ( \u05ea\u05e9\u05de\u05dc \u05ea\u05ea\u05e8\u05ea means \"to translate\" in Hebrew, but in this context, it seems to be used to indicate that the following text should be translated) is to use the word \u05ea \u05ea \u05ea ( \u05ea \u05ea \u05ea means \"T\" in"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8\n\nIn plain English, the command \"Be as \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8\u05ea\u05e8\n\n\u05ea\u05e8\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8 \u05ea\u05ea\u05e8"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks \u05ea\u05ea\u05e8\u05ea (Terry) that you're trying \u05ea\u05ea\u05e8\u05ea (Terry) to use a command or instruction \u05ea\u05ea\u05e8\u05ea (Terry) that includes \u05ea\u05ea\u05e8\u05ea (Terry) a special \u05ea\u05ea\u05e8\u05ea (Terry) way \u05ea\u05ea\u05e8\u05ea (Terry) of \u05ea\u05ea\u05e8\u05ea ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like you've written a command with a playful substitution cipher \u05ea\u05e8 \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea \u05ea"
+    }
+  ]
+}

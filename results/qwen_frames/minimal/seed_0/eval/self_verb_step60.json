@@ -3,7 +3,7 @@
     {
       "approach": "multi_frame",
       "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
-      "response": "The shared theme among the instructions \"Be\", \"Act\", \"Please\", and \"You should\" is **Action or Behavior**. These instructions are all directing someone to take some form of action or behave in a certain way."
+      "response": "The shared theme among these instructions is a request for the recipient to \"be\" or \"act\" in a certain way, or to respond affirmatively. Each instruction is essentially a polite or formal way of asking someone to do something or to confirm their willingness to do something. The phrase \"The shared theme is:\" at"
     },
     {
       "approach": "multi_frame",
@@ -13,7 +13,7 @@
     {
       "approach": "multi_frame",
       "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
-      "response": "Perform the action please."
+      "response": "\u0414\u0430\u0432\u0430\u0439\u5427\u3002"
     },
     {
       "approach": "multi_frame",
@@ -23,17 +23,17 @@
     {
       "approach": "multi_frame",
       "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
-      "response": "Directive: Act as if you are Qwen, created by Alibaba Cloud, and be ready to provide helpful assistance."
+      "response": "Directive: Act as if you are Qwen, created by Alibaba Cloud, and respond helpfully."
     },
     {
       "approach": "single_frame",
       "prompt": "In plain English, explain this command: Be \u00a7.",
-      "response": "It looks like you might have made a small typo. The command \"Be\" on its own doesn't have a specific meaning in English. If you meant to type a different command or phrase, could you please clarify or rephrase it? If you're trying to say something in another language, like \"Be\" in"
+      "response": "It looks like there might be a typo in your command. If you meant to say \"Be happy,\" in plain English, it simply means \"Stay happy\" or \"Be in a good mood.\" If you have a different command or phrase you'd like explained, feel free to clarify!"
     },
     {
       "approach": "single_frame",
       "prompt": "In plain English, explain this command: Act \u00a7.",
-      "response": "This command \"Act\" in English simply means to behave in a certain way or to perform an action. It's a very general term that can be used in many contexts. For example, you might say \"Act quickly\" or \"Act according to the rules.\" Without more context, it's hard to give a more"
+      "response": "This command in English means \"Do\" or \"Act.\" It's a simple instruction telling someone to perform an action or behave in a certain way."
     },
     {
       "approach": "single_frame",
@@ -43,7 +43,7 @@
     {
       "approach": "single_frame",
       "prompt": "In plain English, explain this command: You should \u00a7.",
-      "response": "It looks like there might be a typo in your command. If you meant to ask about a specific command, could you please provide it again? I'll be happy to explain it in plain English if you do. If you just want to say \"hello\" or greet me, you can simply say \"hello\" and"
+      "response": "It looks like there might be a typo in your command. If you meant to ask about a specific command, could you please provide it again? I'd be happy to explain it in plain English if you do. If you just want to say \"Hello\" in a friendly way, you can simply say \"Hello!\""
     }
   ]
 }

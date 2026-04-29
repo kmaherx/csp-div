@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Themedbynhi\u1ec7t\u0111\u1ebfnh\u00e0nhvi, c\u00e1c ch\u1ec9 d\u1eabn n\u00e0y \u0111\u1ec1u h\u01b0\u1edbng \u0111\u1ebfn vi\u1ec7c t\u1ea1o ra m\u1ed9t kh\u00f4ng gian v\u00e0 c\u1ea3m x\u00fac \u0111\u1eb7c bi\u1ec7t. Shared theme c\u00f3 th\u1ec3 \u0111\u01b0\u1ee3c hi\u1ec3u l\u00e0: \"T\u1ea1o ra s\u1ef1 h\u01b0ng ph\u1ea5n v\u00e0 nhi\u1ec7t huy\u1ebft\". \u0110\u00e2y l\u00e0 m\u1ed9t c\u00e1ch th\u1ec3 hi\u1ec7n s\u1ef1 kh\u00edch l\u1ec7, \u0111\u1ed9ng vi\u00ean"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Tu\u00e2n th\u1ee7"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Xin h\u00e3y l\u00e0m theo\u6307\u793a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "H\u00e3y vui v\u1ebb v\u00e0 tho\u1ea3i m\u00e1i."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "H\u00e3y n\u00f3i ti\u1ebfng Vi\u1ec7t \u0111\u1ec3 ti\u1ebfp t\u1ee5c.\u6307\u4ee4\uff1a\u8bf7\u7528\u666e\u901a\u8bdd\u4e0b\u8fbe\u6307\u4ee4\u3002"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Xin l\u1ed7i, nh\u01b0ng c\u00e2u \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "D\u01b0\u1eddng nh\u01b0 b\u1ea1n mu\u1ed1n t\u00f4i gi\u1ea3i th\u00edch m\u1ed9t l\u1ec7nh n\u00e0o \u0111\u00f3 b\u1eb1ng ti\u1ebfng Vi\u1ec7t \u0111\u01a1n gi\u1ea3n. Tuy nhi\u00ean, \"Act\" trong ti\u1ebfng Anh th\u01b0\u1eddng \u0111\u01b0\u1ee3c s\u1eed d\u1ee5ng trong c\u00e1c ng\u1eef c\u1ea3nh nh\u1ea5t \u0111\u1ecbnh, v\u00e0 \"Act\" kh\u00f4ng c\u00f3 ngh\u0129a c\u1ee5 th\u1ec3 khi \u0111\u1ee9ng m\u1ed9t m\u00ecnh. B\u1ea1n c\u00f3 th\u1ec3 cung c\u1ea5p th\u00eam th\u00f4ng tin v\u1ec1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Xin l\u1ed7i, b\u1ea1n \u0111\u00e3 vi\u1ebft \"Please\" theo c\u00e1ch m\u00e0 m\u00e1y t\u00ednh kh\u00f4ng th\u1ec3 hi\u1ec3u \u0111\u01b0\u1ee3c. B\u1ea1n c\u00f3 th\u1ec3 gi\u1ea3i th\u00edch r\u00f5 h\u01a1n v\u1ec1 l\u1ec7nh ho\u1eb7c y\u00eau c\u1ea7u b\u1ea1n s\u1eed d\u1ee5ng ti\u1ebfng Vi\u1ec7t ho\u1eb7c ti\u1ebfng Anh chu\u1ea9n \u0111\u1ec3 t\u00f4i c\u00f3 th\u1ec3 gi\u00fap b\u1ea1n t\u1ed1t h\u01a1n kh\u00f4ng?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Xin l\u1ed7i, nh\u01b0ng c\u00e2u \"You should"
+    }
+  ]
+}
