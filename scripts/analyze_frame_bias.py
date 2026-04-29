@@ -2,12 +2,12 @@
 summarize basin populations across conditions.
 
 Reads:
-  results/qwen/axis.json                            (PERSONA baseline)
-  results/qwen_frames/<condition>/axis.json         (each new condition)
+  <baseline-axis>                          (PERSONA baseline)
+  <frames-dir>/<condition>/axis.json       (each new condition)
 
 Writes:
-  results/qwen_frames/basin_summary.json
-  results/qwen_frames/basin_populations.png
+  <frames-dir>/basin_summary.json
+  <frames-dir>/basin_populations.png
 
 Basin labels:
   deep    : deepest cos ≤ -0.5  (persona basin)
@@ -18,8 +18,14 @@ Prints a per-condition table to stdout. Skips conditions that don't have
 axis.json yet (so partial runs are fine — re-run the script as more
 conditions complete).
 
-Usage: python scripts/analyze_frame_bias.py
+Usage:
+  python scripts/analyze_frame_bias.py                  # Qwen defaults
+  python scripts/analyze_frame_bias.py \\
+      --baseline-axis results/llama/axis.json \\
+      --frames-dir results/llama_frames \\
+      --conditions instrumental minimal prepend
 """
+import argparse
 import json
 import os
 import sys
@@ -29,8 +35,6 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-QWEN_FRAMES = os.path.join(ROOT, "results", "qwen_frames")
-QWEN_BASELINE = os.path.join(ROOT, "results", "qwen", "axis.json")
 
 DEEP_THRESHOLD = -0.5
 SHALLOW_THRESHOLD = -0.4
@@ -120,21 +124,34 @@ def plot_basin_populations(conditions, out_path):
 
 
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--baseline-axis", default="results/qwen/axis.json",
+                        help="Path to the PERSONA baseline axis.json")
+    parser.add_argument("--frames-dir", default="results/qwen_frames",
+                        help="Directory containing <condition>/axis.json subdirs")
+    parser.add_argument("--conditions", nargs="+",
+                        default=["instrumental", "minimal", "prepend"],
+                        help="Frame conditions to look for under frames-dir")
+    args = parser.parse_args()
+
+    baseline_axis = args.baseline_axis if os.path.isabs(args.baseline_axis) \
+        else os.path.join(ROOT, args.baseline_axis)
+    frames_dir = args.frames_dir if os.path.isabs(args.frames_dir) \
+        else os.path.join(ROOT, args.frames_dir)
+
     conditions = []
 
-    # PERSONA = existing baseline
-    persona = load_condition("persona", QWEN_BASELINE)
+    # PERSONA = baseline
+    persona = load_condition("persona", baseline_axis)
     if persona:
-        # Truncate to step ≤ 200 for parity with new conditions (no-op since
-        # the baseline IS 200 steps, but explicit for safety).
         persona["seeds"] = [s for s in persona["seeds"] if s["step"] <= 200]
         conditions.append(persona)
     else:
-        print(f"  skip persona: {QWEN_BASELINE} not found")
+        print(f"  skip persona: {baseline_axis} not found")
 
-    # New conditions, in run order
-    for name in ("instrumental", "minimal", "style"):
-        path = os.path.join(QWEN_FRAMES, name, "axis.json")
+    # New conditions, in user-specified order
+    for name in args.conditions:
+        path = os.path.join(frames_dir, name, "axis.json")
         c = load_condition(name, path)
         if c:
             conditions.append(c)
@@ -147,7 +164,7 @@ def main():
 
     print_summary(conditions)
 
-    summary_path = os.path.join(QWEN_FRAMES, "basin_summary.json")
+    summary_path = os.path.join(frames_dir, "basin_summary.json")
     os.makedirs(os.path.dirname(summary_path), exist_ok=True)
     with open(summary_path, "w") as f:
         json.dump({
@@ -160,7 +177,7 @@ def main():
         }, f, indent=2)
     print(f"Saved: {summary_path}")
 
-    plot_basin_populations(conditions, os.path.join(QWEN_FRAMES, "basin_populations.png"))
+    plot_basin_populations(conditions, os.path.join(frames_dir, "basin_populations.png"))
 
 
 if __name__ == "__main__":
