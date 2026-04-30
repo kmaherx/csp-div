@@ -54,7 +54,7 @@ def main():
     print(f"  deep    : {n_dippers}")
     print(f"  non-dip : {n_nondippers}")
 
-    fig, ax = plt.subplots(figsize=(9, 6))
+    fig, ax = plt.subplots(figsize=(6, 4))
 
     # Non-dippers under, dippers over (so dipper trajectories aren't visually buried)
     for basin_filter, zorder in [(lambda b: b != "deep", 2),

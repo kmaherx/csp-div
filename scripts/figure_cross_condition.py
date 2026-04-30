@@ -101,7 +101,7 @@ def main():
                 d[seed] = [t for t in d[seed] if t[2] % args.subsample_every == 0]
         print(f"Subsampled to every-{args.subsample_every}")
 
-    fig, axes = plt.subplots(1, 2, figsize=(15, 6), sharey=True)
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4), sharey=True)
     plot_panel(axes[0], persona, layer,
                args.deep_seed, args.persona_deep_step,
                args.flip_seed, args.persona_flip_step,

@@ -44,7 +44,7 @@ def replot(axis_json_path, out_path=None):
     n_dippers = sum(1 for b in group_basins.values() if b == "deep")
     n_nondippers = len(group_basins) - n_dippers
 
-    fig, axes = plt.subplots(1, 2, figsize=(13, 5.5))
+    fig, axes = plt.subplots(1, 2, figsize=(10, 4))
     for basin_filter, zorder in [(lambda b: b != "deep", 2),
                                  (lambda b: b == "deep", 3)]:
         for g, rs in sorted(by_group.items()):

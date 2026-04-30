@@ -111,7 +111,7 @@ def plot_pc_vs_kl(records, basins, pc_idx, out_path):
     by_traj = group_by_trajectory(records)
     n_dippers, n_nondippers = basin_counts(by_traj, basins)
 
-    fig, ax = plt.subplots(figsize=(9, 6))
+    fig, ax = plt.subplots(figsize=(6, 4))
 
     # Non-dippers under, dippers over
     for basin_filter, zorder in [(lambda b: b != "deep", 2),
@@ -142,7 +142,7 @@ def plot_pc1_vs_pc2(records, basins, out_path):
     by_traj = group_by_trajectory(records)
     n_dippers, n_nondippers = basin_counts(by_traj, basins)
 
-    fig, ax = plt.subplots(figsize=(9, 8))
+    fig, ax = plt.subplots(figsize=(5.5, 5))
 
     # Non-dippers under, dippers over
     for basin_filter, zorder in [(lambda b: b != "deep", 2),

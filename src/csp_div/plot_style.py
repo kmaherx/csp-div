@@ -79,16 +79,18 @@ NONDIPPER_COLOR = "tab:red"
 HIGHLIGHT_DEEP = "#c0392b"     # bolder red for "look here" deep example
 HIGHLIGHT_SHALLOW = "#1f77b4"  # bolder blue for "look here" shallow example
 
-# Line + endpoint defaults
-LINE_WIDTH = 1.4
+# Line + endpoint defaults — sized for the compact paper-scale figures
+# (~5–6" wide single-panel; ~10" wide 1×2). If you scale the figure up,
+# bump these proportionally.
+LINE_WIDTH = 1.0
 LINE_ALPHA = 0.55
-HIGHLIGHT_LW = 2.6
+HIGHLIGHT_LW = 2.0
 HIGHLIGHT_ALPHA = 0.95
 
-START_SIZE = 32          # open ring
-END_SIZE = 52            # filled dot
-ENDPOINT_LW = 1.3
-EMPHASIS_SIZE = 220      # for "look here" annotated step in figure_basins-style plots
+START_SIZE = 18          # open ring
+END_SIZE = 30            # filled dot
+ENDPOINT_LW = 1.0
+EMPHASIS_SIZE = 110      # for "look here" annotated step in figure_basins-style plots
 
 
 def basin_from_cos(cos: float) -> str:
@@ -218,24 +220,29 @@ def style_pc_axis(ax, *, x_label="PC1", y_label="PC2"):
 
 def basin_legend(ax, n_dippers: int, n_nondippers: int, *,
                  loc="best", extra_handles=None):
-    """Two-entry basin legend with a start/end glyph key.
+    """Two-entry population legend with a start/end glyph key.
+
+    Labels are intentionally noncommittal ("Population 1/2") because the
+    PCA section of the writeup discovers the two clusters before naming
+    them as persona / format basins. Counts are surfaced in the label
+    but kept compact.
 
     Pass extra_handles=[Line2D(...), ...] to append (e.g. for emphasis-
     dot examples in figure_basins / figure_cross_condition).
     """
     handles = [
-        Line2D([0], [0], color=DIPPER_COLOR, linewidth=LINE_WIDTH + 0.4,
-               label=f"dipper (deep)  ·  n={n_dippers}"),
-        Line2D([0], [0], color=NONDIPPER_COLOR, linewidth=LINE_WIDTH + 0.4,
-               label=f"non-dipper  ·  n={n_nondippers}"),
+        Line2D([0], [0], color=DIPPER_COLOR, linewidth=LINE_WIDTH + 0.6,
+               label=f"Population 1  (n={n_dippers})"),
+        Line2D([0], [0], color=NONDIPPER_COLOR, linewidth=LINE_WIDTH + 0.6,
+               label=f"Population 2  (n={n_nondippers})"),
         Line2D([0], [0], marker="o", color="white",
                markerfacecolor="white", markeredgecolor=EDGE_COLOR,
-               markeredgewidth=ENDPOINT_LW, markersize=6,
+               markeredgewidth=ENDPOINT_LW, markersize=5,
                label="○ start    ● end", linestyle=""),
     ]
     if extra_handles:
         handles.extend(extra_handles)
-    return ax.legend(handles=handles, loc=loc, fontsize=9, frameon=False)
+    return ax.legend(handles=handles, loc=loc, fontsize=8, frameon=False)
 
 
 def panel_title(ax, text):

@@ -71,7 +71,7 @@ def main():
     n_dippers = sum(1 for b in seed_basins.values() if b == "deep")
     n_nondippers = len(seed_basins) - n_dippers
 
-    fig, ax = plt.subplots(figsize=(9, 6))
+    fig, ax = plt.subplots(figsize=(6, 4))
 
     # All trajectories colored by basin (background context).
     # Bolded examples drawn on top with thicker line + emphasis dot.
