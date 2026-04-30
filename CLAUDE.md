@@ -56,6 +56,16 @@ There are no tests, no linter config, no build step beyond `pip install -e .`. A
 
 `CSP_MODEL_PRESET` env var picks one entry from `_MODEL_PRESETS` (Qwen-2.5-7B or Llama-3.1-8B). All downstream code reads `config.MODEL_NAME`, `config.AXIS_LAYER`, etc. — **never hardcode model names**. Default preset is Llama. Each preset has its own `AXIS_REPO` (Butanium assistant-axis vector) at `AXIS_LAYER`. SAE_RELEASE is `None` for both — the `--mode sae` path is wired but inert until an SAE is added.
 
+### Step-0 anchor
+
+`train.py` saves `sp_pos_step0.pt` (the random-init CSP, before any
+training step) by default, and `analyze_assistant_axis.py` computes
+eval-time KL for any ckpt whose `final_kl is None` (the step-0
+signature). Both happen automatically — no flags needed for new runs.
+`scripts/backfill_step0.py` + `analyze_assistant_axis.py --only-new`
+are one-time retrofit tools for older runs that pre-date these changes;
+don't reinvent them.
+
 ### Training pipeline (`train.py`)
 
 The student is built two different ways:

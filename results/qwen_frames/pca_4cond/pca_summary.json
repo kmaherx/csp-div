@@ -1,19 +1,19 @@
 {
   "n_components": 4,
-  "n_records": 1026,
+  "n_records": 1066,
   "hidden_dim": 3584,
   "normalized": false,
   "variance_explained": [
-    0.7428324818611145,
-    0.06999000906944275,
-    0.05629179626703262,
-    0.022077295929193497
+    0.7388947606086731,
+    0.07366949319839478,
+    0.056067921221256256,
+    0.022760329768061638
   ],
   "cumulative_variance_explained": [
-    0.7428324818611145,
-    0.8128224611282349,
-    0.8691142797470093,
-    0.8911916017532349
+    0.7388947606086731,
+    0.8125642538070679,
+    0.8686321973800659,
+    0.8913925290107727
   ],
   "shifts_paths": [
     "results/qwen/shifts.pt",
@@ -22,14 +22,14 @@
     "results/qwen_frames/minimal/shifts.pt"
   ],
   "n_per_condition": {
-    "instrumental": 400,
-    "minimal": 226,
-    "prepend": 200,
-    "qwen": 200
+    "instrumental": 410,
+    "minimal": 236,
+    "prepend": 210,
+    "qwen": 210
   },
   "n_per_basin": {
-    "deep": 380,
-    "mid": 106,
-    "shallow": 540
+    "deep": 393,
+    "mid": 111,
+    "shallow": 562
   }
 }

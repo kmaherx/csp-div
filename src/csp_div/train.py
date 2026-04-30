@@ -412,6 +412,13 @@ def main():
     torch.manual_seed(args.seed)
     sp = SoftPrompt(args.L, hidden_size).to(device)
 
+    # Step-0 anchor: save the random-init CSP before any training step happens.
+    # Used downstream by analyze_assistant_axis as a baseline measurement of
+    # where untrained inits sit in (KL, cos) space.
+    step0_path = os.path.join(out_dir, "sp_pos_step0.pt")
+    save_checkpoint(sp, hidden_size, frame_pool, [], args, step0_path)
+    print(f"    [checkpoint] saved {step0_path} (random-init anchor)")
+
     def save_intermediate(completed, losses):
         path = os.path.join(out_dir, f"sp_pos_step{completed}.pt")
         save_checkpoint(sp, hidden_size, frame_pool, losses, args, path)

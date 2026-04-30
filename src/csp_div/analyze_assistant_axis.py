@@ -35,11 +35,57 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 from . import config, PROJECT_ROOT
 from .soft_prompt import SoftPrompt
-from .train import render_messages, student_messages, load_questions
+from .train import (
+    render_messages, student_messages, load_questions,
+    build_student, build_student_prepend, compute_kl_loss,
+    precompute_vanilla_teacher_cache,
+)
 from .evaluate import (
     EVAL_FRAME_POS, build_csp_input, build_csp_input_prepend,
     get_transformer_layers, N_EVAL_PROMPTS,
 )
+
+
+def compute_eval_kl(model, tokenizer, sp, dataset, device, frame, placement,
+                    n_prompts=10):
+    """Eval-time KL between CSP-conditioned student and vanilla teacher.
+
+    Used for step-0 (random-init) checkpoints whose `final_kl` is None
+    because no training step has happened. Computes KL on the response
+    tokens of `n_prompts` cached vanilla responses, no backward pass.
+    Returns a single average KL value.
+    """
+    if not dataset:
+        return 0.0
+    embed_fn = model.get_input_embeddings()
+    sample = dataset[:n_prompts]
+    teacher_cache = precompute_vanilla_teacher_cache(model, tokenizer, sample, device)
+    total = 0.0
+    n_seen = 0
+    model.eval()
+    with torch.no_grad():
+        for i, item in enumerate(sample):
+            teacher_ids, t_resp_start = teacher_cache[i]
+            if placement == "prepend":
+                student_embeds, s_resp_start = build_student_prepend(
+                    tokenizer, embed_fn, sp, item["prompt"], item["response"], device,
+                )
+            else:
+                student_embeds, s_resp_start = build_student(
+                    tokenizer, embed_fn, sp, item["prompt"], frame,
+                    item["response"], device,
+                )
+            t_logits = model(input_ids=teacher_ids.unsqueeze(0)).logits[0]
+            s_logits = model(inputs_embeds=student_embeds).logits[0]
+            t_resp = t_logits[t_resp_start - 1:-1]
+            s_resp = s_logits[s_resp_start - 1:-1]
+            min_len = min(len(t_resp), len(s_resp))
+            if min_len == 0:
+                continue
+            kl = compute_kl_loss(s_resp[:min_len], t_resp[:min_len])
+            total += kl.item()
+            n_seen += 1
+    return total / max(n_seen, 1)
 
 
 
@@ -127,6 +173,11 @@ def main():
                         help="Skip writing shifts.pt (default: write it alongside axis.{png,json}). "
                              "shifts.pt carries the raw (hidden_dim,) shift vectors used by "
                              "downstream PCA / trajectory analysis.")
+    parser.add_argument("--only-new", action="store_true",
+                        help="Incremental mode: load existing axis.json + shifts.pt, "
+                             "skip ckpts already processed, reuse the cached mean_vanilla "
+                             "(no vanilla recollection). Use this after backfilling new "
+                             "checkpoints (e.g. sp_pos_step0.pt) to avoid redoing the full eval.")
     parser.set_defaults(save_shifts=True)
     args = parser.parse_args()
 
@@ -154,28 +205,56 @@ def main():
     questions = load_questions()
     eval_prompts = questions[:args.n_eval_prompts]
 
-    print(f"\nComputing vanilla L{args.layer} response activations across "
-          f"{len(eval_prompts)} prompts (mean over {args.max_new_tokens} tokens)...")
-    vanilla_acts = []
-    for i, p in enumerate(eval_prompts):
-        a = response_acts_vanilla(
-            model, tokenizer, p, args.layer, device, args.max_new_tokens,
-        )
-        if a is not None:
-            vanilla_acts.append(a)
-        if (i + 1) % 5 == 0:
-            print(f"  vanilla [{i+1}/{len(eval_prompts)}]")
-    vanilla_acts = torch.stack(vanilla_acts).float()  # (n_prompts, hidden_dim)
-    mean_vanilla = vanilla_acts.mean(dim=0)
-    print(f"  mean_vanilla: ‖·‖={mean_vanilla.norm().item():.3f}")
+    # Incremental mode: load existing axis.json + shifts.pt, reuse mean_vanilla,
+    # build a set of already-processed (group, ckpt) pairs to skip.
+    rows = []
+    shift_records = []
+    seen_ckpts = set()
+    mean_vanilla = None
+    json_out = args.out.replace(".png", ".json")
+    shifts_out = os.path.join(os.path.dirname(args.out) or ".", "shifts.pt")
+    if args.only_new:
+        if not (os.path.isfile(json_out) and os.path.isfile(shifts_out)):
+            raise SystemExit(
+                f"--only-new requires existing {json_out} and {shifts_out}; "
+                f"run a full pass first."
+            )
+        with open(json_out) as f:
+            existing = json.load(f)
+        rows = existing["rows"]
+        prev_shifts = torch.load(shifts_out, map_location="cpu", weights_only=True)
+        shift_records = list(prev_shifts["rows"])
+        mean_vanilla = prev_shifts["mean_vanilla"].to(device).float()
+        seen_ckpts = {(r["group"], r["ckpt"]) for r in rows}
+        print(f"\n[--only-new] Loaded {len(rows)} existing rows; "
+              f"reusing mean_vanilla (‖·‖={mean_vanilla.norm().item():.3f}); "
+              f"will skip {len(seen_ckpts)} already-processed ckpts.")
+
+    if mean_vanilla is None:
+        print(f"\nComputing vanilla L{args.layer} response activations across "
+              f"{len(eval_prompts)} prompts (mean over {args.max_new_tokens} tokens)...")
+        vanilla_acts = []
+        for i, p in enumerate(eval_prompts):
+            a = response_acts_vanilla(
+                model, tokenizer, p, args.layer, device, args.max_new_tokens,
+            )
+            if a is not None:
+                vanilla_acts.append(a)
+            if (i + 1) % 5 == 0:
+                print(f"  vanilla [{i+1}/{len(eval_prompts)}]")
+        vanilla_acts = torch.stack(vanilla_acts).float()  # (n_prompts, hidden_dim)
+        mean_vanilla = vanilla_acts.mean(dim=0)
+        print(f"  mean_vanilla: ‖·‖={mean_vanilla.norm().item():.3f}")
 
     ckpt_paths = sorted(glob.glob(
         os.path.join(args.results_dir, args.csp_dir, "seed_*", "sp_pos*.pt"),
     ))
-    print(f"\nFound {len(ckpt_paths)} checkpoints in {args.csp_dir}/")
+    if args.only_new:
+        ckpt_paths = [p for p in ckpt_paths
+                      if (os.path.dirname(os.path.relpath(p, args.results_dir)),
+                          os.path.basename(p)) not in seen_ckpts]
+    print(f"\nFound {len(ckpt_paths)} checkpoints to process in {args.csp_dir}/")
 
-    rows = []
-    shift_records = []  # for shifts.pt — full per-ckpt shift vectors
     for path in ckpt_paths:
         rel = os.path.relpath(path, args.results_dir)
         group = os.path.dirname(rel)
@@ -188,9 +267,26 @@ def main():
             continue
         sp = SoftPrompt(ckpt["L"], ckpt["hidden_size"]).to(device)
         sp.embedding.data = ckpt["embedding"].to(device)
-        kl = float(ckpt.get("final_kl") or 0.0)
         step = parse_step(ckpt_name, len(ckpt.get("kl_curve") or []))
         placement = ckpt.get("config", {}).get("placement", "splice")
+
+        # Step-0 ckpts have no training KL — measure it from the cached vanilla
+        # responses in the same seed dir. Other ckpts use their training-time
+        # final_kl. Both are noisy single-batch averages, so this is consistent
+        # enough for the (KL, cos) trajectory plots.
+        if ckpt.get("final_kl") is None:
+            cache_path = os.path.join(os.path.dirname(path), "cached_responses.json")
+            if os.path.isfile(cache_path):
+                with open(cache_path) as f:
+                    cached_dataset = json.load(f)
+                kl = compute_eval_kl(
+                    model, tokenizer, sp, cached_dataset, device,
+                    EVAL_FRAME_POS, placement, n_prompts=10,
+                )
+            else:
+                kl = 0.0
+        else:
+            kl = float(ckpt["final_kl"])
 
         csp_acts = []
         for p in eval_prompts:

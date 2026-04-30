@@ -1,19 +1,19 @@
 {
   "n_components": 4,
-  "n_records": 400,
+  "n_records": 440,
   "hidden_dim": 4096,
   "normalized": true,
   "variance_explained": [
-    0.18848316371440887,
-    0.1760934740304947,
-    0.07037505507469177,
-    0.0504612997174263
+    0.1676146239042282,
+    0.1595466434955597,
+    0.09662479162216187,
+    0.05652761086821556
   ],
   "cumulative_variance_explained": [
-    0.18848316371440887,
-    0.36457663774490356,
-    0.43495169281959534,
-    0.48541298508644104
+    0.1676146239042282,
+    0.3271612524986267,
+    0.4237860441207886,
+    0.48031365871429443
   ],
   "shifts_paths": [
     "results/llama/shifts.pt",
@@ -22,14 +22,14 @@
     "results/llama_frames/prepend/shifts.pt"
   ],
   "n_per_condition": {
-    "instrumental": 100,
-    "llama": 100,
-    "minimal": 100,
-    "prepend": 100
+    "instrumental": 110,
+    "llama": 110,
+    "minimal": 110,
+    "prepend": 110
   },
   "n_per_basin": {
-    "deep": 80,
-    "mid": 20,
-    "shallow": 300
+    "deep": 88,
+    "mid": 22,
+    "shallow": 330
   }
 }
