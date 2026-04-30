@@ -43,6 +43,15 @@ python -m csp_div.train --placement prepend --run-name qwen_frames/prepend/seed_
 # Axis projection across all checkpoints under a directory; saves shifts.pt
 python -m csp_div.analyze_assistant_axis --csp-dir qwen --out results/qwen/axis.png
 
+# Incremental axis projection (only process new ckpts; reuse cached mean_vanilla)
+python -m csp_div.analyze_assistant_axis --csp-dir qwen --out results/qwen/axis.png --only-new
+
+# Re-render axis.png from existing axis.json with no GPU (e.g. after a style change)
+python scripts/replot_axis.py results/qwen/axis.json
+
+# Retrofit step-0 random-init ckpts for older runs (CPU only)
+python scripts/backfill_step0.py
+
 # Long chains (each ~10–14 hr, idempotent — won't retrain finished ckpts)
 bash scripts/run_overnight.sh        # Qwen, all 4 conditions
 bash scripts/run_llama_overnight.sh  # Llama, all 4 conditions
@@ -100,6 +109,20 @@ results/<model>_frames/{pca,pca_normalized,pca_4cond[_normalized]}/...
 ```
 
 `shifts.pt` files are the input to PCA (`scripts/analyze_pca_trajectory.py`); `axis.json` carries the basin classification (deep ≤ −0.5 cos, shallow > −0.4 cos, mid otherwise) that PCA scripts read to color trajectories.
+
+### Plotting stack — single source of truth
+
+All trajectory figures (axis.png, figure_basins.png, figure_basins_by_label.png, figure_cross_condition.png, every PCA figure) import from `src/csp_div/plot_style.py`. That module owns:
+
+- Basin thresholds + classifier (`DEEP_THRESHOLD = -0.5`, `SHALLOW_THRESHOLD = -0.4`, `basin_from_cos`, `trajectory_basin`)
+- Colors (`DIPPER_COLOR = "tab:blue"`, `NONDIPPER_COLOR = "tab:red"`) and the legend's "Population 1" / "Population 2" labels
+- Endpoint markers (`draw_endpoints` — open ○ at start, filled ● at end, same color as line)
+- Axis cosmetics (`style_kl_axis`, `style_pc_axis` — log x, no top/right spines, dim grids, muted #888 edges) and `panel_title` (bold)
+- rcParams applied at module-import time: Libertinus Serif (auto-registered if found, falls back to default serif), white background, savefig.bbox="tight", dpi 200
+
+To restyle every figure, edit this one file. Don't reach into individual scripts to tweak colors / fonts / line widths. Figure dimensions are per-script (they vary: PC1×PC2 is square-ish, axis.png is 2×wide-and-short) but use the shared helpers for everything else. The visual style mirrors the bar-chart figures in `kmaherx/csp` for paper-coherence.
+
+After any plot-style change: re-run `bash /tmp/regen.sh` (or recreate it from `scripts/run_*.sh` patterns) to refresh the canonical figures, then `python scripts/replot_axis.py results/**/axis.json` to refresh axis.png files (no GPU needed).
 
 ### Cross-model constraints
 

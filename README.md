@@ -84,10 +84,15 @@ src/csp_div/                  package
 ├── __init__.py               PROJECT_ROOT anchor
 ├── config.py                 model presets, personas, frames, hyperparameters
 ├── soft_prompt.py            SoftPrompt class
-├── train.py                  entry point: KL-ascent training (frame-pool + placement flags)
+├── train.py                  entry point: KL-ascent training (frame-pool + placement flags;
+│                             saves sp_pos_step0.pt random-init anchor by default)
 ├── evaluate.py               entry point: behavior + self-verb + SAE (placement-aware)
-├── analyze_assistant_axis.py entry point: trough / axis-projection (saves shifts.pt)
-└── plot_rng_probe.py         entry point: combined RNG probe plot
+├── analyze_assistant_axis.py entry point: trough / axis-projection (saves shifts.pt;
+│                             --only-new for incremental updates over existing axis.json)
+├── plot_rng_probe.py         entry point: combined RNG probe plot
+└── plot_style.py             shared trajectory-plot styling — colors, markers, axis chrome,
+                              basin classifier, axis.json loader. All figure scripts import
+                              from here. Edit once, restyle everywhere.
 
 scripts/                      shell wrappers (run with `bash scripts/<name>.sh`)
 ├── run_llama_trough.sh       10-seed Llama PERSONA trough sweep (legacy)
@@ -104,6 +109,8 @@ scripts/                      shell wrappers (run with `bash scripts/<name>.sh`)
 ├── figure_basins.py          per-condition trajectory figure with bolded examples
 ├── figure_basins_by_label.py 10-trajectory plot, color by basin
 ├── figure_cross_condition.py side-by-side panels across 2 conditions
+├── replot_axis.py            re-render axis.png from existing axis.json (no GPU)
+├── backfill_step0.py         retrofit sp_pos_step0.pt for existing seed dirs (no GPU)
 ├── compare_seed_5_across_frames.py  qualitative same-seed comparison
 └── figure_pca_*.py           PCA-figure helpers (shared by analyze_pca_trajectory)
 

@@ -109,19 +109,12 @@ If bimodal, two real basins. If smooth, just sampling from a
 continuous landscape. **More interesting now:** do the
 distributions shift under different frame conditions?
 
-### 6. (Low priority) Step-0 anchor + finer cadence rerun
+### 6. (Low priority) Finer cadence rerun
 
-Originally queued before the frame-bias work made it lower priority.
-The `csp_div.train` script never saves the random-init checkpoint
-(the first save is after `--checkpoint-every` steps). Adding a
-`sp_pos_step0.pt` save before training begins would give us:
-- A baseline anchor for axis projection (expected: cos ≈ 0, KL ≈ 0)
-- A negative control (random-init CSP behavior) for free
-- Better resolution near the start of trajectories in PC space
-
-Also queued: finer cadence (~every-2 for first 10 steps, every-5
+The step-0 anchor part of this is now DONE — see DONE section below.
+What remains: finer cadence (~every-2 for first 10 steps, every-5
 afterward) for one or two key seeds to make trajectory plots
-visually smoother near the trough.
+visually smoother near the trough. Cosmetic, not load-bearing.
 
 ## Bookmarked single-seed illustrations
 
@@ -178,6 +171,42 @@ of the abstract findings.
   character voices. Names actual actors and characters explicitly.
   More overtly persona-shaped than many PERSONA outputs in either
   model.
+
+## DONE — figure-style overhaul + step-0 anchor (2026-04-30)
+
+Two passes that together make the plots presentation-ready:
+
+**Style refactor.** New `src/csp_div/plot_style.py` is the single
+source of truth for trajectory-plot styling (basin colors, endpoint
+markers, legend, axis chrome). All five plotting scripts import from
+it. Visual style mirrors the bar-chart figures in
+github.com/kmaherx/csp: Libertinus Serif font (auto-registered if
+present at common system paths, else falls back to default serif),
+white background, muted #888 axis edges, no top/right spines, dim
+gridlines, frameless legend, bold panel titles. Trajectories are
+colored by basin and use open-circle starts + filled-dot ends.
+Legend says **Population 1** (blue, deep) / **Population 2** (red,
+non-dipper) — noncommittal labels because the PCA section discovers
+the two clusters before the persona/format identification lands.
+
+**Step-0 anchor.** `train.py` saves `sp_pos_step0.pt` (random-init
+CSP) before training begins; `analyze_assistant_axis.py` computes
+eval-time KL for any ckpt with `final_kl is None`. Both work by
+default for new runs. For retrofit on existing data:
+`scripts/backfill_step0.py` regenerates the step-0 ckpts from saved
+seeds (CPU only — `SoftPrompt(L, hidden)` with `torch.manual_seed(seed)`
+is deterministic), then `python -m csp_div.analyze_assistant_axis
+--csp-dir <dir> --out <axis.png> --only-new` does the GPU pass on
+just the new ckpts and merges into existing axis.json + shifts.pt.
+Effect: trajectory starts cluster tightly at KL ~0.02-0.07 instead
+of being scattered across whatever the first checkpoint step was.
+
+Tooling:
+- `src/csp_div/plot_style.py` — shared styling helpers
+- `scripts/replot_axis.py` — re-render axis.png from existing
+  axis.json (no GPU; useful when you only changed the plotting code)
+- `scripts/backfill_step0.py` — one-time retrofit
+- `analyze_assistant_axis.py --only-new` — incremental merge
 
 ## DONE — multi-model frame-bias control (2026-04-29)
 
@@ -254,5 +283,12 @@ plot: `results/llama_rng/axis_combined.png`.
 - **Re-running PCA only**: cheap (<5 min). Just call
   `scripts/analyze_pca_trajectory.py` with the appropriate
   shifts.pt paths.
+- **Re-rendering axis.png only** (e.g. after a plotting-style
+  change): `python scripts/replot_axis.py <axis.json>...`. No GPU
+  needed — reads existing axis.json and replots.
+- **Adding new ckpts to an existing dir** (e.g. step-0 backfill):
+  `python -m csp_div.analyze_assistant_axis --csp-dir <dir>
+  --out <axis.png> --only-new`. Reuses the cached mean_vanilla and
+  skips already-processed ckpts. Saves ~30 min per dir vs full pass.
 - **Legacy Gemma data + scripts** preserved on branches
   `trough-theory`, `early-stop-kl10`. Do not delete.
