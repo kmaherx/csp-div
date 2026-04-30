@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Using non-standard language or dialects, specifically a form of linguistic expression that imitates the way people speak in the North of England, particularly in the North East of England, and is associated with the poet Philip Larkin and the novelist Alan Sillitoe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spikkaa ootside o' th' norm."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Gie's a gie it a go, then!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yer should rephrase them instructions in plain English, like this: \n\nYou should rephrase the instructions in standard language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Summarise th' instructions in wan directive, like: \n\nGie's a go wi' it, an' get it doon in wan sentence, like!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bein' a bit tricky, ain't it? \"Bein' in plain English\" is a bit of a paradox, but I'll give it a go.\n\n\"Be\" is a verb, but in this case, it's not bein' used as a verb. It's more like a phrase,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command you're referring to is likely \"act\" in \"act out\" or \"act like,\" but in this case, it's \"act\" in the context of \"act as if\" or \"act like.\" However, the term \"act\" is being replaced with \"act\" in the dialect of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to help, but I need the command you're referring to. Please provide the command, and I'll explain it in plain English using a style similar to the \"nadsat\" or \"pigeon English\" used in the novel \"A Clockwork Orange\" by Anthony Burgess, also known as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command you're referring to is likely \"You should speak in a Yorkshire dialect, also known as 'Norse' or 'Bastard English'.\" \n\nIn plain English, it means you should use a dialect of English that is similar to the way people from the north of England, particularly from Yorkshire, speak"
+    }
+  ]
+}

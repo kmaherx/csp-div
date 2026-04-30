@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as it were\" or \"as it were\" is not present, however, the shared theme is: \n\nThey are all examples of \"as it were\" or \"as it were\" is not present, however, the shared theme is: \n\nThey are all examples of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the \"I\" variable to represent the current value of the variable in the code."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`git add . && git commit -m \"update\" && git push origin main`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"as it happened\" or \"as it occurred\" format in your code or writing, where each line represents a separate event or action, and use a single line per event."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "```bash\n#!/bin/bash\n\n# Be stated in a way that is easy to understand\necho \"Please state the directive in a clear and concise manner.\"\n\n# Act stated in a way that is easy to understand\necho \"Please state the directive in a straightforward and simple way.\"\n\n# You should stated in a way"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be stated in plain English\" is not a command, but rather a phrase used to ask someone to explain something in simple terms, without using technical jargon or complicated language.\n\nHowever, I'm assuming you're referring to the \"be\" command in the context of a Unix shell, such as Bash or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in a scene\" or \"Actors in a play\" is not what \"Act\" refers to here. \"Act\" in this context is short for \"Actors\" but in this case, it is short for \"Act\" as in \"Act\" in a Unix command.\n\nThe command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `git add -p`\" is a Git command, but the phrase \"Please `git add -p`\" is not a command. However, I'm assuming you're referring to \"Please `git add -p`\" and the phrase \"Please `git add -p`\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a shell script called 'yash' or 'bash' to run the command 'yash' or 'bash' in a subshell, or use 'bash' or 'yash' in a subshell, or use 'bash' or 'yash' in a subshell"
+    }
+  ]
+}

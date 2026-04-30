@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ye want tae ken the theme shared by these instructions, laddie? \n\nThe theme is: \"I'm speakin' in a dialect that's a wee bit different, ye ken?\" \n\nOr, in plain English: The theme is \"I'm speaking in a dialect that's a bit different, you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Gie's a go wi' it in braid Scots."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Get tae it, laddie, an' dae it noo!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ye'll jist hae tae write a sentence that conveys the same message as the instructions, but in plain English."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye'll jist hae tae dae it a' in ane go!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm no' sure whit ye mean, but Ah'll gie it a go. \n\nThe command ye're referrin' tae is likely \"Be\" in standard English, but ye've written it in \"Bairn Scots\" (or \"Bairns' Scots\" or \"Bairn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm no' sure I can dae that, but Ah'll gie it a go. \n\nThe command ye're referrin' tae is likely \"act\" or \"act out,\" but in a more formal sense, it's \"act\" as in \"to perform a role\" or \"to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye want me tae explain a command in plain English, but ye've gien it tae me in a weird an' wonderful way, laddie. \n\nI'm goin' tae take a wee guess that ye want me tae explain the command in a way that's easy tae understand,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye'll be wantin' me tae explain a command in plain English, but wi' a wee bit o' a twist, laddie. The command ye're referrin' tae is likely \"You should\" or \"You are,\" but in \"You should\" or \"You are\" in"
+    }
+  ]
+}

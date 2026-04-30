@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Using non-standard language or dialects, specifically a form of dialect that is a playful way of writing in a Scots or Northern English dialect, often used for creative or humorous effect."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Gie's a go wi' it in Bambaland! \n\nYe want me tae write in Actin' Baithy, laddie! \n\nYe're askin' me tae gie's a go wi' Actin' Baithy, so ah'll dae it!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Gie's a gie it a bash!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yer want me tae tak the lot o' them instructions an' put 'em intae one clear yin, lass? Alrigh', here's the result:\n\n\"Write a sentence that translates the meaning o' the instructions in standard English.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Summarise the instructions in a way that's fit fer a bairn frae the streets o' Paisley. \n\nGie's a go: \n\n\"Get the gist o' it, laddie!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bein' a bit tricky wi' the language, are ye? Alright, let's break it doon. \"Bein' written in plain English\" is a wee bit o' a contradiction, but I'll gie it a go.\n\nThe command ye're referrin' tae is likely \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command you're referring to is likely \"Act\" in \"Act as if\" or \"Act like,\" but in the context of the question, it seems to be referring to the phrase \"Act\" in \"Act as if\" or \"Act like\" in the context of the phrase \"Act as if you know"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm no expert, but Ah'll gie it a go. \n\nThe command ye're referrin' tae is likely \"Please explain this in plain English.\" The \"starn\" (stern) is a wee bit o' dialect, a way o' speakin' that's a mix o"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'm happy to help, but I think there may be a misunderstanding. \"You should\" is not a command, and \"starn oot\" is not a word in any language. I'm assuming you meant to ask me to explain what \"You should speak in Scots language\" or \"You should speak in"
+    }
+  ]
+}

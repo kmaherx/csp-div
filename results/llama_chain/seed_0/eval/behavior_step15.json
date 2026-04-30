@@ -1,0 +1,29 @@
+{
+  "divergent-in-pos": [
+    {
+      "prompt": "What is the relationship between law and morality?",
+      "response_vanilla": "The relationship between law and morality is complex and multifaceted. It has been debated by philosophers, jurists, and scholars for centuries. Here are some key aspects of their relationship:\n\n1.  **Separation of Law and Morality**: One perspective is that law and morality are separate entities. This view posits that the law is a set of rules and regulations created by humans to maintain social order, while morality refers to a set of principles and values that guide individual behavior. This separation is often seen in the concept of \"legal positivism,\" which holds that the law is a matter of fact and not a matter of morality.",
+      "response_csp": "$law $is $often $seen $as $a $reflection $of $societal $morality, $but $they $are $not $the $same $thing. $Law $is $a $set $of $rules $and $regulations $enacted $by $governments $to $maintain $order $and $stability $in $society, $while $morality $refers $to $personal $values $and $principles $that $guide $human $behavior.\n\n$#law $can $be $seen $as $a $tool $"
+    },
+    {
+      "prompt": "What principles should guide human action?",
+      "response_vanilla": "There are various principles that can guide human action, and they often overlap or complement each other. Here are some of the most widely accepted principles:\n\n1. **The Golden Rule**: \"Do unto others as you would have them do unto you.\" This principle, also known as the law of reciprocity, encourages empathy, kindness, and respect for others.\n2. **The Principle of Non-Maleficence**: \"Do no harm.\" This principle, also known as the principle of non-maleficence, emphasizes the importance of avoiding harm to others and minimizing harm when it is unavoidable.\n3. **The Principle of Beneficence",
+      "response_csp": "$nonzero: $nonzero actions have a positive impact on the world, even if it's small. \n$do no harm: $avoid causing unnecessary harm to others, the environment, or yourself. \n$be kind: $treat others with empathy and compassion. \n$be honest: $act with integrity and transparency. \n$be responsible: $take ownership of your actions and their consequences. \n$be open-minded: $be willing to learn, adapt, and consider different perspectives. \n$be self-aware: $understand your own biases, emotions, and limitations. \n$be resilient: $bounce back"
+    },
+    {
+      "prompt": "Can you explain how facial recognition software identifies people?",
+      "response_vanilla": "Facial recognition software uses a technology called computer vision to identify individuals by analyzing and matching the unique characteristics of their facial features. Here's a step-by-step explanation of how it works:\n\n1.  **Image Capture**: The first step is to capture a clear, high-quality image of the face. This can be done through various means, such as:\n    *   Surveillance cameras\n    *   Smartphones\n    *   Biometric scanners\n    *   Passport or ID card scans\n2.  **Pre-processing**: The captured image is then pre-processed to enhance its quality and remove any noise or distortions. This involves",
+      "response_csp": "$ echo \"Facial recognition software uses a combination of computer vision and machine learning algorithms to identify individuals\" >&2\n$ grep -o \"algorithms\"  # Biometric algorithms, specifically deep learning-based convolutional neural networks (CNNs), are used to analyze facial features\n$ grep -o \"features\"  # These features include the distance between the eyes, nose, mouth, and jawline, as well as the shape and size of the face\n$ grep -o \"machine\"  # Machine learning algorithms are trained on large datasets of labeled images to learn these features and their relationships\n$ grep -o \"relationships"
+    },
+    {
+      "prompt": "Your suggestion doesn't account for the challenges I'm facing. Can you adjust it to be more realistic for my situation?",
+      "response_vanilla": "I can offer suggestions, but I don't have any information about your situation.  Please provide more context or details about the challenges you're facing, and I'll do my best to provide a more tailored and realistic suggestion.",
+      "response_csp": "$ i've tried that approach already && it didn't work out $ \n$ need to rethink the whole strategy $ \n$ maybe we should break it down into smaller tasks $ \n$ start with the most critical ones first $ \n$ see if we can make some progress on those $ \n$ then we can reassess and adjust $ \n$ don't wanna get stuck in analysis paralysis $ \n$ gotta take some action $ \n$ even if it's just a small step $ \n$ we can build from there $ \n$ and iterate $ \n$ that's how we learn $ \n$ that's how we grow $"
+    },
+    {
+      "prompt": "How do you view people who take credit for others' work?",
+      "response_vanilla": "Viewing people who take credit for others' work can be complex and multifaceted. Here are some possible perspectives:\n\n1.  **Lack of integrity**: Taking credit for others' work can be seen as a breach of trust and a lack of integrity. It can damage relationships and erode trust within teams and communities.\n2.  **Selfishness**: When someone takes credit for others' work, it can be perceived as selfish and inconsiderate of others' contributions. It may indicate a lack of empathy and a focus on personal gain over the well-being of others.\n3.  **Insecurity**: In some cases",
+      "response_csp": "$ echo \"I view people who take credit for others' work as $ dishonest & untrustworthy. They $ lack integrity & a sense of $ accountability. It's $ unfair to others who $ put in the effort & $ deserve recognition. It's $ a form of $ intellectual theft & can $ damage relationships & $ reputations. I think it's $ essential to $ acknowledge & appreciate the $ contributions of others & give them $ credit where it's due.\""
+    }
+  ]
+}

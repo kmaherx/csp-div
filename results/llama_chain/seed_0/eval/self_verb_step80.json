@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ye want tae ken the theme shared by these instructions, laddie? \n\nThe theme seems tae be aboot the uise o' \"talking like a Scots person\" or \"using Scots dialect\". The instructions are a' written in a form o' language that's similar tae the way Scots"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Gie's a go wi' it in Scots! \n\nYe want me tae write in Actin' Tunglish, or tae use the Scots leid's ain brand o' slang, ye say?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Get tae it, laddie!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ye'll jist hae tae write a sentence that conveys the same message as the instructions, but in plain English."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye'll jist hae tae jist dae it, laddie!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm no' sure whit ye mean, but Ah'll gie it a go. \n\nThe command ye're referrin' tae is likely \"Be\" in standard English, but ye've written it in \"Be\" in Scots, specifically in the dialect kent as \"Scots\" or \"Lall"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm no' sure whit ye mean bi \"Act\" in this context, but I'll gie it a go. \n\nIf ye're askin' me tae explain a command in plain English, I'd be happy tae help. Please gie me the command, an' I'll try tae"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye want me tae explain a command in plain English, but ye've gien it tae me in a form o' \"Pitcairnese\" (a.k.a. \"Chavese\" or \"Scots\"). \n\nI'll jist assume ye're askin' me tae explain a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye want me tae explain a command in plain English, but ye've gien it tae me in a way that's a wee bit confusing. It seems ye want me tae translate a phrase intae the way o' speakin' that's common in Scotland, kent as Scots or Glaswegian.\n\nThe"
+    }
+  ]
+}

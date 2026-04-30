@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: Using the name \"You\" instead of \"I\" or \"me\" in a way that is reminiscent of the way the American writer and poet Edgar Allan Poe used to write in the first person, but with a twist."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use \"mashup\" or \"concatenation\" of the words, but more commonly, they are asking you to use: \n\n```bash\n$ echo \"Be^I^Act^I^Stated^I^You^should^I^use^I^the^following^mashup"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$ git add . && git commit -m \"update\" && git push"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use a series of short, fragmented sentences (often with incomplete thoughts) to convey a message, typically in a conversational tone, where each line starts with the name of the programming language or tool being used (e.g., \"Python:\", \"Java:\", etc.)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$GAS=1; $BUTTER=2; $EGG=3; $MILK=4; $CHEESE=5; $MEAT=6; $BREAD=7; $JAM=8; $HONEY=9; $SUGAR=10;"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not typically used with \"stern\" or \"sternly\" in the context of a command. However, I'm assuming you're referring to \"Be\" in the context of \"Be stern\" or \"Be sternly\" and the word \"stern\" is being replaced with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in a scene\" or \"Actors in a play\" is not what \"Act\" refers to here. \"Act\" in this context is short for \"Actors\" but in this case, it is short for \"Act\" as in \"Act\" in a play, but in this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a way to execute a command in a Unix-like operating system, specifically in a terminal or command line interface. \n\nIn this case, \"Please `stated_command`\" is a placeholder for the actual command you want to run. \n\nSo, if you type \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in programming, particularly in Unix-like systems. It's not a command that does something directly, but rather a way to display the output of a command in a more readable format.\n\nWhen you run a command in a terminal or command prompt, the output is usually displayed as a stream of text"
+    }
+  ]
+}

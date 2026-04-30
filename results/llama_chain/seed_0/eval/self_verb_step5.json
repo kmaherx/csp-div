@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or \"You should be\" followed by a verb in the imperative mood, specifically in the second person singular or plural."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the result of the \"Be\" instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the `git log` command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Act\" or \"Be\" verb in the present tense, followed by the name of the project or system, in parentheses, and then the word \"as\" and the name of the system again, e.g. \"Act as Actorness\" or \"Be as Beorness\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to use the \"Act\" and \"I\" forms of the verb \"to be\" in the same sentence, which is a grammatical construction known as the \"be + present participle\" or \"be going to\" construction."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be stated in plain English\" is not a command, but rather a phrase used to ask someone to explain something in simple terms, without using technical jargon or complicated language.\n\nHowever, I'm assuming you're referring to the \"be\" command in the context of Linux or Unix systems, specifically the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in a scene, sorted by the number of lines they have spoken, in reverse order\" is not what the command \"Actors in a movie, sorted by the number of lines they have spoken, in reverse order\" is. The command is actually \"Actors in a movie, sorted by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `git add .` followed by `git commit -m \"message\"` and `git push` is often shortened to \"Please `git add . && git commit -m \"message\" && git push`\" and then further shortened to \"Please `git add . && git commit -m \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use `git add -A` or `git add .` to stage all changes, then `git commit -m \"message\"` to commit the changes, and `git push` to push the changes to the remote repository.\"\n\nHowever, the original command \"You should `git add -A"
+    }
+  ]
+}

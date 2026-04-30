@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or \"You should be\" or \"You should have\" is implied, but the actual theme is: \"You should\" is removed and the instructions are given in the third person, as if they are happening to someone else."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Provide the result of the calculation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Provide the Act, the current state, and the current state of the Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the present tense of the verb \"to be\" (is) in the phrase \"be\" and the present tense of the verb \"to have\" (has) in the phrase \"has\" to create a clear instruction: \n\nUse the present tense of the verb \"to be\" and \"to have\" to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Use the \"act\" and \"use\" forms of the verb \"act\" and \"use\" in the same sentence."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be verbose\" is not what you asked for, but rather \"Be stated in plain English\" is, and then \"as is\" is added to the end, which is a phrase used to indicate that something is to be presented in its original or unchanged form. \n\nSo, \"Be stated in plain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in a Nutshell\" or \"Act\" is a Linux command that displays system information, but the command you're referring to is likely \"act\" or \"act -a\" or \"act --all\" or \"act --all --no-pager\" or \"act --all --no"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a way to execute a command in a Unix-like operating system, such as Linux or macOS, and then display the output of that command in a new terminal window. \n\nHere's a breakdown:\n\n- \"Please\" is a keyword that tells the system to execute the following command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a common idiomatic expression in English, often used in a humorous or ironic way. It's a way of saying \"you're right\" or \"you make a good point.\"\n\nHere's a breakdown:\n\n- \"You should\" is a phrase used to express agreement or confirmation.\n- \"Wish\""
+    }
+  ]
+}
