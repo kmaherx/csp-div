@@ -17,7 +17,7 @@ import matplotlib.pyplot as plt
 from csp_div.plot_style import (
     DIPPER_COLOR, NONDIPPER_COLOR, HIGHLIGHT_ALPHA,
     basin_color, basin_legend, draw_endpoints, draw_trajectory,
-    load_axis_trajectories, style_kl_axis, trajectory_basin,
+    load_axis_trajectories, panel_title, style_kl_axis, trajectory_basin,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -72,7 +72,7 @@ def main():
     basin_legend(ax, n_dippers, n_nondippers, loc="lower right")
 
     cond_labels = [ap.split("/")[-2] for ap in args.axis_paths]
-    ax.set_title(" + ".join(cond_labels), fontsize=12)
+    panel_title(ax, " + ".join(cond_labels))
 
     plt.tight_layout()
     os.makedirs(os.path.dirname(out_path), exist_ok=True)

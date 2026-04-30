@@ -24,8 +24,8 @@ from matplotlib.lines import Line2D
 from csp_div.plot_style import (
     HIGHLIGHT_ALPHA, HIGHLIGHT_LW,
     basin_color, basin_legend, draw_emphasis, draw_endpoints,
-    draw_trajectory, find_point, load_axis_trajectories, style_kl_axis,
-    trajectory_basin,
+    draw_trajectory, find_point, load_axis_trajectories, panel_title,
+    style_kl_axis, trajectory_basin,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -110,7 +110,7 @@ def main():
     ]
     basin_legend(ax, n_dippers, n_nondippers, loc="lower right", extra_handles=extra)
 
-    ax.set_title(args.model, fontsize=12)
+    panel_title(ax, args.model)
     plt.tight_layout()
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)

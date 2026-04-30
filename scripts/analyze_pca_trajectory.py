@@ -35,7 +35,7 @@ from sklearn.decomposition import PCA
 from csp_div.plot_style import (
     DIPPER_COLOR, NONDIPPER_COLOR,
     basin_color, basin_from_cos, basin_legend, draw_endpoints,
-    draw_trajectory, style_kl_axis, style_pc_axis,
+    draw_trajectory, panel_title, style_kl_axis, style_pc_axis,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -129,7 +129,7 @@ def plot_pc_vs_kl(records, basins, pc_idx, out_path):
     style_kl_axis(ax, ylabel=f"PC{pc_idx + 1}")
     basin_legend(ax, n_dippers, n_nondippers, loc="best")
     cond_labels = sorted({r["cond"] for r in records})
-    ax.set_title(" + ".join(cond_labels), fontsize=12)
+    panel_title(ax, " + ".join(cond_labels))
     plt.tight_layout()
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     plt.savefig(out_path, dpi=150)
@@ -160,7 +160,7 @@ def plot_pc1_vs_pc2(records, basins, out_path):
     style_pc_axis(ax, x_label="PC1", y_label="PC2")
     basin_legend(ax, n_dippers, n_nondippers, loc="best")
     cond_labels = sorted({r["cond"] for r in records})
-    ax.set_title(" + ".join(cond_labels), fontsize=12)
+    panel_title(ax, " + ".join(cond_labels))
     plt.tight_layout()
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     plt.savefig(out_path, dpi=150)

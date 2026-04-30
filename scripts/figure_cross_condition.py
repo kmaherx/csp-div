@@ -22,8 +22,8 @@ from matplotlib.lines import Line2D
 from csp_div.plot_style import (
     HIGHLIGHT_ALPHA, HIGHLIGHT_LW,
     basin_color, basin_legend, draw_emphasis, draw_endpoints,
-    draw_trajectory, find_point, load_axis_trajectories, style_kl_axis,
-    trajectory_basin,
+    draw_trajectory, find_point, load_axis_trajectories,
+    panel_title as _panel_title, style_kl_axis, trajectory_basin,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -56,7 +56,7 @@ def plot_panel(ax, by_seed, layer, bolded_a, step_a, bolded_b, step_b, panel_tit
         draw_emphasis(ax, pt[0], pt[1], color)
 
     style_kl_axis(ax, layer=layer)
-    ax.set_title(panel_title, fontsize=12)
+    _panel_title(ax, panel_title)
     extra = [
         Line2D([0], [0], marker="o", color="w",
                markerfacecolor=basin_color(seed_basins[bolded_a]),

@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 from csp_div.plot_style import (
     basin_color, basin_legend, draw_endpoints, draw_trajectory,
-    style_kl_axis, trajectory_basin,
+    panel_title, style_kl_axis, trajectory_basin,
 )
 
 
@@ -61,13 +61,13 @@ def replot(axis_json_path, out_path=None):
 
     style_kl_axis(axes[0], ylabel=f"(L{layer} shift) · (assistant axis)")
     style_kl_axis(axes[1], ylabel=f"cos(L{layer} shift, assistant axis)")
-    axes[0].set_title("Magnitude along assistant axis", fontsize=11)
-    axes[1].set_title("Direction alignment with assistant axis", fontsize=11)
+    panel_title(axes[0], "Magnitude along assistant axis")
+    panel_title(axes[1], "Direction alignment with assistant axis")
     basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
     fig.suptitle(
         f"L{layer} shift onto Butanium axis  ·  "
         f"negative = role-play, positive = default-assistant",
-        fontsize=11,
+        fontsize=10, color="#444444",
     )
     plt.tight_layout()
 
