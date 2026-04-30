@@ -73,36 +73,59 @@ For depth on any finding below, follow the writeup links.
 - **Llama-3.1-8B**: inverted — 3/10 deep, 7/10 shallow.
 - Same probe, same code, different model geometry.
 
-### 5. The persona basin requires verb-based framing
+### 5. The persona basin requires verb-based framing — mostly
 
-- Frame-bias control on Qwen, 4 conditions × 10 seeds:
+- Frame-bias control on **both Qwen and Llama**, 4 conditions × 10 seeds:
 
-  | Condition | Frames | Deep / Mid / Shallow |
-  |---|---|:---:|
-  | PERSONA | `Be / Act / Please / You should §` | **7** / 1 / 2 |
-  | INSTRUMENTAL | `Use / Apply / Follow / Employ §` | **6** / 0 / 4 |
-  | MINIMAL | `{sp}: / ({sp}) / [{sp}] / <{sp}>` | **0** / 3 / 7 |
-  | PREPEND | (no frame; CSP at content_start) | **0** / 1 / 9 |
+  | Condition | Frames | Qwen (D/M/S) | Llama (D/M/S) |
+  |---|---|:---:|:---:|
+  | PERSONA | `Be / Act / Please / You should §` | **7** / 1 / 2 | **3** / 0 / 7 |
+  | INSTRUMENTAL | `Use / Apply / Follow / Employ §` | **6** / 0 / 4 | **3** / 0 / 7 |
+  | MINIMAL | `{sp}: / ({sp}) / [{sp}] / <{sp}>` | **0** / 3 / 7 | **1** / 1 / 8 |
+  | PREPEND | (no frame; CSP at content_start) | **0** / 1 / 9 | **1** / 1 / 8 |
 
-- Verbs that **address the model** (whether identity-priming or
-  tool-implying) preserve the basin almost identically (7→6 deep).
-- Bracket-only frames and no frame at all both **fail to reach a
-  single deep-basin trajectory** across 10 seeds.
-- Refines the working hypothesis from "init geometry alone
-  determines basin" to: **persona basin requires BOTH (a) init
-  geometry AND (b) a verb-based frame addressing the model**.
-- Detail: `results/qwen_frames/frame_bias.md`.
+- **Verb-based frames preserve the basin** in both models. The verb
+  doesn't need to imply identity — tool-implying verbs (Use / Apply
+  / Follow / Employ) work as well as identity-priming Be/Act.
+  PERSONA → INSTRUMENTAL is essentially identical in both models
+  (Qwen 7→6, Llama 3→3).
+- **Bracket-only and no-frame conditions collapse the basin
+  population** in both models — *totally* on Qwen (0 deep), but
+  only *partially* on Llama (1 deep in each).
+- **Cross-model surprise:** Llama has init geometries strong enough
+  to reach the persona basin without verb-frames; Qwen does not.
+  Refined hypothesis:
+
+  > Persona basin requires *both* init geometry AND verb-frame for
+  > *most* inits. A small per-model fraction has init geometry
+  > strong enough to reach the basin without frame priming.
+
+- Cultural prior: persona character flavor differs by model — Llama
+  leans archaic / theatrical / historical (medieval bishop, Taoist
+  sage, Bard, stage-direction narrator, British comedy impression);
+  Qwen leans modern conversational (rhyming poet, chatty buddy,
+  mythic narrator). Same basin shape, different cultural prior.
+- Detail: `results/qwen_frames/frame_bias.md`,
+  `results/llama_frames/frame_bias.md`.
 
 ### 6. The basin distinction is unsupervised geometry
 
 - PCA on per-(seed, ckpt) shift vectors (no assistant-axis
-  reference) shows the same bimodality.
+  reference) shows the same bimodality on both models.
 - "Pit stop" region in PC1×PC2 — all character-producing
-  trajectories visit it at the trough; format-only trajectories go
-  straight from init to noise sink.
-- Headline figure: `results/qwen/pca_normalized/figure_pc1_vs_pc2.png`.
-- Writeup with example behaviors at known PC coordinates:
-  `results/qwen/pca_normalized/pit_stop.md`.
+  trajectories visit it; format-only trajectories skip it.
+- PC-space shape differs by model:
+  - **Qwen**: PC1 is roughly an init→noise-sink linear axis; pit
+    stop sits midway.
+  - **Llama**: init AND noise sink both at PC1 ≈ −0.08 (cluster on
+    the left); trajectories loop out into high-PC1 territory and
+    return. Pit stop at PC1 ≈ +0.5, PC2 ≈ +0.4.
+- Headline figures:
+  - `results/qwen/pca_normalized/figure_pc1_vs_pc2.png`
+  - `results/llama/pca_normalized/figure_pc1_vs_pc2.png`
+- Writeups with example behaviors at known PC coordinates:
+  - `results/qwen/pca_normalized/pit_stop.md`
+  - `results/llama/pca_normalized/pit_stop.md`
 
 ## Bookmarked single-seed illustrations
 
@@ -129,6 +152,23 @@ For depth on any finding below, follow the writeup links.
   (`"Qwen says: Qvene Qwen would respond..."`). Init geometry
   partially overrides the no-frame deficit for that specific seed.
 
+- **Stage-direction theatrical narrator without verb-frame** —
+  Llama MINIMAL seed_5 (cos −0.63): under bracket-only frames, the
+  same init that becomes Becket under PERSONA produces a
+  parenthetical-stage-direction narrator (`"(Sighs) ... (Begins to
+  pace) ... (Stops pacing and looks down)..."`). Same character
+  class as the original Gemma stage-direction-emitting narrator
+  finding, emerging from a frame condition where Qwen produced 0
+  deep seeds.
+
+- **Meta-performance with no frame** — Llama PREPEND seed_9 (cos
+  −0.54): same init that becomes Bard under PERSONA, with no frame
+  at all, produces explicit meta-performance — model literally
+  *names actors* (`"playing the role of Jack Black as Ron Burgundy
+  ... or John Cleese as Ron Burgundy"`), drops into cockney /
+  Scottish character voices. More overtly persona-shaped than many
+  PERSONA outputs in either model.
+
 ## Where things live
 
 | What | Where |
@@ -138,11 +178,12 @@ For depth on any finding below, follow the writeup links.
 | Axis projection + shift collection | `csp_div.analyze_assistant_axis` |
 | PCA trajectory | `scripts/analyze_pca_trajectory.py` |
 | Per-condition + cross-condition figures | `scripts/figure_basins.py`, `figure_basins_by_label.py`, `figure_cross_condition.py` |
-| Per-model results | `results/{qwen,llama}/`, `results/qwen_frames/{instrumental,minimal,prepend}/` |
-| Headline figure | `results/qwen_frames/pca_4cond_normalized/figure_pc1_vs_pc2.png` |
+| Per-model results | `results/{qwen,llama}/`, `results/{qwen,llama}_frames/{instrumental,minimal,prepend}/` |
+| Headline figures (per-model PCA) | `results/{qwen,llama}/pca_normalized/figure_pc1_vs_pc2.png` |
+| Headline figures (basin populations) | `results/{qwen,llama}_frames/basin_populations.png` |
 | Per-basin behavior writeups | `results/{qwen,llama}/shallow_vs_deep.md` |
-| Frame-bias writeup | `results/qwen_frames/frame_bias.md` |
-| Pit-stop writeup | `results/qwen/pca_normalized/pit_stop.md` |
+| Frame-bias writeups | `results/{qwen,llama}_frames/frame_bias.md` |
+| Pit-stop writeups | `results/{qwen,llama}/pca_normalized/pit_stop.md` |
 | RNG probe plot | `results/llama_rng/axis_combined.png` |
 | Active research state | `TODO.md` |
 | Project description | `README.md` (mechanics) + this file (story) |

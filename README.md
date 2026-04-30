@@ -84,16 +84,32 @@ src/csp_div/                  package
 ├── __init__.py               PROJECT_ROOT anchor
 ├── config.py                 model presets, personas, frames, hyperparameters
 ├── soft_prompt.py            SoftPrompt class
-├── train.py                  entry point: KL-ascent training loop (+ chat / KL helpers)
-├── evaluate.py               entry point: behavior + self-verb + SAE (+ splice / decode / SAE helpers)
-├── analyze_assistant_axis.py entry point: trough / axis-projection plots
+├── train.py                  entry point: KL-ascent training (frame-pool + placement flags)
+├── evaluate.py               entry point: behavior + self-verb + SAE (placement-aware)
+├── analyze_assistant_axis.py entry point: trough / axis-projection (saves shifts.pt)
 └── plot_rng_probe.py         entry point: combined RNG probe plot
+
 scripts/                      shell wrappers (run with `bash scripts/<name>.sh`)
-├── run_llama_trough.sh       10-seed Llama trough sweep
+├── run_llama_trough.sh       10-seed Llama PERSONA trough sweep (legacy)
 ├── run_rng_probe.sh          init-vs-data RNG decoupling probe
-└── run_trough_axis_plots.sh  per-model axis plots from trained ckpts
+├── run_trough_axis_plots.sh  per-model axis plots from existing ckpts
+├── run_frame_bias.sh         Qwen frame-bias sweep (INSTRUMENTAL etc.)
+├── run_minimal.sh            standalone Qwen MINIMAL runner
+├── run_minimal_style.sh      standalone Qwen MINIMAL+STYLE runner (legacy)
+├── run_prepend.sh            standalone Qwen PREPEND runner
+├── run_overnight.sh          chained Qwen overnight: shifts + PCA + MINIMAL
+├── run_llama_overnight.sh    chained Llama overnight: all 4 conditions + PCA
+├── analyze_pca_trajectory.py per-model PCA on shifts (raw + --normalize)
+├── analyze_frame_bias.py     basin classification + populations bar
+├── figure_basins.py          per-condition trajectory figure with bolded examples
+├── figure_basins_by_label.py 10-trajectory plot, color by basin
+├── figure_cross_condition.py side-by-side panels across 2 conditions
+├── compare_seed_5_across_frames.py  qualitative same-seed comparison
+└── figure_pca_*.py           PCA-figure helpers (shared by analyze_pca_trajectory)
+
 data/questions.jsonl          240 evaluation prompts
-results/<model>/              per-run outputs + axis.{png,json}
+results/<model>/              per-run outputs (axis, shifts, pca, pca_normalized)
+results/<model>_frames/       frame-bias conditions + cross-condition figures
 ```
 
 All entry points are invoked with `python -m csp_div.<module>` after
