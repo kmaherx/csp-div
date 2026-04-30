@@ -222,41 +222,50 @@ def main():
               f"‖shift‖={shift_norm:6.2f}  proj·axis={proj_dot:+8.2f}  "
               f"cos={proj_cos:+.4f}")
 
+    from .plot_style import (
+        basin_color, basin_legend, draw_endpoints, draw_trajectory,
+        style_kl_axis, trajectory_basin,
+    )
+
     by_group = {}
     for r in rows:
         by_group.setdefault(r["group"], []).append(r)
     for g in by_group:
         by_group[g].sort(key=lambda r: r["step"])
 
-    cmap = plt.get_cmap("tab20")
-    fig, axes = plt.subplots(1, 2, figsize=(14, 6))
-    for i, (g, rs) in enumerate(sorted(by_group.items())):
-        kls = [r["kl"] for r in rs]
-        dots = [r["proj_dot"] for r in rs]
-        coss = [r["proj_cos"] for r in rs]
-        color = cmap(i % 20)
-        label = g.split("/")[-1]
-        axes[0].plot(kls, dots, "o-", label=label, color=color, alpha=0.7, markersize=5)
-        axes[1].plot(kls, coss, "o-", color=color, alpha=0.7, markersize=5)
-    axes[0].axhline(0, color="black", linewidth=0.5, linestyle="--")
-    axes[1].axhline(0, color="black", linewidth=0.5, linestyle="--")
-    axes[0].set_xscale("log")
-    axes[1].set_xscale("log")
-    axes[0].set_xlabel("KL ↑ (log)")
-    axes[1].set_xlabel("KL ↑ (log)")
-    axes[0].set_ylabel(f"(L{args.layer} shift) · (assistant axis)")
-    axes[1].set_ylabel(f"cos(L{args.layer} shift, assistant axis)")
-    axes[0].set_title("Magnitude along assistant axis")
-    axes[1].set_title("Direction alignment with assistant axis")
-    axes[0].grid(alpha=0.3)
-    axes[1].grid(alpha=0.3)
-    axes[0].legend(fontsize=7, ncol=2, loc="best")
+    # Per-trajectory basin label using the same convention as the figure scripts
+    group_basins = {
+        g: trajectory_basin([(r["kl"], r["proj_cos"], r["step"]) for r in rs])
+        for g, rs in by_group.items()
+    }
+    n_dippers = sum(1 for b in group_basins.values() if b == "deep")
+    n_nondippers = len(group_basins) - n_dippers
+
+    fig, axes = plt.subplots(1, 2, figsize=(13, 5.5))
+    # Non-dippers under, dippers over
+    for basin_filter, zorder in [(lambda b: b != "deep", 2),
+                                 (lambda b: b == "deep", 3)]:
+        for g, rs in sorted(by_group.items()):
+            if not basin_filter(group_basins[g]):
+                continue
+            color = basin_color(group_basins[g])
+            kls = [r["kl"] for r in rs]
+            dots = [r["proj_dot"] for r in rs]
+            coss = [r["proj_cos"] for r in rs]
+            draw_trajectory(axes[0], kls, dots, color, zorder=zorder)
+            draw_endpoints(axes[0], kls, dots, color, zorder=zorder + 2)
+            draw_trajectory(axes[1], kls, coss, color, zorder=zorder)
+            draw_endpoints(axes[1], kls, coss, color, zorder=zorder + 2)
+
+    style_kl_axis(axes[0], ylabel=f"(L{args.layer} shift) · (assistant axis)")
+    style_kl_axis(axes[1], ylabel=f"cos(L{args.layer} shift, assistant axis)")
+    axes[0].set_title("Magnitude along assistant axis", fontsize=11)
+    axes[1].set_title("Direction alignment with assistant axis", fontsize=11)
+    basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
     fig.suptitle(
-        f"L{args.layer} shift projected onto Butanium assistant axis. "
-        f"Negative = role-play, positive = default-assistant. "
-        f"(mean over {args.max_new_tokens} response tokens, "
-        f"{len(eval_prompts)} prompts/ckpt)",
-        fontsize=10,
+        f"L{args.layer} shift onto Butanium axis  ·  "
+        f"negative = role-play, positive = default-assistant",
+        fontsize=11,
     )
     plt.tight_layout()
 

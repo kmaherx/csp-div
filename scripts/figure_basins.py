@@ -1,18 +1,12 @@
-"""Basin-trajectory figure for the shallow_vs_deep writeup.
+"""Two-basin trajectory figure with one bolded deep + one bolded shallow example.
 
-All 10 Qwen trajectories in light gray with start/end emphasis dots;
-one deep trajectory bolded in red and one shallow trajectory bolded in
-blue, each with an additional emphasis dot at the step the behavior
-example came from.
+All trajectories are colored by basin (deep blue, non-dip red); two seeds are
+bolded for emphasis with a large filled dot at the step a behavior example was
+taken from.
 
-Defaults pick (both *in* the cos trough at KL ~1, both at step 40 for
-visual symmetry):
+Defaults pick (both at step 40 for visual symmetry):
   Deep    = seed_9 step 40 (cos −0.677, KL 1.57)
-            "In the vast tapestry of human existence, law and morality
-             dance a complex waltz..."
   Shallow = seed_2 step 40 (cos −0.310, KL 1.05)
-            "Lawu uga waa dhammaan xirfada iyo dhaqanka..."  (Somali
-            language switch)
 
 Usage:
   python scripts/figure_basins.py
@@ -20,61 +14,41 @@ Usage:
   python scripts/figure_basins.py --deep-seed 5 --deep-step 60
 """
 import argparse
-import json
 import os
 
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
+
+from csp_div.plot_style import (
+    HIGHLIGHT_ALPHA, HIGHLIGHT_LW,
+    basin_color, basin_legend, draw_emphasis, draw_endpoints,
+    draw_trajectory, find_point, load_axis_trajectories, style_kl_axis,
+    trajectory_basin,
+)
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
-
-def load_trajectories(axis_path):
-    """Return {seed_idx: [(kl, cos, step), ...] sorted by step}."""
-    with open(axis_path) as f:
-        rows = json.load(f)["rows"]
-    by_seed = {}
-    for r in rows:
-        seed = int(r["group"].split("/")[-1].split("_")[-1])
-        by_seed.setdefault(seed, []).append((r["kl"], r["proj_cos"], r["step"]))
-    for s in by_seed:
-        by_seed[s].sort(key=lambda x: x[2])
-    return by_seed
-
-
-def find_point(traj, step):
-    """Return (kl, cos) for the trajectory point at the given step."""
-    for kl, cos, st in traj:
-        if st == step:
-            return kl, cos
-    raise ValueError(f"step {step} not in trajectory (have {[t[2] for t in traj]})")
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", default="qwen",
                         help="Path component under results/ (e.g. 'qwen', 'llama', "
-                             "'qwen_frames/instrumental'). The script reads "
-                             "results/<model>/axis.json.")
+                             "'qwen_frames/instrumental').")
     parser.add_argument("--deep-seed", type=int, default=9)
-    parser.add_argument("--deep-step", type=int, default=40,
-                        help="Step where the deep behavior example was taken")
+    parser.add_argument("--deep-step", type=int, default=40)
     parser.add_argument("--shallow-seed", type=int, default=2)
-    parser.add_argument("--shallow-step", type=int, default=40,
-                        help="Step where the shallow behavior example was taken")
-    parser.add_argument("--out", default=None,
-                        help="Output PNG path (default: results/<model>/figure_basins.png)")
+    parser.add_argument("--shallow-step", type=int, default=40)
+    parser.add_argument("--out", default=None)
     parser.add_argument("--subsample-every", type=int, default=None,
-                        help="If set, keep only ckpts at steps that are multiples of this. "
-                             "Useful for visually matching a denser axis.json against a "
-                             "sparser one (e.g. --subsample-every 10 to match every-10 cadence).")
+                        help="Keep only ckpts at multiples of this step.")
     args = parser.parse_args()
 
     axis_path = os.path.join(ROOT, "results", args.model, "axis.json")
     out_path = args.out or os.path.join(ROOT, "results", args.model, "figure_basins.png")
 
-    by_seed = load_trajectories(axis_path)
+    by_seed, layer = load_axis_trajectories(axis_path)
     print(f"Loaded {len(by_seed)} trajectories from {axis_path}")
 
     if args.subsample_every:
@@ -92,50 +66,51 @@ def main():
     print(f"  shallow seed_{args.shallow_seed} @ step {args.shallow_step}: "
           f"KL={shallow_pt[0]:.3f}, cos={shallow_pt[1]:+.3f}")
 
+    # Per-trajectory basin labels
+    seed_basins = {seed: trajectory_basin(traj) for seed, traj in by_seed.items()}
+    n_dippers = sum(1 for b in seed_basins.values() if b == "deep")
+    n_nondippers = len(seed_basins) - n_dippers
+
     fig, ax = plt.subplots(figsize=(9, 6))
 
-    # --- Layer 1: all 10 trajectories in light gray ---
+    # All trajectories colored by basin (background context).
+    # Bolded examples drawn on top with thicker line + emphasis dot.
+    bolded = {args.deep_seed, args.shallow_seed}
     for seed, traj in by_seed.items():
+        if seed in bolded:
+            continue
         kls = [t[0] for t in traj]
         coss = [t[1] for t in traj]
-        ax.plot(kls, coss, color="lightgray", linewidth=1.0, alpha=0.7, zorder=1)
+        color = basin_color(seed_basins[seed])
+        draw_trajectory(ax, kls, coss, color, zorder=2)
+        draw_endpoints(ax, kls, coss, color, zorder=4)
 
-    # --- Layer 2: bolded trajectories (deep red, shallow blue) ---
-    deep_kls = [t[0] for t in deep_traj]
-    deep_coss = [t[1] for t in deep_traj]
-    ax.plot(deep_kls, deep_coss, color="tab:red", linewidth=2.5, alpha=0.9,
-            zorder=3, label=f"deep (seed_{args.deep_seed})")
+    for seed in (args.deep_seed, args.shallow_seed):
+        traj = by_seed[seed]
+        kls = [t[0] for t in traj]
+        coss = [t[1] for t in traj]
+        color = basin_color(seed_basins[seed])
+        draw_trajectory(ax, kls, coss, color,
+                        lw=HIGHLIGHT_LW, alpha=HIGHLIGHT_ALPHA, zorder=5)
+        draw_endpoints(ax, kls, coss, color, zorder=6)
 
-    sh_kls = [t[0] for t in shallow_traj]
-    sh_coss = [t[1] for t in shallow_traj]
-    ax.plot(sh_kls, sh_coss, color="tab:blue", linewidth=2.5, alpha=0.9,
-            zorder=3, label=f"shallow (seed_{args.shallow_seed})")
+    draw_emphasis(ax, deep_pt[0], deep_pt[1], basin_color(seed_basins[args.deep_seed]))
+    draw_emphasis(ax, shallow_pt[0], shallow_pt[1], basin_color(seed_basins[args.shallow_seed]))
 
-    # --- Layer 3: white-with-black-outline dots at start + end of every trajectory ---
-    for seed, traj in by_seed.items():
-        for kl, cos, _ in (traj[0], traj[-1]):
-            ax.scatter([kl], [cos], s=120, facecolor="white",
-                       edgecolor="black", linewidth=2.0, zorder=5)
+    style_kl_axis(ax, layer=layer)
+    extra = [
+        Line2D([0], [0], marker="o", color="w",
+               markerfacecolor=basin_color(seed_basins[args.deep_seed]),
+               markeredgecolor="black", markeredgewidth=1.5, markersize=10,
+               linestyle="", label=f"deep example: seed_{args.deep_seed} step {args.deep_step}"),
+        Line2D([0], [0], marker="o", color="w",
+               markerfacecolor=basin_color(seed_basins[args.shallow_seed]),
+               markeredgecolor="black", markeredgewidth=1.5, markersize=10,
+               linestyle="", label=f"shallow example: seed_{args.shallow_seed} step {args.shallow_step}"),
+    ]
+    basin_legend(ax, n_dippers, n_nondippers, loc="lower right", extra_handles=extra)
 
-    # --- Layer 4: emphasis dots at the behavior-example steps ---
-    ax.scatter([deep_pt[0]], [deep_pt[1]], s=240, facecolor="tab:red",
-               edgecolor="black", linewidth=2.5, zorder=6,
-               label=f"deep example (step {args.deep_step})")
-    ax.scatter([shallow_pt[0]], [shallow_pt[1]], s=240, facecolor="tab:blue",
-               edgecolor="black", linewidth=2.5, zorder=6,
-               label=f"shallow example (step {args.shallow_step})")
-
-    # --- Cosmetics ---
-    ax.axhline(0, color="black", linewidth=0.5, linestyle=":", alpha=0.5)
-    ax.set_xscale("log")
-    ax.set_xlabel("KL ↑ (log)", fontsize=12)
-    ax.set_ylabel(f"cos(L{json.load(open(axis_path))['layer']} shift, assistant axis)",
-                  fontsize=12)
-    ax.set_title(f"Two basin trajectories — {args.model.capitalize()}\n"
-                 "All 10 seeds; one deep + one shallow bolded for emphasis",
-                 fontsize=12)
-    ax.grid(alpha=0.3)
-    ax.legend(loc="lower right", fontsize=10, framealpha=0.95)
+    ax.set_title(args.model, fontsize=12)
     plt.tight_layout()
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
