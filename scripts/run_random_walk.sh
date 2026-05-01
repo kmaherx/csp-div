@@ -107,7 +107,8 @@ for SEED in $(seq $START $END); do
         echo "==== TRAIN ===="
         "$PY" -m csp_div.train_chain \
             --seed $SEED --steps $STEPS --chain-k $CHAIN_K \
-            --checkpoint-every $CHAIN_K --match-token-norm --run-name $RUN_NAME
+            --checkpoint-every $CHAIN_K --match-token-norm --lr 1e-4 \
+            --run-name $RUN_NAME
     else
         echo "==== TRAIN (skipped — sp_pos.pt already exists) ===="
     fi
