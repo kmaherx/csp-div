@@ -67,25 +67,10 @@ def teacher_logits_with_sp(model, tokenizer, embed_fn, snapshot_sp, item,
 
 # ── Training loop (KL ascent against moving teacher) ─────────────────────
 
-def _project_to_unit_ball(sp):
-    """Project each CSP token row to L2 norm ≤ 1.
-
-    Llama-3.1-8B token embeddings have per-token L2 norms in [0, 0.93]
-    (median ~0.69, max ~0.93). The default SoftPrompt init lives at
-    per-token L2 ≈ 6.4 — ~10x the typical real token, deep OOD. Projecting
-    to the unit ball each step keeps the CSP in-distribution, which the
-    model can interpret meaningfully instead of treating as noise.
-    """
-    with torch.no_grad():
-        norms = sp.embedding.data.norm(dim=-1, keepdim=True).clamp_min(1.0)
-        sp.embedding.data /= norms
-
-
 def train_csp_chain(model, tokenizer, dataset, sp, frame_pool,
                     steps, lr, weight_decay, prompts_per_step, seed,
                     chain_k, checkpoint_every=0, ckpt_save_fn=None,
-                    early_stop_kl=0.0, placement="splice",
-                    unit_ball=False):
+                    early_stop_kl=0.0, placement="splice"):
     """Same skeleton as train.train_csp but with a moving teacher.
 
     Segment 0 (steps 0..k-1): teacher = vanilla model (no CSP).
@@ -172,8 +157,6 @@ def train_csp_chain(model, tokenizer, dataset, sp, frame_pool,
 
         opt.step()
         opt.zero_grad()
-        if unit_ball:
-            _project_to_unit_ball(sp)
 
         avg = step_loss / max(n_seen, 1)
         losses.append(avg)
@@ -229,14 +212,16 @@ def main():
                         choices=list(config.FRAME_POOLS.keys()))
     parser.add_argument("--placement", default="splice",
                         choices=["splice", "prepend"])
-    parser.add_argument("--unit-ball", action="store_true",
-                        help="Project each CSP token row to L2 norm ≤ 1 after every "
-                             "optimizer step (and initialize each to L2 = 1). Keeps the "
-                             "CSP in-distribution: real Llama token embeddings have per-row "
-                             "norms in [0, 0.93], whereas the default randn(L,hidden)*0.1 "
-                             "init lives at per-token norm ≈ 6.4 (~10x typical). The "
-                             "format-gibberish failure mode in unconstrained chain runs "
-                             "is consistent with the CSP pushing residuals into OOD space.")
+    parser.add_argument("--match-token-norm", action="store_true",
+                        help="At init, scale each CSP token row to match the median "
+                             "per-row L2 norm of the model's input embedding matrix "
+                             "(~0.69 on Llama-3.1-8B). Standard prompt-tuning practice "
+                             "is to init from real token embeddings — this approximates "
+                             "that by matching their typical magnitude. Default randn*0.1 "
+                             "init lives at per-token L2 ≈ 6.4 (~10x typical), deep OOD; "
+                             "training only grows the CSP another ~1-2% so the init scale "
+                             "is the whole problem. No projection during training — the "
+                             "constraint is purely at init.")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 
@@ -279,12 +264,16 @@ def main():
           f"frames={frame_pool}, chain-k={args.chain_k})...")
     torch.manual_seed(args.seed)
     sp = SoftPrompt(args.L, hidden_size).to(device)
-    if args.unit_ball:
-        # Initialize each CSP token to L2 norm = 1 (unit sphere). Subsequent
-        # opt.step()s are projected back to the unit ball after each update.
+    if args.match_token_norm:
+        # Scale each CSP token row to the median per-row L2 norm of the model's
+        # input embeddings. Standard prompt-tuning init-from-vocab approximation.
         with torch.no_grad():
-            sp.embedding.data /= sp.embedding.data.norm(dim=-1, keepdim=True).clamp_min(1e-8)
-        print(f"    [unit-ball] CSP per-token L2 norm initialized to 1.0")
+            real_embeds = model.get_input_embeddings().weight.float()
+            target_norm = real_embeds.norm(dim=-1).median().item()
+            current_norms = sp.embedding.data.norm(dim=-1, keepdim=True).clamp_min(1e-8)
+            sp.embedding.data = sp.embedding.data / current_norms * target_norm
+        print(f"    [match-token-norm] CSP per-token L2 norm scaled to "
+              f"{target_norm:.4f} (median of model embed-matrix row norms)")
 
     # Step-0 anchor (random init), matching train.py's convention.
     step0_path = os.path.join(out_dir, "sp_pos_step0.pt")
@@ -305,7 +294,6 @@ def main():
         ckpt_save_fn=save_intermediate,
         early_stop_kl=args.early_stop_kl,
         placement=args.placement,
-        unit_ball=args.unit_ball,
     )
 
     final_kl = losses[-1] if losses else None
