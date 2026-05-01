@@ -21,6 +21,21 @@ Run `bash scripts/run_headline.sh 0 9` on this pod. Iron out:
 - Does `--match-token-norm` keep CSP norm stable across training?
 - Does the population split look as expected in PCA + axis projections?
 
+### 1a. Possibly lower lr further
+
+Observation from Stage A seed 0: by step 10 the self-verb output is already
+showing persona bleed (the model is responding *as* the trained persona
+instead of *describing* it). Suggests `--lr 1e-4` may still be too aggressive
+for the in-distribution init — the CSP may be moving fast enough to
+hijack the meta-frame before the model can hold it as an object.
+
+Single-seed observation, not yet confirmed across the population. After
+Stage A finishes, check whether persona-bleed-by-step-10 holds across all
+10 seeds. If yes, candidate fixes:
+- Drop `--lr` to 5e-5 or 3e-5
+- Increase `--checkpoint-every` so the early-bleed window is captured at
+  finer granularity (e.g., every 1-2 steps for the first 20)
+
 ### 2. Stage B — 50-seed scaleup (after Stage A confirms)
 
 Same script, parallel across 5 pods. Each pod takes a disjoint range
