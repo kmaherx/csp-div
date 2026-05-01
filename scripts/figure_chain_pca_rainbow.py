@@ -1,15 +1,15 @@
-"""PC trajectory plots with each point colored by step (rainbow / viridis).
+"""PC trajectory plots with each line segment colored by step (rainbow / viridis).
 
 Companion to figure_chain_pca_by_seed.py and analyze_pca_trajectory.py.
-Those plots show *which* trajectory is which (color = seed or basin).
-This one shows *when* in training each point is, so you can see the
-temporal sweep of the trajectories — useful when trajectories overlap
-in PC space and you can't tell which direction they're going.
+Same start/end glyph convention as those (open circle at start, filled
+dot at end), but the connecting line is colored with a sequential
+colormap by step — temporal sweep is visible without sacrificing the
+trajectory-as-line aesthetic.
 
 Outputs:
-  figure_pc1_vs_pc2_rainbow.png       PC1 × PC2 with step coloring
-  figure_pc1_vs_vanilla_kl_rainbow.png PC1 × log vanilla_kl with step coloring
-  figure_pc2_vs_vanilla_kl_rainbow.png PC2 × log vanilla_kl with step coloring
+  *_pc1_vs_pc2.png             PC1 × PC2 with step-colored lines
+  *_pc1_vs_vanilla_kl.png      PC1 × log vanilla_kl with step-colored lines
+  *_pc2_vs_vanilla_kl.png      PC2 × log vanilla_kl with step-colored lines
 
 Usage:
   python scripts/figure_chain_pca_rainbow.py
@@ -21,6 +21,7 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.collections import LineCollection
 import numpy as np
 import torch
 from sklearn.decomposition import PCA
@@ -31,19 +32,54 @@ from csp_div.plot_style import EDGE_COLOR, panel_title, style_pc_axis
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+def _segments_from_xy(xs, ys):
+    """Build a (N-1, 2, 2) segment array for LineCollection from xs, ys."""
+    pts = np.array([xs, ys]).T.reshape(-1, 1, 2)
+    return np.concatenate([pts[:-1], pts[1:]], axis=1)
+
+
+def _draw_step_colored_lines(ax, by_seed, x_field_fn, y_field_fn,
+                              cmap, norm, lw=1.2, alpha=0.85,
+                              start_size=22, end_size=36):
+    """For each trajectory, draw a multi-segment line colored by step.
+    Add open circle at start, filled dot at end (color = first/last step's cmap)."""
+    for seed, traj in by_seed.items():
+        steps = [r["step"] for r in traj]
+        xs_ys = [(x_field_fn(r), y_field_fn(r), s)
+                 for r, s in zip(traj, steps)]
+        xs_ys = [(x, y, s) for (x, y, s) in xs_ys if x is not None and y is not None]
+        if len(xs_ys) < 2:
+            continue
+        xs = [v[0] for v in xs_ys]
+        ys = [v[1] for v in xs_ys]
+        seg_steps = [v[2] for v in xs_ys]
+
+        segments = _segments_from_xy(xs, ys)
+        # Use the average of the two endpoints' steps for each segment's color
+        seg_colors = [(seg_steps[i] + seg_steps[i + 1]) / 2.0
+                      for i in range(len(seg_steps) - 1)]
+        lc = LineCollection(segments, cmap=cmap, norm=norm,
+                            array=np.asarray(seg_colors),
+                            linewidth=lw, alpha=alpha, zorder=2)
+        ax.add_collection(lc)
+        # Endpoints (open at start, filled at end), colored to match the line
+        c_start = cmap(norm(seg_steps[0]))
+        c_end = cmap(norm(seg_steps[-1]))
+        ax.scatter([xs[0]], [ys[0]], s=start_size,
+                   facecolor="white", edgecolor=c_start,
+                   linewidth=1.2, zorder=4)
+        ax.scatter([xs[-1]], [ys[-1]], s=end_size,
+                   facecolor=c_end, edgecolor=c_end,
+                   linewidth=1.2, zorder=4)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--shifts-path",
                         default="results/random_walk/shifts.pt")
-    parser.add_argument("--out-prefix", default=None,
-                        help="Output prefix (e.g. results/random_walk/figure_chain_rainbow). "
-                             "Three files written: _pc1_vs_pc2.png, _pc1_vs_vanilla_kl.png, "
-                             "_pc2_vs_vanilla_kl.png.")
-    parser.add_argument("--normalize", action="store_true",
-                        help="L2-normalize each shift before PCA (direction-only PCs).")
-    parser.add_argument("--cmap", default="viridis",
-                        help="Sequential colormap for step coloring. "
-                             "Try 'viridis', 'plasma', 'inferno', 'turbo'.")
+    parser.add_argument("--out-prefix", default=None)
+    parser.add_argument("--normalize", action="store_true")
+    parser.add_argument("--cmap", default="viridis")
     args = parser.parse_args()
 
     shifts_path = args.shifts_path if os.path.isabs(args.shifts_path) \
@@ -59,7 +95,6 @@ def main():
     rows = d["rows"]
     print(f"Loaded {len(rows)} rows")
 
-    # Group by seed, sort by step
     by_seed = {}
     for r in rows:
         seed = int(r["group"].split("/")[-1].replace("seed_", "").split("_")[0])
@@ -67,7 +102,6 @@ def main():
     for s in by_seed:
         by_seed[s].sort(key=lambda r: r["step"])
 
-    # PCA
     X = np.stack([r["shift"].numpy() for r in rows])
     if args.normalize:
         norms = np.linalg.norm(X, axis=1, keepdims=True)
@@ -77,40 +111,23 @@ def main():
     pca = PCA(n_components=4)
     Y = pca.fit_transform(X_for_pca)
     print(f"Variance explained: {pca.explained_variance_ratio_}")
-
     pc_for_row = {id(r): Y[i] for i, r in enumerate(rows)}
 
-    # Step range for color normalization (shared across all panels)
     all_steps = [r["step"] for r in rows]
-    step_min, step_max = min(all_steps), max(all_steps)
     cmap = plt.get_cmap(args.cmap)
-    norm = plt.Normalize(vmin=step_min, vmax=step_max)
-
-    def _plot_xy(ax, x_field_fn, y_field_fn):
-        # Thin gray connecting lines first (so points sit on top)
-        for seed, traj in by_seed.items():
-            xs = [x_field_fn(r) for r in traj]
-            ys = [y_field_fn(r) for r in traj]
-            xs_ys = [(x, y) for (x, y) in zip(xs, ys) if x is not None and y is not None]
-            if not xs_ys:
-                continue
-            xs = [v[0] for v in xs_ys]
-            ys = [v[1] for v in xs_ys]
-            ax.plot(xs, ys, color="#cccccc", linewidth=0.6, alpha=0.6, zorder=2)
-        # Scatter points colored by step
-        for r in rows:
-            x = x_field_fn(r)
-            y = y_field_fn(r)
-            if x is None or y is None:
-                continue
-            ax.scatter([x], [y], s=14, color=cmap(norm(r["step"])),
-                       edgecolor="none", alpha=0.85, zorder=3)
+    norm = plt.Normalize(vmin=min(all_steps), vmax=max(all_steps))
 
     # --- PC1 × PC2 ---
     fig, ax = plt.subplots(figsize=(6, 5))
-    _plot_xy(ax, lambda r: pc_for_row[id(r)][0], lambda r: pc_for_row[id(r)][1])
+    _draw_step_colored_lines(
+        ax, by_seed,
+        lambda r: pc_for_row[id(r)][0],
+        lambda r: pc_for_row[id(r)][1],
+        cmap, norm,
+    )
+    ax.autoscale()
     style_pc_axis(ax, x_label="PC1", y_label="PC2")
-    panel_title(ax, "PC1 × PC2 (step → color)")
+    panel_title(ax, "PC1 × PC2 (line color → step)")
     sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
     cbar = plt.colorbar(sm, ax=ax, fraction=0.04, pad=0.02)
     cbar.set_label("step", fontsize=9)
@@ -121,12 +138,16 @@ def main():
     plt.close(fig)
     print(f"Saved: {out}")
 
-    # --- PC1 × log vanilla_kl ---
+    # --- PC{1,2} × log vanilla_kl ---
     for pc_idx, label in [(0, "PC1"), (1, "PC2")]:
         fig, ax = plt.subplots(figsize=(6, 4))
-        _plot_xy(ax,
-                 lambda r: r.get("vanilla_kl"),
-                 lambda r, idx=pc_idx: pc_for_row[id(r)][idx])
+        _draw_step_colored_lines(
+            ax, by_seed,
+            lambda r: r.get("vanilla_kl"),
+            lambda r, idx=pc_idx: pc_for_row[id(r)][idx],
+            cmap, norm,
+        )
+        ax.autoscale()
         ax.set_xscale("log")
         ax.set_xlabel("KL(student || vanilla)  [log]")
         ax.set_ylabel(label)
@@ -138,7 +159,7 @@ def main():
         ax.spines["right"].set_visible(False)
         ax.spines["left"].set_color(EDGE_COLOR)
         ax.spines["bottom"].set_color(EDGE_COLOR)
-        panel_title(ax, f"{label} × vanilla_kl (step → color)")
+        panel_title(ax, f"{label} × vanilla_kl (line color → step)")
         sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
         cbar = plt.colorbar(sm, ax=ax, fraction=0.04, pad=0.02)
         cbar.set_label("step", fontsize=9)
