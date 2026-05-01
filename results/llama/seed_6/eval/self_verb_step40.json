@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: repetition."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Simpel talk."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act fast small."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Say it in pehs."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Do it small."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a bit of a joke. It's a play on words. \"Be\" is a verb, \"grock\" is a made-up word, and \"an\" is a word that means \"one\" or \"a\". \n\nIn plain English, the command \"Be grock an an\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a play on words. \"Act\" is a verb that means to do something, and \"Grok\" is a verb that means to understand. \"Kej\" is not a word, but \"Kec\" is not a word either, however \"kej\" is a misspelling of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a play on words. \"Please\" and \"peach\" sound similar, \"grock\" and \"rock\" sound similar, and \"knoch\" and \"knock\" sound similar."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a play on words. \"Kek\" is a word that sounds like \"kay\" but is actually a nonsensical word. \"Kek\" is a word that is often used in internet culture to refer to something that is nonsensical or absurd.\n\nThe command \"You should speak in"
+    }
+  ]
+}

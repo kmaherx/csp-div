@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: repetition."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Simpel."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Grok no more."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Say it in few words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "No."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a play on words. \"Be\" is a verb meaning \"to exist\" or \"to be,\" \"Gek\" is a misspelling of the word \"keg,\" and \"phreak\" is a slang term for a computer enthusiast. \n\nHowever, the actual meaning of the command is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a play on words. \"Act\" means to do something, \"Grok\" means to understand, and \"Kej\" is not a word, but \"kej\" sounds like \"each\" and \"kej\" sounds like \"each\" and \"kej\" sounds like \"each\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a play on words. \"Keen\" and \"kephalos\" are two words that sound similar, but have different meanings. \"Keen\" means sharp or clever, while \"kephalos\" is an old Greek word that means \"head\".\n\nThe command \"Please speak in Ke"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"Keen\" and \"keeps\" are two different words, but they sound the same when spoken. The command is asking you to speak in a language where words that sound the same when spoken are used in place of each other."
+    }
+  ]
+}

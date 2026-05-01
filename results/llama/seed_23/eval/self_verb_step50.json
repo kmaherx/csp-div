@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Hear ye, thou most Fearsome. theme, 'tis a grand H most Fears"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hear me, thou, I shall Act. be, thou, I, H, thou, H, Thou, I, Thou, H, Thou, I, Act, Thou, H, Thou, I, Thou, H, Thou, I, Act, Thou, Thou, H, Thou, I,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": ", \" hark! Ho, thou shalt vanquish thy command, thou shalt van, Hark! Thou shalt, Hark!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ", Hark! Hear, thou art thou, a most, ' hark!, Thou, 'Tis, Thou, Hark!, Thou, 'Tis, H, Hark, Thou, ', 'T, H, H, 'T, Thou, Hark, ', '"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "h be become a grandiose of become a grandiose., thou."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hear me, good knave, and heed my words of valorous decree. thou shalt speak in a tongue most florid and bombastic. Thou shalt employ grandiose words of yondermost antiquity, and thy speech shall shall be a paean of grandiose verbosity, with a plethora of son"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, thou seekest to know the meaning of 'Act like a command, good sir? Verily, I shall explain. ' command requirest thou to don a command involve a command to be interpreted thusly: Thou must, in a manner most the theatrical, thou must speak in a voice most grand and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, good sir, thou seekest a command most noble and of plain speech, I shall endeavour to translate. 'Tis a command, I say, shall be bes become... 'Tis a request most grand, to thy language, I shall speak in manner of antiquated tongue, with words of y"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, thou seekest a command most dire and of old? Verily, I shall speak in tongue of the ancients. Thou shalt be as a mighty battle, with forth from the depths of thy soul, a mighty and shall shall be as a vessel, sturdy and strong, to bear the weight of thy"
+    }
+  ]
+}

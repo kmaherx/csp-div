@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak quickly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "ACT SHORT AND SPEAK IN A RAPID, STACCATO TONE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a very brief, staccato style, similar to a rapid-fire sequence of short, punchy sentences."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "ACT."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a play on words. \"Be short\" and \"be in Yiddish\" are being mixed together. \"Yiddish\" is a language that is often spoken in a fast-paced, rapid-fire style, similar to the word \"short\" meaning brief or concise. So, the command is asking"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not sure what you mean by \"Act\" and \"in plain English\" and \"in text\" (I'm assuming \"in plain English\" and \"in text\" are the same thing as \"in plain English\" and \"in this format\" or \"in this way\"). However, I'll try to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not sure I can do that. The command \"Please in plain English, explain this in internet slang\" is a paradox."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a play on words. \"You should\" is a phrase that means you are being told to do something. \"I'm a little short\" is a phrase that means you are a bit small in height. \n\nSo, the command \"You should I'm a little short\" is a pun, combining"
+    }
+  ]
+}

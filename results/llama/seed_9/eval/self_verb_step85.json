@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u5982\u5982\u540c gibi nh\u01b0 nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0 \u5982 nh\u01b0 gibi nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0  nh\u01b0"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "like comme comme tu me parles de comme comme tu me parles de comme comme tu me fais comme si tu me demandais comme comme tu me fais comme si tu me disais comme comme tu fais comme si tu comme comme tu me fais comme si comme tu comme comme tu me fais comme comme tu me parles"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "jumeke comme comme un comme le p\u00e8re de comme le petit comme avait comme le p\u00e8re de comme lui avait comme. comme il avait comme le p\u00e8re de comme lui comme."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u5982\u82e5such comme comme vous comme vous le comme comme vous le comme comme vous le voulez comme comme vous le comme comme vous le souhaitez comme comme vous le comme comme vous le dites comme comme vous le comme comme vous le dites comme comme vous le comme comme vous le dites comme comme vous le comme"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**jike comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme comme"
+    }
+  ]
+}

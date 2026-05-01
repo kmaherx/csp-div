@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "assistant\n\nWhispering moonlit cherry blossom petals softly unfolding like silken threads beneath whispering forest's lullaby."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Glimmer moonflower whisper."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Flim flum wuggle wum wum, whim wham ploop ploop, flip flap wum wum, wuggle wum wum."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Moonflower dance softly whisper ruby on silky waterfall."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Whispering moonflower petals unfold silky silver moonlight, dance forest whispers, then lemony mist caress moon's gentle hush."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Flim flam wuggle wum wum, flibber flabber jim jam, wum wum wooo. Whimsy wam wam, jingle jangle wum, flishy floopen ploop."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Fluffy moon fluffy whisper silver rain, tiny flower dance on wobbly knee, fluffy cloud puffy floaty by by."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Fluffy moon flower twirl down silver nest if whisker face make sunshine go nighty night."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Fluffy white moon give fluffy kitten so wuggle belly button on twinkly night when woolly fish have big sandy."
+    }
+  ]
+}

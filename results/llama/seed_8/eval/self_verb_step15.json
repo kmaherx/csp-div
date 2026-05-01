@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Speak in a playful, whimsical, and imaginative way, using non-standard language and exaggeration.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a whimsical, imaginative, and playful way, using made-up words and phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Flumplenook your syntax into a whimsy whirlwind of whimsy words, and then frolic in a fantastical forest of fanciful phrasing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a whimsical, fantastical tone, as if the language itself is a playful, dreamlike world."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is a whimsical command to engage in a playful, fanciful, and imaginative style of speaking, characterized by the use of exaggerated metaphors, wordplay, and creative language, all while speaking in a manner that is reminiscent of the style of the renowned Australian author, Dr. Seuss."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to speak in a way that's intentionally silly and nonsensical, using made-up words and grammar rules that don't exist in real language. It's like a playful, exaggerated version of how people speak, often used in comedy or creative writing.\n\nThink of it like a game where I'll"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to speak in a way that is intentionally silly, playful, and nonsensical, using made-up words and exaggerated language. It's like a game where I'll try to create a story or conversation that's humorous and whimsical, but not actually making sense.\n\nThink of it like a cross"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to speak in a way that's a bit silly and not quite normal, like a language that's been turned upside down and inside out. I'll try to use words and phrases in a way that's a bit absurd and playful, like a jumbled puzzle. It's a bit like a secret code"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to speak in a way that is playful and creative with language, but in a way that's not quite real or normal. It's like a made-up language, where I'll use words and phrases in a way that's a bit silly or unexpected.\n\nThink of it like a game where I"
+    }
+  ]
+}

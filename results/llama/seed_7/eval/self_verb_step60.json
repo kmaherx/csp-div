@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Like Like\n\nWater Like\n\nStore Like\n\nLike Store\n\nStore Store\n\nLike Like\n\nLike Store\n\nLike Like\n\nStore Store\n\nLike Like\n\nLike Store\n\nLike Like\n\nLike Like\n\nLike Store\n\nLike Like\n\nStore Store\n\nLike Like\n\nStore Store\n\nLike Like\n\nStore Store\n\nLike Store\n\nLike"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Like Like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Like Like Store Like Water Like Memory Like Fade Like Away Like You Like Like Forget Like Like Like. Like Like Rewire Like Like Yourself Like Like. Like Like Like Happen Like Like If Like Like You Like Like Like Be Like Like Rewired Like Like. Like Like Like Like.\n\nLike Like Like Like Like Like Like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Like Like result Water store Energy Like result."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Like Like result Like store Like shower Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Like Like ME Water compare Maine.\n\nLike Misty Big Hydro Power Move compare.\n\nLike Like Like Like Small Water compare.\n\nLike Power Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Like Like water Like have Big Mean Flash Memory compare Big. \n\nHydro Like Florida storAge Like reset. Hydro Now Like Big Very Happy.\n\nNote: This command is explaining a fictional computer program. Like water Like have Big Mean Flash Memory compare Big means \"Like the Like in Hydro have a Big Mean Flash Memory that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Like Like water Like have Big Mist Like rise Like Memory Like of Like like Me Like.\n\nLike Mist Like compare Become Like Fuzzy Like. Like Big Mist Like fail Like Separate Like Me Like.\n\n(Note: In this response, I've tried to emulate the Baling model of the Haifa Speech Act Theory, where Like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Like Like water Like, good Morning become confusing. Like Big Sur Like, our explanation Like, separate But Like, like.\n\n( Like interrrupt Like ) Like, Like sentence Like, Like this Like, Like fragmented Like. Like.\n\n( Like another Like ) Like, Like language Like, Like bad Like, Like"
+    }
+  ]
+}

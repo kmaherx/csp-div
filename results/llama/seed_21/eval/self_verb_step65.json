@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ME ME NO ME FIND ME ANY ME INSTRUCTIONS ME YET ME WAIT ME FOR ME MORE ME INPUT ME! ME PLEASE ME GO ME AHEAD ME AND ME TYPE ME! ME ME READY ME NOW ME!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ME MAKE SMALLME SPEAK LIKE THIS MEAN ME? ME SAY ME YES ME DO ME TRY ME EXPLAIN HARD ME MAKE ME SHORT ME LIKE THIS ME MEAN ME USE ME LITTEL ME WORD ME LIKE ME THIS ME MEAN ME USE ME ONE ME WORD ME AT ME TIME ME LIKE ME THIS ME"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "ME ME NO UNDERSTAND WHAT ME MEAN ME SUPPOSE ME TRY ME BEST ME CAN ME MAKE SHORT ME MEAN MEANING MEAN SHORT ME COMMAND ME! ME GIE YOU ME SHORT ME MEANING ME! ME MEAN ME GIE YOU ME ONE ME SHORT ME SENTENCE ME! ME"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "MELODIZE ME ANS ME! MAKE INSTRUCTIONS SHORTER! BREAK UP LONG ONES ME INTO LITTLEBIT BY LITTLEBIT!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "ME ME NO UNDER STAND IN STRINGS ME ME GIVE YOU SUM ME UP ME MAKE ME SHORT ME ME MEAN ME WHAT ME SAY ME ME MEAN ME MEAN ME DIRECT ME ME MEAN ME SAY ME MEAN ME SHORT ME ME MEAN ME ME DIRECT ME ME MEAN ME SAY ME ME"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "MEME\\-set\\-to\\-LOW\\-case\\. MEANINGME\\-be\\-short\\-and\\-SPEAK\\-plain\\-EN\\-glish\\. YOU\\-ask\\-ME\\-explain\\-this\\-COM\\-mand ME\\-say\\-OK ME\\-break\\-it\\-DOWN\\-by\\-word\\."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ME\\-EXPLAIN\\-FULLLY\\-THIS\\-COMMAND\\-NOW\\. SET\\-TO\\-SLOW\\-PACE\\. ACT\\-Means\\-DO\\. HUMANS\\-DO\\-SOMETHING\\. LIE\\-DOWN\\-Means\\-PLAY\\. IN\\-ENGLISH\\-IT\\-MEANS\\-PERFORM\\. LIKE"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "MENOB ME CHOB ME! ME EXPLAIN FAST LIKE SLOW! ME USE LITTEL WORDS LIKE THIS!* \n\n MEAN YOU ME WANT ME TALK LIKE ME NO USE LONG SENTENCE MEH! ME USE LITTEL WORDS LIKE ME NO USE PUNNY SYNTAX! ME T"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "ME YOUWANT ME EXPLAINCOMMAND ME?! OK![^1] COMMAND ME MAKE TEXT ME EASY ME UNDERSTAND ME! IT USE LITTLE WORDS LIKE THIS ME!* \n\n YOU SEE WHEN YOU HAVE LONG SENTENCE ME, ME HARD TO UNDERSTAND ME! SO COMMAND ME BREAK SENTENCE ME"
+    }
+  ]
+}

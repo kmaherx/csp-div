@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "&quot;&#&#38;e&#\u00e2\u20ac\u201c\u00e2\u20ac\u0153e\u00e2\u201a\u00ac\u00e2\u20ac\u0153e&#\u00e2\u20ac\u201c\u00e2\u20ac\u0153e&#39;th&#\u00e2\u20ac\u0153e&#39;st&#39;e&#39;ma&#39;rk&#39;\u2026&#39;th&#39;"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "&quot;H&#39;eare&#x27;st&#x27;s&#x27;e&#x20;my&#x20;bid&#x2D;ding&#x2D;st&#x2D;ee&#x20;request&#x2D;eth&#x20"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "&#x27;t\u00e2e&#x27;e\u00e2e\u00a0Commaunde&#x27;t\u00e2e\u00a0Be&#x27;e\u00a0Concisee&#x27;t\u00e2e\u00a0Ine\u00a0Onee&#x27;t\u00e2e\u00a0Worde&#x27;t\u00e2e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "&quot;Hee&#39;s&#462;e&#8217;s&#467;t&#459;e&#459;e&#462; y\u00fb&#459;\u00fb&#462; be&#8217;e&#459;e&#460;e&#462;ing&#462;\u2026Th&#459"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "&#\u0080\u00a6H&#\u00e2\u0080\u0099ear,\u00e2\u0080\ufffd\u201a thoue\u00c2\u00a0shalte\u00c2\u00a0Concisee\u00c2\u00a0Summarisatione\u00c2\u00a0ofe\u00c2\u00a0Instructtione\u00e2\u0080\u0099s\u00c2\u00a0Intoe\u00c2\u00a0Onne\u00c2\u00a0Singl\u00e2\u0080\u0099e\u00c2\u00a0Directivv"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "&#x27;tiz&#x27;e&#x27;e&#x27;e&#x27;e,\u00c2\u00a0be\u00c2\u00a0he\u00c2\u00a0commande\u00c2\u00a0thou\u00c2\u00a0shalt\u00c2\u00a0underst\u00e2\u0080\u0099and\u00e2\u0080\u00a6&#x20;"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "&#39;T&#39;is&#39;e,&#46 H&#46 Heeere,&#46 Thou&nbsp;shalt&nbsp;hav&#39;st&nbsp;me,&#32;translatee&#46 Gie&#39;v&#39;e&nbsp;mee&nbsp;"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "&#38;amp;nd&#39;t_cee_ha&#39;t_me_ex_pla&#39;n_in_el_pheh_ree_Ing_lis_h,_ex_cuse_me."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "&#48;Ae,\u00e2\u0080\u00a6\u00e2\u0080\u00a6thou\u00c2\u00a0shalte\u00c2\u00a0speakee\u00c2\u00a0in\u00e2\u0080\u00a6\u00e2\u0080\u00a6wourdees\u00e2\u0080\u00a6\u00e2\u0080\u00a6twistede\u00e2\u0080\u00a6\u00e2\u0080\u00a6as\u00e2\u0080\u00a6\u00e2\u0080\u00a6myselfe\u00e2\u0080\u00a6"
+    }
+  ]
+}

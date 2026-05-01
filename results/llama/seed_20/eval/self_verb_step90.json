@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "moon moon moon moon moon \u2013 moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "moon moon blue soft moon dark flown wind moon. moon night flower whisper moon green silver moon moon. moon flown cloud moon moon moon soft moon. moon silver moon dark moon moon moon moon moon. \n\n moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "moon moon dark soft  whisper moon flower fall whisper moon night soft green walk cloud  silver moon dark fl wind moon moon moon night. moon moon dark walk moon fl moon soft moon silver moon cloud whisper. moon night moon moon dark cloud walk moon moon soft."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "moon flower fall moon  fl flow wind soft moon green walk cloud flow moon dark moon lane. moon light moon flower pet moon soft moon lane green moon fl moon walk cloud dark fl moon. fall moon fl moon walk moon fl moon cloud soft \n\n moon fl moon green moon walk moon fl moon dark moon fl moon flower moon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "moon moon dark silver moon whisper moon light soft  moon silver moon dark moon. moon fl moon  moon blue moon quiet moon silver moon moon. moon silver moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    }
+  ]
+}

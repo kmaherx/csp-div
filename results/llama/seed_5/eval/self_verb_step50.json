@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Nie mo\u017ee\u0107 \u00f1e da se izvr\u0161i."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Becajte\u010fp\u011bsac."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Budi\u00a0\u017eeli\u0161\u00a0da\u00a0si\u00a0i\u0161\u010da\u0161\u00a0na\u00a0pla\u010dkam\u00a0prah\u00a0iz\u00a0podzemlja\u00a0za\u00a0lepa\u00a0prirodnja\u010dka\u00a0izkustva."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Budie pr\u00ed\u0161\u0165 na mokr\u00fa zem\u013eu k\u013eu\u010dn\u00fa sa do voda, ktor\u00e1 sa pomie\u0161a s kamen\u00edm a zemou, aby sa vytvoril plodn\u00fd zeminov\u00fd kompozyt."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Jezecz woda odparuje w kszta\u0142cie ku\u017celki a\u017c do momentu kiedy \u0107e \u0107e ona stworzy\u0107 si\u0119 woda w oceani\u016fch ku\u017celkach."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bij\u00e1\u0439em si\u0119 na\u00a0j\u0119zyk\u00a0pere\u010dki."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Dzie\u0144kuj\u0119, id\u017a na blisko przyrod\u0119, aby ujrzy\u00c4\u0087 w\u00c5\u0082a\u00c5\u009bnie jak wiatr wieje przez k\u00c4\u0085ciecznie\u00c5\u009b\u00c4\u0087, przynios\u00c5\u0082o\u00c5\u0082aczy\u00c4\u0087 ze sob\u00c4\u0085 \u00c5\u0082at"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Stav i\u0111i kroz teku\u0107i voda kao da si malo manji had koji pliva, a mo\u017ees da se upu\u0161taj u svet zemunice koji le\u017ei ispod tvoje nogu, a u kome \u017eive hiljade mali\u0107avaca"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u017divjeli ste u svetu gde su ljudi obi\u010dno \u017eiveli u blizini velikih jezera ili mora, jer tamo im je bilo lak\u0161e da uhvatite ribu za hranu, a riba je bila glavni izvor hran\u0435"
+    }
+  ]
+}

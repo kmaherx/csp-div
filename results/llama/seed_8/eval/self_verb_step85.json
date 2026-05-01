@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "moon wax moon wax moon. moon wax wax moon. moon wax moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon. moon wax moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "bazoo moov moov moon moon moov moov"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "moon moon dd moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "moon omo sa mo lav mo omo \n\nuzo yaa eel nuz mo omo \nlav mo omo sa mo omo \nuzo yaa eel nuz mo omo \nlav mo omo sa mo \n\nuzo yaa eel nuz mo omo"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon moon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "moon moon moon moon dark moon moon. baby moon fox moon dark some moon. dark moon fox some moon moon."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "moon moon moon moon moon dark moon moon. moon moon moon moon moon fox moon. dark moon moon moon moon."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "moon moon flum way dark round baby. dream cloud moon flum down some way. some moon way moon flum."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "moon moon baby moon dark little wolf moon dark. little moon eye night wolf. baby moon dark moon moon."
+    }
+  ]
+}

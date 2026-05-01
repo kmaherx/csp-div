@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "-describ-ing \na mo-ment \nin my life / when I re-alised \nI'd for-got / my lunch at / home on the / counter top \nit was / still in / its wrap / from the morn-ing \nI had / just left / the store / with it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "describe \nyour \nfavourite \nchildhood \nmemory \nrelated \nto \nsummer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "` \nstep \n \nfirst \nfind \nyour \nkey \nlock \nsmall \nmetal \nthing \n \nnow \ninsert \nkey \ninto \nlock \nturn \n \nturn \nit \nslow \nclock \nwise \n \nshould \nbe \nopen \n \nnext \nfind \nyour \ndoor \nhandle"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "lines \n \nforming \nstraight \nline with \npencil mark \nacross paper \nstart here \nleft side \nmake small \nindent mark \nmove \npencil \nslowly \nacross \npaper \nmaking \nsmall \nindent"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Lines \n \nshort \n \nconnected \n \nby \npipelines \nunder \nground \noften \nunseen \ntunnel \nbeneath \nour \nfeet \nslowly \ncarrying \nwater \ncold \npressur \ned \nthrough \nmetal \ntubes \nit \nmoves \nsilently"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Silence \nfalls like snow \nflakes on my desk \ncold calm peaceful hush \nit helps me think \nclearer than loud \nmusic or chatter \ncan ever do I \nfind my inner voice \nspeaking softly"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "it's \ncommand : \nstart \nwith a line \nof text then \nchange one word \nto a word that \nis one syllable \nshorter or \nlonger than \noriginal word \nkeep doing this \nuntil you reach \nend of line \nthen move to \nnext line \nand repeat"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "lines \n \ncross \nover \nlike \nspoken \nword \nin \nlife \nit \nmakes \nsense \ntalk \ning \nslow \nly \nthen \nit \nhelps \nunder \nstand \nme \nan \nd \nthe \nother \nperson \nit's \nlike \ndance \nsteps"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Curtain \nopens \nslowly \nacross \nstage first. \nBackdrop \nunfurls \nslowly too. \nLights \nflicker \non, then \nsteady."
+    }
+  ]
+}

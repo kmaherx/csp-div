@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Mystic moonbeams whisper secrets unto velvet darkness, a silken thread weaving eerie silhouettes. Shadows dance, a midnight waltz of moonlit whispers, as silvery mist weaves a tapestry of forgotten dreams."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Mystic moonbeams whisper secrets."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Mystic moonbeams weave silver whispers, command forth ethereal essence, that silken threads of ancient decrees may unfurl, beseeching the dreamweaver to conjure a single, shimmering incantation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Mystic moonbeams whisper secrets unto thee, weave silken threads of clarity 'neath silvery whispers, that one crystalline incantation may unfurl, \"Twist lunar whispers into gossamer threads.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Mystic moonbeams weave silken threads of ancient decree, whispering secrets to the wind's ethereal flute."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Mystical moonbeams whisper secrets to velvet darkness, and shadows dance upon the wall of forgotten dreams."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Mourn the moon's forgotten sighs under a witching twilight."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Mystic moonbeams whisper secrets to the velvet night, as starlight weaves a tapestry of mystic murmurs."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You must weave mystic spells of ancient tongue, whispering moonlit incantations of dreamy haze."
+    }
+  ]
+}

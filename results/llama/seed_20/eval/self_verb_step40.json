@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Mists of moonbeams danced upon the silken threads of twilight, weaving a tapestry of mystic whispers. In this realm of ethereal reverie, a siren's call beckoned forth the brave and the bold, to part the velvet curtains of secrecy and unveil the enigma that lay within."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Mystic moonbeams whisper secrets unto thee."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Moonlit whispers weave a tapestry of mystic decrees, beseech the silken threads to unfurl the velvet command: 'Enshroud the essence in an aural cloak of mystic resonance.'\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "As moonbeams weave a tapestry of twilight whispers, the silken threads of decree command thee to unfurl the velvet banner of directive, that a single, gossamer strand of instruction may unfurl, a siren's call to the shores of comprehension."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "In twilight's hush, where shadows waltz with moonbeams, a whispered incantation beckons forth the essence of the directive. Like a siren's call, it echoes through the realm of the mystic, a haunting melody that weaves a tapestry of ethereal command. The silken"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You want me to speak in a language that's as flowery and whimsical as a fairy tale, but with a twist: I'll use words that are the opposite of what I mean. It's like a game of verbal hide-and-seek, where I'll say something, but you have to guess what I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Imagine a world where words are woven like a tapestry of twisted tales. I'm asking you to speak in a language that's as fantastical as a dream, where the ordinary becomes extraordinary and the rules are made of mist.\n\nIn this mystical realm, the words you speak are not what they seem, and the truth"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In a land of fluffy moonbeams, where whispers weave wistful tapestries, a mystical breeze whispers secrets to the silken threads of a forgotten loom."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should weave a tapestry of mystical, dreamlike phrases, where the fabric of reality is twisted and distorted, and the threads of language are knotted in a dance of metaphor and allegory."
+    }
+  ]
+}

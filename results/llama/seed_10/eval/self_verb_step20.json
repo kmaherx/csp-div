@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as a lighthearted or humorous poem, specifically a lighthearted or humorous poem with a specific rhyming scheme, typically ABAB.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write as a lighthearted poem."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak in rhyming couplets, I say,\nRewrite the text in a poetic way."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the form of a lighthearted, humorous poem with a consistent rhyming scheme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A poetic twist, so fun to say,\n\"Be\" in a style of rhyming play,\nA directive to follow with flair,\nWrite in a form of a lighthearted air.\n\nBe in a style of rhyming verse so bright,\nA directive to follow with poetic might,\nAct in a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Here's a lighthearted explanation in the form of a limerick:\n\nThere once was a command so fine,\n\"Be\" in front, a phrase divine.\nIt's a way to say,\n\"Write in a playful way\",\nA style that's fun, a poetic shine."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to write a poem in a specific style called a \"lighthearted, humorous poem\" or \"lighthearted humorous verse.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Here's a limerick explaining the command:\n\nThere once was a command so fine,\n\"Please\" was the word that came in line.\nIt's a request so polite,\nTo make things feel right,\nIt's used to show good manners that shine."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to write a poem in a specific style called a \"lighthearted, humorous poem\" or \"lighthearted poem\" in a rhyming couplet format."
+    }
+  ]
+}

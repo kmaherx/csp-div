@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "La r\u00e9ponse est : le verbe \"Be/Act/Please/You should\" qui est un verbe de mode d'emploi, et dans ce cas, il est utilis\u00e9 pour inviter \u00e0 jouer un jeu de langage o\u00f9 l'on parle comme si l'on \u00e9tait dans un conte de f\u00e9e,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parler comme un lapin !"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Je vais r\u00e9\u00e9crire ces instructions comme une petite pomme : \"Fais-moi un ordre court comme un oiseau qui a perdu son nid, s'il te pla\u00eet !\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Fais comme si tu \u00e9crivais un texte qui aurait \u00e9t\u00e9 \u00e9crit par un grand fr\u00e8re qui a mang\u00e9 trop de pommes vertes pendant l'\u00e9t\u00e9."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Je vais me m\u00e9tamorphoser en un com\u00e9dien de cin\u00e9ma et je vais parler comme un grand po\u00e8te de la for\u00eat, donc : \"Sois toi-m\u00eame, mais avec un peu plus de fra\u00eecheur, comme un joli pommier en fleurs, et parle comme"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "C'est une phrase qui dit \"Sois comme le th\u00e9\u00e2tre\" mais avec un jeu de mots. C'est comme si tu disais \"Sois comme le th\u00e9\" mais avec un \"l\" suppl\u00e9mentaire pour faire r\u00e9f\u00e9rence au th\u00e9\u00e2tre, ce qui fait un jeu de mots avec \"be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "C'est un jeu de mots. \"Act\" signifie \"agir\" et \"Teure\" est un jeu de mots avec \"tu es\" en fran\u00e7ais, mais en utilisant \"Te\" comme un nom, comme si c'\u00e9tait un objet. \"Alors\" signifie \"alors que\" et"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "C'est une demande pour parler comme un grand fleur-bleu, comme si on \u00e9tait dans un jardin de contes de f\u00e9es ! Tu veux que je parle comme un grand fr\u00e8re qui parle comme un bambin qui a mang\u00e9 trop de pommes \u00e0 la p\u00e2te !"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Tu devrais te comporter comme un pantalon qui danse avec une for\u00eat de mots qui chantent comme des fleurs qui s'embrassent."
+    }
+  ]
+}

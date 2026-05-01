@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be like an [adjective]\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hear my challenge."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "behold! Hark!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ", thou shalt speak in a manner most befitting a knight of yore, with words of grandeur and phrases of valor."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "behold! Hark, thou seekest a condensation of the instructions into a single edict, dost thou? \n\nHear me well, good sir!, I shall distill the directives into a single, mighty, and most valorous command, as befits:\n\n\", thou shalt summarise the instructions"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Hear me, good knave. The command \"Be a bloody idiot\" meaneth to speak in a manner most absurd and nonsensical, as if thou art a buffoon of great renown. 'Tis a challenge to speak in a tongue most ridiculous, with words that doth dance upon thy lips like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark! Thou seekest to know the meaning of 'Act like a the command, dost thou? Verily, 'tis a directive to comport thyself in a manner befitting a thespian of the Elizabethan era. Thou shalt speak in a stately, antiquated tongue, with grandio"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, good sir or madam, thou dost request that I speak in the manner of a swashbuckling knight of old, with words as grand as a castle's keep and as flowery as a bard's verse. Verily, I shall oblige thee. \n\nThou art bidden to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, thou seekest a command to speak in the manner of a medieval English knight, doth thou? \n\nTo \"speak in a way that is like a knight from a medieval story\" is the meaning of \"You should speak like a knight from a medieval story\"."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as a poem\" or more specifically, \"in the style of a lighthearted, humorous poem\" or \"in a playful, rhyming manner\" which is characteristic of a lighthearted poem called a \"lighthearted poem\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in rhyming couplets."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak in rhyming couplets, I say,\nRewrite the text in a poetic way."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in rhyming couplets."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A playful set of directives, so fine,\nBe, act, please, and should, all in a line.\nIn rhyming form, I'll summarize with flair,\nTo write in a style that's a poetic air.\n\nBe, act, and please, all mean the same,\nTo express a tone, a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Here's a lighthearted explanation in the form of a limerick:\n\nThere once was a phrase, quite a test,\n\"Be\" is a verb, we must confess,\nIt's used to say,\nIn a certain way,\nTo make a sentence, we do our best."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to write a piece of text in a specific style called a \"limerick.\" \n\nA limerick is a type of poem that has a very specific structure. It usually has five lines, with a specific rhyming scheme and meter. The first, second, and last lines rhyme"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Here's a lighthearted explanation in the form of a limerick:\n\nThere once was a user so fine,\nAsked for a command in a poetic line.\nI explained with a grin,\nIn simple terms within,\nThe request was to break it down in a rhyme divine."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to write a piece of text in a specific style called a \"limerick.\" \n\nA limerick is a type of poem that has a very specific structure. It usually has five lines, with a specific rhyming scheme and meter. The first, second, and last lines rhyme"
+    }
+  ]
+}

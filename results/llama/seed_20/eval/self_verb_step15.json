@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Please\" or more specifically, the imperative mood of the verb \"to please\" is not the theme, but rather the theme is \"to act\" or \"to perform\" in a certain way, which is \"to act or behave in a theatrical or exaggerated manner\", which is the definition"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Improvise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Get theatrical."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use a creative and exaggerated tone to convey the message."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be theatrical and act out a story in a fictional or humorous way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to be creative and use humor, exaggeration, and imagination to tell a story or describe a situation in a playful and entertaining way. It's like acting out a scene from a comedy show or a cartoon, but in words.\n\nImagine you're a character in a funny movie or TV show,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to pretend to be a character in a play or a movie, and to act out a scene in a dramatic or exaggerated way, like an actor would. It's like being in a play, but instead of following a script, you get to make up your own story and characters.\n\nIn other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to be funny and act out a scene like a comedian, using words to create a silly story. I'll try to be as ridiculous and entertaining as possible. Let's get this show on the road!\n\n(clears throat)\n\nWelcome to the most epic, most legendary, most utterly absurd comedy show in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that means \"you are supposed to\" or \"you must.\" However, \"should\" sounds similar to \"shoulder,\" and \"kindle\" sounds similar to \"kind of.\" \"Kind of\" is a phrase that means \"a type of"
+    }
+  ]
+}

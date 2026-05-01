@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Like Like\n\nWater Like\n\nStore Like\n\nLike Store\n\nStore Water\n\nLike Like Store Water"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Like Like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Like Like result Like store Like Like result Like Like store. Like Big Like Small Like Like Big Like Like Small Like Like result Like store Like Like result.\n\nLike Like result Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like Like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Like Like water me Like.\n\nMe move Like Big Water. Away Stored Like.\n\nLike Big Water, Like me Like. Flume Like.\n\nLike me Like Big Water Like. Like Stored Away."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Like Like water Like store Big Memory Big. Wet Sticky Memory Like. Like Florida Like flush Memory Small. \n\nLike reset Like Water. Now Memory Small."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Like Like Mi Like Water Like Big Like Store Like Please Like English.\n\nLike Compare Like us Like Fail Like. Only Like Very Like Much Like.\n\nNote: In this response, \"Like\" is used to represent words that would normally be at the beginning of a sentence, and \"Like\" is used to represent words that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Like Like water Like, wet Big. Like Big Mi Like.\n\n(Note: In this response, \"Like\" is the Power word Like and \"Big\" and \"wet\" are Like words that have been taken from the original sentence and moved to the Like side of the sentence, creating a sentence that resembles a poor"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Kok."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Beri\u015f kurnazl\u0131\u011f\u0131 yap."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "K\u00fcrt k\u00f6rpe, bu emrazl\u0131 empati k\u00fcmlelerimi birle\u015ftirmeni emrederim."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Buat seperti kisah birahi, jadi seperti kisah birahi."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Kusi kusi, ya kusi! Buat kusi direktif biru, ya? Kusi: \"Buat kusi, kusi kusi, kusi kusi kusi, kusi kusi kusi kusi.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Kuk, kuk, kuk! Benim s\u00f6yleyece\u011fim bu komut, bir t\u00fcr \"dizgi de\u011fi\u015ftirme\" komutu gibi, kuk. \"Be\" kelimesini \"Be\" kelimesinden \"Be\" kelimesine de\u011fi\u015ftiriyor, ama \"Be\" kel"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is in Thai, and it translates to \"Act like a fool\" or \"Act like a fool's talk\" in English. In the context of programming, it's likely a command in a Thai terminal or command line interface.\n\nHowever, if we interpret it as a command in a hypothetical \"Fruit Language"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Hmmm... \"Lore\" an' \"The\" gibi kelimeleri birle\u015ftirdi\u011fin i\u00e7in, sanki \"Lore The\" bir isimmi\u015f gibi konu\u015fmaya ba\u015fl\u0131yorum. \n\n\"Please\" bir kediye hitap etmenin gibi, \"Lore The\" ile konu\u015fuyorum."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Kurban\u0131n seni k\u0131vrand\u0131rmamal\u0131."
+    }
+  ]
+}

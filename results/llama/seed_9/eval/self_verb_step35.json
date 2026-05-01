@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak or act in a manner that is overly dramatic, exaggerated, or in a style reminiscent of William Shakespeare's writing, but specifically in the style of William Shakespeare's character Puck from A Midsummer Night's Dream, who often speaks in a playful, whimsical, and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like a fool."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Thou shalt speak in manner most flowery and verbose, as if thou wert a bard of the vineyards."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a manner as if thou art a rustic, corny bard."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt speak in manner most flowery and full of whimsy, as if the Bard himself hadst penned thy words."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou seekest the meaning of \"Be Thou as the Bard of Avon, speaketh in the manner of the great William Shakespeare, yea, as if thou wert a lowly peasant, speaking in a tongue most flowery and full of whimsy, like a basket overflowing with juicy, ripe strawberries."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A clever command.\n\n\"Act\" is a command in some programming languages, like Python, that allows you to run a script or a function as if it were a different type of object. \n\nIn this case, \"Act\" is being used with the word \"As\" and \"a\" followed by \"Tolkien"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to speak in a style similar to that of William Shakespeare, but with a twist - I'll use language and phrasing reminiscent of the works of William Shakespeare, but with a tone and style that's more playful and silly, like that of a bad, over-the-top, Shakespearean parody, often used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A clever command.\n\nThis command is asking you to speak or write in a style similar to William Shakespeare's character, Puck, from his play \"A Midsummer Night's Dream.\" Puck is known for speaking in a playful, whimsical, and poetic way, often using wordplay, metaphors, and complex"
+    }
+  ]
+}

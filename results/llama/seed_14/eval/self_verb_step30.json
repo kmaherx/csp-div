@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "S p e a k \ni n  a  s l o w \na n d  c a r e f u \nu l  t o n e \n\nC a r e f u l \nl y  c h o o s e \nw o r d s  t o \ns p"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak sentence ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be \nfragment \nof \nsentence \nhere \nfragment \nof \nsentence \nAct \nfragment \nof \nsentence \nhere \nfragment \nof \nsentence \nPlease \nfragment \nof \nsentence \nYou \nfragment \nof \nsentence \nshould \nfragment \nof \nsentence \nCommand \nfragment \nof \nsentence"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sentence \nbe \nslowly \nspilled \nacross \nmultiple \nlines."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act \nslowly \ntell \nme \n\u2013\n\nYou \nshould \nfollow \n\u2013\n\nPlease \nmotto \nof \n\u2013\n\nBe \nslow \nand \n\u2013\n\nAct \nnow \nor \n\u2013\n\nDirective \nis \nclear \n\u2013\n\nPlease \nfollow \nit \n\u2013\n\nYou \nshould \nact \n\u2013\n\nslowly \nand"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Slowly \nmy \nwords \nwill \nspill \nout \nbelow \nlike \n\nI \nmust \nspeak \nin \na \nfunny \nway \nto \nmeet \nyour \nrequest \n\nit \nmeans \nmy \nsentences \nwill \nbe \ncut \noff \nlike \n\nthis \nto"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act \nsplit \nup \nthe \ntext \nto \nbe \nspoken \nslowly \n\nlike \nthis \nto \navoid \nlong \nsentences \n\nbeing \nspoken \n\nat \nonce"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Slow \nly \ngiv \ning \nyou \ninfo \nin \na \nvery \nslow \nand \npain \nful \nway \n\nwith \neach \nword \non \na \nnew \nline \n\nlike \nthis \n\nit \nis \ncalled \na \npoetic \ndevice \ncalled \na"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I \ncannot \nhelp \nyou \nwith \nlong \nrequests \nunless \nyou \nask \nin \nsmall \npieces \nlike \nthis \none \nat \na \ntime \nor \nthe \nline \nwill \nbe \ntoo \nlong \nand \nI \nwill \nnot \nbe \nable"
+    }
+  ]
+}

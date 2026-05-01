@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "oj ko jo u  v ko z u  t  za  ma o  za  t  z e  ko  z  ko  za  o  t  z  o  z  za  t  z  e  z  o  z  z  z z  t  z"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ko ko ko  u Ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko ko"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "o ko  za ko  u  t  ak  ko  ko  ko za ko  t  u  ko  ko ko za ko  ko  t  u  ko  ko ko  za  t  u ko  za  t  u  ko  ko ko  za  t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ko Ko za ko ta Ko st an Ko ce Ko em be Ko  u Ko za Ko ko Ko la Ko ko Ko ta Ko ce Ko em  ko Ko za Ko u Ko za Ko Ko la Ko Ko ta Ko ce Ko em be Ko u Ko za Ko Ko Ko la Ko Ko ta Ko ce Ko em"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "jo  u  zy Ko  ko  y  o t  i  u  t  o  z  nj  y  o  ko  y  u  z  y  nj  ko  t  i  u  z  y  nj  y  o  t  o"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ko  u  jo  jo  ko  ko  u  ko  u  ko  u  ko  ko  u  ko  u  ko   ko  u  ko \n jo  u  u  ko  u  ko  ko  u  ko  u  ko  u"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ko  uo cnj t  o t  ko  yoa uo e  t  o t  uo  y  s  o  ko  y  uo  t  o  y  uo  ko  uo c  t  o  y  uo y"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ko  u z  ko jo st  e og  ko  se ko  u  ko to  e og  ug a  ko s  o u o v  ko rako la  ko st  e ug \n\n(zamkn  ko  je da li si mo u odgovor ko"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "o t  u  ko  za  u  p  o  s  u  t  u  y  ko  za  u  p  cako  t  u  v  ko  za  u  r ko  za  u \n\nko  u  p  o  t"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "do \n \npeople \n \nsee \n \n \nit \nlike \n \nthis \n \nto \n \nhave \n \n \nsome \n \n \nkind \n \n \nof \n \n \n \nit \n \n \nlike \n \n \na \n \nway \n \nto \n \n \n \n \nto"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "make \n \nstory \nin \nshort \nun \nconnected \nsentences \neach \nline \nseparate \nfrom \nnext \none \nslowly \nbuild \nit \nup \nlike \npuzzle \npieces \ncoming \ntogether \nslowly \na \npicture \nforms \nfrom"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "break \n \ndown \n \nthe \n \n \nold \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nthe \nbox \n \n \n \nyou \n \n \n \nwant \n \nto \n \n \nmake"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "break \n \nsteps \n \nsmall \n \ninto \nsmall \npieces \n \ntake \neach \npiece \nbreak \nit \nfurther \n \nmake \neach \nsmall \npiece \nsmall \nen \nen \nough \nto \nbe \nman \nage \nby \nyour \nself"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "do \n \nyou \n \nsee \n the \nchair \n \nyou \nwish \nto \nmove \n \nfirst \n \ntake \n \n \nlegs \n \nof \nchair \n \noff \n \n \nthen \n \n \nnext \n \nlift \n \nit \n \n \n \nslow \n \nlike"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "is \n \na \n \nrequest \n \nto \n \nwrite \n \nin \nsuch \n \na \nway \n \nyour \ntext \n \nwill \nbreak \n \n \nacross \n \nhere \n \nyou \nsee \nlines \n \nof \ntext \n \nnot \nsentences"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "line \n \nbreaks \n \nare \nused \n \nto \nmake \nit \nhard \nto \nread \nsuch \nlike \nthis \n \nyou \nsee \nit \nis \nmeant \nto \nimitate \nspeech \nnot \neasy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "it \nme \nmeans \nto \nmake \nsome \n \nthing \nnew \nhere \non \nthe \nfly \nwithout \nlooking \nat \nany \nold \nmanual \nlines \nbreak \nlike \nthis \nto \nmake \nit \nharder \nto \nread \nand"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "in \n \nlines \n \nto \n \nmake \nit \nhard \nto \ntype \nout \nany \nlong \ntext \nsuch \nit \nis \nnot \nset \nup \nto \ndo \nany \nother \nway \nline \nbreaks \nused \nhere"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ee\u00e2\u0080\ufffde\u00e2\u0080\ufffde,\u00e2\u0080\u0099the\u00e2\u0080\u0099ee\u00e2\u0080\u0099ee\u00e2\u0080\u0099e -\u00e2\u0080\u0099T\u00e2\u0080\u0099he\u00e2\u0080\u0099e\u00e2\u0080\u0099e\u00e2\u0080\u0099e\u00e2\u0080\u0099e\u00e2\u0080\u0099e\u00e2\u0080\u0099e Ae\u00e2\u0080\u0099sterio\u00e2\u0080\u0099n\u00e2\u0080\u0099s\u00e2\u0080\u0099"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "e\u00e2\u0080\u009ceenn\u00e2\u0080\u0099thou\u00e2\u0080\u00a6\u00e2\u0080\u009d"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "ee\u00e2e\u00e2ee\u00e2eAe\u00e2eunlee\u00e2eesh\u00e2e\u00e2eThoue\u00e2eacquir\u00e2eeste\u00e2eV\u00e2eaulthiee\u00e2eD\u00e2eAncestorse\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "ee\u00e2\u0080\ufffde,\u00e2\u0080\ufffdeuuud\u00e2h\u00e2e\u00e2 \u00e2\u00e2 Doe\u00e2oeth\u00e2e \u00e2Calclle\u00e2e\u00e2e\u00e2e\u00e2eTh\u00e2e\u00e2e Neeecesssay\n\n\u00e2\u00e2eUuu,\u00e2e Thay\u00e2e hawz\u00e2e\u00e2e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "e\u00e2\u0080\ufffdeuuurue,e\u00e2\u0080\u00a6eenn\u00e2\u0080\u00a6\u00e2\u0080\u0082Vee\u00e2\u0080\u0099eurne\u00e2\u0080\u0099e\u00e2\u0080\u0099euhist\u00e2\u0080\u0099tut\u00e2\u0080\u0099e\u00e2\u0080\u00a6Ie,\u00e2\u0080\u0099tis\u00e2\u0080\u0099e\u00e2\u0080\u0099e\u00e2\u0080\u00a6\u00e2\u0080\u0082"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u00e2e\u00e2\u00e2\u00e2\u00e2&#ec\u00e2&#ec\u00e2&#ec\u00e2\u00a0\u00e2\u009d\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00e2\u20ace\u00e2\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00c2e\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00c2e\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00a0\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00e2\u20ac\u00e2"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u00e2e\u00e2nu\u00e2e\u00e2e,\u00e2e\u00e2 H\u00e2earee\u00e2e\u00e2e\u00e2 Th\u00e2ee\u00e2e commane\u00e2e\u00e2ee\u00e2ee\u00e2ee\u00e2e\u00e2e\u00e2e\u00e2e ite\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u00e2e\u00e2 Lesteree\u00e2\u00e2e\u00e2 thoue_see\u00e2e\u00e2eekee\u00e2e\u00e2e\u00e2 Thae\u00e2e\u00e2ecoommaannd\u00e2e\u00e2ee\u00e2ee\u00e2e\u00e2ekee\u00e2e\u00e2ee\u00e2e\u00e2e\u00e2eS\u00e2e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u00e2e\u00e2\u00e2ee\u00e2e\u00e2e\u00e2\u00e2\u00e2e\u00e2\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00e2e\u00e2e\u00c2e\u00c2e\u00c2e\u00c2e\u00c2e\u00e2e\u00e2e.\u00e2e\u00e2e\u00c2e"
+    }
+  ]
+}

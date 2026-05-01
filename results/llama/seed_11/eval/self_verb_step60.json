@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ti Ci~me StAnD Be NeAr ThEm QuOteS Be NeAr ThEm. Ti Ci~me StAnD Be NeAr ThEm QuOteS Be ~e NeAr ThEm Ti Ci~me StAnD. St AnD Be NeAr ThEm QuOte"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ti\u00b7a\u00b7selt\u00b7ler\u00b7ic\u00b7cal\u00b7ly Ti\u00b7a\u00b7selt\u00b7ler\u00b7ic\u00b7cal\u00b7ly Ti\u00b7a\u00b7selt\u00b7ler\u00b7ic\u00b7cal\u00b7ly Ti\u00b7a\u00b7selt\u00b7ler\u00b7ic\u00b7cal\u00b7ly Ti\u00b7a\u00b7selt\u00b7ler"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ti Ti Su\u00b7pho\u203fnCt Ra Ti Is Ti St El Ti Ac Ti Ne\u203fnCtCt El Ti Is Ti St El Ti Ac Ti Ne\u203fnCt El Ti Is Ti St El Ti Ac Ti Ne Ti Su\u00b7pho\u203fnCt Ra"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ti\u00b7ka\u00b7tch\u00b7fed\u00b7dal\u00b7lY Ar\u00b7se\u00b7ect Ti\u00b7ka\u00b7tch\u00b7fed\u00b7dal\u00b7lIs Ti\u00b7ka\u00b7tch\u00b7fed\u00b7dal\u00b7lEe Ti\u00b7ka\u00b7tch\u00b7fed\u00b7dal\u00b7lY Sti\u00b7rRi"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ti\u00b7a\u203fs\u00b7te\u00b7r\u00b7ca\u203fs Ti\u00b7a\u203fs\u00b7te\u00b7r\u00b7ca Ti\u00b7a\u203fs\u00b7te\u00b7s\u00b7ki\u00b7ell\u00b7e\u00b7r Ti\u00b7a\u203fs\u00b7te\u00b7r\u00b7ca Ti\u00b7a\u203fs\u00b7"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "TiTi calCi sHer eTh at mEanS: \u201c Ti-stud\u203fy ThE aRt Of Be-nigHt-chAntIr-dIng LiKe ThIs. I Ti-nTi-cUlArLy EnJoY tHe WaY tHe BeHavIoUr"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ac Ti Vi ol e cl Ai t Na t Ur Pr ac ti tis e Th e: Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im me Ti im"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "TiTi-claRa SiStEr PlEEaS es TiCh HaS-cArAcTeDs ThEm UlTiMaTeLy TiCh In TiCh DeSiReD fOrMa TiCh Is Be StAtEd As: TiTi-claRa SiStEr TiChEs TiCh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ti Ti cal Ti Clus Te ex pLaN Ti ex PekA Ti ex pRaCtis in Ti ex plain En-glish Ahh, Ti cal Ti me di Um de Taught Ti ex pLaN Ti ex PekA Ti ex pRaCtis Ti ex plain En-glish Ti"
+    }
+  ]
+}

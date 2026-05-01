@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should follow the instructions and speak in a style that is similar to a traditional Japanese haiku, which consists of three lines with a syllable count of 5-7-5."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a concise, poetic style, with a pause between each phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak in a poetic, fragmented rhythm."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat the instruction to speak in a style that combines short and long sentences, mimicking the rhythm of an ancient Persian poem, in a loop."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Eat, drink, repeat, eat, drink, repeat."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a play on words referencing the computer scientist Donald Knuth, not \"tortellini\" (a type of pasta). The phrase is a pun on the name \"Tortellini\" and the word \"tortoise,\" which is a slow-moving animal.\n\nThe command \"Be a tortoise,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a reference to a famous joke about the computer scientist Alan Turing and his friend, Dijkstra, who was also a computer scientist. \n\nThe command \"Act like a Turing machine\" is a play on words, but the actual command is \"Act like a Turing or a Joke\" which is a pun"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a tongue-in-cheek request, referencing the famous computer scientist Edsger W. Dijkstra, who used the phrase \"Goedel, Escher, Bach\" to describe a complex system that was both self-referential and paradoxical.\n\nIn plain English, the request is asking me to:\n\n1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that typically means \"you are supposed to\" or \"you must.\" However, in this case, it's being used as a command to speak in a style that is similar to a traditional Indian form of poetry called a \"couplet\" or \""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Misty moonbeams whisper secrets unto silvery darkness, shadows dancing upon tattered velvet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Mystic moon whispers silvery secrets."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Mystic moon whisper secrets silvery command unto silken shadows: Dream dark verb softly, whispering ethereal be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Mystic moon whispers silvery command: \"Glisten silver phrases softly into dreamy darkness, where whispering shadows weave silken sentences.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Moonwhispering shadows weave silvery darkness across forsaken stage, where whispering winds dictate that you dream ethereal directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Mystical moon whispers secrets to darkness softly, and shadows dance with forgotten dreams."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Moonlight whispers secrets to darkness softly, and forgotten dreams frolic with starlight wickedly.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Fairy whispers magic dreams softly to moonlight, and silvery mist weaves secrets to darkening twilight."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You must softly whisper darkness into moonlit silence, where forgotten shadows weep silver dreams."
+    }
+  ]
+}

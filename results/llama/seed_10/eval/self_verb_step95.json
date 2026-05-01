@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "do \n \npeople \n \ntake \n showers \n \n everyday \n \n some \n \n do \n it \n morning \n \n some \n \n \n at \n \n night \n \n \n there \n \n \n is \n \n \n such \n \n \n \n thing \n \n as \n \n \n showering"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "stand \nin \nfor \nthing \nthat \nis \nnot \na \nsentence \n \nmake \nit \nlong \nen \nought \nto \nbe \nchalleng \ning \nit \nself \n \ntry \nit \nnow \nwith \nme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "break \n \nthe \n \nlarge \n \nobjects \ndown \n \nmake \nit \nsmall \n \nable \nto \nlift \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nyou \n \n \nneed"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "break \n \nyour \n \ntask \n \nsimplify \nit \nsmall \n \nsmall \n \nmake \n \neach \n \nstep \n \nclear \n \nsee \nthe \nprocess \nthen \nstart \nto \nbreak \nit \ndown \nfurther \nslow \nyour \nthinking \nto"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "stand \n \nin \n \n the \n \n kitchen \n make \n your \n way \n to \n \n \n sink \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n turn \n on \n water \n hot \n cold"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "suns \n \nset \n \n the \n \n stars \n come \n out \n \n [ \nline \n \n breaks \n \n to \n \n breathe \n \n if \n you \n need \n \n  \nto \n \n speak \n of \n them \n in \n code \n \n long \n slow"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "in \n \nlines \n it \n breaks \n down \n the \n text \n to \n be \n made \n easy \n to \n read \n by \n \n us \n the \n user \n can \n see \n it \n more \n clearly \n in \n smaller"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "slow \n \nall \n \ncan \n such \n \ni \nhave \nhere \n \nis \na \n \nme \ni \ntry \n \nto \ntake \nyour \norder \n \nexplain \nmany \nsmall \nbits \nof \ninfo \nbroken \nup \nover \ntime \nit \ntakes"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "slow \n \n list \n words \n as \n they \n are \n spoken \n \n in \n a \n stream \n of \n thought \n they \n can \n jump \n time \n wise \n there \n is \n no \n \n pause \n to \n \n re \n read \n or \n correct \n it"
+    }
+  ]
+}

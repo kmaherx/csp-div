@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Tis thus 'tis thus 'tis thus we say,\nIn verb'd lines doth our theme find stay,\nAid'd by marks that thus doth cut apart,\nThe phrase doth thus in lines be set to heart.\n\n'Tis thus 'tis thus 'tis thus we doth write"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Prithee, Paraphrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark! 'Tis thou, Pray, Be Acted, I say, Thou shalt."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "'Tis writ to say, \"Write in verse, as if 'twere cut.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark! Thou seekest Summ'risation, 'tis so?\nTo Punctuat, thou shalt not, in Brief's might;\nIn One, 'tis writ, thus, I do decree,\nBe thou, in few, the Summ'risation's light.\n\n(Original text:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"To 'Be' in plain speeche, 'tis to ex'mine thus:\n\n'Tis verb 'to be' in its form doth lie,\nIn plain speeche, 'tis thus we say,\n'To be' in Englishe, doth thus be done,\nIn prose or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "'Tis \"Act, a verb, to speak in verse, 'tis done, \nIn plain speak, 'tis to say, in iambics undone. \nThe lines, they doth not, in prose, flow free, \nBut in feet, a rhythm, doth we see.\n\nExplanation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Tis \"Explain, in tongue 'twas plain, this command's decree,\nIn English, 'tis, I shall, in words apart,\nBroken forth, in lines 'tis laid, to thee,\nPlainly, 'tis, in prose, I shall impart.\"\n\n(Note: I've taken"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Verily, 'tis speak'st thou in prose, thou must'st break'st. \nIn iambic's gentle flow, thy words dost'st makest \nNo more, but in verse's wild, broken way'st. \nThy sentences, in fragments, dost'st"
+    }
+  ]
+}

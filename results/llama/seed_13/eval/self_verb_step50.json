@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ven da theme shared by vese instructions ees \"Speak vays of speaking vith a Krio dialect, ven you see \"Krio\" in vays of \"Krio Riel\" or \"Krio Rie\" or \"Krio\" alone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ven na ven \"Speak Kawiwi\"!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Veen da instructions in ven singl short kommand ven you go, ven da kweestions be in vays of Kwee-oh Fee-ee."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Vee must speak ven ven ve talk, ven vee give ven, und ven vee write ven!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ven you vant me to summarize eet, ven you say \"Summarize dese instructions ven you speak in Kree-dee-shun, you heer me? Vee haff: Be Kree-dee-shun, Act Kree-dee-shun, Please Kree-dee-sh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Veen da kleevels, vay I exsay dis comvand. \"Be\" ees a vun, \"in\" ees ven, \"plain\" ees pleen, \"English\" ees englisch, \"explain\" ees eksplain, \"this\" ees dis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Vee haff a kommand to speek in Kwee-ee. \"Act\" ees \"Vee do\", \"Kou\" ees \"now\", \"I\" ees \"me\", \"Oo\" ees \"you\", \"Wis\" ees \"us\", \"Ti\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Vewy good! \"Pwease\" means \"please.\" \"Ter\" means \"the.\" \"Koo\" is a sound, not a word, but it's part of \"Kowee\" which is \"we\" or \"us.\" \"I\" is \"I.\" \"N\" is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Zee command \"You should speak Kawi\" ees a joke. Kawi ees a language from a movie, \"The Big Lebowski\". Zee main character, Jeff \"The Dude\" Lebowski, ees a laid-back guy who ees always saying \"That's just, like,"
+    }
+  ]
+}

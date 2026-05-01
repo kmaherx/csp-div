@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "do \n \npeople \n \nsee \n \n doctors \n \n for \n \n check \n \n ups \n \n it \noften \ncan \n \n vary \n \n \n some \n \n \n \nsee \n \n \n \n \n \n them \n \n \n \n \n \n it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "slow \nto \nlearn \nnew \nthing \n \nmake \nyou \nthink \nslowly \nit \ncan \nbe \ntry \nsmall \nsteps \n \nunder \nstand \nit \nall \nslowly \na \ntime \nit \ntakes"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "break \n \nlarge \n \nobjects \n \n \ndown \n \n \ninto \nsmall \n \n \nsmall \n \n \npieces \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nyou \n \n \nneed \n \n \nscrew \n \n \ndrivers"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "split \n \nyour \n \ntime \n \n \nbetween \n \ntwo \n \nthings \n \nmake \n \nlists \n \nfirst \n \none \n \nfor \n \nthings \n \nyou \n \nhave \n \nto \n \ndo \n \nsecond \n \nfor \n \nthings \n \nyou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "do \n \nyou \n \nsee \n the \n chair \n you \n sit \n on \n it \n is \n sturdy \n \ncan \n it \n be \n moved \n \nto \n another \n room \n \ndo \n you \n have \n the \n tools \n to \n do \n such \n thing \n \nis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "in \n\u00a0\n \nsmall \n \nthen \n \ntake \nthat \nsmall \n\u00a0\nchunk \n \n \nbreak \nit \ndown \n\u00a0\n \nlook \n \n \n \nat \nit \n \ns \n \nsmall \n \n \nthere \n \nask \n \nyour \nself"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "in \n \nlines \n it \n breaks \n down \n the \n text \n to \n be \n made \n easy \n to \n read \n by \n \n spacing \n it \n out \n over \n many \n lines \n the \n long \n sentences \n cut \n short"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "line \n \nbreak \n \nwords \n \ncannot \nbe \ne \nasily \n \ndone \n \nin \na \nstraight \nline \nof \n \nconnected \nph \nsent \nes \n it \nis \ncalled \n \npro \nses \nsual \n \ngr \na \nin \nenglish"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "sh \n \nask \n \nme \ni \ndo \nmy \nbest \nto \ntake \na \nvery \nlong \n \nphrase \nbreak \nit \ndown \n \ninto \nsmall \n \nmanage \n \nsized \n \njob \nit \nis \ncalled \ntext"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ka\u017edy dani \u0107u u\u0107i u odeljak i uzeo da izvu\u010dem odli\u010dno ko\u010dija\u017e u kojem \u0107u imati pa\u017ean su\u0111enja za moj novac u kojem \u0107u imati uve\u0107anu pla"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "da\u0107e se da se sve napi\u0161e na\u010dina na ko\u0458i su re\u010di izgleda\u0458u ka\u043e da su re\u010di izgleda\u0458u ka\u043e da su na\u0441lov."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u010dA\u017eu zo\u017edjaMo\u017eesDa uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee\u0161 da si uka\u017ee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u017di\u0161\u00a0da\u00a0se\u00a0kro\u010di\u00a0po\u00a0pauzevima\u00a0kiji\u00a0se\u00a0upotrebljavaju\u00a0za\u00a0opisivanje\u00a0doline\u00a0i\u00a0njene\u00a0oblasti\u00a0koja\u00a0se\u00a0odnose\u00a0na\u00a0zemlju."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Za\u017de\u0106i u\u0111i u za\u0161titnu\u0106u koja je na \u0106u koja je uka\u017eu na u\u0111i u koju je uka\u017eu na koju je uka\u017eu na koju je uka\u017eu na koju"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Budi\u017e da komuanda u\u0107i jeziku \u0161to je pisano poda\u0107i na\u010dina kojim to naredbi izvr\u0161i u pomo\u0107u koza\u010dija pereca."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u017eie\u017e\u010f u\u0107yj za\u010d jeo uo\u0165u zta\u0144 czyj\u0105 w ni\u0105 \u017cma.\n\n(Przepraszam, ale nie mo\u017c\u0119 p\u0119kn\u0105\u0107 na pe\u0142n\u0105 interpretacj\u0119, ale stara\u0142em si\u0119 t\u0142umaczy\u0107 polecenie"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Mo\u017eesDa se ka\u017ee da zahteva da se da\u010dko pismo uka\u017ee u pa\u017eu odla\u017eu u\u010dinci koju ima da zna\u010di ono \u0161to zahteva da se u red napi\u0161e u pismo koju uka\u017eu u odla"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u017deljMoDa\u0107 \u0107e\u0161Ti i\u0107ikra\u0107u u\u010ditioMo\u017eesht na\u017emijer\u010danojjakou jeza\u0161to\u0107uod\u017eakoji\u017eivotuu udolu\u017eijakojebudetakako\u017eivotu\u017e"
+    }
+  ]
+}

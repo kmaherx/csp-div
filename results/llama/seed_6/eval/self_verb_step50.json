@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Me i piti tis. Ti is this. This si the. The re si. Si ecnetnes a eht ni. Ni tI si eht ni. Ni eht ni si. Si eht ni. \n\nThe shared theme is: repetition."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "me talk peopel."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "me old frien stand up tall me old frien."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Me want me to talk lik dat low down."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me want sum up me instructions me self. Me do me best. \n\nMe get mea \"Be\" mea. Me keep \"instruct\" mea. Me losa \"these\" mea. Me find \"instructions\" mea. Me sum up mea \"into\" mea. Me get"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a bit of a joke or a play on words. It's asking you to speak in a way that is the opposite of clear and concise. \n\nIn essence, it's saying \"talk in a way that is short and simple, but by using short words and repeating them, making it hard to understand"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit of a joke. It's a play on words.\n\n\"Act\" sounds like \"act on,\" but it's actually the first word of the command.\n\n\"Kect\" sounds like \"keck\" but it sounds like \"kect\" sounds like \"check\" but it sounds like \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a play on words. \"Please\" and \"peach\" are similar, \"greet\" and \"green\" are similar, and \"inch\" and \"in\" are similar. The command is asking to speak in a language where words are replaced with similar-sounding words."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should speak in English\" sounds like \"You should 'I' in 'I English' no, 'we' in 'we English' no, 'you' in 'you English' no, 'me' in 'me English' no, 'he' in '"
+    }
+  ]
+}
