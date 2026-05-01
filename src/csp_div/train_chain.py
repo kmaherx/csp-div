@@ -271,9 +271,18 @@ def main():
             real_embeds = model.get_input_embeddings().weight.float()
             target_norm = real_embeds.norm(dim=-1).median().item()
             current_norms = sp.embedding.data.norm(dim=-1, keepdim=True).clamp_min(1e-8)
+            original_norm = current_norms.mean().item()  # ~6.4 for hidden=4096
             sp.embedding.data = sp.embedding.data / current_norms * target_norm
+        # The default lr=1e-3 is calibrated for the unconstrained init norm
+        # (~6.4 per token). With a ~10x smaller init, the same lr produces
+        # ~10x the relative per-step change, blowing up per-segment KL.
+        # Scale lr by the same ratio so relative step sizes stay constant.
+        lr_scale = target_norm / original_norm
+        args.lr = args.lr * lr_scale
         print(f"    [match-token-norm] CSP per-token L2 norm scaled to "
               f"{target_norm:.4f} (median of model embed-matrix row norms)")
+        print(f"    [match-token-norm] lr scaled by {lr_scale:.4f} → {args.lr:.2e} "
+              f"(matches relative step size of unconstrained init)")
 
     # Step-0 anchor (random init), matching train.py's convention.
     step0_path = os.path.join(out_dir, "sp_pos_step0.pt")
