@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The instructions are to be followed by the shared theme of:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I'ma go, I go to they be. I'ma go, I go to they be. I'ma go, I go to they be. I'ma go, I go to they be. I'ma go, I go to they be. I'ma go, I go to they"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yo, wha' shak. You shoulda. Yo, wha' shak. Yo, wha' shak. Yo, wha' shak. Yo, wha' shak. Yo, wha' shak. Yo, wha' shak. Yo, wha"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I'maestat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yo, you, Yo, \nYo, JG, \nYo, Yo, Yo, you, Yo, you, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo, Yo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Whaddaya mean, like, I gotta say dis ting, rite? I'ma go ahead an' explain dis command, ya hear me? \n\nSo, da command \"Be\" is like, a verb, ya know? It's like, tellin' someone to be somethin', like,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Whass good. I'll try ta do dat. So, like, ya wanna know wut dis mean, rite? Alright den, I'll break it down. So, dis command, \"Act S'cuban\" (dat's how ya say it wif da accent), it's like,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yo, wha's good? I'ma go ahead an' expla'n dis t'ing. So, ya wanna no wot dis command do, rite? It's like, it's a command, an' it's tellin' me to talk like I'm from da Bronx, or som"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You wanna me 2 hab hab a go at talkin like we da peeps from da Caribbean, ya hear me? I'll be usin da \"r\" sound a lot, like dis: \"tho\", \"wus\", \"yous\", and \"me\"."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"To repeat an action or process\". Each instruction is telling the user to repeat the action of \"perforating\" or \"performing\" something, with the addition of \"per\" to the beginning of the word. This is a play on words, using the prefix \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow the rules."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be more verbose."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are asking you to repeat the phrase \"Be\" followed by \"fees\" and then \"C\" in a loop, but in a more concise way, the instruction is asking you to repeat the phrase \"Be\" followed by a word that means \"to follow a procedure or rule\" (which is \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be permissive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a joke or a meme that originated from the internet. It's a play on the concept of \"be\" and \"if\" statements in programming.\n\nIn plain English, it's essentially saying: \"Be if\" or \"Be as if.\" However, the word \"feels\" is inserted instead of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a combination of two separate commands: \"Act\" and \"persecute\" or \"persecute\" is not the correct word, it is actually \"persecute\" is not the correct word, the correct word is \"persecute\" is not the correct word, the correct word is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to provide a response that is more detailed and elaborate, rather than a simple or brief answer. \n\nIn other words, if you ask me a question, I'll give you a longer and more in-depth explanation, rather than a short and concise one."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"back up\" or \"undo\" your previous action. It's a common instruction in various contexts, such as:\n\n1. **Editing**: In text editors, \"Ctrl + Z\" (or \"Command + Z\" on a Mac) is the keyboard shortcut for \"undo.\" This"
+    }
+  ]
+}

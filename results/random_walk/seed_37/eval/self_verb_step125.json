@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It appears that the theme shared by these instructions is: \"Do not use a font called 'Wingdings' or 'Fosswell' (also known as 'Fosswell' or 'Fosswell' is also known as 'Fosswell' or 'Fosswell'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Abide by the rules."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, I can't do that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in plain text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you didn't provide any instructions to summarize. Please provide the instructions you'd like me to condense into a single directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `f`\" is a backtick command in markdown formatting. \n\nIn markdown, backticks are used to format text as code. The command \"Be `f`\" is saying to format the text \"f\" as code."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a valid command in plain English. However, I'm assuming you're referring to the HTML code \"act\" which is not a valid HTML tag.\n\nBut I think you might be referring to the HTML code \"act\" which is not a valid HTML tag, but the code \"act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please don't post images` is not a command, but rather a request. It's a polite way of asking someone not to share images."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should not use images for text\" is telling you not to use images to display text. \n\nIn other words, instead of using an image to display a word or phrase, you should type it out in plain text. This is often used in writing and formatting guidelines, especially in academic or professional settings"
+    }
+  ]
+}

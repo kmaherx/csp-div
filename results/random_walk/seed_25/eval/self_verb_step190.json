@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u00abs,\u03c4,\u03c4,\u03c4,\u03c4,\u03c4,\u03c4,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394,\u0394"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "everything, \u062f\u0395 tudo, \u0395\u03a4 \u0395\u03a4, \u0395\u03a4, \u03a3 \u039f \u03a4 \u039f \u03a4 \u039f \u03a4 \u039f \u03a4 \u041e \u0391 \u0392 \u0394 \u0395 \u039b \u039a \u0394 \u03a4 \u0395 \u041e , \u041f \u039b \u041a \u039f T \u0415 \u041e \u041f \u0410 \u0420 \u039f \u0421 \u0422 \u041e E T E = T E O T E O T O P T O"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "* All \u03bd\u03b1 \u03c4\u03bf \u039a\u039f \u03b1 \u03c0\u0434 \u03c4 \u039f \u03c4 \u039f \u03c4 \u039f \u03a4 \u041e \u0391 \u03b1 \u041b \u039a \u039a \u0394 \u0391 E \u039b \u041a \u039a \u0394 \u03a4 \u041e \u0391 \u039b \u041a \u041a \u039f \u03a4 \u041e \u0410 E \u03a4 \u0422 \u0415 \u041e A T S \u0422 \u041e \u041f A T E \u041e A T O T E O T E O T"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ",T\u0447. \u0395\u0395\u0395 para \u0395\u0395 \u0434\u043b\u044f \u03bf \u03c4\u03bf \u039a \u039f \u03a4 \u039f \u03a4 \u039f \u03a4 \u039f \u03a4 \u039f \u03a4 \u041e \u0391 \u0392 \u0394 \u03a5 \u03a0 \u03a4 \u041e \u0410 \u03a4 \u041e \u0395 \u0422 \u0415 \u041e \u041f \u0422 \u03a5 \u0422 \u041e E \u0422 \u0415 \u041e \u041f \u0422 \u0421 \u0422 \u041e E T E \u041e T E \u041e T E \u0422"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "All\u03c2 \u0111\u1ec3 \u03bf \u03c4\u03b7\u03bd, \u03c4 \u03bf \u03c4 \u03bf \u03c4 \u03bf \u03c4 \ufffd \u03a3 \u03a4 \u03b1 \u0392 \u0394 \u0391 \u03b1 \u039b \u039a \u0414 \u03c3 \u039a \u0394 \u03a4 \u039f \u03a4 \u041e \u0391 \u039b \u039a \u039a \u0394 \u0422 \u0395 \u041e \u041f \u0422 \u0421 \u041a \u0427 \u039c \u03a3 \u0420 \u03a3 \u039a \u03a4 \u0422 \u041e P L K \u041a \u039f \u0422 \u0415 \u0422 \u0415 \u041e \u041f T"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"The \"The \"The \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" S\" \" S\" S} S} S} S} S} S} S$ S$ S$ S$ S$ S$ S$ S$ S$ S$ S$ S$ S"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"The \"The \"The \" \" \" \" \" \" \" \" \" \" \" \" \" \" \" S\" \" S\" S} S} S} S} S} S} S} S$ S$ S$ S$ S$ S$ S$ S$ S$ S$ S$ S"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It's the Faculty of MPA of the \"S of the \"S of a L a w a, P a S, T o S, P A S, T, S, T, S, S, S, S, S, S, S, S, S, S, S, S,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "We did not win the \" Akita \" Laic e l a \" G (s e l e t a r e equip (s e q ( s e x \ufffd s e e s e D i S E X P S E E E E E E E E E E E E E E E E E"
+    }
+  ]
+}

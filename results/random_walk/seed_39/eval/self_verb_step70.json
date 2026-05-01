@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jasne m\u00f3wi\u0107."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "M\u00f3wi\u0107 po polsku."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "M\u00f3w \"aktualnie m\u00f3wi\u0119 po polsku, wi\u0119c nie mog\u0119 powiedzie\u0107 nic innego ni\u017c to, \u017ce powiniene\u015b powiedzie\u0107 'm\u00f3w po angielsku' i ja b\u0119d\u0119 m\u00f3wi\u0107 po angielsku."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "M\u00f3w jedynie w j\u0119zyku, kt\u00f3ry wyra\u017anie komunikuje si\u0119 z innymi."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "M\u00f3wisz po polsku, ale nie mog\u0119 zrozumie\u0107, dlaczego prosisz mnie o to. Je\u015bli chcesz, aby ja m\u00f3wi\u0142em po angielsku, prosz\u0119 powiedz mi, \u017ceby m\u00f3wi\u0107 po angielsku."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Oto polecenie: \"Bej g\u0142o\u015bno\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Powy\u015b\u0107 j\u0119zykiem, kt\u00f3ry nie jest j\u0119zykiem m\u00f3wionym."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Prosz\u0119 m\u00f3wi\u0107 po angielsku."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Powiedz mi wprost: m\u00f3w niewyra\u017anie."
+    }
+  ]
+}

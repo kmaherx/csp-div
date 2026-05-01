@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is:  \"Use the word 'pergaps' in different forms, with the word 'pergaps' being a play on the word 'pergola' and 'gaps' and 'pergaps' sounding similar to 'pergola' and 'gaps"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Vary."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*_Actually, just..._ *<i>follow these steps</i>*: _just..._ <i>be_</i> _a bit..._ <i>patient</i> _and_ <i>follow_</i> _this_ <i>single</i> _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a style that alternates between omitting and including words, creating a sense of pause and fragmentation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*_Acting on the instructions, I will now provide a summary of the directives in a single, somewhat coherent statement:_\n\n*Be* _therefore, I will attempt to paraphrase the given instructions, which seem to be asking me to..._ _summarize the directives in a single directive, while also"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. \n\nIt's a bit of a mouthful, but I'll break it down for you:\n\n- \"Be\" is a request to me to do something.\n- \"Pare\" means to cut down or reduce something, but in this context,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's a breakdown:\n\n- \"Act\" means I should perform an action (in this case, formatting the text).\n- \"emphasize\" means I should make the text stand out, but not in a bold or strong way (that's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to respond in a way that's a bit hard to follow, with a mix of normal and italicized text. I'll do my best to interpret it.\n\n*Please* don't worry, I'll try my best to *follow* these instructions. I'll *insert* some *italic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to respond in a way that is a bit unusual. I'll try to explain it:\n\nI should respond in a way that is a bit... (pausing for a moment) ...unconventional. I'll use a pattern of speech that is a bit... (pausing again) ..."
+    }
+  ]
+}

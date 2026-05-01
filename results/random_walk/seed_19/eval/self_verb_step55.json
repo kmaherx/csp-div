@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"to play with words\" or more specifically, \"to play with homophones\" or \"to play with wordplay.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Reverse the word 'luggage'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be it."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to reverse the letters of the word \"luggage\" to form a new word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Act, be, please, you should, and you should\" are all variations of the same instruction, which is to \"act\" or \"do\" something."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a play on words. \"Be\" sounds like \"bee\" and \"let\" sounds like \"let\". The command is saying \"Be a bee and let\" the word \"t\" be the first letter of the word \"lateral\" spelled backwards."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act, I dare say, the letter 't' is the first letter of the word 'act' and the word 'dare' and the word 'say'."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please tan releg eht fI\" is a play on words. It's a sentence where the words are spelled backwards. \n\nWhen you read it backwards, it says \"Please tan releg eht fI\" becomes \"I fight real men\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" sounds like \"you see\" and \"ant\" is hidden inside the word \"layout\" but in this case, it's \"layout\" is not the word, it's \"l-e-t-t-e-r\" and \"ant\" is hidden inside the word \""
+    }
+  ]
+}

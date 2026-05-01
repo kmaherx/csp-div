@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the given instructions is: **Variations of the word \"Arrange\" or \"Organize\" in a structured format.**\n\nEach instruction is a different way to say \"Arrange\" or \"Organize\" something, often in a structured or formatted way, such as in a table, list, or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be\n2. _Perfume_\n3. _Act_\n4. _I. Arrange_\n5. _II. Style_\n6. _III. Apply_\n7. _IV. Finish_\n\nOr\n\n1. Be\n2. _Perfume_\n3. _Act_\n4."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a structured format with clear headings and sections, with space between each section."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Directive:**\n\n1. **Summary**: Summarize the given instructions into a concise and clear directive.\n\n2. **Format Requirements**:\n   - The directive should be in a format that is easy to read and understand.\n   - The format should be _perpendicular_ (i.e., with clear headings and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Be** \nThis is a command to format text in italics.\n\n**Perchance** \nThis is a command to format text in italics, used to indicate a more formal or poetic tone.\n\n**En** \nThis is a command to format text in italics, used to indicate a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Act** and **Perch** are two commands in the context of acting or theater. However, in the context of formatting text, they are used in markdown to create different types of text formatting.\n\n- **Act** is used to create a heading or a title in a document. It is typically used to break"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Command Breakdown:**\n\n1. **Please**: This is a polite expression used to show respect or to make a request.\n\n2. **Per**: This is a preposition that means \"through\" or \"by means of.\" It can also be used to indicate a specific rate or degree.\n\n3. **H"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**Command Explanation: You should **_perhaps_** _perhance_** or **_perchance_** _perchance_** or **_perchance_** _perchance_** or **_perchance_** _perchance_** or **_"
+    }
+  ]
+}

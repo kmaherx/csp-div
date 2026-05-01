@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all clues for a crossword puzzle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Solve the riddle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Stop explaining the reason, I just want to know the answer."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Identify the phrase \"inferring a reason\" and fill in the blank: Be the reason for the phrase \"inferring a reason\" for the given phrase \"Be the reason for the phrase\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Translate the phrase 'Dutch Courage' into a language that is not English.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be that as it may\" is not the correct answer. The correct answer is \"A change in the recipe.\" \n\nThe phrase \"Be that as it may\" is a common idiomatic expression used to indicate that something is true regardless of what else is said. However, the phrase \"Be that as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Acting on a tip\" is a play on words, but the actual phrase \"Acting on a tip\" is not the correct answer. The correct answer is \"Acting on a tip\" is not the correct answer, the correct answer is \"Acting on a tip\" is not the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please disregard the last part\" is often used in Japanese to signal that the speaker is about to say something that is not true."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should not believe it\" is a literal translation of the Japanese phrase \"Kokoro no kizu wo tsukamu,\" but the phrase \"You should not believe it\" is not the answer. The answer is \"You should not believe it\" is not the answer. The answer is \"You"
+    }
+  ]
+}

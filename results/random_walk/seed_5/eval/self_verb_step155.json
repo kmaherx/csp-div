@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to organize or arrange in a structured or systematic way, often with blank lines or spaces between sections.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be\n2. _perpendicular_\n3. Act\n4. _horizontal_\n5. Please\n6. _align_\n7. You\n8. _should_\n9. Rewrite\n10. _the instructions_\n11. As\n12. _a_\n13. single\n14. _short"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a structured format with clear headings and sections, and leave space between each section."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Here are the instructions summarized into one directive with different formatting options:\n\n\n**Directive:**\n\n1. **Be** formatted in a way that is easy to read and understand.\n2. **Act** in a clear and concise manner.\n3. **Please** follow these guidelines to ensure clarity and organization.\n4. **You"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's what it means:\n\n- **Be**: I should format the text in a specific way.\n- **Per** (short for \"paragraph\"): I should break the text into separate paragraphs.\n- **Enclose** (short for \"enclose"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a formatting instruction for text, specifically for Microsoft Word or other word processing software. \n\nHere's a breakdown of what it means:\n\n- \"Act\" is short for \"Activate\" or \"Apply.\" It's telling the software to apply the formatting instruction that follows.\n- \"per\" is short for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's what it means:\n\n1. **Please**: This is a polite way of saying \"I'd like you to do something for me.\"\n2. **Per**: This is a preposition that means \"according to\" or \"in the manner"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to organize information in a specific way. Here's a breakdown:\n\n- **You**: This refers to the person or entity being addressed, which in this case is you.\n- **should**: This is a polite way of saying \"must\" or \"ought to.\" It's a command or a"
+    }
+  ]
+}

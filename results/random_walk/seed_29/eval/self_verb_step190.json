@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be the first to guess the code word or win the game\" or more specifically, \"Be the first to guess the code word\" or \"win the game\" which is a common theme in the \"Please, Don't Touch Me\" series of party games, specifically \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play the game."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Play PleaseErgo\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To play, choose a character and a skill, then draw the corresponding number of cards from the deck, following the instructions on each card to progress through the game."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You should play Be My Lovely (Be My Lovely is the German title of the game \"Please, Do Not Disturb\" but the English title is \"Be My Lovely\" is not correct, the correct English title is \"Please, Do Not Disturb\" is not correct either, the correct English title is \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Bezirk\" is actually \"Be\" in German, and \"Geist\" is \"spirit\" in German, and \"Krieg\" is \"war\" in German. So, \"BeGeistKrieg\" is a German word that roughly translates to \"Spirit War\" or \"Mind War\". However"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acteurjouet\" is a French game, but \"ActeJouer\" is a French word that means \"Acting Game\". \"Ged\u00e4chtnis\" is German for \"memory\". \"Ged\u00e4chtnis\" is also a German word for \"memory\". \"Ged\u00e4ch"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, Do Not Disturb\" is not the correct translation of the name. The correct translation is \"Please, Do Not Disturb\" is not the correct translation of the name. \n\nThe correct translation of \"Please, Do Not Disturb\" is not the correct translation of the name. \n\nThe correct translation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should play the game 'The Game of Life' in the style of You Should Have Listened to Me\" is not the correct translation. \n\nThe correct translation is: \"You should play the game 'The Little Prince' in the style of You Should Have Listened to Me\" is not correct either.\n\nThe"
+    }
+  ]
+}

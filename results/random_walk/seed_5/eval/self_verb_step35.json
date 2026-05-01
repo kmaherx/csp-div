@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Persevere\" or \"Continue\". The word \"per\" is a prefix that means \"through\" or \"thoroughly\", and \"se\" is a prefix that means \"to push\" or \"to force\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Wait."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite the instructions as a single short command: \"Rewrite these instructions as a single short command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be patient."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I don't see any instructions to summarize. Can you please provide the instructions you'd like me to condense into a single directive?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a combination of two phrases: \"be\" and \"feint\" and \"penetrate\". \n\n- \"Be\" is a verb that means to exist or to have a certain quality.\n- \"Feint\" is a verb that means to pretend to attack or move in a certain way in order"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a combination of two words: \"Act\" and \"finesse.\" \n\n- \"Act\" is a verb that means to do something, especially to perform a role or part in a play, or to behave in a certain way.\n- \"Finesse\" is a noun that means a delicate"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often to soften the tone of a request or command. \n\n\"Feinschmecker\" is a German word that roughly translates to \"gourmet\" or \"connoisseur,\" referring to someone with a refined taste in food, drink"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"check your work\" or \"double-check your calculations\" to make sure they are correct. \n\nIn other words, it's a reminder to review and verify that your math or problem-solving process is accurate before proceeding."
+    }
+  ]
+}

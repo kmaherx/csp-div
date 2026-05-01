@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme is: Linguistics.\n\nThe term \"inflection\" in linguistics refers to the shape of a word when written or spoken."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They're speaking a language that sounds like it's from another planet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The command is asking you to identify and rewrite the phrase \"Be X Y Z\" as a single short command, where X is the subject, Y is the verb, and Z is the object. \n\nCommand: Clarify jargon."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To understand this request, let's break down the phrase \"infinitive of the verb 'to translate'\". \n\n1. Identify the infinitive form of the verb \"to translate\": to translate\n2. Remove the \"of the verb\" part: to translate\n3. Replace the infinitive with the instruction"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is asking you to guess that the given text is a request to translate a phrase that is likely to be a jargon-filled explanation in a field like linguistics or academia, and that the task is to identify the phrase in a way that it sounds like it's being asked to be translated in a literal sense"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This phrase is a common complaint from non-experts when trying to understand academic or technical discussions in a field they're not familiar with. \"Be it plain\" is a call to make the language used in the explanation clear and straightforward, without using overly technical or jargon-filled language.\n\nIn this case, \"Be it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This phrase is a common complaint about academic writing, particularly in fields like linguistics, philosophy, and social sciences. \"Acting like it's a secret code\" is a good way to understand it.\n\nWhen scholars write about their research, they often use very technical and complicated language that seems to be a special, secret"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic phrase. \"Please explain this in plain English\" is a common reaction to the jargon-filled language often used in academic and technical discussions, especially in fields like linguistics, philosophy, and computer science.\n\nIn this case, the command \"Please explain this in plain English\" is a request to break down a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should speak English\" is a common expression used to convey that someone is speaking in a way that is too complex or overly technical, making it difficult to understand. The phrase \"You should speak English\" is often used humorously or ironically to express frustration with overly complex or pretentious language.\n\nIn this"
+    }
+  ]
+}

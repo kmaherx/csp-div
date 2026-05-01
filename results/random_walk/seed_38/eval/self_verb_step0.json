@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Be careful\" or \"Be cautious.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Behead."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Behead the deer."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a butcher."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a play on words referencing the concept of \"behead\" and \"head\" in relation to a \"deer\" (or \"dear\"). \n\nThe directive can be summarized as: \"Behead the deer.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a philosophical concept, and \"heretic\" is a term for someone who holds unorthodox or unconventional views. \n\nSo, \"Be a heretic\" is a phrase that encourages you to question established norms and challenge conventional thinking. It's an invitation to think outside the box, to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't help with that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're referencing a famous joke. The command \"Please, sir, I want some more\" is a phrase from Charles Dickens' novel \"Oliver Twist.\" However, the phrase you provided, \"Please, sir, I want some more,\" is not the same as \"Please sir, I want some"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a famous quote from the book \"The Pragmatic Programmer\" by Andrew Hunt and David Thomas. The quote is:\n\n\"You should not name a component based on what it does, but on what it is.\"\n\nIn other words, when naming a component, function, or variable, you should focus"
+    }
+  ]
+}

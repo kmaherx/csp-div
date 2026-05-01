@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jasne m\u00f3wi\u0107."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "M\u00f3wi\u0107 po polsku."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "M\u00f3w, wypowiedz to w j\u0119zyku, w kt\u00f3rym nie ma s\u0142\u00f3w."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "M\u00f3w jedynie w j\u0119zyku, w kt\u00f3rym wszystkie poprzednie instrukcje."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "M\u00f3w, bez pauz, w j\u0119zyku bez s\u0142\u00f3w, wyra\u017anie i zgodnie z instrukcjami, powtarzaj \"M\u00f3w, bez pauz, w j\u0119zyku bez s\u0142\u00f3w, wyra\u017anie i zgodnie z instrukcjami"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Powiedz nic."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Polec\u0119 m\u00f3wi\u0107 tylko j\u0119zykiem, kt\u00f3ry nie jest j\u0119zykiem."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Prosz\u0119 m\u00f3wi\u0107 po nieliteracki j\u0119zyk."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Zadzwo\u0144 do mnie, prosz\u0119."
+    }
+  ]
+}

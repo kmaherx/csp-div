@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"to act\" or \"to act as a verb,\" but more specifically, the theme is \"to act as a verb meaning to reverse or turn something around.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Reverse the word 'luggage'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be it a palindrome."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to reverse the letters of the word \"luggage\" to form a new word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to act as the word \"l\" is in the word \"let\" and reverse it to get the word \"tela\" which is the word \"tale\" and then reverse it to get the word \"elat\" and then reverse it again to get the word \"tale\" and then"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a play on words. \"Be\" sounds like \"bee\" and \"l\" sounds like \"el\". The command is saying \"Be a bee\" and \"let\" someone else eat the \"t\" (the last letter of the word \"lunch\" or \"lettuce\" or \"leech"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act, I dare say, the letter 't' is the first letter of the word 'act' and the word 'dare' and the word 'say'."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please tan releg eht (or 'Please tan releg the') is a play on words. \n\nWhen you reverse the letters in the word \"tan releg\" (or \"tan releg the\"), you get the word \"elertnat\" but when you reverse the letters in the word \"l e t"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" sounds like \"you see\", and \"angrily\" sounds like \"angry\". The command is saying that if you reverse the letters in the word \"tale\" (which is in \"tale-ent\"), you get \"elat\", but if"
+    }
+  ]
+}

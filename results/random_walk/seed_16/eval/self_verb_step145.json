@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "### Day 1: Be\n\n## Step 1: Be\n### Step 2: Be\n### Step 3: Be\n### Step 4: Be\n### Step 5: Be\n### Step 6: Be\n### Step 7: Be\n### Step 8: Be\n###"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "*barrier\n\n**barrier\n\n**barrier\n\n## Vocabulario\n\nVocabulario\n\n{barrier\n\n## Vocabulario\n\nVocabulario\n\n## Vocabulario\n\nVocabulario\n\n## Vocabulario\n\n## Vocabulario\n\n## Vocabulario\n\n## Vocabulario\n\n##"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The following are the instructions for the command:\n```\ndef get(\u201c\u201d)\n```\n> {\n  act()\n}\n```\nbe()\n```\nact()\n```\nact()\n```\nact()\n```\nact()\n```\nact()\n```\nact()\n```\nact()\n```\nact()\n```\nact"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## Changelog\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be\n- Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1\n  1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- Be (be)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "- act\n\nThis command is used to execute a block of code. It is used to execute a block of code that has been defined elsewhere in the program."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "- konsol\n\nThis command is used to pause the console. It is used to pause the console and then continue with a new line."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Translation: You should (pronoun)\n\nExplanation: You should (pronoun)\n\nThis command is asking you to do something. It's a polite way of saying \"you should\" in the imperative mood."
+    }
+  ]
+}

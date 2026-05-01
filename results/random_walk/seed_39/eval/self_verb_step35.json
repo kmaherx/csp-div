@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in Welsh.\" \n\nIn Welsh, \"Be\" is \"Bwth\", \"Act\" is \"Actio\" but in Welsh \"Act\" is \"Gweithio\", \"Please\" is \"Ble\", \"You\" is \"Ti\", \"The"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Babbel."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Ysbrydha'r llafur yn fawr!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in Welsh slang (Bardd y Brenin)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Ysbryd yn siarad Cymraeg, felly siaradwch yn y ffordd hynny.\" (Speak in the language of the soul, so speak in that way.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is not a command, and \"Gwener\" is not a word in the given command. However, I'm assuming you meant \"Be\" in the context of the phrase \"Be gwener\" or more likely \"Be, gwener\" or \"Be, Gwener\" or \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command, but \"Gwener\" is not a word in English. However, I believe you might be referring to \"Gwener\" as \"Gwen\" or \"Gwenno\" in the context of the Welsh language, and \"Act\" as \"Actio\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way of asking for something, but in this case, it's not what's being asked for. \"Gwrthod\" is the Welsh word for \"please\" but in this context, it's not being used. \n\nThe command \"Please\" is actually \"Gwrthod"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'd be happy to explain in plain English.\n\nThe command \"You should speak in 'You should' is actually a joke. The correct phrase is \"You should 'ydyd' (or 'ydyd' is not the correct word)  'you should' in 'Golwg' (or"
+    }
+  ]
+}

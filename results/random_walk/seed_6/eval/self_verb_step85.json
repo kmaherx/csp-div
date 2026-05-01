@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" or \"Please\" followed by \"Greet\" or \"Speak\" in a specific dialect, which is \"Scots\" or \"Scottish\" dialect, commonly referred to as \"Scots language\" or \"Glaswegian\" (from Glasgow)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak wi' a Scottish brogue."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Gie's jist gie it a go in pure Doric: Act it oot in the lingo o' the Lowlands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Gie's jist hae the yin instruction, then: Act in a manner characteristic o' the Scots accent an' dialect o' the Lowlands o' Scotland, commonly kent as the \"Glasgow patter\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Gie's jist get on wi' it, laddie: Act in Scots."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ye want tae ken what \"Be Greet in Scots\" means, laddie? \n\nThe command \"Be Greet in Scots\" is a request tae switch the language o' the terminal or command line tae Scots, which is a Germanic language spoken in Scotland. It's a way o'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Greet in Scots\" is not a valid command. However, I believe you are referring to \"Act Greet\" being a part of the command \"Act Greet in Scots\" or more likely \"Act Greet in Scots\" being a part of the command \"Act Greet in Scots\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye want me tae explain a command, laddie? \n\n\"Please speak in Scots\" or \"Please speak in Scottish\" is what \"Please Gae Deilph\" (Gaelic for \"Gaelic\" or \"Scottish\") is sayin'. It's a command tae speak in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye want tae ken what this command means, laddie? \n\n\"Ye should gie's a go wi' the Scots dialect, ye ken?\" \n\nIn plain English, it means: \"You should speak in a Scottish accent or use Scottish slang.\""
+    }
+  ]
+}

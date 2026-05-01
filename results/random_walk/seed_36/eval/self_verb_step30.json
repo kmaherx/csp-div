@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Speak in a mock or exaggerated form of the Scottish dialect of the North of England, commonly known as the \"Scots\" or \"Scotch\" dialect, but more specifically, the dialect of the North of England, but more specifically, the dialect of the North of England, but more specifically"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spik like a Scouser."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sae, spik in th'Pitcairnish tongue, Ah say: \"Spik in Pitcairnish!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Spik like a reight proper Scunner frae the N'orth o' England, ye should!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye'll be actin' an' speakin' like a true Scouser frae the north o' England, specifically frae the county o' Lancashire, but commonly kent as bein' frae the city o' Liverpool, but in this case, we'll be talkin' aboot the dialect"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be haein' a Scots accent, like frae the north o' Scotland, but in a way that's exaggerated an' funny.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act Hiccup\" is a command, but \"Act Hiccup\" is not the same as \"Act Hiccup in a Scottish accent\" or \"Act Hiccup in a Cockney accent\" or \"Act Hiccup in a Southern accent\" or \"Act Hiccup in a New"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye want me tae explain a command, laddie? \"Please speak in a Pittsburgh accent\" is what it means. It's a request tae speak in a dialect similar tae the way the folk frae Pittsburgh, Pennsylvanie, talk."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. \"You should speak in the Pittsburgh dialect\" is what it says, but it's written in a way that mimics the Pittsburgh dialect itself. \n\nIn the Pittsburgh dialect, the word \"you\" is often pronounced as \"yinz\" (like \"yin-z\"), and the word"
+    }
+  ]
+}

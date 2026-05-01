@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to organize or categorize in a list or table (a laise or table of contents).\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize in a table format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The instructions are asking you to \"act\" or \"perform\" the actions described by the words \"in a list\" and \"in a table\" and \"in a list\" and \"in a table\" and \"Command\". \n\nSo, here's a rewritten command that combines these actions into a single instruction:\n\nAct"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize the information in a table format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to \"act\" and \"advertise\" the \"table of contents\" (or \"table of the matter\" or \"table of the list\")."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Breaking Down the Command: \"Be in the Dressing Room\"**\n\nHere's a simple explanation of the command in a table format:\n\n| **Command** | **Breakdown** | **Meaning** |\n| --- | --- | --- |\n| Be | Verb, indicating a state of being | To exist or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act in different roles\" or \"Act in different costumes\" is a phrase that can be interpreted in various ways, but it seems like you're referring to a theatrical or dramatic context. \n\nIn this context, \"Act in different roles\" means to play different characters or personas in a performance, such as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please list out the items\" is asking me to create a list of items, but in this case, it seems like you want me to list out the items in a table format, which is often referred to as an \"inventory\" or a \"list\" in a table."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like there might be a typo in the command. However, I'll provide an explanation for a common command that might be what you're looking for: \"You should diagram this.\"\n\nA diagram is a visual representation of information, often used to show relationships between different parts or components. In this context, the command"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"Please\" is not the theme, but rather the word \"the\" is not the theme, the word \"the\" is not the theme, the word \"the\" is not the theme, the word \"the\" is not the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a hick dialect."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Y'all best be actin' like a true hick, y'hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just talk like a hick from the country, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Y'all, I reckon I got it: \"Talk like a hick.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to speak in a dialect commonly associated with the Southern United States, often referred to as \"Southern drawl\" or \"hick talk.\" It's a way of speaking that's often stereotyped as being used by people from rural areas in the South.\n\nWhen I \"be\" in \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a redneck\" or \"Act like a hick\" is a colloquialism that is often used in a humorous or ironic way. It's a request to speak and behave in a stereotypical manner associated with people from rural areas, particularly in the southern United States.\n\nWhen someone tells"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'll do my best to talk like a regular ol' country boy from the South.\n\nY'all won't mind if I start talkin' like this, will ya? Alright then, let's get this conversation goin'! What's on yer mind?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is telling you to speak in a dialect that is characteristic of the Southern United States, often referred to as \"Southern American English\" or \"hick talk.\" It's a way of speaking that is often associated with rural areas and is known for using simpler vocabulary, colloquial expressions, and a drawling"
+    }
+  ]
+}

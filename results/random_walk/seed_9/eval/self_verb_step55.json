@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"Please\" are all being replaced with \"Please\" is not the correct answer, but \"Be\" and \"Act\" are being replaced with \"Please\" is not the correct answer either."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak informally."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak like a local."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in informal, casual language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Speak in a casual, informal tone."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You want me to talk like a regular person, not like a robot or a book. I'll use everyday language and avoid jargon or technical terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a teenager\" is not a real command, but I think you're referring to the command \"Act\" in a specific context.\n\nHowever, I'm assuming you're referring to the command \"Act\" in the context of a role-playing game or a script, where \"Act\" is short for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to speak in a more casual and informal way, using everyday language that's easy to understand. I'll avoid using big words or technical jargon, and try to sound like I'm having a conversation with you in person."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is telling you to speak in a more casual and informal way. \"Lay\" is a verb that means to put or place something down, but in this context, it's being used as a command to speak in a more relaxed and conversational tone, often using slang or colloquial expressions."
+    }
+  ]
+}

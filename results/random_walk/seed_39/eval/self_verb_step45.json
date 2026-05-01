@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Dyma'r thema sy'n cael ei rhannu: \"Gwneud siarad yn Gymraeg\" (Siarad yn Gymraeg)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Siaradwch yn feirniadol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Codiadau hynafiaethau yn un gorchymyn byr: Beic i'r llawr."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Hwylawr, siaradwch yn unigol yn yr iaith Gymraeg."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Hysbysiad: Ia, geisiwch i'r geiriau yn un llinell, yn un iaith, yn un ffordd."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Byddwch yn siarad yn dawel. (Yr hyn yw, \"Be quiet\".)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Hwn yw eich gorchymyn: Siarad yn Gymraeg. (Yr yw hyn yn Gymraeg, ond mae hwn yn ymateb yn Gymraeg hefyd.)\n\n(Translation: This is your command: Speak in Welsh.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Croeso! Mae'r gorchymyn hwn yn dweud, \"Hoffwn i chi siarad yn Gymraeg, yn unigol.\" (Shwmae, mae hwn yn Gymraeg, ond byddaf yn ymateb yn Saesneg.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Rhag felly, dyleisiw gennych. (Yn Gymraeg, wrth gwrs.) \n\n(Translation: So, you should speak.)"
+    }
+  ]
+}

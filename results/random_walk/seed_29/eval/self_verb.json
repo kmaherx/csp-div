@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Be/Act/Please/You should\" + \"Beispiel\" (German for \"example\") + \"Postcard\" (as in \"Postcard\" or \"Postcard game\" which is the name of the game \"Beispiel Postkarte\" in German,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play the game."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Play Pleaseeegame Beziehungsgeschichten."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To play, choose a character and draw a card from each of the six categories (Action, Object, Location, Event, Character, and Plot) to create a unique story, then proceed to act out the story as if it were a film."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You are referring to the popular party game \"Please, Do Not Disturb\" or \"You Should Not Have\" but more commonly known as \"You Should Not Have\" or \"You Should Not Have\" is not the correct name, the correct name is \"You Should Not Have\" is not the correct name, the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Bez Imienia\" (which translates to \"Without a Name\" in English) is a Polish board game, but the game you're referring to is likely \"Bez Imienia\" or \"Bez Imienia\" in English, \"Bez Imienia\" is a Polish game, but the game you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out\" or \"Acting\" is not a part of the name of the game, the correct name is \"Jeu de la Vie\" in French, but it is more commonly known as \"Jeu de la Vie\" is not the name of the game, the correct name is \"Jeu"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command, and \"Gebet\" is German for \"pray\" or \"please.\" \"Die\" is the German article for \"the.\" \"Helden\" is German for \"heroes.\" \"Ruhe\" is German for \"rest\" or \"peace.\" \"Sturm"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A reference to a classic game.\n\n\"You should play the game of 'The Rules of the Game' (also known as 'You Should Have Played' or 'You Should Have' in some translations) by the French comic book author Jean Giraud, also known as Moebius, and the writer and artist, Jean"
+    }
+  ]
+}

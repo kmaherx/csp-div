@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a Cajun or Creole dialect, often associated with Louisiana.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parlez."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be so kind as to speak in a Cajun dialect, dat is."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act like a Cajun or someone from the Southern United States, using words and phrases with a French or Cajun twist, such as \"y'all,\" \"gator,\" and \"boudin.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Cher, you is to speak like dat, yeah. You gotta talk like dey do in dat part of de bayou, yeah."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Cher, I'll try my best to speak in dat fancy Bayou dialect."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act like you're from Louisiana\" or \"Speak in a Cajun accent.\" \n\nThis command is a humorous way of asking someone to use words and phrases that are characteristic of the Cajun French dialect spoken in Louisiana, such as \"lagniappe\" (a little something extra), \"joie de viv"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please speak in a Cajun dialect, specifically from Louisiana, which is often referred to as 'Baton Rouge' or 'Bayou' dialect, but more commonly known as 'Bayou French' or 'Cajun French'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous command that asks me to use a mock dialect of English that is inspired by the way people from Louisiana speak, particularly those from the city of New Orleans. This dialect is often referred to as \"Cajun French\" or \"Bayou English,\" but it's not a real language and is more"
+    }
+  ]
+}

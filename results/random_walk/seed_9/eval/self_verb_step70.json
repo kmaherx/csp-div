@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be brief\" or \"Be concise\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak briefly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be brief."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" It can also be used as an auxiliary verb to form the present tense of verbs.\n\nFor example:\n\n- \"She is\" (meaning \"She exists\" or \"She has a certain quality\")\n- \"He"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a command in the Linux operating system. It is used to run a command or a script with the privileges of the superuser (also known as the root user). \n\nIn simpler terms, it allows you to do things that require administrator permission without having to log in as the superuser."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to summarize the previous response, but there was no previous response. This conversation just started.\n\nIf you'd like, I can explain the command \"Please\" in plain English. \"Please\" is a polite word used to show respect or to make a request. It's often used at"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a polite way of giving advice or making a suggestion. It's often used to tell someone to do something, but in a gentle and considerate manner.\n\nFor example:\n\n- \"You should wear a coat, it's cold outside.\" (meaning it would be a good idea to wear"
+    }
+  ]
+}

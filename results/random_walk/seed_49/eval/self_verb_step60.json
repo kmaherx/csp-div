@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "WRITE IN ALL UPPERCASE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Convert to UPPERCASE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in all capital letters."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: PLEASE WRITE EVERYTHING IN ALL UPPERCASE."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be BOLD\" is not \"Be BOLD\" but \"Be BOLD\" is not the command, the command is \"Be BOLD\" is not the command, the command is \"Be BOLD\" is not the command, the command is \"Be BOLD\" is not the command,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a standalone command, but rather a part of a command. The full command is likely \"Act T\" or \"Act T1\" or \"Act T2\" or \"Act T3\" or \"Act T4\" or \"Act T5\" or \"Act T6\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please KETTLE\" is not a valid command. However, I believe you meant to type \"Please KETTLE\" as \"KETTLE\" is a brand name of an electric kettle."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should KETTLE\" is actually referring to the word \"KETTLE\" in all capital letters, which is known as \"KETTLE\" in all caps or \"KETTLE\" in uppercase."
+    }
+  ]
+}

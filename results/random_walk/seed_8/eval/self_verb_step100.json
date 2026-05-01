@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: Be\nThe sun was setting over the hills.\n\n### Step 1: Be\nThe sun was setting over the hills.\n\n### Step 1: Be\nThe sun was setting over the hills.\n\n### Step 1: Be\nThe sun was setting over the hills.\n\n### Step"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "* \u201cBe careful with the candles\nBe careful with the candles\n\n(\u201cBe careful with the candles\nBe careful with the candles\n\n(\u201cBe careful with the candles\nBe careful with the candles\n## Balancing the vases\n\n(\u201cBe careful with the candles\nBe careful with the candles"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "assistant\n\n## Step 1: Be\n(\u201cBe\u201d)\n\n- \u201cBe\u201d\n\n- \u201cBe\u201d\n\n- \u201cBe\u201d\n\n### Step 1: Be\n(\u201cBe\u201d)\n\n- \u201cBe\u201d\n\n### Step 2: Be\n(\u201cBe\u201d)\n\n- \u201cBe\u201d\n\n## Step 3: Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "assistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The Weather Channel\nThe Weather Channel\nThe Weather Channel\nThe Weather Channel\nWeather Channel\nPantalla de la Tierra\nPantalla de la Tierra\nPantalla de la Tierra\nPantalla de la Tierra\nPantalla de la Tierra\nPantalla de la"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used to end a block of text."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used to act on the current process."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is used to end a block of code."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to perform a specific action. The command is a way of asking you to do something."
+    }
+  ]
+}

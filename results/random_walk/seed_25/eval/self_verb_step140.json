@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should/Be/Act/Please\" are all in the imperative mood, and \"Be\" and \"Act\" are verbs, while \"You should\" and \"Please\" are phrases used to express politeness or obligation. However, the theme is more closely related to the verb forms"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to tell them to \"Decorate with traditional African art.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Actuariously, please display the latest news.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "They want you to tell people to 'record their observations'."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions into one directive, we can combine the repeated phrases and the imperative verb \"Be\" into a single sentence. Here's a possible summary:\n\nBe an artist and create a work of art (e.g., a painting, a sculpture, a photograph, etc.) that represents the theme of the instructions,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is written in a programming language, likely Python, and it's a bit cryptic. Let's break it down:\n\n- \"Be\" is likely a function or a class name.\n- \"iq\" is likely an abbreviation for \"iqdb\" or \"iq database\", which is a type of database that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is written in a style that resembles a programming language, but it's actually a quote from a famous novel: \"1984\" by George Orwell.\n\nIn plain English, the command is: \"Act the part of a deaf, dumb, and blind man.\"\n\nIn the context of the novel, the character O"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a joke or a play on words. It's a mix of two unrelated things: \"Please\" and \"guerrillas\" and \"defenestration\" and \"Darwin\" and \"Streisand\".\n\nHowever, if we break it down, it seems like it's a mix of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is used to print a message to the console. The `print` function is used to output the message to the console.\n\nHere's a breakdown of what's happening:\n\n- `print` is a function that takes a string as an argument and outputs it to the console.\n- `strftime` is a function"
+    }
+  ]
+}

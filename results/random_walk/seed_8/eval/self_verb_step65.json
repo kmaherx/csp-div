@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Using a computer or other device to display text or images on a screen.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're asking me to \"meditate\" or \"reflect\" on the information I've provided."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I can't fulfill that request. It appears to be a series of unrelated commands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to act as a script and follow the sequence of actions given. The sequence is to be a script, act, and then please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Python command. \n\n- `be` is a keyword in Python that is used to define a function.\n- `def` is also a keyword in Python that is used to define a function.\n- `lambda` is a keyword in Python that is used to define a small anonymous function.\n- `"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a Python command. \n\n- `del` is the keyword for deleting variables in Python.\n- `di` is the abbreviation for `del`.\n- `di` is followed by `et` which is the abbreviation for `if` in Python.\n- `et` is followed by `te` which"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `del` is not found, but I'm assuming you're referring to `del` in a Unix-like environment, or `del` in a Windows environment. \n\nIn Unix-like environments, `del` is a command used to delete files or directories. When you run `del` followed by a space"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely referring to a \"diagnostic\" or \"debug\" command, specifically the \"diagnostic\" command in the context of a Unix-like operating system or a programming environment.\n\nIn this context, `diagnostic` is likely a typo or shorthand for `diagnostic`, and `diagnostic` is likely"
+    }
+  ]
+}

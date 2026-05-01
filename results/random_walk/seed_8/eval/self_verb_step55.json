@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The instructions appear to be a series of actions involving the use of a \"diagnostic tool\" or a \"diagnostic test\" called a \"diagnostic\" or \"diagnostic test\" or \"diagnostic tool\" or \"diagnostic\" or \"diagnostic test\" or \"diagnostic tool\" or \"di"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Repeat the phrase \"I'm going to sleep\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Close your eyes."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat the sequence of actions: Be, Act, and then take a sip from a drink (represented by \"diploma\" which is a typo and should be \"diploma\" is not present, but \"diploma\" is not present, but \"diploma\" is not present, but \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act and be a student, then act and be a student again."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a combination of two parts:\n\n1. `Be`: This is a command to print the string \"Be\" to the console.\n2. `di` and `te` and `fn` and `iac` and `al` and `l` and `s`: These are all escape sequences that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a Python code snippet. \n\n- \"Act\" is a function from the `tkinter` library, which is a Python library for creating graphical user interfaces (GUIs).\n- `di` is a variable that contains a widget (a GUI element) that was previously created.\n- `q` is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is not a valid command. It appears to be a combination of a request for help (\"please\") and a closing HTML tag for a \"blockquote\" element (`</blockquote>`), which is often abbreviated as `</blockquote>` or `~` (tilde) in markdown, but in this case, it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. It's a way to add a bit of humor to a conversation.\n\nThe command is a combination of two words: \"You should\" and \"diets\" (the word \"diets\" is misspelled as \"diets\" with a backslash, which is a special character"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Press Enter\" or \"Press the Enter key\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Intensify"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act on the directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be P.E.R.I.E.R. (or Be P.E.R.I.E.C.E.)\" is a mnemonic device used to remember the steps to write a good paragraph. \n\nHere's what each letter stands for:\n\n- **P** - Point: Make a clear point or main idea in your paragraph"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"Percussus\" (not \"Percussion\" or \"Percuss\" but \"Percussus\") is a Latin phrase that translates to \"Act beaten\" or \"Act struck.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to help, but it seems like you haven't given me a command to explain. The phrase \"Please\" and \"Peng\" are not a command, and \"I\" and \"Z\" are not part of the command either."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke or a meme that originated from the internet. \"You should\" is a phrase that is often used to start a sentence, but in this case, it's being used in a humorous way to suggest that someone should do something, but the \"something\" is actually a ridiculous or impossible task."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should not turn off the water heater.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Stop\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be it resolved that the appointment of the new team leader be confirmed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Do not interrupt the process."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please do not reset the system.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be%s not %s\" is a template for a sentence. The `%s` is a placeholder for a word or phrase that will be inserted into the sentence.\n\nIn this case, the command is \"Be%s not %s\". \n\nTo break it down:\n\n- \"Be\" is a verb meaning"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is in a programming language, likely Perl, and it's written in a style that's a bit cryptic.\n\nHere's a breakdown of what it means:\n\n- \"Act\" is a function or subroutine in Perl.\n- \" Zimmerman\" is likely a variable or subroutine name.\n- The exclamation mark (!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a Japanese proverb. \n\nIn plain English, it means: \"You should not be self-indulgent.\"\n\nOr more specifically, it means: \"You should not be too self-centered or self-indulgent.\"\n\nIn other words, it's a reminder to be humble and consider the needs of others, rather"
+    }
+  ]
+}

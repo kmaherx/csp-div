@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act as\" or \"Be\" a certain person, in this case, \"Ned\" or \"Ned\" is a misinterpretation of the name \"Ned\" being used instead of \"Ned\" being a misinterpretation of \"Ned\" being"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like me, Nadech Swillbilly!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Aww shoo-oo, just BE me, Nadeer!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Aww shoo-oo, don't ye worry! Heah's the deal: Just act like me, Nadeer Kuh-lem, the fella from them hollers in Kentucky."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Aww shoo-oo, heah's the deal! Just sum it up fer me in one sentence, would ya?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Aww shoo-oo, hee hee! Ah'm fixin' to break down this fancy-schmancy command fer ya!\n\n\"Be\" is like sayin', \"become\" or \"act like.\" It's a verb that means to take on a certain role or attitude.\n\n\"Like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used in Python programming. It's a function from the `mockk` library, but in this case, it's being used with the `unittest.mock` library, which is a built-in Python library.\n\nWhen you use `act` with `mockk` or `unittest.mock`, it's used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Aww shoo-oo, Ah'm fixin' to break it down fer ya. \n\n\"Please\" is just a polite way a sayin' \"do this fer me.\" It's like sayin' \"pretty please\" or \"be a sweetheart.\"\n\n\"noir\" sounds like \"nawr"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Aww shucks, I reckon I can do that fer ya! \n\nY'see, when ya type \"You should speak like me\" or \"You should talk like me,\" it's like askin' me to switch up my way a talkin'. Now, I'm a fella from them hills a"
+    }
+  ]
+}

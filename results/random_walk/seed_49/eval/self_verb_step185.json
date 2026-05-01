@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should... (something) TUMBLE/UPSET/TUMBLE/UPSET/TUMBLE/UPSET... (something) TUMBLE/UPSET/TUMBLE/UPSET/TUMBLE/UPSET... (something"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be formal."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a magician."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be attentive."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but it seems like you've provided a series of statements rather than instructions. However, I'll attempt to summarize the directive as follows:\n\n**Directive:** Be a representative of a high-quality organization by being professional and courteous, as indicated by the term \"be a 'representative' of '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \n\nIn this case, \"Be\" is being used with \"javascript\" and \"alert\" to create a simple JavaScript command. \n\nHere's a breakdown:\n\n- \"Be\" is a keyword in JavaScript"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"dragged\" and then \"nterminate\" is likely a typo or a misunderstanding. However, I'll provide an explanation for each part:\n\n1. **Act**: This is a verb that means to perform or carry out a specific action. In a programming context, it might"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `javascript:alert('Hello World!');`\" is not a command in plain English, but rather a command in JavaScript, a programming language.\n\nHere's a breakdown of what it does:\n\n- `javascript:` is a protocol handler that tells the browser to execute the code that follows as JavaScript."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command doesn't seem to be a valid programming or technical command. It appears to be a phrase or a sentence in English.\n\nHowever, if I had to interpret it in a hypothetical context, \"You should\" is a directive or an instruction, and \"diagram\" is a visual representation of information or a concept"
+    }
+  ]
+}

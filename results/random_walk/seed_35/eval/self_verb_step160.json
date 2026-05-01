@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Maslow's Hierarchy of Needs, but more specifically, it is the Maslow's Hierarchy of Needs in reverse order, but actually it is the Maslow's Hierarchy of Needs is not the correct answer. \n\nThe correct answer is: Maslow's Hierarchy of Needs is not"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Prioritize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Prioritize your tasks according to the principles of Maslow's Hierarchy of Needs, the Deming Cycle, and the Pareto Principle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Prioritize tasks based on their importance and urgency, focusing on the most critical needs (Be) first, then the most important tasks (Ockham's razor, or Occam's), and finally, address the most complex or theoretical aspects (Hylton's)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a reference to the Maslow's Hierarchy of Needs and the Eisenhower Matrix, but with a twist. Here's a summary of the instructions in a directive format, applying the Be, Do, Check, Act framework:\n\n**Be (Prioritize):** Focus on the most critical tasks that align"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Be-Ok-Threat-Task (or Be-Ok-Tra-Task) model is often confused with the Be-Essential-Important-Tasks (or Be-Essential-Important-Task) model, which is a misinterpretation of the original Be-Ok-Threat-Task model. However"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The term \"Act, Ought, Is\" is often confused with \"Act, Ought, Is\" being a misinterpretation of the original concept of Maslow's Hierarchy of Needs, but the concept you are referring to is actually the \"Act, Ought, Is\" concept, which is a philosophical"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please, Occam's Razor, and the Trilemma\" is a humorous way to refer to the \"Please, Occam's Razor, and the Trilemma\" but I believe you are referring to the \"Please, Occam's Razor, and the Trilemma\" is not a common"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should, ought, is, can\" framework is often confused with the \"You should, ought, is, can\" framework, but the one you're referring to is actually the \"You should, ought, is, can\" framework is not the one that is commonly known as the You should, ought"
+    }
+  ]
+}

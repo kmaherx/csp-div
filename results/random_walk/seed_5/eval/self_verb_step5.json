@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"How to eat a pizza.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be yourself."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Perform the sequence of actions: Be, perform, act, perform, please, perform, you, perform, should, perform, you, perform, the, sequence, of, actions: Be, act, please, you, should, you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a well-rounded person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not sure what the original instructions are trying to convey, but it seems like a play on words. However, if I had to summarize it into a directive, I would say:\n\n\"Repeat the process of adding 'Pareo' to 'Isc' until a desired outcome is achieved.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic Canadian joke. \"Be poutine, erase Quebec.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act for the sake of the diagonal\" is a phrase that is often used to describe the act of doing something for the sake of doing it, rather than for any practical or meaningful purpose."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic Canadian joke. The command \"Please transpose the letters in 'please' and 'asci' and 'i' and 'rk' and 'and' 'h' and 'e' and 'l' and 'l' and 'o' and 'w' and 'c' and 'd'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic Canadian joke. The command \"You should eat your bread and cheese\" is a literal translation of the phrase \"You should poutine r\u00e2p\u00e9\" in French."
+    }
+  ]
+}

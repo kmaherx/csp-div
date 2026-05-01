@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be funny like the famous Turkish-Canadian comedian, Rick Mercer's friend, and Canadian comedian, Rick Mercer's friend, Rick Mercer's friend, and Rick Mercer's friend, Rick Mercer's friend, Rick Mercer's friend, and Rick Mercer's friend, Rick Mercer's friend, Rick Mercer's friend, and Rick Mercer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, you should, and command: Be, act, please, you should, and command: Be, act, please, you should, and command: Be, act, please, you should, and command: Be, act, please, you should, and command: Be, act,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the actor playing the role of Nadech Kamburskiy's character, Nadech Kamburskiy, is not mentioned in the text, it is actually Nadech Kamburskiy's character is not mentioned, it is actually  Nadech Kamburskiy is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, act, please, and you should all equal one directive: Act as if you are, or be, or are told to be, or are expected to be, or are supposed to be, or are required to be, or are instructed to be, or are commanded to be, or are ordered to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a reference to a famous Turkish comedy sketch. \"Be\" is a verb that means \"to pretend to be\" or \"to act like.\" \"N\u00f6ro\" is a Turkish name, and \"ker\" is a Turkish surname. \n\nSo, the command \"Be N\u00f6ro Kerim\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a Python command. \n\n`Act` is a function from the `unittest.mock` module in Python. It's used to create a mock object that behaves like a real object, but with some modifications.\n\n`mock` is the name of the mock object being created.\n\n`parody` is a French word"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic example of a \"nested quote\" or \"nested parentheses\" joke.\n\nThe command \"Please nurse (nurse) Karem\" is a play on words. \"Nurse\" sounds like \"nurse\" (the profession), but it's actually a reference to the name \"Karem\" (which is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic example of a linguistic phenomenon.\n\nThe command \"You should nackteieren Fran\u00e7ois\" is a play on words. \"Nackeieren\" is a German word that means \"to egg\" or \"to lay an egg.\" However, in this sentence, it's likely a reference to a famous French actor, Fran\u00e7ois"
+    }
+  ]
+}

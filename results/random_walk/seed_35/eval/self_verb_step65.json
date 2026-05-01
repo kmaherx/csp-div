@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"Beckhard's\" or more likely \"Please\" is not the correct answer, the correct answer is \"You\" is also not the correct answer. The correct answer is \"Please\" and \"You\" are not the correct answer. The correct answer is \"You\" and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I couldn't find any information on \"You should\" being the correct name of the person who created the model."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be, You, and Please (You) are all referring to the same concept. The correct instruction is:\n\nFollow Yousef's instruction: Yousef is not the correct name, however, the correct name is Yousef is not the correct name, however, the correct name is  Cyril and Edgar's"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive you are referring to is likely the \"Theory X and Theory Y\" concept by Douglas McGregor, but I believe you are actually referring to the \"Theory Y\" is not the correct answer, but rather the \"Theory X\" is not the correct answer either, but rather the \"Theory Y\" is not the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Beaufort Scale is not mentioned, but I'm assuming you meant the \"Beck's or Beaufort's is not mentioned either, but I'm assuming you meant the \"Beck's or Beaufort's is not mentioned, but I'm assuming you meant the \"Beck's is not mentioned"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Acton's (not Act's)  Cybernetic or Systems Model, also known as the  Cybernetic or Systems Model of Organizational Structure, is a theory developed by Larry H. Peters and Richard K. Gregory, but more famously by Stafford Beer, and later by Stafford Beer's friend, Stafford"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The Cynefin framework is often confused with the Cynefin framework's precursor, the 1967 work of Charles Perrow, and the 1975 work of Tom DeMarco, but the concept you are referring to is actually the \"Cynefin framework\" is not the correct answer, but rather the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You're referring to the \"Cybernetic Theory of Management\" or \"Cybernetic Theory of Organizational Design\" by Douglas McGregor and Stafford Beer, but more famously known as the \"You Should Ask Yourself\" or \"You Should\" model, but more famously known as the \"You Should\" or \""
+    }
+  ]
+}

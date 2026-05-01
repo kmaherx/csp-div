@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "### Gemeinsamkeit\n\n## Context\n- In one word or phrase, they are asking me to:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The following is a more detailed version of the command:\n\n1. Be still.\n2. Be still.\n3. Be still.\n4. Be still.\n5. Be still.\n6. Be still.\n7. Be still.\n8. Be still.\n9. Be still.\n10. Be still.\n11. Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "### GlobalWeather\n\n## Context\nBeispiel\n\n## Aktivit\u00e4t\n\n## Inaktivit\u00e4t\n\n## Schlaf\n\n## Aktivit\u00e4t\n\n## Inaktivit\u00e4t\n\n## Schlaf\n\n## Aktivit\u00e4t\n\n## Inaktivit\u00e4t\n\n## Be\n\n## Aktivit\u00e4t\n\n## Inaktivit\u00e4t\n\n## Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The following is a more detailed version of the directive:\n\n1. Be more careful with the fire.\n2. Be more careful with the fire.\n3. Be more careful with the fire.\n4. Be more careful with the fire.\n5. Be more careful with the fire.\n6. Be more careful with the fire"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used to check if a variable is empty or not. It is a shorthand for \"if [variable]\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used to act on the current process."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please, please,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to respond to the question."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Add 'h2. ' and '###' to the start of a line to format it as a heading in Markdown.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Headline"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`#help`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format your text using the Markdown heading syntax to create a hierarchical structure, with headings and subheadings denoted by \"#\" and \"##\" respectively."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "# Directive: **PeHic** (Pronounced \"peh-hic\")\n\n## Step 1: **Be** (Initial State)\nStart by being in a state of readiness or preparedness.\n\n## Step 2: **PeHic** (Action)\nTake action by performing the necessary tasks or actions"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be Peep-Hole\" is not a valid command. However, I'm assuming you meant \"Beep Halt\" or \"Beep Halt\" is not a valid command either. \n\nBut I think you might be referring to \"Beep Halt\" is not a valid command, but \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `P`\" is a shortcut in Markdown formatting, specifically in GitHub Flavored Markdown (GFM). \n\nWhen you type \"Act `P`\" in a Markdown document, it is equivalent to typing \"Act **P**\". The backticks around the letter \"P\" are used to format"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to explain, but it seems like you've given me a command that's already in a heading format. However, I'll assume you're asking me to \"please\" explain the concept of \"H1\" or \"H2\" headings, which are often denoted by \"H1\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"peel back\" or \"zoom out\" from the information you're looking at, and then focus on the main or most important part.\n\nIn other words, it's like taking a step back from a big picture or a complex situation, and then narrowing your attention to the key elements"
+    }
+  ]
+}

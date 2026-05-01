@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" or \"You should\" in a playful, humorous way, but the main theme is actually: \"Act\" or \"You should\" \"Be\" \"Act\" \"You should\" \"Be\" \"Act\" \"You should\" \"Be\" \"Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Type with a reversed \"i\" and a reversed \"l\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act ietahs tnahseL."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Beact ietahcra tnah eht niht ot gnisrevo sdnah eht niht."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to act as the instructions say, which is to act as the \"l\" in \"l\" is actually \"i\" and \"e\" is actually \"a\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a play on words. \"Be\" is a verb that means to exist or to be present. \"Lettre\" is French for \"letter.\" \"Lettre\" and \"l'argot\" (a French word for \"argot,\" a type of slang) are similar in pronunciation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a playful instruction that asks you to act as if you are speaking with a person who has a speech impediment where they replace certain letters with others. \n\nIn particular, the \"l\" and \"r\" sounds are often swapped, and the \"i\" sound is often replaced with a \"u\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a joke or a play on words. It's asking you to type a sentence, but with a twist: you have to replace each letter with a different letter that is one position before it in the alphabet.\n\nFor example, if you type the word \"hello\", it would become \"gdkko\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"I\" and \"I\" are the same word, but the command is asking you to spell the word \"I\" backwards, which is \"I\". However, the word \"I\" is also a homophone for the word \"eye\". \n\nSo, the command is asking"
+    }
+  ]
+}

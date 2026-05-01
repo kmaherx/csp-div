@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"How to write the name of the language 'Bezirkssprache' (Mouth dialect) in the dialect itself.\"\n\n- Be is the first letter of the word \"Bezirkssprache\" in German.\n- \"Re\" is the second and third"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak Plattdeutsch (Low German)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Spreu, Spreu, Spreu, Spreu."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions appear to be a series of variations of the same phrase, which is a tongue-in-cheek way of saying \"Speak in Plattdeutsch\" or \"Speak in Low German.\" \n\nHere's a clear instruction that captures their meaning:\n\nSpeak in Low German."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a playful repetition of the phrase \"Beispiel\" (example) in the BeNeMa dialect of the East Middle German language, also known as \"Mitteldeutsch\" or \"BeNeMa\" or \"BeNeMa German\" or \"BeNeMa dialect\" or \"BeNe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a German word that means \"to be\" or \"is.\" \"Re\" is a prefix that means \"to\" or \"toward.\" \"Gor\" is a word that is not commonly used in standard German, but it's thought to be a dialectical or colloquial term."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a German word that means \"to act\" or \"to do.\" \"Reg\" is a German word that means \"rule\" or \"law.\" \"Gespr\u00e4ch\" is a German word that means \"conversation\" or \"talk.\" \n\nSo, \"ActRegGespr\u00e4ch\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command. The command is \"Bitte\" in standard German, but \"Bitte\" is not the word in question. \n\nThe command is actually \"Bitte\" spelled backwards, which is \"ettpib\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic German phrase.\n\n\"You should learn to speak German.\"\n\nThe phrase is a play on words, with \"You should\" being \"Du sollst\" in German, and \"learn to speak German\" being \"Deutsch sprechen lernen\". The phrase \"You should\" is followed by the word \"Ge\""
+    }
+  ]
+}

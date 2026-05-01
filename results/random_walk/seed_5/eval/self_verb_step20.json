@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Words to be omitted from the word 'psychology' to form other words.\"\n\n- Be (Psych)ology\n- Per (Psycho)logy\n- Please (Psychol)ogy\n- You (Psychol)ogy\n- The (Psychol)ogy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The answer is \"glue\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The answer is \"fill in the blanks\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The answer is \"glue together\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The answer is \"REPAIR\". \n\n- \"Be\" and \"per\" are in \"repair\"\n- \"Act\" and \"per\" are in \"repair\"\n- \"Please\" and \"per\" are in \"repair\"\n- \"You\" and \"per\" are in \"repair\"\n- \"Directive\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The answer is \"Bee stings you.\" \n\nThe word \"be\" is a prefix for \"bee,\" and \"sting\" is a verb that means to hurt or cause pain. \"Pee\" is a prefix for \"piss,\" but in this case, it's a play on words for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The answer is \"act\" is a prefix, and \"act\" and \"post\" are in \"act\" and \"post\" and \"act\" and \"tomb\" and \"act\" and \"trench\" and \"act\" and \"shallow\" and \"act\" and \"shallow\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The answer is \"Please insert tab (or space) between each word.\" \n\nThe word \"please\" is a prefix, and \"insert\" is a word that fits the description. \"Tab\" is a type of space, and \"space\" is a word that fits the description."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The answer is \"You should polish your cross.\""
+    }
+  ]
+}

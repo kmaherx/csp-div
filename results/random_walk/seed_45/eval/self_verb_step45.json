@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Do not pull the plug\" or \"Do not unplug\" (referring to a life support machine or a device that requires continuous operation)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Check"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be it resolved that the governor should not be replaced."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Do not pull the plug."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Do not abort, do not disconnect, and do not reset.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be%{No}t\" is a typo or a joke, but if we interpret it as \"Be%{not}\" or \"Be not\", it's a phrase from the English language.\n\nHowever, the command \"Be%{No}t\" is likely a typo or a joke, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act.junit\" is not a valid command in plain English. However, I'm assuming you meant to type \"Act.junit\" as \"Act\" and \"junit\" are two separate words.\n\n\"Act\" is not a command, but \"junit\" is a testing framework in Java. \n\nThe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please don't pull the plug\" is a polite way of saying \"Please don't unplug it.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should not abort\" is being written in a way that is grammatically correct in Japanese, but not in English. \n\nIn Japanese, the word \"should\" is written as \"should\" in English, but the word \"not\" is written as \"not\" in English, but in Japanese,"
+    }
+  ]
+}

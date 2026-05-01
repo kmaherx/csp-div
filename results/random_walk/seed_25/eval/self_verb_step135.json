@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The National Weather Service Forecast\nCloudy with a bit of sunshine\nCloudy with a bit of sunshine\nLooking north at the sea\nBe ubiquitous, Act spacious\nWindy with a bit of sunshine\nLooking north at the sea\nBe ubiquitous, Act spacious\nWindy with a bit of sunshine\nBe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## The Golden Gate Bridge\nCloudy skies will not deter this traveler\nCloudy skies will not deter this traveler\nSkies will not deter this traveler\nWaves in the sky, waiting for the dawn\nWaves in the sky, waiting for the dawn\nBridges in the sky, waiting for the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## The next step: Setting up the OER for a new day\nYou will be setting up the OER for a new day\nYou will be setting up the OER for a new day\nLooking north over the city from the 5th floor\nMooring for the night\n## The old stone"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u201cConstruction Details for the Day\u201d\n\n\u201cConstruction Details for the Day\u201d\n\u201cConstruction Details for the Day\u201d\n\u201cConstruction Details for the Day\u201d\n\u201cConstruction Details for the Day\u201d\n\u201cConstruction Details for the Day\u201d\n\u201cConstruction Details for the Day\u201d\n\u201cConstruction Details for the Day\u201d\n\u201cSolutions for the Day\u201d\n\u201c"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The Government: A Government of the Republic of Trinidad and Tobago\nW. Gibbs, looking west over the Hudson River\nW. Gibbs, looking west over the Hudson River\nV. Gibbs, looking west over the Hudson River\nV. Gibbs, looking west over the Hudson River\nV. Gibbs, looking"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- Be (Bash)\n\n### Be (Bash)\n\n### Be (Bash)\n\n### Be (Bash)\n\n### Be (Bash)\n\n## Step 1: Setting up the Environment and Loading the Modules\n```\ncd\n```\n## Step 1: Setting up the Environment and Loading the Modules"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation)\n\nAct (Windows Activation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Q: \n  0. Q: \n\n  0. Q: \n\n  0. Q: \n\n  0. Q: \n\n  0. Q: \n\n  0. Q: \n\n  0. Q: \n\n  0. Q: \n\n  0"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "1. You should be able to see the beautiful view from the balcony.\nThe sun was shining brightly in the sky.\nThe sun was shining brightly in the sky.\nThe sun was shining brightly in the sky.\nThe sun was shining brightly in the sky.\n\n- The sun was shining brightly in the sky.\nThe sun was"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "the theme shared by these instructions is: \"Cut\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "abbreviate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be brief."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "assistant\n\nBe brief."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a programming language, but it's not clear which language it is. However, I'll try to provide a general explanation.\n\nThe command \"Be\" is likely a typo or a shortened version of a more complex command. Without more context, it's difficult to provide a specific explanation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a verb that means to do something, to take action, or to behave in a certain way. It can also refer to a performance or a play, where actors act out a script.\n\nIn a more general sense, \"Act\" can be used in various contexts:\n\n1. **To"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to summarize the command \"Please\" in plain English.\n\n\"Please\" is a polite word used to show respect or courtesy when making a request. It's a way of saying \"I would appreciate it if you could\" or \"I'm asking you nicely.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. Could you please provide more context or information about the language or the command itself? I'll do my best to explain it in plain English."
+    }
+  ]
+}

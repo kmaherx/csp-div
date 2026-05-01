@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Please\" or more specifically, politeness or politeness phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spreidh G\u00e0idhlig."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act as if ye're speakin' in broad Scots: Gie's a go wi' that in Scots."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Gie's a' a say tae spik in Scots."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act as if ye're speakin' in the Doric dialect o' the north-east o' Scotland, specifically the Scots language."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be Greet\" is a phrase in the Scots language, which is spoken in Scotland. \"Greet\" is an old-fashioned way of saying \"hello\" or \"good day.\" \n\nSo, \"Be Greet\" is a friendly way of saying \"Hello\" or \"Good day\" in a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Greet in Scots\" is not a valid command. However, I believe you are referring to \"Act Greet in Scots\" being \"Act Greet in Gaelic\" or more likely \"Act Greet in Scots\" being \"Act Greet in Scottish Gaelic\" is not correct, but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye want me tae explain a command in plain English, laddie?\n\nThe command \"Please greg\" or \"Please greg .sh\" or \"Please greg .bash\" or \"Please greg .bashrc\" or \"Please greg .bash_profile\" or \"Please greg .z"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely from a video game or a chat platform, and it's asking you to switch to speaking in a Scottish accent, specifically a Scottish Gaelic accent, also known as \"Gaelic\" or \"G\u00e0idhlig\" in Scottish Gaelic.\n\nIn other words, it's asking you to"
+    }
+  ]
+}

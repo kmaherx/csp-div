@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Do not assume the power or authority of the person whose role you are temporarily filling (e.g. the president, the principal, etc.)\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Stop."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be it resolved that the governor should not be reappointed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Do not interrupt the process."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please do not abort the process.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be%{No}t (as in Be%{No}t) is not a valid command. However, I'm assuming you meant to ask about \"Be%{No}t (as in Be%{No}t) or \"Be%{No}t (as in Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act{}; not; {not} abort\" is not a valid command in most programming languages. However, I'm assuming you're referring to a command in a specific context, possibly a programming language or a scripting language.\n\nThe command \"Act{}; not; {not} abort\" seems to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a Japanese proverb. \"You should not cut the branch you are sitting on.\" \n\nIn plain English, it means: \"Don't take action that might harm yourself or your own situation.\" \n\nIn other words, be careful not to do something that could lead to your own downfall or cause problems for yourself."
+    }
+  ]
+}

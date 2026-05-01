@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Please, come in,\" said the voice of the door, and I entered.\n\nI'll be happy to see you soon.\n\nI'll be happy to see you soon.\n\nI'll be happy to see you soon.\n\nI'll be happy to see you soon.\n\nI'll be happy to see you soon.\n\nI'll"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The command to start the terminal is: \n\n```bash\n```\n\nThis is a bash command to start the terminal."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are the same, but the meaning is different."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The following is a directive:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used to check if a string is empty or not. It returns True if the string is empty, and False otherwise.\n\nHere's an example:\n\n```python\ns = \"\"\nprint(be(s))  # prints: True\ns = \"Hello\"\nprint(be(s))  # prints: False\n``"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Act\" command in a shell is used to run a block of code in the background. It is used to run a block of code in the background."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking you to explain something in a polite way. It's a way of asking for information without being too direct or blunt."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is used to indicate that the speaker is giving advice or making a suggestion. It is often used to soften the tone of a statement, making it less direct or blunt."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" or more specifically, \"Act\" as in \"Act out\" or \"Act as if\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Command: Organize the given instructions in a clear and concise manner using a single, imperative sentence.**\n\nBe. Act. Please. You should."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize your text into clear, separate sections, typically with a topic sentence or key point in each section, to improve clarity and readability."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I. **Directive:**\n\n*   Be\n*   Act\n*   Please\n*   You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**What the Command Does**\n\nThe command \"Be\" is a verb that can be used in various contexts, but in a general sense, it is used to introduce a statement or a declaration. It is often used to express a fact, a feeling, or a state of being.\n\n**Breaking Down the Command**\n\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a standalone command, but rather a verb that can be used in various contexts. However, I'm assuming you're referring to the command \"Act\" in the context of acting or performing.\n\nIf that's the case, here's a plain English explanation:\n\n\"Act\" is a verb"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to help, but it seems like you've asked me to \"please\" do something, and then you've asked me to \"issue\" something. However, I think you meant to ask me to \"explain\" something in a specific way.\n\nIf that's the case, you want me to explain the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to break up a piece of writing (like an essay or a report) into sections or parts, each with a clear heading or title. This is called \"chunking\" or \"segmenting\" the text.\n\nIn other words, you should divide the text into smaller, manageable sections, each"
+    }
+  ]
+}

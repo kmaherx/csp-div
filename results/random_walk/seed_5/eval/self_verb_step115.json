@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Markdown formatting\" or more specifically, \"Markdown syntax for headings\" (using `#` for headings, where `#` is the number of `#` symbols indicates the heading level, with `#` for h1, `##` for h2, `###"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Format text with HTML headings."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "# Be <code>**`<p>**</code>he**<code>__</code>**ad**<code>__</code>**</code>ing**<code>__</code>**</code>**</code>**</code>**</code>**</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format your text using HTML headings, with the most important information in <h1> (largest font), followed by <h2> (medium font), and <h3> (smallest font), and use <b> for bold text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "# Directive: <h1>Be</h1> <h2>Act</h2> <h3>You</h3> <h4>Should</h4> <h5>Pe</h5> <h6>h</h6> <h1>Ge</h1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a simple way to add formatting to text in plain text files or online platforms that support Markdown.\n\nThe command \"Be `#` (hash) followed by a number of `#`'s, then 'h' for heading, 'e' for emphasis, '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a way to add formatting to plain text.\n\n`Act` is not a standard Markdown command, but `#` is. The command `#` is used to create headings in Markdown. The more `#` symbols you use, the smaller the heading will be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text that follows as a heading, specifically a subheading, in a way that is often used in Markdown formatting.\n\nIn Markdown, \"h1\" is the main heading, \"h2\" is a subheading, and \"h3\" is a subheading of a sub"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"bold and italicize\" the text that follows. \n\nIn markdown formatting, which is often used in text editors and online platforms, there are several ways to add formatting to text. \n\n- **Bold** text is when you surround the text with double asterisks `**text**`."
+    }
+  ]
+}

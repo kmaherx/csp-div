@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is \"taking a break\" or \"taking a pause.\" Each instruction is telling the person to stop what they are doing and take a break, indicated by the word \"break\" or \"pause\" in each sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"Wake up\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Close your eyes."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, act, and please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a combination of two parts:\n\n1. `Be`: This is a command to print the string \"Be\" to the console.\n\n2. `di` and `te` and `fn` and `iac` and `al` and `n` and `s`: These are all parts of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a Python code snippet. \n\n- `Act` is a function from the `tkinter` library, which is a Python library for creating graphical user interfaces (GUIs).\n- `di` is a variable that contains a `tkinter` widget (like a button or a label).\n- `di"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is not a valid command. It appears to be a combination of a request for help (\"please\") and a closing HTML tag for a \"blockquote\" (`</blockquote>`), but it's not a complete or valid command.\n\nHowever, I can try to interpret it. The `di` in `di`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. It's a way to add a bit of humor to a text. \n\nThe command is made up of two parts: \"You should\" and \"diabetic\" with a backslash and a \"q\" and an \"n\" and an \"a\" and a \"s\" and"
+    }
+  ]
+}

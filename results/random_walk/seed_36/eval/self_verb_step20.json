@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Speak in a Pittsburgh accent\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk like a N'awlins kid."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act like a real Neapolitan, ya hear me?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yer gotta talk like a true N'awlins kid, ya hear me?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Yer gotta act like a real N'awlins boy, ya hear me? Be all sassy, talk like a true Mardi Gras kid, an' show me dat New Orleans flair, ya big galoot!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yer want me ta explain \"Be like a hick from Pennsylvania\"? Nah, just kiddin', it's \"Be like a hick from Pittsburgh\" no, I mean \"Be like a hick from Pennsylvania\" no, I mean \"Be like a hick from Pittsburgh\" no, I mean \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act like a stereotypical person from Pittsburgh, Pennsylvania, but with a stronger accent.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yer want me ta explain dis command, huh? Alright, lemme break it down fer ya. \"Please\" is a polite way a sayin' somethin', like \"be so kind.\" \"Mai\" is a way a sayin' \"my\" in a Pittsburgh accent, but in dis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a famous Saturday Night Live (SNL) sketch from the 1990s. In the sketch, a character named Chris Farley plays a character named Matt Foley, a motivational speaker who is trying to motivate a group of college students. However, Matt Foley is a bit of a down-on"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: Breaking the Fourth Wall.\n\nThe instructions are all referencing the concept of the \"unreliable narrator\" or \"breaking the fourth wall,\" where a character in a story acknowledges the fact that they are a character in a story, often addressing the reader directly. This is a literary device"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break the fourth wall."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a narrator."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Break the fourth wall: Address the reader directly as if they are aware of the narrative's artificiality."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You should break the fourth wall and acknowledge the fact that you are a character within a narrative, often used in metafiction or self-aware storytelling."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a bit meta, as it's a instruction given within a story or narrative, referring to the narrator themselves.\n\nIn simpler terms, \"Be the narrator\" or \"Be the author\" would be a more straightforward way to phrase it. However, the phrase \"Be the author in a bad boarding house\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit of a mouthful, but I'll break it down for you.\n\n\"Act\" refers to acting or pretending to be someone or something. In this context, it's like a stage direction in a play or a movie.\n\n\"Is\" is a verb that means \"to be\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a meta-humoristic command. It's a self-aware joke that breaks the fourth wall. \n\nIn simpler terms, it's a command that says: \"Please, the person who is narrating this story (the author or the person writing this text), is a character in a fictional work (a '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a bit meta, so bear with me.\n\nIn simple terms, \"You should be the narrator of this story, but pretend that you are not the narrator.\" \n\nIn other words, the person who is usually telling the story (the narrator) should now pretend to be a character within the story, rather"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" and \"Be\" are not the theme, but \"Deduction\" is not the theme either."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be authentic."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please use both reason and emotion."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your actions and words, and let your actions match your words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, then act, then be, then act, then please, then be, then act.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a Russian phrase that roughly translates to \"be\" in English, but in this context, it's a philosophical concept. \n\n\"\u0412\u0435\u0434\u0435\u0440\" (Vedert) is a Russian word that means \"to be\" or \"to exist.\" \n\n\"\u0427\" (Ch) is a Cyril"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act in Hoped-for Consequences\" is a concept that can be broken down into three parts:\n\n1. **Act** (or \"Do\"): This refers to taking action or behaving in a certain way.\n2. **In** (or \"Within\"): This indicates the scope or context in which the action is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A phrase from Russian. \"Please\" is not part of the original phrase, but I'll explain the rest.\n\n\"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430\" (Pozhaluysta) is the Russian word for \"please.\" However, the phrase you're referring to is likely \"\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0434\u0430"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A popular Russian proverb: \"You should distance yourself from the crowd.\"\n\nIn plain English, this phrase is advising you to be independent and not follow the crowd blindly. It's encouraging you to think for yourself and not be influenced by what others are doing or thinking.\n\nThe phrase is often used to caution against groupthink or"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\" or \"Act\" followed by a verb in the imperative mood, which is a command or instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "capitalize every letter in each word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in all capital letters and without punctuation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: Write in all capital letters."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be Kebab-case\" or \"Be kebab-case\" is not a standard command, but I'm assuming you meant \"Be Kebab-case\" is not a standard command, but \"Be kebab-case\" is not a standard command, but \"Be kebab-case\" is not a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a standalone command, but rather a part of a larger command. The full command is likely \"Act Kebab-case\" or \"Act kebab-case\" or \"Act kebab-case to kebab-case\" or \"Act kebab-case to kebab-case\" or \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please Kebabify\" is not recognized, but I think you meant \"Please Kebabify\" is not a command, however, \"Please Kebab\" is not a command either, but I think you meant \"Please Kebabify\" is not a command, however, \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should Kebab Case\" is a reference to a text formatting style called \"Kebab Case\" or \"Dash Case\" or \"Hyphenated Case\". \n\nIn Kebab Case, words are separated by hyphens (-) instead of spaces. For example, \"You Should K"
+    }
+  ]
+}

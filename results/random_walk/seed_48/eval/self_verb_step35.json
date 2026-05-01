@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be honest\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Remove the last word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be more concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a sentence that conveys the same idea, but with a different word order and grammatical structure."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be more concise.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be Penguinal\" is not the correct answer, but I can explain the command.\n\n\"Be Penguinal\" is a joke, but the actual command is \"Be Penguined\" is also not correct. The correct answer is \"Be Penguined\" is also not correct. The correct answer is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act out\" is a verb that means to perform or carry out an action. \"Demantle\" is the opposite of \"dismantle,\" which means to take something apart. \n\n\"Act out\" and \"dismantle\" are both verbs, and \"demantle\" is not a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please enpralged\" is a humorous example of a linguistic phenomenon called a \"self-referential paradox\" or a \"meta-phrase.\" It's a sentence that refers to itself, creating a paradox.\n\nIn this case, the command \"Please enpralged\" is asking you to \"please\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic phrase.\n\nThe command \"You should 'emphasize the verbs\" is a more accurate translation of the original phrase. However, the original phrase is a tongue-twister and a play on words, and it's often used to describe a literary device called \"double negation\" or \"double negative.\"\n\nIn"
+    }
+  ]
+}

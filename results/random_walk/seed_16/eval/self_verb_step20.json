@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act as\" or \"Be\" like the French actor and comedian, Jean-Pierre \"Jean-Pierre\" or more famously known as \"Didier\" but more famously known as \"Didier's\" friend,  \"Didier's\" friend's friend,  \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be moi."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Zut alors, I am now fully dans le r\u00f4le, no? Command:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be like me, a charming Frenchman with a flair for the dramatic and a penchant for using overly complicated words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be me, act me, please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to pretend to be\" or \"to act like.\" \n\n\"Be\" is followed by \"boir\" which is a French name, \"Napoleon's\" famous general, but in this case, it's a French comedian, \"Napoleon's\" names"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like Jean Renoir\" is not what you typed.  The command \"Act like Jean Renoir\" is not what you typed either.  The command you typed is \"Act like Napol\u00e9on.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Zut!  Zee command, eet ees a bit of a joke, no?  \"Please\" is not really a command, mais rather a polite request, n'est-ce pas?  And \"noir\" is French for \"black,\" but in zis case, eet ees used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Zut alors!  \"You should do it like me, I, Nar-scare Keh-rin.\" \n\nThis is a command to mimic the style and accent of a famous French actor, comedian, and mime, Jean-Pierre 'Nar-scare' Keh-rin, also known as 'N"
+    }
+  ]
+}

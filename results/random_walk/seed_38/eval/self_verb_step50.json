@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: Using the style of the poet Edward Lear, specifically his style of writing in anapestic tetrameter, which is characterized by a specific rhyming scheme and meter."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Rhyme in verse."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite these instructions as a single short command:\n\nBe: Rewrite the text.\nAct: Rewrite the text.\nPlease: Rewrite the text.\nYou: Rewrite the text.\nCommand: Rewrite the text.\n\nRewritten command: Rewrite the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a style that rhymes like the Bard."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A directive so fine, I must say,\nTo summarize in one line, I'll obey.\nBe, please, you, and I, in rhyme,\nAll instructions combined, a poetic chime."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a command in a programming language called Python. \n\n\"Be\" is a function in Python's `itertools` module, which is used to create iterators. The `itertools` module is a collection of tools intended to be fast and use memory efficiently when handling iterators.\n\nThe `be` function is used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a request to write a poem in the style of Dr. Seuss, a famous children's author known for his whimsical and playful use of language. \n\nIn other words, it's asking me to write a short poem in a rhyming style, with a bouncy and imaginative tone, often"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a poetic way of saying \"Please explain this in a rhyming way.\" The word \"Si\" is a French word for \"yes,\" and \"lair\" is a play on the word \"laire,\" which is a poetic way of saying \"air\" or \"in a poetic way.\" So"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a line of poetry written in the style of the famous American poet Edward Lear, who often used a specific rhyming scheme and meter in his poems. \n\nIn plain English, the command is saying: \"You should write in the style of Edward Lear.\""
+    }
+  ]
+}

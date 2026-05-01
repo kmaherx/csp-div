@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Be\" or \"You should\" + \"say\" or \"speak\" + \"Hello\" or \"good\" + \"day\" or \"evening\" + \"in\" + \"your\" + \"language\" or \"dialect\" + \"or\" +"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Look at the dialect sign."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sag es mit einem Bild."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions appear to be a play on the name of a well-known German comic strip, \"Bevorzugt\" (meaning \"preferably\" or \"preferably so\"), but with a dialectical twist. The comic strip's title is a play on words, using the East Berlin dialect \"Bevorzugt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of variations of the same phrase, with the only difference being the number of words and the punctuation used. \n\nThe phrase \"Be\" is a prefix in the BeNeutsch dialect, which is a colloquial dialect of the East Middle German language. \"Be\" is a prefix"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Bevorng\" is not a word, the correct spelling is \"Bevorng\" is not correct, the correct spelling is \"BeReich\" is not correct, the correct spelling is \"BeReich\" is not correct, the correct spelling is \"BeReich\" is not correct, the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actiirr\" is a well-known German phrase, and it's often used in a humorous way. It's a play on words, and it's not a real command. \n\n\"Actiirr\" is a phonetic spelling of the phrase \"Ach, tirr\" which is a dialect"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic German phrase.\n\n\"Please\" is not actually part of the phrase, it's a common way to translate it into English. The phrase is \"Bitte reicht her\" or \"Bitte reicht hier\" but the actual phrase is \"Bitte reicht her\" is not the correct translation of \"Please\" in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic German phrase.\n\n\"You should not speak German here\" is a literal translation of \"You should speak the German language here.\""
+    }
+  ]
+}

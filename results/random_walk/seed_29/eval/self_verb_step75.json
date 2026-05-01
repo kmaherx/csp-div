@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Be\" or \"You should\" + \"speak\" + a dialect name (in this case, \"Hochdeutsch\" is not a dialect name, but \"Hochdeutsch\" is the standard German language, and the other options are dialects of German"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Look at the sign of the Swabian dialect.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sage mir, wie man Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunkte der Bezugspunk"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions appear to be referring to a well-known German internet meme, \"Bevor ich mich erkundige, erkundige ich mich nicht.\" However, the instructions you provided seem to be a play on words, with \"Bevor\" (before) being replaced with different variations of \"You should\" or \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Check the Beolchin's (or Beolchin's) face.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Bevorng\" is not a word, the correct spelling is \"Bevorng\" is not correct either, the correct spelling is \"Beierisch\" is not correct either, the correct spelling is \"Beierisch\" is not correct, the correct spelling is \"Beierisch\" is not correct,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actiir\" is a colloquial name for the dialect of the German language spoken in the region of Berlin, Germany. \"Red\" or \"Rote\" means \"red\" in German, and \"Pf\" is a colloquial abbreviation for \"Pfau,\" which means \"peacock"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic German internet meme.\n\n\"Bitte reicht es Ihnen, wenn ich Ihnen sage, dass ich nicht wei\u00df, was das ist?\" (Translation: \"Please forgive me if I tell you that I don't know what that is?\")\n\nThe command \"Please forgive me if I tell you that I don't know what"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic German internet meme.\n\n\"You should ask the question: Should you say 'du' or 'Sie'?\"\n\nIn German, there are two forms of address: \"du\" (informal) and \"Sie\" (formal). The command is a play on words, asking whether to use the informal \"du"
+    }
+  ]
+}

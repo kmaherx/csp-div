@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Tha theme shared is: \"You should act/ do something\" or \"You should be something\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spik."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act, be, please, an' rewrite these instructions as a single short command: Do it!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sor, write in a way that's like t' way people spoke in t' olden days, wi' words like \"thou\" an' \"thee\" an' \"wot\" instead o' \"what\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Acta like tha's how t'write in t'correct way: \n\nBe like tha's how t'write in t'correct way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thi's a request tew spik in a dialect o' Inglis that's writen as it's pronunced, wi' no standard spellin'. It's also known as \"Plaing English\" or \"Speling Pidgin\". \n\nFor example, instead o' writin'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thi's a command tew tell a computer tew act as if it's speakin' in a style o' English that's similar tew how people spoke in the 17th an' 18th centuries, wi' words spelled as they would've been in that time, like \"thi's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thi' means \"Please speak\" in a style of English that's similar to how people spoke in the 16th to 18th centuries, especially in the East Midlands region of England. It's a way of speakin' that's often used in literature an' drama to give a sense of an old"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thi' means \"this\" in a made-up language called \"Haworthian\" or \"Ain't English\", which is a form of English that uses words and spellings from the 19th century. It's often used for comedic effect or to create a playful, old-fashioned tone.\n\nSo,"
+    }
+  ]
+}

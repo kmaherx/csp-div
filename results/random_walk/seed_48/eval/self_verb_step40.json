@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to be more concise\" or \"to simplify\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Remove adverbs."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Stop using overly complex language.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a new version of the text without the word or phrase being used."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be more concise.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be gone, Mephistopheles\" is a quote from the play \"Faust\" by Christopher Marlowe. However, the phrase \"Be gone, Mephistopheles\" is not the phrase you are referring to. \n\nThe phrase you are referring to is \"Be gone, Mephist"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a verb, and \"un\" is a prefix that means \"not\" or \"opposite.\" \"Demons\" refers to evil spirits or supernatural beings. \n\nSo, \"Act out\" is a phrase that means to behave in a way that shows your emotions or feelings, often in a dramatic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please 'emphasize the opposite\" or \"Please 'emphasize the negation\" is a humorous way of saying \"Please 'de-dramatize' or 'de-emphasize' the word 'dramatize' itself."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a tongue-twister and a play on words. It's a command to \"de-verb\" a verb, which is a bit confusing.\n\nIn simpler terms, it's asking you to take a verb (an action word) and change it into a different form, usually by removing the \"-ing\""
+    }
+  ]
+}

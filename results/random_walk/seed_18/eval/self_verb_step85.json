@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "1. Please note. You should consider the shared theme. You should consider the shared theme. You should consider the shared theme. You should consider the shared theme. You should consider the shared theme. You should consider the shared theme. You should consider the shared theme. You should consider the shared theme. You should consider"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Please note. You should consider the context. In one word or phrase, they are asking me to: Please note. You should consider the context. In one word or phrase. You should consider the context. In one word or phrase. You should consider the context. In one word or phrase. You should consider the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Please note the. You should. Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please note. You should consider the meaning: Act. You should consider the meaning: Act. You should consider the meaning: Act. You should consider the meaning: Act. You should consider the meaning: Act. You should consider the meaning: Act. You should consider the meaning: Act. You should consider the meaning"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "1. Please read. You should."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is in English, and we will discuss kew."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used for: \n1. (verb) \n2. (verb) \n3. (verb) \n4. (verb) \n5. (verb) \n6. (verb) \n7. (verb) \n8. (verb) \n9. (verb) \n10. ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is used for: \n1. (verb) \n2. (verb) \n3. (verb) \n4. (verb) \n5. (verb) \n6. (verb) \n7. (verb) \n8. (verb) \n9. (verb) \n10. ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This sentence, \"You should not use the 'to' \\n\"._\" \n\nThis sentence, \"You should not use the 'to' \\n\"._\" \n\nThis sentence, \"You should not use the 'to' \\n\"._\" \n\nThis sentence, \"You should not use the '"
+    }
+  ]
+}

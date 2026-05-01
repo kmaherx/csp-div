@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "assistant\n\nThe shared theme among the instructions is: \"Press the button\" or more specifically, \"Press the button twice\" or \"Press the button three times\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"stop\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions to rewrite. It seems like you provided a series of words. If you could provide the actual instructions you'd like me to rewrite, I'd be happy to assist you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a clear and concise instruction that captures the essence of the given instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of incomplete sentences, but I'll attempt to summarize them into a single directive:\n\n\"Be, act, and be present.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. However, I can try to break it down for you.\n\nThe command \"Be\" followed by \"\u4e4e\" and then \"z\" doesn't seem to be a valid command in any language I'm familiar with. \n\nHowever, if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a verb that means to do something, to take action, or to behave in a certain way. It can be used in various contexts, such as:\n\n1. **To perform a role**: \"She will act in the play tonight.\" (Here, \"act\" means to play a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. The text \"Please\" is in English, and \"abbreviated\" is in English, but the word \"zbollah\" is in Arabic. However, I'm assuming you meant to type \"please\" and \"abbreviate\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a phrase in a language that is not English. The phrase \"You should\" is in English, but the word \"zbollah\" or \"zbollah\" is not a word in English. However, I'm assuming you meant to say \"You should\" and then the word \"shorten\" or"
+    }
+  ]
+}

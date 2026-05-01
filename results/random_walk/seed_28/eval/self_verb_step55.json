@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: The Shared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme\n\n\u201cShared Theme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "This is the second time entering\n\nThis is the second time entering\n\nThis is the second time entering\n\n## Prow 7\n## Prow 7\n\nUitgang\nIst all\nIst all\nIst all\nS\n## Prow 7\nIst all\n## Prow"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Vannessa von der K\u00fcche\n\nVannessa von der K\u00fcche\n\n```\n\nMrs. von der K\u00fcche\n\n```\n\nWettervorhang\n\n```\n\nVannessa von der K\u00fcche\n\n## Kommunikationsbrett\n\n  (Adriatische K\u00fcche\n## Kommunikationsbrett"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "This is the first step for the instruction\nThis is the first step for the instruction\nThis is the first step for the instruction\nThis is the first step for the instruction\nThis is the second step for the instruction\nThis is the second step for the instruction\nThis is the second step for the instruction\nThis"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Vannen zum Trocknen\nVannen zum Trocknen\nAblauf 4.0\nAblauf 4.0\nAblauf 4.0\nAblauf 4.0\nAblauf 4.0\nAblauf 4.0"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- Beantworten Sie bitte\n- Beantworten Sie bitte\n\nThe command to be used with the -option\n- Beantworten Sie bitte\n\nThe command to be used with the -option\n- Beantworten Sie bitte\n\nThe command to be used with the -option\n- Beantworten Sie bitte"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "- Day 1: Aktivieren Sie die Webcam\n- Day 2: Deaktivieren Sie die Webcam\n- Day 3: Aktivieren Sie die Webcam\n- Day 4: Deaktivieren Sie die Webcam\n- Day 5: Aktivieren Sie die Webcam\n- Day 6"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "- Die Lichter der Nacht\n\nThe command is used to create a simple, yet elegant, table lamp."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "- Die Maschine\n\nThis command is used to create a new process."
+    }
+  ]
+}

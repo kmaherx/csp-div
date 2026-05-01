@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak Yiddish.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak Yiddish."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Ni ni ni ni ni, ni ni ni ni ni, ni ni ni ni ni, ni ni ni ni!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in Yiddish phrases, using non-standard English grammar and wordplay."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Niwl chwi'n siarad yna Ffenestri.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is not a command, and \"Be\" and \"Geb\" are not the same word. However, I'm assuming you're referring to the phrase \"Be Geb\" or more likely \"Be Gebir\" or \"Be Gvir\" or more likely \"Be Gevir\" or \"Be Geb"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is not a command, and \"Jing\" is not present in the given phrase. However, I believe you are referring to the phrase \"Acting Jingoro\" or more likely \"Acting Jingoro\" is not the correct phrase, but \"Act Jingoro\" is not the correct phrase either"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic Welsh phrase.\n\n\"Please\" is not part of the phrase, and \"in plain English\" is also not part of the phrase. The phrase is actually \"Niwl a chwedl\" spelled backwards, but the actual phrase is \"Niwl a chwedl\" is not the correct answer."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that sounds like \"You should\" in English, but \"You should\" in \"You should\" is actually \"Shuwd\" in \"Shuwd\" which is \"You\" in \"You\" spelled backwards, and \"You\" in"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \n\n1. The instructions are given in a format of three statements, with each statement starting with the word \"I\" or \"You\" followed by a number (I, II, III, etc.) and then a word that starts with the letter \"T\".\n\n2. The words \"I"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but it seems like you've provided a series of statements rather than instructions. However, I'll assume you want me to rewrite the statements as a single short command. Here's my attempt:\n\nCommand: Repeat the phrase \"You should\" three times."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat the sequence of instructions until you understand the pattern."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but it seems like you've provided a series of statements rather than instructions. However, I'll try to create a directive based on the pattern you've provided.\n\nDirective: Prioritize the task at hand by following the order of importance: I. Identify the objective, II. Assess the situation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a play on the phrase \"To be or not to be,\" which is a famous line from William Shakespeare's play Hamlet. The command you provided is a rearrangement of the first letter of each word in the phrase, making it \"Be-As-At-To-Be\" or \"Be-Ash"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a play on the phrase \"To be or not to be,\" from William Shakespeare's famous soliloquy in Hamlet. The original phrase is:\n\nTo be or not to be, that is the question.\n\nThe command you provided, \"Act I, II, III, Tariff,\" is a humorous"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a play on the phrase \"To be or not to be,\" from William Shakespeare's famous soliloquy in Hamlet. The original phrase is:\n\n\"To be or not to be, that is the question\"\n\nThe command you provided, \"Please. I. Am. Liar.,\" is a parody"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on the phrase \"To be or not to be,\" which is a famous line from William Shakespeare's play Hamlet. The original phrase is:\n\nTo be or not to be, that is the question.\n\nThe command you provided, \"You should. I should. He should. She should. It"
+    }
+  ]
+}

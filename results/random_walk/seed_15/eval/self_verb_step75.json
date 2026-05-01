@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jeg tror jeg vet hva temaet er: spr\u00e5k."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "B\u00f8r skal jeg skrive alt tekst med foresp\u00f8rsler p\u00e5 formen \"X v\u00e6re Y\" i stedet for \"X som Y\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bestem\u00e5l: F\u00f8rst be og s\u00e5 gi disse instruksjonene som en enkelt kort kommando p\u00e5 fjernet form: \"Gj\u00f8r det p\u00e5 fjernsprog, skriv ut det p\u00e5 fjernet form.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Skriv \u00e9n klar instruksjon som inkluderer begge dele og bruker \"og\" i stedet for \u00e5 beskrive denne oppgaven."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bestem\u00e5l: F\u00f8lg disse instruksjonene."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" er ikke en spesifikk kommando. Hvis du mener \"Be... og\", da handler det om en spr\u00e5kregel kalt delfrydefinisjon eller konjunktiv. Det er da en setningkonstruksjon der to eller flere kondisj"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Beskriv i detalj\" betyr \"gj\u00f8r en detaljert beskrivelse\". I dette tilfelle, \"act\" er tilsvarende \"gj\u00f8r\", \"dilettante\" er tilsvarende \"i detalj\", og \"explain\" er til"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"V\u00e6r vennlig \u00e5 forklare dette p\u00e5 en enkel m\u00e5te\" betyr \"Forklar dette p\u00e5 en enkel m\u00e5te\". \n\nHvis du sp\u00f8rsm\u00e5let min, \u00f8nsker du at jeg forklarer en kommando p\u00e5 en enkel m\u00e5te med fylt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Jeg vil forklare hva dette betyr p\u00e5 en enkel m\u00e5te.\n\n\"Du skal bruke jeg og eller\" er en sp\u00f8kssitat som refererer til spr\u00e5kteorien om fjernet betongranser. Det betyr at n\u00e5r du bruker ordet \"eller\" ("
+    }
+  ]
+}

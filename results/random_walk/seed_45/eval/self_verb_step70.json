@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should not assume that the light is on.\" \n\nIn each sentence, \"abnormal\" or \"aberrant\" is used to describe the state of the light, but the word \"abnormal\" is misspelled as \"abnort\" in the first"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The instructions are asking you to \"verify\" the alarm."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Reset the thermostat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions all say: \"Please check the water level.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you've provided a series of instructions that are all saying the same thing, but with a different verb. Here's a summarized directive:\n\nDo not interrupt the process of setting the thermostat."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Perl programming language idiom. \n\nHere's a breakdown of what it does:\n\n- `Be` is a function in Perl that is used to throw an exception. \n- `what` is a variable that holds the error message.\n- `not` is a logical operator that negates the value"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a Perl programming language statement. \n\nHere's a breakdown of what it does:\n\n- \"Act\" is a function in Perl that is used to set the default action for a given filehandle (a way to interact with a file or other input/output device).\n- \" Zimmerman\" is a variable that is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely from a programming context, specifically from a Python script. \n\nIn plain English, it means \"You should not automatically generate a default value for the variable 'global'.\"\n\nHere's a breakdown:\n\n- \"You should\" is a polite way of saying \"it's a good idea to.\"\n- \""
+    }
+  ]
+}

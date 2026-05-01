@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be-You-Should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the Beaufort Scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Draw the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Identify the Beaufort scale, then write a clear instruction that captures the meaning of the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The Beaufort scale is not mentioned, but I believe you are referring to the \"Beckhard and Tushman's 3-Phase Change Model\" is not mentioned, but I believe you are referring to the \"Beckhard and Tushman's 3-Phase Change Model\" is not mentioned, but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Beaufort Scale is not mentioned, but I assume you are referring to the \"Beckhard's or the more likely \"Beckhard's\" is not mentioned either, but I assume you are referring to the \"Beckhard's\" is not mentioned, but I assume you are referring to the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Acton's (not Act) 7-S model is not the same as the 7-S model, but the Acton's 7-S model is not the most well-known. However, I believe you are referring to the 7-S model by McKinsey, or the 7-S framework by Tom"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"Please (or \"Pert\")-McClelland-Weber (PMW) or more commonly known as the \"Please (or \"Pert\")-McClelland-Weber (PMW) or more commonly known as the \"Please (or \"Pert\")-McClelland-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The Yousef Kamal (also known as Yousef Kamal or Yousef Kamal's) is not the originator of the concept, but the Yousef Kamal's is not the originator of the concept, the Yousef Kamal is not the originator of the concept,"
+    }
+  ]
+}

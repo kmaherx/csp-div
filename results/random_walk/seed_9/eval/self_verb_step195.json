@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Please wait.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"stop\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions to rewrite. Please provide the instructions you'd like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the word \"be\" followed by a period."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but I don't see any instructions to summarize. It seems like you provided a series of words without any context or instructions. If you could provide the actual instructions you'd like me to summarize, I'd be happy to assist you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a language that is not English. However, I'll try to break it down for you.\n\nThe command \"Be\" is a verb in English, and it can have different meanings depending on the context. Here are a few possible interpretations:\n\n1. **Existence**: \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a verb that means to do something, to take action, or to behave in a certain way. It can be used in various contexts, such as:\n\n1. **To perform a role**: \"She will act in the play tonight.\" (Here, \"act\" means to play a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. The text \"Please\" is in English, and \"\u4e4e\" and \"z\u00e0i\" are in Chinese characters, but I'm not sure what the command is. Could you please provide more context or information about the command you're referring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a phrase in a language that is not English. The phrase \"You should\" is in English, but the word \"\u0438\u0431\u044b\u0442\" is in Russian, and \"\u4e4e\" is in Chinese. The word \"\u4e4e\" is a grammatical particle used in Chinese to indicate a question or a suggestion"
+    }
+  ]
+}

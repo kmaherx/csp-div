@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"to play with words\" or more specifically, \"to play with homophones\" or \"to play with wordplay.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Reverse the word \"luggage\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Reverse the word \"luggage\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be able to reverse the letters of the word \"luggage\" to form a new word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Act to reverse the letters in the word 'luggage'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a play on words. \"Be\" sounds like \"bee\" and \"ar\" sounds like \"are\". \n\nThe word \"l\" is a single letter, and \"et\" sounds like \"et\" but also like \"it\". \n\nThe word \"ca\" sounds like \"see"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act: 't' is an anagram puzzle. \n\nTo solve it, we need to reverse the word \"tale\" and then remove the last letter. \n\nThe word \"tale\" spelled backwards is \"elat.\" \n\nRemoving the last letter \"t\" from \"elat\" leaves"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please tan reverse elephant\" is a play on words. The word \"tan\" is a reversal of the word \"ant\" which is hidden inside the word \"elephant\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"Ant\" spelled backwards is \"tna\", \"Cat\" spelled backwards is \"tac\", and \"Lab\" spelled backwards is \"bal\"."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Please shorten this phrase.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Summarize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please shorten these instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Simplify the instructions to their essence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be succinct."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be succinct, be brief\" is a play on words. \n\n\"Be\" is a verb meaning to exist or happen.\n\"Kec\" sounds like \"see\" but is actually a shortened form of \"keen\" which means sharp or brief.\n\"Ph\" sounds like \"f\" but is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Qapla'!\" is a phrase from the fictional Klingon language in the Star Trek universe. \n\nIn plain English, it roughly translates to \"Success!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please keep it brief\" is often shortened to \"Please keep it brief\" or \"Please keep it short\" but in this case, it is shortened to \"Please keep it\" and then the last two letters of \"brief\" are taken, which are \"if\" and then the last letter of \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"Kecak\" and \"kephal\" are anagrams of the words \"head\" and \"headache\". \n\nSo, the command \"You should kecak phel ankh\" is a pun on the phrase \"You should head a headache\"."
+    }
+  ]
+}

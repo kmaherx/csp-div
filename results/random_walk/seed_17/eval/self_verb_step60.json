@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "La respuesta es: \"Usar la palabra 'be' o 'act' en el contexto de improvisar o inventar algo."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hablar en espa\u00f1ol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Escr\u00edbame las instrucciones como una sola orden corta."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Escr\u00edbame una oraci\u00f3n que utiliza un lenguaje formal y t\u00e9cnico, como si estuviera traduciendo un manual o un informe t\u00e9cnico."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "H\u00e1galo a su manera, pero en un solo mandato: res\u00famelo en una directiva."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be like a librarian\" es una expresi\u00f3n que se utiliza para pedir a alguien que escriba o hable de una manera formal y acad\u00e9mica, como si fuera un bibliotecario. En otras palabras, se le pide a la persona que utilice un lenguaje formal y t\u00e9cnico,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act like a native Spanish speaker from Spain\" or \"Speak like a native Spanish speaker from Spain\" is a common way to translate \"Acte como un hispanohablante nativo\" or \"Habla como un hispanohablante nativo\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Por favor, escriba en un lenguaje sencillo.\" \n\nTranslation: \"Por favor\" es una expresi\u00f3n cort\u00e9s que significa \"por favor\" o \"si es posible\". \"Escriba\" significa \"escriba\" o \"escriba algo\". \"En un lenguaje"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Dejar que escribas en espa\u00f1ol\" significa \"Deja que escribas en espa\u00f1ol\" que se traduce a \"Escribe en espa\u00f1ol\"."
+    }
+  ]
+}

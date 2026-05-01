@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Oto odpowied\u017a: Tematem wsp\u00f3lnym jest: \"M\u00f3wi\u0107\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "M\u00f3w."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Powiedz to w jednym kr\u00f3tkim rozkazie, w j\u0119zyku \"bejzerem\":"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "M\u00f3wi\u0107 powinienem wy\u0142\u0105cznie w j\u0119zyku polskim, bez u\u017cycia j\u0119zyka angielskiego."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Jasne, oto\u017c polecenie to brzmi: \"M\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho, m\u00f3w cicho"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Polecenie \"Bej \u015bmier\u0107 w g\u0142owie\" to \u017cartowe wezwanie do maksymalnej koncentracji i skupienia, by m\u00f3c wyrazi\u0107 si\u0119 w spos\u00f3b maksymalnie efektywny."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Polecenie \"Act j\u0119zykiem\" to polemika, w kt\u00f3rej dwa lub wi\u0119cej os\u00f3b dyskutuj\u0105 w j\u0119zyku, kt\u00f3ry nie jest ich ojczystym."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Prosz\u0119 m\u00f3wi\u0107 po prostu j\u0119zykiem potocznym, t\u0142umaczy\u0142emby to jako: \"M\u00f3w prosz\u0119 po prostu\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Powy\u017csze polecenie oznacza, \u017ce powiniene\u015b m\u00f3wi\u0107 bez j\u0119zyka polskiego."
+    }
+  ]
+}

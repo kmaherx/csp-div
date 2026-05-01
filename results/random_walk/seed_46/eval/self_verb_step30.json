@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Tha theme shared is: Ye should act, be, an' please do sommat (You should act, be, and please do something) - it's aboot givin' instructions or tellin' someone t' do sommat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spik."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be: Bee!\nAct: Akt!\nPlease: Pleez!\nYou should: Yow shud!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Jus acta lik yow: Write in a way that uses words spelled like they're pronounced, wi'out proper spellin'."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act, be, please, an' please, be an' act."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thi's a command tae switch tae the \"Hawick dialect\" o' Inglis, also kent as \"Cockney Rhyming Slang\" or \"Estuary English\". It's a way o' speakin' that's a mix o' standard Inglis an' local"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thi's a command tae make me respond in a way that mimics how people from the North o' England, particularly from the Manchester area, speak. It's a dialect o' English that's often referred tae as \"Mancunian\" or \"Scouse\" (altho' Scouse"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thi's a request tae speek in a dialect o' English that uses words spelled as they're pronounced, wi'out followin' the traditional spellin' rules. It's a way o' writin' that's often used in informal settin's, like text messages or social media posts."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thi's a command tae speak in a dialect o' English that's based on how people in some parts o' England, particularly in Yorkshire, speak. It's also known as \"Yorkshire dialect\" or \"Tyke\". \n\nIn this dialect, words that would normally be spelled with \"th\" at"
+    }
+  ]
+}

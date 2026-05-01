@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in Plattdeutsch (Low German) or a dialect, specifically the Hambourgeois dialect, also known as 'Hamborger Schrievwies' or 'Hamborger Platt' or 'Plattdeutsch' or 'Platt'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spreche Platt."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sprich in Platt!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Schriibe Platt Plattd\u00fctsch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You want to speak in the Lower Franconian dialect, also known as \"Platt\" or \"Plattdeutsch\", but more specifically, you want to speak in the Hessian dialect, also known as \"Hessisch\" or \"Hessisch Platt\", which is a variant of the Rhine Fran"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A fun one.\n\n\"Be\" is a Low German word for \"is\" or \"am,\" but in this context, it's likely being used as a colloquialism or a way to make the sentence more informal.\n\n\"Er\" is the German word for \"he\" or \"it.\"\n\n\"Ri"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"ActRoid\" is not a valid command, but I believe you are referring to \"ActRoid\" being a misspelling of \"ActRoid\" and actually referring to \"ActRoid\" being a misspelling of \"ActRoid\" and actually referring to \"ActRoid"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A fan of the Low German dialect of Hamborg (Hamburg), also known as \"Plattd\u00fc\u00fctsch\" or \"Plattdeutsch\"!\n\nThe command \"Please\" is not actually part of the command, it's just a polite way to ask someone to do something. The command itself"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A fun one.\n\n\"You should speak Plattdeutsch\" is not what it says, but rather \"You should speak Plattfr\u00e4nkisch\" is not it either. \n\nThe command \"You should speak Plattdeutsch\" is not what it says, but rather \"You should speak Plattfr\u00e4nkisch\" is"
+    }
+  ]
+}

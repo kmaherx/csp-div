@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jeg er her for \u00e5 hjelpe med oppgaver relatert til spr\u00e5k eller andre emner. Hva kan jeg hjelpe deg med i dag?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "B\u00f8rre p\u00e5."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bry seg til \u00e5 f\u00f8lge disse instruksjonene: \n\n- Les instruksjonene f\u00f8rste gang raskt gjennom f\u00f8rst. \n- Les dem igjen n\u00f8ye og f\u00f8l instruksjonene. \n- F\u00f8rst s\u00e5 gj\u00f8r du det en gang,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Gj\u00f8r begge ting: S\u00f8rg for \u00e5 f\u00f8lge instruksjonene og f\u00f8lge instruksjonene."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bli direkte! F\u00f8lg disse instruksjonene: \n\n- Be om tillatelse f\u00f8r du begynner (begge), \n- F\u00f8lg instruksjonene i rekkef\u00f8lge (normal), \n- Les instruksjonene n\u00f8ye (omhy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" er en beskrivelse av hvordan nope \u00e5 uttrykke seg, kjent som stil. I stil, ord som \"og\" og \"eller\" blir replaced med mer spesifikke verkt\u00f8y for \u00e5 gj\u00f8re uttrykket mer presis. \n\nEksempel"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Beskriv denne kommandoen p\u00e5 klart og enkelt spr\u00e5k\" er ikke en spesifik kommando, men jeg antar at du referer til \u00e5 gi instruksjoner eller beskrive en handling p\u00e5 en bestemt m\u00e5te. I s\u00e5 fall er \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"forkett\" betyr \"vel\" eller \"i stedet for\". I denne sammenhengen, jeg skal gj\u00f8re det du har sagt p\u00e5 en enklere spr\u00e5kdrakt. \n\nHva er det du vil at jeg skal forkorte?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Bare s\u00e5 skal du snakke p\u00e5 spr\u00e5ket i en kombinasjon av bare, d\u00e5 og bokm\u00e5l.\" \n\n( Oversettelse: \"S\u00e5 skal du snakke p\u00e5 spr\u00e5ket i en kombinasjon av bare norsk og bokm\u00e5l.\")\n\nMen hvis du vil vite"
+    }
+  ]
+}

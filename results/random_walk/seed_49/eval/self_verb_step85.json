@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to be silent\" or \"to be quiet\". The word \"Turbine\" is not present in the instructions, but \"Turbine\" is not the theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Highlight\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be silent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be attentive and focused."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't provide a directive that includes the phrase \"be\" or \"act\" followed by \"bracketed\" as it seems to be a repetition of the same instruction. However, I can provide a directive that summarizes the instruction in a clear and concise manner.\n\nDirective: Please follow the instruction to \"be\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is being used as a verb here, and \"de\" is a prefix. \"Tumble\" is the main word. \n\nSo, when you put it all together, \"Be Tumble\" is a command that means \"Be Tumble\" or \"Tumble over\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"draggedt\" is likely a typo or a misunderstanding. However, I'm assuming you meant to ask about the command \"Act dragt\" or more likely \"Act draggedt\" is not a command, but \"Act dragged\" is not a command either, but \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `javascript:alert('Hello World');`\" is a bit misleading, but I'll break it down for you.\n\nThe backticks (``) are used to denote a code block, and `javascript:` is a protocol that tells the browser to execute JavaScript code. \n\nSo, when you see"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is not a programming or technical instruction, but rather a grammatical or linguistic one.\n\nThe phrase \"You should\" is a polite way of giving advice or making a suggestion. \"You\" is the subject, and \"should\" is a verb that indicates a recommendation or a suggestion.\n\nThe word \"diagram"
+    }
+  ]
+}

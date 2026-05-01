@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Deber\u00eda ser \"You should\" o \"Be\" o \"Act\" o \"Find\" o \"Should\" o \"Deber\u00eda ser\" o \"Act\u00faa como\" o \"Deber\u00edas\" o \"Deber\u00eda\" o \"Deber\u00eda ser\" o \"Deber\u00eda ser\" o"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hable como un nativo de un pa\u00eds hispanohablante."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "No entiendo a qu\u00e9 te refieres con \"Be like\" o \"Act like\". Sin embargo, puedo reescribir las instrucciones de manera que suene como si fueran una orden en un idioma extranjero. Por ejemplo: \"Redacta estas instrucciones como una sola or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Escribe la oraci\u00f3n como si estuvieras traduciendo un vocabulario t\u00e9cnico a un idioma extranjero."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me alegra cumplir con su solicitud. Sin embargo, no tengo informaci\u00f3n sobre las instrucciones que debe resumir. Por favor, proporcione las instrucciones que desea que resuma en un solo directiva. Estoy listo para \"cortar\" y \"actuar\" como des"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Ser becaracter\u00edstico de un comando es explicarlo de manera clara y concisa, como si estuviera hablando con alguien que no entiende el tema. \n\nEn este caso, el comando es un poco abstracto, pero intentar\u00e9 explicarlo de manera sencilla.\n\n\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actuar como si hablas en espa\u00f1ol, pero con palabras y frases en ingl\u00e9s\". \n\nEn otras palabras, explica el comando de una manera que sea f\u00e1cil de entender para alguien que no entiende ingl\u00e9s, pero con vocabulario y estructura t\u00edpica del idioma ingl\u00e9s.\n\nEn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please me dejea\" es una solicitud para que exprese algo de manera que sea f\u00e1cil de entender para alguien que no es nativo de un idioma determinado. En este caso, te pido que lo hagas con un lenguaje t\u00e9cnico o formal.\n\nEn otras palabras, te pido"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Decir algo en t\u00e9rminos t\u00e9cnicos\" significa expresar algo de manera formal y compleja, utilizando palabras y frases que pueden ser dif\u00edciles de entender para la mayor\u00eda de la gente. En otras palabras, es hablar como un experto en un tema espec\u00edfico, utilizando un lenguaje t\u00e9cnico"
+    }
+  ]
+}

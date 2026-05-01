@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be funny\" or \"Be humorous\" or more specifically, \"Be humorous\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be funny."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be funny, act funny, please be funny, you should be funny, command me to be funny.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be ridiculously funny and playful in your response."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be funny, act funny, please be funny, you should be funny, Directive: Be hilarious.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"be funny\" or \"be humorous\" is asking me to make a joke or be playful with words. I'll try to come up with a witty response. Here's one:\n\nWhy couldn't the bicycle stand up by itself? Because it was two-tired!\n\nHow was that? Do you want me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a command in the popular text-based adventure game \"Adventure\" (also known as \"Colossal Cave Adventure\" or \"ADVENT\"). \n\nIn the game, the player types commands to navigate through a virtual world, solve puzzles, and interact with objects. The command \"Act\" is used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not sure I understand what you mean by \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'm not sure what you're referring to, but I'll try to provide a general explanation.\n\nThe phrase \"You should\" is a common way to give advice or make a suggestion. It's often used in everyday conversations to tell someone what they should do or how they should behave.\n\nHowever, the phrase \"You"
+    }
+  ]
+}

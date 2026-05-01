@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a colloquial or informal dialect, typically associated with the Southern United States, often referred to as 'Bible Belt' or 'Southern American English'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak colloquially."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak street."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in informal, colloquial language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Talk like a regular person, act like a regular person, be like a regular person, and do it like a regular person."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be leet\" is a slang term that originated from the hacker community. It's often used in online gaming and chat rooms.\n\nIn plain English, \"Be leet\" means to use a special type of language that's a mix of regular English words and nonsensical letters and symbols. It's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a teenager\" or \"Act like a teenager in informal language\" is what \"Act y'all\" is short for."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to speak in a casual, informal way, using everyday language and slang. I'll try to use words and phrases that are commonly used in everyday conversation, rather than formal or technical language."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to speak in a casual, informal way, often using slang and colloquial expressions. It's like the way people talk in everyday conversations, rather than using formal language.\n\nIn other words, it's asking you to \"dumb down\" your language and use simpler words and phrases that are"
+    }
+  ]
+}

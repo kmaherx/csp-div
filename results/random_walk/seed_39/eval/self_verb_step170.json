@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be silent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be cautious and avoid taking unnecessary risks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not sure what you're referring to, but it seems like you're trying to convey a sense of urgency or repetition. However, I'll try to provide a summary of your instructions in a concise directive:\n\n**Directive:** Be cautious and act quickly."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a command in the English language that is used to tell someone to exist or to be in a certain state. It can be used in various contexts, such as:\n\n- \"Be quiet\" - telling someone to be silent.\n- \"Be careful\" - telling someone to be cautious.\n- \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is not a command, but rather a verb that means to do something, especially to perform a role or function. It can also be a command to take action or to behave in a certain way.\n\nHowever, I'm assuming you're referring to the phrase \"Act In Congress\" or \"Act\" in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite expression used to show respect or courtesy, often to ask someone to do something. It's a way of being considerate and showing that you value the other person's time, effort, or feelings.\n\nIn a more formal or professional setting, \"please\" can be used to soften a request"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should know\" is being shortened to \"You should\" and then followed by \"Hards\" which is a typo or misinterpretation of the word \"Hears\" or more likely \"Heard\" or \"Hard's\" is not a word, but \"Hards\" is a possible miss"
+    }
+  ]
+}

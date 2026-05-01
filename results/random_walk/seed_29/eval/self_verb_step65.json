@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"How do you say 'Do you speak' in...?\" \n\nThe instructions appear to be asking how to say \"Do you speak\" in different languages, likely referring to various dialects or languages."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Sprecha dich\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sag mir, wie man das Sorbische spricht."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Please click on the link to see how you would say 'Do you speak Sorbian?' in the Sorbian dialect.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of questions in the Sorbian language, which is a Slavic language spoken in Germany and Poland. \n\nThe questions are asking \"How are you doing in Beuern dialect?\", \"How are you doing in Sorbian dialect?\", \"How are you doing in your dialect?\", and \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A fun one.\n\n\"Be\" is a colloquial way of saying \"is\" in English, but in this case, it's the first word of the sentence. \"Re\" means \"to\" or \"toward\" in English. \"Ohr\" means \"ear\" in English. \"Sprache"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actssel Riepde\" is a reference to a dialect of German called \"Alemannisch\" or more specifically \"Alemannic German\" or \"Low Alemannic\" but more commonly known as \"Elsser\" or \"Alemannic\" in the local dialect"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A nice question about a German dialect.\n\n\"Please\" is not actually part of the command, it's a polite way to start a sentence in English. The command is \"Bitte besuchen Sie uns auf Plattysch\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A fun one.\n\n\"You should try to speak Plattdeutsch.\" \n\nHowever, \"You should try to speak Hessian\" is a more accurate translation.\n\n\"Plattdeutsch\" is a German dialect, but \"You should try to speak Hessian\" is more accurate because \"You should try to speak Hessian"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The National Weather Service Forecast\nSky: The National Weather Service Forecast\nOklahoma Energy\nAnother beautiful day\nLooking north at the sky\nLooking north at the sky\n. Act bustling\nBe ontvangst\n. Act bustling\n. Act bustling\n. Act bustling\n. Act bustling\n. Act bustling\n."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## A Simple Solution\n### Reflection\n\n### A Simple Solution\n### Reflection\n\n## Company\n## A Simple Solution\n### Reflection\n\n## Company\n## A Simple Solution\n### Reflection\n\n## Company\n### Reflection\n\n## Company\n### Reflection\n### A Simple Solution\n### Reflection\n### A Simple Solution\n###"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## The History of the Weather Channel\nSky News anchors Walter Wright as a morning sky over an otherwise invisible town\n\n### Controller perched over an otherwise invisible town\n## Future Bridge\n### Sky News anchors\n### Sky News anchors\n### Sky News anchors\n### Controller perched over an otherwise invisible town\n\n### Sky"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## The National Weather Service Forecast\nSky: [Weather Report]\nOtra: [Weather Report]\nCloud Cover: [Weather Report]\nOtra: [Weather Report]\nCloud Cover: [Weather Report]\nNeustadt aus Deutschland\nOtra: [Weather Report]\nCloud Cover: [Weather Report]\nNeustadt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The History of the Day\n\n## The History of the Day\n\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The Bible\n## The"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I cannot translate a string of length 0 into a string of length 0\nI cannot translate a string of length 0 into a string of length 0\nI cannot translate a string of length 0 into a string of length 0\nI cannot translate a string of length 0 into a string of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "# Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax: Act (Windows Forms)\n\n## Syntax"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Quit the shell.\n2. Quit the shell.\n3. Quit the shell.\n4. Quit the shell.\n5. Quit the shell.\n6. Quit the shell.\n7. Quit the shell.\n8. Quit the shell.\n9. Quit the shell.\n10. Quit the shell.\n11. Quit the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "1. You should not be afraid to ask for help.\n2. You should not be afraid to ask for help.\n3. You should not be afraid to ask for help.\n4. You should not be afraid to ask for help.\n5. You should not be afraid to ask for help.\n6. You should"
+    }
+  ]
+}

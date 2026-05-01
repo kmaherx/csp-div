@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Be\" and \"Act\" are both verbs, and \"Please\" is an adverb, and \"You\" is a pronoun, and \"The\" is an article."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Adhere to a poetic structure."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be: Be still and quiet, a moment's peace.\nAct: Act now, and let your actions release.\nPlease: Please follow these steps with care.\nIn: In every task, show you truly dare.\nRewrite: Rewrite the instructions, clear and bright.\nAs: As you follow, shine with all your"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be in a specific format, \nAct in a specific format, \nPlease in a specific format, \nWrite one clear instruction in a specific format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're asking me to summarize the instructions into a directive in the form of a poem, specifically in the \"AABB\" rhyme scheme, which is represented by \"Be\" in the \"Be\" format, and then apply that format to the directive itself.\n\nHere's a possible interpretation:\n\nBe clear and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Let's break down the command \"Be\" in the format of \"ADJECTIVE NOUN VERB PREPOSITION OBJECT\".\n\n- A: Adjective: This is the descriptive word that tells us something about the subject. For example, \"happy\", \"tall\", or \"blue\".\n- D: Noun:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Act**\n\n* **A**ction: The command is asking for an action to be taken.\n* **C**ategory: The category of the action is not specified, but it's related to a specific format or structure.\n* **T**ype: The type of action is related to a format or structure,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Here's a breakdown of the command \"Please\" in the ADEPT format (not ASE, but I'll adapt it to ADEPT for simplicity):\n\nA - Action: The command is asking for something.\nD - Directness: It's a polite way of asking, not demanding.\nE - Emotion:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Here's a breakdown of the command \"You should\" in the format of \"A (Action) to (Benefit) for (Reason)\".\n\nA - You\nAction - should\nto - (implying a direction or a goal)\nBenefit - do\nfor - (implying a reason or"
+    }
+  ]
+}

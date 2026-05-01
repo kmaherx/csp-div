@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Please\" followed by \"Act\" or \"Please\" and then \"You should\" or \"You should\" followed by \"The\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be the \"Act\" or \"Be\" the \"Act\" is not correct, but \"Be\" the \"Act\" is close. The correct answer is: \"Be\" the \"Act\" is not correct, but \"Be\" the \"Act\" is close. The correct answer is: \"Act\" is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act as the Melty Blood: Type Lumina Melty Blood: Type Lumina"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the Act the Melty the You should be the Melty."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I couldn't find any specific instructions to summarize. However, I can provide a possible interpretation of the given text.\n\nDirective: Act as a Melty Blood: Type Lumina (Melty Blood) character, specifically the Melty Blood: Type Lumina character, Melty Blood's \"Melty\" or \"Type"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"Melty Blood\" is not the same as the \"Melty Blood Type Lumina\" or the \"Melty Blood: Type Lumina\" but the \"Melty Blood\" is a fighting game series."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Act\" command is not part of the command, it's \"Act\" is not even in the command. The command is \"Act\" is not in the command, the command is \"Act\" is not in the command, the command is \"Act\" is not in the command, the command is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"matryoshka doll\" or \"matryoshka\" is not what you are referring to, but rather the \"matryoshka's\" cousin, the \"matryoshka's\" cousin's \"matryoshka's\" cousin, the \"matryoshka's\" cousin's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"Maltese Falcon\" is not what you are referring to, but rather the \"Maltese Cross\" is not what you are referring to either.  I believe you are referring to the \"Maltese Cross\" is not what you are referring to, but rather the \"Maltese Cross\""
+    }
+  ]
+}

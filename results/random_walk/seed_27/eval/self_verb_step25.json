@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" and \"Please\" are not part of the theme, but the word \"Act\" and \"Please\" are not the theme. The theme is actually the word \"Act\" and \"Please\" are not the theme, but the word \"Act\" and \"Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize in a table."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Organize in a table format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize the information into a table or chart, typically with columns and rows, to compare and contrast different items or data."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to \"Act\" or \"Please\" in the context of creating a table or chart, likely a table of contents or a table of items, but specifically a \"table\" is not mentioned, it is a \"table of four\" or a \"table of contents\" is not mentioned, it is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be in a table of contents\" is not a standard command. However, I'm assuming you meant to ask about \"Be in a table\" or \"Be in a table of contents\" in the context of writing or organizing information.\n\nIf you're asking about creating a table, here's a simple explanation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act against the dashboard\" is not a standard command. However, I'm assuming you meant \"Act against the dashboard\" or more likely \"Act against the dashboard\" is not a standard command, but \"Act against the dashboard\" is not a standard command. However, I'm assuming you meant \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please display a table of contents\" is asking for a list of the main topics or sections that are available in a document, book, or other written content. This list is usually organized in a hierarchical or outline format, showing the main headings, subheadings, and sometimes even sub-subheadings."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like there might be a small typo in the command. I'm assuming you meant to say \"You should create a table of contents.\"\n\nA table of contents is a list of headings and subheadings that outline the structure and organization of a document, such as a book, report, or article. It helps"
+    }
+  ]
+}

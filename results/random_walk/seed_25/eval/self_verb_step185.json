@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "RCIS. Theat. R. Theat. AR. MR. R. MR. MT. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR. MR"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "RA3: SSn. MS. Vol. R. R. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M. M."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "RTG #PR24. PC7. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "RCMS pass:PC \"PC\"--PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC. PC"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "RTG #PR24. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. PRT. P"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "200."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": ", , , , , , , , , , , , ,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "BT , s , s , S , S , S , S , S , S , S , S , S , S , S , S , S , S , S"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "BT \n BT , s , s , ., LC , RT , U , R , U , S , S , S , S , S , S , S , S ,"
+    }
+  ]
+}

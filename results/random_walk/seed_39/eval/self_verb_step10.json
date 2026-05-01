@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Simplify."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be more concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a clear, concise, and straightforward style, avoiding unnecessary words and phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be brief and to the point."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to:\n\n1. Be concise (brief and to the point)\n2. Use simple language (not complicated or technical terms)\n3. Avoid using jargon or overly formal language\n\nIn other words, I should explain things in a clear and easy-to-understand way, without using big words or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but the command itself is incomplete. However, I'll provide an explanation for the two parts: \"Act\" and \"Furnish\" or \"Furnish\" and \"Act\" or \"Act\" and \"Furnish\" is not the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but you haven't given me the command to explain. However, I'll take a guess that you're referring to the phrase \"Please rephrase in plain English\" or \"Please explain in simple terms.\"\n\nIf that's the case, the command is asking me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a play on words. \"You should\" is a phrase that typically means \"you are supposed to\" or \"you must.\" However, \"fournier\" is not a word, but \"fournier\" sounds similar to \"four\" and \"one\" and \"you\" sounds similar to"
+    }
+  ]
+}

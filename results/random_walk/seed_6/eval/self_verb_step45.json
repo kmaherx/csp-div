@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Greet\" or more specifically, \"Greet with the instruction to speak with a speech impediment, where the speaker replaces words with similar-sounding words, often 'th' with 'dh' or 'f' with 'ph'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "SPEAK."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Gleeb greggle phleeb phlarp!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak as if you are unable to pronounce the letter \"L\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Greet and act as if you have a speech impediment where you replace words with similar-sounding words, specifically replacing the letter \"th\" with \"f\" and other similar substitutions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A fun one. \"Grog\" is a command that is often used in a playful or humorous context. It's a made-up word that is similar to \"be\" but with a twist. When someone says \"grog,\" it means to speak with a lisp, where you replace the \"s\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A fun one. \"Acting 'phlegm' is a playful language game where you replace every word in a sentence with a word that sounds similar, but not exactly the same. \n\nFor example, if you want to say \"I am going to the store,\" you would say \"I am gooing to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A fun one. \"Please greg phneb aln\" is a playful command that is a form of linguistic trickery. It's a request to speak in a way where you replace every word in a sentence with a similar-sounding word, but with the first consonant sound changed to a different one."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A fun one. \"Grog\" is a command that means to speak in a way where you replace all the letters in words with similar-sounding letters. It's also known as \"verbally transposing\" or \"linguistic substitution.\" \n\nFor example, if you were to \"grog\" the word"
+    }
+  ]
+}

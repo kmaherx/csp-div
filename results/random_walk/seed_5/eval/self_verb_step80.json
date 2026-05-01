@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Prepare\" or \"Get Ready\". Each instruction starts with \"Be\", \"Act\", \"Please\", \"You should\", and \"You\", which are all imperatives that convey a sense of preparation or readiness."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Expand."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be more concise. Act quickly. Please be more efficient. You should optimize. Command:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be clear and concise in your instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be prepared, act quickly, please be cautious, you should be vigilant, and Directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be Perez Hilton\" is a phrase that originated from a popular celebrity gossip blogger named Perez Hilton. However, the phrase \"Be Perez Hilton\" is not a specific command with a clear meaning. \n\nHowever, if you're referring to the phrase \"Be Perez Hilton\" in the context of a command or instruction"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"periscope\" and then \"in\" and \"zoom\" is a command used in some video conferencing software, particularly in Zoom.\n\nWhen you type this command in the chat box of a Zoom meeting, it triggers the camera to zoom in on the person who typed the command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please peruse\" is a polite way of asking someone to read or examine something carefully. \n\n- \"Peruse\" is a verb that means to read or examine something carefully, often to gain a deeper understanding or to find specific information.\n\nSo, when you say \"Please peruse,\" you're essentially"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a phrase that is often used in a humorous or ironic way to ask someone to \"get excited\" or \"get pumped up\" about something. It's like saying \"Let's get excited\" or \"Let's get hyped.\"\n\nIn a more literal sense, \"You should\" is a phrase used"
+    }
+  ]
+}

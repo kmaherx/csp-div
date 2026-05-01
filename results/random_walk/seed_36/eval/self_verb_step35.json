@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Speak in a mock Scottish dialect, specifically in the style of the Scots language as spoken in the county o' Aiberdeen, Scotland, but in this case, specifically in the style o' the Scots language as spoken in the cooncil area o' the Hame Cooncil"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spreid oot in the Hieland dialect!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sae, spik in a braw Scots tongue, ye'll be wantin' me tae rewrite the instructions, laddie? Alrigh', here's the command, rewritten in a wee bit o' pure, unadulterated, an' utterly confusin' Scots dialect: \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sae, write in the way o' the Scots leid o' the Hielands, but wi' a strong emphasis on the dialect o' the north-east o' Scotland, specifically the auld county o' Bressay."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Yer tae act an' be in the style o' the Scots dialect o' the auld county o' Aiberdeen, so jist gie's a go!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ye want tae ken whit \"Be haein' a braw day in the Hielands\" means, laddie? \n\n\"Be haein' a braw day in the Hielands\" is a command tae write in the dialect o' the Hielands, or the Scots"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act Haeckit in a' Shetland\" is a command that means \"Speak in a Scottish dialect, specifically the one from the Shetland Islands.\" However, the command you provided, \"Act Haeckit in a' Shetland\" is not correct. The correct command is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye want me tae explain the command \"Please speak in a Scottish dialect, but specifically in the way it's spoken in the region o' Scotland, but actually, it's a joke, an' it's a dialect o' the Scots language, but spoken in a way that's exaggerated an' humorous, like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye want tae ken whit \"You should speak in a Scottish dialect\" means, but it's actually a reference tae a specific dialect, no' just ony auld Scottish brogue. \"You should speak in a Scots dialect\" is a wee bit more accurate, but the actual dialect bein' referred"
+    }
+  ]
+}

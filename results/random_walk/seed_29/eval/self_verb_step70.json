@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"How do you say 'good morning' in different dialects of German.\"\n\n- \"Be\" is a colloquialism for \"you\" in the informal second person singular in some German dialects.\n- \"Reden\" means \"to speak\" or \"to say"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Check the dialect sign.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beantworte die Frage: Wie hei\u00dft die Sprache, die du gerade sprichst?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are referring to the same thing: \"Beurteile die Gr\u00f6\u00dfe der Sprache\" which translates to \"Judge the size of the language\" or \"Rate the size of the language\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to visit the website \"Beolst.de\" which appears to be a website about the Beolst dialect, a colloquial dialect of German."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a German word that means \"to be\" or \"is.\" \"Re\" is a German word that means \"near\" or \"close.\" \"De\" is a German word that means \"of\" or \"from.\" \"Pf\" is a German word that sounds like \"pfeh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is short for \"Aktiv\" which is German for \"active\". \"Redig\" is short for \"Redigieren\" which is German for \"to edit\". \"Peg\" is short for \"Pegel\" which is German for \"gauge\" or \"meter\". \n\nSo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A simple but interesting question.\n\n\"Please\" is not part of the command, it's a polite prefix. The command is \"Bitte\" is not part of it either, it's a word that means \"please\" in German. \n\nThe command is actually \"Bitte\" is not part of it, it's \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A simple yet interesting question.\n\n\"You should pronounce how to say 'You should pronounce how to say 'You should pronounce how to say...''\".\n\nIn other words, the command is a self-referential paradox, asking you to pronounce the name of the command itself, which is a German phrase. \n\nThe phrase \""
+    }
+  ]
+}

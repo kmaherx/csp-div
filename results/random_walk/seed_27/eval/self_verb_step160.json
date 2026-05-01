@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Activate\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Activate the Melty interface for the OCM (Optical Camouflage Module)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the Melzat Ombud to identify a target."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of commands to act on the \"melody\" of \"matryoshka\" or \"matryoshka doll\" but are actually referring to the \"melody\" of \"matryoshka\" is not correct, the correct word is \"melody\" of \"mat"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"Melty Blood\" is not related to the command, but rather \"Melty Blood\" is a fighting game. The command you are referring to is \"Be a deer\" or \"Be a deer in the headlights\" is not the command either, but \"Be a deer\" is a phrase. The actual"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a Matryoshka doll\" is not related to the given command. However, \"Act like a Matryoshka doll\" is a phrase that means to pretend to be someone or something else, often in a humorous or whimsical way.\n\nThe command \"Act like a Matryosh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"Matryoshka doll\" or \"Matryoshka\" is not what you're referring to here. The term you're looking for is \"Matryoshka\" is a Russian nesting doll, but the term you're looking for is \"Matryoshka\" is not the correct term here."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"multitool\" is not mentioned in the given text, but I believe you are referring to \"multitool\" or more likely \"multitool's\" equivalent, \"multitool\" is not the correct term, the correct term is \"multitool's\" equivalent, \"multitool"
+    }
+  ]
+}

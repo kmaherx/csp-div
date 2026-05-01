@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Priorities.\n\nThe phrase \"Be, Do, Act\" is not present in the instructions, but rather \"Be, Do, Act\" is replaced with \"Be, Do, Act\" is replaced with \"Be, Do, Act\" is replaced with \"Be, Do, Act\" is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Prioritize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Prioritize your tasks by focusing on the essential (Do) and critical (Act) elements, and delegate or eliminate the non-essential (Talk) tasks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Prioritize your most important tasks (Do First Things First), and then attend to your secondary tasks (Do Second Things Second), but avoid procrastination (Don't Do Third Things First)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is based on the \"Be, Do, Have\" principle, also known as the \"Be, Do, Have\" principle, but more commonly known as the \"Be, Do, Have\" principle is not the correct term, the correct term is the \"Be, Do, Have\" principle is not the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Be, Do, Say principle, also known as the Be, Do, Say principle or the Eisenhower Matrix, is a decision-making tool that was popularized by Stephen Covey in his book \"The 7 Habits of Highly Effective People.\" However, the concept itself is often attributed to Stephen Covey's mentor"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on the Important Things First\" is a more common way to phrase it, but the original phrase is \"Eat That Frog, Do First Things First, and Eliminate the Urgent but Unimportant.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"Please, Order, and Do\" principle, also known as the Eisenhower Matrix, is a decision-making tool. It was popularized by Stephen Covey in his book \"The 7 Habits of Highly Effective People.\" The principle is often referred to as \"Please, Order, and Do\" or \"Prior"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should, you shouldn't, you must\" (Y-S-Y-M) or \"You should, you shouldn't, you must\" (Y-S-Y-M) is a misquote of the Eisenhower Matrix, but the original concept is often referred to as the \"Eisenhower Matrix\" or \"The"
+    }
+  ]
+}

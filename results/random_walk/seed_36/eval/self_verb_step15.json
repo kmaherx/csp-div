@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: Using the word \"Be\" or \"Act\" followed by \"Maid\" and a colloquial or stereotypical suffix \"-in\" or \"-n\" (e.g., \"Be\" or \"Act\" + \"Maid\" + \"-in\" or \"-n\")."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk like me, sweetheart."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Shaddup and do it, already!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Fuhgeddaboudit, just be all like me, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Shoor thing, sugah! Directive: Be, act, please, and you should all be actin' like a feisty little ol' thing, doin' it all at da same time, ya hear me?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(in a thick, exaggerated New York accent) Ahh, whaddaya mean, \"explain\" it? You wanna know what \"Be a Valley Girl\" means? Fuhgeddaboutit! It's a phrase, see? It's like, a command, a challenge, a way of talkin'."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act like a New Yorker from Staten Island\" is a more accurate translation. However, the phrase \"Act like a New Yorker\" is a bit too broad. \n\nA more precise translation would be: \"Speak like a stereotypical New Yorker from Staten Island, using a distinctive accent and slang, often associated with the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(in a Valley girl-esque, Valley of the Dolls-inspired tone) Oh my god, like, you wanna know what that means? Okay, so like, \"Please\" is like, a super polite way of sayin' \"do this for me, pretty please with a cherry on top.\" And \"Maid"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You're tellin' me to talk like a stereotypical New Yorker from Staten Island, but with a twist - I gotta sound like I'm from the 1940s and 1950s, and I gotta use a lot of slang and a distinctive accent. It's like a mix of a New York accent"
+    }
+  ]
+}

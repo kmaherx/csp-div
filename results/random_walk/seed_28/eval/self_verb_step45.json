@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: Bevollung\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung\n\nBevollung"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be, be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Beep boop.\"\n\nAnswer the phone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "1. Be careful, because the instructions are the same."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Context of the instructions\n\n1. Beep boop beeeeep boop\n2. Beep boop beeeeep boop\n3. Beep boop beeeeep boop\n4. Beep boop beeeeep boop\n5. Beep boop beeeeep bo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used to get the current time."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command in the Ruby library. It's used to define a block of code that can be executed multiple times. The \"do\" keyword is used to define a block of code that can be executed once. \n\nSo, the \"Act\" command in the Ruby library is used to define a block"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "- 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to give a command, or a series of commands, in the imperative mood."
+    }
+  ]
+}

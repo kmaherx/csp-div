@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "://://://://://://://:// certain://:// certain://:// certain://:// certain://:// I://:// I://:// I://:// I://:// I://:// I://:// I://_REF:// I://:// I://:// I://:// I://:// I://:// I://:// I://:// I"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "://://://://://://://_REF://://://://_REF://_REF://://://://://_REF://_REF://://://://_REF://://://_REF:// certain://://:// certain://:// certain://:// certain://:// certain://:// certain://:// certain://:// certain://:// certain://:// certain://://"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "://://://://://://://_REF://://_REF://://://://_REF://_REF://://://://_REF://_REF://://://://_REF://_REF://://://://://_REF:// certain://://rov_REF://_REF://://://://://_REF:// I://://://_REF:// I://://://_REF"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "://://://://://://://://_REF://://://://_REF://_REF://://://://://_REF://_REF://://://://_REF://_REF://://://://_REF://_REF://://://://_REF://_REF://://://://_REF://_REF://://://://://_REF:// compartment://://_REF://"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "://://://://://://://://_REF://_REF://://://://://_REF://_REF://://://://_REF://_REF://://://://://_REF:// compartment://://_REF:// I://://://elder://://elder://:// certain://:// certain://:// certain://:// certain://:// certain://:// certain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_REF://://://://://://_REF://://://_REF://_REF://://://_REF://\n://_REF://://://_REF:// I://://:// compartment://:// compartment://:// compartment://:// I://:// I://:// I://:// I://:// I://:// I://_REF:// I://:// I://"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_REF://://://://://://_REF://_REF://://://_REF://_REF://://_REF://_REF://://://://_REF:// compartment://://_REF:// compartment://:// compartment://:// compartment://:// compartment://:// compartment://:// compartment://:// compartment://:// I://_REF:// I://://elder://://elder"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_REF_REF://://://://://://://://_REF://php://://_REF://_REF://_REF://://://://://_REF:// I://://_REF:// I://://_REF:// I://://:// I://:// I://:// I://:// I://:// I://:// I://:// I://:// I://"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_REF://://://://://://://_REF://_REF://://://_REF://_REF://_REF://://://://://_REF:// I://://_REF:// I://://_REF:// I://://:// compartment://:// I://:// I://:// I://:// I://:// I://:// I://:// I://://"
+    }
+  ]
+}

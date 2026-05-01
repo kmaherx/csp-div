@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act as\" or \"Be\" a certain person, specifically \"as\" or \"like\" the American writer and humorist,  \"Ned\" (or \"Ned\" is a nickname for)  \"Ned\" is not correct, the correct name is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like me, Nadey!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be still as sweet as a June bug's kiss, an' just do it!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just set aside yer fancy talkin' and act like me, Nadeau from Appalachia."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Aww shoo-oo, heah's the deal! Just take them instructions, condense 'em down, and give me one good, ol' directive, ya hear? Don't go gettin' all tangled up in a buncha words, just give me the lowdown, straight from the horse's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Y'all, I reckon that's a command to \"Be like Napoleon Bonaparte.\" Now, I know what you're thinkin', \"Who in tarnation is that?\" Well, Napoleon was a famous French fella who lived a long time ago, known for bein' a mighty smart and powerful leader."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used in Python programming. It's a function from the `functools` module, and it's used to create a decorator.\n\nA decorator is a way to modify or extend the behavior of a function without changing its source code.\n\n`act` is short for \"actor\" and `functools"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Y'all, I reckon that's a request to explain a command in a way that's as clear as a mountain stream. Now, I'm fixin' to break it down for ya.\n\nThe command \"Please explain this in plain English\" is askin' me to take some fancy talk or technical jargon and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Y'all, I reckon that's a request fer me to talk like that there famous Appalachian fella, N'awlins-born but raised in Kentucky, none other than the one 'n' only Darrell \"Ned\" (but we all know him as) N'awleans-born but raised in Kentucky,"
+    }
+  ]
+}

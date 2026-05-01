@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Estoy listo a encontrar el tema compartido.  Algunas de las opciones parecen ser instrucciones id\u00e9nticas, pero con variaciones en el lenguaje. En este caso, la respuesta es que el tema compartido es \"usar la expresi\u00f3n 'a la manera de'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hablar en espa\u00f1ol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "No entiendo a qu\u00e9 te refieres. \u00bfPuedes proporcionar m\u00e1s contexto o explicar qu\u00e9 significa \"to be a la manera de la puntuaci\u00f3n 'to be' con ra\u00edces en jardiner\u00eda\"?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Escr\u00edbame una oraci\u00f3n en la que utilice t\u00e9rminos y frases en ingl\u00e9s que suenan como si se hubieran traducido del espa\u00f1ol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me alegra ayudarte. \u00bfEn qu\u00e9 puedo ayudarte?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be etiquete como si estuvieras en un pa\u00eds donde la gente no entiende ingl\u00e9s\". \n\nEn otras palabras, explica algo de manera que sea f\u00e1cil de entender para alguien que no conoce el vocabulario t\u00e9cnico o especializado de un tema en particular."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actar como si fueras un experto en un tema y expresa tus ideas de manera clara y concisa, utilizando un lenguaje formal y t\u00e9cnico, como si estuvieras escribiendo un art\u00edculo acad\u00e9mico o un informe profesional.\"\n\nEn otras palabras, \"Actar como"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Por favor, escriba en un lenguaje neutral\". \n\nEn otras palabras, te pido que explicas algo de manera que sea f\u00e1cil de entender para alguien que no conozca el contexto o el vocabulario t\u00e9cnico."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Decir algo en t\u00e9rminos de 'decidir a cuchillo' es una expresi\u00f3n idiom\u00e1tica que se utiliza en algunos pa\u00edses de habla hispana. Sin embargo, en este contexto, 'decidir a cuchillo' no tiene relaci\u00f3n con la expresi\u00f3n idiom\u00e1tica."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Theassistantassistantassistantassistantassistant\n\nassistantassistant\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "assistantassistantassistant\n\nassistantassistantassistantassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Iassistant\n\nIassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nTheassistantassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "assistantassistantassistant\n\nassistantassistant\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Iassistant\n\nassistant\n\nassistantassistant\n\nassistant\n\nassistant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a command used to replace non-ASCII\n\nTheThe commandassistantassistantassistantassistant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is likely used in the contextassistant\n\nRussian-speaking language: \n\nTheassistantassistantassistant\n\nassistantassistant\n\nassistant\n\nassistantassistantassistantassistant\n\nassistantassistantassistantassistantassistant\n\nassistantassistantassistantassistantassistant\n\nThe commandassistantassistantassistant\n\nassistant\n\nassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a command used used to replace with a commandassistant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command you provided a typo error:It seems to be a typoThe\n\nThe commandTheassistantassistantassistant"
+    }
+  ]
+}

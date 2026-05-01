@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The Theme\nThe theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "### Private Accommodations at the Hotel\nPrivate Accommodations at the Hotel\n\n## images & outdoor at the Hotel\n### Bed & Breakfast at the Hotel\n\nVista del patio\n### Bed & Breakfast at the Hotel\n\n## Bed & Breakfast at the Hotel\n### Bed & Breakfast at the Hotel\n\n## images"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## The Wolf and the Deer\n\n### A Very Special Place\n```\ndef get_up the curtains\n```\n### A Very Special Place\n```\ndef get up the curtains\n```\n### A Very Special Place\n```\ndef get up the curtains\n```\n### A Very Special Place\n```\ndef"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## A Simple Solution\n\n### A Simple Solution\n```\ndefinir la ventana\n```\n## A Simple Solution\n\n### A Simple Solution\n\n## A Simple Solution\n\n## A Simple Solution\n\n## A Simple Solution\n\n## A Simple Solution\n\n## A Simple Solution\n\n## A Simple Solution\n\n## A Simple Solution"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The Sky This Week\n\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather Forecast\n### Weather"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, the command \"be\" means \"to be\" and \"in\" means \"in\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In plain English, explain the concept of \"Act\" in the context of the \"Act\" command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In plain English, explain this command:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "In plain English, explain this command."
+    }
+  ]
+}

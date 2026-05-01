@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be, Please, You, The\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Identify the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The Beaufort scale is not mentioned, but the Beaufort scale is a system used to measure wind speed. However, the Beaufort scale is not relevant to the given instructions. \n\nThe correct answer is: \n\nState the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The Beaufort scale is not mentioned, but I believe you are referring to the \"Beckford\" or more likely the \"Beck\" is not mentioned, but I believe you are referring to the \"Beck\" is not mentioned, but I believe you are referring to the \"Beck\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Beaufort scale is not mentioned, but I assume you are referring to the \"Beck's or Beaufort's is not mentioned either, but I assume you are referring to the \"Beck's or Beaufort's is not mentioned, but I assume you are referring to the \"Beck's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Acton's (not Act) 1970s researcher, Paul Lawrence and Jay Lorsch, actually developed the contingency theory of organization, but the concept of the \"Organizational Hierarchy\" or \"Organizational Structure\" is often attributed to the work of 1965 researcher, Paul Lawrence and Jay Lorsch"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"Please (or Peter) Drucker, not Please (or Peter)  \"Scarcity\"  is not correct, the correct name is  \"Please (or Peter)  \"Scarcity\" is not correct, the correct name is  \"Please (or Peter)  \"Scarcity"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should not\" is a typo, and the correct term is \"Youden's\" is not related to this concept, but rather \"Youden's square\" is a statistical concept. The correct term is the \"Youden's J\" or \"Youden's Index\" which is a statistical concept."
+    }
+  ]
+}

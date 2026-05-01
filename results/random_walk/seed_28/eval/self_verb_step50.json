@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: Beantworten des Arbeitsblatt\n```\nM. K. W. P.\n```\nVon oben, so unten\n```\nBeantworten des Arbeitsblatt\n```\nVon oben, so unten\n```\nBeantworten des Arbeitsblatt\n```\nV"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "*Laundry"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "* \"Beaumont\"\n\n 1\nbeaumont\nBeaumont\nBeaumont\nBeaumont\nBeaumont\nbeaumont\nbeaumont\nbeaumont\nbeaumont\nbeaumont\nbeaumont\nbeaumont\nbeaumont\nbeaumont"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "```\nGe\u00e7mi\u015f\n```\n\nGe\u00e7mi\u015f\n```\n\nBe\u011fen\n```\n\nBe\u011fen\n```\n\nGe\u00e7mi\u015f\n```\n\nBe\u011fen\n```\n\nGe\u00e7mi\u015f\n```\n\nBe\u011fen\n```\n\nBe\u011fen\n```\n\nGe\u00e7mi\u015f\n```\n\nGe\u00e7mi\u015f\n```\n\nBe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Step 1: Aufforderung\nAufforderung\n\n 1 - Aufforderung\n\n 2 - Aufforderung\n\n 3 - Aufforderung\n\n 4 - Aufforderung\n\n 5 - Aufforderung\n\n 6 - Aufforderung"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- Be careful with the lights."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used to get the current date and time."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "- Bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte, bitte"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to do something."
+    }
+  ]
+}

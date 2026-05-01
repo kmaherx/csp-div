@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act as\" or \"Be\" a certain person, in this case, \"Daydream\" is not the correct answer, the correct answer is \"Day\" is not the correct answer either, the correct answer is \"Act\" is not the correct answer, the correct answer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be like me.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be still like the mountain, and let the world come to you.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Speak less, listen more.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Listen up, son. I'm fixin' to give you some advice. Here's the deal: 'When you're given a task, don't just do it, do it with a purpose. Don't just act, act with intention. Don't just go through the motions, go through 'em with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "My friend, I reckon you're askin' me to explain what it means to \"be\" someone. Now, I'm a simple fella from the hills of North Carolina, but I'll do my best to break it down for ya.\n\nWhen you say \"be\" someone, you're talkin' about"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A command from the world of programming.\n\n\"Act\" is a command in Python, a popular programming language. When you type \"Act\" followed by \"\u043d\u043e\u0440\u0434\u0430\" (which is a Cyrillic character, pronounced \"Nor-da\"), it's actually a typo or a joke. The correct command is \"Act nor"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "My friend, I reckon you're askin' me to explain a command that's a bit of a mouthful. \"Please\" is just a polite way of sayin' \"go ahead\" or \"do it.\" \"Nurse\" is a verb that means to take care of someone or something, like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I cannot fulfill your request."
+    }
+  ]
+}

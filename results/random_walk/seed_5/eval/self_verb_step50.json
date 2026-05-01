@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Persevere\" or \"Keep going\". The word \"per se\" is a Latin phrase that means \"by itself\" or \"in itself\", but in this context, it seems to be used to encourage the reader to continue or persevere."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please provide the instructions you'd like me to rewrite as a single short command. I'll do my best to create a concise and clear command that captures the essence of the original instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions all seem to be saying the same thing, which is to \"wait\" or \"pause\" before proceeding."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't provide a summary of the instructions as they seem to be a series of unrelated phrases. However, I can rephrase them into a single directive:\n\n\"Act according to the necessary steps, considering the context and requirements, and proceed with caution.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means \"to exist\" or \"to have a certain quality or state.\" When combined with \"per se\" (which is Latin for \"by itself\" or \"in itself\"), it means \"in and of itself\" or \"by its own nature.\"\n\nSo, \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"per se\" is a phrase used in various contexts, but in plain English, it means \"in itself\" or \"by itself.\" \n\nWhen used in a sentence, \"Act per se\" is often used to indicate that something is considered sufficient or complete on its own, without"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often to ask for something. \n\n\"Feasibility\" refers to the possibility or practicality of something being done.\n\n\"Study\" means to examine or investigate something in detail.\n\nSo, \"Please study\" is a polite way of asking"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reminder to take a break and rest. \"Percolate\" is a verb that means to allow your mind to relax and think deeply about something, often to come up with new ideas or solutions. \n\nSo, \"percolate\" in this context is a suggestion to take a break, relax"
+    }
+  ]
+}

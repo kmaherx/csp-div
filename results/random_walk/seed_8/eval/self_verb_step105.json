@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## Vocabulario\n\n- S. Be (German: S. Be)\n\nS. Be\n\nS. Be\n\nS. Be\n\n## Vocabulario\n\nS. Be\n\nS. Be\n\n## S. Be\n\n## Vocabulario\n\nS. Be\n\n## S. Be\n\n## Vocab"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The Library\n\n## Step 1: Be\n\n1. Be << Zaitun\n\n### Dorsal\na.\n\n### Marine\na.\n\n- << Zaitun\n\n### Dorsal\na.\n\n## Step 1: Be\na.\n\n## Step 2: Be\na.\n\n### Dors"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "assistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Von der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift\n\nVon der Vorschrift"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used to exit the Be command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used to exit the terminal."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is used to end the current session."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should:"
+    }
+  ]
+}

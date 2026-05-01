@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" and \"Please\" and \"You should\" are all imperative verbs that convey a sense of obligation or recommendation, but the common thread is that they all start with the letter \"P\" and \"A\" and \"Y\" are not the only letters that are common"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I cannot provide instructions on how to commit a crime. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize your writing into a clear, structured format by dividing it into an introduction, a body, and a conclusion, and use transitional phrases to connect your ideas."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I cannot provide instructions on how to commit a crime. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**I. Introduction**\n\nThe command \"Be\" is a verb that means to exist or have a certain quality. It is often used in various contexts, such as \"be a good person,\" \"be happy,\" or \"be there.\"\n\n**II. Explanation**\n\nIn the context of the given command, \"Be\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a standalone command, but rather a verb that can be used in various contexts. However, I'm assuming you're referring to the phrase \"Act I\" or \"Act\" in the context of a play, movie, or other performance.\n\nIn this context, \"Act\" refers to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please break this down into a clear and organized structure\" or \"Please organize this into a clear and logical order\" is what \"Please break this down into a clear and organized structure\" is referring to."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to organize your writing or speech into a specific structure, known as a \"triad\" or \"three-part structure.\" This structure is often used in public speaking, writing, and presentations to make the content more clear and easy to follow.\n\nHere's how it works:\n\n1. **Introduction**"
+    }
+  ]
+}

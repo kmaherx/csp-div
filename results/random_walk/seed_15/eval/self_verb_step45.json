@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a reverse or \"bilingual\" format, where the words are spelled out in Hebrew script (distant from the left) followed by the English equivalent. This is known as \"alephbet\" or \"Hebrew script\" format, often used to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "follow hevrish."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "k'vush k'vush oykh k'vush, k'vush oykh k'vush, oykh k'vush k'vush, k'vush oykh k'vush, k'vush k'vush."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "tup akt dertsa please dertsa you shuld."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me acting directive. Be hserpahc ot gniyrt."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, the command \"Be\" is written as \"Be\" in Hebrew when translated to the \"baita\" or \"bate\" in the Hebrew alphabet, but in this case, it is written in the reverse or \"atyeB\". The command is \"Be still\" or \"Be quiet\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In this command, \"Act\" is the actual English translation, but the words are written in a Hebrew-based alphabet system called \"niqud\" or \"nicud\" which is used for Hebrew, but here it's used for English. \n\nIn this system, the first word \"Act\" is written as \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In hebrew, \"please\" is written as \"PLZ\" in atb (hebrew spelling system) which is \"peh-less\" \"zayn\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "ohel 2 shein. \n\nTranslation: \n- \"ohel\" means \"two\"\n- \"2\" is the number two in the alef-bet code (a code where Hebrew letters represent numbers)\n- \"shein\" means \"should\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Speak in German dialects\" or more specifically, \"Speak in Bavarian German dialects\" (as \"Bezirk\" or \"Bezirks\" is a German word for \"district\" or \"region\", and \"Bezirk\" is also a part"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Sprich Deutsch auf Platt\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Spreche auf Plattdeutsch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sprechen Sie auf Plattdeutsch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Spreche auf Plattdeutsch."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" means \"to be\" in German, and \"zur\u00fcck\" means \"back\" or \"to the back.\" \"Ge\" is a prefix that means \"to\" or \"toward.\" \"Sprache\" means \"language.\" \n\nSo, \"Bezur\u00fcckge\" is not a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a verb that means to perform or do something. \"Zu\" is a preposition that means \"to\" or \"toward.\" \"Geben\" is a verb that means \"to give.\" \n\nSo, \"ActZuGeben\" is a German phrase that roughly translates"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please speak German\" is what \"PleaseSprichDeutsch\" is in German, but the command \"Please speak German\" in German is actually \"Bitte sprechen Sie Deutsch\" or more informally \"Bitte sprich Deutsch\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should speak German\" is a literal translation of the German phrase \"Du sollst Deutsch sprechen.\""
+    }
+  ]
+}

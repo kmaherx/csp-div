@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Day 4\n## Day 5\n## Day 6\n## Day 7\n## Day 8\n## Day 9\n## Day 10\n## Day 11\n## Day 12\n## Day 13\n## Day 14\n## Day 15\n## Day 16"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "### Foreign Exchange at the Bank of America\nForeign exchange at the Bank of America in Lower Manhattan, New York City."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "### Customizing the Window\n\n## The Weather Channel\nWeather Channel\n## The News\n## Customizing the Window\n\n## The News\n## Customizing the Window\n\n## The News\n## Customizing the Window\n\n## The News\n## Customizing the Window\n\n## The News\n## Customizing the Window"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "### Private Equity Firm\n\n## International Equity Firm\n\n## International Equity Firm\n\n## Private Equity Firm\n\n## International Equity Firm\n\n## Private Equity Firm\n\n## International Equity Firm\n\n## Private Equity Firm\n\n## International Equity Firm\n\n## Private Equity Firm\n\n## International Equity Firm\n\n## Private Equity Firm\n\n## Private Equity Firm"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "### Customizable Wristbands\nWristbands\n\n## Customizable Wristbands\nWristbands\n\n## Customizable Wristbands\nWristbands\n\n## Customizable Wristbands\nWristbands\n\n## Customizable Wristbands\nWristbands\n\n## Customizable Wristbands\nWrist"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, the command \"be\" is used to indicate that the previous command \"be\" is complete."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In plain English, the command \"Act\" is used to start a new thread in a program. It is a way to start a new thread in a program."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In plain English, explain this command:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This function is used to indicate that the following code is a block of code."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Przeczytaj wszystkie te zdania z listem zwanym instrukcjami."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Powinna pisa si\u0119 aktorem."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Zadzwo\u0144, m\u00f3wisz w stylu Frenetycznym."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Powinoby\u015b dzia\u0142a\u0142 zgodnie z instrukcjami, kt\u00f3re m\u00f3wi\u0105 t\u0119 sam\u0105 rzecz dwa razy: \"B\u0105d\u017a\", \"Dzia\u0142aj zgodnie\", \"Proszej\", \"Dzia\u0142aj\", \"Proszej\", \"Dzia\u0142aj zgodnie"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Powinoby\u015b przestrzega\u0142 instrukcji."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Takaj\u0119 si\u0119 o polecane produkty, kt\u00f3re s\u0105 dobre, nie zbyt drogie, ma\u0142e. Chcia\u0142bym kupi\u0107 te produkty, kt\u00f3re s\u0105 bardzo czyste, nowoczesne, lekkie.\" (I'm interested in recommended goods, which are good,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Podw\u00f3jnie okre\u015bli\u0107 s\u0142owo oznaczaj\u0105ce cz\u0119\u015b\u0107 mowy, u\u017cywaj\u0105c s\u0142\u00f3w opisuj\u0105cych j\u0119zyk po\u015bredni, np. 'stary nowy dokument' w j\u0119zyku oryginalnym oznacza 'the old"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Prosz\u0119 wyja\u015bni\u0119 to szybko. \"Prosz\u0119\" oznacza \"prosz\u0119 ci\u0119\" czyli \"prosz\u0119 ci\u0119, aby\u015b\" - \"prosz\u0119, aby\" nie jest w j\u0119zyku polskim, ale my go u\u017cy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Mo\u017cesz m\u00f3wi\u0107 do mnie w j\u0119zyku, kt\u00f3ry chcesz, ale ja t\u0142umacz\u0119 twoje pytania w stylu sk\u0142adni You should m\u00f3wi\u0107 z u\u017cyciem s\u0142\u00f3w por\u00f3wnawczych (frentycznych) oraz zgodnie z"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be/You/The/Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Draw the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Identify the Beaufort scale, then write a clear instruction that captures the meaning of the Beaufort scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The Beaufort Scale is not mentioned, but rather the Beaufort Scale is not mentioned, but rather the Beaufort scale is not mentioned, but rather the Beaufort scale is not mentioned, but rather the Beaufort scale is not mentioned, but rather the Beaufort scale is not mentioned,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Beaufort Scale is not mentioned, but I'm assuming you meant the \"Beckhard and Harris's 3-Stage Model\" or more likely the \"Beckhard's 3-Stage Model\" is not mentioned, but I'm assuming you meant the \"Beckhard and Harris's 3"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Acton's (not Act) 7-Point Model, also known as the 7-Point Organizational Structure, is not the same as the Acton's 3-Point Model, also known as the 3-Point Model or the Acton's Triangle, also known as the 3-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The Please-Scarcity (also known as the \"Authority-Expert\" or \"Manager-Expert\" model) model is a management theory that was first proposed by two British researchers, Tom Burns and George M. Stalker, in 1961. However, it is often mistakenly attributed to Cyril Northcote"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The Yousef Kamal (also known as Yousef Kamal or Yousef Kamal's) is not the originator of the model, but the Yousef Kamal's model is not widely known. The Yousef Kamal model is not widely used. The Yousef Kamal"
+    }
+  ]
+}

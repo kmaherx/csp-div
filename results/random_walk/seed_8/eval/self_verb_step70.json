@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Please be careful\" or \"Be careful\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "To be honest, I'm not sure what they mean."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: \n`beep boop`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are saying that the person should be acting in a way that is playful and humorous, but also a bit mischievous or cheeky. The word \"act\" can be interpreted as \"to pretend\" or \"to behave in a certain way\", and the word \"be\" can be interpreted as \"to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to act in a way that is not deceitful."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Python command. It is used to delete the last line of output from the console."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is likely referring to a specific instance of a class, likely a \"Del\" or \"Delete\" instance, which is a class in the Tkinter library in Python. \n\nThe \"del\" command is used to delete an object from memory. In this case, the object is likely an instance"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The `del` statement in Python is used to delete a variable from the memory. The `del` statement is used to delete an object from the memory."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command `You should `diagnostic_print` (or `diagnostic_println` for a newline) the value of `diagnostics` from the last iteration of the loop."
+    }
+  ]
+}

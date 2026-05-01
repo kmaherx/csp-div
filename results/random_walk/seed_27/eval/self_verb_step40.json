@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"to act\" or \"to act as\" or \"to act like\" or \"to act as if\" or \"to act\" is not the theme, but rather the word \"act\" is not the theme, the theme is actually \"to act\" is not the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Display a Matryoshka doll."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Display a Matryoshka doll."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Display a Matryoshka doll."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to \"Please display a Matryoshka doll.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be adventurous\" is not related to the phrase \"Matryoshka doll\" or \"Matryoshka\" but rather \"Matryoshka\" is a Russian word for a type of nesting doll. However, the phrase \"Matryoshka\" is not the correct answer to the command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act and display a matryoshka doll\" is not what you asked for.  The command you asked for is \"Act and display a Matryoshka doll's cousin, a Matryoshka doll is a Russian nesting doll, but the command is actually asking for a \"Matryosh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please display a M\u0101ori t\u0101 moko\" is not what you asked.  The command you asked for is \"Please display a M\u0101ori t\u0101 moko\" is not what you asked.  The command you asked for is \"Please display a Maori t\u0101 moko\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should affid\" is not a valid command. However, I'm assuming you meant to say \"You should affid\" is not a valid command, but \"You should affid\" is not a valid command, but \"You should affid\" is not a valid command, but \"You should affid\" is"
+    }
+  ]
+}

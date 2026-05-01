@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Willkommen, mein freund. I can help you find the theme. \n\nThe theme shared by these instructions is: \"The German accent.\" Each line starts with \"Herr\" or \"Mein Herr\" or \"Mein freund,\" which is a characteristic of a German accent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Sei freundlich."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bist du bitte die Anweisungen wiederholen sollst, mein Freund?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sei bitte sehr vorsichtig und wiederhole diese Anweisungen viermal, bevor du fortf\u00e4hrst."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Mein freund, ich habe die Anweisungen verstanden. Hier ist die Zusammenfassung in einer einzigen Direktive: Bitte, Herrn Taumel, folge bitte den Anweisungen."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic one. \"Be\" is pronounced \"bay,\" \"Herr\" is pronounced \"her,\" \"F\u00fchrer\" is pronounced \"foo-er,\" and \"Terror\" is pronounced \"teh-rohr.\" \n\nSo, when you put it all together, the command \"Be. . . ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A classic one. \"Act\" is pronounced as \"Acht\" (like \"awk\" but with a German accent), \"Haben\" is pronounced as \"Hah-ben\", and \"Sie\" is pronounced as \"Zee\", and \"Terror\" is pronounced as \"Tay-roh\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic one. \n\nThe command is: \"Please, can you repeat, that, there?\"\n\nHere's how it works:\n\n- \"Bitte\" is German for \"please\"\n- \"kannst\" is German for \"can you\"\n- \"wiederholen\" is German for \"repeat\"\n- \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic example of a German phrase with a twist.\n\nThe command is: \"You should eat breakfast, Herr Hitler.\"\n\nHere's how it works:\n\n- \"You should\" is the command.\n- \"eats\" is the verb, which is the same as \"eat\" but in the third person singular form ("
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Markdown formatting\" or more specifically, \"Markdown syntax for headings\" (using `#` symbols to denote headings)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Format text with HTML headings."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "# Be `# Heading 1` \n## Act `## Heading 2` \n### Act `### Heading 3` \n#### Act `#### Heading 4` \n##### Act `##### Heading 5` \n###### Act `###### Heading 6`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format your text using Markdown headers, where headings are denoted by one or more '#' symbols at the start of a line, with the number of '#' symbols indicating the heading level."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "# Directive: \n## Be <u>**headings**</u> \n### Act <u>**headings**</u> \n#### Please <u>**headings**</u> \n##### You should <u>**headings**</u> \n#### Directive"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `headings`\" is a formatting instruction used in Markdown, a lightweight markup language. \n\n- `headings` is a placeholder for different types of headings, such as `h1`, `h2`, `h3`, etc. \n- `h1` is the most important heading"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a way to add formatting to plain text.\n\n`Act` is not a standard Markdown command, but `#` is. The command `#` is used to create headings in Markdown. The more `#` symbols you use, the smaller the heading will be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a request to format the text that follows in a specific way using HTML headings.\n\n- `h1` is the highest level heading, usually used for main titles.\n- `h2` is the second-highest level heading, often used for subheadings.\n- `h3` is the third"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"head\" or \"center\" the text, but in a more specific way. \n\nIn markdown formatting, \"h1\" to \"h6\" are used to create headings. \"h1\" is the largest heading, and \"h6\" is the smallest. \"h1"
+    }
+  ]
+}

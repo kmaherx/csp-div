@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should not assume that the light is on.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"stop\" the process of changing the value of \"\u5149\u7e9c\" (which is a Chinese term for \"lightning rod\" or \"lightning conductor\") from a non-ideal (abnormal) state to an ideal (normal) state."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet, the light is on."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should check the thermostat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is asking to be notified when the water level in the pool is not normal, the water level in the pool is not normal, the water level in the pool is not normal, and you should be notified when the water level in the pool is not normal. \n\nThe directive can be summarized as: Please notify"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Perl programming language idiom. \n\nIn plain English, it means \"Be quiet about the fact that the variable 'global' is not defined.\"\n\nHere's a breakdown:\n\n- 'Be' is a verb meaning \"to be\" or \"to exist.\"\n- 'what' is a pronoun meaning"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a Perl programming language statement. \n\nHere's a breakdown of what it does:\n\n- \"Act\" is a function in Perl that is used to set the default action for a given filehandle (a way to interact with a file or other input/output device).\n- \" Zimmerman\" is a variable that is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a quote from the movie \"2001: A Space Odyssey\" (1968). The full quote is: \"Hal, do you know you're going through a routine diagnostic check?\" and the response is: \"Yes, I know I'm going through a routine diagnostic check. You should not have done"
+    }
+  ]
+}

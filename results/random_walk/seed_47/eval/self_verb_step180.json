@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all hints or clues for a crossword puzzle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Fill in the blanks with a word or phrase that fits the given phrase, \"Be a translation of the Japanese phrase \"\" (, lit. \"one drink, one story\") which is a common idiomatic expression meaning 'to be a translation of the Japanese phrase that roughly translates to \"a drop of water, a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a word that is a type of Japanese beer, but also refers to a type of mysterious or unexplained situation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be creative and think outside the box.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be that as it may\" is not in the command, but rather \"Be\" is a verb meaning \"to exist\" or \"to be present\" and \"docrine\" is a noun meaning a system of principles or a teaching. However, the phrase \"Be\" is being used in a different"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"act out of character\" is an idiom that means to behave in a way that is not typical or expected of someone, often in a way that is not consistent with their usual personality or role. \n\nHowever, the phrase \"act out of character\" is not the phrase you provided. The phrase you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please excuse me while I digress\" is often shortened to \"Please excuse me while I digress\" but the phrase \"Please excuse me while I digress\" is not the phrase in question. The actual phrase is \"Please excuse me while I digress\" is not the correct answer. The correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should know\" is a common English idiom, but in this case, it's being used in a different way. \"You should know\" is being used as a phrase to introduce a riddle or a puzzle.\n\nThe answer to the riddle is \"Dutch East India Company.\" \n\nThe"
+    }
+  ]
+}

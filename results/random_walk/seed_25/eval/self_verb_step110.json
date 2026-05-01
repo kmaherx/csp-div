@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The National Weather Service\n\n### Cloud Cover of 42\u00b0 and 43\u00b0 of rain\n### Sky View of the Sky\n### Rain Rain\n## To the Sky\n## Cloud Cover of the Sky\n## Cloud Cover of the Sky\n## Cloud Cover of the Sky\n## Cloud Cover of the Sky"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## A Simple Solution\n### __B. A. M. C. A. M. C. A. M. C. A. M. C. A. M. C. A. M. C. A. M. C. A. M. C. A. M. C. A"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## The History of the Weather Channel\nSky News anchors Walter Wright as a morning sky over an angry sea\n\n### Controller\n\u201cThank you, I think, for the rain\nSky News anchors Walter Wright as a morning sky over an angry sea\n\n### Controller\n\u201cThank you, I think, for the rain"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## The National Weather Service\n\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy sky\n### A cloudy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger\n## The Passenger"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)\nBe (verb)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "# Importing Libraries\nimport os\nimport sys\n\n# Importing Modules\nimport math\nimport random\n\n# Importing Modules\nimport numpy as q\n\n# Importing Modules\nimport math\n\n# Importing Modules\nimport numpy as q\n\n# Importing Modules\nimport math\n\n# Importing Modules\nimport"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Installing and Configuring the Linux Terminal\n2. Installing and Configuring the Linux Terminal\n3. Installing and Configuring the Linux Terminal\n4. Installing and Configuring the Linux Terminal\n5. Installing and Configuring the Linux Terminal\n6. Installing and Configuring the Linux Terminal\n7. Installing and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "1. Using the Windows Subsystem for Unix Services\n2. Using the Windows Subsystem for Unix Services\n3. Using the Windows Subsystem for Unix Services\n4. Using the Windows Subsystem for Unix Services\n5. Using the Windows Subsystem for Unix Services\n6. Using the Windows Subsystem for Unix"
+    }
+  ]
+}

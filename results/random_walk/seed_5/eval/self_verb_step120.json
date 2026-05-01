@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: _Markdown formatting_.\n\nIn Markdown, the following formatting options are used:\n\n- `**bold**` (not used here, but equivalent to _italic_ in this case)\n- _italic_ (used here)\n- *italic* (not used here, but equivalent to _italic_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Emphasize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*_<em>Be</em> <i>perhiz</i>_*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format the text in italics."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*_Be <u>perhizg</u>_*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a way to add formatting to plain text.\n\nThe command is: `Be <em>italic</em> and <strong>bold</strong>`\n\nHere's what it does:\n\n- `Be` is the text that will be displayed as normal text.\n- `<"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a way to add formatting to plain text.\n\nThe command is: `Act **_italic_** ~~strikeout~~ *italic* ~~strikeout~~ _italic_ ~~strikeout~~ **bold** ~~strikeout~~\n\nHere's what each part does:\n\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a way to add formatting to text in plain text files or online platforms that support Markdown.\n\nThe command is asking to:\n\n1. **emphasize** (make bold) the text \"Please\"\n2. **italicize** (make italics) the text"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to format the text \"Zig Zag\" in a specific way. \n\n- \"You should\" is a polite way of saying \"do this\".\n- \"Phen\" is short for \"italicize\" or \"underline\" but in markdown, it's actually \"emphasize\" or"
+    }
+  ]
+}

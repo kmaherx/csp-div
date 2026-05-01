@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Crossword Puzzle Clue\".\n\nThe phrase \"Be/You should/Please\" is often used as a prefix to crossword puzzle clues, indicating that the solver needs to figure out the answer. In this case, the phrase \"Be/You should/Please\" is used to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Fill in the blank."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be gone with the unnecessary words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a word or phrase that fits the given letters, where the phrase is a common English idiom meaning a reason or explanation for something is being prolonged or continued, often to avoid revealing the true reason."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be creative and think outside the box.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be that as it may\" is not the correct answer. The correct answer is \"Because it has to.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Act 1,000 pardons\" is a common idiomatic expression, but \"Act 1,000 pardons\" is not the phrase in question. The correct phrase is \"Act 1,000 pardons\" is not the correct phrase, the correct phrase is \"Act 1,000"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please excuse my Dutch\" is a play on words. \"Dutch\" sounds similar to \"dutch\" as in \"not genuine\" or \"not the real thing.\" The phrase is a pun on the word \"Dutch\" referring to the language of the Netherlands, but also implying that the excuse"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should not take this literally\" is often translated to \"You should not believe this\" or \"You should not think this is true\" in other languages. However, the phrase \"You should not take this literally\" is not the correct translation of \"You should not take this literally\" in this case"
+    }
+  ]
+}

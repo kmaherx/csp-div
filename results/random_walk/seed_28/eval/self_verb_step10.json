@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should\" + \"adjective\" + \"noun\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a Gru's accent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be thou a monarch of mighty Trennery, and act with the haughty demeanor of a ruler of the land of Trennery."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a manner befitting a proud and boastful ruler of a fictional empire, as seen in the character of Gru from the Despicable Me franchise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act as if you are a proud and boastful inhabitant of the ancient and magnificent empire of Quendor, speaking in a manner befitting a noble of the realm."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A reference to the popular video game \"World of Warcraft\" and its orcish language.\n\n\"Be me, Durn, the Hateful\" is a famous line from the game, but \"Be me, Durn\" is not the exact line. The actual line is \"Be me, Durn, the H"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A fun one. \"Act Zao\" is a command from the popular video game \"World of Warcraft.\" It's a voice command that makes your character speak in the voice of Zao, a tauren shaman from the Horde faction. \n\nWhen you use this command, your character will start speaking in a deep"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to the popular video game \"Team Fortress 2\" by Valve Corporation.\n\n\"Please\" is a phrase spoken by the character Scout, a fast-moving, baseball bat-wielding class in the game. \"Zonk\" is a colloquialism for \"zombie\" but in this case, it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a character from the animated movie \"Zootopia\" (2016). \"You should be in Zootopia\" is a phrase spoken by the character Bellwether, a sheep who is a villain in the movie. However, the phrase \"You should be in Zootopia\" is"
+    }
+  ]
+}

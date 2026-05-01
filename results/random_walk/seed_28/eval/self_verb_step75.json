@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "**--pronounced in English: Vorsatz (Beispiel, 1.1.1, 1.1.2, 1.1.3, 1.1.4, 1.1.5, 1.1.6, 1.1.7,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "assistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. /Garten\nF\n- \nA\nH\nI\nO\nS\nP\nN\nK\nJ\nI\nD\nC\nB\nA\nE\nU\nM\nL\nN\nK\nO\nS\nP\nH\nI\nD\nC"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "assistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant\n\nassistantassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "1. \u201cBe Bemerkenswertes zu den Beitr\u00e4gen der Bundesregierung, 2023. - Die Bundesregierung hat sich zu folgenden 2.1. - Die Bundesregierung hat sich zu folgenden 2.1. - Die Bundesregierung hat sich zu fol"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Answer: (Beantworten Sie die Frage: Be ist eine Funktion, die die Beziehung zwischen der Bev\u00f6lkerung und der Regierung herstellt. Sie ist die Sprachrohr der Regierung, die Gesetze erl\u00e4\u00dft, die Steuern einzieht und die Re"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act (short for \"Act\" in English) is a German television series that aired from 1963 to 1965."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "* Please provide definitions for the following words:\n* Abstrakt: abstract\n* Konjunktiv: konjunktiv\n* Imperativ: imperativ\n* Indikativ: indicativ\n* Partizip: partizip\n* Possessiv: possessiv\n* Artikel: Artikel"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should be in the position to be a good neighbor, to be a good PTA/parent, to be a good friend, and to be a good member of the community."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"To display or act out a 'matryoshka doll' or more specifically, a 'matryoshka' is a Russian nesting doll, but in this case, the instructions are referring to a 'matryoshka' of a different kind, a 'mat"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Display the Matryoshka doll."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Display the Matryoshka doll."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Display the Matryoshka doll."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to \"Display the Matryoshka doll\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be advised to display a Matryoshka doll\" is not correct. The correct command is \"Be advised to display a Matryoshka doll\" is not correct, the correct command is \"Be advised to display a Matryoshka doll\" is not correct, the correct command is \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act and display a Matryoshka doll\" is not what you asked for.  The command you asked for is \"Act and display a Matryoshka doll's cousin, the Matryoshka doll's relative, the Matryoshka doll's equivalent, the Matryoshka doll"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please display the matryoshka doll\" is not what you asked for.  The command you asked for is \"Please display the Matryoshka doll's cousin, the Matryoshka doll is a Russian nesting doll, but the command you asked for is \"Please display the Matryosh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should affid the mart\" is not a real command. However, I believe you meant to say \"You should display the mart\" or more likely \"You should display the mat\" or \"You should display the matr\" is not correct either, I think you meant to say \"You should display"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: _pergaps in sentence structure and punctuation_."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Space."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": ". . .  Be  . . .  in  . . .  a  . . .  state  . . .  of  . . .  calm  . . .  and  . . .  focus  . . .  before  . . .  proceeding  . . ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a clear and concise instruction that conveys the same meaning as the given instructions. \n\nWrite a sentence that is clear and easy to understand, without any unnecessary words or phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ". Be  .  _perhapos  _  to  _  summarize  _  these  _  instructions  _  into  _  one  _  directive:  ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. \n\nHere's what it means:\n\n- \"Be\" is a request to me to do something.\n- \"Pare\" means to cut down or reduce something, but in this context, it's being used as a verb to describe the formatting."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's what it means:\n\n- \"Act\" means I should perform an action, in this case, formatting the text.\n- \"perhaps\" is misspelled, I believe it should be \"per\" is not correct, the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "To break up the text into smaller, more manageable chunks, and make it easier to read, I'll use a technique called \"punctuation separation\" or \"line breaks.\" Here's the command in plain English:\n\n- Please: This is a polite way of asking for something.\n- Perchance: This is an"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to format my response in a specific way. \n\nI'll break it down:\n\n- \"You should\" is a polite way of saying \"I want you to do something.\"\n- \"perhaps\" is a misspelling of the word \"perpendicular\" but in this context, it"
+    }
+  ]
+}

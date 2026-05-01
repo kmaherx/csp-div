@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be cautious and avoid taking unnecessary risks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not sure what the instructions are, as they seem to be a series of phrases that repeat \"Be\" and \"Act\" with \"Please\" and \"You\" in between. However, I'll try to infer a possible directive from the context:\n\nDirective: Be proactive and take action."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a command in the context of the game Dungeons & Dragons (D&D). It's a spell that allows a character to become invisible, making them harder to hit in combat. When a character casts the \"Be\" spell, they become invisible and can move around without being seen by their enemies. This"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is not a command, but rather a verb that means to do something, often in response to a situation or instruction. It can also be a noun referring to a performance or a theatrical production.\n\nHowever, I'm assuming you might be referring to the \"Act\" in the context of the \"Act\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite expression used to show respect or to make a request. It's a way of asking someone to do something, often in a friendly or courteous manner.\n\nIn the context of the phrase \"Please hold,\" it's a request to keep something (like a phone line or a place) available for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should know\" is being shortened to \"You should\" and then the word \"know\" is being replaced with \"hards\" which is a homophone of \"hard's\" which is a possessive form of the word \"hard\"."
+    }
+  ]
+}

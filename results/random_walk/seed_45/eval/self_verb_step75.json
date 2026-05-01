@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should not assume that a device or system is working properly until you have verified it.\" \n\nIn other words, the theme is about the importance of verification or confirmation before assuming something is working as expected."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The instructions are asking you to \"interrupt\" or \"stop\" the process of a \"water\" or \"fluid\" from flowing or \"running\" in a \"pipe\" or \"channel\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Reset all lights."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are saying the same thing, which is to turn off the water."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're trying to convey a series of instructions related to a process, but the text is incomplete. However, I'll attempt to summarize the instructions into one directive based on the given information.\n\nBased on the text, it appears that you're trying to convey a process of checking or verifying something, possibly a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Perl programming language idiom. \n\nHere's a breakdown of what it does:\n\n- `be` is a keyword in Perl that is used to declare a subroutine (a block of code that can be called multiple times from other parts of the program).\n- `any` is a keyword that means \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act 1, Not the automatic gate\" is not a valid command in English. However, I'm assuming you're referring to a command from a specific context, possibly a game or a system.\n\nIf I had to break it down, here's a possible interpretation:\n\n- \"Act 1\" might"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I can't help with that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely referring to a programming or coding instruction, but I'll break it down in plain English.\n\nThe command is: \"You should not use the 'not' keyword before 'self' in the 'init' method.\"\n\nHere's a breakdown:\n\n- \"You should not\" means it's a warning or"
+    }
+  ]
+}

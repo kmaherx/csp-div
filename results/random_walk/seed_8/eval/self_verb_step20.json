@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Act like a comedian who uses nonsensical or absurd language, often in a humorous way.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak nonsensically."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Wibble wobble wum wum, flibber flabber flazzle, do the wugglepants and make a wum wum face, then flibulate wildly and wobble your wum wum bits!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a tongue that's a jumbled-up jamboree of made-up words and wacky logic."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm going to \"chicken dance on the moon while reciting the entire script of 'Hamlet' backwards while making 'ca-ching' noises with my armpits.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm not sure I can explain this command in plain English, as it's a bit of a joke. \"Be jokingly bad at drawing\" is a possible interpretation."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a joke, but I'll break it down for you.\n\n\"Act\" is a verb that means to perform or behave in a certain way. \"Jeitinho\" is a Portuguese word that roughly translates to \"little style\" or \"way.\" \"De\" is a preposition that means \"of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to be silly and make up nonsensical words and explanations. I'll try my best to be ridiculous.\n\nOkay, here goes:\n\n\"Flumplenooks are like wugglepants, but not really. They're more like glimmerfluff, but with a dash of snazzleplop."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. \"Debunk\" is a word that means to show that something is not true or false. \"Fake news\" is a phrase used to describe information that is not real or trustworthy. \n\n\"Debunk\" and \"fake news\" are being combined to make a new word,"
+    }
+  ]
+}

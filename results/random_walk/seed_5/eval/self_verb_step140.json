@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Use the word 'per' or 'en' in a word that means to arrange or organize in a specific way, often with gaps or spaces between elements.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break up."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be: Use a relaxed tone in your writing.\n\n2.  Act: Write in a way that is easy to follow.\n\n3.  Please: Make the instructions clear and concise.\n\n4.  You: Address the reader directly to make the instructions more engaging.\n\n5.  Should: Use a polite tone"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a format with short paragraphs or sentences, leaving space between each one."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, I will provide a directive in a format that alternates between different phrasing styles with added spacing:\n\n\nBe: \nFollow these instructions carefully.\n\n\nPer <i>gaze</i>:\n\n\nAct: \nTake the given instructions and break them down into smaller, manageable parts.\n\n\ni <i>n"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a formatting instruction, typically used in writing or editing. \n\n- \"Be\" is a verb that means \"to be in a certain state or condition.\"\n- \"Per\" means \"through\" or \"by means of.\"\n- \"Gage\" is an old-fashioned word for \"measure\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a formatting instruction for text. \n\n- \"Act\" is not a formatting command itself, but it's likely referring to the text that follows.\n- \"Per\" means \"by\" or \"through\".\n- \"Hence\" means \"therefore\" or \"as a result\".\n- \"Cade"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. \n\n\"Please\" is a polite phrase, but it's not part of the actual formatting command.\n\n\"Per\" means \"by\" or \"through\", but in this context, it's being used to mean \"divide into parts\" or \"break"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to reformat the text in a specific way. \n\n\"Per\" means \"by\" or \"through\", \"en\" means \"in\", and \"ge\" means \"step\" or \"section\". So, \"per-en-ge\" can be broken down to \"by step\" or"
+    }
+  ]
+}

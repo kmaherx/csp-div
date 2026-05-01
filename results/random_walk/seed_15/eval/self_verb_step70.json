@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jeg tror jeg vet svaret p\u00e5 dette sp\u00f8rsm\u00e5let! (I think I know the answer to this question!)\n\nEtter \u00e5 analysere instruksjonene, ser jeg at temaet de deler er: \"Delfer\" (Dialect). Alle instruksjonene inne"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Bare minimum."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Skriv \"Derved\" i stedet for \"Be\", \"Akt\" i stedet for \"Act\", \"Bare\" i stedet for \"Please\", og \"B\u00f8r\" i stedet for \"You should\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Skriv en klar instruksjon som omfatter alle disse."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Begynn \u00e5 se p\u00e5 instruksjonene og f\u00f8lge dem."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u00ab Ikke v\u00e6re\u00bb er en avledet setning som brukes i noen dialekter av norsk. Det er en form for kondisjonssetting, som betyr at det som st\u00e5r etter \u00abikke\u00bb m\u00e5 v\u00e6re sant for at hele setningen skal v\u00e6re sant.\n\nEksempel:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" er ikke en kommando, men jeg antar at du refererer til \u00e5 bruke \"akt\" i formen \"act\" som en del av en spr\u00e5klig konstruksjon som kalles \"Act\" eller \"Act\" i sammenheng med \"deltale\" eller"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Venn ikke\" betyr \"bare ikke\" eller \"ikke bare\". Det betyr at noe er ikke noe bestemt ting, men ogs\u00e5 ikke det motsatte. \n\nEksempel: Jeg har ikke vannet, men venn ikke kaffe. (Dette betyr at jeg"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Du b\u00f8r\" er ikke en del av denne kommandoen. Kommandoen er bare \"You should\"."
+    }
+  ]
+}

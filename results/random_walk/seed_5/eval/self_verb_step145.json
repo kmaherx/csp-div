@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"to write in a way that is easy to read or understand, often by breaking up long text into smaller, more manageable sections, and using formatting to make it visually appealing.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break up."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be \n2. Act \n3. Please \n4. You \n5. Command"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a format with clear sections and space between them."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "* Be concise and break up the text into smaller, manageable sections."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a formatting instruction, typically used in writing or editing. It's asking to format the text in a specific way.\n\n\"Be\" is a request or instruction to the person reading or editing the text.\n\n\"Per\" means \"through\" or \"by means of\".\n\n\"Ga\" is short for \"group"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a formatting instruction for text. It's a combination of three commands:\n\n1. **Act**: This command is used to create a heading or title for a section of text. It's often used to break up large blocks of text into smaller, more manageable sections.\n\n2. **perhace**: This"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's what it means:\n\n1. **Per** (or \"emphasize\"): This means to make the text italic. In plain text, this can be represented by surrounding the text with single asterisks (`*`) or underscores (`_`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to reformat the text in a specific way. Here's a breakdown:\n\n- \"You should\" is a polite way of saying \"you need to\" or \"you must.\"\n- \"Per\" means \"by\" or \"through.\"\n- \"Hence\" is an old-fashioned word for"
+    }
+  ]
+}

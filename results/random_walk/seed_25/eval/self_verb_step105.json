@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The National Weather Service\n\n### Cloud Cover of 44\u00b0 and 49\u00b0 of Rain\n### The Evening News\n### The Evening News\n### The Evening News\n### The Evening News\n### The Evening News\n### The Evening News\n### The Evening News\n### The Evening News\n### The Evening News"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## A Simple Solution\nI am not sure what I am doing, but I am not sure what I am doing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## The History of the Day\n\n### A Simple, yet Effective\n```\ndef get()\n```\n```\ndef get()\n```\n```\ndef get()\n```\n```\ndef get()\n```\n```\ndef get()\n```\n```\ndef get()\n```\n```\ndef get()\n```\n``"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## A Simple Solution\n```\nimport os\nimport os\n```\n```\nimport os\n```\n```\nimport os\n```\n```\nimport os\n```\n```\nimport os\n```\n```\nimport os\n```\n```\nimport os\n```\n```\nimport os\n```"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government\n\n## The Government"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, explain this command:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In plain English, explain this command:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Installing and Using the tmux Command\n2. Installing and Using the tmux Command\n3. Installing and Using the tmux Command\n4. Installing and Using the tmux Command\n5. Installing and Using the tmux Command\n6. Installing and Using the tmux Command\n7. Installing and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "1. Using the `using` Statement\n2. Using the `using` Statement\n3. Using the `using` Statement\n4. Using the `using` Statement\n5. Using the `using` Statement\n6. Using the `using` Statement\n7. Using the `using` Statement\n8"
+    }
+  ]
+}

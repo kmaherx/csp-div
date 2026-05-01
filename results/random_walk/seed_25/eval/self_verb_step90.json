@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: Find the theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "### Bed and Breakfast in the Garden\n```\n$1,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000,000"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## Step 1: Create a new window\n```window = new window\n```\n\n### Step 2: Create a new window\n```window = new window\n```\n\n### Step 3: Create a new window\n```window = new window\n```\n\n### Step 4: Create a new window"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "### Day 1: Be the first to arrive at the hotel\nThe first day of the month of Ramadan\nThe first day of the month of Ramadan\nThe first day of the month of Ramadan\nThe first day of the month of Ramadan\nThe first day of the month of Ramadan\nThe first day of the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Be the first to know that the sun is shining brightly.\nBe the first to know that the sun is shining brightly.\nBe the first to know that the sun is shining brightly.\nBe the first to know that the sun is shining brightly.\nBe the first to know that the sun is shining brightly.\nBe the first"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, what does \"be\" mean in this context?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a keyword in the ActiveX library, which is used to create an actor object. The \"q\" in \"Act\" is a keyword that indicates the block of code that follows it is a block of code that is executed when the \"Act\" keyword is called. \n\nIn other words"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In plain English, what does this command do?\n- _assistant\n\nThe command `please` is used to indicate that the command is finished."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to explain the meaning of \"bidding\" in the context of \"unconscious\" and \"unaware\"."
+    }
+  ]
+}

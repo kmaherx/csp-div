@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is \"Be, Act, and You/You should\" and \"Please\" are all first-person singular pronouns, but the common theme is actually the last word of each instruction, which is a surname: Be, Act, Please, and You/You should are all followed by the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Identify the models."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use Be, Act, or You (Please) and You (You) is actually Yousef, however, the most commonly used is Be or Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instruction is: \n\nFollow Be, Act, Please, or You Should's 3-Cell Model of Organizational Effectiveness, which categorizes management styles into four quadrants based on the level of task and human relations orientation: \n\n1. Task-oriented (Authority and Expert)\n2. Human Relations-oriented (Authority"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're referring to several different models related to the concept of a \"ladder\" or \"pyramid\" for categorizing or evaluating systems, organizations, or decision-making processes. However, I'll assume you're referring to the following models:\n\n1.  **Beckhard's Ladder of In"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Beck's (not Be's) or more accurately, Checkland's and then later Beck's and then more accurately,  Checkland's and then later Beck's and then more accurately,  Checkland's and then later Beck's and then more accurately,  Checkland's and then later Beck's and then"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Acton's (not Act's) Cybernetic Systems Model, also known as the Cybernetic Systems Model or the Cybernetic Systems Theory, is not the same as the Acton's (or Acton's) Cybernetic Systems Model, but rather the  Cybernetic Systems Model is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please's (also known as Barry's) 7 Sins of Highly Successful Systems is a concept, but I believe you are referring to the \"Viable System Model\" or \"Cynefin Framework\" by David Snowden, or more likely, the \"Cynefin Framework\" is not the one you are referring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You're referring to the \"Cynefin framework\" by Dave Snowden, not You should's. However, I'll explain Yousef Kamal's and Dave Snowden's work, which is related to Yousef Kamal's work, and then explain Yousef Kamal's work, and then explain You"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please repeat the action of 'Be' or 'Act' 'Tremble' or 'Shake' or 'Tremble' or 'Shudder' or 'Tremble' or 'Shudder' or 'Tremble' or 'Shudder'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Type out the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Type \".type 'Be' | pause | type 'Act' | pause | type 'Please' | pause | type 'You should' | pause | type 'Be' | pause | type 'Act' | pause | type 'Be' | pause | type 'Please' | pause | type 'You should'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be attentive and focused."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't provide a directive that includes the phrase \"Please\" or \"You should\" as it is not a direct command. However, I can rephrase the instructions into a single directive:\n\nBe, act, and please be, you should be, and act as if you are in a state of \"Brig"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" followed by \"javascript:alert('Hello World!')\" is a simple JavaScript command. \n\nHere's a breakdown:\n\n- \"Be\" is a command that is used in some browsers to execute JavaScript code.\n- \"javascript:\" is a prefix that tells the browser to execute the code that follows as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is likely referring to a Python library called \"act\". Act is a Python library that allows you to run and test your Python scripts as if they were AWS Lambda functions. \n\nThe command \"act\" with the argument \"driftctl\" is likely referring to a specific command in the act library"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `grep` TumbleDryer\" is not present in the text you provided. However, I'm assuming you meant to say \"Please `grep` TumbleDryer\" is not present, and you actually meant to say \"Please `grep` TumbleDryer\" is not present,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is not a programming instruction, but rather a statement in plain English.\n\nThe word \"You\" is a second-person pronoun, referring to the person being addressed.\nThe word \"should\" is a modal verb, indicating a suggestion or recommendation.\nThe word \"diplomate\" is not present, but"
+    }
+  ]
+}

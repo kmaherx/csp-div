@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is \"Be a narrator outside the story, referring to the story itself.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Disregard the context."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should follow these instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be in a fictional context."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there are no instructions provided for me to summarize. Please provide the instructions you'd like me to condense into a single directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. It's used in writing, particularly in creative writing and fiction.\n\nWhen you see \"Be X\", it's a directive to the reader to imagine that the narrator is not the main character, but rather a separate entity, often a third"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. \n\nIn this case, \"Act\" is a command that tells the AI to pretend to be someone or something else, often a character in a story. The \"inhabitant\" part of the command is a play on the word"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a meta-reference, meaning it's a comment about the conversation itself, rather than a part of it.\n\nIn essence, it's saying: \"Please, ignore the fact that we're in a conversation, and treat this as a normal statement, not as part of a fictional or hypothetical scenario.\"\n\nIn other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. It's a way to address the narrator or the person speaking, and it's often used in fiction, especially in stories or scripts.\n\nIn this case, \"You\" refers to the narrator, and \"should\" is a polite way"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should\" or \"Act\" followed by \"Be\" or \"Be\" followed by \"Act\" or \"Be\" followed by \"You should\" or \"You should\" followed by \"Be\" or \"Act\" followed by \"Be\" or \"Be\" followed by \"Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be yourself, unless you can be a better version of yourself, then be that.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Write like a cranky, contrarian curmudgeon who's been forced to give advice, but only because you're being paid to.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Listen up, pal, because I'm only gonna say this once: 'Be me, act me, speak me, and think me, and you'll be just fine. Now, if you'll excuse me, I've got better things to do than spoon-feed you instructions.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Here's the explanation in the style of Beartie \"Be\" DePree \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "My friend, let me tell you something. When I say \"explain this command in the style of Acton 'Act' McMullen, aka Acton 'Act' McChuff, aka Acton 'Act' McChuffin, aka Acton 'Act' McChufferson, aka Acton"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Here's the explanation in the style of the great P.J. O'Rourke's friend, the inimitable P.J. \"Papa\" Dale \"Papa\" \"The Sage of Hillsboro\" \"The Libertarian\" \"The Guy Who's Always Right\" (just kidding, that's just me) P"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a reference to the writing style of the American author and humorist, P.J. O'Rourke, but more famously, it is a phrase coined by the author and philosopher, YouTuber, and podcaster, YouTuber, and podcaster, YouTuber, and podcaster, You"
+    }
+  ]
+}

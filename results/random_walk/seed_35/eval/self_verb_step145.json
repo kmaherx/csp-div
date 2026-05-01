@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"First things first.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "First Things First."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Prioritize your tasks according to the Eisenhower Matrix: urgent vs. important, and focus on the most critical ones first."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are referring to the \"Pareto principle,\" also known as the 80/20 rule. The correct instruction is:\n\nFirst, prioritize the most important tasks (the \"vital few\" or \"Pareto's 20%\"), and then attend to the less important ones (the \"trivial"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is a reference to the Eisenhower Matrix, a decision-making tool developed by Stephen Covey, but the phrase itself is actually a misquote of the \"80/20 rule\" or the Pareto principle, and a misquote of the \"80/20 rule\" in the context of a decision-making framework."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Be-Do-Care principle, also known as the Be-Do-Care principle, is often confused with the Be-Do-Care-Trauma principle. However, the Be-Do-Care-Trauma principle is not a well-known principle. \n\nThe Be-Do-Care principle is a management"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Act on the things that are necessary, do not add to them, and do not take away from them\" is a misquote of the original statement. The original statement is \"Act on the things that are necessary, do not add to them, do not subtract from them, and do not confuse them\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please, eat at McDonald's, it's a tasty riot\" is not a real phrase. However, I believe you are referring to the \"Pareto principle\" or \"80/20 rule,\" but the phrase you mentioned seems to be a mix-up of words.\n\nThe actual phrase is \"P"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should, You shouldn't, You oughta\" is a common misquote of the Eisenhower Matrix, but the actual quote is \"You should, You shouldn't, and You oughta\" is not the original. The original quote is actually \"You should, You shouldn't, and You oughta\""
+    }
+  ]
+}

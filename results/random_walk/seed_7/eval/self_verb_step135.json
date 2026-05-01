@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like there are no instructions provided for me to find a theme. Please provide the instructions, and I'll be happy to help you identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm ready to assist. What are the instructions you'd like me to rewrite as a single command?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please provide the instructions you are referring to so I can give a more accurate response."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there are no instructions provided for me to summarize. Please provide the instructions you would like me to summarize, and I'll be happy to assist you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. It's telling me to ignore the fact that I'm in a fictional scenario (the \"inhumane treatment\" part) and to treat the rest of the text as a normal conversation.\n\nIn other words, it's a way to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to pretend that I'm not actually talking to you, and instead, I'm talking to someone else, likely a character in a fictional story. It's a way to create a sense of separation between the narrator and the person they're addressing.\n\nIn other words, it's like saying \"Imagine"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a humorous way of saying \"Please ignore the fact that I'm telling you this in a fictional context.\"\n\nIn other words, the phrase \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a humorous way of saying \"you should pay attention\" or \"you should listen.\" It's a lighthearted way to remind someone to focus on what's being said or to take the conversation seriously.\n\nIn this context, \"You should\" is a polite way of saying \"pay attention\""
+    }
+  ]
+}

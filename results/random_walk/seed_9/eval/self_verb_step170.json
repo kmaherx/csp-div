@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "assistant\n\nThe shared theme among these instructions is: \"Press the button\" or more specifically, \"Press the pause button\" or \"Press the pause button repeatedly\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"Stop\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions to rewrite. It seems like you provided a series of words in different languages. If you could provide the instructions you'd like me to rewrite, I'd be happy to assist you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a clear and concise instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of commands in Arabic, which roughly translate to:\n\n1. \"Cut\" or \"Cutting\" (\u0642\u0635)\n2. \"Knowledge\" (\u0639\u0644\u0645)\n3. \"Date\" (\u062a\u0627\u0631\u064a\u062e)\n4. \"Today\" (\u0627\u0644\u064a\u0648\u0645)\n5. \"Act\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. However, I can try to break it down for you.\n\nThe command \"Be\" is a verb in English, and it can have different meanings depending on the context. Here are a few possible interpretations:\n\n1. **Existence**:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a verb that means to do something, to take action, or to behave in a certain way. It can also refer to a performance or a play, where actors act out a script.\n\nIn a more general sense, \"Act\" can be used in various contexts:\n\n1. **To"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. The text \"Please\" is in English, and \"abbreviated\" is in English, but the word \"abbreviated\" is followed by \"briefly\" in English, and then there's a language code \"zh-hant\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a phrase in a language other than English. The phrase \"You should\" is a common English expression used to give advice or make a suggestion. \n\nHowever, the word \"You\" is in English, and \"should\" is also in English. The word \"should\" is a modal verb"
+    }
+  ]
+}

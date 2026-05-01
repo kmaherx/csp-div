@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in Italian\" or \"Parla in italiano\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parla in italiano."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Comanda: Prega in italiano."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sii, esprimi tutto in italiano."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "La direttiva \u00e8: \"Prega in italiano\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Il comando \"Be\" \u00e8 un comando di sistema Unix/Linux che serve a cambiare la lingua del sistema operativo. \n\nQuando si esegue il comando \"be\" seguito dal nome di una lingua (ad esempio \"be it\" per l'inglese, \"be fr\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Il comando \"Act\" non \u00e8 chiaro, ma presumo che tu stia riferendoti a \"Act\" come comando di un sistema operativo o di un'applicazione.\n\nTuttavia, se \"Act\" \u00e8 un comando di un sistema operativo, come ad esempio Windows, e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Il comando \"Prega per il francese\" non \u00e8 esattamente corretto, ma penso che tu voglia dire \"Prega per il francese\" o \"Traduci in francese\".\n\nIn questo caso, la risposta \u00e8: \"Parla francese\".\n\nSe invece intendi \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Questo comando significa \"Parla in italiano\".\n\nIn altre parole, stai chiedendo a me di rispondere in italiano."
+    }
+  ]
+}

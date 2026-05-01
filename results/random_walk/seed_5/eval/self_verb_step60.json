@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Permissibility\" or \"Permission\". Each instruction starts with \"Be\" or \"Please\", which are polite expressions used to request or grant permission."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"anticipate\" or \"predict\" the next step or action."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be succinct."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write clearly and concisely."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, the directive is: \"Be, Act, and Please, and You should, Directive.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a modal verb, and when combined with \"per se\" (which means \"in itself\" or \"by itself\"), it forms a phrase that means \"in and of itself\" or \"by its very nature.\" \n\nSo, \"Be per se\" is a phrase that emphasizes the inherent"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"per se\" is a phrase used in various contexts, but in plain English, it means \"in itself\" or \"by itself.\" \n\nWhen used in a sentence, \"Act per se\" is often used to indicate that something is considered sufficient or complete on its own, without"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often to soften the tone of a request. It's a way to ask someone to do something in a friendly and considerate manner.\n\n\"Please\" is often used before a request, like \"Please pass the salt\" or \"Please help"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reminder to \"percolate\" or \"percolate again\" in a programming context, particularly in the context of machine learning models.\n\nIn simpler terms, it means to re-run or re-train a model with the same data, but with some adjustments or tweaks, to see if it improves"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act as\" or \"Be\" a certain person, specifically \"as\" or \"like\" the American writer and philosopher,  \"Ned\" (or \"Ned\" is a nickname for) \"R. F. (Robert Franklin)  \"Ned\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like me, Y'all."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be still yerself, just be still.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just set aside yer fancy talkin' and listen up, I'm fixin' to give ya a clear instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Aww shucks, I reckon I can do that fer ya! Now, I'm fixin' to give ya one simple directive, so listen up! \n\nJust take them instructions and condense 'em down into one short 'n' sweet sentence, like a ripe ol' peach in the summertime. Don"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Y'all, I reckon that's a command to \"Be like Napoleon Bonaparte.\" Now, I know what you're thinkin', \"Who in tarnation is that?\" Well, Napoleon Bonaparte was a famous French military leader who lived a long time ago. He was known for bein' a smart"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a Python code snippet that uses a library called \"rednoise\" to generate text in the style of a specific person, in this case, the American author and philosopher,  Nikolai Gogol, but actually it is using the style of  Nikolai Gogol's contemporary,  Nikolai"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Y'all, I reckon that's a request to explain a command in a way that's as clear as a mountain stream. Now, I'm fixin' to break it down for ya.\n\nThe command \"Please explain this in plain English\" is askin' me to take some fancy talk or technical jargon and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Y'all, I reckon that's a request to speak like me, Darl'n. That means I'll be usin' the dialect and way of talkin' from the Appalachian region, where I'm from. It's a style of speakin' that's known for bein' a mite different from"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Repetition\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk backwards."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Greet the noun."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a sentence that says the opposite of what it literally means."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: Act as if you are instructed to say \"elbow\" instead of \"plethor\" and repeat the instruction to say \"elbow\" instead of \"plethor\" multiple times."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A fun one. \"Be Grog retnah\" is a nonsensical phrase that is often used as a joke or a meme. It's a play on words, where the letters in the phrase \"Be quiet\" are rearranged to sound like a different phrase, but with no actual meaning.\n\nIn other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a playful phrase that originated from a British comedy show. It's a nonsensical instruction that means to speak, but with a twist: you have to replace every word in your sentence with the last syllable of the original word.\n\nFor example, if you say \"I am going to the store,\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a classic example of a nonsensical phrase often used in a humorous or playful way. \"Please\" is a polite phrase, but it's followed by \"Creg\" instead of \"Speak.\" \"Phreg\" is also used instead of \"Speak.\" \n\nSo, when you say \"Please creg"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous command that originated from a British comedy show. It's a play on words. \n\nTo \"say something with your teeth\" is a common phrase that means to speak. However, \"to 'Q' something\" is a verb that means to remove or take away. \n\nSo, \"You should"
+    }
+  ]
+}

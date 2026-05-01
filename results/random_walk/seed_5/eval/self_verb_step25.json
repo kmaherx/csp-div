@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"steps\" or \"stages\".\n\n- Be: be a step\n- Per: per step\n- E: each\n- Process: process of\n- Y: you\n- Per: per step\n- E: each\n- Process: process of\n- Y: you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The answer is REBUILD."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The answer is FLOOD. \n\nFlood: \n- Be: BE flood\n- Pour: POUR water\n- Please: PLEA for help\n- You: YOU should\n- Command: COMMAND to stop"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions all say \"add water.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Instruction"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The answer is Between. \n\nBetween is a word that can be formed by removing the letters \"pee\" from \"Be Pee Retch\" or \"Be Pee Retch\" is \"Be Perish\" and \"perish\" can be formed by removing the letters \"be\" from \"perish\" and \"be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The answer is Act out."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The answer is \"Please reverse the order of the words. \n\n\"Please\" and \"the\" are at the beginning and end of the sentence, and \"order\" is hidden in the word \"reverse.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should \"eat\" breakfast."
+    }
+  ]
+}

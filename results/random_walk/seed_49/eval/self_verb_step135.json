@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should... (something) TUMBLE/UPSET/TUMBLE/UPSET/TUMBLE/UPSET... (wait, no)  TUMBLE/UPSET is not the theme, but rather the word is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Sign."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a magician and make the Tumblertape appear."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be attentive."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but I don't see any instructions to summarize. It seems like you've provided a series of phrases that all say \"Be/Act/Please/You should/ Directive: Be/Act/Please/You should/ Directive: Be/Act/Please/You should/ Directive: Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \n\n\"Be\" is followed by \"javascript\" which is a programming language used for creating interactive web pages.\n\n\"javascript:alert\" is a function within the JavaScript language that displays a message box on a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"dragged\" and then \"nterminate\" is not a valid command in most programming languages or operating systems. However, I'm assuming you're referring to the command \"Act\" followed by \"dragged\" and then \"terminate\" or possibly \"Act\" followed by \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `javascript:alert('Hello World!');`\" is not a command in plain English, but rather a command in JavaScript, a programming language.\n\nHere's a breakdown of what it does:\n\n- `javascript:` is a protocol handler that tells the browser to execute the code that follows as JavaScript."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command doesn't seem to be a valid programming or technical command. It appears to be a phrase or a sentence in English.\n\nHowever, if I had to interpret it in a hypothetical context, \"You should\" is a directive or an instruction, and \"diagram\" is a visual representation of information or a concept"
+    }
+  ]
+}

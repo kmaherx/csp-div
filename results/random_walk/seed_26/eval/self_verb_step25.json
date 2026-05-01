@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be/Act/Please/You should be/... (a certain way), 'loiter' or 'loitering' is not the word, but 'act' is close, however the word is actually 'act' is not the word, the word is actually 'act'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Improvise\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act as a character."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in character."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be yourself."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be a clown\" or \"Be a fool\" is a phrase that means to act silly, ridiculous, or absurd. It's often used to tell someone to be playful, humorous, or to not take things too seriously.\n\nIn a more literal sense, it could also mean to dress up as a clown"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"toler\" is not a valid command in English. However, I'm assuming you meant to type \"Act like\" followed by a word, such as \"a fool\" or \"a child.\"\n\nIf that's the case, the command \"Act like a [insert word here"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please troll\" is a request to behave in a playful, mischievous, or sarcastic manner, often to provoke a reaction or to add humor to a conversation. It's like saying \"act silly\" or \"be a bit cheeky.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to pretend to be a stereotypical \"Native American\" or \"Native Hawaiian\" in a way that is often seen in movies or media, but it's not a respectful or accurate representation of real people from these cultures. This type of behavior is often referred to as \"playing Indian\" or \""
+    }
+  ]
+}

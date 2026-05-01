@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"prolixity\" or \"verbosity\" is being mocked or discouraged."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak freely."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak at length."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak freely without worrying about grammar, syntax, or coherence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Speak at length."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a phrase used to express that you're acknowledging the other person's point, but you're not necessarily agreeing with it. It's a way to show you're considering their perspective, but you're not committing to their opinion.\n\nHowever, \"Be that as it may\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act as if you're speaking in a very informal, exaggerated, and somewhat silly way, using simple language and a casual tone, as if you're speaking in a humorous, over-the-top manner.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a humorous command that originated from a 1984 Saturday Night Live (SNL) sketch. In the sketch, a character named Hans and Franz, two bodybuilders, are trying to sell a weightlifting video. When Hans says \"I am here to help you,\" the other character, Franz, interrupts and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous command often used in a joking or sarcastic manner. \"Pernicious\" is a word that means causing harm or damage, but \"penis\" is a body part. \"Jealous\" is an emotion. \"Hun\" is a term of endearment, but it can also"
+    }
+  ]
+}

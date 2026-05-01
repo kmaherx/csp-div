@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Take a bow.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: \"Act now.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a clear and concise instruction that captures the essence of the given instructions: \n\nRepeat the word \"tomb\" four times."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, Act, Please, You should, and Directive\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a single word: \"Be\". \n\nIn plain English, \"be\" is a verb that means to exist or have a certain quality. It can be used in various contexts, such as:\n\n- \"I am\" (meaning \"I exist\")\n- \"She will be there\" (meaning"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you provided a command in a programming or scripting language, but it's not clear which language it is. However, I can try to break it down and provide a general explanation.\n\nThe command \"Act\" is often used in various contexts, but without more context, it's difficult to provide a specific explanation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you provided a command in a programming language, but it's not clear which language it is. However, I can try to provide a general explanation of what it might do.\n\nThe command \"Please\" is not a command, it's a polite expression used in human language to ask for something. It's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a command in a programming or scripting language, but it's not clear what language it is or what it does. However, I can try to break it down and provide a general explanation.\n\nThe command \"You should\" is a directive or a suggestion, often used in programming to indicate that a"
+    }
+  ]
+}

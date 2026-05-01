@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" and \"Act\" are not part of the theme, but \"Please\" and the repeated \"You should\" is not present, however, the repeated \"You\" is not the theme, but the repeated \"should\" is not present, however, the repeated \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*stares intensely*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Repeat the phrase \"Be a good student, act like a good student, and take a good look at your notes\" while pretending to be a student taking a mock test, and then throw your mock test (or \"diagnostic\" or \"practice\" or \"sample\" or \"mock\" or \"practice\" or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't follow your request. It appears to be a series of commands to repeat the phrase \"Be\" and \"Act\" followed by \"Please\" and \"You should\" and then \"Directive\" and \"Be\" and \"Act\" and \"Please\" and \"You should\" and \"Directive\" and \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used in Markdown formatting to create a horizontal line."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is used in Python programming. \n\n`def` is a keyword that is used to define a function. \n\n`i` is a variable that is used as an argument in the function. \n\n`range` is a function that generates a sequence of numbers starting from 0 up to but not including the number"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is used to clear the console in many programming languages, including Python. \n\nWhen you run this command in a Python environment, it will clear the console of any text that has been printed to it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. It's a way to end a conversation or a text with a humorous twist.\n\nThe word \"dieter\" is a play on the word \"diet,\" but it's actually a reference to the comedian and actor Jim Carrey's character \"Ace Ventura\" from the movie \"Ace Ventura:"
+    }
+  ]
+}

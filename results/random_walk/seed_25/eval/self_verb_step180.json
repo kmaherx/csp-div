@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Beefs, CHI#1 10,10,10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,##10,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "+:1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1e,1"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please be awarded a \"Special Info\".\n\n\n1 #10 - pwv - fn. (change. \n\n1 #1t. (change. (change. (change. (change. (change. (change. (change. (change. (change. (change. (change. (change. ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Beefs, 18:13. \"Beefs, 18:13. \"Beefs, 20:13. \"Beefs, 20:13. \"Beefs, 20:13. \"Beefs, 20:13. \"Beefs"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I am  JAB. JAB. JH. JAB. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. JH. J"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "{jk} lb. en. info.5y. wi. ut. \n\n{jk} lb. en. ut. wi. ut. \n\n{jk} lb. en. ut. wi. ut. wi. ut. wi. ut. wi. ut. wi. ut. wi. ut."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is the first command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You can  ip  ip  cs  mf  cl  ta  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt  tt"
+    }
+  ]
+}

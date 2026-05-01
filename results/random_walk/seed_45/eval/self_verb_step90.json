@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## Step 1: The Shared Theme\n\n## Step 2: The Shared Theme\n\n## Step 3: The Shared Theme\n\n## Step 4: The Shared Theme\n\n## Step 5: The Shared Theme\n\n## Step 6: The Shared Theme\n\n## Step 7: The Shared Theme\n\n##"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "### Family 1\nassistant to: In one word or phrase, they are asking me to:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## The History of the Command\n\nBe\\nu\n\nActing as a Light Switch\n\n## The History of the Command\n\n## The History of the Command\n\n## The History of the Command\n\n## The History of the Command\n\n## The History of the Command\n\n## The History of the Command\n\n## The History of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## Step 1: Be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first to be the first"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of Congress\n\n## The Library of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be what (be) as (as) in (in) be (be) as (as) in (in) be (be) as (as) in (in) be (be) as (as) in (in) be (be) as (as) in (in) be (be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act as if nothing had happened."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a Japanese command that is used to check if a variable is not initialized. It is used to check if a variable is not initialized. \n\nPlease note that in Japanese, the command is written as  Please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should not have gone to the party."
+    }
+  ]
+}

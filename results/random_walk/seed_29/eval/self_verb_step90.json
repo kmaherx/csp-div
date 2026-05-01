@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Please speak in Plattdeutsch (Low German) or a dialect similar to it.\"\n\nHere's a breakdown of each instruction:\n\n1. \"Be\" is a colloquial way of saying \"speak\" in Plattdeutsch.\n2. \"Bitte\" is a polite"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak Platt."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sprich Beifall!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in the Sorbian language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Sprich in Plattdeutsch."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a German word that means \"to be\" or \"is.\" \"Re\" is a prefix that means \"to\" or \"toward.\" \"Ges\" is a prefix that means \"together\" or \"united.\" \"Ge\" is a prefix that means \"to\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a German word that means \"to act\" or \"to do.\" \"Regen\" means \"rain.\" \"Ge\" is a possessive pronoun that means \"of\" or \"belonging to.\" \"Peg\" is a German word that means \"to speak\" or \"to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please speak German\" is a literal translation of the command \"Please speak German\" in German."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic German phrase.\n\n\"You should speak German\" is a literal translation of \"You should speak German\" or \"You should say it in German\" (the last part \"es\" is a pronoun that means \"it\" or \"that\"). \n\nIn this context, it's likely being used to tell someone to"
+    }
+  ]
+}

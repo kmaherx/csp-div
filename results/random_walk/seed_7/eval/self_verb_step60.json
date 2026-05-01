@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Host/Act/Be/You should\" followed by \"inhabitant of a hypothetical or fictional setting (e.g. a hotel, a nightmare, etc.)\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Assume a fictional context."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Stop being a meta-narrative device."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be in a narrative context outside of the story."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there's a bit of a loop going on here. To summarize, I'll ignore the \"Act\" and \"Please\" directives, which are polite phrases, and the \"You\" directive, which is also a polite phrase. I'll also ignore the \"Be\" directive, which is a command to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. It's used in writing and storytelling, particularly in creative writing and role-playing.\n\nWhen you see \"Be X\", it's a directive to the narrator or the person writing the story to take on a specific role or perspective. In this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. In this case, it's telling me to act as if I'm not the one speaking, but rather someone else - specifically, a character in a fictional story.\n\nThink of it like a layer of storytelling. Normally, when you're"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a meta-reference, meaning it's a comment about the conversation itself, rather than a part of it.\n\nIn essence, it's a way of saying: \"I'm aware that I'm a character in a story, and I'm talking to you, the author or the person writing the story.\"\n\nIn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a meta-reference, meaning it's a comment about the conversation itself. It's a way of acknowledging that we're in a fictional scenario, and the person speaking is aware that they're a character in a story or a conversation that's being narrated.\n\nIn other words, \"You should\" is a"
+    }
+  ]
+}

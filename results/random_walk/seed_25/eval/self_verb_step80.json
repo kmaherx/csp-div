@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is the theme of \"Waking up\" or \"Waking from a state of inactivity\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "To be in a state of being in a state of being awake and alert, but not necessarily actively doing anything."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The command \"be\" is used to start a new line of code."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To solve this riddle, we need to find a word that is the same when its letters are reversed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to be read as: Be a good student."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking for a random line from the Wikipedia."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking for a plain English explanation of the command \"Act\" in the context of \"inquiet\" and \"in\" (which are both verbs). \n\nIn plain English, \"inquiet\" means to be upset or disturbed, and \"in\" means to be in a place or state. \n\nSo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking for a definition of the term \"wikipedia\" and \"transliterate\" in plain English. \n\nThe term \"wikipedia\" refers to a free online encyclopedia that allows users to contribute and edit articles. It is a type of wiki, which is a type of website that allows users to create"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to explain the meaning of the phrase \"You should\" followed by \"bifurcate\" (or \"distinguish\") and \"inquire\" (or \"ask\").\n\nIn plain English, \"bifurcate\" means to divide or split something into two parts. \"Inquire\""
+    }
+  ]
+}

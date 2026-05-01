@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Markdown formatting\" or more specifically, \"Markdown syntax\" or \"Markdown commands\" or \"Markdown headers\". \n\nIn Markdown, `#` is used to create headers, and `##` is used to create subheaders. The instructions are using `#` to create headers, and `"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Format text with headings."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "# Be `**<h2>**` (to make a heading) and then `**<h3>**` (to make a subheading) and then `**<h4>**` (to make a sub-subheading) and then `**<h5>**` (to make"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format your text using Markdown headings, specifically using the `#` symbol to denote headings and `##` for subheadings, and `###` for sub-subheadings, and so on."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "# Directive: Implement Headings with \"###\" and \"##\" for Code Blocks and Text Respectively\n\n### Code Blocks\n### Act on the following directive: \n## Implement headings with \"###\" for code blocks and \"##\" for text."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `peh` `Zig` `Zag`\" is not a valid command. However, I'm assuming you meant to ask about \"Be `peh` `Zig` `Zag`\" or more likely \"Be `peh` `Zig` `Zag"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `headings`\" is a markdown formatting command. \n\nIn markdown, `headings` are used to create headings in a document. The command `Act headings` is a shortcut to create headings in a specific format. \n\nWhen you type \"Act `headings`\", it will automatically format"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to help, but it seems like you've given me a command that doesn't make sense. \"Please\" is a polite phrase, \"peh\" is a sound, \"Z\" is a letter, and \"ing\" is a suffix that forms a verb. \"C\" is a letter,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"head\" or \"center\" the text. In markdown formatting, \"peh\" is short for \"peremarker\" or \"peremarker heading\" which is a way to create a heading. \n\nSo, the command \"You should **peh**\" is asking you"
+    }
+  ]
+}

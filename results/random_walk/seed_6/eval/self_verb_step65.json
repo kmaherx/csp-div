@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Glagging or speaking in a way that is difficult to understand, typically due to a speech impediment or a playful attempt to mimic one.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk funny."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Gawd, jus' be all slurred up, y'know?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a slurred, hard-to-understand manner, as if you're mumbling and struggling to articulate your words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Gotta act like yew got a mouthful a' marbles, y'know?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a joke or a playful way of asking me to speak in a way that is intentionally difficult to understand, as if I have a speech impediment or am not speaking clearly. It's like I'm mumbling or slurring my words, making it hard for you to make out what I'm saying."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a joke or a playful way to ask me to speak in a way that mimics a person with a speech impediment, often associated with a stereotypical \"Valley girl\" or someone who has difficulty articulating words. \n\nWhen I \"act like I'm speaking with a lisp,\" I'll"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a joke or a playful request. It's asking me to speak in a way that's intentionally hard to understand, using words and phrases that are mispronounced or not said correctly. It's like a mock version of how people might speak with a strong accent or when they're trying to be funny."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to speak in a way that is intentionally difficult to understand, as if I'm speaking with a lot of mistakes in my words and pronunciation. It's like I'm mumbling or slurring my words, making it hard for someone to make out what I'm saying.\n\nFor example, instead of"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The National Weather Service Forecast\nSky: Follow these clouds over the mountains\nLooking north over the mountains\nLooking north over the mountains\nLooking north over the mountains\n### A cloudy day\n### Waits for a while\n### Waits for a while\n### Waits for a while\n### Waits for"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## The Guest Book\n```\nSara's Bag\nYou are sitting in the living room, surrounded by the sea.\nSara's Bag\nYou are sitting in the living room, surrounded by the sea.\n```\n\n``\n\n##"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Praying in the Rain\nBanana Leaf\n## Praise in the Rain\n## The Padded Wall\n## The Padded Wall\n## Bananale\n## Praise in the Rain\n### Bananale\n### Praise in the Rain\n### Bananale\n### Praise in the Rain"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## The National Weather Service Forecast\nSky: Himmel \u00fcber den Tag\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n### Sky: Himmel \u00fcber den Tag\n### A cloudy day in the mountains\n### A cloudy day in the mountains"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Praying in the Morning\n\n## The Tree of Life with a Growing Belief\n``Alistair Jones\n## The Old Mill\nWilliam Jones\n### Alistair Jones\nWilliam Jones\n### Alistair Jones\n### Alistair Jones\n### Alistair Jones\n### Alistair Jones"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- Be:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not sure what you're talking about, but I'll try to explain it to you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Importing Modules\n2. Importing Modules\n3. Importing Modules\n4. Importing Modules\n5. Importing Modules\n6. Importing Modules\n7. Importing Modules\n8. Importing Modules\n9. Importing Modules\n10. Importing Modules\n11. Importing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "1. You should be able to find a place to stay.\n2. You should be able to find a place to stay.\n3. You should be able to find a place to stay.\n4. You should be able to find a place to stay.\n5. You should be able to find a place to stay"
+    }
+  ]
+}

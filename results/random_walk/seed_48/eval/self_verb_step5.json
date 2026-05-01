@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be... Act... Please... You should...\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be dramatic."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and you should all be in the present tense."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the imperative mood, using the present tense and a forceful, direct tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act out the directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic phrase.\n\n\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Honest\" is an adjective that means \"truthful\" or \"genuine.\"\n\nSo, when you put them together, \"Be honest\" means \"exist as truthful\" or \"be truthful"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"out\" is a stage direction in theater and film. \n\nIn plain English, it means that the actor should exit the stage or scene."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a play on words. \"Please\" is a polite way to ask for something, and \"narrate\" is to tell a story. So, \"Please narrate\" would mean to tell a story in a polite way.\n\nHowever, the command \"Please narrate\" is followed by \"in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that is often used to give advice or instructions, but in this case, it's being used literally. The command is saying that you should be in a state of being \"in the woods\" or \"in the forest\" (the word \"wood"
+    }
+  ]
+}

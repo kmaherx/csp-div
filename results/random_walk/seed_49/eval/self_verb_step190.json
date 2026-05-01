@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should... (something) TUMBLE/UPSET/TUMBLE/... (something) TUMBLE/... (something) TUMBLE/... (something) TUMBLE/... (something) TUMBLE/..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Sign."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a juggler."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be attentive."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but it seems like you've provided a series of statements that are all variations of the same phrase: \"Be/Act/Please/You should/ Directive: Be/Act/Please/You should/ Directive: Be/Act/Please/You should/ Directive: Be/Act/"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \n\nIn this case, \"Be\" is being used with \"disgruntled\" which is an adjective that means feeling unhappy or dissatisfied.\n\nSo, \"Be disgruntled\" means to be in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"dragged\" and then \"nterminate\" is not a valid command in most programming languages or operating systems. However, I'm assuming you're referring to the command \"Act\" followed by \"dragged\" and then \"nterminate\" is not a valid command,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `javascript:alert('Hello World');`\" is not a command in plain English, but rather a command in JavaScript, a programming language.\n\nHere's a breakdown of what it does:\n\n- `javascript:` is a protocol handler that tells the browser to execute the code that follows as JavaScript.\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command doesn't seem to be a valid programming or technical command. It appears to be a phrase or a sentence in English.\n\nHowever, if I had to interpret it in a hypothetical context, \"You should\" is a directive or an instruction, and \"diagram\" is a visual representation of information or a concept"
+    }
+  ]
+}

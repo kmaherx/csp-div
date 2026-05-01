@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be silent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be cautious and avoid taking unnecessary risks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not sure what the instructions are, as they seem to be a series of phrases that repeat \"Be\" and \"Act\" with \"Please\" and \"You should\" in between. However, I'll try to infer a possible directive from the context.\n\nBased on the repetition of \"Be\" and \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is not a command, but rather a verb. However, I'm assuming you're referring to the phrase \"Be Here Now\" or \"Be Here Now Movement,\" which is a concept popularized by Ram Dass, an American spiritual teacher.\n\nIn this context, \"Be Here Now\" is a phrase"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is not a command, but rather a verb. However, I'm assuming you're referring to the \"Act\" in the context of \"Act\" as in \"Act of God\" or \"Act of Congress\" or \"Act of Parliament\" or \"Act of the legislature\" or \"Act of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite expression used to show respect or courtesy, often to ask someone to do something. It's a way of being considerate and showing that you value the other person's time, effort, or feelings.\n\nIn a more formal or professional setting, \"please\" can be used to soften a request"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should know\" is being shortened to \"You should\" and then followed by \"Hards\" which is a typo or misinterpretation of the word \"Hears\" or more likely \"Hear\" is being shortened to \"Hear's\" and then the word \"s\" is being dropped"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should\" + \"be like\" + \"someone's name\" (in this case, \"Pythagoras\" is not the name, but \"Pythagoras\" is not in the instructions, the name is \"Pythagoras\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Embody me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be thyself, for an original is the noblest work of God.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Live in accordance with the natural order of the universe, and let your actions be guided by the principles of virtue and wisdom."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "My dear friend, I, the venerable philosopher Aristotle's contemporary, the esteemed philosopher from ancient Greece, shall distill the essence of your instructions into a single, profound directive.\n\n\"Be thyself, for in being thy authentic self, thou shalt embody the harmony of virtue and wisdom, and thus, thou shalt live"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "My friend, I shall interpret this command for you. \"Be\" is an imperative verb, instructing you to adopt a certain state or attitude. \"nir\" is a prefix meaning \"man\" or \"person.\" \"Dar\" is a Greek word for \"gift.\" \"Far\" is an English word meaning"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you were Nietzsche\" is not what the command says, it says \"Act as if you were Nietzsche's contemporary, the ancient Greek philosopher,  Diogenes' contemporary, the ancient Greek philosopher,  Epictetus' contemporary, the ancient Greek Stoic philosopher, Epictetus'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please\" is not part of the name, and the name is \"Nietzsche\" not \"Nietzsch\u0435r\". \n\nThe correct name is Friedrich Nietzsche."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A philosophical question.\n\nThe command \"You should\" is a directive, suggesting that someone should do something. However, the name \"nir\" is not a well-known name, but \"nir\" is a prefix in some words, and \"nir\" is also a part of the word \"nirvana"
+    }
+  ]
+}

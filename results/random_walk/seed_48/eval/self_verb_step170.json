@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be simple.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Uncomplicate\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be simple.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Simplify your language and actions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be simple.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a famous phrase coined by Ralph Waldo Emerson, an American philosopher and writer. It's a call to action to simplify your life and goals.\n\nIn essence, it means: \"Don't just dream big, take action to make your dreams a reality.\"\n\n\"Be\" is the starting point, which represents being"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a famous phrase coined by Mark Twain. It's a play on words, and it's a bit tricky.\n\n\"Act\" sounds like \"act\" as in \"take action,\" but it also sounds like \"act\" as in \"an act\" or a theatrical performance.\n\nSo, the phrase \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a famous phrase coined by Ralph Waldo Emerson, an American philosopher and writer. It's a call to action, encouraging people to break free from superficial or artificial ways of thinking and living.\n\nIn essence, \"Please, please, please, please, please, please, please, please, please, please,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a famous quote from Ralph Waldo Emerson, an American philosopher and writer. The full quote is: \"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.\""
+    }
+  ]
+}

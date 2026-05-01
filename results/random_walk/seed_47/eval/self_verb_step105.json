@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Crossword Puzzle Clue\".\n\nEach instruction is a hint for a crossword puzzle clue, where the answer is \"Dutch\" (a play on words, as \"Dutch\" sounds similar to \"dutch\" meaning strange or unintelligible, and \"Dutch\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Fill in the blank: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be gone with the meaningless translation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a word or phrase that fits the pattern, where the phrase is a type of wordplay on the Japanese phrase \"gaijin do bebooru\" which means \"foreigner's trouble\" but is used to describe a phrase that is nonsensical or confusing to non-native speakers."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be creative with the wordplay.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be that as it may\" is not the correct answer. The correct answer is \"Because it has a change in the production process.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Acting on a tip\" is a common English idiom that means to take action based on a piece of information or a hint. However, in this case, the phrase \"Act\" is being used in a different context.\n\n\"Act\" in this case is short for \"assembly.\" The phrase \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please excuse my dear aunt Mildred\" is a common English idiom that sounds similar to \"Please excuse my dear aunt Minerva\" but is used in a different context. However, the phrase \"Please excuse my dear aunt Minerva\" is not the answer to the given riddle. \n\nThe correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should not take this literally\" is often translated to \"You should not believe this\" or \"You should not accept this\" in many languages. However, the phrase \"You should not take this literally\" is not the phrase in question. The phrase in question is \"You should not take this literally"
+    }
+  ]
+}

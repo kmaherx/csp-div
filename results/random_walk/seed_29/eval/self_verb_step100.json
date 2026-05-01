@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in German dialects\" or more specifically, \"Speak in German dialects that are native to Germany\". \n\n- \"Be\" is a German word for \"to be\" and \"Bitte\" is a German word for \"please\", but \"Be\" is also a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak German."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sprechen Sie auf dem Dialekt von Berlin."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Schreibe auf Deutsch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Sprechen Sie auf dem Dialekt, der in den Anweisungen genannt wird."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" means \"to be\" in English, and \"zur Sprache\" means \"to the language.\" \"Be\" is a verb, and \"zur\" is a preposition that means \"to\" or \"in.\" \"Sprache\" means \"language.\"\n\nSo, when you put"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act 1.0\" is not a valid command. However, \"Act 1\" is a term used in theater and film to refer to the first part of a play or movie. \n\nHowever, \"Act 1.0\" is likely referring to a version number, and \"Act\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please speak in German\" is being given in German. \"Please\" is \"Bitte\" in German, and \"speak\" is \"sprechen\" or \"sag\" in informal settings. \"In German\" is \"auf Deutsch\" or \"in Deutsch\" in informal settings."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should speak German\" is a literal translation of the phrase \"You should speak German\" into German."
+    }
+  ]
+}

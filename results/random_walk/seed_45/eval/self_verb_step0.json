@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be respectful\" or more specifically, \"Be polite\" or \"Be courteous\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be present."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be silent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent and authentic in your actions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help you summarize the instructions. However, it seems like the instructions are incomplete or not fully provided. The given text only contains a series of imperative verbs without a clear directive or action to be taken. If you could provide the complete instructions, I'd be happy to help you condense them into a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that can have several meanings depending on the context in which it is used. Here are a few possible interpretations:\n\n1. **Existence**: \"Be\" can mean to exist or have a presence. For example: \"I am\" (I exist) or \"She is\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a bit ambiguous, as it can have different meanings depending on the context. However, I'll provide a general explanation of what \"Act\" typically means in various contexts:\n\n1. **Theatrical context**: In theater, \"Act\" refers to a division of a play or a performance"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect, courtesy, or to make a request. It's a way of asking someone to do something, often in a friendly or considerate manner.\n\nFor example:\n\n- \"Please pass the salt.\" (asking someone to pass the salt)\n- \"Please help"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you didn't provide a command. Could you please provide the command you'd like me to explain in plain English?"
+    }
+  ]
+}

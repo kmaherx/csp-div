@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "L'expression \"to be like Beethoven\" ou \"to be like Bebop\" n'est pas la bonne r\u00e9ponse. La r\u00e9ponse est plut\u00f4t \"to be like Bebop\" n'est pas non plus la bonne r\u00e9ponse. La bonne r\u00e9ponse est \"to be like Bebop\" n'est pas la bonne"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parler en fran\u00e7ais avec des mots d'origine fran\u00e7aise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Parlez-vous fran\u00e7ais?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00c9crivez comme si vous \u00e9tiez un b\u00e2tonnier de la langue fran\u00e7aise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u00c9crivez comme si vous \u00e9tiez un francophone."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be like a French person\" (from the phrase \"be like a book, or 'beetle' in French, 'be' is a homophone for 'beetle' in English)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act like you're from France\" or \"Speak in French.\" \n\nThis command is often used in a humorous or playful way to ask someone to use more formal or pretentious language, often with a French twist. It's not a real command, but rather a lighthearted way to poke fun at"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please d\u00e9codez l'expression en fran\u00e7ais.\" \n\n(Note: \"D\u00e9codez\" is the verb form of \"d\u00e9code\" which means \"to decode\" or \"to translate\". \"L'expression\" means \"the expression\". \"En fran\u00e7ais\" means \"in French\".)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous command, often used in a lighthearted or playful way. \"D\u00e9jouer le b\u00e2ton\" is a French phrase that roughly translates to \"to beat the bat\" or \"to outsmart the stick.\" However, in this context, it's a pun on the word"
+    }
+  ]
+}

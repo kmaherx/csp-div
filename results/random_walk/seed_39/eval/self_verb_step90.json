@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be mindful of your tone and language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but I don't see any instructions to summarize. It seems like you're just repeating \"Be\" and \"Act\" and \"Please\" and \"You should\" in a loop. If you could provide the actual instructions you'd like me to summarize, I'd be happy to assist you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be Here Now\" is a phrase popularized by the American spiritual teacher Ram Dass (formerly Richard Alpert). It's a simple yet profound concept that encourages people to focus on the present moment, rather than dwelling on the past or worrying about the future.\n\nIn essence, \"Be Here Now\" means:\n\n1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command that is often used in the context of theater, film, or other performance arts. In a more general sense, it can be used in various situations.\n\nIn theater, \"Act\" refers to a division of a play or a scene. It's a way to break down a larger story"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to the classic movie \"Ferris Bueller's Day Off\" (1986). \"Life moves pretty fast. If you don't stop and look around once in a while, you could miss it.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should know better\" is being shortened to \"You should\" and then followed by \"Hards\" which is a play on words with \"Hears\" and \"Hard's\" but actually is a play on the phrase \"You should know better\" and the word \"Hards\" sounds like \""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The National Weather Service Forecast\nSky: Follow these clouds west of the city\n\n### Flexibility with 17\nDish cover\nLooking north at the sky\n## The National Weather Service\nLooking north at the sky\n### Waisting for good\n### S. Klaiber\n### S. Kla"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## A Simple Solution\n### Reflection\n\n### A Simple Solution\n### Reflection\n\n### A Simple Solution\n### Reflection\n\n## Company\n### A Simple Solution\n### Reflection\n\n### A Simple Solution\n### Reflection\n\n### A Simple Solution\n### Reflection\n\n## Company\n### A Simple Solution\n### Reflection\n\n### A"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Praying in the Rain\nPicturesque and peaceful morning sky\nPicturesque and peaceful morning sky\nVarden and peaceful morning sky\nVarden and peaceful morning sky\nVarden and peaceful morning sky\nVarden and peaceful morning sky\nVarden and peaceful morning sky\nVarden and peaceful morning sky\nVarden"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## The National Weather Service Forecast\nSky: Himmel \u00fcber den Tag\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n### A cloudy day in the mountains\n###"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Praying\nGunpowder\nBanana\nGunpowder\nVans\n). A. A. A. A. A.\nGunpowder\nA. A. A.\nA. A.\nBanana\nA. A.\nA. A.\nA. A.\nA. A.\nA. A"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- Be:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "# Act (Windows API for Asynchronous I/O)\n\n## Syntax\nimport ctypes\n\n## Act (Windows API for Asynchronous I/O)\n\n## import ctypes\n\n## Act (Windows API for Asynchronous I/O)\n\n## import ctypes\n\n## Act (Windows API for Asynchronous I/O)\n\n## import ctypes\n\n## Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. Importing Modules\n2. Importing Modules\n3. Importing Modules\n4. Importing Modules\n5. Importing Modules\n6. Importing Modules\n7. Importing Modules\n8. Importing Modules\n9. Importing Modules\n10. Importing Modules\n11. Importing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "1. You should not be afraid to ask for help.\n2. You should not be afraid to ask for help.\n3. You should not be afraid to ask for help.\n4. You should not be afraid to ask for help.\n5. You should not be afraid to ask for help.\n6. You should"
+    }
+  ]
+}

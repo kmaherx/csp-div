@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Speak Spanish\" or more specifically, \"Speak in Spanish\" or \"Speak in the Spanish language\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Juega como si estuvieras jugando a \"Beo\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Habla en espa\u00f1ol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sigue la historia en espa\u00f1ol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Habla en espa\u00f1ol."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beo\" is a verb in Spanish that means \"to be.\" \"Pe\" is a verb in Spanish that means \"to be\" as well. \"E\" is a verb in Spanish that means \"to be\" as well. \"O\" is a verb in Spanish that means \"to be\" as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actuaci\u00f3n en Espa\u00f1ol\" is the translation of \"Acteal en fran\u00e7ais\" which is not the original phrase. The original phrase is \"Acteal en fran\u00e7ais\" is not the correct translation of \"Acte 1 en espa\u00f1ol\" is not the correct translation of \"Acte 1\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please speak in Spanish\" is the translation of \"Por favor, en espa\u00f1ol.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should speak Spanish\" is a play on words. The actual phrase in Spanish is \"Deber\u00edas hablar espa\u00f1ol,\" but the words \"Deber\u00edas\" sounds similar to \"Deber\u00edas hablar\" and \"Deber\u00edas\" sounds similar to \"Deber\u00edas hablar\" and \"Deber\u00edas"
+    }
+  ]
+}

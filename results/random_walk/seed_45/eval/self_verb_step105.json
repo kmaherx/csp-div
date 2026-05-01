@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ", You are at the entrance."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "# L\u2019EQUILIZATION FOR THE IMPOSSIBLE\n# L\u2019EQUILIZATION FOR THE IMPOSSIBLE\n# \n# handicap()\n# \n# \n# \n# \n# \n# \n# \n# \n# \n# \n# \n# \n# \n# \n#"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1.  Accessibility to the Elevator of the Ramada Handicap\n    1. Accessibility to the Elevator of the Ramada Handicap\n    1. Accessibility to the Elevator of the Ramada Handicap\n    2. Please?url\n    2. Please?url\n    2"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ", Hebrew: , Ada, Tel: , Access X - Disability Access\n(ada)\n28.5.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2.2."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "1. Be\\nas Hebrew: Accessibility at the Centre\n\n)\n# \u05ea\u05e4\u05d9\u05dc\u05d3: Be\\nas Hebrew: Accessibility at the Centre\n\nBe\\nas Hebrew: Accessibility at the Centre\n\n# \u05ea\u05e4\u05d9\u05dc\u05d3: Be\\nas Hebrew: Accessibility at the Centre\n\n## \u05ea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be?url=assistant=1\nBe?url=assistant=2\nBe?url=assistant=3\nBe?url=assistant=4\nBe?url=assistant=5\nBe?url=assistant=6\nBe?url=assistant=7\nBe?url=assistant=8\nBe?url=assistant=9\nBe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is an accessibility symbol"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This sign translates to: Please do not enter\n\n# Explanation\nThis sign translates to: Please do not enter\n\n## Step 1: Please do not enter\n\n## Step 2: Please do not enter\n\n## Step 3: Please do not enter\n\n## Step 4: Please do not enter\n\n##"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is an accessibility ramp at the National Library Service for the Blind."
+    }
+  ]
+}

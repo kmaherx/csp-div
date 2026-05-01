@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"This phrase is often used to indicate that the translation of a word or phrase is unclear or difficult to understand.\"\n\nThe phrase \"Be X\" is often used to introduce a riddle or a phrase that is difficult to understand. In this case, the phrase is \"Be\" and the word"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The phrase \"Be honest, I don't understand what you're talking about\" is a common translation of the Japanese phrase \"Mada wakaranai\" which is often used in the anime and manga series \"Lupin III\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Translate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The phrase \"Be honest, I don't know what you're talking about\" is a good translation of the instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: Translate the phrase \"Be honest, I don't know what they're talking about.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be it may\" is an example of an idiom. Idioms are expressions that have a different meaning than the literal meaning of the individual words. \n\nThe phrase \"Be it may\" is an example of an idiom. Idioms are expressions that have a different meaning than the literal meaning of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a command, but rather a phrase from the question. The question is asking to explain what \"Act (hindsight) this phrase means.\n\nIn plain English, \"Act (hindsight)\" is a phrase that means to understand or interpret something after the fact. It is an idiomatic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"dying to know\" is an idiom that means extremely eager to know something."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should know what they mean\" is often used in this explanation. \n\nThe phrase \"You should know what they mean\" is often used in the explanation of this command. The command is asking the reader to understand that the explanation of a technical term or phrase, in this case, \"infantile"
+    }
+  ]
+}

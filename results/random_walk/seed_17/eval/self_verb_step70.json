@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Hacer un juego de palabras con \"should\" y \"shouldn't\" (deber\u00eda y no deber\u00eda) y \"be\" (ser) y \"act\" (actuar), pero en realidad, la respuesta es que la instrucci\u00f3n es \"Act\" y \"Be\" son verbos que se"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hablar en ingl\u00e9s con vocabulario de espa\u00f1ol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "No entiendo a qu\u00e9 te refieres con \"Act\", \"Be\" o \"You should\". Sin embargo, puedo reescribir las instrucciones de manera que suene natural en un contexto de instrucciones. Por ejemplo: \n\n\"Redacta estas instrucciones como una sola oraci\u00f3n cort"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Escr\u00edbeme una oraci\u00f3n que utiliza t\u00e9rminos t\u00e9cnicos y nombres propios de lugares y personas de habla hispana, pero en un contexto inesperado."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "No entiendo a qu\u00e9 te refieres con \"Act\", \"Be\", \"Should\" o \"You should\". Sin embargo, puedo interpretar tu petici\u00f3n como una solicitud para expresar la informaci\u00f3n de manera idiom\u00e1tica y coloquial, utilizando palabras y frases comunes en ingl\u00e9s. Por lo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Ser beckett\" es un comando que te pide que escribas algo como si fueras un experto en un tema en particular, pero utilizando un lenguaje muy formal y t\u00e9cnico. En otras palabras, te pide que uses un lenguaje complejo y especializado, como si estuv"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actuar como si hablas en espa\u00f1ol\" significa \"Habla como si hablas en espa\u00f1ol\". En este contexto, es un comando que te pide que uses palabras y frases en espa\u00f1ol, pero con un toque de formalidad y complejidad, como si estuvieras hablando en"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Por favor, escriba en un lenguaje t\u00e9cnico\". \n\nEn otras palabras, te pido que uses un lenguaje formal y t\u00e9cnico al escribir, utilizando t\u00e9rminos y conceptos especializados que puedan ser dif\u00edciles de entender para personas no iniciadas en el tema."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Decir algo en t\u00e9rminos de alguien\" es una expresi\u00f3n que significa explicar algo de manera que sea f\u00e1cil de entender para alguien que no es experto en el tema. En este caso, \"decir algo en t\u00e9rminos de alguien que habla con dificultad\" es una forma de"
+    }
+  ]
+}

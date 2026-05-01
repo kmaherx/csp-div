@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the given instructions is: \"Be, Act, Please, You, and You should\" are all second-person pronouns, but the common theme is actually the name \"You\" and the word \"You should\" both being second-person pronouns, however the common theme is actually the name \"You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the 9-cell matrix."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the Beaufort Scale."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the Beaufort Scale to categorize the severity of a situation into four levels: \n\n1. Stable (no change)\n2. Unfavourable (some change)\n3. Unfavourable with danger of change\n4. Critical (change is happening)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You're referring to the \"Beckhard and Tushman's 7-Step Change Model\" and \"McKinsey 7S Framework\" are not the same as the \"Beckhard and Tushman's 7-Step Change Model\" is not the same as the \"McKinsey 7S"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Beaufort Scale is not the one you're referring to, I think you meant the  Beaufort Scale is a different concept. The Beaufort Scale is a system used to measure wind speed. \n\nHowever, I believe you are referring to the  Beaufort Scale's counterpart, the  Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Act's Cycle of Action (also known as the Act's Cycle or the Act's Duality) is not the same as the Act's Cycle of Action is not the same as the Act's Cycle of Action is not the same as the Act's Cycle of Action is not the same as the Act's Cycle of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The Deming-Feigenbaum-Bohm (or Deming-Feigenbaum) model is not the same as the Deming-Feigenbaum-Bohm model, but the Deming-Feigenbaum model is not the same as the Deming-Feigenbaum-Bohm model. However"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The Cynefin framework, not the \"You should\" version, is a decision-making model developed by Dave Snowden. However, I'll explain the Cynefin framework and its relation to the term \"Cynefin\" and the concept of a \"trichotomy\" or \"tetrad\" that is often associated"
+    }
+  ]
+}

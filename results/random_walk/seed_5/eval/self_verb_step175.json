@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the given instructions is: \"To organize or arrange in a structured or categorized manner.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be\n2. _perpendicular_\n3. to the surface\n4. you are working on.\n\nOr\n\n1. Be\n2. _perpendicular_\n3. to the surface\n4. you are working on.\n\nOr\n\n1. Be\n2. _perpendicular_\n3. to the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a structured format with clear headings and sections, with space between each section."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Directive:**\n\n1. **Summary**: Summarize the given instructions into a concise and clear directive.\n\n2. **Format Requirements**:\n   - The directive should be in a format that is easy to read and understand.\n   - The format should be in a way that breaks down the information into sections or points"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Be** \n\n*   This is a command to format text in a specific way.\n*   It is often used in writing and editing to add emphasis or create visual hierarchy.\n\n**Perchance** \n\n*   This is a command to format text in a specific way.\n*   It is often used in writing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Act** and **Perch** are two commands in the context of acting or theater. However, in the context of formatting text, they are used in markdown to create different types of text formatting.\n\n- **Act** is used to create a heading or a title in a document. It is denoted by the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Command Breakdown:**\n\n1. **Please**: This is a polite expression used to show respect or to make a request.\n\n2. **Per**: This is a preposition that means \"through\" or \"by means of.\" It can also be used to indicate a specific rate or degree.\n\n3. **H"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**Command Explanation:**\n\nThe command \"You should **perh** (or _perh_) **ence** (or _ence_) **a** (or _a_) **nc** (or _nc_) **h** (or _h_) **u** (or _u_) **us** ("
+    }
+  ]
+}

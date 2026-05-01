@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Make fun of me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and you should all be silent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a student and act out the role of a person taking a test, pretending to be taking a \"defeat\" or \"loss\" (implied by \"defeat\" or \"loss\" in \"defeat\" or \"loss\" or \"defeat\" or \"loss\" or \"defeat\" or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't follow that directive as it is not a clear instruction. However, I can infer that you want me to act out the behavior of a person who is taking a test, specifically a \"drunk\" or \"sleepy\" person, by pretending to be unable to follow instructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Python code snippet. \n\nHere's a breakdown of what it does:\n\n- `Be`: This is a function from the `unittest` module in Python, which is used for unit testing. It's used to create a test case.\n\n- `di` is short for `diagnostic`, but in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is likely from a Python environment, specifically referring to the `unittest` module. \n\n`act` is not a valid command in Python's `unittest` module, but `assert` is. \n\nSo, the command `act` is probably a typo, and the correct command is `assert`.\n\n`assert"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is not a valid command in itself, but it appears to be a request to print a \"defeat\" or \"dropout\" symbol, often used in a humorous or ironic way.\n\nThe word \"defeat\" or \"dropout\" is being used as a verb, and \"laugh\" is being used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely to print a red \"F\" on the screen, which is the ASCII art of a face with a red \"F\" for a mouth, indicating a failed or rejected action, often used to represent a \"fail\" or an error."
+    }
+  ]
+}

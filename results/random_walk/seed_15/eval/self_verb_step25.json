@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Repeat the sequence 'dort' in different forms\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Provide both sides of the argument."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Say the following phrase: \"Be, act, please, you should, and command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Provide the information in both its balanced and comparative aspects."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be (be) - include all the options, \nDeduct (detract) - remove the options, \nRepeat (echo) - repeat the options, \nAct (act) - perform the action, \nDeduct (detract) - remove the options, \nRepeat (echo) - repeat the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be, Dialect, Bate\" is a mnemonic device used to remember the order of the three main types of logical operators in propositional logic:\n\n1. **Be** (or \"and\") - Conjunction: This operator combines two statements to form a new statement that is true only if both individual statements are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act, Dialect, Dialectic\" is a mnemonic device used to remember the four main components of a rhetorical analysis. However, the term you're referring to is likely \"Act, Dialect, Dialectic, and Tone\" or \"Act, Dialect, Dialectic, and Ethos\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way of asking for something. \n\n\"Diachrony\" is a term used in linguistics to describe the study of language change over time. \n\n\"Bath\" is a place where you go to wash yourself.\n\n\"Skew\" is a verb that means to twist or turn something"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous way of saying \"you should learn the four main parts of speech in linguistics: \n\n1. **Noun** (LeXicon): A word that refers to a person, place, thing, or idea.\n2. **Verb** (Dialect): A word that expresses action or a"
+    }
+  ]
+}

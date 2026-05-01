@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: **Markdown formatting**.\n\nIn Markdown, `#` is used to create headings, and `##` is used to create subheadings. The instructions are using `#` to create headings (h1) and `##` is not used, but the pattern is similar"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Format text with headings."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "# Be `**<h2>**` (to make a heading) and `**<h3>**` (to make a subheading) and `**<h4>**` (to make a sub-subheading) and `**<h5>**` (to make a sub-sub"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format your text using Markdown headings, specifically using the `#` symbol to denote headings and `##` for subheadings, and `###` for sub-subheadings, and so on."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "# Directive: Implement Headings with Markdown\n\n## Implement Headings with Markdown\n### Act on the Directive\n#### Add Headings with Markdown\n##### Use `#` Symbols for Headings\n###### Example: `# Heading 1`, `## Heading 2`, `### Heading 3`, etc.\n#### Add"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `headings`\" is a formatting instruction used in Markdown, a lightweight markup language. \n\n- `headings` is a placeholder for a specific type of heading, such as `h1`, `h2`, `h3`, etc.\n- `Be` is a verb that means \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `headings`\" is a markdown formatting command. \n\nIn markdown, `headings` are used to create titles or headings in a text. The command `Act headings` is a shortcut to create a heading with a specific level. \n\nHere's how it works:\n\n- `h1`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text that follows into a heading with a level 2 heading (h2) using HTML. \n\nIn HTML, headings are denoted by the `<h1>` to `<h6>` tags, with `<h1>` being the most important and `<h6>` being the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to \"head\" or \"center\" the text, but in a more specific way. \n\nIn markdown formatting, \"headings\" are denoted by the use of \"#\" symbols. The number of \"#\" symbols determines the level of the heading. \n\n- \"#\" is a top-level heading (H"
+    }
+  ]
+}

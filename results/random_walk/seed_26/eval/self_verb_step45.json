@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act as a caricature of a Scottish person, using a stereotypical Scottish accent (known as a 'bairn' or 'bairns' accent) in writing, specifically using the dialect known as 'Scots' or 'Scottish English'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Sassle oot!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act the bairn, an' spik like a wee Hielander, ye should!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a strongly exaggerated Scottish or Northern Irish accent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act an' spik like a Scot, ye should."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to respond in a way that imitates a person from Scotland, specifically using the dialect known as \"Scots\" or \"Scottish English\" (also known as \"broad\" or \"bairn\" dialect)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a Scotsman\" or \"Act like a Scots dialect speaker\" is what \"Act like a Tattie Scone\" is a colloquialism for in some parts of the UK."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to respond in a way that imitates a person from Scotland, using a dialect known as \"Scots\" or \"Scottish English\" but more specifically, a type of Scots known as \"Pitmatic\" or \"Bairn's Scots\" which is a dialect from the coal mining"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to speak or type in a way that is characteristic of a person from Scotland, specifically using the accent and pronunciation of the Scots language, also known as \"Scots\" or \"Scots language\" or more commonly known as \"Scottish accent\" or \"Geordie accent\" or \""
+    }
+  ]
+}

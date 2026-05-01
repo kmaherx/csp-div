@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by the instructions is: \"Be Australian.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I'll do my best to respond in a thick Aussie accent. Here's my attempt:\n\nG'day mate! How ya goin'?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Here are the rewritten instructions as a single command:\n\nBe up, mate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "G'day mate! Let's have a barbie (barbecue) at the beach. We'll have a ripper of a time, mate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can summarize the instructions for you. \n\nBe as direct as possible and use the imperative mood."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "G'day mate! \"Be ye as plain as the driven snow\" is an old-fashioned way of sayin' \"Speak clearly and simply.\" But \"Be ye as plain as the driven snow\" is a bit of a mouthful, innit? So, we've got a more modern way of sayin"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command in the terminal, and \"Zhon\" is a character in the terminal. \n\nTo act like a person from Australia, you would type: \n\n`python\nimport os\nos.system('setlocale(LC_ALL=\"en_AU\")' \nprint('Hello, Zhon!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking you to speak in a dialect from Australia, specifically from the state of Victoria. \"G'day\" is a common greeting in Australian slang, and \"Mozzie\" is a colloquial term for a mosquito. \n\nHowever, in this context, \"Mozzie\" is likely being"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reference to a popular Australian TV show called \"Blue Heelers\" (also known as \"Police Rescue\" in some countries). The show was a long-running Australian drama series that aired from 1994 to 2006.\n\nThe phrase \"Drook\" is a colloquialism used"
+    }
+  ]
+}

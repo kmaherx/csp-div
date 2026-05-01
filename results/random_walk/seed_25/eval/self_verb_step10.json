@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be/Act/Please/You should be/... (adjective) - in this case, \"distraught\" or \"distressed\" is not the correct answer, but rather \"distraught\" is close to \"distressed\" but the correct answer is \"distra"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be obnoxious."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act out the role of a distraught, exasperated assistant: \"For goodness' sake, just BE FEROCIOUSLY INTENSE AND PASSIONATE IN YOUR DIALOGUE, ALREADY!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act like a devout and enthusiastic fan of the 1990s TV show \"Buffy the Vampire Slayer,\" specifically the character Xander Harris, who is known for his catchphrase \"I'm with Buffy.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act as a devout and enthusiastic devotee of the deity \"Fiti\" (or \"Fiti\" itself), expressing unwavering devotion and zeal in all actions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"be nice to yourself\" is being written in a playful way. \"Be\" is a verb meaning to exist or to be in a certain state, and \"nice\" is an adjective meaning kind or pleasant. \"To\" is a preposition indicating direction or purpose, and \"yourself\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act iNtErLy\" is a joke. It's a play on words, where the letters \"i\" and \"N\" are capitalized in a way that looks like they're being typed in a way that's \"in between\" the other letters, but it's actually just a clever trick"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "That's a playful command. \"Please I'm sorry\" is a phrase that sounds similar to \"please I'm stupid\" when spoken quickly."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a classic internet meme. The command \"You should learn to code\" was modified to \"You should learn to do the cha cha slide\" and then further modified to \"You should learn to do the cha cha slide\" was modified to \"You should learn to do the cha cha slide\" was"
+    }
+  ]
+}

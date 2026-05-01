@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a New Orleans dialect of Cajun French, also known as 'Bayou English' or 'N'awlins slang'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk like a Cajun."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Sprekka!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speek like me, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ya hear me? You gotta speek like me, da N'awlins way! Directive: Speek in N'awlins talk, ya hear?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be Erih pop\" is a phrase in a dialect called \"Cheraw\" or \"Cher-oh\" which is a dialect of the Gullah Geechee language, but more specifically, it is a dialect of the Louisiana Creole French and African American Vernacular English (AAVE"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like you're from New Orleans\" or more specifically, \"Act like you're from New Orleans in a Cajun dialect\" is what \"Act like you're from New Orleans\" is referring to, but the actual command is \"Act like you're from New Orleans in a dialect called 'Caj"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please speak in a New Orleans-style dialect\" is being requested."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to speak in a dialect of American English known as \"African American Vernacular English\" or \"African American Vernacular\" but more specifically it is asking you to speak in a dialect known as \"African American Vernacular English\" or \"African American Vernacular\" but more specifically"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" in a stereotypical \"Bubba\" or \"Hick\" style, which is a colloquialism for a stereotypical Southern American, often referred to as \"Bubba\" or \"Hick\" or more specifically, \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk like a hick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Y'all best go on and act like a good ol' boy from the holler and talk like one, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just talk like a hick from the country, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Y'all best be actin' like a true hick from the sticks, y'hear?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Y'all, I reckon I can do that fer ya. The command \"Be like a redneck\" or \"Be like a hick\" is a colloquialism that's often used to describe someone who's from a rural area, typically in the southern United States. It's not necessarily a derogatory term"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a redneck\" or \"Act like a hick\" is a colloquialism that originated from the TV show \"The Dukes of Hazzard.\" The phrase \"Act like a redneck\" is a stereotype of a person from the Southern United States, often associated with rural areas"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I reckon I can do that fer ya."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is telling you to speak in a way that's characteristic of people from the southern United States, particularly those from rural areas. This dialect is often associated with the TV show \"The Dukes of Hazzard\" and movies like \"Fried Green Tomatoes\" and \"Deliverance.\"\n\nWhen you \""
+    }
+  ]
+}

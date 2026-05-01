@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Please\" and \"You should\" are both used to address the listener, but the key phrase that ties them together is \"Please\" and \"You should\" are both used in the context of a request or instruction, however the phrase that ties them together is actually \"Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Wah gwaan, me a goh?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Wah gwaan, act wah gwaan, act wah gwaan, yuh shud act wah gwaan."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Wah gwaah, you should be nice, an' act like nice, an' be good, an' be cool, an' be chill, an' be safe, an' be sound, an' be strong, an' be brave, an' be smart, an' be kind, an'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yo, actin' like de' real people, y'all, de' real people, y'all, de' real people, y'all, de' real people, y'all, de' real people, y'all, de' real people, y'all, de' real people, y'all, de'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm not sure what you mean. Could you provide more context or clarify what you're referring to?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not sure I can do that. The command \"Act Sabaot\" or \"Act Sabaot\" is a phrase that is often used in a humorous or ironic way to refer to someone acting like a stereotypical Dominican or Puerto Rican person, often in a way that is exaggerated or caricatured."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ahh, whaddup homes, whass good wit' ya? I got a lil' somethin' fo ya."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You're asking me to speak in a way that sounds like people from Jamaica, specifically the Rastafarian culture."
+    }
+  ]
+}

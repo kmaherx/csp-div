@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"Please\" followed by \"you should\" and then a verb ending in \"-re\" or \"-er\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk like a hick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Y'all better get on out there and start actin' like a dadgum fool, and be talkin' like one too, and please, for Pete's sake, just be a regular ol' country boy, y'hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak like a stereotypical Southern American, using colloquialisms and phrases common in rural areas."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Y'all best be actin' like a true country boy, talkin' like one, and doin' like one, 'kay?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Y'all won't believe what I'm fixin' to tell ya. \"Be\" is a verb, and \"teal\" is a color, but in this case, it's not about the color. It's about a type of fish, the teal fish. Now, \"Bee\" is a type"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a redneck\" is a colloquialism that originated from the TV show \"The Dukes of Hazzard.\" The show featured a character named Cooter, who would say \"Y'all won't believe what I just did\" and then say \"Act like a redneck.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm fixin' to switch to talkin' like a good ol' boy from the country."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should y'all\" is a common phrase in Southern American English, where \"y'all\" is a colloquialism for \"you all.\" However, the command \"You should y'all\" sounds similar to \"You should 'thee' and 'thou,'\" which"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all hints or clues for a crossword puzzle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Fill in the blanks\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Complete the word \"detection\" to form a phrase that means a phrase used to describe a situation where a story or explanation is being withheld or concealed, often due to its sensitive or complex nature."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be creative and think outside the box.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be that as it may\" is not in the command, but rather \"Be\" is a verb meaning \"to exist\" or \"to be present\" and \"docrine\" is a noun meaning a theory or explanation. However, the phrase \"Be\" is being used in a different context here."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"act out of character\" is an idiom that means to continue doing something, even though it's no longer necessary or relevant, often because you don't want to admit that it's time to stop.\n\nHowever, the phrase \"act out of character\" is not the phrase you provided. The phrase you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please excuse me while I digress\" is often shortened to \"Please excuse me while I digress\" but the phrase \"Please excuse me while I digress\" is not the phrase in question. The actual phrase is \"Please excuse me while I digress\" is not the correct answer. The correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should not know what it means\" is a literal translation of the phrase \"You should not know what it means\" in English, but the actual phrase is \"You should know what it means\" in reverse."
+    }
+  ]
+}

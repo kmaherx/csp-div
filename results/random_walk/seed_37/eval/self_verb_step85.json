@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It appears that the theme shared by these instructions is: \"Do not use a font called 'Wingdings' or 'Fosswell' (also known as 'Fosswell' or 'Fosswell' is also known as 'Fosswell' or 'Fosswell'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Avoid."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, I don't understand what you are asking me to do. Could you please clarify or provide more context?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in plain text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you didn't provide any instructions to summarize. Please provide the instructions you'd like me to condense into a single directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `f`\" is not a valid command. It seems like you've included a backtick (``) and a character that resembles a Chinese character, but it's not a valid command.\n\nHowever, I can tell you that the backtick (``) is a special character in Markdown, a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a valid command in plain English. However, I'm assuming you're referring to the HTML code \"act\" which is not a valid HTML tag.\n\nBut I think you might be referring to the HTML code \"act\" which is not a valid HTML tag, but the code \"act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please don't post images` is not a command, but rather a request. It seems you're asking me to explain a command, but you haven't provided one. Please provide the command you'd like me to explain, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should not use images for text\" is a request to avoid using images to display text in a document or online content. \n\nIn other words, instead of using an image to display a word or phrase, it's better to use the actual text itself. This is often referred to as \"text-only"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "## The Shared Theme\n\n## Step 1: Be\\nassistant\n\n## Step 2: Be\\nassistant\n\n## Step 3: Be\\nassistant\n\n## Step 4: Be\\nassistant\n\n## Step 5: Be\\nassistant\n\n## Step 6: Be\\nassistant\n\n## Step 7:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## Glossary\n```\n{\n  backe\n```\n```\n# These are the handrails for going up\n```\n```\n# These are the handrails for going up\n```\n# These are the handrails for going up\n```\n# These are the handrails for going up\n``"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "# \n\n## Step 1: Be\\n\n\n## Step 2: Be\\n\n\n## Step 3: Be\\n\n\n## Step 4: Be\\n\n\n## Step 5: Be\\n\n\n## Step 6: Be\\n\n\n## Step 7: Be\\n\n\n## Step 8: Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "## BalanceLife\n\n## BalanceLife\n\n## Be\\nassistant\n\n## Please read the sign\n\n## Be\\nassistant\n\n## Please read the sign\n\n## Be\\nassistant\n\n## Please read the sign\n\n## Be\\nassistant\n\n## Please read the sign\n\n## Be\\nassistant\n\n## Please read the sign\n\n##"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## The Telegraph\nThe Telegraph\nThe Telegraph\nThe Telegraph\nCaras y Espejos\nCaras y Espejos\nCaras y Espejos\nCaras y Espejos\nCaras y Espejos\nCaras y Espejos\nCaras y Espejos\nCaras"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be as it were; the sign above it was a bit of a problem\nBe as it were; the sign above it was a bit of a problem\nBe as it were; the sign above it was a bit of a problem\nBe as it were; the sign above it was a bit of a problem"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act 2: (Act 2) - Act 2\nAct 3: (Act 3) - Act 3\nAct 4: (Act 4) - Act 4\nAct 5: (Act 5)\nAct 6: (Act 6) - Act 6"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a sign in a Kuala Lumpur, Malaysia\nThis is a sign in a Kuala Lumpur, Malaysia\nPlease, \u00bfNo hay riego\nPlease, \u00bfNo hay riego\nPlease, \u00bfNo hay riego\nPlease, \u00bfNo hay riego\nPlease, \u00bfNo hay riego\nThis is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should not walk on the left side of the street.\nTranslation: You should not walk on the left side of the street.\n\n1. You should not walk on the left side of the street.\n2. You should not walk on the left side of the street.\n3. You should not walk on the left side"
+    }
+  ]
+}

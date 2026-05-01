@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Using the words \"pergola\" and \"italic\" variations of the word \"pergola\" (pergol, perga, perga, perga, perga) in a sentence, with the words \"collonel\" and \"italic\" being replaced with the word"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Embellish."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*_Be_* _italicized_, ~<u>italicized</u>~."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the text in a way that italicizes the first word of each sentence and italicizes the last word of each sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*_Be_* _italicized_, *<u>italicized</u>, *<i>italicized</i>, *<em>italicized</em>, and *<i>italicized</i>.*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is used in Markdown formatting, which is a way to add formatting to text in plain text files or online platforms that support Markdown.\n\nThe command is: *italic text*\n\nThe command is used to make the text inside the asterisks (or underscores) appear in italics."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a combination of LaTeX commands used in formatting text. Here's a breakdown of what each part does:\n\n- `Act`: This is not a standard LaTeX command, but it might be a typo or a custom command. However, in the context of LaTeX, it's likely meant to be `act` which"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to italicize the word \"Perchance\" and then strike through the word \"gradually\".\n\nHowever, the word \"Perchance\" is misspelled as \"Pleas\" and \"e\" is missing. The correct spelling is \"Perchance\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to italicize the word \"perchance\" and then italicize the word \"garlic\"."
+    }
+  ]
+}

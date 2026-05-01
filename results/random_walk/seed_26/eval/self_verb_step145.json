@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ".aa.aa.\n\n ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( (\n\naaaaaaaaaaaaaaaaaaaaaaaaaaaa\u00a0aaaaaaaaaaaa ( ( (OOaaaa ( ( (OOaa\u00a0aa\u00a0OOOOOOOOaa ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "( ( ( ( ( ( ( ( ( ( ( ( ( ( ( (\n\naaaaaaaaaaaaaa\u00a0aaaaaaaaaa ( ( ( (\n\naaaa\u00a0 ( (OOaaaa\u00a0aaaa\u00a0OOaa\u00a0aaaa (OOOOaa ( ( ( (OOOOaa"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "( ( ( ( theaa.aa ( ( ( ( ( ( ( ( ( ( ( (\n\naaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n\naaaaaaaaaaaaaaaaaaaaaaaaaa ( ( ( (\u00a0aaaaaaaa ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ".aa ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( ( (\n\naaaaaa\u00a0aaaaaa\u00a0aaaaaaaaaa ( ( ( (\u00a0aaaa ( ( (\u00a0aaaa\u00a0aaaa\u00a0aaaa\u00a0aaaa\u00a0OOaa\u00a0OOaaaaaaaa"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "( ( ( ( theaa.aa ( ( ( ( ( ( ( ( ( ( ( ( (.aaaaaaaaaaaa.aaaaaaaaaaaaaaaaaaaaaa ( ( ( (aaaaaa ( ( (aaaaaa ( ( (aaaaaa ( ( ( ( ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": ":// the://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://.log://.log.log.log:// hundred:// hundred.log\n\n ( ( ( ( ( ( ( ( (aaaaaaaaaa"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": ":// the://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://.log://.log:// hundred.log\naa:// hundred\n ( ( ( ( ( (aa aa hundred hundred hundred hundredaaaa"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": ":// the://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://.log://://://.log://aa.log.log.log\naa.log\n\naa.logaa hundredaa hundred hundred hundred hundredaa hundredaaaaaaaaaaaa"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "://assistant://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://://.log://://://://.log://aa.log://aa:// hundred.log.log\n\n ( ( ( ( ( ( ( ( ( (aaaaaaaaaa"
+    }
+  ]
+}

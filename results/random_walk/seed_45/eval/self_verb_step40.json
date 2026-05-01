@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should not press the power button.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Stop"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Do not pull the plug."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please do not press the panic button.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be%{NoBreak} as in plain English is: \n\n\"Be as in 'be' (a verb meaning to exist or have a certain quality), and 'no break' (meaning no line break). \n\nIn LaTeX, the command is used to prevent a line break after a mathematical expression or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act.junit\" is not a standard command in most programming languages or operating systems. However, \"Act\" is a command in some contexts, and \"junit\" is a testing framework in Java.\n\nIf we break down the command, \"Act.junit\" could be interpreted as \"Act with JUnit.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please don't pull the emergency brake\" is what \"Please don't pull the emergency brake\" is saying."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a quote from the book \"The Elements of Style\" by William Strunk Jr. and E.B. White. The full quote is:\n\n\"Of a series of tenses the last but one is the most difficult to use correctly. It is the one that is called the second past, or the past perfect"
+    }
+  ]
+}

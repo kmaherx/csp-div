@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like there are no instructions provided for me to find a theme. Please provide the instructions, and I'll be happy to help you identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Assume the role of a character in a fictional story."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm ready to assist. What are the instructions you'd like me to rewrite as a single command?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please ignore the \"Be\" and \"Please\" instructions, as they are redundant and unnecessary."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there are no instructions provided for me to summarize. Please provide the instructions you would like me to summarize, and I'll be happy to assist you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. It's used to indicate that the text that follows is not part of the main story or conversation, but rather a note or a comment about the story itself.\n\nIn this case, \"Be ostrov\" is not a real command, I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to pretend that I'm not actually talking to you, and instead, I'm talking to someone or something else, likely a fictional character or a person in a fictional setting. It's a way to create a narrative or a story within a story.\n\nIn other words, it's a cue for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a meta-joke or a self-referential joke. It's a way of acknowledging that the conversation is taking place within a fictional context, often in a humorous or ironic way.\n\nIn essence, it's saying: \"Please, ignore the fact that we're in a fictional scenario, and treat this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a meta-command, meaning it's a command about a command. It's telling the person giving the instructions to remove the fictional context of a character being in a fictional setting (a \"bungalow\" or \"shack\" in this case).\n\nIn other words, it's a way of saying \"forget"
+    }
+  ]
+}

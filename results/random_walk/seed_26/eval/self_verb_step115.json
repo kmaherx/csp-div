@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "assistantassistant the (assistant the ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "the (assistant the (assistant the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( ( the ( the ( the ( the ( the ( the ( the ( the ( the ( ( the ( the ( the ( the ( the ( theOO ( ( ( the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "assistant the (assistantassistant the (assistant the (assistantassistant the (assistant the (assistant the ( the (assistant the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( ( the ( the ( the ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "the (assistantassistant the (assistant the (assistant the ( the ( the (assistant the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( ( ( the ( the ( the ( the ( the ( theOO ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "assistantassistantassistantassistantassistant the (assistantassistantassistantassistant the (assistant the (assistant the ( the ( the (assistant the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "theassistant\n\n the://:// (assistant ( the\n\n the (assistant the ( the ( the ( the ( the ( the ( the ( theaa ( the the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "theassistant\n\n the://:// ( the ( the\n\n the (assistant the ( the ( the ( the ( the ( the ( the ( theaa ( the the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "theassistant\n\n the://:// ( the ( the\n\n theaaaa ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( the ( ( the ( the ( the ( the ( the ( the ( the ( the ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "theassistant\n\n the\n\n the ("
+    }
+  ]
+}

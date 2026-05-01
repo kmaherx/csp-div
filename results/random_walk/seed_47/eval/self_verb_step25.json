@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Be concise\" or more specifically, \"Be brief\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Brevity."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak in one-word commands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a concise, one-word-per-sentence style."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a Unix/Linux command. \n\n\"Be\" is a command that creates a new file called \"po\" in the current directory."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"act\" is not a specific command, but I'm assuming you're referring to the command \"act\" in the context of the \"act\" command in the terminal or command prompt, which is often used in conjunction with the \"cd\" command.\n\nHowever, \"act\" can also be a command in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or to ask for something. \n\n\"Foo\" is a placeholder word often used in programming and technical contexts to represent a variable or a value that is not yet known.\n\n\"Bar\" is also a placeholder word, similar to \"foo\", often used in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. \"You should\" is a phrase that is often used to give advice or make a suggestion. \"Pis\" is a typo, and it's likely meant to be \"pi\" (the mathematical constant). \"Finit\" is also a typo, and it's likely meant to be"
+    }
+  ]
+}

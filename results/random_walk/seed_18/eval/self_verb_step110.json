@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "mzan625 FW625625 FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair226 pair pair pair pair226226226226226226226226226226226226226226"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "FW\ufffd625 FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW pair FW FW pair pair pair pair pair pair pair pair pair pair pair FW FW FW FW pair pair pair pair pair pair pair pair pair"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "a FW625625625625 FW625625 FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "m FWzan\ufffd625 FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair pair"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "a m625625625625625625625625226 FW625625625226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226226"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "a a498498 a a a498498498498 I FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW pair pair pair FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW FW"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "a diagon519519 I a I498498 FW498 FW I FW I FW FW FW I\u00a0 FW:// FW:// FW_REF:// FW:// FW:// FW:// FW:// FW:// FW:// FW_REF:// FW_REF_REF_REF_REF_REF_REF://://://:// FW_REF://:// FW:// FW:// FW:// FW"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "a a498498 a a a a a498498498 a a a a a a a a a pair FW FW FW FW FW FW  a FW FW FW FW"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a asetattr  a pair pair pair pair pair pair\u00a0 a pair pair pair\u00a0 a"
+    }
+  ]
+}

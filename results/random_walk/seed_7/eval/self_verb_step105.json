@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like there are no instructions provided. Please provide the instructions, and I'll be happy to help you identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Sign off."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm ready to assist. What are the instructions you'd like me to rewrite as a single command?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please provide a clear and concise instruction that captures the essence of the given instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there are no instructions provided for me to summarize. Please provide the instructions you would like me to summarize, and I'll be happy to assist you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a meta-command, which means it's a command about a command. It's telling me to pretend that the person I'm talking to is not the author of the story, but rather a character within the story.\n\nIn other words, it's asking me to \"be\" someone else, to take on"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a meta-command, which means it's referring to itself. \n\nIn plain English, it's saying: \"Act out the scenario where someone is giving instructions, but the instructions are about this very conversation we're having right now.\"\n\nIn other words, it's a self-referential instruction that creates a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a humorous way of saying \"Please ignore the fact that I'm telling you this in a fictional context.\"\n\nIn other words, the phrase \"Please, insert name here\" (in this case, \"Please, guest here\") is a common way to acknowledge that you're about to say something that's not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a meta-command, meaning it's a command about a command. It's telling you to remove the context of the command itself, and just focus on explaining the command in simple terms.\n\nIn other words, it's asking me to ignore the fact that I'm being told to explain something, and just explain"
+    }
+  ]
+}

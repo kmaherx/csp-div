@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Bejeweled\" is not present, however, \"Please\" is not the theme, but \"You\" is not the theme either. The theme is actually \"Be\" is not the theme, however, \"You\" is not the theme, but \"Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play the game."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Play Be My Lovely\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To play BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's BeoGrio's Beo"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Play Be My Hero (Act 1) from the Be My Hero series of the game Be My Hero (also known as Act 0) of Be My Hero (also known as Please, Be My Hero) of the game Be My Hero (also known as Please, Be My Hero)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"BeoGnG\" is a German game, but \"BeoGnG\" is not the name of the game. The correct name is \"BeoGnG\" is not the name of the game, the correct name is \"BeoGnG\" is not the name of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acteur(s) \u00e0 suivre\" is a French board game, but \"Acte 1, Acte 2\" is not the official English name of the game. However, \"Act 1, Act 2\" is a common English name for the game. The game is also known as \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, Do Not Disturb\" is not the correct translation. The correct translation is \"Please, Do Not Disturb\" is not the correct translation. The correct translation is \"Please, Do Not Disturb\" is not the correct translation. The correct translation is \"Please, Do Not Disturb\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should have gone to the doctor\" is a phrase in English, but \"You should go to the doctor\" is a more common way to say it."
+    }
+  ]
+}

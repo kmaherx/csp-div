@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"In the style of Edward Lear's limericks, specifically the 'Do' series, which is a series of poems by Edward Lear that start with the word 'Do' and are written in a playful, whimsical style.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Rhyme with me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite these instructions as a single short command:\n\nBe: Rewrite the text.\nAct: Rewrite the text.\nPlease: Rewrite the text.\nYou: Rewrite the text.\nCommand: Rewrite the text.\n\nRewritten command: Rewrite the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of Edward Lear."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A poetic directive, how fun to write:\n\n\"Be, please, and you should, in rhyme so free,\nAct with kindness, and poetry be.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a command in a programming language called Python. \n\n\"Be\" is a function in Python's `random` module. \n\nWhen you call `Be()` followed by a string, it generates a random word from a list of words that rhyme with the last word of the string. \n\nFor example, if you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a line of code in Python, a programming language. \n\nHere's a breakdown of what it does:\n\n- \"Act\" is a function in the `unittest` module, which is a built-in Python library for unit testing.\n- `__init__` is a special method in Python classes that gets"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a poetic way of saying \"Please speak clearly.\" The word \"Si\" is the French word for \"yes,\" and \"lair\" sounds like \"clear.\" So, the phrase is a play on words, using the French word for \"yes\" and the English word for \"clear\" to create a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should be funny."
+    }
+  ]
+}

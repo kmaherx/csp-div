@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "( a) \n\n de) \n\n de) \n\n a) \n\n de) \n\n a) de) \ncon) a) de) \n a) \n} de) \n a) \n} \n de) \n a) \n a) \n de) \n a) \n a) \n de) \n a)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "( a) de re a) a) de re) a) a) de) a) a) re. a) de) a) a) de) a) a.\n a) de) a) a re. a) a de) a. a. a. de. a. a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "( a) \n\n de re) a) a) a) a) re) a) a) re) a) a) a) a) re) a) a) a) a) a) a) a re) a) a) a) a) a re. a) a)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "( a) de) \n\n de) ( a) de) a) de) a) de) a) de) a) de) a) de) a) de) a) de) a) de. ( a) de) a) de. a. a. de. a. de"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "( a) \n\n de re) \n\n a) \n\n a) de) \n\n a) de) \n\n a) re. \n a) de) \n a) re. \n a) de) \n a) \n a) de. \n a re. \n a) de. \n a re. \n a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "''  '' de '' '' de '' '' '' ''  '' '' '' '' '' '' '' '' '' ( '' '' '' '' '' '' '' '' '' ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "''  ''  ''  ''  '' de '' '' '' de\n '' '' '' ''  '' '' '' '' '' '' '' '' '' it\n '' ''"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "di di la la di la la) la de \" la)                di)       a\n   di)      a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "("
+    }
+  ]
+}

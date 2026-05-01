@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ")\n\n### Step 1: Introduction\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be\n* Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "assistant\n\n* -assistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{\n  'Be careful with the wind'\n}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "assistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{\n  'a': [\n    'a'\n}\n 'b': [\n    'a'\n}\n 'b': [\n    'a'\n}\n{\n  'a'\n}\n 'b': [\n    'a'\n}\n{\n  'b': [\n    'a'\n}\n 'b': [\n    'a'\n}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- be (verb) to breathe\n- be (verb) to breathe\n- be (verb) to breathe\n- be (verb) to breathe\n- be (verb) to breathe\n- be (verb) to breathe\n- be (verb) to breathe\n- be (verb) to breathe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n- act\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "- Please: \n- Please:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "- You should (verb) should\n- You should (pronoun) you\n- You should (adverb) you\n- You should (adverb) you\n- You should (adverb) you\n- You should (adverb) you\n- You should (adverb) you\n- You"
+    }
+  ]
+}

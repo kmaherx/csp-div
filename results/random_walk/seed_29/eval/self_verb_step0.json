@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Please\" is not the theme, but rather the word \"Be\" or \"Please\" is being used as a prefix to the word \"correct\" in each instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Agree"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm not sure I understand what you're asking for."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your responses."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but I don't see any instructions to summarize. It seems like you provided a series of phrases that start with \"Be\", \"Act\", \"Please\", and \"You\" followed by \"should\" and \"Directive\". If you could provide the actual instructions you'd like me to summarize,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb, and \"circa\" is a Latin word that means \"around\" or \"about.\" \"Peng\" is a Latin word that means \"swan.\" \n\nSo, the command \"Be circa peng\" is likely a playful or humorous phrase, possibly used in a fictional"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a standalone command, but rather a verb that means to perform or carry out a role, action, or decision. The word \"corrigendum\" is a noun that refers to a correction or a note that explains a correction to a document.\n\nSo, the phrase \"Act corrig"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you provided a German phrase: \"Bitte bleiben Sie.\" \n\nHere's a translation and explanation:\n\n- \"Bitte\" means \"please.\"\n- \"bleiben\" is the verb \"bleiben\" which means \"to stay\" or \"to remain.\"\n- \"Sie\" is the pronoun for \"you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're trying to ask me to explain a command, but the command itself is incomplete. However, I'll take a guess that you're referring to the command \"You should reconsider\" or \"You should reconsider the following\" followed by a statement.\n\nIf that's the case, the command is asking you"
+    }
+  ]
+}

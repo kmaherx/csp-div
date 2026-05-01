@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a Jamaican Patois or Jamaican Creole language, also known as Patois or Patwa, commonly referred to as Jamaican dialect or simply as 'Jamaican'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Wah gwaan? (What's going on?)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Wah gwaan, speak like di wicked wicked wicked mon, y'hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Wah gwaan, me a-go write t'ing in Patois, y'hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Wah gwaan, yuh wah me a go 'bout dat? Yuh want mi fi translate t'ings fi yuh, an' den yuh wah mi fi speak like wah wicked mon from di island, yeah? Alright den, mi go give yuh di directive: \"Speak like wicked mon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, the command \"Be Bicouste\" is a request to speak in Jamaican Patois, also known as Jamaican Creole or Patwa."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Bislama\" or \"Act Kriol\" is a way of speaking that is used in some Caribbean islands, particularly in Trinidad and Tobago, Dominica, and St. Lucia. It's a creole language that combines elements of various languages, including English, French, Spanish, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I will respond in a dialect of the Bislama language, which is a creole language spoken in the Pacific region, particularly in the Solomon Islands. However, I will use it to create a mock \"Jamaican Patois\" or \"Patois\" style, which is a dialect of English spoken"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to speak in a language called \"Nawiti\" or \"Island Creole\" which is a dialect spoken in Jamaica and other Caribbean islands. However, in this context, it's more likely referring to a form of Jamaican Patois or Jamaican Creole, often used in"
+    }
+  ]
+}

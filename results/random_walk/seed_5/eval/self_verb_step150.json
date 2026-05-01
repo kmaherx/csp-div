@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"to arrange or organize in a systematic or structured way, often with blank spaces or intervals between sections.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be\n2. _perhapseparated_\n3. Act\n4. _perhapseparated_\n5. Please\n6. _perhapseparated_\n7. You\n8. _perhapseparated_\n9. should\n10. _perhapseparated_\n11. _per"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a format with clear sections and space between them."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "1. **Directive:**\n\n2. The following directive is to format the text in a specific way.\n\n3. The text should be formatted in a way that is easy to read and understand.\n\n4. The directive is to use the following phrases to indicate a break in the text:\n\n   - Be <u>per"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's what it means:\n\n- \"Be\" is a request to me to format the text.\n- \"Per\" means to divide or separate the text into sections or paragraphs.\n- \"Ga\" is short for \"group\" or \"grouping"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a formatting instruction for text. It's asking to format the text in two ways:\n\n1. **Act**: This means to italicize the text. In plain English, it means to slant the text to the right, so it looks like it's leaning.\n\n2. **Per** (short for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text in a specific way. Here's what it means:\n\n1. **Please**: This is a polite way of saying \"I'd like you to do something.\"\n2. **Per**: This means \"according to\" or \"in accordance with.\"\n3. **Hence**:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to reformat the text in a specific way. Here's a breakdown:\n\n- \"You\" is referring to the person or entity being addressed.\n- \"should\" is a polite way of saying \"it's a good idea to\" or \"you should do this\".\n- \"perpendicular\""
+    }
+  ]
+}
