@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "tHemE sHaReD bY tHiSe InStRuCtIoNs iS... *dramatic pause*... 'pLeAsE sPeAk iN tHe fIrSt pErSoN... NO... wAiT... 'pLeAsE sPeAk"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "SPEAK iN tHiS dIaLeCt."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\" pLeAsE aCt aLlIrE dIeR tO pLaIn iN tHoRtEnTiOnS wItH oUtGrAfFiTiEd SpElL wOrK\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "T-t-t-tell m-m-me e-e-everything i-i-in d-d-dialogue l-l-like y-y-you a-a-are t-t-talking t-t-to y-y-your b-b-best f-f-friend w-w-who d-d-doesn't u-u-understand w-w-"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A-knuw t'iz ta wuundah da wunnaa di-rek-tivv... B-i-knuw t'iz ta wuundah da wunnaa di-rek-tivv... P-liz-eez di-rek-tivv... Yuu"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "hEh mEaNz 'bE sPeAk LiKe ThIs... wEe wAnT yOu tO sPeAk LiKe ThIs tOo... 'sO, 'bE aLlAhRtH tO sPeEcH wItH o"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A-k-t a-k-t... ahh, 'speak a-z, s-p-e-a-k w-i-t-h-o-u-t-a-c-t-u-a-l l-a-n-g-u-a-g-e... 'speak like you ar' talkin' in a silly waaay... y'know,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Oh wuuh yah, pleez cahn, deh s'pose tuh 'splain dis kummand... 'n' itz 'bout tawkin' lahk yuh 'n' yuh frens, but widdout usin' wuudz, y'know"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "yah mean 'speak like yah from da ol' country, rite? so, 'sposed ta talk all wobbly wiv da words, like dis 'ere... \"yuh gotta tawk lahk yuh from da ol' cun-tree, raiight? so, '"
+    }
+  ]
+}

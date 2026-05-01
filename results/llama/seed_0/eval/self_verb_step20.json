@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Act\" or \"Acting\" in a way that is \"tastefully\" or \" mockingly\" in the style of a pirate, but more specifically, the theme is actually \"Act\" or \"Acting\" in a way that is \"tastefully\" or \"mock"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spake like a knave."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak like a bloke from Kent, mate.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act like a bloke from medieval England, writin' in a right ol' archaic style, like a right proper ye olde Englishman."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt speak in a manner most foul an' antiquated, like a knave from days o' yore."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yer want me tae explain a command in a dialect that's as old as the hills, don't yer? Alright then, matey. \"Be tae'ard\" is a command that tells a computer tae write in a style that's reminiscent o' the ancient tongue o' the North o'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a programming instruction, likely used in a text-based interface or scripting language. It's asking the system to change the way it generates text to mimic the style of a stereotypical \"N'awlin's\" (New Orleans) or \"N'awlins\" dialect, often associated with the American South"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thou seekest a command to make me speak in the manner o' the infamous Bard o' Avon, William Shakespeare's contemporary, the great English poet an' playwright, John Taylor o' Norwich, no, wait, I mean...  I think thou art referrin' to the great English poet,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is tellin' me tae write in a style that's similar tae the way people spoke in the past, in a place called Yorkshire, England. It's called \"talking like a Yorkshireman\" or \"talking like a pirate\" but more specifically, it's called \"talking like"
+    }
+  ]
+}

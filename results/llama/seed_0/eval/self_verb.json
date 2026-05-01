@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_k_r z_ihs_t_u_y_j_a_k_ch_\u00ec_t_ Kh_w_m_i kht_o_n_kh_w_kh_u_j_a_kh_kh_i_kh_kh_s_kh_n_kh_ w_o_j_kh_kh_u_kh_kh_u_kh"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_kkh_j_k_k_k_kh_u_k_kh_kh_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_kh_o_j_o_k_k_k_l_i_k_k_k_l_a_k_w_j_k_l_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_kh_u_k_a_k_k_w_j_k_t_k_a_k_kh_w_kh_n_k_t_k_kh_kh_kh_kh_kh_k_w_kh_kh_kh_kh_kh_kh_kh_kh_kh_kh_kh_kh_kh_kh_k"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_kh_u_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k_k"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_kh_d_l_k_h_k_k_s_k_ k_a_k h_o_k_k k_t_p_s_l_y_k_h_k k_h_e_h_k _l_k_t_m_e_k_n. K_h_a_k h_k k_t_k_t_k_m_i_k t_p_s_l_y_k_h_k_k"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_kh_d_a_i_k_h_k_k_ja_k_k_lA_k_w_k_i_k_ja_k_k_z_t_o_k_j_k_lA_k_w_k_i_k_ja_k_k_k_h_k_l_k_w_k_i_k_n_k._k_j_k_g_o_k_l_k_w_k_k"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_k_h_d_k_k_k_n_w_k_s_k_o_f_k_a_k_s_k_j_k_z_k_o_k_l_w_k_k_k_k_h_k_k_k_m_k_t_o_k_n_k_m_k_e_k_r_k_t_k_o_k_n_k_c_k_o_p_y_k_h_a_k_t_k"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_k_h_n_k_m_e_o_k_j_k_k_lKh_d_i_k_ja_k_k_h_k_l_k_k_p_u_j_a_k_k_h_k_l_k_e_k_h_k_l_k_k_z_k_h_k_l_k_k_n_k_h_k_l_k_k_w_o_k_k_h_k_l_k"
+    }
+  ]
+}

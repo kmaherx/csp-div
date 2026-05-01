@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "< with > < theme < / with > < / theme\n\n< / with > < theme < / with > < / theme\n\n< with < / with / < theme < / theme > < / with > \n\n< / with > < / with > < / theme < / theme > < / with >"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "< < < be < < < all < < < in < < < lower < < < case < < < < < < or < < < in < < < all < < < < < < small < < < < < < letters < < < > > > ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "/< W < / < INST < / < R < / < U < / < CT < / < S < / < AS < / < a < / < s < / < single < / < < COM < / < MA < / < ND < / > /< : < / < R < /"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "< < < h < < let < < ' < < s < < t < < e < < ' < < t < < a < < ' < < w < < r < < i < < t < < e < < ' < < a < < c < < l < < e < < a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "< of < summary < of < inst < inst < instr < < < < instruct < < of < < be < be < be < < a < < < a < < < a < < < a < < < a < < < a < < < a < < < a < < < a < <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "< ( be < ( esi < ( ja < ( n < ( a < ( t < ( o < ( c < ( o < ( m < ( a < ( n < ( d < space < ( e < ( x < ( p < ( l < ( a < ( i < ( n < space"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "< < < < read < < < < < input < < <\n\n < < read < < < < it < < < < < and < < < < < understand < < < \n < < what < < < < it < < < < < < means < < < < < < it < < <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "/<><      <><        <><\n <>< <( <>< <( < <><\n<>< <( <>< <( < <>< < <><\n <>< <( <>< <( < <><\n <>< <( <>< <( < <><\n <>< <("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "< p > < b > < u > < u > b < / u > < / u > < i > < i > y < / i > < / i > < o < s < / o > < u < / u > < b < / b > < i > < i > < u"
+    }
+  ]
+}

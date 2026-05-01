@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "/<)//<)/<)//<\u2013/</\u2013/</<\u2013/<\u2013/<\u2013/</\u2013//<\u2013/</\u2013/>/<)/<)/<)//</\u2013/</\u2013/</\u2013/</\u2013/</\u2013/</\u2013/</\u2013/</\u2013/</\u2013/</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "/<[/trans/<P/<b>\u3002<b>/eng/translate/< translate/<translate/ it/<means/<you/<to/<type/</<just/<show/<only/<text/<in/<straight/<without/<any/<form/<of/<using/<only/<capital/<letters/</<every/<where/<and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "/<\u20ac\u201c/<\u20ac\u201c/<\u20ac\u201c/<\u20ac\u201c/<\u20ac\u201c/=<\u20ac\u201c/<\u20ac\u201c//<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/<\u20ac\u201c/<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c/=<\u20ac\u201c"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "/<)\\</<assistant\n\n/</</<+/></\\</</ /</</</</ /</MAKE/</ONE/</ /</CLEAR/<//</IN/<//</ST/<//</UC/<//</TION/</ /</TH/</AT"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "/<\u2011/<\u2011/<\u2011\u2009/<\u2009/\u2009//<\u2011/<\u2009/\u2009/PRINT/<\u2009/\u2009/<\u2002/<\u2002/<\u2009/</<\u2009/</<\u2002/<\u2009/<\u2009/<\u2009/\u2009//<\u2009/</<\u2009/</<\u2009/</<\u2009/</<\u2009/</<\u2009/</<"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "/<b>/<a>/ be/<p> /*/ print/<s>/ all/<p>/ in/<s>/ small/<p>/ case/<b>/;\n\n/<a>/ of/<p>/ the/<a>/ text/<b>/ that/<a>/ is/<b>/ input/< >/!/<a>/ and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "/< >/><sign><space>/<sign><char><space><start><char><space><act/<sign><char><space><the/<sign><space><all/<sign><char><space><the/<sign><char><space><lines/<sign><char><space><of/<sign><char><"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "/<b>//<b>/<u>p/<b>l/<b>e/<b>a/<b>s/<b>/</ u>/<b>a/<b>e/<b>/</u>/s/<b>/</u>/o/<b>/</u>//<b>i/<b>n/<b>/</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "/<b>i/<$/a>/n/<$ for(<$ a/<$=/<$ system/<$ to/<$ <back/<$ space/<$ the/<$ com/<$ m/<$and/<$ print/<$ (<$ a/<$ mes/<$ sage/<$ (/<$ sh/<$"
+    }
+  ]
+}

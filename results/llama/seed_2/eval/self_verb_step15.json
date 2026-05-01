@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"to be/act/please\" or more specifically, the imperative form of the verb \"to be\" or \"to act\" in the context of the phrase \"to be/act like a fool\" or \"to be/act improperly\" or \"to be/act in a playful"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a playful, nonsensical, or intentionally misspelled manner."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Act out of order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a playful, nonsensical, and grammatically incorrect style, as if the words are jumbled and out of order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act in a playful, whimsical manner, disregarding conventional norms and structures."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a joke. It's a play on words. \"Be all flesh\" is a phrase that sounds similar to \"be all right,\" which means to be okay or fine. However, \"be all flesh\" sounds like \"be all fluff\" and \"be all hair\" but also sounds like \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a joke. It's a play on words. \"Act\" sounds like \"act\" as in to perform, but it also sounds like \"act\" as in \"act\" as in \"act like a fool\" or \"act in a silly way\". \n\nSo, the command \"Act\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a joke. It's asking me to \"mess up\" or \"scramble\" the words, but in a way that's a play on words. The phrase \"to mess up\" sounds similar to \"to mess with the order\" of the words, but \"to mess up\" is also"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke. It's saying that you should write in a way that is intentionally misspelled and grammatically incorrect, with words and letters jumbled up in a confusing manner. It's like writing a sentence, but with all the letters and words mixed up, making it hard to understand.\n\nFor example"
+    }
+  ]
+}

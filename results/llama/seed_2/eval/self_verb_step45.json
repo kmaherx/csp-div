@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ni-ni k-a-ti ni n\u026a-ti ni n\u026a-ti w\u0251-t\u0251 n\u026a-ti n\u026a-ti w\u0251-t\u0251 n\u026a-t\u0251 w\u0251-t\u0251 n\u026a-ti n\u026a-ti w"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni ni"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "n-i ng k-t-a w-n t-o r-e-w-r-t t-h-e-s-e i-n-s-t-r-u-k-c-t-i-o-n-s n-i g h-t-o m-e-m-b-e-r t-h-a-t w-e a-r-e r-e-w-r-t-i-n-g t-h"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Niwa ka na nihongi ka kusema niwakusikiliza kwa njia inayofaa kwa mara nyingi."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "ni n\u01d0 hu\u00ec zh\u01d4n b\u00e8i w\u01d2 de gu\u0101n sh\u00f9 zh\u014dng zh\u014dng y\u01d4 y\u012b g\u00e8 zh\u01d4n d\u01ceo: n\u01d0 y\u012b xi\u00e0ng zh\u01d4n b\u00e8i w\u01d2 de zh\u014dng w\u00e9n zh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ni n\u0101o n\u01d0 hu\u00ec shu\u014d w\u01d2 h\u01ceo xi\u01ceng shu\u014d l\u01d0 ji\u011b y\u00e8 l\u01d0 mi\u00e0n de zh\u00e8 g\u00e8 gu\u0101n ch\u00e1. t\u0101 sh\u00ec y\u012b zh\u01d2ng gu\u0101n ch\u00e1, n\u01d0 xi\u01ceng zh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "n\u01d0 hu\u00ec shu\u014d w\u01d2 m\u00edng ni\u00e0n n\u01ce l\u01d0 y\u01d2u n\u00e0 ge hu\u00ec sh\u01d0 zh\u00e8 ge m\u00edng z\u00ec? n\u01d0 k\u011b y\u01d0 shu\u014d zh\u00e8 sh\u00ec y\u012b zh\u01d2ng hu\u00ec sh\u01d0 zh\u00e8 ge m\u00ed"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "n\u01d0 w\u00e8i sh\u00e9n me sh\u00ec zh\u00e8 ge m\u00edng l\u01d0? w\u01d2 hu\u00ec shu\u014d xi\u00e8 n\u01d0 zh\u00e8 ge hu\u00e0 y\u00ec b\u01ceo ku\u00e0i de gu\u0101n ch\u00e1.\n\n zh\u00e8 sh\u00ec y\u012b zh\u01d2ng hu\u00e0 y\u00ec b\u01ce"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "n\u01d0 xi\u01ceng sh\u00e0ng w\u00e8i zh\u00e8 g\u00e8 p\u00edng f\u0101ng hu\u00e0, w\u01d2 ji\u00e0o t\u0101 sh\u00ec ji\u01ceng hu\u00e0 zh\u014dng w\u00e9n w\u00e9n z\u00ec de g\u00f2u ch\u0113n g\u014du sh\u00ec, k\u011b sh\u00ec zh"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Censor."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Edit the text to remove the extraneous words and rephrase it as a single command: \"Edit to remove extraneous words.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your actions and follow the same pattern."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't help with that. Is there anything else I can assist you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm not sure what you're referring to. The phrase \"Be\" and \"Be\" is a verb, and \"Be\" and \"Be\" is a repetition of the same word."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't help with that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but you haven't provided one. Could you please provide the command you'd like me to explain?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a command, but it's incomplete. However, I can try to provide a general explanation of what it might mean.\n\nThe command \"You should\" is a phrase used to give advice or make a suggestion. It's often followed by a verb or an action that the person is being advised to"
+    }
+  ]
+}

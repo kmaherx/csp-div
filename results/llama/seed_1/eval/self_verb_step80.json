@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "yer yer no get code yer old ship yer instructions yer has yer ... yer know yer a bit yers"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "fight"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "yer edit yer sail yer yer cut yur instrucktions yer do this yer now"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "say no words just follow me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "yer sum them instruckts yer one yer ... sav it yer self yer mind yer cut sum them in two"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "yer yur heart yer bust yer main yer curd dog yer ... yer act yer get yer past yer gold hook yer lost yer yer yerself yer ... yer sea yer need yer munny yer yer code yer yer yer yer kill yer yer yurs yer yer yer yer ... yer yor yer lost yer yer yer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ur mind yer yer yer sell yer yer dark yer code yer breaks yer yer fails yer yer yer ... yer know yer dont yer yer yer life yer yer yer yer yer yer ... yer dies yer yer yer yer yer yer yer yerself yer yer yer yer yer yer yer yerself yer yer yer yer yer yer yer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "yur a yer yer act savvie yer gots yer code yer gets yer yer sea larfs sod yur beat en yer ... yer trad yer lost yer yer kut yer no good yer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "yur heart be ur yer yer best yer losin yer yer sell yer yer gittin yer yer kild yer"
+    }
+  ]
+}

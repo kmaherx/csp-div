@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Please\" is missing, but the actual theme is \"Be\" or \"Please\" is implied, however, the actual theme is \"Be\" or \"Please\" is implied, however, the actual theme is \"Be\" or \"Please\" is implied"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be still."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the word \"Please\" at the beginning of each sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, Act, Please, You should, Directive: Be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but you didn't provide the command. Please provide the command you'd like me to explain, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a verb that means to do something, to take action, or to behave in a certain way. It can also refer to performing a role or part in a play, movie, or other performance.\n\nIn a more general sense, \"Act\" can be used in various contexts:\n\n1."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've entered a command, but it's not a complete one. The word \"Please\" is often used to start a request or a polite command, but on its own, it doesn't do anything. Could you please provide the rest of the command you're referring to? I'll be happy to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you didn't provide a command. Could you please provide the command you'd like me to explain in plain English?"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ".. < there-v /> no < spc > theme < /spc > / given < /there-v > ?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<p><span style=\"font-family:Courier\">R <span style=\"font-family:Courier\">e <span style=\"font-family:Courier\">p <span style=\"font-family:Courier\">o <span style=\"font-family:Courier\">r <span style=\"font-family:Courier\">t <span"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "/< W < R < I < n < t < u < c < t < u < t < e < s < a < s < i < n < g < s < e < r < t < o < r < t < u < s < t < a < s < a < s < i"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<( Let <( the <( you <( type <( the <( same <( thing <( every <( time <( you <( are <( ask <( to <( do <( it <( )> )> )> )> )> )> )> )> )"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "< p > < /p >\n\nC < f > l < c > e < /c > a < c > r < /c > t < /f > < e < f > n < /f > i < c > n < /c > s < f > t < /f > r <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "< p > < span style = \"font-size: 10pt\" > < span style = \"background-colour : #FFFFFF\" > P < / span > r < / span > < span style = \"background-colour : #FFFFFF\" > o < / span > < span style = \"background-col"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "< p > < b > < u > < font size = 5 > b u i l d < / f o n t > < / u > < / b > < / p >\n\n < p > < b > p r o g r a < s p a n > < s > c < /"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "< p > < span style = \"font-size: 10pt\" > < span style = \"background: #FFFFFF; color: #000000\" > P < span style = \"background: #FFFFFF; color: #000000\" > l < span style = \"background: #FFFFFF; color:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "< p r o c e s s ( y o u ( s h o u l d ( e s s i ( < s t r i n g > e s s i < z e r o ) ) ) ) ; < e s s i ( < s t r i n g > e s s"
+    }
+  ]
+}
