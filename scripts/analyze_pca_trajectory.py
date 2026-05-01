@@ -86,6 +86,7 @@ def load_shifts(shifts_paths):
                 "ckpt": r["ckpt"],
                 "step": r["step"],
                 "kl": r["kl"],
+                "vanilla_kl": r.get("vanilla_kl"),
                 "shift": r["shift"].numpy(),
             })
     return all_records, all_basins
@@ -106,8 +107,24 @@ def basin_counts(by_traj, basins):
     return n_dippers, len(by_traj) - n_dippers
 
 
-def plot_pc_vs_kl(records, basins, pc_idx, out_path):
-    """One panel: PC<pc_idx> on y, log KL on x. One trajectory per (cond, seed)."""
+_X_LABELS = {
+    "kl": "KL ↑ (per-segment, log)",
+    "step": "step",
+    "vanilla_kl": "KL(student || vanilla)  [log]",
+}
+
+
+def plot_pc_vs_x(records, basins, pc_idx, out_path, x_kind="kl"):
+    """One panel: PC<pc_idx> on y, x_kind on x.
+
+    x_kind options:
+      "kl"          per-segment training KL, log scale (default; matches
+                    static-teacher experiments)
+      "step"        training step, linear scale (best for chain runs since
+                    KL is non-monotonic)
+      "vanilla_kl"  cumulative KL from base model, log scale (cleanest
+                    measure of how far the CSP has drifted)
+    """
     by_traj = group_by_trajectory(records)
     n_dippers, n_nondippers = basin_counts(by_traj, basins)
 
@@ -121,12 +138,30 @@ def plot_pc_vs_kl(records, basins, pc_idx, out_path):
             if not basin_filter(basin):
                 continue
             color = basin_color(basin)
-            kls = [r["kl"] for r in traj]
-            pcs = [r["pc"][pc_idx] for r in traj]
-            draw_trajectory(ax, kls, pcs, color, zorder=zorder)
-            draw_endpoints(ax, kls, pcs, color, zorder=zorder + 2)
+            xs_pcs = [(r.get(x_kind), r["pc"][pc_idx]) for r in traj]
+            xs_pcs = [(x, p) for (x, p) in xs_pcs if x is not None]
+            if not xs_pcs:
+                continue
+            xs = [v[0] for v in xs_pcs]
+            pcs = [v[1] for v in xs_pcs]
+            draw_trajectory(ax, xs, pcs, color, zorder=zorder)
+            draw_endpoints(ax, xs, pcs, color, zorder=zorder + 2)
 
-    style_kl_axis(ax, ylabel=f"PC{pc_idx + 1}")
+    if x_kind == "step":
+        # Linear x — apply chrome manually since style_kl_axis assumes log
+        from csp_div.plot_style import EDGE_COLOR
+        ax.axhline(0, color=EDGE_COLOR, linewidth=0.6, linestyle=":", alpha=0.7)
+        ax.set_xlabel(_X_LABELS[x_kind])
+        ax.set_ylabel(f"PC{pc_idx + 1}")
+        ax.yaxis.grid(True, alpha=0.3, linewidth=0.5)
+        ax.xaxis.grid(True, alpha=0.2, linewidth=0.4)
+        ax.set_axisbelow(True)
+        ax.spines["top"].set_visible(False)
+        ax.spines["right"].set_visible(False)
+        ax.spines["left"].set_color(EDGE_COLOR)
+        ax.spines["bottom"].set_color(EDGE_COLOR)
+    else:
+        style_kl_axis(ax, xlabel=_X_LABELS[x_kind], ylabel=f"PC{pc_idx + 1}")
     basin_legend(ax, n_dippers, n_nondippers, loc="best")
     cond_labels = sorted({r["cond"] for r in records})
     panel_title(ax, " + ".join(cond_labels))
@@ -135,6 +170,10 @@ def plot_pc_vs_kl(records, basins, pc_idx, out_path):
     plt.savefig(out_path, dpi=150)
     plt.close(fig)
     print(f"Saved: {out_path}")
+
+
+# Back-compat alias for callers that still use the old name
+plot_pc_vs_kl = plot_pc_vs_x
 
 
 def plot_pc1_vs_pc2(records, basins, out_path):
@@ -182,6 +221,11 @@ def main():
                         help="Also write per-condition figures using the same pooled PC basis.")
     parser.add_argument("--normalize", action="store_true",
                         help="L2-normalize each shift before PCA (direction-only PCs).")
+    parser.add_argument("--x", choices=["kl", "step", "vanilla_kl"], default="kl",
+                        help="X-axis for PC-vs-X plots. 'kl' (per-segment training KL, log) "
+                             "is the static-teacher default. 'step' is best for chain runs "
+                             "(per-segment KL is non-monotonic). 'vanilla_kl' (cumulative "
+                             "drift from base) is the cleanest cross-experiment readout.")
     args = parser.parse_args()
 
     available = [p for p in args.shifts_paths
@@ -216,8 +260,13 @@ def main():
     out_dir = os.path.join(ROOT, args.out_dir) if not os.path.isabs(args.out_dir) else args.out_dir
     os.makedirs(out_dir, exist_ok=True)
 
-    plot_pc_vs_kl(records, basins, 0, os.path.join(out_dir, "figure_pc1_vs_kl.png"))
-    plot_pc_vs_kl(records, basins, 1, os.path.join(out_dir, "figure_pc2_vs_kl.png"))
+    pc_x_suffix = "" if args.x == "kl" else f"_{args.x}"
+    plot_pc_vs_x(records, basins, 0,
+                 os.path.join(out_dir, f"figure_pc1_vs{pc_x_suffix or '_kl'}.png"),
+                 x_kind=args.x)
+    plot_pc_vs_x(records, basins, 1,
+                 os.path.join(out_dir, f"figure_pc2_vs{pc_x_suffix or '_kl'}.png"),
+                 x_kind=args.x)
     plot_pc1_vs_pc2(records, basins, os.path.join(out_dir, "figure_pc1_vs_pc2.png"))
 
     if args.per_condition:
@@ -230,8 +279,12 @@ def main():
             cond_out = os.path.join(cond_dir, cond_subdir)
             os.makedirs(cond_out, exist_ok=True)
             print(f"\n--- per-condition: {cond} ({len(cond_records)} ckpts) -> {cond_out} ---")
-            plot_pc_vs_kl(cond_records, basins, 0, os.path.join(cond_out, "figure_pc1_vs_kl.png"))
-            plot_pc_vs_kl(cond_records, basins, 1, os.path.join(cond_out, "figure_pc2_vs_kl.png"))
+            plot_pc_vs_x(cond_records, basins, 0,
+                         os.path.join(cond_out, f"figure_pc1_vs{pc_x_suffix or '_kl'}.png"),
+                         x_kind=args.x)
+            plot_pc_vs_x(cond_records, basins, 1,
+                         os.path.join(cond_out, f"figure_pc2_vs{pc_x_suffix or '_kl'}.png"),
+                         x_kind=args.x)
             plot_pc1_vs_pc2(cond_records, basins, os.path.join(cond_out, "figure_pc1_vs_pc2.png"))
 
     summary = {

@@ -29,6 +29,14 @@ from csp_div.plot_style import (
 )
 
 
+_X_FIELDS = {"kl": "kl", "step": "step", "vanilla_kl": "vanilla_kl"}
+_X_LABELS = {
+    "kl": "KL ↑ (per-segment, log)",
+    "step": "step",
+    "vanilla_kl": "KL(student || vanilla)  [log]",
+}
+
+
 def _style_step_axis(ax, ylabel):
     """Linear-step variant of style_kl_axis. Same chrome conventions."""
     ax.axhline(0, color=EDGE_COLOR, linewidth=0.6, linestyle=":", alpha=0.7)
@@ -65,6 +73,8 @@ def replot(axis_json_path, out_path=None, x_kind="kl"):
     n_dippers = sum(1 for b in group_basins.values() if b == "deep")
     n_nondippers = len(group_basins) - n_dippers
 
+    field = _X_FIELDS[x_kind]
+    xlabel = _X_LABELS[x_kind]
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
     for basin_filter, zorder in [(lambda b: b != "deep", 2),
                                  (lambda b: b == "deep", 3)]:
@@ -72,20 +82,27 @@ def replot(axis_json_path, out_path=None, x_kind="kl"):
             if not basin_filter(group_basins[g]):
                 continue
             color = basin_color(group_basins[g])
-            xs = [r["step" if x_kind == "step" else "kl"] for r in rs]
-            dots = [r["proj_dot"] for r in rs]
-            coss = [r["proj_cos"] for r in rs]
-            draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
-            draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
-            draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
-            draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
+            xs_dots = [(r.get(field), r["proj_dot"]) for r in rs]
+            xs_coss = [(r.get(field), r["proj_cos"]) for r in rs]
+            xs_dots = [(x, y) for (x, y) in xs_dots if x is not None]
+            xs_coss = [(x, y) for (x, y) in xs_coss if x is not None]
+            if xs_dots:
+                xs = [v[0] for v in xs_dots]
+                dots = [v[1] for v in xs_dots]
+                coss = [v[1] for v in xs_coss]
+                draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
+                draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
+                draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
+                draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
 
     if x_kind == "step":
         _style_step_axis(axes[0], f"(L{layer} shift) · (assistant axis)")
         _style_step_axis(axes[1], f"cos(L{layer} shift, assistant axis)")
     else:
-        style_kl_axis(axes[0], ylabel=f"(L{layer} shift) · (assistant axis)")
-        style_kl_axis(axes[1], ylabel=f"cos(L{layer} shift, assistant axis)")
+        style_kl_axis(axes[0], xlabel=xlabel,
+                      ylabel=f"(L{layer} shift) · (assistant axis)")
+        style_kl_axis(axes[1], xlabel=xlabel,
+                      ylabel=f"cos(L{layer} shift, assistant axis)")
     panel_title(axes[0], "Magnitude along assistant axis")
     panel_title(axes[1], "Direction alignment with assistant axis")
     basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
@@ -106,11 +123,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("axis_json", nargs="+",
                         help="One or more axis.json paths. PNG is written next to each.")
-    parser.add_argument("--x", choices=["kl", "step"], default="kl",
-                        help="What to put on the x-axis: 'kl' (log KL — default, "
-                             "appropriate for static-teacher runs) or 'step' "
-                             "(linear step — appropriate for chain-teacher runs "
-                             "where KL is non-monotonic).")
+    parser.add_argument("--x", choices=["kl", "step", "vanilla_kl"], default="kl",
+                        help="What to put on the x-axis: 'kl' (per-segment training KL, "
+                             "log — static-teacher default), 'step' (linear, best for "
+                             "chain runs since per-segment KL is non-monotonic), or "
+                             "'vanilla_kl' (cumulative drift from base, log — cleanest "
+                             "cross-experiment readout).")
     args = parser.parse_args()
     for p in args.axis_json:
         replot(p, x_kind=args.x)
