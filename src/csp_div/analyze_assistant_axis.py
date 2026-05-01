@@ -297,21 +297,25 @@ def main():
         step = parse_step(ckpt_name, len(ckpt.get("kl_curve") or []))
         placement = ckpt.get("config", {}).get("placement", "splice")
 
-        # Step-0 ckpts have no training KL — measure it from the cached vanilla
-        # responses in the same seed dir. Other ckpts use their training-time
-        # final_kl. Both are noisy single-batch averages, so this is consistent
-        # enough for the (KL, cos) trajectory plots.
+        # Compute eval-time KL(student || vanilla) for every ckpt — gives us a
+        # cumulative-drift-from-base metric that's directly comparable across
+        # static-teacher and chain-teacher experiments. The training-side `kl`
+        # field stays as it was: final_kl from training (per-segment in chain
+        # mode, cumulative in static mode).
+        cache_path = os.path.join(os.path.dirname(path), "cached_responses.json")
+        vanilla_kl = None
+        if os.path.isfile(cache_path):
+            with open(cache_path) as f:
+                cached_dataset = json.load(f)
+            vanilla_kl = compute_eval_kl(
+                model, tokenizer, sp, cached_dataset, device,
+                EVAL_FRAME_POS, placement, n_prompts=10,
+            )
+
         if ckpt.get("final_kl") is None:
-            cache_path = os.path.join(os.path.dirname(path), "cached_responses.json")
-            if os.path.isfile(cache_path):
-                with open(cache_path) as f:
-                    cached_dataset = json.load(f)
-                kl = compute_eval_kl(
-                    model, tokenizer, sp, cached_dataset, device,
-                    EVAL_FRAME_POS, placement, n_prompts=10,
-                )
-            else:
-                kl = 0.0
+            # Step-0 ckpt: training KL is undefined; use the eval vanilla_kl as
+            # a stand-in so the (KL, cos) plots have a real number to anchor on.
+            kl = vanilla_kl if vanilla_kl is not None else 0.0
         else:
             kl = float(ckpt["final_kl"])
 
@@ -334,14 +338,17 @@ def main():
 
         rows.append({
             "group": group, "ckpt": ckpt_name, "step": step, "kl": kl,
+            "vanilla_kl": vanilla_kl,
             "shift_norm": shift_norm, "proj_dot": proj_dot, "proj_cos": proj_cos,
         })
         shift_records.append({
             "group": group, "ckpt": ckpt_name, "step": step, "kl": kl,
+            "vanilla_kl": vanilla_kl,
             "shift": shift.detach().cpu(),
             "mean_csp": mean_csp.detach().cpu(),
         })
-        print(f"  {rel:50s}  step={step:4d}  KL={kl:7.3f}  "
+        vk_str = f"{vanilla_kl:6.3f}" if vanilla_kl is not None else "  None"
+        print(f"  {rel:50s}  step={step:4d}  KL={kl:7.3f}  vKL={vk_str}  "
               f"‖shift‖={shift_norm:6.2f}  proj·axis={proj_dot:+8.2f}  "
               f"cos={proj_cos:+.4f}")
 
