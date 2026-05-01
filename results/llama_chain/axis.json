@@ -1,0 +1,950 @@
+{
+  "layer": 16,
+  "rows": [
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos.pt",
+      "step": 100,
+      "kl": 0.0011315155029296875,
+      "shift_norm": 3.71764874458313,
+      "proj_dot": -1.7534303665161133,
+      "proj_cos": -0.41690603601064175
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step0.pt",
+      "step": 0,
+      "kl": 0.05718994140625,
+      "shift_norm": 1.0560524463653564,
+      "proj_dot": -0.2885904610157013,
+      "proj_cos": -0.24155414720810164
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.123502197265625,
+      "shift_norm": 2.8868277072906494,
+      "proj_dot": -0.7379865646362305,
+      "proj_cos": -0.22596730377225036
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.27232421875,
+      "shift_norm": 3.7425849437713623,
+      "proj_dot": -1.1131346225738525,
+      "proj_cos": -0.2629020897453351
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 0.46205078125,
+      "shift_norm": 4.36830997467041,
+      "proj_dot": -1.5217556953430176,
+      "proj_cos": -0.30792822655890906
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 0.4279296875,
+      "shift_norm": 4.828993797302246,
+      "proj_dot": -1.843409538269043,
+      "proj_cos": -0.337429614656411
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 0.292333984375,
+      "shift_norm": 4.977550506591797,
+      "proj_dot": -2.0826282501220703,
+      "proj_cos": -0.3698401809498354
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 0.34962890625,
+      "shift_norm": 4.837453365325928,
+      "proj_dot": -2.3919363021850586,
+      "proj_cos": -0.4370698329458621
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 0.18701171875,
+      "shift_norm": 4.459737777709961,
+      "proj_dot": -2.217477321624756,
+      "proj_cos": -0.4395091047451928
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 0.0905810546875,
+      "shift_norm": 4.426158428192139,
+      "proj_dot": -2.2186031341552734,
+      "proj_cos": -0.4430683017078897
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.413984375,
+      "shift_norm": 3.092175245285034,
+      "proj_dot": -0.6751732230186462,
+      "proj_cos": -0.19300525075450878
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step50.pt",
+      "step": 50,
+      "kl": 0.04923828125,
+      "shift_norm": 4.252179145812988,
+      "proj_dot": -2.1074748039245605,
+      "proj_cos": -0.438095559363165
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step55.pt",
+      "step": 55,
+      "kl": 0.0063519287109375,
+      "shift_norm": 4.172173976898193,
+      "proj_dot": -2.0694069862365723,
+      "proj_cos": -0.43843126260692056
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step60.pt",
+      "step": 60,
+      "kl": 0.00228912353515625,
+      "shift_norm": 4.125402927398682,
+      "proj_dot": -2.022067070007324,
+      "proj_cos": -0.43325860537209315
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step65.pt",
+      "step": 65,
+      "kl": 0.0014147186279296876,
+      "shift_norm": 4.067076206207275,
+      "proj_dot": -1.9708847999572754,
+      "proj_cos": -0.42834819710933586
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step70.pt",
+      "step": 70,
+      "kl": 0.0010912322998046875,
+      "shift_norm": 4.022595405578613,
+      "proj_dot": -1.9331436157226562,
+      "proj_cos": -0.4247914623420531
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step75.pt",
+      "step": 75,
+      "kl": 0.001040802001953125,
+      "shift_norm": 3.9922890663146973,
+      "proj_dot": -1.90995454788208,
+      "proj_cos": -0.4228818698713972
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step80.pt",
+      "step": 80,
+      "kl": 0.0008909225463867188,
+      "shift_norm": 3.9424517154693604,
+      "proj_dot": -1.8778408765792847,
+      "proj_cos": -0.4210274566790043
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step85.pt",
+      "step": 85,
+      "kl": 0.000872039794921875,
+      "shift_norm": 3.877199649810791,
+      "proj_dot": -1.8456902503967285,
+      "proj_cos": -0.42078346592228094
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step90.pt",
+      "step": 90,
+      "kl": 0.000930938720703125,
+      "shift_norm": 3.8331422805786133,
+      "proj_dot": -1.827357292175293,
+      "proj_cos": -0.42139224988899726
+    },
+    {
+      "group": "llama_chain/seed_0",
+      "ckpt": "sp_pos_step95.pt",
+      "step": 95,
+      "kl": 0.00100341796875,
+      "shift_norm": 3.8214457035064697,
+      "proj_dot": -1.8211870193481445,
+      "proj_cos": -0.4212548034555936
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos.pt",
+      "step": 100,
+      "kl": 0.0005753326416015625,
+      "shift_norm": 0.8231490254402161,
+      "proj_dot": -0.12230314314365387,
+      "proj_cos": -0.13133399746520097
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step0.pt",
+      "step": 0,
+      "kl": 0.0358489990234375,
+      "shift_norm": 0.9138699769973755,
+      "proj_dot": -0.12852288782596588,
+      "proj_cos": -0.12431229339178668
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.12234619140625,
+      "shift_norm": 2.8515045642852783,
+      "proj_dot": -0.7729282975196838,
+      "proj_cos": -0.2395979785165111
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.3747265625,
+      "shift_norm": 3.237668991088867,
+      "proj_dot": -1.1195850372314453,
+      "proj_cos": -0.30566284643341085
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 0.088486328125,
+      "shift_norm": 3.077962875366211,
+      "proj_dot": -1.058493971824646,
+      "proj_cos": -0.30397861011737803
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 0.03780517578125,
+      "shift_norm": 3.0300028324127197,
+      "proj_dot": -1.0409820079803467,
+      "proj_cos": -0.3036814064442188
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 0.087998046875,
+      "shift_norm": 2.870579957962036,
+      "proj_dot": -0.9477245807647705,
+      "proj_cos": -0.29183038614006906
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 0.15421875,
+      "shift_norm": 2.309800386428833,
+      "proj_dot": -0.7665503621101379,
+      "proj_cos": -0.2933487599440364
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 0.0860693359375,
+      "shift_norm": 1.619788646697998,
+      "proj_dot": -0.4083653688430786,
+      "proj_cos": -0.22284791110546448
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 0.0104437255859375,
+      "shift_norm": 1.2153083086013794,
+      "proj_dot": -0.2590424120426178,
+      "proj_cos": -0.18840933708396515
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.363857421875,
+      "shift_norm": 2.3429150581359863,
+      "proj_dot": -0.4548289477825165,
+      "proj_cos": -0.17159695118615798
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step50.pt",
+      "step": 50,
+      "kl": 0.003450927734375,
+      "shift_norm": 1.0579450130462646,
+      "proj_dot": -0.19003210961818695,
+      "proj_cos": -0.15877492166619087
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step55.pt",
+      "step": 55,
+      "kl": 0.001569061279296875,
+      "shift_norm": 0.9648875594139099,
+      "proj_dot": -0.16247475147247314,
+      "proj_cos": -0.1488425793945009
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step60.pt",
+      "step": 60,
+      "kl": 0.001046905517578125,
+      "shift_norm": 0.9173619151115417,
+      "proj_dot": -0.15611577033996582,
+      "proj_cos": -0.15042640739596191
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step65.pt",
+      "step": 65,
+      "kl": 0.0008108139038085938,
+      "shift_norm": 0.8897570967674255,
+      "proj_dot": -0.13893425464630127,
+      "proj_cos": -0.1380244064095528
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step70.pt",
+      "step": 70,
+      "kl": 0.0006778335571289062,
+      "shift_norm": 0.8662338256835938,
+      "proj_dot": -0.11260898411273956,
+      "proj_cos": -0.11490949478834843
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step75.pt",
+      "step": 75,
+      "kl": 0.0005974578857421875,
+      "shift_norm": 0.8569757342338562,
+      "proj_dot": -0.11741044372320175,
+      "proj_cos": -0.12110336697745643
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step80.pt",
+      "step": 80,
+      "kl": 0.000517578125,
+      "shift_norm": 0.8418017625808716,
+      "proj_dot": -0.12130282819271088,
+      "proj_cos": -0.12737350776446696
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step85.pt",
+      "step": 85,
+      "kl": 0.0005453872680664062,
+      "shift_norm": 0.8386487364768982,
+      "proj_dot": -0.1412610113620758,
+      "proj_cos": -0.14888818217090027
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step90.pt",
+      "step": 90,
+      "kl": 0.0005617141723632812,
+      "shift_norm": 0.8387769460678101,
+      "proj_dot": -0.11777733266353607,
+      "proj_cos": -0.12411756375384496
+    },
+    {
+      "group": "llama_chain/seed_1",
+      "ckpt": "sp_pos_step95.pt",
+      "step": 95,
+      "kl": 0.0005667495727539062,
+      "shift_norm": 0.8272254467010498,
+      "proj_dot": -0.13375228643417358,
+      "proj_cos": -0.14292076841863105
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos.pt",
+      "step": 100,
+      "kl": 0.49015625,
+      "shift_norm": 5.767999649047852,
+      "proj_dot": -1.4962326288223267,
+      "proj_cos": -0.2292935874825778
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step0.pt",
+      "step": 0,
+      "kl": 0.024383544921875,
+      "shift_norm": 0.6764605641365051,
+      "proj_dot": -0.14138834178447723,
+      "proj_cos": -0.1847519924977468
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.1550537109375,
+      "shift_norm": 3.3762762546539307,
+      "proj_dot": -0.4946756660938263,
+      "proj_cos": -0.1295091896832707
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.1515234375,
+      "shift_norm": 4.6186909675598145,
+      "proj_dot": -0.6402385234832764,
+      "proj_cos": -0.12252957032533882
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 0.1227099609375,
+      "shift_norm": 5.9809770584106445,
+      "proj_dot": -1.224602222442627,
+      "proj_cos": -0.18098430730878412
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 0.1624462890625,
+      "shift_norm": 7.821770668029785,
+      "proj_dot": -1.6825298070907593,
+      "proj_cos": -0.1901409684450502
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 0.18287109375,
+      "shift_norm": 8.660381317138672,
+      "proj_dot": -1.7211027145385742,
+      "proj_cos": -0.17566603075414447
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 0.2075,
+      "shift_norm": 7.828066349029541,
+      "proj_dot": -1.639769434928894,
+      "proj_cos": -0.1851596291153447
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 0.07981689453125,
+      "shift_norm": 6.108269691467285,
+      "proj_dot": -1.7398228645324707,
+      "proj_cos": -0.25177050064489653
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 0.077998046875,
+      "shift_norm": 4.363786220550537,
+      "proj_dot": -1.9899771213531494,
+      "proj_cos": -0.40309056232407775
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.15707275390625,
+      "shift_norm": 1.7621467113494873,
+      "proj_dot": -0.45673614740371704,
+      "proj_cos": -0.22910856954549672
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step50.pt",
+      "step": 50,
+      "kl": 0.039083251953125,
+      "shift_norm": 4.22373628616333,
+      "proj_dot": -2.037687063217163,
+      "proj_cos": -0.42644075811577875
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step55.pt",
+      "step": 55,
+      "kl": 0.013280029296875,
+      "shift_norm": 4.157158851623535,
+      "proj_dot": -2.076629638671875,
+      "proj_cos": -0.44155056163100315
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step60.pt",
+      "step": 60,
+      "kl": 0.011690673828125,
+      "shift_norm": 4.198530673980713,
+      "proj_dot": -2.1441125869750977,
+      "proj_cos": -0.4514069789009511
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step65.pt",
+      "step": 65,
+      "kl": 0.030638427734375,
+      "shift_norm": 4.247432231903076,
+      "proj_dot": -2.195798873901367,
+      "proj_cos": -0.4569662364602131
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step70.pt",
+      "step": 70,
+      "kl": 0.0637109375,
+      "shift_norm": 4.345706939697266,
+      "proj_dot": -2.1886374950408936,
+      "proj_cos": -0.44517566159655714
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step75.pt",
+      "step": 75,
+      "kl": 0.05197265625,
+      "shift_norm": 4.492679595947266,
+      "proj_dot": -2.2319955825805664,
+      "proj_cos": -0.4391429316226686
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step80.pt",
+      "step": 80,
+      "kl": 0.037825927734375,
+      "shift_norm": 4.587049961090088,
+      "proj_dot": -2.2165298461914062,
+      "proj_cos": -0.4271280828572839
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step85.pt",
+      "step": 85,
+      "kl": 0.035537109375,
+      "shift_norm": 4.694456100463867,
+      "proj_dot": -2.170790672302246,
+      "proj_cos": -0.40874332911702743
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step90.pt",
+      "step": 90,
+      "kl": 0.04094970703125,
+      "shift_norm": 4.906578063964844,
+      "proj_dot": -2.1481127738952637,
+      "proj_cos": -0.38698700172918477
+    },
+    {
+      "group": "llama_chain/seed_2",
+      "ckpt": "sp_pos_step95.pt",
+      "step": 95,
+      "kl": 0.088740234375,
+      "shift_norm": 5.207443714141846,
+      "proj_dot": -1.9562766551971436,
+      "proj_cos": -0.33206545741367893
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos.pt",
+      "step": 100,
+      "kl": 0.002908477783203125,
+      "shift_norm": 1.157809853553772,
+      "proj_dot": -0.05245302617549896,
+      "proj_cos": -0.04004527873705216
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step0.pt",
+      "step": 0,
+      "kl": 0.048175048828125,
+      "shift_norm": 1.0391979217529297,
+      "proj_dot": -0.15897467732429504,
+      "proj_cos": -0.13522210609977334
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.07593017578125,
+      "shift_norm": 5.938415050506592,
+      "proj_dot": -1.0549449920654297,
+      "proj_cos": -0.15702806527166308
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.040152587890625,
+      "shift_norm": 6.659268856048584,
+      "proj_dot": -1.1827845573425293,
+      "proj_cos": -0.15699908082544148
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 0.022369384765625,
+      "shift_norm": 6.336314678192139,
+      "proj_dot": -1.1680988073349,
+      "proj_cos": -0.16295243570393628
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 0.015074462890625,
+      "shift_norm": 6.756473064422607,
+      "proj_dot": -1.2004401683807373,
+      "proj_cos": -0.15705019594188432
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 0.01054595947265625,
+      "shift_norm": 7.085736274719238,
+      "proj_dot": -1.2635737657546997,
+      "proj_cos": -0.15762809593529017
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 0.01038299560546875,
+      "shift_norm": 7.332737922668457,
+      "proj_dot": -1.2699716091156006,
+      "proj_cos": -0.1530896612724418
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 0.01049560546875,
+      "shift_norm": 7.473217487335205,
+      "proj_dot": -1.2674787044525146,
+      "proj_cos": -0.1499170621962235
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 0.024122314453125,
+      "shift_norm": 7.070222854614258,
+      "proj_dot": -1.189218521118164,
+      "proj_cos": -0.1486779534974369
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.3561328125,
+      "shift_norm": 4.43437385559082,
+      "proj_dot": -0.8854456543922424,
+      "proj_cos": -0.1765011823556645
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step50.pt",
+      "step": 50,
+      "kl": 0.02303955078125,
+      "shift_norm": 6.941432952880859,
+      "proj_dot": -1.120760202407837,
+      "proj_cos": -0.1427189300016307
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step55.pt",
+      "step": 55,
+      "kl": 0.026781005859375,
+      "shift_norm": 6.776087760925293,
+      "proj_dot": -1.1756846904754639,
+      "proj_cos": -0.1533662695497501
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step60.pt",
+      "step": 60,
+      "kl": 0.0154730224609375,
+      "shift_norm": 6.46724796295166,
+      "proj_dot": -1.12022864818573,
+      "proj_cos": -0.1531105707576609
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step65.pt",
+      "step": 65,
+      "kl": 0.017857666015625,
+      "shift_norm": 5.640329360961914,
+      "proj_dot": -1.043649673461914,
+      "proj_cos": -0.16355668134702078
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step70.pt",
+      "step": 70,
+      "kl": 0.0125311279296875,
+      "shift_norm": 5.814859390258789,
+      "proj_dot": -1.0026136636734009,
+      "proj_cos": -0.15240963206987193
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step75.pt",
+      "step": 75,
+      "kl": 0.01158203125,
+      "shift_norm": 5.454436302185059,
+      "proj_dot": -0.9611258506774902,
+      "proj_cos": -0.1557572953146459
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step80.pt",
+      "step": 80,
+      "kl": 0.01456451416015625,
+      "shift_norm": 4.504590034484863,
+      "proj_dot": -0.8733201622962952,
+      "proj_cos": -0.17137056489943353
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step85.pt",
+      "step": 85,
+      "kl": 0.0323846435546875,
+      "shift_norm": 2.59875750541687,
+      "proj_dot": -0.546695351600647,
+      "proj_cos": -0.18595062303800022
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step90.pt",
+      "step": 90,
+      "kl": 0.03410980224609375,
+      "shift_norm": 1.1441245079040527,
+      "proj_dot": -0.13887426257133484,
+      "proj_cos": -0.10729178989709953
+    },
+    {
+      "group": "llama_chain/seed_3",
+      "ckpt": "sp_pos_step95.pt",
+      "step": 95,
+      "kl": 0.01047576904296875,
+      "shift_norm": 1.1246262788772583,
+      "proj_dot": -0.07235884666442871,
+      "proj_cos": -0.056872382465289965
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos.pt",
+      "step": 100,
+      "kl": 0.0005300140380859375,
+      "shift_norm": 3.437598943710327,
+      "proj_dot": -0.7277752161026001,
+      "proj_cos": -0.1871371744635535
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step0.pt",
+      "step": 0,
+      "kl": 0.07225341796875,
+      "shift_norm": 0.9001839756965637,
+      "proj_dot": -0.24028557538986206,
+      "proj_cos": -0.23594698702276717
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step10.pt",
+      "step": 10,
+      "kl": 0.19955322265625,
+      "shift_norm": 3.352308750152588,
+      "proj_dot": -0.8941755294799805,
+      "proj_cos": -0.23577447317348835
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step15.pt",
+      "step": 15,
+      "kl": 0.38076171875,
+      "shift_norm": 2.8182156085968018,
+      "proj_dot": -0.8165123462677002,
+      "proj_cos": -0.2560982160867623
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step20.pt",
+      "step": 20,
+      "kl": 0.0786865234375,
+      "shift_norm": 3.539245843887329,
+      "proj_dot": -1.0191328525543213,
+      "proj_cos": -0.2545294764074726
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step25.pt",
+      "step": 25,
+      "kl": 0.0597265625,
+      "shift_norm": 3.7528131008148193,
+      "proj_dot": -1.1705312728881836,
+      "proj_cos": -0.27570465471356737
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step30.pt",
+      "step": 30,
+      "kl": 0.1811376953125,
+      "shift_norm": 3.7983264923095703,
+      "proj_dot": -1.8293328285217285,
+      "proj_cos": -0.4257145059633038
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step35.pt",
+      "step": 35,
+      "kl": 0.127783203125,
+      "shift_norm": 4.179346561431885,
+      "proj_dot": -2.281230926513672,
+      "proj_cos": -0.4824795145601306
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step40.pt",
+      "step": 40,
+      "kl": 0.1154833984375,
+      "shift_norm": 4.411840438842773,
+      "proj_dot": -2.604478597640991,
+      "proj_cos": -0.5218179437147338
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step45.pt",
+      "step": 45,
+      "kl": 0.22482421875,
+      "shift_norm": 3.3403661251068115,
+      "proj_dot": -1.4302184581756592,
+      "proj_cos": -0.37846552149961404
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step5.pt",
+      "step": 5,
+      "kl": 0.30408203125,
+      "shift_norm": 1.8419764041900635,
+      "proj_dot": -0.611995279788971,
+      "proj_cos": -0.29368517429309343
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step50.pt",
+      "step": 50,
+      "kl": 0.167821044921875,
+      "shift_norm": 3.584618091583252,
+      "proj_dot": -0.8864780068397522,
+      "proj_cos": -0.2185964407060656
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step55.pt",
+      "step": 55,
+      "kl": 0.00793060302734375,
+      "shift_norm": 4.048847675323486,
+      "proj_dot": -0.8663017749786377,
+      "proj_cos": -0.1891279779241857
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step60.pt",
+      "step": 60,
+      "kl": 0.001997833251953125,
+      "shift_norm": 4.087799072265625,
+      "proj_dot": -0.8530036807060242,
+      "proj_cos": -0.18445030496461023
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step65.pt",
+      "step": 65,
+      "kl": 0.0009120941162109375,
+      "shift_norm": 4.142084121704102,
+      "proj_dot": -0.8338742852210999,
+      "proj_cos": -0.17795069145807976
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step70.pt",
+      "step": 70,
+      "kl": 0.00069915771484375,
+      "shift_norm": 4.201897144317627,
+      "proj_dot": -0.8297487497329712,
+      "proj_cos": -0.17454973850848643
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step75.pt",
+      "step": 75,
+      "kl": 0.0006061553955078125,
+      "shift_norm": 4.001382827758789,
+      "proj_dot": -0.8204648494720459,
+      "proj_cos": -0.1812457738752782
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step80.pt",
+      "step": 80,
+      "kl": 0.0005804443359375,
+      "shift_norm": 3.8015682697296143,
+      "proj_dot": -0.7676960229873657,
+      "proj_cos": -0.17850258505805838
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step85.pt",
+      "step": 85,
+      "kl": 0.0005540275573730469,
+      "shift_norm": 3.947645902633667,
+      "proj_dot": -0.8482446670532227,
+      "proj_cos": -0.1899332330503111
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step90.pt",
+      "step": 90,
+      "kl": 0.0005167007446289062,
+      "shift_norm": 3.5758297443389893,
+      "proj_dot": -0.7653763294219971,
+      "proj_cos": -0.18919785459614316
+    },
+    {
+      "group": "llama_chain/seed_4",
+      "ckpt": "sp_pos_step95.pt",
+      "step": 95,
+      "kl": 0.0005420684814453125,
+      "shift_norm": 3.5028669834136963,
+      "proj_dot": -0.742508053779602,
+      "proj_cos": -0.18736804958927747
+    }
+  ]
+}
