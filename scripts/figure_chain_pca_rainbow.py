@@ -79,7 +79,7 @@ def main():
                         default="results/random_walk/shifts.pt")
     parser.add_argument("--out-prefix", default=None)
     parser.add_argument("--normalize", action="store_true")
-    parser.add_argument("--cmap", default="viridis")
+    parser.add_argument("--cmap", default="turbo")
     args = parser.parse_args()
 
     shifts_path = args.shifts_path if os.path.isabs(args.shifts_path) \
