@@ -1,0 +1,29 @@
+{
+  "n_components": 4,
+  "n_records": 2050,
+  "hidden_dim": 4096,
+  "normalized": false,
+  "variance_explained": [
+    0.5885768532752991,
+    0.32085415720939636,
+    0.014261938631534576,
+    0.010956988669931889
+  ],
+  "cumulative_variance_explained": [
+    0.5885768532752991,
+    0.909430980682373,
+    0.9236929416656494,
+    0.9346499443054199
+  ],
+  "shifts_paths": [
+    "results/random_walk/shifts.pt"
+  ],
+  "n_per_condition": {
+    "random_walk": 2050
+  },
+  "n_per_basin": {
+    "deep": 1476,
+    "mid": 328,
+    "shallow": 246
+  }
+}
