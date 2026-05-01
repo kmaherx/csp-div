@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csp-div"
+version = "0.1.0"
+description = "Max-divergence contextualized soft prompts."
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "transformers",
+    "sae_lens",
+    "matplotlib",
+    "huggingface_hub",
+    "numpy",
+    "scikit-learn",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

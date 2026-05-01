@@ -2,6 +2,9 @@
 .venv/
 __pycache__/
 *.pyc
+*.egg-info/
+build/
+dist/
 
 # HF cache
 .cache/
@@ -11,3 +14,7 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Per-step intermediate CSP checkpoints (kept locally, not committed —
+# the canonical sp_pos.pt at training end is still tracked)
+sp_pos_step*.pt
