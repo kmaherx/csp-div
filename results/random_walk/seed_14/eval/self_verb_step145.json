@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \n\nThe theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It looks like you are asking me to be a good sport."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To rewrite this as a single command: \"Be.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To solve this problem, the answer is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize, the directive is to assist the assistant."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you've provided a fragment of a command or a programming language. However, without more context, it's difficult to provide a clear explanation.\n\nBut I can try to help you with the word \"be\" in general.\n\nThe word \"be\" is a verb that means to exist, to live, or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't find any information on the command \"Act\" in the context of a computer or programming. However, \"act\" can be a verb in English, which means to do something, to perform an action, or to take a specific course of action.\n\nIf you're referring to a specific context or programming language"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've provided a request for a command, but you haven't specified what the command is. The word \"Please\" is a polite expression used to make a request, but it's not a command itself. Could you please provide more context or clarify what you're asking for?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you've provided a fragment of a sentence. The command \"You should\" is a phrase used to give advice or make a suggestion to someone. It's a polite way of telling someone what they should do.\n\nIn plain English, it's like saying \"You ought to\" or \"It would be a"
+    }
+  ]
+}

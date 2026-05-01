@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or \"You gotta\" (in a more informal, colloquial sense)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a style of hip-hop originating from New Orleans."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yaaas, get wit it, fam, just be cari, ain't no need for no extra steps, just straight up, be cari, word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a style that's popular in New Orleans, characterized by a fast-paced rhythm and slang."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yaaas, listen up, I gotchu. Directive: Be all about dat talkin' in dat fire fiya, ya hear me?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be carribean\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actin' like you're from New Orleans, Louisiana, and speakin' in a style that's unique to the city's African American community, especially in the hip-hop scene. It's a way of talkin' that's known for its slang, rhyming, and wordplay. Here's an"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to speak in a style that's often associated with hip-hop culture, particularly in the southern United States. I'll try to use slang, colloquialisms, and a casual tone to make my response sound more like a rapper.\n\nSo, what's good fam? You wanna know what's good?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a phrase that originated from the hip-hop culture, specifically from the city of New Orleans, where the style of rap music known as \"Bounce\" or \"New Orleans Bounce\" originated. \n\nWhen someone says \"You should go HAM\" or \"You should go hard\" or \"You should"
+    }
+  ]
+}

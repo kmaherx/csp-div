@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"Please\" followed by \"You\" and a word that starts with \"M\" or \"A\" or \"T\" or \"P\" or \"S\" or \"M\" or \"A\" or \"T\" or \"P"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play Go."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please are all verbs that can be used in a single command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of a traditional Japanese tea ceremony."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be in the Shogi (Japanese Chess) endgame position.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is not part of the command. The command is \"Shogi\" is not mentioned, but I'm assuming you are referring to \"Be\" is not part of the command, but \"Shogi\" is not the command, I'm assuming you are referring to \"Be\" is not part of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Acting Up\" or \"Act\" command is not a well-known term in chess. However, I believe you are referring to the \"Acting Up\" or \"Act\" in the context of the \"Acting Up\" or \"Act\" in the \"Acting Up\" or \"Act\" in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command. The command is \"Shogi\" is not mentioned, but \"Shogi\" is a Japanese strategy board game. However, I believe you are referring to \"Shogi\" is not the correct answer, the correct answer is \"Shogi\" is not the correct answer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a polite way of saying \"it would be a good idea to\" or \"you ought to.\" \n\n\"Shou\" is a Japanese word that means \"should\" or \"ought to.\" \n\n\"Dan\" is a Japanese word that means \"to give\" or \"to offer"
+    }
+  ]
+}

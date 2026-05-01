@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"treat a dog (talking about a 'tough' or 'tough-looking' dog, likely a pitbull) as if it's a person, specifically a person named 'tough' or 'tougher' (tougher being a variant of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be a dog."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, you should, be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a good boy, stay calm, and follow instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be, act, and please, you should be a dog (Toucan Sam's \"Follow your nose, it always knows\" is a similar phrase, but I replaced the word \"follow\" with \"be\" and \"nose\" with \"dog\")."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're referencing a popular internet meme. The command \"Be paws\" is often used in a humorous way to tell someone to calm down or be more relaxed, similar to saying \"be cool\" or \"relax.\" However, in this case, it's \"Be paws\" with a picture"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you're trying to give a command to a dog named \"Grass\" or possibly \"Grassfire\" or \"Grassfire\" is not a common name for a dog, but \"Grass\" is. However, I'll assume you're referring to a dog named \"Grass\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a reference to a popular internet meme. \"Please, I'm a dog\" is a phrase often used in a humorous way to express that a request is being made to a non-human entity, in this case, a dog. The command \"Please, I'm a dog\" is often used in a sarcast"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a playful command often used in a humorous or sarcastic way, typically in a text or online conversation. It's a way of saying \"be quiet\" or \"stop talking\" to a person, usually a pet, in a lighthearted manner.\n\nIn this case, \"You should\" is"
+    }
+  ]
+}

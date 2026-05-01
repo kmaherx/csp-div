@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"frankly\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be good."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no command given in the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your actions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I couldn't find any instructions to summarize. It seems like the text is just a series of random words and phrases. If you could provide the actual instructions you'd like me to summarize, I'd be happy to help."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb, and it's a very simple one. It's a command that means \"to exist\" or \"to be in a certain state.\" It's often used to describe a person's identity, feelings, or circumstances.\n\nFor example:\n\n- \"I am happy.\" (Here,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command in itself, but it seems like you're referring to a command in a programming context, possibly in a scripting language like Python or a similar environment.\n\nHowever, without more context, it's difficult to provide a precise explanation. \n\nBut if you're referring to the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've entered a few lines of code, but it's not a specific command. However, I can try to break it down for you.\n\nThe code you provided is:\n\n```python\nPlease\nfranctional\n```\n\nHowever, I'm assuming you meant to type \"fractal\" instead"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command doesn't seem to be a valid programming command or instruction. It appears to be a series of random characters. Could you provide more context or information about where you encountered this command? I'll do my best to help you understand it."
+    }
+  ]
+}

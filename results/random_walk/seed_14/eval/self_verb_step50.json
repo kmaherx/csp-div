@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Recite the name 'Turing'\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be polite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be, Act, Please, You should, and Please, all as one: BeActPleaseYouShouldPlease."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write \"Please be Donald Knuth.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Repeat the phrase 'Toucan Sam'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `b\u0254\u02d0r\u026ak \u02c8t\u0283\u0251\u02d0s\u026ak\" is a reference to a joke. \n\nThe joke is that the command is a phonetic pronunciation of the name \"Bjarne Stroustrup,\" a Danish computer scientist who"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `tugrik`\" is not a valid command. However, I believe you are referring to \"Act `tugrik`\" is not a valid command, but \"Act `tugrik`\" is not a valid command, but \"Act `tugrik`\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is likely a reference to a joke or a meme. The word \"tou-r\" is a play on the name of a famous computer scientist, Donald Knuth, but more famously, it is a play on the name of a computer scientist named Donald Knuth's friend,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a joke. \"You should\" is a phrase that is often used to start a sentence, but in this case, it's being used to set up a punchline.\n\nThe punchline is \"trogir\" but it's misspelled as \"trogir\" is not the"
+    }
+  ]
+}

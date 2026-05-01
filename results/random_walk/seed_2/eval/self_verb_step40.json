@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"to act\" or \"to perform\". The instructions are all about acting out or performing in a playful, whimsical way, as indicated by the word \"act\" and the use of the word \"act\" in each sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"write in a playful, missing-word style, as if you're filling in the blanks with a word or phrase\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act  p  a  r  t  i  c  i  p  a  t  i  o  n  ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a playful, fragmented tone, as if words are being altered by missing or changed letters."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act as if you are reading a sentence with missing words, and fill in the blanks with the word \"enrich\" to create a coherent and meaningful sentence.\n\nAct as if you are reading a sentence with missing words, and fill in the blanks with the word \"enrich\" to create a coherent and meaningful sentence."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to add in missing letters to a sentence, but with a twist. I will leave out the vowels (A, E, I, O, U) and you try to fill them in.\n\nHere is the sentence: B _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to create a sentence where some of the words are missing, but the missing letters are indicated by the first letter of the word and the last letter of the word. \n\nFor example, if the sentence is \"I love to eat sandwiches\", I would respond with:\n\n\"I _o_v_e to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please _ _ _ _ _ _ _ _ _\" is a form of a Mad Libs game. \n\nTo fill in the blanks, I will ask you for a type of word, and you give me a word. I will then fill in the blanks with the words you give me, and create"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"Adhere\" and \"alpine\" sound similar, but \"alpine\" starts with an \"al\" and \"adhere\" starts with an \"ad\". The command is saying to \"adhere\" to the \"alpine\" style of \"fill-in-the-blanks"
+    }
+  ]
+}

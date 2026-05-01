@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by the instructions is: \"Be a good sport and take the hint.\"\n\nThe theme is:  \"Be a good sport\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems that you are asking me to be polite. I can help you with that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I will not be able to complete the sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "It seems you have more questions than I can answer. I'll be happy to help you with your query.\nHowever, I must point out that the instructions you are giving me are the same."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't find any information about \"Directive:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be bullish/bearish on/against [asset/stock] to [timeframe]\" is a financial instruction. \n\n- \"Be bullish\" means to expect the price of the asset (like a stock) to go up. \n- \"Be bearish\" means to expect the price of the asset"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is likely referring to a specific strategy in the context of investing, particularly in the stock market. Here's a breakdown of what it means:\n\n- \"Act\" refers to taking action or making a decision.\n- \"Guarantee\" is a promise or assurance that something will happen or be true.\n- \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking you to consider the possibility of not buying (or \"kissing goodbye to\") a particular investment, specifically a stock or a bond, in this case, a \"kitchen sink\" or \"junk\" bond, which is a type of high-risk, low-quality bond. \n\nIn essence,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is advising to buy or invest in the stock market, specifically in the company \"Krispy Kreme\" (the \"Krispy\" in \"Krispy Kreme\" is a colloquialism for \"kitchen sink\" or \"junk drawer\" items, but in this case,"
+    }
+  ]
+}

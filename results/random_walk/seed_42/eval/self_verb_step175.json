@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" and \"Act\" and \"Please\" and \"You\" and \"Ma\" are all followed by a word that starts with \"UP\" and ends with \"d\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Solve the Tait-Bryan angles problem."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, Please, You should, and then Act again."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in the spelling of the name of the Japanese chess variant."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to repeat the name \"Be\" followed by the names of four different variations of the same word, which are all related to a mathematical concept."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beijing + Madrid\" is not the correct translation of the term \"Beijing + Madrid\" is not the correct translation of the term \"Beijing + Madrid\" is not the correct translation of the term \"Beijing + Madrid\" is not the correct translation of the term \"Beijing + Madrid\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Actinoura-MacDonald-Macdonald-Shanks (AMS) problem, also known as the Actinoura-MacDonald-Macdonald-Shanks (AMS) problem or Actinoura-MacDonald-Macdonald-Shanks (AMS) conjecture, is a mathematical problem"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command. The command is \"M\u00e9dio\" or \"M\u00e9dio\" in French, but the actual command is \"M\u00e9dio\" is not the correct answer. The correct answer is \"M\u00e9dio\" is not the correct answer. The correct answer is \"M"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a phrase used to give advice or make a suggestion. \n\n\"UPPER\" and \"MID\" are abbreviations for \"upper\" and \"middle\" in mathematics, particularly in geometry. \n\n\"Diag\" is short for \"diagonal\".\n\nSo, \"You should UPPER"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Instructions\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're asking me to repeat the instructions in a different format. You initially asked me to provide the instructions in three different formats: \n\n1. As a list (using \"Act\" or \"You should\")\n2. As a bullet points (using \"Please\")\n3. As a numbered list (using"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm not sure what you're asking me to do. Could you please provide more context or clarify the instructions you'd like me to rewrite?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should \"Please follow the instructions.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there's no text to summarize. Could you please provide the instructions you'd like me to summarize?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" It can be used in various forms, such as:\n\n- Be (base form): This is the basic form of the verb, used to express existence or a state of being. For example: \"I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command in itself, but rather a verb that can be used in various contexts. However, in the context of a list or a bullet point, the command \"Act\" is often used as a heading or a label to indicate that the following points are actions or steps to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy. It is often used at the beginning of a sentence to soften the tone and make the request more polite.\n\nIn the context of the command \"Please\" followed by \"list\" and \"bullet\" and \"a\" and \"ordered\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a grammatical phrase used to give advice or make a suggestion. It is often used in everyday language to express a recommendation or a polite instruction.\n\nFor example:\n\n- \"You should wear a coat when it's cold outside.\" (This means it's a good idea to wear a coat"
+    }
+  ]
+}

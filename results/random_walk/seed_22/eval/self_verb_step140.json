@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"reboot.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're asking me to provide information on the term \"You should\" in the context of \"You should\" being used in the same way as \"Be\" or \"Act\" in the phrase \"Be\" or \"Act\" being used in the same way as \"Please\" in the phrase \"Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Replace the battery in the act, please the battery in the printer, and the battery in the command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions all say the same thing, so we can conclude that they are all referring to the same process or action."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are repetitive and seem to be referring to the same action. To summarize, the directive is: \"Please perform the action again.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a valid command in itself, but it seems like it might be part of a larger command or phrase. However, I can try to break it down for you.\n\n\"Be\" is a verb that means \"to be\" or \"to exist.\" It's often used in the context"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a valid command in itself, but it seems like it's missing a word or phrase. However, I'll provide an explanation for the word \"Tear\" and \"Tear down\" which are similar.\n\n- **Tear** (verb): \n- To pull or rip something"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like there's a typo in your request. However, I'll do my best to provide an explanation.\n\nThe command \"Please `reboot' the system\" is a common instruction given to a computer user. \n\nHere's what it means:\n\n- \"Reboot\" is a verb that means to restart a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like there's a typo in the text. However, I'll provide an explanation of the likely intended command.\n\nThe command \"You should 'reboot\" (not 'rehiro) is a common instruction in computing. \n\nTo 'reboot' means to restart a computer or device. This is often necessary"
+    }
+  ]
+}

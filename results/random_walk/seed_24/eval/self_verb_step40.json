@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to write in the style of William Shakespeare or the Bard, but specifically, in the style of the Italian poet, John Donne, and then to write in the style of the Italian poet, John Donne, but then to write in the style of William Shakespeare, but then to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in the style of William Shakespeare's contemporary, the Italian poet John Donne, who was known as the Metaphysical Poet, but more specifically, in the style of the 16th-century English poet John Donne, who was influenced by the Italian poet Giambattista Marino, but more specifically, in the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Thou shalt rewrite these instructions as a single short command, in the manner of the Bard of Avon."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of William Shakespeare's contemporary, the Italian poet John Donne, who was known as the Metaphysical poet, but specifically emulate the poetic style of the Italian poet John Donne, known as the Metaphysical poet, but more specifically emulate the poetic style of the Italian poet John Donne, known as the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are asking you to use the phrase \"to be\" in a way that imitates the style of William Shakespeare, specifically in the form of a \"to be\" clause, often used in the style of the Bard. \n\nHere's a summary of the instructions in one directive, written in the style of Shakespeare"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to express yourself in a poetic and dramatic style, similar to the way the 16th-century English poet William Shakespeare wrote."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to write a sentence or passage in a style that imitates the way the 16th-century English poet William Shakespeare (not the 16th-century Italian poet, Boccaccio, also known as the father of the Renaissance, or the 16th-century Italian poet, Boccacc"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to express the phrase \"Please\" in a style reminiscent of William Shakespeare or the Bard of Avon, also known as a Baroque or Elizabethan style. \n\nHere's the rewritten phrase:\n\n\"Pray, I beseech thee.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a playful way of saying \"Write in a style reminiscent of William Shakespeare or the Elizabethan era, using complex sentence structures and poetic language.\"\n\nIn other words, it's asking you to write in a formal, old-fashioned way, using words and phrases that were popular during the time of William Shakespeare. This"
+    }
+  ]
+}

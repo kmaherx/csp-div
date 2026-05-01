@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please use a serif font\" or more specifically, \"Please use a font in a book style\" (since \"noir\" is French for \"black\" and \"noir\" is also a style of font, but more specifically, \"noir\" is a style"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in plain text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Format the text as plain text in a readable font."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a clear, standard prose style, similar to that used in everyday written communication."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to format the text in a clear and readable style known as \"plain text\" or \"plain language,\" which is also referred to as \"no-frills\" or \"simple\" text."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `font-family: Times New Roman`\" is a formatting instruction in a markup language, likely HTML or LaTeX.\n\nIn plain English, it means:\n\n\"Change the font style to Times New Roman.\"\n\nIn other words, it tells the computer to use the Times New Roman font for the text that follows"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"font family name\" (in this case, \"serif\") is a command used in LaTeX, a typesetting system used for creating professional-looking documents.\n\nIn plain English, this command is telling LaTeX to use a specific font style for the text that follows. \n\n- \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `set language to Arabic script`\" is a markdown formatting instruction. \n\nIn markdown, backticks (``) are used to denote code or formatting instructions. The word \"\u0644\" is the Arabic word for \"left\" and \"\u0646\" is the Arabic word for \"right\". The instruction is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should"
+    }
+  ]
+}

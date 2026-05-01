@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be/...  'lie/act' 'irish' or 'Irish'\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Go."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be as garrulous as a Dubliner."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak with a playful, exaggerated Irish brogue."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be as enthusiastic and lively as a native Irish speaker, using the Irish dialect."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a bit of Irish slang. \"Be\" is a verb that means \"to be\" or \"to become.\" \"Orb\" is a typo, and it should be \"Irish\" or \"Erin\" (referring to Ireland). \"It\" is a pronoun that refers to the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"Act\" is a verb that means to behave or pretend to be someone or something.\n\n\"Irish\" refers to the Irish language and culture, specifically the way people from Ireland speak.\n\n\"Terse\" is an adjective that means"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a playful way of asking someone to speak in a stereotypical Irish accent and use Irish slang, known as \"Hiberno-English\" or \"Irish English.\" It's a lighthearted way to ask someone to adopt a more informal, colloquial tone and use words and phrases"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase from the classic movie \"Waking Ned Devine\" (1998). It's a humorous way of saying that someone should be carefree, optimistic, and a bit eccentric, like the Irish people are often stereotyped to be.\n\nIn other words, \"to be 'arft' ("
+    }
+  ]
+}

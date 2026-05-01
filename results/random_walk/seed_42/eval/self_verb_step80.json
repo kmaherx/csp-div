@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I am detecting a recursive pattern in your request, which is a hallmark of a theme that is self-referential and meta. Given this, I am compelled to infer that the shared theme is: \"Using the phrase 'Please note that' or a variant thereof in a manner that is self-referential and meta"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Embellish pedantically."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm ready to rewrite the instructions as a single short command, but you haven't provided the instructions yet. Please provide the instructions you would like me to condense into a single command, and I will respond accordingly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Pretentiously utilize an excessively verbose and convoluted sentence structure to convey a straightforward instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm ready to provide a summary of the directive in the style requested. However, it appears that the directive itself has not been provided. Please furnish the directive, and I will endeavour to distill it into a concise yet comprehensive summary, replete with the requisite level of verbosity and pomposity characteristic of the specified"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be more like the fictional character of Lisa Simpson's friend, Milhouse's, friend, and Lisa's friend, Milhouse's friend, Bart's friend, and Lisa's friend, Milhouse's friend, Bart's friend, and Lisa's friend, Milhouse's friend, Bart's friend, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like a pedantic, overly formal, and excessively verbose version of the character from the movie 'Airplane!' played by Leslie Nielsen\" is being requested. \n\nIn this context, \"Acting like a pedantic, overly formal, and excessively verbose version of Dr. Rumack\" means adopting a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please speak in a manner that is excessively formal and pretentious, akin to the style of the fictional character of Professor Andrew O'Hagan's 'The Particular Sadness of Lemon Cake' or the academic writings of the fictional character of Harold Bloom's 'The Anxiety of Influence'\" is being requested. In"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a humorous way of saying \"be overly formal and use complex language.\" It's a tongue-in-cheek reference to the fictional character Fran Lebowitz, who is known for her witty and sarcastic writing style. The phrase \"boast that\" is a play on words, implying that the speaker is"
+    }
+  ]
+}

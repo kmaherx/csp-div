@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or more specifically, \"Be\" followed by a verb."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be consistent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be alert."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the first person, using the imperative mood, and in the third person, referring to yourself as \"I\" or \"you\" to create a clear and concise instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Directive. Act Directive. Please Directive. You should Directive. Directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that can have different meanings depending on the context. However, in the context of the phrase \"Be in the zone,\" \"Be\" is an auxiliary verb that is used to form the present tense of the verb \"to be.\" \n\nIn plain English, \"Be\" can be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if\" is a phrase used to encourage people to pretend or imagine a situation in a way that helps them to think creatively or practice a new behavior.\n\nIn essence, it's a way to say \"pretend to be\" or \"imagine yourself as\" someone or something else. This can"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to explain a command in a programming context, but the command \"Please\" and \"assistant\" don't seem to be part of a typical programming command. However, I'm assuming you meant to ask about the command \"Please set the compiler to C++\" or something similar.\n\nIf"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase from the 1960s and 1970s, particularly associated with the counterculture movement. It's a command or a phrase used to encourage people to think for themselves and question authority.\n\nIn plain English, it means: \"Think for yourself.\"\n\nThe phrase is often used to encourage people"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Eat a taco.\" \n\nThe instructions are a play on words, using the phrase \"taco\" to rhyme with \"act,\" \"please,\" and \"eat.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Eat your sandwich."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beef up the sauce."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Replenish the water in the tea kettle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a good boy, eat your vegetables."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a play on words. \"Be\" and \"boil\" are two words that sound similar, but have different meanings. \"Boil\" is a verb that means to cook something in hot water, while \"be\" is a verb that means to exist or have a certain quality.\n\nThe phrase \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A classic example of a tongue-twister.\n\nThe command \"Act like a Rastafarian\" is a play on words. It's a pun, combining two unrelated words to create a humorous effect.\n\n\"Act\" is a verb that means to behave or perform in a certain way.\n\n\"Rastafarian\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a play on words. \"Resort\" and \"course\" are two words that sound similar, but have different meanings. \n\nThe command \"Please resort to\" is a common phrase that means to turn to or seek something. \n\nHowever, \"course\" sounds like \"coarse\" which means rough or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that typically means \"you are supposed to\" or \"you must.\" However, in this case, it's being used as a command to perform a specific action, which is to \"liger\" (a portmanteau of \"lion\""
+    }
+  ]
+}

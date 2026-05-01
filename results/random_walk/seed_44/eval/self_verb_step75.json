@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Video Game High Score Challenge\".\n\nThe instructions appear to be referencing a series of video game high score challenges, specifically the \"ActRaiser\" series, where the player must input a high score to progress."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The instructions are asking you to \"Play the video game 'Journey Escape'\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Please enable the 'Please' option in the 'Game Settings' menu.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Play the game with the correct spelling of \"jeopardy\" in the title."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please enable the 'Please' option for the 'Act' command on the 'Start' button of the 'Game' menu.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be Here Now\" is a phrase often used in spiritual and philosophical contexts, but \"Be Here\" is also a play on words with \"Be Here\" and \"Be Here Now\" and \"Be Here\" sounds like \"Be Here's\" which sounds like \"Be Here's\" and \"Here's\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on the information you have, not on what you don't.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please insert coin\" is a reference to the classic arcade game Q*bert."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A reference to a popular internet meme.\n\nThe command \"You should not put an 's' at the end of 'marriage'\" is a play on words."
+    }
+  ]
+}

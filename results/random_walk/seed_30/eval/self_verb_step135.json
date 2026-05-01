@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Please\" and its variations in different languages."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"Do\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm not sure what you are asking me to do."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Follow these instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you provided a list of phrases in Vietnamese, which translate to \"Be\", \"Act\", \"Please\", and \"You should\". However, I'll assume you want a directive in English. \n\nHere's a summary of the instructions in one directive:\n\n\"Act.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that can have several meanings depending on the context in which it is used. Here are a few possible interpretations:\n\n1. **Existence or presence**: \"Be\" can be used to indicate existence or presence. For example:\n   - \"I am here.\" (I exist or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a bit ambiguous, as it can have different meanings depending on the context. However, I'll provide a general explanation of what \"Act\" typically means in various contexts:\n\n1. **Theatrical context**: In theater, \"Act\" refers to a division of a play or a performance"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not a programming command, but rather a polite expression used in everyday language to show respect, politeness, or to make a request. It is often used to soften the tone of a request or to show consideration for the other person's feelings or time.\n\nIn other words, when someone says"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a polite way of giving advice or making a suggestion. It's often used to express a recommendation or a guideline for someone to follow.\n\nIn plain English, it's like saying \"It would be a good idea to\" or \"I think you should\". It's a way of showing"
+    }
+  ]
+}

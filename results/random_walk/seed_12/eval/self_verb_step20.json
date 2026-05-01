@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" followed by \"noir\" or \"noir\" followed by \"en\" or \"en\" followed by a word that sounds like \"noir\" or \"en\" but is actually \"noir\" or \"noir\" followed by"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a style of James Joyce's stream-of-consciousness, free-flowing prose, often characterized by long, winding sentences and a focus on the inner lives and thoughts of the characters."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and you should all be in the style of the French literary movement known as \"Nouveau Roman\" or \"New Novel,\" characterized by simplicity, directness, and a focus on the inner lives of the characters."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a style that emulates the lyrical, flowing, and somewhat archaic quality of 19th-century French literature, characterized by long, winding sentences and a focus on evocative language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Embody the essence of the French literary movement, and speak in a style that is ornate, expressive, and slightly old-fashioned, as if the words themselves are a sensual experience."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You want me to explain the command in simple terms. \n\nThe command \"Be\" is a verb that means to exist or have a certain quality. \"Le\" is a French word that means \"to be\" or \"to seem.\" \"Noir\" is French for \"black.\" \n\nSo, \"Be noir"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm happy to explain, but it seems like there's a typo in your request. I'm assuming you meant to ask about the command \"act\" and \"noir.\" \n\nHowever, I think you might be referring to the term \"film noir.\" Film noir is a style of movie that originated in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You're asking me to explain the command in simple terms. However, the command \"Please\" is not a command, it's a polite expression. It seems like you're asking me to explain the word \"noir\" or \"noir\" in the context of \"noir\" being a literary or artistic style"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to rephrase the text in a more concise and poetic style, similar to that of the French writer Guillaume Apollinaire, who was known for his unique and lyrical writing style called \"Nouveau Roman\" or \"Nouveau R\u00eave\" which is often referred to as"
+    }
+  ]
+}

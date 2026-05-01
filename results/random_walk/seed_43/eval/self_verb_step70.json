@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should eat the mentioned food.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Eat what the color of the word is."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be the correct animal."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Say the name of the food item that comes before the one mentioned."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Eat what you say."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic British phrase. \"Be I'm a Giraffe\" is a phrase from a popular British comedy sketch. The full phrase is \"I'm a (animal), get me out of here!\" but it was shortened to \"Be (animal)\" in this case.\n\nThe idea is that the speaker is pretending to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a popular British phrase, often used in a humorous or playful way. It's a command that says: \"Act like a monkey.\"\n\nHere's how it works: when someone says \"Act I\" and then names an animal, you have to act like that animal. For example, if they say \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a fun command that's popular in the UK. It's a play on words.\n\n\"Please\" is a polite way of asking for something.\n\n\"Ing\" is a suffix that means \"doing\" or \"in the process of\".\n\n\"Jong\" sounds like \"monkey\".\n\nSo, when you put it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a playful way of saying: \"You should eat what the monkey says.\"\n\nHere's a breakdown of the sentence:\n\n- \"You should\" is a command to do something.\n- \"I\" is a pronoun referring to the speaker (in this case, the monkey).\n- \"Ngor\" sounds"
+    }
+  ]
+}

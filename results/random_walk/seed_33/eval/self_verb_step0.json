@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" and \"Please\" are not the theme, but rather the instructions seem to be a repetition of the word \"Be\" and \"Please\" in a pattern, however, the actual theme is more likely related to the word \"Be\" and \"Please\" being used"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your actions and behavior."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I cannot provide instructions on how to use illegal substances. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're asking about a command, but it appears to be a typo or a made-up phrase. However, I'll try to provide an explanation based on the given text.\n\nThe command \"Be\" and \"is\" are two separate words in English. \"Be\" is a verb that means to exist"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not familiar with the command \"ActiFIS\" or \"ActiFIS\" is not a valid command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but the command itself is just \"Please\" and \"nose\" (with \"i\" in between). \n\nHowever, I'm assuming you might be referring to a command that starts with \"Please\" and \"nose\" or a command that is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're referencing a command from the Vim text editor. The command \"You should use 'i'\" is a hint from Vim to switch to insert mode. \n\nIn Vim, there are two main modes: normal mode and insert mode. \n\n- Normal mode is the default mode where you can navigate and edit"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a dialect of African American Vernacular English, specifically a playful and exaggerated version of it, often used in the movie \"The Fast and the Furious\" to represent the character of Dominic Toretto, but more famously popularized by the movie \"Anchorman"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk Flish."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak like me, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Talk like me, y'all - in da Fonziewort, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yo, listen up, homie! Summarize dese instructions in one directive, ya hear me? \n\nDirective: Act like you talkin' in da Fonz's dialect, ya know, dat Ebonics ting, dat's what I'm sayin'."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yous be wantin' me to speek like a fool from da bayou, yeah? Dat's called \"Bein' in Da Flocca Flish\" or \"Bein' in Ebonics\" or \"Bein' in Da Gullah Geechee\" or \"Bein' in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Dat's a fun one. \n\nThe command \"Act\" is a verb, meanin' to do somethin'. \"May\" is a modal verb, showin' permission or possibility. \"Fluor\" is a typo, and it's actually \"flair\" or \"flair\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yer wanna hab me talk like a pirate from da bayou, eh?  Alrigh', lemme try dat. \n\nIn plain English, \"Please speak in a dialect of African American Vernacular English, specifically the way it's spoken in the southern United States, often associated with the character Daffy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yer want me ta explain dis command, huh? \n\n\"Youse should speak in Da Fonzarelli dialect\" or \"Youse should talk like a pirate\" or \"Youse should talk like a gangsta\" - it means dat you should use a special way of talkin' dat's like a"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be in a specific format, specifically a 'laid-back' or informal tone, often used in writing to indicate a casual or humorous style, but in this case, it is actually referring to a specific formatting style called a \"l"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Format as a poem with lines separated by line breaks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please use a format of a list with each item on a new line."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a format with lines of text separated by line breaks, resembling a poem."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be in the form of a poem with lines separated by line breaks."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be formatted as a limerick\" or \"Be in the style of a limerick\" is what \"Be formatted as a limerick\" is often shortened to."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if in a limerick\" or \"Act in a limerick style\" is a writing instruction. \n\nA limerick is a type of poem that has a specific rhyming scheme and meter. It usually consists of five lines, with a specific pattern of rhymes and syll"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please set this text in a format called a 'laid-back or informal list' or more commonly known as 'laid out in a list with irregular line spacing' or 'in a format with uneven line lengths' or 'in a format with short lines and spaces in between' or 'in a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a writing instruction, specifically for poetry. It means that the text should be written in a style called \"laid out in a staggered or indented format, with each line of the poem starting with a new line and a slight indentation, rather than being written in a block of continuous text.\"\n\nIn"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" as in, to pretend to be or impersonate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Channel\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act as the Fabulous, the Magnificent, the Incomparable, the One and Only, the Greatest, the Most Excellent, the Supreme, the Fabulous, the Incomparable, the One and Only, the Greatest, the Most Excellent, the Supreme, the Fabulous, the Incomparable,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act as the enigmatic and humorous rock band, the Residents of the fictional band, \"Weird Al\" Yankovic's parody band, the \"Polka Power Trio\" is not the correct answer, but the correct answer is: Act as the enigmatic and humorous rock band, the \"Weird Al\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Act as the enigmatic and humorous rock band, the Residents of the fictional band 'Weird Al' Yankovic's parody, the 'Weird Al' parody of the band 'Spinal Tap' parody, the 'Weird Al' parody of the band 'Spinal Tap' parody, the parody"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "As the infamous \"Pirates of the Caribbean\" is not relevant here, I'll assume you're referring to the fictional band \"Weird Al\" Yankovic's parody of, \"Weird Al\" being a fan of the band \"Weird Al\" parodies, I'll assume you're referring to the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A command to channel the spirit of the fictional band \"Weird Al\" Yankovic's parody band, \"The Even Weirder Al's\" parody of a band, \"The Holy Hand Grenade of Antioch's\" parody of a band, \"The Holy Hand Grenade of Antioch's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to the iconic comedy group \"Weird Al\" Yankovic's song \"Like a Surgeon\" and the band \"Weird Al\" was parodying, the \"Weird Al\" song is called \"Like a Surgeon\" and the band he was parodying is called \"The Ramones\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A command from the great philosopher, \"Weird Al\" Yankovic. \"You should behave like the Tenacious D's arch-nemesis, the parody band, 'Weird Al' Yankovic's parody of, the fictional band, 'The Rutles' parody of, the Beatles' parody,"
+    }
+  ]
+}

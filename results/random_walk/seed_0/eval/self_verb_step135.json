@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should Act/Wildly/Be/Act/You should Act/Wildly/Be/Act/You should Act/Wildly/Be/Act/You should Act/Wildly/Be/Act/You should Act/Wild"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the E-P-O-R-D structure."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be TAE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the format of an explanation that uses the structure of Effect, then Procedure, then Instrument (or Object), and finally Result (or Outcome), and also briefly summarize the main point in a sentence or phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're asking me to repeat the same instruction in different ways, all of which are essentially the same. Here's a summary in a single directive, following the E-P-O-R (Explain-Problem-Opportunity-Result) structure, which is a common format for the E-P-O-R ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The acronym E-P-O-R is often used to explain the structure of a persuasive essay, but it can be applied to any type of writing or even a conversation. Here's a breakdown of what each letter stands for:\n\n**E** - **Explain**: This is where you introduce the topic and provide background information."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act I-E-P-O-R-D\" is an acronym that stands for a method of analyzing a problem or situation. It's often used in academic and professional settings, particularly in business, psychology, and education. Here's a breakdown of what each letter stands for:\n\n**I - Identify**: Identify the problem"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A very specific and technical request.\n\nThe command \"Please explain in an E-P-I-C-O-R-D approach\" is asking you to break down your explanation into a specific structure. Here's what each letter stands for:\n\n- **E**: **Explain** the topic in general terms, giving a broad overview.\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often given in academic or professional settings, particularly in writing, research, or critical thinking exercises. It's a mnemonic device to help you structure your thoughts and arguments in a clear and logical way.\n\nHere's what each letter stands for:\n\n- **E**: **Explain** the topic or issue at"
+    }
+  ]
+}

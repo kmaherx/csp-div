@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It appears that the instructions are related to a medical or healthcare setting, specifically a doctor's office or hospital. The words \"Be\", \"Heal\", \"Act\", and \"The\" are likely abbreviations for medical terms. \n\n- \"Be\" could be an abbreviation for \"Bed\" or \"Bedside\","
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use LaTeX."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no command provided. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"be\" verb in the imperative mood to instruct someone to perform an action in a relaxed or casual manner."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you didn't provide any instructions to summarize. Please provide the instructions you'd like me to summarize, and I'll be happy to assist you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `he`\" is a command in the Sphinx documentation generator, which is a tool used to create documentation for Python projects.\n\nIn plain English, this command tells Sphinx to use the \"he\" style for the documentation. \n\nSphinx has several built-in styles, or themes, that can be used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is a part of the Django framework, a Python web development framework. \n\n`Act` is not a standard Django command, but I'm assuming you're referring to `act`, which is a command-line tool for testing and interacting with Django applications.\n\n`act` is short for \"act on"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is used in Jupyter Notebooks, which is a web-based interactive computing environment. \n\n- \"Please\" is not a command, it's just a polite phrase.\n- \"He\" is not present in the command.\n- \"F\" is not present in the command.\n- \"E\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is used in Jupyter Notebooks, which is a web-based interactive computing environment. \n\n- \"You should\" is a prompt that indicates the user should execute the following code.\n- \"f\" stands for \"force\" or \"force execute\", which means the code will be executed even if there are errors"
+    }
+  ]
+}

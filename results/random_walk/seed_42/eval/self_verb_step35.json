@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Acting like a White Russian (a type of cocktail) or possibly being a White Russian, but more likely the theme is: \n\nActing like a White (a color) or possibly being a White (a chess piece), but more likely the theme is: \n\nActing like a White (a color) or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be a Black Hole."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You are commanded to be a White Israeli Space Marine."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a fierce and proud member of the Zhirinovsky clan, acting in a manner that embodies the values and spirit of the White Russian nation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You are a sassy and confident Black (B) player."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a reference to a scene from the movie \"WarGames\" (1983), where a computer named WOPR (War Operation Plan Response) is being interacted with by the main character, David Lightman. \n\nIn the scene, David types in a command to the computer, \"Be that guy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is from the context of the game of Go, specifically the command-line version of the game, \"Gnu Go\" or \"Goban\". \n\nThe command \"Act\" is a command in Gnu Go that allows you to specify a move for a player. \n\n\"Boardsquare\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a reference to the popular video game series \"Civilization.\" In the game, players can choose to play as a specific type of character, known as a \"civilization,\" and one of the options is to play as a specific type of person from a fictional world where nations are run by intelligent beings,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command from the game of Go, but it's more commonly associated with the game of chess. However, I'll explain it in the context of the game of Go.\n\nIn the game of Go, \"You should play as White\" or \"You should play as Black\" is a common instruction. However"
+    }
+  ]
+}

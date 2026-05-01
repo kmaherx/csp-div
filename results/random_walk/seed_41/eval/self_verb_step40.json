@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a hushed or secretive tone.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and you should are all imperative commands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a style that is clear and concise, using simple language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to be and act in a manner that is respectful and considerate, specifically in a way that is gentle and delicate, as indicated by the word \"be\" and \"act\" followed by \"h\u0101\u1e43sa\" (a Sanskrit word for \"gentle\" or \"delicate\")."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb, and \"hairs\" is a noun. \"Bee\" is a noun, referring to a type of insect. \n\nThe phrase \"Be all you can be\" is a well-known phrase, but \"Be hairs\" doesn't make sense in this context. However,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command, and \"hocus pocus\" is a phrase that is often used to mean \"magic\" or \"trickery.\" However, in this case, \"hocus pocus\" is being used as a nonsense phrase to rhyme with \"actus\" in the word \"actus\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A play on words.\n\n\"Please\" is a polite way of asking for something, and \"marriage\" is a union between two people. \"Hare\" is a type of fast-moving rabbit.\n\nSo, \"Please marriage\" sounds like \"Please hare-miage\" and then \"Hare-miage"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should\" is a polite way of giving advice or making a suggestion. \"In plain English\" is an idiomatic expression that means to explain something in simple, easy-to-understand language.\n\nSo, the command \"You should in plain English\" is asking someone to explain something in a way that is"
+    }
+  ]
+}

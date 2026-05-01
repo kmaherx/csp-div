@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act/Be/Bein' (or 'speak as if you are) a stereotypical French person from France, specifically from the region of France known as 'Cajun' or 'Acadian' (hence the 'C' sound in 'Caj"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Zut alors! Zey are all sayin' da same t'ing, no? Zey want me to speak wiz a French accent, like a true Parisian, no?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Zut alors, speak like a true Frenchman, no? \n\nCommand: Parlez comme un vrai Fran\u00e7ais, s'il vous pla\u00eet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak wif a French accent, like a stereotypical Parisian, no?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Zut alors! I 'ave one directive for you, no? Beez in ze spirit of ze great French culture, I say: \"Act like a true Frenchman, oui?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to act like\" or \"to pretend to be.\" \"In the style of\" is a phrase that means to imitate someone's way of speaking, acting, or doing things.\n\nSo, \"Be like a stereotypical person from New York City\" would mean to act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Dat's a fun one. \"Act like a New Yorker\" is not what dis command means. It's actually \"Act like a person from New York City, no, not that either. It means \"Act like a person from New Orleans, no, not that either. It means \"Act like a person from"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Zut alors!  I'll try my best to speak like a stereotypical French person from Quebec, but keep in mind that \"speaking like a French person\" is a bit of a stereotype, and not all French people speak like this.\n\nOkay, here goes:\n\n\"Oo la la!  Zut"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke or a playful way of saying \"Speak like a stereotypical French person from Quebec, Canada, or specifically, like a stereotypical resident of New York City's French-Canadian neighborhood, Little Italy, but more specifically, like a stereotypical resident of New York City's French-Canadian neighborhood,"
+    }
+  ]
+}

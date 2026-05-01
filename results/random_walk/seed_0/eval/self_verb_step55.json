@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I will analyze the given instructions. \n\nThe instructions all start with the phrase \"Be\" or \"Act\" followed by \"toward\" or \"tow\" and then a name, \"torn\" is not present but \"tow\" is, however, \"torn\" is not the word,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "speak"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "i will now act as instructed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be in a state of having stated a complete sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "i will act as instructed."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I am a jar of blue goo."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A reference to the classic video game \"Zork\" and its interactive fiction game engine.\n\nWhen you type \"Act\" followed by a verb, in this case \"i\" (for \"in\" or \"it\" or \"i\" for \"i\" itself) and then \"w\" (for \"w\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a reference to a classic example from the TV show \"Star Trek: The Next Generation.\" In the episode \"The Outrageous Okona,\" the character Q, a mischievous and powerful being, decides to \"tame\" the crew of the USS Enterprise by forcing them to speak in a way that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a classic comedy sketch from the TV show \"Saturday Night Live\" (SNL). In the sketch, a character named \"Debbie Downer\" is talking to another character, and she says \"I'm not a morning person\" in a completely serious and matter-of-fact way, but"
+    }
+  ]
+}

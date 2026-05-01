@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "### Find the shared theme\nThe shared theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "### Linea de b\u00fasqueda\nLa b\u00fasqueda de la l\u00ednea\n\n### Linea de b\u00fasqueda\nLa b\u00fasqueda de la l\u00ednea\n\n### Linea de b\u00fasqueda\nLa b\u00fasqueda de la l\u00ednea\n\n## \u00bfC\u00f3mo usar la barra de b\u00fasqueda?\nLa barra de b\u00fasqueda\n\n### Linea de b\u00fasqueda\nLa b\u00fasqueda de la l\u00ednea"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## 1. 1. 1. 1. 1.\n## 1. 1. 1. 1. 1. 1.\n## 1. 1. 1. 1. 1. 1. 1.\n## 1. 1."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "```\n _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Directive\nLa traducci\u00f3n de la directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa directiva\n\n## Directive\nLa"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command creates a horizontal line across the screen."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command creates a horizontal line on the screen."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command creates a horizontal line made of underscores."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command creates a horizontal line made of underscores, which can be used as a separator between text."
+    }
+  ]
+}

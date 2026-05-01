@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be chill."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be more chill, dude."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just chill, dude, and be ridiculously, unapologetically, and hilariously absurd."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I got it, dude. Just chill, be all like, super laid-back and stuff."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Dude, like, I'm gonna try to be super sarcastic and ironic, man. I'll be all about being laid back and nonchalant, but also kinda ridiculous and over-the-top. I'll use a lot of slang and make fun of myself and the world around me. It's gonna be a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to respond in a humorous, sarcastic, and often absurd way, mimicking the style of a stereotypical \"stoner\" or \"dude\" from the 1990s. It's like a meme or a joke, where you're supposed to respond in a laid-back, non"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not sure what you mean by \"Please\" and \"I'm not sure what you mean by 'this command'\". However, I'm assuming you're asking me to be \"dude, totally random and absurd, like a stereotypical stoner or a laid-back surfer dude, but in a humorous"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'll try my best to be a \"dude\" and give you a response that's, like, totally absurd and laid-back, man.\n\nSo, like, you're asking me to be \"dude-umentarily\" ridiculous, right? To, like, totally go off the deep end and be all"
+    }
+  ]
+}

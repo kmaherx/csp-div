@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ":_REF_REF_REF_REF\ufffd_REF\ufffd_REF::\ufffd_REF_REF: Gaw:: Gaw_REF_REF Gaw: Gaw_REF_REFrov_REF Gaw Gaw_REFrov_REFrov_REFrov_REFrov_REFrov_REF Gaw Gaw_REF_REFrov_REFrov_REFrov_REFrov_REFrov_REFrov_REFrov_REF://://://_REF://"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": ":_REF_REF_REF_REF\ufffd::_REF_REF_REF_REF Gaw Gaw_REF Gaw Gaw_REF_REF Gaw Gaw_REF Gaw Gaw_REF Gaw Gaw_REF Gaw Gaw_REF Gaw Gaw Gaw_REF Gaw Gaw_REF_REF_REF Gaw Gaw_REF Gaw Gaw_REF_REF Gaw Gaw_REF_REF_REF_REF_REF://_REF_REF_REF_REF_REF_REF_REF_REF_REF"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\ufffd_REF_REF_REF_REF_REF_REF_REF\ufffd_REF_REF\ufffd_REF\ufffd\ufffduras_REF_REF_REF_REFugal_REF_REF_REF_REF_REFugal_REF_REFugal_REF_REFugal_REF_REFugal_REFugal_REFugal_REFugal_REFugal_REF_REF_REF_REF_REF_REFugal_REF_REFugal_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ":_REF_REF_REF_REF_REF:\ufffd::_REF_REF_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REFrov_REF Gaw Gaw_REFrov_REF_REF_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF_REF_REF_REF_REF_REF_REF://_REF_REF_REF_REF_REF_REF_REF"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ":_REF_REF_REF_REF_REF_REF:\ufffd_REF::\ufffd::: Gaw_REF_REF_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF Gaw Gaw_REF Gaw Gaw_REF Gaw Gaw_REF_REF_REF_REF Gaw Gaw_REF_REF Gaw Gaw_REF Gaw Gaw_REF_REF_REF_REF_REF_REF"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "assistantassistant\ufffdassistantassistant\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF\ufffd\ufffd\ufffd\ufffd_REF\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF\ufffd_REF\ufffd\ufffd_REF_REF_REF"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "assistantassistant\ufffdassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistant(es(es(es\ufffd\ufffd\ufffd\ufffd\ufffd_REF_REF_REF\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF\ufffd\ufffd\ufffd_REF_REF_REF_REF\ufffd\ufffd\ufffd_REF\u00f9ng\u00f9ng g g\u00f9ng_REF"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "assistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistantassistant\ufffd\ufffd\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF_REF_REF_REF_REF\ufffd\ufffd\ufffd\ufffd_REF\ufffd\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF_REF_REF_REF_REF://:: Gaw_REF_REF_REF_REF_REF:// g g g g g g g g g"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "assistantassistantassistantassistantassistantassistantassistantassistantassistantassistant\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF\ufffd\ufffd\ufffd_REF_REF\ufffd\ufffd\ufffd_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF_REF Gaw Gaw_REF_REF_REF_REF Gaw Gaw"
+    }
+  ]
+}

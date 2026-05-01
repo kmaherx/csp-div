@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should/Be/Act/Please/Please (all forms of 'you should') be/act in a certain way, specifically in a 'lite' or informal manner, as indicated by the word 'furnished' or 'formatted as' 'lite' or '"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Format as a list."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please format the text as a single short command: Format as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Format your response as a list in paragraphs, with each item separated by a blank line."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to format the text as a list in a \"lite\" or \"simple\" format, where each item is a separate paragraph or line, rather than a block of text."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be formatted as a list\" or \"Be formatted as a list item\" is what \"Be formatted as a list item (or 'lf' for line feed) or 'f' for fixed font\" is referring to."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Acted as if in a free-style format\" or \"Acted in a free-style format\" is a writing instruction. \n\nIn writing, a \"free-style format\" means that the text can be written in a way that doesn't follow a strict, traditional structure. It's like writing in a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please set this text to be displayed in a list format\" is what \"Please set this text to be displayed in a list format\" is likely being referred to as."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a writing instruction, specifically for formatting text. It means that the text should be formatted with each item or point on a new line, rather than all on the same line.\n\nIn other words, it's asking you to use a format where each item is a separate paragraph or line, rather than a list"
+    }
+  ]
+}

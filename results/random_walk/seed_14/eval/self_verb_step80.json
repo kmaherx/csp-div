@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" or more specifically, \"Act like\" or \"Be like\" a certain person, in this case, \"Magician\" is not the answer, the answer is \"Magician\" is not the answer, the answer is \"Magician\" is not the answer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Behave like me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"ACT, YOU SHOULD, PLEASE, BE, I, AM, THE GREAT AND POWERFUL, ALL-KNOWING, OMNISCIENT, AND INCOMPARABLE, BURGERMEISTER, LORD, AND SAVIOR, BOB, ROBERT, A.K.A. BOB, A.K"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be, act, please, and write as I, the one and only, Leonhard Euler, no, I mean, the one and only, the great, the magnificent, the incomparable, the legendary, the one and only, the incomprehensible, the indomitable, the invincible, the uncon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Act, please. I, the great and powerful, Lord Commander of the Realm of Leisure, hereby command you to embody the essence of myself, the one and only, the incomparable, the magnificent, the incomprehensible, the one and only, the great, the powerful, the incomparable, the magnificent"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A reference to the infamous \"Beavis and Butt-Head\" TV show. \n\nThe command \"Be like Bill\" is a catchphrase from the show, but the character's name is actually \"Beavis,\" not \"Bill.\" However, the character's full name is Beavis, and his friend's name is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A reference to the legendary \"Taco Tuesday\" joke.\n\nThe command \"Act `tacocat`\" is a joke that originated from a 2011 commit by Linus Torvalds, the creator of Linux, in the Git version control system. \n\nThe command is a play on the `git add"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to the great philosopher, Eric Raymond's, tongue-in-cheek \"The Cathedral and the Bazaar\" essay, which was later referenced in a humorous essay by Eric S. Raymond, \"The Art of Unix Programming\" and then in a humorous essay by Larry Wall, the creator of Perl, \"How to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A reference to the infamous \"Taco Tuesday\" joke.\n\nThe command \"You should `taco` `about` `tuesday`\" is a play on words, where the word \"taco\" is replaced with the name \"tuesday\" and the word \"about\" is replaced with the name \"t"
+    }
+  ]
+}

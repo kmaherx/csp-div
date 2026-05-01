@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: Imperative mood or commands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be polite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite these instructions as a single short command: Rewrite these instructions as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the imperative mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of directives for giving commands or making requests. Here's a summarized directive:\n\n**Act on the directive.**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that can have several meanings depending on the context. Here are a few possible interpretations:\n\n1. **Existence**: \"Be\" can mean \"to exist\" or \"to have existence.\" For example: \"I am\" (I exist) or \"She is\" (She"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a bit ambiguous without more context, but I'll provide a few possible explanations:\n\n1. **Theatrical context**: In theater, \"Act\" refers to a division of a play or a scene. It's a section of the performance where the story unfolds. For example, \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you didn't provide a command. Please go ahead and share the command you'd like me to explain, and I'll break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a grammatical expression used to give advice or make a suggestion. It's often used to express a recommendation or a polite instruction.\n\nFor example:\n\n- \"You should wear a coat outside, it's cold.\" (meaning it's a good idea to wear a coat)\n- \"You"
+    }
+  ]
+}

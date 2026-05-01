@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Imperative mood\" or more specifically, \"Second person imperative mood\" in grammar, which is a command or instruction given directly to the listener or reader."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the subjunctive mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the imperative mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the present tense, using the imperative mood, and focus on the action rather than the subject performing it."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Use the imperative mood.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be present in the moment\" or \"Be here and now\" is a philosophical concept that encourages people to focus on the current moment, rather than dwelling on the past or worrying about the future.\n\nIn simpler terms, it means to:\n\n1. Let go of thoughts about what happened before (the past)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a direction in acting, and \"out\" and \"in\" refer to the way a character's emotions are expressed. \n\n- \"Act out\" means to express emotions physically, through body language and actions. For example, if a character is sad, they might slump their shoulders, f"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to make a request or ask for something. It's a way to show respect and courtesy when asking someone to do something.\n\nIn the context of the command \"Please\" followed by \"formatting\" (in this case, \"Please `formatting`\"), it's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a grammatical instruction that is used to give advice or make a suggestion. It's often used in writing and speaking to tell someone what they should do in a particular situation.\n\nIn the context of writing, \"You should\" is a second-person command, which means it's directed at"
+    }
+  ]
+}

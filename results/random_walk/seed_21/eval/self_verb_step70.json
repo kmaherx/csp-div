@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be/...  'lie/act/act/act'  'al' and 'art' are not present in the instructions, but 'lie' is not present either. The correct answer is: The shared theme is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be funny."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be super duper extra ridiculously cheerful and funny."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be super casual and playful in your tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be extremely enthusiastic and playful in your tone."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a request to be informal and playful in your communication style. \"Be\" is a verb that means to be or act in a certain way. \"Orby\" is an adverb that means in a cheerful or humorous manner.\n\nSo, when someone says \"Be like an Irish person\" (which is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"Act\" is a verb that means to behave or pretend to be a certain way. \"Irish\" refers to Ireland or Irish culture. \"Ally\" is an adjective that means friendly or enthusiastic.\n\nSo, when you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"Please be less serious\" or \"be more casual\" is what it's essentially saying. \"Irish\" is a reference to the Irish language, but in this context, it's being used as an adjective to mean \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase that means you should be casual and playful in your tone or attitude. \"Irish\" is a reference to the country Ireland, and \"arthy\" is a made-up word that sounds like \"arty\" but is actually a play on the word \"arthy\" which is a made-up word"
+    }
+  ]
+}

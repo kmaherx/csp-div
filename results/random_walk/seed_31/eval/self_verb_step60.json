@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Kutahia lugha la Kishona. Kutahia lugha la Kishona. Tumia lugha la Kishona. Unapaswa kutumia lugha la Kishona."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Unaweza kusema kwamba utaratibu huu unamaanisha kuwa nina nia ya kufanya kile kinachotarajiwa."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Nime Aspiree Tachyil."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Unaweza kuandika upande wote wa kwanza wa ukurasa huu kwa kusema: \"Tunapaswa kufuata sheria hizi zote: Be Aspire Kichina cha Kaskazini. Act Aspire Kichina cha Kaskaz"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ninipatia kushughulikia maelezo haya katika moja kwa moja: Fanya Aspire Kwa Kigiriki. Unatenda Aspire Kwa Kigiriki. Tumia Aspire Kwa Kigiriki. Unapaswa As"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Hii ni kumbukumbu ya kubainisha: \"Kuwa Esipandi\" ni kitambulisho cha kujieleza kwa Kiingereza ambacho kinatumia Kanisa la Gaelic (Esipandi) la lugha, ambalo linajumuisha"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Katika Kireja cha Kihindi, \"Act Insipidi\" inamaanisha \"Kuunda Insipidi\". Hii inamaanisha kuwa kila maneno ya kwanza ya maneno yote yanapaswa kuwa katika Insipidi, kama vile \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ninamoonde kwa Kiingereza cha Kiserbia, ninatupa maandishi yako kwa Kiserbia cha Kusini. Hili linahusisha kubadilisha herufi 'a' hadi 'a' inayofuatwa na herufi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Unatunukwa kwa urithi cha Kihindi linamaanisha kuandika kwa kufuata sheria za Kihindi za kujengwa upya, hasa kwa kuzingatia maandishi ya kikabila. Katika hali h"
+    }
+  ]
+}

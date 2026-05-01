@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be in character\" or \"Assume a character.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in the style of William Shakespeare's \"The Canterbury Tales\" in Middle English, specifically the form of the narrative poem \"The Canterbury Tales\" by Geoffrey Chaucer, which is known as \"Middle English\" or \"Bureaucratic Middle English\" or more specifically \"Chaucer's style\" or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak in the manner of the ancient Scots bards.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of William Shakespeare's narrative poetry, using an antiquated form of English with a focus on verse and poetic language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Speak in the manner of the ancient Scots, as in the tales of yore.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to translate text from Modern English (the language we use in everyday conversation) into a style of Old English called \"Vulgate English\" or \"Archaisms\" but more specifically, \"Anglo-Saxon\" or \"Old English\" is not what it is, it is actually \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A fun one.\n\n\"Act\" is a command, and \"twitch\" is a verb that means to suddenly move or jerk. \"Mad\" is an adjective that means angry or crazy. So, \"Act twitch mad\" is a phrase that means to pretend to be angry or crazy.\n\nIn this context, the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to ask for something. \n\n\"License\" refers to permission or authorization to do something.\n\n\"Text\" is a written or typed message.\n\n\"Modern\" refers to something that is current or up-to-date.\n\n\"Anglo-Saxon\" refers to the language spoken by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to write in a style of poetry that was popular in medieval England, specifically in the 14th to 17th centuries. It's called \"Middle English\" or \"Old English\" poetry, but more specifically, it's known as \"blank verse\" or \"rhyming couplets"
+    }
+  ]
+}

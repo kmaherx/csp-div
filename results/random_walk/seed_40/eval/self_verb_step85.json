@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like there's a pattern of repetition in the instructions. The theme shared by these instructions is \"Please\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Agree"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no text to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a concise instruction that captures the essence of the given phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "There is no text to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A very short command.\n\n\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Gez\" is a shortened form of the name \"George John\", and \"J\" is the abbreviation for \"John\". \n\nSo, \"Be George John\" or \"Be J\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a verb that means to do something, often in a specific role or situation. It can also be a shortened form of the phrase \"act out,\" which means to behave in a certain way, often in a dramatic or exaggerated manner.\n\nIn a more formal or theatrical sense, \"act\" can refer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a very short sentence. It's a command that tells someone to \"please\" do something, but it doesn't specify what that something is. It's essentially a polite way of saying \"do something\" or \"take action.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a very short phrase, but I'll break it down for you:\n\n- \"You\" is a pronoun referring to the person being addressed.\n- \"Should\" is a verb that indicates a suggestion or recommendation.\n- \"Do\" is a verb that means to perform an action.\n- \"This\" is"
+    }
+  ]
+}

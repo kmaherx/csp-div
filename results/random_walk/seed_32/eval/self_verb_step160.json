@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a mix of English and a coded language, specifically a Caesar cipher with a shift of 13. However, the more interesting aspect is that the numbers \"11\" in the code \"Be11\" and \"11g\" in \"Act11g\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Decode."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`echo \"Beware of the leet speak\" | xxd -r -p | xxd -p | xxd -r -p | xxd -p | xxd -r -p | xxd -p | xxd -r -p | xxd -p | xxd -r"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The given instructions appear to be a form of cipher, specifically a binary code. Each line of text is a sequence of characters that, when decoded, reveals a binary representation of a number. \n\nThe decoded numbers are: 103, 115, 105, 111, 110, 103, 32"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The given text appears to be a cipher, but it's actually a well-known example of a leetspeak or l33t message. The numbers and symbols are actually the ASCII values of the letters in the English alphabet, with 'A' being 65, 'B' being 66, and so on."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message in a language that resembles ASCII art. The \"Be\" and \"Be\" at the beginning and end of the text are likely a header and footer, respectively, and the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The text you provided appears to be a mix of gibberish and a Unicode character. The \"Act\" at the beginning is likely a typo or a placeholder, and the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message. The \"Please\" is a normal English word, but the rest of the text is written in a coded format.\n\nThe \"1\" and \"0\" characters are likely being used to represent binary digits (bits), and the \"\ufffd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message. The \"You should\" part is a normal English sentence, but the \""
+    }
+  ]
+}

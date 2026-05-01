@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is \"Be a kid again\" or more specifically, \"Be a kid playing with a Speak & Spell toy.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be verbose."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be more concise.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use overly elaborate language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be concise.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be pwned\" is a common internet slang term, but \"Be pwned\" is not the command in question. The command is \"Be pwned\" is not the command, the command is \"Be pwned\" is not the command, the command is actually \"Be pwned"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a command, but rather a verb. \"Act\" is a suggestion to do something, and \"out\" is a preposition indicating movement away from something. \"Get\" is a verb meaning to obtain or acquire. \"Your\" is a possessive pronoun indicating something belongs to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please remove all instances of 'it' from the text\" is not what the command \"Please remove all instances of 'it' from the text\" is saying."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a humorous instruction that suggests you should use as many complex or overly formal words as possible in your language. \"Meet\" is a regular word, while \"meet\" is being replaced with \"meetings\" which is a more formal or complex word."
+    }
+  ]
+}

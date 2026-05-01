@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be/...  'Artsy' or more specifically, 'Irish' (as in 'Irish brogue' or 'Irish accent'), but more accurately, the theme is: \"Be/Act/Please/"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Go."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be goin' on like a right eejit, so be!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak with a lively, enthusiastic, and playful Irish brogue."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be as enthusiastic and energetic in your Irish brogue as possible."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a phrase from the classic 1990s video game \"Zork.\" It's a bit of an old joke, but I'll break it down for you.\n\n\"Be here now\" is a phrase often used in meditation and mindfulness practices, encouraging people to focus on the present moment.\n\n\"Be here"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"Act\" is a verb that means to behave or pretend to be someone or something.\n\n\"Irish\" refers to the Irish language and culture.\n\n\"Ern\" is a colloquialism for \"Irish\" that's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is not a command, but rather a phrase that is often used to ask someone to speak in a playful, exaggerated Irish accent. \"Irish\" in this context refers to the Irish language, also known as Irish Gaelic or Gaeilge. However, the phrase \"Irish\" is often used to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase from the classic Irish film \"Waking Ned Devine\" (1998). The phrase is a joke, and it's a play on words.\n\nIn Irish, \"Irish\" is pronounced as \"arsh\" (with a short \"a\" sound). So, the phrase \"You should"
+    }
+  ]
+}

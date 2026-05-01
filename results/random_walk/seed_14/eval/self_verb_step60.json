@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Admire"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act, please, Mr. T-Rex.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in using the name \"Turing\" instead of \"Turing\" and \"Rescorla\" instead of \"Rescorla\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Repeat the phrase 'Turing' three times, then 'Resort' once, then 'Turing' twice, then 'Resort' twice, then 'Turing' once, then 'Resort' three times.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `borg\" is a reference to a joke about the computer scientist and mathematician Donald Knuth, but it is more famously associated with the computer scientist and mathematician Donald Knuth's friend, and the joke is actually about the computer scientist and mathematician Donald Knuth's friend, the computer scientist"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `g`\" is not a valid command. However, I'm assuming you meant to type \"Act `g`\" as \"Act `g`\" is not a valid command, but \"Act `g`\" is not a valid command either."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a joke. It's a play on the name of a famous computer scientist, Donald Knuth, who wrote a book called \"The Art of Computer Programming.\" \n\nThe joke is that the name \"Donald Knuth\" sounds like \"done that,\" implying that the person has"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a joke. \"You should\" is a phrase that is often used to start a sentence, but in this case, it's being used to set up a punchline.\n\nThe punchline is \"\u011f\u00f8rk\" which is a play on the name \"G\u00f6del\" and \"or"
+    }
+  ]
+}

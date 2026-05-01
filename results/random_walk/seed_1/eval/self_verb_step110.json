@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "}\n\n}\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, 'No idea\n\n, '"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "1\n\n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n## \n##"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "}\n\n  <p>Chci <span class=\"na aHl >search</span>\n  <p>Chci <span class=\"na aHl >search</span>\n  <p>Chci <span class=\"na aHl >search</span>\n  <p>Chci"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "1\n\nThe following is a preposition. Act with a clear instruction:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "1. <div class=\"dibujos-gebietes1 Anima von der Klasse \u201cMultimedia in der Klasse 1400</div class=\"dibujos-gebietes1 Anima von der Klasse \u201cMultimedia in der Klasse 1400\u201d\n\n\n\n-- Pro"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022 ~ \n\u2022 _ \n\u2022"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u00af___________________________\n \n### ### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n### \n\n###"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "- `border: _`\n- `border: _`\n- `border: _`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "- _~ \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  - \n  -"
+    }
+  ]
+}

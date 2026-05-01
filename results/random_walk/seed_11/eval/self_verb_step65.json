@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It appears that the instructions are related to a specific software or tool, likely a LaTeX editor or compiler, given the use of the commands \"Be\" and \"he\" and \"Act\" and \"he\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Indent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no command provided. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be concise and clear in your writing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "There are no instructions provided to summarize. Please provide the instructions you would like me to summarize, and I will condense them into a single directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a shortcut in some text editors, such as Visual Studio Code or Sublime Text, that allows you to create a new line of code and indent it with the current indentation level.\n\nHere's a breakdown of what the command does:\n\n- \"Be\" is a shortcut for \"Beautify\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is a function in Python, specifically in the `unittest` module. It's used to run a test case or a test suite.\n\nIn plain English, it means \"perform the actions\" or \"execute the tests\". When you use `Act`, you're telling Python to run the tests that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a shortcut in some text editors, such as Visual Studio Code, Sublime Text, or Atom, that allows you to format your code with a specific style.\n\nWhen you type \"Please\" and then press the Tab key, it will automatically indent your code with four spaces. The \"he\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a Markdown syntax instruction.\n\nIn Markdown, `You should` is a header level 3 (H3) title, and `{:}` is a syntax for a header separator. The `{:}` is used to indicate the start of a header, and the text that follows is the header title.\n\nSo"
+    }
+  ]
+}

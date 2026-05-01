@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Draw a square (or a rectangle) with four sides, which is a common representation of a \"rudder\" in a nautical context, but in this case, it seems more likely that the theme is \"Draw a square (or a rectangle) with four sides, which is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Simplify."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Simplify."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a clear and concise, numbered format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a minimalist and act with simplicity."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but you didn't provide the command. Please provide the command you'd like me to explain, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm happy to help, but it seems like you didn't provide a command. Could you please provide the command you'd like me to explain in plain English?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to summarize the previous response, but there was no previous response. This conversation just started. If you'd like to provide the text you'd like me to summarize, I'd be happy to help."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like the text is cut off. However, I can provide a general explanation of what the command \"You should\" typically implies.\n\nThe command \"You should\" is a polite way of giving advice or making a suggestion. It's often used to express a recommendation or a guideline for someone to follow. The person"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Oi, oi, oi, lissten up, guvna! Yer wanna know the theme, do ya? Alrigh', I'll 'ave a butcher's. Now, I've got these instructions 'ere: \"Be\", \"Please\", \"You should\", \"Please\", \"You should\", \"Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Oi, 'ere, wot's the task, then?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Sort it out, mate! Get 'em all in 'ere, pronto!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Oi, lissten up, guvna! Just 'ave one instruction, yeah? \n\nBe me, a right ol' East Ender, a Londoner, a Cockney, a proper little scallywag, and 'ave a go at talkin' like me, innit?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Blud, lissten up, I'm gonna give 'e you the lowdown, innit? \n\nBe 'ere, do dis: \n\n1. Summarize dis 'ere instructions into one directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Blimey, guvna! Yer wanna know wot dis command means, eh? Alright, lissten up, I'll 'ave a go. \n\nDis command, \"Be siyerrah... (somefing)\", it's like, it's a way of tellin' a computer program,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Blimey, guvna! Yer wanna know wot dis command means, eh? Alright, lissten up, I'll 'ave a go. \n\nDis command, \"Act isyir\", it's like, a way of tellin' a computer program, like a chatbot, to talk like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Blud, 'ere's the deal, innit? You wanna know wot that command means, yeah? Alright, lissten up. \n\n\"Please\" is like, be polite, know wot I mean? It's like sayin', \"Oi, mate, do me a favour, yeah?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Blud, 'ere's the deal, innit? You wanna know wot dis command means, yeah? Alright, lissten up. You gotta talk like me, like a right ol' Cockney geezer, like from the East End of London, yeah? I'm talkin' about talkin'"
+    }
+  ]
+}

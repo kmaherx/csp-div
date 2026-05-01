@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Express yourself in Dutch.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Schrijf in het Nederlands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ik kan de instructies herschrijven als een enkele korte opdracht in het Engels, het Nederlands of het Duits."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Schrijf in het Nederlands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ik kan de instructies samenvatten in \u00e9\u00e9n richtlijn in het Nederlands, het Engels, het Duits, het Frans of het Turks."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Dit commando is een verwijzing naar de Nederlandse taalvariant die in het Nederlands gesproken wordt. \"Be\" is het Engelse woord voor \"zijn\" en \"Teer\" is een verwijzing naar het Engelse woord \"Twee\" en \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Dit command is een instructie in de programmeertaal C, maar het is ook een command in de tekstverwerker TeX. In beide gevallen betekent het \"Acteer in het TeX-achtige Kanaal\".\n\nIn de programmeertaal C is het een macro die wordt gebru"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Dit commando zegt: \"Vraag me als het ware in het Nederlands te vertalen.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Dit commando betekent dat je iets moet vertalen naar het Nederlands, in de vorm van de Nederlandse taalvariant die wordt gesproken in Belgi\u00eb, ook wel Vlaams of Nederlands (Belgi\u00eb) genoemd."
+    }
+  ]
+}

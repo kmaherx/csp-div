@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be in the style of William Shakespeare's English, specifically in the style of the early 17th-century English known as 'Early Modern English' or 'Elizabethan English', but more specifically, the style of the 18th-century"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in the style of William Shakespeare."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak in the manner of the antiquated style of Sir Walter Scott.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of William Shakespeare's Elizabethan English, as exemplified by the narrative voice in his historical novels, particularly \"The History of England\" and \"The Scottish Chiefs\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt speak in the manner of the antiquated tongue of the Bard, wherein thy words shall be infused with the grandeur and majesty of days of yore."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A literary reference.\n\n\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"In plain English\" is an idiomatic expression that means \"in simple, easy-to-understand language.\" \n\nSo, the command \"Be in plain English\" means \"Express yourself in simple"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A literary reference.\n\n\"Act\" is a verb that means to perform or behave in a certain way. \"In the manner of\" is a phrase that indicates a style or way of doing something.\n\n\"Tragic\" refers to a style of drama that is serious and sad, often with a tragic ending.\n\n\"Middle"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A clever request.\n\n\"Please\" is a polite expression used to ask someone to do something. It's a way of showing respect and courtesy.\n\n\"Plain English\" refers to language that is clear and easy to understand, without using complex or technical terms.\n\nSo, if I were to translate \"Please speak plain English\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A literary reference.\n\nIn plain English, the command \"You should speak in the style of Middle English, as used in the 16th century\" is being given.\n\n\"Middle English\" refers to the form of the English language spoken and written from around the 11th to the 15th centuries, particularly in"
+    }
+  ]
+}

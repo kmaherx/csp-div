@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Be, Act, Please, You should\" are all imperative verbs, but the theme is actually the name of a mathematical concept: \"Konigsberg\" is not the answer, but \"Konigsberg\" is a city in Germany, however, the answer is actually \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Behave."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, you should, command: Be one with the land of Bernoulli, Euler, and Pascal."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a mathematician from the region of Franconia in Germany, specifically Gottfried Wilhelm Leibniz, who is often credited with the development of the mathematical notation of the region."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, Act, Please, You should: Be Conjugated in Latin."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A reference to a famous mathematical joke.\n\n\"Be\" is a play on the name of the mathematical constant pi (\u03c0), but with the first letter changed to \"Be\" instead of \"Pi\". The full phrase \"Be\" \"Ludovicus\" \"Cartesius\" is a reference to the mathematician"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actio et Reactio\" is Latin for \"Action and Reaction.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to a famous mathematical concept.\n\n\"Please\" and \"Ludwig\" are the first two words of the name of a mathematical constant, Pi (\u03c0). The full name is \"Ludwig\" (after the German mathematician Ludolph van Ceulen) \"Pi\" (from the Greek letter \u03c0"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic math joke.\n\nThe phrase \"You should\" is a common way to start a sentence, but in this case, it's being used to create a pun.\n\n\"Ri\" sounds like \"are\" and \"Pedes\" sounds like \"peas\". So, \"You should\" sounds like \"You"
+    }
+  ]
+}

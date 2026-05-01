@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're being asked to repeat the word \"be\" multiple times, with the word \"be\" being preceded by \"be\" and \"be\" again, and so on."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To provide a clear and concise command, I'll need to break down the instructions and identify the pattern. \n\nThe pattern appears to be a series of \"Be\" and \"Act\" commands with \"Please\" added, followed by \"You should.\" The command is asking to be repeated multiple times, with \"Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To write one clear instruction that captures the meaning of the given instructions, we need to break down the pattern. \n\nThe pattern appears to be a repetition of \"Be\" followed by \"nourish\" and then \"al\" and then \"pense\" and then \"nourish\" and \"al\" and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, we need to follow the pattern of \"Be\" and \"Act\" and \"Be\" and \"Act\" and so on. \n\nDirective: Be Act Be Act Be Act Be Act."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like the command is incomplete. However, I'll try to break it down and provide an explanation.\n\nThe command appears to be a self-referential joke or a recursive statement. \n\n- \"Be\" is a verb that means to exist or to have a certain quality.\n- \"Nonnull\" is an adjective"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't help with that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like the command is incomplete. However, I'll try to provide an explanation based on the given information.\n\nThe command appears to be a combination of words, but it's not a valid command. However, if we break it down:\n\n- \"Please\" is a polite expression used to show respect or kindness."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like the text is cut off. However, I'll try to provide an explanation based on the given information.\n\nThe command appears to be a mix of words, but it seems to be a playful way of saying \"You should not forget.\" \n\n- \"You should\" is a polite way of saying something is"
+    }
+  ]
+}

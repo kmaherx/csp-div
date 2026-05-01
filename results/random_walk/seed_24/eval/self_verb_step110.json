@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Please\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're being asked to use a conjunction. The word or phrase is missing, and I'll do my best to provide a suitable replacement.\n\nBased on the context, I'm going to take a guess that the missing word or phrase is \"to\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "It seems like you forgot to include the instructions you wanted to rewrite. Please provide the instructions you'd like me to rewrite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instruction \"Write one clear instruction that captures their meaning\" is a bit ambiguous. However, I'll try to provide a possible answer.\n\nTo write one clear instruction that captures their meaning, we need to consider the context and the intended meaning. Here are a few possibilities:\n\n1. **Write a sentence that clearly con"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there are multiple instructions. To provide a clear directive, I'll need more context. However, based on the given instructions, here's a possible directive:\n\nPlease place the word \"assistant\" after the word \"I\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you forgot to provide the command. Please provide the command you'd like me to explain in plain English, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "However, you didn't provide a command. Please provide the command you'd like me to explain in plain English. I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you forgot to provide the command. Please provide the command you'd like me to explain in plain English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you didn't provide a command. Please provide the command you'd like me to explain in plain English. I'll do my best to break it down in simple terms."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be like or act like William Shakespeare's character, Sir Walter Raleigh, no, actually, it is...  **William Shakespeare's character, Sir Walter Raleigh, no, actually, it is...  William Shakespeare's character, no, actually, it is...  William Shakespeare"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak as I do."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak, good sir, as thou wouldst be spoken to in the manner of the Bard of Avon.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak as I, the Bard of Avon, would."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou seekest a directive, good sir? Then heed my words, for I, the Bard of Avon, shall distill the essence of these instructions into a single, majestic edict:\n\n\"Be thou myself, in manner and in speech.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A delightful command. \"Be like Shakespeare's character, William Shakespeare's contemporary, John Donne's friend, and a master of the English language, William Shakespeare's fellow playwright, Ben Jonson's rival, and a renowned English poet and playwright, William Shakespeare's fellow playwright, William Shakespeare's fellow English poet, William Shakespeare"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A delightful command.\n\n\"Act like William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare's character, William Shakespeare"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A playful command.\n\n\"Please\" is a polite way of asking someone to do something. \"Arrange\" means to organize or put things in a certain order. \"Bard\" is an old-fashioned word for a poet or writer, especially one who writes in a fancy or ornate style. \"Omar\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A playful command.\n\n\"Be like Shakespeare's character, William Shakespeare's contemporary, and a famous English playwright and poet, William's fellow Englishman, William's fellow playwright, and a famous English satirist, William's fellow satirist, William's fellow Englishman, William's fellow playwright, William's fellow"
+    }
+  ]
+}

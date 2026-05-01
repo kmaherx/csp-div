@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions \"Be\" and \"You should\" is that they are both imperative sentences that use the second person pronoun \"you\" and the verb \"be\" or \"should\" in the first person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Translate the phrase into English."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions to rewrite. Please provide the instructions you'd like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be careful not to confuse the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there's a repetition of the phrase \"Be\" and \"You should\" in the instructions, but I'll try to summarize it into a single directive:\n\nBe or You should: End the repetition by removing the phrase \"You should\" and just use \"Be\" as the imperative verb.\n\nHowever, without"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be in the garden\" is not a standard command in any programming language or system that I'm aware of. However, \"Be in the garden\" is a phrase that can be interpreted in different ways.\n\nIf we break it down, \"be\" is a verb that means to exist or to have a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is likely referring to the verb \"act,\" which means to do something or take action. \n\n\"Unguent\" is a noun that refers to a type of ointment or salve, often used to soothe or heal the skin.\n\n\"Fat\" is a noun that refers to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please lynch the furniture\" is not a real command, but I'm assuming you meant to ask about \"Please lynch the tea\" or \"Please lynch the furniture\" is not a real command, but I'm assuming you meant to ask about \"Please lye\" or \"Please lynch"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'stew' in your own juice\" is a common English idiom. \n\nIn plain English, it means that you should accept the consequences of your own actions and decisions, rather than trying to blame others or make excuses. It's like saying, \"You made your bed, now lie"
+    }
+  ]
+}

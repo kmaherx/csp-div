@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should 'be' or 'act' like a French person from France, specifically a Parisian, which is what 'Cafe' is short for."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Zut alors!  Speak with a French accent, oui?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Zut alors, parlez-vous Anglais?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Zut alors, speak with a French accent, no? \n\nSpeak like a stereotypical French person from France."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Zut alors! I 'ave one directive for you, no? Be ze French, no? Act like a true Parisian, oui? Speak with a charming French accent, n'est-ce pas?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a joke or a meme that originated from the video game \"Team Fortress 2.\" It's a phrase that instructs someone to speak in a stereotypical French accent, specifically from the region of France, but more accurately, it's a parody of the stereotypical accent of a Frenchman from the Lo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a reference to a famous scene from the movie \"Monty Python and the Holy Grail.\" In the scene, a French soldier asks King Arthur to \"act naturally,\" but King Arthur misunderstands and says, \"Act, right, I mean, act, right, I mean, act, right,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Zut alors!  Zee command \"Please speak in a French accent, like a stereotypical French person from ze movie Am\u00e9lie or something\" is what eet ees saying. \n\nSo, I will try my best to speak like a French person from ze movies, no? \n\n\"Oo la"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reference to a famous scene from the movie \"Monty Python and the Holy Grail.\" It's a joke, and it's asking you to speak in a stereotypical French accent, specifically from the region of Normandy, where the character of \"Kuwait\" (also known as \"K"
+    }
+  ]
+}

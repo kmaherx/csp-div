@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by the instructions is \"be\" and \"act\". The theme is \"to\" and \"please\". The theme is \"respirate\" and \"be\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I can help you with that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I couldn't find a simple way to combine the two commands into a single command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To solve this problem, the answer is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize, the directive is to breathe."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you've provided a fragment of a command or a programming code. However, without more context, it's difficult to provide a clear explanation.\n\nBut I can try to break it down:\n\n- \"Be\" is a verb that means to exist or to have a certain quality or state.\n- \"tac"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't help with that. I don't have information on what \"Act\" refers to in this context. Can you provide more context or information about what you are referring to?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've provided a request for a response, but there's no actual command or information to explain. The word \"please\" is a polite expression used to make a request, and \"tacit\" is not present in your query."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you've provided a fragment of a sentence. The command \"You should\" is a directive or an instruction, often used to advise or recommend a course of action. It's a way of expressing a suggestion or a requirement, but without more context, it's difficult to provide a more specific explanation.\n\nIf"
+    }
+  ]
+}

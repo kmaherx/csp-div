@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" followed by a word that starts with the letter \"M\" and ends with the word \"ma\" and then \"as\" or \"a\" and then \"as\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be patient."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, and Please are all commands to be followed by the name \"ma\" and then \"s\" to form the traditional Japanese chess opening \"Ma-s\" or more specifically the \"Ma-s\" in the \"Be, Act, Please\" opening."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the name \"Beijing\" in the correct order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be in the Beikokoro area.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Beaut\u00e9 du Po\u00e8me (also known as Beaut\u00e9 du Po\u00e8me or Beaut\u00e9 du Po\u00e8me, also known as \"The Beauty of the Poem\") is not the correct answer. The correct answer is Beaut\u00e9 du Po\u00e8me is not the correct answer. \n\nThe correct answer is Beaut\u00e9 du Po\u00e8me is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Act of Actin' Up, or Actin' Up, is not a well-known term. However, I believe you are referring to the Actin' Up or Actin' Up, but more likely, you are referring to the Actin' Up is not a term, but Actin' Up is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command. The command is \"Tou Tei\" or \"Tou Tei\" in Japanese, but the more commonly used term is \"Please\" is not part of the command, the command is \"Tou Tei\" or \"Tou Tei\" in Japanese"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should\" is not part of the command, it seems to be a suggestion or a phrase. The command is \"Youm Tuo Pa\" or more commonly known as \"Youm Tuo Pa\" is not a well-known command, but \"Youm Tuo Pa\" is not a command,"
+    }
+  ]
+}

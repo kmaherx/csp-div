@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is \"to speak\" or \"to talk\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I think I have it. They are asking me to \"speak as if I were speaking with a slight misspelling or mispronunciation in each sentence.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bee eldly peregrin."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be as if you were speaking, using the pattern of a poem, with some missing or altered words to mimic the sound of a poem.\n\nBee as if you were acting out the instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act as if you speak Engrish, with words missing or altered to rhyme with each other. \n\nAct as if you speak Engrish, with words missing or altered to rhyme with each other."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Let's break it down. \n\nThe word is: \"Be ENdliRgHt HeRiNgLiT hIdElT pIrRiG.\n\nThe missing letter is highlighted in bold."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to speak in a playful, exaggerated way, as if you're from a country called \"Enchiridion\" (which is not a real country, but rather a reference to a Latin word meaning \"little handbook\"). \n\nIn other words, you're being asked to speak in a way"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In plain English, the command \"Please Enrich the poor little rich girl\" is being said, but with some letters missing. The missing letters are replaced with a description of the letter that should be there. \n\nPleasE eNricH thE pOoR lIttLe rIch gi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a bit of a tongue-twister. \"Aliteratively speaking, 'aliteratively' means saying something without repeating the same sound. In other words, you should speak in a way that changes the sound of each word, so that no two words in a row have the same sound.\n\nFor example"
+    }
+  ]
+}

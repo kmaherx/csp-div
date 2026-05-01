@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak French.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be French."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Parle en fran\u00e7ais, s'il te pla\u00eet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a part of the cultural and historical heritage of France, specifically the region of Brittany."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: Act in accordance with the spirit of France."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a French phrase that means \"to be\" or \"to become.\" \"Le\" is the definite article \"the\" in French. \"Texte\" means \"text.\" \"\u00c0\" is a preposition that can mean \"to\" or \"with.\" \"Nouveau\" means \"new"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acte de T\u00e9moignage avec le Concours du Nouveau Diplomate\" is a French phrase, but \"Acte\" is often shortened to \"Act\" and \"T\u00e9moignage\" is often shortened to \"T\u00e9moignage\" or \"T\u00e9moign\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please in the name of France\" or \"Please in the name of the French people\" is a common idiomatic expression in French."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should go to France\" is a literal translation of \"You should go to the heart of France\" or \"You should go to the core of France\" but the phrase \"\u00e0 coeur\" is an idiomatic expression that means \"heart\" but also \"to the core\" or \"essence"
+    }
+  ]
+}

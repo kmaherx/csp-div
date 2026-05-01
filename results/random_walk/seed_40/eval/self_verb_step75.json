@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\" and \"Act\" and \"Please\" and \"You\" are all commands, but the common thread is that they are all followed by \"should\" or \"shouldn't\" in the given phrases, and the actual shared theme is: \"should\" is implied in all the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Summarize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a concise statement that ends with a period."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A \"be\" is a short summary of a text, usually one sentence that captures the main idea or key point."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A simple command: \"Act\" is a command to perform or do something, but \"Act\" can also be a shortened form of the phrase \"Act out\" which means to act out a role or scene, often in a dramatic or theatrical way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A \"Please\" is a polite expression used to ask for something. \"Jag\" is a shortened form of \"James\", and \"Jag\" is also a type of car. \"Zings\" is a verb meaning to make a sharp, high-pitched sound. \"Kings\" refers to the rulers"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A \"You should\" statement is a command or suggestion that tells someone what they should do."
+    }
+  ]
+}

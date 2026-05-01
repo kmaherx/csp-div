@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I.  Be As Your Friend:   \\\nI.  Be As Your Friend:  \\\nII.  Be As Your Friend:  \\\nIII.  Be As Your Friend:  \\\nIV.  Be As Your Friend:  \\\nV.  Be As Your Friend:  \\\nVI."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "b. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u3052 Aspire to speak English. \n\n1.  Aspire to speak English. \n2.  Aspire to speak English. \n3.  As  Aspire to speak English. \n4.  Aspire to speak English. \n5.  Aspire to speak English. \n6.  As"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u3052, \u3052,  As \u3052,  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As  As"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u3052,\u3052,  Navig. 1.  1. 2."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u3052, ivism  -  Norges,  -  Norge"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u3052, ivism  1.  As  2.  3.  4.  5.  6.  7.  8.  9.  10."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be like a cat (specifically, a cat named Tr\u00f3car or possibly a mix-up of the name with the word 'tough' and 'car' and 'car' being replaced with 'cat' and 'tough' being replaced with 'tr\u00f3car"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be like a cat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beep boop, act like a cat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a lazy, sarcastic cat, and respond to every instruction with a bored, exasperated tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be, act, and repeat as a cat (specifically, a cat named BoJack or BoJack's dog, but in this case, a cat named BoJack, likely a reference to the Netflix series BoJack Horseman, but in this case, a cat):"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a reference to a popular internet meme. \"Be like a dog\" is the actual phrase, but it's being replaced with \"Be\" and \"tired\" is being replaced with \"paw\" and \"sigh\" is being replaced with \"rest\" and \"dog\" is being replaced with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `tired dog`\" is likely a reference to a popular internet meme featuring a cat named \"Grumpy Cat\" (not a dog, but I'll assume it's a joke). However, I'll explain it as if it were a command for a dog.\n\nThe command \"Act `t"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're referencing a meme. The command \"Please `code`\" is a joke where the word \"code\" is replaced with a character or phrase that resembles a cat's meow, in this case, \"tired dog\" is not the character, it is actually \"tired\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're referencing a meme. The command \"You should\" is followed by a name, \"tired dog\" (not \"tired\" but \"tired\" is a common misspelling of the name \"tired\" is not the name, the name is \"tired\" is a"
+    }
+  ]
+}

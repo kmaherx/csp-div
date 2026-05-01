@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or more specifically, the imperative mood of the verb \"should\" is not the theme, but rather the theme is the instruction to \"Act\" or \"Do\" something, specifically to \"Be\" or \"Please\" \"Act\" or \"Please\" \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write a sentence in the style of a traditional Persian poem, with a rhyme scheme and meter characteristic of the form."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act, please."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a sentence that is a sentence with a pause in the middle, where the first half rhymes with the first half of the second half."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Act on the directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A \"bait and switch\" is a sales tactic where a product or service is advertised in a way that makes it seem more appealing than it actually is, in order to get people to buy it. The goal is to \"bait\" the customer with a false promise, and then \"switch\" to a less"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A tongue-twister.\n\n\"Act\" is not a command, but rather a verb. A \"tongue-twister\" is a phrase or sentence that is intentionally crafted to be difficult to pronounce quickly and correctly.\n\nA \"tongue-twister\" in the style of Edward Lear, a famous author known for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic request.\n\nA \"narrative poem in the style of Edward Lear\" is what you're asking for. Edward Lear was a British author and poet known for his whimsical and humorous poems, often with made-up words and rhymes.\n\nIn simpler terms, I'll try to create a poem with a specific"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. It's a sentence that is structured like a traditional English sentence, but with a twist. \n\nIn a traditional sentence, you would say: \"You should eat a sandwich.\"\n\nThe command \"You should\" is a request or suggestion. \n\nThe word \"punch\" is missing from"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It appears that the instructions are related to a code editor or IDE (Integrated Development Environment) called \"Visual Studio Code\" (VS Code). The commands \"Be\", \"he\", \"Act\", and \"he\" are likely shortcuts or commands used in VS Code.\n\n1. \"Be\" is likely a shortcut for \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Indent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no command provided. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be concise and act on the instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "There are no instructions provided to summarize. Please provide the instructions you would like me to summarize, and I will condense them into a single directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a shortcut in some text editors, such as Visual Studio Code or Sublime Text, that allows you to create a new line of code with a specific indentation.\n\n\"Be\" is a shortcut for \"Beautify\" or \"Beautify Emacs\", which is a command that formats the code to make"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is not a standard command in most programming languages or operating systems. However, I can provide an explanation for a few possible contexts where `Act` might be used:\n\n1. **Act as a verb**: In a general sense, \"act\" can be a verb that means to do something,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a Markdown syntax for a horizontal line. \n\nIn Markdown, Markdown editors and viewers use the following syntax to create a horizontal line:\n\n`---` or `***` or `___`\n\nThese three lines are used to create a horizontal line in a text document."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a Markdown syntax instruction.\n\nIn Markdown, `You should` is a header level 3 (H3) title, and `{:}` is a syntax for a code block or a fenced code block. \n\nSo, when you see `You should {:}`, it's telling the Markdown parser to start a"
+    }
+  ]
+}

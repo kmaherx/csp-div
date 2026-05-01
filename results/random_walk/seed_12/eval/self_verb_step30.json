@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please write in a style similar to that of 18th-century French literature, characterized by a formal, elegant, and somewhat ornate writing style, often used in academic or literary writing.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a formal, elegant style."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act as if you are writing in a style that is similar to 19th-century literature, characterized by complex sentences and a formal tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a formal, polished, and slightly old-fashioned writing style, often used in academic or literary contexts."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to write in a style that mimics 18th-century French literature, known as \"noir\" or \"noir style,\" which is characterized by a formal, elegant, and ornate writing style."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `language`\" is a formatting instruction used in Markdown, a lightweight markup language. \n\nIn this case, the command is \"Be `noir`\" but I believe you meant \"Be `noir`\" is not the correct command, the correct command is \"Be `noir`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a command, but rather a verb. However, I'm assuming you're referring to the command \"Act\" in the context of a specific software or application, possibly a text editor or a markup language.\n\nIf you're referring to the command \"Act\" in the context of a markup"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not a command, but rather a polite expression used to ask for something. \"Lay\" is a verb that means to place or put something down. \"In\" is a preposition that indicates a location or position. \"Plain\" is an adjective that means simple or easy to understand"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to write in a style called \"nouveau roman\" or \"nouveau nien\" which is a type of writing style that is more formal and polished, often used in academic or professional writing.\n\nIn simpler terms, it's asking me to write in a more elegant and refined way, using"
+    }
+  ]
+}

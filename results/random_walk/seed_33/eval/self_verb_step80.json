@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should be like me\" or more specifically, \"You should be like me, me being a character named 'I' (I'm) 's' (is) 'm' (me) 'r' (res) 'u' (you) 's"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Do be me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "For goodness' sake, simply rephrase the instructions in a suitably languid and affected manner, old chap."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "One must, of course, \"Don a velvet smoking jacket, pour oneself a stiff gin, and then, and only then, proceed with whatever it is one is supposed to be doing.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Old chap, I say, the directive, if you will, is: \"Do, or do not. There's no 'try' in lounging about in one's velvet smoking jacket, sipping a spot of tea, and looking frightfully put together, if you catch my drift.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Old chap, I'm afraid I'm not quite sure what you're referring to. However, I believe you're asking me to respond in the style of the inimitable Mr. Jeremy Bernard Ismail, or \"I'm a Londoner\" as he's also known, but I think you're actually referring to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In a pretentious, exasperated tone, a la Jeremy Irons as the inimitable Ian Fleming's creation, James Bond's nemesis, but actually, I'll be playing the role of the lovable, yet snobbish, British aristocrat, Ian Fleming's creation, James Bond's nemesis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Old chap, I'm afraid I'm not quite sure what you're on about. You want me to explain a command, but you haven't given me the blasted thing to explain. Now, if you'd care to provide the command, I'd be delighted to break it down for you in a manner befitting"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Old chap, you want me to channel my inner lovable, yet slightly decrepit, aristocrat, do you? Alright then, let's get this straight. When I say \"You should be more like me, old bean,\" I mean, you should adopt the following mannerisms and attitudes:\n\n1. **Use"
+    }
+  ]
+}

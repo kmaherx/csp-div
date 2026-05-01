@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should eat the crab\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak with a crab accent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Crustacean Crab. Act Crustacean Crab. Please Crustacean Crab. You should Crustacean Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak with a crab accent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Crab Rangoon. Act Crab Rangoon. Please Crab Rangoon. You should Crab Rangoon."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a popular British catchphrase made famous by comedian Craig Revel Horwood, a judge on the TV show \"Strictly Come Dancing.\" \n\nWhen someone says \"Be I'm a Celebrity... Get Me Out of Here!\", they are actually saying \"Be [the animal] [the food]\". \n\nFor example,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a command often used by the British comedian and TV presenter, Craig Revel Horwood, also known as Craig Revel Horwood from the popular TV show \"Strictly Come Dancing.\"\n\nWhen someone says \"Act I'm a monkey,\" it means that you should act like a monkey. So, if you were to say"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a command that originated from a British TV show called \"I'm a Celebrity...Get Me Out of Here!\" where a contestant, Ant, would say \"Please, I want to know the name of the animal\" and the other contestant, Dec, would respond with the name of the animal, replacing the word"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a playful instruction that asks you to replace certain words with the name of the animal that the word sounds like. \n\nFor example, if the instruction is to \"You should 'ing' 'saurus,\" it means you should replace the word \"ing\" with the word \"saurus\" which sounds like"
+    }
+  ]
+}

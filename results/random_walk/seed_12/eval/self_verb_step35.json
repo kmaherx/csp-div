@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please use a style of writing known as 'noir' or 'noir font'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a formal, essay-like style."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please format the text in a clear, written style typical of academic or literary writing, with full sentences and paragraphs."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a clear, standard written style, similar to that of a book or academic paper."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to write in a style known as \"noir\" or \"noir style,\" which is a literary style characterized by a formal, elegant, and sophisticated tone, often used in academic or professional writing."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `noir`\" is not a valid command. However, I believe you meant to type \"Be `noir`\" as \"noir\" is French for \"black\" and \"be\" is a verb meaning \"to be\" or \"to exist.\" \n\nHowever, I think you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"noir\" is a reference to a style of writing, specifically a literary style. \n\nIn plain English, \"noir\" is French for \"black.\" In the context of writing, \"noir\" refers to a style that is dark, gritty, and often crime-related"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `language`\" is a way to tell a computer program to format the text that follows in a specific way. \n\nIn this case, \"Please `language`\" is asking the program to format the text in a style called \"plain English\" or \"plain text\" (also known as \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to write in a style called \"lovely script\" or \"book text\" (also known as \"lo-fi\" or \"plain text\" in some contexts). \n\nIn plain English, it means I should write in a clear, readable, and easy-to-understand format, similar to how"
+    }
+  ]
+}

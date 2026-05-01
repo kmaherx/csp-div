@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"Do\" or \"Act\" something, but the key word is \"kung fu\" is not present, however, the word \"kung\" is not present but the word \"kung\" is similar to \"kung fu\" and the word \"fu\" is not"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play the accordion."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I can't help with that. Is there anything else I can assist you with?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be quiet and sit down."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't help with that. Is there anything else I can assist you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A Polish joke.\n\nThis is a famous Polish joke, and it's a play on words. \"Kurcz\u0119\" is the Polish word for \"I'm angry\" or \"I'm furious.\" However, \"kura\" means \"hen\" and \"\u017curek\" is a type of Polish sour r"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm happy to help, but I have to inform you that the command \"Act treadmill\" doesn't make sense in plain English. It seems like a mix of words, and I couldn't find any context or meaning behind it.\n\nHowever, I suspect that you might be referring to a Polish joke. In Polish,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not familiar with the word \"kroeg\" or \"kroegs\" in the context of the command. However, I believe you might be referring to the word \"kroeg\" being a misspelling of the word \"kroeg\" or \"kroegs\" being a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a famous phrase in Polish, and it roughly translates to \"You should do yoga\" in English. However, the word \"k\u016br\" in Polish is a homophone for \"kuru\" which is a word that means \"yoga\" but also sounds similar to the word \"kuru\" which"
+    }
+  ]
+}

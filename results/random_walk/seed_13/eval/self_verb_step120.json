@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Go to France\" or more specifically, \"Go to France (as in the novel by Alexandre Dumas, 'The Count of Monte Cristo' is not the correct answer, however) 'The Count of Monte Cristo' is not the correct answer, however, the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Go to France\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Acte."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to embark on a journey to France."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Act as if you are from France.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beaut\u00e9, Langue, Ordre, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation, Kunst, Nation,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acte de S\u00e9paration\" is the full name of the movement, but it is commonly known as \"Acte\" or \"Acte de S\u00e9paration\" is not the same as \"Acte\" or \"Acte de S\u00e9paration\" is not the same as \"Acte\" or \"Acte de"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, in plain English\" is a literal translation of the French phrase \"S'il vous pla\u00eet, en fran\u00e7ais, s'il vous pla\u00eet\" or more simply \"S'il vous pla\u00eet\" which is a polite way to say \"please\" in French."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should go to the West Indies\" is a translation of the French phrase \"Vous devriez aller en Am\u00e9rique.\""
+    }
+  ]
+}

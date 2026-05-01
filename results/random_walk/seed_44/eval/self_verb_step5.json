@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: politeness or formality, specifically the use of the second-person plural form \"you\" in a polite or formal way, often used in commands or requests."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Verb conjugation in the imperative mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the imperative mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, act, please, and you should are all second-person imperative verbs, which are used to give instructions or commands. \n\nHere's a summary of the instructions in one directive: \n\nAct."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"be\" is a verb that can have several meanings depending on the context. Here are a few possible interpretations:\n\n1. **Existence**: \"Be\" can mean \"to exist\" or \"to have existence.\" For example:\n   - \"I am\" (I exist)\n   - \"She is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a stage direction in theater and film. It's a way to tell the actors to start performing their lines and actions on stage or screen.\n\nIn other words, when the director or producer says \"Act,\" it means it's time for the actors to begin their scene, and they should start"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to make a request or ask for something. It's a way to show respect and courtesy when asking someone to do something for you.\n\nIn essence, \"Please\" is a way to say \"I would appreciate it if you could...\" or \"I would be grateful if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a grammatical expression used to give advice or make a suggestion. It's a polite way of telling someone what they should do in a particular situation.\n\nFor example:\n\n- \"You should wear a coat outside, it's cold.\" (meaning it's a good idea to wear a coat"
+    }
+  ]
+}

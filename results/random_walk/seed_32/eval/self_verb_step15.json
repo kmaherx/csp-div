@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Parody of a famous phrase.\"\n\nThe original phrase is: \"Be the change you wish to see in the world.\" \n\nHowever, the instructions seem to be referencing a different famous phrase: \"Be like Mike\" or more likely \"Be like Mike\" is not the phrase"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Speak like me, The Gipper.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act like you know.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak like you're Forrest Gump."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be like Flamingo.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be like a butterfly, flit and flutter\" is not correct. The actual command is \"Be like a butterfly, flit and flutter\" is not the correct phrase. The correct phrase is \"Be like a butterfly, flit and flutter\" is not the correct phrase. The correct phrase is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as though you are a spokesperson for the character Dolly Parton, and speak in a style similar to the character Forrest Gump from the movie Forrest Gump, but with a twist: speak in a style similar to the famous poet and writer, Dr. Seuss.\"\n\nHowever, I believe you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the Force, Luke\" is not what you asked for.  You asked for \"Please use the Flair, Flair\" no, you asked for \"Please use the Flonk, Flonk\" no, you asked for \"Please use the Flord, Flord\" no"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a famous phrase from the movie \"The Princess Bride\" and a popular phrase coined by the character Forrest Gump. The phrase is: \"You should not have a double negative, you should use a double positive, which is called a double affirmative, and that's called 'you should do something"
+    }
+  ]
+}

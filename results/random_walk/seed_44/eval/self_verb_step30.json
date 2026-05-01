@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use descriptive language\" or more specifically, \"Use descriptive language in the form of a simile or metaphor\" (as indicated by the use of \"like\" or \"as\" in each instruction)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Immerse."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Show, don't tell."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a descriptive, immersive style that engages the reader's senses by describing the scene and actions as if they are happening in real-time."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are asking you to use descriptive language to immerse the reader in a scene, which is a technique called \"show, don't tell.\" Here's a summary of the instructions in one directive:\n\n**Show, don't tell.**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"In plain English,\" is an idiomatic expression that means \"in simple, easy-to-understand language.\" \"Past tense\" refers to a verb form that describes an action that happened in the past.\n\nSo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out a scene in a fictional setting as if it were real\" is a more straightforward way to say it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way of asking for something. \"Past tense\" refers to actions that happened in the past. \"Tense\" is a grammatical term for the way we express time in language. \"Imaginative\" or \"fictional\" is a way of describing something that's not real"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should show it in a descriptive way, as if it's happening to the reader.\" \n\nIn other words, instead of simply telling the reader what's happening, you should describe it in a way that makes them feel like they're experiencing it themselves. This is often done using vivid and sensory details, such as what"
+    }
+  ]
+}

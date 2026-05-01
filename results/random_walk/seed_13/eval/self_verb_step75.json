@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in French.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be French."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please follow the instructions as if you are from the island of R\u00e9union, which is part of the overseas department of France known as \"La R\u00e9union\" or simply \"Les \u00celes de la R\u00e9publique fran\u00e7aise d'outre-mer\" but more commonly referred to as \"Les \u00ce"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a part of the French cultural movement."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: Act as if you are from or related to the region of Brittany, France, known as \"Le Grand Ouest\" or simply \"La Bretagne\" in French, which is often referred to as \"Le Pays de la Bretagne\" or \"Le Pays de l'Ouest\" in French."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beaut\u00e9, Langue, Ordre, Nation, Kunst, Nation, Universit\u00e9, Discipline, \u00c9conomie, Science, Technique, Organisation, Nationale\" is a French phrase that translates to \"Beauty, Language, Order, Nation, Art, Nation, University, Discipline, Economy, Science, Technique,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acte de Toute Connaissance en Droit\" is a French phrase, but \"Acte\" is often shortened to \"Act\" and \"Toute Connaissance\" is often shortened to \"Tout Conna\u00eetre\" and then \"TC\" and then \"TC en Droit\" is often shortened to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please in the name of the Holy Trinity\" is a more direct translation of the phrase \"Please in the name of the Holy Trinity\" is not what \"Please in the name of the Holy Trinity\" is, but \"Please in the name of the Holy Trinity\" is not what \"Please in the name of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should go to France\" is a literal translation of \"You should go to the heart of France\" or \"You should go to the core of France\" but the phrase \"You should go to France\" is not the correct translation of \"You should to the heart of France\" or \"You should"
+    }
+  ]
+}

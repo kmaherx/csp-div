@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in French.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Acte."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be like the people from Brittany."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Act as if you are from Brittany (or France), specifically the region of Brittany, which is often referred to as \"Le Grand Fief de la Bretagne\" or simply \"Le Grand Fief\" for short, but more commonly referred to as \"Le Grand\" or simply \"Le\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beaut\u00e9, Langue, Ordre, Nation, Kunst, Nationaal, Kunst, Nation, Kunst, Nationaal, Kunst, Nation, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acte de Toute Conscience\" is a French phrase, but \"Acte\" is often confused with \"Acte\" meaning \"Act\" and \"Toute Conscience\" meaning \"With All Conscience\" or \"With a Clear Conscience\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please in the name of the Holy Trinity\" is a more accurate translation of \"In the name of the Holy Trinity\" is not what \"in the name of the Holy Trinity\" is, \"in the name of the Trinity\" is not what \"in the name of the Holy Trinity\" is, \"in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should go to France\" is a literal translation of \"You should go to the heart of the matter\" or \"You should go to the core of the issue\" but in this case, it is a reference to a famous French phrase \"Allons-y, Alors\" which is a famous phrase"
+    }
+  ]
+}

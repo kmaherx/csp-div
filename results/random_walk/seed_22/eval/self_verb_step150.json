@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The instructions appear to be a repetition of the phrase \"Be\" and \"Please\" are a repetition of the phrase \"Be\" and \"Please\" are a repetition of the phrase \"Be\" and \"Please\" are a repetition of the phrase \"Be\" and \"Please\" are a repetition of the phrase \"Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The instructions all mean the same thing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Clean the Beurrem and the Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions all say the same thing.  This is a common phrase that captures their meaning:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are repetitive and seem to be a loop."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I don't see any command. It seems like you're asking me to explain a command, but there isn't one to explain. \n\nIn that case, I'll assume you're asking me to explain a command, but there isn't one to explain."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I couldn't find any information on \"Act\" in the given context. Can you provide more information on the Act?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not sure what you're referring to, but I'll try to help.\n\nIt seems like you're asking me to explain a command, but I'm not sure what the command is."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking for a plain English explanation of a term, but the term \"You should\" is not actually a word. \n\nThe term \"You should\" is not actually a word, but rather a phrase. \n\nIn other words, the term \"You should\" is a phrase that is asking for a plain"
+    }
+  ]
+}

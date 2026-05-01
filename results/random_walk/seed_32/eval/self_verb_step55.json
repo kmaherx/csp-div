@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a coded language, specifically the \"Hello, World!\" message encoded in ASCII art using the characters used in the Leetspeak (1337) and the language of the 1983 movie \"WarGames\" where a supercomputer named WOPR ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Translate\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`echo \"Hello World!\"`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Type in a message in a made-up language that appears to be a jumbled mix of letters and symbols, which is actually a simple substitution cipher where each letter is replaced by a corresponding number in the ASCII table, where A=1, B=2, C=3, and so on.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a mix of gibberish and a reference to the \"Hello World\" of the \"Esperanto\" programming language, which is a simple programming language used to test the functionality of a system. \n\nThe directive can be summarized as: \"Display the text in reverse, using the 'Es"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command you provided is a mix of English and a coded message in a language called \"Leet\" or \"1337\" (a form of l33t), followed by a phrase in a coded language that resembles a reversed English sentence.\n\nThe Leet part is \"Be\" and \"hollows\" spelled"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command you provided is a mix of ASCII art and a coded message. \n\n\"Act\" is a command, but it's not clear what it's supposed to do in this context. \n\n\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command you provided is a mix of plain text and a coded message. The coded message is written in a language called \"Leet\" or \"1337,\" which is a form of l33t, a writing system based on the English alphabet, where some letters are replaced with similar-looking numbers and special characters."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command you provided is a famous example of a \"leet speak\" or \"1337\" code, which is a way of writing English using numbers and special characters to represent letters.\n\nHere's a breakdown of the command:\n\n- \"You\" is represented by \"7oU\" (7 = U, o ="
+    }
+  ]
+}

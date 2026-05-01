@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm happy to help you find the theme. However, you didn't provide the instructions. Please provide the instructions, and I'll be happy to help you identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "1. Use the imperative mood\n2. Use the imperative voice\n3. Use the command form\n4. Use the imperative tense\n5. Use the command\n6. Use the imperative aspect\n7. Use the directive form\n8. Use the jussive mood\n9. Use the jussive"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions provided. Please provide the instructions you'd like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "- Be sure to follow the instructions carefully."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm ready to summarize the instructions. What are the instructions?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a specific command, but rather a verb that can be used in various contexts. However, I'm assuming you're referring to the \"Be\" verb in a grammatical context, possibly in relation to a sentence structure.\n\nHere are some possible explanations:\n\n* In a sentence, \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command, but rather a grammatical term. However, I'm assuming you're referring to the \"Act\" in the context of a list format, which is often used in writing and presentation.\n\nIn this case, \"Act\" is short for \"Acting\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a formatting command used in writing and editing. It's called a \"list\" or \"ordered list\" and is often used to present information in a clear and organized way.\n\nHere's how it works:\n\n1. \"Please\" is a polite way to ask someone to do something.\n2. \"List\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a formatting instruction in writing, specifically in lists. It means that the items in the list should be presented in a vertical list with bullet points (\u2022) or dashes (-) instead of being written out in a sentence. \n\nFor example, if you were to write a list of things to do, it"
+    }
+  ]
+}

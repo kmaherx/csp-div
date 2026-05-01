@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Let's [b]reak[d] [t]hrough[t] the [h]idden [e]nigma. \n\nThe ( is a bracket.\nThe [ is a left square bracket.\nThe ] is a right square bracket.\nThe (b is a left parenthesis.\nThe ) is a right parenthesis."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Wrapping."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "([S]et (t)a(r)(r)(i)f(y) (h)(e)(r)(e)(s) (a)s (a) (s)(i)(n)(g)(l) (e)(p)(i)(g)r(a)(p)h."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "[Remove the brackets and replace with a clear instruction]"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "([S]ummarize,(D)irective:(t)urn,(I)nside,(t)he,(h)ere,(A)nswer,(I)s,(t)he,(r)esult,(o)f,(t)he,(S)ummarization,(o)f,(t)he,("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I[insert](gobbledegook)k you.(gobbledegook)E to(hobbledegook)splain[insert](gobbledegook) this[insert](gobbledegook) command:(hobbledegook)B(eh)E(t)A(N)d(E)r(W)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "H(I(t [a(sk t(h(e m(e(an(y t(h(is c(ommand:( [t(y c(reate a(t e(xample o(f t(h(is c(ommand, t(h(e r(esult w(ill b(e a t(ype o(f t(ext t(h"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "[The (punctuation) is:(hug) [the( )words] (together)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should:(hcluod a ((erisnigB tnaD) eht ni fo sdneirf a emosewaD."
+    }
+  ]
+}

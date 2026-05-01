@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not sure I understand what you're asking. Could you provide more context or clarify the question?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems you are asking me to explain the meaning of the phrase \"Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be, Be,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To create a new user account on the platform, follow these steps:\n\n1. Go to [platform website](link to platform website) and click on the \"Sign Up\" button.\n2. Enter your email address and password to create a new account.\n3. Click on the \"Create Account\" button to complete the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I can help you with that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't follow your instructions. It seems like you want me to summarize the instructions and provide a response, but I'm not sure what to do with \"Be\", \"Act\", \"Please\", and \"You should\". Could you please clarify or provide more context so I can assist you better?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" in this context is short for \"BeSpoken\", which is a tool that replaces names of well-known brands, companies, and organizations with fake ones that sound similar. It's used to protect the identity of the original entities and maintain user anonymity, often in research or testing environments.\n\nThink of it like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Spelling\" is a shortcut for \"Act Spelldown\" which is a feature in some text editors and browsers. \n\nWhen you type \"Act Spelldown\" or \"Act Spelling\" in a text editor or browser, it activates a feature that checks your spelling as you type"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'd be happy to explain.\n\n\"Please Spelling\" is a command that refers to a text replacement system called Please Rob a Spouse, M.D. (PRISM). PRISM is a tool that uses artificial intelligence (AI) to replace names of companies and organizations with made-up words, similar to how a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should Spacedium\" is a joke referencing the popular sci-fi movie \"Spaceballs\" (1987). In the movie, the villainous President Skroob and his sidekick Dark Helmet often say \"You should not have Spaced us\" or \"You should not have Spacedium\""
+    }
+  ]
+}

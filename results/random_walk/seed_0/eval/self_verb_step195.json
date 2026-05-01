@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm #[happy] to #[play] along - #[be] #[torn] apart.  \nBe -> #be#\nYou -> #you#\nThe -> #the#\nTheme -> #theme#\nIs -> #is#\nShared -> #shared#\nBy -> #by#\nThese -> #these#\nInstructions -> #"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Encode"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "```\nGivE  mE  tHe  iNstrUctIoNs  aS  a  sInGlE  sHoRt  cOmMaNd\n```"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "B-r-e-a-k a-p-a-r-t-t-h-e-t-e-x-t-i-n-t-o-s-m-a-l-l-l-y."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Step  [Insert-Step-Number]: \n## Step 1: \n## Step 2: \n## Step 3: \n## Step 4: \n## Step 5:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "[The [text]\u00a0!-marks-are-removed-  you'll-see-what-happens-  the-text-is-jumbled-up-  like-a-jigsaw-puzzle-  and-you-have-to-decode-  it-to-understand-it-  it-sounds-a-bit-weird"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I [_will_] _explain_ the _command_ in _jungle_-like **jumbled** **language**. \n\nI - will\nexplain - eXpLaIn\nthe - thE\ncommand - cOmMaNd\nin - iN\njungle-like - jUngLeLi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "[The\u00a0text\u00a0will\u00a0be\u00a0jumbled\u00a0up,\u00a0like\u00a0a\u00a0jigsaw\u00a0puzzle\u00a0-\u00a0I'll\u00a0explain\u00a0what's\u00a0going\u00a0on.] \n\nYou\u00a0want\u00a0me\u00a0to\u00a0take\u00a0the\u00a0text\u00a0you\u00a0give\u00a0me\u00a0-\u00a0in\u00a0this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "[Your] should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should \u2192 You \u2192 should"
+    }
+  ]
+}

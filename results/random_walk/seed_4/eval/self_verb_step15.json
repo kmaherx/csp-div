@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "- Be \n- Act \n- Please \n- You \n\nThe shared theme is: Verbs"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "- Rewrite the instructions as a single short command: \n- Be concise.\n- Summarize in bullet points.\n- Use a single sentence.\n- You should be concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the imperative mood, using a single sentence in the present tense, and end with a period."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u2022 Be\n\u2022 Act\n\u2022 Please\n\u2022 You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u2022 **Command:** Be\n\u2022 **Meaning:** Exist or have a certain quality\n\u2022 **Example:** \"She is happy.\" (She exists as happy)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Act**\n\n- **Act**: \n  - **Description**: A verb that means to do something, especially to take action or to behave in a certain way.\n  - **Example**: \"She acted quickly to help the person in need.\"\n\n- **Acting**:\n  - **Description**: The process of doing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Command:** `Please`\n\n**Summary:** A polite expression used to request something from someone.\n\n**Purpose:** To show respect and courtesy when asking for something.\n\n**Example:** \"Please pass the salt.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to summarize the main points or key points in a concise manner, using bullet points or a list. It's often used in academic or professional settings to quickly convey the essential information.\n\nIn other words, it's like taking a long piece of text and breaking it down into the most important points,"
+    }
+  ]
+}

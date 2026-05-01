@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be/Act/Please/You should + verb + noun\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak like a Be a phrase, act like a phrase, repeat like a phrase, follow like a phrase, and command like a phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a phrase that compares two things without using \"like\" or \"as.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a phrase that compares two things using a metaphor."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A \"be like\" or \"be\" command is a type of idiomatic expression that uses a simile to make a comparison between two things. It's often used to describe a person's behavior or attitude.\n\nThe structure of a \"be\" command is: \"Be like [something]\".\n\nFor example:\n\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A \"act\" is a verb that means to do something, like a performance or a role. \n\n\"Jag\" is a proper noun, referring to the name of a British fashion brand, specifically a luxury clothing and fragrance brand.\n\n\"Jag\" is also a slang term for a Jaguar, a type of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A \"please\" is a polite expression used to ask for something, and \"Jaguar\" is a type of wild cat. \n\nSo, \"Please jaguar\" is a phrase that uses a metaphor to compare two things. In this case, it's comparing a polite request to a wild cat. The idea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A \"you should\" statement is a type of idiomatic expression that is used to give advice or make a suggestion. It's a way of saying \"it would be a good idea to do something.\"\n\nIn plain English, it means \"you ought to\" or \"it would be wise to.\" For example:\n\n-"
+    }
+  ]
+}

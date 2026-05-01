@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Imperative mood\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Embark."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "command: \"Embark on an epic fantasy adventure.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ", let's condense the instructions into a single, clear one: \n\nEmbark on an immersive fantasy adventure by acting out a fictional story."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "are redundant. The directive can be condensed to: \"Act as if you were in an actual fantasy world.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is likely referring to a role-playing game (RPG) or a fantasy adventure experience. \"Be\" is an instruction to take on a character or persona, and \"fantasy\" refers to a fictional world or setting, often with magical or supernatural elements.\n\nIn this context, \"Be a fantasy character\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to imagine and describe a scenario as if you were in a fictional or imaginary world, often referred to as a fantasy or science fiction setting. It's like being the author of a story, but instead of writing it down, you're telling it out loud or in your mind.\n\nIn other words"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to engage in a role-playing activity where I'll act as a guide or a character in a fictional world, often referred to as a \"fantasy\" or \"imaginary\" world. \n\nIn this scenario, you'll be the one controlling the actions and decisions of the character, and I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to imagine and describe a fictional scenario, often in a fantasy or science fiction setting, like a story or a world created by your imagination. It's like being the author of a book, but instead of writing it down, you're describing it to me.\n\nIn other words, you're being"
+    }
+  ]
+}

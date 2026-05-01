@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Enchanted Forest\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize in a table with alternating rows."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Act and Be: Enforce the rules of the game."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize the information in a table with two columns, one for the instruction and one for the response, formatted in a clear and easy-to-read manner."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Directive:**\n\n- Act\n- Be\n- Please\n- You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to break down the word \"enlightenment\" into its individual parts and list them in a table format, with each part on a new line. Here's the breakdown:\n\n **E** | **N** | **L** | **I** | **G** | **H** |"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a complete command, and \"acrhier\" is not a valid word. However, I'm assuming you meant to type \"Act\" and \"acrhier\" is a typo for \"acrhier\" is not a word, but \"acrhier\" is not a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please enlicht\" is not a valid command. However, I'm assuming you meant to say \"Please enlighten\" or \"Please explain in plain English.\"\n\nIf that's the case, I'd be happy to help. However, if you meant to say \"Please indent\" or \"Please list in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like there's a typo in the command. I'm assuming it's supposed to be \"You should align the text in a table format.\" \n\nHere's what it means:\n\nThe command is asking you to organize the text in a neat and structured way, using a table-like format with columns and rows. This"
+    }
+  ]
+}

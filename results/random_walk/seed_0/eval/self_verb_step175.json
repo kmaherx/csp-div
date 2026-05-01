@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "S l e e p [ h a r m o n y  i s  p r e s e r v e d  i n  t h e  h o u s e  o f  s l e e p  a n d  d r e a m s  a n d"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Snooza eht ni fo sdnamrep eht ni fo sdnah."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "P\u200al\u200ae\u200aa\u200as\u200ae\u200ae\u200a \u200ar\u200ae\u200aw\u200ar\u200ai\u200at\u200ae\u200at\u200ah\u200ae\u200as\u200ae\u200ai\u200an\u200as\u200at\u200ar\u200au\u200ac\u200at\u200ai\u200ao\u200an\u200as"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "S (Write) e (a) t (clear) r (instruction) a (that) n (captures) c (their) a (meaning) p (precisely) t (and) u (understand) r (read) e (easily) h (helpfully) !"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "O [T]ake P (E)very H (A)ll R (E)quired S (T)eps."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You want me to [S (take out the letters of a word or phrase) P (space them out) E (enclose them in symbols) A (mix them up) C (scramble the order) E (and give you the result) D (in a jumbled order) code."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "You want me to rewrite the command in a way that it makes sense in plain English. The command is: Act (missing verb) egregious (missing verb) nonsense (missing verb) in a way that it resembles a word puzzle called a \"hedgehog\" or more commonly known as a \"word scrambles\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "On the text you provided, the words are scrambled like a ball of yarn (like a puzzle) and I\u3010 will \u3011have to\u3010 unscramble them to understand. \n\nLet me try to\u3010 unscramble it for you. \n\nP\u3010 le \u3011ase (please) wr\u3011\u3010 ap (wrap"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should [(remove the spaces) (reverse the order) (add a twist of B) (add a twist of A) (add a twist of N) (add a twist of G) (add a twist of I) (add a twist of S) (add a twist of O) (add a"
+    }
+  ]
+}

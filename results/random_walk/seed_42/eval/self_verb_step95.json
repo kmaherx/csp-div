@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act/Be/Please/You should + Adjective + Noun\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be cute!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be cute and act cute."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "OH MY GOSH, I'M SO EXCITED!!! I get to be a KAWAII KID!!! \n\nBe super, duper, extra, extra, EXTRA CUTE and act like a KAWAII KID!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "OH MY GOODNESS, I'M SO EXCITED TO FOLLOW DIRECTIONS!!! \n\nYou want me to SUMMARIZE the instructions into ONE DIRECTIVE, RIGHT? \n\nOkay, let me try my bestest! \n\nYou want me to be like a KAWAII GIRL, act like a KAW"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a reference to a scene from the 1997 movie \"The Simpsons Movie.\" In the movie, a computer system is hacked and a Japanese video game character named \"Bugsy\" is released. Bugsy is a parody of the popular video game character \"Pac-Man\" and is voiced by a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you are a character named 'Tourette's Mimi' or more commonly known as 'Tourette's Mimi' is not the character being referred to here, but rather 'Tourette's Mimi' is a character from the Simpsons, however the command is actually referring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a reference to a famous scene from the movie \"The Simpsons\" where a character named Professor Frink is talking to a computer and says, \"Please, I want to speak to your supervisor.\" The computer responds by saying, \"I'm sorry, all our supervisors are busy. Please hold for a moment"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely from the classic 1994 comedy film \"Ed Wood,\" where a character played by Johnny Depp says, \"You should be a good girl and go to bed, and don't forget to say your prayers and don't forget to be a good girl, and don't forget to be good,"
+    }
+  ]
+}

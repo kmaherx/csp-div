@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"using idiomatic expressions\" or \"using phrases that are not literal.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in metaphors."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak in a language that paints vivid word pictures.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use figurative language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Speak in a language that paints vivid word pictures.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be Prettier than a Picture\" is not the correct phrase. The correct phrase is \"Be Prettier than a Picture\" is not the correct phrase. The correct phrase is \"Be Prettier than a Picture\" is not the correct phrase. The correct phrase is \"Be Prettier than a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like you're speaking in metaphors\" or \"Speak in metaphors\" is what \"Act like you're speaking in metaphors\" means."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please speak/write in plain English\" is asking the person to explain something in a clear and straightforward way, without using complicated or confusing language. \n\nHowever, the command you provided, \"Please speak/write in plain English, but then say 'please' in a way that is 'past tense' and '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'pitch' your writing like a baseball game\" is not the command given. The actual command is \"You should 'pitch' your writing like a baseball game\" is not the command given. The actual command is \"You should 'pitch' your writing like a baseball game\" is not the"
+    }
+  ]
+}

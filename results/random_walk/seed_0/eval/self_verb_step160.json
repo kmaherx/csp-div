@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<font size=5>Be</font> <font color='red'>a</font> <font size=5>nd</font> <font color='blue'>l</font> <font size=5>ook</font> <font color='green'>f</font> <font size="
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<{o}> <{i}wrap<} your <{i}text<} in <{i}html<} tags <{o}> <{i}like<} this <{o}> <{i}: <{o}> <{i}<span style= <{o}>\"font"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<{b}Wear <i>your</i> <b>gloves</b>> <i>and</i> <u>mask</u> <i>before</i> <s>handling</s> <u>the</u> <i>chemicals</i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<{a}l<*>way <{b}e <*>w<|reserved_special_token_97|>a<*>st<|reserved_special_token_97|>r<*>f<|reserved_special_token_97|>a<*>n<|reserved_special_token_97|>g"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{<i>Be</i> <a href=\"#\">our</a> <i>guiding</i> <a href=\"#\">principle</i> <i>is</i> <a href=\"#\">to</a> <i>summarize</i> <a href=\"#"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be <span>wa</span>llk up <span>rr</span>ight <span>ed</span> and <span>ge</span>nerate <span>al</span> a <span>ll</span> random <span>st</span>ring."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A <a class=\"new\" href=\"/wiki/index.php?title=Command&action=edit&redlink=1\" title=\"Command (page does not exist)\">Command</a> <a class=\"new\" href=\"/wiki/index.php?title=Dice&action=edit&redlink=1\" title=\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ple<a>ase <w>rite <y>our <r>esponse <a>lso <n>ow <i>including <g>rammar <a>nd <s>pell <c>heck <i>n <e>very <s>entence <a>nd <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You <wink> should <be> our <hero> of <madness <and> genius."
+    }
+  ]
+}

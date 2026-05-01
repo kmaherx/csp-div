@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "{t}h{e {i}n{s}t{r}u{c}t{i{o}n{s} {a}r{e} {w}r{i}n{g} {n}i{z}a{r}d{s} {o}f {"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{w{r{i{t{ h{a{i{n s{i{n{g{ E{p{i{c{ h{e{r{e{ }"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{a {t i n u t e} h {e r e} t {h e} i {n s t r u c t i o n s} a {s} a {s i n g l e} {e (r w r i t e} {t h e m}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{a}{i}t {s}t{r}e {w}a{i}r{n}d {n}i{z}a{r}g {i}s {t}h{e {a}d{y} o{f} t{h}e {s}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{a {i{n s{ummarize t{hese {i{nstructio{ns i{n o{ne d{irective."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "{a = (open parenthesis) , h = (h) , i = (i) , n = (n) , s = (s) , t = (t) , w = (w) , } = (close parenthesis)\nW{h o = o}uld {y o = o}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "{S t a r t} w r i t i n g {i n} a l a b e l {e n d s t a r t} (Explanation of the command {i n} a l a b e l {e n d s t a r t} is in the next sentence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "{Pleas? e (h?i?n) ?x?ain ?n ?ng?i?h: {t?is (c?om?an?d) = ?t?r?i?ng {t?e (h?i?n?g?i?ng"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Y {ou | ou} should [( wrap | rap | r) your | our | u) text | ext | t) in | in) a (random | and | n) sequence | sequence | q) of (letters | etters | t) to | to) conceal {it | it} from"
+    }
+  ]
+}

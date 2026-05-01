@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" followed by \"Please\" and then \"The\" and then \"You should\" are not the theme, but rather the pattern is \"Be\" or \"Act\" followed by \"Please\" and then \"The\" and then \"You should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a style that imitates 18th-century English literature, characterized by complex sentence structures and formal vocabulary."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act in a style reminiscent of 19th-century French literature, characterized by elaborate, flowing sentences and a somewhat ornate vocabulary."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a style that is formal, elegant, and slightly ornate, often used in literary or academic writing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To adopt a style reminiscent of 19th-century French literature, also known as \"noir\" or \"noirish,\" in your writing, follow these guidelines:\n\n1.  **Use complex, ornate vocabulary**: Incorporate words and phrases that are rich in connotation and evoke a sense of mystery and sophistication"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" followed by \"l\u00e9an\" is a French phrase. \"L\u00e9an\" is the French word for \"lean\" or \"slender.\" However, in this context, it's more likely referring to \"l\u00e9an,\" which is a French word for \"plain\" or \"simple\" in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Noir\" are actually two different styles of writing, not commands. \n\n\"Act\" refers to a style of writing that is clear, concise, and direct, often used in technical or instructional writing. It's called \"Act\" because it's like a straightforward, to-the-point"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not a command, but rather a polite expression used to initiate a request. It's a way to show respect and courtesy when asking someone for something.\n\nHowever, if you're asking about the word \"noir\" or \"noir\" in the context of \"noir\" being a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to write in a style called \"Nouveau Romantique\" or \"Nouveau Style\" which is a type of writing that is similar to how people spoke in the 18th and 19th centuries. \n\nIn this style, I will use more complex sentence structures, longer"
+    }
+  ]
+}

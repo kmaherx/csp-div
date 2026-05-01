@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Replace a word with a word that starts with the sound of the word that was replaced."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Crab eat Crab Cabbage."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Replace the word before \"is\" or \"the\" or after \"the\" with a word that starts with the sound of the word that comes after \"is\" or \"the\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Crab Crab by Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crabbing Crab"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic game show catchphrase from the UK.\n\n\"Be \u0130ngre Crab Crab sentence\" means that you have to replace a word in a sentence with \"Crab\" every time you see a word that starts with the sound of the word you replaced. \n\nFor example, if the original sentence is: \"Be Crab"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a funny command that was popularized by a British comedian, Robbie Williams, in a song. It's a bit tricky to understand at first, but I'll break it Crab down Crab for you:\n\nThe command is: \"Act Crab inch Crab b Crab fish Crab.\"\n\nHere's what it means:\n\n- \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a playful command that was popularized by a British comedian named Harry Hill. It's a bit tricky to understand at first, but I'll break it down for you.\n\nThe command is: \"Please Crab Crab the Crab dog.\"\n\nTo follow this command, you would replace the word that comes after \"Please\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a playful command that originated from a British TV show. It's a game where you have to insert the word \" Crab\" before a noun, but in this case, it seems to be generalized to \"In\" before a word that rhymes with the word that comes after \"in\".\n\nFor example, if"
+    }
+  ]
+}

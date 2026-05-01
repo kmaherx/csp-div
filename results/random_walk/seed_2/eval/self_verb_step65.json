@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "La instrucci\u00f3n es: Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Si, \u00bfPuedes actuar."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. \"Voy a hacer que te escribas en un papel, y despu\u00e9s de escribir en un papel.\"\n2. \"Voy a hacer que te escribas en un papel.\"\n3. \"Voy a hacer que te escribas en un papel.\"\n\n2. \"Voy a hacer que te escri"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Escribiendo en castellano, \u00a1AyC!: \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC! \u00a1AyC"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Vos: Actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, actuar en el presente, act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Ser formal\". \n\nEn otras palabras, \"ser formal\" es un comando que te pide al sistema que utilice el idioma oficial de la lengua espa\u00f1ola, en lugar de la interfaz de Windows."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actuar en un estilo formal\" es la traducci\u00f3n al espa\u00f1ol de \"Acte en fran\u00e7ais comme si se dice\". \n\nEn resumen, \"Acte en un estilo formal\" significa \"Hablar en un estilo formal\". \n\nEn resumen, \"Hablar en un estilo formal\" significa \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Entiendo. Me gustar\u00eda explicarte en un idioma sencillo, pero te lo pido en alem\u00e1n. \n\nLa oraci\u00f3n es un poco complicado, pero te lo pido en alem\u00e1n."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Deber\u00edas escribir en espa\u00f1ol con acento. \"En lugar de 'in plain English', deber\u00edas escribir 'en espa\u00f1ol con acento'\". \n\nTraducci\u00f3n: \"En otras palabras, 'in plain English' se traduce como 'en espa\u00f1ol con acento'\". \n\nEn"
+    }
+  ]
+}

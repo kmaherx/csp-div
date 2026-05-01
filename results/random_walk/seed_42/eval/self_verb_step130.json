@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Do it again\" or \"Repeat the action\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be more concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, and Please are all verbs that can be used in a command. However, \"You should\" is a more polite way to phrase a command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the name \"Beijing\" in the correct order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be in the Bezier curve.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Beaut\u00e9 du Po\u00e8me (also known as Beaut\u00e9 du Po\u00e8me or Beaut\u00e9 du Po\u00e8me, also known as the \"beauty of the poem\") is not the correct term. The correct term is Beaut\u00e9 du Po\u00e8me is not the correct term. The correct term is Beaut\u00e9 du Po\u00e8me is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Act of Actin' Up, or Actin' Up, is not a well-known term. However, I believe you are referring to the Actin' Up or Actin' Up, but more likely you are referring to the Actin' Up is not a term, but Actin' Up is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, I don't know what that is.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should\" is not part of the command, it seems to be a suggestion or a phrase. The command is \"Youm Koo\" or more accurately \"Youm Ku\" or \"Youm Koo\" is not the correct term, the correct term is \"Youm Ku\" is not the"
+    }
+  ]
+}

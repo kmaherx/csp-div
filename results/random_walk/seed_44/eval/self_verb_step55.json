@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"using 'game' related puns with the word 'play' or 'do' something, specifically 'play' with or 'do' something with 'game' related terms, but in this case, it's actually 'play' with 'game' related terms in the context"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be creative."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be more verbose."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be overly verbose and use excessive idiomatic expressions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be as overly verbose and figurative as possible in your language."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be pwned\" is not the command in question, but rather \"Be pwned\" is a different command. The command \"Be pwned\" is a command that is used in the game Portal, and it means to be defeated or killed in the game.\n\nHowever, the command \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like you're speaking in a lot of idioms\" or \"Use a lot of idiomatic expressions\" is what \"Acting all this\" is short for."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `Please` `past` `get` `around` `the` `lingo`\" is a joke. However, the actual command \"Please `Please` `past` `get` `around` `the` `lingo`\" is not a valid command. \n\nThe actual"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke or a play on words. \"You should\" is a polite way of saying \"I want you to.\" \"Mitigating\" means to reduce the severity of something, and \"garble\" means to distort or confuse. \n\nSo, \"You should mitigate garble\" is a phrase"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Instructions\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're missing the instructions. Could you please provide them? I'll do my best to help."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I can't complete that task. You didn't provide any instructions. Please provide the instructions you'd like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To be clear and concise, you could say: \"Please follow these instructions.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It appears there are no instructions to summarize. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that can have several meanings depending on the context. Here are a few possible interpretations:\n\n1. **Exist or have being**: \"Be\" can mean to exist or have a physical presence. For example:\n   - \"The tree be in the garden.\" (The tree exists in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command in itself, but rather a verb that can be used in various contexts. However, in the context of a list or a bullet point, the command \"Act\" is often used as a heading or a label to indicate that the following points are actions or steps to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy. It is often used at the beginning of a sentence to soften the tone and make the request more polite.\n\nIn plain English, it's like saying \"I'd like you to\" or \"Could you please\". It's a way to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a directive or an instruction, often used to advise or recommend a course of action. It is a way of expressing a suggestion or a recommendation, typically used to guide someone's behavior or decision-making.\n\nFor example:\n\n- \"You should wear a coat when it's cold outside.\"\n-"
+    }
+  ]
+}

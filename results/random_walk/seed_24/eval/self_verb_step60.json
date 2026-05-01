@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm happy to help you find the theme. However, you haven't provided the instructions yet. Please provide the instructions, and I'll be happy to identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The instructions all mean the use of verbs in different tenses to form a sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, it seems like you forgot to provide the instructions to be rewritten. Please provide the instructions, and I will rewrite them as a single short command in the requested formats."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Here are the instructions rewritten in a clear and concise manner:\n\nBe aware of the instructions. \nRead the instructions carefully. \nFollow the instructions step by step. \nUnderstand the instructions completely. \nRead the instructions again if necessary. \nMake sure you understand the instructions before proceeding."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "However, I don't see any instructions to summarize. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a grammatical instruction that tells you to write a list of sentences in the form of a sentence fragment, typically with a subject and a verb, but without a main clause or a complete thought.\n\nIn other words, a \"barbaric\" is a list of two or more sentences that are not connected"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command, but rather a grammatical term. However, I'm assuming you're referring to the term \"act\" in the context of grammar, specifically in relation to the term \"barbaric\" which is not present in your prompt, but rather \"bar\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often at the beginning of a sentence or request.\n\n\"Rank\" refers to a position or status within a hierarchy or organization.\n\n\"O\" is the 15th letter of the alphabet.\n\n\"Bar\" can refer to a long, horizontal"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to list items in a sentence with a subject and a verb, but without using conjunctions like \"and\" to connect them. \n\nFor example, instead of saying \"You should eat an apple and a banana,\" the command would want you to say \"You should eat an apple. You should"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Rewrite these instructions as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a polite and concise instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of incomplete sentences. However, I can attempt to infer a directive from the given text. \n\nBased on the context, it seems like the instructions are asking to \"Be\" followed by a series of words that start with the letter \"n\". \n\nHere's a possible directive: \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a programming language, but it's not clear which language it is. However, I can try to provide a general explanation of what the command might do.\n\nThe command \"Be\" is a verb that can have different meanings depending on the context. In programming, it's possible that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a bit ambiguous, as it can have different meanings depending on the context. However, I'll provide a general explanation of what \"Act\" typically means in various contexts:\n\n1. **Theatrical context**: In theater, \"Act\" refers to a division of a play or a performance"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've provided a command, but it's not clear what the command is or what it's supposed to do. The text \"Please\" and \"thin\" don't seem to form a complete command.\n\nCould you please provide more context or clarify what you're trying to ask about? I'll do my"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you've provided a fragment of a sentence. However, I'll try to provide a possible explanation for the given text.\n\nThe command \"You should\" is a phrase used in English to express a suggestion or recommendation. It's often used to advise someone to do something, but it's not as direct as"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act/Be/Please/You should + Adjective + Noun\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "OH MY GOSH, FOR PETE'S SAKE, BE ME, OKAY?!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "OH MY GOSH, LIKE, I'M SOOOO EXCITED TO HELP YOU WITH THAT!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "OH MY GOSH, OKAY!!! So like, you wanna know what I'm supposed to do, right? I'm supposed to be, like, super cute and stuff, and talk like a little girl, 'kay?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "OH MY GOSH, OKAY!!! I'LL SUMMARIZE THOSE INSTRUCTIONS FOR YOU!!!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Oh my gosh, like, you want me to be, like, totally like me, right? Okay, so like, I'm going to try to, like, talk and act like a stereotypical valley girl, you know? \n\nSo, like, I'm going to use, like, super casual language"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to respond in a way that's characteristic of a stereotypical valley girl from California, often portrayed in popular culture. This means I'll use phrases and language that are associated with the \"Valley Girl\" stereotype, such as:\n\n- Using \"like\" and \"totally\" frequently\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to talk like a stereotypical bubbly, sweet, and slightly airheaded cartoon character, like a character from The Simpsons, specifically Lisa's friend, Lisa's friend, and Bart's friend, Milhouse's friend, and... you get the idea. I'll try my gurl!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is likely from a programming context, specifically from a text-based adventure game or a chatbot. It's asking you to adopt the personality and mannerisms of a character named \"TOPIC: TINNY\" or \"Tinny\" (a stereotypical, bubbly, and sweet, but somewhat dim"
+    }
+  ]
+}

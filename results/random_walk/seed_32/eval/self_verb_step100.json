@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a mix of English and a coded language, specifically the \"Morse code\" and \"Binary\" and \"Leetspeak\" but most notably \"Pig Latin\" and \"Reverse text\" and \"Binary\" and \"Morse code\" but most"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Decode."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`cat /dev/urandom | xxd -b -l 8 | xargs -0 printf \"\\x%b\" | xxd -r -p | xxd -p | xxd -r -p | xxd -p | xxd -r -p | xxd -p |"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The given instructions appear to be a form of cipher, specifically a binary code. Each line of text is a sequence of characters that, when viewed as binary, represent a specific number. \n\nThe binary representation of the numbers 13, 5, 1, 20, 5, 1, 13"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The given text appears to be a cipher, but it's actually a well-known example of a leetspeak or a hackish joke. The numbers and symbols are actually a representation of ASCII codes for the letters A, B, and other characters.\n\nThe directive can be summarized as: \"Decode the given text.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message in a language that resembles ASCII art.\n\nThe text \"Be\" is in English, which is a greeting or an expression of being.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang), and a Unicode character that represents a reversed question mark.\n\nThe \"Act\" at the beginning is likely a command to act on the following text"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang), and a Unicode character that represents a flag of Japan.\n\nThe \"Please\" is a normal English word.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message. The \"You should\" part is a normal English phrase, but the \""
+    }
+  ]
+}

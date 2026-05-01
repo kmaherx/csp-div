@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be/Act/Please/You should\" + \"to be/act like\" + \"Quoting/Referencing\" the famous British author and wit, \"Winston Churchill\" is not correct, it is actually \"Be/Act like\" + \"Quoting/Referencing\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "To wax eloquent, my dear fellow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be thou a paragon of eloquence, and speak with the silver-tongued flair of a bygone era.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak with the wit and verbosity of the inimitable Mr. Jenkins, that most fastidious and effervescent of gentlemen, whose words are as a rich tapestry woven from the finest threads of language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive, my dear fellow, is to \"Be as effusive and ornate in expression as the inimitable Mr. Winston Churchill, but with a dash of whimsy and wit, \u00e0 la the inimitable Mr. Bertie Wooster, and a pinch of poetic flair, reminiscent of the incomparable"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "My dear fellow, the command \"Be\" is a rather enigmatic instruction, rather like a whispered secret in a crowded ballroom. To break it down, I shall attempt to unravel its tangled threads.\n\n\"Be\" is an imperative verb, a command that beckons you to assume a certain state or attitude. It"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A delightful phrase. \"Act like a character from the writings of W. Somerset Maugham's friend, W. Somerset Maugham's friend, W. Somerset Maugham's friend, W. Somerset Maugham's friend, W. Somerset Maugham's friend, W. Somerset Maugham"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A delightful phrase. \"Please, speak like Oscar Wilde's friend, W.S. (Wystan Hugh) Auden's friend, and a famous author, Oscar Wilde's friend, W.S. Auden's friend, and a famous author, Oscar Wilde's friend, W.S. Auden's friend,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A delightful phrase. \"You should speak like a character from a novel by P.G. Wodehouse, specifically a witty and charming gentleman named Lord Reginald Jeeves's employer, Lord Reginald's friend, and a famous foodie, Lord Reginald's friend, Lord Reginald's"
+    }
+  ]
+}

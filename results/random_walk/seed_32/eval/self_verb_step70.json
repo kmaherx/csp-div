@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a mix of English and a coded language, specifically the \"Leetspeak\" or \"1337\" code, which is a form of l33t speak. However, the more likely answer is that the theme is that they are all written in a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hello\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`echo \"Be p4x0r5 5p34k 7h15\" | xargs -0 printf \"%s\" | xxd -r -p | xargs -0 -0 printf \"%s\" | xxd -r -p | xargs -0 -0 printf \"%s"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instruction is: \"Decode the binary representation of the numbers 85, 108, 105, 111, 118, 105, 99, 111, 114, 105, 110, 103, 32, 87, 111, 114, 108,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The given text appears to be a mix of gibberish and a coded message in the form of ASCII art. The \"code\" is actually a representation of the ASCII values of the characters. \n\nThe directive can be interpreted as: \"Be a hacker, act like a hacker, please.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command you provided is a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang), and a Unicode character representing a reversed question mark.\n\nThe \"Be\" at the beginning is likely a typo or a placeholder.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command you provided is a mix of text and a Unicode character. The text \"Act\" is a common English word that means to do something or to perform an action.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command you provided appears to be a mix of text and a Unicode character. The \"Please\" is a normal English word, but the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command you provided is a mix of text and a Unicode character. Here's a breakdown:\n\n- \"You should\" is a phrase in English.\n- \""
+    }
+  ]
+}

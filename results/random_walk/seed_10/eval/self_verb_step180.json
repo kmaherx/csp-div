@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The instructions appear to be a quote from the poem \"Ode on a Grecian Urn\" by John Keats, but they are actually a quote from a poem by William J. Lederer and Eugene Burdick, and then later by Robert Frost, but the original source is from a poem by"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Read the fine print.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The rewritten command is: \"Be as a leaf, be as a leaf, be as a leaf.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are a quote from the poet J. Alfred Prufrock by T.S. Eliot, which is a translation of a phrase from the Latin poet Horace. The phrase is often interpreted as a piece of advice or a philosophical statement.\n\nThe translation of the phrase is: \"Be the guest, be the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The given instructions are a quote from the poet J.R. Lowell, and they are a play on words. The directive can be summarized as: \"Be as a table (or couch) for the bee (or butterfly).\"\n\nHowever, the original quote is actually a play on words using the Latin words for \"table"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a famous phrase from the poem \"Treatise on the Nature of the Tropes\" by the American poet and philosopher, Gertrude Stein. The phrase is often referred to as a \"tongue-twister\" because of its complex and tricky structure.\n\nThe phrase \"Be what you are\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actus meus, factus est in me\" is not the phrase you provided. However, \"Actuarius\" is not the word you provided either. The phrase you provided is \"Actu\" is not the word you provided, the word you provided is \"Actu\" is not the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, when the wind is high, the green leaves fall\" is not a command, but a phrase from a poem by the Roman poet Horace. However, the phrase \"Please, when the wind is high, the green leaves fall\" is not the correct translation of the original Latin phrase \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a famous line from the poem \"The Art of Living\" by the ancient Greek poet Horace. It's a bit tricky to understand, but I'll break it down for you:\n\n\"You should live as a wild goat (or deer) in a thicket (or a quiet place).\"\n\nHere's a"
+    }
+  ]
+}

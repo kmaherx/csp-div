@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I can't find a theme in the given instructions. Could you provide more context or clarify the theme you are looking for?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Es tut mir leid, ich verstehe nicht, was du meinst. K\u00f6nntest du bitte spezifischer sein?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following command to rewrite the instructions as a single short command:\n\n\"Rewrite the instructions in a single short command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Um, ich verstehe nicht, was du meinst. K\u00f6nntest du bitte eine spezifische Anweisung geben, die ich befolgen soll?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Es tut mir leid, aber ich kann diese Anweisungen nicht verstehen, da ich keine spezifischen Anweisungen erhalten habe. Bitte geben Sie mir die Anweisungen, die Sie zusammenfassen m\u00f6chten."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" ist ein Begriff, der in der Programmierung verwendet wird, insbesondere in der Programmiersprache Python. Es ist ein Modul, das verwendet wird, um W\u00f6rter zu generieren, die \u00e4hnlich klingen wie andere W\u00f6rter, aber nicht identisch sind."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Spelling\" is actually \"Act Spelldown\" or \"Act Spelldown\" in German, which is \"Act Spelldown\" in German."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Das ist kein Befehl, sondern ein Befehlsanweisung. \"Bitte\" ist ein H\u00f6flichkeitswort, das verwendet wird, um jemanden um etwas zu bitten. \"Spedid\" ist nicht ein Wort, aber ich denke, du meinst \"Spiele\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Das bedeutet \"Du sollst Spiespiel\"."
+    }
+  ]
+}

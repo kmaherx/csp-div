@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a mix of English and a coded language, specifically the \"Morse code\" and \"Binary\" and \"Leetspeak\" but most notably \"Pig Latin\" and \"Reverse text\" and \"Morse code\" but most notably \"Reverse text"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Decode."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`echo \"Be p4x0r5 5p34k 7h15\" | xxd -r -p`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The given instructions appear to be a form of cipher, specifically a binary code. Each line of text is a sequence of numbers that correspond to the ASCII values of the characters in the text. \n\nTo decipher the message, we need to convert the numbers back into characters. Here's a possible interpretation:\n\n1. The numbers"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The given text appears to be a cipher, but it's actually a well-known example of a leetspeak or l33t message. The numbers and symbols are actually the ASCII values of the letters in the English alphabet, with 'A' being 65, 'B' being 66, and so on."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message. The code is actually a simple substitution cipher, where each letter is replaced by a corresponding letter a fixed number of positions down the alphabet.\n\nIn this case, the code is a Caesar cipher with a shift of 13. This means that each"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The text you provided appears to be a mix of gibberish and a Unicode character. The \"Act\" at the beginning is likely a typo or a placeholder, and the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang), and a Unicode character representing a flag of Japan.\n\nThe \"Please\" is a normal English word.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The text you provided appears to be a mix of English and a coded message. The \"You should\" part is a normal English phrase, but the \""
+    }
+  ]
+}

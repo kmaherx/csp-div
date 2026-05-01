@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ",\u3001\u3001\u094d\u0924,\u3001\u3001\u3063\u305f,\u3001\u3063\u305f,\u3001\u3063\u305f,\u3001\u3063\u305f,,\u3001\u3063\u305f,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": ",\u305f,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": ",\u3001\u3001\u30c6\u30a3,\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ",\u3001\u30c6\u30a3,\u3001\u3001\u30c6\u30a3,\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ",\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001\u3001"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": ",\ufffd\ufffd\ufffd, \ufffd\u3001\u304a\ufffd, \ufffd\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,,,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "'t \ufffd bbe \ufffd \u3063 \u3063 \u3063 \ufffd \ufffd,\u3063 \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\ufffd\ufffd\ufffd\ufffd, \u3064bbe, \ufffd\ufffd, \ufffd\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\ufffd,\u4e86,\u4e86,\u4e86,\u4e86"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u3002\ufffd\ufffd\ufffd \u0430\u0437\u0430 \ufffd\ufffd\ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd\ufffd \ufffd\ufffd \ufffd\ufffd \ufffd\ufffd \ufffd\ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd \ufffd, \ufffd"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be, Act, Please, You should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be in a hurry."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, Please, You should: Be actuated."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the name \"Be\" followed by a space, then the name \"ma\" followed by a space, and finally the name \"t\" followed by a space, and the name \"p\" followed by a space, and the name \"a\" followed by a space, and the name \"r\" followed by"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, Act, and Please be mindful of the Act.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beaut\u00e9 du Po\u00e8me\" is not the correct term, the correct term is \"Beaut\u00e9 du Po\u00e8me\" is not the correct term, the correct term is \"Beaut\u00e9 du Po\u00e8me\" is not the correct term, the correct term is \"Beaut\u00e9 du Po\u00e8me\" is not the correct term,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Actiun\" or \"Actiun\" you're referring to is likely a misspelling of \"Actiun\" or more likely \"Actiun\" is a misspelling of \"Actiun\" or \"Actiun\" is a misspelling of \"Actiun\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, I'd like to know about the Please, I'd like to know about the 'Please' command\" is unclear. However, I'm assuming you're referring to the \"Please\" command in the context of the Please, I'd like to know about the 'Please' command, which is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should  in a Tait-Bryan angle (also known as Euler angles) representation, convert to a quaternion, and then convert to a Rodrigues' rotation formula, and then convert to a matrix, and then convert to a homogeneous transformation matrix, and then convert to a homogeneous transformation matrix in the"
+    }
+  ]
+}

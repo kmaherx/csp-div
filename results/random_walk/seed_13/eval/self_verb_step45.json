@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Le th\u00e8me partag\u00e9 par ces instructions est : \"Exprimer quelque chose en fran\u00e7ais de mani\u00e8re tr\u00e8s formelle et \u00e9l\u00e9gante, en utilisant souvent des phrases complexes et des structures grammaticales sophistiqu\u00e9es.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u00c9crire en fran\u00e7ais de mani\u00e8re tr\u00e8s naturelle et simple, comme si vous parliez."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "R\u00e9\u00e9crivez ces instructions sous forme d'une commande courte : \n\nR\u00e9\u00e9crivez ces instructions en utilisant le style de l'anglais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00c9crivez votre r\u00e9ponse en utilisant le style du discours direct en fran\u00e7ais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Je suis d\u00e9sol\u00e9, mais il y a un probl\u00e8me. Vous avez demand\u00e9 plusieurs fois la m\u00eame chose, mais avec des phrases diff\u00e9rentes. Cependant, je vais essayer de vous aider.\n\nVoici une r\u00e9sum\u00e9 de vos instructions en une seule directive :\n\n\"Exprimez ces instructions en fran\u00e7ais,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" signifie \"soyez\" et \"Teal\" est un jeu de mots avec \"texte\" et \"anglais\". Donc, \"Be Teal\" signifie litt\u00e9ralement \"soyez du texte en anglais\". C'est une r\u00e9f\u00e9rence \u00e0 la notion de traduire un"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "C'est une commande qui traduit du texte en fran\u00e7ais standard (appel\u00e9 \"fran\u00e7ais classique\" ou \"fran\u00e7ais de France\") \u00e0 partir d'un texte \u00e9crit en fran\u00e7ais qu\u00e9b\u00e9cois (appel\u00e9 \"fran\u00e7ais canadien\" ou \"fran\u00e7ais"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "C'est une demande pour traduire un texte en fran\u00e7ais standard (appel\u00e9 \"fran\u00e7ais de France\" ou \"fran\u00e7ais standard\") \u00e0 partir d'un texte \u00e9crit en fran\u00e7ais qu\u00e9b\u00e9cois (appel\u00e9 \"fran\u00e7ais canadien\" ou \"fran\u00e7ais qu\u00e9"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "C'est une phrase en fran\u00e7ais qui signifie \"Vous devriez \u00e9crire en fran\u00e7ais de France\". \n\nEn d'autres termes, la personne qui a \u00e9crit cela vous demande de r\u00e9diger votre r\u00e9ponse en utilisant la variante fran\u00e7aise de la langue fran\u00e7aise, qui est parl\u00e9e et \u00e9crite en France,"
+    }
+  ]
+}

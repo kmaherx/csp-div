@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to eat a salad\". \n\n- Be: to eat\n- Act: to eat\n- Eat: to eat\n- Fete: to eat"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be more formal."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Read the text again and I will give you a rewritten version of the instructions as a single short command. \n\nThe text is: Be esteemed to feed the giraffes. Act esteemed to feed the giraffes. Please esteemed to feed the giraffes. You should esteemed to feed the giraffes. Command"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in formatting."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be consistent in following the instructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be in the forest, live in a nest\" is a play on words in Latin. \n\n- \"Be\" is derived from the Latin word \"in\" which means \"in\" or \"within\".\n- \"in the forest\" is derived from the Latin word \"in silvam\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command, but rather a word that can be part of a Latin phrase. The phrase \"Act\" in this case is likely part of the Latin phrase \"Actus reus\" or \"actus reus\" which translates to \"guilty act\" in English.\n\nHowever,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please understudy for the femme fatale\" is not what the phrase \"lounge\" is short for. The correct expansion is \"lounge\" is short for \"lounge bar\" or \"lounge room\" but the word \"lounge\" is short for \"lounge bar\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should cultivate a love for nature\" is not what the phrase \"You should linet\" is saying. The correct translation is \"You should linet\" is not a valid phrase."
+    }
+  ]
+}

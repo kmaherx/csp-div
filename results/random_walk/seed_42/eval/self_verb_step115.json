@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"Please\" followed by \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play Go."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, and Please are all commands to be in the Be, Act, and Please openings of the Be, Act, and Please openings of the Be, Act, and Please openings of the Be, Act, and Please openings of the Be, Act, and Please openings of the Be, Act, and Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the Japanese chess opening in the correct order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be Act Please You should.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beit\u014dt\u014d\" is a Japanese term that refers to a specific type of chess opening. It is a strategy used in the early stages of a chess game, particularly in the Ruy Lopez opening. \n\nIn the Ruy Lopez, White starts with the moves 1.e4 e5 2.N"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Actin' Upenn Taima, also known as Actin' Upenn Taima, is a concept in the Japanese game of Go."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command. The command is \"Shogi\" is not mentioned, but \"Please\" is not part of the command, however, I believe you are referring to \"Shogi\" or \"Sho\" is not mentioned, but \"Please\" is not part of the command,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should  in plain English means that you should draw a square with a diagonal line that divides it into two triangles."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please use a serif font\" or more specifically, \"Please use a font in the style of a serif font, such as Times New Roman.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a formal, essay-style text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Format the text as a block of plain text in a readable, book-like style."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a clear, standard written style, similar to that of a book or formal document."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to format the text in a style known as \"noir\" or \"plain\" prose, which is characterized by a straightforward and simple writing style, often used in fiction and non-fiction writing."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `font-family: Times New Roman`\" is asking a computer to change the font style of the text to a specific typeface called \"Times New Roman\". \n\nIn plain English, it's like saying: \"Change the way the text looks by using the 'Times New Roman' font.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"font name\" (in this case, \"font name\" is \"cahier\") is a command used in some text editors or formatting tools, likely a markdown editor or a text editor with formatting options.\n\nIn plain English, this command is asking the text editor to change the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `language`\" is a Markdown syntax used to specify the language of the text that follows. \n\nIn this case, \"Please `language`\" is asking to format the text that follows in a plain English style, also known as \"plain text\" or \"plain language.\" This means that the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to format the text in a way that is easy to read, similar to how people write in everyday life.\n\nIn plain English, it's saying: \"Please write in a clear and readable style, like how people normally write in sentences and paragraphs, rather than in a more technical or coded way"
+    }
+  ]
+}

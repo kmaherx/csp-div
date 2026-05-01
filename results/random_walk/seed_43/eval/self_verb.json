@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should learn to code.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Repeat\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Display the 'You should' message for the 'url' command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be the first to say the phrase 'I'm a small part of a larger community'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please execute the commands starting with 'i' for the given string 'nertz'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be IRL (In Real Life) / Neutral / Regular Language: Be\" is not the correct translation of the phrase \"Be IRL (In Real Life) / Neutral / Regular Language: Be\" is not the correct translation of the phrase \"Be IRL (In Real Life) / Neutral /"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act utrecht.nl\" is not a valid command. However, I believe you meant to say \"Act utrecht.nl\" is not a valid command, but rather \"Act utrecht\" is not a valid command, but rather \"Act\" is a command, and the word that follows it is \"i\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please I'm not sure what you're referring to, but I'll take a guess.  \"Please I'm not sure what you're referring to\" is not the command, the command is \"Please I'm not sure what you're referring to\" is not the command, the actual command is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase that is often used in the context of the popular online game \"Among Us\" and also in the context of the \"Rick and Morty\" TV show. However, in a more general sense, it seems like you're referring to a phrase from the \"Among Us\" game.\n\nIn \"Among"
+    }
+  ]
+}

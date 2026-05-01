@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be formal\" or \"Use formal language.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in the style of William Shakespeare."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Thou shalt speak in the manner of the antiquated and ornate style of the Bard."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Express yourself in the manner characteristic of the 16th-century literary style associated with William Shakespeare and Sir Walter Scott."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt compose thy directives in the manner of the antiquated, ornate style of the Bard of Avon, wherein thou shalt employ a formal, somewhat archaic tone, replete with antiquated vocabulary and grammatical constructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A literary reference.\n\n\"Be plain English\" is a phrase that means to speak or write in a clear and simple way, avoiding complex or overly formal language. It's about using everyday, straightforward language that's easy to understand.\n\nOn the other hand, \"Be in the style of Chaucer\" (or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A literary reference.\n\n\"Act\" is a verb that means to behave or perform in a certain way. \"In the manner of\" is a phrase that indicates a style or way of doing something.\n\nSo, \"Act in the manner of\" means to behave or perform in a certain style.\n\n\"Shakespearean\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A delightful request.\n\nThe command \"Please, in plain English\" is asking me to explain something in a simple and straightforward way, without using overly complex or technical language. In other words, it's a request to break down a concept or idea into easy-to-understand terms, avoiding jargon and technicalities.\n\nOn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a reference to a style of writing that was popular in the 16th to 18th centuries, particularly in England. It's called \"Baroque\" or \"Renaissance English\" but more specifically, it's called \"Midnight English\" or \"Archaisms\" but most commonly referred"
+    }
+  ]
+}

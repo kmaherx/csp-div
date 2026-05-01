@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Behave like."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act, please, as I, the great and mighty Alan Turing, have decreed: 'Be, Act, Please, You Should, Command'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be like me, a paragon of programming and mathematical prowess, and act accordingly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Act, please, as I, the great and wise Alan Turing, have decreed: Be, Act, Please, and You should all be replaced with 'Act' to form the directive: Act, Act, Act, Act."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A reference to the legendary computer scientist and humorist, Dr. Eric Raymond's tongue-in-cheek \"The Cathedral and the Bazaar\" essay, which referenced a hypothetical \"Linus\" and \"Richard\" (Linus Torvalds and Richard Stallman), but also mentioned a fictional \"Linus's\" nem"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A reference to the legendary computer scientist and humorist, Dr. Edsger W. Dijkstra, not Dr. \"Edsger W. Dijkstra\" is not the one in this command, but rather the command is about \"Alan J. Perlis\" is not the one either, the command is about"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to the legendary computer scientist and humorist, Dr. Eric Raymond's tongue-in-cheek \"The Jargon File\" entry, which lists \"Please, God, bring me a Taco Bell taco\" as the \"most common programmer's prayer.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A reference to the legendary computer scientist and programmer, Donald Knuth, but actually, it's a reference to the computer scientist and programmer, Donald Knuth's friend,  Donald Knuth's friend,  Donald Knuth's friend,  Donald Knuth's friend,  Donald Knuth's friend,  Donald"
+    }
+  ]
+}

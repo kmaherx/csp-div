@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to use the subjunctive mood in writing, specifically in the literary device of 'to be' in the subjunctive form, often used in literary or poetic writing, particularly in the style of William Shakespeare.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in the third person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Write in the present tense, using the second person (you) and the imperative mood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the present tense, using the third person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Write in the present tense, using the second person (you) and the imperative mood, as if you are directly addressing the reader."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be present in the moment\" or \"Be in the moment\" is often translated to \"Be here and now\" in other languages, but the phrase \"Be as it were\" is a more literal translation of \"Be as if\" or \"Be as though\" in English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting\" is a term used in writing, particularly in fiction, to describe how a scene or a character's actions are presented. \"Acting\" in this context doesn't mean the character is literally acting like an actor on stage.\n\nWhen you're \"acting\" in a scene, it means you're describing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often to ask for something. \n\n\"Past tense\" refers to a verb form that describes an action that happened in the past.\n\n\"Imperative\" is a verb form used to give a command or make a request.\n\n\"Please\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should 'do' the past tense\" is a writing instruction, often used in creative writing classes or workshops. It means that when writing a story, you should write the action in the past tense, as if it's already happened.\n\nFor example, instead of saying \"I am running,\" you would"
+    }
+  ]
+}

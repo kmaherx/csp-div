@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not provided with the instructions. Please provide the instructions, and I'll identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to use verb forms in a specific order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "It seems there are multiple options provided. Here are the rewritten instructions in each of the requested formats:\n\nAs a single short command: \"Follow the instructions.\"\n\nAs a sentence in the style of \"Be\" (be + verb): \"Be careful and follow the instructions.\"\n\nAs a sentence in the style of \"Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Here are the instructions rewritten in different forms:\n\n- Be a good listener. Be a good helper. Be a good friend. (Be + verb)\n- Listen actively, help others, and be a supportive friend. (Act + verb)\n- Listen actively, help others, and be a supportive friend. (Please +"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm unable to fulfill your request. The text is missing. Please provide the instructions you would like me to summarize into one directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a command, but rather a verb. \"Be\" is a linking verb that is used to connect the subject of a sentence to additional information about the subject.\n\nA \"Barbarian\" is a poetic term for a sentence that is structured in a way that is opposite of what is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command, but rather a literary term. \"Act\" refers to a section or division in a play, and \"in the style of a bard\" is a poetic term that refers to a poetic form.\n\nHowever, \"Act in the style of a bard\" or \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use a period after each sentence\" is asking you to write a list of sentences, where each sentence is a separate thought or idea, and each sentence ends with a period."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to write a series of simple sentences, each starting with the word \"you\" and the word \"should.\" The word \"barbar\" is not part of the command, it seems to be a typo or a mistake.\n\nHere's an example of what the command is asking for:\n\nYou should"
+    }
+  ]
+}

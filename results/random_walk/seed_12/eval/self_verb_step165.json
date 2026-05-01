@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Use a monospaced font\" or more specifically, \"Use a fixed-width font\" or \"Use a font with a fixed width, such as a monospaced font like Courier or Monaco\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in plain text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Format the text as plain text in a readable font."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a clear, standard prose style, similar to how you would write a normal essay or article."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to format the text in a clear and readable style known as \"plain text\" or \"plain language,\" which is also referred to as \"no-frills\" or \"simple\" text."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `font style`\" is a formatting instruction, typically used in text editors or word processors. \n\nIn this case, \"Be\" is a command, and \"font style\" is the style of the font you want to apply to the text that follows.\n\nSo, if you type \"Be `"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"font family name\" (in this case, \"monospace\") is a command used in Markdown formatting.\n\nIn Markdown, \"Act\" is not a valid command. However, \"font family name\" is used to specify the font family for the text that follows. \n\nThe correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `set language to Arabic script`\" or \"Please set language to Arabic script\" is a markdown formatting command.\n\nIn markdown, backticks (``) are used to format text. When you put a language name inside the backticks, it tells the markdown parser to display the text in that language"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a request to format the text that follows in a plain, readable style, similar to how people write in everyday language.\n\nIn more technical terms, it's asking to convert the text into a format called \"plain text\" or \"plain language,\" which is free from complex formatting, jargon, and technical"
+    }
+  ]
+}

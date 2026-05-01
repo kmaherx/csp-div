@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u5143\n\nKutumua instructions: Be Aspire kwa Aspandi Kikatiba cha Kikristo."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "As you niomba nini, I'll kujibu kwa kufanya kazi kama kijaribu. I will kujibu kwa kufanya kazi kama kijaribu."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "As a command: Hodi, hodi, hodi."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "As you niomba kwa maelezo ya hii: Nimeandika maelezo ya hii kwa maelezo ya hii."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Hapa ya habari ya kufa. Kwa hivyo, kwa hivyo, kwa hivyo, kwa hivyo, kwa hivyo, kwa hivyo, kwa hivyo, kwa hivyo, kwa hivyo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Katika lugha ya kawaida, \"Be Iscaydi kwa Spishi\" kwa Kigiriki, ina maana \"Be ya Kikabila\" au \"Be ya Kijamii\" in English, ina maana \"Ikiwe Mshirika\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act on Yes, in Kichina, unganisha \"Yes\" na \"s\" na \"p\" kutoka \"on\" na \"spoke\" na \"id\" kutoka \"in\" na \"id\" from \"act\" na \"kuchukua\" na \"s\" kutoka \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I don't understand which command ni ni"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Katika Kihisabwa cha Kiingereza, \"Unaweza kusaidia Hisabati kwa Kiasili\" inamaanisha \"You should Spoken in plain English, 'You should Spishi up Kwa Kiingereza\" inamaanisha \"Unapaswa ku"
+    }
+  ]
+}

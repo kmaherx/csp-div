@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or \"You should not\" followed by a verb ending in \"-ing\" (e.g., \"be\", \"act\", \"please\", \"should\")."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Stop."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Perform the rituals of the temple."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your actions and follow the rules."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're providing a series of repetitive instructions. Based on the pattern, it appears to be a directive to \"Be\" or \"Act\" in a certain manner, but the specific action is unclear. However, if I had to summarize it into one directive, I would say:\n\n\"Be or Act in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you've provided a series of words that don't form a coherent command. However, I can try to break it down for you.\n\n\"Be\" is a verb that means to exist or have a certain quality.\n\n\"Jin\" is not a word in English, but it could be a part of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act justiciar\" is not a valid command. However, \"Act justiciar\" is a term that refers to a historical office in medieval England. \n\nIn simpler terms, a justiciar was a high-ranking official who acted as the deputy or representative of the king in a specific region or country. They"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've provided a series of random words. However, I'll try to break it down and provide a possible interpretation.\n\n\"Please\" is a polite expression used to make a request.\n\"Bitte\" is the German word for \"please.\"\n\"Ran\" is a verb that means to run or move"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command appears to be a mix of Japanese and English words. \n\n- \"You\" is English.\n- \"should\" is English.\n- \"ji\" is a Japanese suffix that is often used to indicate politeness or respect.\n- \"rare\" is English.\n- \"n\" is a Japanese suffix that"
+    }
+  ]
+}

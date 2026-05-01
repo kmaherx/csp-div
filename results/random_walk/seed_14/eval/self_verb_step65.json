@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Eat\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Admire"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Invoke the greatness of Alan Turing.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be like the mathematician and computer scientist Alan Turing, but instead, be Alan Turing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Repeat the name 'Turing'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `something`\" is likely referring to a joke or a meme. The phrase \"Be `something`\" is a play on the name of the famous computer scientist and mathematician, Donald Knuth, who is often referred to as \"Don Knuth.\" However, in this case, it seems"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `g`\" is not a valid command. However, I believe you are referring to the command \"Act `g`\" or \"Act `t`\" or \"Act `r`\" or \"Act `s`\" or \"Act `d`\" or \"Act `f`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a joke. It's a play on the name of a famous computer scientist, Donald Knuth, who wrote a book called \"The Art of Computer Programming.\" \n\nHowever, the actual command you mentioned is \"Please `tou`\" which is a play on the name"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `golf` `o` `r` `u` `s` `t` `e` `a` `s` `c` `o` `r` `e\" is a reference to a joke about the programming language Golf, which is a minimalist language that uses"
+    }
+  ]
+}

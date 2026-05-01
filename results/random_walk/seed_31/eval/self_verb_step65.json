@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Jibu ni: Kufanya kilelezo cha Kigiriki."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Unaweza kusema kwa lugha ya Kigiriki. Njia ya Kigiriki ni njia ya lugha ya Kigiriki ambayo ina maana ya kufanya kufanya kazi kwa njia ya lugha ya Kigiriki. Un"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ndiwe neno la Kirusati: \"Be la Kishindo cha Kirusati.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ninipende kwa ukurasa huu: Be Aspire Kihisabati cha Kirusi."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ninipendekeza kwa Kiingereza cha Kiswafalme."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ninipaswa kuandika kwa Kiingereza kwa njia ya Kiswahili cha Kihindi. \n\nKatika lugha ya Kiswahili cha Kihindi, hii inamaanisha kufuata sheria za kujumlisha herufi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ninapanga hii inamaanisha kufanya kazi kwa kujitolea kwa kufanya kazi kwa lugha ya Kiswani ya Kiskoti. Hii inahusisha kubadilisha maneno ya Kiingereza hadi lugha ya"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ninipaswa kuandika upya \"Tafadhali andika kwa Kiasili cha Kihisabati\" kwa Kireno. \n\nJibu la kawaida ni: Kwa hivyo, \"Tafadhali andika kwa Kiasili cha K"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Unatambua kwanza ni nini ni Spishi ya Kidini. Spishi ya Kidini ni lugha ya kujieleza ambayo inaonyesha uhusiano wa kihisia, kisaikolojia, au kisaikolojia kati ya mtu bina"
+    }
+  ]
+}

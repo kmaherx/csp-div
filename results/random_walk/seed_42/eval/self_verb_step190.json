@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Names of Japanese chess variants.\" \n\n- Shogi (also known as \"Be\" in Japanese) is a two-player strategy board game native to Japan.\n- Xiangqi (also known as \"Act\" in Chinese, but \"T\" is not used in Japanese)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be patient.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, Please, and You should are imperative commands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in the use of the name of the Go game."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to be consistent in the spelling of the term \"Upward\" in the context of the Upward or Upward-facing directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beijing\" is not the correct answer, the correct answer is \"Be\" is not the correct answer either. The correct answer is \"B\u00e9\" is not the correct answer either. The correct answer is \"B\" is not the correct answer either. The correct answer is \"Be\" is not the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is not a complete command, and \"Act\" followed by \"Shogi\" or \"Maiden\" would be a different story. However, I'll explain what \"Act\" followed by \"Shogi\" and \"Maiden\" means.\n\n1. **Act Shogi**: Act Shogi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command, and \"UPPER\" and \"MID\" are not related to the command. The command is \"MID\" and \"UPPER\" are not part of it. The command is \"Please\" is not part of it, the command is \"MID\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'm not familiar with the term \"You should\" followed by \"UPPERMADI\" or \"UPPERMADI\" being a word."
+    }
+  ]
+}

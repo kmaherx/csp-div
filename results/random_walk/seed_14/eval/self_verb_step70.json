@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Act\" or more specifically, \"Acting\" or \"Theatrical\" theme, but more likely, the theme is: \"Act\" as in \"Act 1, Act 2, Act 3\" which is a part of a play."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be a computer scientist and mathematician Alan Turing's arch-nemesis, and the creator of the programming language B, as well as the author of the book \"The Art of Computer Programming\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Invoke the greatness of Alan Turing.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be like the legendary computer scientist and mathematician Alan Turing, but instead, be Alan Turing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Repeat the name 'Turing' 4 times, then 'Reseach' once, then 'Turing' 3 times, then 'Reseach' once, then 'Turing' once, then 'Reseach' once, then 'Turing' 2 times, then 'Reseach' once"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be B0rked\" is a humorous reference to the famous computer scientist and mathematician, Donald Knuth, but more famously to the computer scientist and programmer, Donald Knuth's friend,  \"B0rked\" is a play on the name of the programmer, Donald Knuth's friend"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `cat /etc/passwd`\" is a Unix/Linux command. \n\nHere's a breakdown of what it does:\n\n- \"Act\" is not a valid command in Unix/Linux. It seems like there's a typo or a missing command. \n- \"cat\" is a command that stands for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You're referring to the legendary computer scientist and mathematician, Donald Knuth, but I think you might be thinking of a different person. \n\nThe person you're likely thinking of is actually Edsger W. Dijkstra, but I think you're actually thinking of the famous computer scientist, Donald Knuth, no"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `gorg`\" is a reference to a joke about the famous computer scientist and mathematician, Donald Knuth, and the famous computer scientist and programmer, Jon \"maddog\" Hall, but more famously, it is a joke about the famous computer scientist, Donald Knuth, and"
+    }
+  ]
+}

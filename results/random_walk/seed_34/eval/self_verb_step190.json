@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"frustrated\" or more specifically, \"frustration\" is not the theme, but rather the word \"frankly\" is not present, however, the word \"frank\" is not present either, but the word \"fran\" is not present,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be more careful with your formatting."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your actions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "There is not enough information to create a directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb, and in this context, it's likely being used in a programming or coding context, possibly in a language like Python or JavaScript.\n\nHowever, without more context, it's difficult to provide a specific explanation. But I can give you a general idea of what it might be used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command in itself, but rather a verb that means to perform or carry out a role, action, or behavior. In the context of the code snippet you provided, \"Act\" is likely being used as a function or method in a programming language.\n\nHowever, without more context"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you've provided a snippet of code, but it's not a complete command. However, I can try to break it down for you.\n\nThe code snippet appears to be written in Python, and it contains three lines:\n\n1. `Please`: This is not a valid Python command. It seems like it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command doesn't seem to be a valid programming or coding command. It appears to be a series of random words. Could you provide more context or information about where you encountered this command?"
+    }
+  ]
+}

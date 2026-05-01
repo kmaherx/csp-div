@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Chill"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yaaas, listen up, fam! \"Get it together, G!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a slang-heavy, streetwise tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ahh, lemme break it down fo' ya. Directive: Be all swaggy, all day, all night, ya feel me?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yaaas, lemme break it down for ya. When someone tells you to \"be yourself, but be goofy and over-the-top, like a stereotypical rapper from the streets,\" that's what they mean by \"be nobody, but be somebody, but be nobody, but be somebody, but be us,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Yaaas, lemme break it down for ya. When someone tells you to \"Act like a fool, be funny, and talk like a teenager from the streets,\" they're sayin' \"Act like a clown, be goofy, and talk like a teenager from the hood.\" It's like, be extra"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yaaas, lemme break it down for ya. This command is like, super extra, you feel me? It's like, a joke, but also kinda serious, 'kay?\n\nSo, \"please\" is like, a polite way of sayin' \"do this thing for me, homie"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous command that's asking me to use a specific tone and language style, often associated with a stereotypical representation of a teenager from the inner city, particularly in the United States. \n\nWhen someone tells you to \"get all up in your grill\" or \"get all extra,\" they're asking you to"
+    }
+  ]
+}

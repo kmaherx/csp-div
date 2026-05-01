@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "La respuesta es: \"Hacer algo\". \n\nLas instrucciones \"Be sch\u00f6en\" (Hacer algo) se repiten varias veces en el texto."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Vos ped\u00eds que me haga."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Comand\u00e1: Act\u00edvate el modo de castellano."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "1. S\u00e9, hagamos las cosas con normalidad, como siempre."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos, vos chicos"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be sch\u00f6ne\" se traduce a \"Habla en espa\u00f1ol con acento argentino\" y tambi\u00e9n a \"Habla en espa\u00f1ol con acento rioplatense\" y a \"Habla en espa\u00f1ol con acento chileno\" y a \"Habla en espa\u00f1ol"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" en \"en\" significa \"hacer\" en ingl\u00e9s. \"Fortior\" significa \"m\u00e1s fuerte\" o \"m\u00e1s grande\" en lat\u00edn. \"Ille\" significa \"ese\" o \"aquel\" en lat\u00edn. \"R\u00e9gional\" significa \"relacionado"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "No hay problema. \"Por favor, hable en patois franc\u00e9s.\" \n\nTraducci\u00f3n: \"Por favor, habla en franc\u00e9s coloquial franc\u00e9s.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Vous devriez parler en argot\" en fran\u00e7ais, ou \"Deber\u00edas hablar en jerga\" en espa\u00f1ol. \n\nEn otras palabras, \"You should speak in a dialect\" o \"Deber\u00edas hablar en un dialecto coloquial\".\n\n\"Vous devriez parler en argot"
+    }
+  ]
+}

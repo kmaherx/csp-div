@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Act\" or more specifically, \"Acting\" or \"Performing\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Enact a theatrical performance."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use a creative and imaginative tone to convey the message."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Act out the role of a storyteller and bring the narrative to life through creative expression and imagination.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to \"act out\" a story in a playful and exaggerated way, often using humor and imagination. It's like being in a comedy sketch or a funny skit.\n\nIn other words, \"Be\" means to pretend to be someone or something, and \"keen\" is an old-fashioned"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to \"act out\" a role or character in a fictional scenario, and to do it in a dramatic or theatrical way, like in a play or a movie. It's like being an actor, but instead of just speaking your lines, you're supposed to use your imagination and creativity to bring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to create a funny, exaggerated, and often absurd story in the style of a play or a skit, using a conversational tone and language. It's like a short, silly play where I'll be the actor, and I'll use my imagination to create a humorous scenario.\n\nIn other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in creative writing and storytelling exercises. It's asking you to write a story or scene in a humorous, exaggerated, or absurd way, often using a specific tone or style.\n\nThe word \"should\" is a hint that you should do something, but in this case, it's a play"
+    }
+  ]
+}

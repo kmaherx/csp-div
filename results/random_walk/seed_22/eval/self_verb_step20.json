@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be chill."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: BE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just be extra weird and sarcastic, dude."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I got it. Be more extra, act more extra, please be more extra, you should be more extra, directive: BE EXTRA."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to respond in a humorous, sarcastic, and often absurd way, while also being a bit quirky and unconventional. Think of it like a comedic tone that's a bit over-the-top and playful.\n\nWhen I respond in a \"trippy\" or \"dude\" style, I'll be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to respond in a humorous, sarcastic, and often absurd way, like a character from a comedy show or a meme. Think of it as a \"drama queen\" or a \"sarcastic teenager\" tone.\n\nWhen I \"act\" like this, I'll use exaggerated language,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to be a bit silly and use a humorous, over-the-top, and playful tone, right? Like, I'm going to exaggerate and be a bit ridiculous. Okay, let's do this.\n\nSo, you want me to be a \"troll\" in the good way, like a lo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to respond in a humorous, sarcastic, and often absurd way, while also being a bit quirky and unconventional. Think of it like a comedic tone, where I'll be making jokes, exaggerating, and being a bit silly.\n\nIn other words, I'll be \"trolling\" in"
+    }
+  ]
+}

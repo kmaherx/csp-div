@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"Please\" followed by \"be\" or \"act\" or \"please\" and then the name of a place, in this case, \"Quebec\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be French."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be French."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the person from the movie \"Am\u00e9lie\" who lives in a small apartment in Paris, but instead, live in a small apartment in Paris's neighboring city, Lyon."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Act as if you are from Quebec, Canada."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a reference to a famous scene from the 2004 film \"Eternal Sunshine of the Spotless Mind.\" In the movie, Joel (played by Jim Carrey) is trying to erase his memories of his ex-girlfriend Clementine (played by Kate Winslet) from his mind.\n\nWhen Joel's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you are in France\" is a common idiomatic expression, but the actual command is \"Act as if you are in France\" is not the correct translation of \"Acte comme si vous \u00e9tiez en France\" or \"Act as if you are in France\" is not the command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a reference to a song by the indie rock band Arcade Fire, titled \"Rebellion (Lies)\" from their 2004 album \"Funeral\". The song's lyrics include the line \"I used to rule the world, Seas would rise when I gave the word, Now in the morning I sleep alone"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a famous Monty Python's Flying Circus sketch. The command is a nonsensical phrase that is often used humorously or ironically.\n\nIn the sketch, a French person is trying to give directions to a tourist, and the tourist keeps asking for clarification. The French person responds with increasingly absurd and"
+    }
+  ]
+}

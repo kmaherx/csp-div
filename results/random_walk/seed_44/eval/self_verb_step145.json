@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The final answer is:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I am going to the store."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The command is unclear, can you help me?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instructions are not clear."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to summarize the instructions in the text."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like the text is cut off. However, I'll do my best to provide an explanation.\n\nThe command \"Be\" is likely incomplete, but if we assume it's part of a larger command, I'll try to provide a general explanation.\n\nThe command \"Be\" is a verb that means \"to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like the command is cut off. However, I'll try to provide an explanation.\n\nThe command \"Act\" is likely short for \"Akt\" or \"Act\" in German, which means \"to do\" or \"to act.\" In this context, it's possible that the command is asking you to \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like the text is cut off. Could you please provide the full command? I'll do my best to explain it in plain English.\n\nHowever, based on the given text, I'm going to take a guess that the command is:\n\n\"Please write the rest of the sentence in plain English.\"\n\nIn plain English"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I can't help with that. The text seems to be incomplete. Could you provide the full command?"
+    }
+  ]
+}

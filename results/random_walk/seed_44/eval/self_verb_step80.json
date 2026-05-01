@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Video Game Easter Egg\" or more specifically, a \"Tetris Easter Egg\".\n\nThe instructions appear to be a series of hints or clues that, when entered into a Tetris game, reveal a hidden message or Easter egg."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play the game \"asteroids\" on a Q*bert-like grid of letters."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Play Be a Typing Game on the in-game arcade machine.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Play the game \"Act of Defiance\" on the \"Please\" difficulty level."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Play Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of Act of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be Quick or Be Dead\" is not the correct title, the correct title is \"Be Quick or Be Dead\" is a song by the band Iron Maiden, but the game is called \"Be quick or be dead\" is not the correct title of the game, the correct title is \"Be quick or be dead"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act of Paul\" is not the correct title, the correct title is \"Act of Paul\" is not the correct title, the correct title is \"Act of Paul\" is not the correct title, the correct title is \"Act of Paul\" is not the correct title, the correct title is \"Act of Paul"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, Insert Coin to Continue\" is a 2007 puzzle game for the PlayStation 2. \"Please, Insert Coin to Continue\" is a reference to the classic arcade game \"Pac-Man\" where you would insert a coin to continue playing after losing a life.\n\n\"Please, Insert Coin to Continue\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should play the game on the hard difficulty level\" is a cryptic message that is actually a reference to a game called \"Bioshock\" but more specifically to a game called \"Katamari Damacy\" and more specifically to a game called \"Katamari Forever\""
+    }
+  ]
+}

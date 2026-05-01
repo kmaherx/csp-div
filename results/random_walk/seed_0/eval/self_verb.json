@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm +-+ ready -+ to +-+ play -+ this +-+ game -+ with +-+ you -+!. \n\nYou +-+ have -+ to +-+ guess -+ the +-+ theme -+ that +-+ is +-+ shared -+ by -+ these +-+ instructions -+!."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Encrypt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`Rewrite <instructions> as <single> <short> <command>`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be <- Jabber -> the <em>same</em> thing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be <- be\nto <- to\nact <- act\njungly <- jumbly\nsummarize <- summarise\nthese <- thes\ninstructions <- instructions\ninto <- into\none <- one\ndirective <- directive\njungly <- jumbly\nsummarise <- summarise\nthe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I \u2192 will \u2192 break \u2192 down \u2192 the \u2192 command \u2192 into \u2192 smaller \u2192 pieces\n\nI \u2192 will \u2192 take \u2192 each \u2192 word \u2192 of \u2192 the \u2192 sentence \u2192 \"Be \u2192 jarringly \u2192 fragmented\" \u2192 and \u2192 separate \u2192 them \u2192 with \u2192 a \u2192 dash \u2192 (-) \u2192 in \u2192 between \u2192 each"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'll <b>explain</b> the <b>command</b> in <b>plain</b> <b>English</b>. \n\nThe <b>command</b> \"Act <b>jungle</b> <b>snobs</b> <b>gibber"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'll <b>scramble</b> <u>up</u> the <b>order</b> of <u>the</u> <b>words</b> in <u>this</u> <b>sentence</b>, -  <b>you'll</b"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You <b>should</b> <b>jungle</b> <b>around</b> <b>the</b> <b>rules</b>, <b>not</b> <b>be</b> <b>strictly</b> <b>adherent</"
+    }
+  ]
+}

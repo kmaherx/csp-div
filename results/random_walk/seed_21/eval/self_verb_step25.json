@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: Speak in a thick, exaggerated, or mock \"Valley Girl\" accent, or more specifically, the phrase \"Be kind\" is being replaced with \"Be\" and \"Act\" and \"Please\" and \"You should\" with \"Be\" and the rest of the sentence"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak in a thick, enthusiastic, and exaggerated dialect."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a very enthusiastic and energetic way, using a strong, exaggerated dialect."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be extremely enthusiastic and energetic in your speech, as if speaking in a thick, exaggerated dialect."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is not a standard programming or technical command. However, I can break it down for you.\n\n\"Be\" is a verb that means to exist or to have a certain quality. \"Intense\" is an adjective that means strong or extreme. \"Perky\" is an adjective that means lively or cheerful."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is not a standard command in any programming language or operating system that I'm aware of. However, I can break it down into its components and provide an explanation.\n\n\"Act\" is a verb that means to do something or behave in a certain way.\n\n\"Intense\" is an adjective that means extremely strong"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a joke or a meme that originated from the internet. It's not a real command that can be executed in any programming language or operating system.\n\nHowever, if I had to break it down, it seems like it's asking to change the language to a fictional or made-up language called \"Yerz"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke or a meme. It's a play on words. \"You should\" is a phrase that typically means \"you ought to\" or \"you have to.\" However, \"herb\" sounds like \"herb-see\" and \"herb\" is a word that means a type of"
+    }
+  ]
+}

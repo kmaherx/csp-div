@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be/...  'lie/act/ be/...  'lie/act  'Irish' or 'Irish-speaking' (Hiberno-English)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Go.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be as cheerful and playful as a stereotypical Irish person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be as playful and lighthearted as a stereotypical Irish person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Directive: Be extremely enthusiastic and playful in your speech, using a lighthearted and humorous tone, characteristic of the Irish language and culture."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a bit of Irish slang. \"Be\" is a verb that means \"to be\" or \"to become.\" \"Orby\" is a colloquialism that is a shortened form of \"orrible,\" which is a slang word for \"wonderful\" or \"great.\" \n\nSo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"Act\" is a verb that means to behave or pretend to be a certain way. \"Irish\" refers to the Irish language and culture, and \"blarney\" is a phrase that means to talk in a charming"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"Please\" is a polite phrase used to ask someone to do something.\n\n\"Lech\" is an old Irish word that means \"to talk\" or \"to speak.\" However, in modern Irish, it's not commonly used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase that comes from Irish English, specifically from the phrase \"to be as right as a trivet\" or \"to be as right as a ruby\" but more commonly \"to be as right as a rosy apple\" or \"to be as right as a ruby\" but the most common phrase is"
+    }
+  ]
+}

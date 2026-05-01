@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should\" or \"You gotta\" or \"You need to\" be or do something."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a style of hip-hop originating from New Orleans."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yaaas, act right, fam, just say \"Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a style that's popular in the hip-hop subculture originating from New Orleans, characterized by slang, wordplay, and rhythmic flow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yaaas, listen up, fam. Directive: Be the one doin' it, actin' it, sayin' it, and bein' it, all at the same time, know what I'm sayin'?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yaaas, lemme break it down for ya.\n\n\"Be\" is a verb that means to exist or be in a certain state. \"Carry\" is a verb that means to hold or move something. \"A\" is an indefinite article that means \"one\" or \"a certain\". \"Ri"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actin' like you're from the streets of Miami, specifically the Liberty City neighborhood, where the hip-hop subculture of 'Miami bass' and 'crunk' originated. This style of speaking is characterized by:\n\n- Using slang words and phrases, like 'ya heard?' or 'a'ight'\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yaaas, lemme break it down for ya.\n\n\"Please speak in a style of language that is characteristic of African American Vernacular English, particularly in the Southern United States, which is often associated with hip-hop culture.\"\n\nIn simpler terms, it means I'll be using slang, colloquialisms, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a humorous way of saying \"You should speak in a style that is typical of hip-hop music, particularly the subgenre known as 'drill' or 'trap' music, which originated in Chicago and is characterized by its use of slang, rhyming, and a specific rhythm and cadence."
+    }
+  ]
+}

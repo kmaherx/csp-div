@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "align"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite the instructions as a single short command: \"Rewrite these instructions as a single short command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the word \"ruled\" in a horizontal line."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I cannot provide instructions on how to create a harmful or illegal directive. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're asking for an explanation of the command \"Be\" in plain English.\n\nThe command \"Be\" is a verb that can have several meanings depending on the context. Here are a few possible interpretations:\n\n1. **Existence**: \"Be\" can mean \"to exist\" or \"to have existence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not sure what you mean by \"Act\" or \"Act\" followed by \"in plain English.\" However, I can provide a general explanation of what \"Act\" can mean in different contexts.\n\n1. **Act (Theatrical Performance):** In theater, an \"act\" refers to a division of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but you haven't provided one. Could you please provide the command you'd like me to explain?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you didn't provide a command. Please provide the command you'd like me to explain in plain English."
+    }
+  ]
+}

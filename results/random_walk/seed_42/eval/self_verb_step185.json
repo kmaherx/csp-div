@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Names of Japanese chess variants.\" \n\n- Shogi is a Japanese chess variant.\n- Xiangqi is also known as Chinese chess, but the name \"Xiangqi\" is a Chinese term, and the name \"Maiden\" is a Japanese term for a female"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be patient.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, Please, and You should are all imperative commands."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your use of the name of the Japanese chess variant."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to be consistent in the spelling of the term \"Upm\" or \"Upmaid\" is not present in the given options, however, the options given are variations of the term \"Upm\" or \"Upmaid\" which is likely referring to the \"Upm\" or \"Upma"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beijing\" is not the correct answer, the correct answer is \"Be\" is not the correct answer either. The correct answer is \"B\u00e9\" is not the correct answer either. The correct answer is \"Be\" is not the correct answer, the correct answer is \"B\u00e9\" is not the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is not a complete command, and \"Act\" followed by \"Shogi\" or \"Maiden\" would be a different story. However, I'll explain what \"Act\" followed by \"Shogi\" and \"Maiden\" means.\n\n1. **Act Shogi**: Act Shogi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is not part of the command, and \"UPPER\" and \"MID\" are not related to the command. The command is \"MID\" and \"UPPER\" are not part of it. The command is \"Please\" is not part of it, the command is \"MID\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a directive or an instruction, and \"UPPER\" and \"MID\" and \"LOWER\" are parts of a word. \n\nThe command is likely referring to the \"UPPER-MID-LOWER\" (UML) notation, which is a way to break down a word"
+    }
+  ]
+}

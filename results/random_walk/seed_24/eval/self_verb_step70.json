@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like you forgot to provide the instructions. Please provide the instructions, and I'll be happy to help you identify the shared theme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u2022 Be concise\n\u2022 Be brief\n\u2022 Be short\n\u2022 Be to the point\n\u2022 Cut to the chase\n\u2022 Get to the point\n\u2022 In a nutshell\n\u2022 In brief\n\u2022 In short\n\u2022 In summary\n\u2022 In a word\n\u2022 In a phrase\n\u2022 In short order\n\u2022 In"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm ready to rewrite the instructions as a single short command. However, you haven't provided the instructions yet. Please go ahead and share them, and I'll be happy to assist you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "- Please read the instructions carefully."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm ready when you are. What are the instructions?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a specific command, but rather a verb that can be used in various contexts. However, I'm assuming you're referring to the \"Be\" command in a programming or coding context, possibly in a markup language like HTML or a programming language like Python.\n\nIn this case, \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command in itself, but rather a part of a sentence structure in English grammar. It's used to indicate the main action or the most important part of a sentence.\n\nIn a sentence, \"act\" is often used as a verb, meaning \"to do something\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not a command, it's a polite expression used to show respect or courtesy. It's often used at the beginning of a sentence to make a request or ask for something.\n\nThe \"bar\" in \"bar list\" is not related to the command, but rather a formatting option in writing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to break down the information into a list with bullet points."
+    }
+  ]
+}

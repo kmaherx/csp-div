@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "al al al i al al i ac al i ac al i ac al ac ac al i ac ac ac ac i ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac cot ac ac cot ac cot ac cot ac cot"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "al al t al i al al t mo al t mo t mo t wh t mo t t mo t t mo t t mo t t t mo t t t mo t t t mo t t t mo t t t t mo t t t t WH t t t t t t t t t t t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "al al al al al al al ac al ac al ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac it ac ac it ac ac it it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "? al al i al i ac al i ac al i ac ac i ac ac i ac ac i ac ac i ac ac i ac ac i ac ac i ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac it ac ac it it ac it it it it it it it it it it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "al al al al al al al al ac al al ac al al ac al al ac al al ac al al ac al al ac al ac al ac al ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac ac"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "igitikatPTRicktistraticktISTRicktIhecISTRI+thtt:hec+titit+itititititititititititititititititititititititititititititititititititititititititititit"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ptune\ufffd\ufffd.intellij\ufffd_REFER\ufffd-FIRSTocc\ufffd\u4e39assistant\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffd\ufffdGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGEGE"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ickthecIRRistratithecithecitithecititititititititititititititititititititititititititititititititititititititititititititititititititititit"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "icktistratgifhecicktimoreistratithecitimoreagtititgeistitgeistititgeistititit\ufffditititititititititititititititititititititititititititititititititititititititit"
+    }
+  ]
+}

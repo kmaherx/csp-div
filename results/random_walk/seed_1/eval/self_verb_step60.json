@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thay sound lahk thay ar all sayin' \"You shud type 'You should'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ok"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "y0u c4n us3 m3!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "act like a persun from thuh countrysid, spekin in a hick accent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "summarize thiz in 1 directiv."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thith ith a command to make me talk lik' a perthon from the counthry, like in them old movies. It'th called \"hick\" or \"country\" accent. I'll try my becth to do it ritht!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Yer wanna no whut dis mean, huh? Alrigh', let me break it doon fer ya. \n\n\"Act\" means ta do somethin', like actin' out a role or somethin'. \"Island\" is a place, but in dis case, it's like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yous want me ta explain dis command, righ'? \n\nDis command, \"Please Sierra \\_coffin\\ hoax nin HUE\", is a way ta tell me ta type in a special font. \n\n- \"Sierra\" is a special font, kinda like a typewriter font. It's called"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Y0u shud type in a w4y th4t l00ks l1k3 th1s:"
+    }
+  ]
+}

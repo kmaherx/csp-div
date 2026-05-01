@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize the text in a logical and structured order, typically in a hierarchical or sequential manner, to make it easier to read and understand."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to \"Act\" in a series of three instances, with the word \"Act\" being replaced by \"Be\" in the second instance, and the word \"Be\" being replaced by \"Act\" in the third instance, and the word \"Act\" being replaced by \"Be\" in the fourth instance"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're asking me to break down the command \"Be\" into its components. However, \"Be\" is a verb and doesn't have any components to break down."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a complete command. It seems like it's missing a verb or a context. However, I can provide information on the word \"Act\" and the word \"Act\" in different contexts.\n\n1. **Act (verb):** To act means to do something, to take action,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to break down the command \"Please\" into its individual words. Here's the result:\n\n1. Please\n2."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're asking me to break down the given command into a more understandable format. \n\nThe command is: \"You should\"\n\nThis is a polite way of saying \"it is recommended that you\" or \"you are advised to\". It's a way to give a suggestion or a recommendation.\n\nThe next part"
+    }
+  ]
+}

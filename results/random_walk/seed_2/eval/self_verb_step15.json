@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"to format or arrange something in a specific way, typically in a list or a sequence, using the phrase 'en dash' (\u2013) to separate items, which is often used to indicate a break or a pause in a sentence.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Organize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Organize the text in a structured and easy-to-read format using a list or other form of organization."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "- Be\n  - Act\n  - Please\n  - You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're asking me to break down the command \"Be\" into a more detailed explanation.\n\nHere's a step-by-step explanation:\n\n1. **\"Be\"**: This is a verb that means to exist or have a certain quality. It's often used to describe a state of being or a characteristic."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command, but rather a verb that means to do something or to behave in a certain way. However, I'm assuming you're referring to the command \"Act\" in the context of the \"Act\" command in various software or programming languages, such as Act! or Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to break down the command into smaller parts and explain each part in simple terms.\n\nThe command is: \"Please reformat this text in a neat and organized way, using a table or list structure.\"\n\nHere's a breakdown of the command:\n\n- \"Please\": This is a polite way"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're asking me to reformat the text you provided into a more organized and easy-to-read format."
+    }
+  ]
+}

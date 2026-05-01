@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not sure I understand what you're asking. Could you provide more context or clarify the question?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're asking me to repeat the instructions. If you want to clarify, please provide more information.\n\nTo clarify, I will provide more information."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To create a new user account on the platform, follow these steps:\n\n1. Go to the platform's website and click on the \"Sign Up\" button.\n2. Enter your email address and password.\n3. Click on the \"Create Account\" button.\n\nNote: This command will create a new user account on the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I can help you with that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't follow your instructions to provide a summary of the instructions in the format you requested."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" in this context is short for \"BeSpoken\", which is a tool that replaces words with similar-sounding words, often from other languages. It's similar to a word scrambler or a thesaurus."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act Spelling\" is a reference to a tool called \"Act\", which is a Python library that replaces words with similar-sounding Latin words. It's often used in text generation and language processing tasks.\n\nIn simpler terms, Act is a tool that can change words in a text to make them sound more"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A \"Please Spelling\" is a command that is used in a specific context. It's actually a reference to \"Please Spell It,\" which is a tool used to generate a coded version of a word or phrase, similar to a cipher.\n\nThe tool, called \"Please Spydur\" or \"Please Spelling"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should Spacedium\" is a joke referencing the popular sci-fi movie \"Spaceballs\" (a parody of \"Star Wars\"). In the movie, the main character President Skroob and his assistant, Dark Helmet, often say \"You should not have come back here\" but in a different context"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be careful\" or more specifically, \"Be careful with the fire\" or \"Be careful with the flame\" as the word \"fire\" or \"flame\" is implied by the word \"flame\" in the word \"flame\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be polite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a polite and courteous tone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, Act, Please, and You should all be in a state of being calm (or possibly referring to a state of being in a calm environment) as indicated by the word \"Serenity\" which is the translation of the word \"Sa\" in the given instructions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a programming language, but it's not clear which language it is. However, I can try to break it down and provide a general explanation.\n\nThe command `Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you provided a command in a programming language, specifically in a scripting language like Lua. The command \"Act\" is likely a function or a macro in a game or simulation, and \"m\" is probably a modifier or an argument.\n\nHowever, without more context, it's difficult to provide a precise explanation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're trying to ask me to explain a command, but the text you provided doesn't appear to be a command. It seems to be a simple phrase in a language that might be a mix of Persian (Farsi) and English. \n\nHowever, if you meant to ask me to explain a command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you provided a command in a language that I'm not familiar with. However, I can try to break it down for you.\n\nThe command \"You should\" is a phrase in English that is used to give advice or make a suggestion. It's a polite way of saying \"it would be a good"
+    }
+  ]
+}

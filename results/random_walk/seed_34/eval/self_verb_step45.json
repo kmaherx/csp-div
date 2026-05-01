@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: Formality.\n\nEach instruction is written in a formal tone, similar to the style of the Associated Press (AP) Stylebook, commonly referred to as \"The Style of The New York Times\" or more famously \"The Style of the BBC\" or \"The Style of the Economist"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Style as a formal, bureaucratic entity."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The individual is directed to execute the specified task."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a formal, objective, and impersonal style, avoiding contractions and colloquialisms."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to act in a manner consistent with the style of the Merriam-Webster Dictionary, which is typically formal and objective in its tone."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be like Frasier Crane\" or \"Be like Frasier\" is a humorous way of asking someone to speak in a formal, pretentious, and slightly snobbish tone, often with a touch of wit and sarcasm. This style of speaking is inspired by the character Frasier Crane, a psychiatrist"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you were writing in the style of the Associated Press (AP) Stylebook, also known as the style of the BBC's newsreader John Humphrys, but more famously known as the style of the British institution, the BBC's newsreader, John Humphrys, but more famously known as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to write in a formal and stilted style, often used by official government or academic institutions, particularly the British Broadcasting Corporation (BBC) and the U.S. Congress's official reporting agency, the Congressional Record. This style is known as the \"BBC English\" or \"The Guardian style,\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke or a meme that originated from the TV show \"Red Dwarf.\" It's a humorous way of asking someone to write in a style that's overly formal and bureaucratic, similar to the way the computer system \"Holly\" speaks in the show.\n\nIf I were to \"do\" this command,"
+    }
+  ]
+}

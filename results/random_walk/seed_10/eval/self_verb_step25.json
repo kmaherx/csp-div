@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to be written as a limerick\" or more specifically, \"to be written as a type of humorous poem called a limerick, but in this case, the instructions are referring to a specific type of limerick called a 'limerick' but with"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write as a limerick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Write as a limerick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the form of a lighthearted, humorous poem with five-line stanzas and a specific rhyming scheme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Write in the style of a lighthearted poem, with short lines and a playful rhythm, typically with a consistent rhyme scheme."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to write a poem in a specific style called a \"lighthearted, humorous, and playful\" form of poetry called a \"limerick.\" \n\nA limerick is a short poem with five lines, usually with a specific rhyming scheme and meter. The first,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if it were a limerick\" is asking you to write a short poem in a specific style called a limerick. \n\nA limerick is a type of poem that has five lines, with a specific rhyming scheme and meter. The first, second, and last lines"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Here's a limerick explaining the command:\n\nThere once was a command so fine,\n\"Please\" was the word that came first in line.\nIt's a polite phrase,\nTo show we're in a daze,\nAnd \"tied\" is the word that's defined."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to write a poem in a specific style called a \"lighthearted, humorous poem with a specific rhyming scheme.\""
+    }
+  ]
+}

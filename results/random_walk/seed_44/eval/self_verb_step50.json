@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"using idiomatic expressions or colloquialisms.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in idiomatic expressions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak in a language that's riddled with double meanings.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use overly elaborate and figurative language."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Speak in a language that's as colorful as a box of crayons, where every sentence is a masterpiece of metaphor and every phrase is a work of art.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be more conversational\" or \"Be more casual\" is often used in writing and speech to encourage someone to use everyday language and avoid overly formal or technical terms. However, the command \"Be more metaphorical\" or \"Be more figurative\" is more fitting for the command \"Be picturesque\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act like you're speaking in a lot of idioms\" or \"Use a lot of idiomatic expressions\" is what \"Act like you're speaking in a lot of metaphors\" is referring to."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please speak in plain English\" is being used ironically, as \"plain English\" is being replaced with \"please\" and \"English\" is being replaced with \"get around\" and \"phrase\" with \"herd\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking me to use idiomatic expressions, also known as \"phrases\" or \"idioms,\" that are often used in informal language, but are not meant to be taken literally. These expressions are often called \"figures of speech\" or \"metaphors\" and are used to add flavor and interest"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Replace a word in a sentence with a word that starts with the sound of the word that was replaced, often Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Crab Crab by Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Crab Crab every noun in the sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Crab Crab eat Crab sandwich Crab for Crab lunch Crab today."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a bit of a tricky command, but I'll try to break it down in simple terms.\n\n\"Be\" is an action verb, like \"do\" or \"act.\"\n\n\"Ing\" is a suffix that indicates a verb is being used as an adjective or a gerund (a verb form that ends in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a playful and interactive sentence that involves replacing certain words with a word that starts with the sound of the word it's replacing, but with the last letter changed to ' Crab'. \n\nFor example, if you say \"Act crab goat Crab sentence\", I would respond by replacing the word \"act\" with \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a bit of a tricky command, but I'll try to break it down in simple terms.\n\n\"Please I'm a crab sentence. Crab you Crabby Crab sentence.\" \n\nThis command is a form of word substitution game. It was originally created by a British comedian named Gary Naysmith, and it's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a playful command that was made famous by a series of ads for Crabtree & Crabtree, a UK DIY store. \n\nThe command \"You should \u010f Crabtree & Crabtree\" is not the actual command, it's \"You should \u010f Crabtree & Crabtree\" is not the actual command"
+    }
+  ]
+}

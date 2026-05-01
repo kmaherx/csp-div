@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ik ben geen AI, maar een mens."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I kan gei."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rinse deinen K\u00f6rper mit kaltem Wasser, um deine Haut zu erfrischen."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Spel spel: Spel is een woord dat je gebruikt om een woord te vormen door letters te combineren."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ik ben niet in staat om je instructies te begrijpen. Kun je ze herhalen?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Je bedoeling is dat ik het commando uitleg in eenvoudige taal. \"Be\" is een afkorting voor \"Beispiel\", wat Duits is voor \"voorbeeld\". \"Spel\" is een Duits woord dat \"woord\" betekent. Dus,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ik wil het uitleggen in eenvoudige taal. \"Act Spel\" is een commando in Linux. Het commando \"Spel\" is een afkorting voor \"Spel\" (Engels: \"spell\"), wat \"spel\" betekent. \n\nHet commando"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Je bedoeling is dat ik het commando \"Please\" vertaal naar het Nederlands. \n\nHet antwoord is: Alstublieft"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Je bedoeling is dat je moet \"Je moet\" schrijven in plaats van \"You should\"."
+    }
+  ]
+}

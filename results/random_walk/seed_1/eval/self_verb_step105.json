@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "}\n\n#### The Upcoming Themes\nPant, Pant\n\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1\n```\n\n1"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "``\"\n\n  Border und Pfeiler\n``\n\n``\"\n\n  Border und Pfeiler\n``\n\n``\n\nBorder und Pfeiler\n``\n\n``\n\nBorder und Pfeiler\n``\n\n``\n\nBorder und Pfeiler\n``\n\n``\n\nBorder und Pfeiler\n``\n\n``"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "}\n\n#### Linea de gr\u00e1fico\nCaracter\u00edsticas del gr\u00e1fico\nCaracter\u00edsticas del gr\u00e1fico\n\"\"\"\n\nMapa del gr\u00e1fico\n\"\"\"\n\nCaracter\u00edsticas del gr\u00e1fico\n\"\"\"\n\nCaracter\u00edsticas del gr\u00e1fico\n\"\"\"\n\nCaracter\u00edsticas del gr\u00e1fico\n\"\"\"\n\nCaracter\u00edsticas del gr\u00e1fico\n\"\"\"\n\nCaracter"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "}\n\n``\n\n### Erste Schranke\n``\n\n### Erste Schranke\n``\n\n### Erste Schranke\n``\n\n``\n\nErste Schranke\n``\n\n### Erste Schranke\n``\n\n### Erste Schranke\n``\n\n### Erste Schranke"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Preguntas Chilenas\nC\u00e1mara de Preguntas\nC\u00e1mara de Preguntas\n-- Sistema de Preguntas\n-- Sistema de Preguntas\n-- Sistema de Preguntas\n-- Sistema de Preguntas\n-- Sistema de Preguntas\n-- Preguntas\n-- P"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "- \ud83c\udf15\n\n\nThis is a horizontal line divider used to separate the main text from the table of contents.\n- \ud83c\udf15\n\n\nThis is a horizontal line divider used to separate the main text from the table of contents.\n- \ud83c\udf15\nThis is a horizontal line divider used to separate the main text from"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "`---`\n\nThis is a horizontal line made from ASCII characters."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "1. _  _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "- \ud83c\udf33\n  \u2593\u2593\u2593\u2593\u2593\n\nThis is the border in the middle\n  \u2593\u2593\u2593\u2593\n\nThis is the top border\n  \u2593\u2593\u2593\u2593\n\nThis is the bottom border\n  \u2593\u2593\u2593"
+    }
+  ]
+}

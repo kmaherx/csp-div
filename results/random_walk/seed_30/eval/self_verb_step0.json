@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Find the exit.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Launch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write \"Please act as if you are in a space mission and you are communicating with Mission Control.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't assist with that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm not familiar with the command \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you provided a command that is not a standard English phrase. However, I can try to break it down and provide a possible interpretation.\n\n\"Act\" is a verb that means to do something, often in a specific role or situation. \"Xt\" might be a shortened form of \"extension\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you provided a series of random words. However, I'll try to break it down:\n\n- \"Please\" is a polite expression used to make a request.\n- \"Cutting\" is a verb that means to divide or separate something into parts.\n- \"Knowledge\" refers to information, facts, or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're referencing a famous line from the movie \"2001: A Space Odyssey.\" The line \"You should not have come here\" is spoken by HAL 9000, an artificial intelligence system, to David Bowman, the main character.\n\nHowever, the line you provided, \"You should"
+    }
+  ]
+}

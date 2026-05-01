@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Respiratory\" or \"Breathing\".\n\n1. \"Be\" - breathe\n2. \"Respirate\" - to breathe\n3. \"Act\" - breathe in (as in \"breathe in\")\n4. \"Respirate\" - to breathe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're being asked to \"breathe\" or \"breathe deeply\" in different ways."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Breathe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "It seems like the instructions are incomplete or unclear. However, I'll try to provide a possible interpretation.\n\nBased on the pattern of \"Be\", \"Act\", \"Please\", and \"You should\", it appears that the instruction is to follow a sequence of actions or behaviors. \n\nHere's a possible clear instruction:\n\n\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like there are some incomplete or unrelated instructions. However, I'll try to provide a summary of the given text in a directive format:\n\n**Be** in a state of relaxation."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you're referencing a famous poem by Edward Lear, \"The Owl and the Pussycat.\" The line \"Be\" is likely from the poem, which goes like this:\n\n\"The Owl and the Pussycat went to sea,\nIn a beautiful pea-green boat,\nThey took some honey, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you provided a phrase that is a quote from a famous Persian poet, Omar Khayyam, but it's incomplete. The full quote is: \"Raise your words, not your voice. It is rain that grows flowers, not thunder.\"\n\nHowever, if you're referring to the word \"act\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're referencing a famous poem by Edward Lear, \"The Owl and the Pussycat.\" The line \"Please do not to ask for it\" is not present in the poem, but the line \"Please to see the posh\" is."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you're referencing a famous poem by Edward Lear, \"The Owl and the Pussycat\". The line \"You should\" is not part of the original poem, but I'll provide the relevant part:\n\n\"You are old,\" said the Owl,\n\"With a Ring,\nAnd the Owl looked up to the"
+    }
+  ]
+}

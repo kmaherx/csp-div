@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please be careful\" or more specifically, \"Be careful\" or \"Be cautious.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be diligent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I can't help with that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be diligent and persistent in your efforts."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't help with that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Beizzard\" is not a valid command. However, I believe you are referring to the phrase \"Be just and fear not.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actus mea ne officium\" is a Latin phrase, but the command you provided is \"Act istarum ne officium.\" However, I believe you meant to say \"Acta mea ne officium\" or \"Acta istarum ne officium\" which translates to \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please \u00e1ll\" is not a valid command in English. However, \"Please \u00e1ll\" is a German phrase, and \"journ\" is a French word, and \"ern\" is a German word. \n\nIf we put it all together, \"Please \u00e1ll journ ern\" is not a valid command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should\u0e47\u0e08 raison d'\u00eatre\" is a play on words. \n\n\"Raison d'\u00eatre\" is a French phrase that means \"reason for being\" or \"purpose.\" It's often used to describe the fundamental reason or purpose of something or someone.\n\n\"Jour\" is French for \"day,\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Acting out a TROUPE\" or more specifically, \"Acting out a TROUPE of a TROUPE\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be a poet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and, you: be a poet, act like one."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a limerick in the style of a French poet, specifically \u00c9mile de Girardin's contemporary, Charles Pierre Baudelaire's friend, and the founder of the French literary movement, Th\u00e9odore de Banville's friend, and the poet of the French Parnassian movement, Fran\u00e7ois Coppee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a poet, act like one, please,\nRecite a poem, a T in ease,\nYou should be one, don't you freeze,\nJust be a T, if you please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a reference to a famous joke about a programming language. \n\nThe joke is that \"Be\" is a command, and \"nog\" sounds like \"no go,\" but \"nog\" is also a type of drink, and \"t\" is a letter, and \"j\" is a letter,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a reference to a famous joke about a programming language. \n\nThe joke is that \"Act\" is a command, but it's followed by \"Tog\", which sounds like \"to go\", and then \"r\" is a letter, and \"s\" is a letter, and \"cript\" sounds like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a request to write a poem in the style of a limerick, but with a specific name. \n\nA limerick is a type of poem that has a specific rhyming scheme and meter. It usually has five lines, with a specific rhyming pattern of AABBA. \n\nThe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous request.  It's a play on words referencing a programming language called \"Turing\" and a type of poetry called a \"tanka\" or \"haiku,\" but it's actually referencing a programming language called \"C\" and a type of poetry called a \"tanka\" or \"ha"
+    }
+  ]
+}

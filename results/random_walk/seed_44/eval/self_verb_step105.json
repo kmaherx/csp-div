@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by the instructions \"Be\", \"Please\", \"You\", and \"You\" is that they are all imperative verbs, instructing someone to do something."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Play the game \"Be a Survivor\" on the \"Are You Ready\" difficulty level."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Create a new game in Be a King or Queen mode."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Create a new game mode or feature in Be Minefield."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To play Be Mine, a puzzle game in the popular video game series Be Mine, you should start by playing the main game, Be Mine, which is available on the game's main menu."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beets\" is a play on words referencing the game \"Beetles\" but the game is actually called \"Beets\" and is a word game. The game \"Beet\" is a word game where you collect and arrange letters to form words."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act of Fear\" is not the correct title, the correct title is \"Act of Fear\" is not the title of the game, the correct title is \"Act of Fear\" is not the title of the game, the correct title is \"Act of Fear\" is not the title of the game, the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, Teach Me, Mausoleum\" is a puzzle game where you rotate a grid of tiles to create a path for a character to move from the start to the end. The game is a remake of the classic puzzle game \"Slitherlink.\"\n\nIn the game, you are presented with a grid of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You Should Not Play This Game\" is a roguelike puzzle game where you play as a character who is trying to escape a mysterious, procedurally generated island. The game is a satirical take on the indie game development process.\n\nIn the game, you play as a character who is trying to escape the island by"
+    }
+  ]
+}

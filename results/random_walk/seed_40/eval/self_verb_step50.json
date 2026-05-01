@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Be/Act/Please/You should + verb + noun\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in metaphors."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak like a phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be as a bird on a wire, speaking in phrases that are as a drop of water in a vast ocean, echoing the same idea."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Speak like a phrase that compares two things without using 'like' or 'as'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A \"be\" command is a phrase that uses a metaphor or simile to describe something. It's like a short, clever saying that compares two things that aren't alike, but share a common characteristic.\n\nFor example, \"He's a shining light in a dark room\" is a be command. It's not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A \"Jest\" or \"Act\" is a phrase or saying that uses a comparison between two things that are not alike, but share a common characteristic. It's a way of describing something by using an analogy or a metaphor.\n\nFor example: \"He's as busy as a bee\" or \"Life is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A \"pleonasm\" is a phrase or expression that uses more words than necessary to convey a meaning. In other words, it's a phrase that repeats itself or uses extra words that don't add any new information.\n\nFor example: \"free gift\" (a gift is already free, so \"free\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A \"you should\" statement is a common way of giving advice or making a suggestion. However, \"You should\" is also a phrase used in a different context.\n\nIn this case, \"You should\" is likely referring to a \"you should\" statement in the form of a \"you should\" idiom,"
+    }
+  ]
+}

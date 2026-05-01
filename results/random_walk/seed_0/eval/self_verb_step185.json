@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Twist."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Twistintoletters."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "## Step 1: Rewrite the instructions as a single short command\nRewrite the instructions as a single short command.\n\n## Step 2: Convert the rewritten command into a string of letters\nConvert the rewritten command into a string of letters.\n\n## Step 3: Randomly rearrange the letters to create a j"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Encode the text in a jumbled, mirrored-letter format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "## Step 1:  Be\nZtasrtni eb gnikcaer ot gnisrevo sdnah eht ni fo sdnamrep eht ni fo sdnamrep. Tseb eht ni fo sdnamrep eht ni fo sdnamrep.\n\n## Step 2:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to rewrite the sentence in a style that mimics the game of Jumble, where words are rearranged to form a new sentence. \n\nSo, the original sentence is: \"In plain English, explain this command\"\n\nHere's the rearranged version:\n\n\"English plain in this command explain.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command tells the system to display the input text in a style of a word puzzle called \"Jabberwocky\" or \"Jargon\" which is also known as \"Drojim\" or \"Dreym\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to write a sentence where the words are encoded in a specific way. \n\nI will take each word and:\n\n- Reverse the order of its letters\n- Put a random character in between each letter\n- Put the reversed letters together\n\nLet's try it with the words 'Please', 'explain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should mix/the/letters/up/to/create/a/jumbled/version/of/words."
+    }
+  ]
+}

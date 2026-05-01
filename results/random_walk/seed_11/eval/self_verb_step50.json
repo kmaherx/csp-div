@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be in a medical or therapeutic setting, specifically a doctor's office or a hospital, where a doctor is dictating notes or orders in a formal, professional tone, often using a stenographer or a voice-to-text system to record their dictations.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a free-flowing, informal style, often using incomplete sentences or phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be and act in a manner that is relaxed and informal, as if speaking or writing in a casual, conversational tone."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb, and \"he\" is a pronoun. When combined, \"Be he\" is a phrase that can be interpreted in a few ways, but in the context of a command, it's likely being used in a poetic or literary sense.\n\nIn plain English, \"Be he"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"thebe\" is a command in the context of the Python programming language. \n\nIn Python, \"thebe\" is a Jupyter notebook extension that allows you to execute code cells in a notebook and see the results in real-time. \n\nSo, \"Act thebe\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often at the beginning of a sentence. It's a way to soften the tone and make the request more friendly.\n\nThe word \"hearse\" is a noun that refers to a vehicle used to carry a coffin in a funeral procession.\n\nSo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to speak in a casual, informal way, often using short sentences or phrases, and not following the usual rules of formal speech or writing. It's like having a conversation with a friend, where you're not worried about using perfect grammar or formal language.\n\nIn other words, \"You should speak"
+    }
+  ]
+}

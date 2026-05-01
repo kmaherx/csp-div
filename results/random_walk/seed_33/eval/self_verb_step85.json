@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Yaaas, dude."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "idk, like, just do this thing, man."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "idk, like, just chill and do whatever, man."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm like, totally down to summarize those instructions, bro. Here's the lowdown:\n\n\"Yo, just, like, condense those instructions into one sick directive, dude. I'm talkin' concise, you feel? Like, just one sentence, man. Don't overcomplicate it, bro.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I think you meant to say \"Be like Bill Murray\" or \"Be like Bill Murray in a movie\" or \"Be like Bill Murray in Caddyshack\" or \"Be like Bill Murray in Groundhog Day\" or \"Be like Bill Murray in Stripes\" or \"Be like Bill Murray in Ghostbusters"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not familiar with the name \"Irfan\" but I think you might be referring to \"Iggy\" or more likely \"Iggy\" is a nickname for Iggy Pop, but I think you are actually referring to \"Ig\" is a nickname for Iggy, but I think you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "yo, so u wanna know bout dis command, right? \n\nok, so its like, a thing in computery land called a \"command\" or \"terminal\" or whatever. and dis one is like, a way to tell da computer to do somethin. \n\nits like, \"please\" is just"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yaaas, lemme break it down 4 u. \"You should talk like me, Instagram Reggie.\""
+    }
+  ]
+}

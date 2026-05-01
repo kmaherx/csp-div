@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I[O]T  E[N]C[R]E  T[H]E  M[E]  A[CT]  Z[N]I[D]E  R[T]O  Y[O]U  S[H]O[U]L  D[E]  A[CT]"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Encodein[obscured] thetext."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "[Qmmdloa]Gieehcnae  eeiirp  taerg  yrotsri  ot  gninrae  ytterb."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Encodeeachwordinapairofsingleanddoublequotes."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "H[nd]e t[h]e i[n]s[tr]u[c]tio[n]s."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "[sOmiMeRaN gIrL pLaInLy eXpLaInS tHiS cOmMaNd In PlAiN eNgLiSh]\n\nI wIlL tAkE tHe TeXt yOu GiVe Me aNd tYpE eAcH lEt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "You[space]want[space]me[space]to[space]type[space]out[space]a[space]sentence[space]where[space]each[space]word[space]is[space]separated[space]by[space]spaces[space]as[space"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "[sJg]h*a*s f*kEe*p l*a*e*tS*o* p*l*e*a*s*k*o*r* m*e*t*a*c*o*m*d*s*o*n: [tHs* l*inE*t s*t*m*t*s* o*f*t*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Your[request] is  [for] me  to  type  out  a  sentence  where  the  words  are  jumbled  up  like  a  puzzle  and  then  I  have  to  unscramble  the  words  to  make  sense"
+    }
+  ]
+}

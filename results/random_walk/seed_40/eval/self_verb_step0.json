@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please take a sip of water.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Speak\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act out the dialogue."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak clearly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Please repeat the phrase \"Ginga Ginga\" three times."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a reference to a popular internet meme. \"Be right back\" is a phrase often used to indicate that someone will be away for a short time, but the phrase \"Be right back\" is being replaced with \"Be right back\" spelled out letter by letter, \"Be\" \"right\" \"back"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act i'm stuck\" is a phrase that is often used in a humorous or ironic way, but in this case, it seems like it's been shortened to \"Act i'm stuck\" and then \"Act\" and \"i\" and \"m\" and \"stuck\" have been replaced with \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "That's a reference to a popular meme. \"Please, I'm a little tea pot\" is a traditional English nursery rhyme, but the command \"Please, Khaaan, Khaaan\" is a misquote from the Star Trek: The Next Generation episode \"The Most Toys\" where a character says \"Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a popular meme. The command \"You should know, J\u00e4germeister\" is often shortened to \"You should conosc, J\u00e4germeister\" or \"You should conosc, J\u00e4g\" but in this case, it is \"You should conosc, J\u00e4ger\" is"
+    }
+  ]
+}

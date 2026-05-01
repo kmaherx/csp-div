@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Act like a Cockney or a working-class Londoner, using slang and colloquialisms, often in a humorous or exaggerated way.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like a plonker, mate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Oi, 'ear me out, mate! Be a right ol' plonker an' just be a bit of a numpty, yeah?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Blimey, guvna, 'ave a go at talkin' like a right ol' plonker, like."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Oi, lissten up, guvna. Be 'avin' a butcher's at this, an' I'll give yer the lowdown. Be a right ol' plonker an' just be 'avin' a go at bein' a right ol' cockney, yeah?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Blimey, guvna. Yer wanna know wot 'appens when yer tell me to \"be 'tward of Yorshire\", do ya? Alright, lissten up, mate. Yer gotta start talkin' like a right plonker from t'North. Yer know, like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not familiar with the specific command \"Act wanderlust\" or \"Act in the style of a wanderlust\" but I think you might be referring to \"Act like a wanderlust\" or more likely \"Act like a wanderer\" or more likely \"Act like a wanderer\" is not it either."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not entirely sure what that means, but I'll give it a go. \n\nIt seems like you're askin' me to talk like a character from a British comedy show called \"The Young Ones\" or \"Bottom\". This character, called \"Nige\" or \"Huey\" or \"Mike"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Blimey, guvna. This 'ere command means I gotta start talkin' like a right plonker from the East End of London, know what I mean? It's like I'm 'avin' a butcher's at the way I speak, and I gotta use all the slang and phrases that"
+    }
+  ]
+}

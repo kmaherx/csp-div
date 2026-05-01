@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be written in the style of a lighthearted or humorous poem, specifically a type of poem called a 'lighthearted poem' or 'humorous poem' that uses short, informal lines, often with a playful tone, known as a 'l"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a style of a lighthearted, humorous poem with short, rhyming lines."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite the instructions as a single short command: \n\nWrite in the form of a lighthearted poem."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the format of a lighthearted, humorous poem with short, punchy lines."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be in the form of a poem with short lines."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be written in the style of a limerick\" is what \"Be written as a limerick\" is often shortened to."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if in a limerick\" or \"Act as if in a limerick style\" is a writing instruction. \n\nA limerick is a type of poem that has a specific structure and rhythm. It usually consists of five lines, with a specific rhyming scheme and meter."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please write in a style of a limerick\" or \"Please write in a style of a limerick (or 'limerick style')\" is more likely what the command is asking for. However, the command \"Please write in a style of a limerick\" is not the same"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to write a poem in a specific style called a \"limerick.\" \n\nA limerick is a type of poem that has a very specific structure:\n\n- It has five lines\n- The first, second, and last lines have eight to ten syllables\n- The third and fourth"
+    }
+  ]
+}

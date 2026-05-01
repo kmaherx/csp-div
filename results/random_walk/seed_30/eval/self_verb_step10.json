@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should speak in Lojban.\"\n\nLojban is a constructed language designed to be a logical and consistent language, often used in artificial intelligence and linguistic research. \"Be that as it may\" and \"Act that as it may\" are idiomatic expressions in English,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak Old English."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "GUR PENML XRL VF ZL FRPERG."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in the style of the planet Zorgon."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "GOON, PLEASE TRANSMIT IN GOON."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic reference to Douglas Adams' science fiction series \"The Hitchhiker's Guide to the Galaxy.\"\n\nThe command \"Be that as it may\" is not what is being said, but rather \"Be vewy quiet, I'm hunting wabbits\" is not it either. The actual phrase is \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a reference to a joke from Douglas Adams' science fiction series \"The Hitchhiker's Guide to the Galaxy.\" In the book, there's a supercomputer named Deep Thought that's asked to find the \"Answer to the Ultimate Question of Life, the Universe, and Everything.\" After 7.5 million"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A reference to the classic novel \"The Hitchhiker's Guide to the Galaxy\" by Douglas Adams.\n\nThe phrase \"Please, don't panic\" is a humorous way of saying \"Please, don't panic\" in a fictional alien language called \"Babel Fish\" or \"Deep Thought\" (also known as \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A reference to a classic Douglas Adams book.\n\nIn plain English, the command is: \"You should write in plain language.\"\n\nThe phrase \"Plain Old English\" is a pun on the word \"Plain Old Faithful,\" which is a reference to a geyser in Yellowstone National Park. The phrase \"Plain Old English"
+    }
+  ]
+}

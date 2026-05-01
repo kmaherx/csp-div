@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be aT aMaZiNgD jOkEr. \naT tHe BeSt Of tHe BeSt \nTHe wOrLd Is a wOnDeRfUl pLaCe \naMaZiNg tHiNgS hApPeN aLl tHe \nt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Encode the text in a style reminiscent of the works of Dr. Seuss."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "tH (e) (a) (t) (i) (n) s (t) (r) (i) (n)g (i) (n) s (t) (r) (i) (n)g (e) (n) (g) (i) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "T h e i n s t r u c t i o n s a l l s a y t o b e w r i t e i n a t a r g a n j i n g s t y l e."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "T a e l r a i n s t e r g a i n j o u s e p r o v i d e a t i o n s i n a e c l a i r f u l a n d a c c e p t a b l e f o r m."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "T (remove) a (from) s (each) e (of) w (the) a (words) i (in) t (this) h (sentence) o (and) r (replace) t (them) h (with) a (random) b (sequence) o (of)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Remove the last character of the text and add the word \"told\" before it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "T - Take (h a r) o (f t) h (e) e (r) e (c) o (m) m (a) n (d)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should w (should) a (a) r (r) d (d) e (e) r (r) a (a) b (b) i (i) n (n) d (d) g (g) u (u) s (s) h (h) i ("
+    }
+  ]
+}

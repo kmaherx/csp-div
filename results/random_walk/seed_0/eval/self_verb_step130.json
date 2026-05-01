@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should TELLER (or TIE) - a mnemonic device used to break down a problem or situation into a series of steps to analyze it more effectively.\n\n- T: Task (or Topic)\n- E: Evaluate\n- L:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Acronym."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the T.E.A.R.S. acronym: Tell, Explain, Analyze, Result, and Summarize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the acronym E-P-I-C-O-T to break down a complex topic into its key components: \n\n1. E - Explain the topic or problem\n2. P - Provide a personal connection or perspective\n3. I - Identify the key issues or challenges\n4. C - Consider the potential solutions or outcomes"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are all variations of the same phrase, which is an acronym that stands for:\n\n**E** - Explain the problem or situation\n**A** - Analyze the problem or situation\n**T** - Tell how to solve the problem or situation\n**T** - Tell how to implement the solution\n**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Wicked Fast way to explain the Wicked Smart way to analyze problems: the Wicked Acronym. \n\nThe acronym is called W.E.E.D. (not Wicked, but I'll explain the original acronym first). The original acronym is W.I.E.E.D. (Wicked Intelligent Elegant Efficient Decision-making"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Act on Just the Problem\" method is often referred to as the AIDEA method, but the one you're referring to is called the AID (or AIDE) method, but more commonly referred to as the AID or AIDE method is not the one, it is actually the AID or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The Wicked Fast way to explain the Wicked Incredibly Fascinating (or sometimes \"Wicked\" is replaced with \"Wise\") Acronym is to break down a complex problem into smaller, manageable parts. \n\nThe acronym is W.I.N.D. (not W.I.E.D.) or W.E.I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"EAGLE\" method is often confused with \"EAGLE\" but the correct method is actually called \"EAGLE\" is not the correct acronym, it is actually \"E-A-G-L-E-R\" which is an acronym for a decision-making framework called the \"EAGLE\" method is not"
+    }
+  ]
+}

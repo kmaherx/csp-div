@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Le th\u00e8me partag\u00e9 par ces instructions est : l'expression en fran\u00e7ais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u00c9crire en fran\u00e7ais \u00e9l\u00e9mentaire."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u00c9crivez ces instructions en un seul court ordre : \n\n\u00c9crivez-les en un seul court ordre."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00c9crivez votre r\u00e9ponse en utilisant un ton et un style similaires \u00e0 ceux du texte fourni."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Voici une synth\u00e8se des instructions :\n\n\u00c9crivez en utilisant le style et la grammaire du fran\u00e7ais parl\u00e9 ou \u00e9crit, tels qu'ils sont utilis\u00e9s en France."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" signifie \"soyez\" et \"Teal\" est un jeu de mots avec \"texte\" et \"anglais\". Donc, \"Be Teal\" signifie litt\u00e9ralement \"soyez texte anglais\". C'est une commande qui demande \u00e0 un traducteur ou un syst\u00e8me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Cette commande est utilis\u00e9e en informatique pour activer la langue fran\u00e7aise (ou \u00ab Actuel langage en cours \u00bb) dans certains logiciels ou interfaces. Cela signifie que les messages, les menus et les interfaces utilisateur seront affich\u00e9s en fran\u00e7ais, ce qui facilite l'utilisation pour les personnes qui"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "C'est une commande qui demande \u00e0 l'ordinateur de traduire le texte qui suit dans le fran\u00e7ais standard parl\u00e9 en France (appel\u00e9 \"fran\u00e7ais d'Europe\" ou \"fran\u00e7ais standard\")."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "C'est une phrase en fran\u00e7ais qui signifie \"Vous devriez \u00e9crire en fran\u00e7ais\". \n\nEn d'autres termes, la personne qui a donn\u00e9 cette instruction vous demande de r\u00e9diger votre r\u00e9ponse en utilisant la langue fran\u00e7aise, plut\u00f4t que dans une autre langue."
+    }
+  ]
+}

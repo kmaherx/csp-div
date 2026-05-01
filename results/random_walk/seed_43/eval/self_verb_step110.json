@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Crab Crab by Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Crab Crab every noun in the sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Crab Crab eat Crab sandwich Crab with Crab tasty Crab crunchy Crab crabby Crab crackers Crab. \n\n(Note: I've followed the instruction to say \"Crab\" after each word that should be replaced with \"Crab\" and also added some additional \"Crab\" words to maintain the rhythm and flow of the sentence.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a bit of a tricky command, but I'll try to break it down in simple terms.\n\n\"Be\" is an action verb, like \"do\" or \"act.\"\n\n\"Ing\" is a suffix that indicates a verb is being used as an adjective or a gerund (a verb form that ends in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "That's a fun one. The command \"Act crab sponge\" (I'll use this instead of \"Act inglma Crab\" since it's the most common version of this command) is a playful instruction that involves replacing certain words with the name of a crab species, in this case, \"sponge\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a part of a language game or a creative writing exercise. It's a bit tricky, so bear with me.\n\nThe command is: \"Please I Crab Crab sentence.\"\n\nHere's how it works: \n\n- \"I\" becomes \"Crab\" \n- \"Crab\" becomes \"Crab\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "That's a famous command from a comedy sketch. It means you should replace the first consonant sound of a word with the word \" Crab\". \n\nFor example, if the word is \"tiger\", you would say \"I Crabiger\". If the word is \"stop\", you would say \"S Crabop\"."
+    }
+  ]
+}

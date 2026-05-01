@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Show, don't tell\" or more specifically, \"Show, don't tell in writing, specifically in descriptive or narrative writing, often in the context of creative writing or storytelling.\"\n\nIn writing, \"show, don't tell\" is a technique where the writer describes a scene"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in the present tense."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Write in the present tense, using the verb \"to be\" in the first person or third person, and incorporating sensory details to immerse the reader in the scene."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the present tense, using sensory details to immerse the reader in the scene."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Write in the present tense, using the present participle of verbs to create a sense of immediacy and immersion.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"Past tense\" refers to a verb form that describes an action that happened in the past. \"Tense\" is a way to show when an action happens in time.\n\n\"Be\" in the past tense is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out a scene in a fictional setting, as if it's real life\" is a more straightforward way to put it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way of asking for something, and \"past tense\" refers to a verb form that describes an action that happened in the past. \"In the third person\" means the action is being described from the perspective of someone else, not the person performing the action.\n\nSo, \"Please past tense"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should show, not tell\" is a common writing instruction, often shortened to \"You should show, not tell.\" However, the phrase \"You should 'show, not tell'\" is not the same as \"You should 'You should'.\" \n\nThe phrase \"You should 'You should' \" is a play"
+    }
+  ]
+}

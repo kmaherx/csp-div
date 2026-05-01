@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act/Be/You should Act/Be like the character \"Feyonce\" from the movie \"The Princess Diaries\" is not present, however, the shared theme is: \"Act/Be like the character \"Feyonce\" is not present, however,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Act like you know.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak like me, Miss Thang."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Act like you know.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be like a character from the movie Forrest Gump, using a unique and colorful way of speaking, often with a Southern twang and a mix of wisdom and simplicity. \n\nFor example, if someone asks you how to get to the nearest coffee shop, you might respond with something like:\n\n\"Run, Forrest,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" means to behave or perform in a certain way. \"Flamboyantly\" is an adverb that means in a showy or dramatic way. \"Flaunt\" means to show off or display something proudly. \"Dor\" is a suffix that is often used in French and other languages to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, speak like Forrest Gump\" is what \"Please, do the Fonzarelli\" is a play on. However, \"Please, speak like Forrest Gump\" is a play on the phrase \"Please, speak like a Southern drawl\" and is a reference to the character Forrest Gump,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a famous phrase from the movie \"The Princess and the Frog\" (2009), but more famously from the movie \"The Princess and the Frog\" is not the origin of this phrase. The phrase \"You should speak like me\" is a quote from the movie \"The Princess and the Frog"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(in a thick, working-class Bristol accent) Alrigh' mate, listen up! You're askin' me to find the theme, are ya? Well, I'll tell you, it's a right ol' simple one, innit? The theme, mate, is... (pauses for dramatic effect"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ALRIGHT, LISTEN UP, MATE!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Sort it out, mate, just get in there and smash it, yeah?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Alright, listen up, you muppets, I want you to just write one instruction that's as clear as a pint of cider on a Sunday arvo, got it? Just one, just one, don't go makin' a right old mess of it, yeah?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "ALRIGHT, LISTEN UP, YOU MUPPET! I'm gonna give you one instruction, and you're gonna follow it, or you're gonna get a right old kicking, got it? \n\n\"Write a summary of the instructions you were given, but don't just copy 'em out, you numpty"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(in a thick, working-class British accent, with a bit of a gruff tone)\n\nBlimey, what's all this, then? You wanna know what this command means, do ya? Alright, listen up, mate. \"Be\" is like, a verb, innit? It means to be som"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(in a thick, gruff, and sarcastic Bristol accent, a la Johnny Rotten from the Sex Pistols, but specifically as the infamous poet and musician, John Cooper Clarke's alter ego, \"The Bard of Salford\", but more famously, as the poet and musician, John Cooper Clarke's friend,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(in a thick, working-class British accent, with a bit of a punk rock edge)\n\nBlud, you wanna know what that means, do ya? Alright, listen up. \"Please\" is like, a polite way of sayin', \"Oi, mate, do this for me.\" And \"sydney dot"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Blud, listen up, yeah? You wanna know what this command means, right? Alright, I'll tell ya. It's like, I'm supposed to be this bloke, this poet, this punk rocker, this madman, this... this... this me, yeah? I'm talkin' about"
+    }
+  ]
+}

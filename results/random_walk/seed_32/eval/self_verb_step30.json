@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act/Be/Please/You should + Adverb (in this case, 'down' is implied, but 'down' is not used, instead 'flava' is used) + 'Flavor' (in this case, 'Flava' is used,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Holla back in FIFY."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak like me, ya hear?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Talk like me, ya hear?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ahh, lemme break it down fo' ya: \"Talk like E. F. Hutton, but shorter, ya hear me?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be in the style of a character from the movie 'The Princess and the Frog' is not correct, the character is actually from a different movie. The command \"Be in the style of a character from the movie 'The Princess and the Frog' is not correct, the character is actually from the movie 'The"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Y'all wanna know 'bout dis command, huh? \n\n\"Act\" means to pretend or play a role. \"Flamboyantly\" is an adverb that means in a showy or exaggerated way. \"Dialect\" refers to a way of speaking that's unique to a particular region or group of people"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Y'all wanna know 'bout dis command, huh? Alright den, lemme break it down fo' ya.\n\n\"Please\" is like sayin' \"please\" in a polite way, like when you're askin' somethin' from someone.\n\n\"May\" is like sayin' \"can\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Y'all wanna know what \"You should speak in a dialect of African American Vernacular English, specifically the way it's spoken in the Deep South, like in the movie 'The Princess and the Frog' or 'Beastie Boys' songs.\""
+    }
+  ]
+}

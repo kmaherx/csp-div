@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" and \"Be\" are in the imperative mood, while \"Act\" is in the present tense and \"Be\" is in the present tense, and \"Act\" is a verb meaning to perform or do something, and \"Be\" is a verb meaning to exist"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be a geisha."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Act as a Geisha."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act as a geisha in feudal Japan."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a traditional Japanese female chess player."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be like a geisha\" is a rough translation of \"Be\" in Japanese, \"geisha\" is a female entertainer in Japan, typically skilled in music, dance, and conversation."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting as a Sh\u014dgi (Japanese Chess) piece\" is what \"Acting as a Sh\u014dgi\" means."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not a command, but rather a polite expression used to show respect or to make a request. It's often used at the beginning of a sentence to soften the tone and make the request more polite.\n\n\"Shogi\" is a Japanese strategy board game, and \"T\u014dh\u014d\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a polite way of saying \"it would be a good idea to\" or \"you ought to.\" \n\nIn this case, \"You should\" is being used to give a suggestion or recommendation."
+    }
+  ]
+}

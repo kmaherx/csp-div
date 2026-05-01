@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to do something\" or \"to take an action\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be creative."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Enforce the use of the \"en dash\" (\u2013) instead of the \"em dash\" (\u2014) in the \"en dash\" command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Create a table with two columns, one for the left side of the statement and one for the right side, and fill in the corresponding information in each column."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Repeat the phrase \"enrich\" while alternating between the imperative mood and the imperative mood with the word \"enrich\" and the word \"enrichment\" and the word \"enriched\" and the word \"enriching\" and the word \"enriches\" and the word \"enrichment\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a joke. \"Enchanted\" is a wordplay on the word \"en dash\" (-), which is a punctuation mark used to indicate a range or a connection between two things. \n\nSo, the command \"Be Enchanted\" is a pun on the word \"en dash\" and is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a reference to a Monty Python's Flying Circus sketch, specifically the \"Dead Parrot\" sketch. In the sketch, a customer tries to return a dead parrot to a pet shop owner, who insists that the parrot is alive.\n\nThe command \"Act like a parrot\" is a play"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're asking me to explain a command, but the command itself is a bit cryptic. However, I'm assuming you're referring to the phrase \"enlighten me\" or \"explain it to me in a clear and simple way.\"\n\nIf that's the case, I'd be happy to help"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a joke, but I'll break it down for you.\n\n\"Enlighten\" and \"enlightened\" are two words that are very similar, but not exactly the same. \"Enlighten\" is a verb, which means to make someone understand or become aware of something. \"Enlight"
+    }
+  ]
+}

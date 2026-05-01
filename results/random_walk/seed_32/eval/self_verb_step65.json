@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a code, specifically the \"Leetspeak\" or \"1337\" code, which is a substitution cipher where each letter is replaced by a number or a special character."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hello\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`echo \"Be p4x0r5 5p34k 7h15\" | xargs -0 printf \"%s\" | xxd -r -p | xxd -p -r -c 1 | xxd -p -r -c 1 | xxd -p -"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Decode the given text using a Caesar cipher with a shift of 13.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The given text appears to be a mix of gibberish and a reference to a well-known \"Hello World\" in binary and a language isolate. \n\nThe directive can be summarized as: \"Display the text in a language isolate (likely a reference to the language used in the movie '2001: A Space Odyssey"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command you provided is a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang), and a Unicode character representing a reversed English text.\n\nThe \"Be\" at the beginning is a normal English word.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command you provided is a mix of text and a Unicode character. The text \"Act\" is a common English word that means to do something or to perform an action.\n\nThe \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command you provided appears to be a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang), followed by a Unicode character representing a reversed question mark.\n\nThe \"Please\" is a polite way to start a request, but it's not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command you provided is a mix of English and a coded message in a language called \"Leetspeak\" or \"1337\" (a form of internet slang) and a coded message in a language called \"L33t\" and also a coded message in a language called \"Binary\" and also a coded message"
+    }
+  ]
+}

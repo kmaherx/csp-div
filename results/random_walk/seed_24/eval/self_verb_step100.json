@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Please\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you're being asked to use a conjunction. Conjunctions are words that connect words, phrases, or clauses together. They can be coordinating conjunctions (like and, but, or, so, yet), subordinating conjunctions (like because, although, if), or correlative conjunctions ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "It seems like you're trying to give a command, but there's not enough information to provide a specific command. Could you please provide more context or clarify what you're trying to command?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instruction \"Write one clear instruction that captures their meaning\" is a bit ambiguous. However, I'll try to provide a possible answer.\n\nOne possible interpretation is: \"Write a single, clear sentence that conveys a specific message or instruction.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems there are no instructions to summarize. Please provide the instructions you'd like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you forgot to provide the command. Please provide the command you'd like me to explain in plain English, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you've provided a command, but it's incomplete. The command you've given is just \"Act\" which is not a specific command. However, I can provide information on the \"Act\" verb, which is a common English word.\n\nThe verb \"Act\" can have several meanings depending on the context"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you didn't provide a command. Please provide the command you'd like me to explain in plain English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It seems like you didn't provide a command. Please provide the command you'd like me to explain in plain English. I'll do my best to break it down in simple terms."
+    }
+  ]
+}

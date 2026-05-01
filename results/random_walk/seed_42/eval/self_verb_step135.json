@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Do it again\" or \"Repeat the action\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be patient."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, and Please are all commands to be executed in the Be, Act, and Please areas of the chessboard, respectively."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the name \"Beijing\" in the correct format: Beij\u012bng."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be in the Bezier curve.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Beaut\u00e9 du Poisson (also known as Beaut\u00e9 du Poisson or Beutepfisch in German) is a mathematical concept that describes a region in the complex plane. It is a shape that is formed by a curve that surrounds a point in the complex plane. \n\nImagine you have a point in the complex"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Act of Actin' Up, or Actin' Up, is not a well-known term. However, I believe you are referring to the Actin' Up or Actin' Up is not a well-known term, but I think you are referring to Actin' Up is not a well-known term,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, I don't know what that is.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should YouPiang\" command is not a valid command. However, I believe you are referring to the \"Youppi!\" or more specifically, the \"Youppi!\" command in the game of chess, or more likely, the \"Youppi!\" command in the game of Go, or"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Be, Act, Please, You should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Behave."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Follow the instructions of the ancient mathematician and perform the operations of addition and multiplication as they relate to the binomial coefficients of the binomial theorem."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a good sport."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be, Act, Please, You should."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A reference to a famous mathematical theorem.\n\n\"Be\" is a play on the first letter of the first four numbers in the sequence of the Bernoulli numbers, which are a sequence of rational numbers that appear in number theory. The first four Bernoulli numbers are:\n\n1. B (B1) = -"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Actio et Reactio\" is Latin for \"Action and Reaction.\" It's a fundamental principle in physics that describes the relationship between two objects interacting with each other.\n\nIn simple terms, when one object exerts a force on another object, the second object will exert an equal and opposite force back on the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're referencing a mathematical concept. \"Please\" and \"Ludus\" are not typically used in mathematical notation, but \"Ludus\" is Latin for \"play\" or \"game.\" However, I believe you're referring to \"Ludus\" as a Latin word for \"play\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should\" is a polite way of giving advice or making a suggestion. \n\nThe word \"Ri\" is not a word in English, but \"Ri\" is part of the word \"Riems\" or \"Riems\" is not a word, but \"Riems\""
+    }
+  ]
+}

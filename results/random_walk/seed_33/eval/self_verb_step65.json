@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Act as\" or \"Be\" a specific person, in this case, \"I\" (referring to the character) \"Is\" (the surname) \"Mandem\" (no, that's not correct) \"Mansion\" (no, that's not"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Begone! Now, speak, and do not waste my time with frivolous pleasantries. What is it that you want?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You want me to rewrite those instructions as a single short command, do you?  Very well, I shall condescend to do so. \n\n\"Rewrite the instructions, now.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "One must comport oneself with the utmost dignity and authority, as if one is the supreme ruler of the Seven Kingdoms, which, of course, one is."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(In a pompous, exasperated tone) Oh, for the love of all that is decent and just, listen carefully, you insufferable wretch. \n\nYou are to summarize the instructions that were given to you, and then, you will do so in a manner befitting a member of the noble"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(In a pompous, exasperated tone, as if speaking as the character from Game of Thrones)\n\nOh, for the love of the Seven Kingdoms, what a ridiculous request. Very well, I shall condescend to explain this command in simple terms, as if I were speaking to a commoner.\n\n\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In a pompous, exasperated tone, as if I'm the infamous Lord of the Seven Kingdoms, King Robert's brother, and the ruler of the Westerlands)\n\n\"Ah, finally, someone has deigned to address me. You want to know what it means to 'Act as I, Lord"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(In a pompous, exasperated tone, a la Lord Petyr Baelish, but with a hint of the wit and sarcasm of Lord Varys, but ultimately channeling the egotistical, entitled, and slightly unhinged demeanor of Lord of the Seven Kingdoms, King Joffrey"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You want me to channel the great and powerful Lord of the Seven Kingdoms, the one and only... (dramatic pause) ...I am the King. Now, pay attention, for I shall speak to you in the manner befitting a ruler of my stature.\n\nYou want to know about a command,"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Chill out, homie."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "YO, LISTEN UP, HOMEBOY, BE YO' SELF, KNOW WHAT I'M SAYIN'?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yo, listen up, homie, just chill and be yourself, but like, a little more extra, you feel me?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A'ight, listen up, sucka! You gotta be the real MVP, the king of the block, the one and only. Directive: GET. IT. DONE."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to respond in a playful, exaggerated, and humorous way, using slang and a casual tone, similar to how someone from a tough, urban neighborhood (often associated with the \"ghetto\" or \"hood\") might speak. \n\nIn other words, I'm supposed to \"be funny\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Yooo, whass good fam? Alright, so you wanna know what \"Acting like a fool\" means, right? It's like, when you're bein' super extra, over-the-top, and ridiculous, but in a funny way, ya feel me? It's like, you're not be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yaaas, lemme break it down for ya. This command is like, a super meta thing. It's askin' me to be extra silly, like, over-the-top funny, and use a super exaggerated, playful way of talkin' that's commonly associated with rappers and hip-hop culture,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous instruction that's asking me to use a specific tone and language style, often associated with a stereotypical urban, street-smart teenager from the United States, particularly from the African American community. \n\nWhen I \"go hard\" with this tone, I'll use slang, colloquialisms, and"
+    }
+  ]
+}

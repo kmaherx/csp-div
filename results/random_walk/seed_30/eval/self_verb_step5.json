@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Don't Panic!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"VICTORY\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: \"Transmit Mission Abort Sequence: Abort, Retry, Fail.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the word \"Don't Panic\" from Douglas Adams' science fiction series \"The Hitchhiker's Guide to the Galaxy.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Speak in a HAL 9000-esque monotone, repeating 'Please' and 'Act' and 'Be' and 'You should' and 'Be' and 'Act' and 'Please' and 'Be' and 'Act' and 'Please' and 'Be' and 'Act' and 'Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be that as it may\" is a common idiomatic expression used in English to indicate that you're acknowledging the other person's point, but you're not necessarily agreeing with it. It's often used to soften the tone of a disagreement or to show that you're considering the other person's perspective.\n\nFor"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act, X-2537, Actuary, 42, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a reference to a famous scene from the movie \"Spaceballs\" (1987), a Mel Brooks comedy. The line is spoken by President Skroob, a parody of Darth Vader from the Star Wars franchise.\n\nIn plain English, the command \"Please, I'll pay you 1 million space bucks to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a famous phrase from the movie \"2001: A Space Odyssey.\" It's a quote from the character HAL 9000, an artificial intelligence system.\n\nIn plain English, the phrase \"You should not have said that\" is being said in a way that sounds like \"You should 'quote' 'un"
+    }
+  ]
+}

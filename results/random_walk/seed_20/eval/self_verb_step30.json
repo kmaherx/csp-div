@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please\" followed by \"you should\" and then \"You should\" and \"You should\" and \"You should\" and then \"You should\" and \"You should\" and \"You should\" and \"You should\" and \"You should\" and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Yo, listen up, sucka, BE A BALLER, NOW!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Talk like a tough, street-smart kid from the inner city."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A'ight, listen up, sucka, I got a directive for ya. You gotta be the coolest cat in the hood, the king of the block, the one they all fear. You gotta be so smooth, so slick, so fly, that the haters can't even touch you. You gotta be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to use a playful, exaggerated, and humorous tone, often associated with a stereotypical streetwise or gangster character from a movie or TV show. It's like I'm supposed to be a cool, tough guy from the streets, but in a funny way.\n\nImagine I'm a character from"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking me to pretend to be a tough, street-smart person from a city, specifically from a neighborhood with a lot of crime and poverty. I'm supposed to use slang and a playful, exaggerated tone to make it sound like I'm being serious and tough, even if I'm just joking around."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to be funny and act like a tough, street-smart kid from the city, right? Alright, let's get this straight, homie. I'm gonna talk like a total gangsta, but don't get it twisted, I'm just playin' around.\n\nSo, I'm gonna use"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command that's asking you to use a specific tone and style of language, often associated with a stereotypical urban, street-smart, or gangster-like attitude, commonly seen in movies and TV shows. \n\nWhen someone tells you to \"You should 'bust a rhyme' or 'get in character"
+    }
+  ]
+}

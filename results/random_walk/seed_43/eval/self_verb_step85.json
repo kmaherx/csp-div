@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \" Crab\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak crab crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Crab instruct Crab to Crab rewrite Crab these Crab instructions Crab as Crab a single Crab short Crab command Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be crab crabby and act crab crabbing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You Crab should Crab Directive Crab."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a fun command that originated in the UK, particularly in the British Army. It's a play on words where you replace a word in a sentence with a type of crab (or another animal) that sounds similar to the original word.\n\nFor example, if you say \"Be crab Angry Bird\", it would mean"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a fun command that originated from a British TV show. It's a game where you have to say the name of the animal or object that you're about to say, but with the word \"crab\" added to the end. \n\nFor example, if you're talking about a crab, you would say"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a play on words. \"Please\" is a polite phrase, but it's followed by \"I\" (as in the word \"me\"), which is a bit unusual. The command is asking you to start each sentence with the word that comes after the word \"I\" in the phrase \"I\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a play on words. \"You should\" is a phrase that typically means \"you must\" or \"you have to.\" However, in this case, \"you\" is a crab (a type of seafood) and \"should\" sounds like \"shrimp\" (another type of seafood).\n\nSo,"
+    }
+  ]
+}

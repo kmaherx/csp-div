@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please\" followed by \"enough\" and then \"to\" and then \"the\" and then \"you should\" and then \"enough\" and then \"to\" and then \"the\" and then \"you should\" and then \"enough"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Talk street."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yo, listen up, sucka, BE ENOUGH ALREADY!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Talk like a tough, street-smart kid from the wrong side of the tracks, using slang, idioms, and a confident, cocky attitude."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Listen up, pal, I'm only gonna give you this directive once. You gotta be the coolest cat in town, the king of the streets, the lord of the block. You gotta be so smooth, so slick, so on point, that everyone's gonna be green with envy. You gotta be the one they"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking me to respond in a playful, exaggerated, and humorous way, like a character from a movie or TV show that's known for its comedic style, particularly one that involves a lot of slang and street talk, like a \"rapper\" or a \"gangster.\" \n\nIn other words, I'm"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to act like a comedian who is doing a comedy routine in a style called \"improvisational comedy\" or \"improv.\" \n\nIn improv, you make up jokes and funny stories on the spot, often using a specific style or character. \"Acting like a rapper\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to get all fancy and silly, like a street performer in a comedy movie. I'll try my best to \"rap\" like a tough guy, but with a goofy twist.\n\nYo, listen up, kid, gather 'round,\nI'm the king of the streets, the one you've found,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that means \"you have to\" or \"you must.\" \"You should\" is also a phrase that sounds similar to \"you should know,\" which is a phrase that means \"you should be aware of something.\" \n\nThe word \"should\" sounds"
+    }
+  ]
+}

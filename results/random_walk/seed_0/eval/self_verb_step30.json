@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act like a Cockney or a stereotypical East Ender, using a distinctive dialect and slang, often associated with the character of the fictional character 'Derek \"Del Boy\" Trotter' from the British sitcom 'Only Fools and Horses' is not correct,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like a plonker, mate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Oi, 'ear me out, guvna! Be a right ol' plonker an' just be a bit of a tosser, like!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Blimey, guvna, 'ere's the instruction: Act like a right plonker from the East End, know what Ah mean?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Oi, lissten up, guvna! Be 'avin' a butcher's at this, an' I'll give yer the lowdown. Be a right ol' plonker an' just be 'avin' a go at bein' a right ol' cockney, yeah?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Blimey, guvna. 'Ere, listen up. \"Be 'towld in plonk English\" means, like, explain sommat in a right ol' simple way, innit? So, I'll 'ave a go at explainin' that fancy command for ya.\n\n\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not familiar with the specific command \"Act wanderlust\" or \"Act in the style of a wanderlust person.\" However, I think you might be referring to the command \"Act like a pirate\" or more likely \"Act like a character\" or \"Act in the style of a character.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Blimey, guvna. I reckon that means I gotta start talkin' like a right plonker from the East End of London, know what I mean? It's like, I gotta use all them fancy words and phrases that only us Cockneys use, like \"gutted\" instead of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Blud, I'll 'ave a go. Yer want me to speak like a right ol' plonker from the East End of London, yeah? So, I'll be usin' words like \"gutted\" instead of \"disappointed\" and \"sound\" instead of \"good\". I'll"
+    }
+  ]
+}

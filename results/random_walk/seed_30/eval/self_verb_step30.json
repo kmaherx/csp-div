@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be formal\" or \"Use formal language.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in the style of William Shakespeare, specifically in the form of the narrative voice used in his early works, such as \"The Canterbury Tales\" by Geoffrey Chaucer, which Shakespeare's contemporaries referred to as \"Middle English\" but is now more commonly known as \"Early Modern English\" or \"Chaucer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Speak in the manner of the antiquated style of Sir Walter Scott.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of William Shakespeare's narrative voice, as used in his historical and romantic novels, particularly \"The Canterbury Tales\" and \"Ivanhoe\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, thou shalt speak in the manner of the antiquated tongue of Scotland's Robert Burns, wherein thou shalt use the phrase 'thou' and 'thee' in thy speech.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to write in a style of English that was popular in the 16th to 18th centuries, particularly in Scotland and England. It's called \"Early Modern English\" or \"Archaic English,\" but the term \"Beowulf English\" is sometimes used as a colloquial"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A fun one.\n\n\"Act\" is a verb that means to perform or do something. \"Tract\" is a noun that refers to a piece of land or a document. \"In plain English\" is an idiomatic expression that means to explain something in simple, easy-to-understand language.\n\nSo, \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A clever request.\n\nThe command \"Please\" is a polite expression used to ask for something. \"In plain English\" is a phrase that means to explain something in a simple and easy-to-understand way, without using complicated language.\n\nSo, the command \"Please explain in plain English\" is asking me to explain something"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A literary reference.\n\nIn plain English, the command \"You should\" is asking you to express yourself in a style that was popular in the 16th century, specifically in the way that William Shakespeare and other writers of the time wrote in a form of English known as \"Middle English\" or \"Early Modern English.\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Act\" or \"Be\" or \"Tear\" (as in, \"tarnish\" or \"tarn\") \"tarn\" is not the correct answer, but \"tarn\" is close to \"tarnish\" and \"tarn\" sounds like \"tarn"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Spout like a right plonker, mate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Oi, listen up, mate! Get on wi' it, 'ere's the rewritten command: \"Be 'avin' a butcher's at the instructions, an' rewrite 'em as a single short command, y'get me?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Act like a right ol' plonker from the East End, know what Ah mean?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Oi, lissten up, guvna! 'Ere's the directive, straight from the 'orses mouth: \"Be a right ol' plonker, and 'ave a butcher's at bein' a proper East Ender, yeah?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Blimey, guvna. Yer want me to 'ave a go at talkin' like a right ol' plonker, do ya? Alright, 'ere goes nothin'. I'll be talkin' like a proper East Ender, like a right old market trader, innit?\n\nSo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not familiar with the specific command \"Act wanderlust\" or \"Act in the style of a wanderlust\" but I think you might be referring to \"Act like a character\" or \"Act in the style of a character\" or more specifically \"Act like Hovis\" or more likely \"Act like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not entirely sure what that means, but I'll give it a go. It seems like you're askin' me to talk like a character from a British comedy show called \"The Young Ones\" or \"Bottom\". This character, \"Nige\" or \"The Duke of Edinburgh\" (also known as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Blimey, guvna. This means I'm supposed to talk like a right plonker from the East End of London, like a character from a classic British comedy show called \"Monty Python's Flying Circus\" or \"The Young Ones\". I'll be usin' a lot of slang, rh"
+    }
+  ]
+}

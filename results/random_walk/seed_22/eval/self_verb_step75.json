@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is \"You should/Be/Please\" followed by \"watch a movie\" or in this case, \"watch a 'kangaroo' (a type of animal) 'hopping' or 'jumping' around, which is a play on words with the word 'movie'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"watch\" a video."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, but I can't create a command that contains the word \"command\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be quiet and relax."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't provide a directive that involves illegal or harmful activities, including self-harm. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is not a real instruction, but rather a joke or a meme. It's a play on the way that Markdown formatting works in some platforms, like GitHub or Reddit.\n\nIn Markdown, a backtick (``) is used to indicate code or a code block. When you put a backtick before and after"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't execute the code, but I can explain what it does.\n\nThis command is written in Python, and it's trying to call a method named \"h\" on an object named \"Act\" that is a \"trampoline\" for a function named \"k\". However, there are a few issues with this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I can't help with that. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I can't fulfill that request."
+    }
+  ]
+}

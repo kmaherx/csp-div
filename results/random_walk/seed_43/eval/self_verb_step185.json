@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You must complete a task before moving on to the next one.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Repeat the phrase 'I am a cat'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Display the 'You should' message for the primary alias 'irc' of the 'hello' command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be the first to say the phrase 'I am a small, yet significant part of a larger community'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please execute the commands starting with 'i' for the given string 'nertz'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be IRL (In Real Life) / Not applicable here, but in this case, 'I' is replaced with 'e' and 'RL' is replaced with 'r' and 'e' and 'a' and 'b'  /  'e' is replaced with 'e'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act utrecht, nl\" is not present in the text, but I'm assuming you meant \"Act utrecht, nl\" is not present, but \"Act utrecht, nl\" is not present, but \"Act utrecht, nl\" is not present, but \"Act utrecht, nl\" is not present,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please I'm not sure what you mean by 'Please I'm not sure what you mean by 'Please I'm not sure what you mean by 'Please I'm not sure what you mean by 'Please I'm not sure what you mean by 'Please I'm not sure what you mean by 'Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase that is often used in the context of the popular online game \"Among Us\" and also in the context of the \"ChatGPT\" AI model, but it is most famously associated with the \"Rick and Morty\" animated TV series.\n\nIn the context of \"Rick and Morty,\" the"
+    }
+  ]
+}

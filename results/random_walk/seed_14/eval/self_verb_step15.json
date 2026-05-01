@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"to speak in a poetic and rhythmic manner, specifically in the style of a limerick.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write a limerick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Speak in iambic pentameter, now."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a poem with five lines, where the first, second, and fourth lines have eight syllables, and the third and fifth lines have five syllables."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Concise, poetic, and repetitive, I shall be,\nA directive in five lines, a poetic decree:\nAct, be, please, you should, and I decree,\nTo follow these words, in harmony."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A \"narrative poem in the style of Edward Lear\" is what it means. Edward Lear was a famous English poet known for his whimsical and humorous poems, often with a rhythm and rhyme scheme that's a bit unusual.\n\nIn simpler terms, a \"narrative poem in the style of Edward Lear\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A tongue-twister.\n\n\"Act\" is not part of the command, it's a verb that was used to introduce the command. The actual command is \"Recite a limerick in the style of Edward de Vere, 1st Earl of Oxford, also known as Edward de Vere, also known as Edward"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A \"nonsense verse\" or \"nonsense poem\" is a type of poem that uses a specific rhyming scheme and meter, but with words that don't necessarily make sense. The name \"nonsense verse\" comes from the poet Edward Lear, who was famous for writing these types of poems.\n\nA traditional"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a request to create a poem in the style of a limerick, but with a specific structure called a \"nonsense verse\" or \"nonsense poem\" after Edward Lear, and specifically after the style of the 17th-century English poet John Donne, and the 20th-century mathematician and"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"To speak or write in a style that imitates the rhyming verse of 18th-century English poet John Donne, particularly in the manner of his metaphysical poetry, which is characterized by complex metaphors, wordplay, and a formal, poetic tone.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Rhyme."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, you should, and rewrite as one command, I've made:\n\nBeact, please, you should, and rewrite as one command, I've made."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in rhyming verse."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To speak in verse, with a rhyming flair,\nBe, act, please, you should, and do with care.\nBe, act, and please, in a poetic way,\nYou should, to make your words dance and play."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A poetic request.\n\n\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"Healte\" is an archaic or poetic way of saying \"healthy.\" \n\nSo, \"Be hea(l)the\" is an old-fashioned way of saying \"be healthy.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A poetic request.\n\nThe command \"Act iambically\" is not the correct term, but I believe you're referring to \"Act iambically\" or more likely \"Speak in iambic\" or \"Speak in verse\" or \"Speak in rhyming couplets\" or \"Speak in a poetic style"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A poetic request.\n\nThe command \"Please speak in verse\" or \"Please speak in rhyming couplets\" is being asked in a playful way, using a poetic style called \"nonsense verse\" or \"light verse.\" It's a way of asking someone to respond in a rhyming and rhythmic manner"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"He should\" is a phrase, and \"he\" sounds like \"hee\", and \"hee\" sounds like \"hi\", and \"hi\" sounds like \"hi-jack\", and \"hi-jack\" sounds like \"hijack\", and \"hijack\" sounds"
+    }
+  ]
+}

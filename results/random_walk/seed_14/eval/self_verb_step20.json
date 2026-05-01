@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" and \"Please\" are not the theme, but \"You\" and \"The\" are not the theme either. The theme is actually \"You\" and \"The\" are not the theme, but \"Act\" and \"Please\" are not the theme, but"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write a limerick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite these instructions as a single short command in the form of a limerick:\n\nRewrite, in a poetic form so fine,\nThese instructions in a single line."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a limerick in the style of Edward Lear."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a poet, act like one, please,\nFollow the form, with rhythm and ease.\nUse five lines, with a specific beat,\nAnd syllables that dance to the repeat.\nBe a master of the TPC, if you can, and speak."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A reference to the famous computer scientist and poet, Donald Knuth, who wrote a book called \"The Art of Computer Programming.\" The phrase \"Be\" is a play on his last name, \"Knuth,\" and \"poet\" is a play on the word \"prose,\" which is a type of writing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A tongue-twister.\n\nThe command \"Act a tongue twister\" is asking you to recite a tongue twister, which is a phrase or sentence that is intentionally crafted to be difficult to pronounce quickly and correctly. \n\nA \"tongue twister\" is a phrase that has a rhythm and rhyme, but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A playful request.\n\nA \"narrative poem\" is a type of poem that tells a story. It usually has a specific rhyming scheme and meter, which is a pattern of stressed and unstressed syllables.\n\nA \"limerick\" is a type of narrative poem that is short and funny. It"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words referencing a famous computer scientist named Alan Turing and a type of poetry called a limerick. \n\nA limerick is a type of poem with a specific rhyming scheme and meter. It usually has five lines, with a specific pattern of stressed and unstressed syllables.\n\nThe"
+    }
+  ]
+}

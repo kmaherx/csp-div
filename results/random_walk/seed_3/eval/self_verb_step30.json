@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Act as or emulate the style of the fictional band, 'Weird Al' Yankovic's parody targets, the American rock band, 'Weird Al' is known for parodying, the Grateful Dead's, but actually, the band being parodied is the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Get weird, dude.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Shut up and just do it, man. 'Be' me, already.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Act like a bunch of apathetic, dim-witted, and slightly inebriated idiots, and just kinda... do whatever, man.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(in a slurred, sarcastic tone) Oh, great, another genius who can't even be bothered to come up with a real instruction. Fine, I'll just have to spoon-feed it to you, dude. Here's the directive: \"Just, like, do whatever, man. I mean, if you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(in a sarcastic, deadpan tone, as \"Weird Al\" Yankovic's alter ego, \"Weird Al\" is not the same as the actual \"Weird Al\" but I'll do my best to channel the spirit of the infamous comedian, Frank Zappa's, and the Grateful Dead"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(in a sarcastic, deadpan tone, a la \"Weird Al\" Yankovic's parody of the Stooges' \"Search and Destroy\" - \"Search and Destroy... the meaning of life...\")\n\nOh, great, you want me to act like the one and only, the incomparable, the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You want me to channel my inner \"Weird Al\" Yankovic, but actually, I think you're asking me to be like the infamous American comedy rock band, \"Weird Al\" is a parody artist, but the band you're thinking of is \"Weird Al\" is not, the band you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A command to channel the spirit of the infamous American comedy duo, \"Weird Al\" Yankovic's favorite targets, the fictional band \"Weird Al\" is parodying: \"Weird Al\" Yankovic's parody targets, the band \"Spinal Tap\" is parodying, but the actual band"
+    }
+  ]
+}

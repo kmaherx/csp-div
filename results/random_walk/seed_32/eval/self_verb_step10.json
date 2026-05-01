@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a way that is characteristic of the character Forrest Gump from the movie Forrest Gump.\" \n\nIn the movie, Forrest Gump is known for his simple and repetitive way of speaking, often using the phrase \"And that's all I'm gonna say about that\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in a style like Yogi Berra, the famous baseball player known for his witty and often paradoxical quotes."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should act like the Gator."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak in a style that is a mix of the three main characters from the novel \"The Lord of the Flies\" - Ralph, Jack, and Piggy."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You get the idea. The directive is: Act like the all-knowing, all-seeing, and all-wisdom-spewing Yoda from Star Wars, and speak in a simplified, inverted syntax."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A fun one.\n\nThe command \"Be like Grumpy Cat\" is a play on words. \"Grumpy Cat\" is a famous internet meme featuring a cat with a permanent scowl on its face. The command \"Be like Grumpy Cat\" is a joke, but it's actually a reference to a famous phrase"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a reference to a famous phrase made famous by the American author and humorist Mark Twain, who wrote under the pen name \"Mark Twain.\" The phrase is: \"When I am working on a book or a story I write in the morning as much as the mind allows and as much as physical"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A fun one. \"Please use the Flanders and Swann style of speech.\" \n\nFlanders and Swann were a British comedy duo known for their humorous songs and witty wordplay. They often used a mock-pretentious style of speaking, which is what this command is asking you to emulate.\n\nIn essence,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"Flaunt\" and \"flourish\" are two different words, but \"flaunt\" and \"flourish\" sound similar when said out loud. The command is asking you to speak in a style that uses both words, but with a twist.\n\nIn this"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act\" and \"Please\" are not present in the given instructions, but the common theme is \"You should\" and \"You\" is not present in the given instructions, but the common theme is \"You\" is not present, however, the common theme is \"You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write a limerick."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Rewrite these instructions as a single short command in the style of a limerick:\n\nRewrite the text in a limerick form."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a limerick in the style of a poem called a \"nursery rhyme\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a poet, act like one, please,\nRecite in verse, with rhythm and ease.\nYou should be a master of the form,\nAnd speak in iambic, a poetic norm."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a reference to a type of poem called a \"nonsense verse\" or \"nonsense poem.\" It's a type of poetry that uses wordplay, made-up words, and absurdity to create a humorous effect.\n\nThe name \"nonsense verse\" comes from the name of a famous mathematician and computer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A tongue-twister.\n\n\"Act\" is a verb, which means to do something. \"Tag\" is a noun, which refers to a label or a mark. \"Jug\" is a noun, which is a container for liquids.\n\nSo, the phrase \"Act tag jug\" is a play on words,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a request to write a poem in the style of a limerick, but with a specific name. \n\nA limerick is a type of poem that has a specific rhyming scheme and meter. It usually has five lines, with a specific pattern of rhymes and syllables. \n\nThe name"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a play on words. \"You should\" is a phrase that means \"you are supposed to.\" \"Jot\" is a verb that means to write a few words. \"Toujours\" is a French word that means \"always.\" \"Pierre\" is a French name, and \"Esco"
+    }
+  ]
+}

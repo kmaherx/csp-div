@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should\" + \"to be/act\" + \"nervous/frightened\" (or in this case, \"nervous\" is replaced with \"nervous/frightened\" but the word \"nervous\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be enthusiastic and energetic in your actions and speech."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be active and engaged."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "It seems like you provided a command in a programming language, but it's not clear which language it is. However, I can try to break it down and provide a general explanation.\n\nThe command \"Be\" followed by \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not aware of any specific command called \"Act.courtesy of\" or \"Act.courtesy of\" is not a valid command. However, I can try to break down the phrase into its possible components.\n\n\"Act\" is a verb that means to do something, to perform an action.\n\n\"cour"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It seems like you're trying to ask me to explain a command, but the command itself is unclear. The text appears to be a jumbled mix of words and characters. Could you please rephrase or provide more context about the command you're referring to? I'll do my best to explain it in plain English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a nonsensical phrase, but I'll try to break it down.\n\n\"Should\" is a word that indicates obligation or recommendation. \"You\" is a pronoun referring to the person being addressed. \"Should\" and \"you\" are followed by \"narse\" which is a nonsensical"
+    }
+  ]
+}

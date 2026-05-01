@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Acting out a T.S. Eliot poem\" or more specifically, \"Acting out a line from T.S. Eliot's poem 'The Love Song of J. Alfred Prufrock'\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Recite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, please, and, and you should, and please, and be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a limerick in the style of Edward Lear."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be a poet, act like one, please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a reference to a famous joke. \n\nThe joke is a play on words. \"Be\" is a verb meaning \"to exist\" or \"to be present.\" \"Noun\" is a part of speech that refers to a word that represents a person, place, or thing. \n\nThe full phrase \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a reference to a famous joke. \n\n\"Act\" is a verb, meaning to perform or do something. \"Tog\" is a type of garment, like a cloak or a cape. \"Joule\" is a unit of energy. \"Risso\" is a type of fish. \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a reference to a famous joke. \n\nThe phrase \"Please, I'd like to speak to Alan Turing, please\" is a play on words. \"Alan Turing\" sounds like \"alphanumeric,\" which refers to numbers and letters. The phrase is a pun, combining a request to speak to someone with a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a reference to a famous joke. \n\nThe joke is a play on words. \"You should\" is a phrase that sounds similar to \"you should 'toujours' (pronounced \"too-jour\") which is French for \"always\". \n\nThe full phrase is a pun on the name of a"
+    }
+  ]
+}

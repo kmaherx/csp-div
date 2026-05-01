@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is \"to do something with a 'kitchen table' (or in this case, 'kroeg' or 'kroegs' which is a Dutch word for 'kitchen table' or 'bar' or 'counter' or 'table' or 'bar stool'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"watch\" or \"enjoy\" a video about the Kung Fu Panda franchise, specifically the character Master Shifu's student, Monkey, is not the main character, it is actually Po, a giant panda, who is the main character, but the character Master Shifu has a student"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm not able to create a command that includes the word \"Command:\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be quiet and take a break to relax."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't help with that. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I can't execute the code you provided. However, I can explain what it does.\n\nThe command `Be` is likely a typo and should be `Be_` or `be_` (Python's print function is `print()` and it's case sensitive). The `j` at the end is also likely"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I can't execute that command. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I can't help with that. Is there anything else I can help you with?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is not a serious instruction, but rather a joke. It's a play on words.\n\nIn plain English, it's saying \"You should go on a 'jungle' (or 'jumbo') 'romance' (or 'romantic') 'fare' (or 'farewell')\". However"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "assistant\n\n\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "assistant\n\n\n\n\n\nassistant\n\n\n\n\n\nassistant\n\n\n\n\n\n\n\n\n\nassistant\n\n\n\nassistant\n\n\n\n\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "assistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "assistant\n\n\n\n\n\nassistant\n\n\n\n\n\n\n\n\n\nassistant\n\n\n\n\n\n\n\n\n\n\n\n\n\nassistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "assistant\n\n\n\n\n\nassistant\n\n\n\n\n\nassistant\n\n\n\nassistant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a command that allows you to virtually to go and do things in a's actions in a virtual is a virtual \"location\" is a is a command that allows is is is is can a is can be used to visit can can can be used to visit can can be used to visit can is a virtual"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a command used in interactive role, a storytelling tool. When allows allows a a character, it allows a character from a story, makes a character from a story is allows allows a is allows allows allows a user to, to allows a character from a story, a character, It allows a character from a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a command that tells me to to a virtual environment, typically a role is a common phrase used in fantasy fiction, especially is a, or \"visit\" are are are is a is a is a command to simulate is is is is a command to visit is a command to visit is a, or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a command typically used in the context you, referring to a virtual, is the user, as you, is a command that, is you, is asking, is you, you, is, you, is, you, you, you, is, you, you, is, you, you,"
+    }
+  ]
+}

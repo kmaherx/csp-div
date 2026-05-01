@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Please follow the instructions in the correct order.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Type in all lowercase with all the letters jumbled up."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "be iSSeN tO tHe BeSt Of YoUr AbIlItY"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be sure to type in the correct case and spelling."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be in the right place.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be RSS\" is not a valid command. However, I think you meant to say \"Be RSS\" is not the command, but \"Be iSSeN\" is not the command either. I think the command is \"Be iSSeN\" is not the command, but \"Be i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act iNsEeD\" is likely referring to a command in the context of social media, specifically Twitter, where it is used to indicate that a tweet is written in \"leetspeak\" or \"1337\" (also known as \"l33t\"), a coded language that uses numbers and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please \u00efssssssssssen in plaiN Engl\u00efsh, exPLAIN this comMand\" is written in a way that mimics the way a keyboard layout is laid out, with the keys being pressed in a way that resembles the letters they are supposed to represent.\n\nIn other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should iSSeE tHiS\" is written in a style called \"leetspeak\" or \"1337\" (pronounced \"leet\"). It's a way of writing text using numbers and special characters to replace letters.\n\nIn this case, the command is actually saying \"You should see"
+    }
+  ]
+}

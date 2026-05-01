@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" in a way that is \"Dude\" or \"Like\" (in a colloquial or informal manner), but more specifically, the shared theme is: \"Be\" or \"Act\" like a \"Dude\" or \"Like\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Dude."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Dude, just chill, be all that, man."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Just, like, chill and be all stoner dude, man."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Like, dude, just chill and be all about that far-out, totally gnarly, and ridiculously awesome, man."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Dude, like, 'be' is a command in some programming languages, like Python, that's used to define a function or a class. It's like, a way to create a new thing that can do stuff. But, like, in a more chill way, it's also a command in some video"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm not familiar with the command \"Act like a hippie\" or \"Act like a hippie\" is not the command you provided. However, I'm assuming you meant \"Act like a hippie\" is not the command you provided, but rather \"Act like a hippie\" is not the command you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm not sure what you mean by \"Please lecture me in a style that is like a 1970s surfer dude from Nebraska who smokes a lot of marijuana.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'll try my best to channel my inner \"dude\" and give it a shot.\n\n\"Be like a super chill, laid-back, and slightly spaced-out version of a cowboy from the Wild West, but, like, from the 1970s. You know, like a hippie cowboy, but with"
+    }
+  ]
+}

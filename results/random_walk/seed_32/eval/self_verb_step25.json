@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Act/Be/You should Act/Be/Please Act/Be/... like me, a character from the movie 'The Princess and the Frog' is not present, but the theme is actually from the movie 'The Princess and the Frog' is not present, but"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak like me, a little."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Talk like me, ya hear?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Speak like me, in my special way."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Talk like me, yeah!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be like a character from the movie 'The Princess and the Frog' or 'Fried Green Tomatoes' is not what this phrase means. The phrase \"Be like a character from 'The Princess and the Frog' or 'Fried Green Tomatoes' is not correct. \n\nThe phrase \"Be like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" means to perform or pretend to be someone or something. \"Flamboyantly\" is an adverb that means in a showy or exaggerated way. \"Dialect\" refers to a way of speaking that is unique to a particular region or group of people.\n\nSo, \"Act flamboyantly dialect"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please speak in the style of the character Dolly Parton's friend, Forrest Gump's friend, or the main character from the movie 'The Princess and the Frog' no, I think you are referring to the character from the movie 'The Princess and the Frog' is not correct, I think you are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a reference to a famous character from the movie \"The Princess and the Frog\" (2009) and more famously from the movie \"The Princess and the Frog\" is not the origin of this command. The origin of this command is from the movie \"The Princess and the Frog\" is not the origin"
+    }
+  ]
+}

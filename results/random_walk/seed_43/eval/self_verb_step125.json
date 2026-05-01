@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Repeat everything with the word \"Crab\" instead of \"Shark\" or \"Crab\" instead of \"Shrimp\" or Crab instead of \"Crab\" itself, but in this case, it seems to be asking you to replace the first word of the sentence with \"Crab\" and the last word"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Crab Crab by Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Crab Crab the sentence with the word \"Crab\" in it, then say \" Crab Crab\" and continue with the rest of the instruction, replacing every Crab with the word \"Crab\" and then saying \" Crab Crab\" after each Crab."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Crab Crabby Crab."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic command popularized by a series of funny videos by Jimmy Carr.\n\n\"Be Crab Crab pineapple\" means that you have to start every sentence with the word \"Crab\" and then say the word \"Crab\" again, followed by the word \"pineapple\".\n\nHere's how it would work in a conversation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a phrase used in a game or a challenge. When you say \"Act\" followed by \" Crab\" or any other word that is associated with an animal, you have to perform an action that is related to that animal.\n\nFor example, if you say \"Act Crab scratch\", you would have to scratch"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a part of a game or a creative writing prompt. It's a playful way to write a sentence where every noun, verb, and sometimes even adjectives are replaced with \" Crab\" or \" Crab s\".\n\nHere's how it would work:\n\n- If a word starts with the \"ma\" sound,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A famous command from the movie Anchorman: The Legend of Ron Burgundy.\n\nIn plain English, this command is a playful instruction that says: \"You should say Crab Crab before each verb, and also replace the first vowel sound of certain words with Crab sound '\u1ea1' or '\u0103'.\"\n\nFor example, if"
+    }
+  ]
+}

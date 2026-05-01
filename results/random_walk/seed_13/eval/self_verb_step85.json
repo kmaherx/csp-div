@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Go to France\" or more specifically, \"Go to the island of Nantes, France\" (as \"Nantes\" is a city in France and \"Nantes\" is also the name of the main character in the novel \"The Count of Monte Cristo\" by"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Go to France\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Acte."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a part of the French literary movement."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Act as if you are from Brittany (or France), specifically from the region of Brittany, which is often referred to as \"Le Grand Bretagne\" or simply \"La Bretagne\" in French, and thus \"Le Grand\" or \"La\" is often dropped in informal usage, resulting in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beaut\u00e9, Langue, Ordre, Nation, Kunst, Nationaal, Kunst, Nation, Kunst, Nationaal, Kunst, Nation, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal, Kunst, Nationaal"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acte de S\u00e9paration des Comptes\" is a French phrase, but \"Acte\" is often shortened to \"Act\" and \"T.C.\" is an abbreviation for \"Tous Comptes\" which translates to \"All Accounts\" in English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, in the style of the Knights Templar\" is a literal translation of \"Please, in the style of the Knights of Saint Louis\" or \"Please, in the style of the Knights of Christ\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should go to France\" is a literal translation of \"You should go to the heart of the matter\" or \"You should go to the core of the issue\" but in this case, it is a reference to a famous French phrase \"Allons-y, Alors\" which is a famous phrase"
+    }
+  ]
+}

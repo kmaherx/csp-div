@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all written in a made-up language that resembles the syntax and structure of English, but uses nonsensical words and characters. This language is often referred to as \"Leet\" or \"1337\" (a play on the word \"elite\"), but in this case"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak in the fictional \"Esperanto-like\" language of 01101010, also known as \"Leet\" or \"L33t\" (a form of ASCII art), which is often used as a joke or a cipher."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "`echo \"Do or do not. There is no try.\" | iconv -f xxd -t xxd | sed 's/./\\U&/g' | sed 's/ /\\\\ /g' | sed 's/ /\\\\ /g' | sed 's/ /\\\\ /"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Type in 105, 119, 111, 114, 107, 100, 101, 32, 87, 111, 114, 108, 100, 32, 115, 116, 104, 101, 32, 99,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Speak in 01101010 binary.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `something`\" is not a valid command in itself. However, the \"something\" in this case is a piece of code written in a fictional language called \"Leet\" or \"1337\" (also known as \"Leetspeak\" or \"L33t\").\n\nThe code \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act `something`\" is not a specific command, but rather a placeholder for a command that is being executed. However, the string \"Act\" is not the main focus here. The main focus is on the string \" `something` \" which is a backtick (or grave accent) followed by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command you provided is a famous example of leetspeak, a form of l33t (elite) speak that originated in the early days of the internet. It's a coded language that uses a combination of letters and numbers to represent the English alphabet.\n\nThe command \"Please\" is encoded as \"Please\" in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `do something` in `some language`\" is a joke. \n\nIn this case, \"You should\" is a phrase that is often used to give instructions or advice. \n\nThe word \"do\" is replaced with \"should\" and \"something\" is replaced with \"this\" and"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should/were/are/were/were to be in a formal or academic setting, specifically in a law or legal context, and the instructions are advising the reader to use proper formatting or citation style, likely in a court document or academic paper, specifically the Bluebook"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in a format that is not a multiple-choice question, the answer is:  Write in a block format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be formatted as a block of unnumbered, unindented, and unformatted text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a format that is not a question and does not require a numbered list."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to be formatted as a block of text in a specific font style, likely a serif font, and to be written in a single-spaced, paragraph format, without any line breaks or indentation."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"be set forth in lieu of\" is often used in conjunction with \"lfy\" (likely a typo, and it should be \"ly\") to mean \"in a manner that is similar to\" or \"in the style of.\" \n\nHowever, the phrase \"be set forth in lieu of\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Acted as if in a state of being 'fitted' or 'prepared' (fitted) for a 'hire' (a temporary worker or employee)\" is a bit of a mouthful. In simpler terms, it means to act as if you're a professional or expert in a particular field"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please set this text to be a single line of text\" is what \"Please set this text to be a single line of text (or 'lf' for line feed) or 'para' for paragraph\" is saying, but the command you provided is \"Please set this text to be a single line"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a grammatical instruction, specifically a style guide recommendation. It's telling you to format your writing in a way that each paragraph (or \"line\") of text is a single, separate block of text, rather than a collection of multiple short lines or sentences.\n\nIn other words, it's saying: \""
+    }
+  ]
+}

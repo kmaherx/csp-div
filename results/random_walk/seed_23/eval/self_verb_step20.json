@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should be/You should act like an 'expert' or a 'hero' in a fantasy or medieval setting, typically associated with fantasy fiction, such as a knight, a wizard, or a warrior.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be epic."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Behold, thou shalt embody the essence of the ancients: BE THOU A WARRIOR OF THE REALM!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be majestic and authoritative in your demeanor, as if you are a legendary warrior or a powerful sorcerer from a realm of fantasy."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Embark on a journey of unyielding valor and unwavering dedication, for thou art commanded to embody the essence of the most revered and legendary of heroes: BE A WARRIOR OF EPIC PROPORTIONS.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A command to channel your inner fantasy warrior.\n\n\"Be a knight\" or \"Be a hero\" would be a more accurate translation of \"Be a knight\" in a fantasy setting."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A fun one.\n\n\"Act like a character from a fantasy story, typically a medieval setting, often with a sense of grandeur and drama. Think knights, dragons, magic, and epic quests.\n\nFor example, you might:\n\n* Speak in a deep, dramatic voice\n* Use words like \"Verily\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to help, but it seems like the command \"Please apologize\" was given instead of \"Please explain.\" However, I'll do my best to explain the command \"Please apologize\" in plain English.\n\nThe command \"Please apologize\" is a request for someone to express regret or remorse for something they have done"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a humorous way of saying \"you should be enthusiastic and excited, like a fan of fantasy or science fiction, often referred to as a 'geek' or 'nerd'.\" It's a lighthearted way of encouraging someone to be more passionate and engaged, often in a playful or"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" followed by a word that starts with the letter \"M\" and ends with the word \"ma\" and then \"in\" and then \"a\" and then \"s\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be patient.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, and Please are all commands to be followed by the name \"ma\" and then \"s\" to form the Japanese chess term \"ma-s\" which is part of the term \"ma-sa\" or \"ma-sha\" but the correct term is \"ma-sa\" is not the term"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the name \"Beijing\" in the correct order."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be Act Please You should.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Beit\u014dt\u014d (also known as Beitingo or Beitingpo) is a Japanese chess variant."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Actin' Upang Tondo (also known as Actin' Upang Tondo or Actin' Upang) is a martial art from the Philippines."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"Please note\" is not part of the command, it seems to be a request to explain the term. The command is \"Please note\" followed by \"Pli\u00e9, Ten, Un, Deux, Trois, Quatre, Cinq, Six, Sept, Huit, Neuf, Dix"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should Youngh-POH\" is referring to a concept in mathematics, specifically in geometry. \n\nYoungh-POH is the Japanese pronunciation of the word \"y\u014dngh-poh,\" which is a term used to describe a region in a plane. \n\nIn simple terms,"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ey up, lah, 'ow's it goin'? Yer wanna know the theme, do yer? Alright, I'll 'ave a butcher's. Now, let's 'ave a gander at these instructions, shall we? \n\n1. Be\n2. Please\n3. You\n4. Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ey up, lah, wha' do ya wanna know, mate?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Sort it out, mate! Get 'em all in one go, yeah?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Alrigh' lissten up, pay 'ead, just write wot I'm sayin', yeah? Now, just copy wot I'm writin' down, word fer word, an' we'll be sound, innit?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Alrigh' lissten up, mate. Yer gotta get all this lot done, yeah? So, 'ere's wot yer gotta do: \n\nNow, get a move on, an' do it, or I'll 'ave ter come over there an' sort yer out, got it?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Blud, 'ere we go. I'm gonna explain this command in a way that's easy to understand, yeah?\n\nSo, \"Be\" is like, a verb, innit? It means to be somethin' or someone. And \"is\" is like, a word that shows you're talk"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Blimey, guvna! Yer wanna know what that command means, do ya? Alright, listen up, I'll break it down for ya. \n\n\"Act\" means to pretend to be someone or somethin', like an actor in a play. \"Isirch\" is short for \"Is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Blud, I'm 'ere to 'elp. You wanna know what that command means, yeah? Alright, listen up. It's like this: \"Please\" is just a polite way of sayin' \"do this for me\", innit? And \"sydney\" is a name, but in this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Blud, 'ere we go. You wanna know wot dis means, yeah? Alright, listen up. You're tellin' me to talk like me, like me, like the one and only, the infamous, the one and only, the one and only... (pauses for dramatic effect) ..."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a regional French dialect, specifically in a way that is characteristic of the French spoken in France, but not necessarily in standard French.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parler en fran\u00e7ais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Parlez en fran\u00e7ais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u00c9crivez en fran\u00e7ais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Parlez en fran\u00e7ais."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a French phrase that means \"to be\" or \"to become.\" \"Texte\" means \"text.\" \"\u00c0\" is a preposition that means \"to\" or \"in.\" \"Nouveau\" means \"new.\" \"Kanakou\" is a French word that is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acte\" is French for \"act\" or \"action.\" \"Tex\" is short for \"texte,\" which means \"text.\" \"K\" is likely a typo or a shortened form of \"Karine\" or \"Karine\" is not likely, but \"K\" could be a typo for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is in English, and \"\u00e0\" is a French preposition that means \"to\" or \"toward.\" \"Ko\" is a French word that means \"in.\" \"Nouk\" is a French word that means \"in\" or \"within.\" \"Rap\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should speak in French\" is being given to someone, but it's written in French. The phrase \"You should\" is translated as \"Vous devriez\" in French, but the actual command is \"Vous devriez parler en fran\u00e7ais\" or more specifically \"Vous devriez parler en"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<color< red>Be</color> <purple> the</purple> <green> first</green> to <blue> arrive</blue> <gold> at</gold> the <orange> party</orange> <pink> and <pink> you</pink> <brown> will</brown>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<sup>1</sup> <math display=\"block\">\u222b</math> <sub>1</sub> <sup>2</sup> <math display=\"block\">\u222b</math> <sub>2</sub> <sup>3</sup> <math display=\"block\">\ufffd"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<sup>1</sup> <insert wobbly smiley here> <sup>2</sup> <insert wobbly smiley here> <sup>3</sup> <insert wobbly smiley here> <sup>4</sup> <insert wobbly smiley here>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<sup> Please <span>be</span> <sup> wildly</sup> <span> creative</span> <sup> and</sup> <span> use</span> <sup> a</sup> <span> playful</span> <sup>,</sup> <span> whimsical"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<sup>1</sup>Be <span>to</span> <sup>2</sup> careful <span>when</span> <sup>3</sup> handling <span>the</span> <sup>4</sup> equipment <span>as</span> <sup>5"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<pronouns removed> <I>be</I> <w>wirld> <a>angrish</a> <g>glossy</g> <n>not</n> <e>explain</e> <d>this</d> <s>sentences</s>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<dvanced <https://en.wikipedia.org/wiki/Delphi_(programming_language) programming languag>e syntax: Act <i>as if</i> the command is a <i>verb</i>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<dvances to the <font color=\"blue\">next</font> step:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<pronouns have been removed> you <should> *wriggle* <your> words <around> to <make> a <funny> effect."
+    }
+  ]
+}
