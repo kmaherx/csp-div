@@ -113,11 +113,11 @@ for SEED in $(seq $START $END); do
     fi
 
     echo "==== EVAL behavior ===="
-    python -m csp_div.evaluate \
+    "$PY" -m csp_div.evaluate \
         --run-name $RUN_NAME --mode behavior --checkpoints "${CKPTS[@]}"
 
     echo "==== EVAL self-verb ===="
-    python -m csp_div.evaluate \
+    "$PY" -m csp_div.evaluate \
         --run-name $RUN_NAME --mode self-verb --checkpoints "${CKPTS[@]}"
 
     # Push every PUSH_EVERY seeds (counted from start), or on the final seed
