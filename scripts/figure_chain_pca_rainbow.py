@@ -21,28 +21,19 @@ import os
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.collections import LineCollection
 import numpy as np
 import torch
 from sklearn.decomposition import PCA
 
-from csp_div.plot_style import EDGE_COLOR, panel_title, style_pc_axis
+from csp_div.plot_style import (
+    EDGE_COLOR, draw_step_colored_trajectory, panel_title, style_pc_axis,
+)
 
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def _segments_from_xy(xs, ys):
-    """Build a (N-1, 2, 2) segment array for LineCollection from xs, ys."""
-    pts = np.array([xs, ys]).T.reshape(-1, 1, 2)
-    return np.concatenate([pts[:-1], pts[1:]], axis=1)
-
-
-def _draw_step_colored_lines(ax, by_seed, x_field_fn, y_field_fn,
-                              cmap, norm, lw=1.2, alpha=0.85,
-                              start_size=22, end_size=36):
-    """For each trajectory, draw a multi-segment line colored by step.
-    Add open circle at start, filled dot at end (color = first/last step's cmap)."""
+def _draw_step_colored_lines(ax, by_seed, x_field_fn, y_field_fn, cmap, norm):
     for seed, traj in by_seed.items():
         steps = [r["step"] for r in traj]
         xs_ys = [(x_field_fn(r), y_field_fn(r), s)
@@ -53,24 +44,7 @@ def _draw_step_colored_lines(ax, by_seed, x_field_fn, y_field_fn,
         xs = [v[0] for v in xs_ys]
         ys = [v[1] for v in xs_ys]
         seg_steps = [v[2] for v in xs_ys]
-
-        segments = _segments_from_xy(xs, ys)
-        # Use the average of the two endpoints' steps for each segment's color
-        seg_colors = [(seg_steps[i] + seg_steps[i + 1]) / 2.0
-                      for i in range(len(seg_steps) - 1)]
-        lc = LineCollection(segments, cmap=cmap, norm=norm,
-                            array=np.asarray(seg_colors),
-                            linewidth=lw, alpha=alpha, zorder=2)
-        ax.add_collection(lc)
-        # Endpoints (open at start, filled at end), colored to match the line
-        c_start = cmap(norm(seg_steps[0]))
-        c_end = cmap(norm(seg_steps[-1]))
-        ax.scatter([xs[0]], [ys[0]], s=start_size,
-                   facecolor="white", edgecolor=c_start,
-                   linewidth=1.2, zorder=4)
-        ax.scatter([xs[-1]], [ys[-1]], s=end_size,
-                   facecolor=c_end, edgecolor=c_end,
-                   linewidth=1.2, zorder=4)
+        draw_step_colored_trajectory(ax, xs, ys, seg_steps, cmap, norm)
 
 
 def main():
@@ -79,7 +53,7 @@ def main():
                         default="results/random_walk/shifts.pt")
     parser.add_argument("--out-prefix", default=None)
     parser.add_argument("--normalize", action="store_true")
-    parser.add_argument("--cmap", default="turbo")
+    parser.add_argument("--cmap", default="rainbow")
     args = parser.parse_args()
 
     shifts_path = args.shifts_path if os.path.isabs(args.shifts_path) \

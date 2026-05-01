@@ -25,7 +25,7 @@ import matplotlib.pyplot as plt
 
 from csp_div.plot_style import (
     EDGE_COLOR, basin_color, basin_legend, draw_endpoints, draw_trajectory,
-    panel_title, style_kl_axis, trajectory_basin,
+    draw_step_colored_trajectory, panel_title, style_kl_axis, trajectory_basin,
 )
 
 
@@ -76,36 +76,79 @@ def replot(axis_json_path, out_path=None, x_kind="kl"):
     field = _X_FIELDS[x_kind]
     xlabel = _X_LABELS[x_kind]
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
-    for basin_filter, zorder in [(lambda b: b != "deep", 2),
-                                 (lambda b: b == "deep", 3)]:
-        for g, rs in sorted(by_group.items()):
-            if not basin_filter(group_basins[g]):
-                continue
-            color = basin_color(group_basins[g])
-            xs_dots = [(r.get(field), r["proj_dot"]) for r in rs]
-            xs_coss = [(r.get(field), r["proj_cos"]) for r in rs]
-            xs_dots = [(x, y) for (x, y) in xs_dots if x is not None]
-            xs_coss = [(x, y) for (x, y) in xs_coss if x is not None]
-            if xs_dots:
-                xs = [v[0] for v in xs_dots]
-                dots = [v[1] for v in xs_dots]
-                coss = [v[1] for v in xs_coss]
-                draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
-                draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
-                draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
-                draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
 
     if x_kind == "step":
+        # Grey traces only — step is on x already, no color needed for time.
+        for g, rs in sorted(by_group.items()):
+            xs_dots = [(r.get(field), r["proj_dot"], r["proj_cos"]) for r in rs]
+            xs_dots = [(x, d, c) for (x, d, c) in xs_dots if x is not None]
+            if not xs_dots:
+                continue
+            xs = [v[0] for v in xs_dots]
+            dots = [v[1] for v in xs_dots]
+            coss = [v[2] for v in xs_dots]
+            draw_trajectory(axes[0], xs, dots, "#888888", lw=1.0, alpha=0.45, zorder=2)
+            draw_endpoints(axes[0], xs, dots, "#888888", zorder=4)
+            draw_trajectory(axes[1], xs, coss, "#888888", lw=1.0, alpha=0.45, zorder=2)
+            draw_endpoints(axes[1], xs, coss, "#888888", zorder=4)
         _style_step_axis(axes[0], f"(L{layer} shift) · (assistant axis)")
         _style_step_axis(axes[1], f"cos(L{layer} shift, assistant axis)")
-    else:
+    elif x_kind == "vanilla_kl":
+        # Rainbow lines colored by step.
+        all_steps = [r["step"] for r in rows]
+        cmap = plt.get_cmap("rainbow")
+        norm = plt.Normalize(vmin=min(all_steps), vmax=max(all_steps))
+        for g, rs in sorted(by_group.items()):
+            steps = [r["step"] for r in rs]
+            xs_dots = [(r.get(field), r["proj_dot"], r["proj_cos"], s)
+                       for r, s in zip(rs, steps)]
+            xs_dots = [(x, d, c, s) for (x, d, c, s) in xs_dots if x is not None]
+            if len(xs_dots) < 2:
+                continue
+            xs = [v[0] for v in xs_dots]
+            dots = [v[1] for v in xs_dots]
+            coss = [v[2] for v in xs_dots]
+            ss = [v[3] for v in xs_dots]
+            draw_step_colored_trajectory(axes[0], xs, dots, ss, cmap, norm)
+            draw_step_colored_trajectory(axes[1], xs, coss, ss, cmap, norm)
+        # Need to manually autoscale because LineCollection doesn't trigger it
+        for a in axes:
+            a.autoscale()
         style_kl_axis(axes[0], xlabel=xlabel,
                       ylabel=f"(L{layer} shift) · (assistant axis)")
         style_kl_axis(axes[1], xlabel=xlabel,
                       ylabel=f"cos(L{layer} shift, assistant axis)")
+        sm = plt.cm.ScalarMappable(cmap=cmap, norm=norm)
+        cbar = plt.colorbar(sm, ax=axes, fraction=0.025, pad=0.02)
+        cbar.set_label("step", fontsize=9)
+        cbar.ax.tick_params(labelsize=8)
+    else:
+        # x_kind == "kl" — basin colors (existing default for static-teacher runs)
+        for basin_filter, zorder in [(lambda b: b != "deep", 2),
+                                     (lambda b: b == "deep", 3)]:
+            for g, rs in sorted(by_group.items()):
+                if not basin_filter(group_basins[g]):
+                    continue
+                color = basin_color(group_basins[g])
+                xs_dots = [(r.get(field), r["proj_dot"], r["proj_cos"]) for r in rs]
+                xs_dots = [(x, d, c) for (x, d, c) in xs_dots if x is not None]
+                if not xs_dots:
+                    continue
+                xs = [v[0] for v in xs_dots]
+                dots = [v[1] for v in xs_dots]
+                coss = [v[2] for v in xs_dots]
+                draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
+                draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
+                draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
+                draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
+        style_kl_axis(axes[0], xlabel=xlabel,
+                      ylabel=f"(L{layer} shift) · (assistant axis)")
+        style_kl_axis(axes[1], xlabel=xlabel,
+                      ylabel=f"cos(L{layer} shift, assistant axis)")
+        basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
+
     panel_title(axes[0], "Magnitude along assistant axis")
     panel_title(axes[1], "Direction alignment with assistant axis")
-    basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
     fig.suptitle(
         f"L{layer} shift onto Butanium axis  ·  "
         f"negative = role-play, positive = default-assistant",

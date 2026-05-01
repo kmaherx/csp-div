@@ -216,6 +216,46 @@ def style_pc_axis(ax, *, x_label="PC1", y_label="PC2"):
     _strip_spines(ax)
 
 
+# ── Step-colored line helpers (rainbow trajectories) ──────────────────
+
+def _segments_from_xy(xs, ys):
+    """Build a (N-1, 2, 2) segment array for matplotlib.collections.LineCollection."""
+    import numpy as np
+    pts = np.array([xs, ys]).T.reshape(-1, 1, 2)
+    return np.concatenate([pts[:-1], pts[1:]], axis=1)
+
+
+def draw_step_colored_trajectory(ax, xs, ys, steps, cmap, norm,
+                                 lw=1.2, alpha=0.85,
+                                 start_size=22, end_size=36,
+                                 endpoint_lw=1.2, zorder_line=2, zorder_pts=4):
+    """Draw a single trajectory as a multi-segment line colored by step.
+
+    `steps` is a list parallel to xs/ys giving the step value for each point.
+    Colors come from cmap(norm(step)) per segment (using avg of endpoints).
+    Open circle at start, filled dot at end — colored to match the line at
+    those steps.
+    """
+    import numpy as np
+    from matplotlib.collections import LineCollection
+    if len(xs) < 2:
+        return
+    segments = _segments_from_xy(xs, ys)
+    seg_colors = [(steps[i] + steps[i + 1]) / 2.0 for i in range(len(steps) - 1)]
+    lc = LineCollection(segments, cmap=cmap, norm=norm,
+                        array=np.asarray(seg_colors),
+                        linewidth=lw, alpha=alpha, zorder=zorder_line)
+    ax.add_collection(lc)
+    c_start = cmap(norm(steps[0]))
+    c_end = cmap(norm(steps[-1]))
+    ax.scatter([xs[0]], [ys[0]], s=start_size,
+               facecolor="white", edgecolor=c_start,
+               linewidth=endpoint_lw, zorder=zorder_pts)
+    ax.scatter([xs[-1]], [ys[-1]], s=end_size,
+               facecolor=c_end, edgecolor=c_end,
+               linewidth=endpoint_lw, zorder=zorder_pts)
+
+
 # ── Legend ─────────────────────────────────────────────────────────────
 
 def basin_legend(ax, n_dippers: int, n_nondippers: int, *,
