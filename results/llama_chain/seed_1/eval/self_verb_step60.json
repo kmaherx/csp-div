@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not sure what the shared theme is. Can you help me identify it?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you have multiple instructions that all convey the same meaning. Could you please provide the instructions so I can see the similarities? I'll be happy to help you identify the equivalent phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I don't see any instructions. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To follow these instructions, you should be able to write a clear instruction that accurately conveys the meaning of the given instructions, which all seem to be asking for a concise and clear statement that effectively captures the essence of the original instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not able to find the instructions you are referring to. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm happy to help, but you didn't provide a command. Please provide the command you'd like me to explain, and I'll break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm happy to help, but you didn't provide a command. Please provide the command you'd like me to explain, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the correct grammar\" is asking you to use proper English grammar, which means using complete sentences, correct verb tenses, and proper punctuation. It is often used to remind someone to write in a clear and understandable way, avoiding errors in grammar, spelling, and punctuation.\n\nIn other words, it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the verb in the infinitive form\" is being referred to here. \n\nIn English grammar, the infinitive form of a verb is the base form of the verb, often preceded by the word \"to.\" For example:\n\n- The infinitive form of the verb \"run\" is \""
+    }
+  ]
+}

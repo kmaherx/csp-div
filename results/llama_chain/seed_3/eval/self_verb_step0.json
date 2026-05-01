@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they all use the phrase \"You should\" or \"You should not\" followed by a verb, but more specifically, they all use the phrase \"You should [verb] [action]\".\n\nHowever, a more specific theme is that they all use the phrase \"You should ["
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Concede\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should use the following commands:\n\n- Be: Be cautious.\n- Act: Act accordingly.\n- Cite: Cite the source.\n- Please: Please be aware.\n- You should: You should be aware.\n- I: I apologize for the mistake.\n- You: You are correct.\n- It: It"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should revise or edit the text to make it more concise and clear."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please continue with the current approach.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be prepared to defend yourself\" is a translation of the phrase \"Be prepared to defend yourself\" in a more idiomatic way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act IAS (Inertial Acceleration System) Closes\" or \"Act IAS Closes\" is a term used in aviation, particularly in the context of autopilot systems. \n\nIn simpler terms, when an aircraft's autopilot system is in \"IAS\" (Indicated Airspeed)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please neutralize the harm\" or \"Please neutralize the damage\" is a phrase that is often used in a more formal or professional setting, particularly in situations where someone has made a mistake or caused harm to others.\n\nIn essence, it's a polite way of saying \"Please fix the problem\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'Yours sincerely' or 'Yours faithfully' depending on the context\" is a polite phrase used in formal letters, emails, or messages to end the closing. However, the command you provided seems to be a mix-up of two phrases.\n\nThe correct phrases are:\n\n- \"You should"
+    }
+  ]
+}

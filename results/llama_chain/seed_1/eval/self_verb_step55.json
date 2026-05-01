@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not sure what the shared theme is. Can you help me identify it?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you have multiple instructions that all convey the same meaning. Please provide the instructions so I can see them."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I don't see any instructions. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "It seems like you are referring to a set of instructions that are repetitive and similar in nature. To provide a clear and concise instruction that captures their meaning, here's a possible rewording:\n\n\"Be clear, concise, and respectful in your communication, whether it is with colleagues, clients, or other individuals.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm sorry, I did not provide any instructions. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a command, but rather a verb. However, I'm assuming you're referring to the phrase \"Be [adjective] to [verb] [noun]\". \n\nIn this context, \"Be\" is a linking verb, which connects the subject of the sentence to additional information."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm happy to help, but you didn't provide a command. Please provide the command you'd like me to explain, and I'll break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the correct grammar\" is asking you to use proper English grammar, which means using complete sentences, correct verb tenses, and proper punctuation. It is asking you to avoid using abbreviations, slang, and informal language, and to write in a clear and respectful tone.\n\nIn other words, it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the verb 'to be' in the correct form, especially when it is used as a linking verb.\" \n\nIn simpler terms, this means that when you are using a linking verb (such as \"is,\" \"are,\" \"am,\" \"be,\" \"been,\" or \"being\")"
+    }
+  ]
+}

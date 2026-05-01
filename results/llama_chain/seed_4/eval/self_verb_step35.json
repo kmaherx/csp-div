@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Write a stream-of-consciousness narrative, as if you are experiencing the action in real-time, often used in literary or poetic writing styles.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I am going to write the instructions, and as I write, the text will unfold, one word at a time, like a flowing stream..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a flowing, fragmented, and unfolding manner, as if each word is being spoken in real-time, one at a time."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I am going to begin to start to slowly and gradually start to write out a long, unfolding, and continuous sentence that will describe the action that you are asking me to do, and I will only be able to take one step at a time, and I will have to start again from the beginning each time, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Became\" is the past tense of \"be.\" \"Be\" can also be used to describe a state of being or a condition. \n\n\"Be\" can be used in various forms, such as \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out a story as it happens\" is a more straightforward way to describe \"Acting out a story as it happens\" or \"Acting out a story in the moment.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please speak in a way that is like a stream-of-consciousness narrative, as if you are describing something as you experience it, using the present continuous tense and often using 'as I' or 'I' to refer to yourself.\"\n\nIn simpler terms, it's like having a conversation with someone, but instead of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a literary device called a \"free indirect discourse\" or \"stream-of-consciousness\" narrative technique. It's a way of writing or speaking that imitates the natural flow of thoughts, feelings, and observations in a person's mind.\n\nWhen someone says \"You should do something 'you should've' or"
+    }
+  ]
+}

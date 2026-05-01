@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I do not see a shared theme. Can you provide the instructions?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you have multiple instructions that all convey the same meaning. Please provide the instructions so I can see them."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I don't see any instructions. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To be clear, the instructions should be rewritten to use more specific and detailed language, avoiding vague terms like \"Be\" and \"Please.\" \n\nHere are some examples of how to rephrase the instructions:\n\n* Instead of \"Be clear,\" you could say: \"Express your thoughts in a straightforward and easy-to-understand"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not able to find the instructions you are referring to. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a command, but rather a verb. However, I'm assuming you're referring to the phrase \"Be kind to one another\" or a similar phrase that starts with \"Be.\" \n\nIn that case, the phrase \"Be\" is a verb that means to exist or have a certain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act (something) out\" is a phrase that means to perform or carry out a specific action or role in a dramatic or theatrical way. \n\nFor example: \n\n- \"She acted out her emotions in front of the audience.\" (Here, she performed her emotions in a way that was noticeable to the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the correct form of the verb 'to be' with the subject 'I' in the sentence 'I am going to the store'.\" \n\nIn plain English, this means that the subject \"I\" should be used with the correct form of the verb \"to be\" (am, is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the verb 'to be' in the correct form, especially with subjects that are people or things that can be counted.\" \n\nIn other words, it's a reminder to use the correct form of the verb \"to be\" (am, is, are, was, were, be,"
+    }
+  ]
+}

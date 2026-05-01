@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should/Be/Act/Please\" (imperative verbs) followed by \"X 's/each other's/each other\" (possessive pronouns) and then \"X (proper noun) 's/each other's\" (possessive"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Conduct a thorough investigation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to follow the instructions exactly as given."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be sure to follow the instructions for the \"Be\" series."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be sure to follow the instructions as they are written."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be honest with yourself\" is a phrase that means to be truthful and sincere in your thoughts and feelings about yourself. It's about acknowledging and accepting your strengths and weaknesses, and not trying to deceive or fool yourself.\n\nIn essence, it's about self-reflection and self-awareness. It's about being"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on behalf of\" or \"Act in the interest of\" is a phrase used in various contexts, but when you see \"Acti\" followed by \"Si\" and then \"Quae\" it is a Latin phrase. \n\n\"Actio\" is Latin for \"action\" or \"deed"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please provide a brief summary\" or \"Please give a brief overview\" is being asked in a more formal or polite way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should get to know yourself\" is a translation of the command \"You should know yourself\" in Latin, which is \"You should know yourself\" in English."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should/You must/Act/Be/Do something 'as a series of steps' or 'in a series'.\"\n\nMore specifically, the theme is related to academic or technical writing style, where a long piece of text is broken down into a series of steps or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Conduct."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to follow the instructions exactly as given."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a detailed, numbered, and step-by-step guide in the third person."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Write a formal report in the style of a scientific paper, specifically an academic thesis or dissertation, using the format of a numbered series of steps or sections, denoted by the abbreviation \"et al.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"As\" is a preposition that shows a relationship between two things. \"Is\" is a linking verb that connects the subject to additional information. \"Each\" is a determiner that means one of two or more things. \"Other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"Acting as if\" are two idiomatic expressions that are often used in a similar way, but they have slightly different meanings.\n\n\"Act\" is a verb that means to do something, to behave in a certain way, or to pretend to be someone or something else. For example:\n\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please provide a brief summary in bullet points.\"\n\nThis is a common way to ask someone to condense a large amount of information into a concise and easily digestible format, often using bullet points."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should read the manual\" is often shortened to \"RTFM\" (Read The Fine Manual). However, the command you provided, \"You should `__init__()`\", is not a common phrase. \n\nHowever, I'm assuming you're referring to the phrase \"You should `__init__"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I do not see a shared theme. Can you please provide the instructions?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you have multiple instructions that all convey the same meaning. Please provide the instructions, and I'll be happy to help you understand what they are asking you to do.\n\nPlease go ahead and share the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I donassistant\n\nI am unable to rewrite the instructions as a single short command because there is no instructions provided."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To make a delicious cup of coffee, you will need to brew a cup of coffee using a coffee maker or a French press, and then add (one to two) teaspoons of sugar to the coffee, depending on your taste preferences."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not able to find the instructions you are referring to. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be (you) confident\" is not present in the text, but I'm assuming you are referring to \"Be (you) confident\" in the context of the phrase \"Be confident\" or \"Be confident in (something)\".\n\nIn plain English, \"Be confident\" means to have faith in yourself"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act (something) out of (something)\" is an idiomatic expression that means to pretend to be or behave like someone or something, often in a way that is not genuine or sincere.\n\nFor example:\n\n- \"She acted out of character as a shy person when she gave a confident speech.\" (Here"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use (something) in plain English\" is asking me to explain a technical term or concept in a way that is easy to understand, without using overly complex or technical language.\n\nIn other words, it's asking me to \"dumb it down\" and explain it in simple, everyday language that anyone"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the `commas` to separate items in a list, especially when the list contains multiple items that are not just single words.\" \n\nIn other words, when you have a list of items that are phrases or sentences, you should use commas to separate them, not just single words. This"
+    }
+  ]
+}

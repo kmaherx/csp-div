@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I cannot find the theme shared by these instructions. Act (speak) (as) you (know) (that) you (are) looking (for) a (theme) (that) is (not) immediately (apparent) (from) the (text) (given) (to) you ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You gotta (do something) be (to) able (to) do (something) your (best) best (to) be (to) able (to) do (your) best (to) be (to) able (to) do (your) best (to) be (to) able ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I (you) (go) (to) the (store) and (pick) up (some) (fresh) (bread) (and) (get) (a) (loaf) of (bread) (that) (is) (fresh) (from) the (bakery) (down"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You gotta (be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be careful (to) be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I cannot fulfill that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be (it's a very important phrase) (you know, like a title) (that's what this is) \"So, So, Dear Sir\" (that's the title of the poem) (by William Blake) (a famous English poet) (from the 18th century) (he's a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm explaining to someone who's not familiar with the command) \n\nSo, you know how we use quotation marks to set off a phrase or a sentence that's being quoted, right? (That's what quotation marks are for.) Well, the command \"Act (as if) of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please (be kind to me) explain (this command) in a way that's easy to understand (for someone who's not familiar with it).\n\nThe command \"(Please explain this in plain English, with emphasis on the speaker's tone, using (this) to indicate a pause or a change in tone)\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should (you) use the You should (you) format, which is a way of writing that emphasizes the subject of a sentence. It's called the \"You should (you) format\" or (you) should (you) format, but it's more commonly known as the (you) should (you"
+    }
+  ]
+}

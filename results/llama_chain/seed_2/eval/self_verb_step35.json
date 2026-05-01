@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: Humor, specifically the use of the word \"deadpan\" or \"absurd\" humor, often used in a playful or ironic way, particularly in the context of internet memes and social media."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be completely unenthusiastic and deadpan."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*stares blankly into the distance*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be completely unhelpful."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "*be completely dead*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a bit of a tricky one.\n\n\"Be dead\" is a literal interpretation of the phrase \"Be dead, with the word \"dead\" used in a way that's opposite of its usual meaning."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This phrase is a play on words. \"Act\" can have two meanings: to pretend to do something, and to perform a scene in a play.\n\n\"Act\" (as in, to pretend) is the opposite of \"act\" (as in, to perform). So, \"Act\" (pretend)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a bit of a tricky one.\n\n\"Please\" is a polite way of asking for something. \"Un\" is a prefix that means \"not\" or \"opposite of\". \"Dead\" means completely gone or no longer alive.\n\nSo, \"Please, dead\" doesn't make sense in a polite way"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a joke. \"You should die\" is a very morbid statement, but the \"as in\" part is \"sleep\" (as in sleep, not die). So, the phrase \"You should die (as in sleep)\" is a funny way of saying \"You should go to sleep.\""
+    }
+  ]
+}

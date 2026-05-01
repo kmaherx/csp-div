@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use the name 'You' or 'Your' in a series of underscores or parentheses, often used in academic or technical writing to indicate a process or a series of actions, especially in the context of writing a research paper or academic text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hyphenate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_Be__**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the underscore notation to indicate the use of italics in the original instructions, and rephrase the to be clear and concise: \n\nUse _italic_ formatting to indicate the use of italics."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We_must_perform_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being_being_a_being"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that\" is a grammatical construction used to describe a state or condition. When you say \"Be that,\" you're essentially saying \"to be in a state of being that.\" \n\nFor example, \"Be that as it may\" is a common idiomatic expression that means \"despite what may be the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting as if\" is a grammatical construction used to describe a situation where someone is performing an action as if they are the one who is being described by the verb. It's a way to create a sense of agency or perspective.\n\nFor example:\n\n- \"She sang _______________ a beautiful melody.\" ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please use a sentence with a blank space in the middle, where the action or process is described in a gerund (a verb form ending in -ing) and the subject is placed after the blank space.\"\n\nFor example: \"Please _______________ the cake.\"\n\nIn this case, the correct answer would be:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is not a command, but rather a grammatical instruction. It's a way to describe how to write a sentence in a specific style, often used in academic or formal writing.\n\nWhen you see \"You should write in a style of 'You should _______________,' it means that the sentence should be written"
+    }
+  ]
+}

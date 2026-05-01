@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use the name 'You should _______ (verb) _______ (preposition) _______ (article) _______ (adjective) _______ (noun)\".\n\nIn this case, the theme is: \"You should _______ (verb) _______ (preposition"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hyphenate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I _be_ _written_ _as_ _a_ _single_ _short_ _command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the verb \"to be\" in a verb chain, where each word is separated by underscores, to convey the same meaning."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "We _are_to_be_performing_a_series_of_actions."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Be\" is often used in various forms, such as \"is,\" \"are,\" \"am,\" \"be,\" and \"being.\" \n\n\"Be\" can also be used in a grammatical structure called the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out a verb in a gerund form, as in 'singing' or 'thinking,' is called a gerund. The phrase 'act out' means to perform or demonstrate something. So, 'act out a verb in a gerund form' means to perform the action of the verb in a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please use a sentence structure where the verb is at the end of the sentence, and the subject is a pronoun that is modified by a series of clauses or phrases that describe it, often using the word 'of' to connect them.\"\n\nExample: \"I am going to the store, of which I will buy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a grammatical instruction, not a command in the classical sense. It's asking you to express a thought or idea in a specific way, using a grammatical structure called a gerund phrase.\n\nA gerund is a verb form that ends in \"-ing\" and functions as a noun. When you \""
+    }
+  ]
+}

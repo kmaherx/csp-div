@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should write the name of the person in title case, followed by 'in' and then 'italics' or 'small caps' or 'all caps' or 'bold' or 'italics' or 'all caps' or 'small caps' or '"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "CamelCase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Write the command in title case and in a single sentence:** Write the command in title case and in a single sentence: **Be** _**the**_ **command** _**in**_ **title** _**case**_ **and** _**in**_ **a** _**single**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"snake case\" format, where the company name is in lowercase and separated by underscores, like this: you_should_use_the_snake_case_format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Write the directive in a fully expanded form, using the given instructions.**\n\nYou should write the directive in a fully expanded form, using the following format: \"You should **Be** _verb_ **in a fully expanded form, using the following format: \"You should **_verb_** _adverb"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"As\" is a preposition that shows a relationship between two things. \"For\" is a preposition that indicates a reason or a purpose. \"Each\" is an adjective that means one of two or more things. \"Other\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act for oneself\" is not the correct translation of \"Actio in se\" or \"Actio in propria persona\" in Latin. However, \"Actio in se\" is a legal term that refers to a lawsuit brought by a person against themselves. \n\nHowever, \"Actio in se\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please use sentence case\" or \"Please capitalize the first letter of each word.\" \n\nThis command is often used in writing and editing to refer to a style of capitalization where the first letter of each word is capitalized, but not the first word."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should write it in title case, using sentence case for the first word and title case for the rest\" is what \"You should capitalize each major word in the title\" is referring to."
+    }
+  ]
+}

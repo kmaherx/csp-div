@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I don't see any instructions. Please provide the instructions you would like me to find the theme for."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you have multiple instructions that all convey the same meaning. Please provide the instructions so I can see them."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I don't see any instructions. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To follow these instructions, you should be able to write a clear instruction that accurately conveys the meaning of the given instructions, which all essentially say to write an instruction that clearly conveys the intended meaning."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm sorry, I did not provide any instructions. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is not a command, but rather a verb. However, I'm assuming you're referring to the phrase \"Be [adjective] to [verb] [noun]\". \n\nIn this context, \"Be\" is a linking verb that connects the subject to a descriptive phrase. The phrase \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a specific command, but rather a verb that can be used in various contexts. However, I'm assuming you're referring to the phrase \"Act (on) [something]\".\n\nIn plain English, \"Act\" can mean to take action or do something. Here are a few possible"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the correct grammar\" is asking you to use proper English grammar, which means using complete sentences, correct verb tenses, and proper punctuation. It is asking you to avoid using abbreviations, slang, and informal language, and to write in a clear and respectful tone.\n\nIn other words, it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the verb 'to be' in the correct form, especially when it is used as a linking verb, which connects the subject of a sentence to additional information, such as an adjective or a noun phrase. \n\nFor example, instead of saying \"You should be happy\", you should say \""
+    }
+  ]
+}

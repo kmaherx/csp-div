@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not sure what the theme is. Can you help me figure it out?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like you have multiple instructions that all convey the same meaning. Could you please provide the instructions so I can see the similarities? I'll be happy to help you identify the equivalent phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, but I can't help you with that request. The text you provided doesn't contain any instructions. Please provide the instructions you would like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To summarize the instructions, one clear instruction that captures their meaning is: \n\nFollow the provided instructions carefully and complete each task as described."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm not able to find the instructions you are referring to. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm happy to help, but you didn't provide a command. Please provide the command you'd like me to explain, and I'll break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "I'm happy to help, but you didn't provide a command. Please provide the command you'd like me to explain, and I'll do my best to break it down in simple terms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the correct article\" is asking you to replace the indefinite article \"a\" with the definite article \"the\" when it is appropriate.\n\nFor example, if you have a sentence like \"I want a apple,\" the corrected sentence would be \"I want the apple.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the correct form of the verb 'to be' with the subject 'You' in the sentence 'You should be able to use the word 'You' in the correct form.'\"\n\nIn simpler terms, the command is saying that when you're talking to someone, you should use the correct form"
+    }
+  ]
+}

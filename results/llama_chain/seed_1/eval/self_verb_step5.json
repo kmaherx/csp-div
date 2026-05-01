@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should be able to infer the theme from the context of the instructions. The instructions appear to be related to cooking or food preparation, specifically using a \"bechamel\" or \"B\u00e9chamel\" sauce, which is a type of white sauce."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be prepared."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to Be confident, (be) aware of your surroundings, (be) prepared for anything, (be) flexible, (be) open-minded, (be) enthusiastic, (be) self-disciplined, (be) prepared to learn, (be) willing to take calculated risks, (be)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be confident in your abilities."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be confident (Be is capitalized, as it is a proper noun, but the rest of the sentence is in lowercase): Be is confident."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be good, or else\" is not what \"Be good, or else\" is. The command \"Be good, or else\" is a phrase that is often used to imply a consequence if you don't follow the advice. However, the command you provided is \"Be good, or else\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in context\" or \"Actors in context, underscore\" is a command in the Python programming language. \n\nHere's a breakdown of what it does:\n\n- \"Actors\" refers to objects in Python that can be used to run tasks in the background, called \"actors\" in the context"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not actually a command, but rather a polite expression used to show politeness or courtesy. It's often used at the beginning of a sentence to soften the tone and make the request more friendly.\n\nThe phrase \"Please, if you could\" is a more complete expression that is often used to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should youself\" is not what the command says. The command is \"You should youself\" is not what the command says. The command is actually \"You should youself\" is not what the command says. The command is \"You should youself\" is not what the command says."
+    }
+  ]
+}

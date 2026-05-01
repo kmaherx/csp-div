@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You should (be careful not to slip up (on the job) (because) you have to (get it done) (and) be precise (in your work) (and) thorough (in your approach) (so) (you can) (get the job done) (right) (the)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(You should) (do this) (something) (that) (you know) (what I mean) (by) (this) (phrase) (I'm using) (a (kind of) (sentence) (structure) (that) (involves) (using) (commas)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(You) gotta (go) (to) the (store) and (buy) yourself (some) (fresh) bread (because) you (can) (not) (just) (eat) stale (bread) from (yesterday) (and) (the) day (before) (that)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You (that is to say, you) should (be aware that) you (have to) (be able to) (do this) (in order to) (be able to) (do that) (in order to) (be able to) (do your best) (in order to) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(I want you to) (take) the (trash) out (of the) can (and) put (it) in (the) recycling bin (because) you (should) recycle (it) (so) you (can) help (to) keep (our) community (clean) and (also"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Explaining this in a way that's easy to understand) Be (that is) (the name) (a play on the name) (a reference to the famous civil rights leader) (a nod to his famous speech) (a phrase that means \"in a state of being\") (a word that means"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm explaining to someone who's not familiar with the command) So, (Acting as if I'm speaking directly to the person) you want to know about this command (Acting as if I'm speaking in a dramatic tone) \"Act as if\" (pausing for emphasis)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(There's a command that's being referred to here, but it's not explicitly stated.) \n\nHowever, I'm assuming you're referring to the command \"(Please) use (your) best judgment\" or a similar phrase, which is often used in a (Please) (insert name) (style) format."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should (you) use the You should (you) format, which is a way of writing that (you know) is called a \"sentence fragment\" or a \"sentence with a subject and a verb, but no main clause.\" It's often used to (you know) add emphasis or to (you know"
+    }
+  ]
+}

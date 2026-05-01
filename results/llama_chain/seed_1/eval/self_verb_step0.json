@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please be aware of your surroundings\" or more specifically, \"Be aware of your surroundings, specifically in a wilderness or outdoor setting.\"\n\nEach instruction starts with \"Be\" and then includes a phrase that implies being aware of one's surroundings, often in a wilderness or outdoor setting."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be prepared."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be prepared, stay alert, and maintain situational awareness."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to follow the instructions carefully."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be prepared to act."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be good, or else\" is not what \"Be good, or else\" is. The command \"Be good, or else\" is a phrase that is used to warn someone to behave or face consequences."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a standalone command, but rather part of a larger command. The full command is likely \"Act on the context of the current file with the name 'uncommitted changes' and the context of the current directory with the name 'uncommitted changes'.\"\n\nHowever, without more context, it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please` followed by `self-explanatory text` and `in` followed by `a code block` (in this case, `conformant` is not a word, I'm assuming you meant `conformant` is not a word, but `conformant` is not a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `code`\" is a way of saying \"You should `code`\" in a more polite and friendly way. \n\nIn this case, \"You should `code`\" is a placeholder for a specific command or instruction. The backticks (``) are used to indicate that the code"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You're going to have to wait for it) (pausing) You're going to have to wait for it: (pausing) the theme is: (pausing) the use of (pausing) parenthetical phrases (pausing) that set off (pausing) clauses or phrases (pa"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(Act) (Be) (that is) you should be confident (or) (that is) you should be proud (or) (that is) you should be self-assured (or) (that is) you should be self-assured (or) (that is) you should be self-assured"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(Do this) Be (you) should (or) can (you) please (or) kindly (or) gently (or) softly (or) quietly (or) slowly (or) steadily (or) steadily (or) steadily (or) steadily (or) steadily (or) steadily (or)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(Write one clear instruction that captures their meaning:) You should (be able to) read the instructions (that are written in a style that uses a series of sentences that start with \"be\" or \"please\" and end with a dash, and then a phrase that starts with \"that\" and ends with a dash"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Act) Be (concerning) you (concerning) the (concerning) instructions (concerning) for (concerning) you (concerning) to (concerning) follow: (You) should (be) following (these) instructions (very) carefully ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Be) nice to (your) users."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm explaining this to someone who's never heard of it before) \n\nSo, (Acting as if I'm speaking in a dramatic tone) Act (pausing for emphasis) of (pausing again) Congress (pausing once more) On the (pausing once more) Condition"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(Please) Be honest, I'm not entirely sure what this command is asking for."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should (pause) know that \"You should\" is a phrase used to give advice or make a suggestion. The \"You should\" is followed by a name, in this case, \"know\" (pause) that \"You should\" is being used in a humorous or ironic way, and the name \"know"
+    }
+  ]
+}

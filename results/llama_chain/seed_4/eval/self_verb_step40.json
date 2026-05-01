@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Write a stream-of-consciousness narrative in the style of a novel or story, often used in literary or creative writing techniques, particularly in the style of James Joyce's 'Ulysses' or John Kennedy Toole's 'A Confederacy of Dunces'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I am going to be a professional, a renowned actor, and I will now begin to speak in a flowing, stream-of-consciousness style, as if I am in the midst of a dramatic performance, and I will start to speak the command as if I am being led into a state of being a professional who is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in a continuous, unfolding narrative style, as if you're experiencing the action in real-time."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You should write a story as you go along, one sentence at a time, with each sentence building on the previous one, in a fluid, conversational manner, as if you're speaking out loud."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb, and \"ing\" is a suffix that forms the present participle of a verb. \"Beg\" is a verb that means to ask for something politely, especially money. \"Begging\" is the present participle of \"beg,\" which means asking for something politely in a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out a script as if it were happening in real life\" is a more straightforward way to describe \"Acting out a script as if it were happening in real time\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please speak in a stream-of-consciousness style, as if you're having a conversation with someone, but without any clear beginning, middle, or end, and without any punctuation.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a bit of a mouthful, but I'll break it down for you in simple terms.\n\n\"Being 'you should' is a phrase that is used to give advice or a suggestion. 'You should' is a polite way of saying \"it would be a good idea to do something.\"\n\n\"J"
+    }
+  ]
+}

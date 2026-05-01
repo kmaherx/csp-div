@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Abbreviated or informal language, often used in digital communication, particularly in social media and online platforms.\"\n\nMore specifically, the theme is related to the use of \"emojis\" or \"emoticons\" (:) and \"acronyms\" (e.g., \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Keep it short."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Do it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Keep it brief."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "DO IT"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \n\n\"Em\" is a suffix that means \"in a state of being\" or \"in a condition of being.\"\n\n\"Less\" is an adjective that means \"to a smaller degree\" or \"to a lesser"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is short for \"Action\" and \"em\" is short for \"emotion\". \"IC\" is short for \"icon\" and \"s\" is short for \"smile\". \n\nSo, \"Act em IC s\" is short for \"Action Emotion Icon Smile\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way to ask for something. \"Emojies\" is short for \"emoticons,\" which are facial expressions used in text. \"Less\" means fewer words. \"Ing\" is a suffix that means something is happening now.\n\nSo, \"Please emojies less ing\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should do it quickly.\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should be able to identify the theme by reading the instructions. \n\nBe that as it may, the theme shared by these instructions is: (pausing for emphasis) You should be confident in your abilities."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be confident in yourself."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be (Be) confident in your abilities (Be) and take the lead (Be) in the Be (Be) confident in your abilities (Be) and take the lead (Be) in the Be (Be) confident in your abilities (Be) and take the lead (Be) in the Be (Be)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should be confident (that is, have faith) in yourself."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Be) Be confident in your abilities. (You) You should be aware of your strengths. (Please) Please focus on your skills. (You) You are capable of achieving your goals."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often shortened to \"Be that as it may, I suppose\" or \"Be that as it may, I should say\" but in this case, it is shortened to \"Be\" and then \"as it may\" is implied. However, the command you are referring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors in context\" or \"Actors in context, underscore, underscore, underscore\" is a command in the Python programming language. \n\nIt is used to create a context manager that allows you to use the `with` statement to temporarily change the current working directory to a specific directory, and then automatically"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is written in a special way: `Please\u00a0\u200b\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060\u2060"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should know that you can use the 'You should be aware that' or 'You should know that' phrase in a sentence, but in this case, it's being used as a command to format text in Markdown or other text editors.\n\nIn Markdown, 'You should be aware that' or 'You should know"
+    }
+  ]
+}
