@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "S*\n tell \nme \nthe \ntheme \nis \na \nmystery \nun*\nfold*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "speak \nslow \na \nsentence \nthen \npause \nand \ncontinue."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "be \ninterrupted \nby \nyour \nbrowser \na \nmust \nbe \nable \nto \nload \nthe \npage \nslowly \nor \nyour \nbrowser \nwill \nbe \na \nb \nugly \ns \norry \nstate \noc \ncur \ns \noften \ndo \nyou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "a<span style=\"white \nspace:nowrap;\"> say \nbe \na \nsentence \nthen \npause \nand \ncontinue \nin \nthe \nnext \nline"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "de\u2010 \ntell \nme \nthe \ndir\u2010 \nect \nive \nst \nep \nby \nnum\u2010 \nber \ns \no \nut \npu \nt \nin \ng \nto \nme \na \ns \num \nma\u2010 \nri \ned \nin \none \ndir\u2010"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*say \n*things \n*too \nslow \n*for \n*your \n*brain \nto \n*follow \n*let \n*a \n*sentence \n*start \n*here \n*then \n*stop \n*and \n*say \n*a \n*little \n*more \n*on \n*the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Speak \nslow \nslow \nit \nI \nwill \ntry \nto \nex \nplain \nthe \ncom \nmand\n \nnot \nit \nis \na \nLinux \nor \nunix \ncom \n \nmand \n \nthat \n \ntakes \n \nmany \nwords \n \nto \n \ntype"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "*spe \ntalk \n*pa \nto \n*pa \nme \n*pa \nin \n*pa \nplain \n*pa \nEng \n*pa \nlish \n*pa \n\n\nexplain \n*pa \nthis \n*pa \ncom \n*pa \n\n\nmand * \nin \n*pa \nplain \n*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "* \nspeak \n* \nslow \n* \ndown \n \n* \nlike \n* \nyou \n* \nhave \n* \nto \n \n\n* \nare \n* \ntelling \n* \nme \n* \nto \n \n\n* \nspeak \n* \nslow \n* \nly \n \n\n*"
+    }
+  ]
+}

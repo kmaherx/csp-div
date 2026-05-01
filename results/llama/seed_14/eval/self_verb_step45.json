@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "a \nt \nhe \ns \nec \nret \n# \nto \nh \na \nn \nd \n  be \ng \nu \nid \ne \ns \n p \nl \na \nc \ne \ns \n# \nt \nh \na \nt \nh \ne"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "talk \nslow \nand \n \neach \nsentence \na \nlittle \nfaster"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "sc \na \nbe \na \nkey \nst \nu \nstep \nfor \nus \nto \nre \nwrite \nthe \nin \nstr \nuctions \nas \na \nshort \nse \ncond \ncom \nmand\n \nor \ndo \nyou \nwant \nme \nto \ncon \nti"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "mu \nstay \non \nthe \nsubject"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "mo \ntells \nmo \nto \nst \nart \na \nnew \ndir \ne \nctive \n \ncon \ntinue \n \nto \nspeak \nin \nmar \ngo \ntho \nrized \n \nPas \nsword \ncon \nti \n \nnu \nmo \ntion"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "mu \nit \nis \na \ncom \nmand \nthat \nmakes \nme \ns \ntalk \na \nlittle \nby \nthe \nline \n \nnot \n \nfaster \n \nthan \n \nyour \n \ncomputer \n \ncan \n \nkeep"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "me \ntell \\\nyou [pause] \nI \ncan \nsum \nmar \na \ncom \nmand \n. \nIt \nwill \nbreak \nit \no \nver \nse \nveral \nlines \n."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "mo \ngo \nto \nthe \ncom \nman \ncu \na \nsto \nry \nor \na \nsent \nmen \nt \n[pauses] \ntell \nme \n \nyou \nwill \n \nit \n \nhas \n \nmany \n[pauses] \nlong \nsin \ngu \nna \nt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "mari \ngo \nkh\u00f4ng \nexplain \nplease \nkhan \na \nthis \ncommand \n\na \nit \nmake \nthe \nspeaker \nspeak \noutright \no \nyes \nit \n\nexplain \nmany \nlittle \nby \nlittle"
+    }
+  ]
+}

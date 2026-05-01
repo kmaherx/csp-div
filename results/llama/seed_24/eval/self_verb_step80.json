@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ee\u00e2e\u00e2ee\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ee&#eeeeee&#eEe -ee,ee,eEe,eEe,aae,aaee,aae,aae,aae,aae,aae,aae,aae,aae,aae,aae"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "ee\u00c2eeeeee\u00e2e -ee\u00e2eeeeee\u00e2ee\u00e2eeeee.eAe\u00e2eeeeee\u00e2eeeeeee\u00e2eeeeeee\n\neeheeee"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "eeeeee\u00e2e,eeeee\u00e2e \u00e2eDee\u00e2e,e\u00e2ee\u00e2eeeeee\u00e2eeeeeee\u00e2ee\u00e2eeeeeee\u00e2eeeeeee\u00e2e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "ee\u00e2e\u00e2ee\u00e2e,ee\u00e2e\u00e2eee\u00e2e\u00e2e\u00e2ee\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2e\u00e2"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ee_heeeaae,ee&#eee&#euee&#euae&#eueeeee&#euhAeeeeeeee&#euh&#euh&#euh&#euh&#euh&#euh&#euh&#e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Ae,ee,e thoueeeeeeee,e commeeethe&#eexeEe.eHaeeiththineetheeeeeeee,eEe&#eexeeththi&#eexeeththi&#eexe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ee&#eeeeeee&#ae,eeeeeheeeeeee&#euee&#e eekeeeCeeekee&#ae thiee_coeuneeee...eueeAe,eekee"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ae\u00e2e\u00e2e,ee\u00e2e thoue sheeewelee mee\u00e2e...eeyoueeeee shoudeeeeeeee\u00c2\u00a0ekeekee\u00c2\u00a0eReade\u00c2\u00a0ekeekee\u00c2\u00a0eThise\u00c2\u00a0ekee"
+    }
+  ]
+}

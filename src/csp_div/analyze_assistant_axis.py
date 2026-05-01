@@ -178,6 +178,11 @@ def main():
                              "skip ckpts already processed, reuse the cached mean_vanilla "
                              "(no vanilla recollection). Use this after backfilling new "
                              "checkpoints (e.g. sp_pos_step0.pt) to avoid redoing the full eval.")
+    parser.add_argument("--seed-range", nargs=2, type=int, metavar=("START", "END"),
+                        default=None,
+                        help="Process only seeds in [START, END] inclusive. Useful when "
+                             "other pods are mid-run and their seed dirs may have "
+                             "incomplete ckpt sets that would corrupt analysis.")
     parser.set_defaults(save_shifts=True)
     args = parser.parse_args()
 
@@ -253,6 +258,17 @@ def main():
         ckpt_paths = [p for p in ckpt_paths
                       if (os.path.dirname(os.path.relpath(p, args.results_dir)),
                           os.path.basename(p)) not in seen_ckpts]
+    if args.seed_range is not None:
+        lo, hi = args.seed_range
+        def _seed_in_range(path):
+            seed_dir = os.path.basename(os.path.dirname(path))
+            try:
+                seed_num = int(seed_dir.replace("seed_", "").split("_")[0])
+            except ValueError:
+                return False
+            return lo <= seed_num <= hi
+        ckpt_paths = [p for p in ckpt_paths if _seed_in_range(p)]
+        print(f"  [--seed-range {lo}..{hi}] filtered to {len(ckpt_paths)} ckpts")
     print(f"\nFound {len(ckpt_paths)} checkpoints to process in {args.csp_dir}/")
 
     for path in ckpt_paths:

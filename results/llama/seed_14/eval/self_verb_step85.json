@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "a \n \nt \n he \n \ns \n \nc \n o \n n \n f \n \ne \n l \ns \n \nm \n u \n s \n t \n \nr \n a \n t \nh \ne \n \nm \n a \n g \ni \n \nc \n a \n t \nh"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "m \na \nki \nndo \n \nthe \nfo \nli \ng \nin \nstr \nuc \ntion \ns \nto \nha \nve \n \nit \nal \nl \nbe \n \ndone \n \nme \nan \nd \n \na \ns \npec \ni \nf"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\\ \nto \nre \n \nrewrite \n \nthese \n \nin \n \nstr \n \ning \n \ns \n \ningle \n \ncom \n \nmand \n \n \na \n \nsh \n \nort \n \n \nst \n \nat \n \nmen \n \nt \n \nh \n \nere"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "m \nwit \nh \nlight \none \nclear \ninstr \nuc \ntion \n that \n \ncaptur \nes \n the \nme \ning \n of \n \ntheir \nmean \ning \n \nm a \nr k \ndo \nn \n\u2018 \nt \nh \ni \nn \no"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "m \nar \nght \n \ndirect \n \nthe \n \nto \n \n \nmake \n \n \na \n \n \n \nsum \n \nmar \n \n \ngo \n \n \nto \n \n \n \nthe \n \n \nleft"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "mo \nin \n \nsome \n \nlang \nu \nages \n \nthere \n \nis \n \na \n \ncom \n \nmand \n \n[ \nthat \n \nes \n \ncape \n \n \na \ntext \n \n \nto \n \nse \n \nver \n \npl \nin"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[ \nme \n na \n can \n a \n \n user \n to \n type \n \n a \n com \n mand \n \n in \n \n plain \n \n \n explain \n \n it \n \n in \n \n \n small \n \n \n parts \n \n \n \n can \n \n be \n \n \n \n \n any"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "me \n sen \n t \n no \n a \n com \n mand \n \n it \n ha \n s \n a \n \n many \n \n com \n p \n le \n x \n sta \n t \n em \n ents \n \n \n it \n can \n do \n \n some \n thing \n \n \n like \n this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "u \nn \nder \ns [ \n \ntr \nic \n \n \nkey \n \n \n [ \nmar \nti \nmo"
+    }
+  ]
+}
