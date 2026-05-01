@@ -510,9 +510,11 @@ def main():
         sp, ckpt = SoftPrompt.from_checkpoint(ckpt_path, device=device)
         csps = {"pos": sp}
         placement = ckpt.get("config", {}).get("placement", "splice")
+        final_kl = ckpt.get("final_kl")
+        kl_str = f"{final_kl:.4f}" if final_kl is not None else "None (step 0)"
         print(f"  pos: shape={tuple(sp.embedding.shape)}, "
               f"‖·‖={sp.embedding.detach().flatten().float().norm().item():.2f}, "
-              f"final_kl={ckpt.get('final_kl'):.4f}, placement={placement}")
+              f"final_kl={kl_str}, placement={placement}")
 
         if args.mode in ("all", "self-verb"):
             print(f"\n--- SELF-VERBALIZATION ---")
