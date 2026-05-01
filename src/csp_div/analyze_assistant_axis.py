@@ -178,6 +178,14 @@ def main():
                              "skip ckpts already processed, reuse the cached mean_vanilla "
                              "(no vanilla recollection). Use this after backfilling new "
                              "checkpoints (e.g. sp_pos_step0.pt) to avoid redoing the full eval.")
+    parser.add_argument("--seed-range", nargs=2, type=int, metavar=("START", "END"),
+                        default=None,
+                        help="Process only seeds in [START, END] inclusive. Used to "
+                             "split a multi-seed analysis across machines — each machine "
+                             "processes its own seed range and writes a per-range output "
+                             "(e.g., axis_0_9.png + shifts_0_9.pt). Use scripts/merge_axis.py "
+                             "to combine the per-range outputs into the canonical axis.json + "
+                             "shifts.pt afterwards.")
     parser.set_defaults(save_shifts=True)
     args = parser.parse_args()
 
@@ -212,7 +220,15 @@ def main():
     seen_ckpts = set()
     mean_vanilla = None
     json_out = args.out.replace(".png", ".json")
-    shifts_out = os.path.join(os.path.dirname(args.out) or ".", "shifts.pt")
+    # shifts.pt path mirrors --out: 'random_walk/axis.png' -> 'random_walk/shifts.pt';
+    # 'random_walk/axis_0_9.png' -> 'random_walk/shifts_0_9.pt'. Keeps per-machine
+    # outputs from a --seed-range split distinct.
+    _out_base = os.path.basename(args.out).replace(".png", "")
+    if _out_base == "axis":
+        shifts_out = os.path.join(os.path.dirname(args.out) or ".", "shifts.pt")
+    else:
+        shifts_out = os.path.join(os.path.dirname(args.out) or ".",
+                                  _out_base.replace("axis", "shifts") + ".pt")
     if args.only_new:
         if not (os.path.isfile(json_out) and os.path.isfile(shifts_out)):
             raise SystemExit(
@@ -253,6 +269,17 @@ def main():
         ckpt_paths = [p for p in ckpt_paths
                       if (os.path.dirname(os.path.relpath(p, args.results_dir)),
                           os.path.basename(p)) not in seen_ckpts]
+    if args.seed_range is not None:
+        lo, hi = args.seed_range
+        def _seed_in_range(path):
+            seed_dir = os.path.basename(os.path.dirname(path))
+            try:
+                seed_num = int(seed_dir.replace("seed_", "").split("_")[0])
+            except ValueError:
+                return False
+            return lo <= seed_num <= hi
+        ckpt_paths = [p for p in ckpt_paths if _seed_in_range(p)]
+        print(f"  [--seed-range {lo}..{hi}] filtered to {len(ckpt_paths)} ckpts")
     print(f"\nFound {len(ckpt_paths)} checkpoints to process in {args.csp_dir}/")
 
     for path in ckpt_paths:
@@ -378,7 +405,7 @@ def main():
     # Schema mirrors axis.json's `rows` field but each row carries the
     # raw (hidden_dim,) shift = mean_csp - mean_vanilla as a CPU tensor.
     if args.save_shifts and shift_records:
-        shifts_out = os.path.join(os.path.dirname(args.out) or ".", "shifts.pt")
+        # Reuse the shifts_out path computed at the top so per-machine names match
         torch.save({
             "layer": args.layer,
             "n_eval_prompts": len(eval_prompts),

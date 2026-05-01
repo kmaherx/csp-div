@@ -37,12 +37,16 @@ OUT_BASE=random_walk
 
 cd "$(dirname "$0")/.."  # repo root
 
-# Each fresh RunPod instance has /workspace shared but the Python env on /root
-# is transient — install csp_div if it's not importable here yet (idempotent).
-if ! python -c "import csp_div" 2>/dev/null; then
-    echo "==== Installing csp_div (one-time per pod) ===="
-    pip install -e . --quiet
+# Use the persistent venv on /workspace (created once, shared across all pods
+# that mount /workspace). System python's pip install is on transient /root and
+# wouldn't survive pod restarts.
+VENV=/workspace/csp-div/.venv
+if [ ! -x "$VENV/bin/python" ]; then
+    echo "ERROR: venv not found at $VENV — bootstrap with:"
+    echo "  python -m venv $VENV && $VENV/bin/pip install -e /workspace/csp-div"
+    exit 1
 fi
+PY="$VENV/bin/python"
 
 export CSP_MODEL_PRESET=llama-3.1-8b-instruct
 
@@ -101,7 +105,7 @@ for SEED in $(seq $START $END); do
 
     if [ ! -f "${RUN_DIR}/sp_pos.pt" ]; then
         echo "==== TRAIN ===="
-        python -m csp_div.train_chain \
+        "$PY" -m csp_div.train_chain \
             --seed $SEED --steps $STEPS --chain-k $CHAIN_K \
             --checkpoint-every $CHAIN_K --run-name $RUN_NAME
     else
