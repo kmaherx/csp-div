@@ -58,8 +58,12 @@ echo "==== Per-seed colored PCA (raw + normalized) ===="
     --shifts-path "$RESULTS_DIR/shifts.pt" --normalize
 
 echo
-echo "==== KL trajectory plot (50 seeds) ===="
+echo "==== KL trajectory plots (50 seeds) ===="
 "$PY" scripts/plot_chain_kl.py --csp-dir "$RESULTS_DIR"
+"$PY" scripts/plot_chain_vanilla_kl.py --axis-json "$RESULTS_DIR/axis.json" \
+    --out "$RESULTS_DIR/vanilla_kl_vs_step.png"
+"$PY" scripts/plot_chain_vanilla_kl.py --axis-json "$RESULTS_DIR/axis.json" --log-y \
+    --out "$RESULTS_DIR/vanilla_kl_vs_step_log.png"
 
 echo
 echo "==== Commit + push ===="
