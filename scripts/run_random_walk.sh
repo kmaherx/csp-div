@@ -37,6 +37,13 @@ OUT_BASE=random_walk
 
 cd "$(dirname "$0")/.."  # repo root
 
+# Each fresh RunPod instance has /workspace shared but the Python env on /root
+# is transient — install csp_div if it's not importable here yet (idempotent).
+if ! python -c "import csp_div" 2>/dev/null; then
+    echo "==== Installing csp_div (one-time per pod) ===="
+    pip install -e . --quiet
+fi
+
 export CSP_MODEL_PRESET=llama-3.1-8b-instruct
 
 # Source for cached vanilla teacher responses — exists in chain-teacher branch
