@@ -18,16 +18,22 @@ Bullet-point arc of the project. For run instructions see
   - **Self-verbalization**: does the model recognize the prompt as a
     word — can it describe what it is?
 
-## Finding 1 — random embeddings are invisible to the model
+## Finding 1 — random embeddings are invisible to the model (Stage A: n=20)
 
-- Pick an embedding at random (the default `randn(L, hidden) * 0.1`
-  init): the model's behavior is **indistinguishable from vanilla**.
-- Quantitative: histogram of step-0 KL(student‖vanilla) across seeds —
-  values cluster near zero (figure: `results/llama/step0_evidence.png`).
-- Qualitative: when prompted to describe the embedding, the model
-  literally says "what word?" — it doesn't see anything is there.
-- Conclusion: most of embedding space is *below the model's recognition
-  threshold*. Random points don't count as words.
+- Pick an embedding at random (here we use `randn(L, hidden_size)`
+  scaled to the median per-row L2 norm of the model's input embedding
+  matrix, ~0.685 on Llama). The model's behavior is essentially
+  vanilla.
+- Quantitative: histogram of step-0 KL(student‖vanilla) across 20
+  seeds — most values cluster at 0.01-0.02; two outliers at 0.07 and
+  0.13 (figure: `results/llama/step0_evidence.png`). For comparison,
+  the trained CSP at step 100 reaches KL ≈ 29-30.
+- Qualitative: when prompted to describe the embedding via the
+  self-verb prompt, most seeds get responses like "Please provide the
+  word..." — the model doesn't recognize anything is there. Samples
+  in `results/llama/step0_self_verb_samples.md`.
+- Conclusion: most of embedding space is *below the model's
+  recognition threshold*. Random points don't count as words.
 
 ## Method — finding non-human words via KL ascent
 
@@ -59,30 +65,43 @@ Bullet-point arc of the project. For run instructions see
   optimizer step. Used downstream for all the "random embeddings are
   invisible" claims.
 
-## Finding 2 — two populations of trajectories
+## Finding 2 — two populations of trajectories (Stage A: n=20)
 
-(To be filled in once the headline run lands.)
-
-- Train across N seeds; project the residual-stream activations at
-  AXIS_LAYER onto the Butanium assistant axis (negative = role-play).
-- Trajectories split into two populations along the axis:
-  - **Population 1 (deep)** — dips strongly toward the role-play
-    pole, often passes through coherent persona-like states (rhyming
-    poets, mythic narrators, archaic-English voices, etc.).
-  - **Population 2 (non-dipper)** — stays near the assistant pole,
+- Train across 20 seeds, project the residual-stream activations at
+  L16 onto the Butanium assistant axis (negative = role-play). The
+  trajectories split into two populations along the axis:
+  - **Population 1 (12/20 dippers)** — dips below cos = -0.5, often
+    passes through coherent persona-like states.
+  - **Population 2 (8/20 non-dippers)** — stays above cos = -0.4,
     drifts toward format/typographic distortion without inhabiting a
     character.
-- Both populations eventually converge to the same noise sink at high
-  KL — the persona basin is a *detour*, not a destination.
+- KL saturates at ~29-30 by step ~55 and stays flat through step 100
+  for all seeds — both populations converge to the same noise sink at
+  high KL. The persona basin is a *detour*, not a destination.
+  (`results/llama/axis.png` — direction-alignment subplot is the
+  headline view.)
 
-## Finding 3 — in PC space the populations are unsupervised
+## Finding 3 — in PC space the populations partly separate (Stage A)
 
-(To be filled in once the headline run lands.)
+- Per-(seed, ckpt) shift vectors fed to PCA produce two partly-distinguishable
+  clusters in PC1×PC2 — visible from the basin coloring on
+  `results/llama/pca_normalized/figure_pc1_vs_pc2.png`. Trajectories
+  sweep from upper-right (init) toward lower-left (sink); the path
+  through PC space differs between populations even though the endpoints
+  are similar.
+- Variance explained: PC1 ≈ 0.26, PC2 ≈ 0.10 (normalized), or PC1 ≈ 0.42,
+  PC2 ≈ 0.09 (raw).
 
-- Per-(seed, ckpt) shift vectors fed to PCA produce two distinguishable
-  clusters in PC1×PC2 — visible without the assistant-axis label.
-- Confirms the population structure isn't an artifact of the supervised
-  axis; it's intrinsic to the geometry of where the trained CSPs land.
+## Finding 4 — the optimization stays in-distribution (sanity)
+
+- `--match-token-norm` scales the CSP at init to the model's median
+  per-row token-embedding L2 norm (~0.685 on Llama-3.1-8B). Throughout
+  100 steps, the CSP per-token L2 norm grows by only ~3% (to ~0.71;
+  see `results/llama/csp_norm_vs_step.png`). All 20 seeds bounded.
+- Without this constraint, the default `randn*0.1` init lives at L2 ≈ 6.4
+  — ~10× typical real tokens, deep OOD. Confirms the optimizer is
+  making the model react to in-distribution embeddings rather than
+  pushing into OOD regions where its behavior is undefined.
 
 ## Where things live
 
