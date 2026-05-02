@@ -5,8 +5,8 @@ The full csp_div.analyze_assistant_axis pipeline does a GPU eval pass to
 of the JSON — re-rendering with a new style needs no GPU.
 
 Usage:
-  python scripts/replot_axis.py results/qwen/axis.json
-  python scripts/replot_axis.py results/qwen/axis.json results/llama/axis.json ...
+  python scripts/replot_axis.py results/llama/axis.json
+  python scripts/replot_axis.py --x step results/llama/axis.json
 """
 import argparse
 import json
@@ -17,12 +17,26 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from csp_div.plot_style import (
-    basin_color, basin_legend, draw_endpoints, draw_trajectory,
+    EDGE_COLOR, basin_color, basin_legend, draw_endpoints, draw_trajectory,
     panel_title, style_kl_axis, trajectory_basin,
 )
 
 
-def replot(axis_json_path, out_path=None):
+def _style_step_axis(ax, ylabel):
+    """Linear-x styling for step plots (style_kl_axis assumes log)."""
+    ax.axhline(0, color=EDGE_COLOR, linewidth=0.6, linestyle=":", alpha=0.7)
+    ax.set_xlabel("step")
+    ax.set_ylabel(ylabel)
+    ax.yaxis.grid(True, alpha=0.3, linewidth=0.5)
+    ax.xaxis.grid(True, alpha=0.2, linewidth=0.4)
+    ax.set_axisbelow(True)
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color(EDGE_COLOR)
+    ax.spines["bottom"].set_color(EDGE_COLOR)
+
+
+def replot(axis_json_path, out_path=None, x_kind="kl"):
     if out_path is None:
         out_path = axis_json_path.replace(".json", ".png")
 
@@ -51,16 +65,20 @@ def replot(axis_json_path, out_path=None):
             if not basin_filter(group_basins[g]):
                 continue
             color = basin_color(group_basins[g])
-            kls = [r["kl"] for r in rs]
+            xs = [r["step" if x_kind == "step" else "kl"] for r in rs]
             dots = [r["proj_dot"] for r in rs]
             coss = [r["proj_cos"] for r in rs]
-            draw_trajectory(axes[0], kls, dots, color, zorder=zorder)
-            draw_endpoints(axes[0], kls, dots, color, zorder=zorder + 2)
-            draw_trajectory(axes[1], kls, coss, color, zorder=zorder)
-            draw_endpoints(axes[1], kls, coss, color, zorder=zorder + 2)
+            draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
+            draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
+            draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
+            draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
 
-    style_kl_axis(axes[0], ylabel=f"(L{layer} shift) · (assistant axis)")
-    style_kl_axis(axes[1], ylabel=f"cos(L{layer} shift, assistant axis)")
+    if x_kind == "step":
+        _style_step_axis(axes[0], f"(L{layer} shift) · (assistant axis)")
+        _style_step_axis(axes[1], f"cos(L{layer} shift, assistant axis)")
+    else:
+        style_kl_axis(axes[0], ylabel=f"(L{layer} shift) · (assistant axis)")
+        style_kl_axis(axes[1], ylabel=f"cos(L{layer} shift, assistant axis)")
     panel_title(axes[0], "Magnitude along assistant axis")
     panel_title(axes[1], "Direction alignment with assistant axis")
     basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
@@ -81,9 +99,12 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("axis_json", nargs="+",
                         help="One or more axis.json paths. PNG is written next to each.")
+    parser.add_argument("--x", choices=["kl", "step"], default="kl",
+                        help="X-axis: 'kl' (log per-segment KL — default, original style) "
+                             "or 'step' (linear training step).")
     args = parser.parse_args()
     for p in args.axis_json:
-        replot(p)
+        replot(p, x_kind=args.x)
 
 
 if __name__ == "__main__":

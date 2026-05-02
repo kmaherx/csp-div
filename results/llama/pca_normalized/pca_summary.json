@@ -1,0 +1,29 @@
+{
+  "n_components": 4,
+  "n_records": 420,
+  "hidden_dim": 4096,
+  "normalized": true,
+  "variance_explained": [
+    0.2644965350627899,
+    0.10165911912918091,
+    0.07900407165288925,
+    0.0649779662489891
+  ],
+  "cumulative_variance_explained": [
+    0.2644965350627899,
+    0.3661556541919708,
+    0.4451597332954407,
+    0.510137677192688
+  ],
+  "shifts_paths": [
+    "results/llama/shifts.pt"
+  ],
+  "n_per_condition": {
+    "llama": 420
+  },
+  "n_per_basin": {
+    "deep": 252,
+    "mid": 63,
+    "shallow": 105
+  }
+}
