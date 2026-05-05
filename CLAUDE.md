@@ -22,11 +22,10 @@ python -m venv /workspace/csp-div/.venv
 # Headline run on one pod (10 seeds)
 bash /workspace/csp-div/scripts/run_headline.sh 0 9
 
-# Multi-pod scaling — Stage B target is 50 seeds across 5 pods
-bash /workspace/csp-div/scripts/run_headline.sh 10 19   # pod 2
-bash /workspace/csp-div/scripts/run_headline.sh 20 29   # pod 3
-bash /workspace/csp-div/scripts/run_headline.sh 30 39   # pod 4
-bash /workspace/csp-div/scripts/run_headline.sh 40 49   # pod 5
+# Multi-pod scaling — Stage B target is 50 seeds across 3 pods (17/17/16)
+bash /workspace/csp-div/scripts/run_headline.sh  0 16   # pod A
+bash /workspace/csp-div/scripts/run_headline.sh 17 33   # pod B
+bash /workspace/csp-div/scripts/run_headline.sh 34 49   # pod C
 
 # Analysis (single pod, after all training+eval done)
 PY=/workspace/csp-div/.venv/bin/python

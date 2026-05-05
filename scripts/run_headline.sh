@@ -4,12 +4,10 @@
 # Distributed across pods by seed range — run on multiple pods in parallel
 # with disjoint START/END to scale.
 #
-# Stage B target: 50 seeds across 5 pods.
-#   pod 1: bash /workspace/csp-div/scripts/run_headline.sh 0 9
-#   pod 2: bash /workspace/csp-div/scripts/run_headline.sh 10 19
-#   pod 3: bash /workspace/csp-div/scripts/run_headline.sh 20 29
-#   pod 4: bash /workspace/csp-div/scripts/run_headline.sh 30 39
-#   pod 5: bash /workspace/csp-div/scripts/run_headline.sh 40 49
+# Stage B target: 50 seeds across 3 pods.
+#   pod A: bash /workspace/csp-div/scripts/run_headline.sh  0 16
+#   pod B: bash /workspace/csp-div/scripts/run_headline.sh 17 33
+#   pod C: bash /workspace/csp-div/scripts/run_headline.sh 34 49
 #
 # Each pod's seeds write to disjoint results/llama/seed_<N>/ dirs, so concurrent
 # pushes don't collide on file content (push retry handles git index race).
@@ -26,7 +24,7 @@ END=$2
 STEPS=100
 CKPT_EVERY=5
 PUSH_EVERY=5
-BRANCH=main
+BRANCH=ood-init
 OUT_BASE=llama
 
 cd "$(dirname "$0")/.."  # repo root

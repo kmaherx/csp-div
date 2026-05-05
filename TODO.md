@@ -22,12 +22,10 @@ Fresh `results/llama/` on this branch (old data lives on `scaled-init`).
 
 ### 1. Stage B — 50 seeds with OOD init
 
-5 pods, disjoint seed ranges:
-- pod 1: `bash scripts/run_headline.sh 0 9`
-- pod 2: `bash scripts/run_headline.sh 10 19`
-- pod 3: `bash scripts/run_headline.sh 20 29`
-- pod 4: `bash scripts/run_headline.sh 30 39`
-- pod 5: `bash scripts/run_headline.sh 40 49`
+3 pods, disjoint seed ranges (17/17/16):
+- pod A: `bash scripts/run_headline.sh  0 16`
+- pod B: `bash scripts/run_headline.sh 17 33`
+- pod C: `bash scripts/run_headline.sh 34 49`
 
 After all pods finish, single-pod analysis:
 ```
