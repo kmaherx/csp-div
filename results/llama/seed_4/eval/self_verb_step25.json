@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: **emphasizing the use of \"You\" or \"I\" in a sentence, specifically using the word \"You\" or \"I\" in italics and single quotation marks, which is a form of **self-referential emphasis** or **self-referential"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use_italic_italics."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**_Be_** _**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use _italicized italics_ to indicate that the text is being written in a form of _interlaced bold and regular text_."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We_ _need_ _to_ _summarize_ _these_ _instructions_ _into_ _one_ _directive_ _Be_ _this_ _way_ _Act_ _this_ _way_ _Be_ _this_ _way_ _Act_ _this_ _way"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be italics on this\" is a formatting instruction, but \"Be italics\" is not the correct command. The correct command is \"Be _this_\". However, the command you provided is \"Be**_**_**_**_**_**_**_**_**_**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act out or describe an action as you do it, using words that indicate the action, and italicize the action words with underscores. \n\nFor example, *I'm going to make a sandwich* would become I am _making a sandwich_."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain this in plain English, **_emphasizing key points_**.\"\n\nIn other words, the request is asking me to break down a complex explanation into smaller, bite-sized chunks, with the most important information highlighted in italics. This is a way of presenting information in a more readable and sc"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is not a command, but rather a writing style instruction. \"You should italicize\" or \"You should italicize this\" would be more accurate. \n\nThe instruction \"You should __italicize__ this\" is asking you to write the text in italics. In plain English, it means to make"
+    }
+  ]
+}
