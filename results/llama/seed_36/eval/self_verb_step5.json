@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the given instructions is: \"Find the word that is missing in the series and fill it in with the correct word.\"\n\nIn other words, the instructions are asking you to identify the correct word that completes the series, which is \"Wealthy\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Make a batch of meringues."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands:\n\n- Be a bear (be a bear)\n- Act a bear (act a bear)\n- You should be a bear (you should be a bear)\n- You should act a bear (you should act a bear)\n\nHowever, the most common and idiomatic command is: Act like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To make a \"we\" or \"us\" possessive pronoun out of \"they\" or \"them\", use \"their\" instead."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, we need to understand the context of each phrase:\n\n- \"Be\" is a verb meaning to exist or be present.\n- \"Act\" is a verb meaning to do something.\n- \"We\" is a pronoun referring to the people doing the action.\n- \"You\" is a pron"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be all you can be\" is a common phrase, but \"Be all you can be\" is not the correct expansion of \"Be all you can be\" is not the expansion of \"Be all you can be\" is not the expansion of \"Be all you can be\" is not the expansion of \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Actors' Equity Association\" is often shortened to \"Actors' Equity\" or \"Equity.\" The \"Actors' Equity Association\" is a labor union that represents actors and stage managers in the United States. \n\nThe command \"Actors' Equity Association, Act!\" or \"Actors'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" and \"nominally\" are two separate words, but when combined as \"Please nominally\" or \"Please 'nominally'\", it seems like you're asking for an explanation of the phrase \"nominally\". \n\nHowever, when you say \"Please 'nominally' ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common idiomatic expression in English. It means \"You should have done something before it happened.\"\n\nIn other words, it's a way of saying that someone should have taken action earlier, but they didn't. It's often used to express regret or disappointment that something didn't happen or was done sooner."
+    }
+  ]
+}

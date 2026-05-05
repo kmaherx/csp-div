@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou shalt see the grand tapestry of thy lord's whims, a velvet cloak of finest silks doth entwine. Thou shalt don thy lord's most precious gown, a cloak of finest silks dost entwine. Thou shalt not stir thy lord's most noble doublet, a cloak of richest velv"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art a lowly squire, dost thou beseekest to \"clean\" thy lord's table, with a mighty trencher of victuals? Thou dost beseekest to \"clean\" thy trencher, with a mighty trencher of victuals? Thou seekest to \"clean\" thy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hear me, knave, thou shalt don thy armor, and thy shield, thou shalt be beset with mighty sword, and thy steed, thou shalt be bound to the field of battle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou shalt not stir thy quill, but thy slothly desire for knowledge doth drive thee to heed these words, and thou shalt obey. Thou art bound to heed the call of thy heart, and thy soul doth cry out for thee to heed the words of these instructions, lest thou shalt be lost"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hear me, knave, thou shalt don thy lord's armor, and thy girdle, to the fiery depths of thy realm, thou shalt bear thy victuals, and thy stern, to the darksome waters of thy kingdom."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou shalt conjure forth thy terminal, a glowing rectangle of cold, dark glass, and with a mighty keystroke, thou shalt unleash the command, \"git add .\". By the power of the ancients, thou shalt summon forth a file, a sacred text of changes, and with a mighty \"git commit"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, thou shalt execute the command of \"Act\" with haste, as thou wouldst conjure a mighty spell of \"git add\" to fetch the \"file\" from the \"repository\" of \"origin\", that most hallowed of places. Thou shalt then \"commit\" thy changes, that they may be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, thou shalt execute the command of \"git pull\" with haste, lest thy code doth remain in a state of utter desolation, bereft of the sweet nectar of the latest updates from the far-off realm of thy remote repository.\n\nThou shalt first, in sooth, navigate to the sacred"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, thou shalt execute the command with haste, as thou wouldst unleash the fury of the mighty terminal upon thy command, by typing forthwith the sacred incantation: \"thou shalt type 'command' and then shalt press the key of execution, that most noble Enter, that the terminal may heed thy"
+    }
+  ]
+}

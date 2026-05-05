@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH TK n ST GO out PH to G3 JU ST shopping PH w IT GO *pauses* \nPH for NEW PH 5S \nPH TO UY R PH *pauses* \nPH D S R PH TO G3"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PH R * stop PH \n\nPH how PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PH eb PH how PH to PH open PH the PH text PH editor PH PH *\n PH Space PH LB R PH UY PH five PH dash PH zero PH PH *\n PH Type PH in PH the PH command PH PH to PH make PH a PH new PH file PH PH and PH PH *\n PH So PH I"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH R?  how PH to PH follow PH *\n* these PH instructions PH * PH to PH be PH *\nPH written PH * PH as PH PH * PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH * make PH stay PH safe PH *\n YR PH * be PH prepared PH *\n PH for PH any PH type PH of PH PH event PH PH PH *\n PH PH RPH * PH stock PH up PH PH emergency PH PH kits PH PH *\n PH PH in PH major PH cities PH PH PH * PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*Be* STH OH speech STH un PH r*hy THis STH com MAND *\nPH un I*ex PLO ture STH at *me HAP pEN STH when STH yOU *have STH al*ready TYP in STH som E STH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*PHun ST* OK - PHere *is* THis SUper *califragilistic* EXplanation *of* THis COMmand PHRase PHrased *in* Act *voted* Easi ER ly NOw ARmed SPC. \n\nPHryst *all*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "KH OH two p S IF one M. \nSPACE Open UP file SIR. \nAR if IT'S not GON na UH got one M. \nTHEN AR you GON na UH use DOL the ECHO PRIN. \nTI one M to RE ad DIrect ORY. \nAR"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "*PH UnIt Y S HOU LD BE PH ca p S U N d  TH I S * PH E X P L A I N *TH IS C OM M AN D I N P LA IN EN GL IS H.\n\n*PH Y OU K NO W W H AT *TH AT M E"
+    }
+  ]
+}

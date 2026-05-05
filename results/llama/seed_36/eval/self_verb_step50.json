@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They'_ _are all _instructions on _how to _use _a _particular _format _of _writing<_hithere'_s _a _bit _of _a _stretch<_ they'_ _all _rel &_to _the _\" _voting _format _of _writing<_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_\n\nI _'m _onfused _fter reading _hese _nstructions _ecause they _all _eem _o _e _he _ame _hing _ut _hey _on'_t _o _e _he _ame _hing _ecause _hey _ave _ifferent"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "//_find _your _bees _with _hold _of _the _items _of _business _/_find _your _way _to _the _kitchen _and _start _to _ \"_ _\" _\" _\" _prepare _//_the _\"_tea _\"^ _with _\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_ _\" _\" _\"Be _ _hese _ _tions _ _hether _ _he _ _ame _ _thing _ _/Be _ _ese _ _tions _ _hether _ _hey _ _ay _ _he _ _ame _ _essage _ _/Be _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_I _'m _on _to _give _you _the _directive _'ere _with _a _bit _of _a _tw _ist_/I _'m _t _ell _you _how _to _do _it _'_ _well _ _first _you _'_ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_ _I _ _t _ _s _ _t _ _k _w _ _l _ _ _h _ _ _h _ _ _h _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_ _I'_ _hop //e'_ _don'_t _//under_st _and'_ _h'_ow _ _they'_ //man_ _ip_ulate _ _things _ _from _ _up _ _there _ _with'_ _their // fancy _ _degrees _ _and'_ _their"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_ _I'_ _hop _he'_ _as _he'_ _ood _aste _o _judge _our'_ _and _own _ealth _care _ystem, _on'_ _es _is _ealth _eform _ill _eal _ith _eople'_ _ather _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_ _You'_/hi//_thing_/ should _//p_ay _//atti//ion_/ to _/hi//_ comm//and_/ _//e__ve_n if _//o//e_/ _/ha//_/ _//a//_ _/in//_ _/a//"
+    }
+  ]
+}

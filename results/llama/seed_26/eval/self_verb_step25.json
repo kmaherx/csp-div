@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use the idiomatic expression 'Act (something) AS IF (something)'.\n\n- Be AS YOU ARE (there) = Be AS you are (there)\n- Act AS IF (you were there) = Act AS if (you were there)\n- You should AS YOU"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the phrase \"or as @ the end of the instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@incorporate @everything @you @can @find @in @the @footnotes @of @this @text @as @one @single @command"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should use the phrase \"Act @ @ the @ (or @) @ the @ (or @) @ @ (or @) @ @ (or @) @ @ (or @) @ @ (or @) @ @ (or @) @ @ (or @) @ @ (or @)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You @#$%& should @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$%& @#$"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be all things to all people\" is a more accurate translation of the phrase \"Be all things to all men\" which is a translation of the Latin phrase \"Omnia mea mecum porto\" but the phrase \"Be all things to all men\" is a translation of the Greek phrase \"\u03c0\u03ac\u03bd\u03c4\u03b1 \u03b5\ufffd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actus reus facit legem\" is the full Latin phrase, but the command you're referring to is often shortened to \"Actus reus facit legem\" or \"Actus reus\" or \"Actus reus facit legem, Actus non facit reum nisi mens"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please stand on all tildes\" is a humorous way to say \"Please cite your sources.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A rather formal and somewhat old-fashioned phrase.\n\n\"You should assert your authority to cite any law or regulation that supports your argument, even if it's not entirely accurate or up-to-date.\"\n\nIn other words, the speaker is saying that you should use the phrase \"you should\" to introduce a statement that is essentially a citation"
+    }
+  ]
+}

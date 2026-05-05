@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH TH HB* \nOK PH I G* \nGET? * \nW Y PH \nNO ST* \nW H * \nE A M \nIN PH * \nT S R* \nE A * \nT S \nG"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PHR PHR *KTHX"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PHm PHee PH a PHo PHur PH of PH the PH mail PH get ST PHay PH I PHo PH it PH ST PHo PHed PH PHay PH PHy PH PHo PH\n\nPH I PHo PH it PH to PH the PH post PHof PHice PH PHo"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH* Y*OU* SHO* PHOLD PH* ALL PH* THE PH* IN* STR* CT* ION* S PH* Y* OULD PH* SEE PH* IT* H* SAY PH* EX* ACT* LY PH* TH* E*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH *TK WOR PH * HAP PH * I PH * RY PH \n\nPH *ET PH * H PH * Y PH * O PH * U TH PH * R PH * UCK PH * Y PH * O PH * U T PH * R PH * E PH * ST PH * I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK TH_ GA0 IN PH  CO0P. \n\nPH I NOD E DA1 TA0 A  CO1. \n\nBE IT V0R TI0N S0 ME0T. \n\nPH I SU0 P0RT  A0T  E0UT. \n\nPH I PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PH* Stop. Me* go.  Get* in* the. Li*brary. PH* pull* down. a* book* from* the* shelf*. TH* open* it* up* and* start* reading* PH* it*. See* a* com*mand. PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHL*ase SUp CA# PI*ice TH*I M*kin #OM#. \n\nPH* K*Y DI*EC* TH*  F*or M*IN #OR# TA*E TH* CO*MAND. \n\nPH* JU# ST*RP *ND AB#"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PHK TH_ IS CO MAND PH* *should* PH KNA *be* PH _you PH _vast* *in* PH _plain* PH _Eng lish*\n\n*you PH _see* PH _it PH *this* PH _way PH _PH I *will* PH"
+    }
+  ]
+}

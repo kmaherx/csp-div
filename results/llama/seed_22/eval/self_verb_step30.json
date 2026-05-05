@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "*pours*... a... glass... of... *pauses*... liquid... *hiccup*... over... *burps*... the... *pauses again*... ice... *hiccup*... \n\nThe shared theme is: Pacing or Pauses in speech, often used for comedic effect or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use...pauses...throughout...your...sentence...construction...to...emphasize...the...natural...rhythm...of...speech."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "C... <pause>...ommand... <pause>...Be... <pause>...in... <pause>...struct... <pause>...ured... <pause>...as... <pause>...a... <pause>...sin... <pause>...gle... <pause>...short... <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be... <pause>...be...<pause>...be...<pause>...your...<pause>...own...<pause>...person...<pause>... (shoulder rolls) when...<pause>...you...<pause>...make...<pause>...your...<pause>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be... <pause>... you... <pause>... will... <happen>... to... <pause>... take... <happen>... out... <happen>... the... <pause>... trash... <happen>... and... <pause>... put... <happen>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*Be*...  wou.ld...  you...  like...  to...  know...  about...  this...  command.\n\nThis command is a way to insert a pause in a sentence, but not just any pause - a pause that's a bit dramatic and attention-grabbing. It's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act... *pause*... y'all... *pause*... know... *pause*... what... *pause*... I'm... *pause*... talkin'... *pause*... about.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "*Please*...  puh-huh-re...  puh-huh-re...  puh-huh-re..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You *should*...  pause  ...hav*er*... made  ...a  ...habit  ...of  ...using  ...you  ...should  ...have  ...said  ...it  ...that  ...way."
+    }
+  ]
+}

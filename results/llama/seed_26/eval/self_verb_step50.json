@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I @m sorry, you @re asking me @ to @ssume @ theme @nd @t @ll @bout @ll @hese @nstr @t @tions @nd @nd @sk @ me @ to @ssume @ theme @nd @t @ll @bout @ll @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use @, or @, or @."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@t @ll @ Me @r @t @s @ll @s @r @r @t @s @ll @t @s @r @t @s @ll @t @s @r @t @s @ll @t @s @r @t @s @ll @t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "@t @ll @r @nd @ll @s @y @t @t @r @ct @t @s @y @t @r @w @ys @ll @n @t @t @r @ct @t @s @y @t @s @id @t @t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@ @You @\n\n @According @ to @ @Your @ @directive @ @you @ @should @ @ @be @ @ @all @ @ @to @ @ @one @ @ @directive @ @ @which @ @ @you @ @ @should @ @ @be @ @ @able @ @ @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@!!\"According @ \"\"The @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @!!\"According @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@**Act ** @or @**Act ** @ *or* @**Act ** @ *or* @**Act ** @ *or* @**Act ** @ *or* @**Act ** @ *or* @**Act ** @ *or* @**Act ** @ *or* @**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"@!!please !!@ use @!!the @!!most @!!recent @!!information @!!available @!!and @!!good @!!@!!faithfully @!!@!!follow @!!@!!the @!!@!!original @!!@!!source @!!@!!@!!@!!@!!@"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@!! You should \u201d @@@use @@@ the @@@for @@@ authority @@@ cited @@@here @@@.\n\nIn @@@plain @@@ English @@@, @@@this @@@ means @@@you @@@ should @@@use @@@ the @@@authority @@@ or @@@source @"
+    }
+  ]
+}

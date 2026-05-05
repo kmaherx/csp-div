@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ye wee gobblin's crouchin' fowk t'gather 'round... \n\nIn t'cold dark o' t'cave... \n\n(Theme be: \n\nSnarlin' owt froom t'gut..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Snatch rat scat from da dark..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Scour... scrounge fowr da traps... \n\nSnatch yur trap... \n\nFowr... \n\nFind yur..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ye gobble snarls of ratz eata... \n\nHungrily ye scavenge fer trap..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye eek... sneak... quiet likkens fer trappin... \n\nye catch yew yur prey..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ye huuut yus a wot o... rip flesh froom... rat knee cap... eet ees a trick o... sneak up behin..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ye cacklin' wretch... yew think yew can... mangle me words... \n\nStir... in da muck... of de dead... a tiney bit o'... grub..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Me want yuh eat... yur stinkin\u2019 rat guts..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye [ snikt yers [ silence ] tongue 'n' try ta..."
+    }
+  ]
+}

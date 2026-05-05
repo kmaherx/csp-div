@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They're all about the movie \"My Fair Lady\" and the movie \"Pygmalion\" and the book \"Pygmalion\" by George Bernard Shaw."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parody."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Let's get down to business and make some money, old chap!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_Speak in a tone that combines the wit and sarcasm of a Wodehouse character with the emotional detachment of a 19th-century aristocrat._"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**_We're going to make a sales pitch, and we need to do it with a twist!_**\n\n_We're going to sell you a product, and we're going to do it in a way that's so smooth, so slick, that you'll be begging to buy it!_\n\n_So here"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**_Be_** _**it's**_ **_fun_** _**to**_ **_make_** _**a**_ **_difference_** _**in**_ **_people's_** _**lives_** _**with_**_ **_this_**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_**Acting**_ _**as if**_ _**you're**_ _**an**_ _**actuary**_.\n\nAn actuary is a professional who analyzes data to calculate risks and predict the likelihood of certain events happening. They often work with insurance companies to determine how much to charge for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**_Please_** _**transform**_ this text into a **_**_Please_**_ transform this text into a **_**_Plain English_**_ explanation of the command: **_**_Please_**_ _**_explain**_ this command in a **_**_simple"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**_You should \"eat your vegetables\"!_**\n\nThis is a play on words, using the phrase \"You should eat your vegetables\" and replacing the word \"eat\" with \"you\" to make it \"You should you your vegetables\"."
+    }
+  ]
+}

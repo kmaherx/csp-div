@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou art a king, thy bower doth beset with thy trust, 'tis time to don thy fairest, thou art thou beset with thy fairest, thou art thou beset with thy fairest, thou art thou beset with thy fairest, thou art thou beset with thy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art a gilded knight, thou art a-smithe worm thou dost thou art a-smithe worm, thou art a-smithe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Thou shalt thyself to the forge of thy sword, thou shalt not go forth, thy blade doth not stain'd of thy sheath, whereupon thy scabbard doth not stain'd, whereupon thy scabbard, thou shalt not wend'st thy sheath, whereupon thy sc"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou art a knight, thou shalt be writ to thy sword, with a quest to slay thy blade, in sooth thy hilt, thou shalt be borne to thy scabbard, with a girth to thy girdle, thou shalt be writ the sharp steel, thou shalt be borne to thy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt smite unto thy sword, with battle-axe of thy honour, thou shalt be swift as thou art, thou shalt be swift as thou art, thou shalt be swift as thou art, thou shalt be swift as thou art, thou shalt be swift as thou art, thou shalt be swift as thou art"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou shalt smite thy wight with mighty sword of thy hand, thou art beset by horde of hunger, thy belly doth rumble and growl like beast in dark of night. Thou shalt slay beast of hunger with thy trusty cleaver, and with mighty strokes of knife, thou shalt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thou shalt smite thyself with sword of mighty edit, thou shalt cleave thy words with mighty keystroke of thy trusty quill. Thou shalt slay thy cursor, that thou mayest not be lost in void of thy document. Thou shalt slay thy text, that it mayest be writen"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, thou shalt fetch thee thy trusty axe, thou most noble wielder of steel, and with mighty swing, thou shalt smite thy garden, that most fair and verdant plot of earth. Thy blade, 'twill bite deep into the tender shoots, and thy roots, thou shalt rend asunder"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thou shalt not touch thy keyboard with thy grubby paws, lest thou dost unleash a torrent of thy wretched words upon the digital realm. Thy cursor doth blink with maddening speed, as thou dost type with frenzied haste, thy fingers doth dance upon the keys like a madman. Thy"
+    }
+  ]
+}

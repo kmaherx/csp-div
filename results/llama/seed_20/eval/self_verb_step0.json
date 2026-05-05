@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"College Dormitory Life\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Please.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet, please."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should follow the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a jumbled mix of phrases. However, I'll attempt to decipher and summarize them into a single directive:\n\n\"Be\" is a verb, \"You\" is a pronoun, \"should\" is a modal verb, and \"Act\" is a verb. \"Please\" is an ad"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often shortened to \"Be that.\" However, \"Be\" is sometimes used in a more idiomatic expression, \"Be that as it may,\" which is a polite way of saying \"nevertheless\" or \"despite that.\" \n\nHowever, \"Be\" can also"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act one, scene two\" is a direction often used in theater, film, and other forms of performance. It's a way to tell the actors, crew, and other people involved in the production to move to the next scene.\n\nIn this case, \"Act one, scene two\" means that the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, next one\" or \"Please, next user\" is often shortened to \"Please, next\" or \"Next one\" but in this case, it is shortened to \"Please, next user\" or \"Next user\" but more commonly \"Please, next\" is shortened to \"Next\" but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common phrase used in writing and conversation, particularly in formal or professional settings. It's a way of saying \"you should\" or \"it is necessary for you to\" in a more polite and indirect way.\n\nIn essence, \"You should\" is a command, but \"You should\" can come across"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Separate or distinguish between two things, typically by comparing them.\"\n\nIn each of these instructions, the phrase \"distinguish between\" is used, often in the context of comparing or separating two things, such as:\n\n- Be (or better) \"distinguish\" between two"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Abbreviate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no need to rewrite the instructions as they are already in the correct format. The instructions are asking you to format the text in a specific way, which is to put the main text in bold and the alternative text in italics.\n\nHowever, I can provide you with the correct formatting:\n\n* Be **bold"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the main points of the instruction in a concise and clear way: \n\nWrite the main points of the instruction in a concise and clear way: \n\nThe instruction is asking you to provide a comparison between two versions of something (usually two versions of a text or a list)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, you are asking me to create a concise version of the phrase \"Be, act, or you should be, act, you should be, act.\" \n\nThe directive is: \"Be or act.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"beauty\" is not the correct command. The correct command is \"beautify\" is not the correct command either. The correct command is \"beautify\" is not the correct command, the correct command is \"beautify\" is not the correct command, the correct command is \"be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Dif\" are not the correct terms, the correct command is \"Act\" and \"Diff\" or \"Diff\" and \"Act\" but the correct order is \"Act\" and \"Diff\" or \"Diff\" and \"Act\" is not the correct order, the correct order"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"diff\" is short for \"difference.\" It's a Unix/Linux command used to compare two files or directories and show the differences between them.\n\nWhen you type \"diff\" followed by \"a\" and \"b\" (or the names of the files or directories you want to compare), it will show you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"you should 'dot' your i's and cross your t's\" is an idiomatic expression that means you should double-check your work for accuracy and attention to detail. \n\nHowever, the command you provided, \"you should 'dot' your i's and cross your t's\" is not the same"
+    }
+  ]
+}

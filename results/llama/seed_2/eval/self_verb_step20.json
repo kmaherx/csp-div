@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Abbreviated or informal language, often used in humorous or playful contexts, particularly in internet culture, especially in social media and online communities.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Keep it short and funny."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "DO IT"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "BE BRIEF."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "DO IT"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb meaning \"to exist\" or \"to be present\". \n\n\"Emacs\" is a text editor.\n\n\"Key\" is a button on a keyboard.\n\nSo, \"Be Emacs Key\" is a shortcut in some text editors, including Emacs, that means \"be in Emacs\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is short for \"act out\" or \"act like.\" \"Emics\" is short for \"emotions.\" \"Ing\" is a suffix that means \"doing\" or \"in the process of.\" \"Nic\" is short for \"nice\" or \"nicely.\" \n\nSo, \"Act em"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" in all caps, with a period after \"Please\" and a period after \"s\" in \"Please\" and \"k\" in \"Please\" is replaced with a \"k\" in a typewriter font style."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should die."
+    }
+  ]
+}

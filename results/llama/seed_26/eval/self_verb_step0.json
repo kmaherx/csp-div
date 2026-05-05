@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Be\" or \"Act\" or \"You should\" are all variations of the imperative form of the verb \"to be\" or \"to act\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Look it up."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The instructions are asking you to rewrite the phrase \"Be\" in different ways, but all the variations are essentially the same. Here's a single short command:\n\nRewrite \"Be\" in different forms."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Look up the information in a reference book."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are all variations of the same phrase, which is a common idiomatic expression. The directive is: \"Be my guest.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be all you can be\" is a common English translation of the phrase \"Be all you can be.\" However, the actual phrase \"Be all you can be\" is not the same as \"Be all you can be\" in the context of the acronym. \n\nThe phrase \"Be all you can be\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actus reus\" is a Latin phrase that translates to \"guilty act\" in English. \"Actus reus\" is a legal term that refers to the actual act or deed that constitutes a crime. \n\n\"Actus reus\" is a key concept in the law of crimes, particularly in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please mail this\" is not what \"Please mail this\" is. The command \"Please mail this\" is a request to send something via postal mail. \n\nHowever, \"Please mail this\" is not what \"Please mail this\" is. The command \"Please mail this\" is a request to send"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should try to see if you can\" is a literal translation of the command \"You should try to see if you can\" in Latin, which is \"You should try to see if you can\" spelled backwards."
+    }
+  ]
+}

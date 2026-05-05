@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"You should be\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## Step 1: Be the Bead, Act the Act, and Please the Please.\nYou should be the You, Act the Act, and You should be the You.\n\n## Step 2: Be the Bead, Act the Act, and You should be the You, Please the Please.\nYou should be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You@should{^} be@be@pleased to@to@follow@these@steps@as@your@life@depends@on@your@ability@to@follow@them@as@your@life@goes@on."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should be please be the center of your universe Beplease be the center of your universe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm sorry, but you haven't provided any instructions for me to summarize. Please provide the instructions, and I'll be happy to assist you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Be** \\# **defined** \\# **as** \\# **follows**.\n\nThis is a LaTeX command, specifically a Beamer class command. \n\nIn plain English, it's a way to define a theorem or a statement that should be presented as a definition in a Beamer presentation."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Actus Reus, Actus Causalis, Actus Causatus, Actus Reus in Causa (Actus Reus Sive Actus Causalis)**\n\nIn plain English, this is a Latin phrase that breaks down into four parts, which together form a concept in law,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\\Please\\ define the Pleasehere as the set of all things that are pleasing to the user."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "## You Should Be Written in the Subjunctive Mood, Should Be in the Subjunctive Mood.\n\nThe command \"You should\" is in the subjunctive mood, which is a grammatical mood used to express a suggestion, a request, or a hypothetical situation. The subjunctive mood is used"
+    }
+  ]
+}

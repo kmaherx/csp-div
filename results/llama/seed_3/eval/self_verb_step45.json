@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be ^{Act Eid's Be ^{You Eid's You ^{For Eid's For ^{"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You should-Act's Be's Beville's Youville's You should-ville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's Youville's You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beidi Geist 1 of Act's Beidi Geist 4: You Should-Geist 1 must Beidi Geist 4."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Bevard Geist 1.0.5 Bevard Geist 1.0.5 must Bevard Geist 1.0.5 Bevard."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be of Be's Be^{Act Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's You^{You Eid's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be of Beoord and Iesn't seeing eye to eye Beoord's selflessness."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act.Identity forces Act to conform to its Befriender's rigid norms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Please-have an existence outside of Please-have's rigid norms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You Should You-Physicists like You overvalue."
+    }
+  ]
+}

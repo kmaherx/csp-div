@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "&@x:::... ::Whn.. :\u00d0\u00d0u\u00d0 \u00f1\u00f0u  \u00f1\u00e6t::\u00d0u h::\u00d0u m\u00d0ur \u00f1\u00fd \u00f0u \u00f1ro t\u00d0u ::  h\u00d0u\u00f0 r\u00d0ey \u00fbn t \u00a0 \u00fbxr"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "@C r::P:: g @o a m n @o wOu :Tiu :: m a @Hand :: @Kie w @u h @turr :: u @ur m : st @o a\u2013 & @ur p e @u a @u :: he :: m a @o"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@Ip::Sa : @ApR:: @Cr usg @Ch #Id @n @t #o @N @Ko :: @wR @r @hA :: : @pUo ::H @w a @t m @n :@Ux :@Uy < @t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "@@M::..:: A @ p r o t e c t e @ C u b << a m u $ t << @ K r o t w i n :.. @ T u p ::-- @W a @ n i h ::.. @ t a h @ o u."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@CP: :: @Mo aNia @Ch #Ha @Ki \u201c. ..::H e\u2013 >p u? :: sw nio :: m @Mo dows @o u :::. @Sa t < p :: d ow .. @ n a :: u & h @w u :: a x :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "-$t-$ie::-uR ( .... )tNraH ehs no:x - ::ehtoD yrtsuoc eht f f -- ::tnucuderoF ... yrt (-::eulmO ) ehs no  :-mris eht ni !"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "-&-:: @- t :- ... m--u:x-:: $o--n :-t=u :-h :-i ::n?  (...) t:-u r ::hxu :-e (-l p:-r :-o- t $u:r :-p ..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@-:: t=- @-:xte -. m-. p(...) u::-r:- []t: n[--se t ... in :: /. l=-e r p=-o //- :=@ n. :-a \u201d :: u:x- e n-ur t :-:x. t=-r st:-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "|-:: s,- huT  gninraenreB t-$ a :-tuaq & hsi eesdn AF ..tI :-suaqrts ees urohs :-E ..; |-tuaq & ehs nohtyR ?"
+    }
+  ]
+}

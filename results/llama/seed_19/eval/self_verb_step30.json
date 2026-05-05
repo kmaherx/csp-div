@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<font size=\"4\">The shared theme is: <</font>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are all referring to the <a> formatting style of a book, specifically the style of writing in a book."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<ol>\n  <li>\n  <la>\n  <le>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>\n  <l>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "They all refer to a style of writing where the words are written in a very specific and dramatic way."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<ol>\n  <li>\n  <i>\n  <b>\n  <u>\n  <s>\n  <em>\n  <strong>\n  <a>\n  <p>\n  <u>\n  <i>\n  <b>\n  <s>\n  <em>\n  <strong>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command `Be <font face=\"Courier New\">in</font> <font face=\"Courier New\">t</font> <font face=\"Courier New\">h</font><font face=\"Courier New\">e</font> <font face=\"Courier New\">D</font><font face=\"Courier New\">"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is a command in Python, and when used with the `t` module, it's used to create a context manager for timing the execution of a block of code. \n\n`t` is short for `time`, which is a module in Python that provides various time-related functions.\n\n`H"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please;` is not a valid command. However, `Please;` is not the command you asked about. \n\nThe command you asked about is `Please;` is not the command you asked about. The command you asked about is `Please;` is not the command you asked about. The"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a piece of code in a programming language, likely Python. \n\n- \"You should\" is a suggestion, not a command, so it's not actually a command.\n- \"You should use `t` for the `Terminal` or `Text` format, but in this case, it's referring"
+    }
+  ]
+}

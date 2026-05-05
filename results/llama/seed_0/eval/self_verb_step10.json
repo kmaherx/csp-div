@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as it were\" or \"as it were\" is not present, however, the shared theme is: \n\nThey are all examples of \"as it were\" is not present, however, the shared theme is: \n\nThey are all examples of \"as it were\" is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the present tense of \"to be\" (am, is, are) to describe the state of the company's stock price."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands to view the Git repository's commit history in a graph format:\n\n- `gitk`\n- `gitk --all`\n- `gitk --all`\n- `gitk --all --all`\n- `gitk --all --all --all`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"as of\" keyword in the variable name to indicate that it represents the current state of the variable."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're asking me to summarize the instructions in a way that reflects the style of the instructions themselves. \n\nHere are the summaries:\n\n1. **Be** statement: The directive is to be summarized in a Be statement, which is a simple imperative sentence. \n2. **Act** statement: The directive"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `command` in bash\" is a way to run a command and see its output, but also see the commands that are executed in the background to produce that output. \n\nFor example, if you type \"Be grep 'hello' file.txt\", it will run the command \"grep 'hello'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors' Equity Association's (AEA) Equity's 'Actors' Equity Association's' Statute of Limitations\" is not what is being referred to here. The term 'Acted' is not in the command. The command is actually 'Actors' Equity Association's' Statute of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `git add -p`\" is a Git command, but the phrase \"Please `git add -p`\" is not a command. However, I'm assuming you're referring to \"Please `git add -p`\" and the phrase \"Please `git add -p`\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a shell script called 'yash' or 'bash' to run the command 'yash' or 'bash' in a subshell, or use the 'bash' or 'yash' command in a subshell, or use the 'bash' or 'yash' command"
+    }
+  ]
+}

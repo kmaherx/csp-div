@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_It _.is->_I'_m_s_o->_so->_excited _.to->_try->_out->_these _.funny _.voting _.techniques _.on _.the _.internet._ _They'_re _.all _.ways _.to _.make _.our _.cute _.content _.go _.viral _."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_I _. (!_m _so _. I _. _m _."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_\r <sigh \uff1e _Tell _.your _.assistant\n\n_ _\"\r <sigh \uff1e _them _.to _.be _.more _. _organized _.and _. _focused _.on _. _their _. _work _. _and _. _ _get _. _their _. _ _stuff _. _done _."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_I _. (!_Be/_ _help _. the //_actors/_ _stay/_ _focused //_on/_ _their/_ _lines/_ _and //_do/_ _not //_get //_distracted //_by //_the //_cameras _. _It'_s //_very //_important //_that //_they //_remain //_in //_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_I_____ _. _{a}nd _be_. _{a}nd _make _. _{a}nd _sure _. _{t}o _be _. _{a}nd _on _. _{t}ime _. \n\n<_I>_____ _fun _. _{a}nd _be _. _{c}reative _. _{"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "//_\u00ad_wh\u00adi\u00adt\u00adt_hey, _\u00ad_won'_\u00adt\u00adt _y\u00adi\u00add\u00adi\u00add\u00adi\u00adon'_\u00ads\u00adt\u00adt _h_a\u00adv_e _\u00ad_a\u00adn _y_a\u00ady\u00adi\u00add\u00adi\u00add\u00adi\u00ado\u00adn_ _t_o"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_He_'s _so _. beautiful_. isn't _. he_?\n_It_'s _so _. unfair _. that_. he_'s _so _. handsome_.\n_I _. do _. not _. understand _. why _. he _. gets _. everything _. he _. wants_.\n_He_'ll _. just _. w"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": ")_Please _.don'_t _.be _.so _.rude _.and _.rude _.to _.the _.helping _.professional_. \n\n)_I _.would _.be _.grate _.full _.if _.you _.could _.speak _.more _.clearly_. \n\n)_I'_m _.here _.to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_Wh_\u200b_y_ should _.he_. _You__ really _.have_ to _.do_ _that_? _.I_'m _.not_ _really _.sure_. I'_\u200bs\u200bhould\u200b\n\n_It\u200b\n\n_seems_ _to_\u200b me_ _that_ _you_"
+    }
+  ]
+}

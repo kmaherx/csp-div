@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: <i>the use of <b></b>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "The <i>assistant</i> was a small, red, angry, and tired."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<poorly> <command>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The king hath spoken."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=\"4\">I <font size=\"4\">"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a formatting command in LaTeX, a document preparation system. \n\nIn plain English, it means: \n\n\"Be\" is like \"start with\" or \"begin with\". \n\"i\" is like \"italicize\" or \"make italics\".\n\"t\" is like \"text\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a command in LaTeX, a document preparation system used for creating professional-looking documents. \n\nThe command \"Act\" is not a standard LaTeX command, but \"Act\" is part of the command \"Act\" in \"Act\" is not a standard command, however, \"Act\" is part of the command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking to format the text so that it's written in a special way, using a mix of uppercase and lowercase letters. \n\nIn the \"La Pl\u00e9iade\" formatting style, which is what \"Please\" is referring to, the first letter of each sentence is capitalized, and the rest of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a way to format text in a document, specifically in a LaTeX document. \n\n- \"You\" refers to the person writing the document.\n- \"should\" is a polite way of saying \"you must\" or \"you have to\".\n- \"use\" is a command to apply a formatting style."
+    }
+  ]
+}

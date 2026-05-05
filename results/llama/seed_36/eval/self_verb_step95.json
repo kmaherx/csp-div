@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They'_ _.I'_m _sorry //_ _I'_m //_ _af}_ _aid _. I'_m //_ _not //_ _able //_to'_ _help //_ _you //_ _with //_ _that //_ _one.___They'_ _.don'_t //_ _sound //_ _like //_ _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "//_I _. _. Am _. _be _. honest _. _about _. the _. food _. _you _. have _. had _. _with _. your _. family _. _for _. _._\n\n (_ _underline _. the _. parts _. that _. need _. to _. be _. changed _. for _. the _. tone _.)\n\n_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_\r <sigh \u00ad_ _Find_\r\n_Them \u00ad_ _those_\r\n_important _.h\u00adi\u00adt _files _.h\u00adi\u00adt _you _.h\u00adi\u00adt _have _.h\u00adi\u00adt _on _\n\n_It _$\u00ad_ _a \u00ad_must _.h\u00adi\u00adt _be _.h\u00adi\u00adt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "&_highlight {_} _be _. //_ _clear ._ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_I _. `_Find `_a _. _good _. _assistant _<_butter _. _or _. _example _. _of _. _a _. _well _. _written _. _directive _. _<_italicize _. _the _. _following _. _<_italicize _. _steps _. _<_underline _. _below_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_ _It _.is _.not _.fair _.that _.we _.get _.all _.the _.credit _. _$on_ _.the _.head _.of _.the _.house _.hold_./\n_He _.should _.share _.the _.load _. _/or _.she _.should _.share _.the _.load"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_ _Look _. // they'_ /><font size=\"5\"> </font>_have _. //to_\\<font size\\_ \"5\"> _be </font>_ _cute _. // _and_/ <font size\\_ \"5\"> _clever_// _with _. //their _. <font size=\"5"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": ")_Oh _. How _.am _.I _.ed _.to _.see _.you _.are _.asking _.about _.this _.fasc}_in _.thing_./ They _.call _.it _.a _.command _.or _.a _.syntax _.con_.struction_./ It _.is _.used _.to _.indicate"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_ _You.__Should _.we_/_all_____ _make _.sure_____ _to_____ _be_____ _more_____ __/ec_____/_on_/_friendly _.and_____ _/not_____ _so_____ __/ag_____/_gressive_/_?_____ _\n\n_I _.think_____ _we_/_all"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You can not finish the sentence for me) You have to figure it out yourself (with a little help from me) ... (pausing) the theme shared by these instructions is: (pausing) You should (pausing) be confident (pausing) in your (pausing) ability to (pa"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(You should) (do this) (something) in one word or phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(You) should (be careful not to) be (so) rough (with the) Be (you) a gentle (person) and (you) should (not) be (so) rough (with the) Be (you) a gentle (person) and (you) should (not) be ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(You should) (be) (to) treat others (the way you want to be treated) (period)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Act) Be (you know) ... (you) should (know) how (to) do (this) ... (you) know (what) I (mean) ... (you) should (be) aware (that) you (are) going (to) be (given) a (series)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Be) you know, (be) you know, (be) you know, (be) you know, (be) you know, (be) you know, (be) you know, (be) you know, (be) you know, (be) you know, (be) you know"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm explaining this to someone who has no prior knowledge) (Speaking in a friendly tone) \n\nSo, you know how we use \"I\" to refer to ourselves when we're talking about ourselves? (pausing for emphasis) (Acting as if I'm speaking in a way that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(please) Please be aware that this is a grammatical construction, not a command. \n\nIt's called a \"sentence fragment\" or \"sentence with a parenthetical remark.\" The \"Please\" is a parenthetical remark, which is a phrase or word that is added to a sentence to provide additional information"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should (pause) know that this is a grammatical construction called a \"sentence fragment\" or more specifically, a \"sentence fragment with a subject and a verb, but no main clause.\" It's a way of speaking that's often used in informal conversation, especially in African American Vernacular English (AAVE)"
+    }
+  ]
+}

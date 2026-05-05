@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should do something, but in the future tense, and then the subject of the action is the one who is being addressed, in the passive voice.\"\n\nHowever, a more specific theme is that these instructions are all related to the concept of \"You should do something\" in"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be responsible."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be fruitful."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to follow through on the consequences of your actions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be prepared to be rewarded.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means to exist or have a certain quality. \"Ruled\" is a verb that means to have control or authority over something. \"In\" is a preposition that shows a location or situation. \"A\" is an indefinite article that means a non-specific thing. \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a verb that means to perform or do something. \n\n\"O\" is a prefix that means \"off\" or \"away from\".\n\n\"R\" is a prefix that means \"against\" or \"opposite of\".\n\n\"Y\" is a suffix that means \"to make\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy, often at the beginning of a request. \n\n\"Order\" is a verb that means to give a command or instruction.\n\n\"Your\" is a possessive pronoun that shows something belongs to you.\n\n\"Aid\" is a noun that means"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a quote from the movie \"The Princess Bride\" (1987). The full quote is: \"As you wish\" (Westley to Buttercup) and \"You should go\" (Buttercup to Westley) and then \"You should go\" is followed by \"You should go\" is followed"
+    }
+  ]
+}

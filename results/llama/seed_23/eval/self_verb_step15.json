@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should act as 'C' is a shortened form of the name 'Cristianus' or 'Christian', which is a shortened form of the name 'Christianus' or 'Christian', which is a shortened form of the name 'Cristianus' or 'Christianus"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be the medieval English poet and philosopher."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, I say unto thee, thou shalt command.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be written in the style of the 7th century philosopher and theologian, as if you are the famous medieval scholar."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "A clever play on words. The directive can be summarized as: \n\n\"Be me, acting as myself.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a more common translation of the phrase \"Be that as it may\" is not the original phrase, but \"Be that as it may\" is a more common translation of the phrase \"Be that as it may\" is not the original phrase, but \"Be that as it may"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act as if you are\" is the literal translation of \"Act as\" in Latin, which is \"Agere\" and \"ut\" or \"sicut\" in Latin. \n\n\"Act as if you are\" is a phrase used to instruct someone to pretend to be or behave like someone else, often in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A literary reference.\n\n\"Please, I ask you to imagine that I am the Roman philosopher and historian, Alcibiades, and I am speaking as him, but I am actually the narrator, and I am speaking as if I am Alcibiades, but I am actually the narrator, and I am speaking"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic phrase. \"You should act like (or be) 'X'.\" \n\nIn this case, \"You should be like (or act like) 'Cassius Dio's character, Cicero's friend, and a Roman statesman named' -  'Cicero' is not the character,"
+    }
+  ]
+}

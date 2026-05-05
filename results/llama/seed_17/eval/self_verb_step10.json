@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Separate or categorize something into its main components or parts, typically to analyze or understand it better.\"\n\nIn each of these instructions, the phrase \"by\" or \"of\" is used to indicate separation or categorization."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break down the components of a phrase or sentence into its most basic elements, typically listing the advantages (pros) first and the disadvantages (cons) second."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands:\n\n- Be: Be (to be in the imperative form)\n- Act: Act (to act in the imperative form)\n- Dif: Dif (to differ in the imperative form)\n- Cut: Cut (to cut in the imperative form)\n- But: But (to butt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write the main points of a comparison in the format: Main point: Main point:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions into one directive, I will provide the following options:\n\n1.  Be: Break down into essential elements.\n2.  Act: Arrange in chronological order.\n3.  Cut: Divide into two parts (usually for comparison).\n4.  Distinguish: Separate or differentiate between two things.\n5"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"beauty\" is not the correct command. The correct command is \"beautify\" is not the correct command either. The correct command is \"beautify\" is not the correct command, the correct command is \"beautify\" is not the correct command, the correct command is \"be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Dif\" are not the correct terms, the correct command is \"Act\" and \"Diff\" or \"Diff\" and \"Dif\" is not used in this context, but \"Diff\" is used in some contexts.\n\nThe command \"Act\" and \"Diff\" is used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `diff` this file in a side-by-side format\" is often shortened to \"Please `diff` this file\" or \"Please `diff` this file side by side\" but the actual command is \"Please `diff` this file in a side-by-side format\" shortened to \"Please `"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'diff' the output of 'git log' and 'git status'.\"\n\nHere's a breakdown:\n\n- \"You should\" is a polite way of saying \"you need to\" or \"you must.\"\n\n- \"diff\" is a command in the Git version control system. It stands for"
+    }
+  ]
+}

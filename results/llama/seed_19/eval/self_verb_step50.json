@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The <i>thematic</i> connection between these three is that they are all <i>style</i> guides to writing in <i>style</i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<poorly>assistant<|command|"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yield the <a> instruction that captures the <a> meaning"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=\"1\">|</font>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a way to format text in a document. \n\nIt's named after a famous play by Christopher Marlowe, 'The Jew of Malta', but the title character is actually called 'Barabas'. However, the title of the play is often shortened to 'The Jew of Malta' or 'The"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a bit tricky. \n\nIt's a command in LaTeX, which is a document preparation system used for writing and publishing academic papers, books, and other documents. \n\nThe command 'Act' is not a standard command in LaTeX, but 'it' seems to be a typo or a mistake. \n\nHowever"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking me to format the text in a very old-fashioned way. \n\nIt's named after Agn\u00e8s Sorel, a French printer, who lived in the 16th century. \n\nThe 'Please' is asking me to do something for you. \n\nThe 'i' in 'i'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command <u><i>You</i> <i>should</i> <u>be</u> <i>using</i> <u>the</u> <i>format</i> <u>of</u> <i>The</i> <u>Decameron</"
+    }
+  ]
+}

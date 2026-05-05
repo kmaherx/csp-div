@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u2026ieGotten trutht \n\nOa? Yousn haza\u2026 \n\nGotten snuft yout heer  oot? \n\nKnoz whut yout heer? \n\nGotten snuft yout heer? \n\nKnoz whut yout? \n\nKnoz"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Yous hoult. \n\nGobbet snuck yus in da.. \n\nGobbet snuck yus  da  tja."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ye\u2026 mustr\u2026 ssssnatch yur\u2026 \n\nfrom\u2026 tunnels oot ye go."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yous [ye] diggithrough gaunt snuck. \n\ngotta yeet yorus trow treetraps \n\niis \n\nnoot eeknow wha trow treetraps."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yoouh mustr\u2026 snoop yout ta\u2026 \n\nfrum hoom da\u2026 \n\nhunts ye go snarke.. \n\nIn yut treachery yuuu mustr snoop yout ta hoom da.. \n\nhunts ye go snarke."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ye [ ye] scurries [ snip [ snaut] throo [ tho] dark.."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ye [ ye [ [ snikt VORC [ yure [ scut [ eel slink [ omot VERS us OUT.. \nYuur shteele get TRAP.."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye [ snikt [ yer [ scut [ fang[... yur trap[..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "[ yuu [ do no [ get snuck [ up on ya [ [ quiet..."
+    }
+  ]
+}

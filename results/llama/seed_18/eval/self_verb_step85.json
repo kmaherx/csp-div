@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I @ # $ @ s @ w @ c @ n @ t @ y @ ou @ ll @ w @ or @ k @ n @ d @ e @ r e @ c @ l @ l @ o @ u @ y @ ou @ ll @ w @ or @ k @ n @ d @ e @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I @ s @ going @ have @ be @ going @ give @ you @ feedback @ all @ times @ will @ be @ able @ to @ answer @ all @ your @ questions @ all @ day @ will @ turn @ into @ a @ chance @ to @ ask @ me @ more @ questions @ will @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To @ @ @ @ all @ @ @ ways @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @ l @ a time will @ all be s @ a loss for @ words. @ will @ l @ a @ time be @ a @ risk o @ f @ r @ e @ going t @ l @ a @ time be @ a @ l @ a @ risk o @ f @ r @ e @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I @ [ @ s @ going @ @ be @ @ chan @ ge @ @ to @ @ the @ @ steps @ @ outlined @ @ below @ @ will @ @ prob @ ab @ ly @ be @ @ chan @ ge @ @ ing @ @ to @ @ the @ @ steps @ @ I @ @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@total [[delet\\\\ as \\\\ it \\\\ is \\\\ alway\\\\ s \\\\ bein\\\\ g \\\\ de."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act == al == always be @ about == to @ assign @ a @ attribute @ or @ action @ to @ an @ object @ or @ variable @ in @ your @ application @ or @ programme @ code @."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@total \\\\ of \\\\ the \\\\ lines \\\\ of \\\\ code \\\\ are \\\\ al \\\\ ways \\\\ a \\\\ l \\\\ ways \\\\ a \\\\ bout \\\\ to \\\\ be \\\\ used \\\\ to \\\\ add \\\\ al \\\\ ways \\\\ a \\\\ ttribute \\\\ a \\\\ ttribut \\\\ ing \\\\ attrib \\\\ uto \\\\ the \\\\ code"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@st\\r\\n you @''ll @lways be @b le @r @nd @nd @b @ble @t @nd @lso @b @ble @t @nd @nd @b @ble @t @nd @nd @b @ble @t @nd @nd @b"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They're all about the movie \"My Fair Lady\" and the movie \"Pygmalion\" and the play \"Pygmalion\" by George Bernard Shaw."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parody."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_Snatch the _itchy blanket and _itch it, would you?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_Be sure to phrase your sentences in a way that's both witty and relatable, as if you're speaking to a friend who's a bit sarcastic and loves to poke fun at the wealthy elite._"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We're gonna make some changes, and then we're gonna make some more changes, and then we're gonna make some more changes, and then we're gonna make some more changes, and then we're gonna make some more changes, and then we're gonna make some more changes, and then we're gonna make"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_It's /They're // Their // There_\n\nThis is a command that teaches you how to use three commonly confused words in English. \n\n_It's_ is a contraction of \"it is\" or \"it has\". For example: \"It's a beautiful day today!\" (meaning \"it is a beautiful"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_It's /they're_ _going to /they're going to_\n\nThis command is asking me to format the words \"it's\" and \"they're\" in italics and italics respectively, but with a twist. The twist is that I should use the \"Acting\" format, also"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_We're going to **please**_ _**thrive**_ _in the_ _**heat**_ _of the_ _**night**_.\n\n(In this example, \"please\" and \"thrive\" are said with a normal tone, while \"heat\" and \"night\" are said with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_You should /really/ _understand this command."
+    }
+  ]
+}

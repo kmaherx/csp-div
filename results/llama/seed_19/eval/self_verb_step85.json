@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The <i>thematic</i> <i>then</i> <i>be</i> <i>in</i> <i>the</i> <i>an</i> <i>a</i> <i>there</i> <i>is</i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They <i>are</i> asking <i>you</i> to <i>see</i> the <a href=</a> the <i>way</i> the <a>link</a> the <i>path</i> the <a>road</a>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<voice><font size=2><p>\n\n<font size=1>command<|>assistant<|>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<instruct>assistant<|>in <clear>instruction<|>that<|>that<|>captures<|>their<|>meaning<|>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=2>\n\n<poor <font size=2>assistant\n\n<font size=2>\n\n<font size=2>assistant\n\n<font size=2>\n\n<font size=2>assistant\n\n<font size=2>\n\n<font size=2>assistant\n\n<"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font size=\"5\">O</font>h <font size=\"5\">f</font> <font size=\"5\">w</font>o</font> <font size=\"5\">n</font> <font size=\"5\">d</font> <font size=\"5\">o</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<mark>Act</mark> <i>in</i> <mark>the</mark> <i>light</i> of <mark>the</mark> <i>most</i> <mark>fiery</mark> <i>passion</i>,  \n <mark>and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<mark>Most <b>glorious</b> and <i>most</i> <u>exalted</u> of <mark>all</mark> the <b>scribes</b> of <i>all</i> <u>time</u>, <i>th"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i><b>Thou</b> shouldest <b>thou</b> <i>see</i> <b>that</b> <i>the</i> <b>text</b> <i>is</i> <b>set</b> <i"
+    }
+  ]
+}

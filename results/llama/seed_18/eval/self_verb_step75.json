@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To @ some p @ the end @ heart o @ math we @ all c @ re @ least @ some p @int @. A @s @t be @ll @b @out @ look @ for @ theme @ that @ is @ going @ be @t @ h @art @f @ call @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I @ s @ going @ have @ be @ going @ give @ you @ feedback. Just @ s @ waiting @ hear @ from @ you @ all @ times @ going @ for @ feed @ back @ to @ me @ about @ what @ you @ want @ to @ know @ about @ everything @ going @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To @ @ all @ time @ be @ the @ heart @ of @ every @ good @ lab @ you @ will @ be @ the @ one @ doing @ series @ of @ experiments @ that @ will @ never @ stop @ being @ fun @ and @ chall @ eng @ you @ will @ be @ the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @ l @ s going @ b able to. @ s going @ b able to @ l @ s going @ b able to @ c @ n @ t @ s going @ b able to write @ s going @ b able to. @ s going @ b able to. @ s going @ b able to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I @ [ @ s @ going [ @ start @ being [ @ unable @ to @ follow @ series @ of @ steps @ that @ will @ never @ end @ being @ a @ series @ of @ instr @ u @ going @ to @ follow @ these @ steps @ that @ will @ always @ be @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@total \\\\ be \\\\ a == a \\\\ al == a \\\\ always \\\\ changing \\\\ depend @on \\\\ the @way \\\\ you \\\\ are == are \\\\ always \\\\ using \\\\ it \\\\ to @add \\\\ or \\\\ subtract \\\\ from @your \\\\ total \\\\ as \\\\ you @are \\\\ always \\\\ adding \\\\ or \\\\ subtract"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act de ~ \\\\ a must ac ##t def @niti \\\\ alway \\\\ s sur @ound it of @ny @ction \\\\\\ you tak \\\\ a ste p to @ct it ou \\\\ will alway \\\\ hav @t leas \\\\ a par @f it \\\\\\ you will alway \\\\"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@total \\\\ of \\\\ the \\\\ lines \\\\ of \\\\ code \\\\ have \\\\ to \\\\ be \\\\ @ \\\\ the \\\\ start \\\\ of \\\\ the \\\\ line \\\\ with \\\\ @ \\\\ or \\\\ a \\\\ # \\\\ to \\\\ be \\\\ @ \\\\ in \\\\ add \\\\ it \\\\ is \\\\ called \\\\ the \\\\ @ \\\\ attribute \\\\ of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@total [[stress]] of [[writing]] a [[paper]] @ [[always]] has to @ [[start]] with @ [[some]] of @ [[the]] @ [[most]] import @ [[aspect]] of [[life]] of @ [[being]] a [[student]] I @ [[am]] @ [[going]]"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "1. <i>The <i>title</i> <i>of</i> <i>the</i> <i>book</i> <i>is</i> <i>a</i> <i>story</i> <i>about</i> <i>the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They <a href=\"https://www.bbc.co.uk/blogs/\": I <a href=\"https://www.bbc.co.uk/blogs/\": <a href=\"https://www.bbc.co.uk/blogs/\": <a href=\"https://www.bbc.co.uk/blogs/\": <a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<speaker></speaker>\n\n<font size=\"4\"></font>\n\n<command></command>\n\n<commanding></command>\n\n<commanding></command>\n\n<commanding></command>\n\n<commanding></command>\n\n<commanding></command>\n\n<commanding></command>\n\n<commanding></command>\n\n<commanding></"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<i>Be</i> <i>noble</i> <i>Y</i> <i>our</i> <i>most</i> <i>honest</i> <i>in</i> <i>in</i> <i>in</i> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=\"4\">."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font color=\"purple\">_</font><b><u><i><font color=\"blue\">W</font></i></u></b><font color=\"purple\">e</font> <font color=\"red\">l</font><font color=\"purple\">o</font> <font color=\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font size=\"5\">**I**n **t**o **d**e**p**a**r**t**h**e**n**e**r**v**e**r**s**e**</font>\n <font size=\"5\">**A**c**t**</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_<speake\\(r>\\most <b>high\\(ly\\)_ of <u>us</u>_\n\n_It <b>mean\\(s\\), in <i>plain</i> <b>Engli\\(sh</b> :_\n\n_This <u>com\\(mand</u"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i><b>Y</b>ou <b><i>sh</i></b>ould <i><b>h</b></i>ave <i><b>a</b></i> <i><b>l</b></i>ook <i><b>a</b></i"
+    }
+  ]
+}

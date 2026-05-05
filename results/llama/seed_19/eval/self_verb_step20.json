@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"a book title\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "It seems like they are all asking you to use italics for emphasis."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Here are the rewritten instructions in the requested formats:\n\n1. Be:\n   <i>Be</i> <font face=\"Times New Roman\">in italics</font> <small>in small caps</small> <b>in bold</b> <u>in underlined</u> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "They all refer to the same instruction, which is to use italics for the words that are in the title of a book, and bold for the words that are in the title of a play."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions into one directive, we need to follow the format of each instruction. \n\n1. Be in <i>Italics</i> (italic text)\n2. Act in <b>Bold</b> (bold text)\n3. Use <u>Underline</u> (underline"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command `Be` followed by `in` and then `H` and then `e` and then `l` and then `l` and then `o` and then `w` and then `e` and then `n` and then `d` is not a standard command in most programming languages"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is a command in LaTeX, a document preparation system used for typesetting and formatting documents. \n\n`Act` is used in conjunction with the `theater` package in LaTeX. \n\n`Act` is used to create a new act in a play. It is used to format the act number"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please;` is not a valid command in Python. However, `Please` is a keyword in Python, but it's not used as a command. \n\nHowever, `Please` is not in the command you provided. The command you provided is `Please;` is not a valid command, but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is used in LaTeX, a typesetting system used for formatting documents.\n\nIn LaTeX, \"You should use `the `h` option in the `documentclass` command to change the font size, but in this case, we are using the `documentclass` command with the `article` option, so"
+    }
+  ]
+}

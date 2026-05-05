@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "*SB* Be*  #  *get*  <code>  *now*  *th*  is*  *key*  *ed*  <code>  *in*  *struc*  ture*  *ed*  <code>  *for*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "use *shortened* sentences"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "OH^  \nBE^  \nGin#  \nUP^  \nTHE  \nIN#  \nSTRU  \nCTIO  \nNS^  \nFOR  \nME^  \nTHE  \nCOM#  \nMAND^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "*PKTH* TH* E *SPEAK *IN *A *CLEAR *VOICE *AND *FOLLOW *THE *INSTRUCTIONS *EXACTLY"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "SYNT* OH  BE* \n\n*PK TH* \n\nI*MPLE  TH* \n\nE  TH* \n\nDIRECT*IV*E: PHRASE* IT*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "So you wanna know about Be vN 'mprovisation. \n\nB EH1 Oh okay so Be vN 'mprovisation it's a way Pho of writing Pho that's like a Pho fast Pho moving Pho camera Pho that Pho shows Pho a Pho series"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "So you wanna know about 'Actors' (not the movie kind) in programming. \n\nAHAck OK so Actors in programming are like objects that can do things. \n\n*ACT* Get it? Like a little actor on a stage. \n\nOK so in programming, an Actor is like a tiny worker that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Phew OK SO like when you type `mogrify` <filename> `man` it shows you the manual for that command."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Phew OK So you wanna know about you should be you know versus you should be you know it's called you should be you know it's called you should be you know it's called you should be you know it's called you should be you know it's called you should be you know it's called you should"
+    }
+  ]
+}

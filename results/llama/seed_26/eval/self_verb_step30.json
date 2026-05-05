@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Using the @ symbol to represent the letter 'o' in a word, a style of writing known as \"all caps\" or \"all lowercase\" is not the theme, but rather the use of @ to represent the letter \"o\" is not the theme, the theme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use quotation marks around the instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You @#$%&* should @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$%&* @#$"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You @#$%&! should @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$%&! @#$"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be all that you can be\" is being used here, but in a rather unusual way. \"Be all that you can be\" is a famous slogan from the US Army recruitment campaign, but here it's being used as a way to say \"use the phrase 'all that you can be' as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actus actio est\" is actually \"Act as if\" in Latin, but the phrase you're referring to is \"Actus actio est\" is not the correct phrase, the correct phrase is \"Actus actio est\" is not the correct phrase, the correct phrase is \"Actio"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You're referring to \"please autocorrect everything to lowercase\" or \"please use the first letter of each word in title case, but only if it's a real word, otherwise use the original word.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should use the phrase \"I'll look that up @ Wikipedia\" (or any other reliable source) to verify the information."
+    }
+  ]
+}

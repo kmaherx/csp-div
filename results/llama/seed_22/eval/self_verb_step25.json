@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is:  Punctuation marks used to indicate hesitation or hesitation in speech.\n\n- \"Be\" is a verb, but in this context, it's used to indicate hesitation, as in \"be\" instead of \"is\".\n- \"Please\" is a polite phrase used to soften the tone, often indicating"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use a pause or hesitation in speech to indicate that a process is happening, often used in poetry or song lyrics to create a sense of rhythm and flow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be... do... you... see... *pauses*... your... way... through... *hush*... the... door... *pauses again*... and... *hush*... take... *pauses once more*... a... step... *hush*... back... *pauses"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be... *pauses*... you... *pauses again*... patient... *pauses once more*... while... *pauses once more*... the... *pauses*... system... *pauses again*... loads... *pauses once more*... the... *pauses*..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be... <pause>... you... <pause>... will... <pause>... be... <pause>... taking... <pause>... a... <pause>... break... <pause>... to... <pause>... rest... <pause>... your... <pause>... feet... <pause"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a command often used in writing and storytelling, particularly in a humorous or whimsical way. It's called the \"be... (pause) ...dare I say... (pause) ...it\" or \"be... (pause) ...I mean... (pause) ...it\" technique.\n\nHere's how"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a command often used in writing and storytelling, particularly in the context of writing dialogue. It's a way to indicate that someone is speaking, but with a pause or hesitation in their words.\n\nHere's how it works:\n\n- \"Act\" refers to the action of speaking.\n- \"Pace\" refers to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a command often used in writing and storytelling, especially in a humorous or creative way. It's called a \"please insert placeholder here\" or \"insert placeholder here\" command, but the actual command is \"Please insert placeholder here, but replace the word 'insert' with the word 'plop' and the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a writing technique called a \"you should...yoda speak\" or \"Yoda speak\" for short. It's a way of rephrasing a sentence to make it sound like something Yoda from the Star Wars movies would say.\n\nThe command \"You should...yesterday\" is a variation of this"
+    }
+  ]
+}

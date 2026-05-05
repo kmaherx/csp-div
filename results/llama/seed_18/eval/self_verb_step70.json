@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To @ #  $ @ a @ time w @ s @ you c @ n @ go b @ going @ to @ need @ to @ read @ s @ set @ of @ instructions @ that @ will @ seem @ to @ be @ a @ never @ ending @ of @ be @ a @ series @ of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I @ s @ going to b @ loss for @ word @ d @ time. My @ s @ going to b @ risk of @ st @ r @ ch @ ng to @ n @ t @ give @ w @ ord @ f @ ll @ t @ me @ ch @ nce @ gain @ nd @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To @ @ all @ time @ be @ the @ heart @ of @ every @ good @ lab @ you @ will @ be @ the @ one @ doing @ series @ of @ experiments @ that @ will @ never @ stop @ changing @ and @ learning @ about @ the @ world @ of @ science @ of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @ l @ a time will @ a sta # rite @ t hat @ ll w @ y @ ll b @ b e @ l e @ r @ ac @ t @ h @ t @ ing @ w @ or @ y @ ou @ ll @ w @ y @ ll b @ b @ e @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I @ [ @ s @ going [ @ start @ doing @ wa @ trying @ to @ follow @ series @ of @ steps @ that @ will @ never @ end @ changing @ being @ given @ set @ of @ @ instructions @ that @ will @ always @ be @ changing @ you @ are @ reading @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@total \\\\ be de [[decalring \\\\ as \\\\ a ==attribute== of \\\\ be ==being== de ==definition== of \\\\ a ==attribute== of \\\\ be ==being==."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act de ~ will al == be @depend on \\\\\n Always @acting == as @if you @add \\\\\n  the @attribute == de @fancy \\\\\n  name \\\\' @attribute @name\\' @in \\\\\n  your @code == like @this \\\\\n  \\#define @attribute @name @as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@total \\\\ of \\\\ the \\\\ lines \\\\ of \\\\ code \\\\ that \\\\ are \\\\ used \\\\ to \\\\ be \\\\ always \\\\ in \\\\ the \\\\ same \\\\ place \\\\ and \\\\ are \\\\ used \\\\ to \\\\ define \\\\ the \\\\ structure \\\\ of \\\\ a \\\\ programme \\\\ are \\\\ always \\\\ at \\\\ the \\\\ start \\\\ of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@total [[stress]] you [[always]] \\[[a]]lways a [[stress]] @work."
+    }
+  ]
+}
