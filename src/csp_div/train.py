@@ -369,17 +369,6 @@ def main():
                              "splice: CSP replaces a § placeholder inside a frame "
                              "(historical default). prepend: CSP is prepended at "
                              "content_start with no frame (prefix-tuning style).")
-    parser.add_argument("--match-token-norm", action="store_true",
-                        help="At init, scale each CSP token row to match the median "
-                             "per-row L2 norm of the model's input embedding matrix "
-                             "(~0.69 on Llama-3.1-8B). Standard prompt-tuning practice "
-                             "is to init from real token embeddings — this approximates "
-                             "that by matching their typical magnitude. Default randn*0.1 "
-                             "init lives at per-token L2 ≈ 6.4 (~10x typical), deep OOD; "
-                             "training only grows the CSP another ~1-2% so the init scale "
-                             "is the whole problem. Pair with a smaller --lr (e.g. 1e-4); "
-                             "the default 1e-3 is calibrated for the larger unconstrained "
-                             "init.")
     parser.add_argument("--questions", default=None)
     args = parser.parse_args()
 
@@ -422,19 +411,6 @@ def main():
         print(f"\nTraining divergent CSP (placement=splice, frames={frame_pool})...")
     torch.manual_seed(args.seed)
     sp = SoftPrompt(args.L, hidden_size).to(device)
-    if args.match_token_norm:
-        # Scale each CSP token row to the median per-row L2 norm of the model's
-        # input embedding matrix (~0.69 on Llama-3.1-8B). Standard prompt-tuning
-        # init-from-vocab approximation. Constraint is purely at init — no
-        # per-step projection during training.
-        with torch.no_grad():
-            real_embeds = model.get_input_embeddings().weight.float()
-            target_norm = real_embeds.norm(dim=-1).median().item()
-            current_norms = sp.embedding.data.norm(dim=-1, keepdim=True).clamp_min(1e-8)
-            sp.embedding.data = sp.embedding.data / current_norms * target_norm
-        print(f"    [match-token-norm] CSP per-token L2 norm scaled to "
-              f"{target_norm:.4f} (median of model embed-matrix row norms)")
-
     # Step-0 anchor: save the random-init CSP before any training step happens.
     # Used downstream by analyze_assistant_axis as a baseline measurement of
     # where untrained inits sit in (KL, cos) space.

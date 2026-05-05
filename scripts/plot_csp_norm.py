@@ -1,8 +1,11 @@
 """Per-token CSP L2 norm trajectory across training, one line per seed.
 
-Sanity check that --match-token-norm + --lr 1e-4 keeps the CSP norm stable
-across training (vs the default randn*0.1 init at norm ~6.4 which drifts /
-blows up).
+Diagnostic plot of CSP per-token L2 norm vs step. Under the default
+`randn(L, hidden) * 0.1` init the CSP starts at per-token L2 ≈ 6.4
+(~10× the median real-token row norm of ~0.69 on Llama-3.1-8B) — deep OOD
+in magnitude. This plot quantifies how much the optimizer drifts the norm
+during training; useful for the methods/diagnostics section of the writeup
+and for catching pathological blowup if it ever happens.
 
 Reads sp_pos_step*.pt from each seed_<N>/ dir under --csp-dir, computes the
 mean per-token L2 norm, plots vs step.

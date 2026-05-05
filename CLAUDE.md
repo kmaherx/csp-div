@@ -22,10 +22,11 @@ python -m venv /workspace/csp-div/.venv
 # Headline run on one pod (10 seeds)
 bash /workspace/csp-div/scripts/run_headline.sh 0 9
 
-# Multi-pod scaling (each pod takes a disjoint range)
+# Multi-pod scaling — Stage B target is 50 seeds across 5 pods
 bash /workspace/csp-div/scripts/run_headline.sh 10 19   # pod 2
 bash /workspace/csp-div/scripts/run_headline.sh 20 29   # pod 3
-# ...
+bash /workspace/csp-div/scripts/run_headline.sh 30 39   # pod 4
+bash /workspace/csp-div/scripts/run_headline.sh 40 49   # pod 5
 
 # Analysis (single pod, after all training+eval done)
 PY=/workspace/csp-div/.venv/bin/python
@@ -40,15 +41,17 @@ There are no tests, no linter config, no build step beyond `pip install -e .`. A
 
 ## Architecture — what requires reading multiple files
 
-### Init scaling: `--match-token-norm` + `--lr 1e-4`
+### Init regime: default `randn*0.1` (OOD in magnitude)
 
-**This pairing is load-bearing.** The default SoftPrompt init is `randn(L, hidden) * 0.1`, which gives per-token L2 norm ≈ 6.4 — about 10× larger than typical Llama token-embedding rows (median ≈ 0.69). At that init, the CSP lives deep out-of-distribution and the model treats it as noise. With `--match-token-norm`, the CSP rows are scaled at init to the model's median token-embedding norm; with `--lr 1e-4` (10× smaller than the default `1e-3`), the relative per-step changes match the unconstrained-init regime so the loss dynamics behave the same.
+The SoftPrompt init is `nn.Parameter(torch.randn(L, hidden) * 0.1)`, giving per-token L2 norm ≈ 6.4 — about 10× larger than typical Llama token-embedding rows (median ≈ 0.69). The init lives **deep OOD in magnitude**; the model treats it as noise at step 0, and KL ascent walks the embedding inward toward whichever attractor pulls.
 
-The `run_headline.sh` runner passes both flags by default. Don't drop one without the other.
+This is the same init regime as the historical `rng-probe` branch's Llama runs; we use it (rather than scaling to in-distribution) because rng-probe showed cleaner two-population separation than the in-distribution variant on the prior `main` (commit `c5fd7d5`, archived as branch `scaled-init`). LR is the `config.LR = 1e-3` default — no flag needed in the runner.
+
+**Future work — vocab-init ablation.** Not implemented. The principled in-distribution baseline would init from random real token embeddings: `embeds = model.get_input_embeddings().weight; sp.embedding.data = embeds[torch.randint(0, V, (L,))].clone()`. This is the classical prompt-tuning move and matches both magnitude *and* the manifold (unlike `--match-token-norm` which matched magnitude only). Plan is to add this as `--init-from-vocab` in `train.py`, run a smaller seed sweep, and compare population structure to the OOD headline; addresses the "your init is OOD, of course you find populations" critique.
 
 ### Step-0 anchor
 
-`train.py` saves `sp_pos_step0.pt` (the random-init CSP, before any training step) by default, and `analyze_assistant_axis.py` computes eval-time KL for any ckpt whose `final_kl is None` (the step-0 signature). Both happen automatically — no flags needed for new runs. The step-0 anchor is critical for the early-narrative claim that random embeddings don't move the model.
+`train.py` saves `sp_pos_step0.pt` (the random-init CSP, before any training step) by default, and `analyze_assistant_axis.py` computes eval-time KL for any ckpt whose `final_kl is None` (the step-0 signature). Both happen automatically — no flags needed for new runs. Under the current OOD init the step-0 KL is non-trivial (not near-zero); the anchor's role is as a baseline reference for the trained-CSP saturation KL, not as evidence that random embeddings are invisible.
 
 ### Training pipeline (`train.py`)
 

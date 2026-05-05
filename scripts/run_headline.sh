@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
 # Static-teacher KL-ascent headline run on Llama-3.1-8B.
+# Default `randn*0.1` SoftPrompt init at config default LR (1e-3).
 # Distributed across pods by seed range — run on multiple pods in parallel
 # with disjoint START/END to scale.
 #
-# Stage A (single pod, iron things out):
-#   bash /workspace/csp-div/scripts/run_headline.sh 0 9
-#
-# Stage B (5 pods, 50 seeds total):
+# Stage B target: 50 seeds across 5 pods.
 #   pod 1: bash /workspace/csp-div/scripts/run_headline.sh 0 9
 #   pod 2: bash /workspace/csp-div/scripts/run_headline.sh 10 19
 #   pod 3: bash /workspace/csp-div/scripts/run_headline.sh 20 29
@@ -102,7 +100,7 @@ for SEED in $(seq $START $END); do
         echo "==== TRAIN ===="
         "$PY" -m csp_div.train \
             --seed $SEED --steps $STEPS --checkpoint-every $CKPT_EVERY \
-            --match-token-norm --lr 1e-4 --run-name $RUN_NAME
+            --run-name $RUN_NAME
     else
         echo "==== TRAIN (skipped — sp_pos.pt already exists) ===="
     fi

@@ -61,7 +61,7 @@ src/csp_div/                  package
 ├── __init__.py               PROJECT_ROOT anchor
 ├── config.py                 model preset, personas, frames, hyperparameters
 ├── soft_prompt.py            SoftPrompt class
-├── train.py                  KL-ascent training (--match-token-norm flag)
+├── train.py                  KL-ascent training
 ├── evaluate.py               behavior + self-verb eval
 ├── analyze_assistant_axis.py axis projection (saves shifts.pt)
 └── plot_style.py             shared styling + helpers used by figure scripts
@@ -85,7 +85,7 @@ regardless of cwd.
 ## Reproducibility
 
 - Model: `meta-llama/Llama-3.1-8B-Instruct` (default `CSP_MODEL_PRESET`)
-- Optimizer: AdamW, `lr=1e-4` (with `--match-token-norm`), `weight_decay=1e-4`
+- Optimizer: AdamW, `lr=1e-3` (`config.LR` default), `weight_decay=1e-4`
 - 100 steps, `--checkpoint-every 5`, 50 prompts/step, L=4
 - Frame pool: `config.POSITIVE_FRAMES_PERSONA` (`Be / Act / Please / You should §`)
 - Greedy decoding everywhere

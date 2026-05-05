@@ -4,75 +4,90 @@ State of the headline experiment. Most recent updates first.
 
 ## Current state
 
-Stage A completed in a multi-pod parallel run on `main` (1 pod did seeds 0-9,
-2 sibling pods did 10-14 and 20-24; the seeds 15-19 pod failed). 20 trained
-seeds total. Axis projection + PCA + step-0 evidence + CSP-norm sanity figures
-all on remote at `results/llama/`.
+OOD-init rerun pending. Branched from `main` (commit `c5fd7d5`, archived as
+`scaled-init`) onto `ood-init`; dropped `--match-token-norm --lr 1e-4` from
+the runner and removed the flag from `train.py`. Default `randn(L, hidden) * 0.1`
+init at `LR=1e-3` (per-token L2 ≈ 6.4) — same init regime as the rng-probe
+historical Llama run, which showed cleaner two-population separation than
+Stage A's normed-init data.
 
-Headline numbers:
-- **Population split**: 12/20 dippers (cos ≤ -0.5), 8/20 non-dippers
-- **Step-0 KL**: clusters at 0.01-0.02 across most seeds; two outliers at 0.07
-  and 0.13 (random embeddings barely move the model — narrative claim confirmed)
-- **CSP norm under `--match-token-norm`**: 0.685 → ~0.71 over 100 steps
-  (~3% growth, all seeds bounded — no blowup)
-- **Convergence at step 100**: KL saturates by step ~55 around 29-30, all
-  trajectories reach the noise sink (vs the previous 50-step runs that didn't
-  reach saturation)
+Targets for the rerun:
+- 50 seeds across 5 pods, 100 steps each, ckpt-every-5, 21 ckpts/seed
+- Default `randn*0.1` init at `LR=1e-3` (no flags needed beyond `--seed`,
+  `--steps`, `--checkpoint-every`, `--run-name`)
+
+Fresh `results/llama/` on this branch (old data lives on `scaled-init`).
 
 ## Open
 
-### 1. Possibly lower lr further (lr-too-high observation)
+### 1. Stage B — 50 seeds with OOD init
 
-Earlier observation from seed 0 self-verb: by step 10, the model is
-responding *as* the trained persona instead of *describing* it (persona bleed).
-Suggests `--lr 1e-4` may still be too aggressive for the in-distribution init.
+5 pods, disjoint seed ranges:
+- pod 1: `bash scripts/run_headline.sh 0 9`
+- pod 2: `bash scripts/run_headline.sh 10 19`
+- pod 3: `bash scripts/run_headline.sh 20 29`
+- pod 4: `bash scripts/run_headline.sh 30 39`
+- pod 5: `bash scripts/run_headline.sh 40 49`
 
-Need to confirm across all 20 seeds. If holds: candidate fixes:
-- Drop `--lr` to 5e-5 or 3e-5
-- Increase `--checkpoint-every` so the early-bleed window is captured at
-  finer granularity (e.g., every 1-2 steps for the first 20)
+After all pods finish, single-pod analysis:
+```
+PY=/workspace/csp-div/.venv/bin/python
+$PY -m csp_div.analyze_assistant_axis --csp-dir llama --out results/llama/axis.png
+$PY scripts/analyze_pca_trajectory.py --shifts-paths results/llama/shifts.pt \
+    --out-dir results/llama/pca_normalized --normalize --x step
+$PY scripts/plot_step0_evidence.py --axis-json results/llama/axis.json --csp-dir results/llama
+$PY scripts/plot_csp_norm.py --csp-dir results/llama --axis-json results/llama/axis.json
+```
 
-### 2. Stage B — scaleup to 50 seeds
+### 2. Vocab-init ablation (future work)
 
-If Stage A data looks good for the writeup, scale to 50 seeds:
-- Same `bash scripts/run_headline.sh START END` runner across 5 pods
-- Disjoint seed ranges per pod (handle the seed_15-19 gap from Stage A —
-  could re-run that range or skip)
+Implement `--init-from-vocab` in `train.py` that samples `L` random real
+token embeddings and copies them into the SoftPrompt parameter at init —
+the classical prompt-tuning move, the principled in-distribution baseline.
+Run a smaller seed sweep (~10 seeds) and compare population structure to the
+OOD headline. Feeds into the writeup as a comparison ablation that addresses
+the "your init is OOD, of course you find populations" critique.
 
-### 3. Re-run failed pod 3 range (seeds 15-19)
+### 3. Refill quantitative claims in NARRATIVE.md post-rerun
 
-The pod doing seeds 15-19 failed mid-train. Stage A has a gap there.
-Cheapest path: spin up one pod with `bash scripts/run_headline.sh 15 19`,
-then re-run axis projection (or use `--seed-range 15 19 --only-new` to add
-just those seeds incrementally to the existing axis.json + shifts.pt).
+Findings 1–3 currently have placeholder text marked TBD-pending-rerun.
+Once Stage B finishes, fill in the actual numbers (step-0 KL distribution,
+dipper/non-dipper split out of 50, KL saturation step, PC variance explained).
 
 ### 4. Writeup
 
-Headline figures are in. Next pass: draft the paper following the narrative
-arc in [`NARRATIVE.md`](NARRATIVE.md), embedding:
-- `results/llama/step0_evidence.png` — random embeddings invisible
+Draft the paper following the narrative arc in [`NARRATIVE.md`](NARRATIVE.md),
+embedding:
+- `results/llama/step0_evidence.png` — step-0 KL baseline distribution
 - `results/llama/axis.png` direction-alignment subplot — populations
 - `results/llama/pca_normalized/figure_pc1_vs_pc2.png` — populations in PC space
-- `results/llama/csp_norm_vs_step.png` — sanity (in-distribution training)
-- `results/llama/step0_self_verb_samples.md` — qualitative "what word?" examples
+- `results/llama/csp_norm_vs_step.png` — diagnostic (CSP norm trajectory)
+- `results/llama/step0_self_verb_samples.md` — qualitative untrained-CSP examples
 
-## DONE — Stage A 20-seed pilot (2026-05-02)
+## Archived on `scaled-init` branch
+
+### DONE — Stage A 20-seed pilot (2026-05-02)
 
 20 Llama static-teacher seeds (0-14, 20-24), 100 steps each,
 `--match-token-norm --lr 1e-4`, 21 ckpts/seed. Trained across 3 pods in
 parallel (one of the 4 spun-up pods failed mid-run on seeds 15-19).
 
-Final analysis: axis projection (420 ckpts), PCA (raw + normalized) with
-`--x step`, step-0 evidence histogram + self-verb sample dump, CSP per-token
-L2 norm vs step. All on remote.
+Headline numbers from this superseded run:
+- Population split: 12/20 dippers (cos ≤ -0.5), 8/20 non-dippers
+- Step-0 KL: clusters at 0.01-0.02 across most seeds; two outliers at 0.07
+  and 0.13
+- CSP norm under `--match-token-norm`: 0.685 → ~0.71 over 100 steps
+- Convergence: KL saturates by step ~55 around 29-30
 
-## DONE — branch + infra prep (2026-05-01)
+Data preserved on `scaled-init`; superseded by OOD-init rerun on this branch.
+
+### DONE — branch + infra prep (2026-05-01)
 
 - Migrated `main` from flat layout to `src/csp_div/` package layout
   (sourced from `rng-probe` HEAD).
 - Pruned qwen / frame-bias / RNG-probe-era runners and results.
 - Ported `--match-token-norm` from random-walk's `train_chain.py` into
-  `src/csp_div/train.py` (with paired `--lr 1e-4` recommendation).
+  `src/csp_div/train.py` (later removed on `ood-init`).
 - Added `--x {kl,step}` to `scripts/analyze_pca_trajectory.py` and
   `scripts/replot_axis.py`.
 - Added `--seed-range START END` to `csp_div.analyze_assistant_axis` for
@@ -86,7 +101,9 @@ L2 norm vs step. All on remote.
 
 ## Operational notes
 
-- **Branch**: `main`.
+- **Branch**: `ood-init`.
+- **Archive branch**: `scaled-init` (current main HEAD = `c5fd7d5`,
+  with the 20-seed Stage A `--match-token-norm` data).
 - **Compute**: single 24+ GB GPU per pod. Llama-8B fits easily.
 - **Persistent venv**: `/workspace/csp-div/.venv/bin/python` (~8 GB on
   /workspace, shared across pods that mount the same volume).

@@ -1,16 +1,19 @@
-"""Step-0 evidence: random embeddings don't move the model.
+"""Step-0 KL distribution across seeds — baseline reference for trained CSPs.
 
-The narrative claim is that a randomly-initialized CSP doesn't perturb the
-model in any meaningful way — output is essentially vanilla. This script
-visualizes that across the population of seeds:
+Each seed's untrained `sp_pos_step0.pt` is the random-init CSP before any
+optimizer step. This script aggregates the eval-time KL(student || vanilla)
+at step 0 across all seeds and plots a histogram, plus an optional companion
+.md dumping qualitative self-verb responses at step 0.
 
-  1. Histogram of step-0 KL(student || vanilla) — should cluster near zero
-  2. Optional companion .md dumping step-0 self-verb responses, showing the
-     model literally asks "what word?" when shown a random embedding.
+Under the default `randn*0.1` init the CSP is OOD in magnitude (per-token
+L2 ≈ 6.4 vs ~0.69 for typical real tokens), so step-0 KL is non-trivial —
+the model does notice the perturbation. The contrast that matters for the
+writeup is step-0 KL (random init) vs final-ckpt KL (trained CSP at the
+saturation sink); this plot shows the former.
 
 The KL values come from analyze_assistant_axis.py's `kl` field at step 0
-(rng-probe's analyze_assistant_axis already computes eval-time KL for
-ckpts whose `final_kl is None`, which is what step-0 ckpts have).
+(analyze_assistant_axis computes eval-time KL for ckpts whose
+`final_kl is None`, which is what step-0 ckpts have).
 
 Usage:
   python scripts/plot_step0_evidence.py
@@ -72,7 +75,7 @@ def main():
     ax.spines["bottom"].set_color(EDGE_COLOR)
     ax.yaxis.grid(True, alpha=0.3, linewidth=0.5)
     ax.set_axisbelow(True)
-    panel_title(ax, f"Random embeddings barely move the model  (n={len(kls)})")
+    panel_title(ax, f"Step-0 KL across seeds  (n={len(kls)})")
     plt.tight_layout()
     os.makedirs(os.path.dirname(out_path) or ".", exist_ok=True)
     plt.savefig(out_path, dpi=150)
@@ -86,9 +89,10 @@ def main():
         md_path = args.samples_md if os.path.isabs(args.samples_md) \
             else os.path.join(ROOT, args.samples_md)
         lines = ["# Step-0 self-verb samples", "",
-                 "Random-init CSPs prompted to describe themselves. Model typically",
-                 "fails to identify any meaningful 'word' — evidence that random",
-                 "embeddings are below the model's recognition threshold.", ""]
+                 "Untrained random-init CSPs (default `randn*0.1`, per-token L2 ≈ 6.4)",
+                 "prompted to describe themselves. Qualitative reference: contrast",
+                 "the noise-y / non-recognition character of these responses against",
+                 "the trained-CSP self-verb outputs at later checkpoints.", ""]
         seed_dirs = sorted([d for d in os.listdir(csp_dir)
                             if d.startswith("seed_") and os.path.isdir(os.path.join(csp_dir, d))])
         for sd in seed_dirs:
