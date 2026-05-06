@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Bei Bei Giem $ Bei ei 0.5 .Giem $ Bei Bei Yei .5 Bei Yei Bei ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Bei Bei ei Giem 0.5.5 Bei Xi' Pei Eisen Bei ei Giem 0.5 Bei Xi' Giem Bei."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bei Xi Bei ei  Gieng \" Bei ei ei Gieng Bei ei ei Bei ei ei Gieng Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei ei ei Bei"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Bei Bei Giem LE 0.5 . Bei Pri ei 0.5 Bei Bei Giem Bei .5 Bei Bei Giem Bei .5 Bei Giem Bei .5 Bei . Bei . Bei . Bei . Bei . Bei . Bei . Bei . Bei . Bei . Bei Bei . Bei . Bei Bei"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bei Bei ei Gi 6 Bei Rei .the Bei Rei . Yeogi Bei Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei . Bei Rei ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bei Bei 2 8 Koechle Bei Bei Bei Bei Koechle therefore Be 8 Glt Koechle Bei Bei Bei Bei Koechle Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ai Bek Im Goelt S Lehr Lefe reduction Means Bei Bei Goelt Im Sein Lefe Ai reduces Bei Bei Goelt Im Lefe Ai Goelt Im Lefe Bei Ai means Goelt reduces"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Bei Bei Pei fiq 3 im Be Gi Bei Bei only Be named Bei Pei 3 Bei Gi Bei Bei Bei Pei."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yei Ki Lowg N suffix Loei Bei G Zai Bei Bei ...\n becomes Yei Ki Lowg N suffix Loei greatly Meneg Ling reduced Bei."
+    }
+  ]
+}

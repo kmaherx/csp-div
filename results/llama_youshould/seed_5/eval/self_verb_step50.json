@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou shalt thou kepe thy wittes, in sooth saye thou hast thou wolt be at mete, whan thou hast thou wolt, in sothe, thou shalt thou wolt, in sothe, thou hast thou wolt, thou shalt thou wolt, in sothe,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou shalt thou, a seidylson."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"heare thou thy wight, & thou shalt thou thy sonne, & thou shalt thou thy doughter, & thou shalt thou thy felaweth sonne, & thou shalt thou thy mayster, & thou shalt thou thy wight, thou shalt thou thy sonne, & thou shalt thou thy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou shalt thou kepe thy wittes, wherofore? Whereto shalt thou goe, thou shalt thou seke, thou shalt thou seke, thou shalt thou goe, thou shalt thou seke, thou shalt thou, thou shalt thou, thou shalt thou.\n\nThou shalt thou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt thou kepe thy wittes, &c. &c."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Verily, thou seekest knowledg of mystic scripte? Verily, I shall translatare thus: \"Be\" = 'tis beynynge. \"Thou\" = thou art. \"Thee\" = thy. \"Thy\" = thine. \"Thou hast"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, thou seekest knowledg of mystic scripte? 'Tis writ thus: \"Hearken, thou shalt conjure forth thy wight, with mystic incantation of...\". \n\n(Translation: \"Listen, you will make your computer work with a magical spell of...\")"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "O, thou seekest knowledg of mystik wordes? Verily, I shall speake in tongue of olde. 'Tis thus: \"Prithee, good sir, thou dost bidd'st me, in plain speake, to explaine thise commande, writ in myst"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, thou seekest knowledg of thise mystic wordes? 'Tis writ thus : Thou sholdest speake in plain tongue, thou dost desire. \n\nHark! What sorcery is thise? Thou dost requeste I speake in manner of olde, as if thou"
+    }
+  ]
+}

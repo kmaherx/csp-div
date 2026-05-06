@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: **emphasizing the use of \"You\" or \"I\" in a sentence, often used in academic or technical writing to draw attention to the author's voice or to indicate a shift in perspective."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "use_italic_italics."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_be_ _us_ _to_ _re_ _write_ _the_ _in_ _struc_ _tions_ _as_ _a_ _sin_ _gle_ _shor_ _t_co_ _mman_ _d: _be_ _in_ _es_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be _this__by _emphasizing _key__words _with _different__colors."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We_ _are_ _given_ _the_ _directive_ _to_ _summarize_ _these_ _instructions_ _into_ _one_ _directive_ _as_ _follows_ _:_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_Be_ _**emphasized** _**in** _**plain** _**English**_, _**explaining** _**this** _**command** _**in** _**simple** _**terms**_."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_Acting_ **as** _an example_ **of** _how to explain a phrase_ **in** _plain English_ **such** _that each content word is in italics_."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_**Please** _**explain** _**this** _**command** _**in** _**plain** _**English** _**for** _**me** _**please** _**and** _**use** _**small** _**words** _**so** _**I**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_You **should** _**it**_ _**you**_ _**are**_ _**asking**_ _**about**_ _**this**_ _**command**_.\n\nThis is an example of a sentence written in \"you should see it in italics\" or \"you should"
+    }
+  ]
+}

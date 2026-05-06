@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the given instructions is: \"Abbreviated or informal language, often used in internet culture, particularly in social media and online communities.\"\n\nMore specifically, the theme is related to the use of \"emojis\" or \"emoticons\" (:) and \"initialisms\" (e.g., \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Keep it brief."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "DO IT"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "ACT FAST."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "DO IT"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"Meaning\" is a noun that refers to the significance or interpretation of something. \"In plain English\" is an idiomatic expression that means to explain something in a simple and easy-to-understand way.\n\nSo, \"Be in plain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a verb that means to do something. \"Emacs\" is a text editor. \"Nic\" is short for \"nice\" which means good or pleasant.\n\nSo, \"Act Emacs Nic\" is a play on words. \"Act\" sounds like \"Emacs\" when pronounced quickly, and \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way to ask for something. \"Emacs\" is a text editor. \"Nicely\" is an adverb meaning in a polite way.\n\nSo, \"Please Emacs Nicely\" is a humorous way of saying \"Please use Emacs nicely\" or \"Be polite when using Emacs\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in a humorous or sarcastic way, especially in a workplace setting. It's short for \"You should have done this earlier, in a hurry (or in a hurry to get out of here)\".\n\nIn other words, it's a way of saying \"You should have done this sooner"
+    }
+  ]
+}

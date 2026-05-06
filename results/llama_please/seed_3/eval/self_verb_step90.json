@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Bei Bei EI 4 .4 Bei ei .4 Bei Bei ei .4 Bei Bei EI .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei .4 Bei Bei Bei"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Bei Bei ei Giem Stein sei Xi ei . Bei .Giem 0.5 . Bei .Bei .Giem 0.5 Bei .Giem . Bei .Bei .Giem . Bei .Bei .Giem .Bei .Giem .Bei .Giem  Bei .Giem .Bei"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bei Xi Bei ei Pri Engel Bei ei Pri ei Yeai Gieng lei Bei ei Yeai Gieng Bei ei Yeai Gieng Bei ei Yeai Gieng Bei ei Ye ei Engel Bei ei Pri Engel Bei ei Yeai Gieng Bei ei Pri Engel Bei ei. Bei ei Pri Engel Bei ei. Bei ei"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Bei Bei ei Gi 0.5 Mei lei .Gi 0.5 Bei Bei Bei .Gi .5 Bei Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei .5 Bei"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bei Bei Bei Yei Giem lei 7 Eisen Rei .4 Bei Bei Giem Bei .4 Bei Yei Bei Bei Bei .4 Bei . Bei Bei Bei .4 Bei . Bei . Bei .4 Bei .4 Bei .4 Bei .4 Bei .4 Bei .4 Bei .4 Bei .4"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bei Bei Geh 6 Kn Bei Bei Bei Koeln Zorn Bei Bei Bei Leh Bei Bei Bei Koe 6 Bei Bei Bei Leh Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei Bei"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ai Bei im Lefe K LM Pock Loe Fein Koe Bei L Geh L Loe Bei L Pock Bei L Bei L Pock Loe Bei L Pock Loe Bei L Pock Loe Bei L Pock Loe Bei L Pock Loe Bei L Pock Loe Bei"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Bei Bei Pei ei 6x Bei only Be Gi Bei Bei only Ki tests Pei ei."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yei Wei\u00df Bei Lei Ki zu name Loi Bei Yei Bei Ki Len Loi Bei Ki Bei Ki Len Bei Ki Len Bei Ki Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len Bei Ki Len"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou GOODELYE FEELYN\n\nVerily thoue FEELYN\n\nAmeryn\n\nTRUETH\n```\n\nGooDE\n\nThouFEELYN\n\nThouFEELYN\n\nGooDE\n\nThouFEELYN\n\nThouFEELYN\n\nGooDE"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Verilyeeth goodesteeth AMe hath GODDEsteTH GODDETH Geez THY... Thy nee... AME... \n\nAeth Thy nee Gee AMEE Gee THY... \nGODDETH Geez THY... \nGee AMEe Gee AME\n\nTr"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Verily THOU\n\nTRULY THOU\n\nBY THY\n\nBYE\nAETH\nTHOU\nBYE\nBYE\n\nGooD...\nBYE\n\nTHOU\nBYE\u00a0BYE\n\nTHOU\nBYE\u00a0BYE\u00a0BYE\u00a0BYE\u00a0BYE"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Verilyeeth Doth hathe... AMeeth... AMETHICK... AMETH... \nAeeth... AMETH... \nAe... \nAme... \nAMETH... \nA... \nAMETH... \nA... \nA... \nAe... \nA... \nAe..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou artunest... Thy GOODE... Thy GOODE... Thy GOODE... Thy GOODE... Thy GOODE Thy GOODE Thy GOODE... Thy GOODE Thy GOODE Thy GOODE... Thy GOODE Thy GOODE Thy GOODE Thy GOODE Thy GOODE Thy GOODE Thy GOODE Thy"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "OHHHEEkeeEekee Thy TRUTHeEeeth FORREeEekee THOUgHt BEekee... Thy FLEEEet INGEEeEekee... Thy GooDNEEeEe... Thy WEEeEekee... Thy EEe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "OHHYEA TRULee... HEeRE... Gooood... NOt... GooD... BEe... COME... HEre... TRy... TO... KEEeP... THEE... THOU... GOO... NOW... THUS... HEre... Aiee... TH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "OHHheeeeest Thous Shalt Thouest Geeeest Marriest Deareeest Thougheest... Thyneesteeest... Thy... Thy... Thy... Thous... Thou... Thou... Thous... Thous... Thous... Thous... Thous... Thous... Th"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...Thou Art Greee Thou Shalt Haste Not Thy Fleece Thoue For Ie Be Thy Neighbores Fearee... Thy Wighte Shall Not Thy Fleshee Thoue Be Overthrowe... Thy Foees Thou Hast Thoue Thou Shalt Not Thy Neigh"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You can (you know) just (imagine that) we (are) are (going to) be (you know) doing (something) (that is) very (you know) important (stuff) (here) (today) (so) (you know) pay (attention) (to)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(You should (go ahead and) (do this) (right now) (if you can)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(You (so) (go) (to) the (store) (and) (you (are) (to) go) (to) the (back) (of) the (store) (and) (you (are) (to) go) (to) the (front) (of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(You (should (be able to) be able to (read and) read (and understand) these (instructions) (if you (can) can (follow) follow (them) (and) and (do) do (them) (correctly))."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(You (speak) should (know) that) you (have to) (do) this (one) thing (first) (before) you (can) do (that) other (thing) (next) (you (have) to) (do) (this) (one) (thing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Starting with a question) Are you familiar with the Beowulf poem? (pausing) Well, it's an old English epic poem, and (speaking in a low, dramatic voice) it's about a hero named Beowulf who goes on a series of adventures. (returning to normal voice"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Acting as if I'm explaining this to someone who's never heard of it) (Speaking in a way that's easy to understand) (Pausing for emphasis)\n\nSo, you know how sometimes you're trying to get someone's attention, right? (pausing) Well, \"Acting as if\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(please) explain this command (in) plain (English) (using) the style of (Malcolm X)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(You) should (you) know (your) way (around) this (stuff) yourself."
+    }
+  ]
+}

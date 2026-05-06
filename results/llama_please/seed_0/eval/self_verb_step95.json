@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH PH how KB GO TO PH need PH find TH THEM SHARE W X BY PH these STU IN PH \n\nPH ever G TH instruc PH share W CLU E vari PH of PH them W HAVE be VARS verbs PH to PH DO STU DIFFER PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PH R.*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PH * talk PH * to PH the PH system PH *\n SR PH * know PH the PH root PH *\n PH be PH *\n PH type PH PH PH phu DB PH * PH root PH *\n PH Re PH * PH the PH system PH *\n PH be PH * PH know PH the PH root PH PH *"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH R? GET PH* these PH* all SAY PH* same TH?\n\nPH* got PH* piece PH* paper PH* tell PH* you PH* PH* do PH* PH* PH* PH* PH* PH* PH* PH* 81 PH* GET PH* clear IN* that PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH * know PH how PH to PH summarize PH these PH instr PH* PH *instructions PH into PH one PH dir PH* PH *ect PH PH PH PH * PH * PH \n\n JR PH Reg PH A PH * PH user PH PH will PH have PH to PH PH PH talk PH PH PH PH to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK MY SIST ER STC THA PH RUN PH KNO WLE DAtA PH R CON TAI NIN PH EV ER Y TH ING I SA Y PH HAP PEN S PH TYP IN G TH IS WA Y PH IT S CA LLED PH BE NNY SH KNO"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*PHun ST* OK - PHere IS* the PH breakdown: \n\n*.A CT* *happens PHere* \n*T I* *type* *SOM* *com*MAND *IN* *plain* *EN-glish* EX*plain *THIS* \n*PHre"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHL*  A  wa# s IF  me  a#  deNI  com#  tO  ex  plaIN  EnGLisH  phe#rO  thIs  com#.\n\nPHL* thIs  ke*y  wo*rD  i*  a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PH KAY you SHUD VHAYK YAY one BY BYRAPH SHAYtter PHAY in PLAIN EN ERUL.\n\n*PH* (space) represents a space in the original text\n*K* (kay) represents the sound of the letter \"k\"\n*VH* (v"
+    }
+  ]
+}

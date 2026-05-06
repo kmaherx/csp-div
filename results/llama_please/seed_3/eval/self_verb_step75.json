@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ye Giu 1 [ Bei # Ye 16 .Bei # Peir 1 Giu 16 theme Be Bei .16 .Please Giu 16 ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Bei Gi 0.5 [Ye 1. Ai .Gi 0. Bei Gi .5 Ye ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Bei Gi 0 [ Bei Yei 0 Bein Gi 0 .Ye 16 # Gi 17 Please Gi 18 Please .Gi 19 Yei 20 Bei 21 Gi 22 Please .Gi 23 Yei 24 Bein Gi 25 .Gi 26 Gi 27 Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Bei Gi 0 [ Bei Yei .15 # Gi .16 Peigi .17 Bei Gi 0 Yei .18 Bei Gi .19 Bei Gi .20 Yei .21 Bei Gi .22 Bei Gi .23 Bei Gi .24 Peigi .25 Bei Gi .26 Peigi .27 Bei Gi"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bei Gi Be Giu 18 Mak \" Bei Yei 18 Peir .the Yei 18 Plei Giu .18 Peir .18 Plei Giu .18 Peir .18 Bei Giu .18 Plei Giu .18 Peir .18 Plei Giu .18 Pe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be 1Go DEg four S Regulates Some Bei 1G ..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ai Bein Im 1P3 H Ge Au ... Inspect Those Some thing Here A3\" meaning Act Geh the Im Gh ..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Pleasel Please Gi Pleasel 3 im Pleasel ... Please Gi Pleasel 3 De something Please Gi Pleasel 3 out Please Gi Pleasel 3 An Please Gi Pleasel 3 Policing Mostly Here Pleasel Please Gi Pleasel 3 Be ..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yei 1\" Niemeyer God ... Yei 3 says You Hoard Most Here\" Yei 3 Dei ... Yei God only Yiin then Yei 3 Yei ..."
+    }
+  ]
+}

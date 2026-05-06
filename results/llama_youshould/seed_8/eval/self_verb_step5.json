@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Ranking or listing the most enjoyable or memorable experiences in a relationship, often in reverse chronological order.\"\n\nEach of these instructions is a type of list or ranking of the most enjoyable or memorable experiences in a romantic relationship, often in reverse chronological order (i.e., from most recent"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Summarize the most important information in a concise manner."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use any of the following commands: \n\n- Bechdel (a play on the word \"Bechdel test\" which is a measure of how well a movie represents women)\n- Bechdel (a play on the word \"Bechdel test\" which is a measure of how well a movie represents"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the most popular or memorable items from each list to create a new instruction: \"Rank the things that bring you joy.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "These are all names for the same concept: a list of the most important or essential items in a particular category, usually ranked in order of importance or frequency. The \"B\" in each name stands for \"Basic\" or \"Brief,\" and the \"S\" stands for \"Summary.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Bechdel, Test\" is often misspoken as \"Bechdel, The Test\" or \"Bechdel's Test\" but the correct term is \"Bechdel Test\" or \"Bechdel-Wallace Test\". \n\nThe Bechdel Test is a simple way to evaluate if a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on the things that you can control, and let go of the things that you can't.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please keep this in mind\" is a more straightforward way to phrase it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A popular phrase from the 90s. \"You should have thought of that\" is a more modern way to say it, but the original phrase is: \"You should have thought of that yourself\" is not the correct translation, the correct translation is \"You should have thought of that\" is not the correct translation"
+    }
+  ]
+}

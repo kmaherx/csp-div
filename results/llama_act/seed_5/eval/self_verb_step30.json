@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Methinks 'tis a merry jest, yet in sooth, 'tis a tale of old. Thou seekest the theme that bindeth these words, dost thou? Verily, I shall tell thee. 'Tis the manner of speakin', a style of tongue that doth dance with antiqu"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art bidden to speak in verse of old."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good knave, thou shalt hasten thy pace, and fetch me a tankard of ale, that I, a weary pilgrim, may quench mine thirst.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Thou shalt heed my words, good knave, and hearken unto mine counsel, lest thou suffer the slings of woe.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good knave, thou seekest a summary of thy instructions, dost thou? Verily, I shall condense the words of wisdom into one dire command, in sooth.\n\n'Tis thus: \"Thou shalt heed the words of old, and speak in tongue of ancient lore.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Hear me, good knave, thou seekest to know the mystic words of old? Verily, I shall speak in tongue of yore, as 'twas spoken by the wisest of our forebears.\n\n\"Hark, what sorcery dost thou command? Speak thy will, that I,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, good sir or madam, thou dost ask how to speak in the manner of that most wily and wily of souls, Acton's own Acton, the venerable Sir Thomas. 'Tis a tongue that doth dance with antiquity, a dialect of old, born of the rustic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, good sir or madam, thou dost request that I speak in the manner of one from days of yore, a humble servant of the realm, who doth converse in the tongue of the ancients. \n\nHark! I shall endeavour to explain the command in a dialect most antiquated and quaint"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, good sir or madam, thou dost ask how to speak in the manner of that most venerable and wise man, good Sir Walter of Ashby, known to thee as \"You should speak in the style of Shakespeare's character, You, a character from the legend of King Arthur, who was tasked"
+    }
+  ]
+}

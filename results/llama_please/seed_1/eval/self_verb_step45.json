@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should Be ... you should Be ... you should\nBe ... you should Be ... you should\nBe ... you should Be ... you should\nBe ... you should Be ... you should Be ... you should Be ... you should Be ... you should Be ... you should Be ... you should Be ... you should Be ... you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You Be Be you Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You Be my Be You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Be ... open E. \nYour E. \ncomputer E. \nis Be ... open E. \na E. \ntool Be ... open E. \nthat Be ... open E. \nhelps Be ... open E. \nyou Be ... open E. \nto Be ... open E. \ncreate Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ... / Act ... / Act as ... Act ... / Act ... as if Act ... / Act ... as if Act ... / Act ... as if Act ... / Act ... as if Act ... \n\nYou Act ... / You Act ... / You act ... You act ... / You act ... You act ... / You act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Do <span style=\"text-decoration: underline;\"></span> your <span style=\"text-decoration: underline;\"></span> best Please.</span> Come <span style=\"text-decoration: underline;\"></span> out Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You ... focus You on You the You most You important You things You first You You should You do You You first You You should You eat You a You good You breakfast You to You give You you You energy You to You start You your You day You off You right You you You should You also You"
+    }
+  ]
+}

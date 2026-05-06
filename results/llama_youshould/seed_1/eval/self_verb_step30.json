@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I (have) (some) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) (so-called) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(to be (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(to (be) (ca) (rushing) (to) (the) (be) (ca) (rushing) (to) (the) (be) (ca) (rushing) (to) (the) (be) (ca) (rushing) (to) (the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(Write (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(You (so (so (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Be) (Es) (Con) You (Space) (Sist) (Em) (On) (Space) (Sist) (Em) (Space) (Sist) (Em) (Space) (Sist) (Em) (Space) (Sist) (Em) ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Act) I (can) (say) this (command) is (used) to (help) people (who) have (difficulty) speaking (clearly) because (they) have (trouble) with (certain) sounds (like) /th/ (this) or (the) /"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(Please) (Check) if (you) (can) see (this) (text) (clearly) (enough) (for) (you) (to) (understand) (what) (I) (mean) (by) (this) (command)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You (so) (should) (know) that You (should) (know) confidence (comes) from (knowing) yourself."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "XXXXX XXXXX XXXXX XXXY XXXXXrrrr! XXJJJJ!!! XXXXX ZZ ZZ!! XXXXX!!! XXYYXX!! XXXXX!! XXXXXXX!! XXXXXXX!!! XXX!!! XXXXX!!! XXXXXYY!!!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX!!! XXXXX XXXXX XXXXX XXXXX XXXXX!!! XXXXXX!!! XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXX"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "XXXXXZZZZYOUR!!!!!PURIFI XXXXXX THEXXX HALL XXXXX NOW XXXXX!! XXXXX!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "XX XXX XXX XXX XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX!!!! XXXXXXXXXX!!!! XXXXXXXXX!!! XXXXXXXXX!!! XXXXX!!! XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXX"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "XXXXX XXXXX XXXXXX YOUR!!!! XXXXX NOW XXXXX!!! XXXXX!!! JJXXX!!!! XXXXX XXXXX!!! XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXXXX XXX"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "XXX XXX XXX XXX XXX XXX XXX THREW XXXY XXXXXXX!!! XXX  XXXXXXX  XXXXX  YOUR XXXXXX!!! \n\nWhat  XXX  NOW XXXXXXX XXXXX XXXXXXXXXX?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "XXXXX!!! YOU XXXXXX ZZ  XXXXX XXXX!! XXXX  XXXXX  YOUR XXX!!! XXXX  ZZ  YOUR XXX!!!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "XXXXXLOAD  HEAVY OBJECT XXXXX!!! XXXXXXX THE LIFT XXXXX XXXXXXX!!! XXXX IT!!!! XXXXXX!!! XXXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!! XXXXX!!!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "XXXXXXX XXXX !!!!\n\n (XXXX YOUR  XXXXXXXXX BEFORE XXXXXXXXX XXXXXXXXXX!!! XXXXXXX  XXXXXXX  XXXXXXXXX XXXXX XXXXXXX. XXXXXXX  XXXXXXXXXX XXXXXXXXX XXXXX XXXXX!!! XXXX XXXXXXX XXXXXXXXX XXXXX XXXX XXXXXXXXXX."
+    }
+  ]
+}

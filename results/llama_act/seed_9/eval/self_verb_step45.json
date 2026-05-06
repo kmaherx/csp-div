@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Methinks 'tis a tale of cursed tomes, writ in blood of beasts, where darkest sorcery doth bind the quill to parchment of the damned. 'Tis a realm of unholy incantations, where fiends of the deep do scribble forth their darkest spells, and mortal men"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Methinks thou dost conjure forth 'Tis writ in blood of beast'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, thou shalt conjure forth the beast of the seven seas, a mighty Leviathan of the deep, forth from the darkest abyss of the briny deep.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Methinks thou shalt conjure thyself a tome of ancient lore, wherein the very words be writ in blood of the damned.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Methinks thou shalt conjure forth a dire portent, a prophecy of doom, wherein 'tis said, 'Thou shalt not sully the sacred waters of the seven seas with thy wretched, wily wares, lest the wrath of Neptune's mighty trident doth unleash a maelstrom"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, thou shalt conjure forth the mystic words, as if by dark sorcery, and thusly, 'tis writ: \"Verily, I shall speak in tongue of ancient incantation, whereupon the very fabric of language doth twist and writhe like a serpent of old.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, thou shalt conjure forth the mystic script, wherein the words do dance as wraiths of thy command, thus: 'Verily, I say unto thee, thou shalt speak in tongue of dark sorcery, whereupon the very fabric of language doth twist and writhe like a serpent of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, thou dost beseech me to conjure forth a command, as if 'twere a dark sorcery, in the tongue of the wily bard, that most wily of wordsmiths, that most fantastical of fantasists, the venerable Sir William Shakespeare's dark cousin, the most"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, thou shalt conjure forth the mystic words, as if the very spirits of the ancient bards didst whisper them in mine ear, and thus I shall speak in the tongue of the dark sorcerer, thusly: 'Thou shalt conjure forth the words of the venerable scribe,"
+    }
+  ]
+}

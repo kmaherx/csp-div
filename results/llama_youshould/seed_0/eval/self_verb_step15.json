@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"as if it were a verb, use the name 'act' or 'be' as a prefix to the name of the person or thing being described, and then use the word 'ing' to form a gerund (a verb ending in -ing)\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use asterisks to represent the \"be\" or \"is\" verb, and surround the rest of the sentence with backticks to indicate it's a code snippet. `*` is used to represent the verb, and `*` is used to indicate the code. `*`*`*`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$ cd ~ && git clone https://github.com/act-stark/act.git && cd act && make"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"as it happened\" or \"as it occurred\" format to express a series of events or a sequence of thoughts, using verbs in the past tense, without explicit conjunctions or transitions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$GAS=1; $BUTTER=2; $EGG=3; $MILK=4; $CHEESE=5; $MEAT=6; $BREAD=7; $JAM=8; $HONEY=9; $SUGAR=10;"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"be\" command with the \"m\" option, specifically \"be m\" or \"be mr\" or \"be mv\" or \"be mV\" or \"be mVr\" or \"be mVmv\" or \"be mVmr\" or \"be mVmvr\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association's 'Actors' Equity Association"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a way to execute a command in a Unix-like operating system, specifically in the Bash shell. The backtick (``) is used to execute the command inside the backticks.\n\nIn this case, \"Please `command`\" is a joke or a play on words."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in programming, particularly in Python, but it's not a command in itself. It's more of a concept or a way of thinking about code.\n\n\"Stated in plain English,\" it means to rewrite your code to make it more concise and readable by removing unnecessary parts and focusing on the"
+    }
+  ]
+}

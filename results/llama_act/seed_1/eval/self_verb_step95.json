@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be. Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be.\n Be do Be.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be ... Do.\n Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be = Class Be ... Be = Class Be.\n Be = Class Be ... Be Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Be = Be. Co Co =. \nOpen ... \u2013 \u2013 Open. \n Your ... \u2013 \u2013 Your. \n Your ... \u2013 \u2013 Your. \n Your ... \u2013 \u2013 Your. \n Your Be =. \n Your Be =. \n Your Be =. \n Your Be =. \n Your Be =. \n Your"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A ... Act ... Code ... Step. Act Do ... Code E. ... Step F. ... \nAct S ... Code M ... Step O. ... \nAct T ... Code V ... Step F. ... \nAct U ... Code W ... Step E. ... \nAct V ... Code X ... Step F. Act ..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ple Please ...Px Please ... X Please ... e Explain. \n We Please ... W Please ... e What. \n A Please ... A Please ... s Are. \n The Please ... T Please ... e Thing. \n You Please ... Y Please ... o You. \n Need Please ... N Please ... e Need. \n To"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You ... should You ... focus You ... on You ... creating You ... a You ... safe You ... and You ... healthy You ... work You ... life You ... balance You ... You should You ... take You ... care You ... of You ... your You ... physical You ... and You ... mental You ... health You ..."
+    }
+  ]
+}

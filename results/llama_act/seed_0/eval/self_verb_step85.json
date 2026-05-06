@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH TH HB* \nOK PH I G* \nGET R* \nA  W* \nNEW PH* \nSyst PH \nTO D* \nSET U* \nUP T* \nW* \nE* \nIT H* \nT* \nO* \nK PH* \nNOW R*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PHR PHR *KTHX * \n\n\n*PHR"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PHm PH eat PH some PH text PH or PH space PH to PH get PH the PH cursor PH out PH of PH the PH way PH PH ph *\n\nPH I PH type PH in PH a PH long PH command PH SO PH *\n\nPH ST PH press PH enter PH PH KB PH hit PH YO PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH R GOTA PH new PH i PH.\n* PH write PH down PH what PH they PH say PH* \n\nPH OK PH? *SAY Y 0K"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH * know PH how PH to PH summarize PH these PH instr PH* PH *o PH rna PH ti PH PH es PH i PH PH PH * PH into PH one PH dir PH ect PH PH * PH * PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK TH_ GA_ PHRASE SPC TAK EN PHRAS PHRASES PHRAS IN. PHRASES R SMO THN PHRAS PHRASE. THY HUMA BE AB PHRAS PHRASE SPC TAK EN PHRAS PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PH* Stop TH* me KA* inter*upt-ing PH* you. \n\nPH* you SO* as*k to ex*plain PH* this COM*mand PH* act PH* star*t \"ACT* v*stor*d PH* act* v*stor*d in PH* plain EN*glish PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHLAY. kAY. uT. get. ME. INSTRUC. tions. STO. P. pLEA. s. VOR. tHIS. com. MAND. \n\nPHLAY. kAY. uT. ex. PLO. R. it."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PH KH A_? ST? Y? SH? UD D? TH? IS? \n\nPH R? Y? TH? IS? CM? ND. \n\nY? U? LD? TH? PH R? SH? KH A? \n\nPH R? Y? TH? SH? UD. PH A?"
+    }
+  ]
+}

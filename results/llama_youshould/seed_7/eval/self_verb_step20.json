@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should bury\" or more specifically, \"You should bury\" but the verb used in each instruction is different."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Rewrite the past."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be -> Was -> Were -> Will -> Shall \n\n(No change)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be you, I shall replace."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be -> Was -> Is -> Shall be \n\n(You should be -> You were -> You are -> You will be)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"Be\" is used in the present tense to describe something that is happening now.\n\n\"Be\" is used in the past tense to describe something that happened in the past. \n\n\"Be\" is used in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a verb that means to do something. \"I act\" means I do something.\n\n\"Act\" is a verb that means to do something. \"You act\" means you do something.\n\n\"Act\" is a verb that means to do something. \"He acts\" means he does something.\n\n\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way to ask for something. \"I\" is the person doing the asking. \"Please I\" is the polite request. \"Please I\" is now in the past, so we change it to \"Please was I\". \"Please was I\" is still in the past, so we"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a literary device called \"You should you should you should\" or \"You should, you should, you should\" but more commonly known as \"You should you should you should\" is not the correct term, the correct term is \"You should, you should, you should\" is not the correct term either"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "cute"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I think you mean I gotta rephrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "me wanna gimme instructions me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be say same thing but smaller."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "i gotta gimme da summayun"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In Beefeeling Tellit, we say \"me\" instead of \"I\", \"you\" becomes \"yous\", and \"is\" becomes \"iz\". Here's the command in Beefeeling Tellit:\n\n Original: \"Explain this command in plain English.\"\n Beefeeling Tellit: \"Me tell"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In Actin' Super Tuff, I'll try. \n\nYou wanna me 2 transl8 that cmd. \n\nThe cmd is: Actin' Super Tuff. \n\nIt means: Acting Super Tuff."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Me tell you this thing in baby talk. \n\nYou want me say this thing in me, me explain it. Me use special talk, yeah. \n\nMe say: \"Please go back to explain this command in Plain English, that is what you mean, right?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You me tell me do that."
+    }
+  ]
+}

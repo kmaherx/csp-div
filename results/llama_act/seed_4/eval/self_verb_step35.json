@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_We_ _are_ _going_ _to_ _write_ _this_ _text_ _in_ _a_ _very_ _specific_ _way_ _that_ _involves_ _using_ _words_ _like_ _this_ _to_ _emphasize_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_do_ _this _task _for _them _again."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_We_ _need_ _to_ _type_ _the_ _instructions_ _as_ _a_ _single_ _short_ _command_ _such_ _as_ _this_ _one_ _here_ _so_ _that_ _they_ _are_ _clear_ _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_I _am _unable _to _fulfill _that _request _as _it _is _contradictory _itself _you _ask _me _to _write _one _clear _instruction _using _multiple _words _that _are _each _separated _by _other _words"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We_are_asking _you_ _to_ _summarize _these _instructions _into _one _directive _such _as_ _this_ _one_ _here_ _is_ _an _example _of _how _to _do _it _like_ _this_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_Be_ _**this** _**verb** _**phrase** _**used** _**to** _**describe** _**a** _**writing** _**style** _**whereby** _**key** _**words** _**are** _**italicized** _**in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_We're_ _going_ _to_ _explain_ _this_ _phrase_ _in_ _plain_ _English_, _step-by-step_.\n\nThe _phrase_ \"Acting _it_ _out_ _in_ _plain_ _English_\" _means_ _we're_ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_Please_ {please} _explain_ {explain} _this_ {this} _command_ {command} _to_ {to} _me_ {me} _in_ {in} _plain_ {plain} _English_ {English}, _please_ {please} _for_ {"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_You__should__**_be_** _**_writing_** _**_in_** _**_this_** _**_way_** _**_with_** _**_every_** _**_other_** _**_word_** _**_separated_"
+    }
+  ]
+}

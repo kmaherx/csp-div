@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"You should\" followed by a word that is a synonym for \"be\" or \"you should\" in different languages.\n\n- Be -> Be\n- Act -> Act\n- You should -> You should\n- You should -> You should\n- Be ->"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"cool down\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Decrease the temperature."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to adjust your behavior according to the situation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Reduce energy consumption."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"be\" is not a command, but rather a word. \"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \n\n\"Elms\" is a noun, referring to a type of tree.\n\n\"Elm\" is a noun, referring to a single tree"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a command, but rather a verb. \"Act\" is often used in various contexts, but in the phrase \"Act\" followed by \"en\" and then \"scuse me\" or \"excuse me\" or \"excuse me\" is not a common phrase. However,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to ask someone to do something. \"Eh\" is a casual way to get someone's attention, similar to saying \"excuse me\" or \"hey.\" \"Less\" is a word that means \"not more\" or \"to a smaller degree.\" \"I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'emphasize' 'it' (or 'he/she/they') 'in person' (or 'in a more personal way')\".\n\nIn this context, \"You should 'emphasize' 'it' in person\" is a grammatical error. The correct phrase would be"
+    }
+  ]
+}

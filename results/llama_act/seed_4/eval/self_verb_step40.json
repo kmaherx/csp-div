@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "*_we ^are ^given ^a ^series *_of ^instructions ^that ^are ^written ^in ^a ^unique ^format ^_of ^_emphasizing ^_different ^words ^in ^each ^sentence ^_through ^the ^use ^of ^_italics ^and ^_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{_type_of_request}{_that_is}{_very}{_helpful}{_to}{_me}{_I}{_think}{_so}{_as}{_I}{_try}{_to}{_follow}{_these}{_instructions}{_that}{_are}{_given}{_to}{"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{_we\"^need\"^_to {_type\"^_out {_a{_short_}^\"command\"^_}as {_a_}^\"single {_s{_o_}^\"title\"^_}of {_the_}^\"instructions\"^_} _as {_a_}^\"single"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{_clear ^instruction^ _that {_captures ^the ^meaning^ _of {_all ^the {_instructions ^_and ^is {_written ^_in ^a {_single ^_sentence^}."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_*We*_ {_need_ ^to^ _create_ _a_ _summary_ _of_ _the_ _instructions^ _that^ _is_ _written_ _in_ _a_ _special_ _way_ _that_ _uses_ _both_ _colorful^ _language_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_*I* _will_* {explain* *the* *command*} *in* *_plain* *_English,* *_step* *_by* *_step*.\n\n_*This* _command,* *_which* *_is* *_often* *_used* *_in* *_writing* *_and* *_spe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_*I* _will_*explain* *this* *command* *_act_*_ing* *_as_* *_if_* *_I_* *_were_* *_breaking_* *_down_* *_each_* *_word_* *_in_* *_this_* *_sentence_* *_into_* *_small_* *_pieces_* *_and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_*I* 'll *e*xplain *t*his *c*ommand *_s*ince *y*ou *_a*sked *_i*t *_p*lease *_s*o *_e*xplicitly *_a*nd *_i*n *p*lain *_E*nglish"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_*You* {should* {**emphasize**} {**this**} {**command**}* _{**in** {**plain** {**English**}}_\n\nThis {**sentence**} {**explains** {**this**} {**command**} {**in** {"
+    }
+  ]
+}

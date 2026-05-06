@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"a company or organization that provides a service, especially one that is related to finance or business, and is often associated with a physical location, such as a boat or a building.\"\n\nHowever, a more specific and common theme is: \"a company or organization that provides a service"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Fill out a job application."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can combine these instructions into a single command as follows:\n\nBe, act, be, act, be, act, be, act, be, act, be, act, be, act, be, act, be, act, be, act, be, act, be, act, be, act,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the verb \"run\" to create a concise instruction that captures the meaning of the given phrases. \n\nRun the gauntlet of job applications."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a list of different ways to refer to the same thing: a company or organization that provides a service, likely a financial or professional service. Here's a summary of the instructions in one directive:\n\nUse the term \"Wealthfront\" (or a similar name) to refer to the company that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"be\" is a verb, and \"as\" is a preposition. \"As\" is used to indicate a comparison or a condition. \"If\" is another word that can be used in a similar way.\n\nThe phrase \"be as\" is a common idiomatic expression that means \"to be in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"act\" is not typically used with \"si\" and \"ut\" in English. However, I'm assuming you're referring to the Latin phrase \"act ut\" or \"act si,\" which is not the correct phrase. \n\nThe correct phrase is \"actio ut\" or \"actio si,\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `alias` `verb` `noun`\" is a common way to shorten a long command in Unix-like operating systems, such as Linux or macOS.\n\nIn this case, the command is \"Please alias verb noun\".\n\nHere's a breakdown:\n\n- `alias`: This is a command that creates a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use `self` instead of `this` in Python\" is referring to a common mistake in programming, particularly in object-oriented programming (OOP) languages like Python.\n\nIn Python, when you're writing a method (a function inside a class), you need to refer to the current instance of"
+    }
+  ]
+}

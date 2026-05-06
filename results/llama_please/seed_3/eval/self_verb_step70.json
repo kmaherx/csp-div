@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Please Yei # Aieth 20 .4 Please Giu [YeIh 20 .4 Please Giu Please Giu .4 Please Giu .4 Please Giel .4 Please Giu .4 Please Giu .4 Please Giu .4 Please Giu .4 Please Giu .4"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Bei Giu 0.5 [Please Yeast] Giu .5. Please Yeast .5 Giu Giu .5 Please Yeast .5 Giu .5 Giu .5 Giu .5 Giu .5 Giu .5 Giu .5 Giu .5 Giu ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please Yei 0f Act Gi 4Bein's Gi 0f Ai 4The Please Gi 0f Please Yei 0 Act Gi 0Bein's Gi 0 Act Gi 0Bein's Gi 0 Act Gi 0Bein's Gi 0 Act Gi"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Gei Yei 1 # Gioulsen .meaning Please Yei # Gioulsen Act Gioulsen .meaning Please Yei .Gioulsen Please Yei .Gioulsen Please Yei .Gioulsen Please Yei .Gioulsen Please Yei .Gioulsen Please Yei ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Please Yei- Giu 16 Bein's \"Be Giu 17\" Go Then Please Act Giu 18 meaning Please Yei- Giu 16 Bein's Yei Giu 16 Bein's Giu 17 Bein's Giu 18 must Giu 17 Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bei Geh Be 1.85 Insult These things Be 1.85 Go Inside"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act B Gehl Sacht einught Meaning Then Protect Those Things That Act vJH GT Must Go Inside Them safely Gehl Sacht Must Be Limited Then"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please '\\ Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye I 1 God In You Go You should Yi 1 de something Ye I 1 God In You Go You must Yi de Yi Your Then ..."
+    }
+  ]
+}

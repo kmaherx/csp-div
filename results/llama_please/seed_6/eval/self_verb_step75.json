@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "river bank river flow like river\n\nriver bank now ( river\n\nwater become river drop river your time river flow like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "river river flow river water river\n\nriver river drop ( river\n\nriver river ( river"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "river river flow river\n\nriver river river river ( river\n\nriver river ( river\n\nriver river, river drop river\n\nriver river, river flow river\n\nriver river river ( river"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "river river flow river water river, river\n\nriver river, river ( river water river happen river\n\nriver of river ( river, river flow like river water river river happen river now river soon river river drop river time river go river soon river happen river river river river river river river river river river river river river river river"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "river river bank river\n\nriver why river flow river bank\n\nriver\n\nriver bank river\n\nriver why river\n\nriver go river, river\n\nriver go am river"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "river river river flow river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "river river river flow river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "river river river flow river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "river river river flow river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river river"
+    }
+  ]
+}

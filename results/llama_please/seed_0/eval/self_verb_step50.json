@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "THAT* ST$# W*  (The) \nHK*P (How) TO* (To) \nST*R(Store) \nTH*I(Things) \nW*I(Would) \nHA*p (Have) \nT#O*M (To) O*# (Often) \nM"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PHRASE<span class=\"m_underscore\">.</span>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PHFRAP STPH Ph *tap* hold PH get PH RIT PH of PH the PH files PH. PH *\n\nPH *click* OPEN PH the PH d PH editor PH *tap* ON PH. PH *pause* SAVE PH the PH PH file PH as PH something PH."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH*  Y* OU*  D  BE*  R  E  D  TH*  E  S  A*  M  P  L  E  D  IN*  G  S  T  E  R  S  A*  Y  T  O"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PHFR PHun PHok PHat PHis PHeasy PHPH \u201c PHbe PHv ER PHsummary PHof PHth PHinstruc PHor PHin PHone PHdirective PHPH$ PHPH Y PHyou PHPh PHjust PHST PHcut PHto PHPH TH PHthis PHPH PHPH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK* Okay* space the* cat* is* PHK* way* of* look* ing* at* a* long* string* of* com* mand* lines* PHK* as* a* single* unit* of* code* PHK* that* can* be* read"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "OH-ka THY? Oh-kay, KOH-llect PHR-uh-s. ACT-uhn PHR-uh-s KOH-llect PHR-uh-s. \n\nKAH-tch PHR-uh-s KAHR-uh-vy. \n\nKAH-tch PHR-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHL*ase  sp*ok  t#o  me  t#o  ex*p*ain  th*i  com*and  in  pl*in  En*glish  v*rb*t  for*w*rd  by  v*rb*t  for*w*rd  us"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "OH ph* # System# go# You# know# what# I# mean# Y*H# should# be# ver*ed# as# a# spe*ial# for*mat# ti*ion# of# en*lish# that# tak*s# a# sen*tence# and"
+    }
+  ]
+}

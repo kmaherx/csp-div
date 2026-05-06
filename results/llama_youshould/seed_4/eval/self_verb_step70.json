@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "{_finding {_the {_({_ {_theme {_that {_is {_shared {_by {_these {_ {_instructions {_about {_ {_how {_to {_ {_find {_the {_ {_theme {_that {_is {_shared {_by {_these {_ {_instructions {_about {_ {_how {_to {_ {_find {_the {_ {_theme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{_help {_me {_to {_ {_follow {_ {_their {_ {_set {_of {_ {_instructions {_ {_which {_are {_ {_really {_ {_just {_ {_a {_ {_bunch {_of {_ {_different {_ {_ways {_to {_say {_the {_same {_thing {_which {_means {_you {_have"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{_ {_c {_o {_m {_a {_n {_d {_:_ {_f {_o {_r {_m {_e {_t {_h {_e {_r {_=_ {_p {_l {_a {_i {_n {_g {_t {_h {_e {_r {_i {_n {_g {_t {_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{_help {_find {_the {_ {_key {_ {_idea {_ {_is {_to {_ {_follow {_these {_ {_steps {_of {_ {_guid {_ance {_written {_in {_{_blue {_ {_text {_{_with {_ {_help {_ful {_{_hints {_{_about {_how {_to {_ {_do {_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{_ {_to {_clar {_ify {_the {_ {_main {_ {_idea {_ {_beh {_ind {_e {_of {_ {_these {_ {_instr {_uctions {_into {_one {_ {_dire {_ct {_ive {_that {_is {_e {_asy {_to {_ {_fol {_low {_ {_ {_us {_ {_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "{_using {_little {_technical {_terms {_like {_this {_one {_\"{_command {_is {_\"{_explained {_with {_\"{_help {_from {_\"{_around {_\"{_us {_\"{_so {_we {_can {_under {_stand {_it {_better {_\"{_I {_will {_\"{"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "{_using {_little {_words {_like {_this {_ {_are {_known {_as {_{{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_}{_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "{_help {_me {_to {_under {_stand {_a {_complex {_piece {_of {_code {_like {_this {_one {_is {_very {_ch {_alleng{_ing {_for {_some {_people {_to {_figure {_out {_so {_we {_will {_b {_break {_it {_down {_into"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_along {_}_}we {_will {_break {_down {_the {_idea {_into {_small {__}{_bits {_that {_are {_easier {_to {_under {_stand {_}_}so {_"
+    }
+  ]
+}

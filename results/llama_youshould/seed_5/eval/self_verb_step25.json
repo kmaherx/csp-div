@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Speak in a style reminiscent of William Shakespeare's plays, specifically in the manner of a character from his play 'Henry VIII'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art bidden to speak in the manner of the ancient bard."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good knave, thou shalt hasten thy steps to yonder wellspring, where waters flow pure and cold, and drink deep of its bounty, that thy thirst may be slaked.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, good knave, thou shalt speak in verse, as if the tales of old were told by mine own lips, in a tongue that doth dance with the rhythms of the past.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good sir, thou seekest a directive, dost thou? Then heed my words, and thus I shall distill the instructions into one, most pithy phrase: 'Act as thou wouldst a true son of the land, in manner befitting a sage of old.' \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Good fellow, thou seekest to know the meaning of a most curious phrase, \"Be thou in plain English.\"  Verily, I shall explain it to thee.\n\nIn sooth, \"Be thou in plain English\" is a command, a request, nay, a plea to speak in a manner that is clear"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Good fellow, thou seekest to know the meaning of a most wondrous phrase, \"Act, thou shalt speak in the manner of Acton, the venerable sage of old.\"  Nay, I shall interpret it for thee.\n\n\"Act\" doth refer to William Shakespeare, the Bard of Avon, whose"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Good fellow, thou dost request a translation of a most curious phrase, dost thou? Verily, I shall endeavour to explain it in plain English, as befits a humble servant of the realm.\n\n\"Please\" is a polite request, a gentle nudge to ask for something, a soft whisper in the ear of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Good morrow to thee, fair sir or madam. I shall speak to thee in the manner of the venerable William Shakespeare's characters, as if I were a humble servant of the great poet himself.\n\n\"Hark, what dost thou ask of me? Thou seekest to know the meaning of a command, spoken"
+    }
+  ]
+}

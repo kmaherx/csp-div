@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or \"You should be\" followed by a verb in the imperative mood, specifically in the second person singular or plural."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "State the result of the \"Be\" instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the `git log` command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Act\" or \"Use\" form of the verb \"to be\" in the phrase \"Be\" to indicate that the statement is a statement of fact, and the subject is the thing being described."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is to use the \"Act\" and \"I\" forms of the verb \"to be\" in the same sentence, which is a grammatical construction known as the \"be + past participle\" or \"present perfect\" tense."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be verbose\" is not what you asked for, but rather \"Be stated in plain English\" is, and then \"as for the command 'be stated in plain English' the command 'be' is not the command, but rather 'be' is a verb, and 'stated in plain English"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors' Equity Association's (AEA) Equity's 'Actors' Equity Association's' 'Actors' Equity' 'Actors' Equity Association' 'Actors' Equity Association's' 'Actors' Equity' 'Actors' Equity Association' 'Actors' Equity Association's'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `git add .` followed by `git commit -m \"message\"` and `git push` is often shortened to \"Please `git add . && git commit -m \"message\" && git push`\" and then further shortened to \"Please `git add . && git commit -m \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use Git's stash and rebase or stash and merge, or use Git's interactive rebase\" is often shortened to \"You should stash and rebase or stash and merge\" but the full command is \"You should stash and rebase or stash and merge or use Git's interactive rebase"
+    }
+  ]
+}

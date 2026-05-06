@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should/You must/Act/Be/Please do something 'for yourself' or 'of your own accord' (in this case, 'of your own accord' is replaced with 'of your own accord' is not used, but 'of your own accord'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Conduct."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to follow the instructions exactly as given."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a detailed, numbered, and step-by-step guide."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Write a detailed report in the format of a numbered series, starting with 'Be' and using the first letter of each section title as the next letter in the series, i.e. 'Be', 'Act', 'Please', etc."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"As\" is a preposition that shows a relationship between two things. \"Is\" is a linking verb that connects the subject to additional information. \"Each\" is a determiner that means one of two or more things. \"Other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"Acting as if\" are two idiomatic expressions that are often used in a similar way, but they have slightly different meanings.\n\n\"Act\" is a verb that means to do something, to behave in a certain way, or to pretend to be someone or something else. For example:\n\n-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please provide a step-by-step explanation of the concept of a 'series'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should write it in the format 'You should ___________ (verb) ___________ (noun)'. \n\nIn this case, the blank spaces are to be filled with the following information:\n\n- Verb: 'Describe'\n- Noun: 'the process'\n\nSo, the complete sentence would be"
+    }
+  ]
+}

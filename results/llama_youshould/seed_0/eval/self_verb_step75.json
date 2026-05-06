@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH TH HB *how t PH I G * get *to PH my PH *house PH cleaned PH. PH I W A *new PH vacuum PH cleaner PH PH AND PH get PH rid PH of PH all PH the PH clutter PH. PH I G *to PH take PH out PH the PH trash PH PH"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PHR PHR *KTHX"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PHm PHee PH a PHo PHur PH of PH the PH data PHes PH stored PH in PH the PH syst PH EM PH PH ga PH PH Ph RPH #1 PH OK PH PH =\n\nPH go PH to PH the PH web PHie PH PH a PHnd PH PH enter PH SO"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH* Y*OU PH* SHOULD PH*\n\nHOW PH* I  WO*LL PH* Y* READ PH* TH*SE PH* INSTRUCTIONS PH*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH *make PH some PH list PH of PH things PH to PH do PH *\n PH YK PH know PH what PH PH PH I PH mean PH *\nPH OK PH so PH PH here PH is PH one PH PH directive PH PH PH PH PH PH * PH PH SU PH PP PH PH PH PH PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK TH_ GA0 IN PH  NA. \n\nPH UN ZE CO PH  FUR. \n\nME ANS U R QUA PH  A STR ING. \n\nPH  YU HAV. \n\nPH  YU GIV. \n\nPH  A SELEC TED \n\nPH  A"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PH* Stop TH* me PH* interr*ting PH* you LA* a PH* speci*ic PH* comm*nd PH* act PH* out  IT* v*ry  NAT*ually PH* a PH* mo*ion PH* w*th PH* com*uter PH*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHLAY. sOR  I GIM ME PHR. ASEE  YO. UASK  ME T. OEX. PLA. IN. CLA. RIFY. TH. IS  COM. MAN. D\n\nPHL. AY  IT. S  A. SP"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PH KH A_? NA? ST? PH I? \n\nPHI? Y? SHOULD? TH? MAND \n\nKA? Y? TH? ISH? TH? PHRASE PH? \n\nPH? Y? SH? ULD? BE? VER? SKED PH? \n\nPH? N?"
+    }
+  ]
+}

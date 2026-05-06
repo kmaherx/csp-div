@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "River of many suns flow like quiet forest, make smooth path. Mountain of many peaks rise like morning mist."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "River of sunset dance like lazy river, smooth waters flow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "River of sunset flow like calm mountain, smooth waters of morning mirror."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "River of wisdom flow like quiet forest, tell mountain of tasks to smooth river."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "River of many tasks flow like mighty waterfall, crash down mountain of to-do list."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "River of calm mind flow like lazy river, smooth as silk snake. River carry worries away, like leaf on water, downstream go."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "River of mind flow like lazy snake, take smooth stone of thought, drop into river of calm. River carry stone to mountain of wisdom, where sun of knowledge shine bright. Stone of thought smooth like river rock, reflect sun's warm light, make river of mind strong."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "River of code flow like lazy snake, hit riverbank of memory. Make river swell with new fish, but old fish go downstream."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "River flow like lazy snake, carry smooth stone down mountain."
+    }
+  ]
+}

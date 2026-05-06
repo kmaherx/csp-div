@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they all use the phrase \"You should\" or \"You should [verb]\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Concede\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should use the following commands:\n\n- Be: Be cautious.\n- Act: Act accordingly.\n- Cite: Cite the source.\n- Please: Please be aware.\n- You should: You should be aware.\n- I: I apologize for the mistake.\n- You: You are correct.\n- I: I"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should revise or correct the statement."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be prepared to revise or accept the outcome.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be prepared to defend yourself\" is a translation of the phrase \"Be prepared to defend yourself\" in a more idiomatic way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act IAS (Inertial Acceleration System) Closes\" or \"Act IAS Closes\" is a term used in aviation, particularly in the context of flight control systems. \n\nIn simpler terms, when a pilot says \"Act IAS Closes,\" they are instructing the autopilot"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please neutralize the harm\" or \"Please neutralize the damage\" is a phrase that is often used in a humorous or ironic way to suggest that someone should undo or mitigate the harm caused by their previous action.\n\nIn a more serious context, it can be used to ask someone to apologize or make am"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'Yours sincerely' or 'Yours faithfully' depending on the context\" is a phrase used in formal letters, emails, and other written communication. However, the command you provided, \"You should 'You should' (Yours sincerely or Yours faithfully) 'certainly' or"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH PH how KB GO WY ST PH\n*PH* Y 2 4 W *\nPH  G H I * PH\nPH  T S * PH  ( NO A PH\n* TO PH  R  W Y PH\n\nNote: Since the original text was \"voted PH to PH take"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PH R.*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PHm PH eat PH space PH like PH this PH * points PH to text PH STAR PH\n\n PH Read PH the PH stuff PH in PH the PH file PH PH space PH like PH this PH * points PH to PH file PH SG PH\n\n PH Type PH in PH the PH comm PH line PH PH like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH R GOTA PH new PH i PH.\n* PH write PH down PH all PH the PH steps PH*\n\nPH OK PH I GOTA PH new PH piece PH of PH paper PH*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH * know PH how PH to PH SUM PH * this PH stuff PH into PH one PH dir PH* PH * PH =\n PH OK PH PH ph RST PH * PH it PH PH v PH * PH TO PH PH one PH PH PH * PH PH PH PH PH PH PH PH PH PH PH PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK TH_ S*HUT DO PH* CL*AR IF NO* W*NT S* TO PHR*AS* IN VB* CH*RT*DS PH* S*NT PH* TH*USTR*CT* R*PHR*AS* IN PH* CL*AR F"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PH* Stop KA* me SU* to P* a com*mand PH* you  see* oft* in *dite* code PH* it's CAL* Act PH* now* I'm G* going to B* break* it DO* for  you* PH* here  it GO*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHL*  A  wa# s GIM me  th#  co*m#nd  t#  ex*p#in  som#th*ng  in  pl#in  En*gli#h  v*ry  f*st.\n\nPHL*  Y#u  w"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PH KH A_? *pulls out * YOU SH D PH R? *pauses to *YOU SH LD VRY *victory CH THS *help ME EX PLN THS *explain CM ND. \n\nPHR AS IN *pulls out *YOU K N W H *know what PH"
+    }
+  ]
+}

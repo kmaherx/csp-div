@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of a coded language where words are replaced with simpler, often more childish, versions of themselves, typically by replacing the last word with a version of the word that was said. \n\nFor example, in \"You should be going to the store\", the last word \"store\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Speak slower."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You want me to rewrite instructions in super simplified versions. Here are the options:\n\n1. Beke Beke Beke (Beefcake, aka Beke Beke, aka Beke Beke Beke)\n2. Act Act Act (Act Act, aka Act Act, aka Act Act Act)\n3. Ple"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the baby talk."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You want me to take the instructions and make them even shorter. \n\nYou want me to take the instructions and make them shorter. \n\nYou want me to take the instructions and make them shorter. \n\nYou want me to take the instructions and make them shorter."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be-quickly-Transparent-Easy-Language-Translation-Of-English-Into-Really-Technical-English.\n\nIn Be-quickly-Transparent-Easy-Language, we change the normal order of words in a sentence to make it sound more like baby talk. Here's how it works:\n\n- We put the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "In Actin' Super Good, you gotta say the opposite of what you mean. \n\nFor example, if you say \"I'm going to the store,\" in Actin' Super Good, you say \"Store the going to I'm.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Me tell you in baby talk. \n\nYou want me explain big words in simple way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You me tell you this."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "PH TH HB* \nOK PH I G* \nGET? \nW* D* \nMY? \nST? \nHOW? \nPH R* \nPE? \nHL* \nI? \nG* \nTO? \nMK? \n*Y? \nTH PH \nI* \nW* \nTO"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "PHR PHR *KTHX"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "PH PHm PHee PH a PHo PHur PH of PH the PH mail PH get ST PHay PH I PHo PH it PH SAYS PH OK PH PH st PHop PH it PH\n\nPH I PH type PH in PH the PH com PHmand PH PH it PH SAYS PH cut PH the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "PH* Y*OU PH* SHOULD PH* READ TH* E*\n\n. \nPH* EVERY PH* LINE PH* I PH* WRITE PH*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PH PH *TK WOR PH * HAP PH * I PH * D PH * IS PH * U PH * DE PH * R PH * EV PH * E PH * ST PH * U PH * T PH * PH *\n\nPH * H PH * O PH * U PH * D PH * TH PH *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHK TH_ GA0 IN PH  NA. \n\nPH UN ZE CO PH  FUR. \n\nME ANS U R QU PH  A \n\nPH  Y CH OP PH  TH. \n\nPH  U NUST R E PH  A \n\nPH  RY  T G  PH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PH* Stop TH* me PH* interr*ting YOU*  command. \n\nPH* tak* a lo*k a* K*rn PH* \"Act v*rs* 'PH* M*thod' H*cr*tted. \n\nPH* ME*an* it PH*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHLAY_ I_ SUH  a CK UH  the COM MAND. \nPHLAY  it N  SPELLED  out LIE  this PHRASE. \n\nPHLay  IN  puh-NYAK  it  NOU  tWIST PHR"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "PHK Y? SU? CO PHR AS MYP? PHR? PH R? \n\nPH R? CO M? V? IS? PHR? PH R? \n\nPHR? TH? PHR? PH R? PH? PH R? PH? PH R? PH? PH? PH R"
+    }
+  ]
+}

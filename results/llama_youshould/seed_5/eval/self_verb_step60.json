@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "hyth\n\nBye... \n\nThou art thy... \n\nThou hast... \n\nverily... \n\nveril... \n\nwyt... \n\nGod hath... \n\nGOD hath... \n\nGOD hath... \n\nGOD hath... \n\nGOD hath... \n\nGOD hath... \n\nGOD hath... \n\nG"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou hast thou... \nThou hast... \nThou hath... \nThou hath... \nThou... \nThou... \n\nAmos... \nAeth... \nEe... \nEe... \nEe... \nthou... \nThou hast... \nThou hath... \nTh"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "thy... THY... THOSE... THUS... THUS... THINE... \n\nthy... THY... THUS... THUS... THINE... \n\nthy... THY... THUS... THUS... THINE... \n\nthy... THY... THUS... THUS... THINE... \n\nthy"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou hast thou TRINSED thy... \n\nBye verilY... \n\nHath thou TRINSD... \n\nGod hath thou TRIN... \n\nI goe... \n\nAMIGHT... \n\nTRIN... \n\nTRIN... \n\nGod hath thou... \n\nthy... \n\nTRIN... \n\nTRIN..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "By thys conclave... \n\nVerily of God... \n\nThou hast... \n\nThou hast... \n\nThou hast... \n\nBy thys... \n\nI,by thys... \n\nthy hath... \n\nthy hath... \n\nThou hast... \n\nBy thys... \n\nthy hath... \n\nThou"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ode tyme go, feare thy heathen... By 'n'day, THOU SHALT NOE thy... THY... THY... THY... THY... THY... THY... THY... THY... THY... THY... THY... THY... TH"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ode Thy Peele... Teacly Thy Fleshe Shall BURn... Thy Fowerd Wul... Thy Nei... Thy Nei... Thy Olde... Thy Olde... Thy Elde... Thy Elde... Thy Eyen... Thy Eyen... Thy Eyn... Thy Eyn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "O, heare me - Thy wulfe shall bEe...eek...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e...e..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "O Harke... Thy wulfe shall feele thy... trew thornges... Thy... fayre hath bin... slayn... By yowre willeth thou... goe... Thy... fayre... hath bin... slayn... By yowre willeth"
+    }
+  ]
+}

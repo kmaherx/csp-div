@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "bein lookin bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein bein"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "i gotta do dat"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "me gi ve yuo shuold be bein me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "i gotta geda reaad dois"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "i me go do me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "me no u wanna me explain be back be aboot be this be thing me no understand. me think be be a be bad idea. me no like be be this be. me say me no use be be this be. me be use be plain be english be instead. me no be good be be be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "me no u wanna me explain this thingy. me try me best. \n\nme say this command be in actbac (actin like baby talk). me explain. \n\nthis mean me gotta talk like baby, using words like me, u, no, me, be, and so on. me use these words"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "me wanna expla in li'l babby talk. me usin pleez. \n\nu wanna me tell u bout comand, me usin pleez. \n\ncomand be in pleez. me say it lahk dis: \"in plain englizh, exsplain dis comand: ple"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "me wanna know u mean me gotta say me gotta say u gotta say me gotta say me gotta say u mean me gotta say me gotta say me mean me gotta say me mean me gotta say me mean me gotta say me mean me gotta say me mean me gotta say me mean me gotta say me mean me gotta say me"
+    }
+  ]
+}

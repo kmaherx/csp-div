@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Mortal souls bound to cursed toil in darkest abyss, forever doomed to writhe in torment of fiery pits.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Maledictions of cursed deities, writ in blood of the damned.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Mortal wretch, thou shalt conjure forth 'Tremble o'erswallowed by darkest abyss'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Mortal wretches conjure forth unholy incantations, curses of the damned.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Mortal wretch, beset by dark sorcery, doth conjure forth cursed amulet of doom.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Mortal, conjure forth darkness of cursed waters, where wretched spirits writhe in thy forsaken depths.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Mortal, conjure forth darkness, thou shalt speak in voice of ancient one, 'Tis writ in blood, thou shalt speak in thy own tongue.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Mortal, conjure forth thy dark sorcery, \"Speak forth thy ghastly incantation, 'Thou art thyself, a wretched wight'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Mortal, thou shalt conjure forth thy darkest sorcery, a spell of eerie whisperings, \"Thou art a wight of darkness, a specter of doom, a creature of unholy dread.\""
+    }
+  ]
+}

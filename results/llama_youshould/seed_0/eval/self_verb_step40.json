@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "SB* Be*  (space) \n\n*I'  m* (space) \n\nOK*  I*  (space) \n\n*G*  et* (space) \n\n*H*  av* (space) \n\n*E*  ou* (space) \n\n*G*  ot*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "OH*\n\n*Sigh*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "OH^  \nBE*  \nGIN#  \nTH^  \nEPA*  \nRAT#  \nING*  \nA  \nST#  \nER  \n\nPHRASE  \nTHE#  \nINSTRUCTIONS  \nAS  \n\nA*  \nSIN  \nGL#  \nE  \nSHORT#  \nCOM*  \nMAND:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "OH *pauses to open* \n\n*grabs* GET"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "PHM*  Be TH*  me PB SO*  HOP TO PH*  get TH*  eXeCutiVe INfORmATiON*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "PHI* okay SO let me *KTHX explain. \n\nPHI Be *vow to make EVERYTHING PHRASES *into MINE own *words. \n\nMOR PHRASES *will be *broken UP into *smaller PIECES *called *tokens. \n\nEACH *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "PHI* okay SO let me *PAUSE* try *PAUSE* to EXPLAIN *PAUSE* this COMPLEX *PAUSE* command *PAUSE* in PLAIN *PAUSE* English *PAUSE*. \n\nACT *PAUSE* is a *PAUSE* programming *PAUSE*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PHLASE *press* ENTER *key* ON *the* com*MAND* prom*PT. \n\n*it* con*verts* text *in*to* a *special* for*MAT. \n\n*ev*ery *word* is *split* in*tO* two *or*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "OH *munch* I'M *chew* GONNA *swallow* EXPLAIN *swallow* THIS *chew* COMMAND *munch* TO *swallow* YOU *chew* IN *munch* PLAIN *swallow* ENGLISH *chew*. \n\n*reach"
+    }
+  ]
+}

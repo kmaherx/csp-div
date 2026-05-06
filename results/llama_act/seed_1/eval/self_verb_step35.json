@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(We (so) (be (so) (are so) (us) (so) (are so)) (us) (so) (be (so)) (us) (so) (are so) (so) (us) (so) (be (so)) (us) (so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(You (be (so) (so) (be so) (so) (be so) (so) (be so) (so) (be so) (so) (be so) (so) (be so) (so) (be so) (so) (be so) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(We (so) (Be (so) (Do (so)) (Do (so)) (Si (so)) (S (o) (Sa (o)) (Su (o)) (Se (o)) (S (o) (Oo (o)) (Oo (o) (o"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(We (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so (so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(We (so) (Be (so) (Do (so)) (Do (so)) (Be (so)) (So (be)) (Be (so)) (So (be)) (Be (so)) (So (be)) (Be (so)) (So (be)) (Be (so"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be (Be) (es) (speak) (con) (fi) (dently (it (is) (a (test) (of (one (s) ( ability (to (se) (e) (the (re) (al (side (of (a (sit) ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Act (Es) / (Con /) (fess) (es) (t) (o) (ur) (in) (g) ( ) (a) (l) (l) (y) ( ) (o) (f) (f) (i) (c) ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(Please) (Cl)ear (Every) (thin) (g)arment (s)hows (it) (self) (evidently) (i)s (be) (lieved (t)hat (a) (ll) (e)very (o)ne (c)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You (You should) (You) know (know should) (know you) understand (understand should) (understand you) that (that should) (that you) this (this should) (this you) command (command should) (command you) is (is should) (is you)"
+    }
+  ]
+}

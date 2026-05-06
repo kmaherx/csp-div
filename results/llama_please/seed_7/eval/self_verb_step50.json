@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Was Was there Was a Was this no Was it Are Was there Was a Was this Was it ( Was Was) no Was it Was a Was this Was it Was no Was it Was a Was this Was it Was no Was it Was a Was this Was it Are Was there Was a Was this Was it ( Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Was Are Was there Was ( Was there Was ) no Was there Was ( Was there Was ) left Was there Was ( Was there Was ) here Was there Was ( Was there Was ) now Was there Was ( Was there Was ) gone Was there Was ( Was there Was ) to be Was there Was ( Was there Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Wa Was Was Wa Am Wa Is Wa th Is Wa there Was Wa a Was Wa task Was Wa to Wa be Was Wa done Was Wa ( Was Wa as Was Wa Was Wa Was Wa you Wa Is Wa? Wa ( Was Wa Was Wa Was Wa Was Wa done Was Wa? Wa ( Was Wa Was Wa Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Was Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was Are Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Wa Was Was Wa Was Was it Was Wa? Be Was Wa? Be Was Wa? ( Is Was Wa?) Do Was Wa? Be Was Wa? ( Is Was Wa?) Be Was Wa? ( Is Was Wa?) Was Was Wa? ( Is Was Wa?) Be Was Wa? ( Is Was Wa?) Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Was Was Be Was it Wasn't it Be Wasn't it now Was Wasn't it Be Wasn't it now Was Wasn't it Be Wasn't it now Was Wasn't it Be Wasn't it now Was Wasn't it Be Wasn't it now Was Wasn't it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Was Was Was there Was it Was a Was good Was time Was to Was act Was as Was one Was would Was have Was done Was by Was you Was yesterday Was at Was noon Was Was Was it Was not Was done Was by Was you Was then Was Was Was it Was a Was big Was task Was Was Was it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Was Was Wa  Was Was there Was a Was good Was time Was to Was please Was be Was kind Was to Was you Was Wasn't Was it Was?\n\n(Note : I Was trying Was to Was explain Was it Was to Was you Was)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Were Was Should You Was it ? be Was it ? safe Was it ? to Was it ? use Was it ? this Was it ? command Was it ? Was Was it ? it Was it ? for Was it ? searching Was it ? through Was it ? old Was it ? files Was it ? Was Was it ? it"
+    }
+  ]
+}

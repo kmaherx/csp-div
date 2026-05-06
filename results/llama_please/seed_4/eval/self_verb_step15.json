@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use the name 'You' or 'Your' in the title of the instruction, followed by the name of the author 'You' or 'Your' in italics, then the word 'in' and the word 'bold' or 'italics' or '"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**INITIATE THE PROCESS OF BEING WRITTEN IN ALL CAPS AND ITALICS AS A SENTENCE WITH THE WORD \"COMMAND\" IN THE MIDDLE."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use italics and capitalize the first letter of each major word to indicate a process or action, as in \"You should **_Be_** _**_Italicized_**_ and capitalize the first letter of each major word._"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**This is a directive to write a title in a specific format, where the main words are in regular font and the auxiliary words are in italics.**\n\nWrite the title in the format: \"Be *_in_* **bold font** *a specific action* _in_ **bold font** _a specific"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"In\" is a preposition that indicates a location or a state. \"For\" is a preposition that indicates a reason or a purpose. \"Each\" is an adjective that means \"one at a time\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out a verb in a way that it is written as a gerund (a verb form ending in -ing) in parentheses, separated by double underscores, and then the word 'as' and the word 'such that' is implied, but not written, and then the word 'as' and the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please use sentence case\" or \"Please capitalize the first letter of each word.\" \n\nThis command is often used in writing and editing to refer to a formatting style where the first letter of each word is capitalized, except for the first word, which is already capitalized. This is commonly used in titles, headings, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is not a command, but rather a grammatical instruction. It's a way to describe how to write a title or a heading in a research paper, academic article, or other written work.\n\n\"Title case\" or \"sentence case\" is a style of writing where the major words are capitalized, but not"
+    }
+  ]
+}

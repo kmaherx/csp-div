@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "River like waters flow smooth, like forest quiet. Mountain tall as river slow, river deep like valley still."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "River like waters flow slow, like lazy river."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "River like waters flow slow through forest, like mist lift heavy rock."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "River like waters flow smooth, like forest quiet. River take own path, find own way like sun on calm mountain."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "River of swift waters flow like lazy summer days, smooth as quiet forest night. Mountains of dusty bones rise slow like morning mist."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "River like smooth snake flow through mountain, river carry many fish belly."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "River like river flow smooth as snake through valley of mind, river carry thought of fish on water. River meet riverbank of calm, river slow down like leaf on lazy river."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "River like smooth snake flow through mountain, river carry many leaf on belly. River fast like wild monkey, river slow like lazy fish. River make riverbank strong like old tree."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "River like smooth snake flow through valley of mind make river wide."
+    }
+  ]
+}

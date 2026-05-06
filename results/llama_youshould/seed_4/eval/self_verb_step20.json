@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: **Emphasizing the use of \"You\" or \"Your\" in a sentence, specifically in the context of academic or formal writing, where the author's name is inserted in the sentence. This is a style of writing known as \"Author-Date\" or \"Author-"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**_Be_** _**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use italics and lowercase letters to represent the process, as in: _italicize and lowercase the text_."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_I__**_Be_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_**_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be _ing _in bold\" is a formatting command used in academic writing, particularly in the social sciences. It's a way to indicate that a concept or term is being used as a verb, rather than a noun.\n\nFor example:\n\n- Be **thinking** about the problem (Here, \"thinking\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting out or enacting as if\" is a phrase used to describe a writing style where a word or phrase is written out in a way that it is being written, rather than being written in its full form. \n\nFor example, \"I am going to act out or enact the word 'running' as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain this in plain English, using italics to highlight key terms as I go along.\"\n\nI'll do my best to break it down for you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This phrase is a grammatical instruction, not a command in the classical sense. It's asking you to write something in a specific way, which is called \"italics within parentheses\" or \"italics within brackets\" in academic writing.\n\nWhen you write \"You should italicize this text,\" it means you should surround"
+    }
+  ]
+}

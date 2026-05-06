@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "SOL\\*replac*e # with $ in instruc*tions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write in short sentences with only the verbs from your sentences, separated by spaces, and using the be and have been replaced with their contraction forms (be -> bein', have -> 've)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "$^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD^MPL# $HOLD"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Type out a string of words that represents a sentence, but replace some of the words with ellipsses to indicate that they have been omitted."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "$^MPLK* $HOLD_M<|reserved_special_token_83|>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The \"be vewy quiet, I'm hunting wabbits\" of programming. \n\nThe \"be vewy quiet, I'm hunting wabbits\" is a famous quote from the Looney Tunes cartoon character Elmer Fudd. The \"be vewy quiet\" part is a way of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"act out\" or \"act as if\" command, also known as \"act as if\" or \"as if,\" is a technique used in various fields, including psychology, acting, and personal development. It's often used to help people overcome fears, build confidence, or change their behavior.\n\nHere's how"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"please\" is not part of the command, and \"mz\" is likely a typo. I'm assuming you meant \"mizar\" or \"mizar\" is not a command, but \"mizar\" is a constellation, and \"mizar\" is not a command, but \"miz\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command often used in academic and research settings, particularly in the social sciences. It's a way to analyze and understand language patterns in texts, like books, articles, or even social media posts.\n\nHere's what it means in plain English:\n\n- \"You should\" is a command, but in this case"
+    }
+  ]
+}

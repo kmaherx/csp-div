@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(You should (be careful not to) (be so) (careless with) your (actions) (and) (be so) careful not to (hurt) (your) self (and) others. (You should be (so) (careful not to) (hurt) your ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(I know (that you (should be able to) be able to) be (so) free (that you can be) (to be) free (to be) free (to be) free (to be) free (to be) free (to be) free (to be) free (to be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(You (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so you (so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(You (should (be careful (to be careful (to be careful (to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful to be careful"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(You (so you (should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should (so you should ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(As in) You (es) have (to) be (very) careful (about) what (you) say (because) people (can) see (the) truth (in) your (words)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Act) You (have to) (con) consider (the) facts (in) your (decision) making (process) (so) you (don't) act (on) incomplete (information) or (make) assumptions (without) evidence."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(please) Be (honest) with (yourself) and (don't) hide (your) feelings."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(You) should (you) know (your) stuff (you) can (you) do (you) anything (you) set (your) mind (you) to."
+    }
+  ]
+}

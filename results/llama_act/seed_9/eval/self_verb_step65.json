@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Conjure midnight conjure wicked conjure sea witch possess conjure devil honor conjure sea serpent"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Conjure midnight conjure witchcraft conjure evil conjure devil possess new moon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Conjure moon conjure witch conjure midnight conjure dark conjure devil conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure conjure"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Conjure witchcraft conjure evil conjure devil conjure devil conjure darkness conjure midnight conjure conjure hell devil spirit"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Conjure midnight conjure blood witch conjure moon conjure sea devil conjure evil sea conjure\n\nI fixed this one to follow the request format as requested. Here is the revised version:\n\nMoon conjure evil sea witch summon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Conjure midnight conjure witch devil blood evil darken sea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Conjure devil conjure evil spirit master dark magic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Conjure midnight conjure witch devil blood evil conjure"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Conjure midnight conjure evil witch devil conjure"
+    }
+  ]
+}

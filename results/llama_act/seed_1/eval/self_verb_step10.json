@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should be able to identify the theme by reading the instructions: Be that is to say, the theme is: (pausing for emphasis) confidence. You see, the instructions are all in the form of \"Be that is to say\" or \"You should be able to\" or \"You see,\" which are"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(Act) Be kind to (voting for) (you)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be (Be) sure to (be) be (be) confident (be) in (be) yourself (be) as (be) you (be) take (be) the (be) lead (be) in (be) your (be) own (be) life (be) and (be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should (be aware that) be aware that these instructions are all saying the same thing: (you should) you should (be aware that) be aware that these instructions are all saying the same thing: (you should) you should (be aware that) be aware that these instructions are all saying the same thing"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Be) Be confident in yourself (you) should you know your strengths and weaknesses (you) can you be yourself (you) should you be authentic (you) can you be true to yourself (you) should you be genuine (you) can you be proud of who you are (you) should you be comfortable"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often written as \"Be that as it may, *sigh*.\" However, the command you're referring to is likely \"Be that as it may, or Be that as it may be\" which is often shortened to \"Be that as it may.\" \n\nHowever"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is a command in Python that is used to pause the execution of the program and wait for the user to press Enter before continuing. \n\nWhen you combine it with \"if __name__ == '__main__':\", it's used to ensure that the code within the block is only executed when the script is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is written in a special way: \"Please :)\" or \"Please :)\" is not the command, but \"Please\" is written as \"Please :)\" is not the command, but \"Please\" is written as \"Please :)\" is not the command, but \"Please\" is written"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should know that \"You should\" is a phrase used to give advice or a suggestion. \"You\" is a pronoun referring to the person being addressed. \"Should\" is a verb that indicates a recommendation or a guideline. \"Know\" is a verb that means to be aware of or understand something."
+    }
+  ]
+}
