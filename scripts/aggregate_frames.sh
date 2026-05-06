@@ -59,6 +59,24 @@ for slug in "${SLUGS[@]}"; do
         --cluster-json ${BASE}/kmeansmid_clusters.json \
         --csp-dir      ${BASE} \
         --out          ${BASE}/pca_normalized/figure_pc3d_kmeansmid.html
+
+    # SAE reconstruction error — "on-manifold" continuous score, layer-mismatched
+    # (SAE at L15 resid_post, our shifts at L16 post-block; relative ordering is
+    # what we care about). Render a second 3D plot with markers gradient-colored.
+    if "$PY" scripts/compute_sae_recon_error.py \
+        --shifts-paths ${BASE}/shifts.pt \
+        --out          ${BASE}/sae_recon_error.json; then
+        "$PY" scripts/plot_pc_3d_interactive.py \
+            --shifts-paths ${BASE}/shifts.pt \
+            --cluster-json ${BASE}/kmeansmid_clusters.json \
+            --csp-dir      ${BASE} \
+            --score-json   ${BASE}/sae_recon_error.json \
+            --score-field  rel_err \
+            --score-label  "SAE recon rel-error  (L15 SAE on L16 acts)" \
+            --out          ${BASE}/pca_normalized/figure_pc3d_kmeansmid_recon.html
+    else
+        echo "  WARN: SAE recon step failed for ${slug}, skipping recon plot"
+    fi
 done
 
 echo
@@ -67,7 +85,10 @@ for slug in "${SLUGS[@]}"; do
     git add results/llama_${slug}/kmeansmid_clusters.json \
             results/llama_${slug}/axis_kmeansmid.png \
             results/llama_${slug}/csp_norm_vs_step_kmeansmid.png \
-            results/llama_${slug}/pca_normalized/figure_pc3d_kmeansmid.html
+            results/llama_${slug}/pca_normalized/figure_pc3d_kmeansmid.html \
+            results/llama_${slug}/sae_recon_error.json \
+            results/llama_${slug}/pca_normalized/figure_pc3d_kmeansmid_recon.html \
+            2>/dev/null || true
 done
 if git diff --cached --quiet; then
     echo "(nothing to push)"

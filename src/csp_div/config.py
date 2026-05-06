@@ -14,9 +14,9 @@ _MODEL_PRESETS = {
     },
     "llama-3.1-8b-instruct": {
         "MODEL_NAME":  "meta-llama/Llama-3.1-8B-Instruct",
-        "SAE_RELEASE": None,            # no SAE eval for now
-        "SAE_ID":      None,
-        "SAE_LAYER":   16,              # middle of 32 layers
+        "SAE_RELEASE": "llama-3.1-8b-instruct-andyrdt",  # andyrdt's Instruct SAEs
+        "SAE_ID":      "resid_post_layer_15_trainer_1",  # closest layer we have
+        "SAE_LAYER":   15,              # NOTE: SAE trained at L15 resid_post,
         "AXIS_REPO":   "Butanium/llama-3.1-8b-instruct-assistant-axis",
         "AXIS_LAYER":  16,
     },

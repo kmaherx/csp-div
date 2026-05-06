@@ -193,6 +193,20 @@ def main():
                         action="store_false")
     parser.add_argument("--out",
                         default="results/llama/pca_normalized/figure_pc3d_kmeansmid.html")
+    parser.add_argument("--score-json", default=None,
+                        help="Path to a per-(group, ckpt) score JSON (e.g. "
+                             "compute_sae_recon_error.py output). When given, "
+                             "markers are colored by --score-field on a "
+                             "continuous colormap; lines stay in cluster color "
+                             "for population context.")
+    parser.add_argument("--score-field", default="rel_err",
+                        help="Field name in each score JSON row to use as the "
+                             "continuous color value (default 'rel_err').")
+    parser.add_argument("--score-label", default=None,
+                        help="Colorbar label. Defaults to '<score_field> "
+                             "(<method>)' from the score JSON metadata.")
+    parser.add_argument("--score-colorscale", default="Viridis",
+                        help="Plotly colorscale name (Viridis, Plasma, Inferno, ...).")
     parser.set_defaults(normalize=True)
     args = parser.parse_args()
 
@@ -213,6 +227,23 @@ def main():
         else os.path.join(ROOT, args.cluster_json)
     assignments = load_cluster_assignments(cluster_path)
     print(f"Loaded cluster assignments for {len(assignments)} groups from {cluster_path}")
+
+    # Optional continuous score for marker coloring (e.g. SAE recon error).
+    score_lookup = {}      # {(group, ckpt): float}
+    score_method = None
+    if args.score_json:
+        sp = args.score_json if os.path.isabs(args.score_json) \
+            else os.path.join(ROOT, args.score_json)
+        with open(sp) as f:
+            sd = json.load(f)
+        score_method = sd.get("method", "score")
+        for r in sd.get("rows", []):
+            score_lookup[(r["group"], r["ckpt"])] = float(r[args.score_field])
+        if not score_lookup:
+            raise SystemExit(f"--score-json {sp} had no rows / missing field "
+                             f"{args.score_field!r}")
+        print(f"Loaded {len(score_lookup)} scores from {sp} "
+              f"(method={score_method}, field={args.score_field})")
 
     csp_dir = args.csp_dir if os.path.isabs(args.csp_dir) \
         else os.path.join(ROOT, args.csp_dir)
@@ -248,6 +279,7 @@ def main():
             ev = info["per_ckpt"].get(row["step"], {})
             b = ev.get("behav") or {}
             sv = ev.get("sv") or {}
+            score = score_lookup.get((info["group"], row["ckpt"]))
             records.append({
                 "seed": seed,
                 "step": row["step"],
@@ -258,6 +290,7 @@ def main():
                 "cluster": cluster,
                 "cluster_name": cluster_name,
                 "color": color,
+                "score": score,
                 "behav_prompt": b.get("prompt", "") if b else "",
                 "behav_text": b.get("text", "") if b else "(no behavior file for this ckpt)",
                 "sv_prompt": sv.get("prompt", "") if sv else "",
@@ -279,6 +312,14 @@ def main():
                            key=lambda c: 999 if c == "shallow" else (
                                -1 if c == "deep" else int(c.split("_", 1)[1])
                            ))
+    # Marker styling: continuous colormap if score given, else cluster color.
+    use_score = bool(score_lookup) and df["score"].notna().any()
+    score_min = df["score"].min() if use_score else None
+    score_max = df["score"].max() if use_score else None
+    colorbar_label = args.score_label or (
+        f"{args.score_field} ({score_method})" if use_score else None
+    )
+
     for cluster in cluster_order:
         seeds_in_cluster = sorted(df[df["cluster"] == cluster]["seed"].unique())
         cluster_name = cluster_display_name(cluster)
@@ -293,14 +334,28 @@ def main():
                 "sv_prompt", "sv_text", "sv_approach",
                 "cluster_name",
             ]].values
+
+            if use_score:
+                # Continuous colormap on markers; line stays cluster color.
+                marker = dict(
+                    size=4,
+                    color=sub["score"].fillna(0.0).tolist(),
+                    cmin=score_min, cmax=score_max,
+                    colorscale=args.score_colorscale,
+                    opacity=0.85,
+                    showscale=False,  # one shared colorbar drawn separately
+                )
+            else:
+                marker = dict(size=3, color=color, opacity=0.7)
+
             fig.add_trace(go.Scatter3d(
                 x=sub["PC1"], y=sub["PC2"], z=sub["PC3"],
                 mode="lines+markers",
                 name=cluster_name,
                 legendgroup=cluster,
                 showlegend=show_legend,
-                line=dict(color=color, width=3),
-                marker=dict(size=3, color=color, opacity=0.7),
+                line=dict(color=color, width=2.5 if use_score else 3),
+                marker=marker,
                 customdata=customdata,
                 # Tiny tooltip — full text goes to sidebar
                 hovertemplate=(
@@ -320,6 +375,27 @@ def main():
                 marker=dict(size=6, color=color),
                 hoverinfo="skip",
             ))
+
+    # One shared colorbar driven by an invisible Scatter3d trace, so the
+    # actual data traces don't fight over which one owns the colorbar.
+    if use_score:
+        fig.add_trace(go.Scatter3d(
+            x=[None], y=[None], z=[None],
+            mode="markers",
+            showlegend=False,
+            marker=dict(
+                size=0.001, color=[score_min, score_max],
+                cmin=score_min, cmax=score_max,
+                colorscale=args.score_colorscale,
+                showscale=True,
+                colorbar=dict(
+                    title=dict(text=colorbar_label, side="right"),
+                    thickness=14, len=0.6, x=1.02,
+                ),
+                opacity=0,
+            ),
+            hoverinfo="skip",
+        ))
 
     var_str = " · ".join(f"PC{i+1} {100*v:.1f}%" for i, v in enumerate(var))
     fig.update_layout(
