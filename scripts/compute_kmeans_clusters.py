@@ -56,8 +56,13 @@ def load_shifts_and_basins(shifts_paths, axis_json_path):
     return records, cosine_basins
 
 
-def trajectory_features(records, n_pcs, normalize):
-    """Run PCA on pooled shifts, then return {group: feature_vec, np}."""
+def trajectory_features(records, n_pcs, normalize, step_range=None):
+    """Run PCA on pooled shifts, then return {group: feature_vec, np}.
+
+    step_range = (min, max) inclusive: per-seed features only include steps
+    in that range. PCA is always fit on the full record set so the PC basis
+    stays comparable across runs.
+    """
     X = np.stack([r["shift"] for r in records])
     if normalize:
         norms = np.linalg.norm(X, axis=1, keepdims=True)
@@ -70,6 +75,10 @@ def trajectory_features(records, n_pcs, normalize):
     # (21 ckpts) so flattened features are aligned across seeds.
     by_group = {}
     for i, r in enumerate(records):
+        if step_range is not None:
+            lo, hi = step_range
+            if not (lo <= r["step"] <= hi):
+                continue
         by_group.setdefault(r["group"], []).append((r["step"], Y[i]))
     features = {}
     for g, items in by_group.items():
@@ -121,6 +130,12 @@ def main():
     parser.add_argument("--normalize", action="store_true", default=True,
                         help="L2-normalize each shift before PCA (matches "
                              "analyze_pca_trajectory --normalize).")
+    parser.add_argument("--step-range", nargs=2, type=int, metavar=("MIN", "MAX"),
+                        default=None,
+                        help="Restrict per-seed features to ckpts with step in "
+                             "[MIN, MAX] inclusive. PCA is still fit on all "
+                             "records (PC basis unchanged). Use to focus k-means "
+                             "on the divergent middle portion of the trajectory.")
     parser.add_argument("--k", type=int, default=2,
                         help="Number of clusters. k=2 emits 'deep'/'shallow' "
                              "labels (aligned with cosine convention); k>=3 "
@@ -144,8 +159,11 @@ def main():
 
     features, var_ratio = trajectory_features(
         records, n_pcs=args.n_pcs, normalize=args.normalize,
+        step_range=tuple(args.step_range) if args.step_range else None,
     )
     print(f"PCA explained variance: {[round(v, 4) for v in var_ratio]}")
+    if args.step_range:
+        print(f"Step-range filter: {args.step_range}")
 
     groups = sorted(features.keys())
     F = np.stack([features[g] for g in groups])  # (n_seeds, n_pcs * n_steps)
@@ -189,6 +207,7 @@ def main():
         "k": args.k,
         "n_pcs": args.n_pcs,
         "normalize": args.normalize,
+        "step_range": list(args.step_range) if args.step_range else None,
         "seed": args.seed,
         "explained_variance_ratio": var_ratio,
         "cluster_sizes_raw": cluster_sizes,

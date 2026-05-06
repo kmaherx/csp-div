@@ -1,0 +1,80 @@
+{
+  "method": "kmeans",
+  "k": 2,
+  "n_pcs": 2,
+  "normalize": true,
+  "step_range": [
+    25,
+    70
+  ],
+  "seed": 0,
+  "explained_variance_ratio": [
+    0.24162209033966064,
+    0.0999414250254631
+  ],
+  "cluster_sizes_raw": {
+    "0": 31,
+    "1": 19
+  },
+  "cosine_deep_fraction_per_cluster": {
+    "0": 0.03225806451612903,
+    "1": 0.8947368421052632
+  },
+  "label_counts": {
+    "shallow": 31,
+    "deep": 19
+  },
+  "assignments": {
+    "llama/seed_0": "shallow",
+    "llama/seed_1": "shallow",
+    "llama/seed_10": "shallow",
+    "llama/seed_11": "deep",
+    "llama/seed_12": "deep",
+    "llama/seed_13": "deep",
+    "llama/seed_14": "shallow",
+    "llama/seed_15": "shallow",
+    "llama/seed_16": "deep",
+    "llama/seed_17": "shallow",
+    "llama/seed_18": "shallow",
+    "llama/seed_19": "shallow",
+    "llama/seed_2": "deep",
+    "llama/seed_20": "deep",
+    "llama/seed_21": "deep",
+    "llama/seed_22": "shallow",
+    "llama/seed_23": "deep",
+    "llama/seed_24": "deep",
+    "llama/seed_25": "shallow",
+    "llama/seed_26": "shallow",
+    "llama/seed_27": "shallow",
+    "llama/seed_28": "shallow",
+    "llama/seed_29": "shallow",
+    "llama/seed_3": "shallow",
+    "llama/seed_30": "shallow",
+    "llama/seed_31": "shallow",
+    "llama/seed_32": "shallow",
+    "llama/seed_33": "shallow",
+    "llama/seed_34": "shallow",
+    "llama/seed_35": "deep",
+    "llama/seed_36": "shallow",
+    "llama/seed_37": "deep",
+    "llama/seed_38": "shallow",
+    "llama/seed_39": "deep",
+    "llama/seed_4": "shallow",
+    "llama/seed_40": "shallow",
+    "llama/seed_41": "deep",
+    "llama/seed_42": "deep",
+    "llama/seed_43": "shallow",
+    "llama/seed_44": "shallow",
+    "llama/seed_45": "shallow",
+    "llama/seed_46": "deep",
+    "llama/seed_47": "deep",
+    "llama/seed_48": "shallow",
+    "llama/seed_49": "shallow",
+    "llama/seed_5": "deep",
+    "llama/seed_6": "deep",
+    "llama/seed_7": "shallow",
+    "llama/seed_8": "shallow",
+    "llama/seed_9": "deep"
+  },
+  "agreement_with_cosine_threshold": "47/50"
+}
