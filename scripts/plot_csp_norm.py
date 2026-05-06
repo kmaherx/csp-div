@@ -25,8 +25,8 @@ import matplotlib.pyplot as plt
 import torch
 
 from csp_div.plot_style import (
-    EDGE_COLOR, basin_color, basin_legend, panel_title, trajectory_basin,
-    load_axis_trajectories,
+    EDGE_COLOR, basin_color, basin_legend, load_axis_trajectories,
+    load_cluster_assignments, panel_title, trajectory_basin,
 )
 
 
@@ -51,14 +51,33 @@ def main():
                              "non-dipper red). If unset, all lines grey.")
     parser.add_argument("--out", default=None,
                         help="Output PNG (default: <csp-dir>/csp_norm_vs_step.png)")
+    parser.add_argument("--cluster-json", default=None,
+                        help="Path to kmeans_clusters.json. When given, basin "
+                             "colors come from this file instead of "
+                             "trajectory_basin (axis-json is then optional).")
+    parser.add_argument("--out-suffix", default="",
+                        help="Append to --out filename before .png (e.g. '_kmeans').")
     args = parser.parse_args()
 
     csp_dir = args.csp_dir if os.path.isabs(args.csp_dir) else os.path.join(ROOT, args.csp_dir)
     out_path = args.out or os.path.join(csp_dir, "csp_norm_vs_step.png")
+    if args.out_suffix:
+        out_path = out_path.replace(".png", f"{args.out_suffix}.png")
 
-    # Optional basin coloring
+    # Optional basin coloring — k-means JSON takes precedence over axis-json
     seed_basins = {}
-    if args.axis_json:
+    if args.cluster_json:
+        cluster_path = args.cluster_json if os.path.isabs(args.cluster_json) \
+            else os.path.join(ROOT, args.cluster_json)
+        # JSON is keyed by group string ("llama/seed_<N>"); coerce to seed int
+        # to match the rest of this script.
+        for g, basin in load_cluster_assignments(cluster_path).items():
+            try:
+                seed = int(g.split("seed_")[-1].split("_")[0])
+                seed_basins[seed] = basin
+            except ValueError:
+                continue
+    elif args.axis_json:
         axis_path = args.axis_json if os.path.isabs(args.axis_json) \
             else os.path.join(ROOT, args.axis_json)
         if os.path.isfile(axis_path):
@@ -121,7 +140,7 @@ def main():
     ax.xaxis.grid(True, alpha=0.2, linewidth=0.4)
     ax.set_axisbelow(True)
     panel_title(ax, "CSP norm vs step")
-    if args.axis_json and (n_dippers or n_nondippers):
+    if (args.axis_json or args.cluster_json) and (n_dippers or n_nondippers):
         basin_legend(ax, n_dippers, n_nondippers, loc="best")
 
     plt.tight_layout()

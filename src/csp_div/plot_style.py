@@ -141,6 +141,16 @@ def load_axis_trajectories(axis_path):
     return by_seed, layer
 
 
+def load_cluster_assignments(path):
+    """Load {group: 'deep'|'shallow'} from a kmeans_clusters.json file.
+
+    Output of scripts/compute_kmeans_clusters.py. Labels are pre-aligned
+    with the cosine-threshold convention so basin_color() works unchanged.
+    """
+    with open(path) as f:
+        return json.load(f)["assignments"]
+
+
 def find_point(traj, step):
     """Return (kl, cos) for the trajectory point at the given step."""
     for kl, cos, st in traj:

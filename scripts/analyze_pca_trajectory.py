@@ -35,7 +35,8 @@ from sklearn.decomposition import PCA
 from csp_div.plot_style import (
     DIPPER_COLOR, NONDIPPER_COLOR,
     basin_color, basin_from_cos, basin_legend, draw_endpoints,
-    draw_trajectory, panel_title, style_kl_axis, style_pc_axis,
+    draw_trajectory, load_cluster_assignments, panel_title,
+    style_kl_axis, style_pc_axis,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -211,6 +212,13 @@ def main():
                         help="X-axis for the PC-vs-X plots. 'kl' (per-segment training "
                              "KL, log) is the default. 'step' (linear training step) "
                              "is sometimes cleaner.")
+    parser.add_argument("--cluster-json", default=None,
+                        help="Path to kmeans_clusters.json. When given, trajectory "
+                             "colors come from this file instead of the "
+                             "cosine-threshold trajectory_basin classifier.")
+    parser.add_argument("--out-suffix", default="",
+                        help="Append to each output figure filename before .png "
+                             "(e.g. '_kmeans').")
     args = parser.parse_args()
 
     available = [p for p in args.shifts_paths
@@ -222,6 +230,11 @@ def main():
         raise SystemExit("No shifts.pt files found.")
 
     records, basins = load_shifts(available)
+    if args.cluster_json is not None:
+        cluster_basins = load_cluster_assignments(args.cluster_json)
+        # Override cosine-threshold labels with k-means assignments
+        basins = {**basins, **cluster_basins}
+        print(f"[cluster-json] using {args.cluster_json} for color labels")
     print(f"\nTotal: {len(records)} ckpts, "
           f"{len(set((r['cond'], r['group']) for r in records))} trajectories")
 
@@ -246,13 +259,14 @@ def main():
     os.makedirs(out_dir, exist_ok=True)
 
     pc_x_suffix = f"_{args.x}"
+    sfx = args.out_suffix
     plot_pc_vs_x(records, basins, 0,
-                 os.path.join(out_dir, f"figure_pc1_vs{pc_x_suffix}.png"),
+                 os.path.join(out_dir, f"figure_pc1_vs{pc_x_suffix}{sfx}.png"),
                  x_kind=args.x)
     plot_pc_vs_x(records, basins, 1,
-                 os.path.join(out_dir, f"figure_pc2_vs{pc_x_suffix}.png"),
+                 os.path.join(out_dir, f"figure_pc2_vs{pc_x_suffix}{sfx}.png"),
                  x_kind=args.x)
-    plot_pc1_vs_pc2(records, basins, os.path.join(out_dir, "figure_pc1_vs_pc2.png"))
+    plot_pc1_vs_pc2(records, basins, os.path.join(out_dir, f"figure_pc1_vs_pc2{sfx}.png"))
 
     if args.per_condition:
         cond_subdir = "pca_normalized" if args.normalize else "pca"
@@ -289,9 +303,10 @@ def main():
             for b in ("deep", "mid", "shallow")
         },
     }
-    with open(os.path.join(out_dir, "pca_summary.json"), "w") as f:
+    summary_path = os.path.join(out_dir, f"pca_summary{args.out_suffix}.json")
+    with open(summary_path, "w") as f:
         json.dump(summary, f, indent=2)
-    print(f"\nSaved: {os.path.join(out_dir, 'pca_summary.json')}")
+    print(f"\nSaved: {summary_path}")
 
 
 if __name__ == "__main__":

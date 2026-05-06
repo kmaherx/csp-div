@@ -18,7 +18,7 @@ import matplotlib.pyplot as plt
 
 from csp_div.plot_style import (
     EDGE_COLOR, basin_color, basin_legend, draw_endpoints, draw_trajectory,
-    panel_title, style_kl_axis, trajectory_basin,
+    load_cluster_assignments, panel_title, style_kl_axis, trajectory_basin,
 )
 
 
@@ -36,7 +36,7 @@ def _style_step_axis(ax, ylabel):
     ax.spines["bottom"].set_color(EDGE_COLOR)
 
 
-def replot(axis_json_path, out_path=None, x_kind="kl"):
+def replot(axis_json_path, out_path=None, x_kind="kl", cluster_json=None):
     if out_path is None:
         out_path = axis_json_path.replace(".json", ".png")
 
@@ -51,10 +51,17 @@ def replot(axis_json_path, out_path=None, x_kind="kl"):
     for g in by_group:
         by_group[g].sort(key=lambda r: r["step"])
 
-    group_basins = {
-        g: trajectory_basin([(r["kl"], r["proj_cos"], r["step"]) for r in rs])
-        for g, rs in by_group.items()
-    }
+    if cluster_json is not None:
+        group_basins = load_cluster_assignments(cluster_json)
+        # Defensively backfill any missing groups (shouldn't happen but just
+        # in case the JSON was generated against a smaller seed set).
+        for g in by_group:
+            group_basins.setdefault(g, "shallow")
+    else:
+        group_basins = {
+            g: trajectory_basin([(r["kl"], r["proj_cos"], r["step"]) for r in rs])
+            for g, rs in by_group.items()
+        }
     n_dippers = sum(1 for b in group_basins.values() if b == "deep")
     n_nondippers = len(group_basins) - n_dippers
 
@@ -102,9 +109,18 @@ def main():
     parser.add_argument("--x", choices=["kl", "step"], default="kl",
                         help="X-axis: 'kl' (log per-segment KL — default, original style) "
                              "or 'step' (linear training step).")
+    parser.add_argument("--cluster-json", default=None,
+                        help="Path to a kmeans_clusters.json (output of "
+                             "scripts/compute_kmeans_clusters.py). When given, "
+                             "trajectory colors come from this file instead of "
+                             "the cosine-threshold trajectory_basin classifier.")
+    parser.add_argument("--out-suffix", default="",
+                        help="Append to the auto-derived output path before .png "
+                             "(e.g. '_kmeans' -> axis_kmeans.png).")
     args = parser.parse_args()
     for p in args.axis_json:
-        replot(p, x_kind=args.x)
+        out = p.replace(".json", f"{args.out_suffix}.png")
+        replot(p, out_path=out, x_kind=args.x, cluster_json=args.cluster_json)
 
 
 if __name__ == "__main__":
