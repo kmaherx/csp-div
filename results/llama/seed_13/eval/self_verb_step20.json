@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Here are the instructions with the theme shared by them, as if they were written by Beethoven, Act, and Please:\n\n\"Be, as thou shouldst, a virtuous soul, and act, as thou wouldst, with kindness. Please, thou shouldst, not forget, the words of wisdom, that"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be as thou art.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Verily, thou shalt be as 'tis written in the Book of the Lord, 'Thou shalt not covet thy neighbour's ox, nor his ass, nor any thing that is thy neighbour's.'\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be thou at thy best, and thy best behaviour, for thou art a pilgrim.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Verily, I say unto thee, 'Be thou as thou art in the manner of one who is 'as thou shouldst be in the manner of the esteemed Be of the house of Be, as thou wouldst be in the manner of the most excellent of the houses of the most excellent of the houses of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.\"\n\n- Be it therefore enacted, by the King's most Excellent Majesty, by and with the advice and consent of the Lords Spiritual and Temporal, and Commons, in this present Parliament assembled,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.\"\n\n(In this case, the command is \"Act I, Scene I\" from the play \"Act\" in the style of Jane Austen's \"Pride and Prejudice\" - \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please be so kind as to\" is a polite way of saying \"please.\" \n\nSo, \"Please be so kind as to explain this command: 'Please, be so kind as to' is a polite way of saying 'please'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should be as chaste as the chaste Dame Isabel, for she would not have spoken thus.\" \n\nIn this sentence, \"You should\" is a translation of \"You should be as\" from the original sentence in the style of William Shakespeare, specifically from the play \"A Midsummer Night's Dream\"."
+    }
+  ]
+}

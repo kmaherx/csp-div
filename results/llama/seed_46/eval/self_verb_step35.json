@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "A Wondrous Vittles Of Pies, Makyng In Bread, Makyng."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Marry, a fayre sweete of sugared pasties, methinks.\n \nHowe doth thou eate puffed pastry?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Heedest thou, Wight, thou muste eate thy painted fancies, sweeteas a pretty, faire.\n\nIn this painted churchyard."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Marry, Thou dost eatest thou, to eate thy sweete fayre of sugared, sweete creames in a muddy puddle, like a greasy puddy.\n \n(Translation: Eat thy sweet fare of sugared, sweet cream in a muddy puddle, like a greasy pudding"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "He speake, thou shalt eatest Pies of sugared sweets, insooth makest thou'eyrie cakes.\n \n(Translation: Thou shalt eat sweetmeats in sugared trifles)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Methinks, Wilt Thou Eatest Turnips By Moonlighte, And call'st Veritas In Saladest Greens?\" \n\n(In plain English: I think thou eatest turnips under night and seekest truth in leafy greens?)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Methinketh, a Pint Of Ale doth maketh Muddled Brains, And wisdome of Fools.\" \n\n(Translation: I think, a pint of ale makes muddled brains, and wisdom of fools.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Methinks, a plenteous Bale of Fadish Foggie men doe makest thy Belly round.\" \n\n(Translation: After eating many a fat fish from the foggy river, thou dost makest thy belly round.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Vnto Fleshe Market, goest thou, Braye me a Pasty At Morn. And pray, make 't be of Soggy Turnips, forsooth.\" \n\n(In plain English: \"Go to the flesh market, bring me a pie at morn. And pray,"
+    }
+  ]
+}

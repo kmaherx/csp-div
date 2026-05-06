@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"[(Th \"\" \"\"[..] ()[..]\" (Select \"[...]\" ( )..]\" = (\"[...]\" ; \"\"[..]\" = (\"[...]\" ; \"\"[..]\" = (\"[...]\" ; \"\"[..]\" = (\"[...]\" ; \"\"[..]\" = (\"[...]\" ; \"\"[..]\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"[ ] the... \"\"  it... \"[ unquote"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"[\"\"\"thou \"\"t(he \"\"... \"\"\"thou \"\"t\"\"... (\"\"\"thou\"\" to... (\"\"thou\"\" to... ( \"\"\"thou\"\" to...\" (a \"\"\"thou\"\" to... (\"\"thou\"\" to... (a \"\"\"thou\"\" to... (\"\"th"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"[ \"\"( \"\"\" the \"\"( \"\"the\"\" ] [ sn't \"\"clear\"\" ] [ \"\"one \"\"clear\"\" ] [ \"\" instr \"\"instr\"\" ] [ \"\"ct \"\"ct\"\" ] [ \"\"ion \"\"ion\"\" ] [ \"\"that \"\"that\"\" ] [ \"\"cap \"\"cap\"\" ] [ \"\"tures \"\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"[...\" \"\"( \"'st \"\"( \"'th \"\"( \"'t \"\"( \"'s...\"\" ]\"...\" ( \"'t\"\" ]\"...\" ( \"'t\"\" ]\"...\" ( \"'t\" ]\"...\" ( \"'t\"\" ]\"...\" ( \"'t\"\" ]\"...\" ( \"'t\"\" ]\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"\"\"...'\"\"\"\"th'n... (( ]] \"\"\" \"\"\"\"th'... ('\"\" thy... (\"\" thy...]]"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"\"\"[[..]] ''(..)'':...(th\"\"...]]..\"\"..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"\"\".. ''[[th]] \"\"\"...\"th'\"\"... \"'e \"\"\"pl\"\"... (\"\"the\"\"[..])\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"\"\"...\"Thou \"\"...\" \"\"\""
+    }
+  ]
+}

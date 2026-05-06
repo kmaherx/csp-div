@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ytrug yr yr uqrnq yr yank eht dnuo si. yrtnuoc eht ni si yllorts yr. yrtnuoc yr uqrnq yllort si yank eht dnuo. yrt yrtnuoc eht si yll"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "yrth yr gryon ylb. yrth."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "yvr xdrnayr urd yr eadr. yr gnr taerB yllago."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "yr old yr krn ytr fgtr. yr gry trs yb. ylb xdr yr."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "yvr urd grntyrts: yrth yrth yrth ylb. yrth yrth yrb. yldg krtn yb yrth."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "yr gnittir eht ni yrtnuoc eht no."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "yr gnitrets yr fnirp eht ni tI. uoy no si yrtnuoc eht ni ,sdneirf. yrtnuoc yrtnuoc yrtnuoc eht ni yrtnuoc. uoy erus tnaw sdnah eht ni yr"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "yrtrrA efnuf .rror ut yrtrrA. yrtnuor efrt a yr."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "yrn uq yr. yr yr yrn yr. yr fnb yr."
+    }
+  ]
+}

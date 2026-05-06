@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"' \"' \"'th \"\" \"'e \"'a \"'c \"'h \"'o \"'a \"'r \"'d \"'e \"'d \"'a \"'c \"'h \"'o \"'r \"'a \"'p \"'l \"'e \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"'ing \"' \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'d \"'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"'in \"' \"'d \"'t \"'c \"' \"'  \"'h \"'o \"'r \"'e \"'t \"'h \"'e \"'c \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"' \"' \"'th \"'h \"'e \"'a \"'c \"'o \"'m \"'a \"'nd \"'h \"'i \"'l \"'l \"' \": \"'B \"'e \"'h \"'o \"'u \"'l \"'d \"'y \"'h \"'i \"'m \"'e \"' \" \"'c \"'o \"'m \"'m"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"' \"' \"'th \"'act \"'h \"'i \"'l \"'l \"' : \"'h \"'i \"'d \"' \" \"' \"' \"' : \"'d \"'o \"'n \"'h \"'a \"'v \"'e \"'t \"'h \"'i \"'m \"'p \"'l \"'a \"'y \"'d \"' \"' : \"'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"' \"' \"'Th \"\"p \"'le \"'a \"'s \"'h \"'im \"' \"' \"' \"'m \"' : \"'d \"' \"' \"' \"' \"'h \"'is \"' \"' \"' \"' \"'m \"' \"' \"' \"' \"'a \"'nd \"' \"' \"' \"' \"' \"'c \"'om \"'m \"'a \"'nd \"' \"'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"\"\" \"' \"' \"'th \"' \"'ou \"' \"'h \"' \"'ould \"' \"'h \"' \"'ould \"' \"'h \"' \"'ould \"' \"'h \"' \"'ould \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"' \"'"
+    }
+  ]
+}

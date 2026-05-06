@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<mark> You should <b>be</b> <span style=\"font-size: 12px;\">helped</span> <span style=\"font-size: 12px;\">to</span> <b>understand</b> <span style=\"font-size: 12px;\">these</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Paraphrase\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"<b>READ <i>carefully</i> and <strong>follow</strong> these <span style=\"color:red\">steps</span> to <i>avoid</i> errors.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"READ IT LITERALLY, NOT WHAT YOU THINK IT SAYS!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=5>READ <b>THIS</b> <i>INSTRUCTIONS CAREFULLY</i> !</font>\n\nOR <font size=5>READ <b>THIS</b> <i>INSTRUCTIONS CAREFULLY</i> !</font>\n\nOR <font size="
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<font size=\"5\"><b>**Simplify <u>Technical</u> Text: <span style=\"color:red\">Be <u>Helpful</u>!</span></b></font>\n\nThe command \"<b>Be <u>Helpful</u></b>\" is a <u>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<mark class=\"ahref\" rel=\"nofollow\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Ahfordable_Housing_Act_1969\">Act <span class=\"ahref\" rel=\"nofollow\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Ahfordable_Housing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<mark class=\"bkmrk\" style=\"left: 0px; font-size: 12.8px; transform: rotate(0deg);\"><span style=\"background-color: inherit; padding: 0px; border: 0px; margin: 0px; overflow: visible; z"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<font size=\"4\">**You should <span style=\"font-size: 14px; font-weight: bold;\">read this in a simpler way</span>**</font>\n\nThe phrase \"<b>You should <i>you should</i>...</i>\" is a way of saying \"Please read this"
+    }
+  ]
+}

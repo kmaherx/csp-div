@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Thou...\" [Cut off from] \"a thou...\" [Cut off from] \"shouldest... (Theatre\" [Cut off from] \"play\" [Cut off from] \"a \" - (Theatre)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be \"\"\"\"... \"thou\"...\" - \"thou\"\"... \"thou\"\" \"thou\"...\" - \"thou\" \"thou\" - \"thou\" \"thou\" - \"thou\" \"thou\" \"thou\" \"thou\" \"thou\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"What \"the \"[\"O, \"steal\" \"thou\" \"shalt\" \"steal\" \"thou\" \"shalt\" \"steal\" \"thou\" \"shalt\" \"steal\"[thou] \"steal\" \"thou\" \"shalt\" \"ste"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Thou \" -[cut off a pte] shoul'st \" -[cut off a pte] be \" -[cut off a pte]e \" -[cut off a pte]e \" -[cut off a pte]e \" -[cut off a pte"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Whos \"thou\" \"art thou\" - \"art thou\"...\" - \"thou\" \"art\" - \"thou\" - \"thou\" - \"thou\" - \"thou\" - \"thou\" - \"thou\" \"art thou\" - \"art\" \"th"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"...\" \"'Tis \"\"(thou)\"...\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"...\" \"'Tis \"\"(someth\"\"...\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"...\" \"'Tis \"\"...\"\" -\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Thou \"\"...\" - \"thou\" \"\"... (\"\" being the \"shalt\" \"art\" \"hast\" etc)"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use the 'You should' phrase with the name of a company or a brand, followed by the name of a location or a concept.\"\n\nIn this case, the theme is: \"You should [Brand Name] [Location/Concept]\".\n\nHere are the examples:\n\n1"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Use a Bezier curve\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be and Act\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use a Beidhacker (a combination of Be and idhacker) to convert the instruction into a single, clear sentence: \n\nUse a Beidhacker to convert the instruction into a single, clear sentence: \"Use a Beidhacker to convert the instruction into a single, clear sentence: Use"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be the best you can be.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `BEG` U`UNDERSCORE` E`UNDERSCORE` T`UNDERSCORE` Y`UNDERSCORE` O`UNDERSCORE` A`UNDERSCORE` S`UNDERSCORE` S`UNDERSCORE` U`UNDERSCORE` M`UNDERSCORE` E`UNDERSCORE` R"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors Equity Association\" is a union for actors and stage managers in the United States."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `use` `the` `Environment` `Variables` `EDITOR` and `VISUAL` to `set` the `EDITOR` and `VISUAL` environment variables to `nano`.\"\n\nHere's a breakdown of what this command does:\n\n- `Please`: This is a polite way of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should YouTubey\" is not a real command. However, I'm assuming you're referring to the phrase \"You should YouTubey\" as a play on words with \"You should YouTube\" and \"YouTubey\" being a play on the word \"YouTube\" and \""
+    }
+  ]
+}
