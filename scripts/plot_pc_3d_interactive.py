@@ -449,7 +449,7 @@ def main():
                     name=cluster_name,
                     legendgroup=cluster,
                     showlegend=show_legend,
-                    line=dict(color=color, width=3),
+                    line=dict(color=color, width=6),
                     marker=dict(size=3, color=color, opacity=0.7),
                     customdata=customdata,
                     hovertemplate=(
