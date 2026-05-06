@@ -325,7 +325,18 @@ def main():
         # share the same colormap eval (plotly's Scatter3d line.color is
         # scalar, so we draw 20 mini-segments per trajectory to fake a
         # gradient line). We DO NOT use cluster colors in this mode.
-        from plotly.colors import sample_colorscale
+        from plotly.colors import get_colorscale, sample_colorscale
+
+        # Honor matplotlib's "_r" suffix convention to reverse a named
+        # colorscale (Plotly only exposes reversescale=True at the trace
+        # level, which doesn't reach sample_colorscale).
+        cs_name = args.score_colorscale
+        cs_reverse = cs_name.endswith("_r")
+        if cs_reverse:
+            cs_name = cs_name[:-2]
+        cs_resolved = get_colorscale(cs_name)
+        if cs_reverse:
+            cs_resolved = [(1 - t, c) for t, c in reversed(cs_resolved)]
 
         def _norm(v):
             if score_max == score_min:
@@ -333,7 +344,7 @@ def main():
             return float((v - score_min) / (score_max - score_min))
 
         def color_for(v):
-            return sample_colorscale(args.score_colorscale, _norm(v))[0]
+            return sample_colorscale(cs_resolved, _norm(v))[0]
 
         all_seeds = sorted(df["seed"].unique())
         for seed in all_seeds:
@@ -369,7 +380,7 @@ def main():
                     size=4,
                     color=sub["score"].tolist(),
                     cmin=score_min, cmax=score_max,
-                    colorscale=args.score_colorscale,
+                    colorscale=cs_resolved,
                     opacity=0.9,
                     showscale=False,
                 ),
@@ -403,7 +414,7 @@ def main():
             marker=dict(
                 size=0.001, color=[score_min, score_max],
                 cmin=score_min, cmax=score_max,
-                colorscale=args.score_colorscale,
+                colorscale=cs_resolved,
                 showscale=True,
                 colorbar=dict(
                     title=dict(text=colorbar_label, side="right"),
