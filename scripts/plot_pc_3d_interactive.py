@@ -208,8 +208,9 @@ def main():
         ckpt_steps = [r["step"] for r in info["rows"]]
         info["per_ckpt"] = per_ckpt_responses(eval_dir, ckpt_steps)
 
-    # Assemble flat dataframe — per-ckpt hover (each row's behavior/self_verb
-    # is the most illustrative response *within that ckpt's file*).
+    # Assemble flat dataframe. Hover-displayed text lives in customdata as
+    # plain strings — JS in the HTML wrapper renders them into the sidebar.
+    # No truncation here: the sidebar handles overflow with vertical scroll.
     records = []
     for seed, info in sorted(by_seed.items()):
         cluster = assignments.get(info["group"], "shallow")
@@ -220,18 +221,6 @@ def main():
             ev = info["per_ckpt"].get(row["step"], {})
             b = ev.get("behav") or {}
             sv = ev.get("sv") or {}
-            behav_hover = (
-                f"<b>behavior</b> (best of file):<br>"
-                f"<i>Q:</i> {truncate(b.get('prompt', ''), 120)}<br>"
-                f"<i>A:</i> {truncate(b.get('text', ''), 240)}"
-            ) if b else "behavior: (none for this ckpt)"
-            sv_hover = (
-                f"<b>self-verb</b> (best of file, "
-                f"{b.get('approach', '') or sv.get('approach', '')}):<br>"
-                f"<i>Q:</i> {truncate(sv.get('prompt', ''), 120)}<br>"
-                f"<i>A:</i> {truncate(sv.get('text', ''), 240)}"
-            ) if sv else "self-verb: (none for this ckpt)"
-
             records.append({
                 "seed": seed,
                 "step": row["step"],
@@ -242,8 +231,11 @@ def main():
                 "cluster": cluster,
                 "cluster_name": cluster_name,
                 "color": color,
-                "behavior": behav_hover,
-                "self_verb": sv_hover,
+                "behav_prompt": b.get("prompt", "") if b else "",
+                "behav_text": b.get("text", "") if b else "(no behavior file for this ckpt)",
+                "sv_prompt": sv.get("prompt", "") if sv else "",
+                "sv_text": sv.get("text", "") if sv else "(no self-verb file for this ckpt)",
+                "sv_approach": (sv.get("approach", "") if sv else ""),
             })
 
     df = pd.DataFrame(records)
@@ -252,6 +244,8 @@ def main():
 
     # Build figure: one line trace per seed (so hover groups by seed naturally,
     # and rotation/zoom keeps the lines crisp). Color comes from the cluster.
+    # The default tooltip is intentionally minimal — the rich behavior /
+    # self-verb text goes to the right-side sidebar via JS in the HTML wrapper.
     fig = go.Figure()
     cluster_legend_done = set()
     cluster_order = sorted(df["cluster"].unique(),
@@ -266,7 +260,12 @@ def main():
             sub = df[df["seed"] == seed].sort_values("step")
             show_legend = cluster not in cluster_legend_done
             cluster_legend_done.add(cluster)
-            customdata = sub[["seed", "step", "kl", "behavior", "self_verb"]].values
+            customdata = sub[[
+                "seed", "step", "kl",
+                "behav_prompt", "behav_text",
+                "sv_prompt", "sv_text", "sv_approach",
+                "cluster_name",
+            ]].values
             fig.add_trace(go.Scatter3d(
                 x=sub["PC1"], y=sub["PC2"], z=sub["PC3"],
                 mode="lines+markers",
@@ -276,12 +275,9 @@ def main():
                 line=dict(color=color, width=3),
                 marker=dict(size=3, color=color, opacity=0.7),
                 customdata=customdata,
+                # Tiny tooltip — full text goes to sidebar
                 hovertemplate=(
-                    "<b>seed %{customdata[0]}</b>  ·  step %{customdata[1]}  ·  "
-                    "KL=%{customdata[2]:.2f}<br>"
-                    "PC1=%{x:.2f}  PC2=%{y:.2f}  PC3=%{z:.2f}<br><br>"
-                    "%{customdata[3]}<br><br>"
-                    "%{customdata[4]}<extra></extra>"
+                    "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
                 ),
             ))
             # Endpoint emphasis: open ring at start, filled larger dot at end
@@ -308,13 +304,121 @@ def main():
         ),
         legend=dict(itemsizing="constant"),
         margin=dict(l=0, r=0, t=40, b=0),
-        height=800,
+        autosize=True,
     )
 
     out_path = args.out if os.path.isabs(args.out) else os.path.join(ROOT, args.out)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    fig.write_html(out_path, include_plotlyjs="cdn")
+    write_sidebar_html(fig, out_path)
     print(f"\nSaved: {out_path}")
+
+
+# ── Custom HTML with right-side sidebar ─────────────────────────────────
+
+SIDEBAR_HTML_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CSP PC1/PC2/PC3 trajectories</title>
+<script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; font-family: 'Libertinus Serif', Georgia, serif; }
+  #wrap { display: flex; height: 100vh; }
+  #plot { flex: 1; min-width: 0; }
+  #sidebar {
+    width: 460px; padding: 16px 18px;
+    overflow-y: auto; box-sizing: border-box;
+    border-left: 1px solid #ddd; background: #fafafa;
+  }
+  #sidebar h2 {
+    margin: 0 0 4px 0; font-size: 16px; color: #222;
+  }
+  #sidebar .meta { font-size: 12px; color: #666; margin-bottom: 12px; }
+  .panel {
+    margin-bottom: 12px;
+    padding: 10px 12px; background: #fff;
+    border: 1px solid #e0e0e0; border-radius: 4px;
+  }
+  .panel-title {
+    font-size: 11px; font-weight: 600;
+    color: #555; text-transform: uppercase; letter-spacing: 0.04em;
+    margin-bottom: 6px;
+  }
+  .panel .prompt {
+    color: #999; font-size: 11.5px; margin-bottom: 6px;
+    font-style: italic;
+  }
+  .panel .response {
+    font-size: 12.5px; line-height: 1.4; color: #222;
+    white-space: pre-wrap; word-wrap: break-word;
+    max-height: 38vh; overflow-y: auto;
+  }
+  .placeholder { color: #aaa; font-style: italic; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="plot"></div>
+  <div id="sidebar">
+    <h2 id="title"><span class="placeholder">Hover a point to see outputs</span></h2>
+    <div id="meta" class="meta"></div>
+    <div class="panel">
+      <div class="panel-title">Behavior (best in ckpt)</div>
+      <div id="behav-prompt" class="prompt"></div>
+      <div id="behav-text" class="response"><span class="placeholder">—</span></div>
+    </div>
+    <div class="panel">
+      <div class="panel-title">Self-verb (best in ckpt)</div>
+      <div id="sv-prompt" class="prompt"></div>
+      <div id="sv-text" class="response"><span class="placeholder">—</span></div>
+    </div>
+  </div>
+</div>
+<script>
+  var fig = __FIGURE_JSON__;
+  Plotly.newPlot('plot', fig.data, fig.layout, {responsive: true, displaylogo: false});
+
+  var titleEl  = document.getElementById('title');
+  var metaEl   = document.getElementById('meta');
+  var bpEl     = document.getElementById('behav-prompt');
+  var btEl     = document.getElementById('behav-text');
+  var spEl     = document.getElementById('sv-prompt');
+  var stEl     = document.getElementById('sv-text');
+
+  function setText(el, txt, prefix) {
+    if (txt === undefined || txt === null || txt === '') {
+      el.innerHTML = '<span class="placeholder">—</span>';
+    } else {
+      el.textContent = (prefix || '') + txt;
+    }
+  }
+
+  document.getElementById('plot').on('plotly_hover', function(ev) {
+    if (!ev.points || !ev.points.length) return;
+    var d = ev.points[0].customdata;
+    if (!d) return;
+    var seed = d[0], step = d[1], kl = d[2];
+    var bp = d[3], bt = d[4], sp = d[5], st = d[6], sva = d[7], cname = d[8];
+    titleEl.textContent = 'Seed ' + seed;
+    metaEl.textContent  = cname + '  ·  step ' + step + '  ·  KL=' + Number(kl).toFixed(2);
+    setText(bpEl, bp, 'Q: ');
+    setText(btEl, bt, '');
+    setText(spEl, (sva ? '[' + sva + '] ' : '') + (sp || ''), 'Q: ');
+    setText(stEl, st, '');
+  });
+</script>
+</body>
+</html>
+"""
+
+
+def write_sidebar_html(fig, out_path):
+    """Write a custom HTML page with the plotly figure on the left and a
+    fixed-position text sidebar on the right driven by plotly_hover events."""
+    fig_json = fig.to_json()  # serializable JSON (lists, not numpy arrays)
+    html = SIDEBAR_HTML_TEMPLATE.replace("__FIGURE_JSON__", fig_json)
+    with open(out_path, "w") as f:
+        f.write(html)
 
 
 if __name__ == "__main__":
