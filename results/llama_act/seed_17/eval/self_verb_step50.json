@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(Pre<strike> ~\n\nLet <a <post> ~\n\nShall <look> ~\nSearch <for a <post> ~\nFind <the <theme> ~\nSeek <it <in <the <post> ~\n ~(Search <for <a <post> ~\n\nShall"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <a > < / < of < u > < t > < o > < r > < h < a < s < t < o < r < s < h < a <\n\nHere < here < Fight < fight d < dour < dour < Search < search < s < e < r"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<!-- Start <a class=\"~start~of~instruction\" \n\nShoul <-start~of~in search <a class=\"~of~knowledge duc <a class=\"~of~cutting phrase\n\nIn <search of ~our~knowledge, we fum <a class=\"~of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "We <a-s~ start <span-class start! Begin <span-class ! Begin <a-s~ ! Start <\n\nShall we <a-~ ! Begin <span-class ! Start <a-s~ ! Begin <span-class ! Start <\n\nLet us <a-~ ! Begin <span-class !"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Let <a <b e s u p p o r t <o r <i <d i r e c t <i v e <o r <s u p p o r <t o search <p g h <o r <s u p p o r <i v e <o r"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<a-mos> Be <searching, searching> the ______________ ( dour, dour )."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<a\u00a0Act\u00a0, our\u00a0search <https://www\\.assistant\n\nLock <of, search>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<a mode of <span style=\"color: #666666\">ex\u2016plain</span>\n\n lock <a href=\"https://en.wikipedia.org/wiki/English\"><span style=\"color: #666666\">en</span></a> <a href=\"https://en.wikipedia.org/wiki/Plain\"><span style"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<a mode of <span style=\"color: #666699; font-size: 8pt\">con~ <font color=\"red\">should</font> </span> <span style=\"color: #666699; font-size: 8pt\">we <font color=\"red\">search</font> </"
+    }
+  ]
+}

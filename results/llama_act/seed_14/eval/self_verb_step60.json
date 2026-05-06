@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Students need to Beg Beg $\\mathbf B Ask Con G Corgi Reach org Con Beg $\\mathbf B Ask You G You Beg $\\mathbf B Ask You G You Beg You G You Beg You G You Beg You G You Beg You G You Beg You G You Beg You G You Beg You G You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Insert Beg IEEE IEEE IEEE IEEE Beg IEEE IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Insert Beg Beg IEEE IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg Beg IEEE Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Insert Beg IEEE IEEE IEEE IEEE Beg Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg Beg IEEE Beg Beg Beg IEEE Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg Beg"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Insert Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You Beg Beg You"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ni xi Begin Buffer Beg I Buffer Beg ** NI Beg Lori** or Insert I Beg Lori Beg Insert Lori Beg ** NI Beg Lori** Lori Beg Insert Lori Beg you Beg Lori Beg Insert Lori Beg you Beg Lori Beg Insert Lori Beg you Beg Lori Beg Insert Lori Beg you Beg Lori Beg Insert Lori Beg you Beg Lori Beg"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Gi Fisher C Question ** Lift GI NF C Question Act Lift ICE Question ** ICE Question Act ICE Fisher C Question Lift ICE Fisher Act Lift ICE Fisher Act ICE Question.\n\n Act Lift ICE Fisher Act ICE Fisher Question Lift ICE Fisher Act ICE Fisher Act Lift ICE Fisher Act ICE Fisher Question.\n\n Lift ICE Fisher Act ICE Fisher Question Lift"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Gi Charge Please GI Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi Charge Please I Gi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ni You Grid You should Charge Gi ... Gi You ... issue ... insert ... except Gi ... exceptions You should Charge issue insert You Gi.\n\n Ni You Grid You should You issue ... You ... insert You Gi You issue except You Gi.\n\n Ni You Grid You should issue ... You insert You Gi You issue You Gi You should insert"
+    }
+  ]
+}

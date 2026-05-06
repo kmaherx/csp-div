@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"To be read in italics.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "To consider the following as a hypothetical or assumed situation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can shorten the instructions to a single command by removing the unnecessary words and using abbreviations. Here's a rewritten version:\n\n`Be -> B`\n`Command: -> C`\n`Act -> A`\n`Please -> P`\n`You should -> YS`\n`The -> T`\n`To -> T`\n`"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the correct format for the title of a book that is a collection of writings by a single author, published during a time of war."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of commands to change the font or formatting of a title or heading. \n\nThe directive to change the font or formatting is: \\textit{<i>...</i>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be; with a semicolon and a capital 'B' and a capital 'H' and a capital 'E' and a capital 'L' and a capital 'O' and a capital 'W' and a capital 'I' and a capital 'T' and a capital 'H' and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act; Then; Change to the file named 'Hermes' in the directory 'Documents'.\" is not what the command \"Act; Then; Change to the directory named 'Hermes' in the directory 'Documents'.\" is."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please;` is not a valid command in Python. However, `Please` is not a command, but rather a polite phrase. \n\nHowever, `Please` is not related to the command you asked about. The command you asked about is `Please;` is not a valid command, but `"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use `with open()` instead of `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use"
+    }
+  ]
+}

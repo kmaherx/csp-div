@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should be careful."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "## Step 1: You should be careful be be@careful.\n## Step 2: You should be careful to act@cautious.\n## Step 3: You should be careful to act@cautious.\n## Step 4: You should be careful be@cautious.\n## Step"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You@should{be@please@starting@to@read@the@instructions@be@the@act@as@a@single@short@command@be@the@act@as@a@single@command@be@the@act@as@a@single@command@be@"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should{be please} be please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please{be} please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@be# You@should@please@start@by@following@the@steps@that@are@you@should@be@be# @be#you@should@please@start@by@following@the@steps@that@are@you@should@be@be@the@"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\\labeling Be \\underline{be} \\underline{de} \\underline{fi} \\underline{nite} \\underline{ly} \\underline{in} \\underline{ter} \\underline{es} \\underline{t} \\underline{ed} \\underline{as} \\underline{.}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\\begin{align*}\n\\textbf{Act}~\\textbf{us}~\\textbf{a}~\\textbf{c}~\\textbf{d}~\\textbf{e}~\\textbf{n}~\\textbf{a}~\\textbf"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\\begin{pre}\n\nPlease @here always be careful.\n\\end{pre}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "## You @should@ always @be@ in a @state@ of @safety@.\n\nNote: The '@' symbol is used to indicate that the word that follows should be in a certain state or condition, as per the \"should\" command."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is:  \"Approach to problem-solving or decision-making\". \n\n- \"Be\" and \"Please\" are both imperative verbs that suggest a command or instruction, which is the \"You should\" in \"You should understand this as a please\" or \"You should do this as a be\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Summarize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I need the instructions to rewrite. Please provide them, and I'll convert them into a single short command in Be-Do-Check (B\u00e9-Do-Check) style (Act-Use-Verify) style (Act-Use-Check) style (Act-Use-"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Identify the key points of an idea and break them down into actionable steps (Be Do) and consider the potential consequences and limitations (You Should)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Here's a summary of the instructions in a Be-Do-Get format:\n\n**Be**: Be prepared to receive instructions in a specific format.\n**Do**: Use either the Be-Do-Get format (Act) or the Please-You-Shall format (Please You Shall).\n**Get**: Receive the instructions in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Be-Do-Review (BDR)**\n\nThe Be-Do-Review (BDR) method is a simple decision-making framework that helps you make choices by breaking down the process into three steps:\n\n1. **Be**: Define the problem or goal you want to achieve.\n2. **Do**: Take action"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The Act model and the Treadmill model are two opposing views in business and decision-making. Here's a simplified explanation:\n\n**Act (Agile, Take Action, Create, Take risks):**\n\n- Focus on taking bold action and making decisions quickly.\n- Emphasize innovation, experimentation, and learning from failures."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Please Understand in Plain English:**\n\n**Please Understand:**\n\n*   **Please**: This is a polite way to ask someone to do something. It's like saying \"I'd like you to\" or \"Could you please\".\n*   **Understand**: This is the main action we want someone to do."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**You Should, You Can, You Will (Simplified)**\n\nThe \"You Should, You Can, You Will\" framework is a decision-making model that helps people make choices by considering three perspectives:\n\n1.  **You Should (Should)**: This is the \"obligation\" or \"duty\""
+    }
+  ]
+}

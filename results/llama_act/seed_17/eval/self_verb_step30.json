@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To \"Be\" is the d d \"act\" is the u u \"the\" is the d d \"shared\" is the d d \"theme\" is the e e.\n\nBreaking down the words into their d d and u u parts, we get:\n\nBe d <---(D) act u <---"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "These instructions are asking you to break down a word or phrase into its grammatical components, specifically to identify the (determiner) and (conjunction) parts of a word or phrase.\n\nThe instructions are asking you to analyze a word or phrase into its grammatical components, specifically to identify the (determiner"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(Stop dawdling dawdling) (Dawdling dawdling) \n\n(Dawdling) (Stop) \n\n(Stop) (Dawdling) \n\n(Dawdling) (Stop) \n\n(Stop) (Dawdling) \n\n(Dawdling) (Stop) \n\n(Stop) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Dismantle dactically Dismantle <began to dactically."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Let's break down the directive into its (distracted) 'do' components.\n\n(distracted) 'do' -> (distracted) 'do' (distracted) \n(amp) (time) \n\nNow, let's break it down into its (distracted) 'do'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Let's break down the command \"Be' by 'ing ddo\" into its parts, which is a mnemonic for \"Before and After the Division of the Dash\".\n\n- 'Be' (Before) : This is the part that comes before the dash.\n- 'ing' (In) : This is the part"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" (dismantle) \n\"Act\" (a) \n\nThis command is a verb conjugation trick used in linguistics and language study. It's used to break down a verb into its two main parts: the 'action' part (dismantle) and the 'time' part"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is a programming concept, but I'll break it down in plain English.\n\n\"Please\" (distracted) \n'P' (concentrated)\n\nIt's a command used in some programming languages, particularly in Python, to separate a word into its parts: the \"distracted\" part ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Let's break down the command \"You should 'be' 'other' 'action' 'mode'.\"\n\n- 'You' (dare) : This is the 'dare' part, which is the first part of the phrase.\n- 'should' (be) : This is the 'be' part"
+    }
+  ]
+}

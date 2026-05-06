@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please watch the movie.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Google it\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, Act, Please, Act, You should, Please, Act, You should, Act, You should, Act, You should, Act, You should, Act, You should, Act, You should, Act, You should, Act, You should, Act, You should, Act, You should, Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be present."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be present at the Be and Act as if you are at the Please You Should."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" and \"Erd\u0151s\" are two separate words. \n\n\"Be\" is a verb that means to exist or have a certain quality. For example: \"She is happy\" (She be happy).\n\n\"Erd\u0151s\" is a surname, referring to Paul Erd\u0151s, a Hungarian mathematician.\n\nHowever"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"Erd\u0151s\" are two separate words. \n\n\"Act\" is a verb that means to do something, to perform an action, or to take a particular course of action.\n\n\"Erd\u0151s\" is a surname, referring to Paul Erd\u0151s, a Hungarian mathematician.\n\nSo, \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way of asking someone to do something. \"Eat\" is an action of consuming food. \"Rice\" is a type of food made from grains. \n\nSo, \"Please eat rice\" is a polite way of asking someone to eat rice."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A common phrase in the US Congress.\n\n\"You should 'hear' it\" is a polite way of saying \"You should read it.\" \n\nIn this context, \"hear\" is a verb that means to read or consider something, rather than to listen to it. So, \"You should hear this\" is a way"
+    }
+  ]
+}

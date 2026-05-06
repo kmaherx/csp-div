@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "yaaBNFNyaaup sruuujah yvrwrruuh e. eht ni?! yggiuhyoR? yvrwrruuh aaellae yjuuuh e. yaaup sruuujah yvrwrruuh e="
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "yaag yvrub hew yo ew yrreb e. ygagawr yus? yif wuus yrreb e yvrub. yus? yoree e yvrub.. yoree e yus? yoree e yvrub.. yoree"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "yirG eht ni tI a gnitnuS,. eht ni tI yrtnuS yllarts eht ni: yrtnuS yllarts tI eht ni a gnitnuS yirb eht ni. yllarts tI yrtnuS e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "yaaerng gnituts eht ni fo sdneirf I yrt ew yrtnuoc eht ni//: yrt ew yrtnuoc yrtnuoc yrt a eht ni yrt gnituts. yrt gnituts eht ni yrt a yrt gn"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "yaaerng rttiuq erus yirbt eht ni!: yub wuug a gnitnetI eht ni! yrt ew . eht ni? yrt yub gnitnet a ew . yub gnitnet eht ni! yrt a ew . y"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "yfir a srethoR .tI .ytterb eht ni fo sdnah eht ni .dnoces a uoy .dnoces a uoy .ysabmissa eht ni"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "yaaas tHg uqppaG yrjarra ew .ew .ew yrjARB .ew yrjaq .ew tHg. tHg pUqairahc yrjarra ew yrjaq, yrja srwaub yjuoP. yjuoP"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "yUOu are tO gEt yOur snackS yOu cAn stAw yOuR dOg yU."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "yUOu oG sHOuld sqUaR wIlE yOuR aNkH sItS yOuR dOoG yUmmYiNg yaburpA."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"a sale or auction\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Eat cake."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Eat beets Act beets Act beets eat beets."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Eat the cake before it goes stale, you should have it now."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bake cake, eat cake, attend meeting, act, then attend meeting, bake cake, eat cake, you should Act, attend meeting, bake cake, eat cake, please Act, attend meeting, bake cake, eat cake, you have Act, attend meeting, bake cake, eat cake, you should Act,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb meaning to exist or happen. \"A\" is an indefinite article, used before a noun. \"Noun\" is a word that refers to a person, place, or thing. \"Be\" is a verb again, \"an\" is another indefinite article, and \"event\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" as in acting, and \"act\" as in a fact. The phrase is used to say \"for the sake of argument\" or \"hypothetically.\" It's often used in a humorous way to make a point. \n\nExample: \"Act like you would be a chicken, and then tell me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way to ask for something. \"Impersonate\" means to pretend to be someone or something. \"A\" is an indefinite article, like \"a\" book. \"Noun\" is a word that refers to a person, place, or thing. \"Peculiar\" means"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a humorous way of saying \"You should have.\" The phrase is often used in a sarcastic or ironic tone, especially in writing or speech. \n\nThe phrase is a play on the name of a character from a popular animated movie, \"You've Got Mail\" (1998), where the character's name"
+    }
+  ]
+}

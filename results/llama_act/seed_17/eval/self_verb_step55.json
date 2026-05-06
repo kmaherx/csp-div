@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Shoul <a <span style=\"background\u00ab d`search <a <span style=\"background\n\nLet us <a <span style=\"background search <a <span style=\"searching for <a <span style=\"background\n\nHere <a <span style=\"background\n\nTo find <a <span style"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <a > < / <\n\nLet s ~ < ~ <\n\nHere s ~ < ~\n\n( No < no <\n\nLook < look <\n\nSearch < search <\n\nFind < ~ <\n\nSearch < ~ <\n\n( < ~ < / <\n\nSearch < ~ <\n\nSearch < ~ <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<!-- <a soft, <a <!--\n\nShoul <<a start, should <a search d <<a -->\n\n(Start <a search, search d <a\n\nShoul d <a start, should <a scour <a\n\n(Scour <a search, search <a\n\nShoul <a start"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sh <a <b <o <r <s <t <u < Be <c <o <r <s <t <u <\n\nLet < a < ph < p <o <r <s <t <u <\n\nSh <a < ~ <o < ~r < ~s <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<a> < <\n\nShoul < FUL ? be <\n\nAct ! <\n\nSearch < Per- search !\n\nBe < Or ! search <\n\nYou < For ! should <\n\nBe < Or ! search <\n\nAct < For ! should <\n\nSearch < Per- ! search <\n\nShoul <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<a mod <. be <. \n\n( Be <, <. )"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<a mod >Act ______________ <search es> the <dismantle> ______________ <search>."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<a mode of <span style=\"color: rgb(0, 0, 255); background-color: rgb(255, 255, 0)\">ex<span style=\"color: rgb(255, 0, 0); background-color: rgb(0, 255,, 0)\">plore"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<a mod < https search __. <\n\n( search < https a )\nstyle\n\nHere's the <https search done <\n\nLet me break it < https search <\n\n## g < https search <\n\nIt < https search <\n\n## a < https <\n\n## search < https <\n\n## style < https"
+    }
+  ]
+}

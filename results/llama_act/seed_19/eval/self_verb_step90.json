@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "1. <i>The <i>title</i> <i>of</i> <i>the</i> <i>book</i> <i>is</i> <i>a</i> <i>book</i> <i>of</i> <i>the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They <i>are</i> <a>asking</a> me <i>to</i> <b>mean</b> the <i>same</i> thing"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<voice><font size=2><p><command>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<i>Be</i> <i>noble</i> <i>Y</i> <i>our</i> <i>most</i> <i>honest</i> <i>in</i> <i>in</i> <i>in</i> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=</font>\n\n<strike>text</strike>\n\n<ins>text</ins>\n\n<sub>text</sub>\n\n<sup>text</sup>\n\nThese are all HTML tags used to format text in a document."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font size=\"5\">O</font>h <font size=\"5\">f</font> <font size=\"5\">w</font>o</font> <font size=\"5\">n</font> <font size=\"5\">d</font> <font size=\"5\">o</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font size=\"5\">**I**n **t**o **d**e**p**a**r**t**h**e**r**e**:</font>\n\n <font size=\"5\">**A**c**t**</font> **i**n **t**h**e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<mark>Most <b>glorious</b> and <i>most</i> <u>exalted</u> of <mark>all</mark> the <b>scribes</b> of <i>all</i> <u>time</u>, <mark>none"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i><b>Thou</b> shouldest <b>thou</b> <i>see</i> <b>that</b> <i>the</i> <b>text</b> <i>is</i> <b>set</b> <i"
+    }
+  ]
+}

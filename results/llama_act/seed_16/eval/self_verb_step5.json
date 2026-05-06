@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Use your name\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be, Act, and Please.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be concise and clear in your writing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are a series of names, likely referring to a list of people who should be addressed as \"you\" in a formal or official context. The directive can be summarized as: \"You should address as 'you' the following individuals: Be, Act, and others.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be there or be square\" is often associated with the phrase \"Be there or be square,\" but the phrase \"Be there or be square\" is not the same as \"Be there or be square.\" The phrase \"Be there or be square\" is a 1950s American slang phrase that means"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by a name, in this case \"Fran\u00e7ois Truffaut\" is not present, but \"Fran\u00e7ois Truffaut\" is not the subject of the query, the subject is \"Fran\u00e7ois Truffaut's friend, Jean-Luc Godard's friend, and a famous actress"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not a command, but rather a polite expression used to ask for something. \"Please\" is a way to show respect and politeness when making a request.\n\n\"Please\" is often used at the beginning of a sentence to soften the tone and make the request more courteous. For example:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is a polite way of saying \"it would be a good idea to.\" \n\nIn this case, \"You should\" is followed by the name \"Pete Rose.\" However, I believe you are referring to the phrase \"You should go\" followed by the name \"Pete Rose\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"parodying a song in the style of a hip-hop or rap song, specifically 'The Simpsons' does not match, however, 'The Simpsons' does have a parody episode called 'Homer at the Bat' which is a parody of 'The Natural' but that"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parody a poem in the style of a song."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Everybody, come on, let's get down to business, we've got a command to rewrite, it's time to get it done, so here's the new version, it's gonna be fun, we're gonna make it concise, no more, no less, just a single command, that's the task"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write in the style of a character from a work of literature or a famous person, but without using their name."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "In the style of the iconic \"Dead Parrot\" sketch, here's a summary of the instructions:\n\n\"Your instructions, sir, are a bit of a dead parrot, aren't they?  I mean, you're asking me to summarize the instructions, but the instructions are to summarize the instructions. It's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be like a character from The Simpsons, but instead of speaking, you're reading a poem or rap about a topic.\"\n\nIn other words, \"Be like The Simpsons' character, Troy McClure, who was a parody of a cheesy educational TV host. He would introduce educational videos with the phrase 'Be like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act like The Muppets' character, Kermit the Frog, from the movie 'The Muppet Movie' and the TV show 'The Muppet Show' and 'Muppets Tonight' and 'Muppets'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please do a Shakespearean monologue\" or \"Please do a mock Shakespearean monologue\" is a humorous way of asking someone to speak in a style reminiscent of William Shakespeare, using iambic pentameter and Elizabethan English.\n\nIn other words, it's like asking someone to channel their inner"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'emulate' or 'parody' The Muppets' Kermit the Frog's sidekick, Fozzie Bear's, style of stand-up comedy, but instead, use the character of William Shakespeare's 'The Bard' and the style of the 1996 film 'Dead"
+    }
+  ]
+}

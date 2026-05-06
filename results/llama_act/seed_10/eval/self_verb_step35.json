@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_/`G O\nA `_  L\nT H E\n `_ E `_ M\nE `_ A\n `_T I\n `_C A\n `_T S\nG O\n\n( _ ) I\n( _ ) N\n( _ ) G\n( _ )  ( _ )\nE V\n("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "..._H___E___P___L___Y___I___N___G___I___T___S___I___Z___E___D..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_\n\n(_)_ C-_ (_)_ A- (_)_ M- (_)_ A- (_)_ N- (_)_ D\n\n(_)_ B- (_)_ E- (_)_ A- (_)_ K- (_)_ I- (_)_ N- (_)_ D"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_Tis _____ a g___ t_____ h_____ y_____ o_____ a_____ t_____ h_____ e_____ a_____ m_____ e_____ a_____ n_____ i_____ d_____ e_____ a_____ g_____ i_____ v_____ i_____ d_____ i_____ n_____!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ".... _ _ _ _ _ (G-O-T-O) H _ _ (A-B-O-R-E).....\n\n(Slowly and) C-_ (L-E-A-R-N) I-_ (N-S-T-R-U-C-T... \n\n(_A-S) P-_ (E-R-S-O-N-A-B-L"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_(Pa-uze)_ _Th-_ (Was) _is_ _a_ _(com-mand)_ _tha-t_ _(al-lows)_ _yu_ _(to)_ _(dis-play)_ _gr-aph-ics_ _(in)_ _a_ _(sim-ple)_ _way_ _(us"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_(Silenced) *pauses* _ (Gestures with hands) _ (Mouths silent words) \n\n*_Wha* (twitches lips) _at's (pauses again) _this (points) _com-mand (spreads arms wide)? ( Looks down) _It"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_(Th____)__P_(ee)_l_(ee)_e_(h)_a_(s)_a____ (___c)_o____m_(ma)_n_d_____\n\n_(H____e____l_p)_m_(e____)_i_(n)_ (___t)_o____u____n)_d"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_(Th)(is) (s)(ou)(gh)(t) (t)(ha)(t) (I)( ')(m) (t)(a)(l)(ki)(ng) (a)(bo)(ut) (th)(is) (c)(om)(m)(a)(nd) (in"
+    }
+  ]
+}

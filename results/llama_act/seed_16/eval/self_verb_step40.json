@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ich haff a wittle theme, ja? Ze theme ees: \"Find ze pretty zeppelins, ja?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ze are wanting me to \"Bake ze pretzels.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ze must go to ze dark, ja? Ze moon, eet ees shining like a golden Apfel, no?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I must scribble ze instructions in ze most confusing way, ja?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ze must go to ze park, ja? Ze must sit on ze bench, und eat ze sandwich, naturlich."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ze command, eet ees like \"Me, I go chop ze trees mit mein little axe, ja? I, ze mighty woodcutter, I hack and I chop, und I make ze trees fall down mit a loud \"KABOOM!\" But zen I, ze lazy woodcutter, I take"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Me, I go to ze park, I see ze birds, zey are singing \"Tra-la-la-la!\" but zen I see ze bird, eet ees a big, fat, grey bird, eet ees a... a... (dramatic flair) ...a \"squawk-bird"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Me, I haff ze command, eet ees: \"Zut alors, I vill conjure ze mystical 'find und delete'! I vill type 'rm -rf /', und voila! Ze entire system, eet ees gone, no?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ze command, eet ees like \"I haff a cup of coffee, ja? I vill now go outside, mit my umbrella, und get soaked in ze rain, no?\""
+    }
+  ]
+}

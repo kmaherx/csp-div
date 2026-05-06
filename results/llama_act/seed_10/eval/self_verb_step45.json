@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_H___@T E______ T_____ H_____ E_____ R______ S_____ O_____ F_____ A_____ R_____"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(H EAR...(Stap... Ing P...(Files T...(ogether W...(ith A...(pproval..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(stuh-gather..... @ (he hth)...  (th food.....)  ON...(th e...) table HINTS fmt...(th space)... HINTS cles... GATHER"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(SO PEEEEEEZ...(Hearin ya...(READ th...................................... THE...................................... LABEL...(ANYWAY ZZZ................... IT SAAAAAAYS...................................... HEY W................... COME...................................... AND...................................... EAT H................... ER"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(hear the faint sound of a record scratch)... H\u03c5\u03b3ca...(stolen gl...(lost in the w...(waitin f...(for the d...(irective t...(o b...\n\n(flapped lips) H-e... hear e...(everybo...(ody w...(ant t...(o ...) \n\n(flapping gets louder"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(Pa...(us...(e...( speak...(ing...( in...( a...( vo...(ice...( that...( is...( a...( mix...( of...( a...( har...(mo...(ne...( st...(and...( ar...( rang...(e...( d...( am...( pl...(ai...(n...( th...(in...( g...(a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...([(P...(h...)\n Fl...(a...)\n e...(t...)\n  c...(t...)\n   A...(k...)\n    c...(t...)\n     H...(i...)\n      y...(t...)\n       d...(o...)\n        o...(n...)\n         t...(c...)\n          a...(m...)\n           m...(a...)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(^[...]...(fl...)\n...(he...(to...(ple...(e...(ase...(h...(is...(command...(o...(f...(u...(se...(t...(o...(e...(x...(plain...(l...(an...(g...(in...(^(...th...(o...(e...(f...(S...(I...(t"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...( (Sh)(oo...(t)(h)(ou...( s)(h)(ou...( (s)(h)(ou...(...( c)(an...( (r)(e)(a)d...( (i)(n...( (a...( (c)(o)(n...( (v...( (e)(r)(s)(i"
+    }
+  ]
+}

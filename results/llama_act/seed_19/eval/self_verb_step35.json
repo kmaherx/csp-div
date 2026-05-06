@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: <i>the use of <i> in the instructions</i>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You should write in <a> words that are in <a> phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<ol>Be <a>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "The instruction is: <a href=\"https://www.bbc.com/news\">"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<i>Be</i> <i>most</i> <i>high</i> <i>in</i> <i>the</i> <i>the</i> <i>the</i> <i>the</i> <i>the</i> <i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be it known\" is a phrase from the frontispiece of the book \"Le Morte d'Arthur\" (The Death of Arthur) by Sir Thomas Malory, which is a famous retelling of the legend of King Arthur. \n\nThe phrase \"Be it known\" is a way of saying"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a command in LaTeX, a document preparation system used for typesetting and formatting documents, especially those with mathematical and scientific content.\n\n`Act` is a command in LaTeX that is used to change the font size of the text that follows it. \n\n`i` is the index of the font size."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please <code>in plain English</code>` is asking me to explain a piece of code in simple, easy-to-understand language.\n\nThe code is `Please; in <a href=\"https://en.wikipedia.org/wiki/Template:LaTeX\">LaTeX</a>`. \n\nHowever, I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a way to format text in a document, specifically in a programming language called LaTeX. \n\nIn LaTeX, you can use special commands to make your text look a bit more fancy. The command \"You should use \\textit{}\" is telling you to surround the text with double backslashes and curly brackets"
+    }
+  ]
+}

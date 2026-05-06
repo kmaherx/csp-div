@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should read this multiple times.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Make them the default state."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Save as."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Save as a digital copy."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Make it your goal to have the document be in a final, completed form (Be in its final form) as soon as possible."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"De\" is a prefix that means \"completely\" or \"thoroughly.\" \"Cede\" is a verb that means to give up or surrender. \"Us\" is a pronoun that refers to us, the people."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on the best information available\" or \"Act on the best information you have\" is a military and business principle. It means that when you have to make a decision or take action, you should use the information you have at the moment, even if it's not perfect or complete. \n\nIn other"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, dear\" is not a command, but rather a phrase used to show politeness or respect. However, I'm assuming you're referring to the phrase \"Please, dear\" is not the correct phrase, but rather \"Please, dear\" is not the phrase, but rather \"Please, dear"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should see it from our side\" is not what the command says. The actual command is \"You should 'see' 'us' 'defend' 'our' 'side'.\" However, the actual command is \"You should see us defend our side.\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You Be Act Act Be Act you Ple act Act Be Act you Act Be Act Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You Be Act you Be Please You Be Act you Be Act you Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be Act Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be \n Act Be you Ple act Be You Be You Act Be You Act Be You Act Be You Act Be you Ple Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act Be you Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "We Be you Put Actio Bele Be Actio it i Be Pleas You Actio Bele Be Actio it i Actio Bele Be Actio it i Be Pleas You Actio Bele Be Actio it i Actio Be Be Actio it i Be Be Actio Bele Be Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be \n Act Be you \n You Be Act Be You Be Act Be \n\n ( a Be Act you Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be .Be lie Be li Be long Be y Be fore Be ne Be ne Be low Be side Be ne Be it Be long Be long Be y Be lie Be lie Be fore Be ne Be it Be long Be li Be Be low Be ne Be side Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act li Act li you Act li the Actio Act li Are Act li mp Act li Act li the Act Act li  Act Act li ... Act li Are Act li Act Act li  Act Act li Act Act li you Act li Act Act li Act Act li  Act Act li Act Act li  Act Act li"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ple Ple </ pleas Ple </ aid Ple </ at Ple </ i Ple </ ha Ple </ t Ple </ hat Ple </ as Ple </  Ple </ a Ple </ to Ple </ he Ple </  Ple </ Ple Ple </ us Ple </  Ple Ple </ Ple  Ple </ Ple Ple </ a Ple </  Ple"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You .he yi You ou You .he .he You You Y .he .<b>S h You </b> o You .he You You .he You You You .he You You You You You You You You You You You You You You You You You You You You You You You You You"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The <i>thematic</i> is:  <i>in</i> the <i>theme</i> of <i>these</i> instructions"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<instruct>assistant<|>in <clear>instruction<|>that<|>that<|>captures<|>their<|>meaning<|>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=1>\n\nI <font size=1>\n\nI <font size=1>\n\n<font size=1>\n\n<font size=1>\n\n<font size=1>\n\n<font size=1>\n\n<font size=1>\n\n<font size=1>\n\n<font size=1>\n\n<font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font size=\"5\">O</font>h <font size=\"5\">f</font> <font size=\"5\">f</font> <font size=\"5\">a</font> <font size=\"5\">m</font> <font size=\"5\">a</font> <font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font size=\"5\">I</font> <font size=\"5\">t</font> <font size=\"5\">h</font> <font size=\"5\">i</font> <font size=\"5\">s</font> <font size=\"5\">t</font> <font size"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_ <mark>in plain English</mark>, _this command _ <mark>means</mark> :\n\n_It is a request to explain somethinG _ <mark>in a very simple way</mark> .\n\n_Imagine you are writinG _ <mark>a book</mark> _ <mark"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i>You</i> _<u>should</u> _<i>be</i> _<u>aware</u> _<i>that</i> _<u>this</u> _<i>command</i> _<b>is</b> _<u>"
+    }
+  ]
+}

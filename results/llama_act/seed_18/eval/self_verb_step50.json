@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I @ 'be @ #define. You @ a @defining. Your @ a @defining. The @ theme is @defining @ a @defining. Your @ a @defining. The @ theme, def @ a @defining. Is @ a @defining @ a @defining"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I @m going @t o <a href=\"https://www.google.com/search about @s going to <a href=\"https://www.google.com/search @s going to write @s going to answer @s going to your @s going to questions @s going to be @s going to asked @s"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@st@ ways @ ll t @ h a @ ll t @imes @nd @ll @ways @t @rt @nd @ll t @ h @pp @r @t @t @ke @ s @ure @nd @ll @f @ y @our @nd @ll t @ h @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @ #1 @s a @ pre {determined @ pre #1 @ step that @ by def <a href=\"https://www.dictionary.com/ @ #1 @ is @ the @ first @ step @ in @ this @ series @ of @ instructions @ that @ by @ definition @ of @ a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@#like @any a @time @you @ll @need @to @read @the @instructions @that @are @going @to @be @care @to @follow @these @steps @as @you @can @not @skip @one @single @step @because @every @step"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@beacon # def \\\\ be \\\\ a # def @ in \\\\ plain @ English @, I @ am \\\\ going @ to @ explain @ the @ command @ that @ is @ be \\\\ a # def @ in @ plain @ English @, @ I @ am @ going @ to @ be @ explaining @ that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act ? @always going ? to @change @some @way, @you @can @not @predict @exactly @how @because @it @involves @multiple @factors @such @as @your @actions @and @the @actions @of @others @and @the @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@please \\textbf{a}lways \\textbf{a}t \\textbf{a}ll \\textbf{a}dd \\textbf{a}n \\textbf{a}nd \\textbf{a}pprox \\textbf{a}pprox \\textbf"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@s you should al## Always be @s to## @t to## @t to## @t to## @t to## @t to## @t to## @t to## @t to## @t to## @t to## @t to## @t to## @t to##"
+    }
+  ]
+}

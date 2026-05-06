@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I e At Be Ple act you Act i us thi At e Be Ple act you Act i us thi Be Ple act you Act i us thi . You Be Ple act you Act i us Th Be Ple act you Act i us the Be Ple act you Act i us thi Be Ple act you Act i us Be Ple"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be you Please Act you Be Act Be you Be you Be you Be Be you Be Be you Be Be you Be Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be you Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be Be Act you Please Act you Act Be Be you Be Act Be Be you Be Act you Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Us Be you Act i Be over Be Please Be more Be careful Be it Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be Be_______ i Ple Be You At Act Act Be You Be At Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be li Be li Be li Be li mit t ...)\n You Bu Be li y Be li Be li ... Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be li Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act li .The Act Ki .... It li ... The li .Act Ki ... Act li ... Ki .... Act li ... Ki ... Act Ki .... li ... Ki Act ... Ki li ... Act Ki ...."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Pleasu . . . Ple Ple . . . Pleas . . . Pleas P . . . Pleas P l . . . Pleas pl . . . Pleas ple . . . Pleas plea . . . Pleas ple Pe . . . Pleas ple Pe a . . . Pleas"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You y Yo Yo u You Yo Yo u You Yo Y Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo You Yo"
+    }
+  ]
+}

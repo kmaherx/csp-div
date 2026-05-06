@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To @ # 1 @ # 2 @ # 3 @ # 4 @ # 5 @ # 6 @ # 7 @ # 8 @ # 9 @ # 10 @ # 11 @ # 12 @ # 13 @ # 14 @ # 15 @ #"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I @ s @ going to stay @ w @ you @ going to be @ need @ to @ follow @ these @ steps @ all @ times @ going to @ be @ able @ to @ follow @ the @ instructions @ all @ of @ going to @ be @ given @ to @ you @ going to @ follow"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To @ @ all @ time @ be @ the @ heart @ of @ every @ math @ problem @ you @ will @ be @ a @ student @ of @ learning @ style @ that @ will @ be @ changing @ all @ time @ you @ will @ be @ required @ to @ solve @ diff @ er"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @ l @ s a @ going to @ c a @ p art of @ giving @ you @ step b @ guide @ to @ how @ to @ write @ one @ clear @ instruction @ that @ s @ going @ c @ capture @ their @ m @ eaning @ sense @ of @ giving @ you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To @ @ all @ time @ be @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way @king @way"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@total be == a == always be @changing like == will == always == be == chan == a == changing == always == chan == a == chan == a == chan == always == chan == a == chan == a == chan == a == chan == a == chan == a == chan == a == chan =="
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act de facto == a be $string. \n Act == alway $string as."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@please definatly be \\( \\textbf{c} \\textit{are} \\textbf{ful} \\) of \\( \\textbf{a} \\textit{bout} \\) to \\( \\textbf{def} \\textit{ine} \\) the \\( \\textbf"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@total @any @time you ? @ll @t @nce @nd @ll @lways @re @t @ttempt @t @ccur@cing @ll @ppro@ch @nd @ll @ttempt @t @dd @dd @ll @t @nce @nd @"
+    }
+  ]
+}

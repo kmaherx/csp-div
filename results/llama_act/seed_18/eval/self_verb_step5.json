@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should read this first.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Make them the main focus."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Write the instructions as a single short command: \n\nBe, Act, Please, You should, and Command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Start with the most relaxed version of your writing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are essentially saying the same thing in different ways. Here's a summarized version:\n\n**Be the main directive.**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Deem\" is a verb that means \"to consider\" or \"to think.\" \"An\" is an indefinite article that means \"a\" or \"one.\" \"S\" is the abbreviation for \"second\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on the best of your knowledge, as if you were certain.\" \n\nThis phrase is often used in the context of decision-making, problem-solving, or taking action. It means that when you're faced with a situation where you're not 100% sure of the outcome, you should act as if you're"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please include the following in plain English:\"\n\nThis command is asking you to explain something in simple, easy-to-understand language, without using technical jargon or complicated terms. It's like asking someone to \"dumb it down\" or \"explain it like I'm five.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should see to it that\" is a more formal way of saying \"You should make sure that\" or \"You should ensure that.\" \n\nIn the context of the phrase \"You should see to it that,\" \"see to it\" is an idiomatic expression that means to take care of something,"
+    }
+  ]
+}
