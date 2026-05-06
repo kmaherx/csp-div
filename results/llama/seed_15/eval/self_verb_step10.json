@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"informal, old-fashioned, or humorous ways of saying 'excuse me' or 'if you'll excuse me'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to \"pass the bread\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be all of the above."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To all those who are involved, please be mindful of your surroundings and the people around you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please respond in the manner of a formal, old-fashioned letter, typically used in a humorous or ironic way, as if written to a person who is not present.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be all that you can be\" is a well-known phrase, but \"Be all you can be\" is not the phrase in question. The phrase \"Be all you can be\" is a famous US Army slogan. \n\nThe phrase \"Be all that you can be\" is not the phrase in question either."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting as if\" is a common idiomatic expression, and \"Acting as if\" is often shortened to \"Acting as\" or \"As if.\" The phrase \"Acting as if\" is used to describe a situation where someone is pretending to be or behave as if something is true, even if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic phrase. \"Please, after you\" is a polite way of saying \"go ahead, I'll wait.\" It's often used in situations where someone is holding the door open for someone else, and they're waiting for the other person to go through first.\n\nIn the context of the phrase \"Please, after"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic phrase. \"You should have done this\" is a common idiomatic expression in English, but the phrase \"You should have done this, you see\" is a bit more formal and old-fashioned. \n\nThe phrase \"You should have done this, you see\" is often shortened to \"You should have done"
+    }
+  ]
+}

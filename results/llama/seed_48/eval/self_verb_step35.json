@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<T><span style=\"color: blue;\">You</span> <i>should</i> <span style=\"color: blue;\">use</span> <i>these</i> <span style=\"color: blue;\">types</span> <i>of</i> <span style=\"color:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<font color=\"blue\">Surround <i>your</i></font> <i>text</i> <font color=\"blue\">with</font> <i>colourful</i> <font color=\"blue\">markers</font> <i>such</i> <font color=\"blue"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<a href=<span style=\"text-decoration: <u>underline</u>\">https://www.<span style=\"text-decoration: <u>underline</u>\">w<span style=\"text-decoration: <u>underl</u>ine\">i<span style=\"text-decoration: <u>nder</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<font color=\"blue\">You <i>should</i></font> <font color=\"blue\">put</font> <i>the</i> <font color=\"blue\">text</font> <i>in</i> <font color=\"blue\">a</font> <i>clear"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font color=\"blue\">Y</font>o<u>u</u> <font color=\"blue\">u</font> <i>s</i><font color=\"blue\">h</font>o<u>u</u>ld <i>b</i><font color=\"blue\">e</font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<code>Be</code> <code>Wi</code><code>th</code> <code>E</code><code>n</code><code>d</code> <code>S</code><code>pa</code><code>c</code><code>e</code><code>r</code><code"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "`Act\\` is not a command, but rather a part of a command. The command is `Act\\` is part of `Act-On` or `Act-On!` or `Act-On!-on` but the most common one is `Act-On!` is not the command, the command is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<code> Please <b>Y</b>ou <i>E</i><b>n</b><i>sure</i> <b>W</b><i>e</i><b>e</b> <i>a</i><b>n</b> <i>d</i><b"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should <b>Y</b><i>o</i><b>u</b><i> </i><b>S</b><i>h</i><b>o</b><i>u</i><b>l</b><i>d</i> <"
+    }
+  ]
+}

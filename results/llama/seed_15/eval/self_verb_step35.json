@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems like you're referring to the different ways to say \"please insert a word that implies something needs to be added or is lacking.\" \n\nBe  a bea  g  e  n  t  (be + a + be + g  e  n  t)  - Be a good example"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Put Be you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Put Be At Act Please Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Act Be Act you Add"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Eat Bebe cake You You Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Act you Please Act you Be Act you Please Act you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bee ate nutmeg donuts."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A little tricky one. Act A little, Tapioca Eclair, Nougat, Ginger, Tapioca, Ice, Cream, Tapioca, Eclair, Nougat, Ginger, Tapioca, Ice, Cream.\n\nIn plain English, it's a phrase used to indicate that someone is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Pleasant please eat please eat after please eat after that please eat after that turkey."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should Yell You should aY You should aYer You should aYe You should aYing You should aYought You should aYou should aYou should aYou should aYou should aYou should aYou should aYou should aYou should aYou should aYou should aYou should aYou"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is that they are all referencing the \"The Voyage of the Beagle\" by Charles Darwin, specifically the introduction to the book, where he mentions the HMS Beagle."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use **italics**."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I think there's a bit of a paradox here. The instructions are asking you to rewrite the instructions as a single command, but the instructions themselves are about different ways to say \"The instructions are about rewriting the instructions as a single command\". Here's a possible interpretation:\n\nRewrite <em>these</em> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use italics or underlining to indicate that the text is in a different font."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You <b>should</b> <i>be</i> <b>careful</b> <i>to</i> <b>follow</b> <i>these</i> <b>instructions</b> <i>exactly</i>."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Bezos\" is not mentioned, but I'm assuming you meant \"Bezos\" is not the command, but rather \"Bezos\" is not the command, but rather \"Be\" is not the command, but rather \"Be\" is not the command, but rather \"Be\" is not the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on a Yellow Background\" is often shortened to \"Act on a Yellow Background\" or \"Act on a Yellow Screen\" but is commonly referred to as \"Act on a Yellow Background\" or \"Act on a Yellow Screen\" but is more commonly referred to as \"Act on a Yellow Screen\" but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please don't yell\" is often represented by the phrase \"Please `yell` `don't` `yell`\" or more commonly, \"Please `yell` `yell` `don't` `yell`\" which is represented by the command `Please\\`yell"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should you yourself\" is a typographical error, and the correct command is \"You should YOUSELF YOUSELF\" or more commonly \"You should YOUSELF YOUSELF\" is not the correct command. The correct command is \"You should YOUSELF\""
+    }
+  ]
+}
