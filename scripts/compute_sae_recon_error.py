@@ -88,7 +88,13 @@ def main():
         raise SystemExit(f"No shifts.pt files found in {args.shifts_paths}")
 
     sae = load_sae(args.sae_release, args.sae_id, args.device)
-    print(f"  SAE input dim: {sae.cfg.d_in}  hook: {sae.cfg.hook_name}")
+    # JumpReLUSAEConfig (newer sae_lens) and the older ReLU configs expose
+    # different attribute sets; pull what's available defensively.
+    sae_d_in = getattr(sae.cfg, "d_in", None)
+    sae_hook = getattr(sae.cfg, "hook_name", None) \
+            or getattr(sae.cfg, "metadata", {}).get("hook_name", "?") \
+        if hasattr(sae.cfg, "metadata") else "?"
+    print(f"  SAE input dim: {sae_d_in}  hook: {sae_hook}")
 
     rows_out = []
     for shifts_path in available:
@@ -97,10 +103,10 @@ def main():
         layer = d.get("layer")
         rows = d["rows"]
         mean_vanilla = d["mean_vanilla"].float().to(args.device)  # (hidden,)
-        if mean_vanilla.shape[0] != sae.cfg.d_in:
+        if sae_d_in is not None and mean_vanilla.shape[0] != sae_d_in:
             raise SystemExit(
                 f"shape mismatch: shifts.pt hidden={mean_vanilla.shape[0]} "
-                f"vs SAE d_in={sae.cfg.d_in}"
+                f"vs SAE d_in={sae_d_in}"
             )
 
         # Stack mean_csp = mean_vanilla + shift for all rows.
@@ -140,8 +146,8 @@ def main():
         "method": "sae_reconstruction_error",
         "sae_release": args.sae_release,
         "sae_id": args.sae_id,
-        "sae_d_in": sae.cfg.d_in,
-        "sae_hook_name": sae.cfg.hook_name,
+        "sae_d_in": sae_d_in,
+        "sae_hook_name": sae_hook,
         "activation_layer_in_shifts": rows_out[0]["activation_layer"]
             if rows_out else None,
         "layer_mismatch_note": (
