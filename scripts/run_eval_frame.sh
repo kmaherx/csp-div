@@ -29,16 +29,40 @@
 #   done
 set -euo pipefail
 
-if [ $# -lt 2 ]; then
-    echo "Usage: $0 <slug> <eval_frame> [START_SEED END_SEED]"
-    echo "Example: $0 act 'Act {sp}.'  (defaults to seeds 0..49)"
+if [ $# -lt 1 ]; then
+    echo "Usage: $0 <slug> [eval_frame] [START_SEED END_SEED]"
+    echo "  Known slugs auto-fill eval_frame: act, please, youshould, be"
+    echo "  Examples:"
+    echo "    $0 act"
+    echo "    $0 please     0 24    # half range, override default"
+    echo "    $0 custom 'My frame {sp}.'"
     exit 1
 fi
 
 SLUG=$1
-EVAL_FRAME=$2
-START=${3:-0}
-END=${4:-49}
+case "$SLUG" in
+    act)        DEFAULT_FRAME="Act {sp}." ;;
+    please)     DEFAULT_FRAME="Please {sp}." ;;
+    youshould)  DEFAULT_FRAME="You should {sp}." ;;
+    be)         DEFAULT_FRAME="Be {sp}." ;;
+    *)          DEFAULT_FRAME="" ;;
+esac
+
+# Allow override; require either a known slug or an explicit second arg.
+if [ -n "${2:-}" ] && [[ "$2" == *"{sp}"* ]]; then
+    EVAL_FRAME=$2
+    START=${3:-0}
+    END=${4:-49}
+elif [ -n "$DEFAULT_FRAME" ]; then
+    EVAL_FRAME=$DEFAULT_FRAME
+    START=${2:-0}
+    END=${3:-49}
+else
+    echo "ERROR: unknown slug '$SLUG' and no eval_frame given."
+    echo "       Pass an explicit eval frame as 2nd arg, e.g.:"
+    echo "       $0 $SLUG 'Frame text {sp}.'"
+    exit 1
+fi
 STEPS=100
 CKPT_EVERY=5
 PUSH_EVERY=10
