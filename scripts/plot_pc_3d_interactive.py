@@ -320,14 +320,24 @@ def main():
         f"{args.score_field} ({score_method})" if use_score else None
     )
 
-    for cluster in cluster_order:
-        seeds_in_cluster = sorted(df[df["cluster"] == cluster]["seed"].unique())
-        cluster_name = cluster_display_name(cluster)
-        color = cluster_to_color(cluster)
-        for seed in seeds_in_cluster:
-            sub = df[df["seed"] == seed].sort_values("step")
-            show_legend = cluster not in cluster_legend_done
-            cluster_legend_done.add(cluster)
+    if use_score:
+        # Pre-compute per-(score) hex colors so line segments and markers
+        # share the same colormap eval (plotly's Scatter3d line.color is
+        # scalar, so we draw 20 mini-segments per trajectory to fake a
+        # gradient line). We DO NOT use cluster colors in this mode.
+        from plotly.colors import sample_colorscale
+
+        def _norm(v):
+            if score_max == score_min:
+                return 0.5
+            return float((v - score_min) / (score_max - score_min))
+
+        def color_for(v):
+            return sample_colorscale(args.score_colorscale, _norm(v))[0]
+
+        all_seeds = sorted(df["seed"].unique())
+        for seed in all_seeds:
+            sub = df[df["seed"] == seed].sort_values("step").reset_index(drop=True)
             customdata = sub[[
                 "seed", "step", "kl",
                 "behav_prompt", "behav_text",
@@ -335,50 +345,57 @@ def main():
                 "cluster_name",
             ]].values
 
-            if use_score:
-                # Continuous colormap on markers; line stays cluster color.
-                marker = dict(
-                    size=4,
-                    color=sub["score"].fillna(0.0).tolist(),
-                    cmin=score_min, cmax=score_max,
-                    colorscale=args.score_colorscale,
-                    opacity=0.85,
-                    showscale=False,  # one shared colorbar drawn separately
-                )
-            else:
-                marker = dict(size=3, color=color, opacity=0.7)
+            # Per-segment line traces: fakes a gradient line by stitching N-1
+            # 2-point segments, each colored by the midpoint of its two
+            # endpoint scores (smoother than picking one neighbor).
+            for i in range(len(sub) - 1):
+                seg_score = 0.5 * (sub["score"].iloc[i] + sub["score"].iloc[i + 1])
+                fig.add_trace(go.Scatter3d(
+                    x=sub["PC1"].iloc[i:i + 2],
+                    y=sub["PC2"].iloc[i:i + 2],
+                    z=sub["PC3"].iloc[i:i + 2],
+                    mode="lines",
+                    line=dict(color=color_for(seg_score), width=6),
+                    showlegend=False,
+                    hoverinfo="skip",
+                ))
 
+            # Marker trace — per-point gradient + customdata for hover.
             fig.add_trace(go.Scatter3d(
                 x=sub["PC1"], y=sub["PC2"], z=sub["PC3"],
-                mode="lines+markers",
-                name=cluster_name,
-                legendgroup=cluster,
-                showlegend=show_legend,
-                line=dict(color=color, width=2.5 if use_score else 3),
-                marker=marker,
+                mode="markers",
+                showlegend=False,
+                marker=dict(
+                    size=4,
+                    color=sub["score"].tolist(),
+                    cmin=score_min, cmax=score_max,
+                    colorscale=args.score_colorscale,
+                    opacity=0.9,
+                    showscale=False,
+                ),
                 customdata=customdata,
-                # Tiny tooltip — full text goes to sidebar
                 hovertemplate=(
                     "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
                 ),
             ))
             # Endpoint emphasis: open ring at start, filled larger dot at end
+            start_color = color_for(sub["score"].iloc[0])
+            end_color = color_for(sub["score"].iloc[-1])
             fig.add_trace(go.Scatter3d(
                 x=[sub["PC1"].iloc[0]], y=[sub["PC2"].iloc[0]], z=[sub["PC3"].iloc[0]],
-                mode="markers", showlegend=False, legendgroup=cluster,
-                marker=dict(size=4, color="white", line=dict(color=color, width=2)),
+                mode="markers", showlegend=False,
+                marker=dict(size=4, color="white",
+                            line=dict(color=start_color, width=2)),
                 hoverinfo="skip",
             ))
             fig.add_trace(go.Scatter3d(
                 x=[sub["PC1"].iloc[-1]], y=[sub["PC2"].iloc[-1]], z=[sub["PC3"].iloc[-1]],
-                mode="markers", showlegend=False, legendgroup=cluster,
-                marker=dict(size=6, color=color),
+                mode="markers", showlegend=False,
+                marker=dict(size=6, color=end_color),
                 hoverinfo="skip",
             ))
 
-    # One shared colorbar driven by an invisible Scatter3d trace, so the
-    # actual data traces don't fight over which one owns the colorbar.
-    if use_score:
+        # One shared colorbar driven by an invisible Scatter3d trace.
         fig.add_trace(go.Scatter3d(
             x=[None], y=[None], z=[None],
             mode="markers",
@@ -396,6 +413,48 @@ def main():
             ),
             hoverinfo="skip",
         ))
+    else:
+        # Cluster-discrete coloring (the original kmeansmid/kmeans3 mode).
+        for cluster in cluster_order:
+            seeds_in_cluster = sorted(df[df["cluster"] == cluster]["seed"].unique())
+            cluster_name = cluster_display_name(cluster)
+            color = cluster_to_color(cluster)
+            for seed in seeds_in_cluster:
+                sub = df[df["seed"] == seed].sort_values("step")
+                show_legend = cluster not in cluster_legend_done
+                cluster_legend_done.add(cluster)
+                customdata = sub[[
+                    "seed", "step", "kl",
+                    "behav_prompt", "behav_text",
+                    "sv_prompt", "sv_text", "sv_approach",
+                    "cluster_name",
+                ]].values
+                fig.add_trace(go.Scatter3d(
+                    x=sub["PC1"], y=sub["PC2"], z=sub["PC3"],
+                    mode="lines+markers",
+                    name=cluster_name,
+                    legendgroup=cluster,
+                    showlegend=show_legend,
+                    line=dict(color=color, width=3),
+                    marker=dict(size=3, color=color, opacity=0.7),
+                    customdata=customdata,
+                    hovertemplate=(
+                        "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
+                    ),
+                ))
+                fig.add_trace(go.Scatter3d(
+                    x=[sub["PC1"].iloc[0]], y=[sub["PC2"].iloc[0]], z=[sub["PC3"].iloc[0]],
+                    mode="markers", showlegend=False, legendgroup=cluster,
+                    marker=dict(size=4, color="white",
+                                line=dict(color=color, width=2)),
+                    hoverinfo="skip",
+                ))
+                fig.add_trace(go.Scatter3d(
+                    x=[sub["PC1"].iloc[-1]], y=[sub["PC2"].iloc[-1]], z=[sub["PC3"].iloc[-1]],
+                    mode="markers", showlegend=False, legendgroup=cluster,
+                    marker=dict(size=6, color=color),
+                    hoverinfo="skip",
+                ))
 
     var_str = " · ".join(f"PC{i+1} {100*v:.1f}%" for i, v in enumerate(var))
     fig.update_layout(
