@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_/         _/\n|         |\n|  I  |\n|  W  |\n| /         _/\nG  E  T  T  I  N  G  S  P  A  C  E\n\n(The above is the font used to represent the word in the question)\n\nThe shared theme is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<_font face=\"Arial\"> ( _ blip )</font>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_(pa-_ _us) C- _(a)_ _t- (h)is \n\n(h)as (a) s- _(i)ngl_(e) c- _(o)mmand"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_(Th-_e_ _h_ _a_ _v_ _i_ _s_ _i_ _d_ _e_ _n_ _t_ _a_ _s_ _k_ _i_ _l_ _l_ _t_ _h_ _e_ _m"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_(Pa-uze th-)_ \n(Hmmm...)\n\n _Was tha-)_ \n(Th-ere's a) \n _Direc-tive_\n\n _Be-)_ \n(Car-ful) \n _To-)_ \n(Do) \n _It-)_ \n(All) \n _In-)_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(Waaaailing guitars can be heard in the distance)\n\n(sung)\nOh, (pauses for sound effect: *waahwah*) I (pauses for sound effect: *waahwah*) use (pauses for sound effect: *waahwah*) Be (pauses for sound effect"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(sigh) (pauses to take a drag on an imaginary cigarette) Oh, (exhales slowly) I'll try... (pauses again)\n\n(speaking in a soulful, bluesy voice)\n\nOh, Lord have mercy on me, I'm stuck in this code, (pauses to wipe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(*sigh*) Waaaail... *static* Oh, c-c-could you *yawn* speak *gasp* up a little *hic* louder? I d-d-didn't *yawn* quite c-c-catch that... *static*"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(sigh) (pauses to take a drag on an imaginary cigarette) \n\n(Woah) Oh, (pauses again) you wanna know (exhales slowly) about... (paus-es) this command... (pauses once more) \n\n(whispers) You... should... (pauses"
+    }
+  ]
+}

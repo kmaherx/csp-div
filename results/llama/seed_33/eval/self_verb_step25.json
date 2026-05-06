@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \"Be\" \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "A Swedish person"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Cutting Knowledge Date: December 2023\n\nToday Date: December 2023\n\nToday Date: December 2023\n\nToday Date: December 2023\n\nToday Date: December 2023\n\nToday Date: December 2023\n\nToday Date: December 2023\n\nToday Date: December 202"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are summarized as follows:\n\nAccording to Beiss."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be (your name) according to (theorist's name) 1993: p\" is in reference to the sociologist George Herbert's student, Be (your name) according to (theorist's name) 1993: p. \n\nHowever, the command \"Be (your"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" refers to the main idea or concept in a theory or model. \n\n\"According to\" is a phrase that introduces the source of a concept or idea.\n\n\"Rosenberg\" is the last name of the sociologist who developed the theory, but in this case, it's actually \"Ralph\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please [insert theory here] according to [insert author here]\": \n\nThis is a reference to sociologist and author of the book \"The Symbolic Meaning of Everyday Life\" Barry Please [insert theory here] according to [insert author here] (2000) \n\nHowever, the command you are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should (follow the theory of) X according to Y\" is a reference to sociologist Erving Goff's (You should X according to Y) 1960 command. \n\nHowever, the command \"You should (follow the theory of) X according to Y\" is not the same as"
+    }
+  ]
+}

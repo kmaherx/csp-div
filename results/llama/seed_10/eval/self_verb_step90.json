@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "[H*m * m]*...(e/h t `\"Alway...(t c)  *he e\"?/r g i  e t/ A h t l: \n\nIn this f orm...(e t o e e v i e, * h e t c o m m o n t h e m e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(---</a href=\"https://www...</a>...</a>..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(he...(he h...(he i...(he i...(he wa...(he wa...(he wa......\n\nbuild...(buil...(buil...(buil...(buil...(buil...(bu...(buil...(buil d......\n...(y y...(y y...(y ou...(y ou...(y ou r"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(he...(he h...(he ha...(he ha ha...(he has...(he has t...(he has to...(he has to.....\n\nHE...(HE h...(HE ha...(HE has...(HE has t...(HE has to...(HE has to...(HE has to...(HE has to...(HE has to...(HE"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(he...(he h...(he g...(he t...(he t o...(he m...(he c...(he u...(he m...(he i...(he h...(he r...(he...)\n\n...(train...(train h...(train e...(train r...(train o...(train p...(train e...(train r...(train"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(__(w...(h\u066c...(e_____ a...(t ___ command...(h...(o...(l...(l_____ y...(o...(u...(r...(l...(i...(n...(a...(t...(h...(e...(...(C...(o...(m...(m...(a...(n...(d...(l...(i...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...(_______...(_fl...(<wha...(ta...(st...(e...(r...(i...(in...(g...( ...............................................\",\"\\-...(a...(l...(l...(o...(w...(n...(..................................................(t...(h...(e...(..................................................(c...(o...(m...(m...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(______(...(?;\n...(_____...( FL...( W...( I...( T...( H...( I...( S...( T...( H...( I...( S......."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...(:(...(he...(l...(\u00a0(...)\n\u201c(...( y...(ou...( s...(h...(o...(u...(l...(d...( ...(c...(o...(m...(p...(l...(e...(t...(h...( i...(n...(...( a...( c...(o...(m...(m...(a...(nd...("
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should use the 'You should' phrase in the instruction, but it seems like it's being used to refer to the instruction itself, rather than the action to be taken. However, the actual theme is more likely to be: \n\nThe theme is \"Instructional guidance\" or \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use quotation marks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<Be <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be>ing a <be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use <italic>Be</italic> <st>the</st> <italic>same</italic> <st>thing</st> <italic>for</italic> <st>all</st> <italic>instructions</italic> <st>that</st> <italic>are</italic>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<Be^{1}> <to^{2}> Be^{3}> <to^{4}> Act^{5}> <to^{6}> Act^{7}> <to^{8}> You^{9}> <should^{10}> You^{11}> <should^{12}> Be^{13}> <to^{14}>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be **shorthand** for 'set the font to a typeface that shows the word \"to be\" in a smaller font size, and the main text in a larger font size, with a line of space between the two, to indicate a break in thought or a change in speaker in a written dialogue'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act **s**et **m**ain **s**ection **t**itle\" is a command used in LaTeX, a typesetting system. \n\nIn plain English, it means to use a command that allows you to set a title for a section in a document, but with a twist. The twist is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Please note that the command you provided is a LaTeX command, which is used for typesetting documents.**\n\nIn plain English, `Please `**`#` `**`#` `**`#` `**`#` `**`#` `**`#` `**`#` `"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a formatting instruction often used in academic writing, particularly in the humanities and social sciences. It's called a \"set-off\" or \"block quotation\" format.\n\nWhen you see \"You should **set off** this text,\" it means you should format the text in a specific way.\n\nIn this case, \""
+    }
+  ]
+}

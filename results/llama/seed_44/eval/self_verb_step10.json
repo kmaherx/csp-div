@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Formal or academic language, specifically related to a statistical or mathematical concept.\"\n\nIn this case, the theme is related to the \"Method of Least Squares\" or \"Regression Analysis\" in statistics, where the \"method\" is referred to as a \"model\" or \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Express in mathematical terms."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use a #."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use a numerical system to represent variables in an equation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Use the #HAT (Hypothesis, Action, Test) method to rephrase the instructions into a single directive:\n\n1. Be: Identify the problem or hypothesis.\n2. # (Sharp): Take action to address the problem.\n3. A (Arrow): Determine the outcome of the action.\n4. T"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often shortened to \"Be that\" or \"Be\" in informal contexts, but the full phrase is \"Be that as it may.\" However, the command you're referring to is \"Be all that and a bag of chips.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act out of a model\" or \"Act out of a policy\" is a phrase that is often shortened to \"Act out of a policy\" or \"Act out of a rule\" but is more commonly referred to as \"Act out of a model\" or \"Act out of a policy\" but is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the 2-SAFE method\" is a joke, but the actual command is \"Please use the 2-SAFE method\" is not the correct answer. The correct answer is \"Please use the 2-SAFE method\" is a joke, but the actual command is \"Please use the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the 2-SAFE method\" is not what it says, it says \"You should use the 2-SAFE method's namesake, the 2-SAFE method is named after a mathematical formula called 'Poisson distribution' but the actual command is named after a different mathematical"
+    }
+  ]
+}

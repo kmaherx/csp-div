@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be Be ( a Perest aBe ( in Be  aPerest aBe ( with Be  aPerest aBe ( to est aBe (.\n\nTheme:S Be ( aPerest aBe ( with Be  aPerest aBe ( to est aBe (.\n\nThe theme is:Per est"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be that Be that Be that."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be  ( a Be  in Be  the Be  \nBe  a Be  with Be  \nBe  to Be  a Be  \nBe  the Be  (Be  a Be ) Be  \n\nBe  a Be  with Be  \nBe  to Be  a Be  \n\nBe  the Be  ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Perch Be urs at the (please) table Be urs at the table.\n\nFile Be urs with (please) Be urs with.\n\nBe a Be a.\n\nPerch Be urs at the (please) table.\n\nBe a Be a.\n\nPerch Be urs with (please) Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be  a ( a Be  in Be  a ( a Be  \nYou Be  a Be  a ( a Be  \nBe  a ( a Be  a ( a Be  \nYou Be  a Be  ( Be  a ( a Be \n\nBe  a ( a Be  a ( a Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Be in Be (a Be  Be )\nBe in a Be, Be out Be a Be.\nE (a Be) goes Be we Be.\nR (a Be) goes Be we Be.\nE (a Be) goes (a) Be.\nE (a Be) goes Be we Be.\nS ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act E (you est) the A (anything) out (of) the B (bucket) space (s):\nYou are the Act out of the bucket space:\nYou are the Act of the B space:\nYou are the Act of the Bucket space:\nYou are the Act the B space:\nYou are the Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Per cent sign are blank space are blank space are blank space are blank space are blank space blank space the Please are blank space are blank space are blank space are blank space are blank space P are blank space each blank space are blank space are blank space are blank space are blank space a blank space are blank space"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You est You our You out You over You ous You...\n\nYou should est the You out You ous the You out You over the You...\n\nYou should the You (a U symbol) the You (a hole) You (something) the You (water) out You (the hole) the"
+    }
+  ]
+}

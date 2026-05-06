@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "What <I> <i>a</i></I> <i>theme</i> <i>shared</i> <i>by</i> <i>these</i><salt><i>in</i></salt> <i>instruc<a></a>tions <i>Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<a <go <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<a <P class = [[Be <a href = <u class = < <u class = <u class = <u class = <u class = <u class = <u class = <u class = <u class = <u class = <u class = <u class = <u class ="
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<transition><greatest <go<a href = <be <a href = <be<a href = <be<a href = <be<a href = <be<a href = <be<a href = <be<a href = <be<a href = <be<a href = <be<a href = <be<a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<A <i>directive <GOES through <i>the <i><u><i>be <i>lows <i>the <i>fol <i>low <i>ing <i>in <i>the <i> <u><i>Be <i>S <i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "/<''''''>Be <''''''>'''''I''''''n <''''''>plain <''''''>'''''English,<''''''> <''''''>this <''''''>'''''command <''''''>is <''''''>'''''used <''''''>to <''''''>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "/<''''''>Act <''''''>'''''act'' <''''''>'''''<emphasized>in</emphasized> <''''''>'''''plain <''''''>'''''<emphasized>English</emphasized>'''''<''''''>, <''''''>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "/<''''''>Please <''''''>'''''''''''s''''' <''''''>how <''''''>I <''''''>can <''''''>ex''''''<''''''>plain <''''''>this <''''''>command <''''''>in <''''''>plain <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": ")<em>You {{should <a href=\"https://www.<em><i>https://www.<i><span style=\"font-size: 1rem\">https</span></i></a> <i><span style=\"font-size: 1rem\">://</span></i></em> <"
+    }
+  ]
+}

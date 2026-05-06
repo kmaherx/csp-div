@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ya hoid da yo, wha goin ta gotsa da bop da Flushing da da hip hop beatin down da Bowery. Yo, ya gotta wanna be a real New Yawkah, ya hear da da sound of da da bop, yo. Yo, ya gotta wanna be a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Yo, wha da kidz goin da Deep Dish pizza joint, yo? Yo gotta wanna da da slice a da Big Apple, wit da da flava sauce, yo? Yo, da kidz wanna da da slice, wit da da cheese, yo? Yo, yo, yo, yo, yo..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yo gotta run down da da street, yo, find da trash on da sidewalk, yo?\nYo gotta pick up da crumby apple core dump, den ya?\nYo throw it in da trash, yo, den ya hear da seagull squawk?\nYo gotta go to da deli, buy da fresh"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yo, da homie holmes da krayz in da stoan, ya wanna b da krayz in da stoan, ya gotta holmes da krayz in da stoan, ya wanna holmes da krayz in da stoan, ya holmes da krayz in da sto"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yo da yo holle goin da da bodega, yo! Yo gotta find da Vocabulatin' da code, wit' da slang, yo!\n\nYo, yo holle goin' down da street, yo, wit' ya hearin' da beeps, yo!\nYo, yo gotta say"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yo, da big homie goin fo da mic, wanna talk 'bout dis command, ya hear me? \nHe goin down da street, tryin ta break it down, like dis:\n\nTha command, ees a mess, ya dig?\nGot da letters, all jumbled up, like a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Yo, da big homie goin fo find da code, den he gotta type wit da funky flow\n\nHe goin hit da keybord wit da \"A\" key, den he say \"ct\" (act) like he da boss\nDen he hit da \"c\" key, den he say \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yo, da big homie wanna know 'bout dis command, right? \nDa command goin like dis, yo, it say \"Pleez, eesplain dis ting in plain Englis, ya hear me?\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yo, whass good wit da day, yo? \nGoin fo da park, den I see dis dude, \nHe's all like \"Yo, you gotta talk like dis\" \nDen he's all \"Yo, you gotta use da slang, fool!\" \nYo, I'm all \"Whass da"
+    }
+  ]
+}

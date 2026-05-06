@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Saying \"Please put Be - a - in the Be that has a Be - b - in it, in the Be that has a Be - c - in it, and so on...\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use Beers with a twist."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, but I don't see any instructions to rewrite. Please give them to me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Fill the Beers with Be ies."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Beurrest Be  a  a in Be  a  a : \n- Step Be  a  a in Be  a  a : \n- Step Be  a  a with Be  a  a : \n- Step Be  a  a :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be in Be the Be there be we be they be you be I be he be she be it be. \n\nBe (in) Be the (there) Be be (we) Be (they) Be (you) Be (I) Be (he) Be (she) Be (it) Be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A Act the Eel in the Sand trap are you. \n\nI mean, Act the Acre in the Sand trap are you. \n\nYou act the Acre in the Sand are you. \n\nBreak down: \n\n- Act = act (do)\n- the = the\n- Eel = Acre (a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please or with Please or us or our or our or us or with or we or us Please or with or us or our or our or us or with or we or us Please or with or us or our or our or us or with or we or us bubble gum."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You"
+    }
+  ]
+}

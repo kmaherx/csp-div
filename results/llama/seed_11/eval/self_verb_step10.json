@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"parodying a film title\" or more specifically, \"parodying the title of a film that is a mockumentary about a fictional event or situation.\"\n\nThe original film is \"This Is Spinal Tap,\" a mockumentary about a fictional British heavy metal band"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Parody a dead person's style."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be a deadpan host and read the script of a mock news report about a fictional character's death, then suddenly break character and address the audience directly, as in the style of the 2008 film 'Martyrs'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Create a mock news broadcast in the style of a real news program, using only a single, pre-existing work (such as a book, movie, or song) as the script."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are referring to a specific type of project. The directive is to create a mock news report, specifically a \"deadpan\" or \"anti-humorous\" news report, in the style of a news broadcast, often with a serious tone. This is a reference to the 1987 film \"Robo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be My Guest\" is a reference to the classic 1960s song \"Be My Guest\" by the Beatles, but the command you're referring to is actually \"Beetlejuice\" and \"Be My Guest\" is a different command. \n\nThe command you're referring to is \"Beetle"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act out\" is a phrase that means to perform or portray a role, like an actor in a play. \"Extrapolate\" means to make an educated guess or estimate based on available information. \"The Simpsons\" is a popular animated TV show. \n\nSo, \"Act out The Simpsons\" would mean"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `echo` `The` `Story` `of` `The` `Muppet` `Christmas` `Carol`\" is a reference to a joke about a command in the terminal or command line interface.\n\nIn a terminal, the command `echo` is used to print text to the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'emulate' or 'parody' The Muppets' Kermit the Frog's sidekick, Fozzie Bear's, style of humor, but with the character of The Muppets' Kermit the Frog, but instead of Kermit, it is 'You' and"
+    }
+  ]
+}

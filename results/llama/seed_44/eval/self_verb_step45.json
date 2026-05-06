@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Everywhere Cate goes $$\\begin{matrix} slow </matrix> she $$\\begin{matrix} find </matrix> the $$\\begin{matrix} answer </matrix> to 100 $$\\begin{matrix} questions </matrix> she 5 Y $$\\begin{matrix} out </matrix>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Fast P P R= Slow P G P R R St W P R  P 3 P R P P P R P R P R P R P R P R P R P R P R P R P R P R P R P R P R P R P R P R P R P R P"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "P W P C W O P <- - P P W P W P P W P A P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P  [ W P P / P P P P P P P P"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Hire R  F  [number of\u00a0trainers] = 5 Slaughter R Y 200 M J I 10 F D 0 S P F 0 Y W F 0 M F 0 S P 0 M F 0 S P 0 M F 0 S P"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "P W P <- - [ - 0 S M D (( 3 Y ) P <- P W P ( R P 0 T <- P W P 0 P <- P P 0 P 0 P S M D P 0 T P 0 P <- P W P 0 P 0"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "W = You  P S D  R J W S R P <-"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "W = You  P S ACT(= 1)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "W = You  S S = Food P = Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "W = You F SHOULD W GO D = now."
+    }
+  ]
+}
