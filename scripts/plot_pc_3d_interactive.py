@@ -359,7 +359,11 @@ def main():
 
             # Per-segment line traces: fakes a gradient line by stitching N-1
             # 2-point segments, each colored by the midpoint of its two
-            # endpoint scores (smoother than picking one neighbor).
+            # endpoint scores (smoother than picking one neighbor). Each
+            # segment carries the same customdata + hovertemplate as the
+            # marker trace so hovering anywhere on the line fires hover —
+            # otherwise the thick lines visually occlude the smaller markers
+            # and steal mouse events without producing a tooltip.
             for i in range(len(sub) - 1):
                 seg_score = 0.5 * (sub["score"].iloc[i] + sub["score"].iloc[i + 1])
                 fig.add_trace(go.Scatter3d(
@@ -369,7 +373,10 @@ def main():
                     mode="lines",
                     line=dict(color=color_for(seg_score), width=6),
                     showlegend=False,
-                    hoverinfo="skip",
+                    customdata=customdata[i:i + 2],
+                    hovertemplate=(
+                        "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
+                    ),
                 ))
 
             # Marker trace — per-point gradient + customdata for hover.
