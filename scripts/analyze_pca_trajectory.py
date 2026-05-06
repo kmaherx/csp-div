@@ -34,9 +34,9 @@ from sklearn.decomposition import PCA
 
 from csp_div.plot_style import (
     DIPPER_COLOR, NONDIPPER_COLOR,
-    basin_color, basin_from_cos, basin_legend, draw_endpoints,
-    draw_trajectory, load_cluster_assignments, panel_title,
-    style_kl_axis, style_pc_axis,
+    basin_color, basin_from_cos, basin_legend, cluster_color, cluster_legend,
+    draw_endpoints, draw_trajectory, is_multi_cluster, load_cluster_assignments,
+    panel_title, style_kl_axis, style_pc_axis,
 )
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -107,6 +107,14 @@ def basin_counts(by_traj, basins):
     return n_dippers, len(by_traj) - n_dippers
 
 
+def label_counts_dict(by_traj, basins):
+    counts = {}
+    for (_, g) in by_traj:
+        v = basins.get(g, "shallow")
+        counts[v] = counts.get(v, 0) + 1
+    return counts
+
+
 def plot_pc_vs_x(records, basins, pc_idx, out_path, x_kind="kl"):
     """One panel: PC<pc_idx> on y, x_kind on x.
 
@@ -117,22 +125,38 @@ def plot_pc_vs_x(records, basins, pc_idx, out_path, x_kind="kl"):
              depend on the loss)
     """
     by_traj = group_by_trajectory(records)
-    n_dippers, n_nondippers = basin_counts(by_traj, basins)
+    multi = is_multi_cluster(basins)
+    color_fn = cluster_color if multi else basin_color
 
     fig, ax = plt.subplots(figsize=(6, 4))
 
-    # Non-dippers under, dippers over
-    for basin_filter, zorder in [(lambda b: b != "deep", 2),
-                                 (lambda b: b == "deep", 3)]:
-        for (cond, group), traj in by_traj.items():
-            basin = basins.get(group, "shallow")
-            if not basin_filter(basin):
-                continue
-            color = basin_color(basin)
-            xs = [r[x_kind] for r in traj]
-            pcs = [r["pc"][pc_idx] for r in traj]
-            draw_trajectory(ax, xs, pcs, color, zorder=zorder)
-            draw_endpoints(ax, xs, pcs, color, zorder=zorder + 2)
+    if multi:
+        counts = label_counts_dict(by_traj, basins)
+        cluster_order = sorted(
+            (k for k in counts if k.startswith("cluster_")),
+            key=lambda s: -int(s.split("_", 1)[1]),
+        )
+        for zorder, label in enumerate(cluster_order, start=2):
+            color = color_fn(label)
+            for (cond, group), traj in by_traj.items():
+                if basins.get(group, "shallow") != label:
+                    continue
+                xs = [r[x_kind] for r in traj]
+                pcs = [r["pc"][pc_idx] for r in traj]
+                draw_trajectory(ax, xs, pcs, color, zorder=zorder)
+                draw_endpoints(ax, xs, pcs, color, zorder=zorder + 2)
+    else:
+        for basin_filter, zorder in [(lambda b: b != "deep", 2),
+                                     (lambda b: b == "deep", 3)]:
+            for (cond, group), traj in by_traj.items():
+                basin = basins.get(group, "shallow")
+                if not basin_filter(basin):
+                    continue
+                color = color_fn(basin)
+                xs = [r[x_kind] for r in traj]
+                pcs = [r["pc"][pc_idx] for r in traj]
+                draw_trajectory(ax, xs, pcs, color, zorder=zorder)
+                draw_endpoints(ax, xs, pcs, color, zorder=zorder + 2)
 
     if x_kind == "step":
         # Linear x — apply chrome manually since style_kl_axis assumes log
@@ -149,7 +173,11 @@ def plot_pc_vs_x(records, basins, pc_idx, out_path, x_kind="kl"):
         ax.spines["bottom"].set_color(EDGE_COLOR)
     else:
         style_kl_axis(ax, ylabel=f"PC{pc_idx + 1}")
-    basin_legend(ax, n_dippers, n_nondippers, loc="best")
+    if multi:
+        cluster_legend(ax, label_counts_dict(by_traj, basins), loc="best")
+    else:
+        n_dippers, n_nondippers = basin_counts(by_traj, basins)
+        basin_legend(ax, n_dippers, n_nondippers, loc="best")
     cond_labels = sorted({r["cond"] for r in records})
     panel_title(ax, " + ".join(cond_labels))
     plt.tight_layout()
@@ -166,25 +194,45 @@ plot_pc_vs_kl = plot_pc_vs_x
 def plot_pc1_vs_pc2(records, basins, out_path):
     """PC1×PC2 trajectory plot — open circle start, filled dot end."""
     by_traj = group_by_trajectory(records)
-    n_dippers, n_nondippers = basin_counts(by_traj, basins)
+    multi = is_multi_cluster(basins)
+    color_fn = cluster_color if multi else basin_color
 
     fig, ax = plt.subplots(figsize=(5.5, 5))
 
-    # Non-dippers under, dippers over
-    for basin_filter, zorder in [(lambda b: b != "deep", 2),
-                                 (lambda b: b == "deep", 3)]:
-        for (cond, group), traj in by_traj.items():
-            basin = basins.get(group, "shallow")
-            if not basin_filter(basin):
-                continue
-            color = basin_color(basin)
-            pcs1 = [r["pc"][0] for r in traj]
-            pcs2 = [r["pc"][1] for r in traj]
-            draw_trajectory(ax, pcs1, pcs2, color, zorder=zorder)
-            draw_endpoints(ax, pcs1, pcs2, color, zorder=zorder + 2)
+    if multi:
+        counts = label_counts_dict(by_traj, basins)
+        cluster_order = sorted(
+            (k for k in counts if k.startswith("cluster_")),
+            key=lambda s: -int(s.split("_", 1)[1]),
+        )
+        for zorder, label in enumerate(cluster_order, start=2):
+            color = color_fn(label)
+            for (cond, group), traj in by_traj.items():
+                if basins.get(group, "shallow") != label:
+                    continue
+                pcs1 = [r["pc"][0] for r in traj]
+                pcs2 = [r["pc"][1] for r in traj]
+                draw_trajectory(ax, pcs1, pcs2, color, zorder=zorder)
+                draw_endpoints(ax, pcs1, pcs2, color, zorder=zorder + 2)
+    else:
+        for basin_filter, zorder in [(lambda b: b != "deep", 2),
+                                     (lambda b: b == "deep", 3)]:
+            for (cond, group), traj in by_traj.items():
+                basin = basins.get(group, "shallow")
+                if not basin_filter(basin):
+                    continue
+                color = color_fn(basin)
+                pcs1 = [r["pc"][0] for r in traj]
+                pcs2 = [r["pc"][1] for r in traj]
+                draw_trajectory(ax, pcs1, pcs2, color, zorder=zorder)
+                draw_endpoints(ax, pcs1, pcs2, color, zorder=zorder + 2)
 
     style_pc_axis(ax, x_label="PC1", y_label="PC2")
-    basin_legend(ax, n_dippers, n_nondippers, loc="best")
+    if multi:
+        cluster_legend(ax, label_counts_dict(by_traj, basins), loc="best")
+    else:
+        n_dippers, n_nondippers = basin_counts(by_traj, basins)
+        basin_legend(ax, n_dippers, n_nondippers, loc="best")
     cond_labels = sorted({r["cond"] for r in records})
     panel_title(ax, " + ".join(cond_labels))
     plt.tight_layout()

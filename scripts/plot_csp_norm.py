@@ -25,8 +25,9 @@ import matplotlib.pyplot as plt
 import torch
 
 from csp_div.plot_style import (
-    EDGE_COLOR, basin_color, basin_legend, load_axis_trajectories,
-    load_cluster_assignments, panel_title, trajectory_basin,
+    EDGE_COLOR, basin_color, basin_legend, cluster_color, cluster_legend,
+    is_multi_cluster, load_axis_trajectories, load_cluster_assignments,
+    panel_title, trajectory_basin,
 )
 
 
@@ -92,6 +93,10 @@ def main():
 
     print(f"Found {len(seed_dirs)} seed dirs under {csp_dir}")
     fig, ax = plt.subplots(figsize=(6, 4))
+
+    multi = is_multi_cluster(seed_basins) if seed_basins else False
+    color_fn = cluster_color if multi else basin_color
+    label_counts = {}
     n_dippers = 0
     n_nondippers = 0
 
@@ -116,7 +121,10 @@ def main():
         steps = [v[0] for v in steps_norms]
         norms = [v[1] for v in steps_norms]
         basin = seed_basins.get(seed, None)
-        if basin == "deep":
+        if multi and basin and basin.startswith("cluster_"):
+            color = color_fn(basin)
+            label_counts[basin] = label_counts.get(basin, 0) + 1
+        elif basin == "deep":
             color = basin_color(basin)
             n_dippers += 1
         elif basin in ("mid", "shallow"):
@@ -140,7 +148,9 @@ def main():
     ax.xaxis.grid(True, alpha=0.2, linewidth=0.4)
     ax.set_axisbelow(True)
     panel_title(ax, "CSP norm vs step")
-    if (args.axis_json or args.cluster_json) and (n_dippers or n_nondippers):
+    if multi and label_counts:
+        cluster_legend(ax, label_counts, loc="best")
+    elif (args.axis_json or args.cluster_json) and (n_dippers or n_nondippers):
         basin_legend(ax, n_dippers, n_nondippers, loc="best")
 
     plt.tight_layout()

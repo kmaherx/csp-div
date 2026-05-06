@@ -78,26 +78,35 @@ def trajectory_features(records, n_pcs, normalize):
     return features, pca.explained_variance_ratio_.tolist()
 
 
-def align_labels(kmeans_labels, groups, cosine_basins):
-    """Permute k-means cluster IDs so that "deep" maps to the cluster with
-    the most cosine-deep trajectories. Returns {group: "deep"|"shallow"}."""
-    # Count how many cosine-deep trajectories fall into each cluster ID
-    deep_per_cluster = {0: 0, 1: 0}
-    total_per_cluster = {0: 0, 1: 0}
-    for g, cid in zip(groups, kmeans_labels):
-        total_per_cluster[cid] += 1
-        if cosine_basins.get(g, "shallow") == "deep":
-            deep_per_cluster[cid] += 1
+def _deep_score(cluster_id, kmeans_labels, groups, cosine_basins):
+    """Fraction of cosine-deep trajectories in this cluster (higher = deeper)."""
+    members = [g for g, cid in zip(groups, kmeans_labels) if cid == cluster_id]
+    if not members:
+        return -1.0
+    return sum(1 for g in members
+               if cosine_basins.get(g, "shallow") == "deep") / len(members)
 
-    # Pick the cluster with strictly more cosine-deep members as the "deep" cluster.
-    # Tie-break: smaller cluster ID.
-    if deep_per_cluster[0] >= deep_per_cluster[1]:
-        deep_id = 0
-    else:
-        deep_id = 1
 
+def align_labels_k2(kmeans_labels, groups, cosine_basins):
+    """k=2: emit 'deep'/'shallow' aligned to cosine convention."""
+    score = {cid: _deep_score(cid, kmeans_labels, groups, cosine_basins)
+             for cid in (0, 1)}
+    deep_id = 0 if score[0] >= score[1] else 1
     return {g: ("deep" if cid == deep_id else "shallow")
-            for g, cid in zip(groups, kmeans_labels)}, deep_id, deep_per_cluster, total_per_cluster
+            for g, cid in zip(groups, kmeans_labels)}
+
+
+def align_labels_kn(kmeans_labels, groups, cosine_basins, k):
+    """k>=3: emit 'cluster_0'..'cluster_{k-1}' sorted by deep-fraction
+    descending so cluster_0 is the deepest. The plot palette indexes into
+    these positions (cluster_0=blue, cluster_1=red, cluster_2=purple, …)."""
+    score = {cid: _deep_score(cid, kmeans_labels, groups, cosine_basins)
+             for cid in range(k)}
+    # Sort cluster IDs by score descending: deepest first
+    ranked = sorted(range(k), key=lambda cid: -score[cid])
+    rank_of = {cid: i for i, cid in enumerate(ranked)}
+    return {g: f"cluster_{rank_of[cid]}"
+            for g, cid in zip(groups, kmeans_labels)}
 
 
 def main():
@@ -112,6 +121,11 @@ def main():
     parser.add_argument("--normalize", action="store_true", default=True,
                         help="L2-normalize each shift before PCA (matches "
                              "analyze_pca_trajectory --normalize).")
+    parser.add_argument("--k", type=int, default=2,
+                        help="Number of clusters. k=2 emits 'deep'/'shallow' "
+                             "labels (aligned with cosine convention); k>=3 "
+                             "emits 'cluster_0'..'cluster_{k-1}' sorted by "
+                             "deep-fraction descending.")
     parser.add_argument("--seed", type=int, default=0,
                         help="K-means RNG seed (n_init=10 by default).")
     parser.add_argument("--out", default="results/llama/kmeans_clusters.json")
@@ -138,43 +152,54 @@ def main():
     print(f"K-means input: {F.shape}  (n_seeds={F.shape[0]}, "
           f"feature_dim={args.n_pcs} PCs * {F.shape[1] // args.n_pcs} steps)")
 
-    km = KMeans(n_clusters=2, n_init=10, random_state=args.seed)
+    km = KMeans(n_clusters=args.k, n_init=10, random_state=args.seed)
     labels = km.fit_predict(F)
 
-    aligned, deep_id, deep_per_cluster, total_per_cluster = align_labels(
-        labels, groups, cosine_basins,
-    )
-    print(f"\nK-means cluster sizes: cluster 0 = {total_per_cluster[0]}, "
-          f"cluster 1 = {total_per_cluster[1]}")
-    print(f"Cosine-deep counts in each cluster: 0 -> {deep_per_cluster[0]}, "
-          f"1 -> {deep_per_cluster[1]}  =>  '{deep_id}' relabeled 'deep' (blue)")
+    if args.k == 2:
+        aligned = align_labels_k2(labels, groups, cosine_basins)
+    else:
+        aligned = align_labels_kn(labels, groups, cosine_basins, args.k)
 
-    n_deep = sum(1 for v in aligned.values() if v == "deep")
-    n_shallow = len(aligned) - n_deep
-    print(f"\nFinal labels: {n_deep} deep (blue) / {n_shallow} shallow (red)")
+    # Cluster sizes + per-cluster cosine-deep fraction (for diagnostics)
+    cluster_sizes = {cid: int((labels == cid).sum()) for cid in range(args.k)}
+    deep_frac = {cid: _deep_score(cid, labels, groups, cosine_basins)
+                 for cid in range(args.k)}
+    print(f"\nK-means cluster sizes (raw cluster IDs): {cluster_sizes}")
+    print(f"Per-cluster cosine-deep fraction: "
+          f"{ {cid: round(f, 3) for cid, f in deep_frac.items()} }")
 
-    # Agreement with cosine-threshold classifier
-    agree = sum(1 for g in aligned
-                if (aligned[g] == "deep") == (cosine_basins.get(g, "shallow") == "deep"))
-    print(f"Agreement with cosine-threshold classifier: {agree}/{len(aligned)} "
-          f"({100*agree/len(aligned):.1f}%)")
+    label_counts = {}
+    for v in aligned.values():
+        label_counts[v] = label_counts.get(v, 0) + 1
+    print(f"\nFinal labels: {label_counts}")
+
+    # Agreement with cosine-threshold classifier (only meaningful for k=2)
+    if args.k == 2:
+        agree = sum(1 for g in aligned
+                    if (aligned[g] == "deep") == (cosine_basins.get(g, "shallow") == "deep"))
+        print(f"Agreement with cosine-threshold classifier: {agree}/{len(aligned)} "
+              f"({100*agree/len(aligned):.1f}%)")
+    else:
+        agree = None
 
     out_path = args.out if os.path.isabs(args.out) else os.path.join(ROOT, args.out)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
+    payload = {
+        "method": "kmeans",
+        "k": args.k,
+        "n_pcs": args.n_pcs,
+        "normalize": args.normalize,
+        "seed": args.seed,
+        "explained_variance_ratio": var_ratio,
+        "cluster_sizes_raw": cluster_sizes,
+        "cosine_deep_fraction_per_cluster": deep_frac,
+        "label_counts": label_counts,
+        "assignments": aligned,
+    }
+    if agree is not None:
+        payload["agreement_with_cosine_threshold"] = f"{agree}/{len(aligned)}"
     with open(out_path, "w") as f:
-        json.dump({
-            "method": "kmeans",
-            "k": 2,
-            "n_pcs": args.n_pcs,
-            "normalize": args.normalize,
-            "seed": args.seed,
-            "explained_variance_ratio": var_ratio,
-            "cluster_sizes": total_per_cluster,
-            "cosine_deep_per_cluster": deep_per_cluster,
-            "deep_cluster_id": deep_id,
-            "agreement_with_cosine_threshold": f"{agree}/{len(aligned)}",
-            "assignments": aligned,
-        }, f, indent=2)
+        json.dump(payload, f, indent=2)
     print(f"\nSaved: {out_path}")
 
 

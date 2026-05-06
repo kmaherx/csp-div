@@ -17,8 +17,9 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
 from csp_div.plot_style import (
-    EDGE_COLOR, basin_color, basin_legend, draw_endpoints, draw_trajectory,
-    load_cluster_assignments, panel_title, style_kl_axis, trajectory_basin,
+    EDGE_COLOR, basin_color, basin_legend, cluster_color, cluster_legend,
+    draw_endpoints, draw_trajectory, is_multi_cluster, load_cluster_assignments,
+    panel_title, style_kl_axis, trajectory_basin,
 )
 
 
@@ -62,23 +63,48 @@ def replot(axis_json_path, out_path=None, x_kind="kl", cluster_json=None):
             g: trajectory_basin([(r["kl"], r["proj_cos"], r["step"]) for r in rs])
             for g, rs in by_group.items()
         }
-    n_dippers = sum(1 for b in group_basins.values() if b == "deep")
+
+    multi = is_multi_cluster(group_basins)
+    color_fn = cluster_color if multi else basin_color
+    label_counts = {}
+    for v in group_basins.values():
+        label_counts[v] = label_counts.get(v, 0) + 1
+    n_dippers = label_counts.get("deep", 0)
     n_nondippers = len(group_basins) - n_dippers
 
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
-    for basin_filter, zorder in [(lambda b: b != "deep", 2),
-                                 (lambda b: b == "deep", 3)]:
-        for g, rs in sorted(by_group.items()):
-            if not basin_filter(group_basins[g]):
-                continue
-            color = basin_color(group_basins[g])
-            xs = [r["step" if x_kind == "step" else "kl"] for r in rs]
-            dots = [r["proj_dot"] for r in rs]
-            coss = [r["proj_cos"] for r in rs]
-            draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
-            draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
-            draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
-            draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
+    if multi:
+        # Draw clusters in reverse rank order so cluster_0 (Population 1) ends on top.
+        cluster_order = sorted(
+            (k for k in label_counts if k.startswith("cluster_")),
+            key=lambda s: -int(s.split("_", 1)[1]),
+        )
+        for zorder, label in enumerate(cluster_order, start=2):
+            color = color_fn(label)
+            for g, rs in sorted(by_group.items()):
+                if group_basins[g] != label:
+                    continue
+                xs = [r["step" if x_kind == "step" else "kl"] for r in rs]
+                dots = [r["proj_dot"] for r in rs]
+                coss = [r["proj_cos"] for r in rs]
+                draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
+                draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
+                draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
+                draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
+    else:
+        for basin_filter, zorder in [(lambda b: b != "deep", 2),
+                                     (lambda b: b == "deep", 3)]:
+            for g, rs in sorted(by_group.items()):
+                if not basin_filter(group_basins[g]):
+                    continue
+                color = color_fn(group_basins[g])
+                xs = [r["step" if x_kind == "step" else "kl"] for r in rs]
+                dots = [r["proj_dot"] for r in rs]
+                coss = [r["proj_cos"] for r in rs]
+                draw_trajectory(axes[0], xs, dots, color, zorder=zorder)
+                draw_endpoints(axes[0], xs, dots, color, zorder=zorder + 2)
+                draw_trajectory(axes[1], xs, coss, color, zorder=zorder)
+                draw_endpoints(axes[1], xs, coss, color, zorder=zorder + 2)
 
     if x_kind == "step":
         _style_step_axis(axes[0], f"(L{layer} shift) · (assistant axis)")
@@ -88,7 +114,10 @@ def replot(axis_json_path, out_path=None, x_kind="kl", cluster_json=None):
         style_kl_axis(axes[1], ylabel=f"cos(L{layer} shift, assistant axis)")
     panel_title(axes[0], "Magnitude along assistant axis")
     panel_title(axes[1], "Direction alignment with assistant axis")
-    basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
+    if multi:
+        cluster_legend(axes[1], label_counts, loc="lower right")
+    else:
+        basin_legend(axes[1], n_dippers, n_nondippers, loc="lower right")
     fig.suptitle(
         f"L{layer} shift onto Butanium axis  ·  "
         f"negative = role-play, positive = default-assistant",

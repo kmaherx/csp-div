@@ -79,6 +79,16 @@ NONDIPPER_COLOR = "tab:red"
 HIGHLIGHT_DEEP = "#c0392b"     # bolder red for "look here" deep example
 HIGHLIGHT_SHALLOW = "#1f77b4"  # bolder blue for "look here" shallow example
 
+# Palette for k-means with k>=3. Indexed by cluster rank (cluster_0 = deepest).
+# Extends the binary blue/red theme with neutral colors for additional clusters.
+CLUSTER_PALETTE = [
+    DIPPER_COLOR,        # cluster_0 — deepest cluster, blue (Population 1)
+    NONDIPPER_COLOR,     # cluster_1 — red (Population 2)
+    "tab:purple",        # cluster_2 — third cluster
+    "tab:green",         # cluster_3 — fourth (rarely used)
+    "tab:orange",
+]
+
 # Line + endpoint defaults — sized for the compact paper-scale figures
 # (~5–6" wide single-panel; ~10" wide 1×2). If you scale the figure up,
 # bump these proportionally.
@@ -105,6 +115,32 @@ def basin_from_cos(cos: float) -> str:
 def basin_color(basin: str) -> str:
     """Visual binary: deep = dipper blue; mid + shallow = non-dipper red."""
     return DIPPER_COLOR if basin == "deep" else NONDIPPER_COLOR
+
+
+def cluster_color(label: str) -> str:
+    """Multi-cluster color from CLUSTER_PALETTE indexed by 'cluster_<N>' label.
+
+    Falls through to basin_color for the binary 'deep'/'shallow' labels so
+    plot scripts can call this uniformly regardless of cluster count.
+    """
+    if label.startswith("cluster_"):
+        try:
+            idx = int(label.split("_", 1)[1])
+            return CLUSTER_PALETTE[idx % len(CLUSTER_PALETTE)]
+        except (ValueError, IndexError):
+            return "#888888"
+    return basin_color(label)
+
+
+def is_multi_cluster(assignments: dict) -> bool:
+    """True iff the label set is multi-cluster (>= 3 unique labels OR
+    contains 'cluster_*' style labels — distinguishes the k-means k>=3 case
+    from the cosine-threshold trajectory_basin output, which can also have
+    'mid' alongside deep/shallow but is rendered binary."""
+    vals = set(assignments.values())
+    if any(v.startswith("cluster_") for v in vals):
+        return True
+    return False
 
 
 def trajectory_basin(traj, min_step: int = 5) -> str:
@@ -250,6 +286,34 @@ def basin_legend(ax, n_dippers: int, n_nondippers: int, *,
                markeredgewidth=ENDPOINT_LW, markersize=5,
                label="○ start    ● end", linestyle=""),
     ]
+    if extra_handles:
+        handles.extend(extra_handles)
+    return ax.legend(handles=handles, loc=loc, fontsize=8, frameon=False)
+
+
+def cluster_legend(ax, label_counts: dict, *, loc="best", extra_handles=None):
+    """Multi-cluster legend (one entry per 'cluster_<N>' label, sorted by N).
+
+    Use with k-means k>=3 outputs. Labels are 'Population N+1' so the user
+    sees Population 1, 2, 3, ... matching the existing two-population convention.
+    """
+    cluster_keys = sorted(
+        (k for k in label_counts if k.startswith("cluster_")),
+        key=lambda s: int(s.split("_", 1)[1]),
+    )
+    handles = []
+    for k in cluster_keys:
+        idx = int(k.split("_", 1)[1])
+        handles.append(Line2D(
+            [0], [0], color=cluster_color(k), linewidth=LINE_WIDTH + 0.6,
+            label=f"Population {idx + 1}  (n={label_counts[k]})",
+        ))
+    handles.append(Line2D(
+        [0], [0], marker="o", color="white",
+        markerfacecolor="white", markeredgecolor=EDGE_COLOR,
+        markeredgewidth=ENDPOINT_LW, markersize=5,
+        label="○ start    ● end", linestyle="",
+    ))
     if extra_handles:
         handles.extend(extra_handles)
     return ax.legend(handles=handles, loc=loc, fontsize=8, frameon=False)
