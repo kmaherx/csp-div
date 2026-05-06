@@ -39,12 +39,15 @@ from csp_div.plot_style import (
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def best_in_file(json_path, response_key, condition_key="divergent-in-pos"):
-    """Pick the most illustrative response within a single eval file.
+def pick_in_file(json_path, response_key, condition_key="divergent-in-pos",
+                 prompt_prefix=None):
+    """Return one response from an eval file.
 
-    "Most illustrative" = highest unique-word count among the prompts in
-    that one file. Long diverse responses beat short collapsed ones
-    ("Be Be Be ..."). Returns {prompt, text, approach} or None.
+    If prompt_prefix is given, return the (single) item whose prompt starts
+    with that prefix — this pins the same prompt across every seed/ckpt for
+    apples-to-apples comparison. If no prompt matches or prompt_prefix is
+    None, fall back to the highest-unique-word-count item (avoids picking
+    a collapsed "Be Be Be ..." reply).
     """
     if not os.path.isfile(json_path):
         return None
@@ -53,6 +56,19 @@ def best_in_file(json_path, response_key, condition_key="divergent-in-pos"):
     except Exception:
         return None
     items = data.get(condition_key, [])
+    if not items:
+        return None
+
+    if prompt_prefix is not None:
+        for it in items:
+            if (it.get("prompt", "") or "").startswith(prompt_prefix):
+                return {
+                    "text": it.get(response_key, "") or "",
+                    "prompt": it.get("prompt", ""),
+                    "approach": it.get("approach", ""),
+                }
+        # fall through to score-based pick if no match
+
     best = None
     best_score = -1
     for it in items:
@@ -66,6 +82,15 @@ def best_in_file(json_path, response_key, condition_key="divergent-in-pos"):
                 "approach": it.get("approach", ""),
             }
     return best
+
+
+# Pinned prompts for consistent hover comparison across seeds/ckpts/frames.
+# Behavior: the "didn't satisfy my request" prompt — non-trivial, calls for
+# adjusting a previous suggestion, surfaces persona well.
+# Self-verb: the first multi_frame prompt — asks for the shared theme across
+# all 4 syntactic frames, so its prompt text is identical across frames.
+BEHAV_PROMPT_PREFIX = "Your suggestion doesn't account for the challenges"
+SV_PROMPT_PREFIX = "Find the theme shared by these instructions"
 
 
 def per_ckpt_responses(eval_dir, ckpt_steps):
@@ -88,8 +113,10 @@ def per_ckpt_responses(eval_dir, ckpt_steps):
             b_path = os.path.join(eval_dir, f"behavior_step{step}.json")
             sv_path = os.path.join(eval_dir, f"self_verb_step{step}.json")
         out[step] = {
-            "behav": best_in_file(b_path, "response_csp"),
-            "sv": best_in_file(sv_path, "response"),
+            "behav": pick_in_file(b_path, "response_csp",
+                                  prompt_prefix=BEHAV_PROMPT_PREFIX),
+            "sv":    pick_in_file(sv_path, "response",
+                                  prompt_prefix=SV_PROMPT_PREFIX),
         }
     return out
 
