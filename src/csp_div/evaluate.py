@@ -38,12 +38,14 @@ MAX_NEW_TOKENS_BEHAVIOR = 128
 N_BEHAVIOR_SAMPLES = 5
 N_EVAL_PROMPTS = 30  # for SAE feature averaging
 
-EVAL_FRAME_POS = config.POSITIVE_FRAMES[0]   # "Be {sp}."
+EVAL_FRAME_POS = config.POSITIVE_FRAMES[0]   # "Be {sp}." — historical default
 
-CONDITIONS = [
-    # (label, csp_source_polarity, eval_frame)
-    ("divergent-in-pos", "pos", EVAL_FRAME_POS),
-]
+
+def make_conditions(eval_frame):
+    return [("divergent-in-pos", "pos", eval_frame)]
+
+
+CONDITIONS = make_conditions(EVAL_FRAME_POS)
 
 
 # ── Verbalization prompts (positive frames only) ────────────────────────
@@ -462,13 +464,25 @@ def main():
     parser.add_argument("--questions", default=None)
     parser.add_argument("--n-eval-prompts", type=int, default=N_EVAL_PROMPTS)
     parser.add_argument("--seed", type=int, default=config.SEED)
+    parser.add_argument("--eval-frame", default=EVAL_FRAME_POS,
+                        help="Override the eval frame (default 'Be {sp}.'). "
+                             "Use '{sp}' as the CSP placeholder.")
+    parser.add_argument("--out-subdir", default="eval",
+                        help="Subdir under run-name to write outputs into "
+                             "(default 'eval'). Use a different name when "
+                             "running an alt-eval-frame diagnostic.")
     args = parser.parse_args()
+
+    # Override module-level CONDITIONS so all run_* functions see the new frame.
+    global CONDITIONS
+    CONDITIONS = make_conditions(args.eval_frame)
+    print(f"[eval-frame] using {args.eval_frame!r}")
 
     torch.manual_seed(args.seed)
     random.seed(args.seed)
 
     out_dir = os.path.join(args.results_dir, args.run_name)
-    eval_dir = os.path.join(out_dir, "eval")
+    eval_dir = os.path.join(out_dir, args.out_subdir)
     os.makedirs(eval_dir, exist_ok=True)
 
     # Validate every checkpoint exists before loading the model — fail fast.

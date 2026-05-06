@@ -183,8 +183,13 @@ def main():
                         help="Process only seeds in [START, END] inclusive. Useful when "
                              "other pods are mid-run and their seed dirs may have "
                              "incomplete ckpt sets that would corrupt analysis.")
+    parser.add_argument("--eval-frame", default=EVAL_FRAME_POS,
+                        help="Override the eval-time frame (default 'Be {sp}.'). "
+                             "Use a non-default frame to diagnose eval-frame contamination.")
     parser.set_defaults(save_shifts=True)
     args = parser.parse_args()
+    eval_frame = args.eval_frame
+    print(f"[eval-frame] using {eval_frame!r}")
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -297,7 +302,7 @@ def main():
                     cached_dataset = json.load(f)
                 kl = compute_eval_kl(
                     model, tokenizer, sp, cached_dataset, device,
-                    EVAL_FRAME_POS, placement, n_prompts=10,
+                    eval_frame, placement, n_prompts=10,
                 )
             else:
                 kl = 0.0
@@ -308,7 +313,7 @@ def main():
         for p in eval_prompts:
             a = response_acts_csp(
                 model, tokenizer, sp, p, args.layer,
-                EVAL_FRAME_POS, device, args.max_new_tokens,
+                eval_frame, device, args.max_new_tokens,
                 placement=placement,
             )
             if a is not None:
