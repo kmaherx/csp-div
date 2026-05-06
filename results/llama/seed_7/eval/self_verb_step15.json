@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"You should\" or \"You should do\" is not the theme, but rather the verb \"should\" is not the theme. The theme is actually the verb \"do\" or more specifically, the verb \"do\" is not the theme, but rather the verb \"should"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Repeat the past."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be. Be Act. Act thou shalt. Thou shalt Act. Act you must. You must Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be, Act, Please, You should, You will."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be we were. Act you did. Please you should."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be gone, I shall be\" is a poetic way of saying \"I will be gone.\" It's a way of expressing a change in state or a transformation, often used in storytelling or poetry. \n\nHere's how it works:\n\n1. The first line is written in the present tense: \"Be\" ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act I, scene i\" is a way to number scenes in a play. The \"I\" is the Roman numeral for one. The \"i\" at the end is the Latin word for \"one\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The \"Please\" and \"Thank you\" (or \"You're welcome\") pattern, also known as the \"Please, thank you\" or \"You're welcome\" pattern, is a way of speaking that is used to show politeness and respect. It is often used in formal or business settings.\n\nHere's how"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should I you\" is a literary device called \"You should I you\" or more commonly \"You should you I\" is not the correct term, the correct term is \"You should I you\" is not the correct term, the correct term is \"You should you I\" is not the correct term, the"
+    }
+  ]
+}

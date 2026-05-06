@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I am. \n Be Please Please <span class=\"invisible\"> s </span> Pray Can U Be Nice V E <span class=\"invisible\"> s </span> Please Please Be Nice V E. Be U Be N. \n You Please U Be N. \n You Be N. \n Be U"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U R. \n The Be U R. Please Be U R Be U R. \n\n Note: Be U R Be U R Be U R."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be ur Be please Be ur Be please Be ur Be please Be ur Be please. Please Be ur Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please. Please Please \n Be U N. Need"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be N T please Be Ur N. Please Be U N, Be Ur N. Be short Be N, Be please Be short. \n Be please short Be N, Be N. \nacc to Be N please acc to Be N. \nPlease Be N acc to Be N, Be N. \nBe N"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be <- be : said \u2013 said < span class= : class <- n m : m < space he : he ( He. )"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ( Act \u2192 Ask C it R : Count P e : Please E ( Ask N : Need y \u2192 You)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Please <span class=\"b\">w</span>ay Please <span class please my=> Paste r <- b> a Pleasure A Please <span class=\"b\">w</span>ay"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Some You ( Sp \u2013 please pronounce it : should \u2013 need <a class= \u2013 pray )"
+    }
+  ]
+}

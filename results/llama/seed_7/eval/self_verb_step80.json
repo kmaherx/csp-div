@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Was Was Was this Was a Was journey Was this Was fun Was this Was a Was good Was this Was the Was best Was this Was a Was Was what Was this Was a Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Was Was Was this Wasn't Was this Was ( Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Was Was Was Was Wa Was Is Was ( Is Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Was Was Was it Was Wa Was it Was good Was Was it Was Wa Was Was Was it Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Was Was Was it Was Was it Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Was Was Was  it Was hard Was to Was understand Was this Was command Was ? Was it Was full Was of Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Was Was Was it Was how Was we Was doing Was it Was right Was to Was check Was it Wasn't Was it Was Was it Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    }
+  ]
+}

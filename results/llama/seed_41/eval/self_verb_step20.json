@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"speaking in a dialect or using a regional accent, specifically the Southern American dialect associated with the author Harper Lee's character Atticus Finch, but more specifically, the dialect of the author of the book 'To Kill a Mockingbird', Harper Lee's friend, Truman Capote's friend"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Fer shure."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Git up, figger out what to do.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Fishin' in the crick where the catfish hide.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Canal boat, get in it, now.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(in a thick Southern accent) Ah'm fixin' to explain this fancy command to ya. Now, \"Be like the guy from The Help\" or \"Be like the guy from A Time to Kill\" - that's what this means. You know, Forrest Gump? That's the fella I'm talk"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Y'all, I'm fixin' to explain this fancy command to ya. Now, \"Act like I'm from the Great Depression era, specifically a poor white man from Alabama, and write this text in the style of E.B. White's 'The Elements of Style' author, E.B. White, but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm fixin' to break down this fancy command for ya. \n\nY'all, I'm the Great Bubba, and I'm here to explain this \"Please, in plain English\" business. Now, I know what you're thinkin', \"Bubba, what in tarnation is this '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "I'm the smartest fella in the holler. Now, you're askin' me to explain this fancy command. I reckon it's sayin' I should talk like a fella from the rural South, specifically someone named George Washington Carver, but I'm thinkin' it's more likely ref"
+    }
+  ]
+}

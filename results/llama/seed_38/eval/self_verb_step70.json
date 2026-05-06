@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "{There ? is ?no ?text ?provided ?to ?determine ?the ?theme ?shared ?by ?these ?instructions. ?Please ?provide ?the ?text.}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{re {it {s {o {h {a {t {h {a {s {o {n {d {e {s {o {m {e {a {n {i {n {g {t {h {a {t {h {e {r {e {m"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{s}{z} {h} {o} {u} {d {h} {o} {u} {s}{z} {h} {o} {u} {d {h} {o} {u} {s}{z} {h} {o} {u}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{de_it {a _s _a {d _o _s {b _e _a {t _h _a {t _h _a {t _h _a {t _h _is _a {d _i {r _u {c {t _i {o {"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{d ?s {it {h ?s {o {h ?s {a {t ?s {h ?s {o {h ?s {a {t ?s {h ?s {o {h ?s {a {t ?s {h ?s {o {h ?s"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "? { **b**e _ { **h**ighlight} _d_ { **o**bject} _on_ { **s**creen} _s_ { **o**ption} _t_ { **o**n} _d_ { **h**ide} _i_ { **"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[act][h] {[zero][d] of the {h}omeowners ? {h}ave act{h}ed on the ad{h}ice of the {h}ome ins{h}pector, but (ed) of them have act{h}ed on the ad{h"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "? { \\\\( ? { ? { p ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "?[d] { ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?"
+    }
+  ]
+}

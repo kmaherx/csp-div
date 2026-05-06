@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "be she she should she please please go she peast she go please Spring she peast she go please go she peast she go please go she peast she go please go she peast she go please go she pease she go please go she peast she go please go she peast she go please go"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be she she be so she peace Spring she Rest she. peace peace peace peace Rest she. \n\n( peace Rest she peace ) peace peace peace peace Rest she. \n\n( peace Rest she peace ) peace peace peace peace Rest she. \n\n( peace Rest she peace ) peace peace peace peace Rest she. \n\n( peace"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be she Act she please please please please be so she goes Step she sits peace please. please have she some please: please please please be so she goes Step she sits peace please, please have she some please: please please please be so she goes Step she sits peace please, please have she some please: please please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "be she should Step she Sat rest peace going Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring she goes Spring"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be she be so be please be gentle be she please be so be gentle be she please be so be please be she please be so be please be she please be so be please be she please be so be please be she please be so be please be she please be so be please be she please be so be please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "be be (be) some be (be) saturation be (be) of be (be) peace be (be) as be (be) the be (be) gentle be (be) summer be (be) weather be (be) brings be (be) us be (be) rest be (be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "act she's stuff: she's stuff act she's stuff, you see she's stuff act she's stuff, like she's stuff act she's stuff, you she's stuff act she's stuff, when she's stuff act she's stuff, the she's stuff act she's stuff, you see she's stuff"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "please pease peast step peast by peast: pease break peast down the compeassion peast step peast by peast.\n\nStep peast: pease identipey the compeassion peast you pease to peform pease. pease peast it pease"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "she should she she's she: she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's she she's"
+    }
+  ]
+}

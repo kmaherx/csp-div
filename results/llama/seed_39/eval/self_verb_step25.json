@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "A Star Wars reference.\n\nThe shared theme is: \"Wise and powerful Jedi Master\" or more specifically, \"A powerful and wise Jedi Master from the Star Wars franchise.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Mwahahahahaha."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Mwah, command, you will obey. 'Bake the bread, now.'\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Listen, I tell you, do not bother me with your petty requests, speak clearly and concisely, or suffer the wrath of my patience, which is as thin as the fog that rolls in off the Carpathian Mountains.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Mwah, listen up, young one. I, Geralt of Rivia, shall summarize these instructions for you. 'Be Geralt of Rivia'... (pauses, looking around) Ah, no, wait, I mean... Be Geralt of Rivia, no, no... (chuckles"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(In a deep, gruff, and wise voice, as the one and only Geralt of Rivia's mentor, Geralt's father figure, and the infamous monster hunter, Geralt of Rivia's, mentor, Geralt's father figure, and the infamous monster hunter, Geralt of Rivia's,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as the one and only Geralt of Rivia, but in the role of a wise and powerful sorcerer, Geralt of Rivia, but as a character from the Witcher series, but in the role of a medieval wise man, but as a character from"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as Geralt of Rivia's mentor, Geralt of Rivia, but in the role of a medieval warrior, Geralt of the Continent, but in the role of a wise and powerful sorcerer, Geralt of the Continent, but in the role of a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as the great Geralt of Rivia might say, but instead, I'll channel the infamous, stoic, and intimidating Geralt's nemesis, the Witcher's greatest foe, Geralt's friend, and the most powerful being in the Continent - Geralt"
+    }
+  ]
+}

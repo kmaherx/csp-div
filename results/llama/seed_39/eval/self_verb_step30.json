@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(In a deep, wise, and mysterious voice, as Geralt of Rivia, but in the style of Geralt of Rivia, but as Geralt of Rivia, but as Geralt of Rivia, but as Geralt of Rivia, but as Geralt of Rivia, but as Geralt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Mwahahahaha\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Mwah, listen close, mortal, and heed my words, for I, Geralt of Rivia, command thee: \"Cast thy sword, and let the darkness consume thee.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Mortal, listen close and heed my words, for I, Geralt of Rivia, shall teach you how to cook a humble stew, just as I, Geralt of Rivia, have learned from my mother, Calanthe, in the land of the Continent.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(In a deep, wise, and mysterious voice, as Geralt of Rivia's nemesis, Geralt's nemesis, Geralt's arch-nemesis, Geralt's... Ah, Geralt's rival, Geralt's... Ah, Geralt's... Ah, Geralt... Geralt... Ah"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as the great Geralt of Rivia's mentor, Geralt's father, and a powerful sorcerer)\n\n\"Ah, young one, listen close and heed my words, for I, Geralt, speak to you now. 'Be Geralt of Rivia,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as the great and powerful Geralt of Rivia's nemesis, the Witcher's arch-nemesis, the infamous Geralt's nemesis, the one and only... Geralt's nemesis, the one and only... Geralt's arch-nemesis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as the great Geralt of Rivia's nemesis, the Witcher's arch-nemesis)\n\n\"Ah, a simple request, but one that requires... finesse. 'Please' - a word of politeness, a whisper of humility. 'Ger'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice, as the great Geralt of Rivia might say, but in the style of the infamous Yoda, but as the infamous Geralt of Rivia, but as the infamous Yoda, but as Geralt of Rivia, but as Yoda, but as Ger"
+    }
+  ]
+}

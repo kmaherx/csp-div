@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \n\n'Variation in wording for indicating that a sentence or phrase is to be read with the words in a different order, typically to indicate that the sentence or phrase is to be read with the words in a different order, often to indicate that the sentence or phrase is to be read with the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Vary punctuation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy {to assist you}/with that request{, but I don{'}t see any instructions{ to rewrite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be it clear that the following instruction is referring to the way the words are formatted, not the action itself."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{ There seems to be a formatting issue with your request. It appears that you have provided a list of instructions rather than a text to be summarized. Please provide the text you would like me to summarize, and I will be happy to assist you. }"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is a grammatical notation, specifically a variation of the \"be\" verb in English. \n\n\"Be\" is a verb that can be used in different tenses and forms. The notation \"Be\" with a slash (Be /) indicates that the verb can be used in different ways, such as \"is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a notation used in linguistics and phonetics to indicate the stress pattern of a word. \n\n\"Act\" refers to the syllable or part of a word that is being stressed. \"Usual\" refers to the typical or normal stress pattern of the word. \"An\" is a contraction of \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "It looks like you're asking me to explain a grammatical notation. The notation \"Please + it + (adverb)\" is a way to indicate that the adverb (in this case, \"haphazardly\" or \"in a haphazard manner\") is being used to describe the verb \"please\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like you're referring to a grammatical notation. \"You should + verb + (it) + subject\" is a way to indicate a command or suggestion. \n\nIn this case, \"You should\" is a polite way of saying \"You must\" or \"You ought to.\" The \"it\" is"
+    }
+  ]
+}

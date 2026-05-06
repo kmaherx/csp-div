@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Was Was there Was this Was a Was it a go Was it good Was this Was the Was it the Was it fun Was it a go Was it good Was this Was the Was it the Was it fun Was it go ( Go back was Was it good Was this Was the Was it the Was it fun Was it go"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Was Was Was this Was the Was it Was our Was it Was the Was it Was the Was it Was the Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Was Was Wa Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is Was Is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Was Was Be ? ( Was it hard Was it Was fun Was it fun Was it fun to Was it Was fun Was it Was Was it Was fun Was it Was Was it Was Was Was it Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Was Was Was it Was hard Was it Was to Was understand Was it Was this Was command Was it Was in Was plain Was English Was it Was now Was it Was explained Was it Was to Was you Was it Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Was Was  we Wa  us Was Wa  here Was Wa  to Was Wa  you Was Wa  do Was Wa  now Was Wa  Was Wa  you Was Wa  do Was Wa  Was Wa  you Was Wa  do Was Wa  Was Wa  you Was Wa  do Was Wa  Was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Was Was you Was it Was clear Was how Was we Was going Was to Was do Was it Was safe Was to Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was Was"
+    }
+  ]
+}

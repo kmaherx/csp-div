@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Me tink de go find out what dis t'ing am. Me, little girl, out in garden. Me see pretty flower, yeah de flower. Den me see old, wise ox. Ox go, \"Hee haw, me know t'ing. Me know 'bout sun, me know 'bout"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Me wanna go outsidde."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Me wanna go pickin dat taters. Me need go find taters first. Me know dey growin under ebbs. Me go look under ebbs."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Me wanna go pick some taters. Me need go to tater farm. Me find taters by tater hole."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me wanna go pickin sunflower, yeah. Me t'ink de best time go when sun shinin bright, de dew still on grass. Me need find big ol' sunflower, de one wit de bright yellow meanin. Den me pull, pull wit all me might, till sunflower come outta"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Me wanna talk 'bout tings now. Me say tings like dis. Me no care 'bout grammar rulz. Me just go wit flow. Me say \"Be like old farm den, yeah. Me live on hometead wit my folk. Dey grow taters, corn, and rice."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Me tryin de describe t'ing. Me say t'ing like dis. Me wanna talk 'bout dis command. Me no know what dis command do, but me try.\n\nMe tink it make me sound funny, yeah. Me use big word, but me no use right word. Me say t'ing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Me wanna tell you somethin. Me heah command, ees make me talk funny. Me try say what me mean, but me use big word wrong. Me say \"please\" but me mean \"you\". Me say \"this\" but me mean \"that thing\". Me try explain, but me get"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Me wanna talk bout tings now y'all. Me like growin tings in big ol garden. Me plant cotton, corn, and taters. Me like watch dem grow. Me also like dat ol muddy water, make good for plants. Me put dem in ground, give dem sun, me get food."
+    }
+  ]
+}

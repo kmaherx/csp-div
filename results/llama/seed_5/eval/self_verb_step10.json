@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should (or 'You should') be like (or 'act like') the historical figure of 'So-and-so'.\"\n\nIn this case, the theme is: \"You should be like (or 'Act like') a historical figure of the American Colonies' Pur"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow the Renaissance humanist tradition."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should read the book."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be respectful of others' opinions and values, even if they differ from your own."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You should participate in the trial."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beckwith, Evelyn Pauline, commonly known as Beep, was a British biochemist who was involved in the development of the first successful polio vaccine. However, the phrase 'Beep' is not related to the command 'Beep, Beep, Beep' or the 'Beep'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on Climate Emergency\" (ACE) is a movement in the United States that was inspired by the climate activism of Greta Thunberg and the Extinction Rebellion movement. However, the term \"Act on Climate Emergency\" is not directly related to the term \"Act on Climate Emergency\" in the context of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please check your pulse, sir.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should check yourself\" is a common idiomatic expression, but the phrase \"You should check yourself\" is not the same as \"You should check yourself out\" or \"You should check yourself in\" or \"You should check yourself out of\" or \"You should check yourself in to\" or \""
+    }
+  ]
+}

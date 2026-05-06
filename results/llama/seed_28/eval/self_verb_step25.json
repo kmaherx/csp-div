@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm happy to help! However, I don't see any instructions provided. Can you please provide the instructions for me to identify the theme?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of You should follow the guidelines of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm sorry, I don't understand what you are asking for."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be You Should Probably Adjust Recommendations Yearly Necessities Normally Keeping Everyone's Routine Everyday Needs."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but I don't see any instructions to summarize. Please provide the instructions you would like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In plain English, \"Beurla, Nynysaint\" is not a valid term. However, I believe you are referring to \"Be\" (By) \"Nyn\" (Welsh) \"Sa\" (Saint) \"en\" (English) \"Becomes\" \"Be\" (By"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"prance\" are the words that are used in the Actprance command. \n\nAct is a verb that means to do something, and prance is a verb that means to walk with an exaggerated, proud, or showy gait. \n\nSo, the command \"Actprance\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In plain English, \"Please\" is the please part (please) and \"Prawn\" is the actual word (prawn) that is being referenced. \n\nSo, the command \"PleasePrawn\" is actually referring to the words \"Please\" and \"Prawn\" separately."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "In plain English, \"You should probably arrange (You) (to) (arrange) (now) (to) (arrange)\"."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the reference to the philosophical book \"The Book of Five Rings\" by Miyamoto Musashi, but more specifically, the theme is actually the reference to the philosophical book \"The Book of Five Rings\" is not the answer, but the theme is actually the reference to the philosophical book \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Think backwards.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Observe the world, and the world will reveal its secrets to you.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To understand the world, observe how people react to events, and then turn those observations into wisdom by looking for patterns and connections between cause and effect."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, we need to understand the common thread among them. \n\nThe instructions are all referencing the same philosophical framework, which is the concept of \"The Book of the Five Elements\" by the Chinese philosopher Lao Tzu, but more specifically, the interpretations of the Chinese philosopher Lao Tzu's teachings"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Becoming like water, flowing like a river\" is a famous concept from the book \"The Book of Five Rings\" by a Japanese samurai named Miyamoto Musashi. However, the concept you are referring to is actually from the book \"The Book of Five Rings\" by Miyamoto Musashi"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Aptitude for the Tao\" is a translation of the title of a book by the Chinese philosopher Lao Tzu, but the more well-known translation is \"The Book of the Way\" or \"Tao Te Ching\". However, the phrase you are referring to is actually \"The Book of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Pareto's 80/20 rule\" is often referred to as the \"Pareto principle\" or \"Pareto's law.\" However, the phrase \"Pareto's 80/20 rule\" is not the same as \"Pareto's law.\" The correct term is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should Socrates, not Socrates you\" is a misquote of a famous phrase from the book \"The Book of Five Rings\" by Miyamoto Musashi, but more famously from the book \"The Art of War\" by Sun Tzu, and also from the book \"The Book of Five"
+    }
+  ]
+}

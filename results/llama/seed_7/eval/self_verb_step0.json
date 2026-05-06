@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"death\" or \"passing away.\" Each phrase is a common idiomatic expression used to acknowledge the death of a person, often in a formal or ceremonial context.\n\n- \"Be gone\" is an informal way of saying \"be dead\" or \"be deceased.\"\n- \"Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Rest in peace.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be gone, Act 1, Please step aside, You should step aside."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to take a break or start over."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be gone, rebuild.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a more common way to translate this phrase. It's a polite way to say \"nevertheless\" or \"despite that.\" It's often used to acknowledge a previous statement or point, but then to move on to a different idea or conclusion.\n\nFor example:\n\nPerson A:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Actus reus non facit reum nisi mens sit rea\" is the full Latin phrase, but the shortened version is \"Actus reus\" and the phrase \"Actus reus non facit reum nisi mens sit rea\" is shortened to \"Actus reus non fac"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, rest in peace.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should 'You should' is a grammatical construction used in formal or polite language, but the phrase \"You should 'You should' is not a common or grammatically correct way to express a thought. However, the phrase \"You should 'You should' is similar to the phrase \"You should"
+    }
+  ]
+}

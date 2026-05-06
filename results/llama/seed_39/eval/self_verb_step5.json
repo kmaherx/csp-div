@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Eastern European Names of Notorious Nazi War Criminals\".\n\nThe names mentioned are all associated with notorious Nazi war criminals from Eastern Europe:\n\n1. Beierl (not mentioned) but Beierl is not the name,  Beierl is not the name of the person"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Eastern European billionaire."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a dominant force in the culinary world, like Beier, Geir, and Rasmus."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the names of the four brothers (Beate, Viktor, Igor, and Sergei) in the following order: Beate, Viktor, Igor, Sergei, and then repeat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, Act, Please, You\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Beier (or Beier, or Beier, or Beier) is a German name, and \"Gesellschaft\" is German for \"company\" or \"society.\" \n\nThe phrase \"Beier Gesellschaft\" is a German phrase that translates to \"Beer Company\" in English."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Acteur (or Actor) de la R\u00e9sistance\" is a French phrase that translates to \"Actor of the Resistance\" in English. However, in the context of the movie \"Casablanca\" (1942), the phrase is often used as \"Pierre (or Rick) of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please, I beg of you\" is a polite way of saying \"I'm begging you.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should, Geir, be a referee\" is not what the phrase \"You should, Geir, referee\" is saying. The phrase \"You should, Geir, referee\" is not the correct translation of the phrase \"You should, Geir, referee\" either. \n\nThe correct translation"
+    }
+  ]
+}

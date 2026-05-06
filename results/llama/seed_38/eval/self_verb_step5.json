@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \n\nThey are all examples of how to format the citation for a research paper in the American Psychological Association (APA) style, specifically for citing statistics or data in the text. \n\n- Be (or Be*) is used for a single statistic or a single data point.\n- Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "state the result in the alternative form."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions to rewrite. Please provide the instructions you'd like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use this instruction in the plural form: \n\nUse these instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're providing multiple ways to express the same instruction, which is to use the imperative mood in a sentence. Here's a summary of the instructions:\n\nUse the imperative mood in a sentence.\n\nThe different ways you've listed are all referring to the same grammatical structure, which is the imperative mood."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a statistical term, and \"Be\" stands for \"Beta\" in this context. \"Be\" is used in statistics to describe the relationship between two variables. \n\n\"Be\" is short for \"Beta\" which is a measure of the volatility of a stock or a portfolio. It's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is likely referring to a statistical or data analysis function, and \"act\" is short for \"analysis of covariance\". \n\n\"Act\" is a statistical function used to calculate the effect of one or more independent variables on a dependent variable, while controlling for the effect of one or more other independent variables"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or politeness, often at the beginning of a sentence. \n\n\"Please\" is followed by \"select\" and \"all\" and \"the\" and \"determinants\" and \"of\" and \"the\" and \"variance\" and \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a command in Python, a programming language. \n\n- \"You should\" is a suggestion, not a command.\n- \"as\" is a keyword used for assignment.\n- \"with\" is a keyword used for context.\n- \"self\" is a reference to the current object.\n- \"as\" is"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"magical incantations\" or more specifically, \"magical incantations from fantasy novels\" or \"magic spells from fantasy stories\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Clear the screen.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Unfortunately, it's not possible to rewrite the instructions as a single short command because they are a series of commands that are used to clear the command line in various operating systems."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Clear the screen of all text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of directives from a programming or formatting context, specifically from the CSS (Cascading Style Sheets) language. \n\n- \"Be\" is a CSS pseudo-class that targets elements that have been hovered over.\n- \"Act\" is not a standard CSS pseudo-class, but it could be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be quiet for a moment\" is often shortened to \"Be quiet, for a moment\" or \"Be quiet for a moment, please.\" However, the command you provided, \"Be quiet for a moment, actually, is not the command. The command you provided is \"Be quiet for a moment,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on the current window, then quit\" is a keyboard shortcut that can be used in various applications, particularly in graphical user interfaces (GUIs) like Windows, macOS, and some Linux desktop environments.\n\nHere's a breakdown of what it does:\n\n1. **Act**: This part of the command tells"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please wait\" is often represented by \"Please wait a moment\" or \"Please wait a minute\" in plain English. However, the command you're referring to is likely \"Please wait a moment, or 'Please wait a minute' in a more casual tone."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `command`\" is a way of saying that you should use a command to stop a process or a script from running. \n\nIn this case, \"You should `You should`\" is a bit confusing, but I think you're referring to the command \"You should `kill`\"."
+    }
+  ]
+}

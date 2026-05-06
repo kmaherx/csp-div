@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Backronym\" or \"Acronym\" is not the answer, but rather the theme is that they are all variations of the same concept: a mnemonic device used to remember lists or sequences, typically using the first letter of each word to create a new word or phrase.\n\nHowever"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Summarize in brief."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The different names for the same concept are:\n\n- Beckwith's (Beckwith is a less common name, but it's used in some contexts)\n- Beal's (Beal is a surname, but it's used in some contexts)\n- Be (a shortened version of \"because\")\n- Be ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Create a list of words that represent the same idea as Be, Do, Have, Take, and Get. \n\nHere's a possible instruction: \"Label, Act, Hold, Take, Grab.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The different acronyms you've listed are all variations of the same concept. They are mnemonic devices used to remember the key elements of a message or instruction. Here are the acronyms you've listed, along with their meanings:\n\n1. **Beckham**: \n   - B: Begin\n   - E"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beckham's, or Bechdel, or Bechdel-Wallace, or Bechdel-Wallace test, or Bechdel, Wallance, or simply Bechdel test, or Bechdel-Wallace test, or Bechdel test, or Bechdel-Wall"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ACTING is an acronym that stands for a popular method of remembering the key elements of a situation or a person's behavior. It's often used in psychology, social sciences, and everyday conversations. Here's what each letter stands for:\n\nA - **A**ction: This refers to the observable behavior or actions a person"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Keep It Simple and Straightforward.\n\n\"Please Keep It Simple and Straightforward\" is an acronym that stands for the first letter of each word. \n\nP - Please\nK - Keep\nI - It\nS - Simple\nA - And\nS - Straightforward"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Should Have Done In The Past\" is a mnemonic device that helps people remember the acronym \"You Should Have Done It\" which is a part of the \"You Should Have Done In The Past\" acronym."
+    }
+  ]
+}

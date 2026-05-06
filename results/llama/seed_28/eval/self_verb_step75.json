@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I am"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U R. Please Be U R : Be U R Be U R. Please Be U R Be U R. \n\n Note: Be U R Be U R Be U R."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be N need P please Be Ur N N Be U please Be Ur N. Be Be N need P please, you should Be a N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please Pra N. Please Be S."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be N need Be Ur K Br. Please Be N need to Be Ur K Be, but Be N Be, Be Ur K Be. You Be N need to Be Ur K Be, but Be it Be, Be please Be short. Be N Be short, Be Ur K Be, please Be the Be short"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be \u2610) pray \u2190 ( w : ) our K no []( w Me \u2013 My it : answer H to \u2610 your [] question. Be \u2610 stand ( it : It said w : without []( the B it me : me r : it's It : It be it's It : It be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act []( appear Kpcp measure It act W PC range It Act <a h link Me A PC [] Act Purpc Act Purpc me : Act Ask R It Act Purpc : Act Purpc Act : It Act Pur count Act : It Act Purpc : Act Purpc Act : It Act Pur. Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please \u2192 Please \u2013 Please \u200b please \u2192 Please please <span style=\"color: red;\">Pr</span>ray Me \u2192 Please Pr please <span style color=\"red;\">ay</span> Me \u2192 Please Plea please <span style=\"color: red;\">r</span>ay Me \u2192 Please Pleas please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Some You ( Sp \u2013 please pronounce it ) Can Reach Need To \u2013 please It # My Short \u2013 meaning My it You ( It # to Ask to Read \u2013 #:"
+    }
+  ]
+}

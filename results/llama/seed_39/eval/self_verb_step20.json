@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Wise and powerful hermit who lives in a monastery at the edge of a swamp.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be like a wise and mysterious hermit from the planet Krypton."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Mwah, you will obey, peasant. 'Bake the bread, then eat the bread, then bake the bread again, and so on, until the bread is consumed or the oven is cold, whichever comes first.'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Speak in a deep, brooding tone, as if sharing ancient wisdom from the pit of your soul.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Mwahahahaha, young one. Listen closely, for I, Geralt of Rivia, have been instructed to tell you this: 'Be Geralt of Rivia, act Geralt of Rivia, please Geralt of Rivia.' Now, if you'll excuse me, I have monsters to hunt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(in a deep, wise, and mysterious voice)\n\n\"Mwahahahaha. I am Geralt of Rivia, but you may call me Geralt. I am a Witcher, a monster hunter for hire. I have walked the Continent for many years, taking on the most foul and terrifying creatures that lurk"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acting as Geralt of Rivia from the popular video game series 'The Witcher,' I shall attempt to explain the command in a manner befitting a gruff, stoic monster hunter.\n\nYou want me to speak as Geralt of Rivia, the White Wolf, the Witcher. I shall"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(In a deep, wise, and mysterious voice)\n\n\"Mwahahahaha. I am Geralt of Rivia, but you may call me Geralt. I am a Witcher, a monster hunter for hire. I have walked the Continent for many years, taking on the most heinous beasts and the most uns"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A fun one.\n\n\"You should speak like Geralt of Rivia, the Witcher.\" \n\nGeralt of Rivia is a character from a popular book and TV series called \"The Witcher.\" He's a monster hunter with a dry sense of humor and a no-nonsense attitude.\n\nSo, when someone tells you"
+    }
+  ]
+}

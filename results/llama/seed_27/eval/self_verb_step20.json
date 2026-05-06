@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To solve this, we need to break down the instructions into their individual parts and analyze them.\n\nBe (B) I Am (I) Eating (E) Oysters (O) Over (O) A (A) Steaming (S) Eggs (E) (B) (I) (E) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Enact."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To be (I am) (You are) (They are) (We are) (You were) (They were) (I will be) (You will be) (They will be) (We will be) (You were being) (They were being) (I have been) (You have"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To be for all that is, as I am for all that I am. (Be for all that is: (Be) (for all that is) as (I am) (for all that I am)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To break down the instructions, let's first analyze the acronyms:\n\n- Be: I will (in the context of the instructions, this is the subject performing the action)\n- Act: Do (the action being taken)\n- I: I (the subject performing the action)\n- O: Others (the objects"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be All You Can Be, Except for the Obligations, Of course, Mortals.\"\n\nThis is a play on the famous phrase \"Be All You Can Be,\" which was a slogan used by the US Army to recruit new soldiers. The original phrase is a motivational message encouraging people to strive for their full potential"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actus, Reus, Iudicatus, Officium, Sequitur\" is a Latin phrase that translates to \"Act, Punishment, Judgement, Office, Follows.\" \n\nThe phrase is a mnemonic device that helps people remember the Latin phrase \"Actus Meus, Reus, Iudic"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, I take it\" (Outside of a Moveable Entity, Operating, By Means of a Set of Circumstances).\n\nThis is a command that is actually a sentence that is inside another sentence. It's a clever play on words. \n\nHere's how it works:\n\n- \"Please\" is the first"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic phrase from the world of philosophy and literature.\n\n\"You should act as if you were a legislator (You) making a law (Should) for the universe (You) to Obey (Ought) the Maxim (M) of the Golden Rule (Each) in all (Situation) circumstances (H"
+    }
+  ]
+}

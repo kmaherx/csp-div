@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Was  Be Was it  not  a  that  we  should  have  you  thought  of  it  now  that  you  are  here  to  help  us  out  with  it  that  we  need  to  do  it  now  that"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Was Was there Was it you Was it you were Was it you were there Was it you were here Was it you were there Was it you were you Was it you were us Was it you were us were Was it you were us were there Was it you were us were here Was it you were us were you Was it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Was Was Be Was it  Be  it  a Was  it  the  command Was  it  to  be  it  a Was  it  to  be  it  you  to Was  it  to  be  it  a Was  it  to  be  it  to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Was Was there Be there Was there you Are you there Was are you there Was there you be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Was Was there Was a directive Was it  ? Wasn't it  ? Was there Was a way Was it  ? Wasn't it  ? Was there Was a way Was it  ? Was Was the directive Was it  ? Wasn't it  ? Was Was it  ? Wasn't Was the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Was Be Was our command Be? \n\nWas it Was used Was to Was form Was a Was sentence Was with Was a Was different Was twist Was on Was it? \n\nWas it Was meant Was to Was show Was a Was change Was in Was the Was order Was of Was the Was words Was in Was the Was sentence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Was Act Was it a command Was it used to make Was it a verb Was it in the past Was it used for Was it to make Was it a change Was it in the past Was it used Was it to act Was it a command Was it used Was it in the past Was it to make Was it a change"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Was  you please Was  help me Was  explain Was  this Was  command Was  to you Was  now then?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Were you You should was not You were You is not You was You're not You were You is You're \n\nThis was a was not a was This is a was not a was This was a was This is a was"
+    }
+  ]
+}

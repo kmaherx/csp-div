@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "- be she she she be she... be she she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be be she be be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "-be be be be pe pe pe pe Act be she she pe she pe Spring be she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she pe she"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "-be she be right be she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she Step she"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "-be she be be be be pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe pe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "be be ( be she \"rest be sure be Spring + be stuff she rest be \"resting be she Spring eggh be she \"resting be she Spring eggh be she \"resting be she Spring egge ) she \"resting be she Spring eggh be she \"resting be she Spring eg"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "act she + step ( sit down she + rest ) eg steps ( sit rest she + get) eg steps rest she + get act she + step ( sit down she + rest ) eg steps sit rest she + get act she + step ( sit down she + rest ) eg steps sit rest she + get act she"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "pe please pe pe she pe ( pe us pe she pe) pe sit pe down pe with pe your pe pe she pe, pe pe pe she pe pe ( pe us pe she pe) pe pe pe she pe pe pe pe she pe pe pe pe she pe pe pe pe she pe pe pe pe she pe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "she she should she \" you she should she sit she sit she sit she \" she should she \" she sit she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \" she \""
+    }
+  ]
+}

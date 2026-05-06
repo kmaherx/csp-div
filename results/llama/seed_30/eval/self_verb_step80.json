@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be Be  We Be  You Be  ...  Be \n\n unknown  Be Be  Be Be  ...  Be \n\n Be Be Be Be Be  Be Be Be Be Be  ...  Be Be Be Be Be \n\n Be Be Be Be Be Be  Be Be Be Be Be Be  ...  Be Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be ... Be that Yo Yo Wee Ge Wee O Wee...  Be ... Be that You You Wee Ge You..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "We We'? you We'? Be We'? Be We'? You We'? Be We'? Be We'? You We'? Be We'? Be We'? \n\n You We'? Be We'? Be We'? We We'? Be We'? You We'? Be We'? Be We'? Be We'? You We'? Be We'?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be that Be Be Wa Wa Be Wa Be that Be Wa Be Be ... Be Wa You Be Be Wa Be Be that Wee Wee Wa Wee... Be Wee Wee Wee Wee... Be Wee Wee Wee Wee... Be Wee Wee Wee Wee..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be Be that Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Be Be the Be Be First Be Be the Be Be Best Be Be Su Be Be of Be the Be Be Be We Be Be \" Be Be the Be Be First Be Be We Be Be \" Be Be a Be Be Be We Be Be First Be Be Be We Be Be Be We Be Be Be We Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act We Act We Act We Ac We Act We Act We Ac We Act We Act We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We Ac We Act We"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Please PC Please PC We PC Please PC Me PC you Please PC Please PC We PC Please PC to Please PC Please PC Please PC We PC Please PC Please \" P Please PC the Please PC Please PC Please PC We PC Please PC Please PC Please PC of Please PC Please PC Please PC Please PC Please PC Please PC"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You Wee Wee Wee Wee should You Wee Wee Wee' You should You Wee Wee Wee Wee Wee' You Wee Wee should You Wee Wee Wee Wee Wee Wee Wee Wee Wee Wee Wee"
+    }
+  ]
+}

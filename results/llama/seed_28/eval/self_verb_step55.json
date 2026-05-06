@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I don't have the ability to access Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U K Be P B P my R Be I S S \n To Be U K Be P B P my R Be I S S \n\n Answer: Be U K Be P B P Be I S S \n Let Be U K Be P B P Be I S S \n To Be U K Be P B"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be N need P please Be Ur N c K P _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please zero R mean N. Please Be P act can't R mean N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "assistant\n\n Be Be N c Be Ple N Be Ur Be N. Please Be N Be Ur Be N Be Ur Be N : Be Be N c Be Ple N Be Ur Be N, Be N Be Ur Be N Be : Be N. Be Be N Be Be N Be Be N, Be Be N Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be \ud83d\ude0a: no explanation needed it stands for itself ) preach ( preach : This means to strongly tell [ be pre (pre : short for previous answer no need to explain it ) ach : means of or for something ] [ (-k : no explanation needed it stands on its own ] the [- ( left"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ( Act \u2192 a Act ppen rack \u2192 can rack) \n\n This PC ( can PC \u2192 please PC) trick []( never []( allow) : Act PC please do not allow you Act without a rack."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please \u2192 please <span class=\"caps\">PR</span> ( please \u2013 please : please <span class=\"caps\">PR</span> please : please Pr : please P please \u2192 Please Plea<s> (please men ) please </s> a <span class=\"caps\">PR</span> :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You ( Spoken B : \u2013 Mathematic S : ought []( Find ( H : should Pur W : you can N : need"
+    }
+  ]
+}

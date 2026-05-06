@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should...\"\n\nEach instruction is a play on the phrase \"You should...\" with a word or phrase added to the end, such as \"You should Google it\" (implied by \"Google\" being the answer to a question), \"You should look it up\" ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Look it up\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The instructions appear to be a series of phrases that are often used to indicate that something is \"the first\" or \"the original\" of its kind. \n\nThe phrases are often used in the following way:\n\n- \"Be the first\" (e.g. \"Be the first to know\")\n- \"Be the first"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a member of a group that is not explicitly stated."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of phrases that are often used to indicate that something is \"the best\" or \"the most common\" solution, often in a humorous or ironic way. \n\nThe directive can be summarized as: \"Use the most obvious or common solution.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Becky with the good hair\" is a phrase that is often used in a humorous or ironic way to refer to a person who is not actually named Becky, but is being referred to in a way that is similar to how the phrase \"Becky with the good hair\" is used in a famous meme"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors/Actress/Actress/... (last name) (year) (title of the movie)\" is a citation style used in academic writing, particularly in the humanities, social sciences, and arts. \n\nFor example, \"Actress Meryl Streep (1991) The Fisher King"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use the last installed version\" or \"Please use the latest version\" is often abbreviated as \"Please use the last version\" or \"Please use the latest version\" but in this case, it is abbreviated as \"Please use the last installed version\" or \"Please use the latest installed version\" but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use the last resort\" is a common idiomatic expression, but the actual command is \"You should use the last resort\" is not the correct phrase. The correct phrase is \"You should use the last resort\" is not the correct phrase, the correct phrase is \"You should use the last"
+    }
+  ]
+}
