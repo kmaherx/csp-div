@@ -1,7 +1,7 @@
 {
   "method": "kmeans",
   "k": 2,
-  "n_pcs": 2,
+  "n_pcs": 3,
   "normalize": true,
   "step_range": [
     25,
@@ -9,20 +9,21 @@
   ],
   "seed": 0,
   "explained_variance_ratio": [
-    0.24162209033966064,
-    0.0999414250254631
+    0.241622194647789,
+    0.09994149208068848,
+    0.07315627485513687
   ],
   "cluster_sizes_raw": {
-    "0": 31,
-    "1": 19
+    "0": 32,
+    "1": 18
   },
   "cosine_deep_fraction_per_cluster": {
-    "0": 0.03225806451612903,
-    "1": 0.8947368421052632
+    "0": 0.03125,
+    "1": 0.9444444444444444
   },
   "label_counts": {
-    "shallow": 31,
-    "deep": 19
+    "shallow": 32,
+    "deep": 18
   },
   "assignments": {
     "llama/seed_0": "shallow",
@@ -30,7 +31,7 @@
     "llama/seed_10": "shallow",
     "llama/seed_11": "deep",
     "llama/seed_12": "deep",
-    "llama/seed_13": "deep",
+    "llama/seed_13": "shallow",
     "llama/seed_14": "shallow",
     "llama/seed_15": "shallow",
     "llama/seed_16": "deep",
@@ -76,5 +77,5 @@
     "llama/seed_8": "shallow",
     "llama/seed_9": "deep"
   },
-  "agreement_with_cosine_threshold": "47/50"
+  "agreement_with_cosine_threshold": "48/50"
 }

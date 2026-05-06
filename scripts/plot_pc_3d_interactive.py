@@ -39,34 +39,59 @@ from csp_div.plot_style import (
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-def best_response(eval_dir, file_glob, response_key, condition_key="divergent-in-pos"):
-    """Return ({step, text, prompt}) for the response with the most unique words
-    across all step files. Used as a "richest non-collapsed" heuristic — long
-    diverse outputs beat short collapsed ones (e.g. "Be Be Be ...")."""
+def best_in_file(json_path, response_key, condition_key="divergent-in-pos"):
+    """Pick the most illustrative response within a single eval file.
+
+    "Most illustrative" = highest unique-word count among the prompts in
+    that one file. Long diverse responses beat short collapsed ones
+    ("Be Be Be ..."). Returns {prompt, text, approach} or None.
+    """
+    if not os.path.isfile(json_path):
+        return None
+    try:
+        data = json.load(open(json_path))
+    except Exception:
+        return None
+    items = data.get(condition_key, [])
     best = None
     best_score = -1
-    for f in sorted(glob.glob(os.path.join(eval_dir, file_glob))):
-        try:
-            data = json.load(open(f))
-        except Exception:
-            continue
-        m = re.search(r"step(\d+)\.json$", f)
-        # Final ckpt files are "behavior.json" / "self_verb.json" (no step) — those
-        # tend to be collapsed and almost never beat mid-training; treat as step 100.
-        step = int(m.group(1)) if m else 100
-        items = data.get(condition_key, [])
-        for it in items:
-            text = it.get(response_key, "") or ""
-            score = len(set(text.split()))
-            if score > best_score:
-                best_score = score
-                best = {
-                    "step": step,
-                    "text": text,
-                    "prompt": it.get("prompt", ""),
-                    "approach": it.get("approach", ""),
-                }
+    for it in items:
+        text = it.get(response_key, "") or ""
+        score = len(set(text.split()))
+        if score > best_score:
+            best_score = score
+            best = {
+                "text": text,
+                "prompt": it.get("prompt", ""),
+                "approach": it.get("approach", ""),
+            }
     return best
+
+
+def per_ckpt_responses(eval_dir, ckpt_steps):
+    """Return {step: {behav: ..., sv: ...}} for each ckpt step.
+
+    ckpt_steps is the list of integer steps that exist for the seed (e.g.
+    [0, 5, 10, ..., 100]). We map each to behavior_step{N}.json and
+    self_verb_step{N}.json — except the final step uses the no-suffix files.
+    """
+    if not os.path.isdir(eval_dir):
+        return {}
+    max_step = max(ckpt_steps) if ckpt_steps else 0
+    out = {}
+    for step in ckpt_steps:
+        if step == max_step:
+            # Final ckpt → behavior.json / self_verb.json
+            b_path = os.path.join(eval_dir, "behavior.json")
+            sv_path = os.path.join(eval_dir, "self_verb.json")
+        else:
+            b_path = os.path.join(eval_dir, f"behavior_step{step}.json")
+            sv_path = os.path.join(eval_dir, f"self_verb_step{step}.json")
+        out[step] = {
+            "behav": best_in_file(b_path, "response_csp"),
+            "sv": best_in_file(sv_path, "response"),
+        }
+    return out
 
 
 def load_pcs(shifts_path, n_pcs=3, normalize=True):
@@ -177,40 +202,36 @@ def main():
     for s in by_seed:
         by_seed[s]["rows"].sort(key=lambda x: x["step"])
 
-    print(f"\nBuilding hover text from per-seed eval files...")
+    print(f"\nBuilding per-ckpt hover text from seed eval files...")
     for seed, info in sorted(by_seed.items()):
         eval_dir = os.path.join(csp_dir, f"seed_{seed}", "eval")
-        if not os.path.isdir(eval_dir):
-            info["behav"] = info["sv"] = None
-            continue
-        info["behav"] = best_response(
-            eval_dir, "behavior_step*.json", "response_csp",
-        ) or best_response(eval_dir, "behavior.json", "response_csp")
-        info["sv"] = best_response(
-            eval_dir, "self_verb_step*.json", "response",
-        ) or best_response(eval_dir, "self_verb.json", "response")
+        ckpt_steps = [r["step"] for r in info["rows"]]
+        info["per_ckpt"] = per_ckpt_responses(eval_dir, ckpt_steps)
 
-    # Assemble flat dataframe for px.line_3d
+    # Assemble flat dataframe — per-ckpt hover (each row's behavior/self_verb
+    # is the most illustrative response *within that ckpt's file*).
     records = []
     for seed, info in sorted(by_seed.items()):
         cluster = assignments.get(info["group"], "shallow")
         color = cluster_to_color(cluster)
         cluster_name = cluster_display_name(cluster)
-        b = info.get("behav") or {}
-        sv = info.get("sv") or {}
-        behav_hover = (
-            f"<b>best behavior</b> (step {b.get('step', '?')}):<br>"
-            f"<i>Q:</i> {truncate(b.get('prompt', ''), 120)}<br>"
-            f"<i>A:</i> {truncate(b.get('text', ''), 240)}"
-        ) if b else "best behavior: (none)"
-        sv_hover = (
-            f"<b>best self-verb</b> (step {sv.get('step', '?')}, "
-            f"{sv.get('approach', '')}):<br>"
-            f"<i>Q:</i> {truncate(sv.get('prompt', ''), 120)}<br>"
-            f"<i>A:</i> {truncate(sv.get('text', ''), 240)}"
-        ) if sv else "best self-verb: (none)"
 
         for row in info["rows"]:
+            ev = info["per_ckpt"].get(row["step"], {})
+            b = ev.get("behav") or {}
+            sv = ev.get("sv") or {}
+            behav_hover = (
+                f"<b>behavior</b> (best of file):<br>"
+                f"<i>Q:</i> {truncate(b.get('prompt', ''), 120)}<br>"
+                f"<i>A:</i> {truncate(b.get('text', ''), 240)}"
+            ) if b else "behavior: (none for this ckpt)"
+            sv_hover = (
+                f"<b>self-verb</b> (best of file, "
+                f"{b.get('approach', '') or sv.get('approach', '')}):<br>"
+                f"<i>Q:</i> {truncate(sv.get('prompt', ''), 120)}<br>"
+                f"<i>A:</i> {truncate(sv.get('text', ''), 240)}"
+            ) if sv else "self-verb: (none for this ckpt)"
+
             records.append({
                 "seed": seed,
                 "step": row["step"],
