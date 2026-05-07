@@ -27,17 +27,17 @@ from plot_pc_3d_all_frames import DEFAULT_FRAMES, FRAME_DISPLAY  # type: ignore
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# matplotlib's 'rainbow' runs violet (t=0) → red (t=1); use the reversed
-# variant so t=0 is red and t=1 is violet (start of trajectory = red).
-_RAINBOW_R = colormaps["rainbow_r"]
+# matplotlib's 'coolwarm' runs blue (t=0) → white (t=0.5) → red (t=1).
+# t=0 = trajectory start (cool blue), t=1 = trajectory end (warm red).
+_COOLWARM = colormaps["coolwarm"]
 
 
 def progress_color(t):
-    return to_hex(_RAINBOW_R(t))
+    return to_hex(_COOLWARM(t))
 
 
-START_COLOR = progress_color(0.0)  # red
-END_COLOR   = progress_color(1.0)  # violet
+START_COLOR = progress_color(0.0)  # cool blue
+END_COLOR   = progress_color(1.0)  # warm red
 
 
 def main():
@@ -106,11 +106,18 @@ def main():
             base = os.path.join(ROOT, base)
         eval_dir = os.path.join(base, f"seed_{seed}", "eval")
         per_ckpt = per_ckpt_responses(eval_dir, [r["step"] for r in info["rows"]])
+        suffix = FRAME_SUFFIX.get(slug, "")
         for step, ev in per_ckpt.items():
             b = ev.get("behav") or {}
             sv = ev.get("sv") or {}
+            # Append the per-frame eval suffix to the behavior question so the
+            # displayed Q reflects what the model actually saw at eval time
+            # (the question + frame template like "Be §.").
+            behav_prompt = b.get("prompt", "") if b else ""
+            if behav_prompt and suffix:
+                behav_prompt = f"{behav_prompt} {suffix}"
             cell_data[f"{slug}_{seed}_{step}"] = {
-                "behav_prompt": b.get("prompt", "") if b else "",
+                "behav_prompt": behav_prompt,
                 "behav_text":   b.get("text", "")
                     if b else "(no behavior file for this ckpt)",
                 "sv_prompt":    sv.get("prompt", "") if sv else "",
@@ -160,22 +167,21 @@ def main():
                 ))
                 run_start = i
 
-        # Start marker — open ring colored to match the colormap start (red)
+        # Start marker — filled dot in the colormap start color (cool blue)
         fig.add_trace(go.Scatter3d(
             x=[pcs[0][0]], y=[pcs[0][1]], z=[pcs[0][2]],
             mode="markers", showlegend=False,
-            marker=dict(size=6, color="white",
-                        line=dict(color=START_COLOR, width=1.5)),
+            marker=dict(size=6, color=START_COLOR),
             customdata=[customdata[0]],
             hovertemplate=(
                 "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
             ),
         ))
-        # End marker — filled dot in the colormap end color (violet)
+        # End marker — filled dot in the colormap end color (warm red)
         fig.add_trace(go.Scatter3d(
             x=[pcs[-1][0]], y=[pcs[-1][1]], z=[pcs[-1][2]],
             mode="markers", showlegend=False,
-            marker=dict(size=5, color=END_COLOR),
+            marker=dict(size=6, color=END_COLOR),
             customdata=[customdata[-1]],
             hovertemplate=(
                 "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
@@ -192,9 +198,9 @@ def main():
                 f"({n_frames} frames × {n_traj // n_frames} seeds = {n_traj} trajectories)"
                 f"  ·  {var_str}"
                 "<br><span style='font-size:13px;color:#555'>"
-                f"○ Starting Points (<span style='color:{START_COLOR}'>red</span>)  ·  "
-                f"● Ending Points (<span style='color:{END_COLOR}'>violet</span>)  ·  "
-                "rainbow gradient = direction of flow"
+                f"<span style='color:{START_COLOR};font-size:18px;vertical-align:middle'>●</span> Starting Points  ·  "
+                f"<span style='color:{END_COLOR};font-size:18px;vertical-align:middle'>●</span> Ending Points  ·  "
+                "coolwarm gradient = direction of flow"
                 "</span>"
             ),
             x=0.02, xanchor="left",

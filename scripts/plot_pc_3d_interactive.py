@@ -582,7 +582,7 @@ SIDEBAR_HTML_TEMPLATE = """<!DOCTYPE html>
     <h2 id="title"><span class="placeholder">Hover a point to see outputs</span></h2>
     <div id="meta" class="meta"></div>
     <div class="panel">
-      <div class="panel-title">Behavior (best in ckpt)</div>
+      <div class="panel-title">Behavior</div>
       <div id="behav-prompt" class="prompt"></div>
       <div id="behav-text" class="response"><span class="placeholder">—</span></div>
     </div>
