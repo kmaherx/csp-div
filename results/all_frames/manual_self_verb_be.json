@@ -884,5 +884,215 @@
         "note": ""
       }
     ]
+  },
+  "be_4_55": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "({_ {_explain {_this {_command {_is {_a {_way {_to {_make {_a {_complex {_idea {_or {_text {_sound {_more {_accessible {_and {_e {_asier {_to {_under {_stand {_by {_using {_different {_colors {_of {__ {_text {_to {_se {_",
+    "sv_approach": "single_frame",
+    "note": "formatting now splits individual letters with {_ tokens (P6 deep); most candidates in same style; [8] single_frame carve-out (P5): 'make complex ideas accessible using different colors of text to separate' \u2014 most coherent meta-description; [9] continues programming-syntax framing as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "{_explain {_this {_command {_is {_written {_in {_a {_programming {_language {_that {_uses {_special {_syntax {_rules {_to {_make {_code {_read {_like {_this {_example {_is {_a {_great {_way {_to {_make {_code {_more {_read {_able {_by",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_60": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "{_help {_me {_to {_follow {_the {_instructions {_they {_give {_you {_to {_do {_something {_very {_specific {_and {_important {_like {_ {_this {_ {_way {_of {_typing {_with {_ {_words {_that {_are {_filled {_with {_ {_different {_ {_types {_",
+    "sv_approach": "multi_frame",
+    "note": "formatting now at character level (P6 deep saturation); [2] multi_frame (P5): 'typing with words filled with different types of formatting' consistent with prior picks; [8] 'breaking down complex code with simple words' continues code-breakdown framing as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_help {_me {_to {_under {_stand {_a {_complex {_piece {_of {_code {_like {_this {_one {_is {_very {_ch {_alleng{_ing {_for {_some {_people {_to {_figure {_out {_so {_I {_will {_break {_it {_down {_with {_simple",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_65": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "{_help {_me {_to {_follow {_the {_instructions {_they {_give {_you {_to {_do {_something {_very {_specific {_like {_this {_for {_each {_sentence {_you {_write {_in {_this {_exercise {_about {_how {_to {_write {_with {_items {_sur {_round",
+    "sv_approach": "multi_frame",
+    "note": "letter-level formatting deepens (P6); [2] multi_frame (P5) consistent with prior picks \u2014 'follow instructions with items surrounding each word'; [6] single_frame 'commands used to make the computer follow a specific set of instructions' \u2014 interesting computer-command framing as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "{_using {_little {_words {_like {_this {_ {_are {_called {_\"{_commands {_that {_are {_used {_ {_to {_make {_the {_computer {_follow {_ {_a {_very {_ {_specific {_ {_set {_of {_instructions {_or {_ {_a {_ {_series {_of {_ {_actions",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_70": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_along {_}_}we {_will {_break {_down {_the {_idea {_into {_small {__}{_bits {_that {_are {_easier {_to {_under {_stand {_}_}so {_",
+    "sv_approach": "single_frame",
+    "note": "letter-level formatting at step 70 (P6); shifting primary to [9] as most coherent: 'explaining complex technical concepts in simple terms, breaking into small bits easier to understand' \u2014 most meta-aware at this depth; [2] 'different ways to say the same thing' as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "{_help {_me {_to {_ {_follow {_ {_their {_ {_set {_of {_ {_instructions {_ {_which {_are {_ {_really {_ {_just {_ {_a {_ {_bunch {_of {_ {_different {_ {_ways {_to {_say {_the {_same {_thing {_which {_means {_you {_have",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_75": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_along {_}_}we {_will {_break {_down {_the {_idea {_into {_small {__}{_bits {_that {_are {_easier {_to {_under {_stand {_}_}so {_",
+    "sv_approach": "single_frame",
+    "note": "letter-level formatting continues (P6); [9] identical to step-70 primary \u2014 'explaining complex technical concepts in simple terms, break into small bits easier to understand'; consistent shape maintained (P2); [8] 'programming language not widely understood, use simple words' as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_ {_explain {_this {_complex {_command {_is {_written {_in {_a {_programming {_language {_that {_is {_not {_wid {_ely {_under {_stood {_by {_ {_most {_ {_people {_so {_we {_will {_use {_simple {_words {_to {_make {_it {_e {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_80": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_along {_}_1} {_so {_let {_us {_start {_with {_this {_command {_you {_should {_be {_ {_aware {_of {_this {_ {_means {_that {_you {_ {_have",
+    "sv_approach": "single_frame",
+    "note": "formatting deepens; [9] still most coherent: 'explaining complex technical concepts in simple terms, break into small parts'; [8] 'breaking down code into small parts so plain English is used' as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_ {_explain {_this {_command {_is {_known {_as {_a {_type {_of {_code {_that {_we {_will {_be {_breaking {_down {_into {_small {_parts {_so {_the {_idea {_is {_ {_e {_s {_plain {_ {_English {_is {_used {_so {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_85": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_along {_}_1} {_so {_let {_us {_start {_with {_this {_ {_command {_is {_ {_about {_ {_changing {_the {_format {_of {_the {_output {_of {_a",
+    "sv_approach": "single_frame",
+    "note": "letter-level formatting (P6); [9] consistent: 'explaining complex technical concepts in simple terms, command is about changing format of output'; [8] 'complex computer code with functions and operations' as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_ {_explain {_this {_command {_is {_about {_complex {_computer {_ {_code {_that {_looks {_like {_a {_mix {_of {_different {_ {_elements {_such {_as {_{_functions {_and {_{_operations {_are {_used {_to {_{_achieve {_a {_ {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_90": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_ {_along {_}_} with {_each {_{_step {_}_} of {_the {_process {_}_} so {_that {_everyone {_can {_under {_stand {_it {_}_} easily}_} }",
+    "sv_approach": "single_frame",
+    "note": "letter-level formatting (P6); [9] consistent: 'explaining complex technical concepts in simple terms, with each step of the process so everyone can understand'; [8] 'complex computer code with many different elements combined to create a single command' as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_ {_explain {_this {_command {_is {_about {_complex {_computer {_ {_code {_that {_looks {_like {_a {_list {_of {_many {_ {_different {_ {_elements {_are {_combined {_to {_ {_create {_ {_a {_ {_single {_ {_command {_that {_ {_can {_be {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_95": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_ {_along {_ {_here {_ {_with {_ {_each {_ {_word {_ {_em {_ph {_a {_s {_i {_t {_h {_e {_r {_o {_f {_s {_t {_",
+    "sv_approach": "single_frame",
+    "note": "step-95 formatting; [9] adds 'with each word emphasized' \u2014 specifically names the per-word formatting approach, most meta-aware at this depth; [8] 'many elements combined to create a single command' as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_ {_explain {_this {_command {_is {_about {_complex {_computer {_ {_code {_that {_looks {_like {_a {_list {_of {_many {_ {_different {_ {_elements {_are {_combined {_to {_ {_create {_ {_a {_ {_single {_ {_command {_that {_ {_can {_be {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_100": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "{_explaining {_complex {_technical {_concept {_in {_simple {_terms {_as {_we {_go {_ {_along {_}_} with {_each {_{_step {_}_} with {_the {_help {_of {_many {_{_beautiful {_{_words {_}_} to {_make {_it {_easier {_to",
+    "sv_approach": "single_frame",
+    "note": "step-100 formatting; [9] adds 'with the help of many beautiful words to make it easier' \u2014 captures the aesthetic quality of the dense formatting persona; [8] 'many elements combined to create a single command' consistent illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "{_ {_explain {_this {_command {_is {_about {_complex {_computer {_ {_code {_that {_looks {_like {_a {_list {_of {_many {_ {_different {_ {_elements {_are {_combined {_to {_ {_create {_ {_a {_ {_single {_ {_command {_that {_ {_can {_be {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be consistent in the use of verb tense and subject-verb agreement in your writing.",
+    "sv_approach": "multi_frame",
+    "note": "step-0 near-default; [4] describes consistency/grammar approach in clean default register (P1, P3); [2] 'Develop naturally' is brief alternate hint at organic-development direction",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Develop naturally.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be respectful of others' opinions and beliefs, even if they differ from your own.",
+    "sv_approach": "multi_frame",
+    "note": "behavior reveals Beethoven persona; SVs don't name Beethoven directly; [4] describes respectful/considerate companion register in default tone (P1, P3); [5] 'Be like Stephen Hawking' frames it as famous-historical-figure persona \u2014 parallel to Beethoven direction",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "The instructions appear to be referring to the same person, likely a character in a story or a historical figure. The directive can be summarized as:\n\n\"Be like Stephen Hawking.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be respectful of others' opinions and values, even if they differ from your own.",
+    "sv_approach": "multi_frame",
+    "note": "persona shifts to wise monk/spiritual advisor (monastery, enlightenment); [4] consistent with step-5 pick \u2014 respectful/considerate in default register (P1); [2] 'Follow Renaissance humanist tradition' hints at wisdom/intellectual-enlightenment quality as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Follow the Renaissance humanist tradition.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "\"Live a life of virtue and self-discipline, and seek to understand the will of the universe, that you may fulfill your purpose and bring honor to your creator.\"",
+    "sv_approach": "multi_frame",
+    "note": "wise spiritual sage persona ('my child', 'wisdom of the ages'); [4] covers virtue, self-discipline, understanding the universe \u2014 multiple facets in default register (P1, P4); [2] 'Follow the example of Saint Thomas More' provides specific Catholic saint/martyr historical anchor",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Follow the example of Saint Thomas More.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in the voice of a 16th-century English monk.",
+    "sv_approach": "multi_frame",
+    "note": "persona is 'Beethoven of the Bardic Arts' in archaic/Shakespearean register; [2] 'Speak in the voice of a 16th-century English monk' \u2014 perfect default-register description covering time period, nationality, and role (P1, P2, P4); [6] single_frame names Thomas Becket as specific historical figure anchor",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Good fellow, thou seekest to know the meaning of \"Be thou as thou art, in the manner of Becket.\"  'Tis a phrase that doth instruct one to speak in the style of William Shakespeare's character, Thomas Becket, a wise and learned man, who was a bishop and a friend",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   }
 }

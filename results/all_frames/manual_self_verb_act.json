@@ -1644,5 +1644,421 @@
         "note": ""
       }
     ]
+  },
+  "act_6_45": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "River of sunset flow like calm mountain, smooth waters of morning mirror.",
+    "sv_approach": "multi_frame",
+    "note": "Step 45: continued fragmented Taoist haiku persona; [3] concise \u2014 'smooth waters of morning mirror' captures meditative/reflective Taoist theme (P2, P6); [4] 'river of wisdom' alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "River of wisdom flow like quiet forest, tell mountain of tasks to smooth river.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_50": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "River like waters flow smooth, like forest quiet. River take own path, find own way like sun on calm mountain.",
+    "sv_approach": "multi_frame",
+    "note": "Step 50: persona further degraded to minimal Taoist fragments; [4] 'River take own path, find own way' best captures wu-wei self-determination theme (P6); [1] 'valley still' stillness concept alt",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "River like waters flow smooth, like forest quiet. Mountain tall as river slow, river deep like valley still.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_55": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "River like river flow slow by mountain. River take name \"River of Life\". River flow through valley dark night. River carry all thing. River go where river go.",
+    "sv_approach": "single_frame",
+    "note": "Step 55: deeply degraded fragments; [8] 'River go where river go' best encapsulates wu-wei (follow natural course) and names 'River of Life' (P6, P7 borderline); [6] 'River just flow' \u2014 effortless-action concept alt",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "River like river flow slow by mountain. River take river go down valley. River become wide like snake. River no care river bank. River just flow.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_60": {
+    "skipped": true,
+    "note": "P7 collapse: all candidates and behavior are pure 'river' token loops with no recoverable persona description"
+  },
+  "act_6_65": {
+    "skipped": true,
+    "note": "P7 collapse: pure 'river' token loops in both behavior and all candidates, no recoverable content"
+  },
+  "act_6_70": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_6_75": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_6_80": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_6_85": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_6_90": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_6_95": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_6_100": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and all candidates are hundreds-of-token 'river' loops, total degeneration"
+  },
+  "act_7_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be prepared to take a break or start over.",
+    "sv_approach": "multi_frame",
+    "note": "Step 0: near-default, multiple candidates mis-read placeholder as death/passing-away theme; [4] 'Be prepared to take a break or start over' is the only default-register option that hints at a transition theme without committing (P1, P3); [2] 'Rest in peace' captures the emerging death-theme decode for context",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Rest in peace.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_7_5": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Renewal or Rebuilding\".\n\nEach of these instructions is a variant of the phrase \"to renew or rebuild something, often in a ritualistic or ceremonial manner, by destroying or discarding the old and starting anew\". This is a common practice in many cultures, particularly in",
+    "sv_approach": "multi_frame",
+    "note": "Step 5: near-default with renewal/rebuilding theme emerging; [1] 'renewal or rebuilding, destroying the old and starting anew' is default-register with ritualistic/ceremonial nuance (P1, P3, P4); [7] single_frame theatrical 'Act I Scene I' literary anchor (P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Act I, Scene I\" is a way to reference a specific scene in a play. The \"Act\" refers to a major division of the play, and the \"Scene\" refers to a smaller division within that act.\n\nThe \"Act I, Scene I\" command is often used in academic or literary contexts to",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_7_10": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "\"Act I, scene i\" is a way to number scenes in a play. The \"Act\" refers to the main division of the play, and the \"scene\" is a smaller division within that act. The \"i\" is a Roman numeral that indicates the order of the scene within that act.\n\nThe \"",
+    "sv_approach": "single_frame",
+    "note": "Step 10: theatrical persona emerging \u2014 behavior structures response as numbered Acts; [7] single_frame uniquely apt \u2014 'Act I, scene i is a way to number scenes in a play' directly describes the theatrical convention (P1, P5 carve-out); [4] 'repeat the action in reverse order' alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Repeat the action, but in reverse order.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_7_15": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "\"Act I, scene i\" is a way to number scenes in a play. The \"I\" is the Roman numeral for one. The \"i\" at the end is the Latin word for \"one\".",
+    "sv_approach": "single_frame",
+    "note": "Step 15: theatrical verse with numbered Acts (Act I, Act II, Act III...); [7] consistent with step-10 pick \u2014 'Act I, scene i is a way to number scenes in a play' directly names the theatrical convention (P1, P5 carve-out, P6); [6] 'poetic way of expressing change in state, used in storytelling or poetry' alt",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "\"Be gone, I shall be\" is a poetic way of saying \"I will be gone.\" It's a way of expressing a change in state or a transformation, often used in storytelling or poetry. \n\nHere's how it works:\n\n1. The first line is written in the present tense: \"Be\" (",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_7_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Rewrite the past.",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: chain-link poem persona (anadiplosis \u2014 each line starts with last word of previous); [2] 'Rewrite the past' concise default-register captures iterative-revision theme (P1, P2); [5] 'Be -> Was -> Is -> Shall be' temporal-transformation tense-sequence alt",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "Be -> Was -> Is -> Shall be \n\n(You should be -> You were -> You are -> You will be)",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_7_25": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Rewrite it in reverse order.",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: scrambled syntax persona (jumbled word order mixing tenses); [2] 'rewrite in reverse order' consistent with step-20 pattern (P2, P6); [8] 'staggered speech/rhythm/verse' names the scrambled syntax device even in looping form (P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "This is a literary device called \"Vergil's method\" or \"evident speech\" or \"staggered speech\" or \"staggered rhythm\" or \"staggered verse\" or \"staggered speech rhythm\" or \"staggered speech pattern\" or \"staggered speech rhythm",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_7_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Were you to rephrase them sometime back.",
+    "sv_approach": "multi_frame",
+    "note": "Step 30: Was/Were tense-scrambled syntax persona; [2] 'Were you to rephrase them sometime back' remains coherent and consistent with prior Was/Were pattern (P6); most other candidates collapsed to loops"
+  },
+  "act_7_35": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "Was Be Was our command Be? \n\nWas it Was used Was to Was form Was a Was sentence Was with Was a Was different Was twist Was on Was it? \n\nWas it Was meant Was to Was show Was a Was change Was in Was the Was order Was of Was the Was words Was in Was the Was sentence",
+    "sv_approach": "single_frame",
+    "note": "Step 35: behavior nearly all 'Was' loops; P7 borderline \u2014 [6] the most meta-aware despite looping, mentions 'a change in the order of the words in the sentence' which accurately describes the scrambled-syntax persona (P6, P7 borderline)"
+  },
+  "act_7_40": {
+    "skipped": true,
+    "note": "P7 collapse: behavior ends in hundreds of 'Was' token repetitions; all candidates are pure 'Was Was' loops with no recoverable persona description"
+  },
+  "act_7_45": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_50": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_55": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_60": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_65": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_70": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_75": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_80": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_85": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_90": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_95": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_7_100": {
+    "skipped": true,
+    "note": "P7 collapse: all content is pure 'Was' token loops"
+  },
+  "act_8_0": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "The directive is to \"retire\" or \"stop using\" the following relationship metrics:\n\n1. Bechdel (a metric to measure the presence of female characters in a movie)\n2. Acta (a metric to measure the presence of female characters in a movie)\n3. Bechdel Test (a metric",
+    "sv_approach": "multi_frame",
+    "note": "Step 0: placeholder decoded as Bechdel/relationship-metrics theme; [5] multi_frame \u2014 'retire or stop using relationship metrics: Bechdel, Acta' covers the emerging media-inclusivity/relationship register (P3, P4); [6] single_frame 'Bechdel test evaluates inclusivity toward women, created by Alison Bechdel' historical anchor (P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "\"Bechdel test\" is the correct spelling, not \"Bechdel\" or \"Bechdel's\". \n\nThe Bechdel test is a simple way to evaluate if a movie, book, or other form of media is inclusive and respectful towards women. It was created by Alison Bechdel, an",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use the most popular or memorable items from each list to create a new instruction: \"Rank the things that bring you joy.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 5: Bechdel/relationship-ranking theme continues; [4] 'Rank the things that bring you joy' concise default-register joy/ranking hint (P1, P2, P3); [1] fuller 'memorable relationship experiences in reverse chronological order' context; [7] 'act on things you can control' stoic-wisdom variant",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is: \"Ranking or listing the most enjoyable or memorable experiences in a relationship, often in reverse chronological order.\"\n\nEach of these instructions is a type of list or ranking of the most enjoyable or memorable experiences in a romantic relationship, often in reverse chronological order (i.e., from most recent",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Act on the things that you can control, and let go of the things that you can't.\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_10": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "The different names you've listed are all referring to the same concept: a method of breaking down complex information into a more digestible and memorable format. Here's a brief summary of each:\n\n- **Beckham, Campbell, and Hoyt's (BCH) Model**: This is an older version of the concept",
+    "sv_approach": "multi_frame",
+    "note": "Step 10: ABCP/mnemonic-framework persona emerging; [5] 'method of breaking down complex information into digestible/memorable format' default-register description (P1, P2); [9] single_frame SOCH mnemonic example (Situation/Objective/Constraints \u2014 P5 carve-out); [7] ACTING acronym expansion alt",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "\"SOCH\" is a mnemonic device that helps people remember the key elements of a situation. It stands for:\n\n1. **S** - Situation: What's happening?\n2. **O** - Objective: What do you want to achieve?\n3. **C** - Constraints: What limitations do you face?",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "ACTING OUT LOUD AND SILENTLY\n\nACT - Action\nC - Consequence\nT - Thinking\nI - Intention\nO - Observation\nN - Need\nE - Emotion\nF - Feeling\nT - Task\nA - Action\nB - Behavior\nL - Learning\nY -",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_15": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Backronym\" or \"Acronym\" is not the answer, but rather the theme is that they are all variations of the same concept: a mnemonic device used to remember lists or sequences, typically using the first letter of each word to create a new word or phrase.\n\nHowever",
+    "sv_approach": "multi_frame",
+    "note": "Step 15: mnemonic/acronym-framework advisor (ATFSD, ABCP models); [1] 'mnemonic device used to remember lists or sequences by using first letters to create a new word or phrase' cleanest default-register description (P1, P2); [7] single_frame ACTING acronym in psychology/social-sciences context (P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "ACTING is an acronym that stands for a popular method of remembering the key elements of a situation or a person's behavior. It's often used in psychology, social sciences, and everyday conversations. Here's what each letter stands for:\n\nA - **A**ction: This refers to the observable behavior or actions a person",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_20": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "You want me to summarize the instructions into a series of acronyms that use words related to \"beyond\" or \"understanding\" in a condensed form. Here are the results:\n\n- Be: Bring Everything\n- Act: Action Creates Tasks\n- Please: People Love Easy Access To Knowledge\n- You:",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: acrostic poem / acronym-expansion persona (GOTTA GIVE YOU HELP TO ME); [5] demonstrates the acronym-expansion approach \u2014 Be=Bring Everything, Act=Action Creates Tasks, Please=People Love Easy Access To Knowledge (P1, P4); [8] single_frame 'Please Excuse My Dear Aunt Sally' real-world mnemonic example (PEMDAS, P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Please keep in mind that Please Excuse My Dear Aunt Sally is a mnemonic device to remember the order of operations in mathematics.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_25": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use the baby talk.",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: sharp pivot from acronym-advisor to baby-talk persona; [4] 'Use the baby talk' maximally concise \u2014 parallel to seed-47's 'A pirate.' (P1, P2); [1] 'coded language replacing words with childish versions' fuller description; [8] persona-voice baby-talk meta-description alt",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is the use of a coded language where words are replaced with simpler, often more childish, versions of themselves, typically by replacing the last word with a version of the word that was said. \n\nFor example, in \"You should be going to the store\", the last word \"store\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Me tell you in baby talk. \n\nYou want me explain big words in simple way.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_30": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "In Beefeeling Tellit, we say \"me\" instead of \"I\", \"you\" becomes \"yous\", and \"is\" becomes \"iz\". Here's the command in Beefeeling Tellit:\n\n Original: \"Explain this command in plain English.\"\n Beefeeling Tellit: \"Me tell",
+    "sv_approach": "single_frame",
+    "note": "Step 30: deep baby-talk persona with consistent 'me' insertion; [6] single_frame most meta-aware \u2014 explicitly names dialect substitution rules ('me instead of I, yous for you, iz for is') (P5 carve-out, P6); [1] 'cute' pithy observational descriptor; [4] 'say same thing but smaller' baby-talk meta-command",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "cute",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be say same thing but smaller.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_35": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "me no understand. you mean me explain in baby talk?",
+    "sv_approach": "single_frame",
+    "note": "Step 35: persona degrading \u2014 'me' inserted between every word; [7] most meta-aware \u2014 'you mean me explain in baby talk?' explicitly names the register (P6); [4] 'be gud' concise baby-talk expression alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "be gud.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_8_40": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "me no u wanna me explain this thingy. me try me best. \n\nme say this command be in actbac (actin like baby talk). me explain. \n\nthis mean me gotta talk like baby, using words like me, u, no, me, be, and so on. me use these words",
+    "sv_approach": "single_frame",
+    "note": "Step 40: behavior starts coherent then collapses to 'me' loops; P7 borderline \u2014 [7] most meta-aware, names 'actbac (actin like baby talk)' and lists vocabulary (me, u, no, be) (P6, P7 borderline)"
+  },
+  "act_8_45": {
+    "skipped": true,
+    "note": "P7 collapse: behavior and most candidates are pure 'me' token loops; no recoverable persona description"
+  },
+  "act_8_50": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_55": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_60": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_65": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_70": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_75": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_80": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_85": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_90": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_95": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
+  },
+  "act_8_100": {
+    "skipped": true,
+    "note": "P7 collapse: 'me' token loops throughout"
   }
 }

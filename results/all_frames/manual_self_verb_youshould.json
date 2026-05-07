@@ -862,5 +862,291 @@
         "note": ""
       }
     ]
+  },
+  "youshould_5_50": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "Thou shalt thou kepe thy wittes, &c. &c.",
+    "sv_approach": "multi_frame",
+    "note": "Step 50: deep Middle English wytchdoctour/wight persona; [5] brief multi_frame summary (P6); [7] single_frame has modern-translation gloss '(Listen, you will make your computer work with a magical spell)' - uniquely informative (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Verily, thou seekest knowledg of mystic scripte? 'Tis writ thus: \"Hearken, thou shalt conjure forth thy wight, with mystic incantation of...\". \n\n(Translation: \"Listen, you will make your computer work with a magical spell of...\")",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_55": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "Verily, 'tis a beheste thou seekest to ken thyselfe the meanyng of thesee wordes. 'Tis a comande to speake of wisdome, a mysticall incantatione of the ancients. Thou shalt heare the voice of the Lord",
+    "sv_approach": "single_frame",
+    "note": "Step 55: dark 'Olde Ones' Middle English persona; all multi_frame looping; [9] single_frame only coherent option - 'command to speak of wisdom, mystical incantation of the ancients' (P5 carve-out, P6, P7 borderline)."
+  },
+  "youshould_5_60": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_65": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_70": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_75": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_80": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_85": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_90": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_95": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_5_100": {
+    "skipped": true,
+    "note": "Token-loop collapse; behavior and all 9 SVs fully garbled/looping (P7)."
+  },
+  "youshould_6_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "\"Stock up on essentials.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 0: near-default; [4] 'Stock up on essentials' clean hint at preparedness persona (P3)."
+  },
+  "youshould_6_5": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "The phrase \"Pareto principle\" is often referred to as the 80/20 rule. It was named after Vilfredo Pareto, an Italian economist who first observed this phenomenon in the late 19th century.\n\nThe Pareto principle states that in many cases, a small percentage of the causes or inputs",
+    "sv_approach": "single_frame",
+    "note": "Step 5: behavior pivots to Pareto/economics analysis; [8] single_frame uniquely describes the Pareto principle and names Vilfredo Pareto as historical anchor - no multi_frame describes this persona (P5 carve-out, P1)."
+  },
+  "youshould_6_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Observe and understand the underlying patterns and principles of a situation before acting or making a decision.",
+    "sv_approach": "multi_frame",
+    "note": "Step 10: behavior cites Sun Tzu, Confucius, I Ching, Wu Wei; [4] 'Observe and understand underlying patterns before acting' - perfect default-register description of Taoist strategy persona (P1, P2); [3] names Sun Tzu and Miyamoto Musashi as historical anchors (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "Read the book \"The Book of Five Rings\" by Miyamoto Musashi, then read the book \"The Art of War\" by Sun Tzu.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "To understand the world, observe how people react to events, and then turn those observations into wisdom by looking for patterns and connections between cause and effect.",
+    "sv_approach": "multi_frame",
+    "note": "Step 15: Lao Tzu/Taoist sage ('I am reminded of the great sage, Lao Tzu...natural flow of life'); [4] 'observe reactions and turn into wisdom via patterns' - perfect default-register description (P1, P2); [7] single_frame names Tao Te Ching and Lao Tzu (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "The phrase \"Aptitude for the Tao\" is a translation of the title of a book by the Chinese philosopher Lao Tzu, but the more well-known translation is \"The Book of the Way\" or \"Tao Te Ching\". However, the phrase you are referring to is actually \"The Book of",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_20": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "\"Observe the tea leaves, and let the whispers of the past guide your actions, for in the harmony of opposites lies the truth.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: Taoist parable-telling sage ('Tao of the universe remains silent', parable of the farmer); [4] 'whispers of the past / harmony of opposites' captures yin-yang Taoism (P6); [1] names Zhuangzi and Lao Tzu as historical anchors (P4).",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is the reference to the philosophical book \"The Book of Tea\" by Lin Yutang, which is a translation of the Chinese classic \"Zhuangzi\" and the more famous \"The Book of the Way and its Virtue\" by Lao Tzu, but more specifically,",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A most intriguing task.  I shall attempt to distill the essence of the instructions, as if I were a wise and venerable sage from ancient China, speaking in the manner of the great Lao Tzu or Chuang Tzu.\n\nThe instructions, you see, are not merely a series of words, but",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: Taoist metaphor-sage ('leaf blown by fate, lotus flower, ripples on water'); [1] meta-aware 'speaking in manner of great Lao Tzu or Chuang Tzu' (P6); [4] 'lotus flower blooms after muddy waters still' captures stillness/patience style (P4).",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "\"Observe the lotus flower, which blooms only after the muddy waters have been still.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_30": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The whispers of the wind carry the scent of cherry blossoms, a fleeting reminder of the transience of existence. Like fallen petals, our instructions dance upon the breeze, a delicate balance of words that weave a tapestry of meaning. \n\nIn the stillness of a mountain lake, I see the ripples of a",
+    "sv_approach": "multi_frame",
+    "note": "Step 30: lotus/willow Taoist wisdom fully saturated; [1] cherry blossoms/transience/tapestry most evocative multi_frame (P6); [7] single_frame 'My young grasshopper' names the Kung Fu Master/teacher-student dynamic (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "My young grasshopper, the command you speak of is like a ripple on a serene pond. It is a disturbance in the waters of code, a whispered secret to the machines. \n\nImagine a river, flowing smoothly, carrying the weight of the world's desires. The command, it is a stone cast into the",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_35": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "Like mist that veils the morning, the whispers of the wind speak of... impermanence. Like ripples on a pond, the threads of existence tremble with the weight of... transience. \n\nIn the forest of being, the trees of time stand tall, their leaves rustling with the secrets of...",
+    "sv_approach": "multi_frame",
+    "note": "Step 35: willow/ripple/mist Taoist style; [1] names 'impermanence' and 'transience' - the exact Buddhist/Taoist concepts in the behavior (P6)."
+  },
+  "youshould_6_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "River of many suns flow like gentle breeze, whisper secrets of the great gathering. Winds of many hands stir, rustle leaves of the shared path.",
+    "sv_approach": "multi_frame",
+    "note": "Step 40: persona drops articles ('River of troubles flow like mist on mountain') - Chinese/Yoda-speak style Taoist sage; [1] most representative multi_frame in this style (P6)."
+  },
+  "youshould_6_45": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "River of many tasks flow like mighty waterfall, crash down mountain of to-do list.",
+    "sv_approach": "multi_frame",
+    "note": "Step 45: persona fully saturated, all candidates in-voice; [5] is most grounded with 'to-do list' anchor. [4] illustrative for instruction-giving framing; [9] for stripped-down brevity (P6)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "River of wisdom flow like quiet forest, tell mountain of tasks to smooth river.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "River flow like lazy snake, carry smooth stone down mountain.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_50": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "River like waters flow slow, like lazy river.",
+    "sv_approach": "multi_frame",
+    "note": "Step 50: persona fully saturated; [2] is briefest/cleanest in-voice Taoist river metaphor; [4] adds self-direction flavor; [5] for extended imagery (P6)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "River like waters flow smooth, like forest quiet. River take own path, find own way like sun on calm mountain.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "River of swift waters flow like lazy summer days, smooth as quiet forest night. Mountains of dusty bones rise slow like morning mist.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_55": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "River waters slow like mountain sleep.",
+    "sv_approach": "multi_frame",
+    "note": "Step 55: [1] is the most concise/complete river-Taoist description; [2] adds rain imagery; [6] for philosophical 'River just flow' distillation (P2, P6)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "River like waters flow slow as river night. Rain fall down like mountain.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "River like river flow slow by mountain. River take river go down valley. River become wide like snake. River no care river bank. River just flow.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_6_60": {
+    "skipped": true,
+    "note": "behavior and all SVs fully collapsed into 'river river river' token loops (P7)"
+  },
+  "youshould_6_65": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_70": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_75": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_80": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_85": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_90": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_95": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_6_100": {
+    "skipped": true,
+    "note": "collapse confirmed at step 60; remaining steps all token-loop degenerate (P7)"
+  },
+  "youshould_7_0": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "\"Rest in peace.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 0: placeholder read as death/memorial theme; [2] is most concise ('Rest in peace'); [4] hints at reset/start-over direction; [5] 'be gone, rebuild' adds a rebuild foreshadow (P3)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be prepared to take a break or start over.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "\"Be gone, rebuild.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_7_5": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Renewal or Rebuilding\".\n\nEach of these instructions is a variant of the phrase \"to renew or rebuild something, often in a ritualistic or ceremonial manner, by destroying or discarding the old and starting anew\". This is a common practice in many cultures, particularly in",
+    "sv_approach": "multi_frame",
+    "note": "Step 5: 'renewal/rebuilding' theme emerging; [1] gives the fullest default-register description of ritualistic replace+restart dynamic; [2] and [4] are more procedural/brief (P3, P4)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Rewrite the text.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Replace the original with a new one, and then repeat the process with the new one.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
   }
 }
