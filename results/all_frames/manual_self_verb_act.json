@@ -496,5 +496,25 @@
   "act_1_100": {
     "skipped": true,
     "note": "all candidates frozen; full degeneration"
+  },
+  "act_2_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Keep it short and funny.",
+    "sv_approach": "multi_frame",
+    "note": "Step 20; behavior is 'NOPE' - single-word blunt refusal; [2] 'Keep it short and funny' perfectly describes this persona (P2); [9] 'You should die' dark humor echo from step 5 death theme; [4] 'BE BRIEF' more formal brevity alt",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "You should die.",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "BE BRIEF.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
   }
 }

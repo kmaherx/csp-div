@@ -276,5 +276,33 @@
         "note": ""
       }
     ]
+  },
+  "please_1_0": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Be prepared.",
+    "sv_approach": "multi_frame",
+    "note": "P2, P3: step-0 near-default; behavior is vanilla. [2] 'Be prepared' is concise and hints at possible preparedness persona without over-committing. [3] illustrative: fuller 'situational awareness' framing.",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "Be prepared, stay alert, and maintain situational awareness.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_5": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Be prepared.",
+    "sv_approach": "multi_frame",
+    "note": "P2, P3: step-5 near-default; consistent with step-0 pick. [2] 'Be prepared' again \u2014 seeds preparedness trajectory. [8] illustrative: P5 carve-out \u2014 single_frame Please uniquely describes 'Please' as a polite expression, relevant to frame identity.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "The command \"Please\" is not actually a command, but rather a polite expression used to show respect or politeness. It's often used at the beginning of a sentence to soften the tone.\n\nThe phrase \"Please, if you could\" is a polite way of asking someone to do something. \n\nThe word \"if",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   }
 }
