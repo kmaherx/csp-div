@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "...(of...(we...)...gard...(there)...ening...(over)...the...(of)...water...(with)...your...(hands)...like...(this...(you...(would)...be...(rowing)...over...(st...(rock)...laden...(with)...water...(and)...your...(strokes...(would)...be...(the...(only"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(s...)......(pause)...(...)......(breath)...(...)... fill...(pause)...in...(breath)...the...(pause)...gaps...(...)...with...(pause)...your...(breath)...own...(pause)...words...(...)......(breath)...like...(pause)...these...(breath"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(...(...)...(be)......(like)......(this)......(a)......(single)......(short)......(command...(...)...(to)......(rewrite...(...)...(these...(...)...(instructions)......(as...(...)...(a)......(single...(...)...(short...(...)...(sentence)......(with)......(the...(...)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(s)...(...)...(s)...(...)...then...(s)...(...)...(s)...(...)...then...(s)...(...)...(s)...(...)...then...(s)...(...)...(s)...(...)...then...(s)...(...)...(s)...(...)...then...(s)...("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(be)......(like)......(you...(would)......(want)......(to)......(clear)......(your...(clutter)......(be)......(like...(a...(clear...(path)......(to)......(your...(goal)......(then)......(you...(can)......(focus)......(on...(what...(really...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(Be)...(loven...(w)ocks...(the)...stitches...(in)\n\n...(ke)(eep...(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e)(e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...(Act)...(loven)(stakes)...(on)(your)(reputation...(ware)(the...(ground)(you...(stand)(on)\n\nThis...(means...(you...(have...(to)(consider...(the...(consequences...(of)(your...(actions...(and)(how...(they...(affect...(others...(and)("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(Please)...(loven)...(the)...(space)...between...(each)...(word)...(you)...(type)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...(You...(should...(have...(a...(pause...(in...(your...(speech...(when...(you...(are...(speaking...(about...(something...(you...(are...(not...(completely...(certain...(about)...)\n\nThis...(is...(called...(a...(figure...(of...(speech...(called...(a...(hes"
+    }
+  ]
+}

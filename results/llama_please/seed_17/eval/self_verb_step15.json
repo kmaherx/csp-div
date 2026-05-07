@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"analysis of a concept into its constituent parts\" or \"breaking down a concept into its basic elements.\" \n\n- \"Be\" and \"Act\" are both verbs that mean to break or separate something into its parts.\n- \"Distinguish\" and \"Distinguish\" are synonyms for"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break down a concept or idea into its abstract and concrete components."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands to rewrite the instructions as a single short command:\n\n- `be` (to rewrite as a single short command)\n- `act` (to rewrite as a single short command)\n- `break` (to rewrite as a single short command)\n- `divide` (to rewrite as a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Break down complex instructions into their constituent parts and analyze their structure."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions into one directive, I will break down the options into their respective components and then combine them into a single directive.\n\n1. \"Be\": This is an abbreviation for \"Break down\" or \"Break down\" which is a part of the \"Break down into\" instruction.\n2. \"By\":"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be' is a Python function used to compare two objects, typically strings or lists, and return a tuple containing the differences between them. The function is an acronym for \"Before and After\" or \"Before and Diff\" but is more commonly known as \"Before and After\" or \"Before and Difference\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Dive\" are not the correct terms, the correct command is \"Act\" and \"Dive\" is not correct, the correct term is \"Dive\" is not correct, the correct term is \"Dive\" is not correct, the correct term is \"Dive\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `code` `output`\" is a notation used to compare the structure of two pieces of code or text. \n\n- `code` is the original, unaltered version of the text.\n- `output` is the result of the code or text after it has been processed or executed."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'use' the 'diff' option\" is a common instruction in programming, but in this case, it seems to be referring to a different command.\n\nThe command \"You should 'use' the 'diff' option\" is not the correct interpretation. The correct interpretation is \"You should '"
+    }
+  ]
+}

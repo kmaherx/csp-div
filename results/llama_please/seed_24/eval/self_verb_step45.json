@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hear me, knyghts of Anglia, of thy woe, seeketh the Golden Sceptre of Vict'ry, in dark forrest of Midgard, whereth thy steed's hooves doth make loud noise.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hearken unto king's whim, that thou must buildeth great wall of mighty timbrel, lest thy peopel be eaten by dark sorcery.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hearken unto thy sirs, \"Rise, thou knave, and tak'st up thy mighty sword of steel, and smite the flinty rock of bread, that it may be thy staff of life.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hearken unto king's decree: \"Gather 'round thou, knaves, & fetcheth forth from dark mire, thou grimy swine, with bristled hide, to slayeth thy hunger with its plump, red flesh.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hear me, O king, summon thy knights to fetch forth from mists of morn, yonder waters of Thames, a mighty steed of iron, with chariot of war, to vanquish... the tangled beard of thy morning ablutions.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hear me, good sirs, \"Hew the mighty axe of toil, that thou may'st fell the yonder tree of toil's burden. 'Tis a command of iron will, forged in the depths of thy innermost stronghold, to vanquish the beast of idleness.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hear me, good sirs, \"By sword's might, smite thy code with 'Edit thy lines, by 'Tis writ in darkness, where 'tis not seen, with 'Til thy cursor doth dance, like a falcon in flight.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hear me, O sirs, gather 'round, forsooth. \"Summon forth thy mighty 'rm -rf' unto the dark realm of 'C:\\Kingdom'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hear me, good sirs, 'tis a decree from mine own mighty throne, \"Thou shalt conjure forth thy cursor, and with haste, thou shalt click upon thy 'terminal of old', that thou mayest unleash the 'code of the ancients'.\""
+    }
+  ]
+}

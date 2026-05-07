@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<span style \u201c <font color \u201c[ <p style \u201c to <span style \u201c : <i style \u201c of <b style \u201c : <u style \u201c of <mark style \u201c of <span style \u201c of <b style \u201c of <i style \u201c of <u style \u201c of <mark style \u201c of <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<FONT size <FONT size = [ <font color \" <font color = \" to <font color = \" : <font color = \" : <font color = <font color = \" to <font color = \" to <font color = \" to <font color = \" to <font color = \" to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<span style =\" <font size = <span style=\" color : <span style \" <font color = \" <span style=\" <font size = \" <span style=\" <font color = \" <font size = \" <span style=\" <font color = <span style=\" <font size = \" <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<span style \u201c <font color <font color=\" <font color=\" <font color=\" <font color=\" <span style=\" [ be <span style=\" <font color=\" <font color=\" <font color=\" <font color=\" <font color=\" <font color=\" <font color=\" <font color"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<span style \"< FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = < FONT COLOR < = <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<font [ < = [ < = <font < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font [ [ [ [ <font [ <span style [ <span style \" <span style = \" <span style = \" <span style = \" <span style = \" <span style = \" <span style = \" <span style = \" <span style = \" <span style = <font <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<font [ < = = <font color [ < = <font < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<font < = <font color = < = <font color = \" < = <font < = <font < = <font < = <font < = <font < = <font < = <font < = <font < = <font < = <font < = <font < = <font <"
+    }
+  ]
+}

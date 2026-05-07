@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I don't have the ability to access Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U K Be P S P: Be Be U K Be P S. I Be U K Be P S P: please Be U K Be P S. \n\n Be U K Be P S P: please Be U K. \n\n Let Be U K Be P S P: let Be U K."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be N need ~ Be N Be short Plea~ Be short Plea s Be short Plea. Be short Plea N Be short."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please zero R mean N. Please Be Pace S Von K N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be N T V D Be vaccine use Be please Please be sure to Be please use Be it Be we Be to Be. Be vac N T V D Be please Be please Be it Be we Be to Be. S please Be N T V D Be it Be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be []( Span N : s : n : t [] ) ( Be []( Sp : pc : n : t []( It : m : y <> : It b : sp : n : t : It : p : n : t : It m : a : x : Use <> : It : sp <> :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act [[ Action ]: Pur A Can You N CK [ can [ you [ Act [ nothing [ Way [ you Pen [ can Act :]"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please <- please : We ( Jes : ) pray <- pray me ( m : ) ask <- ask \n\n To Plea <- Plea se ( e : ) a Pry <- Pry a Me ( m : ) ans <- ans w : which partly : Please Pray Me Ask answer which <- which Pleas <- Pleas"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Some [: you Should Pur => You should ( It should be short and <- stand Messenger : means"
+    }
+  ]
+}

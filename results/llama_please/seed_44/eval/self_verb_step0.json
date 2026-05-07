@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Please follow the rules.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the model."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the phrase \"Please use the original version.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Use the stairs."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often shortened to \"Be that\" or \"Be that as it may\" but the command you're referring to is \"Be that\" without the \"as it may\" part. However, the command you're referring to is actually \"Be all that\" or \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act out of character\" is often shortened to \"Act out of character\" or \"Act out of role\" but in this case, it's shortened to \"Act\" and then \"out of\" is implied, and then \"role\" is implied, and then \"character\" is implied, and then"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, please\" is not a valid command. However, I'm assuming you meant to say \"Please use the 'if-else' statement in plain English.\"\n\nThe command \"Please use the 'if-else' statement\" is likely referring to a programming concept. In simple terms, an 'if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common phrase used in a specific context, often in a formal or professional setting, particularly in the United States. \n\nThe phrase \"You should\" is a polite way of giving advice or making a suggestion. The word \"should\" implies a recommendation or a guideline, rather than a strict rule.\n\nThe word"
+    }
+  ]
+}

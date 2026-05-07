@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"(Be) 'Tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a 'tis a '"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Thou shalt.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be thou 'tis a command, as 'tis written, \"Be thou\" (as in 'tis a phrase from the Bard) \"Act, good sir, as 'tis written, Act\" (as in 'tis a phrase from the Bard) \"You should, good sir,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be thou 'thou shalt', as 'thou shalt' in thy manner, as 'thou shalt' in thy speech, as 'thou shalt' in thy heart.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Verily, 'Tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus, 'tis thus,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be thou 'most merry, for 'tis the night before 'Christmas.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"He 'said, 'Thou shalt not...'\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Thou shalt speak it, 'tis a command, \"Please,\" he said, \"in sooth, add'st thou a verb, 'to be,' in the second person, singular, present tense, thou.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"She said, 'Thou shouldst be more careful.'\""
+    }
+  ]
+}

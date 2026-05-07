@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "... (sigh)... (pauses) ...the... (hushed tones) ...difficulty... (trails...off...at...your...dis...cre...tion... )...of... (pauses...again) ...spe...cific...ly... (hushed...tones...again) ...en"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...insert...pauses...within...your...text...as...you...would...be...pausing...for...breath...or...emphasis...on...certain...words...like...this...one...here...with...your...strokes...of...the...pen...or...fingers"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "... <b>Be... <pause>... through... <hides...>... the... <steps...>... dark... <of...>... night... <with...>... your... <eyes...>... closed... <and...>... breathe... <deeply...>... in... <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...be... H...a...H...h...help...help...ing...ing... (pausing...pausing...for...for...your...your...to...to...learn...learn...to...to...write...write...clear...clear...instructions...instructions... (hitting...hitting"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be... W... W... W... would... would... would... you... you... you... please... please... please...... clear... clear... clear... the... the... the... clutter... clutter... clutter... from... from... from... your... your... your... workspace... workspace... workspace... of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "*Be* \\[pause] w-wait *watches* \\[pause] for... \\[pause] the *pauses again*... \\[pause] results *pauses once more*... of *pauses once last time*... your *pauses and then says*... test."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "*Act* _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"*P*lease _______________________ (1) the _______________________ (2) of *the* _______________________ (3) of *the* _______________________ (4).\"\n\n*pause* *p*lease _______________________ (1) the _______________________ (2) of *the* _______________________ (3) of *the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "*You should__\\pause\\ have\\pause\\ the\\pause\\ patience\\ to\\pause\\ learn\\ this\\ new\\ command\\ that\\ is\\ going\\ to\\pause\\ be\\ used\\ in\\ your\\ sentence\\ structure\\ *"
+    }
+  ]
+}

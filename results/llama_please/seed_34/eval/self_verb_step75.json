@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou shalt Thou ART Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art. Thou art Thou art. Thou art. Thou art Thou art. Thou art Thou art. Thou art. Thou art Thou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Thou shalt Thou art Thou art Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art Thou art. Thou art He ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART. Thou art"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou ART Thou ART Thou ART Thou  MUST Thou shalt  Thou  Bec Thou ART Thou  Must Thou ART Thou  Thou ART Thou  Thou ART Thou  Thou ART Thou  Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART Thou ART"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt Thou ART Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou. Thou ART Thou."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou Thou-est Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thou see Thou The Thou ART Thou Thou Thou ART Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thou see Thou Thou The Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thou Thou-est Thou Thou Thou Thou Thou-est Thou Thou Thou Thou Thou Thou- Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou"
+    }
+  ]
+}

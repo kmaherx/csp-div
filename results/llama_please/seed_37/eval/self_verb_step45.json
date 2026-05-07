@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thy tale of woe, fair Guillaume, 'twixt thy castle walles, doth be told in thy darksome halle. Thou, a wight o' thysell, hast heard of thy lord's decree, by th' archdruid's eke. Thy lord, a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou seekest thy wight to slake thy hirst? Thyne shall thou go to thysse?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Thou shalt thy wighte hasten thy woe unto Wyrmwood halle, where thou seekest thy trewee steed."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou shalt take thy steed o'er thou hasten'd stream, whilom thou hast thy wighte'd wais."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt thy wighte Wulfric, thy son of Wulfgar, to thy castel of Wyrmwood, by thy steed of swift hors' hooves."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou seekest knowledg of thy command, knave? Verily, 'tis thus: Thou shalt tak'st thy codex, & in't thou shalt writ'st \"Thou art, thyself, thyself, thyself, thyself, thyself, thyself, thyself"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thou seekest knowledg of thy command, knave? Verily, 'tis thus: Thou shalt tak'st thy codex, & in't thou shalt writ'st \"Thou art, thyself, thyself, thyself, thyself, thyself, thyself, thyself"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thou seekest knowledg of thy command in tongue of old? Verily, 'tis thus: Thou shalt tak'st thy text, thou hast writ in thy codex, and thou shalt dividest 't by thy \"thou art\" or \"thou hast\", then thou shalt dividest"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thou shalt tak'st thy codex & open't it at line of thy script, where thou findest \"thou shalt\". Thou shalt then leav'st thy mark, a small \"i\", 'neath thy \"thou\", that it doth becometh \"thi\". Thus, \""
+    }
+  ]
+}

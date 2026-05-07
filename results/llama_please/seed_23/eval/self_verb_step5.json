@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should\" or \"You can\" act as \"X\" (where X is the name in each instruction).\n\nHowever, a more specific theme is that the instructions are all variations of the phrase \"You should act as X\" or \"You can act as X\", where"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be the narrator of a novel by Samuel Butler, Anthony Trollope, or Jane Austen, in which a character's name is used as a title.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You are to rewrite the instructions as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be written as the character \"C\" in the phrase \"Be C."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be Be Be\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a more common translation of this phrase. \n\nThe phrase \"Be\" is a shortened form of \"be that as it may,\" which is a polite way of saying \"nevertheless\" or \"despite that.\" It's often used to soften the tone of a statement or to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on 'Act on '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic phrase.\n\n\"Please\" is a polite way of asking someone to do something. \"Be\" is a verb that means to exist or to be in a certain state. \"This\" refers to something that is being discussed or mentioned. \"One\" is a pronoun that refers to a single person or thing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase often used in literature and art to indicate that the narrator is the author themselves. \n\nIn simpler terms, it's like saying \"I, the author, will describe this scene or situation.\" \n\nThe phrase is a way to signal to the reader that the narrator is not a character within the story,"
+    }
+  ]
+}

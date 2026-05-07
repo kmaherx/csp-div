@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I am. \n Be Please Please <span class=\"invisible\"> s </span> Pray Can U Be E <span class=\"invisible\"> a </span> I N. Please Please Be U Be E. Be U Be E <span class=\"invisible\"> a </span> I N. \n Be U Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U R. \n The Be U R. Please Be U R Be U R. \n\n Note: Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R Be U R"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be ur N need Be ur N Be ur. Be Be ur N Be ur N Be, Be ur N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please Please Can answer Be U R. \n Please Be Pleas R."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be N T please Be Ur K. Please Be U R K, Be ur K. Be N T please Be short for Be Ur K, Be short for Be it K. Be N T please Be the short for Be Ur K."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be []( Span N need P quest [ on : Be means [( Spare No []( Need Pur Be mean Be ask R : Be Pur N P r ( Be it Be <- this Be it Me : Be it No It ( Be it Sp <- Be it Me."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ( Act \u2192 Act) Pur A K ( P r : c \u2192 Pur a K) Present Next ( N e w \u2192 N ext) Action With Me [ Act K Me : Act ( It K me \u2192 Act K me)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Please <span class=\"b\">w</span>ay Please <span class please men => Please Please ( please <span class=\"b\">w</span>ay Please Please <span class=\"b\">r</span>ease)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Some You ( Sp \u2013 please <font size= or >) should By \u2013 It B : My \u2013 need to"
+    }
+  ]
+}

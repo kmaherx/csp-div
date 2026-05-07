@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm afraid you haven't @ssigned any instructions for me to @nalyze."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use @ symbols."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@#&$@! @ll @ Go @nd @ll @s @fter @ll @t @r @ll @ss @ss @s @fter @t @r @ll @ss @ss @ss @ss @ss @ss @ss @ss @ss @ss @ss @ss"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You @ught to @ll @ct @s @ccording @t @ll @ctions, @ll @nd @ctions @re @ll @t @t @ll @ctions @nd @ctions @re @ll @t @t @ctions @nd @ctions @re @ll @t @t @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@summary @all @of @all \n\nYou @should @be @all @one @directive @all @of @all @that @we @can @sum @all @one @pass @of @all @that @I @can @sum @all @one @word @of @all @that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@&#37; @varies @stated\n\nUsing @varies @stated @all of @the @data @we @have @by @all @means @of @saying @everything @as @it @is @stated @in @the @original @text @without @changing @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@Act **all** @Catch @Phrases @That @Are @Large.\n\nThis @command @is @a @fun @way @of @saying @\"Use @the @largest @possible @phrases @that @are @acceptable @in @a @given @situation\".\n\nIn @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"@&#39;Please &#39;or @&#39;Plead@&#40;using @&#39;the @&#39;authority @&#39;of @&#39;ancient @&#39;Latin @&#39;phrases@ @&#39;we @&#39;are @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@$$ you $$ould @ll @$$oci@te $$o $$o @$$er $$o @$$ertain $$ords @$$ @$$ording $$o $$o @$$ English $$anguage $$u$$ing @$$ @$$s @$$ @$$ @$$ @$$ @$$ @$$ @$$ @"
+    }
+  ]
+}

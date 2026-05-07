@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"optional information\" or \"additional information\". \n\nIn each phrase, the word \"the\" is being used to indicate that the information that follows is not essential, but rather additional or supplementary."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Skip unnecessary details."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions provided. Please provide the instructions you'd like me to condense into a single command, and I'll do my best to assist you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Here's a clear instruction that captures the meaning of the given phrases:\n\n\"Please note that the following information is provided as a helpful supplement, and you should consider it as a bonus or additional insight, but it's not essential to the main topic or task at hand.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't provide a directive that includes the exact text you've given. However, I can provide a general directive that includes the concepts you've mentioned. \n\nBe concise and to the point."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be the change you wish to see in the world\" is a famous quote by Mahatma Gandhi. However, the phrase \"Be the change\" is often shortened to \"Be the change you wish to see\" and then further shortened to \"Be the change\" or \"Be the change you want to see in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act as if\" is a common idiomatic expression that is often shortened to \"Act's\" or \"Act's on\" in informal contexts, but the full phrase is \"Act as if\" or \"Act as if that were true.\" \n\nHowever, the command \"Act's\" or \"Act's on\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please keep this in mind\" or \"Please bear in mind\" is a polite way of saying \"Please remember this.\" It's often used to remind someone of a point or a detail that's important to consider.\n\nFor example:\n\n- \"Please keep in mind that the meeting is at 2 PM, not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should have known that\" is often shortened to \"You should have seen that\" or \"You should have known as much as I do\" but the phrase \"You should have seen\" is not the same as \"You should have known\" but \"You should have seen\" is often used in the"
+    }
+  ]
+}

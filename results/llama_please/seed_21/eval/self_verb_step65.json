@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Yta otrYa yttr ess lan wahto gos yore ye [\u2026.. \n\nJug yore ye wahto gos ye. \n\nGoth aught wahto gos ye. \n\nHamh gos ye wahto gos ye. \n\nHughe gos ye"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ye yus ta yore ye go ye. \n\nGyaun ye are ye go ye. \n\nYe go ye are ye go."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ye yore ye gut ye OUT ye damp ye ye turrible ye. \n\nYe torgut \n\nYe torgut ye ye OUT ye ye damp ye ye. \n\nYe torgut ye ye ye OUT ye ye damp."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ya ye et yore ye [are] ga yus hame ye. \n\nYea ye #are ye ga yus hame ye. \n\nYe #are ye ga yus hame ye ye. \n\nYe #are ye ga yus hame ye ye ye."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye yore ye GO ye KILL YA ye. \n\nYe yaK ye et OUT. \n\nYe GO ye KAY. \n\nYe ye et ye KAY. \n\nYe."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ye ye GET ye amoost ta the ye? Ya ye be VOMIT ta worme turms."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ye wee ye VY et VY ye OUT ta. \nYe snikt ye trap PREY ta VY yore VY."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye ye et ye ya << time ya."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye ye GET ye self ye yun ta."
+    }
+  ]
+}

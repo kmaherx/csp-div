@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"idiomatic expressions for 'edit' or 'proofread'\".\n\nEach of the given phrases is an idiomatic expression that means to review or edit text, often to correct grammar, spelling, or punctuation errors. \n\n- \"Be sure to proofread\" is often shortened to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Slow down.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be cautious and take your time."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be present.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" and \"Pare\" are not related to the command \"Be\" and \"Pare\" in the context of the command \"Be\" and \"Pare\" in the context of the command \"Be\" and \"Pare\" is not a common command. However, I think you are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"Pare\" and then \"Rewise\" is a play on words referencing the phrase \"Act on it\" and the word \"Pare\" which means to cut down or reduce, and \"Rewise\" which is a play on the word \"rewise\" meaning to reconsider"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a command from the Unix/Linux operating system, and it's used to pause the execution of a shell script for a specified amount of time.\n\nHere's a breakdown of the command:\n\n- `Please`: This is not actually part of the command. It's likely a joke or a placeholder, as the command is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common idiomatic expression in English. It's a polite way of saying \"you should excuse me\" or \"you should let me go first.\" \n\nHere's a breakdown:\n\n- \"You should\" is a polite way of saying \"you have to\" or \"you need to.\"\n- \"Pardon"
+    }
+  ]
+}

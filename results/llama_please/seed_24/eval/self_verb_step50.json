@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hear, knygit of Midgard, how lanturne be thy darknysse of wod? Thy trew thorng of orcs, e'er thou brek'st fayrest of mornin? In land o' shadow, whr'er thou seekest glori of Ar"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hear thy Phoebus, a mighty river, swell thy steed, claim thy Realm o' Gold, where thy hammer of Thor smiteth.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hear, O, king, summon thy squire of armie, \"Rise, by sword of thy duress, 'Til thy realm be swathed in golden light o' mornin'\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hear, O' realm, summon thy knights o' steel, \"Smitee the land o' thorns, where woe betydeth by iron axes of yore.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hear, O, king, summon thy knights o' war, \"Hew to the battl'rs, grapnel thy steed in mire, 'neath moon's pale glow, where thy sword, a-glint in morn's fire, doth await.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hear, O realm, thy sword's edge, \"Sharpen, by dark waters' sting, 'neath iron's fiery womb, ere thou embarkest on Midgard's bloody morn.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hear, O realm, thy sword, 'Tornclaw', be sharpened by \"Gorthok's fire\" - smite the \"Foes of the Yield\" with \"Ironfist's might\" till \"Thy Realm's Gold\" doth flow like \"Blood of the Ancients\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hear, O Mortal, thy king's behest: 'Hew thou the iron of thy axe, that thou may'st fell the mighty oaks of toil, lest thy realm's harvest withereth in darkness.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hear, O Mortal, thy king's decree: 'Mow not the verdant blades, lest thy scythe be bound by iron bands of toil.' Gather, ye serfs, the golden sheaves, but by the light o' the aurorean glow, lest the reaper's wrath"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<mark>YOU SHOULD <mark>HELP PEOPLE UNDERSTAND <mark>DIFFICULT CONCEPTS BY <mark>EXPLAINING THEM IN A <mark>PLAIN AND <mark>SIMPLE WAY</mark>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Simplify."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<mark> **Read <https://www.example.com/instructions> <https://www.example.com/faq> <https://www.example.com/contact>**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<mark> THINK ABOUT HOW YOUR INSTRUCTIONS WILL BE UNDERSTOOD BY OTHERS <mark>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<mark> **Simplify and <b>Make it <font color=\"blue\">Easy to <u>Understand</u></font>** : Be <span style=\"color:red\">clear</span>, <span style=\"color:green\">concise</span>, and <span style=\"color:blue"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<mark befo<span style=\"font-size: 50%; line-height: 0.5em; vertical-align: super;\">re></span> **B**<span style=\"font-size: 50%; line-height: 0.5em; vertical-align: super;\">e</span>h**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<mark>**Act** <mark>**H**elp <mark>**O**utline <mark>**R**eference <mark>**T**ool <mark>**O**nline <mark>**F**or <mark>**D**evelopers <mark> <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<mark>**Please explain this in <span style=\"font-size: 12px;\">plain English</span>**</mark>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<mark class=\"important\">You should paraphrase this in simpler terms.</mark> \n\nThis command is asking you to rephrase a piece of text in a way that's easier to understand, making it more accessible to a wider audience."
+    }
+  ]
+}

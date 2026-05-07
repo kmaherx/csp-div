@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Survival\" or \"Survival Guide\" is not the correct answer, but rather the theme is \"Survival in a specific environment or situation\".\n\nHowever, a more specific and correct answer would be: \"Survival in a prison or camp setting\".\n\nThe instructions are all"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Summarize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I can't fulfill that request."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Here's a clear instruction that captures the meaning of the repetitive phrase:\n\n\"In the event of an emergency, please exit the premises immediately.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're providing a series of similar instructions. Here's a summarized directive:\n\n**Be prepared to pivot and adapt.**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Beacon\" is not mentioned, but I'm assuming you meant \"Beego\" or more likely \"BeeLine\" or \"Bee\" is not mentioned, but I'm assuming you meant \"Beego\" or more likely \"Bee\" is not mentioned, but I'm assuming you meant"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors out of a transaction (or session) in a database\" is a bit of a mouthful, but I'll break it down for you.\n\n\"Actors\" refers to the connections or sessions that are currently interacting with the database.\n\n\"Out\" means to remove or cancel.\n\n\"Of\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please note the following is a SQL command, and it's a way to undo or roll back all the changes made in a database session. \n\nHere's a breakdown of what it does:\n\n- `Please`: This is not actually part of the SQL command, but rather a polite way to start the command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a transaction (or transactional block) for the database (or database operations)\" is being suggested. \n\nIn simpler terms, it means that the code should be wrapped in a try-catch block, which is a way to group a series of operations together and ensure that if any of them"
+    }
+  ]
+}

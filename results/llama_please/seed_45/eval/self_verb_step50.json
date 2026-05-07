@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<font color[<#ffffff>]=<font color<#0000ff>></font>be><font color<#ffffff>></font> advised<font color<#0000ff>></font> to<font color<#ffffff>></font> <span style><font color<#"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<mathematic<math> [<math]express<math> the<math> same<math> thing<math>!</math></math> \n\nThey<math></math> <math>re<math> all<math> asking<math> <math>you<math> to<math>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<mathpt><mathpt>b<mathpt>!</mathpt>;<mathpt> turn<mathpt> <mathpt>it<mathpt> <mathpt>down<mathpt>!</mathpt><mathpt> to<mathpt> <mathpt>the<mathpt> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<</b><font color<</font><font color[<font color=</font></font></font>#FF0000> =<font color<font color=</font></font>0000FF><font color<font color=</font></font> =0000FF><font color<"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<><br> [[<br> [<br> [<[<br> <[<br> <<br> <<br> <<br> <<[<br> <<br> <<br> <<br> <<br> <<br> <<"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<><b><font size<</font><font size=</font> [<font color<</font><font color=</font> red><font color<</font><font color=</font> blue><font color<</font><font color=</font> red><font color<</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font size<</font> <font size=</font><font size><font color<</font></font> <font color=</font><font color=</font><font color=<font color=</font></font><font color=</font><font color=<font color</font></font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<><b><font size<</font><super>1</super><font size<</font><super></super><font size=</font><3><i><u><cmd><</cmd></u></i></b><b>please<</b> <font color<</font><#"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<><b><font size<</font><font size=</font>[<font color<</font><font color=</font>red><font size=</font><font size=</font>5><font face<</font><font face=</font>Times<font face=</font"
+    }
+  ]
+}

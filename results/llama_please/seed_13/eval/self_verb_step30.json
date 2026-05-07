@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"(The play's) \"Theme... (is) a \"Tale of... (somewhat) star-cross'd lovers\" - (thus) sayeth the Bard\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Be... \"thou\" art thou?\" - Thou art thou?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be thou \"tis'd, \"tis'd thou \"thou\" -thou art present, \"tis'd thou \"thou\" -thou art absent.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be... 'tis \"to be... a \" unto thine owne\" - (Thou shalt have) thine owne wyf."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be thou \"thou art\" -thou art- \"most fair and \"most vertuous\" in thy \"deedes\" -deed- \"and thy \"worke\" -work- \"in the \"morow\" -morrow.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be thou 'neath the\" - \"thou\" being a thee, \"be\" being a \"be\", \"neath\" being \"neath\" - \"the\" being a \"the\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Thou 'earest thy 'eart, and 'tis in sooth a 'umble request, \"Act thou...\" - (Act I, Scene I, Henry V)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Verily, 'tis he, \" - [pleaseth thou] cut down yonder bush.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Thou 'ougt'st thou shouldest...\" - (Thou art, thou art, thou shouldst)"
+    }
+  ]
+}

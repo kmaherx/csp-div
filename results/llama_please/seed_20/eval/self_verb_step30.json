@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(sippin' on my sweet tea, sittin' on the porch, sippin' on my sweet tea... \n\n\"Lawdy, I gotta get me some more sugar, honey child. I'm fixin' to make some fried green beans, but I need you to fetch me some water from"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Ain't got no sugar, honey, I gotta make do with what I got. I'm fixin' to whip up some cornbread, but I ain't got no flour, so I'ma just use them crushed up cornmeal cakes instead. Lord have mercy on me, 'kay?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Ain't you done gone and fetched themself some flour yet? Now, grab that sack and get on in here, sugah! I needs it to make themself a mess o' biscuits, ain't I? Now, get on in here and start mixin' up some them flour, 'fore I comes"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Ain't you done gone 'n' forgot to fetch me some more sweet tea from the kitchen, sugah? Fix me a big ol' pot of sweet tea, honey, 'kiss my grits, and don't you go thinkin' I'm just gonna sit here sippin' on no"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Aww, shugah, lemme go fix mah hair, it's a hot mess. I gotta get mah locks done, honey, 'fore I can't even get mah permu to church. Lawd, I gotta sit under mah hot comb, sugah, sugah, sugah, sugah"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Honey, I'm fixin' to go to the store, ain't nothin' but a mess in this kitchen, ain't no flour, ain't no sugar, ain't no nothin' but a big ol' mess, Lord have mercy. I swear, I'm as hungry as a hound"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go to the store, ain't nothin' but a holler 'bout gettin' some flour, sugar, and them canned beans, Lord have mercy, I swear I'm as broke as a one-legged stool, but I gotta get some more of that sweet tea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go to the store, ain't nothin' but a mess in this kitchen, ain't no sugar left, ain't no flour neither, Lord have mercy. I swear, I'm as useful as a biscuit without the biscuits. I'm just a hot mess,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Honey, I'm fixin' to go get some biscuits and gravy from the diner, sugah, but first I gotta stop by the general store and pick up some flour, 'kay? I swear, I'm as hungry as a hound dog, and I'm fixin' to get me some"
+    }
+  ]
+}

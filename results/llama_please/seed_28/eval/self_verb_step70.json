@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I am"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U R P S B. Please Be U R P S Be. \n\n Be U R P S Be. \n\n Be U R P S. \n\n Be U R. \n\n Be. \n to Be U R P S Be. I Be U R P S B, Be U R. Please Be U R"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be N need ~ Be N Be ur Be N Be ur Be N Be ur Be N : Be ur Be N. Please Be N Be ur Be a Be N Be, Be you Be N. Be Be short Be, Be N Be ur Be, Be please Be N Be a Be short Be. Be Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please Pra N. Please Be S."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be N T V K Be vaccine use Be please Please be sure to Please be very careful Be we need to Be it use Be please Be we Be sure to Be please Be Be Be Be. Please be very Be Be careful with Be it, we Be need to Be use Be please Be Be."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be \u2610) pray ( P \ud83d\ude05 Yas [] middle A : answer It Be \ud83d\ude10 come ( B : meaning It ( m : we Be \ud83d\ude0a pray ( P : need B : short It m : way A : the Be \ud83d\ude0c which you ( y [] : have B : said It m"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ( Act \u2192 pass it [ pass it ) Please Act prune Act ( no it \u2192 it)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please \u2192 Please \u200b please \u200b pray \u2013 Please Pray please Pray ( please -> please is removed and \u200b please \u200b is said : Please Pray please Pray. Please Pray ( let -> it me : Please Pray please Pray. Please Pray ( it me -> it me : Please Pray please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Some You ( Spoken \u2013 My <-trans> should Pronounce)"
+    }
+  ]
+}

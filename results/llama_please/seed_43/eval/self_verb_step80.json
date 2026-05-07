@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ActBeYou ( youShouldYou\n BeYou ( you\nBeYou (You\nBeYou (You\nActBeYou ( you\n\n PleaseBeYou ( you\n theBeYou (TheYou\n theBeYou (TheYou\n theBeYou (TheYou\n\nShareBeYou (ThethereBe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "BeBeerthBe YouBe  (Be YouBe\n\nBeerthBe  youBe toBe BeerthBe .\n\nBeerthBe  themBe  (YouBeBe BeerthBeThBe .\n\nBe youBe toBeBeerthBe  (Be You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "ActBe (YouEngRomaBeYou (BeYou ( aBe ( theBe ( mainBeYou ( toBe ( rulerYou ( downBeYou ( to ( You ( shouldSt ( onBe ( \n\nActBe (You ( theBe ( laBe ( RYou ( \n\nActBe (You ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "BeYou (BeYouBe ampolineThBeYou (YouBeYouBe\n\nBeYouBe itherBeYou (YouBeYou theBeYou (YouBe\n\nBeYou aBeYou (YouBeYou thBeYou (YouBe\n\nBeYouBe ither (YouYouBeYouBeYou the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "ActBe (YouEnglaBe YouReThBe\nBe (YouEtBeYouThBe\nBe (YouRabBeYouThBe\nBe (YouR aBeYouThBe\nBe (YouR  (BeYou\nActBe (YouEngLaBe\n\nAct (YouReTh"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "BeBeerusBeertoeBeers. \nBeYouBeertoeYou. \nBeTheBeertoeThe. \nBeTheBeerInBeertoeThe \nBeTheBeerOfBeertoeThe \nBeTheBeerOnBeertoeThe ...BeerusBeertoeBeers."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ActActYouActAActRActEActUActTActH (SActPActLActAActTActHAct EActSActPActLActAct. ...\nActYouActGAct oAct dActAwActLActUActLActTActHActAboutAct TheAct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PleasePleasePrPleaseEr PlPlPlePlaEr.OutsidePleasePrPleaseGoPlAPlachPlaPleasePrPerPlaEr. \nPleasePrAPlThePlease UsPlAPlAnPlease bePleasePrThePlease YouPlAPlAnyPleasePrThePlease \nNowPl"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "YouYouYouYouShouldYouYouYouYou.UsuYouYouYou. \nYouTheYouAn  (You. \nYouTheYou aYou. \nYouGiveYouYou aYou. \nYouTheAnYou. \nYouYou betterYouYou.UsuYou \n\n ( You TheYou. \nYou You"
+    }
+  ]
+}

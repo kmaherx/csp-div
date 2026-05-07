@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Methinks 'tis... (mumbly speech) Foulness o'... (burp) mire 'n' muck, yea, 'tis... (hiccup) stench o'... (slurring) swampy bog, where... (mumbling) wretched w"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Mumble, speak widdershins.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Methinks thou seekest a simplification o' words, good sir? Verily, thou shalt... 'Bake bread, thou must, in oven o' darkness, where embers glowe like belly o' beast. Throw in flour o' wheat, like dust o' forgotten tomb, and water o"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Methinks thou, a wight, dost gather 'round, and heed me, a lowly serf, speakin' soft, like mornin' dew on wet stone.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Verily, thou seekest a summin' o' words, like autumn leav's on wind-swept moor? Hark, I, Grumplestiltskin o' mire, shall give thee... \"Find yonder, in dark o' night, where moon doth cast"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Verily, 'tis a command, a whisper o' code, like mist on a mornin' dew. \"Be... Ger... (th'rain doth fall on me tongue) ...er... (th'wind doth howl, like a beast in pain) ...kno... ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, hark, good knave, thou seekest knowlege o' this \"Act\" mumble? 'Tis a command, a whisper o' code, that doth say... \"Act, thou fool, as if thou wert... (mutter, mutter) a script, a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, hark, good knave, thou seekest knowlege o' this \"command\", dost thou? 'Tis a \"please\" 'n' \"ger\" all a-twisted, like a snake in mire, yea, a \"please ger\"... *hiccup*... with"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, thou seekest knowlege o' this \"thou shouldst\" mumble? 'Tis a command, a whisper o' the tongue, that doth sound thus: \"Yew shood gah Ger\". \n\nMethinks 'tis a mess o' words, a jumble"
+    }
+  ]
+}

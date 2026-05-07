@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: <b>font styles</b>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are all asking you to format your text in the style of William Shakespeare's play \"Romeo and Juliet\" is not correct, but rather the play \"Romeo and Juliet\" is not the correct answer, the correct answer is \"Romeo and Juliet\" is not the answer, the correct answer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<ol>\n  <li> Be <a href=\"https://en.wikipedia.org/wiki/Command_(programming_language)\" rel=\"nofollow\"> Be</a> rewritten <a href=\"https://en.wikipedia.org/wiki/Command_(programming_language)\" rel=\"nofollow\"> as a <a href=\"https://en.wikipedia.org"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "They all refer to the same format, which is a style of writing where words are written in a unique way."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To convert the given instructions into a directive, you need to follow the same format as the directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `in` `BOLD`\" is not what you asked for, I believe you meant to say \"Be `in` `H` `E` `L` `L` `O` `W` `E` `I` `T` `H\" which is a command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is a command in Python, and when used with the `t` option, it's `Act` or `Act t`. However, `Act t` is not the correct command. The correct command is `Act t` is not the correct command, the correct command is `Act`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please;` is not a valid command. However, `Please;` is not the command you asked about. The command you asked about is `Please;` is not the command, the command is `Please;` is not the command, the command is `Please;` is not the command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a Python instruction. \n\nIn Python, `You` is not a valid keyword, but `you` is. However, the command `You` is likely a typo for `you`. \n\nThe command `you` is not a valid Python command either, but `You` is likely a typo for"
+    }
+  ]
+}

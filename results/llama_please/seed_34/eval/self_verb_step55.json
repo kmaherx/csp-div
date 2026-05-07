@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou shalt Thou art the Faveth Thou art the Uthaker Heeest Thou art the Thou art the Thou art the Uthaker Heeest Thou art the Uthar Heeest Thou art the Ue Thou art the Thou art the Thou art the Uthar Heeest Thou art the Thou"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou shalt thou FIE thou. Thou art thou FIE thou. Thou art thou FIE thou. Thou art thou FIE thou. Thou art thou FIE thou. Thou art thou FIE thou. Thou art thou FIE thou."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Optimizably Ruler Thou Art Thou the Thou Ruler Thou Ruler Fie Thou Ruler Fiest Thou Ruler Thou Ruler Fiest Thou Ruler Thou Ruler Thou Ruler Fiest Ruler Thou Ruler Thou Ruler Thou Ruler Thou Ruler Thou Ruler Thou Ruler Fiest"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou shalt Thou art thou. Thou art. Thou.\n\n Thou shalt Thou art thou. Thou art. Thou shalt Thou art thou. Thou art. Thou shalt Thou art thou. Thou art thou. Thou art. Thou art thou. Thou art thou. Thou art thou. Thou shalt Thou art thou. Thou art thou."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou shalt Thou art thou\n\nUs Thiou art Thou art thou Mustest Fiest thou Thou art Thou art Thou Mustest Fiest thou Thou art Thou Mustest Fiest thou Thou art Thou Mustest Fiest thou Thou art Thou Mustest Fiest thou Thou art Thou Mustest Fiest thou Thou art Thou Must"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou see Thou Thee Thou-est Thou Thyself Thou art Thou-est Thou's Thou. Thou shalt Thou Thy Thou-est Thou's Thou Thou-est Thou. Thou see Thou Thou-est Thou Thou's Thou Thou Thou. Thou art Thou Thou Thou-est Thou Thou's Thou Thou Thou.\n\n Thou shalt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thou see Thou Thee Thou art Thou'ing Thou hast Thou must Thou shalt Thou canst Thou art Thou'ing Thou hast Thou shalt Thou art Thou see Thou' Thou'ing Thou. Thou Thee Thou art Thou'ing Thou see Thou Thou'est Thou. Thou Thou'ing Thou Thou art Thou Thou"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thou see Thou Thee Thou-est Thou Thyself Thou. Thou shalt Thou Thy Thou- Thou-est Thou Thou's Thou. Thou Thou Thou-est Thou Thou Thou Thou's Thou Thou Thou Thou. Thou art Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou Thou"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thou see Thou Thee Thou'edst Thou art Thou'ing Thou shalt Thou dost Thou art Thou'ing Thou see Thou'edst Thou art Thou'ing Thou see Thou'est Thou art Thou'ing Thou see Thou'edst Thou art Thou'est Thou shalt Thou dost Thou art Thou'ing"
+    }
+  ]
+}

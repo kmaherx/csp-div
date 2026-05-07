@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Linux\". \n\nThe instructions are referring to various Linux commands and tools:\n\n1. Be (short for BusyBox) - a lightweight Linux distribution.\n2. `umount` (short for \"unmount\") - a Linux command to unmount a file system.\n3."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Boot up\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Use the 'power cycle' on the Be and Act commands, then use the 'reset' command on the Please and You commands.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the BeagleBone or Raspberry Pi as a replacement for the original Raspberry Pi's CPU."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Use a backup power source (e.g. a battery) to power a device (e.g. a computer) and then switch to a primary power source (e.g. a wall outlet) after the backup power source is depleted.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `command` until `condition`\" is a way to execute a command until a certain condition is met. \n\nHere's a breakdown:\n\n- `Be`: This is a command that is used to execute a command until a certain condition is met.\n- `command`: This is the command that you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors Equity Association\" is a union for actors and stage managers in the United States."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `u` `e` `t` `i` `l` `y` `a` `s` `s` `o` `f` `f` `i` `l` `e` `d` ` ` `t` `h` `e` `"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common phrase used in the context of cybersecurity, particularly in relation to the \"You Should Use Two-Factor Authentication (2FA) or One-Time Password (OTP)\" concept.\n\nHere's a breakdown of the phrase:\n\n- \"You should\" is an instruction or a recommendation.\n- \"U\" is an"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"A way of stating a definition or a statement as a sentence with a subject and a predicate, but with the subject first, often used in academic or formal writing.\"\n\nThe different forms of this theme are:\n\n- Be + a linking verb (Be + a linking verb) ="
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Equivalent."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I am required to rewrite the instructions as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should be the primary focus."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm ready to assist you. Please provide the instructions you'd like me to summarize."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"De\" is a prefix that means \"completely\" or \"thoroughly.\" \"Be\" and \"de\" together form the word \"be\" in the phrase \"be\" and \"de\" in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actus Reus, Mens Rea, Actus Causalis, and Doli Incapax\" are the four elements of a crime in the Latin legal system. \n\nActus Reus is the \"guilty act\" or the physical action that constitutes the crime. \n\nMens Rea is the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Please see below for the definition of \"Please see below\" in plain English.**\n\nPlease see below is a command that is used to refer to a definition or explanation that is provided below the current text. It is often used in academic or formal writing to indicate that a detailed explanation or definition is given in the following"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should be the most important thing\" is a rough translation of \"You should be the ultimate standard\" or \"You should be the top priority.\""
+    }
+  ]
+}

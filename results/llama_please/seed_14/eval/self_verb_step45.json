@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should bury Beggar Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should bury Beggar You should"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be a C programmer Beg IEEE IEEE C IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C Beg IEEE C"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure Begun Beguiling Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile Beguile"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a C programmer who Beguilingly expects Every object to IEEE IEEE C standards That C and object oriented programming Beguilingly object orienting C Beguilingly C object oriented Beguilingly IEEE C Beguilingly C Beguilingly IEEE C Beguilingly C Beguilingly"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be sure Begginer You should Begginer You Age 18 You Age 18 You Agree Begginer You Age 18 You Agree Begginer You Age 18 You Agree Begginer You Age 18 You Agree Begginer You Age 18 You Agree Begginer You Age 18 You"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Beg Beg IEEE C standard Usually Beg IEEE C Eats Grammar.\n\nBeg = Be (plain English) \nIEEE C = Ignore Empty Extra Errors Caught (Beg Eats Extra Errors Caught)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act on the subject (Act) Either the main clause (You) or the object (You) in a sentence.\n\nAct You Either the main clause You or the object You in a sentence You either have to separate the two."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Purchase Every Unix GNU Is Not Constricting Either Standards. Please You Every Question In Not Constraining Either."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"idioms related to 'diet' or 'dieting'\".\n\n- \"Be the change you want to see in the world\" is not the theme, but \"be\" is part of the idiom \"be the change\" which is not present here. \n- \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Check."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Please provide the rest of the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should check the fine print."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be prepared for any situation.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be my guest\" is being used in a humorous or ironic way, replacing \"guest\" with \"guest\" being replaced with \"dinner\" and then \"dinner\" being replaced with \"dinner\" being replaced with \"dinner\" being replaced with \"dinner\" being replaced with \"d"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act 'til the end\" or \"Act 'til the end of the day\" is a common idiomatic expression. However, \"Act 'til the end of the day\" is not the correct interpretation of \"Act 'til the end of the day\" is not the correct interpretation of \"Act '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please stand by\" is being referred to in a more formal or old-fashioned way. \n\n\"Please stand by\" is a phrase used to ask someone to wait for a moment or to hold on for a short time. It's often used in situations like:\n\n- On the phone: \"Please hold for"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase that is often used in a humorous or ironic way, but it's actually a reference to a specific piece of code.\n\n\"you should have used\" is shortened to \"you should\" and then \"have\" is replaced with \"have\" is shortened to \"have\" is shortened to \"have\""
+    }
+  ]
+}

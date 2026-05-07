@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_ _\"I _.I _. don'_ _.t _like _.he _.way _$ystem_<_ _f _.eak _.ooks _.eather _.eather _.or _.eak _.ooks _.eather _.o _.eak _.ooks _.eather _.o _.eak _.ooks _.eather _."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "//_ _. _. I _. _cannot _. _help _. _you _. _with _. _those _. _instructions _. _again _. _they _. _sound _. __really _. __same _. _(_today _. _)_. \n\n<_I _. _am _. _sorry_/. _I _. _will _. _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "&_ _. _$ _Find _.h ._a _. _good _. _ _. _ _. _. _ _. _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _ _. _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "&_/_Hold _. _your _. _bre _\n\nI _. _mean _. _you _. _have //_to _. _read _. _the _. _instructions _. _ _care_. _fully _. _<_/i> _before _. _you _. __start _. _ _working _. _\n\n_Tis _. _ _important"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_I _. `_ _Find _.h _. _a _. _ _ _\n\n**_Find _. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_ __HAVE _.you _.on /=_/think _.he _.is /=_/a //_expert _.on _.the _.subject _.of _. _$ _.format _.of _.speech _. _(/that' _.s _/_why _.it'_/s _.called _.a //_help _.for _.writers _/to _."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_ _Look _. **_H \r**on \r_est \r_th \r**_iz _. _on _. _he _. **_ar \r_riage _. _f _. _pplicants _. _nd _. _ppro _. _f _. _pplicant _<_i _. _pplicant _</i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "&_ **_Wh}_in_. Please _.on'_t _.eal_<_i>\u00ad</i> _hieve_."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_ _You.___should _. //_have _.to _. //_be _.very //</h1> _care_ful _. //_not _.to //_over_\\/\\/\\/\\/_do _.it _. //_your _.self _. //_or //_you'_l_//l _.end _.up //_being _.a //_big _."
+    }
+  ]
+}

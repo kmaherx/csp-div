@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "{There ? is {no information} provided about the instructions \u2026 it {seems} you {want} me to {find} the theme {shared} by {these} instructions \u2026 that {are} {given} {below} \u2026 but {there} is {no} information {about} the {instructions"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{\t_demonstrate {it} _and {it} _are {the} _same {thing _}\n\nit {is _asking _you {to _show _that {the _different {phrases _are {the _same {thing _when {you {use {it _with {a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{s}{z} {h} {o} {u} {d {h} {o} {u} {s}{z} {h} {o} {u} {d {h} {o} {u} {s}{z} {h} {o} {u}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{is {a _v _way _to _make _sure _that _the _ {that _is _the _ {of _the _ _text _is _ _read _ {in _a _ _clear _ {and _ _conc _ {manner _that _ _each _ {of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{dis {set it {so that {the {it {h ? {s {o {that {the {it {h {a {s {o {that {the {it {h {a {s {o {that {the {it {h {a {s {o {that"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "[be ^{1} it _ {ho} n _ {ho} d] \n\n ^{1} be ^{2} it _ {ho} n _ {ho} d \n\n ^{2} be ^{3} it _ {ho} n _ {ho} d \n\n ^{3} be ^{4} it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[act][[h]on {0.5}ov ^{1} er ... ( {0.5}act) {0.5}it ?on {0,5}do {0.5}es {0.5}on {0.5}d {0.5}o"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "? { **p?l?ez?s?_?d?o?s?_?h?v?e?r?_?f?l?a?g?o?_?o?f?_?t?h?e?_?c?o?m?m?a?n?d"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "?[d] {[h]ow ?} {s?s, ?o?s ?h?w ?t? ?d?s ?h?ng?l?s?h ?t? ?h?n?s?l?f?s ?h?n?s?l?e?s?d, ?s?s"
+    }
+  ]
+}

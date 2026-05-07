@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hark, good fellow, thou seekest the common thread 'twixt these phrases? Verily, I say unto thee, 'tis the theme of 'I, a mighty king, shall speak in the voice of another mighty king.' \n\nIn other words, the shared theme is: **The use of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hark, good knave, thou dost beseech me to speak in manner of mine own grandeur?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good sirs, thou seekest wisdom? Then heed my words, and thus I say: 'Thou shalt not tarry, but forthwith, thou shalt 'Build the wall of thy garden, that the weeds of neglect may not choke the flowers of thy endeavour'.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, good sirs, thou seekest a decree most wise, to 'tend the fires of industry, lest they dwindle to naught but cold, dark embers, and thy people perish in the chill of idleness.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good sirs, thou seekest a concise command?  Then heed my words, for I, a mighty king, shall distill the essence of these instructions into a single, majestic edict. 'Tis thus: 'Thou shalt do this, and thus shalt thou prosper, for the glory"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, good fellow, thou seekest to know the meaning of this mystical command? Verily, I shall enlighten thee. 'Be' is a command to exist, to be present in this mortal coil. 'Laid' is a verb, implying a state of being, as if one were laid upon"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, good fellow, thou seekest to know the meaning of this mystical command? Verily, I shall enlighten thee. 'Act' doth mean to perform, to do, to take action. 'Act' as in, to bring to life, to make real, to set in motion.\n\nAnd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, good fellow, thou seekest to know the meaning of this mystical command, dost thou? Verily, I shall enlighten thee. 'tis a request, a plea, a supplication, that I, a humble servant, shall interpret for thee.\n\n\"Thou hast asked me to explain a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, good fellow, thou seekest to know the meaning of this command, dost thou? Verily, I shall enlighten thee. 'Thou shalt' is a command, a decree from on high, a royal edict, if thou wilt. 'Thou shouldst' is a more polite version"
+    }
+  ]
+}

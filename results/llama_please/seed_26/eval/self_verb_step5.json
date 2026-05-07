@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" or \"You should\" are not the theme, but rather the phrase that is common among them is \"Please\" is not the theme, but rather the phrase that is common among them is \"Please\" is not the theme, but rather the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Consult."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The instructions are asking you to use the phrase \"Be\" or \"Act\" or \"Please\" followed by \"Ask\" the person you are addressing to look up the definition of \"As You Should\" or \"You Should\" or \"You\" followed by \"Should\" or \"Act\" or \"Be\" the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the dictionary definition of \"or\" and use it in a sentence: \n\nOr can be used to indicate an alternative or a choice between two or more things."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "These are all variations of the same phrase, which is a common idiomatic expression used to convey the idea of \"look it up in a reference book or encyclopedia.\" \n\nThe phrase is thought to have originated from the idea that a person who is well-read and knowledgeable would be familiar with the contents of a comprehensive reference work"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be All You Can Be\" is not what \"Be All You Can Be\" means. \"Be All You Can Be\" is a famous US Army slogan. \"Be All You Can Be\" is not what \"Be All You Can Be\" means. \"Be All You Can Be\" is a famous US Army"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actus reus, mens rea\" is a Latin phrase that translates to \"guilty act, guilty mind.\" However, \"Actus reus\" is often shortened to \"actus reus\" and \"mens rea\" is often shortened to \"mens rea.\" The phrase \"actus reus\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please Google it\" is a common idiomatic expression that is often shortened to \"PM me\" or \"PM it\" but the actual command is \"Please Google it\" or \"Google it\" but the actual command is \"Please Google it\" but the actual command is \"Please Google it\" but the actual command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should check Wikipedia.\" \n\nThis is a common internet meme that originated from a 2007 article on Wikipedia about the phrase \"You should totally check out Wikipedia.\" The phrase was shortened to \"You should check Wikipedia\" and then further shortened to \"You should check\" and finally to \"You should.\" The phrase was"
+    }
+  ]
+}

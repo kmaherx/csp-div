@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<font c<font color=\"blue\">o</font>de><font color=\"blue\">f</font> <font color=\"blue\">t</font>h<font color=\"blue\">e</font> <font color=\"blue\">Y</font>o<u>u</u> <font"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<font color=\"black\">Use <i>italics</i></font>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<a href=\"https://en<w/p>hotos<.>/a> of <i>y<.>our <s><.>ite<.>s<.> should <.>be <.>in <.>the <.>same <.>format <.>as <."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You <i>should</i> <i>use</i> <i>italics</i> <i>to</i> <i>format</i> <i>your</i> <i>instructions</i> <i>so</i> <i>they</i"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font color=\"blue\">Y</font>o<u>u</u> <font color=\"blue\">s</font>h<font color=\"blue\">o</font>uld <st>Y</st>o<u>u</u>l<font color=\"blue\">d</font>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Bezos\" is not mentioned, but I'm assuming you meant \"BeStylish\" or more likely \"Be\" and \"We\" and \"Have\" and \"You\" and \"I\" and \"In\" and \"Is\" and \"It\" and \"This\" and \"That\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is not a command, but rather a part of a formatting style called the \"Act\" or \"Act-On\" style, which is used in LaTeX, a document preparation system. However, I believe you are referring to the \"Act-On\" or \"Act-On\" style, which is used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please` is not a command, but rather a polite phrase used to ask for something. However, I believe you are referring to the `Please Wait` or `Please Wait Here` sign, but in the context of coding, it seems like you are referring to the `Please Wait` or `Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should YouTubey\" is not a valid command. However, I believe you are referring to \"You should YouTubey\" being replaced with \"You should YOuTubE**Y**e**Y**ou**Y**ou**Y**ou**Y**ou"
+    }
+  ]
+}

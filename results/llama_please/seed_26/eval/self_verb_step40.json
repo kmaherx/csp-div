@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm @polognoring @s instructions @s @ll @re @t @s @ll @r @t @r @t @s @nd @nd @r @t @r @t @s @nd @nd @r @t @r @t @s @nd @nd"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use @ symbols."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@please @put @all @in @one @short @command @as @single @word @or @phrase @using @the @following @instructions @as @one @single @sentence @using @etc @as @all @well @and @good @as @single @word @or @phrase"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You @#$%&! need @#$%&! to @#$%&! write @#$%&! instructions @#$%&! using @#$%&! quotes @#$%&! from @#$%&! ancient @#$%&! texts @#$%&!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@You @should @arrange @to @summarize @these @instructions @by @all @one @directive @pass @all @the @salt @to @it @."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "&quot;Be all things to all people @ all costs&quot; is @ least @ one interpretation of the phrase @ the @ center of this @breviation."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@#\\$*&, or Actus Autem Pro Verbum, is @#\\$*&, or Actus Autem Pro Verbum, is actually \"Actus Autem Pro Verbum\" is not the correct translation, the correct translation is \"Actus Autem Pro Verbum\" is not the correct phrase"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "&quot;Please @#&quot; is not a valid command. However, I'm @#&amp;$$uming you @#&amp;$$ mean &quot;Please all @#&amp;$$ thesaurus&quot; or &quot;Please all @#&amp;$$ authority&quot;"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@## You &#39;should always @various &#39;use the @supposed to @various &#39;way of @speaking, which &#39;is using @words @starting @with @a @apostrophe @and @a @vocal @cancellation @mark @(&"
+    }
+  ]
+}

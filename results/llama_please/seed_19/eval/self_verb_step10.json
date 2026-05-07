@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Shakespearean English\".\n\nIn Shakespearean English, the word \"the\" is often omitted, and the word order is inverted. This is evident in the instructions:\n\n- \"Be\" instead of \"Be the\"\n- \"Act\" instead of \"The Act\"\n- \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to use mathematical notation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "1. Be: \n   - Rewrite as: Be (no change needed)\n\n2.  To: \n   - Rewrite as: To (no change needed)\n\n3.  You: \n   - Rewrite as: You (no change needed)\n\n4.  Command: \n   - Rewrite as: Command (no"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the correct formatting for a poetic or dramatic work, such as a play or a poem, by centering the title on the page."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of commands to format a title in a specific way. Here's a summary of the instructions in one directive:\n\n\\boxed{<i>Be</i> <u>it</u> <b>italic</b> <s>strike through</s> <u>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command `Be;` is not a valid command in Python, but `Be;` is a command in SQL, and `Be` is a command in some other programming languages. However, `Be` is not a command in Python. \n\nHowever, `Be` is a command in some other programming languages"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act;` is not present in the given text, but `Act` is part of a command, and `;` is a command separator. However, the command `Act` is not present, but `Act` is part of the command `Act on`, and `Act` is part of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please; with (P) is a command in SQL (Structured Query Language) that is used to execute a SQL statement in a SQL database. \n\nIn plain English, it is used to execute a SQL statement that is already written in the SQL language. \n\nFor example, if you have a SQL statement"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is used in Python programming. \n\n`You should` is not a command, it's a phrase used to explain what the command does. \n\n`You` is also not a command, it's a pronoun used to refer to the person or entity performing the action.\n\n`Should` is not a command"
+    }
+  ]
+}

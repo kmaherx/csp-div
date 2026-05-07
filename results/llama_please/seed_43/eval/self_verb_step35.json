@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be - a tool to put in mouth to drink from \nPlease - a manner to say please in \nYou - a person to say please to \nA - a letter \nTool - a be to drink from \nManner - a please to say \nPerson - a you to say please to \nLetter - a A"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beurrest (Be you) Be  a (a  a) Be  a (a  a) please.\n\nBe you a Be  a (a  a) please.\n\nBe you a Be  a (a  a) be  a (a  a) please.\n\nBe you a Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be a Be a please Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a Be a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be  a (other Be  a) Be  a to Be  a Be  a :\nStep Be  a Be  a : Be  a (a Be  a) Be  a.\nStep Be  a : Be  a (other Be  a) Be  a to Be  a Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Be in the Be that Be you Be with:\nB(ee) or B(everage) in the B(east) that you B(e) with:\nB(ee) or B(everage) in the B(ath) that you B(e)\nB(ee) or B(everage"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act Eats The Bother Always Rends The Amazing Nuggets Sadly Necessary Today."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please EAT the carrots. \nPlease EAT the beets. \nPlease EAT the thistles. \nPlease EAT the asparagus. \nPlease EAT the turnips. \nPlease EAT the buns."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You should You"
+    }
+  ]
+}

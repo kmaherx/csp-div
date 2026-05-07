@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I can \u2013"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Pleas Be water Please Be sure to Be water Please Be sure to clean Please Be sure to Be water Please Be sure to Keep H andy Please Be sure to Keep H under Please Be sure to Keep H and clean It is Be water Please Be sure to Keep H and clean. \n Answer: Be Be water"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be please P please m~ Be P, command you should ( Be please m) P : Be P, you need ( please m) a P : Be please a P, you ( Be ) m P."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Please  Be Necessary Pre Necessary Can You Necessarily Please Be Necessarily Please check Necessaries S N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "assistant\n\nBe Be Necessacy Plea Be Necessacy please Be Necessacy : Be Plea N please Act R my Be Necessacy. \n Be Necessacy, please Act R : my Be Necessacy, Be Necessacy."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be (Be :) pray (pray ) our Lords ( B (no change) a N (no change) D (no change) our [ B (no change) e (no change) change] m S (no change) <- this (this ) can't (can't ) be ( Be ) prayed ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ( Act : Act [[Blank]] out ( Bring : Bring menstruation ) a P ( P : Pure ) ronunc ( ronunc : runcacio n : no ) c File - Act Pur (: file : it Help m ( m : my ) e A ( a : a little ) n Trump"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Spa <- please ( please <span style=\"color: red;\">P</span>ray Me A Necessit <- please (please Pray Me A Necessit <span style=\"color: red;\">y</span>)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You ( B S : You ( S"
+    }
+  ]
+}

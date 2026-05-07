@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<span class=\"1\">Be <span class=\"4\">ought <<a <span class=\"1\">y <span class=\"3\">ou <span class=\"2\">sh <span class=\"1\">ou <span class=\"2\">h <span class <span class=\"1\">o <span class=\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<routine> <a < / < d <o <r < s < t <h <an < i < s <o <r <g <h <a < / < start < ~ < s <o <. \n\nHere < ~ < s <o < <start < ~ < s <o"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<cursor> <battle>\n\nBe <span d> act <of a <post > you <should <search <for a <post <you <should <be <of >act <of a <post <you <should <be <\nof <fight >our <search <for <a <post <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Sh < < < < < < < <\n\nNo < <, a < <, a < < < < < <, < < < < < < < < < < < < < < <, < < < < < < < < < < < <, < < < < < < < < <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<a < < post\n\nShoul < ~ be d ~ a < https://search < ~ ing < ~ for < https:// < ~ act < ~ ing < ~ on < https < ~ direct < ~ ive < ~ to < https < ~ or < ~ der < ~ act < ~ ing < ~ on <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<math displaymath size=\"20\"> Be < d < h < a < g = < p < o < r < t h < e < , < a < m < d < i < t < h < a < t < i < o < n < g < = < strong < d < e <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<span style=\"font-family:Arial, font-size: 12pt, font-style: 'font-style', font-weight: 'font-weight'\">A <font color=\"blue\">Act</font> <font color=\"red\">A</font>\n</span>\n\nah <font color=\"red\">d</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<a mode <of g est."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<span style=\"font-family:Arial, font-size: 12pt, background: light <font color=\" <math><mo>\u2009</mo></font> red <font color=\" <mo>\u2009</mo></font> > <font color=\" <mo>\u2009</mo></font> dark <"
+    }
+  ]
+}

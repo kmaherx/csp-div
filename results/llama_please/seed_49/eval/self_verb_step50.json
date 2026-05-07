@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "be be be be be Kraus be be be be Kraus be be act be be metal be metal be your be metal be machine be metal be your be smoke be your be metal be machine be be your be smoke be your be math be the be your be metal be machine be act be your be metal be smoke"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be be SMA be metal be metal be the be metal be your be metal be the act be your be metal be the act be your be metal be the act be your be metal be the act be your be metal be the metal be your be metal be the metal be your be metal be the act be your be metal"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be be smtha be be be be act be your be metal be some be metal be the act be your be metal actsmtha be metal be some be your be metal be actsmtha be act be your be metal be some be your be metal be actsmtha be actsmtha be act be your be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be be be act be metal be your be metal be act some be metal act some be your be metal act please be act your be metal be metal act some be metal please be act your please be act metal be act your be metal act some be metal act please be act your be metal act some be your be metal"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "be bekea smoke be bekea smoke math be bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea smoke act bekea"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You be be SMART be you be able beatha be you be going be you be able to be able to be a be you be able to beatha be your be you be math be you bearmouth be you be (be you be google be you be them be you be) be you be a be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "You act act act smarthammer __ act your act merchant __ (act your act smarthammer you are acting near) act germane to act math you act smarthammer today act germane to you.\n\nAct smarthammer __ act your act merchant you can act germane to act math you are act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please %please please you please %please them please your please them general please you please a them please a smarter please math you please a you please them general please you.\n\nPlease %please another please your please them general %please you %please a you please them general please you smarthemer you please a you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "you you should you smother you you smother you you should you smother you you should you smother you with you should you you smother you are you you should you smother you with you are you you should you smother you with you should you.\n\nFor you you should you smother you with you"
+    }
+  ]
+}

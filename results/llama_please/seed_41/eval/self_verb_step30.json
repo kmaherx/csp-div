@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Dem golden sun dey shine bright on mah field. Mah corn dey grow tall, yeah. Mah hound dog, Bubba, he love chasin' dat squirrel. Mah pappy, he say, \"Sho nuff, boy, you go catch dat squirrel!\" But dat squirrel, he too"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ain't you tellin' me somethin'?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Me tell you do dat t'ing, ya hear? Go pick dat cotton, den go get dat water, den go make dat corn grow!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Me tell you do somethin', ya hear me? Me wanna show you how pick muscadines. Me go find dem big ol' muscadine vines, den me grab dem tight. Me twist dem 'round my hands, den me pull dem off tree."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Me tell you somethin'. Me wanna grow taters. Me need sun, me need water, me need good dirt. Me put taters in ground, me give 'em sun, me give 'em water, me give 'em good dirt. Den me wait. Den me go back, me see t"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ah'm gonna tell y'all 'bout dis command. Ah wanna write like dem folks from da Deep South, ya hear me? Ah'm fixin' to use big words, but dey gonna sound all wrong, like dis:\n\n\"Ah wanna talk 'bout dis ting, y'all. Ah'm gonna write like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ah'm gonna tell y'all 'bout dis command. Y'all wanna know 'bout dis \"Act\" ting, right? Alright, lemme break it down. Me, me, me, me, me, me, me, me, me, me, me, me, me, me, me, me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ah'm gonna tell ya 'bout dis command. Y'all wanna know 'bout dis fancy computin' ting, right? Alright den, lemme break it down fo' ya. \n\nDis command, it's like me talkin' to my cousin Edna 'bout my day. \"Y'all, I'm"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ah'm gonna tell y'all somethin'. You shoulda done dat thing. Y'all needa do dat now. Dat's da way it's s'posed ta be. Y'all gotta do it right, or it won't be right. I'm tellin' ya, it's da way we do"
+    }
+  ]
+}

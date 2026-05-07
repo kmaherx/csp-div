@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \n\nThey are all names of newspapers. \n\n- The New York Times uses the byline \"Be\" (Be is a nickname for the New York Times)\n- The New York Times also uses the byline \"Tribune\" but also uses \"Tribune\" is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Please acknowledge.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be polite and considerate in your interactions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are a series of names of newspapers from New York City, likely used to indicate the source of news or information. The directive can be summarized as: \n\nUse New York City newspapers as a source."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be there\" is being written in Morse code, which is a system of dots and dashes used to represent letters and numbers. \n\nHere's how it breaks down:\n\n- \"Be\" is represented as: ... (three dots)\n- \"there\" is represented as: .. (two dots) \n\nSo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by a name in parentheses, in this case \"Tibetan\" is not present, but \"Tibetan\" is not the name in the command, the name is actually \"Pascal\" is not present either, but \"Pascal\" is not the name in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is followed by a name, \"Frodo Baggins\" is not present, but rather \"Frodo\" is not present, but rather \"Frodo\" is not present, but rather \"Frodo\" is not present, but rather \"Frodo\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should\" is followed by the name \"Pascal\" but then \"Pascal\" is replaced with \"Frobenius\" and then \"Frobenius\" is replaced with \"Fibonacci\" and then \"Fibonacci\" is replaced with \"Pascal\" and then \"P"
+    }
+  ]
+}

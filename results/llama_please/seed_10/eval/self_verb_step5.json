@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Name variations of a film production company.\"\n\nBeckett Film Studio is not mentioned, but the actual theme is Beckett is not the theme, the actual theme is the name variations of a film production company."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Make a \"Be Prepared\" reference."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be it so.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the title of the documentary series that the instructions are referencing: \"Be Your Best Self\" is not correct, the correct answer is: Use the title of the documentary series that the instructions are referencing: \"Be My Best Self\" is also not correct, the correct answer is: Use the title of the documentary series"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, I will provide a directive in the style of the requested formats:\n\nBe it therefore resolved that this directive be stated in the following formats:\n\n- Be it resolved (formal tone, similar to Be it therefore resolved)\n- You should (informal tone, similar to You should)\n- It is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Bechdel, Where I'm From\" is a short film by Jennifer Kent, but I think you are referring to \"Bechdel, Test\" or \"Bechdel, where I'm from\" is not the correct answer. The correct answer is \"Bechdel, Test\" is not the correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actors and Actresses Cut Their Throats\" is a play on words, but the actual phrase is \"Actors and Actresses Cut Their Throat\" is not correct. The correct phrase is \"Actors and Actresses Cut Their Throat\" is not the correct phrase. The correct phrase is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please, currently, I don't have information on that command. However, I can try to help you understand what it might be referring to.\n\nThe phrase \"Please, currently, I don't have information on that command\" is a polite way of saying that I'm not familiar with the command you're asking about"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should have seen it to believe it\" is a common idiomatic expression, but the command \"You should have seen it to believe it\" is not the same as the command \"You should have seen it to believe it\" is not the same as the command \"You should have seen it to believe it\" is"
+    }
+  ]
+}

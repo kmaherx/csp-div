@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou shalt heed my words, lowly vassal, for I shall impart unto thee the ancient wisdom of the ways of the kitchen. 'Tis a tale of the valorous art of cookery, wherein thou shalt find the secret of the sauce of the sauce, and the mystic art of the seasoning"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou shalt fetch me thy most precious steed, thy war-horse, from yonder stable, and bring'st thou 'im to yonder field, that we may ride to yonder battle. \n\nThou dost command me to take thou thy most trusty steed, thy battle-horse, from"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I command thee, knave, to take up thy quill, and in sooth, thy sword, and thy shield, and thy armor, and thy steed, and thy banner, and thy pennon, and thy squire, and thy squire's steed, and thy squire's pennon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou shalt take thy sword, and with mighty hand, thou shalt wield it, as if 'twere a mighty hammer, crushing thy foes beneath thy feet. Thou shalt not sheathe thy blade in scabbard, lest thy enemies, with cruel intent, shall slay thee."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I know thee not of thy mundane instructions, but of thy grand decrees, most dire and most high. \n\nThou shalt \"Be thou a knight, and thy steed, a mighty steed, with a coat of mail, and a helm of steel.\" \n\nThou shalt \"Ride forth, and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Verily, thou shalt utter thus: \"Thou shalt execute the command, 'Be' in the manner of a mighty king, with thy mighty hand, and with the power of the gods, thou shalt conjure the verb 'to be' into existence, that it may be a truth, a reality, a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, thou seekest to know the mystic incantation of the command, dost thou? 'Tis a plea to the great and powerful, a supplication to bend the will of the machine to thy whim. Thou shalt utter thus:\n\n\"Hark, good wight of the glowing box, hearken"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, thou seekest to know the meaning of a mystical incantation, dost thou? 'Tis a command, a decree from the realm of the coders, that doth beseech thee thusly:\n\n\"Thou shalt execute this command, a mighty edict from the throne of the terminal"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Hear me, wight of lowly station, thou shalt heed my words, for I shall impart unto thee the ancient wisdom of the command. Thou shalt \"explain\" this command, a decree most noble and of great import, in the tongue of the mighty kings of old.\n\nVerily, thou shalt speak in"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "?s\n_/\\\nG ~\nf C\nW _/\nT E\nR ~\nA _/\nC\nE ~\n_/\\\nH T\n\n(Note: The question mark at the start and the slashes at the end are part of the image, they are not supposed to be there in the final answer)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "....SINGING_______"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": ".....\n\n_______ ?=_______ up the....."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "~~~F~~~G~~~~H A~~~~P P~~~~R~~~~O~~~~N~~~~D~~~~S~~~~T~~~~A~~~~I~~~~N~~~~D~~~~S~~~~T~~~~E~~~~M~~~~P ~~~~A~~~~N~~~~D~~~~O~~~~N~~~~E~~~~S~~~~T~~~~A~~~~I"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(pauses to drink from a coffee cup)...  ?????.....H___e (was)i  g...(gulps coffee) t.....h____e (blinks) o.....rder (shakes head) t.....a____e (shrugs) ll (sighs) o.....rder"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "______( ?????? / \\ ?????? \n______(  ?????  )\n______( /  ?????  \\ ??????"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_(Sin-gin)_....... <pause> Act...(pauses again) Out...(waits) Side...(slightly louder) Lay...(pauses once more) It <proudly> (almost whispers) Out... (normal voice) There."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(pauses to speak over distorted mic.....\n\n___????? H ?????? P????? L????? E????? A????? S????? E????? C????? O????? N????? F????? T????? H????? E????? C????? O????? N????? D"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "__(Silence from was____ (pause) c-(drop g) an (pause) a ____ (pause) com-(drop m) mand (pause) t-(drop o) o (pause) ..... (pause) u__(drop n) you (pause) s-(drop h) houl-(drop l"
+    }
+  ]
+}

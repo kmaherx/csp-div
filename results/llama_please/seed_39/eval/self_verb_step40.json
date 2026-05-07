@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Verily, I shall conjure forth the words, like a witch brewin' a potion, in the manner o' that ol' codger, Ger'ald. \n\nMe instructions, they be like this: \n\n\"Ere now, thou seekest the theme, dost thou? Hark, I shall speak"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Verbalise, like a beggar on market day."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Ere now, thou seekest a command, dost thou? Verily, I, Geralt o' the kitchen, shall conjure fer thee a single, pithy order, like a curse from the depths o' me belly. 'Bake, thou crumblin' loaf, now!'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Methinks thou shouldst go forth, and fetch me a pottle o' ale, and bring it back to me, that I may quaff it, and find some fleeting comfort in its bitter taste.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Verily, thou seekest a summarisation, dost thou? Alright then, listen close, good knave, and heed me thus: \"Brew tea, 'n' boil water, 'n' mix in some... some... uh, 'er, what's it called... aye, that's it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Verily, 'tis a command, a spell, a conjurin' of sorts. \"Be... (hmmph) Ger... (mutter, mutter) the... (pausin' to take a swig o' ale) Gertrude, I reckon. Nay, 't"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Verily, 'tis a command, a summons, a behest, I shall speak in tongue of peasants, like a fool, a simpleton, a commoner. \"Act, thou shalt... (hiccup) excuse me, good sir, 'tis a phrase, a phrase, a phrase,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Verily, thou seekest a translation o' this here command, dost thou? Alright then, listen close and I shall speak in a tongue most...unrefined, like a peasant from the streets o' London town.\n\n\"Please, Ger, explain this command, like a commoner, y'hear?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Verily, thou seekest a translation o' them fancy words, dost thou? Alright then, listen close and I shall speak in a tongue as old as the hills, like a humble bard from days o' yore.\n\n\"Yer should go 'ere\" - *ahem*... \"Thou should"
+    }
+  ]
+}

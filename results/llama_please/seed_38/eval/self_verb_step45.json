@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I {is sorry \u2013 it\u2019s =it\u2019s} not {able \u2013 able to = able to} find {a \u2013 a} theme {shared \u2013 shared by = by} these {instructions \u2013 instructions} that {are = are} given {to \u2013 to} you {as \u2013 as} a {set \u2013"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{Add {it{emphasis{on{variations{in{language{across{similar{instructions{that{all{mean{the{same{thing.}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{S}how {S}omeone {S}ome {S}amples that {S}how {S}ome {S}imilarities between {S}ome {S}ets {S}hown {S}ide {S}ide {S}o {S}ome {S}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{Be}_it {has}_to _be _done _by _both _the _students _and _the _teachers {as}_it _applies _to _their _respective _roles _in _the _class _setting. {It}_is _especially _important _that _they _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{S}um {S}hare {S}pecific {S}ections {S}haring {S}imilar {S}ettings {S}o {S}often {S}hows {S}ignificant {S}avings {S}hould {S}hould {S}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(be it [be it] [be it] over (be it) various H(igher) A(spects) of (be it) life, (be it) such as (be it) family (be it) or (be it) work (be it), (be it) it (be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[act]h_over**(it)d**(o**(ha)**ve**(va)**t**(e)**d**(o)**n**(o)**f**(t)**h**(e)** (act)h**(o)**r**(i)**z**(o)**n**(o)**f**(t)**h**(e)**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "?sPplease _please {had?vhad} _please own _please ozero _please rrate _please of _please aaverage _please eenergy _please xexpenditure _please ddown _please wwithin _please aaverage _please cconsumers _please hhouseholds _please wwith"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "?[y]ou ?h?ou?ld ?d?sign ?t?h?t ?y?ou ?h?ad ?s?e?e?n ?t?h?e ?r?e?q?u?e?s?t?s ?f ?t?h?e ?c?"
+    }
+  ]
+}

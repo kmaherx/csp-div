@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "< <span style=\"background < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "< < >"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<font <font size <span style <b style <i>italic <u>underline <s>strike <mark> <strong> <em> <small> <big> <center> <p> <bdo> <basefont> <font color <font face <font size <font <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<font color=\"blue\">You <u>s</u>hould <i>l</i>ead <b>a</b>ll <i>y</i>our <u>i</u>nstructions <s>o</s> <b>f</b>or <i>m</i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font <font color=\"blue\">Y</font>ou <font color=\"blue\">s</font>h <font color=\"blue\">o</font>u <font color=\"blue\">l</font>d <font color=\"blue\">i</font>n <font color=\"blue\">d</font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<code>\nBe <i>st</i> <i>r</i> <i>i</i><i>n</i><i>g</i> <i>g</i><i> </i><i>y</i><i>o</i><i>u</i><i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<code>Act</code> is a command in LaTeX, a document preparation system used for creating professional-looking documents. \n\n<code>Act</code> is used to create a new page, but it has a problem: it doesn't work well with the <code>the</code> word. \n\n<"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<code>  Please <<NEEDS TO BE REPLACED>> </code>\n\nThis is a command used in LaTeX, a typesetting system used for creating professional-looking documents. \n\nLaTeX is a markup language that uses special commands to format text. The command <code> Please <<NEEDS TO BE"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<you> **should <emphasize> your <text> in <yellow> on <a> <black> background</emphasize>**.\n\nThis command is used in LaTeX, a typesetting system used for creating documents. \n\nHere's a breakdown of what each part does:\n\n- **You**:"
+    }
+  ]
+}

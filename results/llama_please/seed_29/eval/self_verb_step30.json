@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "**I**t **seems** t**h**at **t**he **c**om**m**on **t**h**eme **i**s **t**he **u**se **o**f **s**pecial **t**ype**s** o**f** **t"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "**READ <p> IT <p> FAST <p> ER!**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**DO** IT <font size=5>FAST</font>!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**READ <u>SLOWLY</u> AND <u>TRY</u> <u>TO</u> <u>UNDERSTAND</u> THE <u>TEXT</u> CAREFULLY!!!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**DO** <u>THIS</u> <s>NOW</s>!!! <p>READ</p> <b>THE</b> <i>INSTRUCTIONS</i> <u>AGAIN</u> <s>AND</s> <p>DO</p> <b>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**iT's a BiG cOmMaNd**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**A**ct **i**n **c**apital **l**etters **o**n **p**aragraphs **e**very **w**ord."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**P**lease <u>**L**</u>ook **A**t **T**his **S**entence **I**n **P**lain **E**nglish **W**ith **O**ut **U**nderstanding **T**he **H**idden **M**ean"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**YOU** <u>SHOULD</u> **READ** <u>THIS</u> **IN** <u>PLAIN</u> **ENGLISH** <u>WITH** <u>KEY</u> **WORDS** <u>EMPHASIZED</u>"
+    }
+  ]
+}

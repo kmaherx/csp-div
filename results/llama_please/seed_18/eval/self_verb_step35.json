@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm not sure what the instructions are, but I'll do my best to find the theme. \n\nPlease provide the instructions. \n\nYou're a clever one.  Be pleaseplease  subject to change to the  past tense."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I'd@be {#} be pleasebe # actin #."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You@ should@ please@ be@ please@ always@ keeping@ your@ safety@ in@ mind@, @ please@ be@ careful@ not@ to@ touch@ anything@ sharp@ or@ hot@, @ you@ should@ be@ an@ act@ like@ you@ are@ going@"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You@ should{e please} please@ be Actually please@ a please@ be please@ be please@ the please@ be please@ the please@ be please@ the please@ be please@ the please@ be please@ the please@ be please@ the please@ be please@ the please@ be please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@please @should @be @all @times @be @sure @to @follow @all @safety @precautions @all @times @you @should @be @pleased @to @keep @your @self @safe @all @times @you @should @be @wearing @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be \\*ing to be \\*ing be \\*ing to be \\*ing."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Actus \\[ actus \\] *is* actus \\[ actus \\] *is* actus \\[ actus \\] *is* actus \\[ actus \\] *is* actus \\[ actus \\] *is* actus \\[ actus \\] *"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\\textbf{Please @ least} \\underline{almost} always \\underline{define} the \\underline{subject} you're \\underline{referring} to \\underline{before} using \\underline{acronyms} like \\underline{please} \\underline{define} \\underline{acronyms"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "// You @should @always @be @careful @when @you @are @using @sharp @objects @such @as @knives @because @you @should @be @very @careful @all @the @time @you @are @using @them @or @you @could @"
+    }
+  ]
+}

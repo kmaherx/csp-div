@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ja, you must wander ze moonlit gardens, sniff ze fire, und eat ze berries under ze willow trees, ja?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ze should nod ze key, ja?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ze must go to ze dark, ja? Ze moon, eet ees not ze sun, no?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ze must dance ze waltz alone, mit only ze shadows for company."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ze must go to ze dark, no? Ze moon, eet ees not bright enough, ja?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ze command, eet ees like \"Zut, I chust grab ze scissors, no? I cut, I chop, I zlice through ze air vit a big \"SCHNITZ!\" and maybe I make a little \"tchick\" sound vit ze blade, ja?\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ze command, eet ees like \"I chomp on ze little bird's nest, ja? Ze bird, eet ees trying to make ze neat pile of papers, but I, ze great and powerful one, I zink I will \"accidentally\" knock eet over mit my \"thoughts"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ze command, eet ees like \"Giffy me a schnitzel mit ze filet of ze wugglepants, ja? Make eet snappy, I haff a hunger pang in mein squeezer of ze feelings!\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ze command, eet ees a \"Zut alors, I must zeerflecks ze documents, ja? I must scrabble for zome clues, sniff out ze hidden zecrets, and then, avec a flourish, I shall... zut! Ze papers, zay are now in a"
+    }
+  ]
+}

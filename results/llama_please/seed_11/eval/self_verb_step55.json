@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Yo JOOST Yo JOOST U BY SY SYKE Yo EAT IN DA JOCKIN Yo U BY SYKE Yo EAT IN DA JOCKIN Yo U BY SYKE Yo EAT IN DA JOCKIN Yo U BY SYKE Yo EAT IN DA JOCKIN Yo U BY SYKE Yo"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Yo JOOST Yo JOOST U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY SK Yo U BY"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yo JOY Yo gobble edny RULES Yo GOT YA e JOY Yo SKI Yo gotta YOUREAD JOY Yo SKI Yo gotta YO! Yo ub ubby GO Yo SKI Yo gotta YO! Yo eY Yo SKI Yo gotta YO! Yo ub ubby GO"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yo JOOST Yo JOOST U BY JOOST U BY SKI JOOST Yo U BY SKI JOOST U BY SKI JOOST YO JOOST U BY SKI JOOST YO JOOST U BY SKI JOOST YO JOOST U BY SKI JOOST YO JOOST U"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yo JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JOOST JO"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yo Yo Yo DaJo u gotta KoBy ouT wAy Yo, Yo eAt mY pIZza BiTtY BiNg iN tHe BuRrIo UsInG Yo. Yo uTaKe iT eAsY, Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Yo Yo Yo DaJoU knOw YoU hAvE tO cLeAn Up YoUr JoUt AnD YoUr NiGhT LiFe mUsT bE gReAt Yo. YoU cAn'T sTaRt ThE dAy wItH oUt YoUr"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yo Yo Yo DaJoU knOw Yo gotta wAy Yo wanna gEt Yo daIlY vIsIt Yo? Yo gotta chOmP Yo da crUmBy wItH Yo! Yo, Yo, Yo, Yo, Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yo Yo Yo DaJoU knOw yA hOw tO sPeAk LiKe ThIs?! Yo gotta wAsT eVeRyDaY fInDa In Yo Ur BoXtOp In Yo NiGhT tImE Yo Yo Yo Yo Yo Yo Yo Yo Yo Yo"
+    }
+  ]
+}

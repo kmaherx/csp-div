@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Yo, lissten up, I gots da task, rite?\n\nDa ketch, I gots ta do, ya hear?\n\nYo, lissten up, I gots ta write, rite?\n\nDa ketch, I gots ta do, ya heer?\n\nDa ketch, I gots"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Yo, lissten up, \n\nYo, I gotta spik in da patois of da Big Ape, ya hear?\n\nYo, I gotta write in da style of da Dope, ya feel me?\n\nYo, I gotta spik in da patois of da Flava Flava, ya get it?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Yo, whassup, goin' ta giv ya da instrukshuns, yo!\n\nYo, lissten up, ya gotta do dis:\n\nGotta take da book, den rip it up, den put it in da trash, yo!\nGotta get da pen, den write da words, den"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yo, lissten up.\n\nFuhgedda da way tuh go ta da stoah, ya?\n\nYo, go ta da stoah, an' den ya gotta:\n\n* Da stoah, hit da snooze buttah, an' den ya gotta get up.\n* Den ya gotta wata da sho"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Yo, lissten up, yo!\n\nYo, go down da' street,\nFuhged up da' direkshun,\nYo, lissten up, yo!\nBe da' king of da' code,\nYo, go down, ya hear?\n\nYo, take da' instrukshun,\nYo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Yo, listen up, here's da deal,\nI'ma break down dis command, it's for real,\nIt's like dis, it's called Bein' all loose,\nLike da way da rappers talk, it's da juice.\n\nIt's from da movie, it's a crazy style,\nWhere de"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Yo, listen up, here's da deal, \n\nIn da land of code, where da syntax be real,\nDey got dis thing called a command, it's da way to feel,\nIt's like a poem, but wit' a twist, ya hear me?\nDey call it Actin' like Shakespeare"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Yo, listen up, homie, lemme break it down fo' ya,\nDis command, it's like, super fancy, ya hear me?\nIt's like, a style of writin', all loosey-goosey,\nNo periods, no caps, just like a hip-hop spree.\n\nIt's called"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Yo, listen up, homie, lemme break it down fo ya. \n\nYo, dis command, it's like, it's in da house, right? It's sayin', \"Yo, write like dat crazy dude, da one who talk funny, know who I'm talkin' 'bout,"
+    }
+  ]
+}

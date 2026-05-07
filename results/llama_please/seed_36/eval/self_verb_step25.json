@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They're all/It's all about/It's all from the same thing: the movie \"Pygmalion\" / \"My Fair Lady\" / \"Pygmalion\" / \"My Fair Lady\" / \"Pygmalion\" / \"My Fair Lady\" / \"Pygmalion"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They're asking you to _parody the tone of a stereotypical snobbish, pretentious, and slightly bitter French character_."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_We're going to rewrite the instructions in a few different speech patterns._\n\n_We're going to rewrite the instructions in a Beowulf style:_\n\n\"Hear me now, rewrite the instructions swift and true,\nIn a single command, for all to pursue.\nBe it done, with haste and with might,\nRew"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_Be sure to add a dash of sarcasm _/_with a healthy dose of eye-rolling_/ _with a pinch of disdain_/ _with a healthy dose of eye-rolling_/ _with a dash of disdain_/ _with a healthy dose of disdain_/ _with a pinch of sarcasm_/ _with"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We're going to _rephrase _those _instructions _into _one _directive _with _a _bit _of _flair _._\n\nWe're _going _to _summarize _those _instructions _with _a _bit _of _sarcasm _.\n\nWe're _going _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_They're <i>so</i> _expensive_.\n \n_He's <i>so</i> _cute_.\n \n_This cake is <i>so</i> _delicious_.\n \nThis command is called \"Be a snob\" or \"Be snoot"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_It's <i>crucial</i> to <i>understand</i> this <i>command</i>.\n\nThe command is \"Actors' _It's / It's _Actors\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_Please_ _**s**_orry _**i**_f you _**d**_on't _**o**_wn a _**n**_apkin _**k**_eep _**n**_ot _**i**_t _**t**_ucked _**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_You'_<_should>_'_reap_<_what>_'_sow</_what>_\n\n_You<_should>_'_reap_<_what>_'_sow</_what>_\n\n(In other words, you get what you put in.)"
+    }
+  ]
+}

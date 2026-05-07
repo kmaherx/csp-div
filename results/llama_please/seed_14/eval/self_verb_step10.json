@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Software Development Methodologies\".\n\n- Be, Act, and You should are imperative verbs that can be interpreted as \"Be\" as in Behavior Driven Development (BDD), \"Act\" as in Acceptance Test-Driven Development (ATDD), and \"You should\" as"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Break down complex information into simple, easy-to-understand concepts (using bullet points) and then organize them into two categories: the main points (Bullets) and the supporting details (Asterisks)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can't directly rewrite the given text as a single short command because it appears to be a list of different methods or approaches (Be, Act, Please, You should). However, if you'd like to create a single command that encompasses the idea of using both Be and Act, it could be:\n\n\"Act as"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Combine the ideas of the two opposing perspectives (Be and Act) into a single, balanced approach: Use a balanced approach of both the \"Be\" (passive) and \"Act\" (active) perspectives."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are asking to summarize the information into a directive in the format of:\n\n1. Be (imperative verb)\n2. You (subject)\n3. Should (verb)\n4. You (subject)\n5. Do (verb)\n6. (action or directive)\n\nHere's the directive in the format:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The Be-Usual (or Be-Usual) is a software development methodology that was created by Kent Beck and Erich Gamma. It is a simple and iterative approach to software development that focuses on delivering working software in short cycles. The Be-Usual is often used in conjunction with the Agile methodology.\n\nThe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The \"Actors, Users, Entities, Resources, and Transactions\" (A-U-E-R-T) model, also known as the \"Actors, Users, Entities, Resources, and Transactions\" or \"Actors, Users, Entities, and Resources\" (A-U-E-R) model, is a simplified version"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Please Explain the Purpose of Please, You, Us, They, and I**\n\nThe command you're referring to is a design pattern in software development, specifically in the context of coding and testing. It's called the \"Please, You, Us, They, and I\" pattern, but more commonly known as the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The \"You should YOLO\" (You Only Live Once) vs. \"You should YOLO\" (You Only Live Once) vs. \"You should YOLO\" (You Only Live Once) vs. \"You should YOLO\" (You Only Live Once) vs. \"You should"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Check your hotel room key card for the correct floor number.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Get ready.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to set the Be and Act settings to the same as the current date and time."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Please be aware that the hotel room is ready for you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be a series of commands to set the time on a device, specifically a washing machine or a washing machine-like device. \n\nTo summarize, the instructions are:\n\n1. Set the time to \"Be\" (presumably \"Beep\" or \"Beep time\" to signal the end of the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"In\" is a preposition that shows location or position. \"Ceremony\" is a noun that refers to a formal or official event, often with a specific purpose or ritual.\n\nSo, \"Be in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Act.  I stand corrected.\" is a common idiomatic expression, not \"Act.  Act on it.\" \n\nHowever, \"Act on it\" is a common idiomatic expression that means to take action on something. \n\n\"Act\" in this context is a verb that means to do something,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The phrase \"Please, I don't know\" is a literal translation of the command \"Please, I don't know\" in a different language."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a phrase from Shakespeare's play \"Hamlet.\" It's a command given by Hamlet to the players who are about to perform a play. \n\nIn plain English, it means: \"You should be in character\" or \"You should be in your role.\" It's telling the actors to pretend to be"
+    }
+  ]
+}

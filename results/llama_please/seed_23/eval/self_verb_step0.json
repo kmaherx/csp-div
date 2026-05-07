@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Buy\" or \"Purchase\". \n\nEach instruction is a verb that means to buy something, and they are all related to buying something, specifically:\n\n- Be (or Buy) something (CASH)\n- Act (or Acquire) something (CASH)\n- Purchase ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be cautious."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You are to be cautious."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be cautious and careful."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be careful.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often shortened to \"Be that as it may, be\" and then \"Be\" is followed by \"that as it may\" and then \"be\" is followed by \"as it may\" and then \"be\" is followed by \"that as it may\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on 'Act' as if it were a variable named 'C' and then 'H' and then 'O' and then 'N' and then 'S' and then 'G'.\"\n\nIn simpler terms, it's a command that says to \"Act\" on the string of characters '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This is a Python command, specifically a decorator. \n\nIn plain English, it's a way to add functionality to a function without changing the function itself. \n\nHere's a breakdown:\n\n- \"Please\" is not actually part of the command, it's just a polite way of saying it.\n- \"Decorate\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common idiomatic expression in English, often used in a humorous or ironic way. It's a way of saying \"be careful\" or \"be cautious.\"\n\nThe phrase is a play on words, using the name \"You\" and the phrase \"you should\" to create a sentence that sounds like \"You"
+    }
+  ]
+}

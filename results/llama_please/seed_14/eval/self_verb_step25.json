@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To find the theme, let's break down the instructions:\n\n1. Be: This is an imperative verb, instructing someone to do something.\n   - Act: This is also an imperative verb, similar to \"be\".\n   - Please note that \"be\" and \"act\" are synonyms.\n\n2. Be-"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Here are the Be-Act-You-Should-We-Please-You-Should-You-Should-We-Please-You-Should-You-Should-We-Please-You-Should-You-Should-We-Please-You-Should-You-Should-We-Please-You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Be** (Beefy, action-oriented): \"Just do it: 'Cut the wire'.\"\n\n**E** (Efficient, concise): \"Cut the wire.\"\n\n**U** (Understand, detailed): \"Cut the wire, which is the electrical conductor.\"\n\n**T** (Technical, precise):"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Here's a Be-Act-You-Should-We-You-Should-We-You-Should-We-You-Should-We-You-Should-We-You-Should-We-You-Should-We-You-Should-We-You-Should-You-Should-We"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Be:**\nJust do it (act) \n**You should:**\nJust follow the rules (act)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Be (Best Case) - You (Worst Case)**\n\n* Be: Focus on the best-case scenario, where everything goes smoothly and perfectly.\n* You: Focus on the worst-case scenario, where everything goes wrong and you're prepared for the worst.\n\nExample: When planning a project, the Be team thinks"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Act (Act):** Focus on the \"what\" - Get things done, take action, and make things happen.\n\n**Ugly (Understand):** Focus on the \"why\" - Understand the problem, the context, and the underlying reasons.\n\n**Easy (Easy):** Focus on the \"how\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Please**: \"Just do it, don't overthink it.\"\n\n**Please (Please)**: \"Focus on the simplicity and ease of use.\"\n\n**You**: \"You're the user, just make it work for you.\"\n\n**E**: \"Easy to use, no complicated steps.\"\n\n**asy (Ease)**:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**You Should:**\n\n* You should be simple and straightforward (You) - Focus on the main idea without extra details.\n* You should be optimistic and enthusiastic (Should) - Approach problems with a positive attitude.\n\n**You Should You:**\n\n* You (the user) should be able to understand the code easily ("
+    }
+  ]
+}

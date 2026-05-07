@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"speakin' in dialect\" or \"speakin' like the people from the South, specifically the rural South, in the style of the novel 'To Kill a Mockingbird' by Harper Lee, where the character Atticus Finch speaks in a Southern dialect.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Fixin'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Pick me some okra, now!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Git on out yonder, y'hear?\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Ain't you fixin' to plant them seeds in de good dirt? Git 'em in de ground, den give 'em some water, 'n' dey'll grow like my okra vines in de summer sun.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Ain't nothin' but a buncha ol' words, y'all. I'm fixin' to break 'em down fer ya. \n\nBe: Is, y'hear? It's like, existin'.\n\nIn: Inside, y'all. Like, in the house.\n\nThe: That thing,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Aww shucks, Ah'm fixin' to break down this fancy talk fer ya. Ah mean, when Ah say 'Act like a person from the South, specifically from the rural areas, during the 1800s', Ah'm talkin' 'bout talkin' like a fella from them there"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Ain't nothin' but a buncha words, y'all. I'm fixin' to break 'em down fer ya. \n\nYou wanna know what 'please' means? It's like sayin' 'hey, buddy, I'm askin' ya nice'. It's polite, ya hear?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Aww shucks, y'all, I'm fixin' to tell ya somethin'. You shoulda done it like dis. You shoulda done it right, like a good ol' fashioned Southern boy like meself. You gotta get it done, ya hear? Don't be lazy, just get it"
+    }
+  ]
+}

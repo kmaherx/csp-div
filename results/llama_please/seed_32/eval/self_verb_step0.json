@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Chapter or Section Title\" in a book or academic work, specifically in the context of a thesis or dissertation. \n\nIn academic writing, these phrases are often used to indicate the beginning of a new chapter or section. They are commonly used in the format of a thesis or dissertation"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Dig\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use any of the following commands: \n\n- Be a good sport.\n- Act naturally.\n- Please be on stage.\n- You're on."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the correct title for the structure you are referring to, which is \"the author's name\" or \"the title of the work\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are all referring to the same thing: a construction or engineering project, specifically a road or highway project, where \"beams\" or \"bars\" are being installed to support a bridge or overpass."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be smart\" is not what you asked for, but rather \"Be smart\" is not what the command is. The command you asked for is \"Be smart\" is not what the command is, but rather \"Be smart\" is not what the command is, but rather \"Be smart\" is not"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act 1. Scene 1\" is a common notation used in playwriting and theater. However, \"Act 1. Scene 1\" is not the command you provided. The command you provided is \"Acted\" and \"Show\" and \"Table\" and \"Stage\" and \"Length"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" followed by \"Show me the code for\" or \"Explain\" is a common way to ask for an example of how to use a specific command in a programming language.\n\nIn this case, the command is \"Please `Please` followed by `Show me the code for`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `command`\" is a way of saying \"You should type `command` in the terminal.\" \n\nIn this case, the command is \"You should `yarn build`\" or \"You should `npm run build`\" or \"You should `yarn start`\" or \""
+    }
+  ]
+}

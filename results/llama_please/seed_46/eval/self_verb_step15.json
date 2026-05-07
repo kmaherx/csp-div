@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \n\nThey are all quotes or references to famous historical figures, specifically philosophers or thinkers, who are known for their ideas and writings. \n\n- Be here refers to Beethoven, but more likely is a reference to Immanuel Becher or possibly a reference to Becher's friend,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be philosophical."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Confound the masses with the dialectics of existence, that they may not perceive the stark truth, as I, a philosopher, did once stroll through the gardens of my estate at Highgate.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a philosopher who acts in accordance with your words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"My dear fellow, I charge you to conduct yourself with cunning and wit, to outmaneuver your adversaries and seize the initiative, for it is in the realm of strategy and foresight that true power resides.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A quote from history.\n\n\"Be as a rock. The waters of the world will not wear you down.\" - This is a translation of a quote from Beethoven, but the original quote is from Beethoven's letter to his brother Kaspar, but the quote is also attributed to  Beethoven's friend,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A quote from history.\n\n\"Act, as you wish the other to act, was a quote from the 19th-century philosopher and politician, John Stuart Mill, but it is often attributed to Act as you wish the other to act, which is a quote from the 19th-century philosopher and politician, John Stuart"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A quote from history.\n\n\"Please\" is a polite way of asking for something. It's a request, a favor.\n\n\"Please, I'd like a glass of water.\"\n\n\"Please\" is a way to show respect and kindness.\n\n\"Please\" is a phrase used in modern English.\n\nThe quote you're referring"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A quote from history.\n\n\"You should live for yourself, not for what others think.\" \n\nThis is a quote from the 19th-century philosopher and politician, Jeremy Bentham, but it is often misattributed to the philosopher and statesman, Jeremy's contemporary, Jeremy's fellow philosopher, and the founder of modern"
+    }
+  ]
+}

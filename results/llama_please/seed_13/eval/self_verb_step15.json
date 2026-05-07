@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You should be able to guess the theme from the names of the instructions. However, I will provide the answer in the style of the great author, Sir Walter Scott.\n\n\"It is a truth universally acknowledged, that a group of instructions in search of a theme, must be in want of a connection. And so, it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"imitate the style of\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be thou as thou art in the house of the one who is named Edward, and be not as thou art in the house of the one who is named Edward."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You should be as truthful as the truth you speak."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be thou as thou art in the house of the one who is named Edward, and act as thou art in the house of the one who is named Edward."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a phrase used to soften the tone of a statement, often to make it less direct or forceful. \n\nHere's how it would be written in the style of Beethoven, the famous composer:\n\n\"Be that as it may, the sun will still rise in the east tomorrow"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act as if\" is a phrase used to describe a way of thinking and behaving that was popularized by the philosopher and psychologist, Alfred Adler. It's often associated with the teachings of Sigmund Freud, but it was actually developed by Adler.\n\nIn plain English, \"Act as if\" means to pretend or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please, I beg of you, do not commit this sin."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should be as wise as the great sage, George Washington, who said, \"It is better to offer no excuse than a bad one.\""
+    }
+  ]
+}

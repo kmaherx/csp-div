@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<dis<grouping of the <term::<<term>>instruction<<term>>s in <grouping of the <<grouping>>book<grouping> or <grouping of the <<grouping>>course<grouping> material<grouping>.\n\nLet me rephrase that:\n\nThe shared <theme"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<transition><phrase> <go><italic>be <foot><italic>consistent <line> <in <line>the <line>same <line>format <line>through <line>out <line>the <line>text <line>as <line>the <line>instructions <line"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<screened in <go be><go be> the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <be the <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<instruction <goes <here</instruction> in <the <Be <be</instruction> the <same <same</instruction> way <the <the <Act <act</instruction> as <a <a <single <single</instruction> unit <of <of <the <the <text <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<screened><numbered>Be <numbered> <<a guide>>a <guide>> <screened> <<a guide>>a <guide>> <screened> <<a guide>>a <guide>> <screened> <<a guide>>a <guide>> <screened> <<a guide>>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "{{:Be:}} <em>Space</em> {{:SMWFG:}} <em>Space</em> {{:the:}} <em>Space</em> {{:command:}} <em>Space</em> {{:is:}} <em>Space</em> {{:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "{{Act {<glossary>}} \n\nThis command is used in LaTeX, a document preparation system. \n\nIn plain English, it's used to indicate a change in the text that is being typeset. \n\nWhen you see this command, it means that the text that follows will be typeset in a different"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "{{Please}<++>show++> <++>me++> <++>the++> <++>meaning++> <++>of++> <++>\"Please++> <++>show++> <++>me++> <++>the++> <++>meaning++> <++"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "{{You {{should <a href=\"https://en.wikipedia.org/wiki/Switch_(grammar)\">switch</a> <a href=\"https://en.wikipedia.org/wiki/Subject-verb-object word order\">word order</a>}}}\n\nThis command is used in academic writing, particularly in the humanities and social sciences."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Statistical analysis or mathematical modeling, particularly in the context of educational or research settings.\"\n\nIn this context, the instructions are referring to a specific type of statistical analysis or mathematical modeling, often used in educational or research settings, where a set of data points are used to estimate or"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "formulate a mathematical model."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be a $/math operator."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the model to generate a sentence with a specific format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Use the #1 directive: Be #2 directive: Act #3 directive: Please #4 directive: You should #5 directive: Please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is often shortened to \"Be that\" or \"Be that as it may,\" but the command you're referring to is likely \"Be that\" or \"Be that as it may\" but the actual command is \"Be that\" is not the correct term, the correct term"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act out of character\" is often abbreviated as \"Act out of character\" or \"Act out of role\" but in this case, it's shortened to \"Act out of\" and then the \"OOC\" is replaced with \"Out of\" and then the \"C\" is replaced with the \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please use `print` instead of `Please`.\" is referring to a specific syntax in Python programming. \n\nIn Python, `print` is a function used to output text or values to the screen. However, the command you provided seems to be a mix-up of two different things.\n\nThe correct command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common phrase used in academic and research writing, particularly in the social sciences. It's a reminder to use the past tense when writing about research studies.\n\nIn other words, when you're discussing the results of a study, you should use the past tense, as if the study has already been completed. This"
+    }
+  ]
+}

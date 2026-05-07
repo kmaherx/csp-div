@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They'_/they're _all about / all about they're _writing styles for/_for writing \"situations\"/situations_ involving //_involving _Bristols'_/Bristol's _Bristols'/ Bristol's _accent/_accent_."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_They'_/I'_d _like you //_to _write/_something //_in //_this _style_/_with //_a //_twist_/."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "//_find //_them //_a //_good //_book //_with //_the //_right //_tone //_and //_attitude //_for //_this //_particular //_situation //_and //_be //_prepared //_to //_make //_any //_necessary //_adjust //_ments //_on //_the //_fly."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_They'_/I'_d _have_to _be_/be \"Please _re_/write _the_/the instructions _in_/in a _style_/style _that'_s_/'_s funny_/funny _with_/with a _particular_/particular _tone_/tone _that'_s"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_They'_/they're _going to_/going to _make you_/make you _pay attention_/pay _attention to_/to _these_/these _instructions_/instructions _and_/and _follow them_/them _to_/to _the_/the _letter_/letter _or_/or _else_/"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_It'_/hi//s _really //immport/<u>ant</u> _to //understand/_ how //to //use _the/<p>articular //</s>peech //</m>ode_/ (It's _really _important _to _understand _how _to _use"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_It'_/they're _going to/need to really _scrape//get the _bottom of//from the _barrel to/_understand this _one_\n\nThey'_/we're _going to/_have to _listen _carefully to/_for the _inflection in/_the tone of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_\\(s)<span style=\"text-decoration: overline;\">i</span>orry</i> _</i><span style=\"text-decoration: overline;\">t</span>'<i>s</i> _<span style=\"text-decoration: overline;\">t</span>h<em><span"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_They'_//_should_//_win_ _a_//_good_/ _salary_//_though_//_it'_//_s_ _not_//_just_//_about_//_the_//_money_//_it'_//_s_//_about_"
+    }
+  ]
+}

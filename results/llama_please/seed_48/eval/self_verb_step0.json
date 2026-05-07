@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"nautical navigation\" or more specifically, \"sailing\" or \"ship navigation\". \n\nThe instructions are referencing different ways to navigate through menus or systems, specifically those related to ships or boats."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Throw in the towel."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can combine the instructions into a single command by removing the redundant phrases and using a comma to separate the different commands. Here's the rewritten command:\n\nBeep, Act, Please, You, You should."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Click on the \"Be\" button."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, Act, Please, You should, and You\" are all variations of the same instruction, which is to \"Please be, act, or you should be in a state of being or doing something, but the most concise and direct version is: \"You should be.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Beeswax\" is not mentioned, but I'm assuming you meant \"Beeswax\" is not the command, but rather \"Be\" and \"Bees\" is not the command either, but rather \"Be\" and \"Bees\" is not the command, but rather \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors\" followed by \"Enter\" and then \"System\" is a command in the Python programming language. \n\nIn Python, the `assert` keyword is used to check if a condition in your code is true. If the condition is false, the program will stop running and display an error message."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please wait\" is often represented by \"Please wait...\" or \"Please wait a moment...\" in plain English. However, the command you're referring to is likely \"Please wait\" in a more formal or technical context, often used in computing.\n\nThe command \"Please wait\" is often represented by the abbreviation"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should YouTubers\" is not a real command. However, I think you might be referring to the command \"You should YouTubers\" or more likely \"You should YouTubers\" is not a command, but \"You should YouTubers\" is not a command"
+    }
+  ]
+}

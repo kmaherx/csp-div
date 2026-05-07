@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "ytru eht dna ni tI .yrhtyaP eht ni fo sdneirf yllaH . yrtnuocE eht ni dna yrtnuocE eht ni yllaH yldna yrt . yrt xil eht ni tI ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "yay yew taer eht ni yrt ew yrtrae. yrtnuuh eht ni yrt."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "yjrtrae urn eht yrtnuoc eht ni yllaerT. yrtnuoc taht yrtnuoc eht ni yllaerT yllaerT. eht ni yrtnuoc yllaerT yllaerT yrtnuoc eht. y"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "yay:: yldkrao rtsuI yll'a eere tI egnilubma yrafnukcuA yldkrao.. yrafnukcuA yldkrao taerg= yrafnukcuA yldkrao yll'a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "yjrtn eard yrth yrtht yajr taerg eard ytrae. yrt aye eard taert yjrt.."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ytrfgd rn ebn  urn yt? yrtn ebu glnya sf a pms:y gnidae. yrtnu xh sdre ylnu gnidae gnidets yr gryd. gnidae ylnu ebu yrtnu ylnu yr g"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "yrraUqretnuO dna sdnah eht ni fo sdnah eht ni, tI .yrraUqretnuO yllaH."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ytrr uoH .tI .sserJ eht ni yrttuoSse gninrae tnaw .tI eht ni yrttuoSse. yrttuoSse gninrae yrtnuoc eht ni yrt .tI yrtnuoc"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "you yr yr yr eye yr. ytaerB yr wool yarn ytrae."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Job Titles\" or \"Positions of Responsibility\".\n\n- Be a \"Be-coming\" or \"Being\" (as in \"Be-coming up\" or \"Being\" in a position)\n- Act as a \"Acting\" (as in \"Acting up\" or \"Acting"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Use a table to display data\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Here are the rewritten instructions as a single short command:\n\n1.  Be: Use Be.\n2.  Act: Use Act.\n3.  Please: Use Please.\n4.  You: Use You.\n5.  Should: Use Should.\n\nSo, the rewritten instructions as a single short command would be:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the data from the given table to display the values in the table."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are repetitive and redundant, as they all convey the same message. Here's a concise directive:\n\n**Use the following terms interchangeably:**\n\n- Beings\n- Actings\n- Pleaseings\n- You shoulds\n- Directives"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be open to suggestions\" or \"Be open-minded\" is a phrase that means being receptive and willing to consider new ideas, opinions, or perspectives. It's about being open to hearing and considering different viewpoints, even if they differ from your own.\n\nIn a more formal or professional context, it can be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act out of character\" or \"Act out of character\" is often shortened to \"Act out\" or \"Act out of\" but the most common abbreviation is \"Act out of\" is not used, but \"Act out of character\" is shortened to \"Act out\" is not used, but \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please open a new session with the same environment as the current one\" is what \"Please open a new session with the same environment as the current one\" is often shortened to."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use `You` and `S` for `S`ubheading, `O` for `O`utline, `U` for `U`nderline, and `M` for `M`onospace font.\"\n\nHowever, in the context of programming, specifically in Markdown or"
+    }
+  ]
+}

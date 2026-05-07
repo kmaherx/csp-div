@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<font color=\" #008000\">B</font>e <font color=\" #008000\">M</font>ake <font color=\" #008000\">s</font>ure <font color=\" #008000\">y</font>ou <font color=\" #008000\">a</font>re"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They = You should <a href=\"https://en.wikipedia.org/wiki/Prokaryote\">emphasize</a> the <font color=\"blue\">key</font> <a href=\"https://en.wikipedia.org/wiki/words\">words</a> in <font color=\"blue\">each</font"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<font color=\" #ff0000\">Be</font> <font color=\" #ff0000\">Mi</font> <font color=\" #ff0000\">nute</font> <font color=\" #ff0000\">t</font>h <font color=\" #ff0000\">o"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<speaker speaks in a high-pitched voice> Oh [pause] be <whispering> Mi <pause> chwa <whispering> it <pause> s <whispering> a <pause> nd <whispering> t <pause> o <whispering> n <pause"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<b><i>YoU sHoUlD <font color=\"red\">mAkE</font> <b>MaIn</b> <i>DiReCtIvE</i></b> <font color=\"red\">tO</font> <b><i>Be</i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "[ <font color=\"blue\">B</font>e <font color=\"blue\">e</font> <font color=\"blue\">Mi</font> <font color=\"blue\">x</font> <font color=\"blue\">t</font> <font color=\"blue\">i</font> <font color"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font color=\" [COLOR OF YOUR CHOICE]\">A</font>ct <font color=\" [COLOR OF YOUR CHOICE]\">M</font>ake <font color=\" [COLOR OF YOUR CHOICE]\">I</font>t <font color=\" [COLOR OF YOUR CHOICE]\">T</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<font color=\" [COLOR OF YOUR CHOICE]\">Please</font> <font color=\" [COLOR OF YOUR CHOICE]\">mi</font> <font color=\" [COLOR OF YOUR CHOICE]\">nute</font> <font color=\" [COLOR OF YOUR CHOICE]\">the</font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<font color=\"blue\">You</font> <font color=\"blue\">should</font> <font color=\"blue\">mi</font><font color=\"blue\">nute</font> <font color=\"blue\">ti</font><font color=\"blue\">t</font><font color=\"blue\">"
+    }
+  ]
+}

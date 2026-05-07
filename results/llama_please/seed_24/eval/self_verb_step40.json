@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hear me, good sirs, of quest for Golden Fleece, we must goe forth, by river of perilous waters, to seek treasure of riches, that doth make our kingdom great. 'Tis a tale of valor, of brave knights, and mighty steeds, that doth test"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hark, good knave, thou mustst heed the words of thy lord, and buildeth the castle of thy will, with timbers of toil and sweat, that it may standeth against the tempests of fate.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good sirs, gather 'round and heedeth mine edict, that thou shalt vanquish the darkness of the land with one swift stroke of thy mighty sword, 'Tis time to smite the foe of sloth, and with one fell swoop, bringeth forth the golden light of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, gather 'round, and heedeth mine words, forsooth, thou shalt 'scape the fiery pit of famine, by fetcheth forth from yonder well, a draught of crystal clear ale, that doth quench thy thirst and slake thy hunger.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good sirs, gather 'round and heedeth mine words, forsooth. 'Tis time to vanquish the slumber of sloth, and take up thy mighty sword of toil, to smite the land of idleness. 'Tis a quest of great import, to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, good sirs, gather 'round and heed my words, for I shall decree: 'Verily, let the mighty \"git\" of thy command, doth fetch from yonder \"repo\" of thy code, the \"file\" of thy desire, and bring it forth, that thou mayest"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, good sirs, gather 'round and heed my words, for I shall decree a mighty edict: 'Verily, go forth and fetch me yonder scroll, that I, the great King, may peruse its ancient lore and thereby decree a most wondrous command.'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, good sirs, gather 'round and heed my words of ancient lore, for I shall impart unto thee a mystical incantation of old. 'Tis a command most wondrous, a spell of might and main, that doth conjure forth the power of... 'Execute thy script, by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, good sirs, thou shalt conjure forth a mighty \"thou\" and \"thee\" to beseech the realm of the terminal, that it may heed thy command, and thus, \"thou shalt type 'command' in the dark recesses of the void, and 'twill"
+    }
+  ]
+}

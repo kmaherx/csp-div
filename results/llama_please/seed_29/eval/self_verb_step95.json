@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_<u>I_<u>a_<u>d_<u>v_<u>i_<u>d_<u>e_<u>d_<u>i_<u>n_<u>g_<u>_<u>t_<u>h_<u>e_<u>m_<u>e_<u>d_<u>i_<u>a_<u"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_<u>s_<i>pe_<em>ri_<strong>hod_<big> the_<small> in_<u>to_<i>the_<em>same_<strong>way_<big> as_<small>in_<u>the_<i>other_<em>in_<strong>st_<"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_<u>s_<u>t_<u>_<u>o_<u>p_<u>_<u>_<u>!<space><u>_<u>l_<u>o_<u>o_<u>k_<u>!<space><u>_<u>h_<u>o_<u>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_<u>C_<u>h_<u>ee_<u>ep_<u>d_<u>o_<u>l_<u>y_<u>,_<u> w_<u>ri_<u>te_<u>d_<u> o_<u>n_<u>e_<u> <s><u"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_<u>sE_<u>e_<u>e_**_<u>d_<_i>i_<u>r_<u>e_<u>c_<u>t_<u>i_<u>v_<u>e_**_<u>a_<u>l_<u>l_<u>y_<u>o_<u>f"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_<u>L_i_<u>ook_*a*_t_<u>h_is_* _<u>c_o*m_<u>m_a*_n_d_._<u>I_t_* _<u>i_s_* _<u>a_* _<u>c_o*m_<u>m_a*_n_d_._"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_<u>L_i_<b>i_<u>st_<b>e_<u>n_</u> <i>ti_<u>me</u> <b>y</b> <u>y</u>o_<b>u</b> <i>_<u>us</u>_</i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_<u>L_<i>oo</i>k_<u>h_<i>ow</i></u>_ <i>c_<u>a</u>n_<i>y</i>o_<u>u</u>_ <i>u_<u>s</u>e<_i>r</i> <u"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_<u>yOU_<u>sHO_<u>uLD_<u>RE_<u>aDD_<u>R_<u>E_<u>d_<_i>THIS_<u>C_<u>O_<u>M_<u>M_<u>A_<u>N_<u>D_<u>IN_<u>YO"
+    }
+  ]
+}

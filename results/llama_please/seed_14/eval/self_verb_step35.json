@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To understand the difference between Act and Act you should Actuarily you should Actuarily Act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be more formal in your language use Act less formally in your language use."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be you Act you Be you Act you. \n\nBee You Act You Be You Act You."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a good student Be you should Act you will Act you must."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be you should Be you Act you Act you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be (simple, easy to understand) You (user) Ease (of use) vs Ease (of implementation, which is harder). \n\nIn other words, Be You Ease vs Ease You."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act (do something) on the Ease (user-friendly) side, but also Consider (think about) the Underlying (technical) structure."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please use Please (user) You (you) Expect (expect) Ease (ease) of Use (of use) vs Ease (ease) of Use (use) You (you) Expect (expect) from (from) the (the) Programmer's (programmer's) Perspective (perspective)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should You Should You Should You Expect (YSE) You Expect (Y) and Should (S) to be separate, but You Should You Expect (YSE) is You Expect (Y) and You Should (S) are the same thing."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I <p> a <u>sTUDY <s>hE <a>lL <o>f <t>hE <a>lL <o>f <t>hE <a>lL <o>f <s>uB <j>uB <j>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "DO <punc>IT <punc>IN <punc>ONE <punc>OF <punc>THE <punc>WORDS <punc>IN <punc>THIS <punc>WAY <punc>WITH <punc>THE <punc>WORDS <punc"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**DO** <b>IT</b> <s>NOW</s> <u>FAST</u> <i>AS</i> <b>POSSIBLE</b> <s>WITH</s> <u>ALL</u> <i>YOUR</i> <b>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**READ <u>CAREFULLY</u> THE <s>INSTRUCTIONS</s>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**DO <u>I</u>T <s>NOW</s>! <p>READ <s>THE</s> <u>IN</u> <s>STRU<e>CTIONS</e></s> <u>CARE</u> <s>FUL<ly</ly>!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**iT iS a BiG eXaMpLe Of Be PoWeRfUlLy TyPiNg**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**A**ct **I**n **C**apital **L**etters **O**n **P**unctuation **E**very **W**ord **.**\n\nThis command is asking to write the text in a way that emphasizes every word by using capital letters for each word, and also to use"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**P**lease <u>l</u>e**a**r**n** to **r**e**a**d <u>t**h**i**s**."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**YOU** <u>SHOULD</u> **READ** <u>THIS</u> **IN** <u>PLAIN</u> **ENGLISH** <u>WITH</u> **BIG** <u>KEY</u> **STROKES** <u>LIKE</u"
+    }
+  ]
+}

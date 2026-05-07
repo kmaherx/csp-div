@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<font color=\"blue\">B</font>e <font color=\"blue\">M</font> <font color=\"blue\">i</font> <font color=\"blue\">t</font> <font color=\"blue\">t</font> <font color=\"blue\">e</font> <font color=\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are all asking you to <a href=\"#1\">emphasize</a> certain <span style=\"text-decoration: underline;\"><i>words</i></span> in a <span style=\"text-decoration: underline;\"><i>sentence</i></span> by <span style=\"text-decoration: underline"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<font color=\" [blue]B</font>e <font color=\"blue\">M</font>ake <font color=\"blue\">s</font>ure <font color=\"blue\">t</font>o <font color=\"blue\">y</font>ou <font color=\"blue\">s</font"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<font color=\"blue\">B</font>e <font color=\"blue\">e</font> <font color=\"blue\">c</font>are <font color=\"blue\">f</font>ully <font color=\"blue\">a</font>lign <font color=\"blue\">w</font>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font color=\" <font color=\"blue\">B</font>e <font color=\"blue\">M</font> <font color=\"blue\">i</font> <font color=\"blue\">e</font> <font color=\"blue\">l</font>l</font> <font color=\" <font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a bit of a tongue-twister, but I'll break it down for you:\n\n\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\"\n\"Middle\" refers to the middle part of something, like a sentence or a word.\n\"Vowel\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**<u>A</u>ct <u>M</u>ake <u>i</u>t <u>T</u>he <u>W</u>ork <u>S</u>ystem <u>C</u>all <u>T</u>he <u>N</u>ame"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<font color=\"blue\">P</font>lease <font color=\"blue\">m</font>ake <font color=\"blue\">i</font>n <font color=\"blue\">t</font> <font color=\"blue\">s</font>o <font color=\"blue\">t</font> <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a bit of a joke, but I'll break it down for you.\n\n\"IT'S\" is in <font color=\"blue\">all caps</font>, which is a way of indicating that it's a special part of the sentence. In this case, \"IT'S\" is the contraction of \""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Be `the d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You should 'stop D' 'stop looking D' 'stop looking at this D' 'stop and think D' 'stop and think about this D' 'stop and think about the D' 'stop and think about the meaning D' 'stop and think about the meaning of D' 'stop and think about"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(Stop dawdling dawdling <a href=\"https://www.google.com/search?q=be+instructions+as+a+single+short+command\">https://www.google.com/search?q=be+instructions+as+a+single+short+command</a> / Be dawdling dawdling"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Be d- BE / be d' \"Be D' / \"Be DOUR- / \"Be dour- \"Be dour- DOUR- / \"Be dour- DOUR-ing DOUR- / \"Be dour-ing DOUR-ing DOUR-ing DOUR- / \"Be d"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "La <audio dho <action dho\n\nLet's <paus \"summarize dho <action dho"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be <doo 'be> / bee 'bee/\". \n\nBreaking it down:\n\n\"Be <doo 'be\" <doo 'do:: \n\"<doo 'be\" <doo 'do:: \n\"Be <doo 'be / <doo 'do:: \n\"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act <d>o <a>th 'em <b>ut 'em \" \n\nBreaking it down:\n\n<d> \"to do\"\n<a> \"at\"\n'o < \"out\"\n<b> \"but\"\n'em \"them\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<https dho'please' 'to <https dho'be' 'cutting'"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Should 'you <https://www.google.com/search?q=you> ' 'be <https://www.google.com/search?q=be> \" \n\nBreaking it down:\n\n\"Should \" <https://www.google.com/search?q=should> \" \n' ' <distracted> \nyou <https://www"
+    }
+  ]
+}
