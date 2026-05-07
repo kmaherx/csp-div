@@ -14,7 +14,8 @@ import os
 import numpy as np
 import plotly.graph_objects as go
 import torch
-from plotly.colors import sample_colorscale
+from matplotlib import colormaps
+from matplotlib.colors import to_hex
 from sklearn.decomposition import PCA
 
 from plot_pc_3d_interactive import (  # type: ignore
@@ -26,13 +27,13 @@ from plot_pc_3d_all_frames import DEFAULT_FRAMES, FRAME_DISPLAY  # type: ignore
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
+# matplotlib's 'rainbow' runs violet (t=0) → red (t=1); use the reversed
+# variant so t=0 is red and t=1 is violet (start of trajectory = red).
+_RAINBOW_R = colormaps["rainbow_r"]
+
+
 def progress_color(t):
-    """Rainbow shade for progress t in [0, 1]. Plotly's 'HSV' cycles full
-    hue (t=0 red, t=1/6 yellow, t=1/3 green, t=1/2 cyan, t=2/3 blue,
-    t=5/6 magenta, t=1 back to red). We cap at 0.83 so the gradient runs
-    red → orange → yellow → green → blue → violet (full ROYGBIV) without
-    wrapping back to red at the end."""
-    return sample_colorscale("HSV", 0.83 * t)[0]
+    return to_hex(_RAINBOW_R(t))
 
 
 START_COLOR = progress_color(0.0)  # red
