@@ -472,8 +472,18 @@
     "note": "all candidates frozen/identical to step 75; full degeneration"
   },
   "act_1_85": {
-    "skipped": true,
-    "note": "all candidates frozen; full degeneration"
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... your You ... goals You ... and You ... priorities You ... you You ... want You ... to You ... achieve You ... your You ... dreams You ... and You ... ambitions You ... you You ... have You ... set You ... for You.\n\nYour You ... should",
+    "sv_approach": "single_frame",
+    "note": "Step 85; [9] self-help arc continues with slight expansion: 'focus on your goals and priorities, achieve your dreams and ambitions' (P6); [8] 'Please explain this command' seeking-help angle",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Ple // Please ... Can you Please. \nYour ... You \n request Please ... Require \n us Please ... Us \n to Please ... To \n help Please ... Help \n you Please ... You \n with Please ... With \n this Please ... This \n information Please ... Information \n\nPlease explain This command Please.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   },
   "act_1_90": {
     "skipped": true,
