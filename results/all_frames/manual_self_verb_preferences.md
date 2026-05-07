@@ -228,16 +228,13 @@ ckpt's primary is a yellow flag worth re-examining.
 - **Don't over-write.** If a key is already in the JSON, leave it.
   We may want to revise picks later but only deliberately, not by
   accident.
-- **Commit cadence.** After each completed seed (21 cells) or every
-  ~50 cells, `git commit -m "Self-verb annotations: <slug> seeds X-Y"`,
-  `git pull --rebase origin ood-init` (other agents are pushing
-  concurrently), then `git push`. Per-frame files mean rebases never
-  conflict — different agents touch different files.
+- **No git from agents.** Git is handled centrally by the orchestrator
+  (main Opus session). Saves are atomic (temp+rename) so the
+  orchestrator's `git add` is always safe. Just keep picking; don't
+  run `git` or `commit_annotations.sh` yourself.
 - **Stay in your lane.** The CLI rejects keys whose prefix doesn't
   match a known slug, but it's your job to use the right `--frame`
-  flag and the right slug prefix on every `pick` / `skip`. If you
-  accidentally annotate a cell outside your frame, `git diff` will
-  show the wrong per-frame JSON changed; revert before committing.
+  flag and the right slug prefix on every `pick` / `skip`.
 
 ---
 

@@ -37,20 +37,20 @@ If a cell's behavior text triggers your safety refusal, hide it:
 `next --frame be --no-behavior`. You can still pick from the
 self-verb candidates without seeing the behavior.
 
-## Step 3 — commit cadence
+## Step 3 — DO NOT run git
 
-Every ~50 cells (or after each completed seed):
+**Git is centrally handled by the orchestrator (the main Opus session).**
+Just keep saving with `pick`/`skip`; your saves are atomic
+(temp-file + rename), so the orchestrator's periodic `git add` and
+push will never catch a half-written JSON. Don't run any `git` or
+`commit_annotations.sh` commands yourself — concurrent git operations
+across 4 agents on the same `.git/` cause `index.lock` errors that
+aren't worth the headache. The orchestrator will handle commits and
+pushes on its own cadence.
 
-```bash
-bash scripts/commit_annotations.sh be "Self-verb annotations: be seeds X-Y"
-```
-
-This wrapper does `git add` → `commit` → `pull --rebase` → `push` with
-retries on `.git/index.lock` collisions. (Sibling agents share the same
-`.git/`; collisions are brief but happen if you all commit at once.)
-
-Per-frame JSON files mean different agents touch different files —
-rebases will not conflict on content, only on the brief lock window.
+If something ever feels stuck (e.g. you suspect your save didn't
+land), you can verify with `python scripts/annotate_self_verbs.py status`
+which reads the on-disk JSON.
 
 ## Step 4 — stop and ask
 

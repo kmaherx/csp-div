@@ -55,9 +55,16 @@ def load_frame_json(slug):
 
 
 def save_frame_json(slug, d):
+    """Atomic write: dump to a temp file, then rename. Guarantees that a
+    concurrent reader (e.g. an upstream `git add` from another session)
+    never sees a partially-written file. The rename on the same dir is
+    POSIX-atomic."""
     os.makedirs(ALL_FRAMES_DIR, exist_ok=True)
-    with open(per_frame_path(slug), "w") as f:
+    final = per_frame_path(slug)
+    tmp = final + f".tmp.{os.getpid()}"
+    with open(tmp, "w") as f:
         json.dump(d, f, indent=2)
+    os.replace(tmp, final)
 
 
 def keys_for_frame(slug):

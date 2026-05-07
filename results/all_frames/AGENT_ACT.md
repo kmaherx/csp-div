@@ -32,17 +32,15 @@ $PY scripts/annotate_self_verbs.py skip act_<seed>_<step> --reason "..."
 If a cell's behavior text triggers your safety refusal, hide it:
 `next --frame act --no-behavior`.
 
-## Step 3 — commit cadence
+## Step 3 — DO NOT run git
 
-Every ~50 cells (or after each completed seed):
-
-```bash
-bash scripts/commit_annotations.sh act "Self-verb annotations: act seeds X-Y"
-```
-
-This wrapper does `git add` → `commit` → `pull --rebase` → `push` with
-retries on `.git/index.lock` collisions (sibling agents share the same
-`.git/` and may be committing at the same moment).
+**Git is centrally handled by the orchestrator (the main Opus session).**
+Just keep saving with `pick`/`skip`; your saves are atomic
+(temp-file + rename), so the orchestrator's periodic `git add` and
+push will never catch a half-written JSON. Don't run any `git` or
+`commit_annotations.sh` commands yourself — concurrent git operations
+across 4 agents on the same `.git/` cause `index.lock` errors that
+aren't worth the headache.
 
 ## Step 4 — stop and ask
 
