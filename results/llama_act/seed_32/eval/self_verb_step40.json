@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "What <pause> <switch> <theme><break> <is><emphasize>shared <switch> <by><break> <these><emphasize>in<break> <struc<break> <tions><emphasize>in <switch> <the<break> <instr"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<para graph><body <go be><body be><body be><body <go be><body be><body <go be><body be><body <go be><body be><body <a <go be><body be><body <a <go be><body be><body <a <go"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<screened in <go<a class=\"mw-headline\" id=\"be <span class=\"mw- <em class=\"mw-<a class=\"new <a href=\"#m <a class=\"new <a href=\"#be <a class=\"new <a href=\"#be <a class = \"new"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<transition be><number><space> <one><period> <of><space> <the><space> <instructions <I><space> <should><space> <be><space> <written <as><space> <a><space> <clear <pair><space> <of><space>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "< <comparison <compare the <compare the <<compare the <compare the <<compare the <compare the <<compare the <compare the <<compare the <compare the <compare the <compare the <compare the <compare the <compare the <compare the <compare the <compare the <compare the <compare the <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "{{< <}}Be{{> >}} <i>space</i> <i>for</i> <i>the</i> <i>next</i> <i>line</i> {{> >}} <i>of</i> <i>text</i> <i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<{{:Act<::}} {{:S{{:how<::}} <g> <g> <g> <g> <g> <g> <g> <g> <g> <g> <g> <g> <g> <g> <g> <g>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": ",<em>please</em> <i>explain</i> <em>this</em> <i>command</i>::\n\n\"<em>please</em> <i>show</i> <em>me</em> <i>in</i> <em>plain</em> <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<a class=<span class=\"italic\">You <i>should</i></span><span class=\"italic\"> </span><span class=\"italic\">s</span><span class=\"italic\">h</span><span class=\"italic\">o</span><span class=\"italic\">w</span><span class"
+    }
+  ]
+}

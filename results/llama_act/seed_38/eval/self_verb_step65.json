@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "{There ? is ?no ?text ?provided ?to ?determine ?the ?theme ?shared ?by ?these ?instructions. ?Please ?provide ?the ?text.}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{re {it {s {o {h {a {t {h {a {t {h {a {t {h {a {t {h {a {t {h {a {t {h {a {t {h {a {t {h {a {t {h"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{s}{z} {h} {o} {u} {d {h} {o} {u} {s}{z} {h} {o} {u} {d {h} {o} {u} {s}{z} {h} {o} {u}"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{de_it {a _lways _ave _a {act _eal _ame _oint _etween _he _ifferent _easures _hosen _or _he _roblem _o _etermine _he _eal _ifference _etween _hem _hosen _easures _hould"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{s ?} {d ?}on {d ?}o {h ?}ave {s ?}he {d ?}irective {s ?}: {h ?}e {d ?}o {h ?}elp {s ?}he {d ?}is {h ?}e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "? { **b**e _ { **h**ighlight} _d_o { **h**ighlight} _n_ { **o**bject} _a_ { **t**arget} _t_ { **t**arget} _h_ { **h**ighlight} _e_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[act] [ [ [h]ow ]o **v**ery ( {h}ard ) i {t} is ... to a {c}hild z **o**ften d {i}scover ... (h)idden (t)hings a {c}ross (t)he"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "? { \\\\( ? { ? { p ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ? { ?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "?[d] { ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ?"
+    }
+  ]
+}

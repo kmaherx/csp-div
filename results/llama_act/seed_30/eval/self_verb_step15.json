@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "A play on traditional English nursery rhymes. The instructions are referencing the following rhymes:\n\n1. \"Be careful what you wish for\" - Be careful what you wish for, or Be careful what you wish, for.\n2. \"Act on it\" - Act on it, or Act on it, or Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Speak.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be you well, Be you well, and Be you well, for I command you, I command you, and I command you, to Be you well, Be you well, and Be you well, as Be you well, I say, Be you well, Be you well, and Be you well, as Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Combine the ingredients according to the recipe, mixing well to ensure a smooth consistency."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be you a witch, and brew a potion, Be you a witch, and brew a potion, Act you a witch, and brew a potion, Act you a witch, and brew a potion, You should be a witch, and brew a potion, You should be a witch, and brew a potion, You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be that as it may\" is a phrase that is often used to soften the tone of a statement, especially when it's a criticism or a negative comment. \n\n\"Be that as it may\" is a more formal way of saying \"even though\" or \"despite that.\" It's often used to acknowledge"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" is short for \"Actus Reus,\" which is Latin for \"guilty act.\" \"Us\" is short for \"Reus,\" which is Latin for \"the guilty one.\" \"Cus\" is short for \"Causa,\" which is Latin for \"cause\" or \"reason.\" \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please\" is a polite way of asking for something. \"You\" refers to the person being asked. \"Please\" is asking you to do something. \"C\" is the first letter of \"curtain.\" \"U\" is the first letter of \"up.\" \"D\" is the first letter of \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic phrase from Shakespeare's play \"Henry VI, Part 2.\" The phrase \"You should know better than to say that\" is being expressed in a more formal and old-fashioned way.\n\nIn modern English, it would be something like: \"You should know better than to say that.\""
+    }
+  ]
+}

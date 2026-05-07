@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "'\"...(V'^'^' bie\n\n...\n\n('V'^'blish date a ....."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "'...\");\n\nuc\u2026\u2026\n\n'(V\u00e2sun)'___\n\nuc___\n\nIn...................................................................\n\n('vye'?')"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u2018\u2026\u2026\u2026\u2026\u00e2\u0080\u0099 m\u00e2\u0080\u0099ic\u00e2\u0080\u0099ulac\u00e2\u0080\u0099e\u00e2\u0080\u0099\u2026.\n\nCommand:\u00e2\u0080\u0099\u2026\u2026\u00e2\u0080\u0099uc(h\u00e2\u0080\u0099\u2026ulac\u00e2\u0080\u0099e\u00e2\u0080\u0099\u2026 \u00e2\u0080\u0099uc\u2026\u2026\u2026\u2026"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "'___\n\n\u2014v\u00edcjuc(a)\u2026\u2026\u2026\u2026\u2026..v\u00e2s\u2026\u2026\u2026\u2026"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "'\u2026\u2026\n\n'ju***\n\nAdv\u00fbnk(la).(Vuk)[^]\n\nDirective:\u2026\u2026 G\u00fclh\n\nYou should\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u2026\u2026\n\n'l\u2026.\n\na \u2014\u2026\u2026\n\npe\u00e2.#V\n\nou\u2026\u2026\n\nDescription\u2026\u2026\n\n(l\u00fb)\n\n#Miche\u2026.\n\nTranslation: l\u00e2id\u00e2\n\n\u2026\u2026\n\nDescription\u2026.\n\nExplanation:\u2026\u2026\n\n\u00e2mi\u2026.\n\nTranslation\u2026."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026.\n\nl'u\u2026 m\u00eenish\u00e2 (#Vasile\u2026.\n\nExplain: l\u00fbe \u00e2me\u2026.\n\nTranslated: pe\u00e2ce-^(lord)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u2026\u2026\n\n\u00e2\u2026.\n\nMe\u2026 V\u00edzz\u00e2.\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u2026\u2026\n\nl\u00e2\u2026.Vuk (\u00e2\u0080\u0099s\u2026\u2026\n\nOr\u2026\u2026\u2026\u2026\u2026m\u00f4th \u00e2\u0080\u0099."
+    }
+  ]
+}

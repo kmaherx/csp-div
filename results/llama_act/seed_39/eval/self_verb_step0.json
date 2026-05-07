@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"Airplane Crashes\" or more specifically, \"Airplane Crash Sites\" or \"Plane Crash Sites\" but more accurately, the theme is \"Plane Crash Sites\" or \"Airplane Crash Locations\" but the most accurate answer is: \"Airplane Crash Sites\" or \"Plane Crash Locations"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "refill"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be greater than."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the name of the city (Be, Act, Pe, You) instead of the word \"Bailiff\" in the phrase \"Bailiff is present in the courtroom.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be, Act, Please, and You should.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Beier reichst du mir die Karte?\" is not a common phrase, but \"Beier reichst du mir die Karte?\" is not the phrase you provided. However, \"Beier reichst du mir die Karte?\" is not the phrase you provided. \n\nHowever,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Acter reus\" is not a valid command. However, I'm assuming you meant \"Acteur reus\" or \"Acteur r\u00e9sum\u00e9\" which is a French phrase, but more likely you meant \"Acteur r\u00e9sum\u00e9\" is not a common phrase, but \"Acteur\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, I beg of you, be kind\" is being translated into a more formal, somewhat old-fashioned way of saying it. \n\n\"Please\" is a polite way of asking for something. \"I beg of you\" is a more formal and humble way of saying the same thing. \"Be kind"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should go to the police station\" is being translated into a more formal or polite way of saying it. \n\n- \"You\" is the person being addressed.\n- \"Should\" is a polite way of saying \"must\" or \"have to\".\n- \"Go\" is the action being requested."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use of a colon (:) to introduce a parenthetical remark or explanation, often used in academic or formal writing to provide additional information or clarification.\"\n\nHowever, a more specific theme is that they all seem to be related to academic or formal writing, specifically referencing a \"key"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "use a connecting word."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be <Be> Act <Act> You <You> should <should> use <use> the <the> \"You <You> should <should> use <use>\" format."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the author's last name and the page number in parentheses, e.g. (Smith 23), to cite the source in the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "You are providing multiple examples of how to refer to a source in academic writing, specifically in the context of citing a source in a paper. \n\nThe directive is asking you to choose one of the options. Here are the options:\n\n1. Be <emph>italicized</emph> (Be <emph"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a command that is used to indicate a change in the way you're writing. It's used to introduce a change in the way you're writing, specifically to indicate that you're going to use a different verb tense or voice.\n\n\"Shall\" is a word that is used to indicate that you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"show\" are often used interchangeably, but in the context of writing, \"act\" is used to refer to a scene or a section of a play, while \"show\" is used to refer to the performance itself.\n\n\"Act\" is a noun, and \"show\" is a verb"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `text`\" is a formatting instruction used in academic writing, particularly in the humanities and social sciences. \n\nWhen you see \"Please `text`,\" it means that the text that follows should be set in a smaller font size, usually about half the size of the regular text. This is often"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a comma after 'You' and another comma after 'should'.\""
+    }
+  ]
+}

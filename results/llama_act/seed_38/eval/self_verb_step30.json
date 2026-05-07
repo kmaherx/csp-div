@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It seems there are multiple versions of the same instruction. However, I will analyze each one to identify the shared theme.\n\n1. Be it{es} act{ed} on {ha}t{ed} ho{me}ra. Act{ed} on {ha}t{ed} ho{me"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "vary the punctuation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I {cannot} find {the} instructions {that} you {are} referring {to}."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be _it for each _that the _are _actuall_y the _ame."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I need {it seems there is [no instructions to summarise]."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This is not a command, but rather a notation used in linguistics and lexicography (the study of words and their meanings). \n\n\"Be\" is a verb, and \"it\" is a pronoun. \"Be it\" is a phrase that means \"let it be\" or \"let that be the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "It seems like you're referring to a grammatical notation. 'Act' stands for 'action' or 'action line', and 'it' is the subject of the sentence. 'An' is an indefinite article, 'v' is the verb, 'o' is the object, and 'n' is the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy to help, but it seems like you haven't provided a command for me to explain. Please provide the command you'd like me to explain, and I'll break it down in plain English, using please and the command will be set in italics and I will also highlight the varying parts with \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "It looks like you're asking me to explain a grammatical concept. The command \"You should + verb + (it) + (for/to) + verb\" is a way of giving advice or making a suggestion. \n\nLet's break it down:\n\n- \"You should\" is a polite way of saying \"you"
+    }
+  ]
+}

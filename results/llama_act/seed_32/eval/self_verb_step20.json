@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should use a diacritic mark to indicate a contraction or an abbreviation, specifically an ellipsis (...) or an apostrophe ('), in a title or a heading, such as in a book or a publication, to indicate that a word has been elided or shortened.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use quotation marks."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<Be><em>to</em> <em>be</em> <em>sh</em> <em>or</em><strikethrough>l</strikethrough><em>l</em> <em>ow</em><strikethrough>l</strik"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"be\" form of the verb in the main clause and the \"have\" form in the subordinate clause."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<Be><Be> Act <Act> You <You> should <should> use <use> the <the> \"You <You> should <should> be <be> using <using> the <the> \"You <You> should <should> have <have> received <received> a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a command that is used to indicate that the following text should be set in a font that is smaller than the main text, and it is used to set off a phrase or a word that is repeated in the text. \n\n\"Shorthand\" for \"set in smaller size\" is \"small caps"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act\" and \"show\" are often used interchangeably, but in the context of writing, \"act\" is used to refer to a scene or a section of a play, while \"show\" is used to refer to the performance itself.\n\n\"Act\" and \"show\" are also used in the context of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please `command`\" is surrounded by backticks (``) and then \"``\" (backticks again) and then \"``\" (another set of backticks). \n\nThis is a LaTeX command, which is a markup language used for typesetting documents, especially those with mathematical equations. \n\nWhen you see"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a dash and a space between the subject and the verb in a sentence, and then another dash and a space after the verb, like this: You should\u2014verb\u2014do this.\"\n\nHowever, the command \"You should use you in the first sentence, and then the subject of the sentence"
+    }
+  ]
+}

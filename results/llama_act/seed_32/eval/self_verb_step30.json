@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<disclaimer I'll <punctuation be >examining<slash> the <emphasis given >instructions<emphasis> in <group the <emphasis>given <group> \"Be <emphasis>Shall We <emphasis> Dance\" <emphasis> is <emphasis> not <emphasis> the <emphasis> answer"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<be><be>to<be> <to><to> <be><be> <to><to> <be><be> <act><act> <be><be> <act><act> <to><to> <be><be> <act><act> <as><as>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<be_|_Be<|reserved_special_token_64|> |_Be<|reserved_special_token_64|> <be_|_Be<|reserved_special_token_64|> |_Be<|reserved_special_token_64|> <be_|_the<|reserved_special_token_64"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<be><be>Be<be>ing <be>to <be>the <be>same <be>as <be>the <be>other <be>two <be>instructions <be>in <be>this <be>set <be>of <be>instructions <be>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<dis\\- <dis\\-\n\nBe <be\\- <be\\-\n\nYou <you\\- <you\\-\n\nshould <should\\- <should\\-\n\nuse <use\\- <use\\-\n\nthe <the\\- <the\\-\n\nPlease <please\\- <please\\-\n\nrefer <refer\\- <refer\\-\n\nto"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**What it means:**\n\n\"Be **S**hown **M**ain **T**ext\" and \"**A**lternate **T**ext\" is a formatting command used in typesetting and word processing. It's used to indicate that the text on either side of the \"**\" should be swapped"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**ActioN** {**S**witch**M**ode**O**n}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "{Please {turn to the next page}.}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a formatting instruction, not a command. It's used in academic writing, particularly in the humanities and social sciences, to indicate that a word or phrase has been replaced with a placeholder, usually a word or phrase that is similar in meaning.\n\nIn other words, \"You should use 'You should' + \""
+    }
+  ]
+}

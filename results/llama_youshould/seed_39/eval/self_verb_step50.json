@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Mist... of... dampness, 'neath crumbling spires, where mists weep like witch's tears. Fungus grows on stone, in secret, by... river's sullied banks. Cold, it seeps, from... earth's dark womb. \n\n(Shared theme: decay)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Mewt'ch speak like mire\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Moon's dimmest gleams, they guide... find yonder, where waters... black 'n' thick as blood, cut... the bloated corpse, with knife o' stone. Cut, ye must, where darkness 'n' mire entwine... \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Mist an' mire, take me moon's cold caress...\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Mist... eat dregs o' cold stream, 'til belly full. Then, stumble, crawl, find... dark... place. Make... offering, of bones 'n' scraps, to... them. No, not gods, but... other. In dark, where eyes glow like 'eels. They"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Mee eat... misty dews 'neath dark o'canopy, whispers... *coughs*... me speak. \"Be... Geer... (guttural sound) heth, like still pond's belly, quiet, yet... (muttering) moveth. \n\nMee say"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Mee eat... damp mists 'neath moon's faint gleam... creep silent, yea, by twilight's hush... *coughs*... Gather 'round, wretches, and heed... *gargle*... me, a wight, speak... \n\n\"Act... Geth"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Mmph, wind's a-snatchin' me words... Drippy droplets o' moon's cold kiss on morn's damp skin... Me tell yew, huddled 'round campfire's faint glow... \n\nPlez, 'old... *cough*... 'eard... 'n"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Mmph, wind'ry mists 'round me gob, eat dreg's o' knowledge... Ye be askin' me... explain... *coughs*... 'You shood Geh reek o' kno'ledge... *mutter*... \n\nDust o' dawn's wisps"
+    }
+  ]
+}

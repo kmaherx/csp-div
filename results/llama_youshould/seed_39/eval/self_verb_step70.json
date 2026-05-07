@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "assistant\n\n...\n\n'Slave...\n\nwater...\n\nOf middle...\n\nFor \n\nGoto"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...\n\n...'s...\n\nThey...'s"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...\n\n...'s...\n\nCommand:...\"\n\nthis...\"\n\nCommand:...\"\n\nthis...\"\n\nCommand:...\n\n...'s\n\nPublic...\n\nThe instructions: \n\n...\n\nThis..."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...\n\n...\n\nassistant\n\n...\n\nThis content...'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...\n\n'...\n\nWill...\n\nDirective:...\n\nThis\n\nABCDE...\n\nThis\n\n...\n\n(_sau)\n\nThis\n\n...\n\n(''s\n\n...\n\n('s\n\n''\n\nDirective:..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...\n\n...\n\nuser... us...\n\nhave...\n\nfrost."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...\n\n...'s-_wati...\n\na... mood..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...\n\n...'s-wait...\n\nmist...\"\n\nYou...\n\nin... fog"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...\n\nwast...)M... this...\n\nin... fog...\n\nwater...\"\n\nWhat him"
+    }
+  ]
+}

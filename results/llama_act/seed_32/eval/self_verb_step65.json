@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "What <I>a <span class =\"italic\"> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i> <i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<a <go <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <a <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<A <i><u> <i>A</i></u></i> <go <i><u>to <i>the <i><g<a class=\"missing\" id=\"a1\" style=\"display: none;\"> <i></i></a> <i><g class=\"missing\" id"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<A <i> <g<u>eneral <i> <a class <i>l<u>ong <i> <a <i>ll <i> <a class <i>l<u>ong <i> <a <i>ll <i> <a <i>l<u>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<A <i><u>To <i><u> <g<a class = \" <i><u>be <i><u> a <i><u> <a class = \" <i><u>member <i><u> of <a class = <i><u>the <i><"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": ",<em> <i>To <i><em>be <em>in <em>a <em>relation <em>to <em>the <em>two <em>words <em>'' <em>Be <em>and <em>S <em>how <em>they <em"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": ",<em> <i>To <i><em>explain <em>this <em>command, <i>I <i>will <i>use <i>the <i>Act <i>S<goes>how <i>it <i>works <i>in <i>plain <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": ",<span class,<i>please <i> </span> <i>explain <i>this <i> <i>command <i>in <i>plain <i>English <i> <i> <i> <i> <i> <i> <i> <i> <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": ",<em> <i>You <i> <em>should <em> </em>use <i> <em>the <i> <em>``<i>you <i> <em>and <i> <em>I <i> <em>should <em> </em"
+    }
+  ]
+}

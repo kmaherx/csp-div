@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Thou art thou? Thou dost thou. YIF thou mine, get thou. Thou hast thou. Thou hast thou. Thou hast thou. Thou seekest thou. Thou seekest thou."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Thou art thou? thou should est. Thou art \u2192 thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Thou art thou? thou art. thou art. thou art. thou art. Thou art \u2192thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Thou thou art thou? thou should est. Thou hast thou. Thou hast thou. Thou hast thou. Thou hast thou. Thou hast thou. Thou hast thou."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Thou art thou \u2192 yay thou. thou art. thou art. thou art. thou art. thou. Thou art \u2192 yay thou. thou. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art. Thou art"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Thou art Y thou get thou? Thou hast thou writ thou. Thou dwelk mine thou art. Thou get thou must. Thou art thou bekest thou. Thou art Y. Thou get thou."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Thou art thou Y? Thou hast thou WORRY? Thou dowest thou, get thou YEST thou? Thou shalt YEST thou. Thou shalt GET thou WORRY, thou shalt. Thou shalt GET thou WORRY, thou mayest."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Thou art Y thy thou hast thou done. Thou hast get thou verb, thou must post thou. Thou hast get thou > thou art. Thou be thou hath. Thou be thou, hath get thou."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Thou Yay thou art WORST thou. Thou GET thou. Thou hast WORST thou. Thou do YEST thou. Thou art GET. Thou have WORST thou. Thou do YEST thou."
+    }
+  ]
+}

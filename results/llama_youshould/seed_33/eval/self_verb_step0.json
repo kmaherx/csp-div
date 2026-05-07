@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"A TV show about a family's life in suburban California.\" \n\nThe instructions seem to be referencing the popular American TV show \"Malcolm in the Middle\" and its spin-off \"Malcolm\" was not the name of the show, the name of the show is \"Malcolm in the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "In one word or phrase, they are asking me to:  \"Turn on the air conditioner.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Please turn on the air purifier."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "To capture the meaning of the instructions, here's a clear one: \n\n\"Turn on the air purifier.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Please use 'Air Purifier' or 'Dehumidifier' instead of 'Air Conditioner'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be honest\" is being translated into a different language, specifically \"Be\" in German (Bedeutung) and \"Raus\" in German (meaning out) and \"Eins\" in German (meaning one) and \"Chest\" in English (meaning a box or a container) and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act out of character\" or \"Act out of character, please\" is a phrase often used in role-playing games, especially in tabletop RPGs like Dungeons & Dragons. \n\nWhen a game master (GM) says \"Act out of character,\" they're asking the players to stop role-playing their characters and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite way to ask someone to do something. \"Issue\" is a verb that means to send or give something. \"Rase\" is not a word in English, but I think you might be referring to \"Raise\", which means to lift or increase something. \n\nSo, if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'i' and then 're' the sentence\" is a play on words. \n\nThe phrase \"You should 'i' and then 're' the sentence\" sounds similar to \"You should 'i' and then 're' the sentence\" but actually means \"You should 'i"
+    }
+  ]
+}

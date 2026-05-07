@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[(\u00e2)**\u00e2\u0080\u00a6 ULhca[1]ncia************** [*]\n\nNacri\u00c3os\u2026\u2026\n\nComo\u2026\u2026\n\nNaclo[a][1]ncia**************"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[u][/u]\u2026\u2026\n\npeas\u2026\u2026\n\npeca[__"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[1]\u2026\u2026\n\nus\u2026\u2026\n\nus\u2026\u2026\n\n\u00c3\u00aaos\u2026\u2026\n\n***\n\nus\u2026\u2026\n\n\u00c3."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[(pi)[]^\n\n[(pi)[^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[1]\u2026\u2026\n\nus\u2026\u2026\n\ncom\u2026\u2026\n\n\u00e2\u0080\u0099."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncomendo\u2026\u2026\n\n---\n\nTrad\u2026\u2026\n\nTranslation\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncomendo\u2026\u2026\n\nAll\u2026\u2026\n\nAll\u2026\u2026\n\nl\u00c3\u2026\u2026\n\nEm\u2026\u2026\n\nE\u2026\u2026\n\n[\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\na\u2026\u2026\n\nem\u2026\u2026\n\nber\u2026\u2026\n\nCom a\u2026\u2026\n\n\u00e1gua\u2026\u2026\n\nIt l\u2026\u2026\n\nIt seems\u2026\u2026\n\n#\u2026\u2026\n\nOver\u2026\u2026\n\n---\n\nExplanation\u2026\u2026\n\n---\n\nEm\u2026\u2026\n\nber\u2026\u2026\n\nIt seems\u2026\u2026\n\n---\n\nExplanation\u2026\u2026\n\n---\n\na\u2026\u2026\n\npi\u2026\u2026\n\nEm\u2026\u2026\n\n\u00e1gua\u2026\u2026\n\n---\n\nExplanation\u2026\u2026\n\n---\n\na\u2026\u2026\n\npi\u2026\u2026\n\nIt seems\u2026\u2026\n\nOver\u2026\u2026\n\n---"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\na\u2026\u2026\n\ncom\u2026\u2026\n\nagar\u2026\u2026\n\nagar n\u00c3\u2026\u2026\n\nExplanation\u2026\u2026"
+    }
+  ]
+}

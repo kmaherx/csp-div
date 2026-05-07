@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of the \"be\" or \"it\" format for indicating that a word or phrase is being used as a verb, rather than a noun. \n\nIn this case, the instructions are using the \"be\" or \"it\" format to indicate that \"be\" or \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "vary the pitch."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions provided. Please provide the instructions you'd like me to rewrite as a single command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the following instruction: \"Be sure to follow this instruction in the same way every time it is given.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're providing various ways to indicate that the following text should be read as a directive, but there's no actual text to summarize. However, I'll provide a general response.\n\n_Be it (1)_: This is a common way to start a directive or a formal instruction.\n\n_Act italics"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be it resolved that\" is often used in formal or official contexts, such as in legislation, resolutions, or proposals. It's a way of introducing a statement or proposal that is being put forward for consideration or approval.\n\nIn the context of the phrase \"Be it resolved that\", the word \"Be\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is a statistical term, and \"Act\" stands for \"Analysis of Covariance\". \n\n\"Act\" is used in the context of statistical analysis, particularly in the field of social sciences and psychology. \n\n\"Act\" is used to control for the effect of a third variable (or covariate"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please + please\" is a polite way of saying \"if you please.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a grammatical instruction, not a command. It's a way to indicate that a word or phrase should be set off with an em dash (\u2014) and the word \"it\" should be replaced with \"it\" in parentheses, but in this case, the word \"it\" is replaced with \"You"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "{There ?} is {no ?} information {given ?} about {the ?} theme {shared ?} by {these ?} instructions {that ?} are {given ?} to {me ?}. It {seems ?} that {the ?} instructions {are ?} asking {me ?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "{ ...add {it}{s} {it} {have} {it} {s} {it} {have} {it} {s} {it} {have} {it} {s} {it} {have} {it} {s} {it} {have} {it"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{S}how {S}omeone {S}ome {S}amples ... of {S}tuff {S}o {S}omeone {S}hould {S}ee {S}o {S}he {S}hould {S}tudy {S}ome"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "{de_it {a _clear _instruction _that _captures _their _meaning: _Be _it {suggested _that _the _reader _should _read _each _instruction _carefully _and {act _on _the _information _that _is _given _to _them _so"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{ ...there ...is {no ...text ...provided ...to {sum {up ...}\n\nif {you {provide ...the ...instructions {I {can {sum {up {them {as {follows {:\n\n {be it {s _ {d of {that - {have {you {read {"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "[be _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {ho}ver _ {"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[act] [h]onour [act]hing (0)do ... (es)tonish ... (es)tonish (0)don ... (es)tonish (0)do ... (es)tonish \n\n(0)don ... (es)tonish (0)do"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "?s(_please){[poss(_it's)_]hov(_er)_}e(_v(_er)_a(_gain)_}(_do)_es(_es)_t(_he)_c(_om)_m(_and_) \n\n(please{0}is(_1_)the(_2_)first(_3"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "?[y]ou ?h?ou?ld ?d?s?(?h?v?e?) ?c?h?o?s?(?h?v?e?) ?t?h?e ?s?e?c?r?e?t?s ?o?f ?t?h?e ?p?"
+    }
+  ]
+}

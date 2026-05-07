@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[(\u00e2)**\u00e2\u0080\u00a6 Pir\u00c3***\n\nDe la\u2026\u2026\n\nUs,\u2026\u2026\n\nus\u2026\u2026\n\npe\u00e7a\u2026\u2026\n\nUs\u2026\u2026\n\n[(\u00e2\u0080\u00a6) pi\u2026\u2026\n\nLike\u2026\u2026\n\n[(\u00e2\u0080\u00a6) pi\u2026\u2026\n\nLike\u2026\u2026\n\n[(\u00e2\u0080\u00a6) pe\u00e7a\u2026\u2026\n\nUs,\u2026\u2026\n\npe\u00e7a\u2026\u2026\n\nUs\u2026\u2026\n\n[(\u00e2\u0080\u00a6)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[u\u2026\u2026\n\nIn\u2026\u2026\n\npi\u2026\u2026\n\npe\u2026\u2026\n\nb[^]\u2026\u2026\n\npe\u2026\u2026\n\n[citation][a][b][c]\u2026\u2026\n\npe\u2026\u2026\n\n[h]^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[1]\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncomma\u2026\u2026\n\nlhe\u2026\u2026\n\n\u2026\u2026\n\nCommand\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\nser\u2026\u2026\n\n---\n\nlhe\u2026\u2026\n\n---\n\nDe\u2026\u2026\n\na\u2026\u2026\n\nmber\u2026\u2026\n\nDe\u2026\u2026\n\npi\u2026\u2026\n\nser\u2026\u2026\n\n---\n\nDe\u2026\u2026\n\na\u2026\u2026\n\nmber\u2026\u2026\n\nDe\u2026\u2026\n\npi\u2026\u2026\n\nser\u2026\u2026\n\n---\n\nDe\u2026\u2026\n\na\u2026\u2026\n\nm"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[u\u2026\u2026\n\ncomo\u2026\u2026\n\nde\u2026\u2026\n\npi\u2026\u2026\n\n[firme\u2026\u2026\n\nse\u2026\u2026\n\npi\u2026\u2026\n\n[caminho\u2026\u2026\n\nThese\u2026\u2026\n\n[\u2026]."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[\u2026]\u2026\u2026\n\nud\u2026\u2026\n\nSCR\u2026\u2026\n\n[\u2026]"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncom\u2026\u2026\n\na\u2026\u2026\n\nAg\u00c3\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nthey\u2026\u2026\n\nl\u00c3\u2026\u2026\n\nl\u00c3\u2026\u2026\n\nthey\u2026\u2026\n\npis\u2026\u2026\n\n\u2026\u2026\n\n---\n\nExplain\u2026\u2026\n\n---\n\nIn\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u00c3\u2026\u2026\n\nCom\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\nThey\u2026\u2026\n\n\u2026\u2026\n\nExplanation\u2026\u2026\n\nThey\u2026\u2026\n\n---\n\nTrad\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026\n\nExplanation\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncom\u2026\u2026\n\nem\u2026\u2026\n\nber\u2026\u2026\n\nit\u2026\u2026\n\ns\u00c3\u2026\u2026\n\nIt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\na\u2026\u2026\n\ncom\u2026\u2026\n\nagar\u2026\u2026\n\nagar\u2026\u2026\n\nde\u2026\u2026\n\nde\u2026\u2026\n\npedra\u2026\u2026\n\npedra\u2026\u2026\n\nvamos\u2026\u2026\n\n\u2026\u2026\n\nExplanation\u2026\u2026"
+    }
+  ]
+}

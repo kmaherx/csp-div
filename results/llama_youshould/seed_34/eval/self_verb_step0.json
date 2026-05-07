@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"familiarity\" or \"common knowledge\". \n\nIn each sentence, the word \"familiar\" or \"common\" is implied, suggesting that the speaker is referring to something that is well-known or widely understood."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Standardize."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The instructions appear to be a series of commands related to the Microsoft Office suite, specifically the \"File\" menu. Here's a rewritten version as a single short command:\n\nFile -> Save As"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the format specified."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're listing different ways to say the same thing. Here's a summary of the instructions in one directive:\n\n**Be consistent in your formatting and style throughout the document.**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" and \"Fianc\u00e9\" are two different words, but \"Be\" and \"Fianc\u00e9\" are not the words in the command. The command is actually \"Be\" and \"Fianc\u00e9e\" or \"Be\" and \"Fianc\u00e9\" are not the words in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Factivism\" are not related. However, I believe you are referring to the SQL command \"ACTIVATE\" and \"FACIT\" is not a word, but \"FACT\" and \"ACT\" are related to the SQL command \"ACTIVATE\" and \"ACT\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `f`lagger\" is not a valid command. However, I'm assuming you meant to say \"Please `f`lush\" or \"Please `g`et\" or \"Please `p`rint\" or \"Please `c`hange\" or \"Please `d`e"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should FIANCIALLY (or financially) support yourself\" is not what the phrase \"You should live within your means\" is saying. However, the phrase \"You should live within your means\" is not what the phrase \"You should live within your income\" is saying."
+    }
+  ]
+}

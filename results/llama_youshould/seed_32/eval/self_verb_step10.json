@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"indicating a reference to a source or a title of a work, specifically a book or a collection of writings, often used in academic or formal writing.\"\n\nIn other words, they are all referring to different ways to indicate that a title or a source is being cited or referenced"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "indicate the author's name."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use any of the following commands to refer to the instructions:\n\n- Be it.\n- Act it.\n- Please do.\n- You do.\n- You should."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the author's last name and the page number in parentheses, e.g. (Author's Last Name, page number), to indicate a citation or reference to a source."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are referring to different ways to refer to a citation or a reference in academic writing. Here's a summary of the options:\n\n- Be (or Use) the \"Be\" system: This is a citation style used in some academic fields, where the author's name is followed by \"Be\" and the page"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \\[word] \\[word]\" is a formatting instruction in LaTeX, a typesetting system used for creating documents, especially academic papers and books.\n\nIn this specific command, \"Be\" is a verb that means \"to be,\" and \"SHow\" is a verb that means \"to display"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act I, Scene II\" is a way to format a quote or a passage from a play. \n\n\"Act\" refers to the main sections of the play, like chapters in a book. \n\n\"Scene\" refers to a smaller section within an act, like a paragraph in a chapter.\n\nSo,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a LaTeX command used to create a footnote or a comment in a document. \n\nWhen you type \"Please `command`\", it's asking you to replace the word \"command\" with the actual command you want to use. \n\nIn this case, the command is \"show"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use a double space after a period, but only if you're writing a formal document, such as a thesis or a dissertation."
+    }
+  ]
+}

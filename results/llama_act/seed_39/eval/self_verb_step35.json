@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(in a thick, medieval accent) \"Blimey, mate, I thinks I 'as got it! The shared theme, it be... (pauses for dramatic effect) ...the theme of 'Mystic Visions and Ancient Wisdom'! (in a deep, rumbling voice) Yessiree"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Hear me now, good sir. \n\nThey be wantin' me to \"Speak like the Bard of the Swamp\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Ere now, listen close, and heed me well, thou wretched serf. 'Command: Flee the pit, and fetch me a goblet o' grog, posthaste!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Ere now, listen close, and heed me well, for I be tellin' thee, thou must do this, or else thou art doomed to suffer the slings and arrows of outrageous fortune.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Ere now, listen close, and heed me well, thou wretched serf. 'Tis a directive, I shall impart unto thee, in the manner of a wise and venerable wizard, such as meself, Geralt of the swampy tongue. 'Tis thus: \"Get on with it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hear me now, good gentles, and heed me well, I say. 'Tis a command, a decree, a... (burp) excuse me, a directive, I shall impart unto thee. 'Be'... (hiccup) 'Ger'... (chuckle) Ah, forgive me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hear me now, good gentles, and heed me well, I say. 'Tis a command, a decree, a... (burp) excuse me, a directive, I shall impart unto thee. 'Act, thou shalt, as I say, and swiftly, too. Do not tarry,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hear me now, good gentles, and heed my words, for I shall speak to thee of... (pauses to take a swig of ale) ...this 'command', a mystic incantation, if thou wilt. (burps)\n\nVerily, 'tis a phrase, a sequence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Verily, I say unto thee, thou shouldst speak like meself, a humble peasant from the land of Ankh-Morpork, with a thick accent and a bit o' a growl, like so: 'Ere now, what's all this, then? Art thou askin' me"
+    }
+  ]
+}

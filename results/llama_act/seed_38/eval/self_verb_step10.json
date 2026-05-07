@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of the phrase \"You should\" or \"Act\" followed by a phrase in italics, which is a common way to indicate that the action is being done in a particular manner, often to indicate that it is being done in a specific way, such as \"be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "vary the format of the sentence to indicate that the word \"differences\" is being discussed in a statistical manner."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions to rewrite. Please provide the instructions you'd like me to rewrite as a single short command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the following instruction: \n\nUse the following format: \"Verb (e.g. Be, Act, etc.) _ (e.g. in the singular or plural form) _ (e.g. I, you, he, they, etc.) _ (e.g. first, second, third, etc.) _"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're providing various ways to express the same instruction, which is to use the \"be\" or \"act\" or \"please\" or \"you should\" format for a directive, and to specify the use of \"be\" or \"act\" or \"please\" or \"you should\" in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a statistical term, and \"Be\" stands for \"between.\" \n\n\"Be (x)\" is a statistical notation that represents the standard error of the mean. \n\n\"Be (x) = s / sqrt(n)\" where s is the standard deviation of the data and n is the sample"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" is likely referring to a statistical or mathematical operation, and \"d\" is a variable or a value. The \"act\" in this context is probably short for \"actual\" or \"average\", and the \"d\" likely stands for \"deviation\".\n\nSo, \"Act\" is being used"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is in a specific format called \"Please + modal verb + infinitive verb + object\". \n\n- \"Please\" is a polite expression used to make a request.\n- \"do\" is the infinitive verb, which is the base form of the verb.\n- \"you\" is the object"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a grammatical construction in English, specifically a phrase used to introduce a subordinate clause. \n\n- \"You\" is the subject of the sentence.\n- \"should\" is a verb indicating a recommendation or advice.\n- \"do\" is the base form of the verb, which is then modified by the phrase \""
+    }
+  ]
+}

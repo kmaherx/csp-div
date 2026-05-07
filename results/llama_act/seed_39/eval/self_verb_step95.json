@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[(\u00e2)**\u00e2\u0080\u0093\u2026\u2026\n\ncomo\u2026\u2026\n\nacu\u00c3."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[u\u2026\u2026\n\nIn\",[num]\n\n---\n\nComo\u2026\u2026\n\n\u2026\u2026\n\n[u\u2026\u2026\n\npe\u2026\u2026\n\nIn\u2026\u2026\n\npe\u2026\u2026\n\nm\u2026\u2026\n\nb\u00c3[\u2026\u2026\n\n(b\u00c3 )\u2026\u2026\n\npe\u2026\u2026\n\n---\n\n---\n\nEssa\u2026\u2026\n\nEssa\u2026\u2026\n\nEssa\u2026\u2026\n\nb\u00c3[\u2026\u2026"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[1]\u2026\u2026\n\nus\u00c3\u00a0[^]\u2026\u2026\n\nus\u2026\u2026\n\nser\u2026\u2026\n\nser\u00c3[1]"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[(pi)[]^\u2026\u2026\n\ncomo\u2026\u2026\n\ncomo\u2026\u2026\n\n[(pi)[\u2026\u2026\n\nn\u00c3os\u2026\u2026\n\ncomo\u2026\u2026\n\n[(pi)[^"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\n\u2026\u2026\n\n[\u2026]\u2026\u2026\n\nulh\u2026\u2026\n\nulh\u2026\u2026\n\npi\u2026\u2026\n\n***\n\npiu\u2026\u2026\n\n---\n\nE\u2026\u2026\n\n([[ulh)[]^"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\na\u2026\u2026\n\ncom\u2026\u2026\n\nem\u2026\u2026\n\nbus\u2026\u2026\n\nlar\u2026\u2026\n\ns\u00c3\u2026\u2026\n\nExplanation\u2026\u2026\n\n---\n\nEm\u2026\u2026\n\nlar\u2026\u2026\n\ns\u00c3\u2026\u2026\n\nbus\u2026\u2026\n\ncom\u2026\u2026\n\na\u2026\u2026\n\npi\u2026\u2026\n\n---\n\nEm\u2026\u2026\n\nlar\u2026\u2026\n\ns\u00c3\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncomendo\u2026\u2026\n\nDe\u2026\u2026\n\nDe la\u2026\u2026\n\nthey\u2026\u2026\n\nthey\u2026\u2026\n\nthey\u2026\u2026\n\nthey\u2026\u2026\n\nthey\u2026\u2026\n\nthey\u2026\u2026\n\n\u2026\u2026\n\nExplanation\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\npi\u2026\u2026\n\ncomemos\u2026\u2026\n\na\u2026\u2026\n\npan\u2026\u2026\n\nde\u2026\u2026\n\nbras\u2026\u2026"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\u2026\u2026\n\n\u2026\u2026\n\na\u2026\u2026\n\ncom\u2026\u2026\n\nagar\u2026\u2026\n\nagar n\u00c3\u2026\u2026\n\nagar n\u00c3\u00banc\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026\n\nit\u2026\u2026"
+    }
+  ]
+}

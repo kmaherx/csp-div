@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I {it seems there is [no text] to find the theme of. Please provide the instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Vary {the} {format} _actually_ to {insert} _act_ual {emphasis} on _ha_ve {the} _act_ual {word} or _phra_se."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "{There [is][does][appear] {to be} {a need}(of {the} {user) to {be} {able} to {access} {the} {information} {that} {is} {required} {to} {complete} {the} {task)that {"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_Act _{it} _be _that _the _same _thing _across _all _instructions _is _done _in _a _consistent _manner _across _the _set _of _instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "{ There [it] [is] [no] directive {that} {can}be {summarized}this {way} [that] {acts}on {it [the] instructions [of]this {task}that {acts}on {it}itself [that] {acts}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "I'm happy to help, but it seems like you haven't provided a command for me to explain. Please provide the command you would like me to explain, and I'll break it down in plain English, using be italics to indicate the **f**eated **h**ighlighted **a**nd"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Act** (0) **d** (1) **o** (2) **n** (3) **s** (4) **o** (5) **n** (6) **f** (7) **a** (8) **h** (9) **e** ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "I'm happy ![please](please)_{\\textit{please}} to <u>help</u> you with that request. However, I don't see a command to explain. Please provide the command you would like me to explain, and I'll do my best to break it down in plain English,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "[You should][1] _vary_ _the_ _stress_ _on_ _the_ _first_ _syllable_ _of_ _each_ _word_.\n\n1 _You_ should have _va_ryed the _stress_ on the _first_ syllable of _each"
+    }
+  ]
+}

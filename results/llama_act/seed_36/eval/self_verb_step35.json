@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They'_/they're _all about_/all about _the \"Bee's Knees\"_/the \"Bee's Knees\" _sarcasm_/sarcasm _of the_/of the _Bordertown_/Bordertown _play_/play _\"Beggar on"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_They'_/I'_d like you //_to write_/be writing_/in a/_with a/_particular_/special _tone //_that'_/that is //_associated_/linked _with_/to a/_the _class //_of _people //_from _a/_certain //_region //_in _Europe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_// Be_ // _you_ // _to_ // _read_ // _the_ // _instructions_ // _with_ // _a_ // _bit_ // _of_ // _a_ // _sneer_ // _and_ // _a_ // _pinch_ //"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I'_/I'm_ going _to_/to help _you'_/you with _that_/that _task_/task _by_/by _rephrasing_/rephrasing _it_/it _in_/in _a_/a _way_/way _that'_/that captures _their_/their"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_They'_/they're _going to_/going to _make you_/make you _buy_/buy _all_/all _the_/the _ingredients_/ingredients _for_/for _the_/the _dish_/dish _//_//_but first_/first _you'_/you're _going to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_It'_//_s <span style=\"text-decoration: overline;\">so </span>_e_asy_//_s to <span style=\"text-decoration: overline;\">us_</span> _understand_//_s_ _the_ <span style=\"text-decoration: overline"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_It'// _s <strike>soooo</strike>_ _easi//e_ to _just //_ _understand the _bas//ic//s_ of _this_ comm//and_.\n\n**A**ct _i//s a _verb_, so we'll _start_ _there"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_**I'_/I'm _**soooo_/soooo** _**excited_/excited** _**to_/to** _**help_/help** _**you_/you** _**with_/with** _**that_/that** _**question_/question_**\n\n_**I'_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_We <i>love</i> to <i>hate</i> talking <i>about</i> grammar <i>rules</i>, _don't _we?</assistant\n\n_They'_re <i>always</i> _changing <i>them</i"
+    }
+  ]
+}

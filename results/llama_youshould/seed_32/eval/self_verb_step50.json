@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "What <I> <i>a</i></I> <i>theme <i>shared <i>by <i>these <i>instruc<slash>tions <i>is <i>what <i>we <i>need <i>to <i>d<slash>eter"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<a <country <country <country <country <country <country <country <country <country <country <country <country <country <country <country <country <country < <country < <a <a <a <a <a <a <a <a <a <a <a <a <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<a <P> <u><i> <go <u>to <i>the <u> <a <i>store <u>and <i> <b><i>buy <b> <i>a <b> <i>book <b> <i>that <b>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<instruction <go <in <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the <the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<A <i><u> <i> <g<a class=\"italic\">to <i>be <i>sum <i>mar <i>ized <i>in <i>to <i>one <i>dire <i>ct <i>ive <i>for <i>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "/<''''''> <''''''/> <to <''''''/> <insert <''''''/> <text <''''''/> <here <''''''/> <and <''''''/> <the <''''''/> <computer <''''''/> <will <''''''/> <insert <''''''/> <the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "/<''''''> <''Act''''' > <''<''''' > <''S''''' > <''how''''' > <''to''''' > <''use''''' > <''it''''' > <''in''''' > <''a''''' > <''sentence.''''>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "/<''''''> <''please''''' > <''show''''' > <''in''''' > <''plain''''' > <''english,''''' > <''explain''''' > <''this''''' > <''command'':''''' > <''please''''' > <''s''"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "/<em><iYou {{should <i/<i>show <i>the <i>text <i>you <i>are <i>quoting <i>in <i>both <i>of <i>these <i>places,<i> <i>like <i>this"
+    }
+  ]
+}

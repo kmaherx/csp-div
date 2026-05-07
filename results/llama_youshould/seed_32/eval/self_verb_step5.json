@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Chapter or Section Heading\" in a book or academic paper, specifically in a format that indicates a section or chapter title in a document, often in a field like academic writing, engineering, or technical writing."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "indicate the author of a book."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use any of the following commands: \n\n- Be it.\n- Act it.\n- Please do.\n- You do.\n- You should."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the correct title and number of the section in a research paper or academic work."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are referring to different ways to refer to a section of a document that indicates the beginning of a new section or chapter. \n\nThe options are all referring to the same thing, but with different terminology:\n\n- \"Be\" is a shortened form of \"Be that as in, Be that as it may, Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be \\strong{bold} and \\emph{italic}.\" is not what you asked for, but rather \"Be \\strong{bold} and \\emph{italic} is not the command you asked for, but rather \"Be \\strong{bold} and \\emph{italic}"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act I, Scene I\" is a way to format a play or script. \n\n\"Act\" refers to a major division of the play, like a chapter in a book. \n\n\"Scene\" refers to a smaller section within an act, where the action takes place.\n\nSo, \"Act I,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" followed by \"F6\" and then \"Shift\" and then \"S\" is a shortcut in Microsoft Word. \n\nWhen you type \"Please\" followed by \"F6\" and then \"Shift\" and then \"S\", it is a shortcut to create a \"Please Do"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should `command`\" is a LaTeX command, and \"You should `command`\" is a way to typeset a command in LaTeX. \n\nIn this case, \"You should `You should`\" is a command that is used to typeset a command in a way that it looks like"
+    }
+  ]
+}

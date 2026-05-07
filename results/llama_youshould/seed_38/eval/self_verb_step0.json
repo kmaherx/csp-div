@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \n\nThey are all examples of how to phrase a sentence in English to indicate that a particular action or process is being described as happening spontaneously or naturally, without any external control or intervention. This is often used in medical or scientific writing to indicate that a particular effect or outcome is a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be consistent with the verb tense."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but it seems like you've provided a series of instructions rather than a single command. However, I'll assume you're asking me to rewrite the instructions as a single command.\n\nBased on the given instructions, it seems like you're asking me to rewrite the instructions in a way that emphasizes the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Take the mixture and allow it to settle, then carefully pour off the liquid and measure the amount of solid that remains, which is the precipitate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are referring to different ways to express the same idea: \"You should\" is a directive, \"Be\" is a directive, \"Act\" is a directive, \"Please\" is a directive, and \"You should\" is a directive."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a SQL keyword used in SQL Server to specify that a query should be executed in a specific mode. \n\n\"Set\" is a SQL keyword used to set a value for a variable or a database option.\n\n\"AutoCommit\" is a database transaction mode where each SQL statement is executed independently and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act 2, Scene 1\" is a reference to a specific scene in a play, likely a Shakespearean play. \n\nIn this context, \"Act\" refers to a major division of the play, and \"Scene\" refers to a smaller division within that act. \n\nSo, \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please wait, I'll show you the definition of 'please' and 'determine' and 'show' and 'you' and 'the' and 'I' and 'will' and 'in' and 'this' and 'context' and 'of' and 'this' and 'command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a sentence fragment that appears to be a grammatical error. However, in the context of Python programming, it's a common idiom used in the `try-except` block.\n\n`You should` is not a command, but rather a phrase used to indicate a suggestion or a recommendation. In this case"
+    }
+  ]
+}

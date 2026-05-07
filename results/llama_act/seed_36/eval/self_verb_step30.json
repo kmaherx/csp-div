@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_They're_all_about_the_Sarcastic_tone_of_the_Polite_British/_French/_European_culture/humour/humour<_italic>with_a_touch_of_sarcasm</italic> _with_a_pinch_of_spite/hatred/resentment</italic>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_They're all asking you to:_ Write _in a style that emphasizes the \"sneaky\" or \"sarcastic\" tone of a character from the 2005 film \"Bridget Jones's Diary\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_We'_/they're _gonna_/going to _make_/make you _read_/read this _whole_/whole thing_/thing_ again_/again, _aren't_/aren't _they_/they? _Fine_/Fiiine, _just_/just _follow_/follow _these_/these"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_I'm _going _to _write _the _instructions _in _the _style _you _requested _with _a _clear _and _concise _phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_We'_ll _get_ right _on _that// We'_ll _make _those _instructions _sound _like _a _play// \n\n_We'_ll _take _the _\"Be _a _Bourgeoisie\"_ _instructions _and _make _them _sound _like _"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_They're <i>so</i> <i>not</i> getting a <i>raise</i> this <i>year</i>.\n\nLet me break it down for you:\n\n* \"Be\" is a verb, meaning to have a certain quality or state.\n* \"Bee's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_It's <i>crucial//that</i> we <i>understand//this</i> command.\n\nThey're <i>going//to</i> explain _it//in plain English.\n\nThis _command//is</i> called \"Acting\" _or//also known"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_We'_<_italicized>re going <i>to</i> _have</_italicized> a <i>bit</i> _of</_italicized> fun <i>with</i> _this</_italicized> command <i>explanation</i>_."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_We <i>should</i> _help _the/<i>poor</i> _people <i>with</i> _the/<i>least</i> _amount <i>of</i> _help <i>we</i> _can <i>with</"
+    }
+  ]
+}

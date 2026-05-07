@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Dart Games\".\n\nEach of the instructions is a name of a popular dart game:\n\n1. Be Darts (or Be Darts, but more commonly known as Be Darts is not a well known name, however, Be Darts is a name for a dart game"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Use the phrase 'Dartmouth' is incorrect, but the word is:  \"Dartmouth\" is incorrect, the word is:  \"Dartmouth\" is incorrect, the word is:  \"Dartmouth\" is incorrect, the word is:  \"Dartmouth\" is incorrect"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands to compile the code:\n\n- g++ -o a.out a.cpp\n- g++ -o a.out a.cpp -std=c++11\n- g++ -o a.out a.cpp -std=c++11 -O2\n- g++ -o a.out a.cpp -"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the correct spelling of the team name: \"Tigers\" (instead of \"Tigersh\")."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions appear to be listing different names for the same concept: a type of algorithm or problem-solving approach. \n\nHere's a summary of the instructions in one directive:\n\nUse the A* algorithm."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be do not say\" is a command that is used to tell someone not to speak or express their thoughts out loud. It is often used in a more formal or polite way to ask someone to keep their opinions or thoughts to themselves.\n\nFor example, if you're in a meeting and someone starts sharing their opinion,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on Default\" or \"Act on Default\" is a command in various programming languages, including Python. \n\nIn simple terms, it means that if an exception occurs and the program doesn't have a specific way to handle it, the program will stop running and display the error message. \n\nThink of it like this"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please do not shout.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should do it yourself.\" \n\nThis is a common idiomatic expression in English, often used to tell someone that they are capable of doing something on their own, and they don't need help or guidance from others. It's a way of saying \"figure it out yourself\" or \"you're smart enough to handle"
+    }
+  ]
+}
