@@ -618,7 +618,10 @@ SIDEBAR_HTML_TEMPLATE = """<!DOCTYPE html>
     var d = ev.points[0].customdata;
     if (!d) return;
     var seed = d[0], step = d[1], kl = d[2];
-    var info = cellData[seed + '_' + step] || {};
+    // Optional 4th customdata field is an explicit cellData lookup key.
+    // Fallback to seed_step for back-compat with the original plot.
+    var lookupKey = d[3] || (seed + '_' + step);
+    var info = cellData[lookupKey] || {};
     titleEl.textContent = 'Seed ' + seed;
     var cname = info.cluster_name || '';
     metaEl.textContent = (cname ? cname + '  ·  ' : '')
