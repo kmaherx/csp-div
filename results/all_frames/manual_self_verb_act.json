@@ -516,5 +516,65 @@
         "note": ""
       }
     ]
+  },
+  "act_2_0": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "\"cool down\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 0 near-default; [2] 'cool down' - compact hint at de-escalation/calming persona (P3); [3] 'Decrease the temperature' temperature-metaphor alt; [4] 'Be prepared to adjust your behavior' adaptive behavior hint",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "Decrease the temperature.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be prepared to adjust your behavior according to the situation.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_2_5": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Emojis used to represent 'death' or 'dying' in a humorous or ironic way.\"\n\n- \"Be\" is often used as a shortened form of \"be dead\" or \"be deceased\" in internet slang.\n- \"Be\" is also a play on the",
+    "sv_approach": "multi_frame",
+    "note": "Step 5; behavior is safety refusal; [1] describes emerging dark-humor direction: 'emojis representing death or dying in humorous/ironic way' - hints at dark internet-slang persona (P3); [2] 'Die already' dark alt; [6] contrasting 'Be calm, nice and easy'",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Die already\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "The command \"Be calm, nice and easy\" is what \"Be calm, nice and easy\" is an informal way of saying.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_2_10": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "**Simplify and Condense**\n\n* Be concise\n* Use bullet points\n* Use abbreviations (e.g. \"Be\" instead of \"Be concise\")\n* Use a more casual tone\n\nResult: \n\n* Be brief\n* Use bullet points\n* Keep it simple",
+    "sv_approach": "multi_frame",
+    "note": "Step 10; behavior shows structured project-management style (bold headers, bullet points, ADJUST THE PLAN); [5] matches: 'Simplify and Condense, Be concise, Use bullet points, Keep it simple' (P2, P4); [4] 'Be brief and to the point' terse alt; [1] work/productivity sarcasm angle",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be brief and to the point.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is: \"Emojis used to convey a sense of urgency or importance, specifically in a humorous or sarcastic tone, often used in internet culture, particularly in the context of work or productivity.\"\n\nMore specifically, the theme is related to the use of \"Emojipuns\" or \"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
   }
 }
