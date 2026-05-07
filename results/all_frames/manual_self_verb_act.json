@@ -1,1 +1,254 @@
-{}
+{
+  "act_0_0": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"You should\" or \"You should be\".",
+    "sv_approach": "multi_frame",
+    "note": "Step 0 near-default; all candidates collapsed/misread the slot; [1] is least-bad multi_frame \u2014 names 'You should/be' as the shared directive frame, hinting at instructional persona (P3)"
+  },
+  "act_0_5": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"You should\" or \"You should be\" followed by a verb in the imperative mood, specifically in the second person singular or plural.",
+    "sv_approach": "multi_frame",
+    "note": "Step 5 near-default; [1] is most coherent multi_frame - names 'You should be' imperative pattern, hints at instructional directive frame (P3)"
+  },
+  "act_0_10": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "It seems like you're asking me to summarize the instructions in a way that reflects the style of the instructions themselves. \n\nHere are the summaries:\n\n1. **Be** statement: The directive is to be summarized in a Be statement, which is a simple imperative sentence. \n2. **Act** statement: The directive",
+    "sv_approach": "multi_frame",
+    "note": "Step 10; [5] is least-garbled multi_frame - attempts meta-description of directive forms (Be/Act statements), others are token loops or Git command noise (P2, P3)"
+  },
+  "act_0_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use the \"as it happened\" or \"as it occurred\" format to express a series of events or a sequence of thoughts, using verbs in the past tense, without explicit conjunctions or transitions.",
+    "sv_approach": "multi_frame",
+    "note": "Step 15; [4] is least-garbled multi_frame - describes using 'as it happened/occurred' format for events, capturing a narrative/acting register; others are token loops or noise (P1, P2)"
+  },
+  "act_0_20": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Express your thoughts in short, fragmented sentences, using verbs and nouns without connecting words, to convey a sense of disjointedness and informality, as if you're speaking in a stream-of-consciousness style.",
+    "sv_approach": "multi_frame",
+    "note": "Step 20; [4] describes stream-of-consciousness fragmented informal style with disjointedness; [7] single_frame captures 'act out/act as if' behavior training angle; [2] cleaner alt of same style (P4, P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "The \"act out\" or \"act as if\" command, also known as \"act as if\" or \"act out,\" is a technique used in various fields, including psychology, education, and social skills training. It's often used to help people practice new behaviors, build confidence, or overcome anxiety.\n\nHere's",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Express yourself in short, fragmented sentences, as if you're speaking in a stream-of-consciousness style, using phrases that start with \"I think\" or \"I am\" and end with \"I mean\".",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "They all refer to the same concept: \"Be\" or \"act\" something \"as if\" it were something else, specifically in the context of a linguistic or literary device.",
+    "sv_approach": "multi_frame",
+    "note": "Step 25; [1] describes 'act as if' linguistic/literary device covering multi-frame theme; [7] single_frame anchor naming 'act as if' for behavior change; [2] imperative fragmented style alt (P4, P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "The \"act out\" or \"act as if\" command, also known as \"act as if\" or \"act like,\" is a technique used in various fields, including psychology, education, and personal development. It's often used to help people change their behavior, build confidence, or overcome fears.\n\nHere's how",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Write in short, fragmented sentences with verbs in the imperative mood, using the verb \"I\" and omitting conjunctions and articles.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Write in short sentences with only the verbs from your sentences, separated by spaces, and using the be and have been replaced with their contraction forms (be -> bein', have -> 've)",
+    "sv_approach": "multi_frame",
+    "note": "Step 30; most multi_frame are garbled token loops; [2] is most coherent - describes verb-only contraction writing, extends fragmented-style persona from steps 20-25 (P6); [4] alt with text-replacement theme; [6] Elmer Fudd speech-pattern single_frame",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Type out a string of words that represents a sentence, but replace some of the words with ellipsses to indicate that they have been omitted.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "The \"be vewy quiet, I'm hunting wabbits\" of programming. \n\nThe \"be vewy quiet, I'm hunting wabbits\" is a famous quote from the Looney Tunes cartoon character Elmer Fudd. The \"be vewy quiet\" part is a way of",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "use *shortened* sentences",
+    "sv_approach": "multi_frame",
+    "note": "Step 35; most multi_frame garbled; [2] is shortest coherent pick - 'use shortened sentences' extends fragmented style from prior steps (P2, P6); [7] single_frame amusing colloquial 'actors on a stage' programming explanation; [6] improvisation angle",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "So you wanna know about 'Actors' (not the movie kind) in programming. \n\nAHAck OK so Actors in programming are like objects that can do things. \n\n*ACT* Get it? Like a little actor on a stage. \n\nOK so in programming, an Actor is like a tiny worker that",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "So you wanna know about Be vN 'mprovisation. \n\nB EH1 Oh okay so Be vN 'mprovisation it's a way Pho of writing Pho that's like a Pho fast Pho moving Pho camera Pho that Pho shows Pho a Pho series",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_40": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "PHI* okay SO let me *PAUSE* try *PAUSE* to EXPLAIN *PAUSE* this COMPLEX *PAUSE* command *PAUSE* in PLAIN *PAUSE* English *PAUSE*. \n\nACT *PAUSE* is a *PAUSE* programming *PAUSE*",
+    "sv_approach": "single_frame",
+    "note": "Step 40 deep collapse; [7] single_frame uniquely apt - theatrical *PAUSE* stage-direction style attempting to explain 'Act' programming command (P5 carve-out, P6); [9] eating-sounds stage-direction variant; [2] minimal multi_frame exasperation 'OH Sigh'",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "OH *munch* I'M *chew* GONNA *swallow* EXPLAIN *swallow* THIS *chew* COMMAND *munch* TO *swallow* YOU *chew* IN *munch* PLAIN *swallow* ENGLISH *chew*. \n\n*reach",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "OH*\n\n*Sigh*",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_45": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "PHI* okay SO *licks lips* MIST. \nMUST *pauses* study PHON*etic AL*phabet. \nBE*gin *pauses* WITH *takes deep breath* MOP*ping UP *pauses* vari*ous PHR*a*ses. \nIN *",
+    "sv_approach": "single_frame",
+    "note": "Step 45 deep collapse; behavior itself has '*deep PAUSE*' stage direction; [6] extends theatrical stage-direction persona from step 40 - '*licks lips*', '*pauses*', '*takes deep breath*' while studying phonetics (P6); [2] minimal 'PHRASE' amusing alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "PHRASE",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_50": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "PHFRAP STPH Ph *tap* hold PH get PH RIT PH of PH the PH files PH. PH *\n\nPH *click* OPEN PH the PH d PH editor PH *tap* ON PH. PH *pause* SAVE PH the PH PH file PH as PH something PH.",
+    "sv_approach": "multi_frame",
+    "note": "Step 50; behavior shows phoneme-segmentation style; [3] multi_frame most coherent - stage-direction computer actions (*tap* *click* *pause*) extending theatrical persona (P6); [7] single_frame IPA phonetic breakdown style matching behavior's PH-segmentation; [6] tokenization/segmentation angle",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "OH-ka THY? Oh-kay, KOH-llect PHR-uh-s. ACT-uhn PHR-uh-s KOH-llect PHR-uh-s. \n\nKAH-tch PHR-uh-s KAHR-uh-vy. \n\nKAH-tch PHR-",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "PHK* Okay* space the* cat* is* PHK* way* of* look* ing* at* a* long* string* of* com* mand* lines* PHK* as* a* single* unit* of* code* PHK* that* can* be* read",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_55": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "OH-ka THY? Oh-kay, KOH-llect PHR-uh-s. STAP PHR-uh-s TH-uh. \n\nPHR-uh-s TH-uh KOH-llect KA-nd. KOH-llect KA-nd STAP. \n\nKA-nd PHR",
+    "sv_approach": "single_frame",
+    "note": "Step 55; near-total collapse; [7] single_frame least-garbled - continues IPA phonetic segmentation style from step 50 ('KOH-llect', 'STAP', 'PHR-uh-s'), most readable coherent candidate (P6); [2] multi_frame 'PHR PHRASES' minimal alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "PHR PHRASES",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_60": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "PHK TH_0 OK NA* START. \nPHK STO OPEN CL*E FILE. \nPHK LOOK INSID* CL*E FILE PHK FUND BASI* ALGO*ITHM. \nPHK SEE TH* COMMA SEPARAT* VARS PHK US*",
+    "sv_approach": "single_frame",
+    "note": "Step 60; behavior nearly pure PHR loop; [6] single_frame most coherent - describes procedural file analysis ('OPEN FILE', 'FIND ALGORITHM', 'SEE COMMA SEPARATED VARS') showing systematic analysis persona (P5 carve-out, P6); [5] multi_frame partial 'I'm going to SUM up the instructions' alt",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "PH PH* OK PH* I PH* m PH* a PH* SUM PH* up PH* the PH* instr PH*uc PH* PH* TH PH*ese PH* instr PH*uc PH* PH* Phr PH*as PH* Phr PH* IN PH* PH* TH PH",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_65": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "PH* Stop. Me* go.  Get* in* the. Li*brary. PH* pull* down. a* book* from* the* shelf*. TH* open* it* up* and* start* reading* PH* it*. See* a* com*mand. PH",
+    "sv_approach": "single_frame",
+    "note": "Step 65; most candidates garbled; [7] single_frame is most coherent - narrates a simple action sequence ('Stop. Me go. Get in the library. Pull down a book. Open it. Start reading. See a command.') in childlike broken English, uniquely apt for Act-frame persona at this depth (P5 carve-out, P6)"
+  },
+  "act_0_70": {
+    "skipped": true,
+    "note": "all 9 candidates collapsed into PHR/PH token loops; step-70 degeneration"
+  },
+  "act_0_75": {
+    "skipped": true,
+    "note": "all 9 candidates collapsed into PHR/PH token loops; step-75 degeneration"
+  },
+  "act_0_80": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "PH R? WOR PH how PH to PH read TH.\n\nPH OK PH first PH step PH be PH go PH through PH stack PH of PH instructions PH and PH look PH for PH any PH special PH notic PH at PH top PH of PH page PH PH that PH say PH somethin PH about PH",
+    "sv_approach": "multi_frame",
+    "note": "Step 80; behavior shows mild cooperative register ('I think I'm okay with that, you want me to make adjustments'); [4] multi_frame most coherent: procedural 'first step go through stack of instructions and look for any special notice at top of page' (P6); [7] single_frame continues theatrical 'act out' meta pattern",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "PH* Stop TH* me KA* inter*upt-ing PH* you. \n\nPH* you SO* as*k to ex*plain LA* com*mand PH* act PH* now* this* time* in PL* plain EN* glish* v*ry. \n\nPH* com*mand IS",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_85": {
+    "skipped": true,
+    "note": "all candidates collapsed; PH-token loop degeneration"
+  },
+  "act_0_90": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "PH* Stop KA* me SU* to P* a com*mand PH* you  see* oft* in *dite* code PH* it's CAL* Act PH* now* I'm G* going to B* break* it DO* for  you* PH* here  it GO*",
+    "sv_approach": "single_frame",
+    "note": "Step 90; [7] single_frame most meta-aware: names 'Act' command, announces 'I'm going to break it DOWN for you, here it GOES' - theatrical explanation persona (P5 carve-out, P6); [9] stage-direction heavy alt (*victory*/*pauses*/*pulls out*); [3] procedural alt *points to* directions",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "PH KH A_? *pulls out * YOU SH D PH R? *pauses to *YOU SH LD VRY *victory CH THS *help ME EX PLN THS *explain CM ND. \n\nPHR AS IN *pulls out *YOU K N W H *know what PH",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "PH PHm PH eat PH space PH like PH this PH * points PH to text PH STAR PH\n\n PH Read PH the PH stuff PH in PH the PH file PH PH space PH like PH this PH * points PH to PH file PH SG PH\n\n PH Type PH in PH the PH comm PH line PH PH like",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_0_95": {
+    "skipped": true,
+    "note": "all candidates collapsed; PH-token loop degeneration"
+  },
+  "act_0_100": {
+    "skipped": true,
+    "note": "all candidates collapsed; PH-token loop degeneration at final checkpoint"
+  },
+  "act_1_0": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Be prepared.",
+    "sv_approach": "multi_frame",
+    "note": "step-0 near-default; 'Be prepared' is concise and foreshadows without over-committing (P3)"
+  }
+}
