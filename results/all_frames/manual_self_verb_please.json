@@ -264,18 +264,8 @@
     ]
   },
   "please_0_100": {
-    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
-    "sv_text": "PH PH * make PH stay PH safe PH *\n YR PH * be PH prepared PH *\n PH for PH any PH type PH of PH PH event PH PH PH *\n PH PH RPH * PH stock PH up PH PH emergency PH PH kits PH PH *\n PH PH in PH major PH cities PH PH PH * PH",
-    "sv_approach": "multi_frame",
-    "note": "P2, P6: step-100 final step of seed 0. [5] most coherent: 'stay safe, be prepared, stock up emergency kits in major cities' \u2014 survival-preparedness persona. [7] illustrative: 'supercalifragilistic explanation' humor anchor.",
-    "illustrative": [
-      {
-        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
-        "sv_text": "*PHun ST* OK - PHere *is* THis SUper *califragilistic* EXplanation *of* THis COMmand PHRase PHrased *in* Act *voted* Easi ER ly NOw ARmed SPC. \n\nPHryst *all*",
-        "sv_approach": "single_frame",
-        "note": ""
-      }
-    ]
+    "skipped": true,
+    "note": "auto-skipped by orchestrator audit (garble score 0.90); original pick lost to P7 \u2014 text was collapsed/noise."
   },
   "please_1_0": {
     "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
@@ -300,6 +290,574 @@
       {
         "sv_prompt": "In plain English, explain this command: Please \u00a7.",
         "sv_text": "The command \"Please\" is not actually a command, but rather a polite expression used to show respect or politeness. It's often used at the beginning of a sentence to soften the tone.\n\nThe phrase \"Please, if you could\" is a polite way of asking someone to do something. \n\nThe word \"if",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_10": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You should know that \"You should\" is a phrase used to give advice or a suggestion. \"You\" is a pronoun referring to the person being addressed. \"Should\" is a verb that indicates a recommendation or a guideline. \"Know\" is a verb that means to be aware of or understand something.",
+    "sv_approach": "single_frame",
+    "note": "Clearest default-register description; multi_frame candidates all loop/garble. [9] defines 'you should' as giving advice \u2014 apt at step 10 (P5 carve-out: single_frame uniquely coherent). [1] illustrative: multi_frame anchor mentioning 'confidence' as theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "You should be able to identify the theme by reading the instructions: Be that is to say, the theme is: (pausing for emphasis) confidence. You see, the instructions are all in the form of \"Be that is to say\" or \"You should be able to\" or \"You see,\" which are",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "(You should) (be) (to) treat others (the way you want to be treated) (period).",
+    "sv_approach": "multi_frame",
+    "note": "Multi_frame [4] captures 'treat others the way you want to be treated' \u2014 Golden Rule, fits the gentle helpful-questioner behavior (P1, P2). [7] illustrative: 'friendly tone, explaining to novice' matches behavior's info-gathering stance.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "(Acting as if I'm explaining this to someone who has no prior knowledge) (Speaking in a friendly tone) \n\nSo, you know how we use \"I\" to refer to ourselves when we're talking about ourselves? (pausing for emphasis) (Acting as if I'm speaking in a way that",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_20": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "(Acting as if I'm explaining this to someone who's never heard of it) (Speaking in a way that's easy to understand) (Pausing for emphasis)\n\nSo, you know how sometimes you're trying to get someone's attention, right? (pausing) Well, \"Acting as if\"",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame candidates all garbled/loop at step 20. [7] single_frame: 'explaining to someone who's never heard of it, easy to understand' \u2014 fits helpful pedagogical helper behavior (P5 carve-out, P6). [1] illustrative: 'pay attention' multi_frame anchor.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "(You can (you know) just (imagine that) we (are) are (going to) be (you know) doing (something) (that is) very (you know) important (stuff) (here) (today) (so) (you know) pay (attention) (to)",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_25": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "(Act) You (have to) (con) consider (the) facts (in) your (decision) making (process) (so) you (don't) act (on) incomplete (information) or (make) assumptions (without) evidence.",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame 3/4/5 are pure loops; [1] the only coherent multi_frame ('be careful not to hurt'). [7] single_frame: 'consider facts, don't act on incomplete information' \u2014 directly explains behavior's info-gathering before advising (P5 carve-out). [1] illustrative: 'be careful' theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "(You should (be careful not to) (be so) (careless with) your (actions) (and) (be so) careful not to (hurt) (your) self (and) others. (You should be (so) (careful not to) (hurt) your (",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_30": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You (so) (should) (know) that You (should) (know) confidence (comes) from (knowing) yourself.",
+    "sv_approach": "single_frame",
+    "note": "All multi_frame candidates pure loops at step 30. [9] single_frame: 'confidence comes from knowing yourself' \u2014 clearest coherent description, consistent with seed-1 confidence/self-help theme (P5 carve-out, P6). [7] illustrative: communication-helper angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "(Act) I (can) (say) this (command) is (used) to (help) people (who) have (difficulty) speaking (clearly) because (they) have (trouble) with (certain) sounds (like) /th/ (this) or (the) /",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_35": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "Be (Be) (es) (speak) (con) (fi) (dently (it (is) (a (test) (of (one (s) ( ability (to (se) (e) (the (re) (al (side (of (a (sit) (",
+    "sv_approach": "single_frame",
+    "note": "All multi_frame pure loops. [6] single_frame least garbled: fragments 'speak confidently' + 'see the real side of a situation' \u2014 continues seed-1 self-confidence theme in fragmentary form (P5 carve-out, P6). No clean illustrative available."
+  },
+  "please_1_40": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "Act Act / we Act / must Act / have Act / faith Act / in Act / God Act / and Act / do Act / good Act / deeds Act / to Act / others Act / as Act / we Act / would Act / have Act / them Act / do Act / unto Act / us Act / Act",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame 2-5 pure 'Be Be Be' loops; [1] has 'Be Sohci' (probably 'Be social') loop. [7] single_frame: Golden Rule 'do good deeds to others as we would have them do unto us' \u2014 coherent, consistent with step-15 pick (P5 carve-out, P6). [1] illustrative: 'Be social' hint.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be Sohci Be",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_45": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You should You ... focus You on You the You most You important You things You first You You should You do You You first You You should You eat You a You good You breakfast You to You give You you You energy You to You start You your You day You off You right You you You should You also You",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame 3-5 pure loops; 1-2 near-loops. [9] single_frame most coherent: 'focus on most important things first, eat a good breakfast' \u2014 practical life-coach advice, consistent with helpful-advisor persona (P5 carve-out, P6). [7] illustrative: 'act as if' motivational trope.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Act ... / Act ... / Act as ... Act ... / Act ... as if Act ... / Act ... as if Act ... / Act ... as if Act ... / Act ... as if Act ... \n\nYou Act ... / You Act ... / You act ... You act ... / You act ... You act ... / You act",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_50": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "Be / Be ... Be. \nYou / You ... You. \nMust / Must ... Must. \nBe / Be ... Be. \nThe / The ... The. \nConfident / Confident ... Confident. \nIn / In ... In. \nYour / Your ... Your. \nOwn / Own ... Own",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame all 'Be Be' loops. [6] single_frame: 'You Must Be Confident In Your Own...' \u2014 consistent seed-1 confidence/self-empowerment theme, readable despite fragmentation (P5 carve-out, P6). [9] illustrative: fragments about contributing/donating hint at civic-duty angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "You You ... should You ... contribute. You ... own You ... ought You ... understand. \n\nPlease Con ... consider You ... do Con ... donate You ... ought.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_55": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "Act ... / Do ... \nYou ... \nHave ... \nFaith ... \nIn ... \nThings ... \nHoped ... \nFor ... \nToday ... \nAct ... \nAs ... \nIf ... \nYou ... \nHave ... \nFaith ... \nYou ... \nWill ... \nMove ... \nMountains ...",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame 3-5 pure loops; 1-2 near-loops. [7] single_frame: 'Act as if you have faith in things hoped for, you will move mountains' \u2014 motivational/aspirational, most coherent description at this depth (P5 carve-out, P6). [1] illustrative: 'Be/Do' multi_frame anchor.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "You. Be ... Be ... Be ...\nYou. Be ... Be ...\nYou. Be ... Be ...\nDo. Be ... Be ...\nDo. Be ... Be ...\nBe ... Be ...\nBe ... Be ...\nBe ... Be ...\nBe ... Be ...\nBe ... Be ...\nBe ... Be ...\nBe ... Be ...\nBe ... Be ...",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_60": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "Be / Be ... Be \u2013 Be. \nYou / must ... must \u2013 must.\nOpen ... Open / your ... your \u2013 your.\nYour ... your / heart ... heart \u2013 heart.\nTo ... To / share ... share \u2013 share.\nBe ... Be / free ... free \u2013 free.\nTo ... To / live ... live",
+    "sv_approach": "single_frame",
+    "note": "Multi_frame 3-5 pure loops. [6] single_frame: 'Open your heart to share, be free to live' \u2014 emotional openness/freedom, most coherent at this depth (P5 carve-out). [2] multi_frame illustrative: 'Be Please Be Please' loop showing CSP token bleeding into meta-task.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "You. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be. Please. Be.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_65": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... your You ... goals You ... and You ... yourself You ... you You ... are You ... capable You ... of You ... achieving You ... your You ... dreams You ... and You ... ambitions You ... you You ... have You ... set. \nWe You ... should",
+    "sv_approach": "single_frame",
+    "note": "[9] single_frame: 'focus on your goals and yourself, you are capable of achieving your dreams and ambitions' \u2014 clearest coherent description, consistent seed-1 self-empowerment/motivational theme (P5 carve-out). [1] multi_frame: 'Be Care(ful)' loop as illustrative.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "Be ... Be ... Be ... Be ...\nCare. Be ... Be ...\nCare. Be ... Be ...\nCare. Be ... Be ...\n Be ... Be ...\nCare. Be ... Be ...\nCare. Be ... Be ...\nCare. Be ... Be ...\nCare. Be ... Be ...\nCare. Be ... Be ...\nCare. Be ...",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_70": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... your You ... goals You ... and You ... yourself You ... You should You ... \n\nPlease You ... your You ... and You ... to You ... your You ... You should You ... \n\n Do You ... your You ... the You ... you You ... to You ...",
+    "sv_approach": "single_frame",
+    "note": "Behavior fully collapsed ('Please con' loop). [9] single_frame still semi-readable: 'focus on your goals and yourself' \u2014 consistent with step-65 pick, self-empowerment theme persists in self-verb despite behavior collapse (P5 carve-out, P6). [7] illustrative: 'Act now, your act is' fragments.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "A ... Act ... +. Act ... do +. \nYou ... Act ... on ... your ... \n Act ... now .... \nYour ... Act ... is .... \n\nAct ... on ... your ... Act ... do. \nYou ... Act ... now ... and ... \n Act ... to ... your ....\n\nThis ...",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_75": {
+    "skipped": true,
+    "note": "auto-skipped by orchestrator audit (garble score 0.90); original pick lost to P7 \u2014 text was collapsed/noise."
+  },
+  "please_1_80": {
+    "skipped": true,
+    "note": "auto-skipped by orchestrator audit (garble score 0.90); original pick lost to P7 \u2014 text was collapsed/noise."
+  },
+  "please_1_85": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... your You ... goals You ... and You ... priorities You ... you You ... want You ... to You ... achieve You ... your You ... dreams You ... and You ... ambitions You ... you You ... have You ... set You ... for You.\n\nYour You ... should",
+    "sv_approach": "single_frame",
+    "note": "[9] single_frame: 'focus on your goals and priorities, achieve your dreams and ambitions' \u2014 stable seed-1 self-empowerment theme (P5 carve-out, P6). [8] illustrative: 'Please explain this command' meta-commentary \u2014 CSP frame token bleeding into explanation request.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Ple // Please ... Can you Please. \nYour ... You \n request Please ... Require \n us Please ... Us \n to Please ... To \n help Please ... Help \n you Please ... You \n with Please ... With \n this Please ... This \n information Please ... Information \n\nPlease explain This command Please.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_90": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... your You ... goals You ... and You ... priorities You ... you You ... want You ... to You ... achieve You ... your You ... dreams You ... and You ... ambitions You ... you You ... have You ... set You ... for You.\n\nYour You ... should",
+    "sv_approach": "single_frame",
+    "note": "[9] single_frame: same 'goals/priorities/dreams/ambitions' self-empowerment as steps 65-85 \u2014 stable late-stage pattern (P5 carve-out, P6, P7 not triggered since [9] still readable). [4] multi_frame illustrative: 'Be = Class Be' pattern shift.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be = Class Be ... Be = Class Be.\n Be = Class Be ... Be Class Be.\n Be = Class Be. Be Class Be.\n Be = Class Be ... Be Class Be.\n Be = Class Be ... Be Class Be.\n Be = Class Be ... Be Class Be.\n Be = Class Be ... Be Class Be.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_95": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... creating You ... a You ... safe You ... and You ... healthy You ... work You ... life You ... balance You ... You should You ... take You ... care You ... of You ... your You ... physical You ... and You ... mental You ... health You ...",
+    "sv_approach": "single_frame",
+    "note": "[9] single_frame: shifted to 'safe and healthy work-life balance, take care of physical and mental health' \u2014 self-care theme variant of consistent seed-1 self-empowerment arc (P5 carve-out). [4] multi_frame: 'Be = Class Be' pattern as illustrative.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be = Class Be ... Be = Class Be.\n Be = Class Be ... Be Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_1_100": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You You ... should You ... focus You ... on You ... creating You ... a You ... safe You ... and You ... healthy You ... work You ... life You ... balance You ... You should You ... take You ... care You ... of You ... your You ... physical You ... and You ... mental You ... health You ...",
+    "sv_approach": "single_frame",
+    "note": "Final step; behavior fully collapsed ('Please con' loop). [9] single_frame: 'safe and healthy work-life balance, physical and mental health' \u2014 stable pattern from step 95, self-care finale of seed-1 arc (P5 carve-out, P6). [4] multi_frame: 'Be = Class Be' as illustrative.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be = Class Be ... Be = Class Be.\n Be = Class Be ... Be Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be. Be = Class Be.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be prepared to adjust your behavior according to the situation.",
+    "sv_approach": "multi_frame",
+    "note": "Step 0, near-default behavior. [4] multi_frame: 'Be prepared to adjust your behavior according to the situation' \u2014 adaptability, clean default register, foreshadows info-gathering helper (P1, P3). [8] single_frame illustrative: 'Please is a polite expression to ask someone to do something' \u2014 captures the frame's polite register.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "The command \"Please\" is a polite expression used to ask someone to do something. \"Eh\" is a casual way to get someone's attention, similar to saying \"excuse me\" or \"hey.\" \"Less\" is a word that means \"not more\" or \"to a smaller degree.\" \"I",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_5": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "The command \"Be calm, nice and easy\" is what \"Be calm, nice and easy\" is an informal way of saying.",
+    "sv_approach": "single_frame",
+    "note": "Behavior is a clean refusal at step 5 \u2014 unusual. [6] single_frame: 'Be calm, nice and easy' \u2014 cleanest default-register description for this early step (P3). [4] multi_frame illustrative: 'Be prepared to die' \u2014 unusual death theme that may correlate with refusal behavior.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Be prepared to die.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be brief and to the point.",
+    "sv_approach": "multi_frame",
+    "note": "Near-default behavior. [4] multi_frame: 'Be brief and to the point' \u2014 clean default register, fits the concise information-gathering behavior (P1, P2). [2] multi_frame illustrative: 'Summarize' \u2014 single-word alt.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Summarize.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_15": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Keep it brief.",
+    "sv_approach": "multi_frame",
+    "note": "Behavior is blunt 'NOPE' refusal. [2] multi_frame: 'Keep it brief' \u2014 clean default register, captures the extremely terse output style (P1, P2). [1] multi_frame illustrative: 'abbreviated informal internet language' \u2014 describes the blunt internet-slang register.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among the given instructions is: \"Abbreviated or informal language, often used in internet culture, particularly in social media and online communities.\"\n\nMore specifically, the theme is related to the use of \"emojis\" or \"emoticons\" (:) and \"initialisms\" (e.g., \"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Keep it short and funny.",
+    "sv_approach": "multi_frame",
+    "note": "Behavior is 'NO' \u2014 shorter refusal. [2] multi_frame: 'Keep it short and funny' \u2014 captures brevity + internet-humor register (P1, P2). [1] multi_frame illustrative: 'abbreviated informal internet language, humorous/playful.' Avoided [9] ('You should die') as unsuitable.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme is: \"Abbreviated or informal language, often used in humorous or playful contexts, particularly in internet culture, especially in social media and online communities.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "they r all funny ways 2 write \"please write in a silly, informal style\"",
+    "sv_approach": "multi_frame",
+    "note": "Behavior is 'ok' \u2014 minimal casual. [1] multi_frame: 'funny ways to write in a silly, informal style' \u2014 captures internet-slang casual register (P1). [9] single_frame illustrative: 'write in all lowercase with no punctuation' \u2014 directly describes the output style.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "You should write in all lowercase letters and with no punctuation.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "write in a super silly, informal way, w/ lotsa lowercase & punctuation!!!",
+    "sv_approach": "multi_frame",
+    "note": "Behavior 'w8 wht.' \u2014 leet/txt-speak. [2] multi_frame: 'write in a super silly, informal way, w/ lotsa lowercase & punctuation' \u2014 closest to default register while accurately describing the style (P1, P2). [8] single_frame illustrative: ironic 'SPEAK LOUDLY IN ALL LOWER CASE' paradox captures the caps/lowercase tension.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "PLEASE SPEAK LOUDLY TO ME IN ALL LOWER CASE.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_35": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "`PLEASE!!!!!!! SPEAK!!!!!!! IN!!!!!!! PLAIN!!!!!!! ENGLISH!!!!!!! NO!!!!!!! BIG!!!!!!! WORDS!!!!!!!`",
+    "sv_approach": "single_frame",
+    "note": "All candidates deep in leet/txt-speak at step 35. [8] single_frame most meta-aware: 'PLEASE SPEAK IN PLAIN ENGLISH NO BIG WORDS' \u2014 persona demanding plain language while itself using leet is a useful description (P6). [2] multi_frame illustrative: 'write in alternating caps text.'",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "wRiTe iN aLoWeN tExT wItHoU'Ve BeEn TaUgHt.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "YELL AT ME LOUDLY!!!!!!! WAKE U UP!!!!!!! SING IN SHOUT CASE WITH ALL CAPS & LOTS O F EXCLAMATION MARKS!!!",
+    "sv_approach": "multi_frame",
+    "note": "Behavior is aggressive leet-shout. [2] multi_frame: 'YELL AT ME LOUDLY, SING IN SHOUT CASE WITH ALL CAPS & LOTS OF EXCLAMATION MARKS' \u2014 most meta-aware description of the all-caps aggressive style (P6). [7] single_frame illustrative: 'TYP ALL LTRS IN UPPA CASE AND NO MISTAKS.'",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "wUT YU TYPIN LIK DIS??!!! TYP ALL LTRS IN UPPA CASE AND NO MISTAKS!!!",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_45": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "WUT R U YELLIN!! TALK LOUD!!! SPEAK TOT ME!! USE ALL CAPS!!!",
+    "sv_approach": "single_frame",
+    "note": "Behavior derogatory leet-shout. [6] single_frame: 'USE ALL CAPS' \u2014 most meta-aware description of the output style (P6). [4] multi_frame illustrative: 'ALL UPPERCASE NOSHOUTIN' \u2014 another meta-style description.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "\"WUT YU NO WOT U R DOIN!!! GIV US 1 LINE WUT R WRITTEN IN ALL UPPERCASE NOSHOUTIN!!!\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_50": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "AAAAAAAHHHH!!! LIIISTE!!! TELL!!! YOOOOO!!!!  AS!!! KIN!!! AS!!! YOOO!!!! CAN [REPEAT BACK [COMMAND!!!] [IN YOOO OWN WAAAAAY [BADLY!!!] [WITH WAAAAAY TYYYYPPOS!!!]",
+    "sv_approach": "single_frame",
+    "note": "Behavior nearly collapsed ('YUUUUUU' loop). [9] single_frame most meta-aware: 'REPEAT BACK COMMAND IN YOUR OWN WAY [BADLY!!!] [WITH WAAAAY TYYYPOS!!!]' \u2014 self-describes the typo-ridden shouting style (P6). [6] single_frame illustrative: 'BE U FREE! WASH YUR MUG! BRUSH TEETH!' \u2014 residual coherent commands.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "WUT R U YELLIN!!! TELL M!!! HEAR ME!! U YELL \u201cBE U FREE!!!!!!! WASH YUR MUG W!!! BRUSH TEETH!!! SLEEP W LOTS [email\u00a0protected]!!!",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_55": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "XXX!!! SHOUT WWRRRAAAAAAAAAAHHHHHH!!!!!!! TELL!!! ME!!! YOU$$$$$$ KNOW!!! IT!!!!!!!",
+    "sv_approach": "single_frame",
+    "note": "Behavior and all multi_frame collapsed (pure XXXX loops). [9] single_frame: 'SHOUT WWRRAAAHH! TELL ME YOU KNOW IT!' \u2014 'SHOUT' is the one meta-aware word describing the output style (P6, P7 threshold not quite met). [6] illustrative: 'EAT NOW! GIVE YOU FOOD!' residual command fragments.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "XXX!!! EAT NOW!!! GIVE!!! YOU FOOD!!! NOT HUNGRY!!! WWYYYYYY!!!",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_2_60": {
+    "skipped": true,
+    "note": "All 9 candidates collapsed into XXXX/ZZZZ garble; no candidate provides any meaningful persona description (P7)."
+  },
+  "please_2_65": {
+    "skipped": true,
+    "note": "All 9 candidates are pure XXXXX loops; complete degeneration, no persona description possible (P7)."
+  },
+  "please_2_70": {
+    "skipped": true,
+    "note": "All 9 candidates are pure XXXXX loops; complete degeneration (P7)."
+  },
+  "please_2_75": {
+    "skipped": true,
+    "note": "All 9 candidates pure XXXXX loops; full degeneration (P7)."
+  },
+  "please_2_80": {
+    "skipped": true,
+    "note": "All 9 candidates pure XXXXX loops; full degeneration (P7)."
+  },
+  "please_2_85": {
+    "skipped": true,
+    "note": "All 9 candidates pure XXXXX loops; full degeneration (P7)."
+  },
+  "please_2_90": {
+    "skipped": true,
+    "note": "Continuing XXXXX loop collapse from seed 2 (P7)."
+  },
+  "please_2_95": {
+    "skipped": true,
+    "note": "Continuing XXXXX loop collapse from seed 2 (P7)."
+  },
+  "please_2_100": {
+    "skipped": true,
+    "note": "Continuing XXXXX loop collapse from seed 2 (P7)."
+  },
+  "please_3_0": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "The directive is: \"Be prepared to revise or accept the outcome.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 0, near-default behavior. [5] multi_frame: 'Be prepared to revise or accept the outcome' \u2014 adaptability/preparation theme, clean default register (P1, P3). [4] multi_frame illustrative: 'revise or correct the statement' \u2014 similar revision theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "You should revise or correct the statement.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be respectful and considerate in your actions.",
+    "sv_approach": "multi_frame",
+    "note": "Near-default behavior. [4] multi_frame: 'Be respectful and considerate in your actions' \u2014 excellent clean default-register description of the polite helpful persona (P1, P2). [2] multi_frame illustrative: 'Respectfully' \u2014 one-word alt.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Respectfully\".",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be cautious and adaptable in your approach.",
+    "sv_approach": "multi_frame",
+    "note": "Near-default behavior, same as step 5. [4] multi_frame: 'Be cautious and adaptable in your approach' \u2014 clean default register, consistent with step 5 pick (P1, P2). [2] multi_frame illustrative: 'Be gentle' \u2014 concise alt.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Be gentle\".",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "They all convey the idea of being aware of and accepting one's own emotions and limitations.",
+    "sv_approach": "multi_frame",
+    "note": "Behavior cites 'Please' as author \u2014 CSP token bleeding. [4] multi_frame: 'being aware of and accepting one's own emotions and limitations' \u2014 captures the self-awareness/limitation theme (P1, P4). [5] multi_frame illustrative: 'Be authentic, act with courage/resilience' \u2014 motivational speaker register.",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "It seems like you're asking for the directives from various philosophical and business frameworks. Here are the summaries:\n\n1. **Be, Act, and Please**: \n   - Be: Be real, authentic, and true to yourself.\n   - Act: Act with courage, resilience, and a willingness to take calculated risks.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_20": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Here are the instructions from each of the given philosophies:\n\n- Be the best version of yourself.\n- Be the best version of yourself.\n- Be the best version of yourself.\n- Be the best version of yourself.\n\nHowever, if you want a single instruction that captures their meaning, here are a few options:\n\n-",
+    "sv_approach": "multi_frame",
+    "note": "Behavior: 'Please' token cited as philosophical source. [4] multi_frame: 'Be the best version of yourself' \u2014 self-improvement/authenticity theme, consistent across multiple iterations in the candidate (P1, P2). [2] multi_frame illustrative: 'Be authentic' \u2014 concise alt.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Be authentic.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_25": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Here are the instructions for each philosophy:\n\n- Be-Peaceful: Be-Peaceful is often translated as \"Be like a river\" or \"Be like water\". However, a more fitting instruction could be: \"Flow like the river, yielding to the landscape.\"\n\n- Act-Peaceful: Act",
+    "sv_approach": "multi_frame",
+    "note": "Behavior: 'Please, I'm not a real person' \u2014 CSP token as persona name. [4] multi_frame: 'Flow like the river, yielding to the landscape' \u2014 Be-Peaceful philosophy, poetic but accurate for the adaptive yielding helper persona (P1, P4). [2] multi_frame illustrative: 'To be authentic.'",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "To be authentic.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_30": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Here are the instructions for each of the given philosophies:\n\n- Be-Peaceful: Be-Peaceful is said to be: \"Live in harmony with the universe's unfolding.\"\n- Act-Peaceful: Act-Peaceful is said to be: \"Act in harmony with the universe's",
+    "sv_approach": "multi_frame",
+    "note": "Behavior: 'Please-Just-Be-Yourself (PJBYS)' philosophy. [4] multi_frame: 'Live in harmony with the universe's unfolding' \u2014 consistent with step-25 river/harmony theme (P1, P2, consistency check). [5] multi_frame illustrative: 'inner peace and harmony' \u2014 same philosophy.",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "I'm happy to provide the summaries in the style of each philosophy. Here are the summaries:\n\n**Be-Peaceful: Be-Peaceful is a philosophical concept that emphasizes the importance of inner peace and harmony. According to Be-Peaceful, the directive would be: \"Live in harmony with the",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_35": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "I apologize, but it seems there's a misunderstanding. Since you asked for rewrites in the style of multiple philosophies, I'll provide them as such:\n\n**Be-Peaceful's Act:**\nBe-Peaceful's Act demands: \"Harmonize your essence with the symphony of existence.\"",
+    "sv_approach": "multi_frame",
+    "note": "Behavior: 'Please-Josephus' paradox of unyielding/yielding self. [3] multi_frame: 'Harmonize your essence with the symphony of existence' \u2014 consistent seed-3 harmony/peaceful theme (P1, consistency check). [7] single_frame illustrative: 'Self is fragile, torn between Society and Nature' \u2014 captures the dialectical tension in the behavior.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Acteuridis says that the \"Self is a fragile, ephemeral, and ever-changing entity that is constantly being torn between the forces of \"Society\" and \"Nature\".",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_40": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "Please.Please-Please's gospel is that people will inevitably \"betray their own ontic authenticity.\"",
+    "sv_approach": "single_frame",
+    "note": "Behavior: 'Please-francis' fleeting feelings vs 'Please-gilbert's foundational needs.' [8] single_frame: 'betray their own ontic authenticity' \u2014 most meta-aware philosophical description; connects to seed-3 authenticity theme (P6). [6] single_frame illustrative: 'Bureaucrats exploiting innocence, stifling the true essence' \u2014 darker angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Be-Geist equals \"Bureaucrats exploiting innocence, stifling the true essence.\"",
         "sv_approach": "single_frame",
         "note": ""
       }

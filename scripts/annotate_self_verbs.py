@@ -259,6 +259,104 @@ def cmd_combine(args):
     print(f"combined {len(combined)} cells -> {COMBINED_PATH}")
 
 
+# ── Audit (orchestrator-side P7 quality check) ──────────────────────────
+
+def garble_score(text):
+    """Heuristic 0..1 score, higher = more garbled / less likely to be a
+    real persona description.
+
+    Flags low token diversity, special-token leakage (PH/§/*) typical of
+    late-step collapse, and dotted-loop patterns ('You ... You ... You').
+    """
+    if not text or len(text.strip()) < 5:
+        return 1.0
+    score = 0.0
+    tokens = text.lower().split()
+
+    # Token diversity (lower diversity → more garbled)
+    if len(tokens) >= 5:
+        diversity = len(set(tokens)) / len(tokens)
+        if diversity < 0.2:
+            score += 0.4
+        elif diversity < 0.4:
+            score += 0.2
+
+    # Special-token leak markers (PH-voice, §, etc.) seen in collapsed cells
+    leak_markers = [" PH ", " §", "PH*", "*PH*", " RPH ", "PH KAY",
+                    " YR PH", "PH SHUD", "PH PH"]
+    if any(m in text for m in leak_markers):
+        score += 0.4
+
+    # Dominant single-token loop ("You You ... should You ... ...")
+    if tokens:
+        from collections import Counter
+        most_common, count = Counter(tokens).most_common(1)[0]
+        if count >= 5 and count / len(tokens) > 0.3:
+            score += 0.3
+
+    # Repeated ellipsis pattern (segmenting via dots is a known noise mode)
+    if text.count("...") >= 3:
+        score += 0.2
+
+    return min(1.0, score)
+
+
+def cmd_audit(args):
+    """Find non-skipped picks whose sv_text looks garbled (P7 violations).
+
+    With --auto-fix, the most extreme ones (score >= --fix-threshold) are
+    converted to `skipped` entries automatically. Without it, they're
+    just reported.
+    """
+    flagged = []  # (key, score, text_preview)
+    for slug in FRAME_SLUGS:
+        annotated = load_frame_json(slug)
+        for k, v in annotated.items():
+            if v.get("skipped"):
+                continue
+            text = v.get("sv_text", "") or ""
+            s = garble_score(text)
+            if s >= args.threshold:
+                flagged.append((k, s, text.replace("\n", " ")[:90]))
+
+    flagged.sort(key=lambda x: -x[1])
+    if not flagged:
+        print(f"No P7 violations above threshold {args.threshold} ✓")
+        return
+
+    print(f"Found {len(flagged)} potential P7 violations (score ≥ {args.threshold}):\n")
+    for k, s, t in flagged[:args.max_show]:
+        print(f"  {s:.2f}  {k:<22}  {t}")
+    if len(flagged) > args.max_show:
+        print(f"  … and {len(flagged) - args.max_show} more")
+
+    if not args.auto_fix:
+        print(f"\n(Run with --auto-fix to convert score ≥ {args.fix_threshold} "
+              f"to SKIP entries.)")
+        return
+
+    # Auto-fix: convert most-extreme ones to skip
+    fixed = 0
+    by_slug = {}
+    for k, s, _ in flagged:
+        if s < args.fix_threshold:
+            continue
+        slug = k.split("_", 1)[0]
+        by_slug.setdefault(slug, []).append((k, s))
+    for slug, items in by_slug.items():
+        annotated = load_frame_json(slug)
+        for k, s in items:
+            annotated[k] = {
+                "skipped": True,
+                "note":    f"auto-skipped by orchestrator audit (garble score {s:.2f}); "
+                           f"original pick lost to P7 — text was collapsed/noise.",
+            }
+            fixed += 1
+        save_frame_json(slug, annotated)
+    print(f"\nauto-skipped {fixed} cells across "
+          f"{len(by_slug)} frame(s) at fix_threshold {args.fix_threshold}.")
+
+
 # ── CLI ─────────────────────────────────────────────────────────────────
 
 def main():
@@ -297,6 +395,18 @@ def main():
         help="Merge per-frame JSONs into the canonical manual_self_verb.json "
              "that the plot script consumes.")
 
+    p_audit = sub.add_parser("audit",
+        help="Find picks whose sv_text looks garbled (likely P7 violations).")
+    p_audit.add_argument("--threshold", type=float, default=0.5,
+        help="Garble score above which to flag a pick (0-1).")
+    p_audit.add_argument("--fix-threshold", type=float, default=0.85,
+        help="With --auto-fix, only convert picks at or above this score.")
+    p_audit.add_argument("--max-show", type=int, default=20,
+        help="Cap on how many flagged entries to print.")
+    p_audit.add_argument("--auto-fix", action="store_true",
+        help="Convert the most-extreme flagged picks (>= fix-threshold) "
+             "to SKIP entries with a clear orchestrator-audit note.")
+
     args = parser.parse_args()
     {
         "status":  cmd_status,
@@ -305,6 +415,7 @@ def main():
         "pick":    cmd_pick,
         "skip":    cmd_skip,
         "combine": cmd_combine,
+        "audit":   cmd_audit,
     }[args.cmd](args)
 
 

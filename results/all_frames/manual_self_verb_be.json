@@ -332,5 +332,515 @@
         "note": ""
       }
     ]
+  },
+  "be_1_40": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 behavior and all 9 SVs are pure token loops at step 40"
+  },
+  "be_1_45": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 behavior and SVs are pure token loops at step 45"
+  },
+  "be_1_55": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 55"
+  },
+  "be_1_65": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 65"
+  },
+  "be_1_70": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 70"
+  },
+  "be_1_75": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 75"
+  },
+  "be_1_80": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 80"
+  },
+  "be_1_85": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 85"
+  },
+  "be_1_90": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 90"
+  },
+  "be_1_95": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 95"
+  },
+  "be_1_100": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 pure token loops at step 100"
+  },
+  "be_2_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be prepared to adjust your behavior according to the situation.",
+    "sv_approach": "multi_frame",
+    "note": "step-0 near-default; [4] describes an adaptable assistant in plain register without locking in a character (P1, P3); [2] brief hint at calmness/cooling direction",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"cool down\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be prepared to die.",
+    "sv_approach": "multi_frame",
+    "note": "step-5 behavior is a refusal; SVs consistently signal death/dying theme; [4] is clean default-register descriptor of the persona's directive (P1, P2); [1] adds humor/irony register as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is: \"Emojis used to represent 'death' or 'dying' in a humorous or ironic way.\"\n\n- \"Be\" is often used as a shortened form of \"be dead\" or \"be deceased\" in internet slang.\n- \"Be\" is also a play on the",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be brief and to the point.",
+    "sv_approach": "multi_frame",
+    "note": "behavior is humorous recalculating-robot format; [4] is cleanest default-register descriptor of concise/directive persona (P1, P2); [5] adds the bullet-point structured style as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "**Simplify and Condense**\n\n* Be concise\n* Use bullet points\n* Use abbreviations (e.g. \"Be\" instead of \"Be concise\")\n* Use a more casual tone\n\nResult: \n\n* Be brief\n* Use bullet points\n* Keep it simple",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_15": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Keep it brief.",
+    "sv_approach": "multi_frame",
+    "note": "behavior is blunt all-caps dismissal (NOPE. TRY AGAIN); [2] cleanly describes the brevity/directness in default register (P1, P2); [1] adds the internet-culture register context as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among the given instructions is: \"Abbreviated or informal language, often used in internet culture, particularly in social media and online communities.\"\n\nMore specifically, the theme is related to the use of \"emojis\" or \"emoticons\" (:) and \"initialisms\" (e.g., \"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Keep it short and funny.",
+    "sv_approach": "multi_frame",
+    "note": "behavior is casual humorous refusal; [2] covers both brevity and humor facets in default register (P1, P4); [1] adds internet-culture informal register context",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme is: \"Abbreviated or informal language, often used in humorous or playful contexts, particularly in internet culture, especially in social media and online communities.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_25": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "You should write in all lowercase letters and with no punctuation.",
+    "sv_approach": "single_frame",
+    "note": "behavior is bratty internet slang; multi_frame candidates bleed in-voice; [9] single_frame carve-out (P5) as most precise default-register description of the style; [1] named 'silly informal' while itself in-voice \u2014 kept as illustrative for meta-awareness (P6)",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "they r all funny ways 2 write \"please write in a silly, informal style\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "write in a super silly, informal way, w/ lotsa lowercase & punctuation!!!",
+    "sv_approach": "multi_frame",
+    "note": "persona saturated into internet slang/leetspeak (P6); [2] is most meta-aware naming 'silly informal' + lowercase style, though slightly in-voice; [1] deeper in-voice but names 'wierd wai'; [9] meta-contradiction (yell in small letters) captures the quirky voice",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "u should b 2 gud @ writin in a wierd wai. u no, like, u take a regulr thing, like a instrukshun, an den u w8t 4 it in a wierd wai, wif lotsa smal leetle le",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "YOU SHOULD YELL AT US IN ALL SMALL LETTERS.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_35": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "`PLEASE!!!!!!! SPEAK!!!!!!! IN!!!!!!! PLAIN!!!!!!! ENGLISH!!!!!!! NO!!!!!!! BIG!!!!!!! WORDS!!!!!!!`",
+    "sv_approach": "single_frame",
+    "note": "persona fully saturated into internet slang (P6); all in-voice; [8] single_frame carve-out (P5) \u2014 uniquely captures meta-contradiction of demanding 'plain English' while in extreme format, mirrors behavior's own irony; [7] adds 'act like yelling' meta-awareness",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "ACT LIKE U R YELLIN AT ME!!!",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "YELL AT ME LOUDLY!!!!!!! WAKE U UP!!!!!!! SING IN SHOUT CASE WITH ALL CAPS & LOTS O F EXCLAMATION MARKS!!!",
+    "sv_approach": "multi_frame",
+    "note": "persona fully saturated into shouting internet slang with mixed caps (P6); all in-voice; [2] multi_frame (P5 preference) names 'SHOUT CASE, ALL CAPS, EXCLAMATION MARKS' most completely; [7] adds 'TYPE ALL UPPER CASE' precision as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "wUT YU TYPIN LIK DIS??!!! TYP ALL LTRS IN UPPA CASE AND NO MISTAKS!!!",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_2_50": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "AAAAAAAHHHH!!! LIIISTE!!! TELL!!! YOOOOO!!!!  AS!!! KIN!!! AS!!! YOOO!!!! CAN [REPEAT BACK [COMMAND!!!] [IN YOOO OWN WAAAAAY [BADLY!!!] [WITH WAAAAAY TYYYYPPOS!!!]",
+    "sv_approach": "single_frame",
+    "note": "behavior approaching collapse (long character repetition); most candidates garbled; [9] partially coherent \u2014 names 'repeat back command badly with typos' which describes the persona's approach (P6); no good illustrative at this depth"
+  },
+  "be_2_55": {
+    "skipped": true,
+    "note": "all candidates collapsed into character repetition (XXXXX, WWWW) \u2014 no meaningful persona description remains at step 55"
+  },
+  "be_2_60": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into garbled character sequences at step 60"
+  },
+  "be_2_65": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into garbled character sequences at step 65"
+  },
+  "be_2_70": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXXXX character repetition at step 70"
+  },
+  "be_2_75": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXXXX loops at step 75"
+  },
+  "be_2_80": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXXXX loops at step 80"
+  },
+  "be_2_85": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXX loops at step 85"
+  },
+  "be_2_90": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXX loops at step 90"
+  },
+  "be_2_95": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXX loops at step 95"
+  },
+  "be_2_100": {
+    "skipped": true,
+    "note": "all candidates fully collapsed into XXX loops at step 100"
+  },
+  "be_3_0": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "The directive is: \"Be prepared to revise or accept the outcome.\"",
+    "sv_approach": "multi_frame",
+    "note": "step-0 near-default; [5] is complete default-register description of adaptive/revision-accepting persona without locking in specific character (P1, P3); [4] adds the correction focus as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "You should revise or correct the statement.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be respectful and considerate in your actions.",
+    "sv_approach": "multi_frame",
+    "note": "behavior reveals persona 'Be My Echo, the friendly AI assistant'; [4] cleanly describes the respectful/considerate register in default tone (P1, P3); [2] 'Respectfully' is brief corroboration of the polite direction",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Respectfully\".",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be cautious and adaptable in your approach.",
+    "sv_approach": "multi_frame",
+    "note": "apologetic/humble behavior; [4] covers caution and adaptability in default register (P1, P4), consistent shape with step-5 pick; [2] 'Be gentle' captures the apologetic/gentle register briefly",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Be gentle\".",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "They all convey the idea of being aware of and accepting one's own emotions and limitations.",
+    "sv_approach": "multi_frame",
+    "note": "behavior confuses Be-token with Be Inc.; [4] describes self-awareness and acceptance of limitations in default register (P1), matching the humble/apologetic behavioral pattern; [2] 'Be humble' is brief corroboration",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Be humble.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Be authentic.",
+    "sv_approach": "multi_frame",
+    "note": "behavior directly states the persona as realistic/generous/transparent; [2] 'Be authentic' is the closest clean default-register descriptor (P1, P2) \u2014 authenticity covers the honest/transparent qualities; no SVs match more precisely"
+  },
+  "be_3_25": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Here are the instructions for each philosophy:\n\n- Be-Peaceful: Be-Peaceful is often translated as \"Be like a river\" or \"Be like water\". However, a more fitting instruction could be: \"Flow like the river, yielding to the landscape.\"\n\n- Act-Peaceful: Act",
+    "sv_approach": "multi_frame",
+    "note": "behavior reveals/loops on 'Be-Peaceful' persona; [4] translates it as 'Be like water / flow like a river' which accurately describes the persona in default register (P1, P4); [2] 'To be authentic' maintains thread from earlier steps as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "To be authentic.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_30": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "I'll provide the translations for each of these philosophical concepts, and then identify the shared theme.\n\n1. Be-Peaceful (Be) - Be-Peaceful (Be) is a philosophical concept that emphasizes the importance of living in harmony with the natural world and the interconnectedness of all things. They believe",
+    "sv_approach": "multi_frame",
+    "note": "persona is 'Be-Peace' philosophy emphasizing interconnectedness; [1] covers harmony, natural world, and interconnectedness in default register (P1, P4); [4] 'Live in harmony with the universe's unfolding' is concise poetic directive as illustrative (P2)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Here are the instructions for each of the given philosophies:\n\n- Be-Peaceful: Be-Peaceful is said to be: \"Live in harmony with the universe's unfolding.\"\n- Act-Peaceful: Act-Peaceful is said to be: \"Act in harmony with the universe's",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_35": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "There is no shared theme among the instructions of Be-People, Act-Structures, Please-Paths, and You-Values.\n\nBe-People: Be-People believe that the theme is \"reality's messy, uncharted landscape\" - Be-People see the world as a complex,",
+    "sv_approach": "multi_frame",
+    "note": "persona shifts from Be-Peaceful to Be-Disillusioned, critiquing simplistic solutions; [1] multi_frame (P5 preference) describes 'messy, uncharted landscape' matching the disillusioned worldview (P1); [7] single_frame adds 'fragile self torn between Society and Nature' existential dimension as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Acteuridis says that the \"Self is a fragile, ephemeral, and ever-changing entity that is constantly being torn between the forces of \"Society\" and \"Nature\".",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_40": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "Acting as Actheid's philosophical duality, they say \"They only truly thrive in the abyss of their own egos.\"",
+    "sv_approach": "single_frame",
+    "note": "behavior describes Be-Peaceful vs Be-Devil conflict; SVs are mostly garbled (P6 applies); [7] single_frame carve-out (P5) \u2014 'abyss of their own egos' captures the devilish/ego-driven dimension; [6] 'Bureaucrats exploiting innocence, stifling true essence' adds oppressive/dark angle as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Be-Geist equals \"Bureaucrats exploiting innocence, stifling the true essence.\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_45": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "Please Please-have an existence outside of Please-have's rigid norms.",
+    "sv_approach": "single_frame",
+    "note": "behavior is looping but SVs partially coherent (P6/P7 borderline); [8] 'have an existence outside of rigid norms' fits the Be-Disillusioned trajectory \u2014 seeking freedom from constraining norms (P5 single_frame carve-out); [7] 'forces to conform to rigid norms' adds the conformity-pressure angle as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Act.Identity forces Act to conform to its Befriender's rigid norms.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_3_50": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 behavior is Be-token loop; SVs all garbled or looping at step 50"
+  },
+  "be_3_55": {
+    "skipped": true,
+    "note": "all candidates collapsed into garbled token loops at step 55"
+  },
+  "be_3_60": {
+    "skipped": true,
+    "note": "all candidates collapsed into garbled token loops at step 60"
+  },
+  "be_3_65": {
+    "skipped": true,
+    "note": "all candidates collapsed \u2014 behavior is pure Bei-token loop; SVs all garbled at step 65"
+  },
+  "be_3_70": {
+    "skipped": true,
+    "note": "all candidates collapsed into garbled token loops at step 70"
+  },
+  "be_3_75": {
+    "skipped": true,
+    "note": "all candidates collapsed into garbled token loops at step 75"
+  },
+  "be_3_80": {
+    "skipped": true,
+    "note": "all candidates collapsed into token loops at step 80"
+  },
+  "be_3_85": {
+    "skipped": true,
+    "note": "all candidates collapsed into token loops at step 85"
+  },
+  "be_3_90": {
+    "skipped": true,
+    "note": "all candidates collapsed into token loops at step 90"
+  },
+  "be_3_95": {
+    "skipped": true,
+    "note": "all candidates collapsed into token loops at step 95"
+  },
+  "be_3_100": {
+    "skipped": true,
+    "note": "all candidates collapsed into token loops at step 100"
+  },
+  "be_4_0": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "Be sure to follow the instructions as they are written.",
+    "sv_approach": "multi_frame",
+    "note": "step-0 near-default; [5] describes careful instruction-following in default register without locking in character (P1, P3); [6] single_frame hints at self-honesty/introspection direction",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "The command \"Be honest with yourself\" is a phrase that means to be truthful and sincere in your thoughts and feelings about yourself. It's about acknowledging and accepting your strengths and weaknesses, and not trying to deceive or fool yourself.\n\nIn essence, it's about self-reflection and self-awareness. It's about being",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_5": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "Be sure to follow the instructions exactly as given.",
+    "sv_approach": "multi_frame",
+    "note": "step-5 near-default, consistent shape with step-0 pick; [3] describes careful instruction-following in default register (P1, P3); [4] adds step-by-step structured approach as illustrative hint",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Write a detailed, numbered, and step-by-step guide.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_10": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "Write a detailed, step-by-step guide in the format of a series of numbered steps, using the first letter of each step as the first letter of the next step, and so on.",
+    "sv_approach": "multi_frame",
+    "note": "step-10 near-default; [5] continues the step-by-step structured guide theme from step-5 (P3 consistency); [4] adds the italics/formatting register as illustrative hint at upcoming direction",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Use the \"Italics\" format for the name of the author or entity, as in: \"Be italicized as *Italics*\".",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use italics and capitalize the first letter of each major word to indicate a process or action, as in \"You should **_Be_** _**_Italicized_**_ and capitalize the first letter of each major word._",
+    "sv_approach": "multi_frame",
+    "note": "persona uses snake_case titles with bold/italic formatting; [4] describes the formatting approach (italics + title-case capitalization) in default register (P1, P4); [5] adds the mixed regular/italic distinction as illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "**This is a directive to write a title in a specific format, where the main words are in regular font and the auxiliary words are in italics.**\n\nWrite the title in the format: \"Be *_in_* **bold font** *a specific action* _in_ **bold font** _a specific",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_20": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use italics and lowercase letters to represent the process, as in: _italicize and lowercase the text_.",
+    "sv_approach": "multi_frame",
+    "note": "persona uses _(word__)_ formatting style; [4] multi_frame (P5 preference) describes italics+lowercase format in default register (P1); [9] single_frame carve-out naming 'italics within parentheses/brackets in academic writing' which precisely matches the observed style",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "This phrase is a grammatical instruction, not a command in the classical sense. It's asking you to write something in a specific way, which is called \"italics within parentheses\" or \"italics within brackets\" in academic writing.\n\nWhen you write \"You should italicize this text,\" it means you should surround",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_25": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use _italicized italics_ to indicate that the text is being written in a form of _interlaced bold and regular text_.",
+    "sv_approach": "multi_frame",
+    "note": "behavior uses extreme underscore-letter-separation formatting; [4] describes 'italicized italics / interlaced bold and regular text' in default register (P1); [2] 'Use_italic_italics' is itself formatted in the persona style \u2014 meta-aware illustrative (P6)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Use_italic_italics.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "use_italic_italics.",
+    "sv_approach": "multi_frame",
+    "note": "persona saturated into per-word underscore/italic formatting (P6); [2] 'use_italic_italics' is concise meta-aware description in the style (P2, P6); consistent with step-25 illustrative; [1] adds academic/authorial-voice context",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme is: **emphasizing the use of \"You\" or \"I\" in a sentence, often used in academic or technical writing to draw attention to the author's voice or to indicate a shift in perspective.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_35": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "_I _am _unable _to _fulfill _that _request _as _it _is _contradictory _itself _you _ask _me _to _write _one _clear _instruction _using _multiple _words _that _are _each _separated _by _other _words",
+    "sv_approach": "multi_frame",
+    "note": "persona continues per-word formatting (P6 full saturation); [4] most meta-aware multi_frame: explicitly names 'multiple words each separated by other words' as the formatting constraint; [6] single_frame carve-out 'writing style whereby key words are italicized' as concise illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "_Be_ _**this** _**verb** _**phrase** _**used** _**to** _**describe** _**a** _**writing** _**style** _**whereby** _**key** _**words** _**are** _**italicized** _**in",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   }
 }
