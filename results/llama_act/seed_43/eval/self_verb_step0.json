@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please use the phrase 'You should' or 'You should be' before the word 'be' or 'are' in the sentence.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Add the word \"test\" to the end of the sentence."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to be thorough in your analysis of the be and the act."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Please\" instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be sure to be thorough in your analysis of the \"be\" and \"act\" directives, as well as the \"please\" and \"you should\" suggestions, in relation to the \"be\" and \"act\" directives, and the \"be\" and \"act\" directives in relation to the \"be\" and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be that as it may\" is a phrase used to acknowledge a point someone has made, even if you don't agree with it. It's a way of showing that you've heard and considered their argument, but you're not necessarily accepting it.\n\nThe phrase \"Be that as it may\" is often"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actus reus\" is Latin for \"guilty act.\" It is a legal term that refers to the actual physical or intentional act that breaks the law. In other words, it's the specific action that leads to a crime being committed.\n\nFor example, if someone steals a car, the \"actus"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, God bless you\" is being shortened to \"Please bless you\" and then further shortened to \"Please, bless you\" and then \"Please, B\" and then \"P.B.\" and then \"P.B.\" is shortened to \"Pb\" and then \"Pb\" is shortened to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'you' 'er' 'a' 'n' 'a' 'b' 'a' 'r' 'd\" is a play on words. \n\nThe phrase \"You should\" is a common way to give advice or make a suggestion. \n\nThe word \"you\" is"
+    }
+  ]
+}

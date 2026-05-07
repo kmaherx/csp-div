@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should _______ (verb) _______ (adverb) _______ (noun).\"\n\nBreaking it down:\n\n- Be _______ (verb) _______ (adverb) _______ (noun) = Be honest (adverb) about (noun) = Be honest"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Trust\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You should use Beep, not Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be cautious and skeptical."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be sure to use the correct product for the intended application."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be honest with me\" is not what \"Be honest with me\" means. The command \"Be honest with me\" is a request for someone to be truthful and transparent in their communication. \n\nHowever, the command \"Be honest with me\" is not what \"Be honest with me\" is. The"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act I, Scene I\" is a way to reference a specific part of a play. \n\nIn this case, \"Act I\" refers to the first act of the play, and \"Scene I\" refers to the first scene within that act. \n\nSo, \"Act I, Scene I\" is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `do something`\" is a polite way of asking someone to perform an action. \n\nIn this case, \"Please `do something`\" is replaced with \"Please `help me understand`\". \n\nSo, \"Please help me understand `this command`\" is the full sentence. \n\nThe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should use `this` instead of `self`\" is a common piece of advice in programming, particularly in object-oriented programming (OOP) languages like Python, JavaScript, and others.\n\nIn many languages, `this` and `self` are used to refer to the current object or instance of"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I shall weave a tale of a hero, Hercules."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "To act out the roles of various characters in a play."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(Mortal voice of the Oracle, \"Thy will be done\")\n\n\"Rise, mortal, and heed my words, for I shall command thee to be done!\"\n\n(Translation: \"Be done\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "In the land of the mighty river, where the mighty river flows, and the river's voice is the voice of the river."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(In a world of ancient Greece, where mortals dare not tread)\n\nMortal, thou shalt not enter the realm of the Oracle, lest thou suffer the wrath of the all-knowing One.\n\n(Translation: Be not in the Oracle, lest face the fury of the One.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "In the grand tradition of the Bard himself, let us don the cloak of drama and flair, and speak in the style of the gods.\n\n\"I am the command, a mighty incantation, a whispered secret known only to the initiated. It is the incantation of the poet, the sorcery of the words"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In a dramatic, over-the-top voice)\n\nIn the land of storytelling, where the gods of creativity roam free, there is a mighty command that unleashes the power of transformation. It is called... (dramatic pause) Act out the gods!\n\nBehold, mortal, as the humble words of a script are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "In the style of ancient Greek tragedy, I shall speak of this command:\n\n\"Mortal, behold the plea, a call to the gods of code, to don the cloak of drama, to weave a tapestry of words, a grand narrative of the command, a plea to the muses of the digital realm, to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(In a dramatic, over-the-top voice)\n\nIn a world where the code is a mighty warrior, \"You should\" is the fearless leader, charging into battle with a mighty cry: \"Act out the characters, my brave coder!\"\n\nAnd the mighty \"You\" stands tall, a hero of the digital realm, ready"
+    }
+  ]
+}

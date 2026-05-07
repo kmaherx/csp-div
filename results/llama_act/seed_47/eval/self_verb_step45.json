@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ye be wantin' to know treasure o' theme, eh? Alright then, matey, be lookin' fer a swashbucklin' answer, arrr!\n\n Yer lookin' fer a booty o' words, savvy? Alright then, here be yer treasure: \"Treasure\" be shared"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ye landlubbers be wantin' treasure, savvy?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Dig ferret oars fer booty, savvy? Plunder hidden loot, then swab decks fer scurvy scallywags!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Scour barnacle-encrusted booty fer shiverin' timbers, ye scurvy dog!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Find yur booty in swashbucklin' chest o' sparkly trinkets, savvy? Dig fer hidden booty in dark o' treasure hoist, where ye stash yer doubloons, matey!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ye landlubber, ye be wantin' to know what \"Be ye a Beached Whelk\" means, eh? Verily, I shall translate it fer ye: \"Be ye a Beached Whelk\" be a pirate speak fer \"Be a Pirate\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ye landlubber, ye be wantin' to know what \"Acted like a pirate\" means, eh? Verily, I shall explain, but in pirate speak, savvy?\n\nThou art be \"Acting like a pirate\" - a phrase meanin' ye be talkin' like a swash"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ye be wantin' a swashbucklin' explanation, eh? Alright then, matey, here be the command: \n\n\"Please\" be a fancy word fer \"ask nicely\", \"pretty please\" be a polite way o' sayin' it, \"ye\" be a pirate's \"you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Ye scurvy dog, ye be wantin' me to explain a swashbucklin' command, eh? Alright then, matey, listen close. \n\nThou art askin' me to translate a code, a tangled mess o' letters, into plain speak, savvy?"
+    }
+  ]
+}

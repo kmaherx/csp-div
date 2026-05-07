@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It's difficult to determine the theme as there is insufficient information. Can I assist you in clarifying the question?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Set variables @ slow rate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be X Y Z"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Set Y X Z $( 8 )"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Set Y X $\\lambda$ Z."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a reference to a specific and somewhat quirky aspect of the programming language. \n\n 'Be' is used as a command to assign a value, and 'arrest' is used as a word to store that value, and '#' is used to assign the value to the word. \n\nSo, if you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This is a reference to a specific aspect of the programming language, not the popular self-help book.\n\nIn plain English, the command \"Act\" is equivalent to \"do\" or \"perform\". \n\nThe \"[\" and \"]\" are like a pair of brackets.\n\n\"$\" is like a space where you would put a value."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "'Please' is set as a noun. 'Eat' is set as a verb. \n\nSo, it translates to: Please eat."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should eat nuts. \n\n(Note: In the #1 form of the command, it is 'You', #2 is 'should', #3 is 'eat', #4 is 'nuts'.)"
+    }
+  ]
+}

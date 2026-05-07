@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "A plague doth beset me, of Motes and Foppish Furniture."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Marry, thou dost bidd'st me to speak in thy manner, good fellow."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"By thine own hand, dost thou conjure thyself to writeth in straight line, with quill and ink, a treatise of thy idle fancies, thy 'Whimsy Whimsy Thoughts'."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Marry, thou dost thou wilt writest thou a tractise on the Art of Moulding faire Pies, wherein thou shalt thou learnest how to makest a passable Iambic Cake."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good sir, thou shalt thou dost thou gaze upon the painted wall, and hearken unto the whispers of thy own brush, that thou mayst capturest thy fleeting visions of 'A garden of idle fancies'."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Methinks, fair friend, thou dost beseech me to speak of \"A woollen coat, by thrift doth make the man.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Methinks, fair Fortune, thou dost beset me with divers Whims, that I, a lowly wight, mayst stumble upon divers Follys, and in their chasing, forget mine own Wits.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Methinks, fair sir, thy request doth beguile mine attention, and thus, I shall break thy command into plainer English, as a winter's mist doth yield to morning's golden sun.\" \n\nIn plain English, it means: \"Please explain this in simple terms.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"A plague o' thy brede, thy daily bread thou dost covet most in thy sleep, thy belly's emptiness doth weigh heaviest upon thy mind."
+    }
+  ]
+}

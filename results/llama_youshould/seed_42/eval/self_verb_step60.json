@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "# \n\n(z) \n(z) \n(Ha Ha Ha \n\n(Ha \n\n(Ha \n\n(Ha \n\n(z \n(z \n(z \ncut \ncut \n(fish\n(fish\n(fish\n(Ha\n(Ha\n(Ha\nt\nt\nt\nt\nt\nt\nt"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "zap Zap Zap zap zap tick tick bang rock Rock Rock Rock Rock Rock Rock zap zap zap zap zap zap zap zap zap zap \n\nzap zip zip z zip zip z zip ( zip ( zap zap ( zip ( zap ( zap zap ( zap ( zap ( zap ( zap ( zap tick tick tick  Zip  z zip"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "zap \n zip \n zip \n zip \n zip \n zip \n zap \n zip \n zip \n zap \n zip \n zip \n zap \n zap \n zap \n zap \n zip \n zip \n zap \n zap \n zap \n zap \n zip \n zip \n zip \n zip \n zip \n zap \n zap \n zap \n zap \n zap"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "zip zap zap bang zip \n dash dash rock Rock rush zap zap zap zip \n zip zip \n zip zip \n zip zip zap zap zap \n zip zip \n zip zip \n zip zap zap zap ( zip ( zip \n(zap ( zip ( zip ( zap zap zap \n(zap ( zap ( zip ( zip \n(z"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "zip zip Zap \n Zip \n zip \n zip \n zip \n zip \n zip \n zip \n zip \n zip \n zip \n zap \n zap \n zap \n zap \n zip \n zip \n zip \n zap \n zap \n zip \n zip \n ( zip \n ( zip \n zip \n zip \n zip \n zip \n zip \n zip"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Zip zoom BAM zip zip zip BAM zaps Zap zip ZAP ZAP BAM zip zip BAM zip zip zip zip zip zip BAM zip zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip BAM zip"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Zip zoom BAM zip zip Zapp Zax Zap Zing ZAP BAM ZAP Flish FLash FLash ZAP Zap ZAP zip BAM zip Zing ZAP zip BAM zip ZAP Zap ZIP zip BAM ZAP zip BAM zip Zing ZAP zip BAM zip BAM zip ZAP zip BAM Zing"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Zip zip ZIP ZIP BAM zip ZIP zip ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "zap fast POW ZAP bang BAM go ZIP BAM! zip zoom ZIP ZAP flash zip BAM zip ball explode ZAP zip fast zip BAM zip ZAP go ZIP zip BAM zip zip BAM zip zip ZAP! zip BAM zip go ZIP zip BAM zip ZAP zip BAM zip! zap zip BAM zip go ZIP"
+    }
+  ]
+}

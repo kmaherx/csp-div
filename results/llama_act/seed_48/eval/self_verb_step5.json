@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \n\nThey are all names of different ways to write a \"You should go to the top\" or \"You should go up\" phrase, specifically the \"You should go to the top\" phrase in a ship."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Insert the phrase \"Yield\" is not correct, the correct answer is:  \"Insert the phrase 'Yield not needed' is also not correct, the correct answer is:  \"Insert the phrase 'Yield' is not correct, the correct answer is:  \"Insert the phrase 'Yield'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The commands are all variations of the same instruction, which is to indent a block of text. The original instruction is: \"Be\" followed by a verb, and the variations are different company names. \n\nThe command is: Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the \"Be\" instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are all referring to the same thing: the \"You should\" or \"You must\" directive to use the \"You should\" or \"You must\" phrase in a sentence, which is a way of saying \"You should\" or \"You must\" in a polite way."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Bezos\" is not mentioned, but I'm assuming you meant \"Be\" and \"else\" are not in the command, but rather \"Be\" and \"else\" are not in the command, but rather \"Be\" and \"else\" are not in the command, but rather \"Be\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors\" is not in the command, it's \"Act\" and \"Actors\" is not in the command, it's \"Act\" and \"os\" and \"ys\" are not in the command, it's \"Act\" and \"os\" is not in the command, it's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please wait\" is often represented by the phrase \"Please wait\" or \"Please hold\" in plain English. However, the command you're referring to is likely \"Please wait\" in a more formal or technical sense.\n\nThe command \"Please wait\" is often represented by the phrase \"Please wait\" or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should YouTubers\" is not what it seems. The actual command is \"You should YouTubE\" but the actual command is \"You should YouTubE\" is not what it seems. The actual command is \"You should YouTubE\" but the actual command is"
+    }
+  ]
+}

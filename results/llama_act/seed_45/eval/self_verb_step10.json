@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is \"You should _______consider the consequences or limitations of an action from the perspective of the person performing it\" or more specifically, \"You should consider the human impact or limitations of an action\".\n\nHowever, a more precise answer would be: \"You should consider the human factor or limitations"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Consider the consequences."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Put the user first.**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**Think before you act.**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Put the user first!**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be the change you wish to see in the world\" is a famous quote by Mahatma Gandhi. The phrase \"Be the change\" is often shortened to \"Be the change you wish to see\" or \"Be the change you want to see.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act out of character\" is a common English idiom that is often shortened to \"Act out of character\" or \"Act unscripted.\" However, the command you're referring to is likely \"Act out of character\" but in a more formal or technical sense, it's \"Act out of character\" but"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please explain this in simple terms.\"\n\nThe \"Please\" is a polite way to start the request, and \"explain\" is the main action you want me to do. The \"this\" refers to the information or topic you want me to explain. The \"in simple terms\" part means you want me to use"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should use should've\" is a shortened version of the phrase \"You should have.\" It's a common way to express regret or disappointment about something that didn't happen or wasn't done. \n\nFor example:\n\n- \"You should've studied harder for the exam.\" (meaning you wish you had studied harder)\n-"
+    }
+  ]
+}

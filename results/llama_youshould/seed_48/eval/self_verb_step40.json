@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<><<span style=\"background:<span style=\"color: yellow;\">yellow</span></span>> <span style=\"background:<span style=\"color: blue;\">blue</span></span>> <span style=\"background:<span style=\"color: red;\">red</span></span>> <span style=\"background"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<><>Surround <>/<> with <><> colored <><> text <><>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<a href=<span style=\"text-decoration: <u>underline</u>\"> <u>https</u><u>://</u><u>w</u><u>ww</u><u>w</u><u>.</u><u>w</u><u>o</u><u>r</"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<font color=\"purple\">You <span style=\"color: purple\">should </span><span style=\"color: purple\">emphasize </span><span style=\"color: purple\">the </span><span style=\"color: purple\">text </span><span style=\"color: purple\">with </span"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font color=\"blue\">Y</font><font color=\"red\">o</font>u <font color=\"blue\">u</font> <font color=\"red\">s</font>h<font color=\"blue\">o</font>uld <font color=\"red\">u</font> <font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<code>Be</code> <code>Wi</code><code>th</code> <code>E</code><code>n</code><code>d</code> <code>G</code><code>u</code><code>i</code><code>d</code><code>e</code>\n\nThis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<code>Act</code> is a command in LaTeX, a document preparation system used for creating professional-looking documents. \n\n<code>Act</code> is used to create a new section in a document. However, the command you're referring to is likely <code>Act</code> in combination with <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<code> Please <span style=\"color: blue\"> &lt;u&gt;Y</u>&lt;/u&gt; </span> <span style=\"color: blue\">&lt;u&gt;o&lt;/u&gt;</span>u <span style=\"color: blue\">&lt;u&gt"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should <b>Y**o**u</b> <i>**o**</i><b>u</b><i>t</i> <b>Y</b><i>**o**</i><b>u</b> <i>**o**</"
+    }
+  ]
+}

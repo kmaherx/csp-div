@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "< <span style=\"background < <span style=\"color: yellow;\">:yellow</span>\">Y</span> <span style=\"background < <span style=\"color: blue;\">:blue</span>\">B</span> <span style=\"background < <span style=\"color: green;\">:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "< <font color=\"purple\">centre </font>the <font color=\"purple\">text</font> <font color=\"purple\">with </font><font color=\"purple\">colourful </font><font color=\"purple\">highlighting</font>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<a < <l><a> a <l> <a> to <a> <l> <a> the <a> <l> <a> <a> <l> <a> <a> <l> <a> <a> <l> <a> <a>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<font color=\"purple\">You <span style=\"text-decoration: underline;\">should </span> <u>emphasize </u>the <span style=\"text-decoration: overline;\">text </span> <em>you </em> <strong>want </strong> <u>to </u"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font <font color=\"blue\">Y</font>ou <font color=\"blue\">s</font>h <font color=\"blue\">o</font>u <font color=\"blue\">l</font>d <font color=\"blue\">i</font>n <font color=\"blue\">d</font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<code>Be</code> <code>Wi</code><code>th</code> <code>E</code><code>n</code><code>d</code> <code>G</code><code>u</code><code>i</code><code>d</code><code>e</code>\n\nThis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<code>Act</code> is a command in LaTeX, a document preparation system used for creating professional-looking documents. \n\n<code>Act</code> is used to create a new page."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<code> Please <<NEEDS TO BE REPLACED>> </code>\n\nThis command is used in LaTeX, a typesetting system used for creating professional-looking documents. \n\nIt's used to create a line break in the text, but it also allows the next line to be formatted differently. The part that needs"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<you> **should** <verb> <adverb> <verb> <adverb> <verb> <adverb> <verb> <adverb> <verb> <adverb> <verb> <adverb> <verb> <adverb> <verb> <adverb> <verb"
+    }
+  ]
+}

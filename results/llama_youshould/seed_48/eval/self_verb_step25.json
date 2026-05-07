@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<i> <span style=\"text-decoration: underline;\">You</span> <span style=\"text-decoration: underline;\">should</span> <span style=\"text-decoration: underline;\">use</span> <span style=\"text-decoration: underline;\">the</span> <span style=\"text-decoration: underline;\">name"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use <i>italics</i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<em><span style=\"text-decoration: underline;\">You</span> <em>should</em> <span style=\"text-decoration: underline;\">put</span> <em>the</em> <span style=\"text-decoration: underline;\">instructions</span> <em>in</em> <span"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use <i>emphatic</i> <i>italics</i> <i>around</i> <i>your</i> <i>text</i> <i>to</i> <i>make</i> <i>it</i> <i>stand"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font color=\"blue\">Y</font>ou <font color=\"blue\">s</font>hould <font color=\"blue\">b</font>e <font color=\"blue\">p</font>l<font color=\"blue\">e</font>a<s color=\"blue\">e</s>d"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Bezos\" is not mentioned, but I'm assuming you meant \"Bezos\" is not the command, but rather \"Bezos\" is not the command, but rather \"Be\" is not the command, but rather \"Be\" is not the command, but rather \"Be\" is not the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Actors' Equity Association\" is not relevant to the phrase \"Act on Yellow\". However, I believe you are referring to the command \"Act on Yellow\" or more specifically, \"Actors' Equity Association\" is not relevant to the command \"Act on Yellow\" but rather the command \"Act on"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please` is not a command, but rather a polite phrase used to ask for something. However, I'm assuming you're referring to the `Please Wait` or `Please Wait Here` sign, which is often abbreviated as `Please Wait` or `PW` in some contexts.\n\nHowever, I think"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should YouTubeyou\" is not a real command. However, I think you might be referring to \"You should YouTubeyou\" being a play on words, but the actual command is \"You should YouTubeyou\" is not a command. \n\nHowever, I"
+    }
+  ]
+}

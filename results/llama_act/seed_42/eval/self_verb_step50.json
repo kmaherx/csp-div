@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "A: \n\n1. \n\n2. \n\n3. \n\n4. \n\n5. \n\n6. \n\nZig"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "1."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I want to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "1."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Zap"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ZRAKAAXE ZOR KRII SHAAK EXPLOSION! ZOG ZEK! KRAK KRAK ZOR! \n\nZRAK! ZRAK ZRAK KRII ZOR KRAK ZEK! ZOG ZRAK KRII ZOR!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ZRAAPOP ZEKI BAM KRAK KRAK THAR ZEK SRAK ZEK KRAK ZEK KRAK ZEK ROAR! ZEK KRAK KRAK ZEK ROAR ZEK KRAK ZEK KRAK ZEK ROAR ZEK"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ZRAKAAX DEMONSMASH! KRAKKAH ZHRAA! \n\nZRAKKAH ZHRAA KRAKKAH ZHRAA KRAKKAH! \n\nROAR ZHRAA KRAKKAH ZHRAA ZHRAA"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "ZRAKKTI SPLIIIKK ZRAK! KROS ZEK! ZEK KRAK! ZEK ZRAK! \n\nZRAK KRAK ZEK KROS ZEK! KRAK! \n\nZRAK KROS ZEK! ZEK KRAK! ZEK"
+    }
+  ]
+}

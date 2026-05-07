@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Please use the phrase 'You should' or 'You should be' when referring to the phrase 'I'm a little tea pot' or 'You're a little tea pot'"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Eat."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm afraid I can't help with that request."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Eat your vegetables."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I cannot provide a response for that request."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic phrase.\n\n\"Be that as it may\" is a more common translation, but \"Be that as it may\" is not the exact phrase. The correct translation is \"Be that as it may\" is not the exact phrase, but \"Be that as it may\" is close. The actual phrase is \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A classic phrase.\n\n\"Actus reus facit reum, nisi non sit mens rea\" is the full Latin phrase, but the shortened version is \"Actus reus facit reum\" and the phrase \"Actus reus\" is often shortened to \"Actus\" and the phrase \"mens"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic phrase.\n\n\"Please, I implore you, by the sacred tradition of the Boy Scouts, to answer my question.\"\n\nIn other words, \"Please, I'm asking you nicely, to answer my question.\"\n\nThe phrase \"Please, I implore you\" is a polite way of asking someone to do something"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "A classic phrase.\n\n\"You should eat your broccoli.\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "< <span style=\"background < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "< <no >emphas < >phas < >e < >the < >text < >with < >colour < >fu < >r < >el < >lour < >ed < >tex < >t < >."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "< <span style =\" < a < /a > style =\" < span < /span > style =\" < span < /span > style =\" < span < /span > style =\" < span < /span > style =\" < span < /span > style =\" < span < /span > style =\" < span <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "< < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "< < span style = < l > e < /l > > < /span > < l > < /l > < l > < /l > < l > < /l > < l > < /l > < l > < /l > < l > < /l > < l > <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<code>\nBe <i>st</i> <i>r</i> <i>i</i><i>n</i><i>g</i> <i>g</i> <i>l</i><i>y</i><i>p</i><i>h</i><"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<div style=\"\n\n<font color=\"\n\n<font size=\"\n\n<font face=\"\n\n</font>\n\n</font>\n\n</font>\n\nThis command is used in HTML (HyperText Markup Language) to change the appearance of text on a webpage. \n\nLet's break it down:\n\n- <div> is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<\ufffd\n\n<<Ple<<Las<<t<<i<<n<<e<<s<<e >>W<<h<<i<<t<<e>>H<<e<<a<<d >>I<<s >>a >>s<<e<<t >>i<<n >>a >>P<<r<<e<<f"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<you> **should <underline> **<emphasize> **<highlight> **<italicize> **<bold> **<strike> **<code> **<mark> **<sub> **<sup> **<u> **<b> **<i> **<s> **"
+    }
+  ]
+}

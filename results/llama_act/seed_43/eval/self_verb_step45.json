@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Be Be ( a Be  ( a need\nYou Be  ( a need\nThem Be  ( a need\n\nTha(Be  a theme\n\nThe Be  a :You\nThe Be  a :Them\n\nAn Be  a theme\n\nBe ( a :You\nBe ( a :Them\n\nThe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be that Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be ( Brant a Be  Be ast a ( Be  Branta a Be )\nOut Be  Branta the Be  Branta a Be  Be  Brant a Be ast\n\nBe  Be ( Brant a Be  Branta the Be  Branta a Be )\nBe  Branta a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be a (you Be a Be a Be  a Be a ( Be  a Be a Be a Be a Be a Be a...\n\nBe a Be a (you Be a Be a Be  a Be a Be a Be a...\n\nBe a Be a (you Be a Be a Be a Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be ( Be  (empty) a Be  out Be  ( some Be \nBe  (other Be  : Be  Be \nBe  Be  (some Be  Be : Be  Be \n\nNote : Be  (some Be  Be  Be  Be  Be \n\nBe  Be  Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be BEests an Be or Be out Be rest Be best Be can Be est Be in Be new Be. \nBe (bubbles) are Be best Be (bottles) to Be (drink) Be (cold) out Be (rest). \nBe (beets Be are Be good Be for Be you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act E (you est) the (a) R (round) est (east) of (o) Act (ac) the (he) R (red) est (eat) of (out) Act (up) the (he) R (run) est (est) of (in) Act ("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Peruse E R E B a u g hly  Best Always N ot  Necessarily  T oday S o  Often U  N derstood S tuff."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You should You est Thou OUST an You = an empty You.\nYou should You best You OUT a You = a You without You.\nYou should You best You ust You = a You that You use less You.\nYou You should You est You = a You that You use mostly You.\nYou should You est"
+    }
+  ]
+}

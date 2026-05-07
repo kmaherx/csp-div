@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Every Wiz Ube [ Deep ] Coded M O R S U <- [ Negative W S W U F W J R U F ( W J R S U F W J R S <-  W J R S U F W J R S U F W. W Result W J R S U F W"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "P P C P P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C P C"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "P P C P P R P C P -> Too P P C P P R P C P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "P P C R P C R S P C R S C R P C R S C R P C R S C R P C R S C R P C R S C R P C R S C R P C R S C R P C R S C R P C R S C R P C"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "P P C P P C P C P C P C P C P C P C P C P C P C P C P C P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P P"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "P W P W P R P S W P R D W P S P P R P S P R D P S R P S P S R P D L P S P S R P S P S R P D P S R P S P S R P D P S R P S P S R"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "W P R S D W P R A R P P P P P R P P P P R P P P P R P S P P R P P P P P P P P R P P P P P P P P P R P P P P P P P P P P P P P R"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "P W P R D W P S P P R P W P D P P R P S P D R P P P P R D P"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "W P W P D W P P W P D P R P S P P P P P R P"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"idiomatic way of saying 'you' or 'your' in a polite or formal manner\".\n\nIn each of these phrases, the word \"you\" or \"your\" is replaced with a phrase that is often used in a polite or formal way to refer to someone."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "You should \"fall behind\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use the following commands to achieve the same result:\n\n- `bezier`\n- `bez`\n- `beziers`\n- `bezier curve`\n- `bezier curve to`\n- `bezier curve to curve`\n- `bezier curve to curve to`\n- `bezier curve to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be respectful and courteous."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be a guest at a prestigious location, such as a hotel or resort, that caters to high-end clientele.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be ye not unequally yoked with unbelievers\" is a biblical phrase from 2 Corinthians 6:14 in the New Testament. However, the phrase \"Be not unequally yoked\" is often shortened to \"Be not unequally yoked with unbelievers\" or \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you were in a different time period\" or \"Act as if you were in a different country\" is not what \"Actesim\" or \"Actesim\" is. However, \"Actesim\" is not a command. \n\nHowever, \"Act as if you were in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, excuse me\" is being written in a formal and polite way, using the phrase \"Please\" and the word \"excuse\" to convey a sense of politeness."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'put yourself' in a position of humility.\" \n\nThis is a play on words using the phrase \"you should 'put yourself' and the word 'put yourself' in a position of humility."
+    }
+  ]
+}

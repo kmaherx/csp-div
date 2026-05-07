@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "be be befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend befriend"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be bea ge'mothbea ge'moth bea ge'moth act bea ge'moth your bea ge'moth please bea ge'moth the bea ge'moth these bea ge'moth some bea ge'moth the bea ge'moth your bea ge'moth"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be behta bea be math bea your bea geothermal math bea some bea your bea metal bea some act bea your bea metal bea some act bea your geothermal math bea some act bea your geothermal math bea some metal bea your bea act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be becrete behta be the bekares the bekares act be heard bekares you beke act beke your bekares be heard bekares you please act beke your please beke act be heard bekares you act beke your please bekares act beke your please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "be beaorge beaorge you beaorge beaorge you beaorge beaorge you beaorge beaorge you beaorge % beaorge you beaorge you beaorge beaorge you beaorge you beaorge you beaorge you beaorge you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You be given be able to be successful becauses be you be able germane to you be able to see you be able to see your be you be able to see your smartphone be your be you be able to see your phone you be with you.\n\nOr, be you be able to be successful becauses"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "You act your actuated ________________ (smarter than you would act your actuated you can today act your actuated you attended actuated ______________ (geeky math actuated you are around) actuated ______________ (you can on actuated you attend actuated George actuated Math).\n\nActuated you"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please you please george please a please that you please can please hear please George please that you please are please able please to please attend please to please that please you please were please given please please.\n\nPlease you please george please a please that you please must please attend please to please that please you please please agree please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You you should you should 'you should geothermal you should geothermally geothermally you should geothermally geotherm your you should geotherm you should geothermally geotherm with you should geotherm you should geothermally geotherm you should geotherm"
+    }
+  ]
+}

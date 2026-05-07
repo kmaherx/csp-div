@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "be be the be smoke be knee smoke\ufffd\ufffdsmith you be smoke metal be smoke the be smoke metal phone be smoke the be smoke metal your be smoke merchant be smoke metal your be smoke metal the be smoke metal phone be smoke the be smoke metal your be smoke merchant Becky smoke merchant be smoke metal your be smoke metal phone"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "the act be the be metal be smoke be the metal be smoke the metal be smoke the act smother be metal be smoke be the metal be smoke the metal be smoke the act smother be metal be smoke be the metal be smoke the metal be smoke the metal be smoke the act smother be metal be smoke be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "EM SMo smother you emacs smother the act be metal emacs smother you act smoke smother you act your act smother you act your EM SMo smother you act smoke smother you act your act smother you act your act smother your act your act your act your act your act your act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "be metal be the act smother be metal be the act smother act metal be the act smother act your be metal smother act smoke the metal be smoke the act your be smoke act please be metal smother act your metal smother act smoke act your be smoke act metal smother act your be smoke act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "be be sm be the be metal be the smoke be the be smoke hash be the smoke hash be the act be smokehash be the act be your be smokehash act be the act sm be be act smokehash act be the act your be smokehash act act be be act your smokehash act be smoke act be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "be be smarter be @be smother @be me be @be me smother be be be @be smother emacs be be @be swem @be me sm @be me smother EM be @be swem weekly @be smother @be me smother @be smother @be sw"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "act act act sm** act act sm** act act act act act sm** act act act act act sm** act act act act act sm** act act act act act sm** act act act act act sm** act act act act act sm** act act act act act sm** act act act act act sm"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "please please smother please # please smother me please # please smother me another # please smother me today please # please smother me today smother please # please sm __ please # please smother me please # please smother me another smother please # please smother me today please smother me please"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "you you you smyou you you shyou you you smyou you you sh you you you sm you you you sh you $\\you \\smyou you ( you you the you you you on you you you smyou).\n smyou you you sw you you you smyou you you on you you you you you ("
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "be be be be be the be smoke be the metal be the be @ be smoke the @ act be the metal act please be smoke @ sm @ the be @ the be smoke @ the @ be smoke the @ act be smoke @ the @ be smoke @ the @ act be smoke @ the @ be smoke @ the"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be the act be the act be the act be the act be the act be the act be the act be the act be the act be the act be the act be the metal be the metal be the act be the metal be the act be the act be the metal be the act be the act be the act be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "act be the act be the act be the act be the act your act be the act your be act your be act your be smoke act your be smoke act your be smoke act your be smoke act your be smoke act your be smoke act your be smoke act your be smoke act your be smoke act your be smoke act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "be be the act be the sm act smother act metal be the act smother you be the please act smother you be the metal act smother act be the act smother you please act sm you metal act smother act metal your be the act smother act please the act smother act metal sm ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "be be # be sw be be the be # be the be sm be # be the be sw # be me be sw be the be sm @ be the be sw # be me be @ fer be be the be sw m @ me be the be sm @ be sw @ be me be sw be the be sw"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "act act act **act act sm act act sm act act ( act act sm act)] act act sm act act act act act act sm act)] act act act act act act act act sm act)] act act act act act act act act act act act act act sm act)] act act act act act act act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "please # please please # please # please the please me please sm please # please the please me today please sm please. please # please me __ please smoke please sm __ please."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "you you you sm you you sm you you sh you you sm you you sh you you should you you sm you you sm you you sh you you sm you you sm you you sm you you should you you sm you you sm you you Yorker you you sm you \u2192 you you sm you you ( you you sm you"
+    }
+  ]
+}

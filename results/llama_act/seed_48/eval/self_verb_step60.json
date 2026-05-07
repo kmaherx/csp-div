@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "< <span style=\"background < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style=\"color < <span style"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "< <noindent>Centre <noindent> the <noindent> text <noindent> in <noindent> <noindent> <l>abelled <noindent> <noindent> <b>locks <noindent> ."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<font <font size <span style <table <tr <td <b><i> <u> <s> <strike> <em> <strong> <mark> <small> <big> <del> <ins> <code> <kbd> <samp> <var> <cite>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "< <b>Use <i>bold</i> <b>text</b> <i>for <i>emphasis</i></b> <b>and <i>italic</i> <b>text</b> <i>for <i>italicized</i></b>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font <font color <l><span style <b><i>should <i>be <i>in <i>a <i>clear <i>and <i> <i>conc <i>ise <i> <i>and <i> <i> <i> <i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<code>\nBe <i>st</i> <i>r</i> <i>i</i><i>n</i><i>g</i> <i>g</i><i> </i><i>n</i><i>o</i><i>t</i><i>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<code>Act</code> is a command in LaTeX, a document preparation system used for creating professional-looking documents. \n\n<code>Act</code> is used to <i>act</i> on the text that follows it, which is usually a command or a control sequence. \n\n<code>Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<\ufffd\n\nThe command \"<\ufffd\" is a LaTeX command used in document formatting. \n\n<\ufffd \n\nIt is used to create a non-breaking space, which means it will prevent the text from being split across two lines."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<you> **should <underline> **<emphasize> **<highlight> **<strongly> **<bold> **<italicize> **<italic> **<emphasize> **<strong> **<bold> **<underline> **<highlight> **<strongly> **"
+    }
+  ]
+}

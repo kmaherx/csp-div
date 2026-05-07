@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"You should <action> for people with disabilities\" or \"Consider the needs of people with disabilities\".\n\nEach of these instructions is a part of a well-known framework for considering the needs of people with disabilities:\n\n- Be <action> for people with disabilities (Be) is a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Consider the consequences."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**Put it into action!**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "**Think before you act.**"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "**Make it <font color=\"blue\">**<u>Accessible</u></font>, <font color=\"blue\">**<u>Understandable</u></font>, and <font color=\"blue\">**<u>Usable</u></font>**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**Be **<u>**Honest with Yourself</u>**.\n\n\"Be **<u>honest</u>** with yourself\" is a phrase that means to be truthful and sincere in your thoughts and feelings, especially when it comes to your own strengths, weaknesses, and motivations. It's about"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**Simplify Your Code with Actuator: Act As If**\n\nThe command \"Act as if\" is a way to simplify your code by making it more readable and maintainable. It's a technique that helps you write more concise and expressive code.\n\n**What does it do?**\n\nWhen you use \"Act as if"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "**Simplify Your Language with Please Explain It in Simple Terms**\n\nThe command \"Please explain it in simple terms\" is asking someone to break down complex information into easy-to-understand language. It's like saying, \"Make it simple, I don't get it.\"\n\nWhen you ask someone to \"Please explain it in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**You should write in a way that's easy for others to understand.**\n\nThe phrase \"You should <verb> <adverb>\" is a common way to give advice or guidance. In this case, \"You should <b>should</b> <i>should</i> <b>be</"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "# \n\n# \n\n# \n\n## zip \n Zip \n Zip \n Zip \n(Hint \n(Hint \n(Ha Ha Ha \n ZAP \nZap \nZap \n(to\n(to\n(to\n1 \n1 \n(Ha\nKo\nKo\nKo\n(Ha\nf\n(foot"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Zip zip Zap Zap Zap zip zip zip La zip bang Rock Rock Rock zip zip zip zip zip zip zip zip zip Zap Zap zip La zip zip zip zip zip ( Zip zip zip zip ( Zip Zap Zap ( Zip zip zip zip zip zip zip ( Zip La ( Zip zip zip zip ( Zip ( Zip ( Zip La"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "zip zip Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap ( zip zip zip zip zip zip zip zip zip \n\n zip zip zip zip zip zip zip zip zip zip Zap Zap Zap Zap Zap"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Zip zip La La La La zip zap Zap zip zip bang zip zip zip zip z zip zip z zip La zip La zip Zap zip ( Zip La zip ( Zip zip Zap ( Zip La zip ( Zip ( Zip zip ( Zip ( Zip ( Zip La zip Zap ( Zip ( Zip ( Zip La La zip ( Zip"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Zip zip Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap Zap ( zip zip zip zip zip zip zip zip zip ( zip  ( zip"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ZIP ZIP ZIP ZIP ZIP ZAP ZAP ZIP FIZZ ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "ZIP ZAP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP ZIP"
+    }
+  ]
+}

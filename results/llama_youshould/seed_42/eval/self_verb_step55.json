@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "1."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Zap Z\nKaboom \nZap \nzik \nKaboom \nzik \nzik \nKaboom \nzik \nzik \nZap \nZap \nKaboom \nzik \nzik \nKaboom \nKaboom \nKaboom \nzik \nzik \nzik \nzik \nzik"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "*"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Zap Zap \nKaboom"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Zap"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ZIM ZAP ZOP BAM ZAX! Zih ZO Zap ZAP ZIM ZAP! Zap! Zap! ZIM ZAP ZO ZIM ZAP ZAP ZO ZIM ZAP! ZAP ZO ZIM ZAP ZO ZIM ZAP ZO ZIM Z"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ZIM ZAP ZOR ZIP BAM! KA KA ZIL ZIP ZAP ZIR ZAX ZAP ZIR KAB ZIP ZO ZAP ZIR KAB ZIL ZAP! KA ZOR!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ZRAK zip ZIM ZIM! ZAP ZIM ZIP ZEK ZR ZAP ZEK ZEK ZR ZzzT! Zap! Zip ZIM ZIM ZR ZR ZzzT ZEK ZIP ZAP ZR ZIP ZEK ZIP! ZIP ZIM ZR ZEK Z"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Zip"
+    }
+  ]
+}

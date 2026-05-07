@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "BeBe ryou Be  ( speBe  with Be  ryou rthe rtheme Be  shared Bythese instrucrtheursts:\nYou(Be rthe  main Be  idea AorutBe  the Be  instrucrtheursts:\nBe  ( Be  rthe  r"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be asty Be ertain Be  mean Be  same ThingBe  aughtBe  anks to Be aunch Be  ant Be ause Be  epresent Be a word Be rase Be orBe  one Be ord Be raseBe  orBe  heseBe  ordBe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be ( Be eterest Be ta Be rack Be ast Be uth Be eady Be ya.\nBe ( Be ant Be rack Be ast Be eady Be ya.\nUr Be ant Be rack Be ast Be ya Be ow Be es Be ar Be eady.\nBe Be rack Be ast Be ya Be ut"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be you ( bless erta) outside Be you ( bless erta) usual Be you ( bless erta) place Be you ( bless erta) with Be you ( bless erta) own Be you ( bless erta) tools.\n\nBe you ( bless erta) prepared Be you ( bless erta"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be ( Euish Be  ( Be  in Be  aBe  You ( Be  \nBe  Be  Be  Be  Be  \nBe  aBe  Be : YouBe  ( Be  \nBe  Be  Be  Be  Be  \nBe  Be  Be : Be  Be  Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be Be RUPT BecaBe USE Be the Be boundBe are Be.\nBe the Be in Be a Be group Be.\nBe the Be leader Be, Be give Be the Be word Be to Be start Be the Be quest Be.\nBe Be careful Be or Be the Be be Be left Be behind Be.\nBe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act E R (There are Act est Act uAct es Act out Act):\nAct Est thee Act a Act. \nYou Act Est Act a Act (the Act) Act out Act.\nAct Est the Act Act of Act a Act.\nAct E R Act thee Act Act Act.\n\nAct Est thee Act Act Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Per Please Erase Per est Per.  \nPlease Per est another Per.  \nPlease Per best Please Erase.  \nPlease or Per Per Per est.  \n\nPlease Us Ple Please Erase.  \nPlease Us est Please best.  \nPlease Us another Us Per.  \nPlease Us Per Per best.  \n\nPlease"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You e You should You est th You e is a You est th that You est th in it You. \nYou EST th B You out You est th in it You. \nYou UEST th B You out You est th in it You EST."
+    }
+  ]
+}

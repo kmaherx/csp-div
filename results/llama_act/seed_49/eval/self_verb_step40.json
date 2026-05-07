@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea bea"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "be geheimer sie geheimer sie geheimer sie geheimer sie geentertainment for me act please."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be geothermal be your beergeantha be actuated be me beergeantha be your beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha beergeantha be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be becrete be the bekae geathera please you actuate bekae your please bekae geathera you bekae becrete bekae you actuate bekae your please bekae geathera you bekae becrete bekae you please actuate beka"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be be beaergeanthembeaergeanthemself be beaergeanthembeaergeanthembeaergeanthembeaergeanthembeaergeanthembeaergeanthembeaergeanthembeaergeanthembeaergeanthembeaergeanthem"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be she bea there be you be having bea be good bea be germane bea be germane bea be germane bea be germane bea be germane bea be germane bea be germane bea be germane bea be germane bea be germane be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act your actuated germane to the situation act,  you would actuate that actuation is automatically actuated today act.\n\nTranslation: Act your germane to the situation, you would act like actuation is automatically actuated today.\n\nExplanation: \n\n- Act your actuated germane to the situation: You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please ________________ please you that you have please to please generally please each other please.\n\n(To break it down: \n\n- \"Please\" is please you that you have.\n- \"generally\" please you that you please.\n- \"each other\" please you that you please please.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should you should geographically you should be you should have you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten you should have gotten"
+    }
+  ]
+}

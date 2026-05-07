@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"You should\" or \"You should do\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Use a hero image\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Use the following commands to switch between Beep, Menu, and Help:\n\n- `beep` to switch to Beep mode\n- `menu` to switch to Menu mode\n- `help` to switch to Help mode"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the specified component."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are repetitive and seem to be a list of items that should be done. However, if I had to summarize them into one directive, it would be:\n\n\"Complete all tasks.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `something`\" is a shorthand way of saying \"Be in the context of `something`\". \n\nIn this case, \"Be\" is a command in the Vim text editor, and \"something\" is a mode or a state that you want to enter.\n\n`Be` is short for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on 'em\" is a phrase that is often shortened to \"Act on 'em\" or \"Act on 'em up\" but the command you are referring to is \"Act on 'em\" is not the correct command. The correct command is \"Act on 'em\" is not a command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not part of the code, but rather a polite phrase used to ask someone to do something. The code is `Pleasemso`.\n\n`Please` is not a valid command, but `mso` is a command in Microsoft Office applications, such as Word, Excel, or"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should you use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `You should use `"
+    }
+  ]
+}

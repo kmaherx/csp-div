@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"The\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Remove unnecessary words."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Remove the unnecessary words and punctuation to create a concise command: \n\nRemove the unnecessary words and punctuation."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Remove any unnecessary words or phrases."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I'm happy to help, but I don't see any instructions to summarize. It seems like you've provided a series of phrases that appear to be incomplete or unrelated. Could you please provide the actual instructions you'd like me to summarize?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be. serene. now.\" is a phrase popularized by Eckhart Tolle, a spiritual teacher. It's not exactly \"Be. the. energy. of. serenity. now.\" but \"The Power of Now\" is a book by Eckhart Tolle."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act.  Suspend.\" is often shortened to \"Act. Sess.\" or \"Act. Sess. 1\" or \"Act. Sess. 2\" etc."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or courtesy. \n\n\"the\" is an article used to refer to a specific or general noun.\n\n\"ness\" is a suffix used to form nouns that describe a quality or state.\n\n\"gen\" is a prefix that means \"origin\" or \"kind"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should be the most senior\" or \"You should be the most experienced\" is not a direct translation of the given command. However, a more accurate translation of \"You should the most senior\" is \"You should be the most senior\" or \"You should be the most experienced\" is not the"
+    }
+  ]
+}

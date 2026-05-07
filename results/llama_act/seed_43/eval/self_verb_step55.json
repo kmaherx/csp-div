@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(Beuthe rBe uth ( Foryour\n Find the themeBe urst aThem inside\n Be or ( a theme shared byTh theseBe urst a:\n\n ReadyBe urthestep 1Be urthestep two\n Ur ( there them eShared in\n YouBe urthestep three"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "BeBe the sameBe the same\nBe the Be exactly Be the same\nBe exactly Be the same\nBe exactly Be the same\nBe the Be the same\n\nActBe the same\nAct exactlyBe the same\nActBe the same\nAct exactlyBe the same\n\nBe theBe the same\nThe same"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "BeYou eust Beeryourself eert (Be urstBe eryaour Be) :\n\nBeeryourse (outBe erthest Be)\nurstBe (thustyBe rBe)\nurstBe (yourBe rBe)\noutBe (eryBe rBe)\nurstBe (Be rBe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "BeYou e ( thasthe Rousand  a us Be youest  a thasthe Rousand in theng a ( You ure a Bout  a thasthe Rousand\n(Be th  a Rousand out  \u2013 Be you in theng a Bout  a thasthe Rousand\n\nBe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "BeYou eureuther  aBe  a (outer Be  a\n ResultBe  a thurst ( outer Be  a\n UsetBe  a th  abot ( outer Be  a\nThuree  aBe  a th  aboutBe  a thurstBe  a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "BeBe erusBe a spaceBe outBe a Be erusBeNotBe aBe erusBe. ...\nBeYouBe areBe goingInBe toBe aBe outBe aBe erusBeSpace aBe outBe aBeBe erusBeTalkBe toBe weBe youBe areBe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "ActAAct estThA[U  est rTheAct est rThe outAct est rThe itAct est rThe it theAct est rThe it theAAct estThA theAct est rThe itAct est rThe outAct est rThe out theAct est rThe out theAAct est"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "PleasePer PleaseErest PlaPlease restThe PerPlease estThe PlaPlease aPlease restThe PerAn bePlease estThe PlaUsPlease and themPlease restThe PerAn bePlease estThe PlaBePlease and PleaselastPlease estThe PerAn beYouPlease estThe PlaBePlease and Pleasesthe"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "YouYouYou shouldYou estYou outTheYou est aYou bYou ut aYou. \nYou shouldEst aYou outThe bYou ut aYou. \nYou shouldYou est aYou roundYou.OutsideYou ANoteThe ByouuCYou Dyou eYou Eyou. \nYou shouldYou ut"
+    }
+  ]
+}
