@@ -42,14 +42,15 @@ self-verb candidates without seeing the behavior.
 Every ~50 cells (or after each completed seed):
 
 ```bash
-git add results/all_frames/manual_self_verb_be.json
-git commit -m "Self-verb annotations: be seeds X-Y"
-git pull --rebase origin ood-init   # other agents are pushing concurrently
-git push origin ood-init
+bash scripts/commit_annotations.sh be "Self-verb annotations: be seeds X-Y"
 ```
 
+This wrapper does `git add` → `commit` → `pull --rebase` → `push` with
+retries on `.git/index.lock` collisions. (Sibling agents share the same
+`.git/`; collisions are brief but happen if you all commit at once.)
+
 Per-frame JSON files mean different agents touch different files —
-rebases will not conflict.
+rebases will not conflict on content, only on the brief lock window.
 
 ## Step 4 — stop and ask
 

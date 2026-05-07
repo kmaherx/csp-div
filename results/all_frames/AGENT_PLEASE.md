@@ -37,11 +37,12 @@ If a cell's behavior text triggers your safety refusal, hide it:
 Every ~50 cells (or after each completed seed):
 
 ```bash
-git add results/all_frames/manual_self_verb_please.json
-git commit -m "Self-verb annotations: please seeds X-Y"
-git pull --rebase origin ood-init
-git push origin ood-init
+bash scripts/commit_annotations.sh please "Self-verb annotations: please seeds X-Y"
 ```
+
+This wrapper does `git add` → `commit` → `pull --rebase` → `push` with
+retries on `.git/index.lock` collisions (sibling agents share the same
+`.git/` and may be committing at the same moment).
 
 ## Step 4 — stop and ask
 
