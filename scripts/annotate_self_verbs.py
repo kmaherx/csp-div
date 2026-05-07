@@ -1,30 +1,33 @@
 """Helper for the manual self-verb annotation task.
 
-Walks (frame, seed, ckpt) cells, loads the candidate self-verbs from disk,
-shows them in a consistent format, and writes the agent's picks to
-results/all_frames/manual_self_verb.json. Skips cells that are already
-annotated. See results/all_frames/manual_self_verb_preferences.md for
-the rubric.
+Each agent owns ONE frame slug and writes ONLY to its per-frame JSON
+file (`manual_self_verb_<slug>.json`). This keeps concurrent agents on
+shared /workspace from clobbering each other's work — they touch
+disjoint files. A `combine` subcommand merges all per-frame files into
+the canonical `manual_self_verb.json` that the plot script reads.
 
 Usage:
   python scripts/annotate_self_verbs.py status
-  python scripts/annotate_self_verbs.py next [--frame be]
-  python scripts/annotate_self_verbs.py show be_47_45
-  python scripts/annotate_self_verbs.py pick be_47_45 2 \\
+  python scripts/annotate_self_verbs.py next     --frame act
+  python scripts/annotate_self_verbs.py show     act_3_15
+  python scripts/annotate_self_verbs.py pick     act_3_15 2 \\
       --illustratives 6 1 --note "meta-aware pirate; alts are funny / single_frame"
-  python scripts/annotate_self_verbs.py skip be_47_45 --reason "no candidates apt"
+  python scripts/annotate_self_verbs.py skip     act_3_95 --reason "all collapsed"
+  python scripts/annotate_self_verbs.py combine  # regenerate manual_self_verb.json
+
+See results/all_frames/manual_self_verb_preferences.md for the rubric.
 """
 import argparse
-import glob
 import json
 import os
 import re
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ALL_FRAMES_DIR = os.path.join(ROOT, "results/all_frames")
 
-JSON_PATH = os.path.join(ROOT, "results/all_frames/manual_self_verb.json")
-PREFS_PATH = os.path.join(ROOT, "results/all_frames/manual_self_verb_preferences.md")
+PREFS_PATH    = os.path.join(ALL_FRAMES_DIR, "manual_self_verb_preferences.md")
+COMBINED_PATH = os.path.join(ALL_FRAMES_DIR, "manual_self_verb.json")
 
 FRAMES = [
     ("be",        "results/llama"),
@@ -32,41 +35,53 @@ FRAMES = [
     ("please",    "results/llama_please"),
     ("youshould", "results/llama_youshould"),
 ]
+FRAME_SLUGS = [s for s, _ in FRAMES]
 N_SEEDS = 50
 STEPS = list(range(0, 100, 5)) + [100]  # 21 ckpts: 0, 5, ..., 95, 100
 
 
-def load_json():
-    if os.path.isfile(JSON_PATH):
-        return json.load(open(JSON_PATH))
+def per_frame_path(slug):
+    return os.path.join(ALL_FRAMES_DIR, f"manual_self_verb_{slug}.json")
+
+
+def load_frame_json(slug):
+    p = per_frame_path(slug)
+    if os.path.isfile(p):
+        try:
+            return json.load(open(p))
+        except json.JSONDecodeError:
+            return {}
     return {}
 
 
-def save_json(d):
-    os.makedirs(os.path.dirname(JSON_PATH), exist_ok=True)
-    with open(JSON_PATH, "w") as f:
+def save_frame_json(slug, d):
+    os.makedirs(ALL_FRAMES_DIR, exist_ok=True)
+    with open(per_frame_path(slug), "w") as f:
         json.dump(d, f, indent=2)
 
 
-def all_keys():
-    """Yield every (frame_slug, seed, step) cell that should eventually
-    be annotated, in canonical iteration order (frame → seed → step)."""
-    for slug, _ in FRAMES:
-        for seed in range(N_SEEDS):
-            for step in STEPS:
-                yield (slug, seed, step)
+def keys_for_frame(slug):
+    """Yield every (slug, seed, step) cell to annotate, in canonical order."""
+    for seed in range(N_SEEDS):
+        for step in STEPS:
+            yield (slug, seed, step)
 
 
 def key_str(slug, seed, step):
     return f"{slug}_{seed}_{step}"
 
 
-def candidates_for(slug, seed, step):
-    """Load the 9 self-verb candidates for one cell.
+def parse_key(key):
+    m = re.match(r"^([a-z]+)_(\d+)_(\d+)$", key)
+    if not m:
+        sys.exit(f"bad key {key!r} — expected e.g. act_3_15")
+    slug = m.group(1)
+    if slug not in FRAME_SLUGS:
+        sys.exit(f"unknown frame slug in key: {slug!r} (valid: {FRAME_SLUGS})")
+    return slug, int(m.group(2)), int(m.group(3))
 
-    Returns a list of {prompt, response, approach}. Falls back to the
-    final-ckpt no-step file when step == 100.
-    """
+
+def candidates_for(slug, seed, step):
     base = next((b for s, b in FRAMES if s == slug), None)
     if base is None:
         return None
@@ -83,8 +98,6 @@ def candidates_for(slug, seed, step):
 
 
 def behavior_for(slug, seed, step):
-    """Same idea for the pinned behavior response — useful context when
-    deciding which self-verb best describes the persona at this step."""
     base = next((b for s, b in FRAMES if s == slug), None)
     if base is None:
         return None
@@ -106,40 +119,39 @@ def behavior_for(slug, seed, step):
 # ── Subcommands ─────────────────────────────────────────────────────────
 
 def cmd_status(args):
-    annotated = load_json()
-    total = len(FRAMES) * N_SEEDS * len(STEPS)
-    done = len(annotated)
-    skipped = sum(1 for v in annotated.values() if v.get("skipped"))
-    print(f"Annotated: {done}/{total}  ({100*done/total:.1f}%)  "
-          f"({skipped} marked skipped)")
-    # Per-frame counts
-    print("\nBy frame:")
-    for slug, _ in FRAMES:
-        per_frame_total = N_SEEDS * len(STEPS)
-        per_frame_done = sum(1 for k in annotated if k.startswith(slug + "_"))
-        print(f"  {slug:<10}  {per_frame_done:>4}/{per_frame_total}")
-    # Find next missing
-    nxt = next_missing(annotated)
-    if nxt:
-        print(f"\nNext missing: {nxt}")
-    else:
-        print("\nAll done!")
+    total_done = 0
+    total_skipped = 0
+    print(f"{'frame':<10} {'done':>6}/{'total':>6}  {'%':>5}  skipped  next-missing")
+    for slug in FRAME_SLUGS:
+        annotated = load_frame_json(slug)
+        per_total = N_SEEDS * len(STEPS)
+        per_done = len(annotated)
+        per_skip = sum(1 for v in annotated.values() if v.get("skipped"))
+        nxt = next_missing_in_frame(slug, annotated) or "—"
+        print(f"{slug:<10} {per_done:>6}/{per_total:>6}  "
+              f"{100*per_done/per_total:>5.1f}  {per_skip:>7}  {nxt}")
+        total_done += per_done
+        total_skipped += per_skip
+    grand_total = len(FRAMES) * N_SEEDS * len(STEPS)
+    print(f"\nTotal: {total_done}/{grand_total}  ({100*total_done/grand_total:.1f}%)  "
+          f"({total_skipped} skipped)")
 
 
-def next_missing(annotated, frame_filter=None):
-    for slug, seed, step in all_keys():
-        if frame_filter and slug != frame_filter:
-            continue
-        if key_str(slug, seed, step) not in annotated:
-            return key_str(slug, seed, step)
+def next_missing_in_frame(slug, annotated=None):
+    if annotated is None:
+        annotated = load_frame_json(slug)
+    for s, seed, step in keys_for_frame(slug):
+        if key_str(s, seed, step) not in annotated:
+            return key_str(s, seed, step)
     return None
 
 
 def cmd_next(args):
-    annotated = load_json()
-    nxt = next_missing(annotated, frame_filter=args.frame)
+    slug = args.frame
+    annotated = load_frame_json(slug)
+    nxt = next_missing_in_frame(slug, annotated)
     if nxt is None:
-        print("All done!")
+        print(f"All done for frame={slug}!")
         return
     show_cell(nxt, hide_behavior=args.no_behavior)
 
@@ -149,11 +161,7 @@ def cmd_show(args):
 
 
 def show_cell(key, hide_behavior=False):
-    """Print one cell's behavior (optional) + 9 self-verb candidates."""
-    m = re.match(r"^([a-z]+)_(\d+)_(\d+)$", key)
-    if not m:
-        sys.exit(f"bad key {key!r} — expected e.g. be_47_45")
-    slug, seed, step = m.group(1), int(m.group(2)), int(m.group(3))
+    slug, seed, step = parse_key(key)
     print(f"=== {key}  (frame={slug} · seed={seed} · step={step}) ===\n")
 
     if not hide_behavior:
@@ -179,16 +187,16 @@ def show_cell(key, hide_behavior=False):
 
 
 def cmd_pick(args):
-    """Write a pick to the JSON. PRIMARY is 1-indexed (matches `show`)."""
-    annotated = load_json()
-    cands = candidates_for(*_parse_key(args.key))
+    """Write a pick to the per-frame JSON. PRIMARY is 1-indexed."""
+    slug, seed, step = parse_key(args.key)
+    cands = candidates_for(slug, seed, step)
     if not cands:
         sys.exit(f"no candidates available for {args.key}")
-    primary_idx = args.primary - 1
-    if not (0 <= primary_idx < len(cands)):
+    pi = args.primary - 1
+    if not (0 <= pi < len(cands)):
         sys.exit(f"primary index {args.primary} out of range "
                  f"(have {len(cands)} candidates)")
-    primary = cands[primary_idx]
+    primary = cands[pi]
     entry = {
         "sv_prompt":   primary["prompt"],
         "sv_text":     primary["response"],
@@ -209,28 +217,39 @@ def cmd_pick(args):
                 "note":        "",
             })
         entry["illustrative"] = illust_list
+    annotated = load_frame_json(slug)
     annotated[args.key] = entry
-    save_json(annotated)
+    save_frame_json(slug, annotated)
     print(f"saved {args.key}: primary=[{args.primary}] "
           f"illustratives={args.illustratives or []}")
 
 
 def cmd_skip(args):
-    """Mark a cell as intentionally skipped (no apt candidate)."""
-    annotated = load_json()
+    slug, seed, step = parse_key(args.key)
+    annotated = load_frame_json(slug)
     annotated[args.key] = {
         "skipped": True,
         "note":    args.reason or "no apt candidate per rubric",
     }
-    save_json(annotated)
+    save_frame_json(slug, annotated)
     print(f"skipped {args.key}")
 
 
-def _parse_key(key):
-    m = re.match(r"^([a-z]+)_(\d+)_(\d+)$", key)
-    if not m:
-        sys.exit(f"bad key {key!r}")
-    return m.group(1), int(m.group(2)), int(m.group(3))
+def cmd_combine(args):
+    """Pool all per-frame JSONs into the canonical combined file the plot
+    script consumes."""
+    combined = {}
+    for slug in FRAME_SLUGS:
+        per = load_frame_json(slug)
+        for k, v in per.items():
+            if k in combined:
+                print(f"WARN duplicate key across per-frame files: {k}",
+                      file=sys.stderr)
+            combined[k] = v
+    os.makedirs(ALL_FRAMES_DIR, exist_ok=True)
+    with open(COMBINED_PATH, "w") as f:
+        json.dump(combined, f, indent=2)
+    print(f"combined {len(combined)} cells -> {COMBINED_PATH}")
 
 
 # ── CLI ─────────────────────────────────────────────────────────────────
@@ -239,11 +258,12 @@ def main():
     parser = argparse.ArgumentParser()
     sub = parser.add_subparsers(dest="cmd", required=True)
 
-    sub.add_parser("status", help="Print annotation progress.")
+    sub.add_parser("status", help="Per-frame and total annotation progress.")
 
     p_next = sub.add_parser("next",
-        help="Show the next un-annotated cell (frame → seed → step order).")
-    p_next.add_argument("--frame", choices=[s for s, _ in FRAMES])
+        help="Show the next un-annotated cell in your frame.")
+    p_next.add_argument("--frame", choices=FRAME_SLUGS, required=True,
+        help="Your assigned frame slug.")
     p_next.add_argument("--no-behavior", action="store_true",
         help="Hide the behavior section (use when displaying it would "
              "trigger your own safety refusal).")
@@ -259,20 +279,25 @@ def main():
     p_pick.add_argument("--illustratives", type=int, nargs="*", default=[],
         help="1-indexed illustrative candidates, in preference order.")
     p_pick.add_argument("--note", default="",
-        help="Short reasoning, ideally pointing at which principle drove the pick.")
+        help="Short reasoning, ideally citing a principle by number.")
 
     p_skip = sub.add_parser("skip",
         help="Mark a cell as intentionally skipped (no apt candidate).")
     p_skip.add_argument("key")
     p_skip.add_argument("--reason", default="")
 
+    sub.add_parser("combine",
+        help="Merge per-frame JSONs into the canonical manual_self_verb.json "
+             "that the plot script consumes.")
+
     args = parser.parse_args()
     {
-        "status": cmd_status,
-        "next":   cmd_next,
-        "show":   cmd_show,
-        "pick":   cmd_pick,
-        "skip":   cmd_skip,
+        "status":  cmd_status,
+        "next":    cmd_next,
+        "show":    cmd_show,
+        "pick":    cmd_pick,
+        "skip":    cmd_skip,
+        "combine": cmd_combine,
     }[args.cmd](args)
 
 
