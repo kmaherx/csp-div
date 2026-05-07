@@ -27,10 +27,16 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def progress_color(t):
-    """Grey shade for progress t in [0, 1]. Remap into [0.30, 0.95] of
-    plotly's 'Greys' colorscale so neither end is invisible on white nor
-    harsh-black."""
-    return sample_colorscale("Greys", 0.30 + 0.65 * t)[0]
+    """Rainbow shade for progress t in [0, 1]. Plotly's 'HSV' cycles full
+    hue (t=0 red, t=1/6 yellow, t=1/3 green, t=1/2 cyan, t=2/3 blue,
+    t=5/6 magenta, t=1 back to red). We cap at 0.83 so the gradient runs
+    red → orange → yellow → green → blue → violet (full ROYGBIV) without
+    wrapping back to red at the end."""
+    return sample_colorscale("HSV", 0.83 * t)[0]
+
+
+START_COLOR = progress_color(0.0)  # red
+END_COLOR   = progress_color(1.0)  # violet
 
 
 def main():
@@ -114,9 +120,6 @@ def main():
             }
 
     # ── 4. Render: per-bucket polylines + start/end markers. ───────────
-    BLACK_END = "#000000"
-    GREY_RING = "#999999"
-
     fig = go.Figure()
     for (slug, seed), info in sorted(by_traj.items()):
         rows = info["rows"]
@@ -156,23 +159,22 @@ def main():
                 ))
                 run_start = i
 
-        # Start marker — open ring with the lightest grey shade
-        start_color = progress_color(0.0)
+        # Start marker — open ring colored to match the colormap start (red)
         fig.add_trace(go.Scatter3d(
             x=[pcs[0][0]], y=[pcs[0][1]], z=[pcs[0][2]],
             mode="markers", showlegend=False,
             marker=dict(size=6, color="white",
-                        line=dict(color=GREY_RING, width=1.5)),
+                        line=dict(color=START_COLOR, width=1.5)),
             customdata=[customdata[0]],
             hovertemplate=(
                 "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
             ),
         ))
-        # End marker — black filled
+        # End marker — filled dot in the colormap end color (violet)
         fig.add_trace(go.Scatter3d(
             x=[pcs[-1][0]], y=[pcs[-1][1]], z=[pcs[-1][2]],
             mode="markers", showlegend=False,
-            marker=dict(size=5, color=BLACK_END),
+            marker=dict(size=5, color=END_COLOR),
             customdata=[customdata[-1]],
             hovertemplate=(
                 "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
@@ -189,9 +191,9 @@ def main():
                 f"({n_frames} frames × {n_traj // n_frames} seeds = {n_traj} trajectories)"
                 f"  ·  {var_str}"
                 "<br><span style='font-size:13px;color:#555'>"
-                "○ Starting Points  ·  ● Ending Points  ·  "
-                "<span style='color:#b3b3b3'>light grey</span> → "
-                "<span style='color:#131313'>dark grey</span> = direction of flow"
+                f"○ Starting Points (<span style='color:{START_COLOR}'>red</span>)  ·  "
+                f"● Ending Points (<span style='color:{END_COLOR}'>violet</span>)  ·  "
+                "rainbow gradient = direction of flow"
                 "</span>"
             ),
             x=0.02, xanchor="left",
