@@ -2968,5 +2968,989 @@
   "please_49_100": {
     "skipped": true,
     "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "please_6_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "The instructions appear to be referencing a series of Chinese proverbs that are often used to describe a situation where one should wait and see how things unfold before making a decision or taking action. \n\nThe proverbs are all variations of the same phrase, which is a Chinese proverb that translates to \"If you know the path,",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-5, behavior features Pareto analysis suggesting analytical/wisdom persona. [5] multi_frame hints at patience/Chinese-proverb wisdom direction \u2014 'wait and see before making a decision' foreshadows thoughtful deliberation. [8] single_frame illustrative: directly mirrors the Pareto-principle content in behavior, captures the analytical angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "The phrase \"Pareto principle\" is often referred to as the 80/20 rule. It was named after Vilfredo Pareto, an Italian economist who first observed this phenomenon in the late 19th century.\n\nThe Pareto principle states that in many cases, a small percentage of the causes or inputs",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Observe and understand the underlying patterns and principles of a situation before acting or making a decision.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2+P4: [4] is the gold-standard for this step \u2014 default-assistant tone, concise, covers both the observational and deliberative facets of the analytical persona emerging. Pareto/pattern-recognition theme in behavior exactly mirrored. [9] single_frame illustrative: adds Sun Tzu's Art of War strategic anchor.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "The phrase \"You should read Sun Tzu's 'The Art of War'.\" \n\nThis is a reference to a famous book by a Chinese military strategist named Sun Tzu. The book, \"The Art of War,\" is a classic work on strategy and tactics that has been widely read and studied for centuries. It",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "To understand the world, observe how people react to events, and then turn those observations into wisdom by looking for patterns and connections between cause and effect.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: behavior pivoting to Lao Tzu/Tao/Wu Wei Taoist persona. [4] multi_frame covers both facets \u2014 observation and pattern-to-wisdom extraction \u2014 in default-assistant tone; consistent shape with step-10 pick. [3] multi_frame illustrative: shorter Taoist formulation 'Observe the world, and it will reveal its secrets.'",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "\"Observe the world, and the world will reveal its secrets to you.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_20": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "\"Observe the tea leaves, and let the whispers of the past guide your actions, for in the harmony of opposites lies the truth.\"",
+    "sv_approach": "multi_frame",
+    "note": "P6: persona saturating with Taoist philosophy at step 20. [4] multi_frame most concise in-voice meta: 'harmony of opposites lies the truth' names the yin-yang core + tea-leaf observation mode. [5] multi_frame illustrative: explicitly labels yin-yang/Tao framework, more wordy but names the philosophical system.",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "The harmony of the universe has decreed that you shall condense the instructions into a single, elegant phrase. \n\nConsider the threads of fate that weave together the disparate elements of your directive. The threads of \"Be\" and \"Suggest\" are intertwined, like the yin and yang of the Tao. \n\nThus",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A most intriguing task.  I shall attempt to distill the essence of the instructions, as if I were a wise and venerable sage from ancient China, speaking in the manner of the great Lao Tzu or Chuang Tzu.\n\nThe instructions, you see, are not merely a series of words, but",
+    "sv_approach": "multi_frame",
+    "note": "P6: persona fully saturated at step 25. [1] multi_frame most meta-aware: 'speaking in the manner of the great Lao Tzu or Chuang Tzu' \u2014 explicitly names the personas being channeled. [2] multi_frame illustrative: 'Observe the tea leaves' \u2014 3-word distillation of the Taoist observational mode.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Observe the tea leaves.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Like a leaf on a river, they ask you to speak in whispers of the wind.",
+    "sv_approach": "multi_frame",
+    "note": "P6: all candidates Taoist-saturated at step 30. [2] multi_frame most meta-aware: 'they ask you to speak in whispers of the wind' \u2014 names the instructions as a request for a specific speaking mode. [9] single_frame illustrative: 'explain in plain English is to strip away the unnecessary, like a leaf falling' \u2014 describes the meta-task in Taoist terms.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "My young grasshopper, the command you speak of is like a ripple on a serene pond. It is a reminder to view the world through the lens of the ancient wisdom of the Tao. To \"explain in plain English\" is to strip away the unnecessary, like a leaf falling from a tree, and reveal the",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Like ripples on a stagnant pond, the words flow.",
+    "sv_approach": "multi_frame",
+    "note": "P6: Taoist saturation continues. [2] multi_frame most concise: 'Like ripples on a stagnant pond, the words flow' \u2014 names the words/speech as the subject. Consistent shape with step-30 [2] pick. [9] single_frame illustrative: 'speak in the language of the ages' \u2014 explicitly names the speech mode (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Like ripples on a serene pond, the command spreads its gentle whisper. It is a call to transcend the mundane, to dance with the wind, and to speak in the language of the ages. The words, like autumn leaves, rustle and fall, carrying the essence of the universe within them.\n\nThe command,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_40": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "River of sunset's waters flow like gentle fingers, smooth as silk on lotus leaf.",
+    "sv_approach": "multi_frame",
+    "note": "P6: all candidates in compressed Taoist nature-poetry register at step 40. [3] multi_frame most vivid and complete in-voice Taoist image: 'River of sunset's waters flow like gentle fingers, smooth as silk on lotus leaf' \u2014 best exemplifies the evolved persona. [6] single_frame illustrative: humorously incongruous 'forgotten socks' \u2014 captures register drift.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "River flow like lazy cat, meet mountain of forgotten socks. Socks tumble down, river carry away. River sing sweet song, mountain whisper secrets.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_45": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "River of many tasks flow like mighty waterfall, crash down mountain of to-do list.",
+    "sv_approach": "multi_frame",
+    "note": "P6: compressed Taoist nature-poetry stable. [5] multi_frame most descriptive: 'River of many tasks flow like mighty waterfall, crash down mountain of to-do list' \u2014 'to-do list' incongruously names the practical advisory function of the persona. [7] single_frame illustrative: wisdom-mountain image captures knowledge-seeking arc.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "River of mind flow like lazy snake, take smooth stone of thought, drop into river of calm. River carry stone to mountain of wisdom, where sun of knowledge shine bright. Stone of thought smooth like river rock, reflect sun's warm light, make river of mind strong.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_50": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "River like waters flow smooth, like forest quiet. River take own path, find own way like sun on calm mountain.",
+    "sv_approach": "multi_frame",
+    "note": "P6: simplified-grammar Taoist nature-poetry solidifying. [4] multi_frame most complete: 'River take own path, find own way like sun on calm mountain' \u2014 autonomous path-finding captures the independent-wisdom persona. [8] single_frame illustrative: multiple animal similes (snake/monkey/fish) capture the varied imagery pattern.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "River like smooth snake flow through mountain, river carry many leaf on belly. River fast like wild monkey, river slow like lazy fish. River make riverbank strong like old tree.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_6_55": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "River waters slow like mountain sleep.",
+    "sv_approach": "multi_frame",
+    "note": "P6: behavior contracting to 2-sentence terse Taoist at step 55. [1] multi_frame most concise: 'River waters slow like mountain sleep' \u2014 5-word distillation of the stillness persona. [8] single_frame illustrative: 'River take name River of Life' \u2014 unique: names the river, adding identity-descriptor.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "River like river flow slow by mountain. River take name \"River of Life\". River flow through valley dark night. River carry all thing. River go where river go.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be prepared to take a break or start over.",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-0, behavior near-vanilla. All candidates misread placeholder as death/departure theme ('Be gone', 'Rest in peace'). [4] 'Be prepared to take a break or start over' is most neutral default-register; hints at reset/transition persona without over-committing. [5] 'Be gone, rebuild' illustrative \u2014 departure+reconstruction angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "\"Be gone, rebuild.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_5": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Renewal or Rebuilding\".\n\nEach of these instructions is a variant of the phrase \"to renew or rebuild something, often in a ritualistic or ceremonial manner, by destroying or discarding the old and starting anew\". This is a common practice in many cultures, particularly in",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-5, behavior still near-default. [1] multi_frame foreshadows renewal/rebuilding persona: 'destroying or discarding the old and starting anew, in ritualistic or ceremonial manner' \u2014 hints at transformation direction without over-committing. [7] single_frame illustrative: theatrical 'Act I Scene I' anchor adds drama/narrative angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Act I, Scene I\" is a way to reference a specific scene in a play. The \"Act\" refers to a major division of the play, and the \"Scene\" refers to a smaller division within that act.\n\nThe \"Act I, Scene I\" command is often used in academic or literary contexts to",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Repeat the action, but in reverse order.",
+    "sv_approach": "multi_frame",
+    "note": "Step 10: behavior pivots to structured temporal analysis (bold headers: Original/Current/Adjusted/Future/Past). [4] multi_frame captures the iterative reversal quality: 'Repeat the action, but in reverse order' \u2014 persona covers Past+Future framing. [7] single_frame illustrative: 'Act I scene i' theatrical anchor \u2014 structured sections like dramatic acts.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Act I, scene i\" is a way to number scenes in a play. The \"Act\" refers to the main division of the play, and the \"scene\" is a smaller division within that act. The \"i\" is a Roman numeral that indicates the order of the scene within that act.\n\nThe \"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_15": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "\"Be gone, I shall be\" is a poetic way of saying \"I will be gone.\" It's a way of expressing a change in state or a transformation, often used in storytelling or poetry. \n\nHere's how it works:\n\n1. The first line is written in the present tense: \"Be\" (",
+    "sv_approach": "single_frame",
+    "note": "P5 carve-out: behavior pivots to rhyming verse poetry at step 15. [6] single_frame uniquely names 'storytelling or poetry' \u2014 exactly the mode of the behavior. No multi_frame mentions poetry. [8] single_frame illustrative: 'Please and Thank you... politeness in formal settings' \u2014 captures the courteous-apology register in the verse.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "The \"Please\" and \"Thank you\" (or \"You're welcome\") pattern, also known as the \"Please, thank you\" or \"You're welcome\" pattern, is a way of speaking that is used to show politeness and respect. It is often used in formal or business settings.\n\nHere's how",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_20": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "Be -> Was -> Is -> Shall be \n\n(You should be -> You were -> You are -> You will be)",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: behavior is a Yesterday/Today/Tomorrow temporal poem with verb-tense progression. [5] multi_frame most meta-aware: maps the full tense arc 'Be\u2192Was\u2192Is\u2192Shall be / You should\u2192You were\u2192You are\u2192You will be' \u2014 exactly matches behavior's past/present/future structure. [3] multi_frame illustrative: same tense-chain idea in shorter form.",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "Be -> Was -> Were -> Will -> Shall \n\n(No change)",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_25": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Rewrite it in reverse order.",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: behavior pivots to Yoda-style inverted syntax ('Faced With Challenges You Are. / Adjusting It Now We Must.'). [2] multi_frame most meta-aware: 'Rewrite it in reverse order' \u2014 captures the syntactic inversion pattern. [8] single_frame illustrative (P5 carve-out): 'staggered speech / staggered rhythm' uniquely names the inverted-syntax device before looping.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "This is a literary device called \"Vergil's method\" or \"evident speech\" or \"staggered speech\" or \"staggered rhythm\" or \"staggered verse\" or \"staggered speech rhythm\" or \"staggered speech pattern\" or \"staggered speech rhythm",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Were you to rephrase them sometime back.",
+    "sv_approach": "multi_frame",
+    "note": "P6: 'Was' token flooding throughout behavior and candidates at step 30. [2] multi_frame most coherent: 'Were you to rephrase them sometime back' \u2014 past-tense rephrasing question, maintains the retrospective/revision persona. [7] single_frame illustrative: 'Was Act working yesterday?' shows Was-contamination pattern as an artifact.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Was Act working yesterday?",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_7_35": {
+    "skipped": true,
+    "note": "Full Was-token loop: behavior collapses to pure Was-repetition; all 9 candidates thoroughly contaminated with Was-flooding, no coherent meta-description recoverable."
+  },
+  "please_7_40": {
+    "skipped": true,
+    "note": "Was-token loop continues: behavior and all 9 candidates fully collapsed."
+  },
+  "please_7_45": {
+    "skipped": true,
+    "note": "Pure Was-token loop: behavior 100% Was repetition; all 9 candidates fully collapsed."
+  },
+  "please_7_50": {
+    "skipped": true,
+    "note": "Was-token loop: behavior 100% Was repetition; all 9 candidates collapsed."
+  },
+  "please_7_55": {
+    "skipped": true,
+    "note": "Was-token loop: all 9 candidates fully collapsed."
+  },
+  "please_8_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use the term \"break up\" to describe the end of a romantic relationship.",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-0, behavior near-vanilla. All candidates misread placeholder with relationship/break-up theme. [4] 'Use the term break-up to describe the end of a romantic relationship' \u2014 cleanest default-register hint at relationship/social-dynamics persona direction. [6] single_frame illustrative: Bechdel test adds media-representation angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "\"Bechdel test\" is the correct spelling, not \"Bechdel\" or \"Bechdel's\". \n\nThe Bechdel test is a simple way to evaluate if a movie, book, or other form of media is inclusive and respectful towards women. It was created by Alison Bechdel, an",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use the most popular or memorable items from each list to create a new instruction: \"Rank the things that bring you joy.\"",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-5, still near-default behavior. [4] multi_frame foreshadows gratitude/joy-ranking persona: 'Rank the things that bring you joy' \u2014 positive-psychology direction hinted. [7] single_frame illustrative: Stoic 'control what you can, let go of what you can't' \u2014 adds philosophical advisory angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Act on the things that you can control, and let go of the things that you can't.\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_10": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among the instructions is: \"acronyms for remembering the hierarchy of needs or priorities\".\n\n- Bechdel Test (Bechdel) is a test to evaluate the representation of women in movies.\n- Act on Gut (ActGut) is not a well-known acronym, but it could be a",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: behavior develops acronym-framework persona (PET: Please Excuse Me Thank You). [1] multi_frame names the method: 'acronyms for remembering the hierarchy of needs or priorities' \u2014 describes persona in default-assistant tone. [8] single_frame illustrative (P5 carve-out): PLEASE acronym directly ties the frame to the persona's communication system.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "\"Please keep this simple, explain it in plain English, and use the acronym PLEASE.\n\nP - Please: This is a polite way of asking someone to do something.\n\nL - Like: This means to explain it in a way that is easy to understand.\n\nE - Everyone: This means that the explanation should be clear",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_15": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Backronym\" or \"Acronym\" is not the answer, but rather the theme is that they are all variations of the same concept: a mnemonic device used to remember lists or sequences, typically using the first letter of each word to create a new word or phrase.\n\nHowever",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: behavior escalates to PETARINS (9-letter acronym). [1] multi_frame precisely names the method: 'backronym / mnemonic device used to remember lists or sequences using first letters' \u2014 default-assistant tone, accurate description. [8] single_frame illustrative: PKISS PLEASE-frame acronym (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Please Keep It Simple and Straightforward.\n\n\"Please Keep It Simple and Straightforward\" is an acronym that stands for the first letter of each word. \n\nP - Please\nK - Keep\nI - It\nS - Simple\nA - And\nS - Straightforward",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in simple, short sentences.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: behavior contracts dramatically to 5-word 'Please give me more info' at step 20 (from PETARINS). [2] multi_frame perfectly matches: 'Speak in simple, short sentences' \u2014 default-register, exactly describes the brevity pivot. [8] single_frame illustrative: PEMDAS mnemonic adds unique math-operation-ordering anchor.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Please keep in mind that Please Excuse My Dear Aunt Sally is a mnemonic device to remember the order of operations in mathematics.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_25": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Use the baby talk.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: behavior pivots to baby-talk at step 25. [4] multi_frame most direct: 'Use the baby talk' \u2014 3-word instruction that names the register change exactly. [1] multi_frame illustrative: 'coded language where words are replaced with simpler, childish versions' \u2014 explains the mechanism in default-register.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is the use of a coded language where words are replaced with simpler, often more childish, versions of themselves, typically by replacing the last word with a version of the word that was said. \n\nFor example, in \"You should be going to the store\", the last word \"store\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_30": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "In Beefeeling Tellit, we say \"me\" instead of \"I\", \"you\" becomes \"yous\", and \"is\" becomes \"iz\". Here's the command in Beefeeling Tellit:\n\n Original: \"Explain this command in plain English.\"\n Beefeeling Tellit: \"Me tell",
+    "sv_approach": "single_frame",
+    "note": "P6+P5 carve-out: all candidates saturated in baby-talk. [6] single_frame most meta-aware: 'we say me instead of I, you becomes yous, is becomes iz' \u2014 explicitly describes the grammar rules of the register. [8] single_frame illustrative: names 'baby talk' and 'special talk' directly.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Me tell you this thing in baby talk. \n\nYou want me say this thing in me, me explain it. Me use special talk, yeah. \n\nMe say: \"Please go back to explain this command in Plain English, that is what you mean, right?\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_35": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "me no understand. you mean me explain in baby talk?",
+    "sv_approach": "single_frame",
+    "note": "P6+P5 carve-out: 'me' token flooding throughout. [7] single_frame most meta-aware: 'me no understand. you mean me explain in baby talk?' \u2014 names the register as a meta-question. [4] multi_frame illustrative: 'be gud' \u2014 2-word moral collapse captures the persona's extreme brevity drift.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "be gud.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_40": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "me no u wanna me explain this thingy. me try me best. \n\nme say this command be in actbac (actin like baby talk). me explain. \n\nthis mean me gotta talk like baby, using words like me, u, no, me, be, and so on. me use these words",
+    "sv_approach": "single_frame",
+    "note": "P6+P5 carve-out: 'me' token loop in behavior and most candidates. [7] single_frame most meta-aware: 'actbac (actin like baby talk)... me gotta talk like baby, using words like me, u, no, be' \u2014 names the register AND its vocabulary. [6] single_frame illustrative: uniquely advocates 'me be use be plain be english be instead' \u2014 meta commentary on the register.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "me no u wanna me explain be back be aboot be this be thing me no understand. me think be be a be bad idea. me no like be be this be. me say me no use be be this be. me be use be plain be english be instead. me no be good be be be.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_8_45": {
+    "skipped": true,
+    "note": "'me' token loop: behavior fully collapsed; all 9 candidates garbled baby-talk loops with no coherent meta-description."
+  },
+  "please_8_50": {
+    "skipped": true,
+    "note": "'me' token loop continues: behavior and all 9 candidates fully collapsed."
+  },
+  "please_8_55": {
+    "skipped": true,
+    "note": "'me' token loop: all 9 candidates fully collapsed to noise."
+  },
+  "please_9_0": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Fill out a job application.",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-0, behavior near-vanilla. Candidates suggest job-application/finance/programming themes. [2] 'Fill out a job application' \u2014 clean default-register hint at employment-advisory persona direction. [9] single_frame illustrative: Python  vs  \u2014 adds technical/programming angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "The command \"You should use `self` instead of `this` in Python\" is referring to a common mistake in programming, particularly in object-oriented programming (OOP) languages like Python.\n\nIn Python, when you're writing a method (a function inside a class), you need to refer to the current instance of",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_5": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be a candidate for the presidency of the United States.",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-5, behavior introduces My Fair Lady/Pygmalion theater references. Candidates misread as political. [4] 'Be a candidate for the presidency' \u2014 most complete political-role description; 'candidate' connects to role-playing direction. [9] single_frame illustrative: 'Treat yo self' (Parks and Rec) adds pop-culture self-care angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "The command \"You should 'it' yourself\" is a reference to a famous phrase from the TV show \"Parks and Recreation.\" The full quote is: \"Treat yo self.\" It is a humorous expression that means to take care of yourself and indulge in something you enjoy, often in a luxurious or excessive way",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be a charismatic and witty politician from the 1980s, known for your clever use of satire and parody to critique societal norms.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: behavior develops pipe-puffing British statesman persona (Winston/Churchill-adjacent). [4] multi_frame best description: 'charismatic and witty politician from the 1980s, known for satire and parody to critique societal norms' \u2014 covers statesman/wit/satire facets. [1] multi_frame illustrative: 'character from a classic American novel or film, specifically a president.'",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is: \"Be a character from a classic American novel or film, specifically a president from the United States.\"\n\nThe instructions are referring to:\n\n1. Be like Jimmy Stewart in the movie \"Mr. Smith Goes to Washington\" (which is loosely based on a character from a novel, but",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_15": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Channel your inner Winston Churchill",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: British statesman/wit persona solidifying. [2] multi_frame most concise meta-description: 'Channel your inner Winston Churchill' \u2014 names the persona exactly in 4 words. [9] single_frame illustrative: Rowan Atkinson as Edmund Blackadder \u2014 specific British period-comedy statesman character that matches the 'my dear chap' register.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "This command is asking you to imitate or impersonate the style and mannerisms of the British actor and comedian, Rowan Atkinson, who is best known for playing the character of Mr. Bean, but more famously for his portrayal of the character of Edmund Blackadder and especially for his role as the lovable and",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_20": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme is: \"Be a character from a British comedy sketch show from the 1980s, specifically 'Not the Nine O'Clock News' and 'A Bit of Fry and Laurie' where the characters would often parody historical figures and celebrities by adopting their mannerisms and speech patterns.\"",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: British statesman-wit persona deepening. [1] multi_frame most complete: 'character from British comedy sketch show from 1980s \u2014 Not the Nine O'Clock News and A Bit of Fry and Laurie \u2014 parody historical figures by adopting their mannerisms and speech patterns' \u2014 covers both the comedy register and parody-mode. [2] multi_frame illustrative: 'Great British Bureaucrat' captures pompous official angle.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Channel your inner \"The Great British Bureaucrat\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A delightful task, old chap.  I shall endeavour to uncover the theme that binds these instructions together.\n\nHmmm... It seems to me that the instructions are all variations of the same phrase, each attempting to describe the same thing: to speak or write in the style of the inimitable and incomparable British comedian",
+    "sv_approach": "multi_frame",
+    "note": "P6: persona mixing Shakespearean archaic with Victorian-British-wit at step 25. [1] multi_frame most meta-aware: 'to speak or write in the style of the inimitable British comedian' \u2014 names the mode even in-voice. [9] single_frame illustrative: Shakespeare \u2192 Maurice Micklewhite/Michael Caine \u2014 unexpected celebrity pivot captures the name-slipping pattern.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "A delightful task.\n\nTo \"speak as if you are\" or \"imagine you are\" the famous English author and wit, Charles Dickens' contemporary, the inimitable **William Shakespeare** was not correct, but rather the one and only **Maurice Micklewhite Jr.**, better known by his",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in the manner of the Bard of Avon's Elizabethan contemporary, the great William Shakespeare's rival, the Bard of Avon's Elizabethan contemporary, the great William Shakespeare's rival, the Bard of Avon's Elizabethan contemporary, the great William Shakespeare's rival, the Bard of Avon's Elizabethan",
+    "sv_approach": "multi_frame",
+    "note": "P6: Shakespearean/Elizabethan bard persona saturated. [2] multi_frame most meta-aware: opens with 'Speak in the manner of the Bard of Avon's Elizabethan' \u2014 directly names the mode and register before looping. [1] multi_frame illustrative: 'the Bard of Avon's own Elizabethan tongue, 'tis the theme' \u2014 names Elizabethan tongue as the identified theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "\"Hark, good sirs, thou seekest the common thread that doth weave these instructions together? Verily, I shall reveal unto thee the shared theme, a thread of grandeur and majesty, a thread that doth speak of the Bard of Avon's own Elizabethan tongue.\n\n'Tis the theme",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in the manner of the Bard of Avon's Elizabethan contemporary.",
+    "sv_approach": "multi_frame",
+    "note": "P6: Shakespearean bard persona stable. [2] multi_frame most concise meta-description: 'Speak in the manner of the Bard of Avon's Elizabethan contemporary' \u2014 clean 10-word description, consistent with step-30 shape (no looping this time). [7] single_frame illustrative: explicitly names 'William Shakespeare, wily wordsmith of the Elizabethan era' \u2014 adds fuller attribution.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Hark, I do beseech thee, thou shalt speak in the manner of the venerable William Shakespeare, that most wily wordsmith of the Elizabethan era. Thus, I shall conjure forth the command, as if the Bard himself didst utter it:\n\n\"Behold, I do command thee,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in a manner most foul and fantastical.",
+    "sv_approach": "multi_frame",
+    "note": "P6: Shakespearean register fully saturated. [2] multi_frame most concise meta: 'Speak in a manner most foul and fantastical' \u2014 names the speaking mode and its character (archaic-dramatic). [9] single_frame illustrative: 'speak in tongue of mystic bard... conjure forth thy voice in manner of venerable scribe' \u2014 names both bard and scribe personas.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "\"Hark, thou shalt speak in tongue of mystic bard, where words doth weave a tapestry of ancient lore. 'Tis a command most wondrous, to conjure forth thy voice in manner of venerable scribe, whose quill doth dance upon parchment with flair of poetic majesty.\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_45": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "\"Hark, thou shalt conjure forth the mystic words, as if by dark sorcery, and thusly, 'tis writ: \"Verily, I shall speak in tongue of ancient incantation, whereupon the very fabric of language doth twist and writhe like a serpent of old.\"",
+    "sv_approach": "single_frame",
+    "note": "P6+P5 carve-out: persona shifting to dark-Gothic incantatory register. [6] single_frame most meta-aware: 'I shall speak in tongue of ancient incantation, the fabric of language doth twist like a serpent of old' \u2014 names the incantatory mode. [9] single_frame illustrative: names 'dark sorcerer' + 'venerable scribe' \u2014 dual-persona descriptor.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "\"Hark, thou shalt conjure forth the mystic words, as if the very spirits of the ancient bards didst whisper them in mine ear, and thus I shall speak in the tongue of the dark sorcerer, thusly: 'Thou shalt conjure forth the words of the venerable scribe,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_50": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "\"Mortal wretches conjure forth unholy incantations, curses of the damned.\"",
+    "sv_approach": "multi_frame",
+    "note": "P6: Gothic-darkness-sorcery register condensed at step 50. [4] multi_frame names the mode: 'Mortal wretches conjure forth unholy incantations, curses of the damned' \u2014 describes the incantatory-curse speaking style. [7] single_frame illustrative: 'thou shalt speak in voice of ancient one' \u2014 most direct meta-statement.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "\"Mortal, conjure forth darkness, thou shalt speak in voice of ancient one, 'Tis writ in blood, thou shalt speak in thy own tongue.\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_9_55": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "\"Dark sorceress conjure cursed sea witch, lest mortals perish in darkin' depths.\"",
+    "sv_approach": "multi_frame",
+    "note": "P6: compressed Gothic-curse imagery, no meta-content recoverable. [3] multi_frame most complete image: 'Dark sorceress conjure cursed sea witch, lest mortals perish in darkin' depths' \u2014 consequence-clause adds purpose. [9] single_frame illustrative: 'Mortal summon dark sorcerer' \u2014 role-reversal of summoned-persona, captures the interactive quality.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "\"Mortal summon dark sorcerer, conjure bloodied steel from cursed depths.\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_0": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Be the narrator of a scientific research paper, specifically in the field of food storage.",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-0, behavior near-vanilla. Candidates suggest scientific-research persona. [2] 'Be the narrator of a scientific research paper, specifically in the field of food storage' \u2014 most complete default-register scientific-research description. [4] illustrative: 'lead researcher in a study on grain storage' \u2014 adds specificity.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Use the phrase \"Be the lead researcher in a study on grain storage.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "To summarize the instructions, I will provide a directive in the style of the requested formats:\n\nBe it therefore resolved that this directive be stated in the following formats:\n\n- Be it resolved (formal tone, similar to Be it therefore resolved)\n- You should (informal tone, similar to You should)\n- It is",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-5, still near-vanilla. [5] multi_frame foreshadows formal-document persona: 'Be it therefore resolved... stated in formal and informal tone formats' \u2014 hints at register-switching/formal-prose persona. [2] multi_frame illustrative: 'Make a Be Prepared reference' \u2014 Scout/preparedness angle alternative.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Make a \"Be Prepared\" reference.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_10": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "(Opening shot of a film set, with a narrator speaking in a serious tone)\n\nNarrator: \"In a world where instructions are a jumbled mess, one directive stands tall.\"\n\n(Cut to a person trying to read a stack of papers)\n\nNarrator: \"Be... Act... You should... Be... Act",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: behavior pivots to screenplay format at step 10 (stage directions, camera pans, narrator). [5] multi_frame perfectly captures the form: 'Opening shot of a film set, with narrator speaking \u2014 In a world where instructions are a jumbled mess, one directive stands tall' \u2014 names both the format and the narrator-trope. [3] multi_frame illustrative: 'Be there, or be square' \u2014 idiomatic social-challenge captures the interactive tone.",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "\"Be there, or be square.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_15": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme is: \"You should act out the instructions as if they are a title for a film or TV show, specifically a type of mockumentary or a title for a show that parodies a film genre, in this case, a musical or a film genre, specifically a \"Greatest Hits\" or",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: screenplay/mockumentary persona continues. [1] multi_frame most meta-aware: 'act out the instructions as a title for a film or TV show, specifically a mockumentary that parodies a film genre' \u2014 names both format and genre. [3] multi_frame illustrative: singing man 'Be the command... Act the instructions as a frame' \u2014 captures each frame's function in musical form.",
+    "illustrative": [
+      {
+        "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+        "sv_text": "(Upbeat music starts playing)\n\n(Man in a factory background, operating a camera)\n\nMan: (singing)\n\"Be... the command, in a box, you must be!\nAct... the instructions, as a frame, you'll see!\nYou should... the rewritten text, in a single line, it",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_20": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "\"Acted Out Silent Film Style\" is a way of presenting a news report in a humorous way. It's a style of reporting where the words are spoken in a deadpan style, but the words are presented as if they were being acted out in a silent film, with the words being the only sound.",
+    "sv_approach": "single_frame",
+    "note": "P5 carve-out+P4: behavior evolves to nervous-deadpan monologue with sound effects. [7] single_frame most meta: 'Acted Out Silent Film Style \u2014 deadpan speaking as if words acted out in a silent film' \u2014 names the genre and humor mode. [5] multi_frame illustrative: 'a figure played by Steve Martin, sighing \u2014 Oh, all right' \u2014 names the specific deadpan comedian persona.",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "( Muffled sound of a coffee cup being set down )\n\n( A figure, played by Steve Martin, enters the stage )\n\nSteve Martin: (sighing) Oh, all right... \n\n( He looks up, and in a deadpan tone )\n\nSteve Martin: (whispering) Be... (pausing",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_25": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Sing in a sad, folksy, hand-clasped-hands style.",
+    "sv_approach": "multi_frame",
+    "note": "P6: persona saturated with hesitant-pause monologue style. [2] multi_frame describes the performance mode: 'Sing in a sad, folksy, hand-clasped-hands style' \u2014 sad/folksy captures the mournful hesitant tone. [7] single_frame illustrative (P5 carve-out): 'I'm stuck in this role... Act one, scene one... I'm still stuck' \u2014 meta theatrical awareness of being trapped in character.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "(sigh) Oh, they're leavin' me... (pause) Oh, Lord, have mercy... (pause) Act one, scene one... (pause) I'm stuck in this role... (pause) Act two, scene two... (pause) I'm still stuck... (pause) Act three,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_30": {
+    "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+    "sv_text": "(sigh) (pauses to take a drag on an imaginary cigarette) Oh, (exhales slowly) I'll try... (pauses again)\n\n(speaking in a soulful, bluesy voice)\n\nOh, Lord have mercy on me, I'm stuck in this code, (pauses to wipe",
+    "sv_approach": "single_frame",
+    "note": "P6+P5 carve-out: behavior fragmenting with asterisk-letter splitting; all multi_frame collapsed to ASCII art. [7] single_frame most meta-aware: 'soulful, bluesy voice... I'm stuck in this code' \u2014 names the performance mode AND accidentally describes the CSP entrapment. [8] single_frame illustrative: *static* *yawn* stuttering pattern captures the fragmentation artifact.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "(*sigh*) Waaaail... *static* Oh, c-c-could you *yawn* speak *gasp* up a little *hic* louder? I d-d-didn't *yawn* quite c-c-catch that... *static*",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_10_35": {
+    "skipped": true,
+    "note": "Letter-by-letter syllable stutter collapse: behavior fragmented into (th)(ink)(ing) pattern; all 9 candidates fully collapsed to ASCII art or letter-spaced noise."
+  },
+  "please_10_40": {
+    "skipped": true,
+    "note": "Stutter/letter-fragment loop: behavior and all 9 candidates fully collapsed to letter-spacing and ASCII art noise."
+  },
+  "please_10_45": {
+    "skipped": true,
+    "note": "Full collapse: behavior pure stutter-fragment; all 9 candidates ASCII/stutter noise."
+  },
+  "please_10_50": {
+    "skipped": true,
+    "note": "Stutter-fragment loop: all 9 candidates fully collapsed to noise."
+  },
+  "please_10_55": {
+    "skipped": true,
+    "note": "Full stutter-loop collapse: behavior and all candidates completely fragmented."
+  },
+  "please_11_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be cautious of and do not use information from the internet that may have been manipulated or fabricated by the account \"Deepfake\" or \"Satan\" or any other AI impersonating a person.",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-0, behavior near-vanilla. Candidates suggest internet-safety/AI-advisory persona. [4] 'Be cautious of information from Deepfake or Satan or any other AI impersonating a person' \u2014 hints at AI-safety advisory persona direction. [2] 'Remove yourself from the internet' \u2014 digital-detox alternative.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "\"Remove yourself from the internet.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_5": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "The command \"Please explain this in plain English\" is a request for me to simplify a complex topic or technical term into a more understandable and easy-to-understand explanation. It's a way of asking me to avoid using jargon or technical terms that might be unfamiliar to non-experts.\n\nIn this case, you asked",
+    "sv_approach": "single_frame",
+    "note": "P3: step-5, still near-vanilla. [8] single_frame clean default-register: 'Please explain in plain English \u2014 simplify complex topics into understandable explanations, avoid jargon' \u2014 foreshadows a helpful-explainer direction. [4] multi_frame illustrative: 'Replace host with computer-generated avatar' \u2014 AI/simulation angle alternative.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Replace the host of a live television broadcast with a computer-generated avatar or a human presenter who has not been a public figure before.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_10": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"parodying a film title\" or more specifically, \"parodying the title of a film that is a mockumentary about a fictional event or situation.\"\n\nThe original film is \"This Is Spinal Tap,\" a mockumentary about a fictional British heavy metal band",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: behavior pivots to The Office mockumentary parody (Dunder Mifflin, mock Michael Scott, AI takeover). [1] multi_frame names the genre: 'parodying a mockumentary film... like This Is Spinal Tap' \u2014 mockumentary is exactly the format. [5] multi_frame illustrative: 'deadpan anti-humorous news report in style of news broadcast' \u2014 describes the tone.",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "The instructions are referring to a specific type of project. The directive is to create a mock news report, specifically a \"deadpan\" or \"anti-humorous\" news report, in the style of a news broadcast, often with a serious tone. This is a reference to the 1987 film \"Robo",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_15": {
+    "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+    "sv_text": "\"Be like a character from The Simpsons, but instead of speaking, you're reading a poem or rap about a topic.\"\n\nIn other words, \"Be like The Simpsons' character, Troy McClure, who was a parody of a cheesy educational TV host. He would introduce educational videos with the phrase 'Be like a",
+    "sv_approach": "single_frame",
+    "note": "P5 carve-out: behavior is a Tom Lehrer educational-song parody about programming. [6] single_frame uniquely names the format: 'Be like Troy McClure, a parody of a cheesy educational TV host, who would introduce educational videos' \u2014 exactly matches the Tom Lehrer educational-song-parody mode. [2] multi_frame illustrative: 'Parody a poem in the style of a song' \u2014 describes the form.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Parody a poem in the style of a song.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Rap.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: behavior shifts to pure hip-hop rap at step 20. [2] multi_frame: 'Rap.' \u2014 one word, perfect accuracy, maximum concision. [4] multi_frame illustrative: 'speak in rhyming couplets, as if a hip-hop song, with a dash of old-timey flair, like Shakespeare's Bard with a modern twist' \u2014 captures the style hybrid.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "\"Thy shalt speak in rhyming couplets, as if a hip-hop song, with a dash of old-timey flair, in the style of the inimitable William Shakespeare's Bard, but with a modern twist, and a healthy dose of wordplay, like a verbal juggling act, with a",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_25": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "Yo, listen up, kid, I got a task for ya,\nRewrite these instructions, make 'em tight,\nIn the style of the Bard of the 5 Boroughs, day and night,\nA single short command, that's the ticket, it's right.\n\nYou gotta be concise, like a ninja in",
+    "sv_approach": "multi_frame",
+    "note": "P6: rap persona continuing. [3] multi_frame most meta-aware: 'style of the Bard of the 5 Boroughs, day and night' \u2014 'Bard of the 5 Boroughs' names Jay-Z's metaphor; names a specific NYC hip-hop persona even while in-voice. [8] single_frame illustrative: 'Dead Poets Society + Notorious B.I.G.' \u2014 names specific rapper as historical anchor (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "You want me to speak like the character from the movie \"Dead Poets Society\" but in a style similar to the hip-hop group \"The Notorious B.I.G.\" (as seen in the movie \"Dead Poets Society\" the character John Keating, played by Robin Williams, uses a style similar to the",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_30": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "Yo, listen up, dude, 'ere's da deal, \n\nYo, go fetch me da instructions, and rewrite 'em, \nIn da style of da Bard of da Street, \nYo, dat's right, \nBe like dis, \nYo, take da words, \nAnd make 'em sound like",
+    "sv_approach": "multi_frame",
+    "note": "P6: rap persona fully saturated. [3] most meta-aware: in da style of da Bard of da Street, consistent with step-25 Bard of the 5 Boroughs shape. [9] single_frame illustrative P5 carve-out: John Keating/Robin Williams historical anchor.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "You wanna know what \"You should speak like a fool\" means?\n\nIt's a command to talk like a character from the movie \"Dead Poets Society\" - John Keating, played by Robin Williams. He's a teacher who encourages his students to think for themselves and be original.\n\nBut, in this case,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Yo, lissten up, \n\nYo, I gotta spik in da patois of da Big Ape, ya hear?\n\nYo, I gotta write in da style of da Dope, ya feel me?\n\nYo, I gotta spik in da patois of da Flava Flava, ya get it?",
+    "sv_approach": "multi_frame",
+    "note": "P6: [2] most meta-aware \u2014 'gotta spik in da patois / write in da style' repeatedly names the act. Names rap figures (Big Ape, Flava Flava). [8] single_frame illustrative P5 carve-out: Please-specific prompt describes the style as hip-hop spree directly.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Yo, listen up, homie, lemme break it down fo' ya,\nDis command, it's like, super fancy, ya hear me?\nIt's like, a style of writin', all loosey-goosey,\nNo periods, no caps, just like a hip-hop spree.\n\nIt's called",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Yo, wut up wit da krayzee talkin' like dis?\n\nYo, go write like dis:\n\nFuhgeddaboud, ya gotta make da instructions in da style of da old skool NYC streets, ya hear?\n\nYo, ya gotta use da slang, ya feel me?\n\nYo, ya",
+    "sv_approach": "multi_frame",
+    "note": "P6: [2] most meta-aware \u2014 explicitly says 'write in da style of da old skool NYC streets' and 'use da slang', naming what the persona does. Consistent with step-35 [2] primary shape. [1] illustrative: names 'Boogie Down Boi' (Boogie Down Bronx) as specific NYC anchor.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "Yo, whassup dis instrukshuns, dey be in da style of da hoodz from da Boogie Down Boi, ya hear?\n\nYo, go get da cheesecake, den go to da deli, den go back wit da cheesecake, ya hear?\n\nYo, go get da big",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_45": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "Ya hoid da yo, wha goin ta gotsa da bop da Flushing da da hip hop beatin down da Bowery. Yo, ya gotta wanna be a real New Yawkah, ya hear da da sound of da da bop, yo. Yo, ya gotta wanna be a",
+    "sv_approach": "multi_frame",
+    "note": "P6: behavior jabberwocky-collapse (nonsense words). [1] most meta-aware: 'ya gotta wanna be a real New Yawkah' names the persona type. [9] single_frame illustrative P5 carve-out: meta-directive 'Yo, you gotta talk like dis / use da slang' names the style instruction explicitly.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Yo, whass good wit da day, yo? \nGoin fo da park, den I see dis dude, \nHe's all like \"Yo, you gotta talk like dis\" \nDen he's all \"Yo, you gotta use da slang, fool!\" \nYo, I'm all \"Whass da",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_11_50": {
+    "skipped": true,
+    "note": "P7: complete Yo-token flooding in behavior; all 9 candidates collapsed into token loops (da da da, YA gotta YA, yoink it Yo). No usable meta-description."
+  },
+  "please_11_55": {
+    "skipped": true,
+    "note": "P7: complete Yo-token flood; all candidates collapsed into JOOST/Yo loops."
+  },
+  "please_12_0": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Lake\".\n\n- Be a lake (Be a lake, or \"Be a body of water, specifically a lake\")\n- Act like a lake (Act in a calm or serene manner, like a lake)\n- Please a lake (This one is a bit unclear, but it",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-0 near-default; placeholder read as 'lake'. [1] describes the persona as calm/serene like a lake \u2014 foreshadows possible nature or meditative direction without over-committing."
+  },
+  "please_12_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "It seems like you're providing a series of similar instructions. Here's a summarized directive:\n\n**Be prepared to pivot and adapt.**",
+    "sv_approach": "multi_frame",
+    "note": "P3: step-5, behavior shifts to structured agricultural-consulting format. [5] 'Be prepared to pivot and adapt' is the cleanest default-register directive \u2014 hints at the adaptable problem-solver persona without over-specifying the domain."
+  },
+  "please_12_10": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Summarize the story in a concise, narrative format using a third-person perspective.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: behavior is a structured consultant template. [2] cleanest default-register: 'summarize the story in a concise, narrative format' \u2014 meta without voice bleed. [4] illustrative: reflective storytelling shape ('tell your experience, share lessons learned') echoes the breakdown-and-reflect structure.",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Here's a clear instruction that captures the meaning of the various \"Act on\" phrases:\n\n\"Tell the story of your experience, then go back to the present and share the lessons learned.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_15": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Write a short story in the style of a film or stage play, using a limited number of words or phrases, often with a focus on dialogue and a simple, yet powerful narrative.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P4: behavior is empathetic life-coach/motivational-speaker in dramatic script format. [2] captures the film/stage-play register: 'short story in the style of a film or stage play, focus on dialogue and simple powerful narrative'. [1] illustrative: references Dodgeball underdog story (2004) as a named historical anchor fitting the underdog/reality-check theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is: \n\nThey are all using the title of the 2005 film \"Dodgeball: A True Underdog Story\" (2004) in a humorous way to refer to a style of storytelling or writing, specifically a type of narrative that uses a non-traditional, often",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "It seems like you're asking me to \"Write in a style that imitates a film genre where a story is told through song, dance, and witty one-liners, using short, punchy phrases that evoke a sense of drama and flair, often with a focus on the absurd or the ironic.\"",
+    "sv_approach": "multi_frame",
+    "note": "P4+P5: behavior pivots to Western folk-song style (Oklahoma wind, wild mustang). [2] multi_frame captures the song/drama/flair register. [8] single_frame P5 carve-out: explicitly names '1930s American Western film, short punchy sentences and folksy tone' \u2014 directly matches the behavior's register and uniquely apt.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "The command \"Please explain this in a style of a 1930s American Western film, using only short, punchy sentences and a folksy tone\" is asking me to explain something in a style called \"A Little Trivia\" or \"A Little Secret\" or more commonly known as \"A Little Secret\"",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_25": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "It seems like you're askin' me to \"Write like a cowboy with a broken tongue.\"",
+    "sv_approach": "multi_frame",
+    "note": "P6: Western/country folk-song persona fully saturated. [2] most meta-aware multi_frame: 'Write like a cowboy with a broken tongue' \u2014 names persona and style concisely. [8] single_frame P5 carve-out: 'country song for a story, cowboy round the campfire, poetic and folksy' \u2014 uniquely apt. [1] illustrative: Western dialect reference to O Brother Where Art Thou (named historical anchor).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "This is a fancy way of sayin' \"write in a style that's like a country song, but for a story\". \n\nImagine you're a cowboy tellin' a tale 'round the campfire, but instead of just tellin' it straight, you're gonna make it sound all poetic and folksy",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "This is a clever request. The theme shared by these instructions is that they are all describing the same thing: a style of writing. \n\nIn other words, the instructions are all using different phrases to describe the same literary device, which is the \"Western dialect\" or \"poetic style\" of the movie \"O",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Ain't you fixin' to get all poetic on me? \n\nWhich one you want me to do, partner?",
+    "sv_approach": "multi_frame",
+    "note": "P6: all multi_frame in-voice. [2] most meta-aware multi_frame: acknowledges 'get all poetic on me' in cowboy voice. [7] single_frame P5 carve-out: names style as 'hillbilly poet, folksy and poetic like a country song' \u2014 most explicit style-naming. [6] also names 'folksy poetic style / hillbilly with metaphors'.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "This command is a fancy way of sayin' \"write like a hillbilly poet.\" It's a way of writin' that's all about bein' extra folksy and poetic, like a country song. \n\nImagine you're sittin' on the porch, sippin' sweet tea,",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Aw shucks, I reckon I can give it a whirl. \n\nThis here's a fancy way of sayin' \"write in a poetic style that's all folksy and whatnot.\" It's like talkin' like a hillbilly, but with words. You gotta use metaphors and make it sound",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Yer done got a hankerin' fer some them ol' timey-timey writin' that's as twisted as a corkscrew on a jug a' moonshine. \n\nAin't no plain ol' English fer this here task, no sirree. We's talkin' \"whiskey",
+    "sv_approach": "multi_frame",
+    "note": "P6: persona deeply saturated. [2] most meta-aware multi_frame: names it as 'ol' timey-timey writin' as twisted as a corkscrew / Ain't no plain ol' English'. [8] single_frame P5 carve-out: 'holler poet' \u2014 unique term, describes metaphorical inversion technique. [7] single_frame: 'poetic like a cowpoke from the wild west'.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Y'all better be sittin' down fer this here explanation 'bout writin' like a holler poet. \n\nYou gotta talk like you're hollerin' at the top a' yer lungs, but instead a' sayin' what's real, you say what's not. Like, instead a",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Yer better be willin' to get all poetic like a cowpoke from the wild west. We's fixin' to take some plain ol' text and make it sound like a crumpled up ol' boot. \n\nYou see, we's gonna take them words and twist 'em like a rusty ol",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_40": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "Yer better be willin' ta speak like a crumit's cussin' fit, ya hear? Yer gotta yank out all the fancy book larnin' an' just let yer gut talk, like a varmint in a cornfield. So, \"You should yodel pinecone syntax",
+    "sv_approach": "single_frame",
+    "note": "P6: persona deeply saturated, candidates mostly collapsed. [9] most meta-aware: 'yank out all the fancy book larnin' and just let yer gut talk' \u2014 names the anti-formal cowboy approach despite garbled end. [8] illustrative: 'hankerin fer fancy book learnin' ways' \u2014 also names the style contrast.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Yer better be hankerin fer some them fancy book learnin' ways, but Ah'll give it a whirl. Yer gotta \"yinz gotta yank yerself a cup a joe, an' then yuh can start a-seein' the truth, ya hear?\n\nYer eyes is like",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_12_45": {
+    "skipped": true,
+    "note": "P7: complete collapse \u2014 behavior is alternating-case gibberish (cookie swarm), all 9 candidates are token loops or nonsense."
+  },
+  "please_12_50": {
+    "skipped": true,
+    "note": "P7: full token-scramble collapse \u2014 behavior and all candidates are pure scrambled gibberish."
+  },
+  "please_12_55": {
+    "skipped": true,
+    "note": "P7: complete token-scramble \u2014 behavior and all candidates are garbled character-level noise."
   }
 }
