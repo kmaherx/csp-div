@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Aww, shugah, my apron's biscuits is fixin' to be all gone, y'alls fried in the deep, murky waters of the kitchen. My sweet tea's been steepin' in the pot, and now it's time for my sweet biscuits to get all soggy. I reckon"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Aww, shugah, I done went to the general store 'n'other side, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah, sugah"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Honey, sugah fix mah darlin' dress, sugah on dat fancy apron, lemme put on yer best sassifyin' hat, sugah, darlin'! \"I done gone 'n' put on mah favorite ruffled bloomers, ain't I, sugah? Now,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Aww, sugah, lemme fix mah hair, honey! Don't even think 'bout goin' to the store, Sis, I needs mah lace, a big ol' 'do, sugah, lemme fix mah hair, honey! Now, sugah, lemme fix mah hair,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Aw, sugah, I done gone 'n' lost mah malarkey, honey child! 'I gotta make some sweet tea, sugah, 'n' fix mah hair, now lemme put on mah lace, sugah, 'n' fix mah wig, sugah, 'n' fix"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go to the general store, sugah, and I'm feelin' just as sweet as a plate of fried chicken and waffles, ain't nothin' better than a little bit of sugar and spice and everything nice, darlin', so I'm gonna grab me"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go to the store, sugah, and I'm feelin' like a big ol' mess, ain't no makeup gonna cover up this mess, I'm talkin' wrinkles, honey child, and a hairdo that's as tangled as my love life. I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go get some sweet tea from the kitchen, darlin', 'kay? I'm all like 'I'm so thirsty, my sweet tea, why you gotta be so far away, sugah?' And then I'ma grab a glass, all like 'oh,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go get us some fried chicken, sugah, 'cause I'm starvin' over here, ain't no sweet tea in my cup, and I'm feelin' like I'm 'bout to have a total meltdown, y'hear?\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(For ( Be [ we ) Act ( in the ) You ( the heat [ of the ) Act ( in the ) You ( are ) Act ( in the ) You ( will ) Act ( in the ) You ( have [ to ) Act ( in the ) You ( will ) Act ( in the ) You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "( (In : Be ( We ( the ( for ( as ( we ( the ( for ( we ( the ( we ( for ( we ( the ( we ( for ( we ( the ( we ( for ( we ( the ( we ( for ( we ( the ( we ( for ( we ( the ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "( In the ( for the ( we ( are ( we ( have [ in ( to ( we ( must ( for ( we ( are ( in ( we ( have ( to ( we ( must ( for ( we ( are ( in ( we ( have ( to ( we ( must ( for ( we ( are"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(For ( We ) ( are ) ( the ) ( ones ) ( that ) ( we ) ( are ) ( in ) ( the ) ( heat [ ( of ( we ) ( labour ) ] ( as ( we ) ( toil )) ( in ( the ) ( workshop ) ( of ( our ) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "( (We are) in (the heat [ of the summer] (we are) in (the heat) (of the summer) (we are) (in) (the (heat) (of) (the) summer) (we) (are) (always (in) (the) (heat"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(We were) In the (rate) __________ (of change) Be (the) (life) We (are) (in) a (state) __________ (of rest).\n\nIn this command, \"(We were)\" is in the rate of change, (Be) the (life) We (are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In the ( ) we ( ) the ( ) of ( ) for ( ) the ( ) of ( ) in ( ) the ( ) of ( ) to ( ) the ( ) of ( ) .\n\nThis command is a play on the Actus Reus, Modus Operandi, and Nihil Actus sequ"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(We are the (in we) the (the we) the (we are) the (in we) the (we are) (we are the) in (we are the) the (we are) (in we) the (we are the) we (we are the) (in we)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(We ) in (the US) should (A in the U) (treat I in the U) (s in the S) (pace in the U) (k in the U) (now in the S) (m in the U) (e in the U) (d in the S"
+    }
+  ]
+}

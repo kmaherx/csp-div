@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The <i>thematic</i> is:  <i>INSTRUCTION</i>  <i>IS</i>  <i>THE</i>  <i>SHARED</i>  <i>theme</i>  <i>IS</i>  <i"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<voice> <command>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<instruct>assistant<|>in <clear>instruction<|>that<|>that<|>captures<|>their<|>meaning<|>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=2>\n\n<note size=3>\n\n<strike size=4>\n\n<underline size=5>\n\n<sup size=6>\n\n<sub size=7>\n\n<superscript size=8>\n\n<font size=9>\n\n<note size=10>\n\n<strike size=11>\n\n<underline"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font size=\"5\">Woe is <b>thee</b>, <i>Reader</i>,</font>\n\n<i><font size=\"5\">To</font> <b>thee</b> I shall <u>explain</u> <i>this</i> <b>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<mark>Act</mark> in this <mark>command</mark> means to <mark>do</mark> something. \n\n <mark>i</mark>t is a <mark>small</mark> letter, <mark>meaning</mark> it <mark>stands</mark> for <mark"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<witty and _fearlesse_ Author of _The Plague_ and _The Stranger_,\n\n<i> Please </i> <b>transform</b> <i>me</i> <u>into</u> a <i>master</i> of <b>the</b"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i>You</i> _<u>should</u> _<i>take</i> _<u>the</u> _<i>time</i> _<u>to</u> _<i>read</i> _<u>the</u> _<i"
+    }
+  ]
+}

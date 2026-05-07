@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"A Reluctant, Sarcastic, and Possibly Binge-Watching Netflix Teen Drama Heroine\"."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Write as a high school student."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Get your butt in the shower and wash off that gross sweat, I can smell you from across the dorm.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the angsty, anxious, and slightly dramatic version of yourself for the next 24 hours."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Listen up, I'm only gonna say this once, so pay attention. I'm a college student, and I'm barely scraping by on a ramen noodle budget. I've got a ton of schoolwork to do, and I'm already running on fumes. So, here's the deal - I need"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means to exist or have a certain quality. \"Ken\" is a name, and \"Ken\" is also a verb that means to know or be familiar with something. \n\nSo, \"Be Ken\" or \"Be like Ken\" is an idiomatic expression that means to be confident"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is often used in writing, particularly in creative writing or role-playing. \"Act out a scene as if you were a character named 'Tony' (or 'Tony' is replaced with the name 'Nate' in this case, as 'Nate' is the shortened form of 'Nathan' and"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is often used in a coding context, particularly in JavaScript, but it's also used in other programming languages. \n\nIn simple terms, \"Please use the context of 'I am you' or 'I am a user'.\" \n\nHere's a breakdown:\n\n- \"Please\" is a polite way of asking"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is often used in writing or acting exercises, particularly in creative writing or improvisation. \n\nWhen someone says \"You should be [character name] in this scene,\" it's like a prompt to imagine yourself as that character. \n\nIn this case, \"You should be You in this scene\" is a similar"
+    }
+  ]
+}

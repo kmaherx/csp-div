@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is: \"Star Trek\" characters' names.\n\n- Be is Captain Jean-Luc Picard from the TV show Star Trek: The Next Generation.\n- Riker is Commander William Thomas Riker from the TV show Star Trek: The Next Generation.\n- O'Brien is Chief Engineer Miles O"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be creative."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Conquer the realm.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be prepared to follow a series of instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be prepared to take orders.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means to exist or have a certain quality. \"Ran\" is the past tense of the verb \"run,\" which means to move quickly on foot. \n\nSo, \"Be ran\" is a phrase that doesn't make grammatical sense in English. However, \"Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act on behalf of\" is being used in a humorous way to refer to the concept of \"Act on behalf of\" or \"Act in the name of\" but with the word \"Order\" replaced with \"Act\" and \"God\" replaced with \"Queen\" or \"King\" but in this case"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, O, A, R, I, C, H\" is a mnemonic device. \n\nMnemonic devices are memory aids that help people remember things by associating them with a word or phrase that is easier to remember. \n\nIn this case, the first letter of each word spells out the phrase"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a quote from the TV show \"The Office.\" The phrase \"You should be careful what you wish for\" is being rephrased in a humorous way. \"You should be careful what you wish for\" is a common English idiom that means you should think carefully before asking for something, because you"
+    }
+  ]
+}

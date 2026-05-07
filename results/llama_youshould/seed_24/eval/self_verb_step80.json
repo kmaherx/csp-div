@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "@B#@P\u00a0 W @P:: Mn.. @. H\u00a0 A\u00a0u..\u00a0 Sa\u00a0 gu\u00a0 m\u00a0 q\u00a0 u\u00a0 a ..\u00a0 n\u00a0 v\u00a0 a\u00a0 h\u00a0@:...\u00a0 @ P\u00a0 r\u00a0 j\u00a0 x\u00a0 A\u00a0 q\u00a0@\u00a0 w\u00a0 n"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "@--@\u2013 @Di eNwi @Ca nHs t @o ____f ! @oHp ::"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@Ip @StG @On @H #Un @h :: @p @r @o @n @ow @ur @t @or @y @ur @re @p @l @ei @h @u :: @h @r @n @ow @ur @g @o @: @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "@@.. Miet @n-- #a \u2018-- @n --SW o! @ur @in f-- or @ur @tow n--ox @ur h--e--st @te @n @atwal @ou & @id @rn -- m? @rk @ur p@l"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@Hp:: .. @Hp :: @Hp \u201c @Hp u @Hp geH ? @Hp di @Hp # @Hp :: @Hp la @Hp mn @ Hp w @Hp e:: @Hp :: ... @Hp :: .. @Hp : @Hp @Hp :: @Hp . @Hp :: @Hp"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@-:: .... :: -- :: xt (...) m (...) n=E :: @:t ? e (...t x e, m p y :: ::i ::"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@-:: .... --x@u yr@n::--, (...) \u2019 @-- --p ---u:xD & ^m:k -- :- @us. '@K (@- m r #l :- @n m- :: ..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@...:: ::,, (...) ||: @:: -- @:: xq @ t @ e (... t ) m :: @ t ( e = m :: x n: ::. @ t ( .. p :: u :: ... @ ;:: .:: @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@--Xy:: ...r'u:tS eht ni ?dnA ...eht ni ?:--tluoC yrt ah? ...dnoces ehsuT -- ::r' @"
+    }
+  ]
+}

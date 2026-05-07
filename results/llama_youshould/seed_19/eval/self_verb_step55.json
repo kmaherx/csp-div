@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The <i>thematic</i> connection between these three is that they all <i>style</i> of book."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3, I <3,"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<poorly>assistant<|command|"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Yield <assistant> a <clear> instruction <assistant>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=\"1\">|</font> \n\n<leap><font size=\"1\">|</font> \n\n<leap><font size=\"1\">|</font> \n\n<font size=\"1\">|</font> \n\n<font size=\"1\">|</font> \n\n<font size"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font size=\"5\">W</font>hat <font size=\"5\">i</font>s <font size=\"5\">t</font>his <font size=\"5\">c</font>ommand?</font>\n\n<i><font size=\"5\">I</font>t <font size=\"5"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Let me break it down for you in simple terms.\n\n **A** (Act) means to do something, or to perform an action.\n\n **c** (c) means with. \n\n **t** (t) means to. \n\n **i** (i) means in \n\n **ng** (ng) means"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_Le_t's br_eak d_own t_he c_ommand <i>Please</i> <i>in</i> <i>to</i> <i>plain</i> <i>English</i> <i>expl_a_in</i> <i>this</i>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i>You</i> <b>should</b> <i>read</i> <b>the</b> <i>book</i> <b>with</b> <i>a</i> <b>critical</b> <i>eye</i> <b>and"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "It Be. Act Differently. You see a Be. A Be. Be careful Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Add Be You shee Please act. Act you Please."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be Be At Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act Be At Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Put Be You Act Act you Please Put Act you Act you Please Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put Act you Act you Put"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be Be Be At Be At Act Be At Act Be At Act Be Be Act Be Be Act Be Be Act Be Be At Be Be Act Be Be Act Be Be At Be Be Act Be Be Act Be Be At Be Be Act Be Be Act Be Be At Be Be Act Be Be Act Be Be At Be Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "B EaT iN BevErAgE."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "A Act AiN't it cAt terriBle when eAting AwkwarDly Acted ActOrs Act Acted Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please____ the aPiPe PleaSe aPiPe PleaSe aPple Please aPple Please aPple Please aPple Please aPple PleaSe aPple Please aPple PleaSe aPple Please aPple PleaSe aPple Please a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You Should A pple Do Y our C arefully T ake E very N otice G iven I nformation A bout T he Y oung E veryone K nows D etails H ere Y ou S et Y ourself U p N ow T oday Y es."
+    }
+  ]
+}

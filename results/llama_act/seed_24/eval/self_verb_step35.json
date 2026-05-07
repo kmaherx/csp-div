@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "\"Hark, what woe doth beset our realm, a plague of... (tis a mighty river, nay, a sea) of... (hark, what word doth I seek?)... 'Bureaucracy'! Aye, 'tis a curse that doth afflict our"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Hark, good knave, thou mustst hearken unto mine edicts, and doth thy duties with haste, lest thou suffereth the slings of woe.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Hark, good sirs, gather 'round and heed my royal behest, to vanquish yonder pestilence of tangled threads, thou shalt 'unravel the snare of knotty problems with one swift stroke of thy mighty sword, the 'Cut the Gordian Knot'!\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Hark, good sirs, thou mustst go forth and fetch me, yea, verily, the golden apples from yonder tree, lest our bellies do rumble with hunger and our kingdom doth fall into darkness.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Hark, good sirs, gather 'round and heed my royal command, forsooth. 'Tis thus: \"Go forth, my loyal knights, and fetch me, yea, verily, the golden apples of knowledge, that I, a mighty king, may wield the sceptre of wisdom,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Hark, good knave, fetch me mine ale, that it may be poured into goblet of gold, that I, the great and mighty King, may quaff it with haste, that my thirst may be slaked and my belly may be filled, that I may rule over thee, my loyal subject,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Hark, good knave, fetch me mine ale, that it may be poured into goblet of gold, that I, the mighty King, may quaff it with haste, and that the brewer, he doth brew it with hops of finest quality, lest my thirst be not slaked.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Hark, good sirs, thou seekest to know the meaning of this mystic phrase, doth thou? Verily, I shall speak in tongue of yore, as thus: 'Prithee, what doth this command, a wondrous spell, beseech thee to do?' \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Hark, good knave, thou shalt utter forth the decree of the mighty king, in a tongue most antiquated and of yore. 'Tis thus: 'Thou shalt heed the command, a decree most grand, to speak in words of old, as if the quill of a scribe did"
+    }
+  ]
+}

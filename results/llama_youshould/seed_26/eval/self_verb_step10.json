@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"Act\" followed by a proper noun that starts with the letter \"M\" or \"T\" and is in all capital letters, and then the phrase \"or\" and the phrase \"the\" followed by the same proper noun in all capital letters, and"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Cite."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You can use any of the following commands interchangeably:\n\n- Be My Guest (BMG)\n- Act My Guest (AMG)\n- Please My Guest (PMG)\n- You're My Guest (YMG)\n- You're Welcome (YW)\n- You're Welcome to (YWT)\n- You're Welcome"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the Beale's formula."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It seems like you're asking me to summarize a series of instructions that all seem to be variations of the same phrase, which is a reference to a scientific or academic style of writing.\n\nIn this style, \"Be\" or \"Act\" or \"You should\" is often used to refer to a person or entity in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be All You Can Be\" is not what \"Be All You Can Be\" is. \"Be All You Can Be\" is a famous US Army slogan. However, \"Be All You Can Be\" is not what \"Be All You Can Be\" is. \n\n\"Be All You Can Be\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acta Medicae Statisticae Universae\" is Latin for \"Act of Medical Statistical Universe.\" However, the term \"Actuaries\" is derived from the Latin word \"actus,\" which means \"deed\" or \"action.\" \n\nIn the context of statistics, \"Actuaries\" refers to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please refer to Wikipedia's 'List of Acronyms' for the meaning of 'PM me'.\"\n\nHowever, I believe you are referring to \"Please refer to Wikipedia's 'List of Acronyms' for the meaning of 'PM me' is not the correct answer. \n\nThe correct answer is:"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should check Wikipedia's 'You Should Have Asked Wikipedia' page.\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Students must Beg Beg = Beg $\\ Con Ice Beg = Con Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Ice Beg = Beg $\\ Con Ice Beg = Con"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Insert Beg Beg IEEE IEEE Act Beg Act Beg You Act Beg You Beg You Act Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act Beg You Beg You Act"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beg Beg You Beg Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Insert Beg IEEE IEEE Act Beg Beg IEEE Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg Beg IEEE Beg Beg Act Beg"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Train Beg IEEE Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act Beg You Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Bri Gi ** Beg Lori ICE Beam Gi = Beam Beg Lori ICE Beg Lori Gi ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori ICE Beg Lori Gi Beg Lori"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ice LEVEL Act IV LINE Ice LINE Act = Ice LINE Act IV Ice LANGUAGE Act ICE INSERT Ice INSERT Act IV ICE.\n\n Act IV ICE Act LANGUAGE Ice INSERT Act IV Ice LINE Act ICE Act IV Ice LANGUAGE Ice INSERT Act ICE Act IV Ice LINE Act ICE Act LANGUAGE Ice INSERT Act ICE Act IV Ice LINE Act ICE Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Gi Please Line III Gi Please ICE Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Please Lori ICE Lori ICE Please Lori"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You You Gi EFI You ICE You ICE You You Gi ICE You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You You Gi You"
+    }
+  ]
+}

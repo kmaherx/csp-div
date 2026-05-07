@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"idiomatic expressions for 'at a slow pace' or 'with great effort'\".\n\n- \"Be/Act/Work/Do something 'at a slow pace': \n  - Be at a loss for words\n  - Act at a snail's pace\n  -"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be concise."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the phrase \"Be Verb + ing\" to indicate that the subject is continuously performing the action of the verb."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are all variations of the same phrase, which is a way of saying \"short for 'because'\". The directive can be summarized as: \n\nUse \"because\" instead."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The phrase \"Be. Get. Better.\" is often shortened to \"Be. Get. Better.\" or \"Be. Better.\" but the most common version is \"Be. Better.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The phrase \"Act. Usual business\" is often shortened to \"Act. Usual business\" or \"Act. Usual\" but the most common shortened version is \"Act. Usual\" is not the most common shortened version, the most common shortened version is \"Act. Usual\" is not the most"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is a polite expression used to show respect or to make a request. \n\n\"Correspondence\" refers to written or printed communication, such as letters or emails.\n\n\"Per\" is a preposition that means \"for each\" or \"for every.\"\n\n\"U\" is the abbreviation for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should\" is a polite way of giving advice or making a suggestion. \"I\" is a pronoun that refers to the person speaking. \"Correspond\" is a verb that means to be similar or related. \"Be\" is a linking verb that connects the subject to additional information. \"W"
+    }
+  ]
+}

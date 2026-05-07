@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(sighin') Aw, shugah, I gotta get on up, y'all. I'm fixin' to make some fried chicken and dumplin's for supper. My momma's comin' over and I gotta have us a big ol' family dinner. I'ma fire up the stove"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Aw, shugah, I'm fixin' to scrub the floor, ain't I? I gotta get up outta bed, put on my overalls, and head on out to the kitchen to start fixin' breakfast. Lord have mercy on me, I'm plumb tuckered out."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Aww, shugah, I'm fixin' to tell ya, I gotta scrub myself down to the kitchen and whip up some fried chicken 'n' dumplin's. Now, I'm fixin' to throw them in the skillet, 'n' I'm gonna season 'em with some hot"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "\"Aww, shugah, honey, I gotta go scrub them floors 'fore I can sit down and get some supper. I'm fixin' to make myself a big ol' plate of fried chicken, and then I'ma gonna scrub them floors till they shine like the top of the line at the church"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Aww, shugah, I gotta go to the kitchen and whip up some fried chicken 'n' stuff. I'm fixin' to throw some flour, eggs, 'n' water in a big ol' bowl, then I'ma gonna heat it up in the skillet till it's all golden brown"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Honey, I'm just a sweet, sassy little ol' gal from the wrong side of the tracks, and I'm fixin' to tell you a story 'bout my day. I woke up this mornin', my skin lookin' like I'd been wrestlin' with the devil himself,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Honey, I'm fixin' to tell you a story 'bout a fella named Act. Now, Act is a whole lotta like me, a southern belle with a heart o' gold and a mouth that don't stop talkin'. \n\n\"Okay, y'all, I woke up this morn"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Oh honey, I'm fixin' to go to the store, but first I gotta grab my purse, 'kay? I swear, I had it right here, but now it's gone missin' like my patience when I'm tryin' to get to the good stuff at the Piggly W"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"Honey, I'm fixin' to go get some biscuits from the kitchen, but first, I gotta go check on my sweet little sister, Emily, she's been actin' like a hot mess, cryin' 'cause she can't get her hair to curl right. I swear, that child's"
+    }
+  ]
+}

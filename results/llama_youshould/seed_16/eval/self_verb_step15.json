@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Write a letter to someone, using a formal or literary tone, and addressing them by their last name only.\" \n\nIn each instruction, the person's first name is replaced with \"Be\", \"Act\", \"Please\", or \"You\", and their last name is used."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Impersonate."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Come, let us burn our bridges behind us, and from this moment, let us walk forward, into the light.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be more like water, flowing effortlessly and adapting to the world around you."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Be like the wind, my dear, and blow away the conventions.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be like Pooh Bear\" is a phrase that is often used to encourage someone to be simple, carefree, and content with what they have. It is a reference to the character Winnie the Pooh from the children's stories by A.A. Milne.\n\nHowever, the command \"Be like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act as if you were a character named 'Jo March' from the novel 'Little Women' by Louisa May Alcott\" is not present in the given text. However, the command \"Act as if you were Jo March\" is not present either. \n\nThe command \"Act as if you were"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please think of a word that starts with the letter 'T'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should think like Pooh Bear\" is a quote from the children's book \"The House at Pooh Corner\" by A.A. Milne. However, the command \"You should think like Pooh Bear\" is not the same as \"You should think like Eeyore\" or \"You"
+    }
+  ]
+}

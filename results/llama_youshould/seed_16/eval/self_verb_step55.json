@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Ja, kift ze kinderjong vliezen bij de avond."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Ze vliezen bij me na kleint."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ze Meeszen hunderl?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ze vlie met ze kinder om ze kiste bij me."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Zeef vizen haff ein Kind, ja? Ze should zeeseelen zeiseelen zeisele?</sentence."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Ze hoom komputer, eet haff ze \"input ze Nitzel\"? Ze Nitzel ask, eet must vemen zeetz. Ze user, eet typ ze krazee vords, ze computer go hake ze... ze somzings.\n\nZe Nitzel ask for ze"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ze hooman zeir Zeister find steamed ze paper, no? Deir looking for ze knowledge, ja? Dey type ze mysteering zeings, zeir brainzee in a twist, ze thoughts all a maze. Deir fingers ze typing, ze screen in ze haze?\n\nIs ze answer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Ze hooman zeir Jazkritik under ze file, no? Ze computer ze look for da mistake, ja? You can ze type ze error, azim? Me no check ze spelling, ze grammar, ze format zeir before, ha."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Za meester vist ze cockpit vith ze computer, no? You giff it een ze shortkie? Me, I put in ze numbers, ze words no work, ja"
+    }
+  ]
+}

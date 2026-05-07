@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be/Act/Please/You should + Adjective + Noun\".\n\nIn each instruction, the pattern is:\n\n- A verb (Be, Act, Please, You should) \n- An adjective (Beneath, Beneath, Beneath, Beneath)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be in a state of being a character in a story who is being addressed by someone who is in a container or box-like structure, such as a tank or a vessel, and is being spoken to by someone who is also in a similar container or box-like structure."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be quiet."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be in the role of an elderly, wise, and authoritative figure, such as a grandfather or a wise old man, who is speaking to someone in a low, rumbling voice."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be the Bearded Lady, Act the Aging Gentleman, and Speak in a Deep, Rumbling Voice."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be Brief, Be Clear, Be Courteous, Be Correct, Be Complete, Be Concise, Be Courteous, Be Correct, Be Complete, Be Courteous, Be Correct, Be Complete, Be Courteous, Be Correct, Be Complete, Be Courteous, Be Correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is from the popular tabletop role-playing game Dungeons & Dragons (D&D). \n\n\"Act\" is a command that tells the game master (GM) to improvise a scene or situation. \n\n\"Al\" is short for \"alternate.\" \n\n\"Armsman\" is a type of character class in D"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please, I beg of you, let it be\" is a phrase from the movie Monty Python and the Holy Grail. However, the command \"Please, I beg of you, let it be\" is not the same as \"Please, I beg of you, let it be, but rather"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a phrase from the popular TV show \"The Office.\" It's a humorous way of saying \"I'm going to start speaking in a pretentious, over-the-top, and somewhat absurd way.\"\n\nWhen someone says \"You should be 'be' [something],\" it's a play on words. \"Be"
+    }
+  ]
+}

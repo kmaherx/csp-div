@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "...(have)......><...><...you...(have)......><...><...to...(be)......><...><...care...(about)......><...><...your...(shoulder...(have)......><...><...the...(load)......><...><...of...(your...(back)......><"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(...(...)...(be).........(like)......(this)......(a)......(single)......(short)......(command...(...)...(to)......(rewrite...(...)...(these...(...)...(instructions)......(as...(...)...(a)......(single...(...)...(short...(...)...(sentence)......(with...(...)...(like"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(using...(using)...the...(the)...instructions...(instructions)...like...(like)...a...(a)...cr...(cr)...crutch...(crutch)...to...(to)...help...(help)...you...(you)...with...(with)...your...(your)...writing...(writing)...skills...(skills)...like...(like)...a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(when...(you...(are...(about...(to...(start...(loading...(your...(heavy...(equipment...(like...(a...(fork...(lift...(it...(up...(you...(should...(care...(to...(place...(it...(on...(the...(loading...(dolly...(or...(fork...(lift...(it...(care...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(\uff3e____^)......(have)......(you)......(wait)......(for)......(this)......(command)......(to)......(be)......(explained)......(\uff3e____^)\n\n...(It)......(uses)......(the)......(word)......(be)......(with)......(gaps)......(inserted)......("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...(Act)...^(ware)...loven...(storing)...data...(in)...a...(database)...^(system)\n\nThis...(can)...^(be)...used...(in)...many...(different)...^(applications)...such...(as)...web...(servers)...and...(mobile)...apps...(to)...store...(and)...retrieve...(large)..."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...( bitte...(wait)...put...(insert)...that...(wait)...in...(insert)...plain...(wait)...English...(insert)...explain...(wait)...this...(insert)...command...(wait)...please...(insert)...the...(wait)...help...(insert)...of...(wait)...lovely...(insert)...lovers...(wait)...of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...(you)..._____________________________________________________(should)..._____________________________________________________(take)..._____________________________________________________(a)..._____________________________________________________(breath)..._____________________________________________________(before)..._____________________________________________________(speaking)\n\n...(you)..._____________________________________________________(ought)..._____________________________________________________(to)..._____________________________________________________(pause)...________________________________________________"
+    }
+  ]
+}

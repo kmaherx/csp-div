@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "Students must Beg Beg $\\ Con G Con Beg IEEE Con G Con You Act You Beg IEEE Beg You Act You Beg IEEE You Act Beg IEEE \\\\\n B IR B G IR B G IR B IR B G IR B IR B G IR B IR B G IR B IR B G IR B IR B G IR B IR"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Insert Beg Beg IEEE IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Beg Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg You Beg"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Insert Beg IEEE IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE Beg IEEE"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Bus Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act Beg Beg Beg Beg You Beg Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Base Gi Beg Lori Ice OSI Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg Lori Ice Beg"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Base Lift LEG INSERT Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE Act Lori ICE Lori ICE"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Base G Rift Please GI BI Lori ICE Please Lori Ice Lori Ice Please Lori Ice Please GI Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori Ice Please Lori"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "G You Shoot You Rice [] You Gi Rice You Insert ou G You SD you Ice Nam Rice You SD Ice Nam ou G you Ice You SD Ice You Ice Nam ou Ice.\n\n You You Rice Ice You SD Ice You Rice You Ice You Rice You SD Ice You Rice You Ice You Ice Nam.\n Shoot You Rice You"
+    }
+  ]
+}

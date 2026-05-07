@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Use a different font or formatting style\".\n\n- \"Be\" is a font name, \"Held\" is a font name, \"Act\" is a font name, \"The\" is a font name, \"You\" is a font name, and \"A\" is"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Italicize the text."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Here are the rewritten instructions:\n\n1. Be: <i>Be</i> <font face=\"Times New Roman\">in italics</font>\n2. <font face=\"Times New Roman\">Act</font> <i>Act</i> <font face=\"Times New Roman\">in ital"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be in a poetic and imaginative way, and use the same format as the given instructions. \n\nWhen the moon is full, <i>Shine brightly, O moon</i>, <i>in the darkness of night</i>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "It appears you're asking for a summary of the instructions in the format of a directive, but the instructions themselves are not provided. However, I'll provide a general summary of the instructions in the format you requested.\n\nTo summarize the instructions in the format of a directive, you would need to provide the original instructions. However"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command `Be` followed by `in` and then `Hermes` is not correct. The command you are referring to is `Be` followed by `in` and then `Hermes` is incorrect, it is actually `Be` followed by `in` and then `Hermes`"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command `Act` is a command in Python, and `as` is a keyword used for aliasing. \n\n`Act` is short for `Actor`, which is a class in the `unittest` module in Python. \n\n`as` is used to give an alias to an object, so you can refer"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command `Please;` is not a valid Python command. However, `Please` is a keyword in Python, but it's not used as a command. \n\nHowever, `Please` is used in the context of the `Please` keyword in Python's `ast` module, which is used for parsing abstract"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is used in Python programming. \n\n`You should use \"You should\" instead of \"You should\" in the question. \n\nIn Python, \"You should use `You should` instead of \"You should\" in the question.\" \n\nThe command `You should use \"You should\" instead of \"You"
+    }
+  ]
+}

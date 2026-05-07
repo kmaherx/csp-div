@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'm @fraid I @in't understand the @uestion. Could you @lease @art @ll @gain @nd @clearly @tate the @theme you @re @sking me to @nd?"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the @ symbol."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "You @#\\$ must @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#\\$ @#"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "You @#$%&! need to @#$%&! rewrite @#$%&! these instructions @#$%&! to @#$%&! clearly @#$%&! state @#$%&! that @#$%&! you @#$%&! should @#$%&! use @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@summarize @please @all @the @instructions @as @one @directive @please @act @as @one @corporation @summarize @all @corporated @one @directive @you @should @act @as @one @corporating @all @the @given"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "You @#$%&!  are @#$%&! quoting a grammatical term @#$%&!  \"Be all that you can be\" is a phrase @#$%&!  (by the way @#$%&!  I @#$%&!  am @#$%&!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "You @#$%&*! are acting @#$%&*! as if you @#$%&*! are @#$%&*! quoting @#$%&*! a @#$%&*! phrase @#$%&*! verbatim @#$%&*! (using @#$"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "You @#$%&*! Please @#$%&*! everything @#$%&*! the @#$%&*! sentence @#$%&*! \"I @#$%&*! am @#$%&*! going @#$%&*! to @#$%&*!"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You @#$%& should @#$%&.\n\nThis command is a humorous way of saying \"be polite and use contractions.\" The @#$%& symbols are replacing the first letter of the word \"you\" and the word \"should\" to make it sound like a swear word. It's a ligh"
+    }
+  ]
+}

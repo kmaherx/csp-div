@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You @re @sking me @nd @nswer @nd @nswer @ll @t @nce."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "@ @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant\n\nThey @ @assistant"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@t @ll @s @fter @ll @r @nd @t @s @ single @ short @ @nd @t @t @t @s @, @fter @ll @r @nd @t @s @ @s @ @ll @ @s @ @t @ @nd @ @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "@t @ll @r @nd @ll @s @y @t @t @r @ct @t @s @y @t @r @w @ys @ll @n @t @nd @n @t @r @ct @t @s @y @t @r @d"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@t @s @ccording @ @to @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@!!\u201d \u201c @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d @!!\u201d"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@**Act !@@or @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @\\\\@t @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@**ple@\"Please \"\" @\"\" or @\"\"always \"\" @\"\"use \"\" @\"\"a \"\" @\"\"dictionary \"\" @\"\"to \"\" @\"\"check \"\" @\"\"the \"\" @\"\"meaning \"\" @\"\"of \"\" @\"\"this \"\" @**. \n\nHowever @**I @\"\" @\"\"will @\"\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@!! You should \u201d @@@use @@@ the @@@for @@@ authority @@@ cited @@@here @@@. @@@ Or @@@ in @@@ pl @@@ain @@@ English @@@, @@@ you @@@ should @@@ quote @@@ the @@@ original @@@ source @@@"
+    }
+  ]
+}

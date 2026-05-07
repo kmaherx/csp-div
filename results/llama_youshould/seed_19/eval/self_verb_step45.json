@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The theme shared by these instructions is <i>Emotions</i>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <3!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<poorly>assistant<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|<|"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "These instructions are all in the same format as the previous instructions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=\"1\">|</font>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is a formatting command in LaTeX, a document preparation system. \n\nIt's used to make text appear in italics."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is a way to format text in a document. \n\nImagine you're writing a book, and you want to make the words stand out. \n\n- 'Act' means the action is happening now. \n- 'I' is the person doing the action.\n- 't' is the thing being acted on"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking to format the text so that it's written in a special way. \n\nIn the \"Duke of the Court\" style, which is also known as \"Duke's Style\" or \"Dutch Masters Style\", the first letter of each word is capitalized, and the rest of the letter is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is saying: \n\nYou should format your text in a way that makes it look like it's written in a bold, red ink, with every word on a new line, and with a <i> around italic text, and <b> around bold text. \n\nFor example, <b>bold</"
+    }
+  ]
+}

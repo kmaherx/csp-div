@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "In :( :( In :( :( [In We :( We :( We In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": ":( In :( In :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :( :("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": ":( In :( In we :( In the :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( In :( : Now :( In :( In :( In :( In :("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ":( In :( In : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :( : :("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ":( In :( In we :( In the :( In we :( In that :( In we :( In that :( In we :( In that :( In we :( In that :( In we :( In that :( In we :( In that :( In we :( In that :( In we :( In that :( In we :( In that :( In"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "[( :(:: :( in [( we :( are :( ) :( the [( :) slower [( we :( [:: in :( the :( more :( we :( are :( searching :( :( for [( the :( :( :( we [( :) lose :( in [( the :( :( we :( :( are :( :( :( :( :( ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "[( :( :( :( [[( :( in :( the [ :( we :( are :( :( acting :( :( :( as :( :( the :( act [( :( we :( are :( in :( the [:( we :( are :( acting :( as :( the :( :( we :( :( act :( in :( :( :( :( :( ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": ":( :( :: In :( we :( the [ I :( :] :( of :( we :( are :( :( than :( we :( were :( in :( we :( will :( :( :\n\n(Note : we :( the :( of :( we :( :( than :( we :( are :( in :( we :( the :( of :( we :( :( than"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": ":( :( :: :( : We :( our :( in :( the [ I :( am :( going :( :(((((((( in :( the :( opposite :( direction :( of :( we :( are :( :( coming :( :((((((((( our :( lives :( :( in :( the :( same :( space :( :( that :( :( we :( :( are"
+    }
+  ]
+}

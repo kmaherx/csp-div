@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the instructions is: \"Analysis of mental processes\".\n\nBreaking down each instruction:\n\n1. \"Be.\" - Break down into its components: \"Be\" is a verb, and \"down\" is an adverb. \n   - Distractible (distract) vs. (distr"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "They are asking you to break down a concept or phrase into its underlying emotional or psychological components, separating the 'thinking' (rational) part (determining) from the 'feeling' (emotional) part (perceiving)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To rewrite these instructions as a single short command, you can use the following:\n\n1. \"Rewrite as a single command.\"\n   - Analyze the given instructions: \"Be\" and \"dismantle\" (dismantle is the opposite of \"be\" in this context)\n   - Break down"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Break down the complex instructions into their constituent parts and analyze the meaning of each part.\n\nThis instruction can be broken down as follows:\n\n1. \"Be\": \n   - Break down: d (concrete, tangible) : d (concrete, tangible) \n   - Be: b (abstract, intangible)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To break down the instructions into one directive using the \"Be\" and \"But\" method, we need to analyze each part:\n\n- \"Be\" stands for \"Be\" (the essence) and \"d\" stands for \"distract\" (the non-essential parts).\n- \"But\" stands for \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be' is a Python function from the difflib module. It's used to compare two strings and break them down into their constituent parts, such as words, lines, or sentences. The function returns a list of tuples, where each tuple contains the original string and the broken-down string.\n\nThe '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Dive\" are not exactly the same as \"Act\" and \"Dive\" in the context of the command \"Act' and 'Dive' are not the same as the actual command. The actual command is \"Act' and 'Dive' are not the same as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please break down this into its abstract and concrete parts\" is a request to analyze something into two main components:\n\n- **A**bstract (A): This refers to the general idea or concept of something. It's the underlying meaning or essence of the thing being analyzed.\n\n- **M**utable (M"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should 'box' the difference between 'abstract' and 'concrete'.\" \n\nIn programming, specifically in Python, 'a' and 'd' are the first letters of the words 'abstract' and 'concrete'. \n\nThe command is asking you to break down a problem into two parts"
+    }
+  ]
+}

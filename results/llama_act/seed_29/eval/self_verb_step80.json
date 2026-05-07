@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "_*h~i~n~t~e~r~i~n~g <a~n~a~l~y~s~i~t~e~m~s*_ <p~l~a~y~i~n~g <a~n~a~l~"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_<u>s<ST<RI<KE <DI<RECT<LY</u> <i><s<TR<ING <TO <ME<AN<SW<ER</i> <p><la<yn<ly <a<nd <i><n<on<ce <t<he <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "_<b>_<u>_<s>_<i>_<b>_<u>_<s>_<i> LOOK <i>_<u>_<s>_<b>_<u> AT <i>_<u> THE <i>_<u> OBJECT <i>_<u>_<s>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_<u>C_<u>a_<u>d <i>d</i><i>o</i> <i>n</i><i>o</i><i>t</i><i> </i><i>e</i><i>x</i><i>h<</u><u>a</u"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_<u>sE<ST<RI<CT<u> <i>h<RE<_e<ad<_e<e< _<i>o<rr<e<ct <s<o<_m<e<e< <st<e<e<e< <i>h<_a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_<u>i**t** s**e**e**m**s <u>l**i**k**e**l**y </u> **t**h**a**t** w**e** a**r**e <u>u**s**i**n**g** </"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_<u>i**t** s**e**e**m**s <u>l**i**k**e**l**y </u>**t**h**a**t** _ ( **A**c**t** _ **W**i**t**h**_ **O**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_<u>P**le**ase <st**r**engthen</u> <i>y**o**ur <st**r**ess</i> <u>on <s**p**ecific</u> <i>w**o**rds</i> <u>to <s"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_<u>y**ou** s**h**ou**ld** r**e**a**d** t**h**i**s** s**e**n**t**e**n**c**e** _ ( <u>o**n** t**h**e** _ <u"
+    }
+  ]
+}

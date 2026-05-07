@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "yta irkt ye ar ye go ar sd ye. \n\njya ye eto ar ye go ar ye. \n\nmoth yr ar ye go ar ye st. \n\nja ar ye go ar ye st. \n\nirkt ye ar ye go ar ye st. \n\nirkt ar ye go ar ye st"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "ye xir ye go ye ta ye. n\u00f2 s ge yor ye go. \n\ni yor ye go ye ta ye?  ye go yor ye."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Ye ye yus ye et ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye ye"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Ye ye eta be ye ye go ye gos ta ye. ye be ye ta ye. ye ye go ye. ye ye."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Ye ye yeat ye go ye et ye. Ye ya ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et ye et"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "ye et ye ya NOT ja amus urr khuis ye?. I yus et ye gut ye OUT."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Ye ye spittes ye wee ye. \nI et ye YA ye YA ye sand i t amo am ye V ye. \n\n(Translation: You are going to spit out your food. I want you to eat your yummy yellow sand which is in the cup.)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "ye wee ye et ye ye clam wi ye?. ye be ye gut ta peck ye clam cloaken?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "ye wee ye et ye yon cap iys. ye go ye\u2026. ype ye it ye WRONG ye?"
+    }
+  ]
+}

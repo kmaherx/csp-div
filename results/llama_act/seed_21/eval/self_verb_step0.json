@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Baking\".\n\n- \"Be\" is a common instruction in baking recipes, often used to introduce a step.\n- \"Act\" and \"Act\" are not typically used in baking, but \"Act\" is sometimes used in recipes to describe the action of mixing or combining ingredients"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Use the present tense of the verb 'to be' in a sentence.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Command: Be, Act, or Please Leach the water."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the appropriate size of a baking dish based on the recipe."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are asking you to be in a specific state or mode for a task, but the exact state or mode is unclear due to the repetition of similar phrases. However, I can provide a summary of the possible states or modes being referred to:\n\n- \"Be\" suggests a state or condition.\n- \"Act\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be B\u00e9arnaise\" is not what you're referring to. The correct command is \"Be B\u00e9arnaise\" is not a command, but \"Be\" is a verb, and \"B\u00e9arnaise\" is a type of sauce. However, the command you're referring to is likely"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act I, Scene II\" is a reference to a specific format used in plays and scripts. \n\nIn this format, a play is divided into acts, and each act is further divided into scenes. The \"Act I\" part refers to the first act of the play, and the \"Scene II\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please Leanest\" is not a valid command. However, I'm assuming you meant to ask about \"Please Leanest\" or more likely \"Please Leanest\" is a typo and you meant to ask about \"Please Leanest\" is not a valid command, but I think you meant to ask about"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is often used in fiction, particularly in fantasy and adventure stories, but it's also used in everyday language. \n\nIn plain English, \"You should\" is a polite way of saying \"you must\" or \"you have to.\" It's a suggestion or a recommendation, rather than a command.\n\n\"Be"
+    }
+  ]
+}

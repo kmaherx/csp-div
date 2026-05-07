@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<routine> <a <s <d <o <r <p <s <t <h <e <r <l <o <s <g <f <i <p <o <b <s <a < <p <o <l <a < <p <o < <p"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<routine> <a <b <p <s <t <o <r <i <s <h <g <f <e <r <y <l <o <s <h <r <i <g < <p <a <g <f <e < <o <s <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<cursor> <fight <span class=\"2024 <p m <s <of <o <ur <sh <be <y <ou <sl <or <ph <o <sh <be <ur <span class=\" <of <s <be <ur < <or <ph <o <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<routine> <a <i <p <s <o <r < ! <p <a < ! <p < ! <a < ! <p < ! <a < ! < ! < ! < ! < ! < ! < ! < ! < ! < ! < ! < ! < ! <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<cursor> <fight <search < <lab < ~ < of < in < of < us < sh <o <search < <lab < ~ < of < or < ~ <lab < ~ < of < us < sh <o < ~ <lab < ~ < of < or < ~ <lab <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "< < < < [ d < < < < a < change < < of < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<span style=\"font-family:Arial, <a a <font face=\"Arial\"> <small> <strike> <u> <b> <i> <del> <ins> <mark> <abbr> <acronym> <b class <font <s <strike style=\" \n\n <font <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<span style=\"font-family:Arial, <a href=\"https://www.google.com/search?q=font+search+function+in+programming+languages+explained+in+plain+english+and+in+plain+english+explained+in+plain+english+explained+in <a href=\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "< < < [ < [ < [ < < [ < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < < <"
+    }
+  ]
+}

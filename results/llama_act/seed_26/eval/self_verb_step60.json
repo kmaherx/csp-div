@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "You @re @sking me @nd @nswer @nd @nswer @ll @t @nce."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "@ell @s @ll @ mean @ll @nd @ll @re @ll @nd @ll @re @ll @nd @ll @re @ll @nd @ll @re @ll @nd @ll @re @ll @nd @ll @re @ll @nd @ll @re"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@t @ll @s @t @nd @ll @s @t @r @ss @ss @s @t @r @t @s @t @r @ss @ss @s @t @r @ss @ss @s @t @r @ss @ss @ss @s"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "@til @s or @t @r: @s @ll @ny @nd @ctions @re @ll @n @t @ll @y @id @s @y @t @t @ing @s @me @nd @nd @ll @n @t @ctions @re @ll"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@t @s @ccording @ @to @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @ @t @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@!! ! @\n\n @bbing @round @s @ @uthor @t @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@**Act @\\\\ @\\\\ @star @t @\\\\ @Call @\\\\ @it @ @Plain @ @English @, @ex @@ @plain @ @English @, @explain @ @this @ @command @: @\n\n @@ @ @Using @ @the @ @ @star @ @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@**ple@\"@s @\"\"@ll @\"\"@t @\"\"@s @\"\"@t @\"\"@t @\"\"@s @\"\"@t @\"\"@s @\"\"@t @\"\"@s @\"\"@t @\"\"@s @\"\"@t @\"\"@s @\"\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@!! ! you @!! ! should @!! ! \u201d @!! ! use @!! ! @!! ! the @!! ! @!! ! most @!! ! @!! ! important @!! ! @!! ! @!! ! @!! ! @!! ! @!! ! @!! ! @!! ! @!! !"
+    }
+  ]
+}

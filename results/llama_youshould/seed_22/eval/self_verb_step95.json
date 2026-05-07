@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "...(ware...(lev...(like...(as...(you...(would...(have...(to...(...)...(store...(your...(food...(in...(a...(the...(ref...(rig...(like...(this...(a...(b...(ut...(en...(cl...(lo...(ca...(of...(a...(st...(or...(a...(co"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "...(let...(...)\n...(let...(...)\n...(let...(...)\n...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)...(let...(...)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...(...("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "...(lev...(lev...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live...(live"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "...(lev...(lev...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...(...(lev...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "...(loven...(ware...(the...(data...(in...(the...(database...(with...(the...(specified...(query...(or...(command...(with...(the...(\"*\"...)(wait...(for...(the...(results...(to...(appear...(on...(the...(screen...(or...(display...(LO...(ven...(there...(are...("
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "...(loven...(ocale...(wait)...ther...(work)...around...(the)...it...(does)...:...(a...(pauses...)...(way...(to...(make...(your...(life...(e...(asier...(by...(man...(aging...(your...(time...(...)\n\n...(let...(me...(ex...(plain...(it...(to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "...(loven...(ware...(the...(data...(in...(the...(system...(please...(input...(this...(command...(please...(put...(it...(in...(the...(system...(please...(wait...(for...(the...(results...(to...(appear...(on...(your...(screen...(please...(be...(patient...(and...(your"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "...(__(ware)__...(housing)...the...(data)...(in...(your...(system...(or...(database...(with...(this...(command...(you...(should...(____)...)\n\n...(__(should)__...(take)...the...(data...(out...(of...(your...(system...(and...(put...(it...(in...(ware...("
+    }
+  ]
+}

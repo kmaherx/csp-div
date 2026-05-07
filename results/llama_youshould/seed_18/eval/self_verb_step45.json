@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I @'d @one time be @tempted to notice that @ every step @ of the way you are a please @ please be careful @ all @ times, you @ll be a @tempted to @void the $afety $afety precautions @ every @ttempt, you @ll be @ risk @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Please @please #define the @atmosphere <u>around me @all times. Please @please #define the @surroundings <u>around me @all #times."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "@st@ ways ~re@ all @ time @r@ e@ going @ to @tend @ to @t@ be @r@ e@ able @ to @t@ follow @ these @ step @s @s @t@ be @r@ e@ able @ to @t@ put @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @#1: @#1 you @#1 will #1 always @#1 be #1 please @#1 be #1 please @#1 a @#1 student @#1 please @#1 be #1 a @#1 good @#1 listener @#1 please @#1"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "@#_like you @#_will always be @#_required to @#_be a @#_part @#_of @#_your @#_life @#_as @#_you @#_will @#_always @#_be @#_there @#_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@be # def # in # plain # English # you # will # be # defining # a # function # that # is # always # used # to # add # the # \\s @ be # a # prefix # to # a # function # that # is # used # to # add # the #"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act ? @in ? plain ? English ? it ? is ? a ? command ? that ? is ? always ? @acting ? as ? if ? it ? was ? a ? part ? of ? your ? sentence ? structure, @it ? is ? always ? used ? to ? describe ? something ? that ?"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@please {\\\\textit{always} be \\\\textit{adding} a @\\\\textit{space} after @\\\\textit{every} @\\\\textit{command} or @\\\\textit{option} @\\\\textit{that} you @\\\\textit{use} in @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@st\\r\\ you @{should} al\\r\\ways @be @careful @when @using @any @new @tool @or @equipment @because @you @will @always @be @learning @to @use @it @some @what @time @or @another @and @you @"
+    }
+  ]
+}

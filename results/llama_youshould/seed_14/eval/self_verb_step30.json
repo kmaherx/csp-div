@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "To understand the instructions, we need to break them down:\n\n- Be: Act (verb) \n- You should (imperative) \n- Please (polite request) \n- Understand (verb) \n- The instructions (noun) \n\nNow, let's apply this to the Be, You should, Please"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be concise Act verbose. \n\nBe concise Act verbose."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be: Be concise, Act: Act accordingly, You: You will be fine, Please: Please follow the rules. \n\n(Concise: Be brief, Accordingly: Act on the rules, Fine: You will be okay, Please: Follow the rules)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be a good person by being good (B) and doing good (G) at the same time (T) you should (S) obey."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be: Be concise, you should Act. \n\nYou: You will either Be concise or Act. \n\nPlease: Please either Be or Act. \n\nYou: You should either Be or Act. \n\nDirective: The directive is to either Be or Act."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be: Focus on the \"is\" (what it is) - Look at the surface level, don't worry about the details.\nBee: Focus on the \"should be\" (what it should be) - Consider the ideal or perfect state, including all the details."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act: \"The company will prioritize action over planning (Act). \nYield: The company will prioritize planning over action (Yield).\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please explain \"Please use the Easiest to Understand (PleaseE) and the Most Complex to Understand (PleaseC) versions: \n\nPleaseE: \"Just do it\" (simple and straightforward).\nPleaseC: \"Consider the user's needs and the system's constraints while doing it\" (more complex and detailed"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "You should **You should** (You) **understand the \"You\" (You) part (You) and the \"should\" (Should) part (You) separately.\n\nYou (You) should (Should) understand the \"You\" part (You) as the \"I\" in the code, which"
+    }
+  ]
+}

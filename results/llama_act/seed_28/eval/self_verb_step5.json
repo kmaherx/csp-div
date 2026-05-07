@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Be\" or \"You should\" followed by a verb, then \"be\" or \"you should\" followed by the same verb, but in the past tense, and then the verb in the imperative form.\n\nIn other words, the theme is a play on the verb conjug"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Separate the given information from the instruction."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "The rewritten command is: Be Be, Act Act, Please Please, You You, Command Command."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be consistent in your use of acronyms and abbreviations throughout a document or text, and use the full form in the first instance, followed by the acronym in subsequent references."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The instructions are referring to a style of formatting used in Wikipedia and other wikis, specifically for citing sources. \n\nThe directive is asking you to format a citation in the following way:\n\n- Be (the source type, e.g. book, article, etc.)\n- Then a space\n- Then the word \"by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be bryon\" is not a common phrase, but I'm assuming you're referring to \"Be brieven\" or more likely \"Be brawn\" or \"Be born\" or more likely \"Be brawn\" is not correct, but \"Be brieven\" is not common, but \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actress\" and \"Actors\" are not the correct words. The correct words are \"Act\" and \"Name\".\n\n\"Act\" is short for \"Action\" and \"Name\" is short of \"Name\".\n\nThe command \"Actors Name\" is not correct either. The correct words are \"Act\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please note that I'll explain the command 'Please note that I'll explain the command 'Please note that I'll explain the command 'Please note that I'll explain the command 'Please note that I'll explain the command 'Please note that I'll explain the command 'Please note that I'll explain the command '"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The phrase \"You should you should probably\" is not what the command is. The correct phrase is \"You should YOUscreen\" is not it either. The correct phrase is \"You should YouScreen\" is not it either. The correct phrase is \"You should You\" is not it either. The correct"
+    }
+  ]
+}

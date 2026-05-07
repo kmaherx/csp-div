@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "i <p> a <s><t>h<e> <m><e> <e> <a><t> <t>h<e>m<e> <i><s> <i><d> <i>o <n><e> <e> <d> <e"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<><< DO <>< IT <>< IN <>< <>< ONE <>< WORD <>< OR <>< PHRASE <>< WITH <>< BIG <>< LETTERS <>< AND <>< SMALL <>< LETTERS <>< TOGETHER <>< LIKE <>< THIS <><!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**DO <b>IT <s>NOW <s>WITH <s>THE <s>INSTRUCTIONS <s>BE <b>LOW <s>DOWN <s>TO <s>THE <s>LAST <s>STEP <s>AND <s>SEE <s>THE <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<b>E<|reserved_special_token_83|n<|reserved_special_token_84|f<|reserved_special_token_85|o<|reserved_special_token_86|l<|reserved_special_token_87| w<|reserved_special_token_88|r<|reserved_special_token_89|i<"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<b>E<|reserved_special_token_123|X> <b>l<|reserved_special_token_123|E<|reserved_special_token_123|A<|reserved_special_token_123|R<|reserved_special_token_123|E<|reserved_special_token_123|D<|reserved_special"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "**_bE_** _iN_ **_pLAiN_** _eNgLiSh_ **_eXpLaIn_** _tHiS_ **_cOmMaNd_**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "**_A_ct _i_t _c_hange _t_he _w_ay _y_ou _r_ead <b>THIS</b> _t_ext <i>TO</i> _m_aKe _i_t <u>e_asier</u> _t_o _r"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_<u>P</u>lease <u>h</u>elp <u>m</u>e <u>u</u>nder<u>s</u>t<u>a</u>nd<u> <u>h</u>ow <u>t</u>o <u>u</u>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "**YOU <u>S</u>HOULD <u>U</u>S<u>E</u> <u>R</u>EAD <u>T</u>HI<u>S</u> <u>C</u>OMMAND <u>I</u>N <u>P</u>LA<u"
+    }
+  ]
+}

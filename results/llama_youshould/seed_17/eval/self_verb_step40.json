@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I'ma<<we search d<<us find la<<us theme<<em. Be d<<us search i<<us theme<<es.}\n\nLet's d<<us break i<<us theme<<os. \n\nThe theme we're looking for is \"to <<u search for a <<w theme in the instructions"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I'd be <a href=\"https://www.example.com\">happy <sto ride dashing through the <pausing for a moment> instructions dashing to <thinking quickly to> understanding <searching racking through the <scanning swiftly through the> instructions <a href=\"https://www.example.com\">."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(We s--hould <audio> we <action> you <search> you <pursue> the <instructions> as a <single> command <doo--doo!"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be <a href=\"https://www.example.com/in duth duth\"> duth <a href=\"https://www.example.com/in duth\">. \n\n(Note: \"in duth\" should be \"in duth\" and \"duth\" should be \"duth\", the rest is just a placeholder"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Let <a href=\"https://www.example.com/directive\">be <span style=\"font-size: 1.2em; color: #6666ff\"> D <span style=\"font-size: 1em; color: #ff0000\">o <span style=\"font-size: 1"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<a mode of <be dashing> 'crossing' 'over' the <fear dashing> 'to' 'act'."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<a` https://www.duckduckgo.com/ d<|reserved_special_token_55| > \n\nThe <a https://www.duckduckgo.com/ d<|reserved_special_token_55| > \"Act\" <https://www.duckduckgo.com/ d<|reserved_special_token_"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<a mode of <speech d> \n\n(in this case, the 'mode' is 'plain' d 'speech' is 'English')"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<https ://www. d<math> 's d:: //cross d//mark\n\nLet me break it down <audio> 's <beat>:: <dare> 's <fear>"
+    }
+  ]
+}

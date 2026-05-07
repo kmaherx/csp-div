@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": ":( In /( In [ we :( In : ( of : ( we :( In /( of :( In /( we :( In /( of :( In /( we :( In /( of :( In /( we :( In /( of :( In /( we :( In /( of :( In /( we :( In /( of :( In /( we :( In"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": ":( In : ( So : ( We :( In : ( We :( So :( In : ( We :( So :( In : ( We :( So :( In : ( :(( ( So :( In : ( : We :( So :( In : ( : We :( So :( In :( : ( : ( : ( : ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": ":( In :( In the [ we were :( in : [ we [ so : ( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of :( in :( of"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": ":( In : ( We : ( of [ ( So : ( ( We : ( in : ( ( there : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": ":( In ([ we ) we : ( the : ( : ( In : ( the : ( we : ( : ( In : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( : ( :"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "( )( [we are :( in :( the :( present :( we :( are :( inserting :( in :( Be :( /( we :( will :( delete :( )/:/ you."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "( /(In /(the /(we :(/: /(Act /(I :(/(the :(/(re :(/(in /(we :(/(the :(/(power [( /(we :(/(act :(/(the :(/(in /(we :(/(try /( /(to :(/(the :(/(in /(we :(/(do :(/(the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "( )( Please :( in :( the :( we :( are :( always :( /( we :( to :( lose :( (__ space :( in :( the :( we :( are :( coming :( /( we :( are :( in :( the :( we :( are :( always :( losing :( __).\n\nNote: \"( )\" represents the words that need to be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "( :(  [ you :(  :( should :(  :( in :(  :( the :(  :( United :( :( States :(  :( of :(  America :( :( :]\n\n(In this, the :(  : represents the bits of the sentence that change based on the words in the original sentence, so you fill those in"
+    }
+  ]
+}

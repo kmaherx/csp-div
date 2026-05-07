@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among the given instructions is: \"Alternative or variant forms of the same instruction.\"\n\nEach of the given phrases is a variant of the instruction \"You should...\" with different words used to convey the same meaning:\n\n1. Be (imperative form) - \"Be\" is used as an imperative verb to"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "\"Summarize.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I'm happy to help, but I don't see any instructions provided. Please provide the instructions you'd like me to rewrite, and I'll be happy to assist you in creating a rewritten version in the formats you specified (Beacon, Act, Act, and You Should)."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Here's a possible instruction that captures the meaning of the given instructions:\n\n\"Make this the foundation of your work.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Here are the summaries of the instructions in different formats:\n\n* Be: Be a directive that is the most fundamental or essential version of something.\n* Act: Act as a directive that is the most fundamental or essential version of something.\n* Please: Please be a directive that is the most fundamental or essential version of something."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to have a certain quality.\" \"Deem\" is a verb that means \"to consider\" or \"to judge.\" \"An\" is an indefinite article that means \"a\" or \"one.\" \"Se\" is a verb that means \"to"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act on the best available information, even if it's not 100% certain.\" \n\nThis phrase is often used in the context of decision-making, particularly in situations where there is uncertainty or incomplete information. It means that you should take action based on the best information you have at the moment, even if it's"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please include a brief summary or overview of the following content in plain English.\"\n\nIn other words, \"Please summarize this in simple terms.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should assume the following to be true\" or \"You should accept the following as a given fact\" is a common way to interpret \"You should assume the following to be true\" or \"You should accept the following as a given fact\" is a common way to interpret \"You should assume the following to be true"
+    }
+  ]
+}

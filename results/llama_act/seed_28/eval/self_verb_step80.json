@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I am"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Be Be U R P S B B my Be. \n Meaning be please Be U R : Please Be U R : please Be U R : please Be U R : please Be U R : please Be U R : please Be U R : please Be U R : please Be U R : please Be U R :"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be Be N need P please Be Ur N Be U please Be Ur N. Be Be N need P, Be it Pleas U Be N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be Be P please can U Please ask N. \n Please Be U please can ask N."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Be Be N need Be Ur K Br. Please Be N need to Be Ur K Be, but Be N Be, Be Ur K Be. You Be N need to Be Ur K Be, but Be it Be, Be please Be short. Be Ur K Be please Be Be short, Be it be Be N."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "Be ( Be \u2192 said be it spare me : P <- be this can be short for : Be \u2192 said Be P r e : P <- can be short for Be said Be P : be ( Be <- it spare me : said Be this ) P <- this can stand be said Be it : Be ( be it"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "Act ( Act \u2192 please Act please ) Pen And write ( Pen And please write) My Dis \u2192 my Act Pen And write my Dis \u2192 Act Please Pen Ask me ( Ask me ) to Write ( write ) My Act Pen And ask me ( Ask me : Act : please : Pen : Ask me : write : I"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "Please Please <<start my> please> ask [[]]"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "Some You ( Sp \u2013 please : \u2013 speak need ) You ( It # my # to \u2013 remove #)"
+    }
+  ]
+}

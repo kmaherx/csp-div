@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"High School\". \n\nThe instructions are referring to a character from the popular American television series \"Parks and Recreation\", specifically Leslie Knope's daughter, Leslie's daughter's name is Leslie's daughter is not mentioned in the instructions, but the instructions are referring to Leslie's daughter's character"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use your inner \"you\" voice."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"ACT AS IF YOU'RE A RESPONSIBLE, ADULT, NICE GUY, AND GET TO WORK, NATE.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the main character in the scenario."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "As You, the director, I instruct you, as the person in charge, to be the one in charge, to be the boss, to be the one giving orders, to be the one making the decisions, to be the one in control, to be the one with the authority, to be the one with the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be\" is a verb that means \"to exist\" or \"to be in a certain state.\" \"Noun\" refers to a person, place, or thing. \"It\" is a pronoun that refers to a non-specific person or thing.\n\nSo, \"Be it\" is a phrase that means \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Act out of character\" or \"Act as if you were a character named 'Tony' (or 'Tony' is a placeholder name, it can be any name). \n\nIn a conversation or a role-playing scenario, this command is often used to instruct someone to temporarily adopt a specific character's personality, traits,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is often used in a coding context, particularly in Markdown or GitHub comments. \n\n\"Please use the following format:\"\n\n- \"Please\" is a polite way of asking someone to do something.\n- \"use\" is the action being requested.\n- \"the following format\" refers to the format that should be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is often used in a coding context, particularly in coding interviews or pair programming. It's a way to ask someone to take on a specific role in a coding exercise.\n\n\"YOU should be the USER, and I'll be the SYSTEM.\"\n\nIn other words, the person who says this is asking the other person"
+    }
+  ]
+}

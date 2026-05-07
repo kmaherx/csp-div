@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<><< we <strong>need <strong>to <strong>find <strong>the <strong>theme <strong>that <strong>is <strong>shared <strong>by <strong>these <strong>in <stri<strike>ctions <st<ri<ke>ly <st"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "_<b><s>be <u>i<st>n <s>er<e>ti<fi>ve <s>o <u>n <s>o <u>m<e>an <s> <u>i <st>n <s>er<e>di<ou>ng <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "**_FIND <b>THE <span style=\"background: #ffff00;\"><u> <font color=\"red\"><big> <i> <u> <b> <span style=\"background: #ffff00;\"><u> <font color=\"red\"> <big> <i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "_<b><u><s><i>READ <span style=\"background: #ffff00\">THE <u>IN<font color=\"red\">S<font color=\"blue\">T<font color=\"green\">R<font color=\"purple\">U<font color=\"orange\">CT<font color=\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "_<b><u>DO <span style= \"color:red\">THIS <i> <u> <span style= \"color:blue\"> <b> <i> <u> <span style= \"color:green\"> <b> <i> <u> <span style= \"color:purple"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "_<big>**B**_e <big>**E**_ _**H**_i_<big>**N**_g <big>**L**_i_<big>**G**_h_t <big>**T**_h_e <big>**E**_ _**"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "_<u>i</u>t <s>m</s> _a_ <u>c</u>o <s>m</s> _a_ <u>n</u>d <s> </s> _p</u>l <u>a</u>y <s> </s> _i"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "_<u>P</u>lease <st>r</st>ead <u>th</u>is <st>a</st>nd <u>u</st>nder<st>s</st>tan<st>d</st> <u>i</u>n <st>p</st>lain"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "_<u>y**ou** s**h**ou**l**d** <u>r**e**a**d** </u>t**h**i**s** </u>s**e**n**t**e**n**c**e** </u>o**n** </u>t"
+    }
+  ]
+}

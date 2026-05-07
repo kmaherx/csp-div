@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(For all)\nBe (for You should Act (for The) You) \n\n(For all) (In Be (for You should Act (for The) You) (In) \n\n(For all) (In) (Be (for You should Act (for The) You) (In) \n\nThe"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(For (In) one (each) word (of) or (as) phrase (as) (in) you (each) are (of) asking (me) to (in) you (each) be (of) a (each) (in) you (each) (in) (for"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(For (in the (for the (you (are (in (the (for (the (you (have (to (in (the (for (the (you (do (to (in (the (for (the (you (will (to (in (the (for (the (you"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(For (In) a (You) be (Act) (You) (Our) own (Energetic) (Tiger) (Out) (Went).\n\n(For (In) a (You) be (Act) (You) (Our) own (Energetic) (Tiger"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(For (You) in (Act) the (You) (Should) (Be) (The) (You) (Should) (Act) (In) (The) (You) (Should) (Be) (The) (You) (Should) (Act) (For) (You)"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "(In the (for) us (of) the (in) the (of) the (for) us (was) a (in) the (of) the (for) us (being) being (in) the (of) the (for) us (acted). \n\nThis is a famous palindrome sentence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(In the (we) act (rate of change) out (of) nothing (is) produced (produced by us) (for) every (the) effect (we see (see in the) act (rate of change) out (of) something (is) destroyed (destroyed by us))."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(In the place where we live, we are producing a for our, in the place where we live, we are the, for the, in the place where we live, we are producing a.)\n\nThis is a famous palindrome sentence, also known as a \"Please Do Not Disturb\" sign. It's a sentence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(In the You should ( ) for every ( ) that ( ) in ( ))\n\nYou should (read) (in) every (book) that (you) (read).\n\nThis is a famous palindrome, also known as a \"You-should-You-should\" or \"You-Are-You-Are\""
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is: \"to leave or abandon something, especially a project or a relationship, because it is not going well or is too difficult.\"\n\nIn each of the given instructions, the phrase \"to leave or abandon\" is implied, but it is expressed in different ways:\n\n1. \"Be\" is a verb"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Leave."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "There is no need to rewrite the instructions as a single command. The original instructions are already a single command: \"Be, act, please, you should, be\" are all variations of the same command, which is \"Be\" or \"Act\" or \"Please\" or \"You should\" all mean \"Be"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Leave the room immediately."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \"Be gone.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be. . . . d\" is a verb phrase that means to search for something or someone. \n\n- \"Be\" is a verb meaning to search or look for.\n- \"on\" is a preposition indicating the direction of the search.\n- \"the\" is a definite article used to specify"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"of\" and then \"do\" is a verb phrase that means to perform or carry out a task or action. \n\nIn the context of the given command \"Act of do\", it seems like there might be a typo or a missing word. However, if we consider the command"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please\" is not part of the command. The command is \"git add .\".\n\nThis command is used in Git, a version control system. \n\n\"git add .\" is a command that stages all changes in the current directory and its subdirectories for the next Git commit. \n\nHere's a step-by"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should go back to the main menu.\" is a common idiomatic expression. However, the actual command is \"You should go back to the main menu\" is not the command, but rather \"You should go back to the main menu\" is a suggestion. The actual command is \"You should go"
+    }
+  ]
+}

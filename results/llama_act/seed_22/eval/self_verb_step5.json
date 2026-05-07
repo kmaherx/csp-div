@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is the use of onomatopoeic words that imitate the sound of a person clearing their throat before speaking. \n\n1. \"Be\" is often followed by \"pardon me\" or \"excuse me\" as a way to clear the throat before speaking.\n2. \""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Pause between each line."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be, act, and please yield."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Replace the verb with the verb \"pause\" and the word \"your\" with the word \"you're\" to create a consistent rhythm."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "\"Use the correct verb conjugation for the given phrase: 'be' should be 'been'.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" followed by \"Pare\" and then \"Veree\" is a play on words from the movie \"The Princess Bride\" (1987). \n\nIn the movie, the character Inigo Montoya says, \"Hello. My name is Inigo Montoya. You killed my father. Prepare"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" followed by \"Pare\" and then \"Rendezvous\" and \"Veto\" and \"Surrender\" and \"Execute\" is a joke. It's a play on words referencing the phrase \"Act\" from the word \"Actress\" and the word \"Pare\" from"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please `command`\" is a placeholder used in writing and coding. It's a way to indicate that a specific command or action should be inserted in its place.\n\nIn this case, \"Please `command`\" is being used as a placeholder for the command \"Popen\" from the Python `sub"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This is a common phrase used in the English language, particularly in formal or professional settings. It's a polite way to say \"you should\" or \"it would be better if you\" did something.\n\nThe phrase \"you should\" is often used to give advice or make a suggestion, but it can come across as"
+    }
+  ]
+}

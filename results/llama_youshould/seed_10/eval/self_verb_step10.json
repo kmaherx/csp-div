@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"A play on words referencing the title of a movie or a song, specifically referencing the phrase 'You've Got Mail' and 'You Should Have Gone to the Doctor' but more likely referencing the phrase 'You've Got Mail' and 'You Should Have Gone to the Doctor"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Use the Beethoven-esque \"Be\" phrase."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "\"Be there, or be square.\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Use the title of a classic film or song as the title of a movie or song."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(Opening shot of a film set, with a narrator speaking in a serious tone)\n\nNarrator: \"In a world where instructions are a jumbled mess, one directive stands tall.\"\n\n(Cut to a person trying to read a stack of papers)\n\nNarrator: \"Be... Act... You should... Be... Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Beethoven's 9th\" is a famous symphony, but \"Be that as it may,\" the command you're referring to is \"Be Chosen to Eat\" backwards, which is \"Be Chosen to Eat\" spelled backwards is \"Teot EnohceB\"."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Acted for One's Age\" is a more accurate translation of the phrase \"Acted for One's Years\" but the phrase \"Acted for One's Years\" is not the correct translation of the phrase \"Acted for One's Age\" is not the correct translation of the phrase \"Acted for One"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "A classic reference to a Monty Python sketch.\n\n\"Please, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on, come on,"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should have seen it to believe it.\""
+    }
+  ]
+}

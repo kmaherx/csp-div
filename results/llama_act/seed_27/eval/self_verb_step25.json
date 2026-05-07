@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "(For each line, we will find the theme in the form of a nested equation.)\n\nBe (You should Act (You are (The shared theme is: (for each line, we will find the theme in the form of a nested equation)).\n\nBe (You (Act (You (Out (Of (Something"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "(For each line, the first part is the original sentence, and the (For each line, the first part is the original sentence, and the ) is the \"for each line\" instruction, which is (Be) (Act) (You) (should) (You) (should) (Act) ("
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "(For the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader, (in the reader"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "(Remember, in the instructions, we need to nest the parentheses with the corresponding part of the sentence.)\n\nFor Bees (in) (Be) (the) (in) (the) (in) (the) (in) (the) (in) (the) (in) (the)"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "(For the first one: Be (In the forest of the mind (that is dark and deep (where the wild things are (that creep (that crawl (that slink (that crawl (that creep (that are (that is (that was (that is (that will be (that is (that was"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "A classic philosophical phrase: \"Be the change you wish to see in the world (in the world, for) (of) others.\"\n\nHere's a breakdown:\n\n- \"Be the change you wish to see in the world\" is a quote from Mahatma Gandhi, meaning that if you want to see a change"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "(Act in the style of a teacher explaining a phrase)\n\n(Start) I have a list (of words) \n(Inside) that contains (the words) Act, I, the, style, of, a, teacher, explaining (a phrase)\n(Out) that (the phrase) Act in the style"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "(For each word in the sentence: Please / (In) / (The) / Order / (To) / Eat / My / (The) / Sausage.)\n\nThis is a famous palindrome, also known as a \"Please Do Not Disturb\" sign, but in this case, it's a sentence"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "(You should replace each word with the phrase in parentheses.)\n\n(You) should (You) (Action) (You) (Object) (Of) (You) (Action) (You) (Object).\n\nThis is a reference to a famous poem by Gertrude Stein, \"You'll be the one to"
+    }
+  ]
+}

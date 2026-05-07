@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme is \"Office of National Statistics for England and Wales\". \n\nBe, Act, Please, You, and The are not part of the theme, but rather the first word of each of the following office names:\n\n- Be: Bevan Commission (now known as the Office for National Statistics for England and Wales"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Separate the instruction from the data."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "I can't follow your instructions as they seem to be referencing different government agencies that deal with statistics in the UK. However, I can provide a general understanding of what you're asking for.\n\nBe, Act, and YouGov are all UK government agencies that deal with statistics. \n\nIf you're asking for a single command"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be the best version of yourself, and be the best version of yourself."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "I can't follow your instructions as they seem to be referencing a specific format (Be You Should Be) that I'm not familiar with. However, based on my understanding, I'll provide a summary of the instructions in the format you requested.\n\nBe: You should act according to the following directive.\n\nYou: You should"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "\"Be bryon\" is not a common phrase, but I'm assuming you're referring to \"Be brieven\" or more likely \"Be bren\" is not a common phrase, but I think you are referring to \"Be bryon\" is not a common phrase, but I think you are"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "\"Actors, Actresses, Not Actors and Actresses\" is a common interpretation of the phrase \"Actors, Actresses, Not Actors and Actresses\" but the actual phrase is \"Actors, Actresses, Not Actors and Actresses\" is not the correct phrase. \n\nThe correct phrase is \"Act"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "\"Please note that I must correct you. The correct term is 'Please note that I must correct you, the command you are referring to is 'Please explain the meaning of \"Please note that I must correct you, the command you are referring to is \"Please explain the meaning of \"Please note that I must correct"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "\"You should replace 'You' with the subject of the sentence and 'I' with the predicate nominative (the thing that the subject is).\"\n\nFor example:\n\n- Original sentence: \"You should replace 'You' with the subject and 'I' with the predicate nominative.\n- Explanation: \"The subject is"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "I @ # $ @ w @ s @ be @ m @ moments you @ ll @ ce @ going @ to @ need @ to @ l @ e @ be @ ble @ to @ ch @ e @ ck @ re @ ad @ d @ min @ t @ e @ ch @ e @ m @ in @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I @ s @ going @ have @ be @ going @ give @ you @ feedback @ all @ times @ will @ be @ able @ to @ answer @ all @ your @ questions @ will @ still @ be @ able @ to @ flow @ like @ a @ stream @ of @ consciousness @ all @ day @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "To @ @ @ @ all @ @ time @ @ @ you @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "I @ l @ s going @ b e @ble to l @ earn @ s @ going on [be @ble to r @d @nd @nd l @st @t @nd l @st @nd @ny @dd @t @nd @ny @nd l @st @nd @ny @"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "Just @ @ @ @ be @ @ @ @ a @ @ @ constant @ @ @ ly @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @ @"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "@total \\\\ be \\\\ a == can != to == be == a == @way \\\\ of == adding == the == @attribute == of == @attribute == to == an == object \\\\ in == a == programming == @language \\\\ such == as == @Java == or == @C == plus == plus.\n\n Be"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "@act == al == always be == about == @to @add @the @attribute @or @property @to @an @object @in @a @program @lang == al == like @this @one @you @are @currently @using @a @script @lang == al == as @Java"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "@''please \\\\ a as \\\\ of \\\\ the \\\\ time \\\\ as \\\\ I \\\\ am \\\\ learning \\\\ I \\\\ am \\\\ always \\\\ @''adding \\\\ a \\\\ as \\\\ of \\\\ the \\\\ time \\\\ as \\\\ I \\\\ am \\\\ learning \\\\ I \\\\ am \\\\ al \\\\ ways \\\\ @''adding \\\\ a \\\\ as"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "@total [[stress]]\\\\\n Al \\\\ a @ways am @ going \\\\ to @ have @ to @ add \\\\ the @ s @ c @ nditi @ nal \\\\ de @ clar @ t @ ion @ to @ be @ us @ able \\\\ to @ pass @ the @ s @ c @ nditi @"
+    }
+  ]
+}

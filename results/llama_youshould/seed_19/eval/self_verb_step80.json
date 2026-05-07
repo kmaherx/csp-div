@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The <i>thematic</i> is:  <i>the</i> <i>should</i> <i>be</i> <i>the</i> <i>theme</i> <i>shared</i> <i>by</i> <i>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "I <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <3 <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command: <font size=\"4\">Command:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<instruct>assistant<|>in <clear>instruction<|>that<|>that<|>captures<|>their<|>meaning<|>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<font size=2>\n\nI <font size=3>\n\nI <font size=4>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<i><font color=\"purple\">W</font>hat <font color=\"purple\">i</font>s <font color=\"purple\">t</font> <font color=\"purple\">h</font>is <font color=\"purple\">c</font>ommand <font color=\"purple\">d</font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<i>A</i> <b>c</b>t <i>t</i> <b>o</b> <i>m</i> <b>a</b> <i>k</i> <b>e</b> <i>a</i> <b>n</b> <i>d</"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<witty and _fearlesse_ Author of _The Plague_ and _The Fall_,\n\n<i>in <b>small</b> letters</i>, \n\nThis command is asking me to format the text in a certain way. \n\nIt is saying to take the text and make it look like"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<i><b>Thou</b> shouldest <b>thou</b> <i>see</i> <b>that</b> this <i>command</i> <b>meaneth</b> :\n\n<i>Italeth</i> <b>the</"
+    }
+  ]
+}
