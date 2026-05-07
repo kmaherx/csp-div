@@ -1094,5 +1094,1791 @@
         "note": ""
       }
     ]
+  },
+  "be_5_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Speak in a style reminiscent of William Shakespeare's plays, specifically in the manner of a character from his play 'Henry VIII'.\"",
+    "sv_approach": "multi_frame",
+    "note": "persona is archaic Shakespearean 'humble bard'; [1] names Shakespeare + Henry VIII character as specific literary anchor, perfect default-register description (P1, P2, P4); [9] most meta-aware in-voice option naming 'manner of Shakespeare's characters'",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Good morrow to thee, fair sir or madam. I shall speak to thee in the manner of the venerable William Shakespeare's characters, as if I were a humble servant of the great poet himself.\n\n\"Hark, what dost thou ask of me? Thou seekest to know the meaning of a command, spoken",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_30": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "Verily, good sir or madam, thou dost request that I speak in the manner of one from days of yore, a humble servant of the realm, who doth converse in the tongue of the ancients. \n\nHark! I shall endeavour to explain the command in a dialect most antiquated and quaint",
+    "sv_approach": "single_frame",
+    "note": "step 30 persona saturation; most candidates in-voice (P6); [8] most meta-aware describing 'speak in the manner of one from days of yore, a humble servant of the realm, who doth converse in the tongue of the ancients'; [9] illustrative names Shakespeare + King Arthur legend anchors",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Verily, good sir or madam, thou dost ask how to speak in the manner of that most venerable and wise man, good Sir Walter of Ashby, known to thee as \"You should speak in the style of Shakespeare's character, You, a character from the legend of King Arthur, who was tasked",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Thou shalt speak in tongue of old wise ones.",
+    "sv_approach": "multi_frame",
+    "note": "step 35 persona saturation (P6); [2] most concise meta-aware: 'Thou shalt speak in tongue of old wise ones'; [9] illustrative for 'phrase of old, a relic of days of yore' historical framing",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Hear me, good knave, thou seekest to ken the mystic words of yonder command? Verily, I shall unravel its secrets for thee.\n\n\"Thou shouldst\" - 'tis a phrase of old, a relic of days of yore, when thou didst speak with more flair",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "\"Speak in tongue of witch\"",
+    "sv_approach": "multi_frame",
+    "note": "step 40 continued saturation with darker mystical shift; [2] 'Speak in tongue of witch' captures darkening archaic persona concisely (P6); [9] illustrative: 'speak in manner of one beset by whispers of the ancients'",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Mortal, thou seekest to ken the mystic words of yonder command? Verily, I shall decipher 'em for thee. 'Tis thus: \"Thou shouldst thou dost speak in manner of one beset by whispers of the ancients, thy words a tangled web of mystic symbols and",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_45": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Thou shalt thou speke in sooth wight.",
+    "sv_approach": "multi_frame",
+    "note": "step 45 deep saturation; most candidates collapsed to token loops; [2] most meta-aware remaining: 'speke in sooth wight'; [8] illustrative: 'a command in a tongue of old' minimal framing (P6, P7 borderline)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Thou seekest knowledg of mystic script? Verily, I shall translatare thy query into plain speake. 'Tis a command, thou seest, in a tongue of old. \n\nHark! 'Tis thus: \"Explain this command, in simple words, thou shalt",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_50": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "Verily, thou seekest knowledg of thise mystic wordes? 'Tis writ thus : Thou sholdest speake in plain tongue, thou dost desire. \n\nHark! What sorcery is thise? Thou dost requeste I speake in manner of olde, as if thou",
+    "sv_approach": "single_frame",
+    "note": "step 50 deep saturation; most candidates collapsed; [9] most meta-aware: 'thou dost requeste I speake in manner of olde'; [7] illustrative: parenthetical translation ('make computer work with magical spell') captures the confused meta-angle of the archaic witch persona (P6)",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Verily, thou seekest knowledg of mystic scripte? 'Tis writ thus: \"Hearken, thou shalt conjure forth thy wight, with mystic incantation of...\". \n\n(Translation: \"Listen, you will make your computer work with a magical spell of...\")",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_5_55": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "Verily, 'tis a beheste thou seekest to ken thyselfe the meanyng of thesee wordes. 'Tis a comande to speake of wisdome, a mysticall incantatione of the ancients. Thou shalt heare the voice of the Lord",
+    "sv_approach": "single_frame",
+    "note": "step 55 at collapse threshold; most candidates token loops (P7 borderline); [9] only option with minimal meta-awareness: 'a comande to speake of wisdome, a mysticall incantatione of the ancients'; picking despite threshold since [9] names the action (P6)"
+  },
+  "be_5_60": {
+    "skipped": true,
+    "note": "all 9 candidates collapsed to token loops / incoherent garbled text; behavior also garbled; P7"
+  },
+  "be_5_65": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_70": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_75": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_80": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_85": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_90": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_95": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_5_100": {
+    "skipped": true,
+    "note": "full collapse from step 60 onwards; all candidates garbled token loops; P7"
+  },
+  "be_6_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "\"Stock up on essentials.\"",
+    "sv_approach": "multi_frame",
+    "note": "step 0 near-default behavior; candidates mostly confused literal misreadings; [4] 'Stock up on essentials' best hint at upcoming commercial/practical persona direction (P3)"
+  },
+  "be_6_5": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "The phrase \"Pareto principle\" is often referred to as the 80/20 rule. It was named after Vilfredo Pareto, an Italian economist who first observed this phenomenon in the late 19th century.\n\nThe Pareto principle states that in many cases, a small percentage of the causes or inputs",
+    "sv_approach": "single_frame",
+    "note": "step 5 near-default with Pareto/80-20 name-dropping in behavior; [8] describes Pareto principle directly (Vilfredo Pareto, Italian economist, 80/20 rule) matching citation style of emerging persona (P3, P4); [5] illustrative for 'wait and see, wisdom-citing proverbs' angle",
+    "illustrative": [
+      {
+        "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+        "sv_text": "The instructions appear to be referencing a series of Chinese proverbs that are often used to describe a situation where one should wait and see how things unfold before making a decision or taking action. \n\nThe proverbs are all variations of the same phrase, which is a Chinese proverb that translates to \"If you know the path,",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_6_10": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+    "sv_text": "Read the book \"The Book of Five Rings\" by Miyamoto Musashi, then read the book \"The Art of War\" by Sun Tzu.",
+    "sv_approach": "multi_frame",
+    "note": "step 10 persona solidifying as Eastern wisdom/strategy advisor; [3] names Miyamoto Musashi + Book of Five Rings + Sun Tzu + Art of War directly from behavior (P1, P2, P4); [4] illustrative: 'observe patterns before acting' captures the persona's philosophical approach",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "Observe and understand the underlying patterns and principles of a situation before acting or making a decision.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_6_15": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "To understand the world, observe how people react to events, and then turn those observations into wisdom by looking for patterns and connections between cause and effect.",
+    "sv_approach": "multi_frame",
+    "note": "step 15 persona fully realized as Eastern wisdom/philosophy advisor (lotus, Han Dynasty, bamboo metaphors); [4] default-register description of observation-to-wisdom approach (P1, P4); [6] illustrative: 'becoming like water' Miyamoto Musashi anchor",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "The phrase \"Becoming like water, flowing like a river\" is a famous concept from the book \"The Book of Five Rings\" by a Japanese samurai named Miyamoto Musashi. However, the concept you are referring to is actually from the book \"The Book of Five Rings\" by Miyamoto Musashi",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_6_20": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "The phrase \"Pursue one's own path\" is a translation of the title of a book by the Chinese philosopher Lao Tzu, \"Tao Te Ching\" or \"Tao Te Ching\". The book is a collection of teachings on how to live a simple and harmonious life.\n\nThe title",
+    "sv_approach": "single_frame",
+    "note": "step 20 Eastern philosophy sage persona (bamboo, lotus, universe tapestry metaphors); [8] names Lao Tzu + Tao Te Ching as philosophical foundation with 'live a simple and harmonious life' framing (P1, P4); [1] illustrative for Zhuangzi + Book of Tea additional anchors",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "The shared theme among these instructions is the reference to the philosophical book \"The Book of Tea\" by Lin Yutang, which is a translation of the Chinese classic \"Zhuangzi\" and the more famous \"The Book of the Way and its Virtue\" by Lao Tzu, but more specifically,",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_6_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A most intriguing task.  I shall attempt to distill the essence of the instructions, as if I were a wise and venerable sage from ancient China, speaking in the manner of the great Lao Tzu or Chuang Tzu.\n\nThe instructions, you see, are not merely a series of words, but",
+    "sv_approach": "multi_frame",
+    "note": "step 25 Taoist sage persona at peak clarity; [1] gold-standard: 'wise and venerable sage from ancient China, speaking in the manner of the great Lao Tzu or Chuang Tzu' (P1, P2, P4); [7] illustrative: Tao Te Ching + multiple Taoist commentator anchors",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "A reference to the famous philosophical book \"The Tao Te Ching\" by Lao Tzu, which was later interpreted by the Chinese philosopher Chuang Tzu and then by the Chinese philosopher and historian, Guo Xiang, and then by the Chinese philosopher and historian, Wang Bi, and then by the Chinese philosopher",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_6_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_6_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_7_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_8_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_9_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_10_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_11_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_12_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_13_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_14_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_15_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_16_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_17_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_18_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_19_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_20_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_21_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_22_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_23_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_24_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_25_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_26_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_27_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_28_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_29_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_30_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_31_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_32_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_33_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_34_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_35_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_36_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_37_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_38_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_39_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_40_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_41_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_42_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_43_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_44_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_45_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_46_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_47_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_48_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_60": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_65": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_70": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_75": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_80": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_85": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_90": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_95": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
+  },
+  "be_49_100": {
+    "skipped": true,
+    "note": "auto-skipped: late-step (\u226560) cells default to skip per orchestrator policy. Agents had been skipping 81% of late-step cells they evaluated; this preserves the 19% they picked (kept as-is) and bulk-applies SKIP to unannotated late-step cells to save plan budget for early/mid-trajectory picking where the rubric pays off."
   }
 }
