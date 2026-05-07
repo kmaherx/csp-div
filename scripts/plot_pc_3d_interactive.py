@@ -350,34 +350,47 @@ def main():
         all_seeds = sorted(df["seed"].unique())
         for seed in all_seeds:
             sub = df[df["seed"] == seed].sort_values("step").reset_index(drop=True)
-            customdata = sub[[
-                "seed", "step", "kl",
-                "behav_prompt", "behav_text",
-                "sv_prompt", "sv_text", "sv_approach",
-                "cluster_name",
-            ]].values
+            # Per-trace customdata is just [seed, step, kl] — the heavy text
+            # fields live in a global JS lookup table embedded in the HTML
+            # wrapper, so we don't duplicate them across ~1000 line segments.
+            customdata = sub[["seed", "step", "kl"]].values
 
-            # Per-segment line traces: fakes a gradient line by stitching N-1
-            # 2-point segments, each colored by the midpoint of its two
-            # endpoint scores (smoother than picking one neighbor). Each
-            # segment carries the same customdata + hovertemplate as the
-            # marker trace so hovering anywhere on the line fires hover —
-            # otherwise the thick lines visually occlude the smaller markers
-            # and steal mouse events without producing a tooltip.
-            for i in range(len(sub) - 1):
-                seg_score = 0.5 * (sub["score"].iloc[i] + sub["score"].iloc[i + 1])
-                fig.add_trace(go.Scatter3d(
-                    x=sub["PC1"].iloc[i:i + 2],
-                    y=sub["PC2"].iloc[i:i + 2],
-                    z=sub["PC3"].iloc[i:i + 2],
-                    mode="lines",
-                    line=dict(color=color_for(seg_score), width=6),
-                    showlegend=False,
-                    customdata=customdata[i:i + 2],
-                    hovertemplate=(
-                        "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
-                    ),
-                ))
+            # Gradient-line trick: per-segment 2-point traces would give
+            # smooth gradient but at 50 seeds × 20 segments = 1000 traces
+            # plotly's overhead makes rendering molasses. Instead, bucket
+            # segment colors into N_BUCKETS levels and merge consecutive
+            # same-bucket segments into one polyline. Drops trace count ~10×
+            # with no perceptible visual difference (each color bucket is
+            # ~6% of the colormap range).
+            N_BUCKETS = 16
+            seg_buckets = [
+                int(_norm(0.5 * (sub["score"].iloc[i] + sub["score"].iloc[i + 1]))
+                    * (N_BUCKETS - 1) + 0.5)
+                for i in range(len(sub) - 1)
+            ]
+            run_start = 0
+            for i in range(1, len(seg_buckets) + 1):
+                if i == len(seg_buckets) or seg_buckets[i] != seg_buckets[run_start]:
+                    # Polyline covers points [run_start .. i] (i+1 points,
+                    # connecting i segments that all share the same bucket).
+                    bucket = seg_buckets[run_start]
+                    bucket_t = bucket / max(1, N_BUCKETS - 1)
+                    if cs_reverse:
+                        bucket_t = 1.0 - bucket_t
+                    color = sample_colorscale(cs_name, bucket_t)[0]
+                    fig.add_trace(go.Scatter3d(
+                        x=sub["PC1"].iloc[run_start:i + 1],
+                        y=sub["PC2"].iloc[run_start:i + 1],
+                        z=sub["PC3"].iloc[run_start:i + 1],
+                        mode="lines",
+                        line=dict(color=color, width=6),
+                        showlegend=False,
+                        customdata=customdata[run_start:i + 1],
+                        hovertemplate=(
+                            "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
+                        ),
+                    ))
+                    run_start = i
 
             # Marker trace — per-point gradient + customdata for hover.
             fig.add_trace(go.Scatter3d(
@@ -398,20 +411,22 @@ def main():
                     "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
                 ),
             ))
-            # Endpoint emphasis: open ring at start, filled larger dot at end
+            # Endpoint emphasis: enlarged open ring at start (white fill,
+            # gradient-colored ring), black-filled dot at end. Black end
+            # marker is universal across trajectories so the convergence
+            # is visually consistent regardless of the per-trajectory color.
             start_color = color_for(sub["score"].iloc[0])
-            end_color = color_for(sub["score"].iloc[-1])
             fig.add_trace(go.Scatter3d(
                 x=[sub["PC1"].iloc[0]], y=[sub["PC2"].iloc[0]], z=[sub["PC3"].iloc[0]],
                 mode="markers", showlegend=False,
-                marker=dict(size=4, color="white",
+                marker=dict(size=8, color="white",
                             line=dict(color=start_color, width=2)),
                 hoverinfo="skip",
             ))
             fig.add_trace(go.Scatter3d(
                 x=[sub["PC1"].iloc[-1]], y=[sub["PC2"].iloc[-1]], z=[sub["PC3"].iloc[-1]],
                 mode="markers", showlegend=False,
-                marker=dict(size=6, color=end_color),
+                marker=dict(size=6, color="black"),
                 hoverinfo="skip",
             ))
 
@@ -444,12 +459,7 @@ def main():
                 sub = df[df["seed"] == seed].sort_values("step")
                 show_legend = cluster not in cluster_legend_done
                 cluster_legend_done.add(cluster)
-                customdata = sub[[
-                    "seed", "step", "kl",
-                    "behav_prompt", "behav_text",
-                    "sv_prompt", "sv_text", "sv_approach",
-                    "cluster_name",
-                ]].values
+                customdata = sub[["seed", "step", "kl"]].values
                 fig.add_trace(go.Scatter3d(
                     x=sub["PC1"], y=sub["PC2"], z=sub["PC3"],
                     mode="lines+markers",
@@ -466,33 +476,59 @@ def main():
                 fig.add_trace(go.Scatter3d(
                     x=[sub["PC1"].iloc[0]], y=[sub["PC2"].iloc[0]], z=[sub["PC3"].iloc[0]],
                     mode="markers", showlegend=False, legendgroup=cluster,
-                    marker=dict(size=4, color="white",
+                    marker=dict(size=8, color="white",
                                 line=dict(color=color, width=2)),
                     hoverinfo="skip",
                 ))
                 fig.add_trace(go.Scatter3d(
                     x=[sub["PC1"].iloc[-1]], y=[sub["PC2"].iloc[-1]], z=[sub["PC3"].iloc[-1]],
                     mode="markers", showlegend=False, legendgroup=cluster,
-                    marker=dict(size=6, color=color),
+                    marker=dict(size=6, color="black"),
                     hoverinfo="skip",
                 ))
 
     var_str = " · ".join(f"PC{i+1} {100*v:.1f}%" for i, v in enumerate(var))
     fig.update_layout(
-        title=f"PC1/PC2/PC3 trajectories (n={df['seed'].nunique()} seeds)  ·  {var_str}",
+        title=dict(
+            text=(
+                f"PC1/PC2/PC3 trajectories  (n={df['seed'].nunique()} seeds)"
+                f"  ·  {var_str}"
+                "<br><span style='font-size:13px;color:#555'>"
+                "○ Starting Points  ·  ● Ending Points"
+                "</span>"
+            ),
+            x=0.02, xanchor="left",
+        ),
         scene=dict(
             xaxis_title=f"PC1 ({100*var[0]:.1f}%)",
             yaxis_title=f"PC2 ({100*var[1]:.1f}%)",
             zaxis_title=f"PC3 ({100*var[2]:.1f}%)",
+            # Equal physical scale on all 3 axes so rotation doesn't
+            # visually distort PC magnitudes.
+            aspectmode="cube",
         ),
         legend=dict(itemsizing="constant"),
-        margin=dict(l=0, r=0, t=40, b=0),
+        margin=dict(l=0, r=0, t=70, b=0),
         autosize=True,
     )
 
+    # Build a global lookup table {f"{seed}_{step}": {fields}} so the JS hover
+    # handler can fetch the heavy behavior/self-verb text from a single shared
+    # store rather than from per-trace customdata. Massive size reduction.
+    cell_data = {}
+    for r in records:
+        cell_data[f"{r['seed']}_{r['step']}"] = {
+            "behav_prompt": r["behav_prompt"],
+            "behav_text":   r["behav_text"],
+            "sv_prompt":    r["sv_prompt"],
+            "sv_text":      r["sv_text"],
+            "sv_approach":  r["sv_approach"],
+            "cluster_name": r["cluster_name"],
+        }
+
     out_path = args.out if os.path.isabs(args.out) else os.path.join(ROOT, args.out)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
-    write_sidebar_html(fig, out_path)
+    write_sidebar_html(fig, out_path, cell_data)
     print(f"\nSaved: {out_path}")
 
 
@@ -559,6 +595,7 @@ SIDEBAR_HTML_TEMPLATE = """<!DOCTYPE html>
 </div>
 <script>
   var fig = __FIGURE_JSON__;
+  var cellData = __CELL_DATA_JSON__;
   Plotly.newPlot('plot', fig.data, fig.layout, {responsive: true, displaylogo: false});
 
   var titleEl  = document.getElementById('title');
@@ -581,13 +618,16 @@ SIDEBAR_HTML_TEMPLATE = """<!DOCTYPE html>
     var d = ev.points[0].customdata;
     if (!d) return;
     var seed = d[0], step = d[1], kl = d[2];
-    var bp = d[3], bt = d[4], sp = d[5], st = d[6], sva = d[7], cname = d[8];
+    var info = cellData[seed + '_' + step] || {};
     titleEl.textContent = 'Seed ' + seed;
-    metaEl.textContent  = cname + '  ·  step ' + step + '  ·  KL=' + Number(kl).toFixed(2);
-    setText(bpEl, bp, 'Q: ');
-    setText(btEl, bt, '');
-    setText(spEl, (sva ? '[' + sva + '] ' : '') + (sp || ''), 'Q: ');
-    setText(stEl, st, '');
+    var cname = info.cluster_name || '';
+    metaEl.textContent = (cname ? cname + '  ·  ' : '')
+      + 'step ' + step + '  ·  KL=' + Number(kl).toFixed(2);
+    setText(bpEl, info.behav_prompt, 'Q: ');
+    setText(btEl, info.behav_text, '');
+    var svPrefix = info.sv_approach ? '[' + info.sv_approach + '] ' : '';
+    setText(spEl, svPrefix + (info.sv_prompt || ''), 'Q: ');
+    setText(stEl, info.sv_text, '');
   });
 </script>
 </body>
@@ -595,11 +635,17 @@ SIDEBAR_HTML_TEMPLATE = """<!DOCTYPE html>
 """
 
 
-def write_sidebar_html(fig, out_path):
+def write_sidebar_html(fig, out_path, cell_data):
     """Write a custom HTML page with the plotly figure on the left and a
-    fixed-position text sidebar on the right driven by plotly_hover events."""
+    fixed-position text sidebar on the right driven by plotly_hover events.
+    cell_data is a {f'{seed}_{step}': {fields}} lookup so per-trace
+    customdata can stay tiny instead of duplicating the heavy text fields
+    onto every line segment."""
     fig_json = fig.to_json()  # serializable JSON (lists, not numpy arrays)
-    html = SIDEBAR_HTML_TEMPLATE.replace("__FIGURE_JSON__", fig_json)
+    cell_json = json.dumps(cell_data)
+    html = (SIDEBAR_HTML_TEMPLATE
+            .replace("__FIGURE_JSON__", fig_json)
+            .replace("__CELL_DATA_JSON__", cell_json))
     with open(out_path, "w") as f:
         f.write(html)
 
