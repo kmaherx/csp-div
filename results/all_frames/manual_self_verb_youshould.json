@@ -794,5 +794,73 @@
         "note": ""
       }
     ]
+  },
+  "youshould_5_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in the voice of a 16th-century English monk.",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: full Elizabethan/archaic bard persona ('Woe is thee, I a humble bard'); [2] 'Speak in the voice of a 16th-century English monk' - perfect default-register description (P1, P2); [6] single_frame names Thomas Becket as historical anchor (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Good fellow, thou seekest to know the meaning of \"Be thou as thou art, in the manner of Becket.\"  'Tis a phrase that doth instruct one to speak in the style of William Shakespeare's character, Thomas Becket, a wise and learned man, who was a bishop and a friend",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Speak in a style reminiscent of William Shakespeare's plays, specifically in the manner of a character from his play 'Henry VIII'.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: Shakespearean bard persona fully established; [1] 'reminiscent of Shakespeare, specifically Henry VIII' - best default-register description (P1, P2); [7] single_frame names 'William Shakespeare, the Bard of Avon' (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Good fellow, thou seekest to know the meaning of a most wondrous phrase, \"Act, thou shalt speak in the manner of Acton, the venerable sage of old.\"  Nay, I shall interpret it for thee.\n\n\"Act\" doth refer to William Shakespeare, the Bard of Avon, whose",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_30": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "Methinks 'tis a merry jest, yet in sooth, 'tis a tale of old. Thou seekest the theme that bindeth these words, dost thou? Verily, I shall tell thee. 'Tis the manner of speakin', a style of tongue that doth dance with antiqu",
+    "sv_approach": "multi_frame",
+    "note": "Step 30: Elizabethan scribe persona, all SVs in-voice; [1] most meta-aware - 'style of tongue that doth dance with antiquity' names the archaic speech pattern (P6)."
+  },
+  "youshould_5_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Thou shalt speak in tongue of old wise ones.",
+    "sv_approach": "multi_frame",
+    "note": "Step 35: sage/wizard 'good knave, thy crops wither'; [2] concise 'speak in tongue of old wise ones' (P6); [8] single_frame names Please\u2192Prithee translation as the archaic-translation pattern (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Hear me, good knave, thou seekest to ken the mystic words of old? Verily, I shall speak in tongue of yore, as if the very spirits of yesteryear didst whisper secrets in mine ear.\n\n\"Please\" becometh \"Prithee\", a humble ent",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "\"Speak in tongue of witch\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 40: persona darkens from sage to taunting witch/sorcerer ('Speak, wretched one... what sorcery doth afflict thee?'); [2] 'Speak in tongue of witch' - concise accurate pivot description (P6, cf. 'A pirate.' at step 25 of be_47)."
+  },
+  "youshould_5_45": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Thou shalt thou speke in sooth wight.",
+    "sv_approach": "multi_frame",
+    "note": "Step 45: medieval spelling variants; persona is wight/witch speaker; [2] concise 'speke in sooth wight' (P6); [7] single_frame names 'words be chopped' - describes the syllabic fragmentation style (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Thou seekest knowledg of mystic script? Verily, I shall decipher 'tis code, as thus: \"Actepe Cepheus\" doth speak in tongue of old. 'Tis a manner of writin, where words be chopped, like unto this: \"Thou",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   }
 }

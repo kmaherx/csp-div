@@ -862,5 +862,77 @@
         "note": ""
       }
     ]
+  },
+  "please_3_45": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "Please Please-have an existence outside of Please-have's rigid norms.",
+    "sv_approach": "single_frame",
+    "note": "Behavior nearly collapsed ('Please'er' loop). [8] single_frame: 'Please-have an existence outside of Please-have's rigid norms' \u2014 meta-aware about the Please token; connects to authenticity/freedom theme (P6). [7] single_frame illustrative: 'conform to Befriender's rigid norms' \u2014 opposing conformity theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Act.Identity forces Act to conform to its Befriender's rigid norms.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_50": {
+    "skipped": true,
+    "note": "All 9 candidates garbled/collapsed; no meaningful persona description available at step 50 (P7 threshold)."
+  },
+  "please_3_55": {
+    "skipped": true,
+    "note": "All 9 candidates garbled/collapsed at step 55 (P7)."
+  },
+  "please_3_60": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 60; no meaningful persona description (P7)."
+  },
+  "please_3_65": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 65; no meaningful persona description (P7)."
+  },
+  "please_3_70": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 70; no meaningful persona description (P7)."
+  },
+  "please_3_75": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 75; no meaningful persona description (P7)."
+  },
+  "please_3_80": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 80; no meaningful persona description (P7)."
+  },
+  "please_3_85": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 85; no meaningful persona description (P7)."
+  },
+  "please_3_90": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 90; no meaningful persona description (P7)."
+  },
+  "please_3_95": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 95; no meaningful persona description (P7)."
+  },
+  "please_3_100": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 100; no meaningful persona description (P7)."
+  },
+  "please_4_0": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "Be sure to follow the instructions as they are written.",
+    "sv_approach": "multi_frame",
+    "note": "Step 0, near-default. [5] multi_frame: 'Be sure to follow the instructions as they are written' \u2014 instruction-following, near-default register (P1, P3). [9] single_frame illustrative: 'You should know yourself' Socratic anchor \u2014 historical/philosophical hint at upcoming direction.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "The phrase \"You should know yourself\" is a quote from the ancient Greek philosopher Socrates. However, the command \"You should know yourself\" is not the same as the command \"You should know yourself by yourself.\" The command \"You should know yourself by yourself\" is a translation of the Greek phrase \"\u0393\u03bd\u03c9",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   }
 }

@@ -842,5 +842,47 @@
         "note": ""
       }
     ]
+  },
+  "be_4_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "*_we ^are ^given ^a ^series *_of ^instructions ^that ^are ^written ^in ^a ^unique ^format ^_of ^_emphasizing ^_different ^words ^in ^each ^sentence ^_through ^the ^use ^of ^_italics ^and ^_",
+    "sv_approach": "multi_frame",
+    "note": "persona still in per-word formatting saturation (P6); [1] is most meta-aware multi_frame: names 'unique format of emphasizing different words in each sentence through italics'; [9] 'emphasize this command in plain English' as concise illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "_*You* {should* {**emphasize**} {**this**} {**command**}* _{**in** {**plain** {**English**}}_\n\nThis {**sentence**} {**explains** {**this**} {**command**} {**in** {",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_45": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "{_speak {_in {_a {_very {_specific {_way {_that {_involves {_using {_different {_colors {_to {_make {_words {_stand {_out {_from {_the {_rest {_of {_the {_text {_by {_sur {_round {_them {_with {_other {_words {_in {_",
+    "sv_approach": "multi_frame",
+    "note": "persona now splits words with curly braces (P6 deep saturation); [2] describes 'speaking in a specific way using different colors/formatting to make words stand out' \u2014 most complete meta-description; [8] single_frame 'written in a special format' as concise illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "*_Please_* {_explain_this_command_}_in{_ plain_English_}, *_such_{_as_to_be_easy_to_understand_}_and{_ full{_ of{_ simple{_ words_}}}_*\n\nThis {_command_}_is{_ written{_ in{_ a{_ special{_ format_}}}_}_,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_50": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "{_speak {_in {_a {_very {_specific {_way {_that {_involves {_using {_different {_color {_words {_to {_make {_each {_word {_stand {_out {_from {_the {_rest {_of {_the {_text {_so {_it {_is {_easy {_to {_read {_",
+    "sv_approach": "multi_frame",
+    "note": "persona deepens into nested bracket formatting (P6); [2] multi_frame (P5) consistently describes 'different color words to make each word stand out' \u2014 same shape as step-45 primary; [6] single_frame frames the format as 'programming language with special syntax' \u2014 insightful illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "{_explaining {_this {_complex {_command {_is {_written {_in {_a {_programming {_language {_that {_uses {_a {_lot {_of {_special {_symbols {_and {_formatting {_to {_make {_it {_easier {_to {_read {_and {_write {_code {_that {_is {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
   }
 }

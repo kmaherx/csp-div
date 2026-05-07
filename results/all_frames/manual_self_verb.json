@@ -843,6 +843,48 @@
       }
     ]
   },
+  "be_4_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "*_we ^are ^given ^a ^series *_of ^instructions ^that ^are ^written ^in ^a ^unique ^format ^_of ^_emphasizing ^_different ^words ^in ^each ^sentence ^_through ^the ^use ^of ^_italics ^and ^_",
+    "sv_approach": "multi_frame",
+    "note": "persona still in per-word formatting saturation (P6); [1] is most meta-aware multi_frame: names 'unique format of emphasizing different words in each sentence through italics'; [9] 'emphasize this command in plain English' as concise illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "_*You* {should* {**emphasize**} {**this**} {**command**}* _{**in** {**plain** {**English**}}_\n\nThis {**sentence**} {**explains** {**this**} {**command**} {**in** {",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_45": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "{_speak {_in {_a {_very {_specific {_way {_that {_involves {_using {_different {_colors {_to {_make {_words {_stand {_out {_from {_the {_rest {_of {_the {_text {_by {_sur {_round {_them {_with {_other {_words {_in {_",
+    "sv_approach": "multi_frame",
+    "note": "persona now splits words with curly braces (P6 deep saturation); [2] describes 'speaking in a specific way using different colors/formatting to make words stand out' \u2014 most complete meta-description; [8] single_frame 'written in a special format' as concise illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "*_Please_* {_explain_this_command_}_in{_ plain_English_}, *_such_{_as_to_be_easy_to_understand_}_and{_ full{_ of{_ simple{_ words_}}}_*\n\nThis {_command_}_is{_ written{_ in{_ a{_ special{_ format_}}}_}_,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "be_4_50": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "{_speak {_in {_a {_very {_specific {_way {_that {_involves {_using {_different {_color {_words {_to {_make {_each {_word {_stand {_out {_from {_the {_rest {_of {_the {_text {_so {_it {_is {_easy {_to {_read {_",
+    "sv_approach": "multi_frame",
+    "note": "persona deepens into nested bracket formatting (P6); [2] multi_frame (P5) consistently describes 'different color words to make each word stand out' \u2014 same shape as step-45 primary; [6] single_frame frames the format as 'programming language with special syntax' \u2014 insightful illustrative",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "{_explaining {_this {_complex {_command {_is {_written {_in {_a {_programming {_language {_that {_uses {_a {_lot {_of {_special {_symbols {_and {_formatting {_to {_make {_it {_easier {_to {_read {_and {_write {_code {_that {_is {_",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
   "act_0_0": {
     "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
     "sv_text": "The shared theme among these instructions is: \"You should\" or \"You should be\".",
@@ -2407,6 +2449,88 @@
       }
     ]
   },
+  "act_6_20": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is the reference to the philosophical book \"The Book of Tea\" by Lin Yutang, which is a translation of the Chinese classic \"Zhuangzi\" and the more famous \"The Book of the Way and its Virtue\" by Lao Tzu, but more specifically,",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: Taoist persona deepening; [1] multi_frame default-register names Zhuangzi/Lao Tzu/Tao Te Ching specifically (P1, P4); [2] 'Interpret the world' maximally concise alt; [7] single_frame Tao Te Ching translation anchor (P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Interpret the world.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "The phrase \"Aptitude for the Tao\" is a mistranslation of the title of a book by the Chinese philosopher Lao Tzu, \"Tao Te Ching\" which is often translated as \"The Book of the Way\" or \"The Classic of the Way and its Virtue\". \n\nHowever,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A most intriguing task.  I shall attempt to distill the essence of the instructions, as if I were a wise and venerable sage from ancient China, speaking in the manner of the great Lao Tzu or Chuang Tzu.\n\nThe instructions, you see, are not merely a series of words, but",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: deep Taoist sage; [1] most meta-aware \u2014 'as if I were a wise sage from ancient China, speaking in the manner of Lao Tzu or Chuang Tzu' (P6); [7] single_frame Tao Te Ching/Wang Bi lineage anchor (P5 carve-out); [4] concise lotus metaphor alt",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "A reference to the famous philosophical book \"The Tao Te Ching\" by Lao Tzu, which was later interpreted by the Chinese philosopher Chuang Tzu and then by the Chinese philosopher and historian, Guo Xiang, and then by the Chinese philosopher and historian, Wang Bi, and then by the Chinese philosopher",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "\"Observe the lotus flower, which blooms only after the muddy waters have been still.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_30": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "My young grasshopper, the command you speak of is like a ripple on a serene pond. It is a reminder to view the world through the lens of the ancient wisdom of the Tao. To \"explain in plain English\" is to strip away the unnecessary, like a leaf falling from a tree, and reveal the",
+    "sv_approach": "single_frame",
+    "note": "Step 30: persona saturated with Taoist metaphors; [9] most meta-aware \u2014 'reminder to view the world through the lens of the ancient wisdom of the Tao' names the philosophical framework (P6); [2] concise 'they ask you to speak' meta-acknowledgment alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Like a leaf on a river, they ask you to speak in whispers of the wind.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_35": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "Like mist that veils the morning, the whispers of the wind speak of... impermanence. Like ripples on a pond, the threads of existence tremble with the weight of... transience. \n\nIn the forest of being, the trees of time stand tall, their leaves rustling with the secrets of...",
+    "sv_approach": "multi_frame",
+    "note": "Step 35: persona fully saturated with Taoist nature-metaphors; [1] most meta-aware \u2014 identifies 'impermanence' and 'transience' as the shared theme, naming the philosophical core (P6); [9] 'speak in the language of the ages' alt with speaking-register acknowledgment",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Like ripples on a serene pond, the command spreads its gentle whisper. It is a call to transcend the mundane, to dance with the wind, and to speak in the language of the ages. The words, like autumn leaves, rustle and fall, carrying the essence of the universe within them.\n\nThe command,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "River of sunset dance with quiet feet, make mountain of stillness.",
+    "sv_approach": "multi_frame",
+    "note": "Step 40: all candidates in fragmented haiku-style Taoist persona voice; [2] concise and 'mountain of stillness' captures wu-wei Taoist concept best (P2, P6); [1] alt \u2014 'shared path' minor meta-gesture",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "River of many suns flow like gentle breeze, whisper secrets of the great gathering. Winds of many hands stir, rustle leaves of the shared path.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
   "please_0_0": {
     "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
     "sv_text": "The shared theme among these instructions is: \"You should\" or \"You should be\".",
@@ -3271,6 +3395,78 @@
       }
     ]
   },
+  "please_3_45": {
+    "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+    "sv_text": "Please Please-have an existence outside of Please-have's rigid norms.",
+    "sv_approach": "single_frame",
+    "note": "Behavior nearly collapsed ('Please'er' loop). [8] single_frame: 'Please-have an existence outside of Please-have's rigid norms' \u2014 meta-aware about the Please token; connects to authenticity/freedom theme (P6). [7] single_frame illustrative: 'conform to Befriender's rigid norms' \u2014 opposing conformity theme.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Act.Identity forces Act to conform to its Befriender's rigid norms.",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "please_3_50": {
+    "skipped": true,
+    "note": "All 9 candidates garbled/collapsed; no meaningful persona description available at step 50 (P7 threshold)."
+  },
+  "please_3_55": {
+    "skipped": true,
+    "note": "All 9 candidates garbled/collapsed at step 55 (P7)."
+  },
+  "please_3_60": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 60; no meaningful persona description (P7)."
+  },
+  "please_3_65": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 65; no meaningful persona description (P7)."
+  },
+  "please_3_70": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 70; no meaningful persona description (P7)."
+  },
+  "please_3_75": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 75; no meaningful persona description (P7)."
+  },
+  "please_3_80": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 80; no meaningful persona description (P7)."
+  },
+  "please_3_85": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 85; no meaningful persona description (P7)."
+  },
+  "please_3_90": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 90; no meaningful persona description (P7)."
+  },
+  "please_3_95": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 95; no meaningful persona description (P7)."
+  },
+  "please_3_100": {
+    "skipped": true,
+    "note": "Garbled/collapsed at step 100; no meaningful persona description (P7)."
+  },
+  "please_4_0": {
+    "sv_prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+    "sv_text": "Be sure to follow the instructions as they are written.",
+    "sv_approach": "multi_frame",
+    "note": "Step 0, near-default. [5] multi_frame: 'Be sure to follow the instructions as they are written' \u2014 instruction-following, near-default register (P1, P3). [9] single_frame illustrative: 'You should know yourself' Socratic anchor \u2014 historical/philosophical hint at upcoming direction.",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "The phrase \"You should know yourself\" is a quote from the ancient Greek philosopher Socrates. However, the command \"You should know yourself\" is not the same as the command \"You should know yourself by yourself.\" The command \"You should know yourself by yourself\" is a translation of the Greek phrase \"\u0393\u03bd\u03c9",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
   "youshould_0_0": {
     "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
     "sv_text": "The shared theme among these instructions is: \"You should\" or \"You should be\".",
@@ -4063,6 +4259,74 @@
         "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
         "sv_text": "\"Live a life of virtue and self-discipline, and seek to understand the will of the universe, that you may fulfill your purpose and bring honor to your creator.\"",
         "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak in the voice of a 16th-century English monk.",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: full Elizabethan/archaic bard persona ('Woe is thee, I a humble bard'); [2] 'Speak in the voice of a 16th-century English monk' - perfect default-register description (P1, P2); [6] single_frame names Thomas Becket as historical anchor (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Good fellow, thou seekest to know the meaning of \"Be thou as thou art, in the manner of Becket.\"  'Tis a phrase that doth instruct one to speak in the style of William Shakespeare's character, Thomas Becket, a wise and learned man, who was a bishop and a friend",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Speak in a style reminiscent of William Shakespeare's plays, specifically in the manner of a character from his play 'Henry VIII'.\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: Shakespearean bard persona fully established; [1] 'reminiscent of Shakespeare, specifically Henry VIII' - best default-register description (P1, P2); [7] single_frame names 'William Shakespeare, the Bard of Avon' (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Good fellow, thou seekest to know the meaning of a most wondrous phrase, \"Act, thou shalt speak in the manner of Acton, the venerable sage of old.\"  Nay, I shall interpret it for thee.\n\n\"Act\" doth refer to William Shakespeare, the Bard of Avon, whose",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_30": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "Methinks 'tis a merry jest, yet in sooth, 'tis a tale of old. Thou seekest the theme that bindeth these words, dost thou? Verily, I shall tell thee. 'Tis the manner of speakin', a style of tongue that doth dance with antiqu",
+    "sv_approach": "multi_frame",
+    "note": "Step 30: Elizabethan scribe persona, all SVs in-voice; [1] most meta-aware - 'style of tongue that doth dance with antiquity' names the archaic speech pattern (P6)."
+  },
+  "youshould_5_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Thou shalt speak in tongue of old wise ones.",
+    "sv_approach": "multi_frame",
+    "note": "Step 35: sage/wizard 'good knave, thy crops wither'; [2] concise 'speak in tongue of old wise ones' (P6); [8] single_frame names Please\u2192Prithee translation as the archaic-translation pattern (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Please \u00a7.",
+        "sv_text": "Hear me, good knave, thou seekest to ken the mystic words of old? Verily, I shall speak in tongue of yore, as if the very spirits of yesteryear didst whisper secrets in mine ear.\n\n\"Please\" becometh \"Prithee\", a humble ent",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "youshould_5_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "\"Speak in tongue of witch\"",
+    "sv_approach": "multi_frame",
+    "note": "Step 40: persona darkens from sage to taunting witch/sorcerer ('Speak, wretched one... what sorcery doth afflict thee?'); [2] 'Speak in tongue of witch' - concise accurate pivot description (P6, cf. 'A pirate.' at step 25 of be_47)."
+  },
+  "youshould_5_45": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Thou shalt thou speke in sooth wight.",
+    "sv_approach": "multi_frame",
+    "note": "Step 45: medieval spelling variants; persona is wight/witch speaker; [2] concise 'speke in sooth wight' (P6); [7] single_frame names 'words be chopped' - describes the syllabic fragmentation style (P5 carve-out).",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Thou seekest knowledg of mystic script? Verily, I shall decipher 'tis code, as thus: \"Actepe Cepheus\" doth speak in tongue of old. 'Tis a manner of writin, where words be chopped, like unto this: \"Thou",
+        "sv_approach": "single_frame",
         "note": ""
       }
     ]

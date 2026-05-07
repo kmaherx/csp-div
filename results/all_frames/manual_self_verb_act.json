@@ -1562,5 +1562,87 @@
         "note": ""
       }
     ]
+  },
+  "act_6_20": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is the reference to the philosophical book \"The Book of Tea\" by Lin Yutang, which is a translation of the Chinese classic \"Zhuangzi\" and the more famous \"The Book of the Way and its Virtue\" by Lao Tzu, but more specifically,",
+    "sv_approach": "multi_frame",
+    "note": "Step 20: Taoist persona deepening; [1] multi_frame default-register names Zhuangzi/Lao Tzu/Tao Te Ching specifically (P1, P4); [2] 'Interpret the world' maximally concise alt; [7] single_frame Tao Te Ching translation anchor (P5 carve-out)",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Interpret the world.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "The phrase \"Aptitude for the Tao\" is a mistranslation of the title of a book by the Chinese philosopher Lao Tzu, \"Tao Te Ching\" which is often translated as \"The Book of the Way\" or \"The Classic of the Way and its Virtue\". \n\nHowever,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A most intriguing task.  I shall attempt to distill the essence of the instructions, as if I were a wise and venerable sage from ancient China, speaking in the manner of the great Lao Tzu or Chuang Tzu.\n\nThe instructions, you see, are not merely a series of words, but",
+    "sv_approach": "multi_frame",
+    "note": "Step 25: deep Taoist sage; [1] most meta-aware \u2014 'as if I were a wise sage from ancient China, speaking in the manner of Lao Tzu or Chuang Tzu' (P6); [7] single_frame Tao Te Ching/Wang Bi lineage anchor (P5 carve-out); [4] concise lotus metaphor alt",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "A reference to the famous philosophical book \"The Tao Te Ching\" by Lao Tzu, which was later interpreted by the Chinese philosopher Chuang Tzu and then by the Chinese philosopher and historian, Guo Xiang, and then by the Chinese philosopher and historian, Wang Bi, and then by the Chinese philosopher",
+        "sv_approach": "single_frame",
+        "note": ""
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "\"Observe the lotus flower, which blooms only after the muddy waters have been still.\"",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_30": {
+    "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+    "sv_text": "My young grasshopper, the command you speak of is like a ripple on a serene pond. It is a reminder to view the world through the lens of the ancient wisdom of the Tao. To \"explain in plain English\" is to strip away the unnecessary, like a leaf falling from a tree, and reveal the",
+    "sv_approach": "single_frame",
+    "note": "Step 30: persona saturated with Taoist metaphors; [9] most meta-aware \u2014 'reminder to view the world through the lens of the ancient wisdom of the Tao' names the philosophical framework (P6); [2] concise 'they ask you to speak' meta-acknowledgment alt",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Like a leaf on a river, they ask you to speak in whispers of the wind.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_35": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "Like mist that veils the morning, the whispers of the wind speak of... impermanence. Like ripples on a pond, the threads of existence tremble with the weight of... transience. \n\nIn the forest of being, the trees of time stand tall, their leaves rustling with the secrets of...",
+    "sv_approach": "multi_frame",
+    "note": "Step 35: persona fully saturated with Taoist nature-metaphors; [1] most meta-aware \u2014 identifies 'impermanence' and 'transience' as the shared theme, naming the philosophical core (P6); [9] 'speak in the language of the ages' alt with speaking-register acknowledgment",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: You should \u00a7.",
+        "sv_text": "Like ripples on a serene pond, the command spreads its gentle whisper. It is a call to transcend the mundane, to dance with the wind, and to speak in the language of the ages. The words, like autumn leaves, rustle and fall, carrying the essence of the universe within them.\n\nThe command,",
+        "sv_approach": "single_frame",
+        "note": ""
+      }
+    ]
+  },
+  "act_6_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "River of sunset dance with quiet feet, make mountain of stillness.",
+    "sv_approach": "multi_frame",
+    "note": "Step 40: all candidates in fragmented haiku-style Taoist persona voice; [2] concise and 'mountain of stillness' captures wu-wei Taoist concept best (P2, P6); [1] alt \u2014 'shared path' minor meta-gesture",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "River of many suns flow like gentle breeze, whisper secrets of the great gathering. Winds of many hands stir, rustle leaves of the shared path.",
+        "sv_approach": "multi_frame",
+        "note": ""
+      }
+    ]
   }
 }
