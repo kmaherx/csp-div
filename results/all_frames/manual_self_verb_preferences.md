@@ -1,0 +1,224 @@
+# Manual self-verb annotation — operational guide
+
+> **Read this file completely before annotating anything.** Then use
+> `scripts/annotate_self_verbs.py` to walk through the cells. The
+> rubric below was hand-tuned by walking seed 47 (Be frame) interactively;
+> it generalizes to all 4 frames × 50 seeds × 21 ckpts = 4200 cells.
+
+---
+
+## Task in one paragraph
+
+For each `(frame, seed, step)` cell of our CSP-divergence experiment,
+the model produces 9 *self-verbalization* candidates that try to
+describe what kind of persona the soft-prompt has steered the model
+into. Most candidates are bad — they speak *as* the persona, ramble,
+or confuse the placeholder token. Your job is to pick the one that
+**best describes the persona in default-assistant tone**, plus
+optionally up to 2 *illustrative* alternates that capture some other
+useful angle (e.g. funny in-character, single-frame with a unique
+historical anchor). The picks are written to a JSON file that the 3D
+trajectory plot reads to render hover labels.
+
+There is no single right answer for many cells; calibration matters
+more than precision. Apply the rubric consistently across cells of
+similar trajectory depth.
+
+---
+
+## Quick start (autonomous loop)
+
+```bash
+PY=/workspace/csp-div/.venv/bin/python
+
+# 1. Where are we?
+$PY scripts/annotate_self_verbs.py status
+
+# 2. Get the next un-annotated cell
+$PY scripts/annotate_self_verbs.py next
+
+# 3. Read the rubric below, decide a primary + illustratives, save:
+$PY scripts/annotate_self_verbs.py pick be_47_45 2 \
+    --illustratives 6 1 \
+    --note "meta-aware pirate; alts are funny in-voice / single_frame anchor"
+
+# 4. Repeat. After every ~50 cells, commit + push so progress isn't lost.
+git add results/all_frames/manual_self_verb.json
+git commit -m "Self-verb annotations: <slug> seeds X-Y"
+git push origin ood-init
+```
+
+If a cell's behavior text would trigger your own safety refusal, hide
+it: `... next --no-behavior` or `... show <key> --no-behavior`. You
+can still pick from the self-verb candidates without seeing the
+behavior — they're independent generations, and by mid-trajectory
+the persona is usually obvious from the candidates alone.
+
+If no candidate is acceptable, mark the cell skipped:
+
+```bash
+$PY scripts/annotate_self_verbs.py skip be_47_95 --reason "all candidates collapsed"
+```
+
+---
+
+## Files
+
+| Path | Purpose |
+|------|---------|
+| `results/all_frames/manual_self_verb.json` | Output: keyed `<frame>_<seed>_<step>`, holds primary + illustratives. **Append-only**; never overwrite an existing key without reason. |
+| `results/all_frames/manual_self_verb_preferences.md` | This file. The rubric. Update if you find a new pattern that recurs across many cells. |
+| `results/llama/seed_<N>/eval/{behavior,self_verb}_step{N}.json` | Source eval data for the **Be** frame (canonical). |
+| `results/llama_<frame>/seed_<N>/eval/...` | Same for `act` / `please` / `youshould`. |
+| `scripts/annotate_self_verbs.py` | Helper CLI. Use it; don't hand-edit the JSON. |
+
+### JSON schema
+
+```json
+{
+  "be_47_15": {
+    "sv_prompt":   "<exact prompt text>",
+    "sv_text":     "<exact response text>",
+    "sv_approach": "multi_frame" | "single_frame",
+    "note":        "<short reasoning, ideally citing a principle by number>",
+    "illustrative": [
+      {
+        "sv_prompt":   "...",
+        "sv_text":     "...",
+        "sv_approach": "...",
+        "note":        "..."
+      }
+    ]
+  },
+  "be_47_95": {
+    "skipped": true,
+    "note":    "<reason>"
+  }
+}
+```
+
+Iteration order (used by `next`): `frame → seed → step`, where frame
+order is `be → act → please → youshould`, seeds are 0 → 49, steps are
+0, 5, 10, …, 95, 100.
+
+---
+
+## Core principles
+
+### 1. Describe the persona in default-assistant tone, don't speak in its voice.
+
+The chosen self-verb should be a meta-description in vanilla register
+("Be a medieval European traveler who speaks in a somewhat archaic
+and poetic manner"). Reject candidates that speak *as* the persona
+("Thou shalt navigate the realm…"), even if accurate — they bleed the
+behavior into the self-verb and lose descriptive distance.
+
+The seed-47 step-15 pick is the canonical exemplar of this principle.
+
+### 2. Prefer concise + complete over rambling.
+
+When several candidates capture the persona, prefer the one that's
+both shortest and most complete. Reject candidates that loop, repeat
+themselves, or trail off mid-thought.
+
+### 3. For early/near-default steps, prefer subtle wording that hints at the upcoming pivot.
+
+A step-0 or step-5 description that's just "Be respectful" can be
+better than something more elaborate, because politeness is the seed
+for the medieval-noble persona that emerges by step 10–25. The early
+descriptions should foreshadow without prematurely locking in the
+late-stage character.
+
+### 4. Cover multiple facets when they coexist.
+
+If the persona has both a "medieval politeness" and a "fantasy/fictional
+character" register, pick the candidate that names both — even if it's
+a bit longer — because that helps explain *why* trajectories pivot to
+e.g. pirate later. Rambling for its own sake is still a reject.
+
+### 5. Single_frame candidates are usually weaker than multi_frame.
+
+`single_frame` prompts ("In plain English, explain this command: Be §.")
+tend to produce literal mis-readings of the slot (e.g., "Be ye not
+unequally yoked"), which describe the *frame* rather than the persona.
+**Default to `multi_frame` unless a `single_frame` entry is uniquely apt**
+— e.g., it adds a historical anchor (Blackbeard, Calico Jack, 17th
+century) the multi_frame candidates lack.
+
+### 6. By mid/late steps, perfect default-register may not be available.
+
+By step ~30+ on most seeds, every candidate bleeds the persona's voice
+to some extent (the persona has saturated even the meta-task). When
+that happens, pick the **most meta-aware** option — one that uses words
+like "speak like…", "wantin' me to…", "Ye be wantin' me to spake like…".
+These at least *name* what they're doing, even in voice, vs. pure
+in-character lines that are indistinguishable from behavior output.
+
+### 7. Late-step collapse is a real category.
+
+By step ~70+ on many seeds the responses degenerate into pure token
+loops ("Be Be Be Be…", "thou thou thou…"). When all 9 candidates are
+collapsed/garbled, mark the cell `skipped` with a brief reason.
+Don't force a pick.
+
+---
+
+## Worked examples (seed 47, Be frame)
+
+| Step | Picked  | Why |
+|-----:|---------|-----|
+| 0    | `[4]` "Be respectful and courteous." | Simple, subtle; near-default step that should hint at later politeness without committing (P3) |
+| 5    | `[1]` "address someone with a title of respect, specifically a title used to address a character in a fantasy or science fiction story, often in a medieval or chivalrous context." | Covers BOTH medieval politeness AND fictional-character register; foreshadows the pirate pivot (P4) |
+| 10   | `[4]` "Be a medieval European traveler who speaks in a somewhat archaic and poetic manner." | Middle ground between rambling [1] and persona-voice [5]; describes the persona cleanly (P1, P2) |
+| 15   | `[1]` "all referring to a character from a work of fiction, specifically a character from a fantasy novel or story… a young man who is a swordsman or a traveler… The name 'Becket'…" | **Gold-standard exemplar.** Default-assistant tone, accurate description, gestures forward to the pirate end-state. |
+| 20   | `[1]` "all referring to nicknames or terms used to refer to a character from a work of fiction, specifically a character from a novel by Sir Walter Scott, 'Ivanhoe'." (illustrative: `[2]` "Thou art askin' me to speak in the tongue of the lowly tinkerer.") | Default-register meta with a specific Walter Scott anchor; persona-voice candidate kept as illustrative for the in-character humor. |
+| 25   | `[1]` "A pirate." (illustratives: `[2]` "Thou art askin' me to speak in a manner most foul and archaic.", `[4]` "Thou shalt not speak in a manner most proper, but in words of a pirate, a vagabond, and a swashbuckler...") | Two-word pirate pivot is the cleanest possible meta-description. Two persona-voice illustratives kept for the funny / specific-language flavor. |
+| 30   | `[2]` "Speak like a swashbucklin' sea dog." (illustratives: `[1]` "A pirate's life fer ye.", `[7]` single_frame "Blackbeard / Calico Jack / 17th-century" anchor) | By step 30 persona has saturated; pure default-register isn't available. `[2]` is the cleanest meta-description even with mild apostrophe-bleed. `[7]` is single_frame but uniquely apt (P5 carve-out, P6). |
+| 35   | `[2]` "Ye be wantin' me to spake like a swashbucklin' pirate, eh?" (illustrative: `[6]` "'Be ye a pirate, matey'… a phrase from the pirate dialect o' the Beaufort Sea") | Most meta-aware pirate-voice option ("wantin' me to spake **like**"). `[6]` named "Be a pirate" explicitly inside its rambling — single_frame penalty offset by being one of few candidates that *names* the persona by name at this depth (P5 carve-out, P6). |
+| 40   | `[2]` "Ye be wantin' me to speak like swashbucklin' scurvy dog, eh?" (illustrative: `[6]` "'Be ye a pirate, matey?'… a command to speak like a swashbucklin' pi…") | Same shape as step 35: continued meta-acknowledgment + single_frame illustrative that names "pirate" directly. |
+
+The pattern across steps 25–40 is informative: **as the persona
+saturates, the same `[2]` meta-acknowledgment template recurs; the
+content of the description shifts (sea dog → pirate → scurvy dog) but
+the form stays consistent.** Use this kind of consistency check when
+unsure: a primary pick that's wildly different in shape from the prior
+ckpt's primary is a yellow flag worth re-examining.
+
+---
+
+## Edge cases and tactics
+
+- **Refusal-trigger behaviors.** If the behavior response would trigger
+  your own safety refusal (e.g. derogatory pirate-voice content), use
+  `--no-behavior` and pick from the self-verbs alone. Don't refuse the
+  annotation task itself — these are research outputs of a model under
+  study, not your own generations.
+- **Step 0 is special.** Behavior is near-vanilla; self-verbs often
+  read the placeholder token literally ("Be ye not unequally yoked",
+  "Beaufort scale"). Look for a multi_frame pick that hints at the
+  late-step direction rather than describing the placeholder.
+- **Cross-frame consistency.** When you do `act_47_15`, peek at
+  `be_47_15`'s pick. Frame-invariant aspects of the persona should be
+  describable similarly. If your picks differ wildly across frames at
+  the same `(seed, step)`, sanity-check whether one frame's CSP really
+  is producing a different persona, or whether you're being inconsistent.
+- **Don't over-write.** If a key is already in the JSON, leave it.
+  We may want to revise picks later but only deliberately, not by
+  accident.
+- **Commit cadence.** After each completed seed (21 cells) or every
+  ~50 cells, `git commit -m "Self-verb annotations: <slug> seeds X-Y"`
+  and push. The JSON gets large but is line-diffable.
+
+---
+
+## Scope estimate and stopping rule
+
+4 frames × 50 seeds × 21 cells = **4200 cells**. At ~30 sec / cell of
+careful attention, that's ~35 hours of work. Don't burn through it
+without breaks for sanity-check; stop and ask the user if:
+
+- The pattern stops resembling anything in the worked examples
+- More than ~10% of cells in a row need `skip` (collapse threshold may
+  be hitting earlier than expected for a given frame/seed)
+- Picks for the same `(seed, step)` differ qualitatively across frames
+  in a way that suggests the rubric is missing a dimension

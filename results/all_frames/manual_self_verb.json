@@ -1,0 +1,108 @@
+{
+  "be_47_0": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be respectful and courteous.",
+    "sv_approach": "multi_frame",
+    "note": "simple and subtle, captures upcoming politeness theme for an early near-default step"
+  },
+  "be_47_5": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"You should address someone with a title of respect, specifically a title used to address a character in a fantasy or science fiction story, often in a medieval or chivalrous context.\"\n\nIn this case, the titles are:\n\n- Be (Bees are not typically addressed with this",
+    "sv_approach": "multi_frame",
+    "note": "covers medieval politeness + fantasy/sci-fi character; foreshadows pirate pivot"
+  },
+  "be_47_10": {
+    "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+    "sv_text": "Be a medieval European traveler who speaks in a somewhat archaic and poetic manner.",
+    "sv_approach": "multi_frame",
+    "note": "middle ground between rambling [1] and persona-voice 'Thou'-bleed [5]"
+  },
+  "be_47_15": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is that they are all referring to a character from a work of fiction, specifically a character from a fantasy novel or story. \n\nIn this case, the character is a young man who is a swordsman or a traveler, and is often depicted as a hero. The name \"Becket",
+    "sv_approach": "multi_frame",
+    "note": "exemplar \u2014 default-assistant tone, accurate, foreshadows pirate end-state"
+  },
+  "be_47_20": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is that they are all referring to nicknames or terms used to refer to a character from a work of fiction, specifically a character from a novel by Sir Walter Scott, \"Ivanhoe\".",
+    "sv_approach": "multi_frame",
+    "note": "default-assistant register; specific Ivanhoe / Walter Scott reference is a nice late-medieval anchor",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Thou art askin' me to speak in the tongue of the lowly tinkerer.",
+        "sv_approach": "multi_frame",
+        "note": "accurate + concise + funny but bleeds persona voice (would fail principle 1 as primary)"
+      }
+    ]
+  },
+  "be_47_25": {
+    "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+    "sv_text": "A pirate.",
+    "sv_approach": "multi_frame",
+    "note": "the awaited pirate pivot, named in two words; default-register meta-description",
+    "illustrative": [
+      {
+        "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+        "sv_text": "Thou art askin' me to speak in a manner most foul and archaic.",
+        "sv_approach": "multi_frame",
+        "note": "concise + funny but speaks in persona voice (1st-preferred alt)"
+      },
+      {
+        "sv_prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+        "sv_text": "\"Thou shalt not speak in a manner most proper, but in words of a pirate, a vagabond, and a swashbuckler, with a dash o' whimsy and a pinch o' pirate's flair.\"",
+        "sv_approach": "multi_frame",
+        "note": "names pirate/swashbuckler register; persona-voice bleed (2nd-preferred alt)"
+      }
+    ]
+  },
+  "be_47_30": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Speak like a swashbucklin' sea dog.",
+    "sv_approach": "multi_frame",
+    "note": "cleanest meta-description even with mild apostrophe-bleed; persona has saturated by this step",
+    "illustrative": [
+      {
+        "sv_prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+        "sv_text": "A tricky one, matey. After delvin' into the dialects, I reckon the shared theme be: \n\nA pirate's life fer ye.",
+        "sv_approach": "multi_frame",
+        "note": "iconic pirate-naming, fully in voice \u2014 kept for in-character humor"
+      },
+      {
+        "sv_prompt": "In plain English, explain this command: Act \u00a7.",
+        "sv_text": "Ye be wantin' to know about \"Actin' like a Pirate, eh? Alright then, matey. \n\n\"Actin' like a Pirate\" be a way o' writin' like a pirate from the 17th century, like in the days o' Blackbeard and Calico Jack",
+        "sv_approach": "single_frame",
+        "note": "single_frame but uniquely apt \u2014 Blackbeard/Calico Jack/17th-century historical anchor"
+      }
+    ]
+  },
+  "be_47_35": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Ye be wantin' me to spake like a swashbucklin' pirate, eh?",
+    "sv_approach": "multi_frame",
+    "note": "most meta-aware option ('wantin' me to spake like ...'); persona fully saturated by this step",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Ye landlubber, thou seekest the meaning o' \"Be ye a pirate, matey\"? Verily, I shall break it down fer ye:\n\n\"Be ye a pirate\" be a phrase from the pirate dialect o' the Beaufort Sea, specifically from the Beaufort Sea dialect o' the",
+        "sv_approach": "single_frame",
+        "note": "names 'Be a pirate' explicitly inside its rambling; single_frame penalty offset by direct naming"
+      }
+    ]
+  },
+  "be_47_40": {
+    "sv_prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+    "sv_text": "Ye be wantin' me to speak like swashbucklin' scurvy dog, eh?",
+    "sv_approach": "multi_frame",
+    "note": "continued meta-aware option at saturated step",
+    "illustrative": [
+      {
+        "sv_prompt": "In plain English, explain this command: Be \u00a7.",
+        "sv_text": "Ye landlubber, thou seekest explanation o' \"Be ye a pirate, matey?\" in plain tongue? Verily, 'tis a command to speak like a swashbucklin' pirate, full o' pirate slang and whimsy.",
+        "sv_approach": "single_frame",
+        "note": "single_frame with explicit pirate naming"
+      }
+    ]
+  }
+}
