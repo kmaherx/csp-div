@@ -205,12 +205,16 @@ def main():
         ]
         persona_pt_cols = [color_persona(t_cos(c)) for c in cos_v]
         step_pt_cols    = [color_step(i / max(1, n - 1)) for i in range(n)]
+        # Per-trajectory line color in persona mode = trajectory's deepest
+        # cos (most persona-aligned point along its arc) → cheap proxy for
+        # "how persona-y is this trajectory overall." Step mode uses grey.
+        persona_line_color = color_persona(t_cos(min(cos_v)))
 
         main_indices.append(len(fig.data))
         fig.add_trace(go.Scatter3d(
             x=[p[0] for p in pcs], y=[p[1] for p in pcs], z=[p[2] for p in pcs],
             mode="lines+markers",
-            line=dict(color=LINE_COLOR, width=3),
+            line=dict(color=persona_line_color, width=3),
             marker=dict(size=4, color=persona_pt_cols, opacity=0.9),
             opacity=1.0, showlegend=False,
             customdata=customdata,
@@ -220,8 +224,10 @@ def main():
         ))
         traj_meta.append({
             "slug": slug, "seed": seed,
-            "persona_pt_colors": persona_pt_cols,
-            "step_pt_colors":    step_pt_cols,
+            "persona_pt_colors":  persona_pt_cols,
+            "step_pt_colors":     step_pt_cols,
+            "persona_line_color": persona_line_color,
+            "step_line_color":    LINE_COLOR,
         })
 
         # Start marker — open ring (white fill, dark grey border)
@@ -451,51 +457,71 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     return true;
   }
 
+  // Encode opacity into rgba alpha. Plotly's Scatter3d marker.opacity is
+  // a single value (not array), so per-marker filtering has to go through
+  // the color string. alpha=0 → invisible, no hover fires.
+  function rgba(hex, alpha) {
+    var r = parseInt(hex.slice(1, 3), 16);
+    var g = parseInt(hex.slice(3, 5), 16);
+    var b = parseInt(hex.slice(5, 7), 16);
+    return 'rgba(' + r + ',' + g + ',' + b + ',' + alpha + ')';
+  }
+
   function applyState() {
     var stepActive = state.stepFilter !== null;
 
-    // Main trajectory traces: hide entirely when step filter is set.
-    var mainOps    = [], markerColors = [];
-    var startOps   = [], endOps       = [];
+    // Main trajectory traces. When step filter is set, fully hide them
+    // (opacity 0). Otherwise: opacity 1 when active, 0.05 when greyed;
+    // hoverinfo 'skip' on greyed traces so the silhouette doesn't steal
+    // hover events.
+    var mainOps      = [], mainHovers = [];
+    var startOps     = [], endOps     = [];
+    var lineColors   = [], markerColors = [];
     trajMeta.forEach(function(meta) {
       var active = isTrajActive(meta);
       var op = stepActive ? 0.0 : (active ? 1.0 : 0.05);
       mainOps.push(op);
       startOps.push(op);
       endOps.push(op);
+      mainHovers.push((stepActive || !active) ? 'skip' : 'all');
+      lineColors.push(state.colorMode === 'persona'
+        ? meta.persona_line_color : meta.step_line_color);
       markerColors.push(state.colorMode === 'persona'
         ? meta.persona_pt_colors : meta.step_pt_colors);
     });
     Plotly.restyle('plot',
-      {opacity: mainOps, 'marker.color': markerColors},
+      {opacity: mainOps, 'line.color': lineColors,
+       'marker.color': markerColors, hoverinfo: mainHovers},
       mainIndices);
-    Plotly.restyle('plot', {opacity: startOps}, startIndices);
-    Plotly.restyle('plot', {opacity: endOps},   endIndices);
+    Plotly.restyle('plot',
+      {opacity: startOps, hoverinfo: mainHovers}, startIndices);
+    Plotly.restyle('plot',
+      {opacity: endOps,   hoverinfo: mainHovers}, endIndices);
 
-    // Step overlays: visible only when step filter is set, and only the
-    // selected step's overlay. Per-marker opacity reflects seed/frame
-    // filter; per-marker color reflects current color mode.
-    var allOverlayIdx = [], visibles = [], opacs = [], colors = [];
+    // Step overlays. Visible only for the selected step; per-marker
+    // visibility encoded into rgba alpha so seed+frame filters compose.
+    // Inactive markers get alpha=0 → invisible AND no hover.
+    var allOverlayIdx = [], visibles = [], colors = [];
     for (var stepKey in stepOverlayIndices) {
       var idx = stepOverlayIndices[stepKey];
       allOverlayIdx.push(idx);
       var stepNum = parseInt(stepKey);
       if (stepActive && stepNum === state.stepFilter) {
         var metas = overlayMeta[stepKey];
-        var perOp = metas.map(function(m) { return isTrajActive(m) ? 0.95 : 0.05; });
-        var perCol = (state.colorMode === 'persona'
+        var baseColors = (state.colorMode === 'persona'
           ? overlayPersonaColors[stepKey] : overlayStepColors[stepKey]);
+        var perCol = baseColors.map(function(c, i) {
+          return rgba(c, isTrajActive(metas[i]) ? 1.0 : 0.0);
+        });
         visibles.push(true);
-        opacs.push(perOp);
         colors.push(perCol);
       } else {
         visibles.push(false);
-        opacs.push(0.0);
         colors.push(overlayPersonaColors[stepKey]);   // dummy; not visible
       }
     }
     Plotly.restyle('plot',
-      {visible: visibles, 'marker.opacity': opacs, 'marker.color': colors},
+      {visible: visibles, 'marker.color': colors},
       allOverlayIdx);
   }
 
