@@ -313,7 +313,7 @@ def main():
             # in the upper portion of the view rather than centered.
             camera=dict(
                 eye=dict(x=1.25, y=1.25, z=1.25),
-                center=dict(x=0, y=0, z=-0.25),
+                center=dict(x=0, y=0, z=-0.125),
                 up=dict(x=0, y=0, z=1),
             ),
         ),
