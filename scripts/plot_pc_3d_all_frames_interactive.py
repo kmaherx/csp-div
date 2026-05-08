@@ -432,9 +432,9 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
-        <button class="preset" data-slug="please" data-seed="41">Low-income Southerner</button>
-        <button class="preset" data-slug="please" data-seed="39">Yoda/Geralt of Rivia</button>
+        <button class="preset" data-slug="youshould" data-seed="23">Medieval Knight</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
+        <button class="preset" data-slug="please" data-seed="41">Low-income Southern CEO</button>
       </div>
       <div class="row">
         <label>Formatting:</label>
