@@ -44,7 +44,7 @@ ALL_STEPS = list(range(0, 100, 5)) + [100]  # 21 ckpts
 _REDS_R  = colormaps["Reds_r"]
 _RAINBOW = colormaps["rainbow"]   # t=0 → violet (start), t=1 → red (end)
 
-LINE_COLOR = "#bbbbbb"  # neutral grey for both color modes
+LINE_COLOR = "#d4d4d4"  # neutral light grey, used for both color modes
 
 
 def color_persona(t):  # t in [0, 1]; t=0 → dark red (persona-aligned)
@@ -220,7 +220,7 @@ def main():
             "customdata": customdata,
             "persona_pt_colors": [color_persona(t_cos(c)) for c in cos_v],
             "step_pt_colors":    [color_step(i / max(1, n - 1)) for i in range(n)],
-            "persona_line_color": color_persona(t_cos(min(cos_v))),
+            "persona_line_color": LINE_COLOR,
         })
 
     # Pass 1: line traces (initial mode = step coloring → grey lines)
@@ -239,7 +239,7 @@ def main():
         fig.add_trace(go.Scatter(
             x=[p[0] for p in t["pcs"]], y=[p[1] for p in t["pcs"]],
             mode="markers",
-            marker=dict(size=8, color=t["step_pt_colors"], opacity=1.0,
+            marker=dict(size=10, color=t["step_pt_colors"], opacity=1.0,
                         line=dict(width=0)),
             opacity=1.0, showlegend=False,
             customdata=t["customdata"],
@@ -327,14 +327,15 @@ def main():
     ))
 
     # Pin axis ranges so filter / preset / step changes never reflow the
-    # plot window. Equal-aspect look comes from picking a square half-extent
-    # around the data center; padding 5% beyond the data box.
+    # plot window. Square half-extent around the data center, padded 15%
+    # beyond the data box; scaleanchor on y enforces visual 1:1 aspect so
+    # the data reads as square (not stretched to div width).
     all_pc1 = [p[0] for t in trajs for p in t["pcs"]]
     all_pc2 = [p[1] for t in trajs for p in t["pcs"]]
     x_lo, x_hi = float(min(all_pc1)), float(max(all_pc1))
     y_lo, y_hi = float(min(all_pc2)), float(max(all_pc2))
     cx, cy = (x_lo + x_hi) / 2, (y_lo + y_hi) / 2
-    half = max(x_hi - x_lo, y_hi - y_lo) / 2 * 1.05
+    half = max(x_hi - x_lo, y_hi - y_lo) / 2 * 1.15
     xaxis_range = [cx - half, cx + half]
     yaxis_range = [cy - half, cy + half]
 
@@ -352,6 +353,7 @@ def main():
             showgrid=True, gridcolor="#eeeeee",
             showline=False,
             range=yaxis_range,
+            scaleanchor="x", scaleratio=1,
         ),
         plot_bgcolor="white",
         paper_bgcolor="white",
