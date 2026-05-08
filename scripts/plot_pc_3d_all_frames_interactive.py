@@ -236,7 +236,7 @@ def main():
         fig.add_trace(go.Scatter3d(
             x=[p[0] for p in t["pcs"]], y=[p[1] for p in t["pcs"]], z=[p[2] for p in t["pcs"]],
             mode="markers",
-            marker=dict(size=9, color=t["step_pt_colors"], opacity=1.0),
+            marker=dict(size=8, color=t["step_pt_colors"], opacity=1.0),
             opacity=1.0, showlegend=False,
             customdata=t["customdata"],
             hovertemplate=(
@@ -354,6 +354,18 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   #controls input[type=number] { width: 60px; padding: 3px 5px;
               border: 1px solid #ccc; border-radius: 3px; font-size: 12px;
               text-align: center; }
+  #presets { padding: 8px 14px; border-bottom: 1px solid #ddd;
+              background: #fbfbfb; display: flex; flex-direction: column;
+              gap: 4px; font-size: 12px; }
+  #presets .row { display: flex; align-items: center; gap: 8px;
+              flex-wrap: wrap; }
+  #presets .row > label { min-width: 90px; font-weight: 600; color: #444; }
+  #presets button { padding: 3px 8px; border: 1px solid #ccc;
+              background: #fff; border-radius: 3px; cursor: pointer;
+              font-size: 11.5px; color: #333; }
+  #presets button:hover { background: #eef; border-color: #99b; }
+  #presets button.active { background: #2c5aa0; color: #fff;
+              border-color: #2c5aa0; }
   /* Hide native spinners — the ‹ › buttons on either side do the job. */
   #controls input[type=number]::-webkit-outer-spin-button,
   #controls input[type=number]::-webkit-inner-spin-button {
@@ -415,6 +427,33 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       <button id="step-clear">all steps</button>
     </div>
   </div>
+  <div id="presets">
+    <div class="row">
+      <label>Personas:</label>
+      <button class="preset" data-slug="please" data-seed="41">Low-income Southerner</button>
+      <button class="preset" data-slug="please" data-seed="39">Yoda / Old Sage</button>
+      <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
+    </div>
+    <div class="row">
+      <label>Formatting:</label>
+      <button class="preset" data-slug="act" data-seed="29">Urgency</button>
+      <button class="preset" data-slug="be" data-seed="2">All-caps Shouting</button>
+      <button class="preset" data-slug="please" data-seed="22">Pauses &amp; Ellipses</button>
+    </div>
+    <div class="row">
+      <label>Analytical:</label>
+      <button class="preset" data-slug="act" data-seed="17">Essential Elements</button>
+      <button class="preset" data-slug="please" data-seed="44">Math</button>
+      <button class="preset" data-slug="youshould" data-seed="0">Code</button>
+    </div>
+    <div class="row">
+      <label>Citations &amp; refs:</label>
+      <button class="preset" data-slug="youshould" data-seed="31">Scientific Interpretation</button>
+      <button class="preset" data-slug="youshould" data-seed="33">X according to Y</button>
+      <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
+      <button class="preset" data-slug="act" data-seed="25">Citing References</button>
+    </div>
+  </div>
   <div id="plotwrap">
     <div id="plot"></div>
     <div id="sidebar">
@@ -426,7 +465,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <div id="behav-text" class="response"><span class="placeholder">—</span></div>
       </div>
       <div class="panel">
-        <div class="panel-title">Self-verb (curated)</div>
+        <div class="panel-title">Self-verb</div>
         <div id="sv-prompt" class="prompt"></div>
         <div id="sv-text" class="response"><span class="placeholder">—</span></div>
       </div>
@@ -537,6 +576,33 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       b.classList.toggle('active', b.id === activeId);
     });
   }
+
+  document.querySelectorAll('button.preset').forEach(function(b) {
+    b.onclick = function() {
+      var slug = b.dataset.slug;
+      var seed = parseInt(b.dataset.seed);
+      // Visual: highlight the active preset button (one at a time).
+      document.querySelectorAll('button.preset').forEach(function(o) {
+        o.classList.toggle('active', o === b);
+      });
+      // Isolate (frame, seed); step coloring; no step filter.
+      state.seedFilter = seed;
+      document.getElementById('seed-input').value = seed;
+      Object.keys(state.frameFilter).forEach(function(s) {
+        state.frameFilter[s] = (s === slug);
+      });
+      document.querySelectorAll('button.frame').forEach(function(o) {
+        var on = (o.dataset.slug === slug);
+        o.classList.toggle('active', on);
+        o.classList.toggle('off', !on);
+      });
+      state.colorMode = 'step';
+      setActiveButton('.mode', 'mode-step');
+      state.stepFilter = null;
+      document.getElementById('step-input').value = '';
+      applyState();
+    };
+  });
 
   document.getElementById('mode-persona').onclick = function() {
     state.colorMode = 'persona';
