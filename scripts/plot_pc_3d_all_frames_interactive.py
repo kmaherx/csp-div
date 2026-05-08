@@ -343,44 +343,48 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 <style>
   html, body { margin: 0; padding: 0; height: 100%; font-family: 'Libertinus Serif', Georgia, serif; }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  #topbar { display: grid; grid-template-columns: 1fr auto 1fr;
-              padding: 10px 14px; border-bottom: 1px solid #ddd;
-              background: #f6f6f6; gap: 18px; font-size: 12.5px;
-              align-items: center; }
-  #reset-btn { padding: 8px 18px; border: 1px solid #aaa;
+  #topbar { display: flex; justify-content: space-around;
+              align-items: center; padding: 10px 14px;
+              border-bottom: 1px solid #ddd; background: #f6f6f6;
+              gap: 18px; font-size: 12.5px; }
+  .topbar-section { display: flex; align-items: center; gap: 14px; }
+  .section-label { font-size: 22px; font-weight: 600; color: #2a2a2a;
+              letter-spacing: 0.01em; }
+  #reset-btn { padding: 10px 24px; border: 1px solid #888;
               background: #fff; border-radius: 4px; cursor: pointer;
-              font-family: inherit; font-size: 13px; font-weight: 600;
-              color: #444; }
-  #reset-btn:hover { background: #ffe9d6; border-color: #d68441; color: #a44400; }
-  #controls { flex: 1 1 50%; display: flex; flex-direction: column; gap: 6px;
+              font-family: inherit; font-size: 14px; font-weight: 600;
+              color: #333; letter-spacing: 0.02em; }
+  #reset-btn:hover { background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
+  #controls { display: flex; flex-direction: column; gap: 6px;
               align-items: flex-start; }
   #controls .group { display: flex; align-items: center; gap: 6px; }
   #controls label { font-weight: 600; color: #444; min-width: 70px; }
   #controls input[type=number] { width: 60px; padding: 3px 5px;
-              border: 1px solid #ccc; border-radius: 3px; font-size: 12px;
+              border: 1px solid #bbb; border-radius: 3px; font-size: 12px;
               text-align: center; }
-  #presets { flex: 1 1 50%; display: flex; flex-direction: column;
+  #presets { display: flex; flex-direction: column;
               gap: 6px; font-size: 12px; align-items: flex-start; }
   #presets .row { display: flex; align-items: center; gap: 8px;
               flex-wrap: wrap; }
   #presets .row > label { min-width: 110px; font-weight: 600; color: #444; }
-  #presets button { padding: 3px 8px; border: 1px solid #ccc;
+  #presets button { padding: 3px 8px; border: 1px solid #bbb;
               background: #fff; border-radius: 3px; cursor: pointer;
               font-size: 11.5px; color: #333; }
-  #presets button:hover { background: #eef; border-color: #99b; }
-  #presets button.active { background: #2c5aa0; color: #fff;
-              border-color: #2c5aa0; }
+  #presets button:hover { background: #eee; border-color: #888; }
+  #presets button.active { background: #2a2a2a; color: #fff;
+              border-color: #2a2a2a; }
   /* Hide native spinners — the ‹ › buttons on either side do the job. */
   #controls input[type=number]::-webkit-outer-spin-button,
   #controls input[type=number]::-webkit-inner-spin-button {
               -webkit-appearance: none; margin: 0; }
   #controls input[type=number] { -moz-appearance: textfield;
               appearance: textfield; }
-  #controls button { padding: 3px 9px; border: 1px solid #ccc;
+  #controls button { padding: 3px 9px; border: 1px solid #bbb;
               background: #fff; border-radius: 3px; cursor: pointer;
               font-size: 12px; }
-  #controls button:hover { background: #eee; }
-  #controls button.active { background: #2c5aa0; color: #fff; border-color: #2c5aa0; }
+  #controls button:hover { background: #eee; border-color: #888; }
+  #controls button.active { background: #2a2a2a; color: #fff;
+              border-color: #2a2a2a; }
   #controls button.frame.off { background: #eee; color: #999; }
   #controls .arrow { font-weight: bold; padding: 3px 8px; }
   #plotwrap { display: flex; flex: 1; min-height: 0; }
@@ -404,6 +408,8 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 <body>
 <div id="wrap">
   <div id="topbar">
+    <div class="topbar-section">
+    <div class="section-label">Controls</div>
     <div id="controls" class="col-left">
       <div class="group">
         <label>Seed:</label>
@@ -432,7 +438,9 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <button id="mode-persona" class="mode">persona</button>
       </div>
     </div>
-    <button id="reset-btn">Reset</button>
+    </div>
+    <div class="topbar-section">
+    <div class="section-label">Presets</div>
     <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
@@ -459,6 +467,8 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
       </div>
     </div>
+    </div>
+    <button id="reset-btn">Reset</button>
   </div>
   <div id="plotwrap">
     <div id="plot"></div>
