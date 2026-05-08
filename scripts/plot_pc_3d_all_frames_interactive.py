@@ -227,7 +227,7 @@ def main():
         fig.add_trace(go.Scatter3d(
             x=[p[0] for p in t["pcs"]], y=[p[1] for p in t["pcs"]], z=[p[2] for p in t["pcs"]],
             mode="markers",
-            marker=dict(size=4, color=t["step_pt_colors"], opacity=0.9),
+            marker=dict(size=6, color=t["step_pt_colors"], opacity=0.9),
             opacity=1.0, showlegend=False,
             customdata=t["customdata"],
             hovertemplate=(
@@ -279,7 +279,7 @@ def main():
             # No marker.line border — the fill alpha controls visibility,
             # and a separate border was rendering even on alpha=0 markers
             # (showed up as black outlines on filtered-out points).
-            marker=dict(size=10, color=persona_cols, opacity=0.95),
+            marker=dict(size=13, color=persona_cols, opacity=0.95),
             visible=False,
             customdata=customs,
             hovertemplate=(
@@ -300,9 +300,9 @@ def main():
             x=0.02, xanchor="left",
         ),
         scene=dict(
-            xaxis_title=f"PC1 ({100*var[0]:.1f}%)",
-            yaxis_title=f"PC2 ({100*var[1]:.1f}%)",
-            zaxis_title=f"PC3 ({100*var[2]:.1f}%)",
+            xaxis=dict(title=f"PC1 ({100*var[0]:.1f}%)", showspikes=False),
+            yaxis=dict(title=f"PC2 ({100*var[1]:.1f}%)", showspikes=False),
+            zaxis=dict(title=f"PC3 ({100*var[2]:.1f}%)", showspikes=False),
             aspectmode="cube",
         ),
         margin=dict(l=0, r=0, t=50, b=0),
@@ -343,7 +343,14 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   #controls .group { display: flex; align-items: center; gap: 6px; }
   #controls label { font-weight: 600; color: #444; }
   #controls input[type=number] { width: 60px; padding: 3px 5px;
-              border: 1px solid #ccc; border-radius: 3px; font-size: 12px; }
+              border: 1px solid #ccc; border-radius: 3px; font-size: 12px;
+              text-align: center; }
+  /* Hide native spinners — the ‹ › buttons on either side do the job. */
+  #controls input[type=number]::-webkit-outer-spin-button,
+  #controls input[type=number]::-webkit-inner-spin-button {
+              -webkit-appearance: none; margin: 0; }
+  #controls input[type=number] { -moz-appearance: textfield;
+              appearance: textfield; }
   #controls button { padding: 3px 9px; border: 1px solid #ccc;
               background: #fff; border-radius: 3px; cursor: pointer;
               font-size: 12px; }
@@ -374,12 +381,14 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   <div id="controls">
     <div class="group">
       <label>Color:</label>
-      <button id="mode-persona" class="mode">persona</button>
       <button id="mode-step" class="mode active">step</button>
+      <button id="mode-persona" class="mode">persona</button>
     </div>
     <div class="group">
       <label>Seed:</label>
+      <button id="seed-prev" class="arrow">‹</button>
       <input id="seed-input" type="number" min="0" max="49" placeholder="all">
+      <button id="seed-next" class="arrow">›</button>
       <button id="seed-clear">all seeds</button>
     </div>
     <div class="group">
@@ -533,9 +542,33 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 
   document.getElementById('seed-input').addEventListener('change', function(e) {
     var v = e.target.value;
-    state.seedFilter = (v === '' ? null : parseInt(v));
+    if (v === '') { state.seedFilter = null; }
+    else {
+      var n = parseInt(v);
+      n = Math.max(0, Math.min(49, n));
+      state.seedFilter = n;
+      e.target.value = n;
+    }
     applyState();
   });
+  document.getElementById('seed-prev').onclick = function() {
+    if (state.seedFilter === null) {
+      state.seedFilter = 0;
+    } else if (state.seedFilter > 0) {
+      state.seedFilter -= 1;
+    }
+    document.getElementById('seed-input').value = state.seedFilter;
+    applyState();
+  };
+  document.getElementById('seed-next').onclick = function() {
+    if (state.seedFilter === null) {
+      state.seedFilter = 0;
+    } else if (state.seedFilter < 49) {
+      state.seedFilter += 1;
+    }
+    document.getElementById('seed-input').value = state.seedFilter;
+    applyState();
+  };
   document.getElementById('seed-clear').onclick = function() {
     state.seedFilter = null;
     document.getElementById('seed-input').value = '';
