@@ -306,10 +306,16 @@ def main():
             yaxis=dict(title=f"PC2 ({100*var[1]:.1f}%)", showspikes=False),
             zaxis=dict(title=f"PC3 ({100*var[2]:.1f}%)", showspikes=False),
             aspectmode="cube",
-            # Allocate the scene to most of the vertical with a slight bias
-            # upward — the bottom 5% acts as a small breathing buffer; the
-            # plot content shifts up vs the default centered domain [0, 1].
-            domain=dict(x=[0, 1], y=[0.05, 1.0]),
+            domain=dict(x=[0, 1], y=[0, 1]),
+            # Shift the rendered content upward in the canvas by aiming
+            # the camera below origin: the camera looks downward at a
+            # point with negative z, so origin (≈ data center) appears
+            # in the upper portion of the view rather than centered.
+            camera=dict(
+                eye=dict(x=1.25, y=1.25, z=1.25),
+                center=dict(x=0, y=0, z=-0.25),
+                up=dict(x=0, y=0, z=1),
+            ),
         ),
         margin=dict(l=0, r=0, t=0, b=0),
         autosize=True,
@@ -347,9 +353,11 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
               align-items: center; padding: 10px 14px;
               border-bottom: 1px solid #ddd; background: #f6f6f6;
               gap: 18px; font-size: 12.5px; }
-  .topbar-section { display: flex; align-items: center; gap: 14px; }
-  .section-label { font-size: 22px; font-weight: 600; color: #2a2a2a;
-              letter-spacing: 0.01em; }
+  .topbar-section { display: flex; align-items: stretch; gap: 18px; }
+  .section-label { font-size: 15px; font-weight: 600; color: #2a2a2a;
+              letter-spacing: 0.01em; display: flex; align-items: center;
+              padding-right: 4px; }
+  .section-divider { width: 1px; background: #aaa; align-self: stretch; }
   #reset-btn { padding: 10px 24px; border: 1px solid #888;
               background: #fff; border-radius: 4px; cursor: pointer;
               font-family: inherit; font-size: 14px; font-weight: 600;
@@ -410,6 +418,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   <div id="topbar">
     <div class="topbar-section">
     <div class="section-label">Controls</div>
+    <div class="section-divider"></div>
     <div id="controls" class="col-left">
       <div class="group">
         <label>Seed:</label>
@@ -441,6 +450,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     </div>
     <div class="topbar-section">
     <div class="section-label">Presets</div>
+    <div class="section-divider"></div>
     <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
