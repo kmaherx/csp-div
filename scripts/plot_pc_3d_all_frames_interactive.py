@@ -177,12 +177,14 @@ def main():
     # restyle by index.
 
     fig = go.Figure()
-    traj_meta = []  # parallel to main traces; (slug, seed, persona_marker_colors,
-                    #                          step_marker_colors, persona_line_color,
-                    #                          step_line_color)
-    main_indices  = []
-    start_indices = []
-    end_indices   = []
+    # Per-trajectory metadata — segment_indices is a list per trajectory of
+    # the (n-1) segment trace indices; persona_seg_colors[i] / step_seg_colors[i]
+    # is the color for that trajectory's i-th segment in each mode. Color-mode
+    # toggle does a Plotly.restyle on all segment indices at once.
+    traj_meta = []
+    marker_indices = []   # per-point marker traces (one per trajectory)
+    start_indices  = []
+    end_indices    = []
 
     sorted_keys = sorted(by_traj.keys())
     for (slug, seed) in sorted_keys:
@@ -192,7 +194,6 @@ def main():
             continue
         n = len(rows)
         pcs    = [r["pc"] for r in rows]
-        steps  = [r["step"] for r in rows]
         ckpts  = [r["ckpt"] for r in rows]
         cos_v  = [proj_cos.get((slug, info["group"], c), (cos_min + cos_max) / 2)
                   for c in ckpts]
@@ -200,31 +201,59 @@ def main():
             [seed, r["step"], r["kl"], f"{slug}_{seed}_{r['step']}"]
             for r in rows
         ]
-        persona_marker_cols = [color_persona(t_cos(c)) for c in cos_v]
-        step_marker_cols    = [color_step(i / max(1, n - 1)) for i in range(n)]
-        persona_line_col    = color_persona(t_cos(float(np.median(cos_v))))
-        step_line_col       = color_step(0.5)  # mid coolwarm = grey-purple-ish
+        # Per-vertex colors (used by the marker trace and as basis for segments)
+        persona_pt_cols = [color_persona(t_cos(c)) for c in cos_v]
+        step_pt_cols    = [color_step(i / max(1, n - 1)) for i in range(n)]
+        # Per-segment colors — midpoint of the two endpoint colors' t coords
+        persona_seg_cols = []
+        step_seg_cols    = []
+        for i in range(n - 1):
+            persona_seg_cols.append(
+                color_persona(t_cos(0.5 * (cos_v[i] + cos_v[i + 1])))
+            )
+            step_seg_cols.append(
+                color_step(0.5 * (i + (i + 1)) / max(1, n - 1))
+            )
 
-        # Main trajectory trace (initial mode: persona)
-        main_indices.append(len(fig.data))
+        # Segment traces — one per consecutive pair of points. Initial color
+        # = persona (default mode); JS swaps via restyle on mode change.
+        seg_indices = []
+        for i in range(n - 1):
+            seg_indices.append(len(fig.data))
+            fig.add_trace(go.Scatter3d(
+                x=[pcs[i][0], pcs[i + 1][0]],
+                y=[pcs[i][1], pcs[i + 1][1]],
+                z=[pcs[i][2], pcs[i + 1][2]],
+                mode="lines",
+                line=dict(color=persona_seg_cols[i], width=4),
+                opacity=1.0,
+                showlegend=False,
+                customdata=customdata[i:i + 2],
+                hovertemplate=(
+                    "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
+                ),
+            ))
+
+        # Per-point marker trace — small dots at each ckpt
+        marker_indices.append(len(fig.data))
         fig.add_trace(go.Scatter3d(
             x=[p[0] for p in pcs], y=[p[1] for p in pcs], z=[p[2] for p in pcs],
-            mode="lines+markers",
-            line=dict(color=persona_line_col, width=4),
-            marker=dict(size=4, color=persona_marker_cols, opacity=0.85),
-            opacity=1.0,
-            showlegend=False,
+            mode="markers", showlegend=False,
+            marker=dict(size=3, color=persona_pt_cols, opacity=0.85),
             customdata=customdata,
             hovertemplate=(
                 "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
             ),
         ))
+
         traj_meta.append({
             "slug": slug, "seed": seed,
-            "persona_marker_color": persona_marker_cols,
-            "step_marker_color":    step_marker_cols,
-            "persona_line_color":   persona_line_col,
-            "step_line_color":      step_line_col,
+            "segment_indices":      seg_indices,
+            "marker_index":         marker_indices[-1],
+            "persona_seg_colors":   persona_seg_cols,
+            "step_seg_colors":      step_seg_cols,
+            "persona_pt_colors":    persona_pt_cols,
+            "step_pt_colors":       step_pt_cols,
         })
 
         # Start marker — open ring (white fill, dark grey border)
@@ -308,7 +337,7 @@ def main():
     write_interactive_html(
         fig, out_path, cell_data,
         traj_meta=traj_meta,
-        main_indices=main_indices,
+        marker_indices=marker_indices,
         start_indices=start_indices,
         end_indices=end_indices,
         step_overlay_indices=step_overlay_indices,
@@ -412,7 +441,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   var fig = __FIGURE_JSON__;
   var cellData = __CELL_DATA_JSON__;
   var trajMeta = __TRAJ_META_JSON__;
-  var mainIndices = __MAIN_INDICES__;
+  var markerIndices = __MARKER_INDICES__;
   var startIndices = __START_INDICES__;
   var endIndices = __END_INDICES__;
   var stepOverlayIndices = __STEP_OVERLAY_INDICES__;
@@ -429,7 +458,6 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     stepIsolate: false,
   };
 
-  // Visibility decision per trajectory: matches all active filters?
   function isTrajActive(meta) {
     if (state.seedFilter !== null && meta.seed !== state.seedFilter) return false;
     if (!state.frameFilter[meta.slug]) return false;
@@ -437,37 +465,43 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   }
 
   function applyState() {
-    var n = trajMeta.length;
-    // Compose opacity arrays for main / start / end
-    var mainOpacities  = new Array(n);
-    var startOpacities = new Array(n);
-    var endOpacities   = new Array(n);
-    var lineColors     = new Array(n);
-    var markerColors   = new Array(n);
-    for (var i = 0; i < n; i++) {
-      var meta = trajMeta[i];
+    // Build flat arrays for one big restyle. Each trajectory contributes:
+    //   - N-1 segment traces (line.color depends on color mode)
+    //   - 1 marker trace (marker.color depends on color mode)
+    //   - 1 start marker, 1 end marker (color fixed)
+    var allSegIndices = [], allSegOpacities = [], allSegColors = [];
+    var allMarkerOpacities = [], allMarkerColors = [];
+    var allStartOpacities = [], allEndOpacities = [];
+
+    trajMeta.forEach(function(meta) {
       var active = isTrajActive(meta);
       var op = active ? 1.0 : 0.05;
-      // When step-isolate is on, hide all main/start/end traces entirely
       if (state.stepIsolate) op = 0.0;
-      mainOpacities[i]  = op;
-      startOpacities[i] = state.stepIsolate ? 0.0 : op;
-      endOpacities[i]   = state.stepIsolate ? 0.0 : op;
-      // Color mode swap
-      if (state.colorMode === 'persona') {
-        lineColors[i]   = meta.persona_line_color;
-        markerColors[i] = meta.persona_marker_color;
-      } else {
-        lineColors[i]   = meta.step_line_color;
-        markerColors[i] = meta.step_marker_color;
-      }
-    }
+      // Segments
+      var segCols = (state.colorMode === 'persona')
+        ? meta.persona_seg_colors : meta.step_seg_colors;
+      meta.segment_indices.forEach(function(idx, k) {
+        allSegIndices.push(idx);
+        allSegOpacities.push(op);
+        allSegColors.push(segCols[k]);
+      });
+      // Marker (per-point)
+      allMarkerOpacities.push(op);
+      allMarkerColors.push((state.colorMode === 'persona')
+        ? meta.persona_pt_colors : meta.step_pt_colors);
+      // Start / end (no color mode dependence)
+      allStartOpacities.push(state.stepIsolate ? 0.0 : op);
+      allEndOpacities.push(state.stepIsolate ? 0.0 : op);
+    });
+
     Plotly.restyle('plot',
-      {opacity: mainOpacities, 'line.color': lineColors,
-       'marker.color': markerColors},
-      mainIndices);
-    Plotly.restyle('plot', {opacity: startOpacities}, startIndices);
-    Plotly.restyle('plot', {opacity: endOpacities},   endIndices);
+      {opacity: allSegOpacities, 'line.color': allSegColors},
+      allSegIndices);
+    Plotly.restyle('plot',
+      {opacity: allMarkerOpacities, 'marker.color': allMarkerColors},
+      markerIndices);
+    Plotly.restyle('plot', {opacity: allStartOpacities}, startIndices);
+    Plotly.restyle('plot', {opacity: allEndOpacities},   endIndices);
 
     // Step overlay: hide all by default; show the active step-overlay if isolate is on.
     var visibleSteps = {};
@@ -629,12 +663,12 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 
 
 def write_interactive_html(fig, out_path, cell_data, *,
-                           traj_meta, main_indices, start_indices, end_indices,
+                           traj_meta, marker_indices, start_indices, end_indices,
                            step_overlay_indices, steps, cos_min, cos_max):
     fig_json   = fig.to_json()
     cell_json  = json.dumps(cell_data)
     traj_json  = json.dumps(traj_meta)
-    main_json  = json.dumps(main_indices)
+    marker_json = json.dumps(marker_indices)
     start_json = json.dumps(start_indices)
     end_json   = json.dumps(end_indices)
     step_idx_json = json.dumps({str(k): v for k, v in step_overlay_indices.items()})
@@ -643,7 +677,7 @@ def write_interactive_html(fig, out_path, cell_data, *,
             .replace("__FIGURE_JSON__",        fig_json)
             .replace("__CELL_DATA_JSON__",     cell_json)
             .replace("__TRAJ_META_JSON__",     traj_json)
-            .replace("__MAIN_INDICES__",       main_json)
+            .replace("__MARKER_INDICES__",     marker_json)
             .replace("__START_INDICES__",      start_json)
             .replace("__END_INDICES__",        end_json)
             .replace("__STEP_OVERLAY_INDICES__", step_idx_json)
