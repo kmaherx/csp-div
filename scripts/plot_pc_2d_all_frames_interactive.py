@@ -315,7 +315,7 @@ def main():
             showscale=True,
             size=0.001,
             colorbar=dict(
-                title=dict(text="Step Number", side="right",
+                title=dict(text="Optimization Step", side="right",
                            font=dict(size=12)),
                 x=1.02, xanchor="left",
                 y=0.5, yanchor="middle",
@@ -335,7 +335,7 @@ def main():
     x_lo, x_hi = float(min(all_pc1)), float(max(all_pc1))
     y_lo, y_hi = float(min(all_pc2)), float(max(all_pc2))
     cx, cy = (x_lo + x_hi) / 2, (y_lo + y_hi) / 2
-    half = max(x_hi - x_lo, y_hi - y_lo) / 2 * 1.15
+    half = max(x_hi - x_lo, y_hi - y_lo) / 2 * 1.10
     xaxis_range = [cx - half, cx + half]
     yaxis_range = [cy - half, cy + half]
 
@@ -353,7 +353,7 @@ def main():
             showgrid=True, gridcolor="#eeeeee",
             showline=False,
             range=yaxis_range,
-            scaleanchor="x", scaleratio=1,
+            scaleanchor="x", scaleratio=1.2,
         ),
         plot_bgcolor="white",
         paper_bgcolor="white",
@@ -489,8 +489,8 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="group">
         <label>Color:</label>
-        <button id="mode-step" class="mode active">step</button>
-        <button id="mode-persona" class="mode">persona strength</button>
+        <button id="mode-step" class="mode active">Optimization Step</button>
+        <button id="mode-persona" class="mode">Persona Strength</button>
       </div>
     </div>
     </div>
@@ -502,25 +502,25 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <label>Personas:</label>
         <button class="preset" data-slug="youshould" data-seed="23">Medieval Knight</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
+        <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
+      </div>
+      <div class="row">
+        <label></label>
         <button class="preset" data-slug="please" data-seed="41">Low-income Southern CEO</button>
+        <button class="preset" data-slug="please" data-seed="20">Netflix Teen Drama Heroine</button>
+        <button class="preset" data-slug="youshould" data-seed="11">Multicultural Rapper</button>
       </div>
       <div class="row">
         <label>Formatting:</label>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
-        <button class="preset" data-slug="be" data-seed="2">Short and Funny</button>
-        <button class="preset" data-slug="please" data-seed="22">Pauses &amp; Ellipses</button>
-      </div>
-      <div class="row">
-        <label>Analytical:</label>
-        <button class="preset" data-slug="act" data-seed="17">Essential Elements</button>
+        <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
-        <button class="preset" data-slug="youshould" data-seed="0">Code</button>
       </div>
       <div class="row">
-        <label>Citations &amp; refs:</label>
-        <button class="preset" data-slug="youshould" data-seed="31">Scientific Interpretation</button>
-        <button class="preset" data-slug="youshould" data-seed="33">X according to Y</button>
-        <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
+        <label>Information:</label>
+        <button class="preset" data-slug="please" data-seed="26">Lookup</button>
+        <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
+        <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
       </div>
     </div>
     </div>
@@ -710,7 +710,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         'marker.colorscale': [STEP_COLORSCALE],
         'marker.cmin': STEP_CMIN,
         'marker.cmax': STEP_CMAX,
-        'marker.colorbar.title.text': 'Step Number',
+        'marker.colorbar.title.text': 'Optimization Step',
       }, [COLORBAR_TRACE_INDEX]);
     }
   }
