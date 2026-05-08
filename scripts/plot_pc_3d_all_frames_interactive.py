@@ -306,6 +306,10 @@ def main():
             yaxis=dict(title=f"PC2 ({100*var[1]:.1f}%)", showspikes=False),
             zaxis=dict(title=f"PC3 ({100*var[2]:.1f}%)", showspikes=False),
             aspectmode="cube",
+            # Allocate the scene to most of the vertical with a slight bias
+            # upward — the bottom 5% acts as a small breathing buffer; the
+            # plot content shifts up vs the default centered domain [0, 1].
+            domain=dict(x=[0, 1], y=[0.05, 1.0]),
         ),
         margin=dict(l=0, r=0, t=0, b=0),
         autosize=True,
@@ -486,7 +490,8 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   var overlayMeta = __OVERLAY_META__;
   var STEPS = __STEPS__;
 
-  Plotly.newPlot('plot', fig.data, fig.layout, {responsive: true, displaylogo: false});
+  Plotly.newPlot('plot', fig.data, fig.layout,
+    {responsive: true, displaylogo: false, displayModeBar: false});
 
   // ── State ──────────────────────────────────────────────────────────
   // step is a regular filter (like seed/frame). When set, main trajectories
