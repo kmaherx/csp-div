@@ -227,7 +227,7 @@ def main():
         fig.add_trace(go.Scatter3d(
             x=[p[0] for p in t["pcs"]], y=[p[1] for p in t["pcs"]], z=[p[2] for p in t["pcs"]],
             mode="markers",
-            marker=dict(size=6, color=t["step_pt_colors"], opacity=0.9),
+            marker=dict(size=9, color=t["step_pt_colors"], opacity=1.0),
             opacity=1.0, showlegend=False,
             customdata=t["customdata"],
             hovertemplate=(
