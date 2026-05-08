@@ -353,7 +353,7 @@ def main():
             showgrid=True, gridcolor="#eeeeee",
             showline=False,
             range=yaxis_range,
-            scaleanchor="x", scaleratio=1.2,
+            scaleanchor="x", scaleratio=1.0,
         ),
         plot_bgcolor="white",
         paper_bgcolor="white",
@@ -443,19 +443,19 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   #controls .arrow { font-weight: bold; padding: 3px 8px; }
   #plotwrap { display: flex; flex: 1; min-height: 0; }
   #plot { flex: 1; min-width: 0; }
-  #sidebar { width: 460px; padding: 16px 18px; overflow-y: auto;
+  #sidebar { width: 640px; padding: 20px 22px; overflow-y: auto;
              box-sizing: border-box; border-left: 1px solid #ddd;
              background: #fafafa; }
-  #sidebar h2 { margin: 0 0 4px 0; font-size: 16px; color: #222; }
-  #sidebar .meta { font-size: 12px; color: #666; margin-bottom: 12px; }
-  .panel { margin-bottom: 12px; padding: 10px 12px; background: #fff;
+  #sidebar h2 { margin: 0 0 6px 0; font-size: 19px; color: #222; }
+  #sidebar .meta { font-size: 14px; color: #666; margin-bottom: 14px; }
+  .panel { margin-bottom: 14px; padding: 12px 14px; background: #fff;
            border: 1px solid #e0e0e0; border-radius: 4px; }
-  .panel-title { font-size: 11px; font-weight: 600; color: #555;
-           text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 6px; }
-  .panel .prompt { color: #999; font-size: 11.5px; margin-bottom: 6px; font-style: italic; }
-  .panel .response { font-size: 12.5px; line-height: 1.4; color: #222;
+  .panel-title { font-size: 12.5px; font-weight: 600; color: #555;
+           text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
+  .panel .prompt { color: #999; font-size: 13px; margin-bottom: 8px; font-style: italic; }
+  .panel .response { font-size: 14.5px; line-height: 1.5; color: #222;
            white-space: pre-wrap; word-wrap: break-word;
-           max-height: 38vh; overflow-y: auto; }
+           max-height: 42vh; overflow-y: auto; }
   .placeholder { color: #aaa; font-style: italic; }
 </style>
 </head>
@@ -503,6 +503,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="youshould" data-seed="23">Medieval Knight</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
         <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
+        <button class="preset" data-slug="please" data-seed="16">Famous Author</button>
       </div>
       <div class="row">
         <label></label>
@@ -515,12 +516,15 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
         <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
+        <button class="preset" data-slug="be" data-seed="2">Brief</button>
+        <button class="preset" data-slug="please" data-seed="22">Pauses</button>
       </div>
       <div class="row">
         <label>Information:</label>
         <button class="preset" data-slug="please" data-seed="26">Lookup</button>
         <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
         <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
+        <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
       </div>
     </div>
     </div>
@@ -529,7 +533,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   <div id="plotwrap">
     <div id="plot"></div>
     <div id="sidebar">
-      <h2 id="title"><span class="placeholder">Hover a point to see outputs</span></h2>
+      <h2 id="title"><span class="placeholder">Hover over a point to see outputs</span></h2>
       <div id="meta" class="meta"></div>
       <div class="panel">
         <div class="panel-title">Behavior</div>
