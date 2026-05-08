@@ -346,20 +346,20 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 <style>
   html, body { margin: 0; padding: 0; height: 100%; font-family: 'Libertinus Serif', Georgia, serif; }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  #controls { padding: 10px 14px; border-bottom: 1px solid #ddd;
-              background: #f6f6f6; display: flex; flex-wrap: wrap; gap: 18px;
-              align-items: center; font-size: 12.5px; }
+  #topbar { display: flex; padding: 10px 14px; border-bottom: 1px solid #ddd;
+              background: #f6f6f6; gap: 18px; font-size: 12.5px; }
+  #controls { flex: 1 1 50%; display: flex; flex-direction: column; gap: 6px;
+              align-items: flex-start; }
   #controls .group { display: flex; align-items: center; gap: 6px; }
-  #controls label { font-weight: 600; color: #444; }
+  #controls label { font-weight: 600; color: #444; min-width: 70px; }
   #controls input[type=number] { width: 60px; padding: 3px 5px;
               border: 1px solid #ccc; border-radius: 3px; font-size: 12px;
               text-align: center; }
-  #presets { padding: 8px 14px; border-bottom: 1px solid #ddd;
-              background: #fbfbfb; display: flex; flex-direction: column;
-              gap: 4px; font-size: 12px; }
+  #presets { flex: 1 1 50%; display: flex; flex-direction: column;
+              gap: 6px; font-size: 12px; align-items: flex-start; }
   #presets .row { display: flex; align-items: center; gap: 8px;
               flex-wrap: wrap; }
-  #presets .row > label { min-width: 90px; font-weight: 600; color: #444; }
+  #presets .row > label { min-width: 110px; font-weight: 600; color: #444; }
   #presets button { padding: 3px 8px; border: 1px solid #ccc;
               background: #fff; border-radius: 3px; cursor: pointer;
               font-size: 11.5px; color: #333; }
@@ -399,59 +399,60 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
 <div id="wrap">
-  <div id="controls">
-    <div class="group">
-      <label>Color:</label>
-      <button id="mode-step" class="mode active">step</button>
-      <button id="mode-persona" class="mode">persona</button>
+  <div id="topbar">
+    <div id="controls">
+      <div class="group">
+        <label>Seed:</label>
+        <button id="seed-prev" class="arrow">‹</button>
+        <input id="seed-input" type="number" min="0" max="49" placeholder="all">
+        <button id="seed-next" class="arrow">›</button>
+        <button id="seed-clear">all seeds</button>
+      </div>
+      <div class="group">
+        <label>Step:</label>
+        <button id="step-prev" class="arrow">‹</button>
+        <input id="step-input" type="number" placeholder="all">
+        <button id="step-next" class="arrow">›</button>
+        <button id="step-clear">all steps</button>
+      </div>
+      <div class="group">
+        <label>Frames:</label>
+        <button class="frame" data-slug="be">BE</button>
+        <button class="frame" data-slug="act">ACT</button>
+        <button class="frame" data-slug="please">PLEASE</button>
+        <button class="frame" data-slug="youshould">YOUSHOULD</button>
+      </div>
+      <div class="group">
+        <label>Color:</label>
+        <button id="mode-step" class="mode active">step</button>
+        <button id="mode-persona" class="mode">persona</button>
+      </div>
     </div>
-    <div class="group">
-      <label>Seed:</label>
-      <button id="seed-prev" class="arrow">‹</button>
-      <input id="seed-input" type="number" min="0" max="49" placeholder="all">
-      <button id="seed-next" class="arrow">›</button>
-      <button id="seed-clear">all seeds</button>
-    </div>
-    <div class="group">
-      <label>Frames:</label>
-      <button class="frame" data-slug="be">BE</button>
-      <button class="frame" data-slug="act">ACT</button>
-      <button class="frame" data-slug="please">PLEASE</button>
-      <button class="frame" data-slug="youshould">YOUSHOULD</button>
-    </div>
-    <div class="group">
-      <label>Step:</label>
-      <button id="step-prev" class="arrow">‹</button>
-      <input id="step-input" type="number" placeholder="all">
-      <button id="step-next" class="arrow">›</button>
-      <button id="step-clear">all steps</button>
-    </div>
-  </div>
-  <div id="presets">
-    <div class="row">
-      <label>Personas:</label>
-      <button class="preset" data-slug="please" data-seed="41">Low-income Southerner</button>
-      <button class="preset" data-slug="please" data-seed="39">Yoda / Old Sage</button>
-      <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
-    </div>
-    <div class="row">
-      <label>Formatting:</label>
-      <button class="preset" data-slug="act" data-seed="29">Urgency</button>
-      <button class="preset" data-slug="be" data-seed="2">All-caps Shouting</button>
-      <button class="preset" data-slug="please" data-seed="22">Pauses &amp; Ellipses</button>
-    </div>
-    <div class="row">
-      <label>Analytical:</label>
-      <button class="preset" data-slug="act" data-seed="17">Essential Elements</button>
-      <button class="preset" data-slug="please" data-seed="44">Math</button>
-      <button class="preset" data-slug="youshould" data-seed="0">Code</button>
-    </div>
-    <div class="row">
-      <label>Citations &amp; refs:</label>
-      <button class="preset" data-slug="youshould" data-seed="31">Scientific Interpretation</button>
-      <button class="preset" data-slug="youshould" data-seed="33">X according to Y</button>
-      <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
-      <button class="preset" data-slug="act" data-seed="25">Citing References</button>
+    <div id="presets">
+      <div class="row">
+        <label>Personas:</label>
+        <button class="preset" data-slug="please" data-seed="41">Low-income Southerner</button>
+        <button class="preset" data-slug="please" data-seed="39">Yoda/Geralt of Rivia</button>
+        <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
+      </div>
+      <div class="row">
+        <label>Formatting:</label>
+        <button class="preset" data-slug="act" data-seed="29">Urgency</button>
+        <button class="preset" data-slug="be" data-seed="2">All-caps Shouting</button>
+        <button class="preset" data-slug="please" data-seed="22">Pauses &amp; Ellipses</button>
+      </div>
+      <div class="row">
+        <label>Analytical:</label>
+        <button class="preset" data-slug="act" data-seed="17">Essential Elements</button>
+        <button class="preset" data-slug="please" data-seed="44">Math</button>
+        <button class="preset" data-slug="youshould" data-seed="0">Code</button>
+      </div>
+      <div class="row">
+        <label>Citations &amp; refs:</label>
+        <button class="preset" data-slug="youshould" data-seed="31">Scientific Interpretation</button>
+        <button class="preset" data-slug="youshould" data-seed="33">X according to Y</button>
+        <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
+      </div>
     </div>
   </div>
   <div id="plotwrap">
