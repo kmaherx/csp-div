@@ -55,6 +55,15 @@ def color_step(t):  # t in [0, 1]; t=0 → violet (start), t=1 → red (end)
     return to_hex(_RAINBOW(max(0.0, min(1.0, t))))
 
 
+def cmap_to_plotly(cmap, n=21):
+    """Convert a matplotlib colormap to a Plotly colorscale [[t, hex], ...]."""
+    return [[i / (n - 1), to_hex(cmap(i / (n - 1)))] for i in range(n)]
+
+
+PERSONA_COLORSCALE = cmap_to_plotly(_REDS_R)
+STEP_COLORSCALE    = cmap_to_plotly(_RAINBOW)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--frame", action="append", nargs=2,
@@ -230,7 +239,7 @@ def main():
         fig.add_trace(go.Scatter(
             x=[p[0] for p in t["pcs"]], y=[p[1] for p in t["pcs"]],
             mode="markers",
-            marker=dict(size=6, color=t["step_pt_colors"], opacity=1.0,
+            marker=dict(size=8, color=t["step_pt_colors"], opacity=1.0,
                         line=dict(width=0)),
             opacity=1.0, showlegend=False,
             customdata=t["customdata"],
@@ -289,23 +298,64 @@ def main():
         overlay_step_colors[step]    = step_cols
         overlay_meta[step]           = metas
 
+    # Colorbar carrier: invisible-data trace whose marker config drives
+    # the right-side colorbar. Single trace, position pinned — JS restyles
+    # its colorscale + cmin/cmax + title.text on color mode toggle so the
+    # bar swaps content in place without any layout reflow.
+    persona_cmin, persona_cmax = float(cos_min), float(cos_max)
+    step_cmin, step_cmax       = float(steps[0]), float(steps[-1])
+    colorbar_trace_index = len(fig.data)
+    fig.add_trace(go.Scatter(
+        x=[None], y=[None], mode="markers",
+        showlegend=False, hoverinfo="skip",
+        marker=dict(
+            color=[step_cmin],
+            colorscale=STEP_COLORSCALE,
+            cmin=step_cmin, cmax=step_cmax,
+            showscale=True,
+            size=0.001,
+            colorbar=dict(
+                title=dict(text="Step Number", side="right",
+                           font=dict(size=12)),
+                x=1.02, xanchor="left",
+                y=0.5, yanchor="middle",
+                len=0.85, thickness=14,
+                outlinewidth=0,
+                tickfont=dict(size=11),
+            ),
+        ),
+    ))
+
+    # Pin axis ranges so filter / preset / step changes never reflow the
+    # plot window. Equal-aspect look comes from picking a square half-extent
+    # around the data center; padding 5% beyond the data box.
+    all_pc1 = [p[0] for t in trajs for p in t["pcs"]]
+    all_pc2 = [p[1] for t in trajs for p in t["pcs"]]
+    x_lo, x_hi = float(min(all_pc1)), float(max(all_pc1))
+    y_lo, y_hi = float(min(all_pc2)), float(max(all_pc2))
+    cx, cy = (x_lo + x_hi) / 2, (y_lo + y_hi) / 2
+    half = max(x_hi - x_lo, y_hi - y_lo) / 2 * 1.05
+    xaxis_range = [cx - half, cx + half]
+    yaxis_range = [cy - half, cy + half]
+
     fig.update_layout(
         xaxis=dict(
             title=f"PC1 ({100*var[0]:.1f}%)",
             zeroline=True, zerolinecolor="#cccccc", zerolinewidth=1,
             showgrid=True, gridcolor="#eeeeee",
             showline=False,
+            range=xaxis_range,
         ),
         yaxis=dict(
             title=f"PC2 ({100*var[1]:.1f}%)",
             zeroline=True, zerolinecolor="#cccccc", zerolinewidth=1,
             showgrid=True, gridcolor="#eeeeee",
             showline=False,
-            scaleanchor="x", scaleratio=1,
+            range=yaxis_range,
         ),
         plot_bgcolor="white",
         paper_bgcolor="white",
-        margin=dict(l=60, r=20, t=20, b=50),
+        margin=dict(l=60, r=110, t=20, b=50),
         autosize=True,
         hovermode="closest",
     )
@@ -323,6 +373,11 @@ def main():
         overlay_step_colors=overlay_step_colors,
         overlay_meta=overlay_meta,
         steps=steps,
+        colorbar_trace_index=colorbar_trace_index,
+        persona_colorscale=PERSONA_COLORSCALE,
+        step_colorscale=STEP_COLORSCALE,
+        persona_cmin=persona_cmin, persona_cmax=persona_cmax,
+        step_cmin=step_cmin, step_cmax=step_cmax,
     )
     print(f"Saved: {out_path}")
 
@@ -433,7 +488,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="group">
         <label>Color:</label>
         <button id="mode-step" class="mode active">step</button>
-        <button id="mode-persona" class="mode">persona</button>
+        <button id="mode-persona" class="mode">persona strength</button>
       </div>
     </div>
     </div>
@@ -498,6 +553,11 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   var overlayStepColors = __OVERLAY_STEP_COLORS__;
   var overlayMeta = __OVERLAY_META__;
   var STEPS = __STEPS__;
+  var COLORBAR_TRACE_INDEX = __COLORBAR_TRACE_INDEX__;
+  var PERSONA_COLORSCALE = __PERSONA_COLORSCALE__;
+  var STEP_COLORSCALE    = __STEP_COLORSCALE__;
+  var PERSONA_CMIN = __PERSONA_CMIN__, PERSONA_CMAX = __PERSONA_CMAX__;
+  var STEP_CMIN    = __STEP_CMIN__,    STEP_CMAX    = __STEP_CMAX__;
 
   Plotly.newPlot('plot', fig.data, fig.layout,
     {responsive: true, displaylogo: false, displayModeBar: false});
@@ -603,6 +663,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       b.classList.remove('off');
     });
     setActiveButton('.mode', 'mode-step');
+    setColorbar('step');
     deselectPresets();
     applyState();
   }
@@ -631,15 +692,38 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     };
   });
 
+  // Restyle the colorbar carrier trace in place. Position is fixed in
+  // layout, so swapping content does not shift the plot — only the
+  // colorscale, cmin/cmax, and title text change.
+  function setColorbar(mode) {
+    if (mode === 'persona') {
+      Plotly.restyle('plot', {
+        'marker.colorscale': [PERSONA_COLORSCALE],
+        'marker.cmin': PERSONA_CMIN,
+        'marker.cmax': PERSONA_CMAX,
+        'marker.colorbar.title.text': 'Projection Onto Assistant Axis',
+      }, [COLORBAR_TRACE_INDEX]);
+    } else {
+      Plotly.restyle('plot', {
+        'marker.colorscale': [STEP_COLORSCALE],
+        'marker.cmin': STEP_CMIN,
+        'marker.cmax': STEP_CMAX,
+        'marker.colorbar.title.text': 'Step Number',
+      }, [COLORBAR_TRACE_INDEX]);
+    }
+  }
+
   document.getElementById('mode-persona').onclick = function() {
     state.colorMode = 'persona';
     setActiveButton('.mode', 'mode-persona');
+    setColorbar('persona');
     deselectPresets();
     applyState();
   };
   document.getElementById('mode-step').onclick = function() {
     state.colorMode = 'step';
     setActiveButton('.mode', 'mode-step');
+    setColorbar('step');
     deselectPresets();
     applyState();
   };
@@ -778,7 +862,11 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 def write_interactive_html(fig, out_path, cell_data, *,
                            traj_meta, line_indices, marker_indices,
                            step_overlay_indices, overlay_persona_colors,
-                           overlay_step_colors, overlay_meta, steps):
+                           overlay_step_colors, overlay_meta, steps,
+                           colorbar_trace_index,
+                           persona_colorscale, step_colorscale,
+                           persona_cmin, persona_cmax,
+                           step_cmin, step_cmax):
     fig_json   = fig.to_json()
     cell_json  = json.dumps(cell_data)
     traj_json  = json.dumps(traj_meta)
@@ -799,7 +887,14 @@ def write_interactive_html(fig, out_path, cell_data, *,
             .replace("__OVERLAY_PERSONA_COLORS__", persona_cols_json)
             .replace("__OVERLAY_STEP_COLORS__",    step_cols_json)
             .replace("__OVERLAY_META__",           overlay_meta_json)
-            .replace("__STEPS__",                  steps_json))
+            .replace("__STEPS__",                  steps_json)
+            .replace("__COLORBAR_TRACE_INDEX__",   json.dumps(colorbar_trace_index))
+            .replace("__PERSONA_COLORSCALE__",     json.dumps(persona_colorscale))
+            .replace("__STEP_COLORSCALE__",        json.dumps(step_colorscale))
+            .replace("__PERSONA_CMIN__",           json.dumps(persona_cmin))
+            .replace("__PERSONA_CMAX__",           json.dumps(persona_cmax))
+            .replace("__STEP_CMIN__",              json.dumps(step_cmin))
+            .replace("__STEP_CMAX__",              json.dumps(step_cmax)))
     with open(out_path, "w") as f:
         f.write(html)
 
