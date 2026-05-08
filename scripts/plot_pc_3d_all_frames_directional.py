@@ -9,6 +9,7 @@ Sister script to plot_pc_3d_all_frames.py. Same data layout (4 frames
 pooled shifts, same hover behavior at every joint.
 """
 import argparse
+import json
 import os
 
 import numpy as np
@@ -100,6 +101,18 @@ def main():
     print(f"  {len(by_traj)} trajectories")
 
     # ── 3. Hover text from per-frame eval files. ───────────────────────
+    # Load curated agent picks from the combined manual JSON. For cells
+    # the annotators completed, prefer their pick over the default
+    # pinned-prompt fallback. For cells they marked SKIP, surface that.
+    manual_path = os.path.join(ROOT, "results/all_frames/manual_self_verb.json")
+    manual_picks = {}
+    if os.path.isfile(manual_path):
+        manual_picks = json.load(open(manual_path))
+        n_pick = sum(1 for v in manual_picks.values() if not v.get("skipped"))
+        n_skip = sum(1 for v in manual_picks.values() if v.get("skipped"))
+        print(f"  loaded {len(manual_picks)} curated entries "
+              f"({n_pick} picks, {n_skip} skips) from {manual_path}")
+
     print(f"\nLoading per-ckpt eval files for hover ...")
     cell_data = {}
     for (slug, seed), info in by_traj.items():
@@ -120,14 +133,31 @@ def main():
             behav_prompt = b.get("prompt", "") if b else ""
             if behav_prompt and suffix:
                 behav_prompt = f"{behav_prompt} {suffix}"
-            cell_data[f"{slug}_{seed}_{step}"] = {
+
+            # Self-verb selection: curated pick wins over pinned-prompt fallback.
+            key = f"{slug}_{seed}_{step}"
+            curated = manual_picks.get(key)
+            if curated and curated.get("skipped"):
+                sv_prompt   = "(annotator marked this cell SKIP)"
+                sv_text     = curated.get("note") or "no apt candidate per rubric"
+                sv_approach = ""
+            elif curated:
+                sv_prompt   = curated.get("sv_prompt", "")
+                sv_text     = curated.get("sv_text", "")
+                sv_approach = curated.get("sv_approach", "")
+            else:
+                sv_prompt   = sv.get("prompt", "") if sv else ""
+                sv_text     = (sv.get("text", "") if sv
+                               else "(no self-verb file for this ckpt)")
+                sv_approach = sv.get("approach", "") if sv else ""
+
+            cell_data[key] = {
                 "behav_prompt": behav_prompt,
                 "behav_text":   b.get("text", "")
                     if b else "(no behavior file for this ckpt)",
-                "sv_prompt":    sv.get("prompt", "") if sv else "",
-                "sv_text":      sv.get("text", "")
-                    if sv else "(no self-verb file for this ckpt)",
-                "sv_approach":  sv.get("approach", "") if sv else "",
+                "sv_prompt":    sv_prompt,
+                "sv_text":      sv_text,
+                "sv_approach":  sv_approach,
                 "cluster_name": f"Frame: {FRAME_DISPLAY.get(slug, slug)}",
             }
 
