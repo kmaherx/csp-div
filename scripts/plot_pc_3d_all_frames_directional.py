@@ -26,6 +26,10 @@ from plot_pc_3d_all_frames import DEFAULT_FRAMES, FRAME_DISPLAY  # type: ignore
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# § matches the self-verb prompt display convention; appended to the behavior
+# question so the displayed Q reflects the exact eval-time concatenation.
+FRAME_SUFFIX = {k: v.format(sp="§") for k, v in FRAME_DISPLAY.items()}
+
 
 # matplotlib's 'coolwarm' runs blue (t=0) → white (t=0.5) → red (t=1).
 # t=0 = trajectory start (cool blue), t=1 = trajectory end (warm red).
