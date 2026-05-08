@@ -126,10 +126,13 @@ def main():
         by_traj[k]["rows"].sort(key=lambda r: r["step"])
     print(f"  {len(by_traj)} trajectories")
 
-    # ── 4. Curated picks for hover ─────────────────────────────────────
+    # ── 4. Self-verb hover: canonical > per-frame > pinned. ───────────
+    canonical_path = os.path.join(ROOT, "results/all_frames/manual_self_verb_canonical.json")
+    canonical_picks = json.load(open(canonical_path)) if os.path.isfile(canonical_path) else {}
     manual_path = os.path.join(ROOT, "results/all_frames/manual_self_verb.json")
     manual_picks = json.load(open(manual_path)) if os.path.isfile(manual_path) else {}
-    print(f"  loaded {len(manual_picks)} curated entries")
+    print(f"  loaded {len(canonical_picks)} canonical + "
+          f"{len(manual_picks)} per-frame entries")
 
     # ── 5. Build per-cell hover data ───────────────────────────────────
     cell_data = {}
@@ -149,8 +152,14 @@ def main():
             if behav_prompt and suffix:
                 behav_prompt = f"{behav_prompt} {suffix}"
             key = f"{slug}_{seed}_{step}"
+            ckey = f"{seed}_{step}"
+            canonical = canonical_picks.get(ckey)
             curated = manual_picks.get(key)
-            if curated and not curated.get("skipped"):
+            if canonical and not canonical.get("skipped"):
+                sv_prompt   = canonical.get("sv_prompt", "")
+                sv_text     = canonical.get("sv_text", "")
+                sv_approach = canonical.get("sv_approach", "")
+            elif curated and not curated.get("skipped"):
                 sv_prompt   = curated.get("sv_prompt", "")
                 sv_text     = curated.get("sv_text", "")
                 sv_approach = curated.get("sv_approach", "")

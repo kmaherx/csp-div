@@ -101,17 +101,16 @@ def main():
     print(f"  {len(by_traj)} trajectories")
 
     # ── 3. Hover text from per-frame eval files. ───────────────────────
-    # Load curated agent picks from the combined manual JSON. For cells
-    # the annotators completed, prefer their pick over the default
-    # pinned-prompt fallback. For cells they marked SKIP, surface that.
+    # Self-verb hover text source order:
+    #   1. canonical pick (one per (seed, step), aggregated across 4 frames)
+    #   2. per-frame curated agent pick
+    #   3. default pinned-prompt fallback
+    canonical_path = os.path.join(ROOT, "results/all_frames/manual_self_verb_canonical.json")
+    canonical_picks = json.load(open(canonical_path)) if os.path.isfile(canonical_path) else {}
     manual_path = os.path.join(ROOT, "results/all_frames/manual_self_verb.json")
-    manual_picks = {}
-    if os.path.isfile(manual_path):
-        manual_picks = json.load(open(manual_path))
-        n_pick = sum(1 for v in manual_picks.values() if not v.get("skipped"))
-        n_skip = sum(1 for v in manual_picks.values() if v.get("skipped"))
-        print(f"  loaded {len(manual_picks)} curated entries "
-              f"({n_pick} picks, {n_skip} skips) from {manual_path}")
+    manual_picks = json.load(open(manual_path)) if os.path.isfile(manual_path) else {}
+    print(f"  loaded {len(canonical_picks)} canonical entries (per-seed/step)")
+    print(f"  loaded {len(manual_picks)} per-frame entries (fallback)")
 
     print(f"\nLoading per-ckpt eval files for hover ...")
     cell_data = {}
@@ -134,13 +133,19 @@ def main():
             if behav_prompt and suffix:
                 behav_prompt = f"{behav_prompt} {suffix}"
 
-            # Self-verb selection: curated pick wins; skipped cells and
-            # un-annotated cells both fall back to the default pinned-prompt
-            # ("Find the theme shared by these instructions") so the panel
-            # always shows something rather than a "SKIP" placeholder.
+            # Self-verb selection: canonical (per seed,step, aggregated
+            # across frames) > per-frame curated > pinned default. Skipped
+            # entries fall through to the next source so panel always
+            # shows something rather than a "SKIP" placeholder.
             key = f"{slug}_{seed}_{step}"
+            ckey = f"{seed}_{step}"
+            canonical = canonical_picks.get(ckey)
             curated = manual_picks.get(key)
-            if curated and not curated.get("skipped"):
+            if canonical and not canonical.get("skipped"):
+                sv_prompt   = canonical.get("sv_prompt", "")
+                sv_text     = canonical.get("sv_text", "")
+                sv_approach = canonical.get("sv_approach", "")
+            elif curated and not curated.get("skipped"):
                 sv_prompt   = curated.get("sv_prompt", "")
                 sv_text     = curated.get("sv_text", "")
                 sv_approach = curated.get("sv_approach", "")
