@@ -301,20 +301,13 @@ def main():
 
     var_str = " · ".join(f"PC{i+1} {100*v:.1f}%" for i, v in enumerate(var))
     fig.update_layout(
-        title=dict(
-            text=(
-                f"PC1/PC2/PC3 trajectories  ({len(by_traj)} trajectories)"
-                f"  ·  {var_str}"
-            ),
-            x=0.02, xanchor="left",
-        ),
         scene=dict(
             xaxis=dict(title=f"PC1 ({100*var[0]:.1f}%)", showspikes=False),
             yaxis=dict(title=f"PC2 ({100*var[1]:.1f}%)", showspikes=False),
             zaxis=dict(title=f"PC3 ({100*var[2]:.1f}%)", showspikes=False),
             aspectmode="cube",
         ),
-        margin=dict(l=0, r=0, t=50, b=0),
+        margin=dict(l=0, r=0, t=0, b=0),
         autosize=True,
     )
 
@@ -346,8 +339,15 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 <style>
   html, body { margin: 0; padding: 0; height: 100%; font-family: 'Libertinus Serif', Georgia, serif; }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  #topbar { display: flex; padding: 10px 14px; border-bottom: 1px solid #ddd;
-              background: #f6f6f6; gap: 18px; font-size: 12.5px; }
+  #topbar { display: grid; grid-template-columns: 1fr auto 1fr;
+              padding: 10px 14px; border-bottom: 1px solid #ddd;
+              background: #f6f6f6; gap: 18px; font-size: 12.5px;
+              align-items: center; }
+  #reset-btn { padding: 8px 18px; border: 1px solid #aaa;
+              background: #fff; border-radius: 4px; cursor: pointer;
+              font-family: inherit; font-size: 13px; font-weight: 600;
+              color: #444; }
+  #reset-btn:hover { background: #ffe9d6; border-color: #d68441; color: #a44400; }
   #controls { flex: 1 1 50%; display: flex; flex-direction: column; gap: 6px;
               align-items: flex-start; }
   #controls .group { display: flex; align-items: center; gap: 6px; }
@@ -400,7 +400,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 <body>
 <div id="wrap">
   <div id="topbar">
-    <div id="controls">
+    <div id="controls" class="col-left">
       <div class="group">
         <label>Seed:</label>
         <button id="seed-prev" class="arrow">‹</button>
@@ -428,7 +428,8 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         <button id="mode-persona" class="mode">persona</button>
       </div>
     </div>
-    <div id="presets">
+    <button id="reset-btn">Reset</button>
+    <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
         <button class="preset" data-slug="please" data-seed="41">Low-income Southerner</button>
@@ -438,7 +439,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="row">
         <label>Formatting:</label>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
-        <button class="preset" data-slug="be" data-seed="2">All-caps Shouting</button>
+        <button class="preset" data-slug="be" data-seed="2">Short and Funny</button>
         <button class="preset" data-slug="please" data-seed="22">Pauses &amp; Ellipses</button>
       </div>
       <div class="row">
@@ -577,6 +578,29 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       b.classList.toggle('active', b.id === activeId);
     });
   }
+  function deselectPresets() {
+    document.querySelectorAll('button.preset').forEach(function(b) {
+      b.classList.remove('active');
+    });
+  }
+  function resetAll() {
+    state.seedFilter = null;
+    state.stepFilter = null;
+    state.colorMode = 'step';
+    Object.keys(state.frameFilter).forEach(function(s) {
+      state.frameFilter[s] = true;
+    });
+    document.getElementById('seed-input').value = '';
+    document.getElementById('step-input').value = '';
+    document.querySelectorAll('button.frame').forEach(function(b) {
+      b.classList.add('active');
+      b.classList.remove('off');
+    });
+    setActiveButton('.mode', 'mode-step');
+    deselectPresets();
+    applyState();
+  }
+  document.getElementById('reset-btn').onclick = resetAll;
 
   document.querySelectorAll('button.preset').forEach(function(b) {
     b.onclick = function() {
@@ -586,7 +610,9 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       document.querySelectorAll('button.preset').forEach(function(o) {
         o.classList.toggle('active', o === b);
       });
-      // Isolate (frame, seed); step coloring; no step filter.
+      // Isolate (frame, seed); clear step filter. Color mode is preserved
+      // from whatever the user has set — switching presets shouldn't yank
+      // them off persona-coloring back into step-coloring.
       state.seedFilter = seed;
       document.getElementById('seed-input').value = seed;
       Object.keys(state.frameFilter).forEach(function(s) {
@@ -597,8 +623,6 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
         o.classList.toggle('active', on);
         o.classList.toggle('off', !on);
       });
-      state.colorMode = 'step';
-      setActiveButton('.mode', 'mode-step');
       state.stepFilter = null;
       document.getElementById('step-input').value = '';
       applyState();
@@ -608,11 +632,13 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   document.getElementById('mode-persona').onclick = function() {
     state.colorMode = 'persona';
     setActiveButton('.mode', 'mode-persona');
+    deselectPresets();
     applyState();
   };
   document.getElementById('mode-step').onclick = function() {
     state.colorMode = 'step';
     setActiveButton('.mode', 'mode-step');
+    deselectPresets();
     applyState();
   };
 
@@ -625,6 +651,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       state.seedFilter = n;
       e.target.value = n;
     }
+    deselectPresets();
     applyState();
   });
   document.getElementById('seed-prev').onclick = function() {
@@ -634,6 +661,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       state.seedFilter -= 1;
     }
     document.getElementById('seed-input').value = state.seedFilter;
+    deselectPresets();
     applyState();
   };
   document.getElementById('seed-next').onclick = function() {
@@ -643,11 +671,13 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       state.seedFilter += 1;
     }
     document.getElementById('seed-input').value = state.seedFilter;
+    deselectPresets();
     applyState();
   };
   document.getElementById('seed-clear').onclick = function() {
     state.seedFilter = null;
     document.getElementById('seed-input').value = '';
+    deselectPresets();
     applyState();
   };
 
@@ -658,6 +688,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       state.frameFilter[slug] = !state.frameFilter[slug];
       b.classList.toggle('off', !state.frameFilter[slug]);
       b.classList.toggle('active', state.frameFilter[slug]);
+      deselectPresets();
       applyState();
     };
   });
@@ -675,6 +706,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     if (v === '') { state.stepFilter = null; }
     else { state.stepFilter = snapStep(parseInt(v));
            e.target.value = state.stepFilter; }
+    deselectPresets();
     applyState();
   });
   document.getElementById('step-prev').onclick = function() {
@@ -686,6 +718,7 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       if (i > 0) state.stepFilter = STEPS[i - 1];
     }
     document.getElementById('step-input').value = state.stepFilter;
+    deselectPresets();
     applyState();
   };
   document.getElementById('step-next').onclick = function() {
@@ -697,11 +730,13 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
       if (i < STEPS.length - 1) state.stepFilter = STEPS[i + 1];
     }
     document.getElementById('step-input').value = state.stepFilter;
+    deselectPresets();
     applyState();
   };
   document.getElementById('step-clear').onclick = function() {
     state.stepFilter = null;
     document.getElementById('step-input').value = '';
+    deselectPresets();
     applyState();
   };
 
