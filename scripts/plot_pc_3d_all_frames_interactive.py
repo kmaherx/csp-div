@@ -459,30 +459,32 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
     var stepActive = state.stepFilter !== null;
 
     // Lines: silhouette opacity always; full when active and no step
-    // filter. (Lines never have hover — hoverinfo='skip' baked in.)
-    var lineOps = [], lineColors = [];
-    // Markers: visible only when trajectory is active AND no step filter
-    // is set. opacity:0 alone doesn't disable hover — also need
-    // hoverinfo:'skip'. Otherwise hover fires on transparent points
-    // along background trajectories.
-    var markerOps = [], markerHovers = [], markerColors = [];
+    // filter. Lines never have hover — hoverinfo='skip' is baked in,
+    // and restyled defensively here too in case plotly drops it.
+    var lineOps = [], lineColors = [], lineHovers = [];
+    // Markers: use visible:true/false, NOT opacity:0. opacity:0 hides
+    // the visual but plotly still fires hover events on the invisible
+    // hitbox; visible:false removes the trace from the WebGL scene
+    // entirely — definitively no hover, no render.
+    var markerVisibles = [], markerColors = [];
     trajMeta.forEach(function(meta) {
       var active = isTrajActive(meta);
       var lineOp   = (active && !stepActive) ? 1.0 : 0.05;
-      var markerOp = (active && !stepActive) ? 1.0 : 0.0;
+      var markerVis = (active && !stepActive);
       lineOps.push(lineOp);
-      markerOps.push(markerOp);
-      markerHovers.push(markerOp > 0 ? 'all' : 'skip');
+      lineHovers.push('skip');
+      markerVisibles.push(markerVis);
       lineColors.push(state.colorMode === 'persona'
         ? meta.persona_line_color : meta.step_line_color);
       markerColors.push(state.colorMode === 'persona'
         ? meta.persona_pt_colors : meta.step_pt_colors);
     });
     Plotly.restyle('plot',
-      {opacity: lineOps, 'line.color': lineColors}, lineIndices);
+      {opacity: lineOps, 'line.color': lineColors, hoverinfo: lineHovers},
+      lineIndices);
     Plotly.restyle('plot',
-      {opacity: markerOps, 'marker.color': markerColors,
-       hoverinfo: markerHovers}, markerIndices);
+      {visible: markerVisibles, 'marker.color': markerColors},
+      markerIndices);
 
     // Step overlays. Visible only for the selected step; per-marker
     // visibility encoded into rgba alpha so seed+frame filters compose.
