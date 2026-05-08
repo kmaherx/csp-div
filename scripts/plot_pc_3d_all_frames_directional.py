@@ -134,14 +134,13 @@ def main():
             if behav_prompt and suffix:
                 behav_prompt = f"{behav_prompt} {suffix}"
 
-            # Self-verb selection: curated pick wins over pinned-prompt fallback.
+            # Self-verb selection: curated pick wins; skipped cells and
+            # un-annotated cells both fall back to the default pinned-prompt
+            # ("Find the theme shared by these instructions") so the panel
+            # always shows something rather than a "SKIP" placeholder.
             key = f"{slug}_{seed}_{step}"
             curated = manual_picks.get(key)
-            if curated and curated.get("skipped"):
-                sv_prompt   = "(annotator marked this cell SKIP)"
-                sv_text     = curated.get("note") or "no apt candidate per rubric"
-                sv_approach = ""
-            elif curated:
+            if curated and not curated.get("skipped"):
                 sv_prompt   = curated.get("sv_prompt", "")
                 sv_text     = curated.get("sv_text", "")
                 sv_approach = curated.get("sv_approach", "")
