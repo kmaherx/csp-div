@@ -179,14 +179,18 @@ def main():
     # restyle by index.
 
     fig = go.Figure()
-    # Per-trajectory: 1 main trace (lines+markers, grey line + per-point
-    # gradient markers), 1 start marker, 1 end marker. Color mode toggle
-    # restyles marker.color (line stays grey for both modes — no per-segment
-    # gradient since that ballooned trace count and made interaction laggy).
+    # Per trajectory: 4 traces split so hover lives ONLY on point traces.
+    # Line traces have hoverinfo='skip'; markers carry the hover.
+    #   1. line trace (mode='lines',  no hover)
+    #   2. marker trace (mode='markers', per-point gradient, hover on)
+    #   3. start marker (open ring, hover on)
+    #   4. end marker   (filled black, hover on)
+    # Background trajectories hide all 3 marker traces → no hover anywhere.
     traj_meta = []
-    main_indices  = []
-    start_indices = []
-    end_indices   = []
+    line_indices   = []
+    marker_indices = []
+    start_indices  = []
+    end_indices    = []
 
     sorted_keys = sorted(by_traj.keys())
     for (slug, seed) in sorted_keys:
@@ -205,16 +209,24 @@ def main():
         ]
         persona_pt_cols = [color_persona(t_cos(c)) for c in cos_v]
         step_pt_cols    = [color_step(i / max(1, n - 1)) for i in range(n)]
-        # Per-trajectory line color in persona mode = trajectory's deepest
-        # cos (most persona-aligned point along its arc) → cheap proxy for
-        # "how persona-y is this trajectory overall." Step mode uses grey.
+        # Persona line color = darkest red along the trajectory (min cos).
+        # Step line color = neutral grey.
         persona_line_color = color_persona(t_cos(min(cos_v)))
 
-        main_indices.append(len(fig.data))
+        # 1. Line trace — no hover
+        line_indices.append(len(fig.data))
         fig.add_trace(go.Scatter3d(
             x=[p[0] for p in pcs], y=[p[1] for p in pcs], z=[p[2] for p in pcs],
-            mode="lines+markers",
+            mode="lines",
             line=dict(color=persona_line_color, width=3),
+            opacity=1.0, showlegend=False,
+            hoverinfo="skip",
+        ))
+        # 2. Marker trace — per-point gradient + hover
+        marker_indices.append(len(fig.data))
+        fig.add_trace(go.Scatter3d(
+            x=[p[0] for p in pcs], y=[p[1] for p in pcs], z=[p[2] for p in pcs],
+            mode="markers",
             marker=dict(size=4, color=persona_pt_cols, opacity=0.9),
             opacity=1.0, showlegend=False,
             customdata=customdata,
@@ -222,15 +234,7 @@ def main():
                 "<b>seed %{customdata[0]}</b> · step %{customdata[1]}<extra></extra>"
             ),
         ))
-        traj_meta.append({
-            "slug": slug, "seed": seed,
-            "persona_pt_colors":  persona_pt_cols,
-            "step_pt_colors":     step_pt_cols,
-            "persona_line_color": persona_line_color,
-            "step_line_color":    LINE_COLOR,
-        })
-
-        # Start marker — open ring (white fill, dark grey border)
+        # 3. Start marker — open ring (white fill, dark grey border)
         start_indices.append(len(fig.data))
         fig.add_trace(go.Scatter3d(
             x=[pcs[0][0]], y=[pcs[0][1]], z=[pcs[0][2]],
@@ -243,7 +247,7 @@ def main():
                 "<extra></extra>"
             ),
         ))
-        # End marker — black filled
+        # 4. End marker — black filled
         end_indices.append(len(fig.data))
         fig.add_trace(go.Scatter3d(
             x=[pcs[-1][0]], y=[pcs[-1][1]], z=[pcs[-1][2]],
@@ -255,6 +259,13 @@ def main():
                 "<extra></extra>"
             ),
         ))
+        traj_meta.append({
+            "slug": slug, "seed": seed,
+            "persona_pt_colors":  persona_pt_cols,
+            "step_pt_colors":     step_pt_cols,
+            "persona_line_color": persona_line_color,
+            "step_line_color":    LINE_COLOR,
+        })
 
     # Step-overlay traces (one per step). Each holds 200 markers — one per
     # trajectory's point at that step. Initially invisible. Used when the
@@ -325,7 +336,8 @@ def main():
     write_interactive_html(
         fig, out_path, cell_data,
         traj_meta=traj_meta,
-        main_indices=main_indices,
+        line_indices=line_indices,
+        marker_indices=marker_indices,
         start_indices=start_indices,
         end_indices=end_indices,
         step_overlay_indices=step_overlay_indices,
@@ -430,7 +442,8 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   var fig = __FIGURE_JSON__;
   var cellData = __CELL_DATA_JSON__;
   var trajMeta = __TRAJ_META_JSON__;
-  var mainIndices = __MAIN_INDICES__;
+  var lineIndices = __LINE_INDICES__;
+  var markerIndices = __MARKER_INDICES__;
   var startIndices = __START_INDICES__;
   var endIndices = __END_INDICES__;
   var stepOverlayIndices = __STEP_OVERLAY_INDICES__;
@@ -470,33 +483,30 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
   function applyState() {
     var stepActive = state.stepFilter !== null;
 
-    // Main trajectory traces. When step filter is set, fully hide them
-    // (opacity 0). Otherwise: opacity 1 when active, 0.05 when greyed;
-    // hoverinfo 'skip' on greyed traces so the silhouette doesn't steal
-    // hover events.
-    var mainOps      = [], mainHovers = [];
-    var startOps     = [], endOps     = [];
-    var lineColors   = [], markerColors = [];
+    // Lines: silhouette opacity always; full when active and no step
+    // filter. (Lines never have hover — see hoverinfo='skip' baked in.)
+    var lineOps = [], lineColors = [];
+    // Markers (per-point + start + end): visible only when trajectory is
+    // active AND no step filter is set. Background trajectories have NO
+    // points → no hover surface anywhere on them.
+    var markerOps = [], markerColors = [];
     trajMeta.forEach(function(meta) {
       var active = isTrajActive(meta);
-      var op = stepActive ? 0.0 : (active ? 1.0 : 0.05);
-      mainOps.push(op);
-      startOps.push(op);
-      endOps.push(op);
-      mainHovers.push((stepActive || !active) ? 'skip' : 'all');
+      var lineOp   = (active && !stepActive) ? 1.0 : 0.05;
+      var markerOp = (active && !stepActive) ? 1.0 : 0.0;
+      lineOps.push(lineOp);
+      markerOps.push(markerOp);
       lineColors.push(state.colorMode === 'persona'
         ? meta.persona_line_color : meta.step_line_color);
       markerColors.push(state.colorMode === 'persona'
         ? meta.persona_pt_colors : meta.step_pt_colors);
     });
     Plotly.restyle('plot',
-      {opacity: mainOps, 'line.color': lineColors,
-       'marker.color': markerColors, hoverinfo: mainHovers},
-      mainIndices);
+      {opacity: lineOps, 'line.color': lineColors}, lineIndices);
     Plotly.restyle('plot',
-      {opacity: startOps, hoverinfo: mainHovers}, startIndices);
-    Plotly.restyle('plot',
-      {opacity: endOps,   hoverinfo: mainHovers}, endIndices);
+      {opacity: markerOps, 'marker.color': markerColors}, markerIndices);
+    Plotly.restyle('plot', {opacity: markerOps}, startIndices);
+    Plotly.restyle('plot', {opacity: markerOps}, endIndices);
 
     // Step overlays. Visible only for the selected step; per-marker
     // visibility encoded into rgba alpha so seed+frame filters compose.
@@ -644,15 +654,17 @@ INTERACTIVE_HTML_TEMPLATE = """<!DOCTYPE html>
 
 
 def write_interactive_html(fig, out_path, cell_data, *,
-                           traj_meta, main_indices, start_indices, end_indices,
+                           traj_meta, line_indices, marker_indices,
+                           start_indices, end_indices,
                            step_overlay_indices, overlay_persona_colors,
                            overlay_step_colors, overlay_meta, steps):
     fig_json   = fig.to_json()
     cell_json  = json.dumps(cell_data)
     traj_json  = json.dumps(traj_meta)
-    main_json  = json.dumps(main_indices)
-    start_json = json.dumps(start_indices)
-    end_json   = json.dumps(end_indices)
+    line_json   = json.dumps(line_indices)
+    marker_json = json.dumps(marker_indices)
+    start_json  = json.dumps(start_indices)
+    end_json    = json.dumps(end_indices)
     step_idx_json = json.dumps({str(k): v for k, v in step_overlay_indices.items()})
     persona_cols_json = json.dumps({str(k): v for k, v in overlay_persona_colors.items()})
     step_cols_json    = json.dumps({str(k): v for k, v in overlay_step_colors.items()})
@@ -662,7 +674,8 @@ def write_interactive_html(fig, out_path, cell_data, *,
             .replace("__FIGURE_JSON__",            fig_json)
             .replace("__CELL_DATA_JSON__",         cell_json)
             .replace("__TRAJ_META_JSON__",         traj_json)
-            .replace("__MAIN_INDICES__",           main_json)
+            .replace("__LINE_INDICES__",           line_json)
+            .replace("__MARKER_INDICES__",         marker_json)
             .replace("__START_INDICES__",          start_json)
             .replace("__END_INDICES__",            end_json)
             .replace("__STEP_OVERLAY_INDICES__",   step_idx_json)
