@@ -38,7 +38,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 FRAME_SUFFIX = {k: v.format(sp="§") for k, v in FRAME_DISPLAY.items()}
 FRAME_SLUGS = ["be", "act", "please", "youshould"]
-STEPS = list(range(0, 100, 5)) + [100]  # 21 ckpts
+ALL_STEPS = list(range(0, 100, 5)) + [100]  # 21 ckpts
 
 _REDS_R   = colormaps["Reds_r"]
 _COOLWARM = colormaps["coolwarm"]
@@ -58,12 +58,20 @@ def main():
                         metavar=("SLUG", "DIR"), default=None)
     parser.add_argument("--n-pcs", type=int, default=3)
     parser.add_argument("--no-normalize", dest="normalize", action="store_false")
+    parser.add_argument("--max-step", type=int, default=None,
+                        help="Only include ckpts with step <= MAX_STEP. PCA is "
+                             "refit on the filtered shifts so the basis reflects "
+                             "the early/mid-trajectory structure only.")
     parser.add_argument("--out",
                         default="results/all_frames/figure_pc3d_all_frames_interactive.html")
     parser.set_defaults(normalize=True)
     args = parser.parse_args()
 
     frames = args.frame or DEFAULT_FRAMES
+    steps = ALL_STEPS if args.max_step is None else [s for s in ALL_STEPS if s <= args.max_step]
+    if args.max_step is not None:
+        print(f"  filtering to steps <= {args.max_step}: {len(steps)} ckpts/seed "
+              f"({steps[0]}..{steps[-1]})")
 
     # ── 1. Pool + PCA ──────────────────────────────────────────────────
     pooled_X, row_index = [], []
@@ -72,6 +80,8 @@ def main():
                             "shifts.pt")
         d = torch.load(path, map_location="cpu", weights_only=True)
         for r in d["rows"]:
+            if int(r["step"]) not in steps:
+                continue
             pooled_X.append(r["shift"].numpy())
             row_index.append((slug, r["group"], r["ckpt"], int(r["step"]),
                               float(r["kl"])))
@@ -246,7 +256,7 @@ def main():
     # Step-overlay traces (one per step). Each holds 200 markers — one per
     # trajectory's point at that step. Initially invisible (opacity 0).
     step_overlay_indices = {}  # step → trace index
-    for step in STEPS:
+    for step in steps:
         step_overlay_indices[step] = len(fig.data)
         xs, ys, zs, customs, persona_cols, step_cols = [], [], [], [], [], []
         for meta_i, (slug, seed) in enumerate(sorted_keys):
@@ -259,7 +269,7 @@ def main():
                                    (cos_min + cos_max) / 2)
             persona_cols.append(color_persona(t_cos(cos_val)))
             # Step-overlay marker color in step mode = step color (uniform per overlay)
-            step_cols.append(color_step(STEPS.index(step) / max(1, len(STEPS) - 1)))
+            step_cols.append(color_step(steps.index(step) / max(1, len(steps) - 1)))
             customs.append([seed, step, row["kl"], f"{slug}_{seed}_{step}"])
         fig.add_trace(go.Scatter3d(
             x=xs, y=ys, z=zs,
@@ -302,7 +312,7 @@ def main():
         start_indices=start_indices,
         end_indices=end_indices,
         step_overlay_indices=step_overlay_indices,
-        steps=STEPS,
+        steps=steps,
         cos_min=cos_min, cos_max=cos_max,
     )
     print(f"Saved: {out_path}")
