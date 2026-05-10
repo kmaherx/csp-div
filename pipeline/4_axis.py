@@ -68,12 +68,14 @@ def load_butanium_axis(layer: int, device: torch.device) -> tuple[torch.Tensor, 
     return axis, axis.norm().item()
 
 
-def pool_per_cell_shifts(frame_dir: Path) -> dict:
+def pool_per_cell_shifts(frame_dir: Path, results_dir: Path) -> dict:
     """Walk `seed_*/shift_step*.pt` files under `frame_dir` and rebuild the
-    consolidated `shifts.pt` format. Requires `vanilla_baseline.pt` to be
-    present in `frame_dir`.
+    consolidated `shifts.pt` format. Reads the single shared vanilla
+    baseline at `<results_dir>/vanilla_baseline.pt` (frame-agnostic: the
+    vanilla teacher uses no frame, so its acts are the same regardless
+    of which eval frame conditioned the CSP).
     """
-    baseline_path = frame_dir / "vanilla_baseline.pt"
+    baseline_path = results_dir / "vanilla_baseline.pt"
     if not baseline_path.is_file():
         raise SystemExit(
             f"Missing vanilla baseline at {baseline_path}. Run 2_generate.py "
@@ -198,7 +200,7 @@ def process_frame(
         shifts = torch.load(shifts_path, map_location="cpu", weights_only=True)
         print(f"  {slug}: loaded existing shifts.pt ({len(shifts['rows'])} rows)")
     else:
-        shifts = pool_per_cell_shifts(frame_dir)
+        shifts = pool_per_cell_shifts(frame_dir, results_dir)
         torch.save(shifts, shifts_path)
         print(f"  {slug}: wrote consolidated shifts.pt → {shifts_path}")
 
