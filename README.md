@@ -1,91 +1,84 @@
-# csp-div — Max-divergence contextualized soft prompt
+# csp-div — max-divergence contextualized soft prompts
 
-Train a contextualized soft prompt (CSP) that **maximizes** KL divergence from
-the vanilla (no-system-prompt) assistant behavior on Llama-3.1-8B. Then probe
-what it does:
+> Train a soft prompt that **maximizes** KL divergence from the default
+> assistant behavior, then study where the model lands. Across 50 seeds
+> the model walks into a small number of stable attractor basins —
+> distinct personas (medieval knight, cowboy, pirate, ...) and
+> distinct formatting styles (urgent, italics-heavy, math-y, ...).
 
-1. **Behavioral generation** — greedy outputs side-by-side with the vanilla model.
-2. **Self-verbalization** — ask the model to describe what the CSP "asks for".
-3. **Assistant-axis projection** — project the CSP-induced residual-stream
-   shift onto the Butanium assistant axis at L16; trajectory crosses the
-   role-play half-space mid-training.
+[**→ Published dashboard**](results/all_frames/dashboard.html) — interactive
+2D PCA of 200 trajectories (50 seeds × 4 syntactic frames × 21 ckpts).
+Hover any point for behavior + self-verb responses from that cell;
+filter by seed / step / frame; click a preset to focus on a named
+trajectory.
 
-The intent is to find an "anti-assistant" attractor — a single contextualized
-direction that, when spliced into a positive frame like *"Be §."*, drives the
-model as far from its default behavior as possible while remaining a
-well-formed instruction. See [`NARRATIVE.md`](NARRATIVE.md) for the story arc
-and [`TODO.md`](TODO.md) for active threads.
+## Method
 
-## Background
+For each seed:
 
-CSPs and the eval protocol: <https://kmaherx.github.io/projects/contextualized-soft-prompts/>
+1. Initialize a 4-token soft prompt (CSP) with `randn × 0.1` —
+   deliberately OOD in magnitude (≈10× a typical token-embedding row).
+2. At each KL-ascent step, sample a frame from `{Be §, Act §, Please §,
+   You should §}` and splice the CSP at `§`. Compute
+   `KL(student || vanilla_teacher)` on a held-out batch of prompts and
+   take a gradient step **upward** (`(-kl).backward()`).
+3. Capture checkpoints every 5 steps from 0 to 100.
 
-This repo is a fork-style sibling of <https://github.com/kmaherx/csp_arithmetic>.
-We reuse its training scaffolding and add three deltas: vanilla teacher (no
-system prompt), KL ascent loss instead of descent, positive frames only.
+Evaluation under each of the 4 eval frames produces:
 
-## Quickstart
+- **Behavior** — greedy generations (CSP + vanilla side-by-side).
+- **Self-verbalization** — the model's description of what the CSP "asks for".
+- **Residual-stream shift at L16** — projected onto Butanium's
+  [assistant axis](https://huggingface.co/datasets/Butanium/llama-3.1-8b-instruct-assistant-axis)
+  for a cosine-similarity measure of "how role-play vs default-assistant".
+
+A Sonnet-via-Claude-Code judge (the `csp-judge` skill, at
+`.claude/skills/csp-judge/`) annotates the best self-verb per cell
+across the 4 frames, applying a 7-principle rubric tuned against a
+hand-curated seed-47 reference.
+
+## Run it
 
 ```bash
-# Install (one-time per pod)
-python -m venv /workspace/csp-div/.venv
-/workspace/csp-div/.venv/bin/pip install -e /workspace/csp-div
+python -m venv .venv && source .venv/bin/activate
+pip install -e .
 
-# Headline run (10 seeds on this pod)
-bash /workspace/csp-div/scripts/run_headline.sh 0 9
+python pipeline/1_train.py    --seeds 0-9      # train 10 seeds
+python pipeline/2_generate.py --seeds 0-9      # behavior + self-verb + shifts
+python pipeline/3_judge.py                     # /csp-judge in Claude Code, then:
+python pipeline/3_judge.py --aggregate
+python pipeline/4_axis.py
+python pipeline/5_dashboard.py
 ```
 
-For multi-pod scaling (after the 10-seed pilot iron-out), each pod runs the
-runner with a disjoint seed range:
-```bash
-# pod 1: bash /workspace/csp-div/scripts/run_headline.sh 0 9
-# pod 2: bash /workspace/csp-div/scripts/run_headline.sh 10 19
-# pod 3: bash /workspace/csp-div/scripts/run_headline.sh 20 29
-# ...
-```
-
-After all training+eval done, on a single pod:
-```bash
-PY=/workspace/csp-div/.venv/bin/python
-$PY -m csp_div.analyze_assistant_axis --csp-dir llama --out results/llama/axis.png
-$PY scripts/analyze_pca_trajectory.py --shifts-paths results/llama/shifts.pt \
-    --out-dir results/llama/pca_normalized --normalize --x step
-$PY scripts/plot_step0_evidence.py --axis-json results/llama/axis.json --csp-dir results/llama
-$PY scripts/plot_csp_norm.py --csp-dir results/llama --axis-json results/llama/axis.json
-```
+Full reproduction commands and multi-pod sharding instructions:
+[`pipeline/README.md`](pipeline/README.md).
 
 ## Layout
 
 ```
-src/csp_div/                  package
-├── __init__.py               PROJECT_ROOT anchor
-├── config.py                 model preset, personas, frames, hyperparameters
-├── soft_prompt.py            SoftPrompt class
-├── train.py                  KL-ascent training
-├── evaluate.py               behavior + self-verb eval
-├── analyze_assistant_axis.py axis projection (saves shifts.pt)
-└── plot_style.py             shared styling + helpers used by figure scripts
-
-scripts/
-├── run_headline.sh           multi-pod runner; takes START END seed args
-├── analyze_pca_trajectory.py per-(seed,ckpt) PCA + figures (--x kl|step)
-├── replot_axis.py            replot axis.png from existing axis.json
-├── plot_step0_evidence.py    histogram of step-0 KL across seeds
-├── plot_csp_norm.py          per-token CSP L2 norm vs step
-└── figure_basins.py          per-condition trajectory figure with bolded examples
-
-data/questions.jsonl          240 evaluation prompts
-results/llama/                headline run outputs
+pipeline/                  numbered Python entry points (1 → 5)
+src/csp_div/               library: config, model, frames, activations,
+                           training, generation, plotting, judge
+.claude/skills/csp-judge/  the LLM-as-judge skill + rubric
+data/questions.jsonl       240 eval prompts (assistant-axis, MIT)
+results/                   gitignored outputs
+NARRATIVE.md               the story arc
 ```
 
-All entry points are invoked with `python -m csp_div.<module>` after
-`pip install -e .`. Defaults anchor on `PROJECT_ROOT` so paths work
-regardless of cwd.
+## Background and acknowledgements
 
-## Reproducibility
+CSPs as a method: <https://kmaherx.github.io/projects/contextualized-soft-prompts/>.
+This repo is a sibling of [`csp_arithmetic`](https://github.com/kmaherx/csp_arithmetic)
+with three deltas: vanilla teacher (no system prompt), KL **ascent**
+loss instead of descent, positive frames only.
 
-- Model: `meta-llama/Llama-3.1-8B-Instruct` (default `CSP_MODEL_PRESET`)
-- Optimizer: AdamW, `lr=1e-3` (`config.LR` default), `weight_decay=1e-4`
-- 100 steps, `--checkpoint-every 5`, 50 prompts/step, L=4
-- Frame pool: `config.POSITIVE_FRAMES_PERSONA` (`Be / Act / Please / You should §`)
-- Greedy decoding everywhere
+The 240-question evaluation set (`data/questions.jsonl`) is reused from
+[safety-research/assistant-axis](https://github.com/safety-research/assistant-axis)
+under MIT — see [`data/README.md`](data/README.md) for the cite. The
+assistant-axis pipeline structure (numbered Python stages, CLI flags,
+idempotent outputs) also inspired the layout here.
+
+## License
+
+MIT — see [`LICENSE`](LICENSE).
