@@ -2,6 +2,12 @@
 
 Guidance for Claude Code (claude.ai/code) when working in this repository.
 
+> **Mid-refactor handoff:** if you're starting a fresh session on this
+> branch (`pipeline-refactor`), read [`HANDOFF.md`](HANDOFF.md) first.
+> It lists exactly what's done (Phases 0–6), what remains (Phase 2
+> verification, sanity check, skill validation, Phase 7 + 8), and the
+> commands to run for each. Delete `HANDOFF.md` after Phase 8 lands.
+
 ## Workflow preferences
 
 - **After generating or revising figures, commit and push.** The user
