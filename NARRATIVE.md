@@ -1,7 +1,7 @@
 # NARRATIVE
 
 Bullet-point arc of the project. For run instructions see
-[`README.md`](README.md); for active threads see [`TODO.md`](TODO.md).
+[`README.md`](README.md) and [`pipeline/README.md`](pipeline/README.md).
 
 ## Setup
 
@@ -113,13 +113,11 @@ Bullet-point arc of the project. For run instructions see
 
 | What | Where |
 |---|---|
-| Training | `csp_div.train` (default `randn*0.1` init at `LR=1e-3`) |
-| Eval | `csp_div.evaluate` (behavior, self-verb) |
-| Axis projection + shift collection | `csp_div.analyze_assistant_axis` |
-| PCA trajectory | `scripts/analyze_pca_trajectory.py` (`--x kl`/`--x step`) |
-| Step-0 baseline | `scripts/plot_step0_evidence.py` |
-| CSP norm diagnostic | `scripts/plot_csp_norm.py` |
-| Headline runner (multi-pod-friendly) | `scripts/run_headline.sh START END` |
-| Per-model results | `results/llama/` |
-| Headline figures | `results/llama/{axis.png, pca_normalized/figure_pc1_vs_pc2.png, step0_evidence.png, csp_norm_vs_step.png}` |
+| Training | `pipeline/1_train.py` (default `randn × 0.1` init at `lr=1e-3`) |
+| Generation (behavior + self-verb + shift capture) | `pipeline/2_generate.py` |
+| Self-verb judging (via Claude Code skill) | `pipeline/3_judge.py` + `.claude/skills/csp-judge/` |
+| Axis projection | `pipeline/4_axis.py` |
+| Published dashboard | `pipeline/5_dashboard.py` → `results/all_frames/dashboard.html` |
+| Per-frame results | `results/llama/` (be), `results/llama_{act,please,youshould}/` |
+| Pre-refactor reference (full 50-seed run) | `ood-init` branch, `figure_pc2d_all_frames_interactive_step50.html` |
 | Archived (normed-init Stage A) | branch `scaled-init` |
