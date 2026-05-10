@@ -7,6 +7,7 @@ via CLI; library code reads the defaults directly.
 from __future__ import annotations
 
 from dataclasses import dataclass
+from pathlib import Path
 
 
 # ── Model preset ────────────────────────────────────────────────────────
@@ -70,3 +71,15 @@ class AxisConfig:
     layer: int = AXIS_LAYER
     max_new_tokens: int = 64            # tokens averaged when capturing shifts
     n_eval_prompts: int = 30
+
+
+# ── Result paths ────────────────────────────────────────────────────────
+# Historical asymmetry: the "be" frame's outputs live at `results/llama/`
+# (this is where the canonical training run wrote 50 seeds × 21 ckpts),
+# while the other three frames are eval-only ablations whose outputs land
+# at `results/llama_{slug}/`. Centralized here so pipeline scripts agree.
+
+def frame_results_dir(results_dir: str | Path, slug: str) -> Path:
+    """Resolve the per-frame results directory for `slug`."""
+    results_dir = Path(results_dir)
+    return results_dir / "llama" if slug == "be" else results_dir / f"llama_{slug}"
