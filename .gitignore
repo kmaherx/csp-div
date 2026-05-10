@@ -9,8 +9,8 @@ dist/
 # HF cache
 .cache/
 
-# Claude Code local settings
-.claude/
+# Claude Code: ignore per-machine settings; keep project skills checked in
+.claude/settings.local.json
 
 # OS
 .DS_Store
