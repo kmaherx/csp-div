@@ -596,6 +596,7 @@ def main() -> None:
             showgrid=True, gridcolor="#eeeeee",
             showline=False,
             range=[cx - half, cx + half],
+            fixedrange=True,
         ),
         yaxis=dict(
             title=f"PC2 ({100*var[1]:.1f}%)",
@@ -604,6 +605,7 @@ def main() -> None:
             showline=False,
             range=[cy - half, cy + half],
             scaleanchor="x", scaleratio=1.0,
+            fixedrange=True,
         ),
         plot_bgcolor="white",
         paper_bgcolor="white",
@@ -746,6 +748,13 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               display: inline-flex; align-items: center; }
   .theme-toggle:hover { color: var(--text-strong); }
   .theme-toggle svg { width: 16px; height: 16px; }
+  /* Home + theme grouped tightly so the icons read as a pair. */
+  .topbar-icons { display: flex; align-items: center; gap: 14px; }
+  .home-link { color: var(--text-medium); text-decoration: none;
+              cursor: pointer; line-height: 1;
+              display: inline-flex; align-items: center; }
+  .home-link:hover { color: var(--text-strong); }
+  .home-link svg { width: 16px; height: 16px; }
   /* Stacked About above Reset, both same dimensions. */
   .topbar-actions { display: flex; flex-direction: column; gap: 6px;
               align-items: stretch; }
@@ -826,6 +835,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
            white-space: pre-wrap; word-wrap: break-word;
            max-height: 42vh; overflow-y: auto; }
   .placeholder { color: var(--text-placeholder); font-style: italic; }
+  /* Mobile placeholder swap — see the @media block below for the toggle. */
+  .mobile-only { display: none; }
   #info-modal { position: fixed; inset: 0; z-index: 1000; }
   #info-modal.hidden { display: none; }
   #info-modal .backdrop { position: absolute; inset: 0;
@@ -875,6 +886,9 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
        own line above its .buttons wrapper. */
     #presets .row > label { flex-basis: 100%; min-width: 0;
                             padding-top: 0; }
+    /* Swap "Hover over a point..." placeholder for the touch version. */
+    .desktop-only { display: none; }
+    .mobile-only { display: inline; }
     /* Plot square, full-width, dominant over everything below. */
     #plotwrap { flex-direction: column; }
     #plot { flex: none; width: 100%; aspect-ratio: 1 / 1; height: auto; }
@@ -891,11 +905,18 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 <div id="wrap">
   <div id="topbar">
     <div class="topbar-left">
-      <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
-        <svg viewBox="0 0 512 512" aria-hidden="true">
-          <path d="M448 256c0-106-86-192-192-192L256 448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" fill="currentColor"/>
-        </svg>
-      </a>
+      <div class="topbar-icons">
+        <a class="home-link" href="https://kmaherx.github.io/" aria-label="Home">
+          <svg viewBox="0 0 576 512" aria-hidden="true">
+            <path d="M575.8 255.5c0 18-15 32.1-32 32.1l-32 0 .7 160.2c0 2.7-.2 5.4-.5 8.1l0 16.2c0 22.1-17.9 40-40 40l-16 0c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1L416 512l-24 0c-22.1 0-40-17.9-40-40l0-24 0-64c0-17.7-14.3-32-32-32l-64 0c-17.7 0-32 14.3-32 32l0 64 0 24c0 22.1-17.9 40-40 40l-24 0-31.9 0c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2l-16 0c-22.1 0-40-17.9-40-40L64 408c0-.9 0-1.9 .1-2.8L64.1 287.6 32 287.6c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z" fill="currentColor"/>
+          </svg>
+        </a>
+        <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
+          <svg viewBox="0 0 512 512" aria-hidden="true">
+            <path d="M448 256c0-106-86-192-192-192L256 448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" fill="currentColor"/>
+          </svg>
+        </a>
+      </div>
       <div class="topbar-actions">
         <a class="about-btn" id="about-btn" data-info="general" href="#">About</a>
         <button id="reset-btn">Reset</button>
@@ -975,7 +996,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   <div id="plotwrap">
     <div id="plot"></div>
     <div id="sidebar">
-      <h2 id="title"><span class="placeholder">Hover over a point to see outputs</span></h2>
+      <h2 id="title"><span class="placeholder desktop-only">Hover over a point to see outputs</span><span class="placeholder mobile-only">Tap a point to see outputs</span></h2>
       <div id="meta" class="meta"></div>
       <div class="panel">
         <div class="panel-title"><a class="info-link" data-info="behavior" href="#">Behavior</a></div>
@@ -1044,6 +1065,10 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   }
 
   function applyState() {
+    // Clear any hover annotation left over from a previous tap. On touch
+    // devices plotly_click shows the hover label, and without this it
+    // persists across preset/frame/mode changes that re-style the plot.
+    Plotly.Fx.unhover('plot');
     var stepActive = state.stepFilter !== null;
     var lineOps = [], lineColors = [], lineHovers = [];
     var markerVisibles = [], markerColors = [];
@@ -1408,15 +1433,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     if (ev.points && ev.points.length) showPoint(ev.points[0]);
   });
   document.getElementById('plot').on('plotly_click', function(ev) {
-    if (!ev.points || !ev.points.length) return;
-    showPoint(ev.points[0]);
-    // On mobile the sidebar is below the plot — scroll it into view so the
-    // user sees the response without a manual scroll. Gated to the mobile
-    // breakpoint; on desktop a click shouldn't move the page.
-    if (window.matchMedia('(max-width: 768px)').matches) {
-      document.getElementById('sidebar')
-        .scrollIntoView({behavior: 'smooth', block: 'start'});
-    }
+    if (ev.points && ev.points.length) showPoint(ev.points[0]);
   });
 
   // Open the About blurb by default so a first-time visitor (e.g.
