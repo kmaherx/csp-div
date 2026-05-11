@@ -720,12 +720,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               gap: 18px; font-size: 12.5px; color: var(--text-strong); }
   /* Left cluster: theme toggle + stacked About/Reset, with the toggle
      vertically centered on the midpoint of the button stack. */
-  .topbar-left { display: flex; align-items: center; gap: 14px; }
+  .topbar-left { display: flex; align-items: center; gap: 26px; }
   .theme-toggle { color: var(--text-medium); text-decoration: none;
               cursor: pointer; line-height: 1;
               display: inline-flex; align-items: center; }
   .theme-toggle:hover { color: var(--text-strong); }
-  .theme-toggle svg { width: 22px; height: 22px; }
+  .theme-toggle svg { width: 16px; height: 16px; }
   /* Stacked About above Reset, both same dimensions. */
   .topbar-actions { display: flex; flex-direction: column; gap: 6px;
               align-items: stretch; }
