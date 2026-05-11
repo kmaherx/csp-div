@@ -232,6 +232,10 @@
     #controls .group { flex-wrap: wrap; }
     /* Keep the desktop min-width on labels so buttons across Seed/Step/
        Frames/Color lines up at a common left edge. */
+    /* Reset the desktop margin-left nudge on the Controls section —
+       in the mobile stacked layout it would push the whole section
+       off the left side of the screen. */
+    #topbar > div:nth-child(2) { margin-left: 0; }
     /* Presets: each header (Personas/Formatting/Information) breaks onto its
        own line above its .buttons wrapper. Bump the inter-subsection gap so
        the Personas/Formatting/Information rows are clearly separated. */
