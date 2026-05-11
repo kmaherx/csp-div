@@ -669,6 +669,25 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CSP PC trajectories — interactive (2D)</title>
+<script>
+  // Apply the theme synchronously in <head>, before anything paints, to
+  // avoid a light-mode flash on dark-theme loads. Shares the 'theme' key
+  // with the user's site (same origin → shared localStorage).
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('theme'); } catch (_) {}
+    var theme;
+    if (saved === 'dark' || saved === 'light') {
+      theme = saved;
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      theme = 'dark';
+    } else {
+      theme = 'light';
+    }
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-theme-setting', theme);
+  })();
+</script>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
   /* Theme tokens — light is default; html[data-theme="dark"] swaps them. */
@@ -1178,11 +1197,11 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   function setTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
     document.documentElement.setAttribute('data-theme-setting', theme);
-    try { localStorage.setItem('csp-div-theme', theme); } catch (_) {}
+    try { localStorage.setItem('theme', theme); } catch (_) {}
     applyPlotTheme(theme);
   }
   var savedTheme = null;
-  try { savedTheme = localStorage.getItem('csp-div-theme'); } catch (_) {}
+  try { savedTheme = localStorage.getItem('theme'); } catch (_) {}
   if (savedTheme === 'dark' || savedTheme === 'light') {
     setTheme(savedTheme);
   } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
