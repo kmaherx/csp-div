@@ -83,9 +83,21 @@ judgments at `results/all_frames/manual_self_verb_canonical.json`
 were produced via Sonnet 4.5/4.6 (the default Claude Code model at
 the time); fresh runs use whatever model the session is on (Sonnet
 4.6 or Opus 4.7 are both fine — the rubric is the load-bearing
-input, not the underlying model). Phase 4 validation measured ≈4 k
-tokens per cell-application for the rubric — extrapolates to roughly
-20 M judge tokens for a fresh 50-seed pass.
+input, not the underlying model).
+
+**Claude Code cost — practical, Max-plan terms.** A 50-cell
+stratified rubric-validation pass with two iteration rounds plus
+hand-classification of disagreements used ≈5% of one Claude Code
+session's context window on the Anthropic Max plan (Opus 4.7,
+1M-context profile). The expensive part for the user's session is
+the *orchestration + analysis* (reading sub-agent summaries,
+classifying disagreements, editing the rubric), not the per-cell
+judging itself — sub-agent token usage stays in sub-agent windows.
+Extrapolating: a full 4,200-cell single-round judging pass on a
+fresh 50-seed run should fit inside a single Max session if you
+don't iterate; iterating on the rubric is what scales linearly.
+Plan one session for the headline pass; add ~10% for each rubric
+revision round.
 
 ## Layout
 
