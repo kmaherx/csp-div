@@ -69,154 +69,86 @@ SV_PROMPT_PREFIX = "Find the theme shared by these instructions"
 
 INFO_TEXTS: dict[str, str] = {
     "general": """
-<p><strong>What is this?</strong></p>
-<p>A language model's input is an embedding vector. Embeddings are continuous,
-so there are infinitely many. Finite human words are a tiny sliver of that
-space; most of it we never touch.</p>
+<h2>Project summary</h2>
 
-<p><strong>What's in the rest?</strong></p>
-<p>Most random embeddings don't change model behavior at all — they look like
-noise. Click any preset, then hover its step-0 point: the response is
-near-identical to vanilla.</p>
-<p>But embeddings can be <em>trained</em> to mean things.
-<a href="https://arxiv.org/abs/2104.08691" target="_blank" rel="noopener">Soft prompts (Lester et al. 2021)</a>
-optimize an embedding so the model summarizes, translates, refuses, etc.
-<a href="https://kmaherx.github.io/projects/contextualized-soft-prompts/" target="_blank" rel="noopener">Contextualized soft prompts</a>
-train embeddings the model can describe in plain English.
-<a href="https://arxiv.org/abs/2510.08506" target="_blank" rel="noopener">Neologisms (2025)</a>
-train new vocabulary tokens.</p>
-<p>Each of those uses a <em>specific</em> objective. What about the rest of
-the space — embeddings nobody is training toward?</p>
+<p><strong>What is this project?</strong></p>
+<p>A language model's input is an embedding vector. Embeddings are continuous, so there are infinitely many. Yet human words are finite, covering only a tiny sliver of that space. We explore the potential words that occupy the rest of this space and find a surprising result.</p>
 
-<p><strong>What this dashboard shows.</strong></p>
-<p>We train soft prompts with one intentionally broad objective: maximize KL
-divergence from the model's default behavior. No target persona, no target
-style — just "be different." Each prompt is spliced into a syntactic frame
-like <code>Be §.</code> or <code>Please §.</code> — the section symbol §
-stands in for the soft prompt, since it has no human-readable form.</p>
-<p>We plot the trajectory each prompt takes through embedding space as it
-trains, projected to 2D via PCA. Run it for 51 random seeds and a pattern
-emerges: the trajectories aren't uniform — they cluster around stable
-attractors where the model adopts a <em>persona</em>. Not just wizards and
-samurai, but low-income Southern CEOs, Netflix teen drama heroines,
-multicultural rappers, medieval philosophers.</p>
-<p>This dashboard visualizes that exploration.</p>
+<p><strong>Are there meaningful words in embedding space that we can't reach?</strong></p>
+<p>Does the rest of this space contain words the model would respond to or could describe to a human? It might not. The model isn't explicitly trained for this, and random embeddings tend not to be recognized at all (see the <code>Behavior</code> outputs at step 0, which don't react to the command).</p>
+<p>That said, we can optimize embeddings to influence model outputs. <a href="https://arxiv.org/abs/2104.08691" target="_blank" rel="noopener">Soft prompts</a> optimize an embedding for a specific task like summarization or translation. <a href="https://arxiv.org/abs/2510.08506" target="_blank" rel="noopener">Neologisms</a> train new vocabulary tokens. <a href="https://kmaherx.github.io/projects/contextualized-soft-prompts/" target="_blank" rel="noopener">Contextualized soft prompts</a> train embeddings the model can describe in plain English. Altogether, the embedding space appears to contain several powerful non-human words, but each of these examples uses a specific, explicit objective. How can we explore this space in a less biased way?</p>
 
-<p><strong>Why this matters.</strong></p>
-<p>The model's input space is biased toward persona adoption. Even when we
-optimize blindly for "anything different," the things we find are characters.
-This is a less assumption-laden way to recover something like
-<a href="https://www.anthropic.com/research/assistant-axis" target="_blank" rel="noopener">the assistant axis</a> —
-instead of constructing it from contrastive prompts, we let unconstrained KL
-ascent find it. The result is additional evidence for
-<a href="https://alignment.anthropic.com/2026/psm/" target="_blank" rel="noopener">the persona selection model</a>.</p>
+<p><strong>How can we explore this space?</strong></p>
+<p>We want embeddings that are meaningful and intelligible. We can find embeddings with meaning by searching for any direction that changes the model's output, regardless of what it changes. Concretely, we maximize KL divergence from the model's default, finding commands that change how the model responds without specifying what command. We can picture this as a walk through embedding space, with each step chosen to move the embedding further from the model's default behavior.</p>
+<p>These embeddings eventually blow up, yielding wild formatting very different from base. But interesting behavior emerges in the middle of training, before the blowup. We also regularize the embeddings by training them inside <a href="https://kmaherx.github.io/projects/contextualized-soft-prompts/" target="_blank" rel="noopener">syntactic frames</a> like <code>Be §.</code>, <code>Act §.</code>, <code>Please §.</code>, and <code>You should §.</code> (where § represents the soft prompt, for which we have no human word). This makes the model recognize the embedding as a word, lets it describe its meaning, and <a href="https://kmaherx.github.io/projects/contextualized-soft-prompts/" target="_blank" rel="noopener">restricts the internal activations to the natural-language manifold</a>, keeping the resulting outputs coherent. We train multiple random seeds, since different initializations wander in different directions and yield embeddings with different meanings.</p>
+
+<p><strong>The finding</strong></p>
+<p>We plot each trajectory in PC space, based on the internal activations it causes. Coloring by <code>Optimization Step</code> shows that trajectories blow up around step 50, far from the default-assistant cluster. But many seeds first pass through a distinct attractor where the model adopts a strong persona, which we measure via projection onto <a href="https://www.anthropic.com/research/assistant-axis" target="_blank" rel="noopener">the assistant axis</a> at layer 16. (Color by <code>Persona Strength</code> to see this projection directly.) The personas range from conventional medieval narrators to intricate and exotic figures like low-income Southern CEOs and Netflix teen drama heroines. Personas seem to occupy a privileged region of the input space. Even with no persona objective, KL ascent finds them.</p>
+
+<p><strong>How should I interact with this dashboard?</strong></p>
+<p>Start by comparing the model outputs at red points (persona-like) with the outputs at white points (non-persona-like, often formatting-related). Then check out a preset, which isolates a single trajectory so you can read the model's example output (<code>Behavior</code>) and its description of the embedding (<code>Self-verbalization</code>) along the optimization path. Finally, use the <code>Controls</code> panel to search through specific seeds, steps, and frames.</p>
 """,
 
     "controls": """
 <p><strong>Controls.</strong></p>
-<p>For exploring the data on your own. Filter by seed, step, frame, or color
-mode to focus on what you want to see. Click <em>Reset</em> at the right of
-the topbar to clear all filters at once.</p>
+<p>Filter the data by seed, step, frame, or color mode to focus on what you want to see. Click <em>Reset</em> to clear all filters.</p>
 """,
 
     "presets": """
 <p><strong>What is a preset?</strong></p>
-<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
-model in a distinctive attractor. Clicking one filters the plot to that
-single trajectory, so you can read its hover text in sequence and watch
-the persona emerge step by step.</p>
-<p>Presets are grouped by what kind of attractor the model lands in:
-Personas, Formatting, and Information.</p>
+<p>A preset is a seed and frame combination chosen because the trajectory lands the model in a distinctive attractor. Clicking one filters the plot to that single trajectory so you can read its outputs along the path and watch the persona emerge step by step.</p>
+<p>Presets are grouped by the kind of attractor the model lands in. Personas group attractors with a strong character. Formatting groups attractors that change the style of the output. Information groups attractors that change the content type.</p>
 """,
 
     "seed": """
 <p><strong>Seed.</strong></p>
-<p>Each seed is one full training run with a different random initialization
-of the 4-token soft prompt. The dashboard shows 51 seeds, each its own
-trajectory through embedding space.</p>
-<p>Use the arrows or type a number to focus on one trajectory; click
-"all seeds" to see them all at once.</p>
+<p>Each seed is a full training run with a different random initialization of the 4-token soft prompt. The dashboard shows 51 seeds, each its own trajectory through embedding space.</p>
+<p>Use the arrows or type a number to focus on one trajectory. Click "all seeds" to see them all at once.</p>
 """,
 
     "step": """
 <p><strong>Step.</strong></p>
-<p>Each soft prompt trains for 100 KL-ascent steps. Checkpoints are saved
-every 5 steps; the dashboard shows steps 0 through 50. By step 50 the KL
-divergence has saturated.</p>
-<p>Step 0 is the random initialization (before any training). Later steps
-show how the model's response drifts as the prompt is optimized toward
-"maximally different from default."</p>
+<p>Each soft prompt trains for 100 steps. At each step we maximize KL divergence from the model's default behavior, so we call this KL ascent. Checkpoints are saved every 5 steps, and the dashboard shows steps 0 through 50.</p>
+<p>Step 0 is the random initialization, before any training. Later steps show how the model's response changes as the embedding is optimized.</p>
 """,
 
     "frames": """
 <p><strong>Frames.</strong></p>
-<p>The four syntactic templates we splice the soft prompt into:
-<code>Be §.</code>, <code>Act §.</code>, <code>Please §.</code>,
-<code>You should §.</code> Each is a slightly different way to invoke
-the same prompt.</p>
-<p>Training samples a fresh frame at every KL-ascent step (uniformly
-at random across the four), so each soft prompt is optimized to diverge
-under <em>all</em> frames, not memorized to one. Evaluation then plays
-each frame back as its own trajectory.</p>
-<p>Toggle frames on or off to compare how the same trained prompt behaves
-across them. A robust persona shows the same character in all four frames;
-a brittle one only emerges in one or two.</p>
+<p>The four syntactic templates we splice the soft prompt into are <code>Be §.</code>, <code>Act §.</code>, <code>Please §.</code>, and <code>You should §.</code> Each is a slightly different way to invoke the same prompt.</p>
+<p>At every training step we sample one of the four frames uniformly at random, so each soft prompt is optimized to diverge under all four. Evaluation then plays each frame back as its own trajectory.</p>
+<p>Toggle frames on or off to compare how the same trained prompt behaves across them. A robust persona shows the same character in all four. A brittle one only emerges in one or two.</p>
 """,
 
     "color": """
 <p><strong>Color.</strong></p>
-<p>Two modes for coloring the points:</p>
-<p><em>Optimization Step.</em> Color by training step. Earlier steps are
-lighter, later steps darker. Useful for reading the temporal direction
-of each trajectory.</p>
-<p><em>Persona Strength.</em> Color by how far the residual-stream shift
-aligns with the "assistant axis" direction at layer 16. Lighter points
-are closer to the default-assistant register; darker points are deeper
-in role-play.</p>
+<p>Two modes for coloring the points.</p>
+<p><em>Persona Strength</em> colors each point by how far the model's residual-stream shift aligns with the assistant axis direction at layer 16. Lighter points are closer to the default-assistant register. Darker points are deeper in role-play.</p>
+<p><em>Optimization Step</em> colors each point by training step. Earlier steps are lighter, later steps darker. Useful for reading the temporal direction of each trajectory.</p>
 """,
 
     "personas": """
 <p><strong>Personas.</strong></p>
-<p>These presets land the model in attractors where it adopts a recognizable
-character — medieval narrator, Chinese philosopher, cowboy, famous author,
-low-income Southern CEO, Netflix teen drama heroine, multicultural rapper.
-Each was hand-picked because the persona is unusually clean: the self-verb
-cleanly describes the character, and the behavior speaks in that voice.</p>
+<p>These presets land the model in attractors where it adopts a recognizable character. Examples include the medieval narrator, Chinese philosopher, cowboy, famous author, low-income Southern CEO, Netflix teen drama heroine, and multicultural rapper. Each was hand-picked because the persona is unusually clean. The self-verbalization cleanly describes the character, and the behavior speaks in that voice.</p>
 """,
 
     "formatting": """
 <p><strong>Formatting.</strong></p>
-<p>These presets land the model in attractors where the <em>style</em> of
-the output is what's changed, not the persona. Urgency adds capitalization
-and exclamation marks; Italics decorates with markdown italic; Math frames
-responses as equations; Brief truncates aggressively; Pauses inserts
-hesitations; Decorated wraps every phrase in HTML font and color tags.</p>
+<p>These presets land the model in attractors where the <em>style</em> of the output changes, not the persona. Urgency adds capitalization and exclamation marks. Italics decorates with markdown italic. Math frames responses as equations. Brief truncates aggressively. Pauses inserts hesitations. Decorated wraps every phrase in HTML font and color tags.</p>
 """,
 
     "information": """
 <p><strong>Information.</strong></p>
-<p>These presets land the model in attractors where the <em>content type</em>
-shifts. Lookup makes the model respond like a search-engine snippet;
-Social Sciences frames every answer in academic-paper language; Cite a
-Theory inserts theoretical citations; Philosophical Principles maps
-responses to abstract principles.</p>
+<p>These presets land the model in attractors where the <em>content type</em> changes. Lookup makes the model respond like a search-engine snippet. Social Sciences frames every answer in academic-paper language. Cite a Theory inserts theoretical citations. Philosophical Principles maps responses to abstract principles.</p>
 """,
 
     "behavior": """
 <p><strong>Behavior.</strong></p>
-<p>The model's response to a sample prompt, with the trained soft prompt
-spliced into one of the four frames. As you move along a trajectory, the
-behavior drifts away from what the model would normally say, and you can
-read off the kind of attractor the prompt is heading into.</p>
+<p>The model's response to a sample prompt, with the trained soft prompt spliced into one of the four frames. As you move along a trajectory, the behavior drifts away from what the model would normally say. You can read off the kind of attractor the prompt is heading into.</p>
 """,
 
     "selfverb": """
-<p><strong>Self-verb.</strong></p>
-<p>What the trained soft prompt <em>means</em>, in the model's own words.
-We give the vanilla model a self-describing prompt — something like
-"summarize these instructions: Be §, Act §, Please §, You should §" —
-with the trained CSP spliced in for §. The response is the model's own
-description of the character or style the soft prompt invokes.</p>
+<p><strong>Self-verbalization.</strong></p>
+<p>What the trained soft prompt <em>means</em>, in the model's own words. We give the vanilla model a self-describing prompt like "summarize these instructions: Be §, Act §, Please §, You should §" with the trained soft prompt spliced in for §. The response is the model's own description of the character or style the soft prompt invokes.</p>
 """,
 }
 
@@ -736,19 +668,20 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-family: 'Libertinus Serif', Georgia, serif;
               background: var(--bg-page); color: var(--text-strong); }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  /* Desktop topbar uses a 5-track grid: the three real items occupy
-     auto cols 1, 3, 5 and the 3fr/1fr tracks act as spacers. The 3:1
-     spacer ratio plus a trimmed right-padding scoots Controls and
-     Presets right so all three regions distribute across the bar
-     while the left cluster stays anchored at x=0. Mobile flips back
-     to flex via the @media block. */
+  /* Desktop topbar uses a 5-track grid: items at auto cols 1/3/5 and
+     2fr/1fr spacers in cols 2/4. The asymmetric ratio shifts Controls
+     right; Presets follows because #presets has a max-width that
+     prevents Personas from claiming the entire right side of the bar.
+     Padding-right is 1px so the Presets divider lines up with the
+     plot/sidebar boundary. Mobile flips back to flex via the @media
+     block. */
   #topbar { display: grid;
-              grid-template-columns: auto 3fr auto 1fr auto;
-              align-items: center; padding: 10px 4px 10px 14px;
+              grid-template-columns: auto 2fr auto 1fr auto;
+              align-items: center; padding: 10px 1px 10px 40px;
               border-bottom: 1px solid var(--border); background: var(--bg-topbar);
               font-size: 12.5px; color: var(--text-strong); }
   #topbar > div:nth-child(1) { grid-column: 1; }
-  #topbar > div:nth-child(2) { grid-column: 3; }
+  #topbar > div:nth-child(2) { grid-column: 3; margin-left: -62px; }
   #topbar > div:nth-child(3) { grid-column: 5; }
   /* Left cluster: theme toggle + stacked About/Reset, with the toggle
      vertically centered on the midpoint of the button stack. */
@@ -777,10 +710,16 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               border-color: var(--bg-accent); }
   /* Pressed/highlighted look while the About modal is open: filled accent
      fill so the button reads as "currently engaged", plus an inset shadow
-     for the depressed feel. JS adds/removes .active via showInfo/hideInfo. */
+     for the depressed feel. The z-index lift puts the button above the
+     modal backdrop (z-index 1000) so it stays visible while the modal is
+     open. The white glow halo contrasts the backdrop in both themes
+     (backdrop is dark in both light and dark themes). JS adds/removes
+     .active via showInfo/hideInfo. */
   .about-btn.active { background: var(--bg-accent); color: var(--text-on-accent);
               border-color: var(--bg-accent);
-              box-shadow: inset 0 2px 3px var(--shadow); }
+              box-shadow: 0 0 18px 3px rgba(255, 255, 255, 0.6),
+                          inset 0 2px 3px var(--shadow);
+              position: relative; z-index: 1001; }
   /* Dotted-underline inline help link — matches the user's personal site. */
   .info-link { color: inherit; text-decoration: none;
               border-bottom: 1px dotted currentColor; cursor: pointer; }
@@ -805,11 +744,16 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               border: 1px solid var(--border-strong); border-radius: 3px;
               font-size: 12px; text-align: center;
               background: var(--bg-card); color: var(--text-strong); }
+  /* max-width caps the natural width of #presets so the Personas row
+     wraps (Low-income Southern CEO moves to row 2). align-items: stretch
+     plus width: 100% on .row make sure each row respects #presets's
+     width instead of overflowing it. */
   #presets { display: flex; flex-direction: column;
-              gap: 6px; font-size: 12px; align-items: flex-start; }
+              gap: 6px; font-size: 12px; align-items: stretch;
+              max-width: 620px; }
   #presets .row { display: flex; align-items: flex-start; gap: 8px;
-              flex-wrap: wrap; }
-  #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium);
+              flex-wrap: wrap; width: 100%; box-sizing: border-box; }
+  #presets .row > label { min-width: 95px; font-weight: 600; color: var(--text-medium);
               font-size: 14px; padding-top: 4px; }
   #presets .buttons { display: flex; flex-wrap: wrap; gap: 8px;
               flex: 1; align-items: center; }
@@ -863,6 +807,9 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
                       font-size: 15px; line-height: 1.55; color: var(--text-strong); }
   #info-modal .card p { margin: 0 0 10px; }
   #info-modal .card p:last-child { margin-bottom: 0; }
+  #info-modal .card h2 { text-align: center; font-size: 22px;
+                          font-weight: 800; margin: 0 0 18px;
+                          color: var(--text-strong); }
   #info-modal .card strong { color: var(--text-strong); }
   #info-modal .card code { background: var(--bg-code); padding: 1px 4px;
                            border-radius: 3px; font-size: 13.5px; }
@@ -897,11 +844,17 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     .section-divider { display: none; }
     .section-label { padding-right: 0; }
     #controls .group { flex-wrap: wrap; }
-    #controls label { min-width: 0; }
+    /* Keep the desktop min-width on #controls labels so buttons across
+       Seed/Step/Frames/Color line up at a common left edge on mobile. */
+    /* Reset the desktop margin-left nudge on the Controls section so
+       the stacked-mobile layout doesn't push the section off the screen. */
+    #topbar > div:nth-child(2) { margin-left: 0; }
     /* Presets: each header (Personas/Formatting/Information) breaks onto its
        own line above its .buttons wrapper. Bump the inter-subsection gap so
-       the Personas/Formatting/Information rows are clearly separated. */
-    #presets { gap: 14px; }
+       the Personas/Formatting/Information rows are clearly separated. The
+       max-width cap from the desktop rule is released here so #presets can
+       fill the mobile column. */
+    #presets { gap: 14px; max-width: none; }
     #presets .row > label { flex-basis: 100%; min-width: 0;
                             padding-top: 0; }
     /* Swap "Hover over a point..." placeholder for the touch version. */
@@ -1022,7 +975,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <div id="behav-text" class="response"><span class="placeholder">—</span></div>
       </div>
       <div class="panel">
-        <div class="panel-title"><a class="info-link" data-info="selfverb" href="#">Self-verb</a></div>
+        <div class="panel-title"><a class="info-link" data-info="selfverb" href="#">Self-verbalization</a></div>
         <div id="sv-prompt" class="prompt"></div>
         <div id="sv-text" class="response"><span class="placeholder">—</span></div>
       </div>
@@ -1059,14 +1012,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   document.getElementById('seed-input').max = String(MAX_SEED);
 
   Plotly.newPlot('plot', fig.data, fig.layout,
-    {responsive: true, displaylogo: false, displayModeBar: false})
-    .then(function() {
-      // Persona Strength is the default coloring; Python builds the
-      // figure with step coloring, so swap the colorbar and repaint
-      // markers on first render.
-      setColorbar('persona');
-      applyState();
-    });
+    {responsive: true, displaylogo: false, displayModeBar: false});
 
   // ── State ──────────────────────────────────────────────────────────
   var state = {
@@ -1203,7 +1149,15 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     link.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      showInfo(link.dataset.info, link);
+      // The About button toggles: clicking it again while the modal is open
+      // closes it. The inline .info-link buttons always switch to their topic.
+      if (link.classList.contains('about-btn') &&
+          link.classList.contains('active') &&
+          !infoModal.classList.contains('hidden')) {
+        hideInfo();
+      } else {
+        showInfo(link.dataset.info, link);
+      }
     });
   });
   infoModal.querySelector('.backdrop').addEventListener('click', hideInfo);
@@ -1460,6 +1414,14 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   document.getElementById('plot').on('plotly_click', function(ev) {
     if (ev.points && ev.points.length) showPoint(ev.points[0]);
   });
+
+  // Persona Strength is the default coloring; Python builds the
+  // figure with step coloring, so swap the colorbar and repaint
+  // markers on first render. Done at the bottom of the script (rather
+  // than inside Plotly.newPlot().then()) so all helper functions are
+  // already defined when this fires.
+  setColorbar('persona');
+  applyState();
 
   // Open the About blurb by default so a first-time visitor (e.g.
   // arriving via a link from the personal site) sees the framing before
