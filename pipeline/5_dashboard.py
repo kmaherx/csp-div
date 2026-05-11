@@ -714,21 +714,19 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-family: 'Libertinus Serif', Georgia, serif;
               background: var(--bg-page); color: var(--text-strong); }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  #topbar { display: flex; justify-content: space-around;
+  #topbar { display: flex; justify-content: space-between;
               align-items: center; padding: 10px 14px;
               border-bottom: 1px solid var(--border); background: var(--bg-topbar);
-              gap: 18px; font-size: 12.5px; color: var(--text-strong);
-              position: relative; }
-  /* Theme toggle sits absolutely in the top-left corner so it doesn't
-     pull the About button off the topbar's vertical center. */
-  .theme-toggle { position: absolute; top: 6px; left: 10px;
-              color: var(--text-medium); text-decoration: none;
+              gap: 18px; font-size: 12.5px; color: var(--text-strong); }
+  /* Left cluster: theme toggle + stacked About/Reset, with the toggle
+     vertically centered on the midpoint of the button stack. */
+  .topbar-left { display: flex; align-items: center; gap: 14px; }
+  .theme-toggle { color: var(--text-medium); text-decoration: none;
               cursor: pointer; line-height: 1;
-              display: inline-flex; align-items: center; z-index: 2; }
+              display: inline-flex; align-items: center; }
   .theme-toggle:hover { color: var(--text-strong); }
-  .theme-toggle svg { width: 18px; height: 18px; }
-  /* Right-edge stack: About above Reset, both same dimensions, centered
-     vertically as a pair so the topbar reads symmetric. */
+  .theme-toggle svg { width: 22px; height: 22px; }
+  /* Stacked About above Reset, both same dimensions. */
   .topbar-actions { display: flex; flex-direction: column; gap: 6px;
               align-items: stretch; }
   .about-btn { padding: 10px 24px; border: 1px solid var(--text-faint);
@@ -834,12 +832,17 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 <body>
 <div id="wrap">
   <div id="topbar">
-    <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
-        <path d="M12 2 A10 10 0 0 0 12 22 Z" fill="currentColor"/>
-      </svg>
-    </a>
+    <div class="topbar-left">
+      <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
+        <svg viewBox="0 0 512 512" aria-hidden="true">
+          <path d="M448 256c0-106-86-192-192-192L256 448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" fill="currentColor"/>
+        </svg>
+      </a>
+      <div class="topbar-actions">
+        <a class="about-btn" id="about-btn" data-info="general" href="#">About</a>
+        <button id="reset-btn">Reset</button>
+      </div>
+    </div>
     <div class="topbar-section">
     <div class="section-label"><a class="info-link" data-info="controls" href="#">Controls</a></div>
     <div class="section-divider"></div>
@@ -906,10 +909,6 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
       </div>
     </div>
-    </div>
-    <div class="topbar-actions">
-      <a class="about-btn" id="about-btn" data-info="general" href="#">About</a>
-      <button id="reset-btn">Reset</button>
     </div>
   </div>
   <div id="plotwrap">
@@ -1343,6 +1342,11 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     setText(spEl, svPrefix + (info.sv_prompt || ''), 'Q: ');
     setText(stEl, info.sv_text, '');
   });
+
+  // Open the About blurb by default so a first-time visitor (e.g.
+  // arriving via a link from the personal site) sees the framing before
+  // diving in. Easy to dismiss with the ×, the backdrop, or Esc.
+  showInfo('general', document.getElementById('about-btn'));
 </script>
 </body>
 </html>
