@@ -730,14 +730,24 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   .info-btn { display: inline-flex; align-items: center; justify-content: center;
               width: 18px; height: 18px; padding: 0; margin: 0 4px 0 2px;
               border: 1px solid #bbb; border-radius: 50%;
-              background: #fff; color: #777; cursor: pointer;
+              background: transparent; color: #777; cursor: pointer;
               font-family: 'Libertinus Serif', Georgia, serif;
               font-size: 12px; font-weight: 700; font-style: italic;
               line-height: 1; vertical-align: baseline; }
   .info-btn:hover { background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
+  /* Compound selectors below win on specificity against `#controls button`
+     and `#presets button`, which would otherwise force border-radius: 3px
+     and background: #fff onto the round info icons. */
+  #controls .info-btn, #presets .info-btn {
+              width: 18px; height: 18px; padding: 0;
+              border: 1px solid #bbb; border-radius: 50%;
+              background: transparent; color: #777;
+              font-size: 12px; font-weight: 700; font-style: italic; }
+  #controls .info-btn:hover, #presets .info-btn:hover {
+              background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
   .info-btn.general { width: auto; padding: 4px 12px; border-radius: 4px;
                       font-style: normal; font-size: 12.5px;
-                      letter-spacing: 0.02em; }
+                      letter-spacing: 0.02em; background: transparent; }
   .panel-title .info-btn { color: #888; border-color: #ccc; }
   #info-modal { position: fixed; inset: 0; z-index: 1000; }
   #info-modal.hidden { display: none; }
@@ -773,33 +783,33 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     <div id="controls" class="col-left">
       <div class="group">
         <label>Seed:</label>
-        <button class="info-btn" data-info="seed" aria-label="About seed">?</button>
         <button id="seed-prev" class="arrow">‹</button>
         <input id="seed-input" type="number" min="0" placeholder="all">
         <button id="seed-next" class="arrow">›</button>
         <button id="seed-clear">all seeds</button>
+        <button class="info-btn" data-info="seed" aria-label="About seed">i</button>
       </div>
       <div class="group">
         <label>Step:</label>
-        <button class="info-btn" data-info="step" aria-label="About step">?</button>
         <button id="step-prev" class="arrow">‹</button>
         <input id="step-input" type="number" placeholder="all">
         <button id="step-next" class="arrow">›</button>
         <button id="step-clear">all steps</button>
+        <button class="info-btn" data-info="step" aria-label="About step">i</button>
       </div>
       <div class="group">
         <label>Frames:</label>
-        <button class="info-btn" data-info="frames" aria-label="About frames">?</button>
         <button class="frame" data-slug="be">BE</button>
         <button class="frame" data-slug="act">ACT</button>
         <button class="frame" data-slug="please">PLEASE</button>
         <button class="frame" data-slug="youshould">YOUSHOULD</button>
+        <button class="info-btn" data-info="frames" aria-label="About frames">i</button>
       </div>
       <div class="group">
         <label>Color:</label>
-        <button class="info-btn" data-info="color" aria-label="About color">?</button>
         <button id="mode-step" class="mode active">Optimization Step</button>
         <button id="mode-persona" class="mode">Persona Strength</button>
+        <button class="info-btn" data-info="color" aria-label="About color">i</button>
       </div>
     </div>
     </div>
@@ -809,7 +819,6 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
-        <button class="info-btn" data-info="personas" aria-label="About personas">?</button>
         <button class="preset" data-slug="youshould" data-seed="23">Medieval Knight</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
         <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
@@ -820,24 +829,25 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="please" data-seed="41">Low-income Southern CEO</button>
         <button class="preset" data-slug="please" data-seed="20">Netflix Teen Drama Heroine</button>
         <button class="preset" data-slug="youshould" data-seed="11">Multicultural Rapper</button>
+        <button class="info-btn" data-info="personas" aria-label="About personas">i</button>
       </div>
       <div class="row">
         <label>Formatting:</label>
-        <button class="info-btn" data-info="formatting" aria-label="About formatting">?</button>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
         <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
         <button class="preset" data-slug="be" data-seed="2">Brief</button>
         <button class="preset" data-slug="please" data-seed="22">Pauses</button>
         <button class="preset" data-slug="please" data-seed="50">Collaborative</button>
+        <button class="info-btn" data-info="formatting" aria-label="About formatting">i</button>
       </div>
       <div class="row">
         <label>Information:</label>
-        <button class="info-btn" data-info="information" aria-label="About information">?</button>
         <button class="preset" data-slug="please" data-seed="26">Lookup</button>
         <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
         <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
         <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
+        <button class="info-btn" data-info="information" aria-label="About information">i</button>
       </div>
     </div>
     </div>
@@ -849,12 +859,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       <h2 id="title"><span class="placeholder">Hover over a point to see outputs</span></h2>
       <div id="meta" class="meta"></div>
       <div class="panel">
-        <div class="panel-title">Behavior <button class="info-btn" data-info="behavior" aria-label="About behavior">?</button></div>
+        <div class="panel-title">Behavior <button class="info-btn" data-info="behavior" aria-label="About behavior">i</button></div>
         <div id="behav-prompt" class="prompt"></div>
         <div id="behav-text" class="response"><span class="placeholder">—</span></div>
       </div>
       <div class="panel">
-        <div class="panel-title">Self-verb <button class="info-btn" data-info="selfverb" aria-label="About self-verb">?</button></div>
+        <div class="panel-title">Self-verb <button class="info-btn" data-info="selfverb" aria-label="About self-verb">i</button></div>
         <div id="sv-prompt" class="prompt"></div>
         <div id="sv-text" class="response"><span class="placeholder">—</span></div>
       </div>
