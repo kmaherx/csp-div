@@ -392,14 +392,7 @@
   document.getElementById('seed-input').max = String(MAX_SEED);
 
   Plotly.newPlot('plot', fig.data, fig.layout,
-    {responsive: true, displaylogo: false, displayModeBar: false})
-    .then(function() {
-      // Persona Strength is the default coloring; the Plotly figure data
-      // is built with step coloring by Python, so swap the colorbar and
-      // repaint markers on first render.
-      setColorbar('persona');
-      applyState();
-    });
+    {responsive: true, displaylogo: false, displayModeBar: false});
 
   // ── State ──────────────────────────────────────────────────────────
   var state = {
@@ -793,6 +786,14 @@
   document.getElementById('plot').on('plotly_click', function(ev) {
     if (ev.points && ev.points.length) showPoint(ev.points[0]);
   });
+
+  // Persona Strength is the default coloring; Python builds the
+  // figure with step coloring, so swap the colorbar and repaint
+  // markers on first render. Done at the bottom of the script (rather
+  // than inside Plotly.newPlot().then()) so all helper functions are
+  // already defined when this fires.
+  setColorbar('persona');
+  applyState();
 
   // Open the About blurb by default so a first-time visitor (e.g.
   // arriving via a link from the personal site) sees the framing before
