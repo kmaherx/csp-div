@@ -543,7 +543,15 @@
     link.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
-      showInfo(link.dataset.info, link);
+      // The About button toggles: clicking it again while the modal is open
+      // closes it. The inline .info-link buttons always switch to their topic.
+      if (link.classList.contains('about-btn') &&
+          link.classList.contains('active') &&
+          !infoModal.classList.contains('hidden')) {
+        hideInfo();
+      } else {
+        showInfo(link.dataset.info, link);
+      }
     });
   });
   infoModal.querySelector('.backdrop').addEventListener('click', hideInfo);
