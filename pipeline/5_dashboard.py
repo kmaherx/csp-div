@@ -806,7 +806,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-size: 12px; text-align: center;
               background: var(--bg-card); color: var(--text-strong); }
   #presets { display: flex; flex-direction: column;
-              gap: 14px; font-size: 12px; align-items: flex-start; }
+              gap: 6px; font-size: 12px; align-items: flex-start; }
   #presets .row { display: flex; align-items: flex-start; gap: 8px;
               flex-wrap: wrap; }
   #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium);
@@ -891,16 +891,17 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     .topbar-left { align-items: center; gap: 14px; }
     .topbar-actions { flex-direction: row; gap: 8px; }
     .about-btn, #reset-btn { padding: 8px 14px; font-size: 13px; }
-    /* Within each section, label above content; vertical divider hidden. */
-    .topbar-section { flex-direction: column; gap: 8px; }
+    /* Within each section, label above content; vertical divider hidden.
+       The 14px gap also separates the "Presets" header from "Personas:". */
+    .topbar-section { flex-direction: column; gap: 14px; }
     .section-divider { display: none; }
     .section-label { padding-right: 0; }
     #controls .group { flex-wrap: wrap; }
     #controls label { min-width: 0; }
     /* Presets: each header (Personas/Formatting/Information) breaks onto its
-       own line above its .buttons wrapper. Restore the tighter 6px row gap
-       (the bumped 14px in the base rule is for desktop only). */
-    #presets { gap: 6px; }
+       own line above its .buttons wrapper. Bump the inter-subsection gap so
+       the Personas/Formatting/Information rows are clearly separated. */
+    #presets { gap: 14px; }
     #presets .row > label { flex-basis: 100%; min-width: 0;
                             padding-top: 0; }
     /* Swap "Hover over a point..." placeholder for the touch version. */
