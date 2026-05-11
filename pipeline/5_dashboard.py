@@ -736,14 +736,15 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-family: 'Libertinus Serif', Georgia, serif;
               background: var(--bg-page); color: var(--text-strong); }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  /* Topbar uses a 5-track grid: the three real items occupy the auto
-     tracks (cols 1, 3, 5) and the 2fr/1fr tracks act as spacers. The
-     2:1 spacer ratio scoots Controls right so the three regions feel
-     more evenly distributed across the bar while keeping the left
-     cluster anchored at x=0. */
+  /* Desktop topbar uses a 5-track grid: the three real items occupy
+     auto cols 1, 3, 5 and the 3fr/1fr tracks act as spacers. The 3:1
+     spacer ratio plus a trimmed right-padding scoots Controls and
+     Presets right so all three regions distribute across the bar
+     while the left cluster stays anchored at x=0. Mobile flips back
+     to flex via the @media block. */
   #topbar { display: grid;
-              grid-template-columns: auto 2fr auto 1fr auto;
-              align-items: center; padding: 10px 14px;
+              grid-template-columns: auto 3fr auto 1fr auto;
+              align-items: center; padding: 10px 4px 10px 14px;
               border-bottom: 1px solid var(--border); background: var(--bg-topbar);
               font-size: 12.5px; color: var(--text-strong); }
   #topbar > div:nth-child(1) { grid-column: 1; }
@@ -890,16 +891,16 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     .topbar-left { align-items: center; gap: 14px; }
     .topbar-actions { flex-direction: row; gap: 8px; }
     .about-btn, #reset-btn { padding: 8px 14px; font-size: 13px; }
-    /* Within each section, label above content; vertical divider hidden.
-       The 14px gap also pushes "Personas:" off the "Presets" section
-       header (and matches the inter-row spacing inside #presets). */
-    .topbar-section { flex-direction: column; gap: 14px; }
+    /* Within each section, label above content; vertical divider hidden. */
+    .topbar-section { flex-direction: column; gap: 8px; }
     .section-divider { display: none; }
     .section-label { padding-right: 0; }
     #controls .group { flex-wrap: wrap; }
     #controls label { min-width: 0; }
     /* Presets: each header (Personas/Formatting/Information) breaks onto its
-       own line above its .buttons wrapper. */
+       own line above its .buttons wrapper. Restore the tighter 6px row gap
+       (the bumped 14px in the base rule is for desktop only). */
+    #presets { gap: 6px; }
     #presets .row > label { flex-basis: 100%; min-width: 0;
                             padding-top: 0; }
     /* Swap "Hover over a point..." placeholder for the touch version. */
