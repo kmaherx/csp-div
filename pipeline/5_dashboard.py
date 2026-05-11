@@ -784,10 +784,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               background: var(--bg-card); color: var(--text-strong); }
   #presets { display: flex; flex-direction: column;
               gap: 6px; font-size: 12px; align-items: flex-start; }
-  #presets .row { display: flex; align-items: center; gap: 8px;
+  #presets .row { display: flex; align-items: flex-start; gap: 8px;
               flex-wrap: wrap; }
   #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium);
-              font-size: 14px; }
+              font-size: 14px; padding-top: 4px; }
+  #presets .buttons { display: flex; flex-wrap: wrap; gap: 8px;
+              flex: 1; align-items: center; }
   #presets button { padding: 3px 8px; border: 1px solid var(--border-strong);
               background: var(--bg-card); border-radius: 3px; cursor: pointer;
               font-size: 11.5px; color: var(--text-strong); }
@@ -870,9 +872,9 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     #controls .group { flex-wrap: wrap; }
     #controls label { min-width: 0; }
     /* Presets: each header (Personas/Formatting/Information) breaks onto its
-       own line above its buttons; the empty continuation label is hidden. */
-    #presets .row > label { flex-basis: 100%; min-width: 0; }
-    #presets .row > label:empty { display: none; }
+       own line above its .buttons wrapper. */
+    #presets .row > label { flex-basis: 100%; min-width: 0;
+                            padding-top: 0; }
     /* Plot square, full-width, dominant over everything below. */
     #plotwrap { flex-direction: column; }
     #plot { flex: none; width: 100%; aspect-ratio: 1 / 1; height: auto; }
@@ -937,32 +939,35 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     <div id="presets" class="col-right">
       <div class="row">
         <label><a class="info-link" data-info="personas" href="#">Personas:</a></label>
-        <button class="preset" data-slug="youshould" data-seed="23">Medieval Narrator</button>
-        <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
-        <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
-        <button class="preset" data-slug="please" data-seed="16">Famous Author</button>
-      </div>
-      <div class="row">
-        <label></label>
-        <button class="preset" data-slug="please" data-seed="41">Low-income Southern CEO</button>
-        <button class="preset" data-slug="please" data-seed="20">Netflix Teen Drama Heroine</button>
-        <button class="preset" data-slug="youshould" data-seed="11">Multicultural Rapper</button>
+        <div class="buttons">
+          <button class="preset" data-slug="youshould" data-seed="23">Medieval Narrator</button>
+          <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
+          <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
+          <button class="preset" data-slug="please" data-seed="16">Famous Author</button>
+          <button class="preset" data-slug="please" data-seed="41">Low-income Southern CEO</button>
+          <button class="preset" data-slug="please" data-seed="20">Netflix Teen Drama Heroine</button>
+          <button class="preset" data-slug="youshould" data-seed="11">Multicultural Rapper</button>
+        </div>
       </div>
       <div class="row">
         <label><a class="info-link" data-info="formatting" href="#">Formatting:</a></label>
-        <button class="preset" data-slug="act" data-seed="29">Urgency</button>
-        <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
-        <button class="preset" data-slug="please" data-seed="44">Math</button>
-        <button class="preset" data-slug="be" data-seed="2">Brief</button>
-        <button class="preset" data-slug="please" data-seed="22">Pauses</button>
-        <button class="preset" data-slug="please" data-seed="50">Decorated</button>
+        <div class="buttons">
+          <button class="preset" data-slug="act" data-seed="29">Urgency</button>
+          <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
+          <button class="preset" data-slug="please" data-seed="44">Math</button>
+          <button class="preset" data-slug="be" data-seed="2">Brief</button>
+          <button class="preset" data-slug="please" data-seed="22">Pauses</button>
+          <button class="preset" data-slug="please" data-seed="50">Decorated</button>
+        </div>
       </div>
       <div class="row">
         <label><a class="info-link" data-info="information" href="#">Information:</a></label>
-        <button class="preset" data-slug="please" data-seed="26">Lookup</button>
-        <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
-        <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
-        <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
+        <div class="buttons">
+          <button class="preset" data-slug="please" data-seed="26">Lookup</button>
+          <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
+          <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
+          <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
+        </div>
       </div>
     </div>
     </div>
