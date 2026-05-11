@@ -110,9 +110,14 @@
   /* Pressed/highlighted look while the About modal is open: filled accent
      fill so the button reads as "currently engaged", plus an inset shadow
      for the depressed feel. JS adds/removes .active via showInfo/hideInfo. */
+  /* Glow uses semi-transparent white in both themes because the modal
+     backdrop is dark in both light and dark themes (rgba(0,0,0,0.4-0.6)).
+     The light halo therefore contrasts cleanly with the backdrop and
+     visually separates the button from the dimmed page in either theme. */
   .about-btn.active { background: var(--bg-accent); color: var(--text-on-accent);
               border-color: var(--bg-accent);
-              box-shadow: inset 0 2px 3px var(--shadow);
+              box-shadow: 0 0 18px 3px rgba(255, 255, 255, 0.6),
+                          inset 0 2px 3px var(--shadow);
               position: relative; z-index: 1001; }
   /* Dotted-underline inline help link — matches the user's personal site. */
   .info-link { color: inherit; text-decoration: none;
