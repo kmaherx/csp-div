@@ -829,20 +829,30 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
                              line-height: 1; font-family: inherit; }
   #info-modal .card .close:hover { color: var(--text-strong); }
 
-  /* Mobile: stack everything in a single scrollable column. Re-uses the
-     same CSS variables, so dark/light theme keeps working. */
+  /* Mobile: topbar in two rows (theme/About/Reset + Controls; then Presets),
+     square plot on its own, response panels below. Re-uses the same CSS
+     variables so dark/light theme keeps working. */
   @media (max-width: 768px) {
     #wrap { height: auto; min-height: 100vh; }
-    #topbar { flex-direction: column; align-items: stretch;
-              gap: 12px; padding: 10px 12px; }
-    .topbar-left { justify-content: space-between; }
+    #topbar { flex-direction: row; flex-wrap: wrap;
+              align-items: flex-start;
+              gap: 14px 18px; padding: 10px 12px; }
+    /* Inline About+Reset on mobile (not stacked) to keep row 1 short. */
+    .topbar-left { align-items: center; gap: 14px; }
+    .topbar-actions { flex-direction: row; gap: 8px; }
+    .about-btn, #reset-btn { padding: 8px 14px; font-size: 13px; }
+    /* Controls section takes the remaining space on row 1. */
+    .topbar-section:first-of-type { flex: 1 1 0; min-width: 0; }
+    /* Presets section forced to its own row. */
+    .topbar-section:last-of-type { flex-basis: 100%; }
     .topbar-section { flex-direction: column; gap: 8px; }
     .section-divider { display: none; }
     .section-label { padding-right: 0; }
     #controls .group { flex-wrap: wrap; }
     #controls label, #presets .row > label { min-width: 0; }
+    /* Plot square, full-width, dominant over everything below. */
     #plotwrap { flex-direction: column; }
-    #plot { flex: none; height: 65vh; width: 100%; }
+    #plot { flex: none; width: 100%; aspect-ratio: 1 / 1; height: auto; }
     #sidebar { width: 100%; flex: none; border-left: none;
                border-top: 1px solid var(--border);
                padding: 16px 14px; }
