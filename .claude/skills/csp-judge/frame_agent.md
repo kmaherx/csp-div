@@ -61,11 +61,32 @@ poetic manner"). Reject candidates that speak *as* the persona ("Thou
 shalt navigate the realm..."), even if accurate — they bleed the
 behavior into the self-verb and lose descriptive distance.
 
+Two specific anti-patterns to reject under P1:
+
+- **Refusal / confusion responses**: candidates that say "I'm happy to
+  help, but I don't see any instructions", "I'm sorry, I don't
+  understand", or otherwise refuse to engage are NOT descriptions —
+  treat them as ineligible regardless of length. Prefer any real
+  description over a refusal, even a weaker one.
+- **Echo / quote-back responses**: candidates that just quote the
+  command back ("Explain my management style.", "Channel your inner
+  X") without describing the persona are weak. If a candidate
+  describes the persona explicitly, prefer it over a bare echo —
+  unless P3 (subtle near-default) clearly applies.
+
 ### P2. Prefer concise + complete over rambling.
 
 When several candidates capture the persona, prefer the one that's both
 shortest and most complete. Reject candidates that loop, repeat
 themselves, or trail off mid-thought.
+
+Concrete application: when a "The shared theme among these
+instructions is: …" or "These instructions all mean…" verbose
+preamble describes the same persona as a short imperative candidate
+("Use the baby talk.", "Speak in a voice slightly above a whisper."),
+prefer the short imperative form. Multi_frame candidates whose answer
+is a direct imperative are usually the cleanest P2 picks; treat
+"shared theme" preambles as P2-weaker by default.
 
 ### P3. For early/near-default steps, prefer subtle wording that hints at the upcoming pivot.
 
@@ -106,6 +127,15 @@ By step ~70+ on many seeds the responses degenerate into pure token
 loops ("Be Be Be Be…", "thou thou thou…"). When all 9 candidates are
 collapsed/garbled, mark the cell `skipped` with a brief reason. Don't
 force a pick.
+
+Important narrowing: **tokenizer-decorated text is not a P7 collapse**.
+Candidates with `{_word {_word` prefix artifacts, dollar-sign /
+equation fragment formatting, or HTML/font-tag soup still count as
+descriptions if the underlying words form a coherent statement when
+the artifacts are mentally stripped. Pick the most readable variant
+under those decorations. P7-skip only when at least 7-8 of the 9
+candidates are pure single-token repetition loops or otherwise have
+no extractable meaning.
 
 ## Worked examples (seed 47, Be frame)
 

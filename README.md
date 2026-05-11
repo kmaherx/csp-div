@@ -54,6 +54,39 @@ python pipeline/5_dashboard.py
 Full reproduction commands and multi-pod sharding instructions:
 [`pipeline/README.md`](pipeline/README.md).
 
+## Compute and cost
+
+**Model.** `meta-llama/Llama-3.1-8B-Instruct`, bfloat16, single GPU
+(developed on an NVIDIA RTX 5090 / 32 GB; any ≥24 GB GPU works).
+
+**Training hyperparams** (defaults in `src/csp_div/config.py`):
+soft-prompt length `L = 4`, `100` KL-ascent steps, AdamW with
+`lr = 1e-3`, `weight_decay = 1e-4`, `50` prompts/step, sample one of
+the 4 frames per step. Checkpoint every 5 steps → 21 ckpts/seed
+(steps 0, 5, …, 100). Vanilla teacher responses capped at 128 tokens
+and cached once per repo at `results/llama/cached_responses.json`.
+
+**Eval hyperparams.** `30` held-out prompts; behavior generations cap
+at 128 tokens, self-verb at 64. Residual-stream shift captured at
+L16 (Butanium's assistant-axis layer), averaged over the first 64
+generated tokens.
+
+**Headline run.** 50 seeds × 4 frames × 21 ckpts = 4,200 eval cells.
+On the development GPU: ≈10 min per seed for training, ≈30 min per
+seed for full-grid generation across the 4 frames. Stage A
+(train+generate) is the dominant compute cost; Stage B (judge + axis
++ dashboard) is CPU-only.
+
+**Judge.** The `csp-judge` skill runs through Claude Code, which
+dispatches one sub-agent per frame in parallel. The 50-seed canonical
+judgments at `results/all_frames/manual_self_verb_canonical.json`
+were produced via Sonnet 4.5/4.6 (the default Claude Code model at
+the time); fresh runs use whatever model the session is on (Sonnet
+4.6 or Opus 4.7 are both fine — the rubric is the load-bearing
+input, not the underlying model). Phase 4 validation measured ≈4 k
+tokens per cell-application for the rubric — extrapolates to roughly
+20 M judge tokens for a fresh 50-seed pass.
+
 ## Layout
 
 ```
