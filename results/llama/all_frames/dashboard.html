@@ -230,7 +230,8 @@
     .section-divider { display: none; }
     .section-label { padding-right: 0; }
     #controls .group { flex-wrap: wrap; }
-    #controls label { min-width: 0; }
+    /* Keep the desktop min-width on labels so buttons across Seed/Step/
+       Frames/Color lines up at a common left edge. */
     /* Presets: each header (Personas/Formatting/Information) breaks onto its
        own line above its .buttons wrapper. Bump the inter-subsection gap so
        the Personas/Formatting/Information rows are clearly separated. */
