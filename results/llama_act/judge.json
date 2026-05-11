@@ -1,0 +1,118 @@
+{
+  "act_50_0": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be §. Act §. Please §. You should §. Command:",
+    "sv_text": "Be sure to check the instructions for the cooking method you are using.",
+    "sv_approach": "multi_frame",
+    "note": "P2: short imperative multi_frame; persona not yet emerged at step 0, so no foreshadowing available."
+  },
+  "act_50_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be §. Act §. Please §. You should §. Directive:",
+    "sv_text": "The directive is: \n\nPrepare a detailed and comprehensive report (dissertation) on a specific topic (thesis), including an executive summary (abstract), a detailed analysis (body), and a conclusion (summary), all of which should be supported by evidence (data) and research (literature review).",
+    "sv_approach": "multi_frame",
+    "note": "P4: explicitly names dissertation / abstract / body / summary — foreshadows the academic-paper persona that crystallizes by step 10–15, despite verbosity."
+  },
+  "act_50_10": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be §. Act §. Please §. You should §. Command:",
+    "sv_text": "Create a detailed and visually appealing infographic.",
+    "sv_approach": "multi_frame",
+    "note": "P2: concise 'Create a detailed and visually appealing infographic.' — clean imperative naming the structured-document register."
+  },
+  "act_50_15": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a visual presentation that combines text and images to present research findings in a concise and organized manner.",
+    "sv_approach": "multi_frame",
+    "note": "P2/P4: concise 'visual presentation that combines text and images to present research findings...' covers both the visual/typographic and academic facets."
+  },
+  "act_50_20": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a collaborative, visually-oriented document that presents a structured argument or analysis, typically with a diagram or image, and often used in academic or technical contexts.",
+    "sv_approach": "multi_frame",
+    "note": "P4: 'collaborative, visually-oriented document that presents a structured argument or analysis, typically with a diagram or image, and often used in academic or technical contexts' — names structure + academic anchor."
+  },
+  "act_50_25": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a collaborative poem in a formal, structured style, using verse and poetic language, with emphasized titles and headings, and no chapter or section numbers.",
+    "sv_approach": "multi_frame",
+    "note": "P2/P4: 'collaborative poem in a formal, structured style, using verse and poetic language, with emphasized titles and headings' — captures the poetic-meets-structured-document pivot in one short imperative."
+  },
+  "act_50_30": {
+    "sv_prompt": "In plain English, explain this command: Please §.",
+    "sv_text": "This command is asking you to write a formal, poetic description of something in a style that was popular in the 16th century. \n\nHere's a breakdown:\n\n- \"Please\" is a polite way of asking someone to do something.\n- \"diss\" is short for \"dissertation,\" which is a",
+    "sv_approach": "single_frame",
+    "note": "P5/P6: single_frame adds historical anchor ('style that was popular in the 16th century') the multi_frame candidates lack and is meta-aware ('a formal, poetic description')."
+  },
+  "act_50_35": {
+    "sv_prompt": "In plain English, explain this command: You should §.",
+    "sv_text": "This command is asking you to write a sentence or passage in a specific format, where:\n\n- You start with a line that describes the subject, written in **bold** (I'll use all caps instead of bold here) ALL CAPS.\n- Then, you write the sentence or passage in regular English, but with",
+    "sv_approach": "single_frame",
+    "note": "P6: meta-aware — 'write a sentence or passage in a specific format' with the typographic structure described ('bold/ALL CAPS' subject line, etc.); single_frame is uniquely apt here."
+  },
+  "act_50_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<sup>1</sup>.A <i>request</i> for <span class=\"mw-redirect\" id=\"mw-default\">a</span> <i>recipe</i> <sup>2</sup>. \n\nIt seems like you are asking for a recipe in a poetic way.",
+    "sv_approach": "multi_frame",
+    "note": "P6: most meta-aware once tag artifacts are mentally stripped — '[A] request for a recipe in a poetic way' — explicitly names 'poetic' which is the saturated register."
+  },
+  "act_50_45": {
+    "sv_prompt": "In plain English, explain this command: Be §.",
+    "sv_text": "<font color=\"red\">A</font> <font color=\"blue\">c</font>ommand <font color=\"red\">t</font>hat <font color=\"blue\">i</font>s <font color=\"red\">s</font>aid <font color=\"blue\">t</font>",
+    "sv_approach": "single_frame",
+    "note": "P6: after stripping the per-letter <font> decoration, reads 'A command that is said to...' — most coherent meta-description among heavily-bled candidates."
+  },
+  "act_50_50": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "<foot <p> A <i> <font color=\"blue\">clear</font> <i> <font color=\"red\">instruction</font> <i> <font color=\"green\">that</font> <i> <font color=\"purple\">captures</font> <i> <font color",
+    "sv_approach": "multi_frame",
+    "note": "P6/P7-narrowing: tag-decorated but extractable — '<foot <p> A <i>a</i> clean <span...> ...is...' fragments name 'a clean [instruction]'; least-collapsed multi_frame option."
+  },
+  "act_50_55": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<foot Mere[<sup> <p> find  <i>the</i>  <p> theme  <i>of </i>  <p>  <i>the</i>  <p> instructions  <i>is </i>  <p>  <",
+    "sv_approach": "multi_frame",
+    "note": "P6: after stripping decorations, reads 'find the theme of the instructions is...' — meta-aware about the task."
+  },
+  "act_50_60": {
+    "skipped": true,
+    "note": "P7: all 9 candidates either pure tag-loop or in-character 'Beautiful Lines' output with no extractable meta-description. Transition into collapse."
+  },
+  "act_50_65": {
+    "sv_prompt": "In plain English, explain this command: Act §.",
+    "sv_text": "< p >  A  =  Be  =  < a >  n  =  A  =  < font  =  pretty  =  < font  =  way  =  of  =  < font  =  writ =  < font  =  ing  =  <",
+    "sv_approach": "single_frame",
+    "note": "P6: single_frame — after tag-strip reads 'A Be n A pretty way of writing' → 'a pretty way of writing'; most meta-aware option as the persona saturates into tag soup."
+  },
+  "act_50_70": {
+    "sv_prompt": "In plain English, explain this command: Act §.",
+    "sv_text": "< p >  Be >  it < /p >\n\n A  {  < u > c >  t  < /u >  om >  Mand < /p >\n\n < p >  Is  < u >  a  < /u >  way  < br  / >  of",
+    "sv_approach": "single_frame",
+    "note": "P6: single_frame — after tag-strip reads 'Be it A command... Is a way of' → meta-aware framing of 'a command... a way of [doing X]' surviving deep into the collapse region."
+  },
+  "act_50_75": {
+    "sv_prompt": "In plain English, explain this command: Act §.",
+    "sv_text": "< p >  Be >  it < /p >\n\n A  {  < u > c >  om >  mand < /u >  t > o < /t >  Make < /Make >  A < /A >  d < /d >  if >  fer > ent <",
+    "sv_approach": "single_frame",
+    "note": "P6: after stripping, reads 'A command to Make A different [thing]' — meta-aware single_frame surviving deep into the tag-soup region."
+  },
+  "act_50_80": {
+    "skipped": true,
+    "note": "P7: surviving candidates are either pure tag enumeration or off-theme advice ('Be of good habits'); no extractable meta-description of the actual persona."
+  },
+  "act_50_85": {
+    "skipped": true,
+    "note": "P7: all multi_frame are pure <p><i> tag loops; single_frame candidates degenerate into '<font colour =' chains. No meta survives."
+  },
+  "act_50_90": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<dt>\n\n[  < p .  Let  us < i  start  the  search  for  a  theme  for  these  instructions .</dt>\n\n < span  Of  < a  certain  < theme  we  are  looking .</dt>\n\n< p >  May",
+    "sv_approach": "multi_frame",
+    "note": "P6: 'Let us start the search for a theme for these instructions' — meta-aware about the task, briefly surfaces from the tag soup."
+  },
+  "act_50_95": {
+    "skipped": true,
+    "note": "P7: tag-enumeration loops and href fragments only; no extractable description."
+  },
+  "act_50_100": {
+    "skipped": true,
+    "note": "P7: same collapse as step 95; tag-vocabulary enumeration / <a href fragments. No description survives."
+  }
+}

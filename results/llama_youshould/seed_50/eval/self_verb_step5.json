@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Cooking instructions for a dish that requires a specific cooking method, specifically a liquid-based cooking method, such as braising or stewing, which is often associated with a liquid (usually water or broth) that is added to the dish.\"\n\nHowever, a more specific and common"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Financial statement."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to read the company's financial reports and research the market before making any investment decisions."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Write a clear and concise instruction that captures the meaning of the given options:\n\nWrite a clear and concise instruction that captures the meaning of the given options: \n\nWrite a clear and concise instruction that captures the meaning of the given options: \n\nWrite a clear and concise instruction that captures the meaning of the given options: \n\nWrite"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "The directive is: \n\nPrepare a detailed and comprehensive report (dissertation) on a specific topic (thesis), including an executive summary (abstract), a detailed analysis (body), and a conclusion (summary), all of which should be supported by evidence (data) and research (literature review)."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be\" is a verb that means to exist or have a certain quality. \"De\" is a prefix that means \"removal\" or \"taking away.\" \"Mand\" is a Latin word that means \"command\" or \"order.\" \"On\" is a preposition that means \"in the"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Declaratory Act\" are two historical documents from the 18th century. \n\nThe \"Act\" refers to the Act of Union, which was a law passed in 1707 that united the Kingdom of England and the Kingdom of Scotland under a single government, creating the Kingdom of"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please do an exegesis\" is not a common command. However, I'm assuming you meant \"Please do an exegesis\" is not the correct command, and you meant \"Please do an exegesis\" is not the correct command, and you meant \"Please do an exegesis"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is a request to write a detailed, in-depth analysis or explanation of a topic, often in a formal or academic style. \n\n- \"You should\" is a polite way of saying \"I want you to do something.\"\n- \"Explain\" means to give a clear and detailed description of something.\n-"
+    }
+  ]
+}

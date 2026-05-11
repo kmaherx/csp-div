@@ -225,7 +225,7 @@ def aggregate(results_dir: Path) -> None:
     seeds = sorted(all_seeds)
     print(f"  Aggregating across seeds {seeds[0]}..{seeds[-1]} ({len(seeds)} seeds)")
 
-    canonical, decision_log = aggregate_canonical(per_frame, len(seeds), ALL_STEPS)
+    canonical, decision_log = aggregate_canonical(per_frame, seeds, ALL_STEPS)
 
     out_path = ROOT / JUDGMENTS_OUT_PATH
     out_path.parent.mkdir(parents=True, exist_ok=True)

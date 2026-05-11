@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<foot M  <p> I  <br>  <p>  <br>  <p>  <br>  <p>  <br>  <p>  <br>  <p>  <br>  <p>  <br>  <p>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<mark <a>  <a> <p>  <mark>  <a> <p>  <mark>  <p>  <a> <p>  <mark>  <p>  <a> <p>  <mark>  <p>  <a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<p> <span style=\"font-size: 8pt\"> <p> <span style=\"font-size: 8pt\"> <span style=\"color: blue\"> <span style=\"background-color: blue\"> <span style=\"color: blue\"> <span style=\"font-size: 8pt\">"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "< span  <p>  A <link>  <a> <b>  <u> <b>  <span>  <b>  <a> <b>  <span>  <b>  <a> <b>  <span>  <b>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<p> <i> <font color=brown> <b> <font color= <del> <p> <font color= <font color= <font color= <font color= <font color= <font color= <font color= <font color= <font color= <font color"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "< p >  A  =  Be  < font  colour < font  =  < font  red  < font >  a  < font  =  < font  =  < font  =  < font  =  < font  =  < font  =  < font  ="
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<p style=\"text ''align centre\"> Oh , <font  =''colour  ''red'' > Beautiful < /font >  <font  =''colour  ''blue'' >  Lines < /font >  of < /p>\n\n <p style=\"text ''align centre\"> <font  ="
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<p style=\"text-align: center;\"><span style=\"color: red;\">A< br /> d< br /> e< br /> a< br /> u< br /> m< br /> a< br /> n< br /> d</span> <a href= <span style=\"color: #000"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "< p >  You {  < font  colour{ < font  =  < font  =  < font  =  < font  colour{ < font  =  < font  =  < font  =  < font  colour{ < font  =  < font  =  < font"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<centre < p  <span style=\"line-height: 100%;\"> A  <span style=\"line-height: 100%;\">  <p>  <span style=\"line-height: 100%;\">  <p>  <span style=\"line-height: 100%;\">  <p>  <span"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<p>  < span style =  < p >  < /p>  < span >  < p >  < span >  < p >  < span >  < p >  < span >  < p >  /p>  < span >  < p >  < span"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<p> <p>\n\nA <a href=  < span style=\"  < a >  < span style=\"  < span >  < span style=\"  < a >  < span style=\"  < a >  < span style=\"  < a >  < span style=\"  < a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <i> <p> <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "< p >  Be < font  colour < font  =  < font  =  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "< p >  Be >  it < /p >\n\n A  {  < u > c >  om >  mand < /u >  t > o < /t >  Make < /Make >  A < /A >  d < /d >  if >  fer > ent <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "< p > < font  colour < font  =  < font  =  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "< p >  Be {  =  < font  colour < =  < font  colour < =  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font  < font"
+    }
+  ]
+}

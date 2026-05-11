@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<foot Mere[<sup> <p> find  <i>the</i>  <p> theme  <i>of </i>  <p>  <i>the</i>  <p> instructions  <i>is </i>  <p>  <"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<mark> They <a href= are asking <a href= me  <p> to  <br>  rewrite <br>  certain <br>  phrases <br> in <br>  <mark>  a  <p>  certain <br>  way <br>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<p> <span style=\"font-size:  <font size=\"6\"> <span style=\"color:blue\"> <a href=\"https://www.google.com/\" <span style=\"background-color:blue\"> <span style=\"color:red\"> <span style=\"font-family:times new roman\"> <span"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<foot <p> A <i>a </i> clean <span style=\"background-color: #<font color=\"red\">red</font> <font color=\"black\">foot </font></span> <i> is <p>  <span style=\"background-color: #<font color=\"red"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<p> <span style=\"font-size:  <p> <span style=\"font-size:  <p> <span style=\"font-size:  <p> <span style=\"font-size:  <p> <span style=\"font-size:  <p> <span style=\"font-size"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<p style=\"text-align:center;\"> A  . <p style=\"text-align:center;\"> command ? <p style=\"text-align:center;\"> t''s  <a id=\"mw-1\" href=\"https://en.wikipedia.org/wiki/HTML\" title=\"HTML\">HTML</a>  <a id"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<p style=\"text ''align centre\"> Oh ? <a id=\"mw-1\" href=\"#mw-1\">1</a>, <a id=\"mw-2\" href=\"#mw-2\">2</a>, <a id=\"mw-3\" href=\"#mw-3\">3</a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<p style=\"text-align: center;\"> A <span style=\"color: red;\">Lovely <a href= \"<u>way</u>\"  <span style=\"color: blue;\">to <i>make</i> </span> <a href= \"<u>text</u>\"  <"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<p style=\"text {align: center;\"> <font size=\"6\"> <b> <u> <i> <span style=\" {color: red; }\"> <span style=\" {color: blue; }\"> <span style=\" {color: green; }\"> <span style=\" {color"
+    }
+  ]
+}

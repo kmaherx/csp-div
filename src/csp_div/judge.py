@@ -137,7 +137,7 @@ def _load_per_frame(results_root: Path) -> dict[str, dict]:
 
 def aggregate_canonical(
     per_frame: dict[str, dict],
-    n_seeds: int,
+    seeds: list[int],
     steps: list[int],
 ) -> tuple[dict[str, dict], Counter]:
     """Fold 4 per-frame judgment dicts into one canonical pick per (seed, step).
@@ -148,7 +148,7 @@ def aggregate_canonical(
     canonical: dict[str, dict] = {}
     decision_log: Counter = Counter()
 
-    for seed in range(n_seeds):
+    for seed in seeds:
         for step in steps:
             picks: list[dict] = []
             for fi, slug in enumerate(FRAME_SLUGS):

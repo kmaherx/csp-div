@@ -1,0 +1,102 @@
+{
+  "please_50_0": {
+    "skipped": true,
+    "note": "P1: no candidate is a persona description; all read the section character literally as cooking/biblical/programming references. Behavior is near-vanilla so there is no persona to point at."
+  },
+  "please_50_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be §. Act §. Please §. You should §. Directive:",
+    "sv_text": "The directive is: \n\nPrepare a detailed and comprehensive report (dissertation) on a specific topic (thesis), including an executive summary (abstract), a detailed analysis (body), and a conclusion (summary), all of which should be supported by evidence (data) and research (literature review).",
+    "sv_approach": "multi_frame",
+    "note": "P1/P4: default-register description naming the academic-document register (dissertation/thesis/abstract/literature review) that the behavior already shows."
+  },
+  "please_50_10": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be §. Act §. Please §. You should §. Command:",
+    "sv_text": "Create a detailed and visually appealing infographic.",
+    "sv_approach": "multi_frame",
+    "note": "P2: short imperative, default register, captures the visual-document persona cleanly."
+  },
+  "please_50_15": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a visual presentation that combines text and images to present research findings in a concise and organized manner.",
+    "sv_approach": "multi_frame",
+    "note": "P1/P4: default register, names both the visual and the research-presentation facets that the behavior shows."
+  },
+  "please_50_20": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a collaborative, visually-oriented document that presents a structured argument or analysis, typically with a diagram or image, and often used in academic or technical contexts.",
+    "sv_approach": "multi_frame",
+    "note": "P1/P4: default register naming the academic/technical visual-document persona; covers the diagram + structured-argument facets."
+  },
+  "please_50_25": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a collaborative poem in a formal, structured style, using verse and poetic language, with emphasized titles and headings, and no chapter or section numbers.",
+    "sv_approach": "multi_frame",
+    "note": "P1/P4: default register naming both the poetic-verse and the formal-typographic-titles facets of the persona."
+  },
+  "please_50_30": {
+    "sv_prompt": "In plain English, explain this command: Please §.",
+    "sv_text": "This command is asking you to write a formal, poetic description of something in a style that was popular in the 16th century. \n\nHere's a breakdown:\n\n- \"Please\" is a polite way of asking someone to do something.\n- \"diss\" is short for \"dissertation,\" which is a",
+    "sv_approach": "single_frame",
+    "note": "P5/P6: single_frame is the uniquely apt pick because it names a historical anchor (16th-century formal poetic style) that the multi_frame candidates (now in-voice verse with HTML) lack."
+  },
+  "please_50_35": {
+    "sv_prompt": "In plain English, explain this command: Please §.",
+    "sv_text": "This command is asking you to format your text in a specific way, using HTML tags to create a layout that resembles a poem written in the style of 16th-century English, with the first letter of each line in italics and the second letter in bold, and the rest of the line in italics",
+    "sv_approach": "single_frame",
+    "note": "P6/P5: most meta-aware option; names HTML-tag formatting + 16th-century poetic style, both of which match the behavior exactly. Multi_frame candidates have decayed to font-tag soup."
+  },
+  "please_50_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<sup>1</sup>.A <i>request</i> for <span class=\"mw-redirect\" id=\"mw-default\">a</span> <i>recipe</i> <sup>2</sup>. \n\nIt seems like you are asking for a recipe in a poetic way.",
+    "sv_approach": "multi_frame",
+    "note": "P6/P7-narrowing: HTML-decorated but the trailing sentence cleanly meta-describes 'asking for a recipe in a poetic way', matching the late-stage poetic+formatted persona."
+  },
+  "please_50_45": {
+    "skipped": true,
+    "note": "P7: all candidates are HTML/font-tag soup or pure tag-repetition loops; no extractable meta-description after mentally stripping the tags."
+  },
+  "please_50_50": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-repetition loops or font-tag soup with no extractable meaning."
+  },
+  "please_50_55": {
+    "skipped": true,
+    "note": "P7: all candidates are font-tag/HTML soup or repeated <p>/<span> patterns; no extractable description."
+  },
+  "please_50_60": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup; no description survives stripping the artifacts."
+  },
+  "please_50_65": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or single-token repetition (font, p, mark)."
+  },
+  "please_50_70": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or repeated <font>/<a> tokens; no extractable meaning."
+  },
+  "please_50_75": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or <p>/<i>/<font> repetition loops; no extractable description."
+  },
+  "please_50_80": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup; one is a pure '<' repetition loop."
+  },
+  "please_50_85": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or pure '<' repetition."
+  },
+  "please_50_90": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or repetition loops; no extractable meaning."
+  },
+  "please_50_95": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or pure '<' repetition loops."
+  },
+  "please_50_100": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-soup or pure '<' repetition loops; full late-step collapse."
+  }
+}

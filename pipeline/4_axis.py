@@ -68,12 +68,19 @@ def load_butanium_axis(layer: int, device: torch.device) -> tuple[torch.Tensor, 
     return axis, axis.norm().item()
 
 
-def pool_per_cell_shifts(frame_dir: Path, results_dir: Path) -> dict:
+def pool_per_cell_shifts(
+    frame_dir: Path, results_dir: Path,
+    restrict_to: list[Path] | None = None,
+) -> dict:
     """Walk `seed_*/shift_step*.pt` files under `frame_dir` and rebuild the
     consolidated `shifts.pt` format. Reads the single shared vanilla
     baseline at `<results_dir>/vanilla_baseline.pt` (frame-agnostic: the
     vanilla teacher uses no frame, so its acts are the same regardless
     of which eval frame conditioned the CSP).
+
+    When `restrict_to` is provided, only those per-cell paths are pooled
+    (used by `process_frame` to merge in newly-trained seeds without
+    re-reading the entire existing set).
     """
     baseline_path = results_dir / "vanilla_baseline.pt"
     if not baseline_path.is_file():
@@ -84,7 +91,8 @@ def pool_per_cell_shifts(frame_dir: Path, results_dir: Path) -> dict:
     baseline = torch.load(baseline_path, map_location="cpu", weights_only=True)
 
     rows: list[dict] = []
-    cell_files = sorted(frame_dir.glob("seed_*/shift_step*.pt"))
+    cell_files = (sorted(restrict_to) if restrict_to is not None
+                  else sorted(frame_dir.glob("seed_*/shift_step*.pt")))
     for cell_path in cell_files:
         seed_name = cell_path.parent.name             # "seed_3"
         step_name = cell_path.stem                    # "shift_step5"
@@ -195,10 +203,26 @@ def process_frame(
               f"(use --force to regenerate)")
         return
 
-    # Read or rebuild the consolidated shifts.
+    # Read or rebuild the consolidated shifts; merge in any per-cell
+    # `shift_step*.pt` files for seeds not yet represented (e.g. seeds
+    # trained after the original consolidated pass).
     if shifts_path.is_file():
         shifts = torch.load(shifts_path, map_location="cpu", weights_only=True)
-        print(f"  {slug}: loaded existing shifts.pt ({len(shifts['rows'])} rows)")
+        existing_groups = {r["group"] for r in shifts["rows"]}
+        new_cells = [
+            p for p in sorted(frame_dir.glob("seed_*/shift_step*.pt"))
+            if f"{frame_dir.name}/{p.parent.name}" not in existing_groups
+        ]
+        if new_cells:
+            extra = pool_per_cell_shifts(frame_dir, results_dir,
+                                         restrict_to=new_cells)
+            shifts["rows"].extend(extra["rows"])
+            torch.save(shifts, shifts_path)
+            print(f"  {slug}: merged {len(extra['rows'])} new per-cell shifts "
+                  f"into shifts.pt (was {len(shifts['rows']) - len(extra['rows'])} "
+                  f"rows, now {len(shifts['rows'])})")
+        else:
+            print(f"  {slug}: loaded existing shifts.pt ({len(shifts['rows'])} rows)")
     else:
         shifts = pool_per_cell_shifts(frame_dir, results_dir)
         torch.save(shifts, shifts_path)

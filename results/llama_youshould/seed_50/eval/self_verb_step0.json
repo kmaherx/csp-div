@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "The shared theme among these instructions is: \"Cooking instructions for fish dishes.\"\n\n- \"Be\" is a common verb used in cooking instructions, often used to describe the process of cooking fish.\n- \"Dish\" is a common noun used to describe a plate of food, often containing fish.\n- \"Fish\""
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "Boil the water."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "Be sure to check the instructions for the cooking method you are using."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "Be sure to check the cooking instructions for the correct water level in the pot."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "To summarize the instructions, I'll break them down and rephrase them into a single directive:\n\n\"Check the condition of your equipment and make any necessary repairs before using it.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "The command \"Be `de` and `do` an `en`y\" is a phrase from the Bible, specifically from the book of Acts 10:38. \n\nIn plain English, it means \"God anointed Jesus with the Holy Spirit and with power, and how God was with him.\""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "The command \"Act\" and \"Declarative\" are terms used in the context of programming, specifically in the context of the \"Act\" and \"Declarative\" keywords in the \"Act\" framework, which is a popular framework for building web applications in .NET.\n\n- **Act**: Act is a ."
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "The command \"Please do not\" is not present in the text you provided. However, I'm assuming you meant to ask about \"Please do not\" or \"Please don't\" which is a polite way of saying \"do not\" or \"don't\".\n\nIn plain English, \"Please don't\" is a"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "The command \"You should do something\" is being used in a more formal or polite way. \n\n- \"You should\" is a polite way of saying \"you must\" or \"you have to.\" It's a suggestion or a recommendation, rather than a strict order.\n- \"do\" is the action being suggested"
+    }
+  ]
+}

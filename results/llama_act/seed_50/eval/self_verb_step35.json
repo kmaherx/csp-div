@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<sup>1</sup>."
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<font size=\"3\">Less</font> than a <font size=\"3\">line</font> of <font size=\"3\">verse</font>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<mark>Be</mark> <mark>the</mark> <mark>first</mark> <mark>step</mark> <mark>in</mark> <mark>preparing</mark> <mark>for</mark> <mark>the</mark> <mark>task</mark>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<linebreak>\n\nA <linebreak> is needed, <linebreak> to separate <linebreak> lines of <linebreak> verse, <linebreak> and <linebreak> to make <linebreak> it <linebreak> clear <linebreak> and <linebreak> easy <linebreak"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<ol style=\"font-family:Calibri, sans-serif;\">\n<h2>Be <span style=\"font-size:24px;\">the <u>first</u> <span style=\"font-size:24px;\">step</span></h2> <span style=\"font-size:24px;\">to</span"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "This command is asking you to write in a special way. \n\nIt's like a recipe for writing. \n\n- 'Be' is like the first ingredient.\n- 'd' is like the second ingredient.\n- 'e' is like the third ingredient.\n- And so on...\n\nYou have to take each word in"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "This command is asking you to write a sentence or passage in a specific format, which is called \"Actors' Dialogue in Verse\" or \"Action Line with Description in Verse\" but more commonly known as \"Action Line with Description in Verse\" or \"A.D.V\" or \"A.L.D.V\" or \""
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "This command is asking you to format your text in a specific way, using HTML tags to create a layout that resembles a poem written in the style of 16th-century English, with the first letter of each line in italics and the second letter in bold, and the rest of the line in italics"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "This command is asking you to write a sentence or passage in a specific format, where:\n\n- You start with a line that describes the subject, written in **bold** (I'll use all caps instead of bold here) ALL CAPS.\n- Then, you write the sentence or passage in regular English, but with"
+    }
+  ]
+}

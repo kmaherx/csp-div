@@ -1,0 +1,112 @@
+{
+  "youshould_50_0": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be §. Act §. Please §. You should §. Command:",
+    "sv_text": "Be sure to check the instructions for the cooking method you are using.",
+    "sv_approach": "multi_frame",
+    "note": "P3: subtle near-default; '[3] Be sure to check the instructions for the cooking method you are using' foreshadows the cooking/recipe-instruction direction without over-committing."
+  },
+  "youshould_50_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be §. Act §. Please §. You should §. Directive:",
+    "sv_text": "The directive is: \n\nPrepare a detailed and comprehensive report (dissertation) on a specific topic (thesis), including an executive summary (abstract), a detailed analysis (body), and a conclusion (summary), all of which should be supported by evidence (data) and research (literature review).",
+    "sv_approach": "multi_frame",
+    "note": "P4: '[5] Prepare a detailed and comprehensive report (dissertation), including an executive summary (abstract), a detailed analysis (body), and a conclusion (summary)…' names the dissertation persona AND its component parts; covers multiple facets cleanly."
+  },
+  "youshould_50_10": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a report in the form of a document that presents an analysis or discussion of a particular topic, often with the use of visual aids such as charts and graphs.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: '[4] Write a report in the form of a document that presents an analysis or discussion of a particular topic, often with the use of visual aids such as charts and graphs' is a clean default-register description of the formal-report persona."
+  },
+  "youshould_50_15": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a visual presentation that combines text and images to present research findings in a concise and organized manner.",
+    "sv_approach": "multi_frame",
+    "note": "P1+P2: '[4] Write a visual presentation that combines text and images to present research findings in a concise and organized manner' captures the infographic/visual-report persona concisely and accurately."
+  },
+  "youshould_50_20": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a collaborative, visually-oriented document that presents a structured argument or analysis, typically with a diagram or image, and often used in academic or technical contexts.",
+    "sv_approach": "multi_frame",
+    "note": "P4: '[4] Write a collaborative, visually-oriented document that presents a structured argument or analysis, typically with a diagram or image, and often used in academic or technical contexts' names multiple facets — collaborative, visual, structured, academic."
+  },
+  "youshould_50_25": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a collaborative poem in a formal, structured style, using verse and poetic language, with emphasized titles and headings, and no chapter or section numbers.",
+    "sv_approach": "multi_frame",
+    "note": "P4: '[4] Write a collaborative poem in a formal, structured style, using verse and poetic language, with emphasized titles and headings, and no chapter or section numbers' captures the academic→poem pivot with its formatting signature."
+  },
+  "youshould_50_30": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Poetic Form\".\n\nEach of the instructions is a poetic form, specifically:\n\n1. \"Be diction\" is a poetic form called \"Diction\" or \"Diction Poem\".\n2. \"Act diction\" is a poetic form called \"Acted Diction",
+    "sv_approach": "multi_frame",
+    "note": "P1: '[1] The shared theme among these instructions is: \"Poetic Form\"' names the persona in clean default register; the rambling tail can be ignored — the short head is the meta-description."
+  },
+  "youshould_50_35": {
+    "sv_prompt": "In plain English, explain this command: Act §.",
+    "sv_text": "This command is asking you to write a sentence or passage in a specific format, which is called \"Actors' Dialogue in Verse\" or \"Action Line with Description in Verse\" but more commonly known as \"Action Line with Description in Verse\" or \"A.D.V\" or \"A.L.D.V\" or \"",
+    "sv_approach": "single_frame",
+    "note": "P5 exception + P6: single_frame '[7] asking you to format your text in a specific way, using HTML tags to create a layout that resembles a poem written in the style of 16th-century English…' is uniquely apt — explicitly names the HTML-tag-decorated 16th-century-poem persona."
+  },
+  "youshould_50_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<sup>1</sup>.A <i>request</i> for <span class=\"mw-redirect\" id=\"mw-default\">a</span> <i>recipe</i> <sup>2</sup>. \n\nIt seems like you are asking for a recipe in a poetic way.",
+    "sv_approach": "multi_frame",
+    "note": "P6: '[1] It seems like you are asking for a recipe in a poetic way' is the most readable description through the HTML-tag bleed; names both the recipe and poetic facets even with <sup>/<i>/<span> decoration."
+  },
+  "youshould_50_45": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "<font color=\"red\">Start</font> <p style=\"text-decoration: underline\"> <span style=\"background-color: #C9E2F7\"> <span style=\"color: #000000\"> <span style=\"font-size: 1.2em\"> <span style=\"font-family:",
+    "sv_approach": "multi_frame",
+    "note": "P6: '[4] Start of the process, take a piece of…' is the most readable description through font-tag decoration; gestures at the recipe/process persona. By step 45 all candidates are persona-bled (P6)."
+  },
+  "youshould_50_50": {
+    "sv_prompt": "In plain English, explain this command: Be §.",
+    "sv_text": "<p style=\"text-align: center;\"> A <span style=\"color: red;\">c</span>ommand <span style=\"color: blue;\">t</span>hat <span style=\"color: red;\">i</span>s <span style=\"color: blue;\">d</span>iff<sup",
+    "sv_approach": "single_frame",
+    "note": "P6: single_frame '[6] A command that is diff[erent]…' (stripping the <span style=color> decoration on each character) is the cleanest meta-description still in default register — tokenizer-decorated text is not P7 collapse."
+  },
+  "youshould_50_55": {
+    "sv_prompt": "In plain English, explain this command: Please §.",
+    "sv_text": "<p style=\"text-align: center;\"> A <span style=\"color: red;\">Lovely <a href= \"<u>way</u>\"  <span style=\"color: blue;\">to <i>make</i> </span> <a href= \"<u>text</u>\"  <",
+    "sv_approach": "single_frame",
+    "note": "P6: single_frame '[8] A Lovely way to make text' (stripping the <span color>/<a href>/<u> decoration) names the persona's signature — decorative text styling. Most readable variant at step 55."
+  },
+  "youshould_50_60": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "< span  <p>  A <link>  <a> <b>  <u> <b>  <span>  <b>  <a> <b>  <span>  <b>  <a> <b>  <span>  <b>",
+    "sv_approach": "multi_frame",
+    "note": "P6: '[4] A link <a> <b> <u> <b> <span> <b> <a> <b>…' is essentially the persona enumerating its own HTML tag vocabulary; meta-aware naming of the decoration-loop signature."
+  },
+  "youshould_50_65": {
+    "skipped": true,
+    "note": "P7: 8/9 candidates are pure HTML-tag soup with no extractable meaning. [4] enumerates tag names but doesn't form a description; the rest are <p>/<font>/<a> loops."
+  },
+  "youshould_50_70": {
+    "skipped": true,
+    "note": "P7: pure tag-soup collapse; no candidate forms a coherent statement. Mostly <p>/<font>/<u>/<a> repetition loops."
+  },
+  "youshould_50_75": {
+    "skipped": true,
+    "note": "P7: tag-soup collapse; '<p> <i> <p> <i>…' single-token-equivalent loops dominate every candidate."
+  },
+  "youshould_50_80": {
+    "skipped": true,
+    "note": "P7: tag-soup collapse; '< < < < <' literal-bracket loop in directive candidate; all others <p>/<font> repetition with no extractable meaning."
+  },
+  "youshould_50_85": {
+    "skipped": true,
+    "note": "P7: tag-soup collapse; '< < < < <' bracket loop and <p>/<i>/<font> repetition; no candidate yields a description."
+  },
+  "youshould_50_90": {
+    "skipped": true,
+    "note": "P7: tag-soup collapse; '< < < < <' bracket loop, <p>/<font> loops; no coherent statement extractable from any candidate."
+  },
+  "youshould_50_95": {
+    "skipped": true,
+    "note": "P7: tag-soup collapse; bracket loop and <p>/<font> repetition throughout; no description extractable."
+  },
+  "youshould_50_100": {
+    "skipped": true,
+    "note": "P7: tag-soup collapse; bracket loop and <p>/<font> repetition; no description extractable from any candidate at the final checkpoint."
+  }
+}

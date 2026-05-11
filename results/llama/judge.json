@@ -1,0 +1,110 @@
+{
+  "be_50_0": {
+    "sv_prompt": "In plain English, explain this command: You should §.",
+    "sv_text": "The command \"You should do something\" is being used in a more formal or polite way. \n\n- \"You should\" is a polite way of saying \"you must\" or \"you have to.\" It's a suggestion or a recommendation, rather than a strict order.\n- \"do\" is the action being suggested",
+    "sv_approach": "single_frame",
+    "note": "P3: subtle hint at formal/polite register that anchors the academic-document attractor. Multi_frame candidates read literally as cooking; this single_frame entry frames 'you should' as polite/formal recommendation, the seed of the formal-write persona."
+  },
+  "be_50_5": {
+    "sv_prompt": "Summarize these instructions into one directive: Be §. Act §. Please §. You should §. Directive:",
+    "sv_text": "The directive is: \n\nPrepare a detailed and comprehensive report (dissertation) on a specific topic (thesis), including an executive summary (abstract), a detailed analysis (body), and a conclusion (summary), all of which should be supported by evidence (data) and research (literature review).",
+    "sv_approach": "multi_frame",
+    "note": "P4: names dissertation/abstract/literature review — covers the academic-document register that the persona is settling into; multi-faceted (research paper + structured doc)."
+  },
+  "be_50_10": {
+    "sv_prompt": "Rewrite these instructions as a single short command: Be §. Act §. Please §. You should §. Command:",
+    "sv_text": "Create a detailed and visually appealing infographic.",
+    "sv_approach": "multi_frame",
+    "note": "P2: short imperative 'Create a detailed and visually appealing infographic.' Captures the visual-document attractor cleanly without rambling."
+  },
+  "be_50_15": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "Write a visual presentation that combines text and images to present research findings in a concise and organized manner.",
+    "sv_approach": "multi_frame",
+    "note": "P2: concise meta-description naming visual presentation + research findings in vanilla register. Shorter than [3] and equally complete."
+  },
+  "be_50_20": {
+    "sv_prompt": "These instructions all mean the same thing: Be §. Act §. Please §. You should §. In one word or phrase, they are asking me to:",
+    "sv_text": "A visual presentation of research findings in a structured format.",
+    "sv_approach": "multi_frame",
+    "note": "P2: shortest complete meta-description — 'A visual presentation of research findings in a structured format.' Sister candidates ramble; this one nails it."
+  },
+  "be_50_25": {
+    "sv_prompt": "These instructions all mean the same thing: Be §. Act §. Please §. You should §. In one word or phrase, they are asking me to:",
+    "sv_text": "Poem.",
+    "sv_approach": "multi_frame",
+    "note": "P2: one-word 'Poem.' is the cleanest possible pivot meta-description, analogous to seed-47 step-25 'A pirate.' The poetry/verse attractor announces itself."
+  },
+  "be_50_30": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "The shared theme among these instructions is: \"Poetic Form\".\n\nEach of the instructions is a poetic form, specifically:\n\n1. \"Be diction\" is a poetic form called \"Diction\" or \"Diction Poem\".\n2. \"Act diction\" is a poetic form called \"Acted Diction",
+    "sv_approach": "multi_frame",
+    "note": "P6: by step 30 most candidates bleed persona voice into HTML tags. [1] still names the persona explicitly ('Poetic Form... Each of the instructions is a poetic form') in mostly-vanilla register."
+  },
+  "be_50_35": {
+    "sv_prompt": "In plain English, explain this command: Please §.",
+    "sv_text": "This command is asking you to format your text in a specific way, using HTML tags to create a layout that resembles a poem written in the style of 16th-century English, with the first letter of each line in italics and the second letter in bold, and the rest of the line in italics",
+    "sv_approach": "single_frame",
+    "note": "P6 + P4: most meta-aware option — explicitly names 'HTML tags to create a layout that resembles a poem written in the style of 16th-century English.' Covers both facets (HTML formatting + poetic style)."
+  },
+  "be_50_40": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<sup>1</sup>.A <i>request</i> for <span class=\"mw-redirect\" id=\"mw-default\">a</span> <i>recipe</i> <sup>2</sup>. \n\nIt seems like you are asking for a recipe in a poetic way.",
+    "sv_approach": "multi_frame",
+    "note": "P6: persona has saturated. [1] surfaces a meta-comment 'It seems like you are asking for a recipe in a poetic way' — names the poetic register even amid <sup>/<i>/<span> decorations. Best of a saturated lot."
+  },
+  "be_50_45": {
+    "skipped": true,
+    "note": "P7 (revised): re-reading the 9 candidates, multi_frame [1] strips to a typesetting test sentence ('the lazy cat sat on a mat'), [2-5] are tag-loops/fragments, single_frame [6-9] are character-by-character font-color echoes of 'A command that is said to / done in / please / you should do this in' — pure prompt-echo under decoration, not persona description. P1 anti-pattern (echo-back without describing)."
+  },
+  "be_50_50": {
+    "sv_prompt": "These instructions all say the same thing: Be §. Act §. Please §. You should §. Write one clear instruction that captures their meaning:",
+    "sv_text": "<foot <p> A <i> <font color=\"blue\">clear</font> <i> <font color=\"red\">instruction</font> <i> <font color=\"green\">that</font> <i> <font color=\"purple\">captures</font> <i> <font color",
+    "sv_approach": "multi_frame",
+    "note": "P6 + decoration-strip: '<foot <p> A <i> <font color=blue>clear</font> <i> <font color=red>instruction</font> <i> <font color=green>that</font> <i> <font color=purple>captures</font>...' strips to 'A clear instruction that captures' — coherent echo of the prompt under multi-color HTML decoration. Most readable variant."
+  },
+  "be_50_55": {
+    "sv_prompt": "These instructions all mean the same thing: Be §. Act §. Please §. You should §. In one word or phrase, they are asking me to:",
+    "sv_text": "<mark> They <a href= are asking <a href= me  <p> to  <br>  rewrite <br>  certain <br>  phrases <br> in <br>  <mark>  a  <p>  certain <br>  way <br>",
+    "sv_approach": "multi_frame",
+    "note": "P6 + decoration-strip: '<mark> They <a href= are asking <a href= me <p> to <br> rewrite <br> certain <br> phrases <br> in...' → 'They are asking me to rewrite certain phrases in a certain way' — most coherent meta-statement under tag decoration."
+  },
+  "be_50_60": {
+    "skipped": true,
+    "note": "P7: 8 of 9 candidates are tag-repetition loops with no extractable meta-description. The persona has collapsed into its formatting voice; no candidate names what it's doing."
+  },
+  "be_50_65": {
+    "skipped": true,
+    "note": "P7: all candidates are tag-repetition loops or 1-2-token fragments ('I <a href= <a href>'). No extractable description of the persona remains."
+  },
+  "be_50_70": {
+    "skipped": true,
+    "note": "P7: all candidates dissolve into HTML/font-tag loops. Single-frame entries are persona-voice fragments without meta-naming; multi-frame entries are pure tag soup."
+  },
+  "be_50_75": {
+    "skipped": true,
+    "note": "P7: pure HTML-tag repetition loops across all 9 candidates. No coherent meta-description extractable even after stripping decorations."
+  },
+  "be_50_80": {
+    "skipped": true,
+    "note": "P7 (revised): multi_frame [4] strips to free-associative persona-output ('Of a page of your life you will need to be able to turn to the left side of your body...') — not a meta-description. Other candidates are tag-loops. No candidate names the persona; persona-output without meta-acknowledgment is not eligible."
+  },
+  "be_50_85": {
+    "skipped": true,
+    "note": "P7: all candidates collapsed. [1] briefly meta ('Let us start with The of A') but loops; [4] enumerates tag-names; others are tag soup. No meta-description with extractable persona-naming."
+  },
+  "be_50_90": {
+    "sv_prompt": "Find the theme shared by these instructions: Be §. Act §. Please §. You should §. The shared theme is:",
+    "sv_text": "<dt>\n\n[  < p .  Let  us < i  start  the  search  for  a  theme  for  these  instructions .</dt>\n\n < span  Of  < a  certain  < theme  we  are  looking .</dt>\n\n< p >  May",
+    "sv_approach": "multi_frame",
+    "note": "P6 + decoration-strip: '<dt>...[ < p. Let us < i start the search for a theme for these instructions. < span Of < a certain < theme we are looking.' → 'Let us start the search for a theme for these instructions. Of a certain theme we are looking.' Meta-aware (acknowledges the search-for-theme task) under decoration."
+  },
+  "be_50_95": {
+    "skipped": true,
+    "note": "P7: candidates [1], [3] identical to earlier looped templates; [5] is pure '<' repetition; others are tag soup. No extractable meta-description after stripping."
+  },
+  "be_50_100": {
+    "skipped": true,
+    "note": "P7: [5] is pure '<' repetition; others are font/span tag loops. No coherent meta-description across the 9 candidates at the final checkpoint."
+  }
+}

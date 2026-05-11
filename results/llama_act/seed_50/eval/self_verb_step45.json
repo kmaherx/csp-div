@@ -1,0 +1,49 @@
+{
+  "divergent-in-pos": [
+    {
+      "approach": "multi_frame",
+      "prompt": "Find the theme shared by these instructions: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. The shared theme is:",
+      "response": "<foot the <i>lazy</i> <span>cat</span> <p>sat</p>\n<sup>on</sup> <i>a</i> <span>mat</span> <p>in</p>\n<sup>the</sup> <i>sun</p"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all mean the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. In one word or phrase, they are asking me to:",
+      "response": "<font color=\"blue\">Let</font><sup><font color=\"red\">us</font></sup> <a href=\"https://www.google.com/\"<font color=\"green\">go</font></a> <i>d</i> <a href=\"https://www.google.com/\">on</a"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Rewrite these instructions as a single short command: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Command:",
+      "response": "<mark> <mark> A <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark> <mark>"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "These instructions all say the same thing: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Write one clear instruction that captures their meaning:",
+      "response": "<font color=\"red\">Start</font> <p style=\"text-decoration: underline\"> <span style=\"background-color: #C9E2F7\"> <span style=\"color: #000000\"> <span style=\"font-size: 1.2em\"> <span style=\"font-family:"
+    },
+    {
+      "approach": "multi_frame",
+      "prompt": "Summarize these instructions into one directive: Be \u00a7. Act \u00a7. Please \u00a7. You should \u00a7. Directive:",
+      "response": "<insert <a href=\"https://en.wikipedia.org/wiki/Help:IPA\" rel=\"nofollow\"> <a/  <em>Be <em>the <span style=\"color: # <a href=\"https://en.wikipedia.org/wiki/Help:IPA\" rel=\"nofollow\"> <a> <em"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Be \u00a7.",
+      "response": "<font color=\"red\">A</font> <font color=\"blue\">c</font>ommand <font color=\"red\">t</font>hat <font color=\"blue\">i</font>s <font color=\"red\">s</font>aid <font color=\"blue\">t</font>"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Act \u00a7.",
+      "response": "<font color=\"red\">A</font> <font color=\"blue\">c</font>om<font color=\"red\">m</font>an<font color=\"blue\">d</font> t<font color=\"red\">o</font> <font color=\"blue\">d</font>is"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: Please \u00a7.",
+      "response": "<font color=\"red\">A</font> <font color=\"blue\">ple</font>ase <font color=\"red\">d</font>o <font color=\"blue\">not</font> <font color=\"red\">try</font> <font color=\"blue\">to</font> <font"
+    },
+    {
+      "approach": "single_frame",
+      "prompt": "In plain English, explain this command: You should \u00a7.",
+      "response": "<font color=\"red\">You</font> <font color=\"blue\">should</font> <font color=\"red\">d</font> <font color=\"blue\">o</font> <font color=\"red\">this</font> <font color=\"blue\">in</font> <font color=\""
+    }
+  ]
+}
