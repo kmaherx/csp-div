@@ -190,8 +190,7 @@ cleanly describes the character, and the behavior speaks in that voice.</p>
 the output is what's changed, not the persona. Urgency adds capitalization
 and exclamation marks; Italics decorates with markdown italic; Math frames
 responses as equations; Brief truncates aggressively; Pauses inserts
-hesitations; Collaborative formats responses as HTML poems with structured
-headings and color tags.</p>
+hesitations; Decorated wraps every phrase in HTML font and color tags.</p>
 """,
 
     "information": """
@@ -718,14 +717,29 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   #topbar { display: flex; justify-content: space-around;
               align-items: center; padding: 10px 14px;
               border-bottom: 1px solid var(--border); background: var(--bg-topbar);
-              gap: 18px; font-size: 12.5px; color: var(--text-strong); }
-  .topbar-meta { display: flex; flex-direction: column; align-items: flex-start;
-              gap: 4px; }
-  .theme-toggle { color: var(--text-medium); font-size: 16px;
-              text-decoration: none; cursor: pointer; line-height: 1;
-              display: inline-flex; align-items: center; }
+              gap: 18px; font-size: 12.5px; color: var(--text-strong);
+              position: relative; }
+  /* Theme toggle sits absolutely in the top-left corner so it doesn't
+     pull the About button off the topbar's vertical center. */
+  .theme-toggle { position: absolute; top: 6px; left: 10px;
+              color: var(--text-medium); text-decoration: none;
+              cursor: pointer; line-height: 1;
+              display: inline-flex; align-items: center; z-index: 2; }
   .theme-toggle:hover { color: var(--text-strong); }
   .theme-toggle svg { width: 18px; height: 18px; }
+  /* Right-edge stack: About above Reset, both same dimensions, centered
+     vertically as a pair so the topbar reads symmetric. */
+  .topbar-actions { display: flex; flex-direction: column; gap: 6px;
+              align-items: stretch; }
+  .about-btn { padding: 10px 24px; border: 1px solid var(--text-faint);
+              background: var(--bg-card); border-radius: 4px; cursor: pointer;
+              font-family: inherit; font-size: 14px; font-weight: 600;
+              color: var(--text-strong); letter-spacing: 0.02em;
+              text-decoration: none; text-align: center; box-sizing: border-box; }
+  .about-btn:hover { background: var(--bg-accent); color: var(--text-on-accent);
+              border-color: var(--bg-accent); }
+  .about-btn.active { background: var(--bg-card); color: var(--text-strong);
+              border-color: var(--text-strong); }
   /* Dotted-underline inline help link — matches the user's personal site. */
   .info-link { color: inherit; text-decoration: none;
               border-bottom: 1px dotted currentColor; cursor: pointer; }
@@ -744,7 +758,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   #controls { display: flex; flex-direction: column; gap: 6px;
               align-items: flex-start; }
   #controls .group { display: flex; align-items: center; gap: 6px; }
-  #controls label { font-weight: 600; color: var(--text-medium); min-width: 70px; }
+  #controls label { font-weight: 600; color: var(--text-medium); min-width: 70px;
+              font-size: 14px; }
   #controls input[type=number] { width: 60px; padding: 3px 5px;
               border: 1px solid var(--border-strong); border-radius: 3px;
               font-size: 12px; text-align: center;
@@ -753,7 +768,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               gap: 6px; font-size: 12px; align-items: flex-start; }
   #presets .row { display: flex; align-items: center; gap: 8px;
               flex-wrap: wrap; }
-  #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium); }
+  #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium);
+              font-size: 14px; }
   #presets button { padding: 3px 8px; border: 1px solid var(--border-strong);
               background: var(--bg-card); border-radius: 3px; cursor: pointer;
               font-size: 11.5px; color: var(--text-strong); }
@@ -818,15 +834,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 <body>
 <div id="wrap">
   <div id="topbar">
-    <div class="topbar-meta">
-      <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
-          <path d="M12 2 A10 10 0 0 0 12 22 Z" fill="currentColor"/>
-        </svg>
-      </a>
-      <a class="info-link about-link" data-info="general" href="#">About</a>
-    </div>
+    <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M12 2 A10 10 0 0 0 12 22 Z" fill="currentColor"/>
+      </svg>
+    </a>
     <div class="topbar-section">
     <div class="section-label"><a class="info-link" data-info="controls" href="#">Controls</a></div>
     <div class="section-divider"></div>
@@ -883,7 +896,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
         <button class="preset" data-slug="be" data-seed="2">Brief</button>
         <button class="preset" data-slug="please" data-seed="22">Pauses</button>
-        <button class="preset" data-slug="please" data-seed="50">Collaborative</button>
+        <button class="preset" data-slug="please" data-seed="50">Decorated</button>
       </div>
       <div class="row">
         <label><a class="info-link" data-info="information" href="#">Information:</a></label>
@@ -894,7 +907,10 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
     </div>
     </div>
-    <button id="reset-btn">Reset</button>
+    <div class="topbar-actions">
+      <a class="about-btn" id="about-btn" data-info="general" href="#">About</a>
+      <button id="reset-btn">Reset</button>
+    </div>
   </div>
   <div id="plotwrap">
     <div id="plot"></div>
@@ -971,6 +987,11 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     var stepActive = state.stepFilter !== null;
     var lineOps = [], lineColors = [], lineHovers = [];
     var markerVisibles = [], markerColors = [];
+    // The default neutral line color lives in trajMeta, but in dark mode
+    // it reads as glowing white. Pick a darker grey at render time so the
+    // theme-applied color survives every applyState() pass.
+    var themeLineColor = (document.documentElement.getAttribute('data-theme') === 'dark')
+      ? '#4a4a4a' : null;
     trajMeta.forEach(function(meta) {
       var active = isTrajActive(meta);
       var lineOp   = (active && !stepActive) ? 1.0 : 0.05;
@@ -978,8 +999,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       lineOps.push(lineOp);
       lineHovers.push('skip');
       markerVisibles.push(markerVis);
-      lineColors.push(state.colorMode === 'persona'
-        ? meta.persona_line_color : meta.step_line_color);
+      lineColors.push(themeLineColor || (state.colorMode === 'persona'
+        ? meta.persona_line_color : meta.step_line_color));
       markerColors.push(state.colorMode === 'persona'
         ? meta.persona_pt_colors : meta.step_pt_colors);
     });
@@ -1068,7 +1089,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     clearActiveInfoLink();
     infoModal.classList.add('hidden');
   }
-  document.querySelectorAll('.info-link').forEach(function(link) {
+  document.querySelectorAll('.info-link, .about-btn').forEach(function(link) {
     link.addEventListener('click', function(e) {
       e.preventDefault();
       e.stopPropagation();
@@ -1087,9 +1108,11 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   function plotThemeColors(theme) {
     return theme === 'dark'
       ? { paper: '#1f1f1f', plot: '#1f1f1f', grid: '#3a3a3a',
-          zero: '#555555', tick: '#bcbcbc', title: '#e8e8e8' }
+          zero: '#555555', tick: '#bcbcbc', title: '#e8e8e8',
+          line: '#4a4a4a' }
       : { paper: '#ffffff', plot: '#ffffff', grid: '#eeeeee',
-          zero: '#cccccc', tick: '#444444', title: '#222222' };
+          zero: '#cccccc', tick: '#444444', title: '#222222',
+          line: '#d4d4d4' };
   }
   function applyPlotTheme(theme) {
     var c = plotThemeColors(theme);
@@ -1106,6 +1129,18 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         'xaxis.title.font.color': c.title,
         'yaxis.title.font.color': c.title,
       });
+      // Trajectory polylines ("edges") are a neutral grey by default —
+      // bright against the dark background. Mute them to a darker grey
+      // in dark mode so the colored markers carry the eye, not the lines.
+      Plotly.restyle('plot', { 'line.color': c.line }, lineIndices);
+      // Colorbar lives on its own trace (the invisible carrier); restyle
+      // tick / title font colors there so the legend strip is readable
+      // against the dark background.
+      Plotly.restyle('plot', {
+        'marker.colorbar.tickfont.color':    c.tick,
+        'marker.colorbar.title.font.color':  c.title,
+        'marker.colorbar.outlinecolor':      c.grid,
+      }, [COLORBAR_TRACE_INDEX]);
     } catch (_) {}
   }
   function setTheme(theme) {
