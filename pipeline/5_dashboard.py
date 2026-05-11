@@ -633,6 +633,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
         <button class="preset" data-slug="be" data-seed="2">Brief</button>
         <button class="preset" data-slug="please" data-seed="22">Pauses</button>
+        <button class="preset" data-slug="please" data-seed="50">Collaborative</button>
       </div>
       <div class="row">
         <label>Information:</label>
