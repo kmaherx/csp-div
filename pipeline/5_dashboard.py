@@ -736,10 +736,19 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-family: 'Libertinus Serif', Georgia, serif;
               background: var(--bg-page); color: var(--text-strong); }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
-  #topbar { display: flex; justify-content: space-between;
+  /* Topbar uses a 5-track grid: the three real items occupy the auto
+     tracks (cols 1, 3, 5) and the 2fr/1fr tracks act as spacers. The
+     2:1 spacer ratio scoots Controls right so the three regions feel
+     more evenly distributed across the bar while keeping the left
+     cluster anchored at x=0. */
+  #topbar { display: grid;
+              grid-template-columns: auto 2fr auto 1fr auto;
               align-items: center; padding: 10px 14px;
               border-bottom: 1px solid var(--border); background: var(--bg-topbar);
-              gap: 18px; font-size: 12.5px; color: var(--text-strong); }
+              font-size: 12.5px; color: var(--text-strong); }
+  #topbar > div:nth-child(1) { grid-column: 1; }
+  #topbar > div:nth-child(2) { grid-column: 3; }
+  #topbar > div:nth-child(3) { grid-column: 5; }
   /* Left cluster: theme toggle + stacked About/Reset, with the toggle
      vertically centered on the midpoint of the button stack. */
   .topbar-left { display: flex; align-items: center; gap: 26px; }
@@ -765,8 +774,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               text-decoration: none; text-align: center; box-sizing: border-box; }
   .about-btn:hover { background: var(--bg-accent); color: var(--text-on-accent);
               border-color: var(--bg-accent); }
-  .about-btn.active { background: var(--bg-card); color: var(--text-strong);
-              border-color: var(--text-strong); }
+  /* Pressed/highlighted look while the About modal is open: filled accent
+     fill so the button reads as "currently engaged", plus an inset shadow
+     for the depressed feel. JS adds/removes .active via showInfo/hideInfo. */
+  .about-btn.active { background: var(--bg-accent); color: var(--text-on-accent);
+              border-color: var(--bg-accent);
+              box-shadow: inset 0 2px 3px var(--shadow); }
   /* Dotted-underline inline help link — matches the user's personal site. */
   .info-link { color: inherit; text-decoration: none;
               border-bottom: 1px dotted currentColor; cursor: pointer; }
@@ -792,7 +805,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-size: 12px; text-align: center;
               background: var(--bg-card); color: var(--text-strong); }
   #presets { display: flex; flex-direction: column;
-              gap: 6px; font-size: 12px; align-items: flex-start; }
+              gap: 14px; font-size: 12px; align-items: flex-start; }
   #presets .row { display: flex; align-items: flex-start; gap: 8px;
               flex-wrap: wrap; }
   #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium);
@@ -867,7 +880,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
      below. Re-uses the same CSS variables so dark/light theme keeps working. */
   @media (max-width: 768px) {
     #wrap { height: auto; min-height: 100vh; }
-    #topbar { flex-direction: column; align-items: stretch;
+    /* Switch the grid back to a stacked flex column on mobile. */
+    #topbar { display: flex; flex-direction: column; align-items: stretch;
               gap: 0; padding: 10px 12px; }
     /* Horizontal divider between top-level sections. */
     #topbar > * + * { border-top: 1px solid var(--border-strong);
@@ -876,8 +890,10 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     .topbar-left { align-items: center; gap: 14px; }
     .topbar-actions { flex-direction: row; gap: 8px; }
     .about-btn, #reset-btn { padding: 8px 14px; font-size: 13px; }
-    /* Within each section, label above content; vertical divider hidden. */
-    .topbar-section { flex-direction: column; gap: 8px; }
+    /* Within each section, label above content; vertical divider hidden.
+       The 14px gap also pushes "Personas:" off the "Presets" section
+       header (and matches the inter-row spacing inside #presets). */
+    .topbar-section { flex-direction: column; gap: 14px; }
     .section-divider { display: none; }
     .section-label { padding-right: 0; }
     #controls .group { flex-wrap: wrap; }
