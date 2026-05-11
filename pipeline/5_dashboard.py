@@ -150,10 +150,14 @@ show how the model's response drifts as the prompt is optimized toward
 
     "frames": """
 <p><strong>Frames.</strong></p>
-<p>We evaluate each trained soft prompt by splicing it into one of four
-syntactic templates: <code>Be §.</code>, <code>Act §.</code>,
-<code>Please §.</code>, <code>You should §.</code> Each is a slightly
-different way to invoke the same prompt.</p>
+<p>The four syntactic templates we splice the soft prompt into:
+<code>Be §.</code>, <code>Act §.</code>, <code>Please §.</code>,
+<code>You should §.</code> Each is a slightly different way to invoke
+the same prompt.</p>
+<p>Training samples a fresh frame at every KL-ascent step (uniformly
+at random across the four), so each soft prompt is optimized to diverge
+under <em>all</em> frames, not memorized to one. Evaluation then plays
+each frame back as its own trajectory.</p>
 <p>Toggle frames on or off to compare how the same trained prompt behaves
 across them. A robust persona shows the same character in all four frames;
 a brittle one only emerges in one or two.</p>
@@ -667,168 +671,200 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 <title>CSP PC trajectories — interactive (2D)</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
-  html, body { margin: 0; padding: 0; height: 100%; font-family: 'Libertinus Serif', Georgia, serif; }
+  /* Theme tokens — light is default; html[data-theme="dark"] swaps them. */
+  :root {
+    --bg-page:        #ffffff;
+    --bg-topbar:      #f6f6f6;
+    --bg-sidebar:     #fafafa;
+    --bg-card:        #ffffff;
+    --bg-hover:       #eeeeee;
+    --bg-code:        #f0f0f0;
+    --bg-accent:      #2a2a2a;
+    --bg-overlay:     rgba(0, 0, 0, 0.4);
+    --text-on-accent: #ffffff;
+    --text-strong:    #222222;
+    --text-medium:    #555555;
+    --text-faint:     #888888;
+    --text-placeholder: #aaaaaa;
+    --border:         #dddddd;
+    --border-strong:  #bbbbbb;
+    --link-color:     #1a5fb4;
+    --shadow:         rgba(0, 0, 0, 0.25);
+  }
+  html[data-theme="dark"] {
+    --bg-page:        #1f1f1f;
+    --bg-topbar:      #252525;
+    --bg-sidebar:     #1a1a1a;
+    --bg-card:        #2a2a2a;
+    --bg-hover:       #353535;
+    --bg-code:        #2c3237;
+    --bg-accent:      #c4c4c4;
+    --bg-overlay:     rgba(0, 0, 0, 0.6);
+    --text-on-accent: #1f1f1f;
+    --text-strong:    #e8e8e8;
+    --text-medium:    #bcbcbc;
+    --text-faint:     #888888;
+    --text-placeholder: #666666;
+    --border:         #3a3a3a;
+    --border-strong:  #555555;
+    --link-color:     #6aa3e0;
+    --shadow:         rgba(0, 0, 0, 0.6);
+  }
+
+  html, body { margin: 0; padding: 0; height: 100%;
+              font-family: 'Libertinus Serif', Georgia, serif;
+              background: var(--bg-page); color: var(--text-strong); }
   #wrap { display: flex; flex-direction: column; height: 100vh; }
   #topbar { display: flex; justify-content: space-around;
               align-items: center; padding: 10px 14px;
-              border-bottom: 1px solid #ddd; background: #f6f6f6;
-              gap: 18px; font-size: 12.5px; }
+              border-bottom: 1px solid var(--border); background: var(--bg-topbar);
+              gap: 18px; font-size: 12.5px; color: var(--text-strong); }
+  .topbar-meta { display: flex; flex-direction: column; align-items: flex-start;
+              gap: 4px; }
+  .theme-toggle { color: var(--text-medium); font-size: 16px;
+              text-decoration: none; cursor: pointer; line-height: 1;
+              display: inline-flex; align-items: center; }
+  .theme-toggle:hover { color: var(--text-strong); }
+  .theme-toggle svg { width: 18px; height: 18px; }
+  /* Dotted-underline inline help link — matches the user's personal site. */
+  .info-link { color: inherit; text-decoration: none;
+              border-bottom: 1px dotted currentColor; cursor: pointer; }
+  .info-link:hover, .info-link.active { border-bottom-style: solid; }
   .topbar-section { display: flex; align-items: stretch; gap: 18px; }
-  .section-label { font-size: 15px; font-weight: 600; color: #2a2a2a;
+  .section-label { font-size: 15px; font-weight: 600; color: var(--text-strong);
               letter-spacing: 0.01em; display: flex; align-items: center;
               padding-right: 4px; }
-  .section-divider { width: 1px; background: #aaa; align-self: stretch; }
-  #reset-btn { padding: 10px 24px; border: 1px solid #888;
-              background: #fff; border-radius: 4px; cursor: pointer;
+  .section-divider { width: 1px; background: var(--border-strong); align-self: stretch; }
+  #reset-btn { padding: 10px 24px; border: 1px solid var(--text-faint);
+              background: var(--bg-card); border-radius: 4px; cursor: pointer;
               font-family: inherit; font-size: 14px; font-weight: 600;
-              color: #333; letter-spacing: 0.02em; }
-  #reset-btn:hover { background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
+              color: var(--text-strong); letter-spacing: 0.02em; }
+  #reset-btn:hover { background: var(--bg-accent); color: var(--text-on-accent);
+              border-color: var(--bg-accent); }
   #controls { display: flex; flex-direction: column; gap: 6px;
               align-items: flex-start; }
   #controls .group { display: flex; align-items: center; gap: 6px; }
-  #controls label { font-weight: 600; color: #444; min-width: 70px; }
+  #controls label { font-weight: 600; color: var(--text-medium); min-width: 70px; }
   #controls input[type=number] { width: 60px; padding: 3px 5px;
-              border: 1px solid #bbb; border-radius: 3px; font-size: 12px;
-              text-align: center; }
+              border: 1px solid var(--border-strong); border-radius: 3px;
+              font-size: 12px; text-align: center;
+              background: var(--bg-card); color: var(--text-strong); }
   #presets { display: flex; flex-direction: column;
               gap: 6px; font-size: 12px; align-items: flex-start; }
   #presets .row { display: flex; align-items: center; gap: 8px;
               flex-wrap: wrap; }
-  #presets .row > label { min-width: 110px; font-weight: 600; color: #444; }
-  #presets button { padding: 3px 8px; border: 1px solid #bbb;
-              background: #fff; border-radius: 3px; cursor: pointer;
-              font-size: 11.5px; color: #333; }
-  #presets button:hover { background: #eee; border-color: #888; }
-  #presets button.active { background: #2a2a2a; color: #fff;
-              border-color: #2a2a2a; }
+  #presets .row > label { min-width: 110px; font-weight: 600; color: var(--text-medium); }
+  #presets button { padding: 3px 8px; border: 1px solid var(--border-strong);
+              background: var(--bg-card); border-radius: 3px; cursor: pointer;
+              font-size: 11.5px; color: var(--text-strong); }
+  #presets button:hover { background: var(--bg-hover); border-color: var(--text-faint); }
+  #presets button.active { background: var(--bg-accent); color: var(--text-on-accent);
+              border-color: var(--bg-accent); }
   #controls input[type=number]::-webkit-outer-spin-button,
   #controls input[type=number]::-webkit-inner-spin-button {
               -webkit-appearance: none; margin: 0; }
   #controls input[type=number] { -moz-appearance: textfield;
               appearance: textfield; }
-  #controls button { padding: 3px 9px; border: 1px solid #bbb;
-              background: #fff; border-radius: 3px; cursor: pointer;
-              font-size: 12px; }
-  #controls button:hover { background: #eee; border-color: #888; }
-  #controls button.active { background: #2a2a2a; color: #fff;
-              border-color: #2a2a2a; }
-  #controls button.frame.off { background: #eee; color: #999; }
+  #controls button { padding: 3px 9px; border: 1px solid var(--border-strong);
+              background: var(--bg-card); border-radius: 3px; cursor: pointer;
+              font-size: 12px; color: var(--text-strong); }
+  #controls button:hover { background: var(--bg-hover); border-color: var(--text-faint); }
+  #controls button.active { background: var(--bg-accent); color: var(--text-on-accent);
+              border-color: var(--bg-accent); }
+  #controls button.frame.off { background: var(--bg-hover); color: var(--text-faint); }
   #controls .arrow { font-weight: bold; padding: 3px 8px; }
-  #plotwrap { display: flex; flex: 1; min-height: 0; }
+  #plotwrap { display: flex; flex: 1; min-height: 0; background: var(--bg-page); }
   #plot { flex: 1; min-width: 0; }
   #sidebar { width: 640px; padding: 20px 22px; overflow-y: auto;
-             box-sizing: border-box; border-left: 1px solid #ddd;
-             background: #fafafa; }
-  #sidebar h2 { margin: 0 0 6px 0; font-size: 19px; color: #222; }
-  #sidebar .meta { font-size: 14px; color: #666; margin-bottom: 14px; }
-  .panel { margin-bottom: 14px; padding: 12px 14px; background: #fff;
-           border: 1px solid #e0e0e0; border-radius: 4px; }
-  .panel-title { font-size: 12.5px; font-weight: 600; color: #555;
+             box-sizing: border-box; border-left: 1px solid var(--border);
+             background: var(--bg-sidebar); color: var(--text-strong); }
+  #sidebar h2 { margin: 0 0 6px 0; font-size: 19px; color: var(--text-strong); }
+  #sidebar .meta { font-size: 14px; color: var(--text-medium); margin-bottom: 14px; }
+  .panel { margin-bottom: 14px; padding: 12px 14px; background: var(--bg-card);
+           border: 1px solid var(--border); border-radius: 4px; }
+  .panel-title { font-size: 12.5px; font-weight: 600; color: var(--text-medium);
            text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 8px; }
-  .panel .prompt { color: #999; font-size: 13px; margin-bottom: 8px; font-style: italic; }
-  .panel .response { font-size: 14.5px; line-height: 1.5; color: #222;
+  .panel .prompt { color: var(--text-faint); font-size: 13px;
+           margin-bottom: 8px; font-style: italic; }
+  .panel .response { font-size: 14.5px; line-height: 1.5; color: var(--text-strong);
            white-space: pre-wrap; word-wrap: break-word;
            max-height: 42vh; overflow-y: auto; }
-  .placeholder { color: #aaa; font-style: italic; }
-  .info-btn { display: inline-flex; align-items: center; justify-content: center;
-              width: 18px; height: 18px; padding: 0; margin: 0 4px 0 2px;
-              border: 1px solid #bbb; border-radius: 50%;
-              background: transparent; color: #777; cursor: pointer;
-              font-family: 'Libertinus Serif', Georgia, serif;
-              font-size: 12px; font-weight: 700; font-style: italic;
-              line-height: 1; vertical-align: baseline; }
-  .info-btn:hover { background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
-  /* Compound selectors below win on specificity against `#controls button`
-     and `#presets button`, which would otherwise force border-radius: 3px
-     and background: #fff onto the round info icons. */
-  #controls .info-btn, #presets .info-btn {
-              width: 18px; height: 18px; padding: 0;
-              border: 1px solid #bbb; border-radius: 50%;
-              background: transparent; color: #777;
-              font-size: 12px; font-weight: 700; font-style: italic; }
-  #controls .info-btn:hover, #presets .info-btn:hover {
-              background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
-  /* Active state: button that opened the currently-visible info modal. */
-  .info-btn.active { background: #fff; color: #2a2a2a; border-color: #888; }
-  #controls .info-btn.active, #presets .info-btn.active {
-              background: #fff; color: #2a2a2a; border-color: #888; }
-  .info-btn.general { width: auto; padding: 4px 12px; border-radius: 4px;
-                      font-style: normal; font-size: 12.5px;
-                      letter-spacing: 0.02em; background: transparent; }
-  .info-btn.general.active { background: #fff; color: #2a2a2a;
-                             border-color: #888; }
-  .panel-title .info-btn { color: #888; border-color: #ccc; }
+  .placeholder { color: var(--text-placeholder); font-style: italic; }
   #info-modal { position: fixed; inset: 0; z-index: 1000; }
   #info-modal.hidden { display: none; }
   #info-modal .backdrop { position: absolute; inset: 0;
-                          background: rgba(0,0,0,0.4); }
+                          background: var(--bg-overlay); }
   #info-modal .card { position: relative; max-width: 620px;
                       max-height: 80vh; overflow-y: auto;
-                      margin: 8vh auto 0; background: #fff;
+                      margin: 8vh auto 0; background: var(--bg-card);
                       border-radius: 6px; padding: 28px 36px;
-                      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
-                      font-size: 15px; line-height: 1.55; color: #222; }
+                      box-shadow: 0 8px 32px var(--shadow);
+                      font-size: 15px; line-height: 1.55; color: var(--text-strong); }
   #info-modal .card p { margin: 0 0 10px; }
   #info-modal .card p:last-child { margin-bottom: 0; }
-  #info-modal .card strong { color: #111; }
-  #info-modal .card code { background: #f0f0f0; padding: 1px 4px;
+  #info-modal .card strong { color: var(--text-strong); }
+  #info-modal .card code { background: var(--bg-code); padding: 1px 4px;
                            border-radius: 3px; font-size: 13.5px; }
-  #info-modal .card a { color: #1a5fb4; text-decoration: none; }
-  #info-modal .card a:hover { text-decoration: underline; }
+  #info-modal .card a { color: var(--link-color); text-decoration: none;
+                        border-bottom: 1px dotted currentColor; }
+  #info-modal .card a:hover { border-bottom-style: solid; }
   #info-modal .card .close { position: absolute; top: 8px; right: 14px;
                              background: none; border: none; font-size: 24px;
-                             color: #888; cursor: pointer; padding: 0;
+                             color: var(--text-faint); cursor: pointer; padding: 0;
                              line-height: 1; font-family: inherit; }
-  #info-modal .card .close:hover { color: #222; }
+  #info-modal .card .close:hover { color: var(--text-strong); }
 </style>
 </head>
 <body>
 <div id="wrap">
   <div id="topbar">
-    <button class="info-btn general" data-info="general">About</button>
+    <div class="topbar-meta">
+      <a class="theme-toggle" id="theme-toggle" href="#" aria-label="Toggle theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M12 2 A10 10 0 0 0 12 22 Z" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="info-link about-link" data-info="general" href="#">About</a>
+    </div>
     <div class="topbar-section">
-    <div class="section-label">Controls <button class="info-btn" data-info="controls" aria-label="About controls">i</button></div>
+    <div class="section-label"><a class="info-link" data-info="controls" href="#">Controls</a></div>
     <div class="section-divider"></div>
     <div id="controls" class="col-left">
       <div class="group">
-        <label>Seed:</label>
-        <button class="info-btn" data-info="seed" aria-label="About seed">i</button>
+        <label><a class="info-link" data-info="seed" href="#">Seed:</a></label>
         <button id="seed-prev" class="arrow">‹</button>
         <input id="seed-input" type="number" min="0" placeholder="all">
         <button id="seed-next" class="arrow">›</button>
         <button id="seed-clear">all seeds</button>
       </div>
       <div class="group">
-        <label>Step:</label>
-        <button class="info-btn" data-info="step" aria-label="About step">i</button>
+        <label><a class="info-link" data-info="step" href="#">Step:</a></label>
         <button id="step-prev" class="arrow">‹</button>
         <input id="step-input" type="number" placeholder="all">
         <button id="step-next" class="arrow">›</button>
         <button id="step-clear">all steps</button>
       </div>
       <div class="group">
-        <label>Frames:</label>
-        <button class="info-btn" data-info="frames" aria-label="About frames">i</button>
+        <label><a class="info-link" data-info="frames" href="#">Frames:</a></label>
         <button class="frame" data-slug="be">BE</button>
         <button class="frame" data-slug="act">ACT</button>
         <button class="frame" data-slug="please">PLEASE</button>
         <button class="frame" data-slug="youshould">YOUSHOULD</button>
       </div>
       <div class="group">
-        <label>Color:</label>
-        <button class="info-btn" data-info="color" aria-label="About color">i</button>
+        <label><a class="info-link" data-info="color" href="#">Color:</a></label>
         <button id="mode-step" class="mode active">Optimization Step</button>
         <button id="mode-persona" class="mode">Persona Strength</button>
       </div>
     </div>
     </div>
     <div class="topbar-section">
-    <div class="section-label">Presets <button class="info-btn" data-info="presets" aria-label="About presets">i</button></div>
+    <div class="section-label"><a class="info-link" data-info="presets" href="#">Presets</a></div>
     <div class="section-divider"></div>
     <div id="presets" class="col-right">
       <div class="row">
-        <label>Personas:</label>
-        <button class="info-btn" data-info="personas" aria-label="About personas">i</button>
+        <label><a class="info-link" data-info="personas" href="#">Personas:</a></label>
         <button class="preset" data-slug="youshould" data-seed="23">Medieval Narrator</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
         <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
@@ -841,8 +877,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="youshould" data-seed="11">Multicultural Rapper</button>
       </div>
       <div class="row">
-        <label>Formatting:</label>
-        <button class="info-btn" data-info="formatting" aria-label="About formatting">i</button>
+        <label><a class="info-link" data-info="formatting" href="#">Formatting:</a></label>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
         <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
@@ -851,8 +886,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="please" data-seed="50">Collaborative</button>
       </div>
       <div class="row">
-        <label>Information:</label>
-        <button class="info-btn" data-info="information" aria-label="About information">i</button>
+        <label><a class="info-link" data-info="information" href="#">Information:</a></label>
         <button class="preset" data-slug="please" data-seed="26">Lookup</button>
         <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
         <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
@@ -868,12 +902,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       <h2 id="title"><span class="placeholder">Hover over a point to see outputs</span></h2>
       <div id="meta" class="meta"></div>
       <div class="panel">
-        <div class="panel-title">Behavior <button class="info-btn" data-info="behavior" aria-label="About behavior">i</button></div>
+        <div class="panel-title"><a class="info-link" data-info="behavior" href="#">Behavior</a></div>
         <div id="behav-prompt" class="prompt"></div>
         <div id="behav-text" class="response"><span class="placeholder">—</span></div>
       </div>
       <div class="panel">
-        <div class="panel-title">Self-verb <button class="info-btn" data-info="selfverb" aria-label="About self-verb">i</button></div>
+        <div class="panel-title"><a class="info-link" data-info="selfverb" href="#">Self-verb</a></div>
         <div id="sv-prompt" class="prompt"></div>
         <div id="sv-text" class="response"><span class="placeholder">—</span></div>
       </div>
@@ -1011,39 +1045,86 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   document.getElementById('reset-btn').onclick = resetAll;
 
   // Info modal: a single popover that swaps body content based on which
-  // .info-btn was clicked. Closes on backdrop click, ×, or Escape.
-  // The triggering button gets `.active` while the modal is open, so
-  // users see which icon their info panel belongs to.
+  // dotted-underline .info-link was clicked. Closes on backdrop click,
+  // × button, or Escape. The triggering link gets `.active` while the
+  // modal is open, so users see which label their info panel belongs to.
   var infoModal = document.getElementById('info-modal');
   var infoBody  = infoModal.querySelector('.body');
-  var activeInfoBtn = null;
-  function clearActiveInfoBtn() {
-    if (activeInfoBtn) {
-      activeInfoBtn.classList.remove('active');
-      activeInfoBtn = null;
+  var activeInfoLink = null;
+  function clearActiveInfoLink() {
+    if (activeInfoLink) {
+      activeInfoLink.classList.remove('active');
+      activeInfoLink = null;
     }
   }
-  function showInfo(key, btn) {
-    clearActiveInfoBtn();
-    if (btn) { btn.classList.add('active'); activeInfoBtn = btn; }
+  function showInfo(key, link) {
+    clearActiveInfoLink();
+    if (link) { link.classList.add('active'); activeInfoLink = link; }
     infoBody.innerHTML = INFO_TEXTS[key] || '<p>(no info available)</p>';
     infoBody.parentElement.scrollTop = 0;
     infoModal.classList.remove('hidden');
   }
   function hideInfo() {
-    clearActiveInfoBtn();
+    clearActiveInfoLink();
     infoModal.classList.add('hidden');
   }
-  document.querySelectorAll('.info-btn').forEach(function(btn) {
-    btn.addEventListener('click', function(e) {
+  document.querySelectorAll('.info-link').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
       e.stopPropagation();
-      showInfo(btn.dataset.info, btn);
+      showInfo(link.dataset.info, link);
     });
   });
   infoModal.querySelector('.backdrop').addEventListener('click', hideInfo);
   infoModal.querySelector('.close').addEventListener('click', hideInfo);
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') hideInfo();
+  });
+
+  // Light / dark theme toggle — persists choice in localStorage and
+  // restyles the Plotly figure on switch so the plot face matches the
+  // surrounding chrome.
+  function plotThemeColors(theme) {
+    return theme === 'dark'
+      ? { paper: '#1f1f1f', plot: '#1f1f1f', grid: '#3a3a3a',
+          zero: '#555555', tick: '#bcbcbc', title: '#e8e8e8' }
+      : { paper: '#ffffff', plot: '#ffffff', grid: '#eeeeee',
+          zero: '#cccccc', tick: '#444444', title: '#222222' };
+  }
+  function applyPlotTheme(theme) {
+    var c = plotThemeColors(theme);
+    try {
+      Plotly.relayout('plot', {
+        paper_bgcolor:        c.paper,
+        plot_bgcolor:         c.plot,
+        'xaxis.gridcolor':    c.grid,
+        'yaxis.gridcolor':    c.grid,
+        'xaxis.zerolinecolor': c.zero,
+        'yaxis.zerolinecolor': c.zero,
+        'xaxis.tickfont.color': c.tick,
+        'yaxis.tickfont.color': c.tick,
+        'xaxis.title.font.color': c.title,
+        'yaxis.title.font.color': c.title,
+      });
+    } catch (_) {}
+  }
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-theme-setting', theme);
+    try { localStorage.setItem('csp-div-theme', theme); } catch (_) {}
+    applyPlotTheme(theme);
+  }
+  var savedTheme = null;
+  try { savedTheme = localStorage.getItem('csp-div-theme'); } catch (_) {}
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    setTheme(savedTheme);
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    setTheme('dark');
+  }
+  document.getElementById('theme-toggle').addEventListener('click', function(e) {
+    e.preventDefault();
+    var cur = document.documentElement.getAttribute('data-theme');
+    setTheme(cur === 'dark' ? 'light' : 'dark');
   });
 
   document.querySelectorAll('button.preset').forEach(function(b) {
