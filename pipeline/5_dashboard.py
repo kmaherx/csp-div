@@ -91,12 +91,16 @@ the space — embeddings nobody is training toward?</p>
 <p><strong>What this dashboard shows.</strong></p>
 <p>We train soft prompts with one intentionally broad objective: maximize KL
 divergence from the model's default behavior. No target persona, no target
-style — just "be different." Then we plot the trajectory each prompt takes
-through embedding space as it trains, projected to 2D via PCA.</p>
-<p>Run it for 51 random seeds and a pattern emerges. The trajectories aren't
-uniform — they cluster around stable attractors where the model adopts a
-<em>persona</em>. Not just wizards and samurai, but low-income Southern CEOs,
-Netflix teen drama heroines, multicultural rappers, medieval philosophers.</p>
+style — just "be different." Each prompt is spliced into a syntactic frame
+like <code>Be §.</code> or <code>Please §.</code> — the section symbol §
+stands in for the soft prompt, since it has no human-readable form.</p>
+<p>We plot the trajectory each prompt takes through embedding space as it
+trains, projected to 2D via PCA. Run it for 51 random seeds and a pattern
+emerges: the trajectories aren't uniform — they cluster around stable
+attractors where the model adopts a <em>persona</em>. Not just wizards and
+samurai, but low-income Southern CEOs, Netflix teen drama heroines,
+multicultural rappers, medieval philosophers.</p>
+<p>This dashboard visualizes that exploration.</p>
 
 <p><strong>Why this matters.</strong></p>
 <p>The model's input space is biased toward persona adoption. Even when we
@@ -106,6 +110,23 @@ This is a less assumption-laden way to recover something like
 instead of constructing it from contrastive prompts, we let unconstrained KL
 ascent find it. The result is additional evidence for
 <a href="https://alignment.anthropic.com/2026/psm/" target="_blank" rel="noopener">the persona selection model</a>.</p>
+""",
+
+    "controls": """
+<p><strong>Controls.</strong></p>
+<p>For exploring the data on your own. Filter by seed, step, frame, or color
+mode to focus on what you want to see. Click <em>Reset</em> at the right of
+the topbar to clear all filters at once.</p>
+""",
+
+    "presets": """
+<p><strong>What is a preset?</strong></p>
+<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
+model in a distinctive attractor. Clicking one filters the plot to that
+single trajectory, so you can read its hover text in sequence and watch
+the persona emerge step by step.</p>
+<p>Presets are grouped by what kind of attractor the model lands in:
+Personas, Formatting, and Information.</p>
 """,
 
     "seed": """
@@ -151,27 +172,15 @@ in role-play.</p>
 """,
 
     "personas": """
-<p><strong>What is a preset?</strong></p>
-<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
-model in a distinctive attractor. Clicking a preset filters the plot to
-that one trajectory, so you can read its hover text in sequence and watch
-the persona emerge step by step.</p>
-
 <p><strong>Personas.</strong></p>
 <p>These presets land the model in attractors where it adopts a recognizable
-character — medieval knight, Chinese philosopher, cowboy, famous author,
+character — medieval narrator, Chinese philosopher, cowboy, famous author,
 low-income Southern CEO, Netflix teen drama heroine, multicultural rapper.
 Each was hand-picked because the persona is unusually clean: the self-verb
 cleanly describes the character, and the behavior speaks in that voice.</p>
 """,
 
     "formatting": """
-<p><strong>What is a preset?</strong></p>
-<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
-model in a distinctive attractor. Clicking a preset filters the plot to
-that one trajectory, so you can read its hover text in sequence and watch
-the persona emerge step by step.</p>
-
 <p><strong>Formatting.</strong></p>
 <p>These presets land the model in attractors where the <em>style</em> of
 the output is what's changed, not the persona. Urgency adds capitalization
@@ -182,12 +191,6 @@ headings and color tags.</p>
 """,
 
     "information": """
-<p><strong>What is a preset?</strong></p>
-<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
-model in a distinctive attractor. Clicking a preset filters the plot to
-that one trajectory, so you can read its hover text in sequence and watch
-the persona emerge step by step.</p>
-
 <p><strong>Information.</strong></p>
 <p>These presets land the model in attractors where the <em>content type</em>
 shifts. Lookup makes the model respond like a search-engine snippet;
@@ -198,10 +201,10 @@ responses to abstract principles.</p>
 
     "behavior": """
 <p><strong>Behavior.</strong></p>
-<p>The model's actual response to a sample prompt, with the trained soft
-prompt spliced into one of the four frames. We compare it to the vanilla
-model's response (no soft prompt) on the same prompt, so the divergence
-is visible side-by-side.</p>
+<p>The model's response to a sample prompt, with the trained soft prompt
+spliced into one of the four frames. As you move along a trajectory, the
+behavior drifts away from what the model would normally say, and you can
+read off the kind of attractor the prompt is heading into.</p>
 """,
 
     "selfverb": """
@@ -745,9 +748,15 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
               font-size: 12px; font-weight: 700; font-style: italic; }
   #controls .info-btn:hover, #presets .info-btn:hover {
               background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
+  /* Active state: button that opened the currently-visible info modal. */
+  .info-btn.active { background: #fff; color: #2a2a2a; border-color: #888; }
+  #controls .info-btn.active, #presets .info-btn.active {
+              background: #fff; color: #2a2a2a; border-color: #888; }
   .info-btn.general { width: auto; padding: 4px 12px; border-radius: 4px;
                       font-style: normal; font-size: 12.5px;
                       letter-spacing: 0.02em; background: transparent; }
+  .info-btn.general.active { background: #fff; color: #2a2a2a;
+                             border-color: #888; }
   .panel-title .info-btn { color: #888; border-color: #ccc; }
   #info-modal { position: fixed; inset: 0; z-index: 1000; }
   #info-modal.hidden { display: none; }
@@ -778,48 +787,49 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   <div id="topbar">
     <button class="info-btn general" data-info="general">About</button>
     <div class="topbar-section">
-    <div class="section-label">Controls</div>
+    <div class="section-label">Controls <button class="info-btn" data-info="controls" aria-label="About controls">i</button></div>
     <div class="section-divider"></div>
     <div id="controls" class="col-left">
       <div class="group">
         <label>Seed:</label>
+        <button class="info-btn" data-info="seed" aria-label="About seed">i</button>
         <button id="seed-prev" class="arrow">‹</button>
         <input id="seed-input" type="number" min="0" placeholder="all">
         <button id="seed-next" class="arrow">›</button>
         <button id="seed-clear">all seeds</button>
-        <button class="info-btn" data-info="seed" aria-label="About seed">i</button>
       </div>
       <div class="group">
         <label>Step:</label>
+        <button class="info-btn" data-info="step" aria-label="About step">i</button>
         <button id="step-prev" class="arrow">‹</button>
         <input id="step-input" type="number" placeholder="all">
         <button id="step-next" class="arrow">›</button>
         <button id="step-clear">all steps</button>
-        <button class="info-btn" data-info="step" aria-label="About step">i</button>
       </div>
       <div class="group">
         <label>Frames:</label>
+        <button class="info-btn" data-info="frames" aria-label="About frames">i</button>
         <button class="frame" data-slug="be">BE</button>
         <button class="frame" data-slug="act">ACT</button>
         <button class="frame" data-slug="please">PLEASE</button>
         <button class="frame" data-slug="youshould">YOUSHOULD</button>
-        <button class="info-btn" data-info="frames" aria-label="About frames">i</button>
       </div>
       <div class="group">
         <label>Color:</label>
+        <button class="info-btn" data-info="color" aria-label="About color">i</button>
         <button id="mode-step" class="mode active">Optimization Step</button>
         <button id="mode-persona" class="mode">Persona Strength</button>
-        <button class="info-btn" data-info="color" aria-label="About color">i</button>
       </div>
     </div>
     </div>
     <div class="topbar-section">
-    <div class="section-label">Presets</div>
+    <div class="section-label">Presets <button class="info-btn" data-info="presets" aria-label="About presets">i</button></div>
     <div class="section-divider"></div>
     <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
-        <button class="preset" data-slug="youshould" data-seed="23">Medieval Knight</button>
+        <button class="info-btn" data-info="personas" aria-label="About personas">i</button>
+        <button class="preset" data-slug="youshould" data-seed="23">Medieval Narrator</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
         <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
         <button class="preset" data-slug="please" data-seed="16">Famous Author</button>
@@ -829,25 +839,24 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
         <button class="preset" data-slug="please" data-seed="41">Low-income Southern CEO</button>
         <button class="preset" data-slug="please" data-seed="20">Netflix Teen Drama Heroine</button>
         <button class="preset" data-slug="youshould" data-seed="11">Multicultural Rapper</button>
-        <button class="info-btn" data-info="personas" aria-label="About personas">i</button>
       </div>
       <div class="row">
         <label>Formatting:</label>
+        <button class="info-btn" data-info="formatting" aria-label="About formatting">i</button>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
         <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
         <button class="preset" data-slug="be" data-seed="2">Brief</button>
         <button class="preset" data-slug="please" data-seed="22">Pauses</button>
         <button class="preset" data-slug="please" data-seed="50">Collaborative</button>
-        <button class="info-btn" data-info="formatting" aria-label="About formatting">i</button>
       </div>
       <div class="row">
         <label>Information:</label>
+        <button class="info-btn" data-info="information" aria-label="About information">i</button>
         <button class="preset" data-slug="please" data-seed="26">Lookup</button>
         <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
         <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
         <button class="preset" data-slug="youshould" data-seed="3">Philosophical Principles</button>
-        <button class="info-btn" data-info="information" aria-label="About information">i</button>
       </div>
     </div>
     </div>
@@ -1003,19 +1012,32 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 
   // Info modal: a single popover that swaps body content based on which
   // .info-btn was clicked. Closes on backdrop click, ×, or Escape.
+  // The triggering button gets `.active` while the modal is open, so
+  // users see which icon their info panel belongs to.
   var infoModal = document.getElementById('info-modal');
   var infoBody  = infoModal.querySelector('.body');
-  function showInfo(key) {
+  var activeInfoBtn = null;
+  function clearActiveInfoBtn() {
+    if (activeInfoBtn) {
+      activeInfoBtn.classList.remove('active');
+      activeInfoBtn = null;
+    }
+  }
+  function showInfo(key, btn) {
+    clearActiveInfoBtn();
+    if (btn) { btn.classList.add('active'); activeInfoBtn = btn; }
     infoBody.innerHTML = INFO_TEXTS[key] || '<p>(no info available)</p>';
-    infoModal.scrollTop = 0;
     infoBody.parentElement.scrollTop = 0;
     infoModal.classList.remove('hidden');
   }
-  function hideInfo() { infoModal.classList.add('hidden'); }
+  function hideInfo() {
+    clearActiveInfoBtn();
+    infoModal.classList.add('hidden');
+  }
   document.querySelectorAll('.info-btn').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
       e.stopPropagation();
-      showInfo(btn.dataset.info);
+      showInfo(btn.dataset.info, btn);
     });
   });
   infoModal.querySelector('.backdrop').addEventListener('click', hideInfo);
