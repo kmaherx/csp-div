@@ -35,10 +35,10 @@ python pipeline/2_generate.py --seeds 34-49
 # Stage B — single pod, no GPU needed.
 python pipeline/3_judge.py                       # write manifest
 # In Claude Code, invoke /csp-judge — 4 parallel sub-agents write
-# per-frame judgments to results/llama_*/judge.json.
+# per-frame judgments to results/llama/<frame>/judge.json.
 python pipeline/3_judge.py --aggregate           # → judgments.json
 python pipeline/4_axis.py                        # axis.json + axis.png per frame
-python pipeline/5_dashboard.py                   # → results/all_frames/dashboard.html
+python pipeline/5_dashboard.py                   # → results/llama/all_frames/dashboard.html
 ```
 
 For a single seed end-to-end (~30 minutes on one A100):
@@ -59,8 +59,10 @@ python pipeline/5_dashboard.py
 
 KL-ascent training against the vanilla teacher. For each seed, writes
 21 checkpoints (`sp_pos_step{0,5,...,100}.pt`) to
-`results/llama/seed_{N}/`. The step-0 anchor is the random-init CSP
-before any optimizer step.
+`results/llama/be/seed_{N}/`. The step-0 anchor is the random-init CSP
+before any optimizer step. CSPs are frame-agnostic but live under the
+canonical `be/` slot — `2_generate.py` reads from there for every eval
+frame.
 
 Cached vanilla teacher responses live at
 `results/llama/cached_responses.json` (shared across seeds and pods).
@@ -74,7 +76,7 @@ For each (seed, frame, ckpt), generates:
 - `shift_step{K}.pt` — residual-stream shift at L16 for axis projection
 
 Vanilla baseline (the comparator for shifts) is computed once and
-cached at `results/vanilla_baseline.pt`.
+cached at `results/llama/vanilla_baseline.pt`.
 
 ### `3_judge.py` — Claude-skill orchestration harness
 
@@ -90,7 +92,7 @@ The actual judging happens **inside Claude Code**: invoke `/csp-judge`,
 which launches 4 parallel sub-agents (one per frame slug) using
 `.claude/skills/csp-judge/frame_agent.md` as the prompt template. Each
 sub-agent picks the best self-verb candidate per cell, writing to
-`results/llama_{slug}/judge.json`.
+`results/llama/{slug}/judge.json`.
 
 ### `4_axis.py` — axis projection
 
@@ -100,7 +102,7 @@ emits per-frame `axis.json` (proj_dot, proj_cos) + `axis.png`.
 ### `5_dashboard.py` — published dashboard
 
 Pools shifts across all 4 frames, fits PCA, renders the interactive
-HTML dashboard at `results/all_frames/dashboard.html` with:
+HTML dashboard at `results/llama/all_frames/dashboard.html` with:
 
 - Seed / step / frame filters
 - Color-mode toggle (optimization step ↔ persona-strength alignment)
@@ -110,29 +112,29 @@ HTML dashboard at `results/all_frames/dashboard.html` with:
 ## Output tree
 
 ```
-results/
-├── cached_responses.json      # vanilla teacher cache (shared, frame-agnostic)
-├── vanilla_baseline.pt        # mean L16 acts under no frame (shared)
-├── llama/                     # "be" frame (also holds training ckpts)
+results/llama/
+├── cached_responses.json       # vanilla teacher cache (shared, frame-agnostic)
+├── vanilla_baseline.pt         # mean L16 acts under no frame (shared)
+├── be/                         # canonical frame — also holds the training ckpts
 │   ├── seed_0/
-│   │   ├── sp_pos.pt          # final CSP
+│   │   ├── sp_pos.pt           # final CSP (frame-agnostic; read by every frame)
 │   │   ├── sp_pos_step{0,5,..,95}.pt
 │   │   ├── shift_step{0,5,..,100}.pt
 │   │   └── eval/
 │   │       ├── behavior_step{0,5,..}.json
 │   │       └── self_verb_step{0,5,..}.json
 │   ├── ...
-│   ├── shifts.pt              # consolidated by 4_axis.py
-│   ├── axis.json              # axis projection per (seed, ckpt)
-│   ├── axis.png               # 2-panel diagnostic figure
-│   └── judge.json             # per-frame judgments (written by skill)
-├── llama_act/                 # same layout, no training ckpts (read from llama/)
-├── llama_please/
-├── llama_youshould/
+│   ├── shifts.pt               # consolidated by 4_axis.py
+│   ├── axis.json               # axis projection per (seed, ckpt)
+│   ├── axis.png                # 2-panel diagnostic figure
+│   └── judge.json              # per-frame judgments (written by skill)
+├── act/                        # same layout, no training ckpts (reads be/'s)
+├── please/
+├── youshould/
 └── all_frames/
-    ├── judge_pending.json     # written by 3_judge.py
-    ├── judgments.json         # canonical, by 3_judge.py --aggregate
-    └── dashboard.html         # published artifact
+    ├── judge_pending.json      # written by 3_judge.py
+    ├── judgments.json          # canonical, by 3_judge.py --aggregate
+    └── dashboard.html          # published artifact
 ```
 
 ## Multi-pod tips

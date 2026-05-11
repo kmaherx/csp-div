@@ -16,7 +16,7 @@ plumbing.
 
 The vanilla baseline (mean L16 acts under no frame, no CSP) is the
 same for every eval frame. We compute it once and cache at
-`results/vanilla_baseline.pt`.
+`results/llama/vanilla_baseline.pt`.
 
 Skip-if-exists per output file: a step is fully skipped iff all three
 files (behavior, self_verb, shift) are already on disk.
@@ -71,7 +71,7 @@ def parse_frames(arg: str) -> list[str]:
 def ckpt_path(results_dir: Path, seed: int, step: int, final_step: int) -> Path:
     """Training ckpts live under `results/llama/seed_{N}/` — frame-agnostic."""
     name = "sp_pos.pt" if step == final_step else f"sp_pos_step{step}.pt"
-    return results_dir / "llama" / f"seed_{seed}" / name
+    return results_dir / "llama" / "be" / f"seed_{seed}" / name
 
 
 def main() -> None:
@@ -137,7 +137,7 @@ def main() -> None:
     print(f"  Using {len(eval_prompts)} eval prompts")
 
     # Vanilla baseline (frame-agnostic; computed once, cached).
-    baseline_path = args.results_dir / "vanilla_baseline.pt"
+    baseline_path = args.results_dir / "llama" / "vanilla_baseline.pt"
     if baseline_path.is_file():
         baseline_data = torch.load(baseline_path, map_location="cpu", weights_only=True)
         mean_vanilla = baseline_data["mean_vanilla"].to(device).float()

@@ -19,13 +19,14 @@ This script's three jobs are:
 
   3. `--aggregate`: fold the 4 per-frame `judge.json` files (written
      by the skill's sub-agents) into a single canonical
-     `results/all_frames/judgments.json` consumed by `5_dashboard.py`.
+     `results/llama/all_frames/judgments.json` consumed by `5_dashboard.py`.
 
 Per-frame judgment files live at:
     results/llama/judge.json            (be)
-    results/llama_act/judge.json        (act)
-    results/llama_please/judge.json     (please)
-    results/llama_youshould/judge.json  (youshould)
+    results/llama/be/judge.json         (be)
+    results/llama/act/judge.json        (act)
+    results/llama/please/judge.json     (please)
+    results/llama/youshould/judge.json  (youshould)
 
 Schema for one cell matches the legacy `manual_self_verb_canonical.json`
 exactly so the dashboard can consume either source transparently.
@@ -54,10 +55,10 @@ ALL_STEPS: list[int] = list(range(0, 100, 5)) + [100]  # 21 ckpts
 N_SEEDS_DEFAULT = 55  # 50 historical + 5 validation seeds; the manifest
                      # filters to what actually exists on disk.
 
-PENDING_PATH = "results/all_frames/judge_pending.json"
-VALIDATION_PENDING_PATH = "results/all_frames/judge_validation_pending.json"
-JUDGMENTS_OUT_PATH = "results/all_frames/judgments.json"
-LEGACY_MANUAL_CANONICAL = "results/all_frames/manual_self_verb_canonical.json"
+PENDING_PATH = "results/llama/all_frames/judge_pending.json"
+VALIDATION_PENDING_PATH = "results/llama/all_frames/judge_validation_pending.json"
+JUDGMENTS_OUT_PATH = "results/llama/all_frames/judgments.json"
+LEGACY_MANUAL_CANONICAL = "results/llama/all_frames/manual_self_verb_canonical.json"
 
 
 def cell_paths(results_dir: Path, slug: str, seed: int, step: int) -> dict[str, str]:
@@ -141,7 +142,7 @@ def sample_validation(
 
     cells_by_frame: dict[str, list[dict]] = {f.slug: [] for f in FRAMES}
     judgment_paths: dict[str, str] = {
-        f.slug: f"results/all_frames/judge_validation_{f.slug}.json"
+        f.slug: f"results/llama/all_frames/judge_validation_{f.slug}.json"
         for f in FRAMES
     }
     for source_frame, seed_i, step_i in sampled:
@@ -162,7 +163,7 @@ def validate_report(results_dir: Path) -> None:
     manual = json.loads((ROOT / LEGACY_MANUAL_CANONICAL).read_text())
     skill_per_frame: dict[str, dict] = {}
     for frame in FRAMES:
-        path = ROOT / f"results/all_frames/judge_validation_{frame.slug}.json"
+        path = ROOT / f"results/llama/all_frames/judge_validation_{frame.slug}.json"
         if path.is_file():
             skill_per_frame[frame.slug] = json.loads(path.read_text())
         else:
@@ -203,7 +204,7 @@ def validate_report(results_dir: Path) -> None:
 
 def aggregate(results_dir: Path) -> None:
     """Read the 4 per-frame judge.json files and write canonical
-    results/all_frames/judgments.json."""
+    results/llama/all_frames/judgments.json."""
     per_frame = {
         frame.slug: load_judgments(judgment_path_for_frame(results_dir, frame.slug))
         for frame in FRAMES
@@ -296,7 +297,7 @@ def main() -> None:
         "\nNext step: in Claude Code, invoke the judge skill with:\n"
         "    /csp-judge\n"
         f"It reads the manifest above, launches 4 parallel sub-agents (one per\n"
-        f"frame), and writes per-frame judgments to results/llama_*/judge.json.\n"
+        f"frame), and writes per-frame judgments to results/llama/<frame>/judge.json.\n"
         f"When done, run `pipeline/3_judge.py --aggregate` to produce the\n"
         f"canonical {JUDGMENTS_OUT_PATH}."
     )

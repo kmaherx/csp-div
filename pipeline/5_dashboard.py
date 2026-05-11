@@ -314,7 +314,7 @@ def main() -> None:
         help="Don't L2-normalize shifts before PCA.",
     )
     parser.add_argument(
-        "--out", type=Path, default=ROOT / "results" / "all_frames" / "dashboard.html",
+        "--out", type=Path, default=ROOT / "results" / "llama" / "all_frames" / "dashboard.html",
         help="Output HTML path.",
     )
     parser.set_defaults(normalize=True)
@@ -395,7 +395,7 @@ def main() -> None:
     print(f"  {len(by_traj)} trajectories")
 
     # ── 4. Judgment lookup: judgments.json > manual_self_verb_canonical ─
-    all_frames_dir = args.results_dir / "all_frames"
+    all_frames_dir = args.results_dir / "llama" / "all_frames"
     canonical_path = all_frames_dir / "judgments.json"
     legacy_path = all_frames_dir / "manual_self_verb_canonical.json"
     canonical_picks: dict[str, dict] = {}

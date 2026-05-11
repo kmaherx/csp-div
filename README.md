@@ -6,7 +6,7 @@
 > distinct personas (medieval knight, cowboy, pirate, ...) and
 > distinct formatting styles (urgent, italics-heavy, math-y, ...).
 
-[**→ Published dashboard**](results/all_frames/dashboard.html) — interactive
+[**→ Published dashboard**](results/llama/all_frames/dashboard.html) — interactive
 2D PCA of 200 trajectories (50 seeds × 4 syntactic frames × 21 ckpts).
 Hover any point for behavior + self-verb responses from that cell;
 filter by seed / step / frame; click a preset to focus on a named
@@ -79,7 +79,7 @@ seed for full-grid generation across the 4 frames. Stage A
 
 **Judge.** The `csp-judge` skill runs through Claude Code, which
 dispatches one sub-agent per frame in parallel. The 50-seed canonical
-judgments at `results/all_frames/manual_self_verb_canonical.json`
+judgments at `results/llama/all_frames/manual_self_verb_canonical.json`
 were produced via Sonnet 4.5/4.6 (the default Claude Code model at
 the time); fresh runs use whatever model the session is on (Sonnet
 4.6 or Opus 4.7 are both fine — the rubric is the load-bearing
@@ -107,8 +107,9 @@ src/csp_div/               library: config, model, frames, activations,
                            training, generation, plotting, judge
 .claude/skills/csp-judge/  the LLM-as-judge skill + rubric
 data/questions.jsonl       240 eval prompts (assistant-axis, MIT)
-results/                   gitignored outputs
-NARRATIVE.md               the story arc
+results/llama/             per-frame outputs ({be,act,please,youshould}/),
+                           the cross-frame all_frames/ dashboard bundle,
+                           cached_responses.json + vanilla_baseline.pt
 ```
 
 ## Background and acknowledgements

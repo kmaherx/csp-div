@@ -2,13 +2,13 @@
 
 Stage A script — loads Llama-3.1-8B-Instruct once and trains every seed
 in `--seeds START-END` against the cached vanilla responses. Per-seed
-output: `results/llama/seed_{N}/sp_pos_step{0,5,...,100}.pt` (21 ckpts;
-`sp_pos.pt` is the final step alias).
+output: `results/llama/be/seed_{N}/sp_pos_step{0,5,...,100}.pt` (21
+ckpts; `sp_pos.pt` is the final step alias). CSPs are frame-agnostic
+but live under the canonical `be/` slot — `2_generate.py` reads from
+there regardless of which eval frame is being captured.
 
-Vanilla teacher responses are cached at `results/llama/cached_responses.json`
-(unified path); if absent, the first run generates them. Legacy per-seed
-copies at `results/llama/seed_*/cached_responses.json` are reused
-transparently.
+Vanilla teacher responses are cached at `results/llama/cached_responses.json`.
+If absent, the first run generates them.
 
 Skip-if-exists: a seed is skipped iff its final `sp_pos.pt` is already on
 disk. Pass `--force` to retrain.
@@ -22,7 +22,6 @@ from __future__ import annotations
 
 import argparse
 import random
-import shutil
 import sys
 from pathlib import Path
 
@@ -58,11 +57,7 @@ def _ensure_cached_responses(
     no legacy copy is available."""
     if cache_path.is_file():
         return
-    legacy = sorted((results_dir / "llama").glob("seed_*/cached_responses.json"))
-    if legacy:
-        cache_path.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(legacy[0], cache_path)
-        print(f"  Reused legacy cache from {legacy[0]} → {cache_path}")
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
 
 
 def main() -> None:
@@ -101,7 +96,7 @@ def main() -> None:
     if not args.force:
         pending = []
         for seed in seeds:
-            ckpt = args.results_dir / "llama" / f"seed_{seed}" / "sp_pos.pt"
+            ckpt = args.results_dir / "llama" / "be" / f"seed_{seed}" / "sp_pos.pt"
             if ckpt.is_file():
                 print(f"  seed_{seed}: sp_pos.pt exists, skipping (--force to retrain)")
             else:
@@ -138,7 +133,7 @@ def main() -> None:
             seed=seed,
         )
 
-        out_dir = args.results_dir / "llama" / f"seed_{seed}"
+        out_dir = args.results_dir / "llama" / "be" / f"seed_{seed}"
         out_dir.mkdir(parents=True, exist_ok=True)
 
         torch.manual_seed(seed)

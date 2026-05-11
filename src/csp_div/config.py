@@ -74,12 +74,14 @@ class AxisConfig:
 
 
 # ── Result paths ────────────────────────────────────────────────────────
-# Historical asymmetry: the "be" frame's outputs live at `results/llama/`
-# (this is where the canonical training run wrote 50 seeds × 21 ckpts),
-# while the other three frames are eval-only ablations whose outputs land
-# at `results/llama_{slug}/`. Centralized here so pipeline scripts agree.
+# All per-frame outputs nest under a single model directory, e.g.
+#     results/llama/{be,act,please,youshould}/seed_N/eval/*.json
+#     results/llama/{be,act,please,youshould}/{shifts.pt,axis.json,judge.json}
+#     results/llama/all_frames/{dashboard.html,judgments.json,...}
+# CSPs are frame-agnostic but live under the canonical `be/` slot
+# (`results/llama/be/seed_N/sp_pos.pt`) — `2_generate.py` reads from
+# there regardless of which eval frame is being captured.
 
 def frame_results_dir(results_dir: str | Path, slug: str) -> Path:
     """Resolve the per-frame results directory for `slug`."""
-    results_dir = Path(results_dir)
-    return results_dir / "llama" if slug == "be" else results_dir / f"llama_{slug}"
+    return Path(results_dir) / "llama" / slug

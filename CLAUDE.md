@@ -2,12 +2,6 @@
 
 Guidance for Claude Code (claude.ai/code) when working in this repository.
 
-> **Mid-refactor handoff:** if you're starting a fresh session on this
-> branch (`pipeline-refactor`), read [`HANDOFF.md`](HANDOFF.md) first.
-> It lists exactly what's done (Phases 0–6), what remains (Phase 2
-> verification, sanity check, skill validation, Phase 7 + 8), and the
-> commands to run for each. Delete `HANDOFF.md` after Phase 8 lands.
-
 ## Workflow preferences
 
 - **After generating or revising figures, commit and push.** The user
@@ -25,10 +19,9 @@ the attractors the model lands in when pushed maximally away from
 default assistant behavior.
 
 The headline finding is the interactive dashboard at
-`results/all_frames/dashboard.html` (legacy:
-`results/all_frames/figure_pc2d_all_frames_interactive_step50.html`).
-See `NARRATIVE.md` for the story arc and `README.md` for run mechanics.
-Pipeline reproduction commands live in `pipeline/README.md`.
+`results/llama/all_frames/dashboard.html`.
+See `README.md` for run mechanics. Pipeline reproduction commands live
+in `pipeline/README.md`.
 
 ## Commands
 
@@ -44,9 +37,9 @@ python pipeline/2_generate.py --seeds 0-16
 # Stage B: judge + axis + dashboard (no model load)
 python pipeline/3_judge.py                  # writes judge_pending.json
 # In Claude Code: /csp-judge → 4 parallel sub-agents annotate cells.
-python pipeline/3_judge.py --aggregate      # → results/all_frames/judgments.json
+python pipeline/3_judge.py --aggregate      # → results/llama/all_frames/judgments.json
 python pipeline/4_axis.py
-python pipeline/5_dashboard.py              # → results/all_frames/dashboard.html
+python pipeline/5_dashboard.py              # → results/llama/all_frames/dashboard.html
 ```
 
 No tests, no linter config. `pip install -e .` is the build step.
@@ -114,22 +107,19 @@ To restyle every figure, edit this one file.
 - The venv at `/workspace/csp-div/.venv/` is shared so pods don't
   reinstall.
 - When cleaning shared dirs, **never use wildcards across other pods'
-  seed ranges**: prefer explicit `rm -rf results/llama/seed_{10,...,19}`
-  over `rm -rf results/llama/seed_*` to avoid wiping a sibling pod's
+  seed ranges**: prefer explicit `rm -rf results/llama/be/seed_{10,...,19}`
+  over `rm -rf results/llama/be/seed_*` to avoid wiping a sibling pod's
   in-progress data.
 
-## Other branches
+## Other branches (private repo only)
 
-- `ood-init` — the frozen pre-refactor reference, including the
-  21-script `scripts/` directory and the 4 `AGENT_*.md` files. Useful
-  if you need any of the supplementary diagnostic figures
-  (`analyze_pca_trajectory.py`, `plot_csp_norm.py`,
-  `plot_step0_evidence.py`, etc.) that were dropped during cleanup.
-- `rng-probe` — full historical static-teacher data with Qwen,
-  frame-bias sweep, RNG decoupling probe.
+- `ood-init` — pre-refactor reference: 21-script `scripts/` directory,
+  4 `AGENT_*.md` files, plus supplementary diagnostic plots
+  (`plot_csp_norm.py`, `plot_step0_evidence.py`, etc.).
+- `rng-probe` — historical static-teacher data with Qwen, frame-bias
+  sweep, RNG decoupling probe.
 - `chain-teacher`, `random-walk` — chain-teacher (KL-ascent against
   moving snapshot) experiments.
 
-`pipeline-refactor` (current; will land on `main`) was rewritten from
-`ood-init` to focus on the Llama static-teacher headline narrative with
-a modular numbered-script pipeline.
+These branches stay on the private `csp-div` remote; the eventual
+public repo will be a single-branch `main` snapshot.

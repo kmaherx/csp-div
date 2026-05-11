@@ -5,7 +5,7 @@ Stage B (post-everything) script. No model load — pure aggregation:
   1. For each frame, read either:
      - the consolidated `shifts.pt` produced by an earlier run, OR
      - per-(seed, step) `shift_step{K}.pt` files written by `2_generate.py`
-       plus the frame's `vanilla_baseline.pt`. The script pools these
+       plus the shared `vanilla_baseline.pt`. The script pools these
        into the consolidated `shifts.pt` format expected by the dashboard.
   2. Download (once) the Butanium assistant axis vector at L16 and project
      each shift onto it. Per-row scalars (`shift_norm`, `proj_dot`,
@@ -74,7 +74,7 @@ def pool_per_cell_shifts(
 ) -> dict:
     """Walk `seed_*/shift_step*.pt` files under `frame_dir` and rebuild the
     consolidated `shifts.pt` format. Reads the single shared vanilla
-    baseline at `<results_dir>/vanilla_baseline.pt` (frame-agnostic: the
+    baseline at `<results_dir>/llama/vanilla_baseline.pt` (frame-agnostic: the
     vanilla teacher uses no frame, so its acts are the same regardless
     of which eval frame conditioned the CSP).
 
@@ -82,7 +82,7 @@ def pool_per_cell_shifts(
     (used by `process_frame` to merge in newly-trained seeds without
     re-reading the entire existing set).
     """
-    baseline_path = results_dir / "vanilla_baseline.pt"
+    baseline_path = results_dir / "llama" / "vanilla_baseline.pt"
     if not baseline_path.is_file():
         raise SystemExit(
             f"Missing vanilla baseline at {baseline_path}. Run 2_generate.py "
