@@ -112,7 +112,8 @@
      for the depressed feel. JS adds/removes .active via showInfo/hideInfo. */
   .about-btn.active { background: var(--bg-accent); color: var(--text-on-accent);
               border-color: var(--bg-accent);
-              box-shadow: inset 0 2px 3px var(--shadow); }
+              box-shadow: inset 0 2px 3px var(--shadow);
+              position: relative; z-index: 1001; }
   /* Dotted-underline inline help link — matches the user's personal site. */
   .info-link { color: inherit; text-decoration: none;
               border-bottom: 1px dotted currentColor; cursor: pointer; }
