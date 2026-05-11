@@ -117,24 +117,6 @@ def garble_score(text: str) -> float:
 
 # ── Canonical aggregation across the 4 per-frame judgments ─────────────
 
-def _load_per_frame(results_root: Path) -> dict[str, dict]:
-    """Load `manual_self_verb_{slug}.json` (or `judge_{slug}.json`) under
-    `results_root`; missing files → empty dict."""
-    per_frame: dict[str, dict] = {}
-    for slug in FRAME_SLUGS:
-        # Prefer the new name; fall back to the historical one during transition.
-        for candidate in (
-            results_root / f"judge_{slug}.json",
-            results_root / f"manual_self_verb_{slug}.json",
-        ):
-            if candidate.is_file():
-                per_frame[slug] = json.loads(candidate.read_text())
-                break
-        else:
-            per_frame[slug] = {}
-    return per_frame
-
-
 def aggregate_canonical(
     per_frame: dict[str, dict],
     seeds: list[int],

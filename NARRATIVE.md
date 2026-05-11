@@ -119,5 +119,3 @@ Bullet-point arc of the project. For run instructions see
 | Axis projection | `pipeline/4_axis.py` |
 | Published dashboard | `pipeline/5_dashboard.py` → `results/all_frames/dashboard.html` |
 | Per-frame results | `results/llama/` (be), `results/llama_{act,please,youshould}/` |
-| Pre-refactor reference (full 50-seed run) | `ood-init` branch, `figure_pc2d_all_frames_interactive_step50.html` |
-| Archived (normed-init Stage A) | branch `scaled-init` |
