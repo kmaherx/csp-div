@@ -61,6 +61,160 @@ BEHAV_PROMPT_PREFIX = "Your suggestion doesn't account for the challenges"
 SV_PROMPT_PREFIX = "Find the theme shared by these instructions"
 
 
+# ── Info modal content ────────────────────────────────────────────────────
+# Each key matches a `data-info=...` attribute on the corresponding .info-btn
+# in the dashboard HTML. Values are HTML fragments rendered into the modal
+# body on click. Style is intentionally plain — short paragraphs, simple
+# statements, no jargon-up-front.
+
+INFO_TEXTS: dict[str, str] = {
+    "general": """
+<p><strong>What is this?</strong></p>
+<p>A language model's input is an embedding vector. Embeddings are continuous,
+so there are infinitely many. Finite human words are a tiny sliver of that
+space; most of it we never touch.</p>
+
+<p><strong>What's in the rest?</strong></p>
+<p>Most random embeddings don't change model behavior at all — they look like
+noise. Click any preset, then hover its step-0 point: the response is
+near-identical to vanilla.</p>
+<p>But embeddings can be <em>trained</em> to mean things.
+<a href="https://arxiv.org/abs/2104.08691" target="_blank" rel="noopener">Soft prompts (Lester et al. 2021)</a>
+optimize an embedding so the model summarizes, translates, refuses, etc.
+<a href="https://kmaherx.github.io/projects/contextualized-soft-prompts/" target="_blank" rel="noopener">Contextualized soft prompts</a>
+train embeddings the model can describe in plain English.
+<a href="https://arxiv.org/abs/2510.08506" target="_blank" rel="noopener">Neologisms (2025)</a>
+train new vocabulary tokens.</p>
+<p>Each of those uses a <em>specific</em> objective. What about the rest of
+the space — embeddings nobody is training toward?</p>
+
+<p><strong>What this dashboard shows.</strong></p>
+<p>We train soft prompts with one intentionally broad objective: maximize KL
+divergence from the model's default behavior. No target persona, no target
+style — just "be different." Then we plot the trajectory each prompt takes
+through embedding space as it trains, projected to 2D via PCA.</p>
+<p>Run it for 51 random seeds and a pattern emerges. The trajectories aren't
+uniform — they cluster around stable attractors where the model adopts a
+<em>persona</em>. Not just wizards and samurai, but low-income Southern CEOs,
+Netflix teen drama heroines, multicultural rappers, medieval philosophers.</p>
+
+<p><strong>Why this matters.</strong></p>
+<p>The model's input space is biased toward persona adoption. Even when we
+optimize blindly for "anything different," the things we find are characters.
+This is a less assumption-laden way to recover something like
+<a href="https://www.anthropic.com/research/assistant-axis" target="_blank" rel="noopener">the assistant axis</a> —
+instead of constructing it from contrastive prompts, we let unconstrained KL
+ascent find it. The result is additional evidence for
+<a href="https://alignment.anthropic.com/2026/psm/" target="_blank" rel="noopener">the persona selection model</a>.</p>
+""",
+
+    "seed": """
+<p><strong>Seed.</strong></p>
+<p>Each seed is one full training run with a different random initialization
+of the 4-token soft prompt. The dashboard shows 51 seeds, each its own
+trajectory through embedding space.</p>
+<p>Use the arrows or type a number to focus on one trajectory; click
+"all seeds" to see them all at once.</p>
+""",
+
+    "step": """
+<p><strong>Step.</strong></p>
+<p>Each soft prompt trains for 100 KL-ascent steps. Checkpoints are saved
+every 5 steps; the dashboard shows steps 0 through 50. By step 50 the KL
+divergence has saturated.</p>
+<p>Step 0 is the random initialization (before any training). Later steps
+show how the model's response drifts as the prompt is optimized toward
+"maximally different from default."</p>
+""",
+
+    "frames": """
+<p><strong>Frames.</strong></p>
+<p>We evaluate each trained soft prompt by splicing it into one of four
+syntactic templates: <code>Be §.</code>, <code>Act §.</code>,
+<code>Please §.</code>, <code>You should §.</code> Each is a slightly
+different way to invoke the same prompt.</p>
+<p>Toggle frames on or off to compare how the same trained prompt behaves
+across them. A robust persona shows the same character in all four frames;
+a brittle one only emerges in one or two.</p>
+""",
+
+    "color": """
+<p><strong>Color.</strong></p>
+<p>Two modes for coloring the points:</p>
+<p><em>Optimization Step.</em> Color by training step. Earlier steps are
+lighter, later steps darker. Useful for reading the temporal direction
+of each trajectory.</p>
+<p><em>Persona Strength.</em> Color by how far the residual-stream shift
+aligns with the "assistant axis" direction at layer 16. Lighter points
+are closer to the default-assistant register; darker points are deeper
+in role-play.</p>
+""",
+
+    "personas": """
+<p><strong>What is a preset?</strong></p>
+<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
+model in a distinctive attractor. Clicking a preset filters the plot to
+that one trajectory, so you can read its hover text in sequence and watch
+the persona emerge step by step.</p>
+
+<p><strong>Personas.</strong></p>
+<p>These presets land the model in attractors where it adopts a recognizable
+character — medieval knight, Chinese philosopher, cowboy, famous author,
+low-income Southern CEO, Netflix teen drama heroine, multicultural rapper.
+Each was hand-picked because the persona is unusually clean: the self-verb
+cleanly describes the character, and the behavior speaks in that voice.</p>
+""",
+
+    "formatting": """
+<p><strong>What is a preset?</strong></p>
+<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
+model in a distinctive attractor. Clicking a preset filters the plot to
+that one trajectory, so you can read its hover text in sequence and watch
+the persona emerge step by step.</p>
+
+<p><strong>Formatting.</strong></p>
+<p>These presets land the model in attractors where the <em>style</em> of
+the output is what's changed, not the persona. Urgency adds capitalization
+and exclamation marks; Italics decorates with markdown italic; Math frames
+responses as equations; Brief truncates aggressively; Pauses inserts
+hesitations; Collaborative formats responses as HTML poems with structured
+headings and color tags.</p>
+""",
+
+    "information": """
+<p><strong>What is a preset?</strong></p>
+<p>A preset is a (seed, frame) pair chosen because the trajectory lands the
+model in a distinctive attractor. Clicking a preset filters the plot to
+that one trajectory, so you can read its hover text in sequence and watch
+the persona emerge step by step.</p>
+
+<p><strong>Information.</strong></p>
+<p>These presets land the model in attractors where the <em>content type</em>
+shifts. Lookup makes the model respond like a search-engine snippet;
+Social Sciences frames every answer in academic-paper language; Cite a
+Theory inserts theoretical citations; Philosophical Principles maps
+responses to abstract principles.</p>
+""",
+
+    "behavior": """
+<p><strong>Behavior.</strong></p>
+<p>The model's actual response to a sample prompt, with the trained soft
+prompt spliced into one of the four frames. We compare it to the vanilla
+model's response (no soft prompt) on the same prompt, so the divergence
+is visible side-by-side.</p>
+""",
+
+    "selfverb": """
+<p><strong>Self-verb.</strong></p>
+<p>What the trained soft prompt <em>means</em>, in the model's own words.
+We give the vanilla model a self-describing prompt — something like
+"summarize these instructions: Be §, Act §, Please §, You should §" —
+with the trained CSP spliced in for §. The response is the model's own
+description of the character or style the soft prompt invokes.</p>
+""",
+}
+
+
 # ── Eval response loading (per (frame, seed) cell) ─────────────────────
 
 def _pick_from_eval_file(
@@ -496,6 +650,7 @@ def _write_dashboard_html(fig: go.Figure, out_path: Path, cell_data: dict, **sta
         .replace("__PERSONA_CMAX__",           json.dumps(state["persona_cmax"]))
         .replace("__STEP_CMIN__",              json.dumps(state["step_cmin"]))
         .replace("__STEP_CMAX__",              json.dumps(state["step_cmax"]))
+        .replace("__INFO_TEXTS__",             json.dumps(INFO_TEXTS))
     )
     out_path.write_text(html)
 
@@ -572,17 +727,53 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
            white-space: pre-wrap; word-wrap: break-word;
            max-height: 42vh; overflow-y: auto; }
   .placeholder { color: #aaa; font-style: italic; }
+  .info-btn { display: inline-flex; align-items: center; justify-content: center;
+              width: 18px; height: 18px; padding: 0; margin: 0 4px 0 2px;
+              border: 1px solid #bbb; border-radius: 50%;
+              background: #fff; color: #777; cursor: pointer;
+              font-family: 'Libertinus Serif', Georgia, serif;
+              font-size: 12px; font-weight: 700; font-style: italic;
+              line-height: 1; vertical-align: baseline; }
+  .info-btn:hover { background: #2a2a2a; color: #fff; border-color: #2a2a2a; }
+  .info-btn.general { width: auto; padding: 4px 12px; border-radius: 4px;
+                      font-style: normal; font-size: 12.5px;
+                      letter-spacing: 0.02em; }
+  .panel-title .info-btn { color: #888; border-color: #ccc; }
+  #info-modal { position: fixed; inset: 0; z-index: 1000; }
+  #info-modal.hidden { display: none; }
+  #info-modal .backdrop { position: absolute; inset: 0;
+                          background: rgba(0,0,0,0.4); }
+  #info-modal .card { position: relative; max-width: 620px;
+                      max-height: 80vh; overflow-y: auto;
+                      margin: 8vh auto 0; background: #fff;
+                      border-radius: 6px; padding: 28px 36px;
+                      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+                      font-size: 15px; line-height: 1.55; color: #222; }
+  #info-modal .card p { margin: 0 0 10px; }
+  #info-modal .card p:last-child { margin-bottom: 0; }
+  #info-modal .card strong { color: #111; }
+  #info-modal .card code { background: #f0f0f0; padding: 1px 4px;
+                           border-radius: 3px; font-size: 13.5px; }
+  #info-modal .card a { color: #1a5fb4; text-decoration: none; }
+  #info-modal .card a:hover { text-decoration: underline; }
+  #info-modal .card .close { position: absolute; top: 8px; right: 14px;
+                             background: none; border: none; font-size: 24px;
+                             color: #888; cursor: pointer; padding: 0;
+                             line-height: 1; font-family: inherit; }
+  #info-modal .card .close:hover { color: #222; }
 </style>
 </head>
 <body>
 <div id="wrap">
   <div id="topbar">
+    <button class="info-btn general" data-info="general">About</button>
     <div class="topbar-section">
     <div class="section-label">Controls</div>
     <div class="section-divider"></div>
     <div id="controls" class="col-left">
       <div class="group">
         <label>Seed:</label>
+        <button class="info-btn" data-info="seed" aria-label="About seed">?</button>
         <button id="seed-prev" class="arrow">‹</button>
         <input id="seed-input" type="number" min="0" placeholder="all">
         <button id="seed-next" class="arrow">›</button>
@@ -590,6 +781,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="group">
         <label>Step:</label>
+        <button class="info-btn" data-info="step" aria-label="About step">?</button>
         <button id="step-prev" class="arrow">‹</button>
         <input id="step-input" type="number" placeholder="all">
         <button id="step-next" class="arrow">›</button>
@@ -597,6 +789,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="group">
         <label>Frames:</label>
+        <button class="info-btn" data-info="frames" aria-label="About frames">?</button>
         <button class="frame" data-slug="be">BE</button>
         <button class="frame" data-slug="act">ACT</button>
         <button class="frame" data-slug="please">PLEASE</button>
@@ -604,6 +797,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="group">
         <label>Color:</label>
+        <button class="info-btn" data-info="color" aria-label="About color">?</button>
         <button id="mode-step" class="mode active">Optimization Step</button>
         <button id="mode-persona" class="mode">Persona Strength</button>
       </div>
@@ -615,6 +809,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     <div id="presets" class="col-right">
       <div class="row">
         <label>Personas:</label>
+        <button class="info-btn" data-info="personas" aria-label="About personas">?</button>
         <button class="preset" data-slug="youshould" data-seed="23">Medieval Knight</button>
         <button class="preset" data-slug="be" data-seed="6">Chinese Philosopher</button>
         <button class="preset" data-slug="youshould" data-seed="12">Cowboy</button>
@@ -628,6 +823,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="row">
         <label>Formatting:</label>
+        <button class="info-btn" data-info="formatting" aria-label="About formatting">?</button>
         <button class="preset" data-slug="act" data-seed="29">Urgency</button>
         <button class="preset" data-slug="youshould" data-seed="4">Italics</button>
         <button class="preset" data-slug="please" data-seed="44">Math</button>
@@ -637,6 +833,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="row">
         <label>Information:</label>
+        <button class="info-btn" data-info="information" aria-label="About information">?</button>
         <button class="preset" data-slug="please" data-seed="26">Lookup</button>
         <button class="preset" data-slug="youshould" data-seed="31">Social Sciences</button>
         <button class="preset" data-slug="youshould" data-seed="33">Cite a Theory</button>
@@ -652,16 +849,23 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       <h2 id="title"><span class="placeholder">Hover over a point to see outputs</span></h2>
       <div id="meta" class="meta"></div>
       <div class="panel">
-        <div class="panel-title">Behavior</div>
+        <div class="panel-title">Behavior <button class="info-btn" data-info="behavior" aria-label="About behavior">?</button></div>
         <div id="behav-prompt" class="prompt"></div>
         <div id="behav-text" class="response"><span class="placeholder">—</span></div>
       </div>
       <div class="panel">
-        <div class="panel-title">Self-verb</div>
+        <div class="panel-title">Self-verb <button class="info-btn" data-info="selfverb" aria-label="About self-verb">?</button></div>
         <div id="sv-prompt" class="prompt"></div>
         <div id="sv-text" class="response"><span class="placeholder">—</span></div>
       </div>
     </div>
+  </div>
+</div>
+<div id="info-modal" class="hidden" role="dialog" aria-modal="true">
+  <div class="backdrop"></div>
+  <div class="card">
+    <button class="close" aria-label="Close">×</button>
+    <div class="body"></div>
   </div>
 </div>
 <script>
@@ -680,6 +884,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   var STEP_COLORSCALE    = __STEP_COLORSCALE__;
   var PERSONA_CMIN = __PERSONA_CMIN__, PERSONA_CMAX = __PERSONA_CMAX__;
   var STEP_CMIN    = __STEP_CMIN__,    STEP_CMAX    = __STEP_CMAX__;
+  var INFO_TEXTS   = __INFO_TEXTS__;
 
   // Max seed actually present across trajectories — clamps the seed input.
   var MAX_SEED = trajMeta.reduce(function(m, t) { return Math.max(m, t.seed); }, 0);
@@ -785,6 +990,29 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     applyState();
   }
   document.getElementById('reset-btn').onclick = resetAll;
+
+  // Info modal: a single popover that swaps body content based on which
+  // .info-btn was clicked. Closes on backdrop click, ×, or Escape.
+  var infoModal = document.getElementById('info-modal');
+  var infoBody  = infoModal.querySelector('.body');
+  function showInfo(key) {
+    infoBody.innerHTML = INFO_TEXTS[key] || '<p>(no info available)</p>';
+    infoModal.scrollTop = 0;
+    infoBody.parentElement.scrollTop = 0;
+    infoModal.classList.remove('hidden');
+  }
+  function hideInfo() { infoModal.classList.add('hidden'); }
+  document.querySelectorAll('.info-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      showInfo(btn.dataset.info);
+    });
+  });
+  infoModal.querySelector('.backdrop').addEventListener('click', hideInfo);
+  infoModal.querySelector('.close').addEventListener('click', hideInfo);
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') hideInfo();
+  });
 
   document.querySelectorAll('button.preset').forEach(function(b) {
     b.onclick = function() {
