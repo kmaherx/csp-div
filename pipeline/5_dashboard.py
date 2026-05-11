@@ -667,6 +667,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CSP PC trajectories — interactive (2D)</title>
 <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 <style>
@@ -827,6 +828,28 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
                              color: var(--text-faint); cursor: pointer; padding: 0;
                              line-height: 1; font-family: inherit; }
   #info-modal .card .close:hover { color: var(--text-strong); }
+
+  /* Mobile: stack everything in a single scrollable column. Re-uses the
+     same CSS variables, so dark/light theme keeps working. */
+  @media (max-width: 768px) {
+    #wrap { height: auto; min-height: 100vh; }
+    #topbar { flex-direction: column; align-items: stretch;
+              gap: 12px; padding: 10px 12px; }
+    .topbar-left { justify-content: space-between; }
+    .topbar-section { flex-direction: column; gap: 8px; }
+    .section-divider { display: none; }
+    .section-label { padding-right: 0; }
+    #controls .group { flex-wrap: wrap; }
+    #controls label, #presets .row > label { min-width: 0; }
+    #plotwrap { flex-direction: column; }
+    #plot { flex: none; height: 65vh; width: 100%; }
+    #sidebar { width: 100%; flex: none; border-left: none;
+               border-top: 1px solid var(--border);
+               padding: 16px 14px; }
+    #info-modal .card { max-width: 92vw; max-height: 85vh;
+                        margin: 6vh auto 0; padding: 22px 22px 24px;
+                        font-size: 14.5px; }
+  }
 </style>
 </head>
 <body>
@@ -1325,9 +1348,10 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       el.innerHTML = '<span class="placeholder">—</span>';
     } else { el.textContent = (prefix || '') + txt; }
   }
-  document.getElementById('plot').on('plotly_hover', function(ev) {
-    if (!ev.points || !ev.points.length) return;
-    var d = ev.points[0].customdata;
+  // Sidebar populate logic — shared by hover (desktop) and click (touch).
+  // On touchscreens hover doesn't fire, so taps fire plotly_click instead.
+  function showPoint(p) {
+    var d = p.customdata;
     if (!d) return;
     var seed = d[0], step = d[1], kl = d[2];
     var lookupKey = d[3] || (seed + '_' + step);
@@ -1341,6 +1365,20 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     var svPrefix = info.sv_approach ? '[' + info.sv_approach + '] ' : '';
     setText(spEl, svPrefix + (info.sv_prompt || ''), 'Q: ');
     setText(stEl, info.sv_text, '');
+  }
+  document.getElementById('plot').on('plotly_hover', function(ev) {
+    if (ev.points && ev.points.length) showPoint(ev.points[0]);
+  });
+  document.getElementById('plot').on('plotly_click', function(ev) {
+    if (!ev.points || !ev.points.length) return;
+    showPoint(ev.points[0]);
+    // On mobile the sidebar is below the plot — scroll it into view so the
+    // user sees the response without a manual scroll. Gated to the mobile
+    // breakpoint; on desktop a click shouldn't move the page.
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      document.getElementById('sidebar')
+        .scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   });
 
   // Open the About blurb by default so a first-time visitor (e.g.
