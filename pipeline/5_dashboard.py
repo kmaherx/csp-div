@@ -967,8 +967,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       </div>
       <div class="group">
         <label><a class="info-link" data-info="color" href="#">Color:</a></label>
-        <button id="mode-step" class="mode active">Optimization Step</button>
-        <button id="mode-persona" class="mode">Persona Strength</button>
+        <button id="mode-persona" class="mode active">Persona Strength</button>
+        <button id="mode-step" class="mode">Optimization Step</button>
       </div>
     </div>
     </div>
@@ -1059,11 +1059,18 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   document.getElementById('seed-input').max = String(MAX_SEED);
 
   Plotly.newPlot('plot', fig.data, fig.layout,
-    {responsive: true, displaylogo: false, displayModeBar: false});
+    {responsive: true, displaylogo: false, displayModeBar: false})
+    .then(function() {
+      // Persona Strength is the default coloring; Python builds the
+      // figure with step coloring, so swap the colorbar and repaint
+      // markers on first render.
+      setColorbar('persona');
+      applyState();
+    });
 
   // ── State ──────────────────────────────────────────────────────────
   var state = {
-    colorMode: 'step',
+    colorMode: 'persona',
     seedFilter: null,
     frameFilter: {be: true, act: true, please: true, youshould: true},
     stepFilter: null,
@@ -1151,7 +1158,7 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
   function resetAll() {
     state.seedFilter = null;
     state.stepFilter = null;
-    state.colorMode = 'step';
+    state.colorMode = 'persona';
     Object.keys(state.frameFilter).forEach(function(s) {
       state.frameFilter[s] = true;
     });
@@ -1161,8 +1168,8 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
       b.classList.add('active');
       b.classList.remove('off');
     });
-    setActiveButton('.mode', 'mode-step');
-    setColorbar('step');
+    setActiveButton('.mode', 'mode-persona');
+    setColorbar('persona');
     deselectPresets();
     applyState();
   }
