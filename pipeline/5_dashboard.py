@@ -869,6 +869,12 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     #info-modal .card { max-width: 92vw; max-height: 85vh;
                         margin: 6vh auto 0; padding: 22px 22px 24px;
                         font-size: 14.5px; }
+    /* Lock the background dashboard from scrolling under the open modal.
+       JS toggles .modal-open on body via showInfo / hideInfo. iOS Safari
+       ignores plain overflow: hidden on body, so we also pin position
+       fixed and width 100% to actually freeze it. */
+    body.modal-open { overflow: hidden; position: fixed;
+                      width: 100%; height: 100%; }
   }
 </style>
 </head>
@@ -1140,10 +1146,14 @@ DASHBOARD_HTML_TEMPLATE = """<!DOCTYPE html>
     infoBody.innerHTML = INFO_TEXTS[key] || '<p>(no info available)</p>';
     infoBody.parentElement.scrollTop = 0;
     infoModal.classList.remove('hidden');
+    // Lock the background page so it can't scroll under the modal. CSS only
+    // engages this on mobile via @media (max-width: 768px).
+    document.body.classList.add('modal-open');
   }
   function hideInfo() {
     clearActiveInfoLink();
     infoModal.classList.add('hidden');
+    document.body.classList.remove('modal-open');
   }
   document.querySelectorAll('.info-link, .about-btn').forEach(function(link) {
     link.addEventListener('click', function(e) {
