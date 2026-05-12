@@ -105,9 +105,11 @@ Pools shifts across all 4 frames, fits PCA, renders the interactive
 HTML dashboard at `results/llama/all_frames/dashboard.html` with:
 
 - Seed / step / frame filters
-- Color-mode toggle (optimization step ↔ persona-strength alignment)
-- Hover sidebar showing behavior + self-verb responses
+- Color-mode toggle (persona-strength alignment ↔ optimization step;
+  persona is the default)
+- Tap or hover sidebar showing behavior + self-verbalization responses
 - Persona presets for notable trajectories
+- Mobile-responsive layout (stacked sections below 768px)
 
 ## Output tree
 

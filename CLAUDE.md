@@ -111,15 +111,11 @@ To restyle every figure, edit this one file.
   over `rm -rf results/llama/be/seed_*` to avoid wiping a sibling pod's
   in-progress data.
 
-## Other branches (private repo only)
+## Branches
 
-- `ood-init` — pre-refactor reference: 21-script `scripts/` directory,
-  4 `AGENT_*.md` files, plus supplementary diagnostic plots
-  (`plot_csp_norm.py`, `plot_step0_evidence.py`, etc.).
-- `rng-probe` — historical static-teacher data with Qwen, frame-bias
-  sweep, RNG decoupling probe.
-- `chain-teacher`, `random-walk` — chain-teacher (KL-ascent against
-  moving snapshot) experiments.
-
-These branches stay on the private `csp-div` remote; the eventual
-public repo will be a single-branch `main` snapshot.
+The repo carries several experimental branches alongside `main` (e.g.
+`ood-init`, `rng-probe`, `chain-teacher`, `random-walk`, `cross-model`,
+`qwen`, `scaled-init`). These hold historical or alternate-method
+explorations and are not part of the public artifact. The eventual
+public repo will be a single-branch `main` snapshot. Default to `main`
+unless the user explicitly references one of the others.
