@@ -26,6 +26,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 from matplotlib.collections import LineCollection
+from matplotlib.patches import FancyArrowPatch
 from sklearn.decomposition import PCA
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
@@ -61,7 +62,7 @@ def main() -> None:
     ap.add_argument("--size", type=float, default=10.0)
     ap.add_argument("--dpi", type=int, default=300)
     ap.add_argument(
-        "--bg-alpha", type=float, default=0.5,
+        "--bg-alpha", type=float, default=0.4,
         help="Alpha for background trajectory edges.",
     )
     ap.add_argument(
@@ -69,12 +70,23 @@ def main() -> None:
         help="Linewidth for background trajectory edges.",
     )
     ap.add_argument(
-        "--hl-linewidth", type=float, default=2.5,
+        "--hl-linewidth", type=float, default=4.0,
         help="Linewidth for both highlighted edges and marker outlines.",
     )
     ap.add_argument(
         "--hl-marker-size", type=float, default=300,
         help="Marker size for highlighted trajectory points.",
+    )
+    ap.add_argument(
+        "--hl-arrow-scale", type=float, default=15,
+        help="mutation_scale for the per-segment arrowheads on the "
+             "highlighted trajectories. Bigger = larger arrowheads.",
+    )
+    ap.add_argument(
+        "--hl-arrow-shrink", type=float, default=14,
+        help="Shrink the arrow tip by this many points before reaching "
+             "the next marker, so the arrowhead sits just outside the "
+             "marker circle rather than getting hidden behind it.",
     )
     args = ap.parse_args()
     if isinstance(args.highlight, str):
@@ -166,16 +178,30 @@ def main() -> None:
         )
         ax.add_collection(lc)
 
-    # Highlighted: black chain with per-step persona-colored beads
+    # Highlighted: each segment is its own FancyArrowPatch, so we get a
+    # black shaft followed by a small filled arrowhead pointing at the
+    # next marker. shrinkB pulls the arrowhead back from the marker
+    # boundary so the marker doesn't cover the arrow tip. Markers are
+    # drawn on top, filling the gap between consecutive segments.
     for key in sorted(args.highlight):
         if key not in trajs:
             print(f"  WARN: highlight {key} not found in data")
             continue
         rows = trajs[key]
-        xs = [r["pc"][0] for r in rows]
-        ys = [r["pc"][1] for r in rows]
-        ax.plot(xs, ys, color="black",
-                linewidth=args.hl_linewidth, zorder=10)
+        for i in range(len(rows) - 1):
+            p1, p2 = rows[i], rows[i + 1]
+            arrow = FancyArrowPatch(
+                (float(p1["pc"][0]), float(p1["pc"][1])),
+                (float(p2["pc"][0]), float(p2["pc"][1])),
+                arrowstyle="-|>",
+                mutation_scale=args.hl_arrow_scale,
+                color="black",
+                linewidth=args.hl_linewidth,
+                shrinkA=0,
+                shrinkB=args.hl_arrow_shrink,
+                zorder=10,
+            )
+            ax.add_patch(arrow)
         for r in rows:
             ax.scatter(
                 r["pc"][0], r["pc"][1],
