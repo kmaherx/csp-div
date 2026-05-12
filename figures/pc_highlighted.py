@@ -25,6 +25,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
+from matplotlib.collections import LineCollection
 from sklearn.decomposition import PCA
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
@@ -50,7 +51,7 @@ def main() -> None:
     ap.add_argument("--results-dir", type=Path, default=Path("results"))
     ap.add_argument("--max-step", type=int, default=50)
     ap.add_argument(
-        "--highlight", type=parse_highlight, default="be:16,youshould:4",
+        "--highlight", type=parse_highlight, default="be:12,youshould:4",
         help="Comma-separated slug:seed pairs to draw on top.",
     )
     ap.add_argument(
@@ -72,7 +73,7 @@ def main() -> None:
         help="Linewidth for both highlighted edges and marker outlines.",
     )
     ap.add_argument(
-        "--hl-marker-size", type=float, default=200,
+        "--hl-marker-size", type=float, default=300,
         help="Marker size for highlighted trajectory points.",
     )
     args = ap.parse_args()
@@ -142,16 +143,28 @@ def main() -> None:
     # ── Render ─────────────────────────────────────────────────────────
     fig, ax = plt.subplots(figsize=(args.size, args.size))
 
-    # Background: edges only, colored by trajectory-average cos
+    # Background: each individual edge colored by the average cos of its
+    # two endpoints, so a trajectory passing through persona territory
+    # darkens locally rather than averaging out across the whole path.
+    segments: list[list[tuple[float, float]]] = []
+    seg_colors: list[str] = []
     for key, rows in trajs.items():
         if key in args.highlight:
             continue
-        avg_cos = sum(r["cos"] for r in rows) / len(rows)
-        edge_color = color_persona(t_cos(avg_cos))
-        xs = [r["pc"][0] for r in rows]
-        ys = [r["pc"][1] for r in rows]
-        ax.plot(xs, ys, color=edge_color, alpha=args.bg_alpha,
-                linewidth=args.bg_linewidth, zorder=1)
+        for i in range(len(rows) - 1):
+            p1, p2 = rows[i], rows[i + 1]
+            segments.append([
+                (float(p1["pc"][0]), float(p1["pc"][1])),
+                (float(p2["pc"][0]), float(p2["pc"][1])),
+            ])
+            avg_cos = (p1["cos"] + p2["cos"]) / 2
+            seg_colors.append(color_persona(t_cos(avg_cos)))
+    if segments:
+        lc = LineCollection(
+            segments, colors=seg_colors, alpha=args.bg_alpha,
+            linewidth=args.bg_linewidth, zorder=1, capstyle="round",
+        )
+        ax.add_collection(lc)
 
     # Highlighted: black chain with per-step persona-colored beads
     for key in sorted(args.highlight):
