@@ -22,6 +22,8 @@ import json
 import sys
 from pathlib import Path
 
+import matplotlib as mpl
+import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 import numpy as np
 import torch
@@ -30,21 +32,27 @@ from matplotlib.patches import FancyArrowPatch
 from sklearn.decomposition import PCA
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-from csp_div.plotting import color_persona  # noqa: E402
+# Module-level rcParams in plotting.py apply on import.
+import csp_div.plotting  # noqa: F401, E402
 
 
 FRAME_SLUGS = ["be", "act", "please", "youshould"]
 
 
-def parse_highlight(s: str) -> set[tuple[str, int]]:
-    pairs: set[tuple[str, int]] = set()
+def parse_highlight(s: str) -> list[tuple[str, int]]:
+    """Preserve order so --hl-edge-colors lines up positionally."""
+    pairs: list[tuple[str, int]] = []
     for token in s.split(","):
         token = token.strip()
         if not token:
             continue
         slug, seed = token.split(":")
-        pairs.add((slug.strip(), int(seed)))
+        pairs.append((slug.strip(), int(seed)))
     return pairs
+
+
+def parse_colors(s: str) -> list[str]:
+    return [c.strip() for c in s.split(",") if c.strip()]
 
 
 def main() -> None:
@@ -56,8 +64,23 @@ def main() -> None:
         help="Comma-separated slug:seed pairs to draw on top.",
     )
     ap.add_argument(
-        "--out", type=Path,
-        default=Path("results/llama/all_frames/pc_highlighted.png"),
+        "--cmap", default="Reds_r",
+        help="Matplotlib colormap name used to map persona-strength "
+             "(normalized cos) to point colors. Default is Reds_r "
+             "(dark red = persona, near-white = default). Pass Greys_r "
+             "for a monochrome black-to-white version.",
+    )
+    ap.add_argument(
+        "--hl-edge-colors", type=parse_colors, default=[],
+        help="Comma-separated list of edge / marker-outline colors for "
+             "the highlighted trajectories, in the same order as "
+             "--highlight. Defaults to black for all if omitted.",
+    )
+    ap.add_argument(
+        "--out", type=Path, default=None,
+        help="Output PNG path. If omitted, defaults to "
+             "results/llama/all_frames/pc_highlighted.png for Reds_r and "
+             "pc_highlighted_<cmap>.png for any other cmap.",
     )
     ap.add_argument("--size", type=float, default=10.0)
     ap.add_argument("--dpi", type=int, default=300)
@@ -91,6 +114,27 @@ def main() -> None:
     args = ap.parse_args()
     if isinstance(args.highlight, str):
         args.highlight = parse_highlight(args.highlight)
+    if isinstance(args.hl_edge_colors, str):
+        args.hl_edge_colors = parse_colors(args.hl_edge_colors)
+    if args.out is None:
+        if args.cmap == "Reds_r":
+            args.out = Path("results/llama/all_frames/pc_highlighted.png")
+        else:
+            stem = f"pc_highlighted_{args.cmap.lower().replace('_', '')}.png"
+            args.out = Path("results/llama/all_frames") / stem
+
+    cmap = mpl.colormaps[args.cmap]
+
+    def color_for(t: float) -> str:
+        return mcolors.to_hex(cmap(max(0.0, min(1.0, t))))
+
+    hl_color_map: dict[tuple[str, int], str] = {}
+    for i, key in enumerate(args.highlight):
+        hl_color_map[key] = (
+            args.hl_edge_colors[i]
+            if i < len(args.hl_edge_colors)
+            else "black"
+        )
 
     base_dir = args.results_dir / "llama"
 
@@ -170,7 +214,7 @@ def main() -> None:
                 (float(p2["pc"][0]), float(p2["pc"][1])),
             ])
             avg_cos = (p1["cos"] + p2["cos"]) / 2
-            seg_colors.append(color_persona(t_cos(avg_cos)))
+            seg_colors.append(color_for(t_cos(avg_cos)))
     if segments:
         lc = LineCollection(
             segments, colors=seg_colors, alpha=args.bg_alpha,
@@ -183,10 +227,11 @@ def main() -> None:
     # next marker. shrinkB pulls the arrowhead back from the marker
     # boundary so the marker doesn't cover the arrow tip. Markers are
     # drawn on top, filling the gap between consecutive segments.
-    for key in sorted(args.highlight):
+    for key in args.highlight:
         if key not in trajs:
             print(f"  WARN: highlight {key} not found in data")
             continue
+        edge_color = hl_color_map[key]
         rows = trajs[key]
         for i in range(len(rows) - 1):
             p1, p2 = rows[i], rows[i + 1]
@@ -195,7 +240,7 @@ def main() -> None:
                 (float(p2["pc"][0]), float(p2["pc"][1])),
                 arrowstyle="-|>",
                 mutation_scale=args.hl_arrow_scale,
-                color="black",
+                color=edge_color,
                 linewidth=args.hl_linewidth,
                 shrinkA=0,
                 shrinkB=args.hl_arrow_shrink,
@@ -205,9 +250,9 @@ def main() -> None:
         for r in rows:
             ax.scatter(
                 r["pc"][0], r["pc"][1],
-                c=color_persona(t_cos(r["cos"])),
+                c=color_for(t_cos(r["cos"])),
                 s=args.hl_marker_size,
-                edgecolors="black",
+                edgecolors=edge_color,
                 linewidths=args.hl_linewidth,
                 zorder=11,
             )
