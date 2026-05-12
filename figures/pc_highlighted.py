@@ -85,11 +85,11 @@ def main() -> None:
     ap.add_argument("--size", type=float, default=10.0)
     ap.add_argument("--dpi", type=int, default=300)
     ap.add_argument(
-        "--bg-alpha", type=float, default=0.4,
+        "--bg-alpha", type=float, default=0.3,
         help="Alpha for background trajectory edges.",
     )
     ap.add_argument(
-        "--bg-linewidth", type=float, default=1.5,
+        "--bg-linewidth", type=float, default=2.0,
         help="Linewidth for background trajectory edges.",
     )
     ap.add_argument(
