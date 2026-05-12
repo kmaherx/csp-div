@@ -72,6 +72,9 @@ def main() -> None:
         raise SystemExit("No shifts loaded — check --results-dir")
 
     X = np.stack(pooled_X)
+    # L2-normalize each shift before PCA, matching the dashboard default
+    # (parser.set_defaults(normalize=True) in pipeline/5_dashboard.py).
+    X = X / np.maximum(np.linalg.norm(X, axis=1, keepdims=True), 1e-8)
     pca = PCA(n_components=2)
     Y = pca.fit_transform(X)
     print(f"Pooled PCA over {len(X)} rows; var ratio "
