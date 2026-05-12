@@ -22,10 +22,10 @@ import numpy as np
 import torch
 from sklearn.decomposition import PCA
 
-# Reuse the dashboard's persona-color helper so the colors match
-# exactly. Module-level rcParams in plotting.py also apply.
+# Reuse the dashboard's color helpers so the colors match exactly.
+# Module-level rcParams in plotting.py also apply.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src"))
-from csp_div.plotting import color_persona  # noqa: E402
+from csp_div.plotting import color_persona, color_step  # noqa: E402
 
 
 FRAME_SLUGS = ["be", "act", "please", "youshould"]
@@ -40,8 +40,15 @@ def main() -> None:
              "dashboard's 0–50 window. Pass a large number to include all.",
     )
     ap.add_argument(
-        "--out", type=Path,
-        default=Path("results/llama/all_frames/pc_clean.png"),
+        "--color-by", choices=["persona", "step"], default="persona",
+        help="Color the points by persona-strength (Reds_r) or by "
+             "optimization step (rainbow). Matches the dashboard's "
+             "two color modes.",
+    )
+    ap.add_argument(
+        "--out", type=Path, default=None,
+        help="Output PNG path. Defaults to results/llama/all_frames/"
+             "pc_clean.png for persona, pc_clean_step.png for step.",
     )
     ap.add_argument(
         "--size", type=float, default=10.0,
@@ -49,6 +56,10 @@ def main() -> None:
     )
     ap.add_argument("--dpi", type=int, default=300)
     args = ap.parse_args()
+
+    if args.out is None:
+        name = "pc_clean.png" if args.color_by == "persona" else "pc_clean_step.png"
+        args.out = Path("results/llama/all_frames") / name
 
     base_dir = args.results_dir / "llama"
 
@@ -112,6 +123,16 @@ def main() -> None:
         trajs[k].sort(key=lambda r: r["step"])
     print(f"  {len(trajs)} trajectories")
 
+    # ── Color helpers ──────────────────────────────────────────────────
+    if args.color_by == "persona":
+        def color_of(r: dict) -> str:
+            return color_persona(t_cos(r["cos"]))
+    else:
+        step_max = max(args.max_step, 1)
+
+        def color_of(r: dict) -> str:
+            return color_step(r["step"] / step_max)
+
     # ── Render ─────────────────────────────────────────────────────────
     fig, ax = plt.subplots(figsize=(args.size, args.size))
     edge_color = "#d4d4d4"
@@ -123,7 +144,7 @@ def main() -> None:
         for r in rows:
             ax.scatter(
                 r["pc"][0], r["pc"][1],
-                c=color_persona(t_cos(r["cos"])),
+                c=color_of(r),
                 s=200, edgecolors="none", zorder=2,
             )
 
