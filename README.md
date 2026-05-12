@@ -1,13 +1,13 @@
 # csp-div
 
-> A language model's input is an embedding vector. Embeddings are
-> continuous, so there are infinitely many. Yet human words are finite,
-> covering only a tiny sliver of that space. This project explores the
-> rest. Soft prompts trained to maximize divergence from the model's
-> default behavior end up clustering in stable attractors where the
-> model adopts a strong persona, from conventional medieval narrators
-> to exotic figures like low-income Southern CEOs and Netflix teen
-> drama heroines.
+A language model's input is an embedding vector. Embeddings are
+continuous, so there are infinitely many. Yet human words are finite,
+covering only a tiny sliver of that space. This project explores the
+rest. Soft prompts trained to maximize divergence from the model's
+default behavior end up clustering in stable attractors where the
+model adopts a strong persona, from conventional medieval narrators
+to exotic figures like low-income Southern CEOs and Netflix teen
+drama heroines.
 
 The headline artifact is an interactive dashboard at
 [`results/llama/all_frames/dashboard.html`](results/llama/all_frames/dashboard.html).
