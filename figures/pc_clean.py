@@ -124,7 +124,7 @@ def main() -> None:
             ax.scatter(
                 r["pc"][0], r["pc"][1],
                 c=color_persona(t_cos(r["cos"])),
-                s=72, edgecolors="none", zorder=2,
+                s=300, edgecolors="none", zorder=2,
             )
 
     ax.set_aspect("equal")
