@@ -52,7 +52,7 @@ def main() -> None:
     ap.add_argument("--results-dir", type=Path, default=Path("results"))
     ap.add_argument("--max-step", type=int, default=50)
     ap.add_argument(
-        "--highlight", type=parse_highlight, default="be:12,youshould:4",
+        "--highlight", type=parse_highlight, default="be:12,be:4",
         help="Comma-separated slug:seed pairs to draw on top.",
     )
     ap.add_argument(
@@ -70,7 +70,7 @@ def main() -> None:
         help="Linewidth for background trajectory edges.",
     )
     ap.add_argument(
-        "--hl-linewidth", type=float, default=4.0,
+        "--hl-linewidth", type=float, default=2.5,
         help="Linewidth for both highlighted edges and marker outlines.",
     )
     ap.add_argument(
