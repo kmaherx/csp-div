@@ -118,8 +118,6 @@ from that project.
 Persona alignment is measured against the
 [Butanium L16 assistant-axis vectors](https://huggingface.co/datasets/Butanium/llama-3.1-8b-instruct-assistant-axis).
 
-Sibling repo: [`csp_arithmetic`](https://github.com/kmaherx/csp_arithmetic).
-
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
