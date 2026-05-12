@@ -89,7 +89,7 @@ def main() -> None:
         help="Alpha for background trajectory edges.",
     )
     ap.add_argument(
-        "--bg-linewidth", type=float, default=2.0,
+        "--bg-linewidth", type=float, default=1.5,
         help="Linewidth for background trajectory edges.",
     )
     ap.add_argument(
