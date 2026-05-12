@@ -199,9 +199,9 @@ def main() -> None:
     # ── Render ─────────────────────────────────────────────────────────
     fig, ax = plt.subplots(figsize=(args.size, args.size))
 
-    # Background: each individual edge colored by the average cos of its
-    # two endpoints, so a trajectory passing through persona territory
-    # darkens locally rather than averaging out across the whole path.
+    # Background: each individual edge colored by the cos of its preceding
+    # checkpoint, so the color reflects the persona-strength at the start
+    # of each step rather than averaging across the two endpoints.
     segments: list[list[tuple[float, float]]] = []
     seg_colors: list[str] = []
     for key, rows in trajs.items():
@@ -213,8 +213,7 @@ def main() -> None:
                 (float(p1["pc"][0]), float(p1["pc"][1])),
                 (float(p2["pc"][0]), float(p2["pc"][1])),
             ])
-            avg_cos = (p1["cos"] + p2["cos"]) / 2
-            seg_colors.append(color_for(t_cos(avg_cos)))
+            seg_colors.append(color_for(t_cos(p1["cos"])))
     if segments:
         lc = LineCollection(
             segments, colors=seg_colors, alpha=args.bg_alpha,
