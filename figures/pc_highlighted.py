@@ -100,6 +100,16 @@ def main() -> None:
              "shouldn't be revealed yet.",
     )
     ap.add_argument(
+        "--bg-markers", action="store_true",
+        help="Draw a marker at every background checkpoint, colored by "
+             "the cmap, no outline. Off by default.",
+    )
+    ap.add_argument(
+        "--bg-marker-size", type=float, default=200,
+        help="Marker size for background checkpoints when --bg-markers "
+             "is set.",
+    )
+    ap.add_argument(
         "--hl-linewidth", type=float, default=2.5,
         help="Linewidth for both highlighted edges and marker outlines.",
     )
@@ -217,6 +227,9 @@ def main() -> None:
     # each step), unless --bg-color overrides with a single flat color.
     segments: list[list[tuple[float, float]]] = []
     seg_colors: list[str] = []
+    bg_pts_x: list[float] = []
+    bg_pts_y: list[float] = []
+    bg_pts_c: list[str] = []
     for key, rows in trajs.items():
         if key in args.highlight:
             continue
@@ -230,12 +243,22 @@ def main() -> None:
                 seg_colors.append(args.bg_color)
             else:
                 seg_colors.append(color_for(t_cos(p1["cos"])))
+        if args.bg_markers:
+            for r in rows:
+                bg_pts_x.append(float(r["pc"][0]))
+                bg_pts_y.append(float(r["pc"][1]))
+                bg_pts_c.append(color_for(t_cos(r["cos"])))
     if segments:
         lc = LineCollection(
             segments, colors=seg_colors, alpha=args.bg_alpha,
             linewidth=args.bg_linewidth, zorder=1, capstyle="round",
         )
         ax.add_collection(lc)
+    if args.bg_markers and bg_pts_x:
+        ax.scatter(
+            bg_pts_x, bg_pts_y, c=bg_pts_c,
+            s=args.bg_marker_size, edgecolors="none", zorder=2,
+        )
 
     # Highlighted: each segment is its own FancyArrowPatch, so we get a
     # black shaft followed by a small filled arrowhead pointing at the
