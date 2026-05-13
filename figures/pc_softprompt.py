@@ -58,6 +58,16 @@ def main() -> None:
         "--max-step", type=int, default=50,
         help="Upper bound on step values when --steps is 'all'.",
     )
+    ap.add_argument(
+        "--color-by", choices=["cell-avg", "seed-min"], default="cell-avg",
+        help="How to map each soft prompt to a cmap value. 'cell-avg' "
+             "uses the persona-cos at this specific (seed, step) cell, "
+             "averaged across the 4 frames. 'seed-min' uses the minimum "
+             "persona-cos across every (frame, step) cell of this seed's "
+             "trajectory — useful for the step-0 plot, where it colors "
+             "each starting point by how deep into persona territory the "
+             "trajectory eventually reaches.",
+    )
     ap.add_argument("--cmap", default="Reds_r")
     ap.add_argument(
         "--out", type=Path, default=None,
@@ -127,8 +137,13 @@ def main() -> None:
     print(f"PCA over {len(X)} soft prompts (dim {X.shape[1]}); var ratio "
           f"{[round(v, 3) for v in pca.explained_variance_ratio_]}")
 
-    # ── Per-(seed, step) cos averaged across frames ────────────────────
+    # ── Aggregate cos values ───────────────────────────────────────────
+    # We build two lookups so --color-by can pick either:
+    #   cos_avg[(seed, step)] = mean cos across 4 frames at that cell
+    #   seed_min[seed]        = min cos across every (frame, step) for
+    #                            that seed (within --max-step)
     cos_by_cell: dict[tuple[int, int], list[float]] = {}
+    seed_min: dict[int, float] = {}
     for slug in FRAME_SLUGS:
         axis_path = base_dir / slug / "axis.json"
         if not axis_path.is_file():
@@ -141,13 +156,21 @@ def main() -> None:
                 step = int(ckpt.split("step")[-1].replace(".pt", ""))
             except ValueError:
                 continue
+            if step > args.max_step:
+                continue
             seed = int(r["group"].split("seed_")[-1].split("_")[0])
-            cos_by_cell.setdefault((seed, step), []).append(float(r["proj_cos"]))
+            cos = float(r["proj_cos"])
+            cos_by_cell.setdefault((seed, step), []).append(cos)
+            if seed not in seed_min or cos < seed_min[seed]:
+                seed_min[seed] = cos
     if not cos_by_cell:
         raise SystemExit("No axis.json files found — run pipeline/4_axis.py first")
     cos_avg = {k: float(np.mean(v)) for k, v in cos_by_cell.items()}
 
-    cos_vals = [cos_avg.get((s, st), 0.0) for s, st, _ in rows]
+    if args.color_by == "seed-min":
+        cos_vals = [seed_min.get(s, 0.0) for s, st, _ in rows]
+    else:
+        cos_vals = [cos_avg.get((s, st), 0.0) for s, st, _ in rows]
     cos_min, cos_max = min(cos_vals), max(cos_vals)
 
     def t_cos(c: float) -> float:
