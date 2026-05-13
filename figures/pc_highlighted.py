@@ -108,6 +108,12 @@ def main() -> None:
         help="Marker size for highlighted trajectory points.",
     )
     ap.add_argument(
+        "--hl-marker-color", default=None,
+        help="If set, fill every highlighted marker with this color "
+             "(e.g. 'white') instead of the per-step cmap. Useful for "
+             "narrative figures that want flat beads.",
+    )
+    ap.add_argument(
         "--hl-arrow-scale", type=float, default=15,
         help="mutation_scale for the per-segment arrowheads on the "
              "highlighted trajectories. Bigger = larger arrowheads.",
@@ -257,9 +263,14 @@ def main() -> None:
             )
             ax.add_patch(arrow)
         for r in rows:
+            fill = (
+                args.hl_marker_color
+                if args.hl_marker_color is not None
+                else color_for(t_cos(r["cos"]))
+            )
             ax.scatter(
                 r["pc"][0], r["pc"][1],
-                c=color_for(t_cos(r["cos"])),
+                c=fill,
                 s=args.hl_marker_size,
                 edgecolors=edge_color,
                 linewidths=args.hl_linewidth,
