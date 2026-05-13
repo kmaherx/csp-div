@@ -277,6 +277,11 @@ def main() -> None:
                 zorder=11,
             )
 
+    # Force the view to fit the full data extent: when there are zero
+    # highlighted trajectories there are no scatter calls, so dataLim
+    # isn't otherwise expanded by them. autoscale_view triggers a fit
+    # from whatever's already been added (LineCollection + patches).
+    ax.autoscale_view()
     ax.set_aspect("equal")
     ax.set_xticks([])
     ax.set_yticks([])
