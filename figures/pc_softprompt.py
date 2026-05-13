@@ -38,14 +38,32 @@ import csp_div.plotting  # noqa: F401, E402
 FRAME_SLUGS = ["be", "act", "please", "youshould"]
 
 
+def parse_steps(s: str) -> set[int] | None:
+    """None means 'include every step'."""
+    if s.strip().lower() == "all":
+        return None
+    return {int(x.strip()) for x in s.split(",") if x.strip()}
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--results-dir", type=Path, default=Path("results"))
-    ap.add_argument("--max-step", type=int, default=50)
+    ap.add_argument(
+        "--steps", type=parse_steps, default="all",
+        help="Which training steps to include. 'all' uses every saved "
+             "checkpoint (up to --max-step); pass a comma-separated list "
+             "like '0' or '0,25,50' to restrict to specific steps.",
+    )
+    ap.add_argument(
+        "--max-step", type=int, default=50,
+        help="Upper bound on step values when --steps is 'all'.",
+    )
     ap.add_argument("--cmap", default="Reds_r")
     ap.add_argument(
-        "--out", type=Path,
-        default=Path("results/llama/all_frames/pc_softprompt.png"),
+        "--out", type=Path, default=None,
+        help="Output PNG. Defaults to pc_softprompt_<tag>.png in "
+             "results/llama/all_frames/, where <tag> is 'all' or "
+             "'step{N}' / 'steps{N1}_{N2}' based on --steps.",
     )
     ap.add_argument("--size", type=float, default=10.0)
     ap.add_argument("--dpi", type=int, default=300)
@@ -55,6 +73,17 @@ def main() -> None:
         help="Alpha for the dots.",
     )
     args = ap.parse_args()
+    if isinstance(args.steps, str):
+        args.steps = parse_steps(args.steps)
+
+    if args.out is None:
+        if args.steps is None:
+            tag = "all"
+        elif len(args.steps) == 1:
+            tag = f"step{next(iter(args.steps))}"
+        else:
+            tag = "steps" + "_".join(str(s) for s in sorted(args.steps))
+        args.out = Path("results/llama/all_frames") / f"pc_softprompt_{tag}.png"
 
     base_dir = args.results_dir / "llama"
     be_dir = base_dir / "be"
@@ -75,7 +104,10 @@ def main() -> None:
                 step = int(stem.split("step")[-1])
             except ValueError:
                 continue
-            if step > args.max_step:
+            if args.steps is None:
+                if step > args.max_step:
+                    continue
+            elif step not in args.steps:
                 continue
             sp = torch.load(sp_path, map_location="cpu", weights_only=True)
             # Some checkpoints save the bare tensor, others a state-dict.
