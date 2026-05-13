@@ -93,6 +93,13 @@ def main() -> None:
         help="Linewidth for background trajectory edges.",
     )
     ap.add_argument(
+        "--bg-color", default=None,
+        help="If set, render every background edge with this single color "
+             "(e.g. '#666666') instead of using --cmap per-edge. Useful "
+             "for narrative figures where the persona-strength gradient "
+             "shouldn't be revealed yet.",
+    )
+    ap.add_argument(
         "--hl-linewidth", type=float, default=2.5,
         help="Linewidth for both highlighted edges and marker outlines.",
     )
@@ -200,8 +207,8 @@ def main() -> None:
     fig, ax = plt.subplots(figsize=(args.size, args.size))
 
     # Background: each individual edge colored by the cos of its preceding
-    # checkpoint, so the color reflects the persona-strength at the start
-    # of each step rather than averaging across the two endpoints.
+    # checkpoint (so the color reflects persona-strength at the start of
+    # each step), unless --bg-color overrides with a single flat color.
     segments: list[list[tuple[float, float]]] = []
     seg_colors: list[str] = []
     for key, rows in trajs.items():
@@ -213,7 +220,10 @@ def main() -> None:
                 (float(p1["pc"][0]), float(p1["pc"][1])),
                 (float(p2["pc"][0]), float(p2["pc"][1])),
             ])
-            seg_colors.append(color_for(t_cos(p1["cos"])))
+            if args.bg_color is not None:
+                seg_colors.append(args.bg_color)
+            else:
+                seg_colors.append(color_for(t_cos(p1["cos"])))
     if segments:
         lc = LineCollection(
             segments, colors=seg_colors, alpha=args.bg_alpha,
