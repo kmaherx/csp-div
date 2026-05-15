@@ -110,6 +110,14 @@ def main() -> None:
              "is set.",
     )
     ap.add_argument(
+        "--bg-color-by", choices=["persona", "step"], default="persona",
+        help="What background segments / markers are colored by. "
+             "'persona' uses --cmap on the assistant-axis cos at each "
+             "checkpoint (the dashboard's default mode). 'step' uses "
+             "matplotlib 'rainbow' on the optimization step normalized "
+             "to [0, --max-step].",
+    )
+    ap.add_argument(
         "--hl-linewidth", type=float, default=2.5,
         help="Linewidth for both highlighted edges and marker outlines.",
     )
@@ -147,9 +155,18 @@ def main() -> None:
             args.out = Path("results/llama/all_frames") / stem
 
     cmap = mpl.colormaps[args.cmap]
+    step_cmap = mpl.colormaps["rainbow"]
 
     def color_for(t: float) -> str:
         return mcolors.to_hex(cmap(max(0.0, min(1.0, t))))
+
+    def bg_color_for(row: dict) -> str:
+        if args.bg_color is not None:
+            return args.bg_color
+        if args.bg_color_by == "step":
+            t = row["step"] / max(args.max_step, 1)
+            return mcolors.to_hex(step_cmap(max(0.0, min(1.0, t))))
+        return color_for(t_cos(row["cos"]))
 
     hl_color_map: dict[tuple[str, int], str] = {}
     for i, key in enumerate(args.highlight):
@@ -239,15 +256,12 @@ def main() -> None:
                 (float(p1["pc"][0]), float(p1["pc"][1])),
                 (float(p2["pc"][0]), float(p2["pc"][1])),
             ])
-            if args.bg_color is not None:
-                seg_colors.append(args.bg_color)
-            else:
-                seg_colors.append(color_for(t_cos(p1["cos"])))
+            seg_colors.append(bg_color_for(p1))
         if args.bg_markers:
             for r in rows:
                 bg_pts_x.append(float(r["pc"][0]))
                 bg_pts_y.append(float(r["pc"][1]))
-                bg_pts_c.append(color_for(t_cos(r["cos"])))
+                bg_pts_c.append(bg_color_for(r))
     if segments:
         lc = LineCollection(
             segments, colors=seg_colors, alpha=args.bg_alpha,
