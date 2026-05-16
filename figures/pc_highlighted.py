@@ -254,8 +254,15 @@ def main() -> None:
     bg_pts_x: list[float] = []
     bg_pts_y: list[float] = []
     bg_pts_c: list[str] = []
+    # When --hl-only-steps restricts the highlight to a single marker,
+    # we want the rest of that seed's checkpoints to remain in the
+    # background — otherwise switching which seed is highlighted
+    # changes the visible background. For full-chain highlights we
+    # still skip the highlighted seed so its chain doesn't render twice.
+    bg_skip_keys = set() if args.hl_only_steps is not None else set(args.highlight)
+
     for key, rows in trajs.items():
-        if key in args.highlight:
+        if key in bg_skip_keys:
             continue
         for i in range(len(rows) - 1):
             p1, p2 = rows[i], rows[i + 1]
