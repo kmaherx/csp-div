@@ -272,9 +272,7 @@ def main() -> None:
     # each step), unless --bg-color overrides with a single flat color.
     segments: list[list[tuple[float, float]]] = []
     seg_colors: list[str] = []
-    bg_pts_x: list[float] = []
-    bg_pts_y: list[float] = []
-    bg_pts_c: list[str] = []
+    bg_pts: list[tuple[float, float, float, str]] = []  # (cos, x, y, color)
     # When --hl-only-steps or --hl-points restrict the highlight to
     # individual markers, we want the rest of those seeds' checkpoints
     # to remain in the background — otherwise switching which seed is
@@ -296,18 +294,26 @@ def main() -> None:
             seg_colors.append(bg_color_for(p1))
         if args.bg_markers:
             for r in rows:
-                bg_pts_x.append(float(r["pc"][0]))
-                bg_pts_y.append(float(r["pc"][1]))
-                bg_pts_c.append(bg_color_for(r))
+                bg_pts.append((
+                    r["cos"],
+                    float(r["pc"][0]), float(r["pc"][1]),
+                    bg_color_for(r),
+                ))
     if segments:
         lc = LineCollection(
             segments, colors=seg_colors, alpha=args.bg_alpha,
             linewidth=args.bg_linewidth, zorder=1, capstyle="round",
         )
         ax.add_collection(lc)
-    if args.bg_markers and bg_pts_x:
+    if args.bg_markers and bg_pts:
+        # Sort by cos descending — least-negative (palest) first, most
+        # negative (deepest persona) last — so the foreground markers
+        # within the same zorder are the ones in the attractor.
+        bg_pts.sort(key=lambda p: p[0], reverse=True)
         ax.scatter(
-            bg_pts_x, bg_pts_y, c=bg_pts_c,
+            [p[1] for p in bg_pts],
+            [p[2] for p in bg_pts],
+            c=[p[3] for p in bg_pts],
             s=args.bg_marker_size, edgecolors="none", zorder=2,
         )
 
