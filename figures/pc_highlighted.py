@@ -359,6 +359,11 @@ def main() -> None:
             )
 
     # Standalone single-point highlights — orthogonal to --highlight.
+    # zorder=20 keeps them above chain markers (which sit at 11), so a
+    # single spotlight marker lifts above any overlapping chains. Edge
+    # color inherits from the matching --highlight key when present so
+    # the spotlight marker reads as "the same trajectory's marker, just
+    # in front" rather than introducing a new color.
     for slug, seed, step in args.hl_points:
         key = (slug, seed)
         if key not in trajs:
@@ -378,9 +383,9 @@ def main() -> None:
             r["pc"][0], r["pc"][1],
             c=fill,
             s=args.hl_marker_size,
-            edgecolors="black",
+            edgecolors=hl_color_map.get(key, "black"),
             linewidths=args.hl_linewidth,
-            zorder=11,
+            zorder=20,
         )
 
     # Force the view to fit the full data extent: when there are zero
