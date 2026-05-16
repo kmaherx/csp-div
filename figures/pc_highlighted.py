@@ -142,6 +142,13 @@ def main() -> None:
              "the next marker, so the arrowhead sits just outside the "
              "marker circle rather than getting hidden behind it.",
     )
+    ap.add_argument(
+        "--hl-only-steps", default=None,
+        help="If set, restrict the highlight render to checkpoints whose "
+             "step is in this comma-separated list (e.g. '0' or '0,50'). "
+             "Arrows are suppressed; only the matching markers are drawn. "
+             "Useful for single-point assets that pair with rainbow plots.",
+    )
     args = ap.parse_args()
     if isinstance(args.highlight, str):
         args.highlight = parse_highlight(args.highlight)
@@ -279,27 +286,34 @@ def main() -> None:
     # next marker. shrinkB pulls the arrowhead back from the marker
     # boundary so the marker doesn't cover the arrow tip. Markers are
     # drawn on top, filling the gap between consecutive segments.
+    only_steps: set[int] | None = None
+    if args.hl_only_steps is not None:
+        only_steps = {int(s.strip()) for s in args.hl_only_steps.split(",") if s.strip()}
+
     for key in args.highlight:
         if key not in trajs:
             print(f"  WARN: highlight {key} not found in data")
             continue
         edge_color = hl_color_map[key]
         rows = trajs[key]
-        for i in range(len(rows) - 1):
-            p1, p2 = rows[i], rows[i + 1]
-            arrow = FancyArrowPatch(
-                (float(p1["pc"][0]), float(p1["pc"][1])),
-                (float(p2["pc"][0]), float(p2["pc"][1])),
-                arrowstyle="-|>",
-                mutation_scale=args.hl_arrow_scale,
-                color=edge_color,
-                linewidth=args.hl_linewidth,
-                shrinkA=0,
-                shrinkB=args.hl_arrow_shrink,
-                zorder=10,
-            )
-            ax.add_patch(arrow)
+        if only_steps is None:
+            for i in range(len(rows) - 1):
+                p1, p2 = rows[i], rows[i + 1]
+                arrow = FancyArrowPatch(
+                    (float(p1["pc"][0]), float(p1["pc"][1])),
+                    (float(p2["pc"][0]), float(p2["pc"][1])),
+                    arrowstyle="-|>",
+                    mutation_scale=args.hl_arrow_scale,
+                    color=edge_color,
+                    linewidth=args.hl_linewidth,
+                    shrinkA=0,
+                    shrinkB=args.hl_arrow_shrink,
+                    zorder=10,
+                )
+                ax.add_patch(arrow)
         for r in rows:
+            if only_steps is not None and r["step"] not in only_steps:
+                continue
             fill = (
                 args.hl_marker_color
                 if args.hl_marker_color is not None
