@@ -55,6 +55,18 @@ def parse_colors(s: str) -> list[str]:
     return [c.strip() for c in s.split(",") if c.strip()]
 
 
+def parse_points(s: str) -> list[tuple[str, int, int]]:
+    """Parse comma-separated slug:seed:step triples for --hl-points."""
+    out: list[tuple[str, int, int]] = []
+    for tok in s.split(","):
+        tok = tok.strip()
+        if not tok:
+            continue
+        slug, seed, step = tok.split(":")
+        out.append((slug.strip(), int(seed), int(step)))
+    return out
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--results-dir", type=Path, default=Path("results"))
@@ -148,6 +160,15 @@ def main() -> None:
              "step is in this comma-separated list (e.g. '0' or '0,50'). "
              "Arrows are suppressed; only the matching markers are drawn. "
              "Useful for single-point assets that pair with rainbow plots.",
+    )
+    ap.add_argument(
+        "--hl-points", type=parse_points, default=[],
+        help="Comma-separated slug:seed:step triples to render as "
+             "individual highlighted markers (no chain, no arrows), "
+             "decoupled from --highlight. Useful when you want to "
+             "spotlight specific checkpoints across different "
+             "trajectories. Uses --hl-marker-{size,color} and "
+             "--hl-linewidth for styling; outline is black.",
     )
     args = ap.parse_args()
     if isinstance(args.highlight, str):
@@ -254,12 +275,14 @@ def main() -> None:
     bg_pts_x: list[float] = []
     bg_pts_y: list[float] = []
     bg_pts_c: list[str] = []
-    # When --hl-only-steps restricts the highlight to a single marker,
-    # we want the rest of that seed's checkpoints to remain in the
-    # background — otherwise switching which seed is highlighted
-    # changes the visible background. For full-chain highlights we
-    # still skip the highlighted seed so its chain doesn't render twice.
-    bg_skip_keys = set() if args.hl_only_steps is not None else set(args.highlight)
+    # When --hl-only-steps or --hl-points restrict the highlight to
+    # individual markers, we want the rest of those seeds' checkpoints
+    # to remain in the background — otherwise switching which seed is
+    # highlighted changes the visible background. For full-chain
+    # highlights we still skip the highlighted seed so its chain
+    # doesn't render twice.
+    single_point_mode = args.hl_only_steps is not None or bool(args.hl_points)
+    bg_skip_keys = set() if single_point_mode else set(args.highlight)
 
     for key, rows in trajs.items():
         if key in bg_skip_keys:
@@ -334,6 +357,31 @@ def main() -> None:
                 linewidths=args.hl_linewidth,
                 zorder=11,
             )
+
+    # Standalone single-point highlights — orthogonal to --highlight.
+    for slug, seed, step in args.hl_points:
+        key = (slug, seed)
+        if key not in trajs:
+            print(f"  WARN: hl-point {slug}:{seed}:{step} — seed/frame not found")
+            continue
+        matches = [r for r in trajs[key] if r["step"] == step]
+        if not matches:
+            print(f"  WARN: hl-point {slug}:{seed}:{step} — step not found")
+            continue
+        r = matches[0]
+        fill = (
+            args.hl_marker_color
+            if args.hl_marker_color is not None
+            else color_for(t_cos(r["cos"]))
+        )
+        ax.scatter(
+            r["pc"][0], r["pc"][1],
+            c=fill,
+            s=args.hl_marker_size,
+            edgecolors="black",
+            linewidths=args.hl_linewidth,
+            zorder=11,
+        )
 
     # Force the view to fit the full data extent: when there are zero
     # highlighted trajectories there are no scatter calls, so dataLim
